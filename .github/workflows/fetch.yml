@@ -63,3 +63,9 @@ jobs:
       with:
         url: ${{ steps.purge_urls.outputs.urls }}
       continue-on-error: true
+
+    - name: 删除运行记录
+      uses: Mattraks/delete-workflow-runs@v2
+      with:
+        retain_days: 0
+        keep_minimum_runs: 0
