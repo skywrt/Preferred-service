@@ -1,0 +1,1449 @@
+#---------------------------------------------------#
+## 感谢：https://github.com/Hackl0us/SS-Rule-Snippet
+#---------------------------------------------------#
+
+# HTTP 代理端口
+#port: 7890
+
+# SOCKS5 代理端口
+#socks-port: 7891
+
+# Linux 和 macOS 的 redir 代理端口
+#redir-port: 7892
+
+mixed-port: 7890
+
+ipv6: true
+
+# 允许局域网的连接
+allow-lan: false
+
+# 规则模式：Rule（规则） / Global（全局代理）/ Direct（全局直连）
+mode: rule
+
+# 设置日志输出级别 (默认级别：silent，即不输出任何内容，以避免因日志内容过大而导致程序内存溢出）。
+# 5 个级别：silent / error / warning / info / debug。级别越高日志输出量越大，越倾向于调试，若需要请自行开启。
+log-level: warning
+# Clash 的 RESTful API
+external-controller: '0.0.0.0:9090'
+
+# geodata-mode: true
+# geox-url:
+#   geoip: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
+#   geosite: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
+#   mmdb: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
+#   # asn: "https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"
+
+sniffer:
+  enable: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    # QUIC:
+    #   ports: [443, 8443]
+  skip-domain:
+    - 'Mijia Cloud'
+    - 'dlg.io.mi.com'
+    - '+.apple.com'
+
+dns:
+  enable: true
+  listen: :1053
+  ipv6: true
+  enhanced-mode: redir-host
+  nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+  fallback:
+    - tls://8.8.4.4
+    - tls://1.1.1.1
+    - https://dns.rubyfish.cn/dns-query
+  fallback-filter:
+    ipcidr:
+      - 61.160.148.90/32
+
+global-client-fingerprint: chrome
+tcp-concurrent: true
+
+
+proxies: []
+
+proxy-groups:
+  - name: 🚀 选择代理
+    type: select
+    proxies:
+      - ♻ 自动选择
+      - 🔰 延迟最低
+      - ✅ 手动选择
+      - 🗺️ 选择地区
+
+  - name: ♻ 自动选择
+    type: fallback
+    url: https://www.google.com/
+    interval: 300
+    proxies: []
+
+  - name: 🔰 延迟最低
+    type: url-test
+    url: https://www.google.com/
+    interval: 300
+    tolerance: 20
+    proxies: []
+
+  - name: ✅ 手动选择
+    type: select
+    proxies: []
+
+  - name: 🌐 突破锁区
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 选择代理
+
+  - name: ❓ 疑似国内
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 选择代理
+      - REJECT
+
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 选择代理
+      - DIRECT
+
+  - name: 🚨 病毒网站
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+
+  - name: ⛔ 广告拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+      - 🚀 选择代理
+
+  - name: 🗺️ 选择地区
+    type: select
+    proxies: []
+
+rules:
+  # 应急响应：BootCDN/Staticfile 被投毒！
+  - DOMAIN,cdn.bootcss.com,🚨 病毒网站
+  - DOMAIN,cdn.bootcdn.net,🚨 病毒网站
+  - DOMAIN,cdn.staticfile.net,🚨 病毒网站
+  - DOMAIN,cdn.staticfile.org,🚨 病毒网站
+  - DOMAIN-SUFFIX,polyfill.io,🚨 病毒网站
+  - DOMAIN,search.kiwibrowser.org,🚨 病毒网站
+  - DOMAIN-SUFFIX,kiwibrowser.org,⛔ 广告拦截
+  - DOMAIN-KEYWORD,kiwisearchservices,🚨 病毒网站 # See https://github.com/Tobi823/ffupdater/issues/35
+  # Adblock 补刀 (主程序解析白名单时会把要屏蔽的一起加白了)
+  - DOMAIN,img-c.heytapimage.com,⛔ 广告拦截
+  - DOMAIN,adsbdfs.heytapimage.com,⛔ 广告拦截
+  - DOMAIN,adsfs.heytapimage.com,⛔ 广告拦截
+  # 自定义规则
+  ## 您可以在此处插入您补充的自定义规则（请注意保持缩进）
+  # - DOMAIN-SUFFIX,gitcode.com,⛔ 广告拦截
+  - DOMAIN-SUFFIX,zhihu.com,⛔ 广告拦截
+  - DOMAIN-SUFFIX,signalr.net,DIRECT
+  - DOMAIN-KEYWORD,onedrive,🚀 选择代理
+  - DOMAIN-SUFFIX,live.com,DIRECT
+  - DOMAIN,global.bing.com,🚀 选择代理
+  - DOMAIN-SUFFIX,bing.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,bing.net,🌐 突破锁区
+  - DOMAIN-KEYWORD,bingapi,🌐 突破锁区
+  # - DOMAIN-KEYWORD,kgithub,DIRECT
+  - DOMAIN-KEYWORD,fastgit,DIRECT
+  - DOMAIN-KEYWORD,fgit,DIRECT
+  - DOMAIN-KEYWORD,ghproxy,DIRECT
+  - DOMAIN-KEYWORD,gh-proxy,DIRECT
+  - DOMAIN-SUFFIX,zzko.cn,DIRECT
+  - DOMAIN-SUFFIX,jsdelivr.us,DIRECT
+  - DOMAIN-SUFFIX,jsdelivr.net,DIRECT
+  # - DOMAIN-SUFFIX,statically.io,🚀 选择代理
+  - DOMAIN-KEYWORD,clash,🚀 选择代理
+  - DOMAIN-KEYWORD,v2ray,🚀 选择代理
+  - DOMAIN-KEYWORD,v2fly,🚀 选择代理
+  - DOMAIN-KEYWORD,vmess,🚀 选择代理
+  - DOMAIN-KEYWORD,vless,🚀 选择代理
+  - DOMAIN-KEYWORD,shadowsocks,🚀 选择代理
+  # - DOMAIN-KEYWORD,trojan,🚀 选择代理
+  - DOMAIN-KEYWORD,hysteria,🚀 选择代理
+  - DOMAIN-KEYWORD,gfw,🚀 选择代理
+  - DOMAIN-SUFFIX,trafficmanager.net,DIRECT
+  # - DOMAIN-SUFFIX,star-history.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ivonblog.com,🚀 选择代理 # 视情况而定
+  
+  - DOMAIN-SUFFIX,googleapis.cn,DIRECT # 见 README
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,DIRECT # Google Play 国外/国内 服务器，多数可直连，连不上 Google Play 会自动更换
+  - DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,DIRECT # Google Play 纯国内 服务器，似乎没啥卵用？
+  - DOMAIN-SUFFIX,gvt1-cn.com,DIRECT
+  - DOMAIN,redirector.gvt1.com,DIRECT # 会解析到你使用的运营商
+  # gvt1.com 不加任何规则，根据 GEOIP 判断是否走代理
+  
+  - DOMAIN-SUFFIX,gitlab.io,🚀 选择代理
+  - DOMAIN-KEYWORD,js96110,⛔ 广告拦截 # 以权谋私，一边反诈一边推广，恶意封禁正常网站
+  - IP-CIDR,61.160.148.90/32,❓ 疑似国内 # 被上面污染了
+  - DOMAIN-KEYWORD,wiki.arch,DIRECT
+  - DOMAIN-KEYWORD,archlinuxcn,DIRECT
+  - DOMAIN-SUFFIX,996.icu,DIRECT
+  - DOMAIN-SUFFIX,chinadigitaltimes.net,🚀 选择代理
+  - DOMAIN-SUFFIX,savefrom.net,🚀 选择代理
+  - DOMAIN-SUFFIX,yout.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,bulianglin.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,buliang0.cf,🚀 选择代理
+  - DOMAIN-SUFFIX,hydro.ac,DIRECT
+  - DOMAIN-SUFFIX,tuna.moe,DIRECT
+  - DOMAIN-KEYWORD,qbittorrent,🐟 漏网之鱼
+  - DOMAIN-SUFFIX,greatfire.org,🚀 选择代理
+  # - DOMAIN,wiki.metacubex.one,🚀 选择代理
+  - DOMAIN-KEYWORD,dongtaiwang,REJECT
+  - DOMAIN,safebrowsing.googleapis.com,DIRECT
+  - DOMAIN,dl.google.com,🐟 漏网之鱼
+  - DOMAIN-SUFFIX,taptap.io,🚀 选择代理
+  - DOMAIN-SUFFIX,tap.io,🚀 选择代理
+  - DOMAIN-SUFFIX,tapapis.com,🌐 突破锁区
+  - DOMAIN-KEYWORD,tapsdk,🌐 突破锁区
+  - DOMAIN-KEYWORD,taptap,🌐 突破锁区
+
+
+  # 国内网站（优先，避免 google.cn 走代理）
+  - DOMAIN-SUFFIX,cn,DIRECT
+  - DOMAIN-KEYWORD,-cn,DIRECT
+
+  # 抗 DNS 污染
+  - DOMAIN-KEYWORD,amazon,🚀 选择代理
+  - DOMAIN-KEYWORD,google,🚀 选择代理
+  - DOMAIN-KEYWORD,gmail,🚀 选择代理
+  - DOMAIN-KEYWORD,youtube,🚀 选择代理
+  - DOMAIN-KEYWORD,facebook,🚀 选择代理
+  - DOMAIN-SUFFIX,fb.me,🚀 选择代理
+  - DOMAIN-SUFFIX,fbcdn.net,🚀 选择代理
+  - DOMAIN-KEYWORD,twitter,🚀 选择代理
+  - DOMAIN-KEYWORD,instagram,🚀 选择代理
+  - DOMAIN-KEYWORD,dropbox,🚀 选择代理
+  - DOMAIN-SUFFIX,twimg.com,🚀 选择代理
+  - DOMAIN-KEYWORD,blogspot,🚀 选择代理
+  - DOMAIN-SUFFIX,youtu.be,🚀 选择代理
+  - DOMAIN-KEYWORD,whatsapp,🚀 选择代理
+
+  # Wikimedia
+  - DOMAIN-SUFFIX,wikipedia.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wikinews.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wikidata.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wiktionary.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wikiquote.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wikibooks.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wikisource.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wikiversity.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wikivoyage.org,🚀 选择代理
+  - DOMAIN-SUFFIX,mediawiki.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wikimedia.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wikimediafoundation.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wmfusercontent.org,🚀 选择代理
+  - DOMAIN,w.wiki,🚀 选择代理
+
+  # Local Area Network
+  - DOMAIN-KEYWORD,announce,DIRECT
+  - DOMAIN-KEYWORD,torrent,DIRECT
+  - DOMAIN-KEYWORD,tracker,DIRECT
+  - DOMAIN-SUFFIX,smtp,DIRECT
+  - DOMAIN-SUFFIX,local,DIRECT
+  - DOMAIN-SUFFIX,arpa,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+
+  # (GlobalTV)
+  # > ABC
+  - DOMAIN-SUFFIX,edgedatg.com,🚀 选择代理
+  - DOMAIN-SUFFIX,go.com,🚀 选择代理
+
+  # > AbemaTV
+  # - DOMAIN,linear-abematv.akamaized.net,🚀 选择代理
+  - DOMAIN-SUFFIX,abema.io,🚀 选择代理
+  - DOMAIN-SUFFIX,abema.tv,🚀 选择代理
+  - DOMAIN-SUFFIX,akamaized.net,🚀 选择代理
+  - DOMAIN-SUFFIX,ameba.jp,🚀 选择代理
+  - DOMAIN-SUFFIX,hayabusa.io,🚀 选择代理
+
+  # > Amazon Prime Video
+  - DOMAIN-SUFFIX,aiv-cdn.net,🚀 选择代理
+  - DOMAIN-SUFFIX,amazonaws.com,🚀 选择代理
+  - DOMAIN-SUFFIX,amazonvideo.com,🚀 选择代理
+  - DOMAIN-SUFFIX,llnwd.net,🚀 选择代理
+
+  # > Bahamut
+  - DOMAIN-SUFFIX,bahamut.com.tw,🚀 选择代理
+  - DOMAIN-SUFFIX,gamer.com.tw,🚀 选择代理
+  - DOMAIN-SUFFIX,hinet.net,🚀 选择代理
+
+  # > BBC
+  - DOMAIN-KEYWORD,bbcfmt,🚀 选择代理
+  - DOMAIN-KEYWORD,co.uk,🚀 选择代理
+  - DOMAIN-KEYWORD,uk-live,🚀 选择代理
+  - DOMAIN-SUFFIX,bbc.co,🚀 选择代理
+  - DOMAIN-SUFFIX,bbc.co.uk,🚀 选择代理
+  - DOMAIN-SUFFIX,bbc.com,🚀 选择代理
+  - DOMAIN-SUFFIX,bbci.co,🚀 选择代理
+  - DOMAIN-SUFFIX,bbci.co.uk,🚀 选择代理
+
+  # > CHOCO TV
+  - DOMAIN-SUFFIX,chocotv.com.tw,🚀 选择代理
+
+  # > Epicgames
+  - DOMAIN-KEYWORD,epicgames,🚀 选择代理
+  - DOMAIN-SUFFIX,helpshift.com,🚀 选择代理
+
+  # > Fox+
+  - DOMAIN-KEYWORD,foxplus,🚀 选择代理
+  - DOMAIN-SUFFIX,config.fox.com,🚀 选择代理
+  - DOMAIN-SUFFIX,emome.net,🚀 选择代理
+  - DOMAIN-SUFFIX,fox.com,🚀 选择代理
+  - DOMAIN-SUFFIX,foxdcg.com,🚀 选择代理
+  - DOMAIN-SUFFIX,foxnow.com,🚀 选择代理
+  - DOMAIN-SUFFIX,foxplus.com,🚀 选择代理
+  - DOMAIN-SUFFIX,foxplay.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ipinfo.io,🚀 选择代理
+  - DOMAIN-SUFFIX,mstage.io,🚀 选择代理
+  - DOMAIN-SUFFIX,now.com,🚀 选择代理
+  - DOMAIN-SUFFIX,theplatform.com,🚀 选择代理
+  - DOMAIN-SUFFIX,urlload.net,🚀 选择代理
+
+  # > HBO && HBO Go
+  - DOMAIN-SUFFIX,execute-api.ap-southeast-1.amazonaws.com,🚀 选择代理
+  - DOMAIN-SUFFIX,hbo.com,🚀 选择代理
+  - DOMAIN-SUFFIX,hboasia.com,🚀 选择代理
+  - DOMAIN-SUFFIX,hbogo.com,🚀 选择代理
+  - DOMAIN-SUFFIX,hbogoasia.hk,🚀 选择代理
+
+  # > Hulu
+  - DOMAIN-SUFFIX,happyon.jp,🚀 选择代理
+  - DOMAIN-SUFFIX,hulu.com,🚀 选择代理
+  - DOMAIN-SUFFIX,huluim.com,🚀 选择代理
+  - DOMAIN-SUFFIX,hulustream.com,🚀 选择代理
+
+  # > Imkan
+  - DOMAIN-SUFFIX,imkan.tv,🚀 选择代理
+
+  # > JOOX
+  - DOMAIN-SUFFIX,joox.com,🚀 选择代理
+
+  # > MytvSUPER
+  - DOMAIN-KEYWORD,nowtv100,🚀 选择代理
+  - DOMAIN-KEYWORD,rthklive,🚀 选择代理
+  - DOMAIN-SUFFIX,mytvsuper.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tvb.com,🚀 选择代理
+
+  # > Netflix
+  - DOMAIN-SUFFIX,netflix.com,🚀 选择代理
+  - DOMAIN-SUFFIX,netflix.net,🚀 选择代理
+  - DOMAIN-SUFFIX,nflxext.com,🚀 选择代理
+  - DOMAIN-SUFFIX,nflximg.com,🚀 选择代理
+  - DOMAIN-SUFFIX,nflximg.net,🚀 选择代理
+  - DOMAIN-SUFFIX,nflxso.net,🚀 选择代理
+  - DOMAIN-SUFFIX,nflxvideo.net,🚀 选择代理
+
+  # > Pandora
+  - DOMAIN-SUFFIX,pandora.com,🚀 选择代理
+
+  # > Sky GO
+  - DOMAIN-SUFFIX,sky.com,🚀 选择代理
+  - DOMAIN-SUFFIX,skygo.co.nz,🚀 选择代理
+
+  # > Spotify
+  - DOMAIN-KEYWORD,spotify,🚀 选择代理
+  - DOMAIN-SUFFIX,scdn.co,🚀 选择代理
+  - DOMAIN-SUFFIX,spoti.fi,🚀 选择代理
+
+  # > viuTV
+  - DOMAIN-SUFFIX,viu.tv,🚀 选择代理
+
+  # > Youtube
+  - DOMAIN-KEYWORD,youtube,🚀 选择代理
+  - DOMAIN-SUFFIX,googlevideo.com,🚀 选择代理
+  - DOMAIN-SUFFIX,gvt2.com,🚀 选择代理
+  - DOMAIN-SUFFIX,youtu.be,🚀 选择代理
+
+  # (AsianTV)
+  # > Bilibili
+  - DOMAIN-KEYWORD,bilibili,DIRECT
+  - DOMAIN-SUFFIX,acg.tv,DIRECT
+  - DOMAIN-SUFFIX,acgvideo.com,DIRECT
+  - DOMAIN-SUFFIX,b23.tv,DIRECT
+  - DOMAIN-SUFFIX,biliapi.com,DIRECT
+  - DOMAIN-SUFFIX,biliapi.net,DIRECT
+  # - DOMAIN-SUFFIX,bilibili.com,DIRECT
+  - DOMAIN-SUFFIX,biligame.com,DIRECT
+  - DOMAIN-SUFFIX,biligame.net,DIRECT
+  - DOMAIN-SUFFIX,hdslb.com,DIRECT
+  - DOMAIN-SUFFIX,im9.com,DIRECT
+
+  # > IQIYI
+  - DOMAIN-KEYWORD,qiyi,DIRECT
+  - DOMAIN-SUFFIX,qy.net,DIRECT
+
+  # > letv
+  - DOMAIN-SUFFIX,api.mob.app.letv.com,DIRECT
+
+  # # > NeteaseMusic
+  # - DOMAIN-SUFFIX,163yun.com,DIRECT
+  # - DOMAIN-SUFFIX,music.126.net,DIRECT
+  # - DOMAIN-SUFFIX,music.163.com,DIRECT
+
+  # # > Tencent Video
+  # - DOMAIN-SUFFIX,vv.video.qq.com,DIRECT
+
+  # China Area Network
+  # > Microsoft
+  - DOMAIN-SUFFIX,microsoft.com,DIRECT
+  - DOMAIN-SUFFIX,windows.com,DIRECT
+  - DOMAIN-SUFFIX,windows.net,DIRECT
+  - DOMAIN-SUFFIX,sfx.ms,DIRECT
+  - DOMAIN-SUFFIX,sharepoint.com,DIRECT
+  - DOMAIN-KEYWORD,officecdn,DIRECT
+  # > Blizzard
+  - DOMAIN-SUFFIX,blizzard.com,DIRECT
+  - DOMAIN-SUFFIX,battle.net,DIRECT
+  - DOMAIN,blzddist1-a.akamaihd.net,DIRECT
+  # > Steam
+  - DOMAIN-SUFFIX,steampowered.com,🚀 选择代理
+  - DOMAIN-SUFFIX,steam-chat.com,🌐 突破锁区
+  - DOMAIN-KEYWORD,steamcdn,🌐 突破锁区
+  - DOMAIN-KEYWORD,steamstore,🌐 突破锁区
+  - DOMAIN-KEYWORD,steamuserimages,🌐 突破锁区
+  - DOMAIN-KEYWORD,steambroadcast,🌐 突破锁区
+  # > Tencent
+  #USER-AGENT,MicroMessenger%20Client,DIRECT
+  #USER-AGENT,WeChat*,DIRECT
+  - DOMAIN-SUFFIX,qq.com,DIRECT
+  # - DOMAIN-SUFFIX,qpic.cn,DIRECT
+  - DOMAIN-SUFFIX,tencent.com,DIRECT
+  # > Alibaba
+  - DOMAIN-SUFFIX,alibaba.com,DIRECT
+  - DOMAIN-SUFFIX,alicdn.com,DIRECT
+  - DOMAIN-SUFFIX,amap.com,DIRECT
+  - DOMAIN-SUFFIX,dingtalk.com,DIRECT
+  - DOMAIN-SUFFIX,taobao.com,DIRECT
+  - DOMAIN-SUFFIX,tmall.com,DIRECT
+  - DOMAIN-SUFFIX,ykimg.com,DIRECT
+  - DOMAIN-SUFFIX,youku.com,DIRECT
+  - DOMAIN-SUFFIX,xiami.com,DIRECT
+  - DOMAIN-SUFFIX,xiami.net,DIRECT
+  # > NetEase
+  - DOMAIN-SUFFIX,163.com,DIRECT
+  - DOMAIN-SUFFIX,126.net,DIRECT
+  - DOMAIN-SUFFIX,163yun.com,DIRECT
+  # > Sohu
+  # - DOMAIN-SUFFIX,sohu.com.cn,DIRECT
+  # - DOMAIN-SUFFIX,itc.cn,DIRECT
+  - DOMAIN-SUFFIX,sohu.com,DIRECT
+  - DOMAIN-SUFFIX,v-56.com,DIRECT
+  # > Sina
+  - DOMAIN-SUFFIX,weibo.com,DIRECT
+  # - DOMAIN-SUFFIX,weibo.cn,DIRECT
+  # > JD
+  - DOMAIN-SUFFIX,jd.com,DIRECT
+  - DOMAIN-SUFFIX,jd.hk,DIRECT
+  - DOMAIN-SUFFIX,360buyimg.com,DIRECT
+  # > MI
+  - DOMAIN-SUFFIX,duokan.com,DIRECT
+  - DOMAIN-SUFFIX,mi-img.com,DIRECT
+  # - DOMAIN-SUFFIX,mifile.cn,DIRECT
+  - DOMAIN-SUFFIX,xiaomi.com,DIRECT
+  # > bilibili
+  - DOMAIN-SUFFIX,acgvideo.com,DIRECT
+  - DOMAIN-SUFFIX,bilibili.com,DIRECT
+  - DOMAIN-SUFFIX,hdslb.com,DIRECT
+  # > iQiyi
+  - DOMAIN-SUFFIX,iqiyi.com,DIRECT
+  - DOMAIN-SUFFIX,iqiyipic.com,DIRECT
+  - DOMAIN-SUFFIX,71.am.com,DIRECT
+  # > HunanTV
+  - DOMAIN-SUFFIX,hitv.com,DIRECT
+  - DOMAIN-SUFFIX,mgtv.com,DIRECT
+  # > Meitu
+  - DOMAIN-SUFFIX,meitu.com,DIRECT
+  - DOMAIN-SUFFIX,meitudata.com,DIRECT
+  - DOMAIN-SUFFIX,meipai.com,DIRECT
+  # > YYeTs
+  - DOMAIN-SUFFIX,zmzapi.com,DIRECT
+  - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
+  - DOMAIN-SUFFIX,zmzfile.com,DIRECT
+  - DOMAIN-SUFFIX,zmzapi.net,DIRECT
+  # > 蛋蛋赞
+  - DOMAIN-SUFFIX,baduziyuan.com,DIRECT
+  - DOMAIN-SUFFIX,com-hs-hkdy.com,DIRECT
+  - DOMAIN-SUFFIX,czybjz.com,DIRECT
+  - DOMAIN-SUFFIX,dandanzan.com,DIRECT
+  - DOMAIN-SUFFIX,fjhps.com,DIRECT
+  - DOMAIN-SUFFIX,kuyunbo.club,DIRECT
+  # > Baidu
+  - DOMAIN-SUFFIX,baidu.com,DIRECT
+  - DOMAIN-SUFFIX,baidubcr.com,DIRECT
+  - DOMAIN-SUFFIX,bdstatic.com,DIRECT
+  # > ChinaNet
+  # - DOMAIN-SUFFIX,189.cn,DIRECT
+  - DOMAIN-SUFFIX,21cn.com,DIRECT
+  # > ByteDance
+  # - DOMAIN-SUFFIX,bytecdn.cn,DIRECT
+  - DOMAIN-SUFFIX,pstatp.com,DIRECT
+  - DOMAIN-SUFFIX,snssdk.com,DIRECT
+  - DOMAIN-SUFFIX,toutiao.com,DIRECT
+  # > Content Delivery Network
+  # > Akamai
+  - DOMAIN-SUFFIX,akadns.net,DIRECT
+  # - DOMAIN-SUFFIX,akamai.net,DIRECT
+  # - DOMAIN-SUFFIX,akamaiedge.net,DIRECT
+  # - DOMAIN-SUFFIX,akamaihd.net,DIRECT
+  # - DOMAIN-SUFFIX,akamaistream.net,DIRECT
+  # - DOMAIN-SUFFIX,akamaized.net,DIRECT
+  # > ChinaNetCenter
+  - DOMAIN-SUFFIX,chinanetcenter.com,DIRECT
+  - DOMAIN-SUFFIX,wangsu.com,DIRECT
+  # > IP Query
+  - DOMAIN-SUFFIX,ipip.net,DIRECT
+  # - DOMAIN-SUFFIX,ip.cn,DIRECT
+  - DOMAIN-SUFFIX,ip.la,DIRECT
+  - DOMAIN-SUFFIX,ip-cdn.com,DIRECT
+  - DOMAIN-SUFFIX,ipv6-test.com,DIRECT
+  - DOMAIN-SUFFIX,test-ipv6.com,DIRECT
+  - DOMAIN-SUFFIX,whatismyip.com,DIRECT
+  - DOMAIN,ip.bjango.com,DIRECT
+  # > Other
+  # - DOMAIN-SUFFIX,40017.cn,DIRECT
+  - DOMAIN-SUFFIX,broadcasthe.net,DIRECT
+  - DOMAIN-SUFFIX,cailianpress.com,DIRECT
+  - DOMAIN-SUFFIX,chdbits.co,DIRECT
+  - DOMAIN-SUFFIX,chushou.tv,DIRECT
+  - DOMAIN-SUFFIX,cmbchina.com,DIRECT
+  - DOMAIN-SUFFIX,cmbimg.com,DIRECT
+  - DOMAIN-SUFFIX,cmct.tv,DIRECT
+  # - DOMAIN-SUFFIX,cmvideo.cn,DIRECT
+  - DOMAIN-SUFFIX,cnlang.org,DIRECT
+  - DOMAIN-SUFFIX,doubanio.com,DIRECT
+  - DOMAIN-SUFFIX,douyu.com,DIRECT
+  # - DOMAIN-SUFFIX,douyucdn.cn,DIRECT
+  - DOMAIN-SUFFIX,dxycdn.com,DIRECT
+  - DOMAIN-SUFFIX,hicloud.com,DIRECT
+  - DOMAIN-SUFFIX,hdchina.org,DIRECT
+  - DOMAIN-SUFFIX,hdcmct.org,DIRECT
+  - DOMAIN-SUFFIX,ithome.com,DIRECT
+  - DOMAIN-SUFFIX,kkmh.com,DIRECT
+  - DOMAIN-SUFFIX,ksosoft.com,DIRECT
+  - DOMAIN-SUFFIX,maoyun.tv,DIRECT
+  - DOMAIN-SUFFIX,meituan.net,DIRECT
+  - DOMAIN-SUFFIX,mobike.com,DIRECT
+  - DOMAIN-SUFFIX,mubu.com,DIRECT
+  - DOMAIN-SUFFIX,myzaker.com,DIRECT
+  - DOMAIN-SUFFIX,ourbits.club,DIRECT
+  - DOMAIN-SUFFIX,passthepopcorn.me,DIRECT
+  - DOMAIN-SUFFIX,paypal.com,DIRECT
+  - DOMAIN-SUFFIX,paypalobjects.com,DIRECT
+  - DOMAIN-SUFFIX,privatehd.to,DIRECT
+  - DOMAIN-SUFFIX,redacted.ch,DIRECT
+  - DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+  - DOMAIN-SUFFIX,smzdm.com,DIRECT
+  - DOMAIN-SUFFIX,sogou.com,DIRECT
+  - DOMAIN-SUFFIX,teamviewer.com,DIRECT
+  - DOMAIN-SUFFIX,totheglory.im,DIRECT
+  - DOMAIN-SUFFIX,tp.m-team.cc,DIRECT
+  - DOMAIN-SUFFIX,udacity.com,DIRECT
+  - DOMAIN-SUFFIX,xmcdn.com,DIRECT
+  - DOMAIN-SUFFIX,yangkeduo.com,DIRECT
+  - DOMAIN-SUFFIX,zhihu.com,DIRECT
+  - DOMAIN-SUFFIX,zhimg.com,DIRECT
+  #USER-AGENT,NeteaseMusic*,DIRECT
+  #USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*,DIRECT
+
+  # (DNS Cache Pollution Protection)
+  # > Google
+  - DOMAIN-SUFFIX,appspot.com,🚀 选择代理
+  - DOMAIN-SUFFIX,blogger.com,🚀 选择代理
+  - DOMAIN-SUFFIX,getoutline.org,🚀 选择代理
+  - DOMAIN-SUFFIX,gvt0.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,gvt1.com,🚀 选择代理
+  - DOMAIN-SUFFIX,gvt3.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🚀 选择代理
+  - DOMAIN-KEYWORD,google,🚀 选择代理
+  - DOMAIN-KEYWORD,blogspot,🚀 选择代理
+  # > Facebook
+  - DOMAIN-SUFFIX,cdninstagram.com,🚀 选择代理
+  - DOMAIN-SUFFIX,fb.com,🚀 选择代理
+  - DOMAIN-SUFFIX,fb.me,🚀 选择代理
+  - DOMAIN-SUFFIX,fbaddins.com,🚀 选择代理
+  - DOMAIN-SUFFIX,fbcdn.net,🚀 选择代理
+  - DOMAIN-SUFFIX,fbsbx.com,🚀 选择代理
+  - DOMAIN-SUFFIX,fbworkmail.com,🚀 选择代理
+  - DOMAIN-SUFFIX,instagram.com,🚀 选择代理
+  - DOMAIN-SUFFIX,m.me,🚀 选择代理
+  - DOMAIN-SUFFIX,messenger.com,🚀 选择代理
+  - DOMAIN-SUFFIX,oculus.com,🚀 选择代理
+  - DOMAIN-SUFFIX,oculuscdn.com,🚀 选择代理
+  - DOMAIN-SUFFIX,rocksdb.org,🚀 选择代理
+  - DOMAIN-SUFFIX,whatsapp.com,🚀 选择代理
+  - DOMAIN-SUFFIX,whatsapp.net,🚀 选择代理
+  - DOMAIN-KEYWORD,facebook,🚀 选择代理
+  # > Twitter
+  - DOMAIN-SUFFIX,pscp.tv,🚀 选择代理
+  - DOMAIN-SUFFIX,periscope.tv,🚀 选择代理
+  - DOMAIN-SUFFIX,t.co,🚀 选择代理
+  - DOMAIN-SUFFIX,twimg.co,🚀 选择代理
+  - DOMAIN-SUFFIX,twimg.com,🚀 选择代理
+  - DOMAIN-SUFFIX,twitpic.com,🚀 选择代理
+  - DOMAIN-SUFFIX,vine.co,🚀 选择代理
+  - DOMAIN-SUFFIX,x.com,🚀 选择代理
+  - DOMAIN-KEYWORD,twitter,🚀 选择代理
+  # > Telegram
+  - DOMAIN-SUFFIX,t.me,🚀 选择代理
+  - DOMAIN-SUFFIX,tdesktop.com,🚀 选择代理
+  - DOMAIN-SUFFIX,telegra.ph,🚀 选择代理
+  - DOMAIN-SUFFIX,telegram.me,🚀 选择代理
+  - DOMAIN-SUFFIX,telegram.org,🚀 选择代理
+  # > Line
+  - DOMAIN-SUFFIX,line.me,🚀 选择代理
+  - DOMAIN-SUFFIX,line-apps.com,🚀 选择代理
+  - DOMAIN-SUFFIX,line-scdn.net,🚀 选择代理
+  - DOMAIN-SUFFIX,naver.jp,🚀 选择代理
+  # > Other
+  - DOMAIN-KEYWORD,github,🚀 选择代理
+  # - DOMAIN-KEYWORD,jav,🚀 选择代理
+  - DOMAIN-KEYWORD,pinterest,🚀 选择代理
+  - DOMAIN-KEYWORD,porn,⛔ 广告拦截
+  - DOMAIN-KEYWORD,wikileaks,🚀 选择代理
+  - DOMAIN-SUFFIX,4shared.com,🚀 选择代理
+  - DOMAIN-SUFFIX,881903.com,🚀 选择代理
+  - DOMAIN-SUFFIX,abc.net.au,🚀 选择代理
+  - DOMAIN-SUFFIX,abebooks.com,🚀 选择代理
+  - DOMAIN-SUFFIX,amazon.co.jp,🚀 选择代理
+  - DOMAIN-SUFFIX,apigee.com,🚀 选择代理
+  - DOMAIN-SUFFIX,apk-dl.com,🚀 选择代理
+  - DOMAIN-SUFFIX,apkmirror.com,🚀 选择代理
+  - DOMAIN-SUFFIX,apkmonk.com,🚀 选择代理
+  - DOMAIN-SUFFIX,apkpure.com,🚀 选择代理
+  - DOMAIN-SUFFIX,aptoide.com,🚀 选择代理
+  - DOMAIN-SUFFIX,archive.is,🚀 选择代理
+  - DOMAIN-SUFFIX,archive.org,🚀 选择代理
+  - DOMAIN-SUFFIX,arte.tv,🚀 选择代理
+  - DOMAIN-SUFFIX,ask.com,🚀 选择代理
+  - DOMAIN-SUFFIX,avgle.com,🚀 选择代理
+  - DOMAIN-SUFFIX,badoo.com,🚀 选择代理
+  - DOMAIN-SUFFIX,bandwagonhost.com,🚀 选择代理
+  - DOMAIN-SUFFIX,bbc.com,🚀 选择代理
+  - DOMAIN-SUFFIX,behance.net,🚀 选择代理
+  - DOMAIN-SUFFIX,bibox.com,🚀 选择代理
+  - DOMAIN-SUFFIX,biggo.com.tw,🚀 选择代理
+  - DOMAIN-SUFFIX,binance.com,🚀 选择代理
+  - DOMAIN-SUFFIX,bitcointalk.org,🚀 选择代理
+  - DOMAIN-SUFFIX,bitfinex.com,🚀 选择代理
+  - DOMAIN-SUFFIX,bitmex.com,🚀 选择代理
+  - DOMAIN-SUFFIX,bit-z.com,🚀 选择代理
+  - DOMAIN-SUFFIX,bloglovin.com,🚀 选择代理
+  - DOMAIN-SUFFIX,bloomberg.cn,🚀 选择代理
+  - DOMAIN-SUFFIX,bloomberg.com,🚀 选择代理
+  - DOMAIN-SUFFIX,book.com.tw,🚀 选择代理
+  - DOMAIN-SUFFIX,booklive.jp,🚀 选择代理
+  - DOMAIN-SUFFIX,books.com.tw,🚀 选择代理
+  - DOMAIN-SUFFIX,box.com,🚀 选择代理
+  - DOMAIN-SUFFIX,brookings.edu,🚀 选择代理
+  - DOMAIN-SUFFIX,businessinsider.com,🚀 选择代理
+  - DOMAIN-SUFFIX,bwh1.net,🚀 选择代理
+  - DOMAIN-SUFFIX,castbox.fm,🚀 选择代理
+  - DOMAIN-SUFFIX,cbc.ca,🚀 选择代理
+  - DOMAIN-SUFFIX,cdw.com,🚀 选择代理
+  - DOMAIN-SUFFIX,change.org,🚀 选择代理
+  - DOMAIN-SUFFIX,ck101.com,🚀 选择代理
+  - DOMAIN-SUFFIX,clarionproject.org,🚀 选择代理
+  - DOMAIN-SUFFIX,clyp.it,🚀 选择代理
+  - DOMAIN-SUFFIX,cna.com.tw,🚀 选择代理
+  - DOMAIN-SUFFIX,comparitech.com,🚀 选择代理
+  - DOMAIN-SUFFIX,conoha.jp,🚀 选择代理
+  - DOMAIN-SUFFIX,crucial.com,🚀 选择代理
+  - DOMAIN-SUFFIX,cts.com.tw,🚀 选择代理
+  - DOMAIN-SUFFIX,cw.com.tw,🚀 选择代理
+  - DOMAIN-SUFFIX,cyberctm.com,🚀 选择代理
+  - DOMAIN-SUFFIX,dailymotion.com,🚀 选择代理
+  - DOMAIN-SUFFIX,dailyview.tw,🚀 选择代理
+  - DOMAIN-SUFFIX,daum.net,🚀 选择代理
+  - DOMAIN-SUFFIX,daumcdn.net,🚀 选择代理
+  - DOMAIN-SUFFIX,dcard.tw,🚀 选择代理
+  - DOMAIN-SUFFIX,deepdiscount.com,🚀 选择代理
+  - DOMAIN-SUFFIX,deezer.com,🚀 选择代理
+  - DOMAIN-SUFFIX,depositphotos.com,🚀 选择代理
+  - DOMAIN-SUFFIX,disconnect.me,🚀 选择代理
+  - DOMAIN-SUFFIX,discordapp.com,🚀 选择代理
+  - DOMAIN-SUFFIX,discordapp.net,🚀 选择代理
+  - DOMAIN-SUFFIX,disqus.com,🚀 选择代理
+  - DOMAIN-SUFFIX,dns2go.com,🚀 选择代理
+  - DOMAIN-SUFFIX,dropbox.com,🚀 选择代理
+  - DOMAIN-SUFFIX,dropboxusercontent.com,🚀 选择代理
+  - DOMAIN-SUFFIX,duckduckgo.com,🚀 选择代理
+  - DOMAIN-SUFFIX,dw.com,🚀 选择代理
+  - DOMAIN-SUFFIX,dynu.com,🚀 选择代理
+  - DOMAIN-SUFFIX,earthcam.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ebookservice.tw,🚀 选择代理
+  - DOMAIN-SUFFIX,economist.com,🚀 选择代理
+  - DOMAIN-SUFFIX,edgecastcdn.net,🚀 选择代理
+  - DOMAIN-SUFFIX,edu,🚀 选择代理
+  - DOMAIN-SUFFIX,elpais.com,🚀 选择代理
+  - DOMAIN-SUFFIX,enanyang.my,🚀 选择代理
+  - DOMAIN-SUFFIX,euronews.com,🚀 选择代理
+  - DOMAIN-SUFFIX,feedly.com,🚀 选择代理
+  - DOMAIN-SUFFIX,files.wordpress.com,🚀 选择代理
+  - DOMAIN-SUFFIX,flickr.com,🚀 选择代理
+  - DOMAIN-SUFFIX,flitto.com,🚀 选择代理
+  - DOMAIN-SUFFIX,foreignpolicy.com,🚀 选择代理
+  - DOMAIN-SUFFIX,friday.tw,🚀 选择代理
+  - DOMAIN-SUFFIX,gate.io,🚀 选择代理
+  - DOMAIN-SUFFIX,getlantern.org,🚀 选择代理
+  - DOMAIN-SUFFIX,getsync.com,🚀 选择代理
+  - DOMAIN-SUFFIX,globalvoices.org,🚀 选择代理
+  - DOMAIN-SUFFIX,goo.ne.jp,🚀 选择代理
+  - DOMAIN-SUFFIX,goodreads.com,🚀 选择代理
+  - DOMAIN-SUFFIX,gov.tw,🚀 选择代理
+  - DOMAIN-SUFFIX,gumroad.com,🚀 选择代理
+  - DOMAIN-SUFFIX,hbg.com,🚀 选择代理
+  - DOMAIN-SUFFIX,hightail.com,🚀 选择代理
+  - DOMAIN-SUFFIX,hk01.com,🚀 选择代理
+  - DOMAIN-SUFFIX,hkbf.org,🚀 选择代理
+  - DOMAIN-SUFFIX,hkbookcity.com,🚀 选择代理
+  - DOMAIN-SUFFIX,hkej.com,🚀 选择代理
+  - DOMAIN-SUFFIX,hket.com,🚀 选择代理
+  - DOMAIN-SUFFIX,hkgolden.com,🚀 选择代理
+  - DOMAIN-SUFFIX,hootsuite.com,🚀 选择代理
+  - DOMAIN-SUFFIX,hudson.org,🚀 选择代理
+  - DOMAIN-SUFFIX,huobi.pro,🚀 选择代理
+  - DOMAIN-SUFFIX,initiummall.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ipfs.io,🚀 选择代理
+  - DOMAIN-SUFFIX,issuu.com,🚀 选择代理
+  - DOMAIN-SUFFIX,japantimes.co.jp,🚀 选择代理
+  - DOMAIN-SUFFIX,jiji.com,🚀 选择代理
+  - DOMAIN-SUFFIX,jinx.com,🚀 选择代理
+  - DOMAIN-SUFFIX,jkforum.net,🚀 选择代理
+  - DOMAIN-SUFFIX,joinmastodon.org,🚀 选择代理
+  - DOMAIN-SUFFIX,kakao.com,🚀 选择代理
+  - DOMAIN-SUFFIX,lihkg.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,live.com,🚀 选择代理
+  - DOMAIN-SUFFIX,mail.ru,🚀 选择代理
+  - DOMAIN-SUFFIX,matters.news,🚀 选择代理
+  - DOMAIN-SUFFIX,medium.com,🚀 选择代理
+  - DOMAIN-SUFFIX,mega.nz,🚀 选择代理
+  - DOMAIN-SUFFIX,mil,🚀 选择代理
+  - DOMAIN-SUFFIX,mobile01.com,🚀 选择代理
+  - DOMAIN-SUFFIX,naver.com,🚀 选择代理
+  - DOMAIN-SUFFIX,nikkei.com,🚀 选择代理
+  - DOMAIN-SUFFIX,nofile.io,🚀 选择代理
+  - DOMAIN-SUFFIX,now.com,🚀 选择代理
+  - DOMAIN-SUFFIX,nyt.com,🚀 选择代理
+  - DOMAIN-SUFFIX,nytchina.com,🚀 选择代理
+  - DOMAIN-SUFFIX,nytcn.me,🚀 选择代理
+  - DOMAIN-SUFFIX,nytco.com,🚀 选择代理
+  - DOMAIN-SUFFIX,nytimes.com,🚀 选择代理
+  - DOMAIN-SUFFIX,nytimg.com,🚀 选择代理
+  - DOMAIN-SUFFIX,nytlog.com,🚀 选择代理
+  - DOMAIN-SUFFIX,nytstyle.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ok.ru,🚀 选择代理
+  - DOMAIN-SUFFIX,okex.com,🚀 选择代理
+  - DOMAIN-SUFFIX,pcloud.com,🚀 选择代理
+  - DOMAIN-SUFFIX,pinimg.com,🚀 选择代理
+  - DOMAIN-SUFFIX,pixiv.net,🚀 选择代理
+  - DOMAIN-SUFFIX,pornhub.com,⛔ 广告拦截
+  - DOMAIN-SUFFIX,pureapk.com,🚀 选择代理
+  - DOMAIN-SUFFIX,quora.com,🚀 选择代理
+  - DOMAIN-SUFFIX,quoracdn.net,🚀 选择代理
+  - DOMAIN-SUFFIX,rakuten.co.jp,🚀 选择代理
+  - DOMAIN-SUFFIX,reddit.com,🚀 选择代理
+  - DOMAIN-SUFFIX,redditmedia.com,🚀 选择代理
+  - DOMAIN-SUFFIX,resilio.com,🚀 选择代理
+  - DOMAIN-SUFFIX,reuters.com,🚀 选择代理
+  - DOMAIN-SUFFIX,scmp.com,🚀 选择代理
+  - DOMAIN-SUFFIX,scribd.com,🚀 选择代理
+  - DOMAIN-SUFFIX,seatguru.com,🚀 选择代理
+  - DOMAIN-SUFFIX,shadowsocks.org,🚀 选择代理
+  - DOMAIN-SUFFIX,slideshare.net,🚀 选择代理
+  - DOMAIN-SUFFIX,soundcloud.com,🚀 选择代理
+  - DOMAIN-SUFFIX,startpage.com,🚀 选择代理
+  - DOMAIN-SUFFIX,steamcommunity.com,🚀 选择代理
+  - DOMAIN-SUFFIX,steemit.com,🚀 选择代理
+  - DOMAIN-SUFFIX,t66y.com,🚀 选择代理
+  - DOMAIN-SUFFIX,teco-hk.org,🚀 选择代理
+  - DOMAIN-SUFFIX,teco-mo.org,🚀 选择代理
+  - DOMAIN-SUFFIX,teddysun.com,🚀 选择代理
+  - DOMAIN-SUFFIX,theinitium.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tineye.com,🚀 选择代理
+  - DOMAIN-SUFFIX,torproject.org,🚀 选择代理
+  - DOMAIN-SUFFIX,tumblr.com,🚀 选择代理
+  - DOMAIN-SUFFIX,turbobit.net,🚀 选择代理
+  - DOMAIN-SUFFIX,twitch.tv,🚀 选择代理
+  - DOMAIN-SUFFIX,udn.com,🚀 选择代理
+  - DOMAIN-SUFFIX,unseen.is,🚀 选择代理
+  - DOMAIN-SUFFIX,upmedia.mg,🚀 选择代理
+  - DOMAIN-SUFFIX,uptodown.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ustream.tv,🚀 选择代理
+  - DOMAIN-SUFFIX,uwants.com,🚀 选择代理
+  - DOMAIN-SUFFIX,v2ray.com,🚀 选择代理
+  - DOMAIN-SUFFIX,viber.com,🚀 选择代理
+  - DOMAIN-SUFFIX,videopress.com,🚀 选择代理
+  - DOMAIN-SUFFIX,vimeo.com,🚀 选择代理
+  - DOMAIN-SUFFIX,voxer.com,🚀 选择代理
+  - DOMAIN-SUFFIX,vzw.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,w3schools.com,🚀 选择代理
+  - DOMAIN-SUFFIX,wattpad.com,🚀 选择代理
+  - DOMAIN-SUFFIX,whoer.net,🚀 选择代理
+  - DOMAIN-SUFFIX,wikimapia.org,🚀 选择代理
+  # - DOMAIN-SUFFIX,wikipedia.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wire.com,🚀 选择代理
+  - DOMAIN-SUFFIX,worldcat.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wsj.com,🚀 选择代理
+  - DOMAIN-SUFFIX,wsj.net,🚀 选择代理
+  # - DOMAIN-SUFFIX,xboxlive.com,🚀 选择代理
+  - DOMAIN-SUFFIX,xvideos.com,🚀 选择代理
+  - DOMAIN-SUFFIX,yahoo.com,🚀 选择代理
+  - DOMAIN-SUFFIX,yesasia.com,🚀 选择代理
+  - DOMAIN-SUFFIX,yes-news.com,🚀 选择代理
+  - DOMAIN-SUFFIX,yomiuri.co.jp,🚀 选择代理
+  - DOMAIN-SUFFIX,you-get.org,🚀 选择代理
+  - DOMAIN-SUFFIX,zb.com,🚀 选择代理
+  - DOMAIN-SUFFIX,zello.com,🚀 选择代理
+  - DOMAIN-SUFFIX,zeronet.io,🚀 选择代理
+  - DOMAIN,cdn-images.mailchimp.com,🚀 选择代理
+  - DOMAIN,id.heroku.com,🚀 选择代理
+
+  # (Region-Restricted Access Denied)
+  - DOMAIN-SUFFIX,apartmentratings.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,apartments.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,bankmobilevibe.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,bing.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,booktopia.com.au,🌐 突破锁区
+  - DOMAIN-SUFFIX,centauro.com.br,🌐 突破锁区
+  - DOMAIN-SUFFIX,clearsurance.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,costco.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,crackle.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,depositphotos.cn,🌐 突破锁区
+  - DOMAIN-SUFFIX,dish.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,dmm.co.jp,🌐 突破锁区
+  - DOMAIN-SUFFIX,dmm.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,dnvod.tv,🌐 突破锁区
+  - DOMAIN-SUFFIX,esurance.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,extmatrix.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,fastpic.ru,🌐 突破锁区
+  - DOMAIN-SUFFIX,flipboard.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,fnac.be,🌐 突破锁区
+  - DOMAIN-SUFFIX,fnac.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,funkyimg.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,fxnetworks.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,gettyimages.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,jcpenney.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,kknews.cc,🌐 突破锁区
+  - DOMAIN-SUFFIX,nationwide.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,nbc.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,nordstrom.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,nordstromimage.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,nordstromrack.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,read01.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,superpages.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,target.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,thinkgeek.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,tracfone.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,uploader.jp,🌐 突破锁区
+  - DOMAIN-SUFFIX,vevo.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,viu.tv,🌐 突破锁区
+  - DOMAIN-SUFFIX,vk.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,vsco.co,🌐 突破锁区
+  - DOMAIN-SUFFIX,xfinity.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,zattoo.com,🌐 突破锁区
+  - DOMAIN,abc.com,🌐 突破锁区
+  - DOMAIN,abc.go.com,🌐 突破锁区
+  - DOMAIN,abc.net.au,🌐 突破锁区
+  - DOMAIN,wego.here.com,🌐 突破锁区
+  #USER-AGENT,Roam*,🌐 突破锁区
+
+  # (The Most Popular Sites)
+  # > Apple
+  # > Apple URL Shortener
+  - DOMAIN-SUFFIX,appsto.re,🚀 选择代理
+  # > TestFlight
+  # - DOMAIN,beta.itunes.apple.com,🚀 选择代理
+  # > iBooks Store download
+  # - DOMAIN,books.itunes.apple.com,🚀 选择代理
+  # > iTunes Store Moveis Trailers
+  # - DOMAIN,hls.itunes.apple.com,🚀 选择代理
+  # App Store Preview
+  # - DOMAIN,itunes.apple.com,🚀 选择代理
+  # > Spotlight
+  - DOMAIN,api-glb-sea.smoot.apple.com,🚀 选择代理
+  # > Dictionary
+  - DOMAIN,lookup-api.apple.com,🚀 选择代理
+  #PROCESS-NAME,LookupViewService,🚀 选择代理
+  # > Google
+  - DOMAIN-SUFFIX,abc.xyz,🚀 选择代理
+  - DOMAIN-SUFFIX,android.com,🚀 选择代理
+  - DOMAIN-SUFFIX,androidify.com,🚀 选择代理
+  - DOMAIN-SUFFIX,dialogflow.com,🚀 选择代理
+  - DOMAIN-SUFFIX,autodraw.com,🚀 选择代理
+  - DOMAIN-SUFFIX,capitalg.com,🚀 选择代理
+  - DOMAIN-SUFFIX,certificate-transparency.org,🚀 选择代理
+  - DOMAIN-SUFFIX,chrome.com,🚀 选择代理
+  - DOMAIN-SUFFIX,chromeexperiments.com,🚀 选择代理
+  - DOMAIN-SUFFIX,chromestatus.com,🚀 选择代理
+  - DOMAIN-SUFFIX,chromium.org,🚀 选择代理
+  - DOMAIN-SUFFIX,creativelab5.com,🚀 选择代理
+  - DOMAIN-SUFFIX,debug.com,🚀 选择代理
+  - DOMAIN-SUFFIX,deepmind.com,🚀 选择代理
+  - DOMAIN-SUFFIX,firebaseio.com,🚀 选择代理
+  - DOMAIN-SUFFIX,getmdl.io,🚀 选择代理
+  - DOMAIN-SUFFIX,ggpht.com,🚀 选择代理
+  - DOMAIN-SUFFIX,gmail.com,🚀 选择代理
+  - DOMAIN-SUFFIX,gmodules.com,🚀 选择代理
+  - DOMAIN-SUFFIX,godoc.org,🚀 选择代理
+  - DOMAIN-SUFFIX,golang.org,🚀 选择代理
+  - DOMAIN-SUFFIX,gstatic.com,🚀 选择代理
+  - DOMAIN-SUFFIX,gv.com,🚀 选择代理
+  - DOMAIN-SUFFIX,gwtproject.org,🚀 选择代理
+  - DOMAIN-SUFFIX,itasoftware.com,🚀 选择代理
+  - DOMAIN-SUFFIX,madewithcode.com,🚀 选择代理
+  - DOMAIN-SUFFIX,material.io,🚀 选择代理
+  - DOMAIN-SUFFIX,polymer-project.org,🚀 选择代理
+  # - DOMAIN-SUFFIX,admin.recaptcha.net,🚀 选择代理
+  # - DOMAIN-SUFFIX,recaptcha.net,🚀 选择代理
+  - DOMAIN-SUFFIX,shattered.io,🚀 选择代理
+  - DOMAIN-SUFFIX,synergyse.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tensorflow.org,🚀 选择代理
+  - DOMAIN-SUFFIX,tiltbrush.com,🚀 选择代理
+  - DOMAIN-SUFFIX,waveprotocol.org,🚀 选择代理
+  - DOMAIN-SUFFIX,waymo.com,🚀 选择代理
+  - DOMAIN-SUFFIX,webmproject.org,🚀 选择代理
+  - DOMAIN-SUFFIX,webrtc.org,🚀 选择代理
+  - DOMAIN-SUFFIX,whatbrowser.org,🚀 选择代理
+  - DOMAIN-SUFFIX,widevine.com,🚀 选择代理
+  - DOMAIN-SUFFIX,x.company,🚀 选择代理
+  - DOMAIN-SUFFIX,youtu.be,🚀 选择代理
+  - DOMAIN-SUFFIX,yt.be,🚀 选择代理
+  - DOMAIN-SUFFIX,ytimg.com,🚀 选择代理
+  # > Steam
+  # - DOMAIN,media.steampowered.com,🚀 选择代理
+  # - DOMAIN,store.steampowered.com,🚀 选择代理
+  # > Other
+  - DOMAIN-SUFFIX,0rz.tw,🚀 选择代理
+  - DOMAIN-SUFFIX,4bluestones.biz,🚀 选择代理
+  - DOMAIN-SUFFIX,9bis.net,🚀 选择代理
+  - DOMAIN-SUFFIX,allconnected.co,🚀 选择代理
+  - DOMAIN-SUFFIX,amazonaws.com,🚀 选择代理
+  - DOMAIN-SUFFIX,aol.com,🚀 选择代理
+  - DOMAIN-SUFFIX,bcc.com.tw,🚀 选择代理
+  - DOMAIN-SUFFIX,bit.ly,🚀 选择代理
+  - DOMAIN-SUFFIX,bitshare.com,🚀 选择代理
+  - DOMAIN-SUFFIX,blog.jp,🚀 选择代理
+  - DOMAIN-SUFFIX,blogimg.jp,🚀 选择代理
+  - DOMAIN-SUFFIX,blogtd.org,🚀 选择代理
+  - DOMAIN-SUFFIX,broadcast.co.nz,🚀 选择代理
+  - DOMAIN-SUFFIX,camfrog.com,🚀 选择代理
+  - DOMAIN-SUFFIX,cfos.de,🚀 选择代理
+  - DOMAIN-SUFFIX,citypopulation.de,🚀 选择代理
+  - DOMAIN-SUFFIX,cloudfront.net,🚀 选择代理
+  - DOMAIN-SUFFIX,ctitv.com.tw,🚀 选择代理
+  - DOMAIN-SUFFIX,cuhk.edu.hk,🚀 选择代理
+  - DOMAIN-SUFFIX,cusu.hk,🚀 选择代理
+  - DOMAIN-SUFFIX,discuss.com.hk,🚀 选择代理
+  - DOMAIN-SUFFIX,dropboxapi.com,🚀 选择代理
+  - DOMAIN-SUFFIX,edditstatic.com,🚀 选择代理
+  - DOMAIN-SUFFIX,flickriver.com,🚀 选择代理
+  - DOMAIN-SUFFIX,focustaiwan.tw,🚀 选择代理
+  - DOMAIN-SUFFIX,free.fr,🚀 选择代理
+  - DOMAIN-SUFFIX,ftchinese.com,🚀 选择代理
+  - DOMAIN-SUFFIX,gigacircle.com,🚀 选择代理
+  - DOMAIN-SUFFIX,gov,🚀 选择代理
+  - DOMAIN-SUFFIX,hk-pub.com,🚀 选择代理
+  - DOMAIN-SUFFIX,hosting.co.uk,🚀 选择代理
+  - DOMAIN-SUFFIX,hwcdn.net,🚀 选择代理
+  - DOMAIN-SUFFIX,jtvnw.net,🚀 选择代理
+  - DOMAIN-SUFFIX,linksalpha.com,🚀 选择代理
+  - DOMAIN-SUFFIX,manyvids.com,🚀 选择代理
+  - DOMAIN-SUFFIX,myactimes.com,🚀 选择代理
+  - DOMAIN-SUFFIX,newsblur.com,🚀 选择代理
+  - DOMAIN-SUFFIX,now.im,🚀 选择代理
+  - DOMAIN-SUFFIX,redditlist.com,🚀 选择代理
+  - DOMAIN-SUFFIX,signal.org,🚀 选择代理
+  - DOMAIN-SUFFIX,sparknotes.com,🚀 选择代理
+  - DOMAIN-SUFFIX,streetvoice.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ttvnw.net,🚀 选择代理
+  - DOMAIN-SUFFIX,tv.com,🚀 选择代理
+  - DOMAIN-SUFFIX,twitchcdn.net,🚀 选择代理
+  - DOMAIN-SUFFIX,typepad.com,🚀 选择代理
+  - DOMAIN-SUFFIX,udnbkk.com,🚀 选择代理
+  - DOMAIN-SUFFIX,whispersystems.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wikia.com,🚀 选择代理
+  - DOMAIN-SUFFIX,wn.com,🚀 选择代理
+  - DOMAIN-SUFFIX,wolframalpha.com,🚀 选择代理
+  - DOMAIN-SUFFIX,x-art.com,🚀 选择代理
+  - DOMAIN-SUFFIX,yimg.com,🚀 选择代理
+
+  - DOMAIN-KEYWORD,dlercloud,🚀 选择代理
+  - DOMAIN-SUFFIX,dler.cloud,🚀 选择代理
+
+  # > IQIYI
+  - IP-CIDR,101.227.0.0/16,DIRECT
+  - IP-CIDR,101.224.0.0/13,DIRECT
+  - IP-CIDR,119.176.0.0/12,DIRECT
+
+  # > Youku
+  - IP-CIDR,106.11.0.0/16,DIRECT
+
+  # > Telegram
+  - IP-CIDR,67.198.55.0/24,🚀 选择代理
+  - IP-CIDR,91.108.4.0/22,🚀 选择代理
+  - IP-CIDR,91.108.8.0/22,🚀 选择代理
+  - IP-CIDR,91.108.12.0/22,🚀 选择代理
+
+  # Apple
+  - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT # 如果您并不信任此服务提供商或防止其下载消耗过多带宽资源，可以进入 Safari 设置，关闭 Fraudulent Website Warning 功能，并使用 REJECT 策略。
+  - DOMAIN,safebrowsing.googleapis.com,DIRECT # 如果您并不信任此服务提供商或防止其下载消耗过多带宽资源，可以进入 Safari 设置，关闭 Fraudulent Website Warning 功能，并使用 REJECT 策略。
+  - DOMAIN,developer.apple.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,digicert.com,🚀 选择代理
+  # - DOMAIN,ocsp.verisign.net,🚀 选择代理
+  - DOMAIN-SUFFIX,apps.apple.com,🌐 突破锁区
+  - DOMAIN,testflight.apple.com,🌐 突破锁区
+  - DOMAIN,sandbox.itunes.apple.com,🌐 突破锁区
+  - DOMAIN,itunes.apple.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,blobstore.apple.com,🌐 突破锁区
+  - DOMAIN,cvws.icloud-content.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,music.apple.com,DIRECT
+  - DOMAIN-SUFFIX,mzstatic.com,DIRECT
+  - DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+  - DOMAIN-SUFFIX,icloud.com,DIRECT
+  - DOMAIN-SUFFIX,icloud-content.com,DIRECT
+  # - DOMAIN-SUFFIX,me.com,DIRECT
+  - DOMAIN-SUFFIX,mzstatic.com,DIRECT
+  - DOMAIN-SUFFIX,akadns.net,DIRECT
+  - DOMAIN-SUFFIX,aaplimg.com,DIRECT
+  - DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+  - DOMAIN-SUFFIX,apple.com,DIRECT
+  - DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+  # - DOMAIN,e.crashlytics.com,⛔ 广告拦截 //注释此选项有助于大多数App开发者分析崩溃信息；如果您拒绝一切崩溃数据统计、搜集，请取消 # 注释。
+
+  # 国内网站
+  - DOMAIN-SUFFIX,126.com,DIRECT
+  - DOMAIN-SUFFIX,126.net,DIRECT
+  - DOMAIN-SUFFIX,127.net,DIRECT
+  - DOMAIN-SUFFIX,163.com,DIRECT
+  - DOMAIN-SUFFIX,360buyimg.com,DIRECT
+  - DOMAIN-SUFFIX,36kr.com,DIRECT
+  - DOMAIN-SUFFIX,acfun.tv,DIRECT
+  - DOMAIN-SUFFIX,air-matters.com,DIRECT
+  - DOMAIN-SUFFIX,aixifan.com,DIRECT
+  - DOMAIN-KEYWORD,alicdn,DIRECT
+  - DOMAIN-KEYWORD,alipay,DIRECT
+  - DOMAIN-KEYWORD,taobao,DIRECT
+  - DOMAIN-SUFFIX,amap.com,DIRECT
+  - DOMAIN-SUFFIX,autonavi.com,DIRECT
+  - DOMAIN-KEYWORD,baidu,DIRECT
+  - DOMAIN-SUFFIX,bdimg.com,DIRECT
+  - DOMAIN-SUFFIX,bdstatic.com,DIRECT
+  - DOMAIN-SUFFIX,bilibili.com,DIRECT
+  - DOMAIN-SUFFIX,bilivideo.com,DIRECT
+  - DOMAIN-SUFFIX,caiyunapp.com,DIRECT
+  - DOMAIN-SUFFIX,clouddn.com,DIRECT
+  - DOMAIN-SUFFIX,cnbeta.com,DIRECT
+  - DOMAIN-SUFFIX,cnbetacdn.com,DIRECT
+  - DOMAIN-SUFFIX,cootekservice.com,DIRECT
+  - DOMAIN-SUFFIX,csdn.net,DIRECT
+  - DOMAIN-SUFFIX,ctrip.com,DIRECT
+  - DOMAIN-SUFFIX,dgtle.com,DIRECT
+  - DOMAIN-SUFFIX,dianping.com,DIRECT
+  - DOMAIN-SUFFIX,douban.com,DIRECT
+  - DOMAIN-SUFFIX,doubanio.com,DIRECT
+  - DOMAIN-SUFFIX,duokan.com,DIRECT
+  - DOMAIN-SUFFIX,easou.com,DIRECT
+  - DOMAIN-SUFFIX,ele.me,DIRECT
+  - DOMAIN-SUFFIX,feng.com,DIRECT
+  - DOMAIN-SUFFIX,fir.im,DIRECT
+  - DOMAIN-SUFFIX,frdic.com,DIRECT
+  - DOMAIN-SUFFIX,g-cores.com,DIRECT
+  - DOMAIN-SUFFIX,godic.net,DIRECT
+  - DOMAIN-SUFFIX,gtimg.com,DIRECT
+  - DOMAIN,cdn.hockeyapp.net,DIRECT
+  - DOMAIN-SUFFIX,hongxiu.com,DIRECT
+  - DOMAIN-SUFFIX,hxcdn.net,DIRECT
+  - DOMAIN-SUFFIX,iciba.com,DIRECT
+  - DOMAIN-SUFFIX,ifeng.com,DIRECT
+  - DOMAIN-SUFFIX,ifengimg.com,DIRECT
+  - DOMAIN-SUFFIX,ipip.net,DIRECT
+  - DOMAIN-SUFFIX,iqiyi.com,DIRECT
+  - DOMAIN-SUFFIX,jd.com,DIRECT
+  - DOMAIN-SUFFIX,jianshu.com,DIRECT
+  - DOMAIN-SUFFIX,knewone.com,DIRECT
+  - DOMAIN-SUFFIX,le.com,DIRECT
+  - DOMAIN-SUFFIX,lecloud.com,DIRECT
+  - DOMAIN-SUFFIX,lemicp.com,DIRECT
+  - DOMAIN-SUFFIX,licdn.com,DIRECT
+  - DOMAIN-SUFFIX,linkedin.com,DIRECT
+  - DOMAIN-SUFFIX,luoo.net,DIRECT
+  - DOMAIN-SUFFIX,meituan.com,DIRECT
+  - DOMAIN-SUFFIX,meituan.net,DIRECT
+  - DOMAIN-SUFFIX,mi.com,DIRECT
+  - DOMAIN-SUFFIX,miaopai.com,DIRECT
+  - DOMAIN-SUFFIX,microsoft.com,DIRECT
+  - DOMAIN-SUFFIX,microsoftonline.com,DIRECT
+  - DOMAIN-SUFFIX,miui.com,DIRECT
+  - DOMAIN-SUFFIX,miwifi.com,DIRECT
+  - DOMAIN-SUFFIX,mob.com,DIRECT
+  - DOMAIN-SUFFIX,netease.com,DIRECT
+  - DOMAIN-SUFFIX,office.com,DIRECT
+  - DOMAIN-SUFFIX,office365.com,DIRECT
+  - DOMAIN-KEYWORD,officecdn,DIRECT
+  - DOMAIN-SUFFIX,oschina.net,DIRECT
+  - DOMAIN-SUFFIX,ppsimg.com,DIRECT
+  - DOMAIN-SUFFIX,pstatp.com,DIRECT
+  - DOMAIN-SUFFIX,qcloud.com,DIRECT
+  - DOMAIN-SUFFIX,qdaily.com,DIRECT
+  - DOMAIN-SUFFIX,qdmm.com,DIRECT
+  - DOMAIN-SUFFIX,qhimg.com,DIRECT
+  - DOMAIN-SUFFIX,qhres.com,DIRECT
+  - DOMAIN-SUFFIX,qidian.com,DIRECT
+  - DOMAIN-SUFFIX,qihucdn.com,DIRECT
+  - DOMAIN-SUFFIX,qiniu.com,DIRECT
+  - DOMAIN-SUFFIX,qiniucdn.com,DIRECT
+  - DOMAIN-SUFFIX,qiyipic.com,DIRECT
+  - DOMAIN-SUFFIX,qq.com,DIRECT
+  - DOMAIN-SUFFIX,qqurl.com,DIRECT
+  - DOMAIN-SUFFIX,rarbg.to,DIRECT
+  - DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+  - DOMAIN-SUFFIX,segmentfault.com,DIRECT
+  - DOMAIN-SUFFIX,sinaapp.com,DIRECT
+  - DOMAIN-SUFFIX,smzdm.com,DIRECT
+  - DOMAIN-SUFFIX,snapdrop.net,DIRECT
+  - DOMAIN-SUFFIX,sogou.com,DIRECT
+  - DOMAIN-SUFFIX,sogoucdn.com,DIRECT
+  - DOMAIN-SUFFIX,sohu.com,DIRECT
+  - DOMAIN-SUFFIX,soku.com,DIRECT
+  # - DOMAIN-SUFFIX,speedtest.net,DIRECT
+  - DOMAIN-SUFFIX,sspai.com,DIRECT
+  - DOMAIN-SUFFIX,suning.com,DIRECT
+  - DOMAIN-SUFFIX,taobao.com,DIRECT
+  - DOMAIN-SUFFIX,tencent.com,DIRECT
+  - DOMAIN-SUFFIX,tenpay.com,DIRECT
+  - DOMAIN-SUFFIX,tianyancha.com,DIRECT
+  - DOMAIN-SUFFIX,tmall.com,DIRECT
+  - DOMAIN-SUFFIX,tudou.com,DIRECT
+  - DOMAIN-SUFFIX,umetrip.com,DIRECT
+  - DOMAIN-SUFFIX,upaiyun.com,DIRECT
+  - DOMAIN-SUFFIX,upyun.com,DIRECT
+  - DOMAIN-SUFFIX,veryzhun.com,DIRECT
+  - DOMAIN-SUFFIX,weather.com,DIRECT
+  - DOMAIN-SUFFIX,weibo.com,DIRECT
+  - DOMAIN-SUFFIX,xiami.com,DIRECT
+  - DOMAIN-SUFFIX,xiami.net,DIRECT
+  - DOMAIN-SUFFIX,xiaomicp.com,DIRECT
+  - DOMAIN-SUFFIX,ximalaya.com,DIRECT
+  - DOMAIN-SUFFIX,xmcdn.com,DIRECT
+  - DOMAIN-SUFFIX,xunlei.com,DIRECT
+  - DOMAIN-SUFFIX,yhd.com,DIRECT
+  - DOMAIN-SUFFIX,yihaodianimg.com,DIRECT
+  - DOMAIN-SUFFIX,yinxiang.com,DIRECT
+  - DOMAIN-SUFFIX,ykimg.com,DIRECT
+  - DOMAIN-SUFFIX,youdao.com,DIRECT
+  - DOMAIN-SUFFIX,youku.com,DIRECT
+  - DOMAIN-SUFFIX,zealer.com,DIRECT
+  - DOMAIN-SUFFIX,zhihu.com,DIRECT
+  - DOMAIN-SUFFIX,zhimg.com,DIRECT
+  - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
+  - DOMAIN-SUFFIX,zoho.com,DIRECT
+
+  # 国外网站
+  - DOMAIN-SUFFIX,9to5mac.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,abpchina.org,🚀 选择代理
+  - DOMAIN-SUFFIX,adblockplus.org,🚀 选择代理
+  - DOMAIN-SUFFIX,adobe.com,🚀 选择代理
+  - DOMAIN-SUFFIX,akamaized.net,🚀 选择代理
+  - DOMAIN-SUFFIX,alfredapp.com,🚀 选择代理
+  - DOMAIN-SUFFIX,amplitude.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ampproject.org,🚀 选择代理
+  - DOMAIN-SUFFIX,android.com,🚀 选择代理
+  - DOMAIN-SUFFIX,angularjs.org,🚀 选择代理
+  - DOMAIN-SUFFIX,aolcdn.com,🚀 选择代理
+  - DOMAIN-SUFFIX,apkpure.com,🚀 选择代理
+  - DOMAIN-SUFFIX,appledaily.com,🚀 选择代理
+  - DOMAIN-SUFFIX,appshopper.com,🚀 选择代理
+  - DOMAIN-SUFFIX,appspot.com,🚀 选择代理
+  - DOMAIN-SUFFIX,arcgis.com,🚀 选择代理
+  - DOMAIN-SUFFIX,archive.org,🚀 选择代理
+  - DOMAIN-SUFFIX,archive.is,🚀 选择代理
+  - DOMAIN-SUFFIX,armorgames.com,🚀 选择代理
+  - DOMAIN-SUFFIX,aspnetcdn.com,🚀 选择代理
+  - DOMAIN-SUFFIX,att.com,🚀 选择代理
+  - DOMAIN-SUFFIX,awsstatic.com,🚀 选择代理
+  - DOMAIN-SUFFIX,azureedge.net,🚀 选择代理
+  - DOMAIN-SUFFIX,azurewebsites.net,🚀 选择代理
+  # - DOMAIN-SUFFIX,bing.com,🚀 选择代理
+  - DOMAIN-SUFFIX,bintray.com,🚀 选择代理
+  - DOMAIN-SUFFIX,bit.com,🚀 选择代理
+  - DOMAIN-SUFFIX,bit.ly,🚀 选择代理
+  - DOMAIN-SUFFIX,bitbucket.org,🚀 选择代理
+  - DOMAIN-SUFFIX,bjango.com,🚀 选择代理
+  - DOMAIN-SUFFIX,bkrtx.com,🚀 选择代理
+  - DOMAIN-SUFFIX,blog.com,🚀 选择代理
+  - DOMAIN-SUFFIX,blogcdn.com,🚀 选择代理
+  - DOMAIN-SUFFIX,blogger.com,🚀 选择代理
+  - DOMAIN-SUFFIX,blogsmithmedia.com,🚀 选择代理
+  - DOMAIN-SUFFIX,blogspot.com,🚀 选择代理
+  - DOMAIN-SUFFIX,blogspot.hk,🚀 选择代理
+  - DOMAIN-SUFFIX,bloomberg.com,🚀 选择代理
+  - DOMAIN-SUFFIX,box.com,🚀 选择代理
+  - DOMAIN-SUFFIX,box.net,🚀 选择代理
+  - DOMAIN-SUFFIX,cachefly.net,🚀 选择代理
+  - DOMAIN-SUFFIX,chromium.org,🚀 选择代理
+  - DOMAIN-SUFFIX,cl.ly,🚀 选择代理
+  - DOMAIN-SUFFIX,cloudflare.com,🚀 选择代理
+  - DOMAIN-SUFFIX,cloudfront.net,🚀 选择代理
+  - DOMAIN-SUFFIX,cloudmagic.com,🚀 选择代理
+  - DOMAIN-SUFFIX,cmail19.com,🚀 选择代理
+  - DOMAIN-SUFFIX,cnet.com,🚀 选择代理
+  - DOMAIN-SUFFIX,cocoapods.org,🚀 选择代理
+  - DOMAIN-SUFFIX,comodoca.com,🚀 选择代理
+  - DOMAIN-SUFFIX,crashlytics.com,🚀 选择代理
+  - DOMAIN-SUFFIX,culturedcode.com,🚀 选择代理
+  - DOMAIN-SUFFIX,d.pr,🚀 选择代理
+  - DOMAIN-SUFFIX,danilo.to,🚀 选择代理
+  - DOMAIN-SUFFIX,dayone.me,🚀 选择代理
+  - DOMAIN-SUFFIX,db.tt,🚀 选择代理
+  - DOMAIN-SUFFIX,deskconnect.com,🚀 选择代理
+  - DOMAIN-SUFFIX,disq.us,🚀 选择代理
+  - DOMAIN-SUFFIX,disqus.com,🚀 选择代理
+  - DOMAIN-SUFFIX,disquscdn.com,🚀 选择代理
+  - DOMAIN-SUFFIX,dnsimple.com,🚀 选择代理
+  - DOMAIN-SUFFIX,docker.com,🚀 选择代理
+  - DOMAIN-SUFFIX,dribbble.com,🚀 选择代理
+  - DOMAIN-SUFFIX,droplr.com,🚀 选择代理
+  - DOMAIN-SUFFIX,duckduckgo.com,🚀 选择代理
+  - DOMAIN-SUFFIX,dueapp.com,🚀 选择代理
+  - DOMAIN-SUFFIX,dytt8.net,🚀 选择代理
+  - DOMAIN-SUFFIX,edgecastcdn.net,🚀 选择代理
+  - DOMAIN-SUFFIX,edgekey.net,🚀 选择代理
+  - DOMAIN-SUFFIX,edgesuite.net,🚀 选择代理
+  - DOMAIN-SUFFIX,engadget.com,🚀 选择代理
+  - DOMAIN-SUFFIX,entrust.net,🚀 选择代理
+  - DOMAIN-SUFFIX,eurekavpt.com,🚀 选择代理
+  - DOMAIN-SUFFIX,evernote.com,🚀 选择代理
+  - DOMAIN-SUFFIX,fabric.io,🚀 选择代理
+  - DOMAIN-SUFFIX,fast.com,🚀 选择代理
+  - DOMAIN-SUFFIX,fastly.net,🚀 选择代理
+  - DOMAIN-SUFFIX,fc2.com,🚀 选择代理
+  - DOMAIN-SUFFIX,feedburner.com,🚀 选择代理
+  - DOMAIN-SUFFIX,feedly.com,🚀 选择代理
+  - DOMAIN-SUFFIX,feedsportal.com,🚀 选择代理
+  - DOMAIN-SUFFIX,fiftythree.com,🚀 选择代理
+  - DOMAIN-SUFFIX,firebaseio.com,🚀 选择代理
+  - DOMAIN-SUFFIX,flexibits.com,🚀 选择代理
+  - DOMAIN-SUFFIX,flickr.com,🚀 选择代理
+  - DOMAIN-SUFFIX,flipboard.com,🚀 选择代理
+  - DOMAIN-SUFFIX,g.co,🚀 选择代理
+  - DOMAIN-SUFFIX,gabia.net,🚀 选择代理
+  - DOMAIN-SUFFIX,geni.us,🚀 选择代理
+  - DOMAIN-SUFFIX,gfx.ms,🚀 选择代理
+  - DOMAIN-SUFFIX,ggpht.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ghostnoteapp.com,🚀 选择代理
+  - DOMAIN-SUFFIX,git.io,🚀 选择代理
+  - DOMAIN-KEYWORD,github,🚀 选择代理
+  - DOMAIN-SUFFIX,globalsign.com,🚀 选择代理
+  - DOMAIN-SUFFIX,gmodules.com,🚀 选择代理
+  - DOMAIN-SUFFIX,godaddy.com,🚀 选择代理
+  - DOMAIN-SUFFIX,golang.org,🚀 选择代理
+  - DOMAIN-SUFFIX,gongm.in,🚀 选择代理
+  - DOMAIN-SUFFIX,goo.gl,🚀 选择代理
+  - DOMAIN-SUFFIX,goodreaders.com,🚀 选择代理
+  - DOMAIN-SUFFIX,goodreads.com,🚀 选择代理
+  - DOMAIN-SUFFIX,gravatar.com,🚀 选择代理
+  - DOMAIN-SUFFIX,gstatic.com,🚀 选择代理
+  - DOMAIN-SUFFIX,gvt0.com,🚀 选择代理
+  - DOMAIN-SUFFIX,hockeyapp.net,🚀 选择代理
+  - DOMAIN-SUFFIX,hotmail.com,🚀 选择代理
+  - DOMAIN-SUFFIX,icons8.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ifixit.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ift.tt,🚀 选择代理
+  - DOMAIN-SUFFIX,ifttt.com,🚀 选择代理
+  - DOMAIN-SUFFIX,iherb.com,🚀 选择代理
+  - DOMAIN-SUFFIX,imageshack.us,🚀 选择代理
+  - DOMAIN-SUFFIX,img.ly,🚀 选择代理
+  - DOMAIN-SUFFIX,imgur.com,🚀 选择代理
+  - DOMAIN-SUFFIX,imore.com,🚀 选择代理
+  - DOMAIN-SUFFIX,instapaper.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ipn.li,🚀 选择代理
+  - DOMAIN-SUFFIX,is.gd,🚀 选择代理
+  - DOMAIN-SUFFIX,issuu.com,🚀 选择代理
+  - DOMAIN-SUFFIX,itgonglun.com,🚀 选择代理
+  - DOMAIN-SUFFIX,itun.es,🚀 选择代理
+  - DOMAIN-SUFFIX,ixquick.com,🚀 选择代理
+  - DOMAIN-SUFFIX,j.mp,🚀 选择代理
+  - DOMAIN-SUFFIX,js.revsci.net,🚀 选择代理
+  - DOMAIN-SUFFIX,jshint.com,🚀 选择代理
+  - DOMAIN-SUFFIX,jtvnw.net,🚀 选择代理
+  - DOMAIN-SUFFIX,justgetflux.com,🚀 选择代理
+  - DOMAIN-SUFFIX,kat.cr,🚀 选择代理
+  - DOMAIN-SUFFIX,klip.me,🚀 选择代理
+  - DOMAIN-SUFFIX,libsyn.com,🚀 选择代理
+  - DOMAIN-SUFFIX,linode.com,🚀 选择代理
+  - DOMAIN-SUFFIX,lithium.com,🚀 选择代理
+  - DOMAIN-SUFFIX,littlehj.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,live.com,🚀 选择代理
+  - DOMAIN-SUFFIX,live.net,🚀 选择代理
+  - DOMAIN-SUFFIX,livefilestore.com,🚀 选择代理
+  - DOMAIN-SUFFIX,llnwd.net,🚀 选择代理
+  - DOMAIN-SUFFIX,macid.co,🚀 选择代理
+  - DOMAIN-SUFFIX,macromedia.com,🚀 选择代理
+  - DOMAIN-SUFFIX,macrumors.com,🚀 选择代理
+  - DOMAIN-SUFFIX,mashable.com,🚀 选择代理
+  - DOMAIN-SUFFIX,mathjax.org,🚀 选择代理
+  - DOMAIN-SUFFIX,medium.com,🚀 选择代理
+  - DOMAIN-SUFFIX,mega.co.nz,🚀 选择代理
+  - DOMAIN-SUFFIX,mega.nz,🚀 选择代理
+  - DOMAIN-SUFFIX,megaupload.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,microsofttranslator.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,mindnode.com,🚀 选择代理
+  - DOMAIN-SUFFIX,mobile01.com,🚀 选择代理
+  - DOMAIN-SUFFIX,modmyi.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,msedge.net,🚀 选择代理
+  - DOMAIN-SUFFIX,myfontastic.com,🚀 选择代理
+  - DOMAIN-SUFFIX,name.com,🚀 选择代理
+  - DOMAIN-SUFFIX,nextmedia.com,🚀 选择代理
+  - DOMAIN-SUFFIX,nsstatic.net,🚀 选择代理
+  - DOMAIN-SUFFIX,nssurge.com,🚀 选择代理
+  - DOMAIN-SUFFIX,nyt.com,🚀 选择代理
+  - DOMAIN-SUFFIX,nytimes.com,🚀 选择代理
+  - DOMAIN-SUFFIX,omnigroup.com,🚀 选择代理
+  - DOMAIN-SUFFIX,onedrive.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,onenote.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ooyala.com,🚀 选择代理
+  - DOMAIN-SUFFIX,openvpn.net,🚀 选择代理
+  # - DOMAIN-SUFFIX,openwrt.org,🚀 选择代理
+  - DOMAIN-SUFFIX,orkut.com,🚀 选择代理
+  - DOMAIN-SUFFIX,osxdaily.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,outlook.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ow.ly,🚀 选择代理
+  - DOMAIN-SUFFIX,paddleapi.com,🚀 选择代理
+  - DOMAIN-SUFFIX,parallels.com,🚀 选择代理
+  - DOMAIN-SUFFIX,parse.com,🚀 选择代理
+  - DOMAIN-SUFFIX,pdfexpert.com,🚀 选择代理
+  - DOMAIN-SUFFIX,periscope.tv,🚀 选择代理
+  - DOMAIN-SUFFIX,pinboard.in,🚀 选择代理
+  - DOMAIN-SUFFIX,pinterest.com,🚀 选择代理
+  - DOMAIN-SUFFIX,pixelmator.com,🚀 选择代理
+  - DOMAIN-SUFFIX,pixiv.net,🚀 选择代理
+  - DOMAIN-SUFFIX,playpcesor.com,🚀 选择代理
+  - DOMAIN-KEYWORD,playstation,🚀 选择代理
+  # - DOMAIN-SUFFIX,playstation.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,playstation.com.hk,🚀 选择代理
+  # - DOMAIN-SUFFIX,playstation.net,🚀 选择代理
+  # - DOMAIN-SUFFIX,playstationnetwork.com,🚀 选择代理
+  - DOMAIN-SUFFIX,pushwoosh.com,🚀 选择代理
+  - DOMAIN-SUFFIX,rime.im,🚀 选择代理
+  - DOMAIN-SUFFIX,servebom.com,🚀 选择代理
+  - DOMAIN-SUFFIX,sfx.ms,🚀 选择代理
+  - DOMAIN-SUFFIX,shadowsocks.org,🚀 选择代理
+  - DOMAIN-SUFFIX,sharethis.com,🚀 选择代理
+  - DOMAIN-SUFFIX,shazam.com,🚀 选择代理
+  - DOMAIN-SUFFIX,skype.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,smartdns🚀 选择代理.com,🚀 选择代理
+  - DOMAIN-SUFFIX,smartmailcloud.com,🚀 选择代理
+  - DOMAIN-SUFFIX,sndcdn.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,sony.com,🚀 选择代理
+  - DOMAIN-SUFFIX,soundcloud.com,🚀 选择代理
+  - DOMAIN-SUFFIX,sourceforge.net,🚀 选择代理
+  - DOMAIN-SUFFIX,spotify.com,🚀 选择代理
+  - DOMAIN-SUFFIX,squarespace.com,🚀 选择代理
+  - DOMAIN-SUFFIX,sstatic.net,🚀 选择代理
+  - DOMAIN-SUFFIX,st.luluku.pw,🚀 选择代理
+  - DOMAIN-SUFFIX,stackoverflow.com,🚀 选择代理
+  - DOMAIN-SUFFIX,startpage.com,🚀 选择代理
+  - DOMAIN-SUFFIX,staticflickr.com,🚀 选择代理
+  - DOMAIN-SUFFIX,steamcommunity.com,🚀 选择代理
+  - DOMAIN-SUFFIX,symauth.com,🚀 选择代理
+  - DOMAIN-SUFFIX,symcb.com,🚀 选择代理
+  - DOMAIN-SUFFIX,symcd.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tapbots.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tapbots.net,🚀 选择代理
+  - DOMAIN-SUFFIX,tdesktop.com,🚀 选择代理
+  - DOMAIN-SUFFIX,techcrunch.com,🚀 选择代理
+  - DOMAIN-SUFFIX,techsmith.com,🚀 选择代理
+  - DOMAIN-SUFFIX,thepiratebay.org,🚀 选择代理
+  - DOMAIN-SUFFIX,theverge.com,🚀 选择代理
+  - DOMAIN-SUFFIX,time.com,🚀 选择代理
+  - DOMAIN-SUFFIX,timeinc.net,🚀 选择代理
+  - DOMAIN-SUFFIX,tiny.cc,🚀 选择代理
+  - DOMAIN-SUFFIX,tinypic.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tmblr.co,🚀 选择代理
+  - DOMAIN-SUFFIX,todoist.com,🚀 选择代理
+  - DOMAIN-SUFFIX,trello.com,🚀 选择代理
+  - DOMAIN-SUFFIX,trustasiassl.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tumblr.co,🚀 选择代理
+  - DOMAIN-SUFFIX,tumblr.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tweetdeck.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tweetmarker.net,🚀 选择代理
+  - DOMAIN-SUFFIX,twitch.tv,🚀 选择代理
+  - DOMAIN-SUFFIX,txmblr.com,🚀 选择代理
+  - DOMAIN-SUFFIX,typekit.net,🚀 选择代理
+  - DOMAIN-SUFFIX,ubertags.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ublock.org,🚀 选择代理
+  - DOMAIN-SUFFIX,ubnt.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ulyssesapp.com,🚀 选择代理
+  - DOMAIN-SUFFIX,urchin.com,🚀 选择代理
+  - DOMAIN-SUFFIX,usertrust.com,🚀 选择代理
+  - DOMAIN-SUFFIX,v.gd,🚀 选择代理
+  - DOMAIN-SUFFIX,v2ex.com,🚀 选择代理
+  - DOMAIN-SUFFIX,vimeo.com,🚀 选择代理
+  - DOMAIN-SUFFIX,vimeocdn.com,🚀 选择代理
+  - DOMAIN-SUFFIX,vine.co,🚀 选择代理
+  - DOMAIN-SUFFIX,vivaldi.com,🚀 选择代理
+  - DOMAIN-SUFFIX,vox-cdn.com,🚀 选择代理
+  - DOMAIN-SUFFIX,vsco.co,🚀 选择代理
+  - DOMAIN-SUFFIX,vultr.com,🚀 选择代理
+  - DOMAIN-SUFFIX,w.org,🚀 选择代理
+  # - DOMAIN-SUFFIX,w3schools.com,🚀 选择代理
+  - DOMAIN-SUFFIX,webtype.com,🚀 选择代理
+  - DOMAIN-SUFFIX,wikiwand.com,🚀 选择代理
+  - DOMAIN-SUFFIX,wikileaks.org,🚀 选择代理
+  # - DOMAIN-SUFFIX,wikimedia.org,🚀 选择代理
+  # - DOMAIN-SUFFIX,wikipedia.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,wikipedia.org,🚀 选择代理
+  # - DOMAIN-SUFFIX,windows.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,windows.net,🚀 选择代理
+  - DOMAIN-SUFFIX,wire.com,🚀 选择代理
+  - DOMAIN-SUFFIX,wordpress.com,🚀 选择代理
+  - DOMAIN-SUFFIX,workflowy.com,🚀 选择代理
+  - DOMAIN-SUFFIX,wp.com,🚀 选择代理
+  - DOMAIN-SUFFIX,wsj.com,🚀 选择代理
+  - DOMAIN-SUFFIX,wsj.net,🚀 选择代理
+  # - DOMAIN-SUFFIX,xda-developers.com,🚀 选择代理
+  - DOMAIN-SUFFIX,xeeno.com,🚀 选择代理
+  - DOMAIN-SUFFIX,xiti.com,🚀 选择代理
+  - DOMAIN-SUFFIX,yahoo.com,🚀 选择代理
+  - DOMAIN-SUFFIX,yimg.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ying.com,🚀 选择代理
+  - DOMAIN-SUFFIX,yoyo.org,🚀 选择代理
+  - DOMAIN-SUFFIX,ytimg.com,🚀 选择代理
+
+  # Telegram
+  - DOMAIN-SUFFIX,telegra.ph,🚀 选择代理
+  - DOMAIN-SUFFIX,telegram.org,🚀 选择代理
+
+  - IP-CIDR,91.108.4.0/22,🚀 选择代理,no-resolve
+  - IP-CIDR,91.108.8.0/22,🚀 选择代理,no-resolve
+  - IP-CIDR,91.108.12.0/22,🚀 选择代理,no-resolve
+  - IP-CIDR,91.108.16.0/22,🚀 选择代理,no-resolve
+  - IP-CIDR,91.108.56.0/22,🚀 选择代理,no-resolve
+  - IP-CIDR,149.154.160.0/22,🚀 选择代理,no-resolve
+  - IP-CIDR,149.154.164.0/22,🚀 选择代理,no-resolve
+  - IP-CIDR,149.154.168.0/22,🚀 选择代理,no-resolve
+  - IP-CIDR,149.154.172.0/22,🚀 选择代理,no-resolve
+
+  # 最终规则
+  - GEOIP,CN,❓ 疑似国内
+  - DOMAIN-SUFFIX,gvt1.com,🐟 漏网之鱼
+  - MATCH,🐟 漏网之鱼
