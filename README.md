@@ -4,7 +4,7 @@
 
 注意：加速链接可能会失效，如果无法更新订阅，请把所有链接从上到下每个试一遍！你可以在电脑浏览器上安装油猴脚本 [Github 增强 - 高速下载](https://greasyfork.org/zh-CN/scripts/412245)，在目录浏览点开 `list.txt`，然后在 `Raw` 按钮边上找到最新的加速链接。
 
-添加 Base64 订阅：
+## 添加 Base64 订阅：
 - [原始链接](https://raw.githubusercontent.com/skywrt/Preferred-service/master/list.txt)
 - [GhProxy.cn](https://ghproxy.cn/https://raw.githubusercontent.com/skywrt/Preferred-service/master/list.txt)
 - [GhProxy.com](https://mirror.ghproxy.com/https://raw.githubusercontent.com/skywrt/Preferred-service/master/list.txt)
@@ -18,7 +18,7 @@
 以下加速链接可能无效：
 - [KKGithub](https://raw.kkgithub.com/skywrt/Preferred-service/master/list.txt)
 
-或添加 Clash 订阅：（重磅：本项目同时提供 Meta 专用订阅，支持更多节点！要使用 Meta 专用订阅，**强烈建议将链接最后的 `.yml` 替换成 `.meta.yml`**。如果 Meta 提示解析错误，请**更新 Meta 至最新版本**！）
+## 添加 Clash 订阅：（重磅：本项目同时提供 Meta 专用订阅，支持更多节点！要使用 Meta 专用订阅，**强烈建议将链接最后的 `.yml` 替换成 `.meta.yml`**。如果 Meta 提示解析错误，请**更新 Meta 至最新版本**！）
 - [原始链接](https://raw.githubusercontent.com/skywrt/Preferred-service/master/list.yml)
 - [GhProxy.cn](https://ghproxy.cn/https://raw.githubusercontent.com/skywrt/Preferred-service/master/list.yml)
 - [GhProxy.com](https://mirror.ghproxy.com/https://raw.githubusercontent.com/skywrt/Preferred-service/master/list.yml)
