@@ -1,14 +1,14 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 1,4|🇷🇺_RU_俄罗斯_1
-  password: a3GFYt36Sm82Vys9
-  port: 9000
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
   name: 4|🇺_RU_
   password: BejrQvtu9sqUeNuZ
   port: 9024
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 4|🇷🇺_RU_俄罗斯_1
+  password: a3GFYt36Sm82Vys9
+  port: 9000
   server: 80.92.204.106
   type: ss
 - name: 5|RU_youtube@资源分享师_196
@@ -82,9 +82,22 @@ proxies:
   skip-cert-verify: true
   sni: cert.bitbyte.one
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 10|🇷🇺 11|公益|俄罗斯|V2
+  network: ws
+  port: '40045'
+  server: mz.flmweb.cc
+  tls: false
+  type: vmess
+  uuid: 1cbb8f04-b0cc-4520-8b17-ed412f457b9f
+  ws-opts:
+    headers:
+      Host: mz.flmweb.cc
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 12|🇷🇺 俄罗斯 RU BIZ
-  password: f67c9a19-85f2-4ffa-bc60-b7f2f313080e
+  password: 832a7496-7758-4a0e-ba0f-08d3ec07606f
   port: 35645
   server: ru.cooc.icu
   type: ss
