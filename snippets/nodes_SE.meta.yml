@@ -1,37 +1,25 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|1311d9dd7ca74a27a95366691014a0...
-  network: ws
-  port: 80
-  server: bmw.dargah.xyz
-  tls: false
-  type: vmess
-  udp: false
-  uuid: b1fecac5-0eb0-440c-ba9b-a937b34881d6
-  ws-opts:
-    path: /navigate?ed=1048
-- name: 5|SE | Stockholm B
-  network: tcp
-  password: e903fd09-85dd-45db-93b6-e4a6fee41839
-  port: 567
-  server: a27.zgcvpn.ru
-  type: trojan
-- grpc-opts:
-    grpc-service-name: grpc
-  name: 5|SE gr| Stockholm A
-  network: grpc
-  password: e903fd09-85dd-45db-93b6-e4a6fee41839
-  port: 443
-  server: ap108.zgcvpn.ru
-  type: trojan
 - name: 5|SE | Stockholm B2
   network: tcp
   password: e903fd09-85dd-45db-93b6-e4a6fee41839
   port: 567
   server: a32.zgcvpn.ru
+  type: trojan
+- name: 5|SE | Stockholm C CDN
+  network: ws
+  password: e903fd09-85dd-45db-93b6-e4a6fee41839
+  port: 443
+  server: a6.zgcvpn.ru
+  type: trojan
+  ws-opts:
+    path: '%2Fws'
+- grpc-opts:
+    grpc-service-name: grpc
+  name: 5|SE gr| Stockholm C
+  network: grpc
+  password: e903fd09-85dd-45db-93b6-e4a6fee41839
+  port: 443
+  server: ap109.zgcvpn.ru
   type: trojan
 - grpc-opts:
     grpc-service-name: grpc
@@ -43,20 +31,18 @@ proxies:
   type: trojan
 - grpc-opts:
     grpc-service-name: grpc
-  name: 5|SE gr| Stockholm C
+  name: 5|SE gr| Stockholm A
   network: grpc
   password: e903fd09-85dd-45db-93b6-e4a6fee41839
   port: 443
-  server: ap109.zgcvpn.ru
+  server: ap108.zgcvpn.ru
   type: trojan
-- name: 5|SE | Stockholm C CDN
-  network: ws
+- name: 5|SE | Stockholm B
+  network: tcp
   password: e903fd09-85dd-45db-93b6-e4a6fee41839
-  port: 443
-  server: a6.zgcvpn.ru
+  port: 567
+  server: a27.zgcvpn.ru
   type: trojan
-  ws-opts:
-    path: '%2Fws'
 - name: 8|🇸🇪SE-95.164.33.62-233_1@232
   password: 0b1371aa-649d-41dc-9126-338c87936500
   port: 443
@@ -198,17 +184,3 @@ proxies:
     headers:
       Host: edtunnel-csc.pages.dev
     path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.6...
-  network: ws
-  port: '80'
-  server: 185.146.173.63
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1fecac5-0eb0-440c-ba9b-a937b34881d6
-  ws-opts:
-    headers:
-      Host: 358be2122a3c15a7.358be2122a3c15a7.358be2122a3c15a7.358be2122a3c15a7.fi-dargah.OFFdaRSad.iR.
-    path: /navigate?ed=1024
