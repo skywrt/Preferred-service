@@ -133,10 +133,11 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '5|>🇯🇵 JP|Ns|0720|TG@FProxies| #5'
+  name: '5,7,20,21|🇯🇵JP-172.235.213.60-1355 #2'
   network: ws
-  port: '443'
+  port: 443
   server: tls.96.node-for-bigairport.win
+  servername: ''
   tls: true
   type: vmess
   uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
@@ -146,7 +147,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 5,40|CN_speednode_0027
+  name: 5,40|CN_speednode_0017
   network: tcp
   port: 54882
   server: 183.236.48.163
@@ -273,7 +274,7 @@ proxies:
     path: '%2Fws'
 - alterId: 0
   cipher: auto
-  name: 5,27|11|日本3|@ripaojiedian
+  name: 5,11,27|11|日本3|@ripaojiedian
   network: ws
   port: '5603'
   server: v1.cdn.ddnschiyun.xyz
@@ -299,7 +300,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 5,27|11|日本2|@ripaojiedian
+  name: 5,11,27|11|日本2|@ripaojiedian
   network: ws
   port: '5606'
   server: ovhsg.v4.ddnsjifeng.xyz
@@ -474,14 +475,20 @@ proxies:
   port: 567
   server: a21.zgcvpn.ru
   type: trojan
-- name: 5,27|10,11|JP 07
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 5,9,11,27|10,11|JP 07
   network: tcp
   password: 8fc4337b-4636-44a2-a160-9d360436aa57
   port: 13017
   server: naiu-jp.05vr9nyqg5.download
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
+  tfo: false
+  tls: false
   type: trojan
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 5|JP | Tokyo D26
   network: tcp
   password: e903fd09-85dd-45db-93b6-e4a6fee41839
@@ -588,6 +595,14 @@ proxies:
   tls: true
   type: vmess
   uuid: 22acc467-7440-386a-927a-d84be554b37e
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 5,9,11|15|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 34.208.60.66
+  tfo: false
+  type: ss
 - name: '5|>🇯🇵 JP|Ns|0720|TG@FProxies| #17'
   password: e5726a6e-51c1-3fef-a7af-232a23e101a7
   port: 41767
@@ -771,6 +786,38 @@ proxies:
     path: /video/GQ2qE5Us9g
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  name: 9,11,27|10| 2|@ripaojiedian
+  network: ws
+  port: 5606
+  server: ovhsg.v4.ddnsjifeng.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: a95f159e-df58-452c-8484-f3571174d55a
+  ws-opts:
+    headers:
+      Host: ovhsg.v4.ddnsjifeng.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 9,11,27|10|🇵 日本3|@ripaojiedian
+  network: ws
+  port: 5603
+  server: v1.cdn.ddnschiyun.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: a95f159e-df58-452c-8484-f3571174d55a
+  ws-opts:
+    headers:
+      Host: v1.cdn.ddnschiyun.xyz
+    path: /
+- alterId: 0
+  cipher: auto
   name: 10|日本 001
   network: ws
   port: 6212
@@ -785,13 +832,28 @@ proxies:
     path: /mooapw
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知73 3.0MB/s
+  name: 19,20,21,37|未知88 3.7MB/s
   password: G!yBwPWH3Vao
-  port: 811
+  port: 812
   server: 185.172.113.182
   skip-cert-verify: true
   tls: true
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇯🇵JP-172.235.213.60-1355
+  network: ws
+  port: 443
+  server: tls.96.node-for-bigairport.win
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
+  ws-opts:
+    headers:
+      host: tls.96.node-for-bigairport.win
+    path: /
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|日本(JP)Japan/Tokyo_38
@@ -858,149 +920,125 @@ proxies:
   server: 823jp.tfzhc.top
   skip-cert-verify: true
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 27|10|🇵 日本3|@ripaojiedian
-  network: ws
-  port: 5603
-  server: v1.cdn.ddnschiyun.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: a95f159e-df58-452c-8484-f3571174d55a
-  ws-opts:
-    headers:
-      Host: v1.cdn.ddnschiyun.xyz
-    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 1|日本01|X1|XD中日1-1A
+  name: 28|🇯🇵 1|日本03|X1|XD中日1-1A
+  password: 8fc4999c-62c8-4e86-9458-cad160490709
+  port: 28074
+  server: xd-zhongri1.bestdong.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本03
+  password: fe81298f-17f9-41d0-bf48-387fcbe7c9ce
+  port: 20006
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 1|日本02|X1|XD中日1-1B
+  password: 412c4991-454c-4f5c-9bf1-05a2e95af2f3
+  port: 28916
+  server: xd-zhongri1.bestdong.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 1|日本L|X1|DF1-1A
+  password: 8fc4999c-62c8-4e86-9458-cad160490709
+  port: 59995
+  server: df-01.bestdong.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本04
+  password: fe81298f-17f9-41d0-bf48-387fcbe7c9ce
+  port: 20008
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 1|日本01|X1|XD中日1-1B
   password: 412c4991-454c-4f5c-9bf1-05a2e95af2f3
   port: 28912
   server: xd-zhongri1.bestdong.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28,40|CN_speednode_0053
-  password: 271dfb2a-d962-433f-9a5f-803bc915c591
-  port: 28916
-  server: xd-zhongri1.bestdong.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本02
-  password: ac22e1f8-aa6d-4dcf-914e-531733b4b616
-  port: 20004
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 28|🇯🇵 日本03丨江苏移动优化
-  password: 61d42a3f-c60b-4c69-a61e-93d69f852699
+  password: c08c7013-29bc-4781-bf47-0a133bd412d4
   port: 42684
   server: 0e8383f2446d374c.cdn.jiashule.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本01丨江苏移动优化
-  password: 61d42a3f-c60b-4c69-a61e-93d69f852699
-  port: 18190
-  server: 0e8383f2446d374c.cdn.jiashule.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28,40|CN_speednode_0035
-  password: 271dfb2a-d962-433f-9a5f-803bc915c591
-  port: 28074
-  server: xd-zhongri1.bestdong.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本01丨山东移动优化
-  password: 61d42a3f-c60b-4c69-a61e-93d69f852699
-  port: 21744
-  server: afa007d388783f3a.cdn.jiashule.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本 B JP
-  password: 8b178139-2f79-4372-9f9a-0020135f1ad7
-  port: 47101
-  server: jp2.iepl.cooc.icu
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 1|日本01|X1|DF1-1B
+  name: 28|🇯🇵 1|日本01|X1|DF1-1A
   password: 8fc4999c-62c8-4e86-9458-cad160490709
   port: 33030
   server: df-01.bestdong.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本 A JP
-  password: 8b178139-2f79-4372-9f9a-0020135f1ad7
-  port: 47100
-  server: jp1.iepl.cooc.icu
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 JP 海外用户
-  password: 8b178139-2f79-4372-9f9a-0020135f1ad7
-  port: 10001
-  server: jp.cooc.icu
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 1|日本L|X1|DF1-1A
-  password: 412c4991-454c-4f5c-9bf1-05a2e95af2f3
-  port: 59995
-  server: df-01.bestdong.xyz
+  name: 28|🇯🇵 日本01丨山东移动优化
+  password: c08c7013-29bc-4781-bf47-0a133bd412d4
+  port: 21744
+  server: afa007d388783f3a.cdn.jiashule.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|🇯🇵 日本 C JP
-  password: 8b178139-2f79-4372-9f9a-0020135f1ad7
+  password: afce6f12-b0ce-421a-9c86-eb0c6f40d63b
   port: 19881
   server: jp3.iepl.cooc.icu
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本03
-  password: ac22e1f8-aa6d-4dcf-914e-531733b4b616
-  port: 20006
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 28|🇯🇵 日本03丨山东移动优化
-  password: 61d42a3f-c60b-4c69-a61e-93d69f852699
+  password: c08c7013-29bc-4781-bf47-0a133bd412d4
   port: 42684
   server: afa007d388783f3a.cdn.jiashule.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本01
-  password: ac22e1f8-aa6d-4dcf-914e-531733b4b616
-  port: 20002
+  name: 28|🇯🇵 JP 海外用户
+  password: afce6f12-b0ce-421a-9c86-eb0c6f40d63b
+  port: 10001
+  server: jp.cooc.icu
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本 B JP
+  password: afce6f12-b0ce-421a-9c86-eb0c6f40d63b
+  port: 47101
+  server: jp2.iepl.cooc.icu
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本 A JP
+  password: afce6f12-b0ce-421a-9c86-eb0c6f40d63b
+  port: 47100
+  server: jp1.iepl.cooc.icu
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本01丨江苏移动优化
+  password: c08c7013-29bc-4781-bf47-0a133bd412d4
+  port: 18190
+  server: 0e8383f2446d374c.cdn.jiashule.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本02
+  password: fe81298f-17f9-41d0-bf48-387fcbe7c9ce
+  port: 20004
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本04
-  password: ac22e1f8-aa6d-4dcf-914e-531733b4b616
-  port: 20008
+  name: 28|🇯🇵 日本01
+  password: fe81298f-17f9-41d0-bf48-387fcbe7c9ce
+  port: 20002
   server: gy.666666222.shop
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-54.178.60.56...
-  network: tcp
-  port: 11773
-  server: 54.178.60.56
-  tls: false
-  type: vmess
-  uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇯🇵 JP-46.3.103.133...
@@ -1015,3 +1053,12 @@ proxies:
     headers:
       Host: tv.cctv.com
     path: /nishidashabi
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-3.112.28.119...
+  network: tcp
+  port: 11773
+  server: 3.112.28.119
+  tls: false
+  type: vmess
+  uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
