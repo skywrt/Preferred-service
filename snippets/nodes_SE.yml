@@ -1,18 +1,19 @@
 proxies:
-- grpc-opts:
-    grpc-service-name: grpc
-  name: 5|SE gr| Stockholm A
-  network: grpc
-  password: e903fd09-85dd-45db-93b6-e4a6fee41839
-  port: 443
-  server: ap108.zgcvpn.ru
-  type: trojan
-- name: 5|SE | Stockholm B2
-  network: tcp
-  password: e903fd09-85dd-45db-93b6-e4a6fee41839
-  port: 567
-  server: a32.zgcvpn.ru
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 5,10,22|🏁RELAY-185.146.173.63-1217
+  network: ws
+  port: 80
+  server: 185.146.173.63
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1fecac5-0eb0-440c-ba9b-a937b34881d6
+  ws-opts:
+    headers:
+      Host: 358be2122a3c15a7.358be2122a3c15a7.358be2122a3c15a7.358be2122a3c15a7.fi-dargah.OFFdaRSad.iR.
+    path: /navigate?ed=1024
 - name: 5|SE | Stockholm C CDN
   network: ws
   password: e903fd09-85dd-45db-93b6-e4a6fee41839
@@ -29,11 +30,32 @@ proxies:
   port: 443
   server: se1.zgcvpn.ru
   type: trojan
-- name: 5|SE | Stockholm B
+- alterId: 0
+  cipher: auto
+  name: '5|瑞典 V2CROSS.COM #1'
+  network: ws
+  port: 80
+  server: 185.146.173.227
+  tls: false
+  type: vmess
+  uuid: b1fecac5-0eb0-440c-ba9b-a937b34881d6
+  ws-opts:
+    headers:
+      Host: 04608cc87d2a2718.04608cc87d2a2718.04608cc87d2a2718.04608cc87d2a2718.de-dargah.bArgoZyDEGan.Ir.
+    path: /navigate?ed=1048
+- name: 5|SE | Stockholm B2
   network: tcp
   password: e903fd09-85dd-45db-93b6-e4a6fee41839
   port: 567
-  server: a27.zgcvpn.ru
+  server: a32.zgcvpn.ru
+  type: trojan
+- grpc-opts:
+    grpc-service-name: grpc
+  name: 5|SE gr| Stockholm A
+  network: grpc
+  password: e903fd09-85dd-45db-93b6-e4a6fee41839
+  port: 443
+  server: ap108.zgcvpn.ru
   type: trojan
 - grpc-opts:
     grpc-service-name: grpc
@@ -43,6 +65,12 @@ proxies:
   port: 443
   server: ap109.zgcvpn.ru
   type: trojan
+- name: 5|SE | Stockholm B
+  network: tcp
+  password: e903fd09-85dd-45db-93b6-e4a6fee41839
+  port: 567
+  server: a27.zgcvpn.ru
+  type: trojan
 - name: 8|🇸🇪SE-95.164.33.62-233_1@232
   password: 0b1371aa-649d-41dc-9126-338c87936500
   port: 443
@@ -51,18 +79,124 @@ proxies:
   sni: sourceforge.net
   type: trojan
   ws-path: h=%2Fwebsocket
+- cipher: aes-256-cfb
+  name: 19,20,21,22|🇪SE-121.127.46.147-0728
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 121.127.46.147
+  type: ss
+- name: 22|SE-13.50.185.192-0638
+  password: telegram-id-directvpn
+  port: 22222
+  server: 13.50.185.192
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 22|🇪SE-13.50.161.173-0661
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.50.161.173
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- cipher: aes-256-cfb
+  name: 22|SE-13.50.27.166-2168
+  obfs: http_simple
+  obfs-param: ''
+  password: YpX2opBbrfqJzzMs
+  port: 42833
+  protocol: origin
+  protocol-param: ''
+  server: z0117.security-cloudfront-cdn.com
+  type: ssr
+- name: 22|SE-13.48.202.26-2415
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.48.202.26
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 10|瑞典 007
+  name: 22|SE-13.50.153.230-3574
   network: ws
-  port: 80
-  server: 185.146.173.63
-  skip-cert-verify: true
+  port: 25289
+  server: 13.50.153.230
+  skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
-  uuid: b1fecac5-0eb0-440c-ba9b-a937b34881d6
+  uuid: fe2bd77d-312e-4ac0-defe-afdb279528a0
   ws-opts:
-    headers:
-      Host: 358be2122a3c15a7.358be2122a3c15a7.358be2122a3c15a7.358be2122a3c15a7.fi-dargah.OFFdaRSad.iR.
-    path: /navigate?ed=1024
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 22|SE-13.49.241.14-4949
+  password: pydQILh06AvJ
+  port: 27092
+  server: 13.49.241.14
+  type: ss
+- cipher: aes-256-cfb
+  name: 22|🇸SE-37.19.222.214-8303
+  password: asdKkaskJKfnsa
+  port: 443
+  server: 37.19.222.214
+  type: ss
+- cipher: aes-256-cfb
+  name: 22|🇪SE-37.19.222.213-8304
+  password: asdKkaskJKfnsa
+  port: 443
+  server: 37.19.222.213
+  type: ss
+- cipher: aes-256-cfb
+  name: 22|🇸🇪SE-37.19.222.212-8305
+  password: asdKkaskJKfnsa
+  port: 443
+  server: 37.19.222.212
+  type: ss
+- cipher: aes-256-cfb
+  name: 22|🇸🇪SE-37.19.222.211-8306
+  password: asdKkaskJKfnsa
+  port: 443
+  server: 37.19.222.211
+  type: ss
+- name: 22|🇸🇪SE-16.171.58.121-8705
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 16.171.58.121
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 22|🇸SE-13.50.16.231-8860
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.50.16.231
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 22|🇸🇪SE-13.49.46.49-8861
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.49.46.49
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 22|🇸🇪SE-13.49.224.224-8865
+  password: telegram-id-directvpn
+  port: 22222
+  server: 13.49.224.224
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 22|🇸🇪SE-13.48.45.205-8868
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.48.45.205
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 22|🇸🇪SE-13.48.105.114-8874
+  password: telegram-id-directvpn
+  port: 22222
+  server: 13.48.105.114
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
