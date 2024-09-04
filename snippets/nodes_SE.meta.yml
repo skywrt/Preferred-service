@@ -1,33 +1,24 @@
 proxies:
-- grpc-opts:
-    grpc-service-name: grpc
-  name: 5|SE gr| Stockholm VU
-  network: grpc
-  password: e903fd09-85dd-45db-93b6-e4a6fee41839
-  port: 443
-  server: se1.zgcvpn.ru
-  type: trojan
-- grpc-opts:
-    grpc-service-name: grpc
-  name: 5|SE gr| Stockholm C
-  network: grpc
-  password: e903fd09-85dd-45db-93b6-e4a6fee41839
-  port: 443
-  server: ap109.zgcvpn.ru
-  type: trojan
-- name: 5|SE | Stockholm C CDN
+- client-fingerprint: randomized
+  fingerprint: ''
+  name: 3|686ced1e60ea456f8ea8f55d517042...
   network: ws
-  password: e903fd09-85dd-45db-93b6-e4a6fee41839
-  port: 443
-  server: a6.zgcvpn.ru
-  type: trojan
+  port: 2053
+  server: 104.24.157.255
+  servername: MAHdisErver-Bpr.PaGes.dEv
+  tls: true
+  type: vless
+  udp: false
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
   ws-opts:
-    path: '%2Fws'
-- name: 5|SE | Stockholm B
+    headers:
+      host: MAHdisErver-Bpr.PaGes.dEv
+    path: /OjwiW58maQA6wttK?ed=2560
+- name: 5|SE | Stockholm B2
   network: tcp
   password: e903fd09-85dd-45db-93b6-e4a6fee41839
   port: 567
-  server: a27.zgcvpn.ru
+  server: a32.zgcvpn.ru
   type: trojan
 - grpc-opts:
     grpc-service-name: grpc
@@ -37,11 +28,35 @@ proxies:
   port: 443
   server: ap108.zgcvpn.ru
   type: trojan
-- name: 5|SE | Stockholm B2
+- name: 5|SE | Stockholm C CDN
+  network: ws
+  password: e903fd09-85dd-45db-93b6-e4a6fee41839
+  port: 443
+  server: a6.zgcvpn.ru
+  type: trojan
+  ws-opts:
+    path: '%2Fws'
+- grpc-opts:
+    grpc-service-name: grpc
+  name: 5|SE gr| Stockholm VU
+  network: grpc
+  password: e903fd09-85dd-45db-93b6-e4a6fee41839
+  port: 443
+  server: se1.zgcvpn.ru
+  type: trojan
+- name: 5|SE | Stockholm B
   network: tcp
   password: e903fd09-85dd-45db-93b6-e4a6fee41839
   port: 567
-  server: a32.zgcvpn.ru
+  server: a27.zgcvpn.ru
+  type: trojan
+- grpc-opts:
+    grpc-service-name: grpc
+  name: 5|SE gr| Stockholm C
+  network: grpc
+  password: e903fd09-85dd-45db-93b6-e4a6fee41839
+  port: 443
+  server: ap109.zgcvpn.ru
   type: trojan
 - name: 8|🇸🇪SE-95.164.33.62-233_1@232
   password: 0b1371aa-649d-41dc-9126-338c87936500
@@ -166,17 +181,6 @@ proxies:
   tls: true
   type: vless
   uuid: 2a9c29ab-9610-5f8b-85e3-c5a07dd20f32
-- name: 12|🇸🇪_SE_瑞典
-  network: ws
-  port: 80
-  server: 185.146.173.49
-  tls: false
-  type: vless
-  uuid: e1ffc0d3-04ce-5393-b91e-b54ea14eb3cb
-  ws-opts:
-    headers:
-      Host: Es1.vless.site.
-    path: '%2Fvless'
 - alterId: 0
   cipher: auto
   name: 24|🇸🇪 瑞典 V2CROSS.COM
