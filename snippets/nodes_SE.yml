@@ -1,17 +1,11 @@
 proxies:
-- name: 5|SE | Stockholm B2
-  network: tcp
-  password: e903fd09-85dd-45db-93b6-e4a6fee41839
-  port: 567
-  server: a32.zgcvpn.ru
-  type: trojan
 - grpc-opts:
     grpc-service-name: grpc
-  name: 5|SE gr| Stockholm C
+  name: 5|SE gr| Stockholm A
   network: grpc
   password: e903fd09-85dd-45db-93b6-e4a6fee41839
   port: 443
-  server: ap109.zgcvpn.ru
+  server: ap108.zgcvpn.ru
   type: trojan
 - name: 5|SE | Stockholm B
   network: tcp
@@ -21,11 +15,25 @@ proxies:
   type: trojan
 - grpc-opts:
     grpc-service-name: grpc
-  name: 5|SE gr| Stockholm A
+  name: 5|SE gr| Stockholm C
   network: grpc
   password: e903fd09-85dd-45db-93b6-e4a6fee41839
   port: 443
-  server: ap108.zgcvpn.ru
+  server: ap109.zgcvpn.ru
+  type: trojan
+- name: 5|SE | Stockholm B2
+  network: tcp
+  password: e903fd09-85dd-45db-93b6-e4a6fee41839
+  port: 567
+  server: a32.zgcvpn.ru
+  type: trojan
+- grpc-opts:
+    grpc-service-name: grpc
+  name: 5|SE gr| Stockholm VU
+  network: grpc
+  password: e903fd09-85dd-45db-93b6-e4a6fee41839
+  port: 443
+  server: se1.zgcvpn.ru
   type: trojan
 - name: 5|SE | Stockholm C CDN
   network: ws
@@ -35,14 +43,6 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fws'
-- grpc-opts:
-    grpc-service-name: grpc
-  name: 5|SE gr| Stockholm VU
-  network: grpc
-  password: e903fd09-85dd-45db-93b6-e4a6fee41839
-  port: 443
-  server: se1.zgcvpn.ru
-  type: trojan
 - name: 8|🇸🇪SE-95.164.33.62-233_1@232
   password: 0b1371aa-649d-41dc-9126-338c87936500
   port: 443
@@ -51,3 +51,47 @@ proxies:
   sni: sourceforge.net
   type: trojan
   ws-path: h=%2Fwebsocket
+- alterId: 0
+  cipher: auto
+  name: 10|瑞典 007
+  network: ws
+  port: 80
+  server: 185.146.173.63
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1fecac5-0eb0-440c-ba9b-a937b34881d6
+  ws-opts:
+    headers:
+      Host: 358be2122a3c15a7.358be2122a3c15a7.358be2122a3c15a7.358be2122a3c15a7.fi-dargah.OFFdaRSad.iR.
+    path: /navigate?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 10|瑞典 003
+  network: ws
+  port: 80
+  server: 185.146.173.167
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1fecac5-0eb0-440c-ba9b-a937b34881d6
+  ws-opts:
+    headers:
+      Host: 0a687accaa11b7a9.0a687accaa11b7a9.0a687accaa11b7a9.0a687accaa11b7a9.fi-dargah.OfFDARsaD.iR.
+    path: /navigate?ed=1048
+- alterId: 0
+  cipher: auto
+  name: 15|🆔proxy_mtm 🔒 VM-WS-TLS 🇸🇪 SE 7...
+  network: ws
+  port: '443'
+  server: 185.146.173.158
+  servername: jahfkjha.cfd
+  tls: true
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: jahfkjha.cfd
+    path: /linkws
