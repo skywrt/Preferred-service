@@ -9,19 +9,17 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 5,11,24,27,36|🔒 VM-WS-NA 🇭🇰 HK-220.246.57.16...
+  name: 5,7,11,20,21,24,27,36,37|HK2 152.5KB/s
   network: ws
-  port: '30068'
+  port: 30068
   server: 220.246.57.161
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
-  tls: false
+  tls: true
   type: vmess
   uuid: 1cbb8f04-b0cc-4520-8b17-ed412f457b9f
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - name: 5|>🇭🇰 HK|Ls|0720|TG@FProxies|
   password: 9bd9f0da-cb8b-4bd3-9f80-efa1be67daa0
@@ -251,6 +249,14 @@ proxies:
   skip-cert-verify: true
   sni: z102.hongkongnode.top
   type: trojan
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 5,9,11|15|🇭🇰 香港7|@ripaojiedian
+  password: effead0b-b2c9-47b7-a98c-71f4c5cad047
+  port: 50205
+  server: microsoft-c820b4bf.nbaqz0v1meo0k3d-hk.fcnode.net
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: '5|>🇭🇰 HK|Ls|0720|TG@FProxies| #9'
@@ -310,7 +316,8 @@ proxies:
     headers:
       Host: gw.alicdn.com
     path: /
-- name: 5,27|10,11|香港3|@ripaojiedian
+- client-fingerprint: chrome
+  name: 5,9|🇭🇰 10,11|香港3|@ripaojiedian
   network: tcp
   password: FbhfsvNRhRWYAcRJfrvZZhrdSGsSEvZC
   port: 889
@@ -344,22 +351,6 @@ proxies:
   ws-opts:
     headers:
       Host: 220.246.57.161
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 9|🇭🇰 10,11|香港3|@ripaojiedian
-  network: ws
-  port: 10001
-  server: 62.72.163.54
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 40a5e6cc-9a01-43d2-837a-b829a9820efc
-  ws-opts:
-    headers:
-      Host: 62.72.163.54
     path: /
 - client-fingerprint: chrome
   name: 9|🇭🇰 10,11|香港4|@ripaojiedian
@@ -635,21 +626,36 @@ proxies:
     headers:
       Host: dns68.putata.eu.org
     path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 11,23,24,36|🔒 VM-WS-NA 🇭🇰 HK-62.72.163.54:...
+- delay: 1681
+  name: 10,40|US_speednode_0295
   network: ws
-  port: 10001
-  server: 62.72.163.54
-  servername: ''
+  port: 48301
+  server: 141.11.148.196
+  servername: a.ssll.gay
   skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 55429656-9a94-422f-997d-b067695bc89d
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
-    path: /
+    headers:
+      Host: a.ssll.gay
+    path: /?ed=2048
+- delay: 2105
+  name: 10,40|FR_speednode_0068
+  network: ws
+  port: 8443
+  server: 141.11.78.134
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /?ed=2048
 - name: 17|HK_youtube@资源分享师_238
   network: ws
   port: 29876
@@ -1380,13 +1386,16 @@ proxies:
     headers:
       Host: 18.167.20.169
     path: /
-- name: '24|🇭🇰 香港(油管:破解资源君2.0) #6'
+- alterId: 0
+  name: 24,37|🇰HK
   password: ffcd5d19-d085-4ff1-b724-af203eaeea04
   port: 28443
   server: hkt.52147.top
   skip-cert-verify: true
   sni: download.windowsupdate1.com
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇭🇰 香港(油管:破解资源君2.0) #7'
   password: ffcd5d19-d085-4ff1-b724-af203eaeea04
   port: 28443
@@ -1403,66 +1412,77 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 28|🇭🇰 香港 B HK
-  password: 5959e00e-5f10-4195-9c22-0bd35e1b5181
+  password: 3ce6c7e6-9432-4a86-aad4-291866a54d17
   port: 22881
   server: hk2.iepl.cooc.icu
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港02丨江苏移动优化
-  password: 45201392-5369-4466-b7b7-af78c65d42c7
-  port: 23416
-  server: 0e8383f2446d374c.cdn.jiashule.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港01-1B
-  password: 17b842dd-491a-4f15-b539-ba55cfe1b45b
+  name: 28|🇭🇰 香港01-1C
+  password: 6de0e26e-4568-4bd4-be52-3519c3a913e5
   port: 34338
   server: gd.xueyejiasu.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港02-1B
-  password: 17b842dd-491a-4f15-b539-ba55cfe1b45b
-  port: 20035
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港03丨江苏移动优化
-  password: 45201392-5369-4466-b7b7-af78c65d42c7
-  port: 10540
-  server: 0e8383f2446d374c.cdn.jiashule.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港 C HK
-  password: 5959e00e-5f10-4195-9c22-0bd35e1b5181
-  port: 23881
-  server: hk3.iepl.cooc.icu
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港04丨江苏移动优化
-  password: 45201392-5369-4466-b7b7-af78c65d42c7
-  port: 22333
-  server: 0e8383f2446d374c.cdn.jiashule.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港03-1B
+  name: 28|🇭🇰 香港03-1A
   password: 17b842dd-491a-4f15-b539-ba55cfe1b45b
   port: 20052
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港02-1A
+  password: 17b842dd-491a-4f15-b539-ba55cfe1b45b
+  port: 20035
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港04丨江苏移动优化
+  password: f93877eb-5744-4143-8185-32408bdfb4fe
+  port: 22333
+  server: 0e8383f2446d374c.cdn.jiashule.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港03丨江苏移动优化
+  password: f93877eb-5744-4143-8185-32408bdfb4fe
+  port: 10540
+  server: 0e8383f2446d374c.cdn.jiashule.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港 C HK
+  password: 3ce6c7e6-9432-4a86-aad4-291866a54d17
+  port: 23881
+  server: hk3.iepl.cooc.icu
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港02丨江苏移动优化
+  password: f93877eb-5744-4143-8185-32408bdfb4fe
+  port: 23416
+  server: 0e8383f2446d374c.cdn.jiashule.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: 28|🇭🇰 香港 A HK
-  password: 5959e00e-5f10-4195-9c22-0bd35e1b5181
+  password: 3ce6c7e6-9432-4a86-aad4-291866a54d17
   port: 21881
   server: hk1.iepl.cooc.icu
   type: ss
+  udp: true
+- alterId: 0
+  name: 37|HK
+  network: ws
+  password: tg-dns68
+  port: 21698
+  server: 156.251.180.181
+  skip-cert-verify: true
+  sni: vip.putata.eu.org
+  tls: true
+  type: trojan
   udp: true
 - client-fingerprint: randomized
   name: 40|HK_speednode_0082

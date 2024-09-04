@@ -234,6 +234,14 @@ proxies:
   tls: true
   type: vmess
   uuid: 22acc467-7440-386a-927a-d84be554b37e
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 5,9,11|15|🇯🇵 日本2|@ripaojiedian
+  password: effead0b-b2c9-47b7-a98c-71f4c5cad047
+  port: 50242
+  server: microsoft-c820b4bf.nbaqz0v1meo0k3d-jp.fcnode.net
+  tfo: false
+  type: ss
 - alterId: 64
   cipher: auto
   name: '5|>🇯🇵 JP|Ms|0816|TG@FProxies| #8'
@@ -647,7 +655,8 @@ proxies:
   skip-cert-verify: true
   sni: z139.hongkongnode.top
   type: trojan
-- name: 5,27|10,11|日本4|@ripaojiedian
+- client-fingerprint: chrome
+  name: 5,9|🇯🇵 10,11|日本4|@ripaojiedian
   network: tcp
   password: FbhfsvNRhRWYAcRJfrvZZhrdSGsSEvZC
   port: 889
@@ -696,20 +705,15 @@ proxies:
     headers:
       Host: tls.97.node-for-bigairport.win
     path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 5,9,11,24,27|10,11|日本5|@ripaojiedian
+- client-fingerprint: chrome
+  name: 5,9,24,27|10,11|日本5|@ripaojiedian
   network: tcp
   password: 8fc4337b-4636-44a2-a160-9d360436aa57
   port: 13017
   server: naiu-jp.05vr9nyqg5.download
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
-  tfo: false
-  tls: false
   type: trojan
-  uuid: 61177f92-95e5-424d-b07c-38d3d1ef9675
 - alterId: 1
   cipher: auto
   name: '5|>🇯🇵 JP|Hs|0720|TG@FProxies| #5'
@@ -761,6 +765,14 @@ proxies:
   port: 567
   server: a16.zgcvpn.ru
   type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 5,9,11|15|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 18.143.75.166
+  tfo: false
+  type: ss
 - grpc-opts:
     grpc-service-name: grpc
   name: 5|JP gr| Tokyo C ⭐️
@@ -795,17 +807,6 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 9|🇯🇵 11|日本3|@ripaojiedian
-  port: 42048
-  server: 45.77.128.224
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 61177f92-95e5-424d-b07c-38d3d1ef9675
 - client-fingerprint: chrome
   name: 9|12|JP_speednode_0095
   network: ws
@@ -851,16 +852,6 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048security=tls
-- alterId: 0
-  cipher: auto
-  name: '11,24|🇯🇵 11|日本3|@ripaojiedian #1'
-  network: tcp
-  port: '42048'
-  server: 45.77.128.224
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 61177f92-95e5-424d-b07c-38d3d1ef9675
 - name: 17|JP_youtube@资源分享师_177
   network: ws
   port: 8443
@@ -897,11 +888,14 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: '%2Ftg%40zdyz2'
-- cipher: aes-256-cfb
-  name: 19|🇯🇵JP-13.112.106.148-2995
-  password: amazonskr05
-  port: 443
-  server: 13.112.106.148
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知68 1.0MB/s
+  password: G!yBwPWH3Vao
+  port: 810
+  server: 185.172.113.182
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -952,13 +946,16 @@ proxies:
   tls: false
   type: vmess
   uuid: b9b9ed97-92f9-48f6-eb1e-6f8776cda600
-- name: '24|🇯🇵 日本(油管:破解资源君2.0) #12'
+- alterId: 0
+  name: 24,37|JP
   password: ffcd5d19-d085-4ff1-b724-af203eaeea04
   port: 28443
   server: 155.248.172.87
   skip-cert-verify: true
   sni: download.windowsupdate1.com
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '24|🇯🇵 日本(油管:破解资源君2.0) #15'
@@ -968,30 +965,67 @@ proxies:
   tls: false
   type: vmess
   uuid: f9771c19-c91c-41b5-9064-8768b51cec6d
+- alterId: 0
+  cipher: auto
+  name: 24|🇯🇵 11|日本3|@ripaojiedian
+  network: tcp
+  port: '42048'
+  server: 45.77.128.224
+  tls: false
+  type: vmess
+  uuid: 61177f92-95e5-424d-b07c-38d3d1ef9675
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本02-1B
-  password: 17b842dd-491a-4f15-b539-ba55cfe1b45b
-  port: 20004
-  server: gy.666666222.shop
+  name: 28|🇯🇵 日本03丨江苏移动优化
+  password: f93877eb-5744-4143-8185-32408bdfb4fe
+  port: 42684
+  server: 0e8383f2446d374c.cdn.jiashule.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本03-1A
+  name: 28|🇯🇵 JP 海外用户
+  password: 3ce6c7e6-9432-4a86-aad4-291866a54d17
+  port: 10001
+  server: jp.cooc.icu
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本 B JP
+  password: 3ce6c7e6-9432-4a86-aad4-291866a54d17
+  port: 47101
+  server: jp2.iepl.cooc.icu
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本03-1B
   password: 591dc173-1fc7-45a1-8088-ddf72098ce12
   port: 20006
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本 C JP
-  password: 5959e00e-5f10-4195-9c22-0bd35e1b5181
-  port: 19881
-  server: jp3.iepl.cooc.icu
+  name: 28|🇯🇵 日本01-1B
+  password: 591dc173-1fc7-45a1-8088-ddf72098ce12
+  port: 20002
+  server: gy.666666222.shop
   type: ss
   udp: true
-- auth: ae053cda-ba57-4708-9ce7-016568c291bd
-  name: 28|🇯🇵 日本-2-1B
-  password: ae053cda-ba57-4708-9ce7-016568c291bd
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本 A JP
+  password: 3ce6c7e6-9432-4a86-aad4-291866a54d17
+  port: 47100
+  server: jp1.iepl.cooc.icu
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本01丨江苏移动优化
+  password: f93877eb-5744-4143-8185-32408bdfb4fe
+  port: 18190
+  server: 0e8383f2446d374c.cdn.jiashule.com
+  type: ss
+  udp: true
+- auth: b35d5536-5655-4170-b952-71769299f9f1
+  name: 28|🇯🇵 日本-2
+  password: b35d5536-5655-4170-b952-71769299f9f1
   port: 30001
   server: oracle-amd-osaka1.lanmaoyun.icu
   skip-cert-verify: false
@@ -999,29 +1033,22 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本01-1A
-  password: 591dc173-1fc7-45a1-8088-ddf72098ce12
-  port: 20002
-  server: gy.666666222.shop
+  name: 28|🇯🇵 日本 C JP
+  password: 3ce6c7e6-9432-4a86-aad4-291866a54d17
+  port: 19881
+  server: jp3.iepl.cooc.icu
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本04-1B
-  password: 17b842dd-491a-4f15-b539-ba55cfe1b45b
-  port: 20008
+  name: 28|🇯🇵 日本02-1C
+  password: 6de0e26e-4568-4bd4-be52-3519c3a913e5
+  port: 20004
   server: gy.666666222.shop
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本 B JP
-  password: 5959e00e-5f10-4195-9c22-0bd35e1b5181
-  port: 47101
-  server: jp2.iepl.cooc.icu
-  type: ss
-  udp: true
-- auth: ae053cda-ba57-4708-9ce7-016568c291bd
-  name: 28|🇯🇵 日本-1-1B
-  password: ae053cda-ba57-4708-9ce7-016568c291bd
+- auth: b35d5536-5655-4170-b952-71769299f9f1
+  name: 28|🇯🇵 日本-1
+  password: b35d5536-5655-4170-b952-71769299f9f1
   port: 30001
   server: oracle-amd-tokyo1.lanmaoyun.icu
   skip-cert-verify: false
@@ -1029,31 +1056,10 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本03丨江苏移动优化
-  password: 45201392-5369-4466-b7b7-af78c65d42c7
-  port: 42684
-  server: 0e8383f2446d374c.cdn.jiashule.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本01丨江苏移动优化
-  password: 45201392-5369-4466-b7b7-af78c65d42c7
-  port: 18190
-  server: 0e8383f2446d374c.cdn.jiashule.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 JP 海外用户
-  password: 5959e00e-5f10-4195-9c22-0bd35e1b5181
-  port: 10001
-  server: jp.cooc.icu
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本 A JP
-  password: 5959e00e-5f10-4195-9c22-0bd35e1b5181
-  port: 47100
-  server: jp1.iepl.cooc.icu
+  name: 28|🇯🇵 日本04-1C
+  password: 6de0e26e-4568-4bd4-be52-3519c3a913e5
+  port: 20008
+  server: gy.666666222.shop
   type: ss
   udp: true
 - alterId: 0

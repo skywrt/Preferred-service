@@ -1,19 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|06db707e6088422f8696dc588f3799...
-  network: ws
-  port: 22222
-  server: 35.178.108.37
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
 - alterId: 64
   cipher: auto
   name: 5|>🇬🇧 GB|Ns|0816|TG@FProxies|
@@ -35,13 +20,17 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: 5|英国+社会保险安全部
+  alterId: 0
+  name: 5,37|未知71
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 51.44.45.133
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - name: '5,38|🇬🇧_GB_英国_19 #1'
   network: ws
   port: 2096
@@ -320,11 +309,10 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: '5,7,20,21|🇬🇧GB-172.99.190.50-1307 #1'
+  name: '5|>🇬🇧 GB|Ls|0720|TG@FProxies| #1'
   network: ws
-  port: 443
+  port: '443'
   server: 172.99.190.50
-  servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -798,18 +786,31 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: tg%40zdyz2
-- cipher: aes-128-gcm
-  name: 19|🇬🇧GB-212.102.53.78-5246
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知39 20.3MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.78
+  server: 212.102.53.194
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: aes-128-gcm
-  name: 19|🇬🇧GB-212.102.53.197-6064
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知49 18.0MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.197
+  server: 212.102.53.196
+  skip-cert-verify: true
+  tls: true
   type: ss
+- name: 20,21,24|🇺🇸 美国 Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.169.139.52
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - name: '24|🇬🇧 英国 伦敦Amazon数据中心 #1'
   password: telegram-id-directvpn
   port: 22222
@@ -819,7 +820,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 28|🇬🇧 英国 UK | BIZ
-  password: 5959e00e-5f10-4195-9c22-0bd35e1b5181
+  password: 3ce6c7e6-9432-4a86-aad4-291866a54d17
   port: 35605
   server: uk.cooc.icu
   type: ss

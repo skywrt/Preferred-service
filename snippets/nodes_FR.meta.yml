@@ -1,19 +1,22 @@
 proxies:
-- name: 5,24|🇫🇷 法国 巴黎Amazon数据中心
+- alterId: 0
+  name: 5,24,37|🇫🇷FR法国2 18.3MB/s
   password: telegram-id-privatevpns
   port: 22222
   server: 15.188.108.233
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 5,7|🔗 Vauth - 86
+  name: 5,7|🔗 Vauth - 52
   network: ws
   port: '443'
   server: indiavideo.sbs
   servername: indiavideo.sbs
-  tls: false
+  tls: true
   type: vmess
   uuid: 425c5e6e-30a0-4984-8a13-ee6f72053162
   ws-opts:
@@ -35,10 +38,11 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 5,10|加拿大 076
+  name: '5,7,10,20,21|🏁RELAY-172.67.170.103-1102 #1'
   network: ws
   port: 2095
   server: 172.67.170.103
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -82,10 +86,11 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 5,10|加拿大 149
+  name: '5,7,10,20,21|🏁RELAY-104.16.68.38-1134 #1'
   network: ws
   port: 2086
   server: 104.16.68.38
+  servername: ''
   tls: false
   type: vmess
   uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
@@ -156,16 +161,18 @@ proxies:
     path: /vpnjantit
 - alterId: 0
   cipher: auto
-  name: 5|法国 - 里昂 - Feelb Sarl - 6
+  client-fingerprint: chrome
+  name: 5,19|🏁RELAY-104.17.148.22-1186
   network: ws
-  port: '80'
+  port: 80
   server: 104.17.148.22
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
   ws-opts:
     headers:
-      Host: ''
+      host: telegram----cassiusvpn----10.lexel47149.workers.dev
     path: /az05.beyondy.cfd:443/link
 - name: '5|>🇫🇷 FR|Ns|0720|TG@FProxies| #8'
   password: 6feb4d30-389f-11ef-8c37-1239d0255272
@@ -184,10 +191,11 @@ proxies:
     path: '%2Fws'
 - alterId: 0
   cipher: auto
-  name: 5,10|加拿大 056
+  name: 5,7,10,20,21,36|🔒 VM-WS-NA 🏴‍☠️ NA-104.16.68.3...
   network: ws
   port: 8080
   server: 104.16.68.38
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -322,16 +330,18 @@ proxies:
     path: /path/181721272114
 - alterId: 0
   cipher: auto
-  name: '5|>🇫🇷 FR|Ns|0720|TG@FProxies| #13'
+  client-fingerprint: chrome
+  name: 5,19|🏁RELAY-104.16.60.8-1882
   network: ws
-  port: '2082'
+  port: 2082
   server: 104.16.60.8
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
   ws-opts:
     headers:
-      Host: ''
+      host: 82uple-bird-b087.pemed58443.workers.dev
     path: /ivideos.sbs/linkws
 - alterId: 0
   cipher: auto
@@ -415,11 +425,14 @@ proxies:
   port: 6697
   server: 54.36.174.181
   type: ss
-- cipher: aes-256-gcm
-  name: '8|SS-法国-locked-ChatGPT-TikTok-Yo... #1'
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 8,37|未知15 1.8MB/s
   password: zDNVedRFPQexG9v
   port: 6379
   server: 149.202.82.172
+  skip-cert-verify: true
+  tls: true
   type: ss
 - client-fingerprint: chrome
   name: 9|12|FR_speednode_0068
@@ -524,24 +537,60 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: Twitterfreecodes
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇫🇷FR-146.19.168.161-0530
+  network: ws
+  port: 443
+  server: az05.beyondy.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      host: az05.beyondy.cfd
+    path: /link
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇫🇷FR-193.160.130.245-0332
+  network: ws
+  port: 443
+  server: beyonddsz.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      host: beyonddsz.cfd
+    path: /linkws
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,37|未知41
+  password: G!yBwPWH3Vao
+  port: 810
+  server: 51.178.87.37
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 20,21,37|FR国
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 15.188.142.37
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|🇫🇷 法国 FR BIZ
-  password: 5959e00e-5f10-4195-9c22-0bd35e1b5181
+  password: 3ce6c7e6-9432-4a86-aad4-291866a54d17
   port: 35611
   server: fr.cooc.icu
   type: ss
   udp: true
-- name: 40|FR_speednode_0068
-  network: ws
-  port: 8443
-  server: 141.11.78.134
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
