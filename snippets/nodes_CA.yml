@@ -32,7 +32,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '2,5,9,11,12,23,24,26,27|2|d*********g.com_1 #2'
+  name: '2,5,7,9,11,12,23,24,26,27|2|d*********g.com_1 #2'
   network: ws
   port: 2086
   server: 23.227.38.5
@@ -50,7 +50,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '2,9,11,23,24,27|3|d*********g.com_1 #1 #2'
+  name: '2,7,9,11,23,24,27|3|d*********g.com_1 #1 #2'
   network: ws
   port: 2086
   server: 23.227.38.6
@@ -103,7 +103,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|7fe79d9048d54e1cbca4c656b45101...
+  name: 3|e542bd1bf0c243f6a5a40584418abd...
   network: ws
   port: 443
   server: 104.21.15.36
@@ -120,7 +120,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|cc077c9a08ce410bb3c5f2fd6aa25d...
+  name: 3|e43446266e0d4a00a7de8578b6cafc...
   network: ws
   port: 443
   server: 104.26.12.72
@@ -137,7 +137,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|b7cafae4ecd54406b3d97177475b9c...
+  name: 3|ceb0bdb970d8491581ec66e2e9ff50...
   network: ws
   port: 2086
   server: 23.227.38.5
@@ -151,7 +151,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|7fff70c4d5bd46dfa21eff1f22f20a...
+  name: 3|142d199fa98242afb5648e7c9599e1...
   network: ws
   port: 2086
   server: 23.227.38.6
@@ -165,7 +165,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|feb69411527d4322aaff4ef733ddf3...
+  name: 3|e872e4dd01e0400885673634966550...
   network: ws
   port: 443
   server: 172.67.192.57
@@ -182,7 +182,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|3b414dd582e14886873cb91f1a9b05...
+  name: 3|aa46236b253444849fb72b197a2064...
   network: ws
   port: 443
   server: 104.26.13.72
@@ -200,7 +200,7 @@ proxies:
   name: 5|>🇨🇦 CA|Ns|0816|TG@FProxies|
   network: ws
   port: '80'
-  server: 104.19.173.168
+  server: 162.159.133.14
   tls: false
   type: vmess
   uuid: a361d210-35fd-4ea7-95fa-11f15c893d93
@@ -208,19 +208,13 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: 5|>🇨🇦 CA|Ls|0720|TG@FProxies|
-  network: ws
-  port: '443'
-  server: 141.724064.xyz
-  tls: true
-  type: vmess
-  uuid: f3878e79-8166-4140-8dbe-e1f35b650e1c
-  ws-opts:
-    headers:
-      Host: 141.724064.xyz
-    path: /gmvfvws
+- name: '5|>🇨🇦 CA|Ns|0816|TG@FProxies| #1'
+  password: M7qyjjzW409f
+  port: 14559
+  server: 99.79.60.201
+  skip-cert-verify: true
+  sni: appsvs.shop
+  type: trojan
 - grpc-opts:
     grpc-service-name: grpc
   name: 5|CA gr| Montreal A⭐️
@@ -239,29 +233,38 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '5|加拿大1-多伦多 #2'
-  network: tcp
-  port: '14779'
-  server: ooo.jjjbnode.top
+  name: '5|>🇨🇦 CA|Ns|0816|TG@FProxies| #2'
+  network: ws
+  port: '80'
+  server: 104.19.173.168
   tls: false
   type: vmess
-  uuid: baf1dc21-605f-4076-8ab6-0b83803b977d
+  uuid: a361d210-35fd-4ea7-95fa-11f15c893d93
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- grpc-opts:
+    grpc-service-name: grpc
+  name: 5|CA gr| Montreal B ⭐️
+  network: grpc
+  password: e903fd09-85dd-45db-93b6-e4a6fee41839
+  port: 443
+  server: ap106.zgcvpn.ru
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '5|加拿大2-蒙特利尔 #2'
-  network: tcp
-  port: '14782'
-  server: ooo.jjjbnode.top
-  tls: false
+  name: 5|>🇨🇦 CA|Ls|0720|TG@FProxies|
+  network: ws
+  port: '443'
+  server: 141.724064.xyz
+  tls: true
   type: vmess
-  uuid: baf1dc21-605f-4076-8ab6-0b83803b977d
-- name: '5|>🇨🇦 CA|Ns|0816|TG@FProxies| #1'
-  password: xkDW4foxHxhY
-  port: 14584
-  server: 3.99.169.36
-  skip-cert-verify: true
-  sni: appsvs.shop
-  type: trojan
+  uuid: f3878e79-8166-4140-8dbe-e1f35b650e1c
+  ws-opts:
+    headers:
+      Host: 141.724064.xyz
+    path: /gmvfvws
 - alterId: 0
   cipher: auto
   name: 5|🇨🇦 加拿大2|cf
@@ -277,19 +280,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '5|>🇨🇦 CA|Ns|0816|TG@FProxies| #2'
-  network: ws
-  port: '80'
-  server: 162.159.133.14
-  tls: false
-  type: vmess
-  uuid: a361d210-35fd-4ea7-95fa-11f15c893d93
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: 5|🇨🇦 加拿大1|cf
   network: ws
   port: '2052'
@@ -301,6 +291,13 @@ proxies:
     headers:
       Host: ca11.wish.ml
     path: /
+- name: '5|>🇨🇦 CA|Ns|0816|TG@FProxies| #3'
+  password: xkDW4foxHxhY
+  port: 14584
+  server: 3.99.169.36
+  skip-cert-verify: true
+  sni: appsvs.shop
+  type: trojan
 - alterId: 0
   cipher: auto
   delay: 2106
@@ -317,14 +314,6 @@ proxies:
     headers:
       Host: 145.724064.xyz
     path: /zrqrvws
-- grpc-opts:
-    grpc-service-name: grpc
-  name: 5|CA gr| Montreal B ⭐️
-  network: grpc
-  password: e903fd09-85dd-45db-93b6-e4a6fee41839
-  port: 443
-  server: ap106.zgcvpn.ru
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '5|>🇨🇦 CA|Hs|0720|TG@FProxies| #1'
@@ -338,13 +327,6 @@ proxies:
     headers:
       Host: ''
     path: /vpnjantit
-- name: '5|>🇨🇦 CA|Ns|0816|TG@FProxies| #3'
-  password: M7qyjjzW409f
-  port: 14559
-  server: 99.79.60.201
-  skip-cert-verify: true
-  sni: appsvs.shop
-  type: trojan
 - cipher: aes-256-gcm
   name: 8|🇨🇦CA-134.195.196.51-063_1@63
   password: pKEW8JPByTVTLtM
@@ -852,19 +834,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|加拿大 015
-  network: ws
-  port: 2086
-  server: 104.19.46.17
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
   name: 10|加拿大 018
   network: ws
   port: 2082
@@ -1061,6 +1030,19 @@ proxies:
     headers:
       Host: ep-sunset-9b11.kekic13319.workers.dev
     path: /
+- alterId: 0
+  cipher: auto
+  name: 10|加拿大 032
+  network: ws
+  port: 2086
+  server: 104.19.47.36
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
   name: 10|加拿大 010
