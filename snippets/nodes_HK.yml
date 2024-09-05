@@ -2,19 +2,17 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 2,5,11,24,27,36|🔒 VM-WS-NA 🇭🇰 HK-220.246.57.16...
+  name: 2,5,7,11,20,21,24,27,36,37|HK 174.1KB/s
   network: ws
-  port: '30068'
+  port: 30068
   server: 220.246.57.161
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
-  tls: false
+  tls: true
   type: vmess
   uuid: 1cbb8f04-b0cc-4520-8b17-ed412f457b9f
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 2
   cipher: auto
@@ -163,6 +161,14 @@ proxies:
   tls: false
   type: vmess
   uuid: f7ff1a87-5737-3adf-b518-87935ac26132
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 5,9,11|15|🇭🇰 香港7|@ripaojiedian
+  password: 3a690709-5011-4a6c-ab62-da2fb5291233
+  port: 50203
+  server: microsoft-af1f5ba4.nbaqz0v1meo0k3d-hk.fcnode.net
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: '5|>🇭🇰 HK|Ms|0720|TG@FProxies| #2'
@@ -282,9 +288,18 @@ proxies:
   server: hk1.moluo.xyz
   skip-cert-verify: true
   type: trojan
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 5,9,11|15|🇭🇰 香港8|@ripaojiedian
+  password: 3a690709-5011-4a6c-ab62-da2fb5291233
+  port: 50208
+  server: microsoft-af1f5ba4.nbaqz0v1meo0k3d-hk.fcnode.net
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 5,23,27,36|🔒 VM-WS-NA 🇭🇰 HK-62.72.163.54:...
+  client-fingerprint: chrome
+  name: 5,7,11,20,21,23,27,36|🔒 VM-WS-NA 🇭🇰 HK-62.72.163.54:...
   network: ws
   port: 10001
   server: 62.72.163.54
@@ -293,8 +308,10 @@ proxies:
   tfo: false
   tls: false
   type: vmess
-  uuid: 55429656-9a94-422f-997d-b067695bc89d
+  uuid: 3dddcee7-2cb3-4260-81da-83d8b926840f
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -312,13 +329,29 @@ proxies:
     headers:
       Host: 220.246.57.161
     path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 9|🇭🇰 10,11|香港3|@ripaojiedian
+  network: ws
+  port: 10001
+  server: 62.72.163.54
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 3dddcee7-2cb3-4260-81da-83d8b926840f
+  ws-opts:
+    headers:
+      Host: 62.72.163.54
+    path: /
 - client-fingerprint: chrome
   name: 9|🇭🇰 10,11|香港4|@ripaojiedian
-  password: bDDJrvVT
-  port: 5395
-  server: 223.113.54.185
+  password: lNOcIAxy
+  port: 51377
+  server: 36.151.195.24
   skip-cert-verify: false
-  sni: 223.113.54.185
+  sni: 36.151.195.24
   type: trojan
 - alterId: 0
   cipher: auto
@@ -863,62 +896,53 @@ proxies:
       Host: 18.167.20.169
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港02-1B
+  name: 28|🇭🇰 香港03-1E
+  password: 9c21d1f2-b449-4816-ab16-78b757f5f9c5
+  port: 20052
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港02-1A
   password: e878b36c-d7f4-4c05-b489-5b030e3a5d64
   port: 20035
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港 B HK
-  password: 43c5e224-ea51-459f-b763-6408b71bd1d3
-  port: 22881
-  server: hk2.iepl.cooc.icu
+  name: 28|🇭🇰 香港 C HK
+  password: 88652454-ba65-41b7-aa55-62d0942c2386
+  port: 23881
+  server: hk3.iepl.cooc.icu
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港03-1A
-  password: a339a954-94dc-42d2-8e58-77d41bd4e1b4
-  port: 20052
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港 A HK
-  password: 43c5e224-ea51-459f-b763-6408b71bd1d3
-  port: 21881
-  server: hk1.iepl.cooc.icu
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港01-1A
-  password: a339a954-94dc-42d2-8e58-77d41bd4e1b4
+  name: 28|🇭🇰 香港01-1B
+  password: c1797acd-8ae3-4723-a6b5-d8a8a02d4a57
   port: 34338
   server: gd.xueyejiasu.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港 C HK
-  password: 43c5e224-ea51-459f-b763-6408b71bd1d3
-  port: 23881
-  server: hk3.iepl.cooc.icu
+  name: 28|🇭🇰 香港 B HK
+  password: 88652454-ba65-41b7-aa55-62d0942c2386
+  port: 22881
+  server: hk2.iepl.cooc.icu
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港 A HK
+  password: 88652454-ba65-41b7-aa55-62d0942c2386
+  port: 21881
+  server: hk1.iepl.cooc.icu
   type: ss
   udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|HK
-  password: 190067b9-63a3-4f8d-9c16-ee2737a87c14
-  port: 50206
-  server: 46.232.123.37
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
+  cipher: aes-128-gcm
   name: 37|HK2
-  password: 190067b9-63a3-4f8d-9c16-ee2737a87c14
-  port: 50255
-  server: 46.232.123.37
+  password: a-wym4ovY4Yw
+  port: 81
+  server: 218.250.217.111
   skip-cert-verify: true
   tls: true
   type: ss
