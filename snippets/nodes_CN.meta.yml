@@ -19,13 +19,12 @@ proxies:
   type: trojan
 - alterId: 64
   cipher: auto
-  name: 2,5,7,11,24,27,37|未知39
+  name: 2,5,7,11,24,27|11|香港|@ripaojiedian
   network: tcp
-  port: 45020
+  port: '45020'
   server: 183.236.51.23
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
@@ -51,6 +50,15 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '5,13,16,22,24,37|未命名 #6'
+  password: 99301d55-a41f-4919-986b-1435996533aa
+  port: 20003
+  server: deepf.hjkdsak2.com
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - name: '5,38|🇨🇳_CN_中国_38 #1'
   network: ws
   port: 2053
@@ -63,16 +71,6 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- alterId: 64
-  cipher: auto
-  name: '5,37|未命名 #6'
-  network: tcp
-  port: 42055
-  server: 120.232.153.37
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 8|🇨🇳CN-139.227.223.3-049_1@49
@@ -715,15 +713,6 @@ proxies:
     headers:
       Host: 220.246.57.203
     path: /
-- name: 12|🇨🇳_CN_中国
-  network: tcp
-  port: 443
-  server: 62.60.219.145
-  tls: false
-  type: vless
-  uuid: 9868245d-6ee0-4a38-b2f9-503d30cf7cf9
-  ws-opts:
-    path: '%2F'
 - name: 17|CN_youtube@资源分享师_31
   network: ws
   port: 443
