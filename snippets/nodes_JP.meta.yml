@@ -1,8 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '2,9,11,24|🇯🇵 10,11|日本2|@ripaojiedian #1'
+  name: 2,24|🇯🇵 10,11|日本2|@ripaojiedian
   network: ws
   port: '30001'
   server: jpgmo02.naizi.vip
@@ -237,7 +236,8 @@ proxies:
   uuid: 942245f3-ac32-3198-b673-9ad861cf0d85
 - alterId: 0
   cipher: auto
-  name: 5,27|10,11|日本3|@ripaojiedian
+  client-fingerprint: chrome
+  name: 5,11,27|10,11|日本3|@ripaojiedian
   network: ws
   port: '80'
   server: 103.238.129.205
@@ -423,6 +423,14 @@ proxies:
   server: gy.58n.net
   skip-cert-verify: true
   type: trojan
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 5,11|15|🇯🇵 日本2|@ripaojiedian
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  tfo: false
+  type: ss
 - name: '5|>🇯🇵 JP|Ls|0816|TG@FProxies| #4'
   password: W8U8DBPYuGByyq8nrM
   port: 443
@@ -583,7 +591,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 5,27|11|日本|@ripaojiedian
+  name: 5,11,27|11|日本|@ripaojiedian
   network: tcp
   port: '11767'
   server: 212.50.255.109
@@ -697,6 +705,18 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '11,27|10| |@ripaojiedian #1'
+  password: lNOcIAxy
+  port: 11767
+  server: 212.50.255.109
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 7269ac36-82da-43f9-86b8-ea57bef8f1e7
 - name: 17|JP_youtube@资源分享师_177
   network: ws
   port: 8443
@@ -733,17 +753,47 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: '%2Ftg%40zdyz2'
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇯🇵JP-185.172.113.182-5925
-  password: G!yBwPWH3Vao
-  port: 812
-  server: 185.172.113.182
+- cipher: aes-256-cfb
+  name: 19|🇯🇵JP-13.112.106.148-2807
+  password: amazonskr05
+  port: 443
+  server: 13.112.106.148
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇯🇵JP-185.172.113.182-0609
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知50 1.3MB/s
+  password: G!yBwPWH3Vao
+  port: 809
+  server: 185.172.113.182
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知62 1.4MB/s
+  password: G!yBwPWH3Vao
+  port: 811
+  server: 185.172.113.182
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知78 1.4MB/s
   password: G!yBwPWH3Vao
   port: 800
   server: 185.172.113.182
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知59 1.6MB/s
+  password: G!yBwPWH3Vao
+  port: 806
+  server: 185.172.113.182
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -788,93 +838,61 @@ proxies:
   skip-cert-verify: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本04-1C
-  password: 3c5e385d-8682-40da-9f05-b95d42dc7ec7
+  name: 28|🇯🇵 日本 C JP
+  password: 594228e7-0184-4f4f-abd9-7bb089a0f16d
+  port: 19881
+  server: jp3.iepl.cooc.icu
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本04-1B
+  password: d6da496c-8177-409d-9abd-513dbbccf27b
   port: 20008
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本01-1B
+  name: 28|🇯🇵 JP 海外用户
+  password: 594228e7-0184-4f4f-abd9-7bb089a0f16d
+  port: 10001
+  server: jp.cooc.icu
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本01-1C
   password: 4ef89f63-3018-401c-8ea4-fb2ac2c993ac
   port: 20002
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本 B JP
+  password: 594228e7-0184-4f4f-abd9-7bb089a0f16d
+  port: 47101
+  server: jp2.iepl.cooc.icu
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: 28|🇯🇵 日本03-1A
-  password: d6da496c-8177-409d-9abd-513dbbccf27b
+  password: 3c5e385d-8682-40da-9f05-b95d42dc7ec7
   port: 20006
   server: gy.666666222.shop
   type: ss
   udp: true
-- auth: e98f0454-41d4-4818-9803-4e9db99c1914
-  name: 28|🇯🇵 日本-2
-  password: e98f0454-41d4-4818-9803-4e9db99c1914
-  port: 30001
-  server: oracle-amd-osaka1.lanmaoyun.icu
-  skip-cert-verify: false
-  sni: osaka.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本 C JP
-  password: d58d49ed-ede8-48e3-812b-fce9238b7e00
-  port: 19881
-  server: jp3.iepl.cooc.icu
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本 A JP
-  password: d58d49ed-ede8-48e3-812b-fce9238b7e00
-  port: 47100
-  server: jp1.iepl.cooc.icu
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本02-1B
+  name: 28|🇯🇵 日本02-1C
   password: 4ef89f63-3018-401c-8ea4-fb2ac2c993ac
   port: 20004
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本 B JP
-  password: d58d49ed-ede8-48e3-812b-fce9238b7e00
-  port: 47101
-  server: jp2.iepl.cooc.icu
+  name: 28|🇯🇵 日本 A JP
+  password: 594228e7-0184-4f4f-abd9-7bb089a0f16d
+  port: 47100
+  server: jp1.iepl.cooc.icu
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 JP 海外用户
-  password: d58d49ed-ede8-48e3-812b-fce9238b7e00
-  port: 10001
-  server: jp.cooc.icu
-  type: ss
-  udp: true
-- auth: e98f0454-41d4-4818-9803-4e9db99c1914
-  name: 28|🇯🇵 日本-1
-  password: e98f0454-41d4-4818-9803-4e9db99c1914
-  port: 30001
-  server: oracle-amd-tokyo1.lanmaoyun.icu
-  skip-cert-verify: false
-  sni: tokyo.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-153.122.173....
-  network: ws
-  port: '30001'
-  server: 153.122.173.187
-  servername: jpgmo02.naizi.vip
-  tls: true
-  type: vmess
-  uuid: 63b37069-ade8-4d4c-a6dc-1161df539069
-  ws-opts:
-    headers:
-      Host: www.python.org
-    path: /nishidashabi
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇯🇵 JP-46.3.103.133...
@@ -888,4 +906,18 @@ proxies:
   ws-opts:
     headers:
       Host: tv.cctv.com
+    path: /nishidashabi
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-153.122.173....
+  network: ws
+  port: '30001'
+  server: 153.122.173.187
+  servername: jpgmo02.naizi.vip
+  tls: true
+  type: vmess
+  uuid: 63b37069-ade8-4d4c-a6dc-1161df539069
+  ws-opts:
+    headers:
+      Host: www.python.org
     path: /nishidashabi

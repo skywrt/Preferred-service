@@ -2,7 +2,8 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 2,11,23,24,36|🔒 VM-WS-NA 🇭🇰 HK-62.72.163.54:...
+  fingerprint: ''
+  name: 2,3,23,24,36|🔒 VM-WS-NA 🇭🇰 HK-62.72.163.54:...
   network: ws
   port: 10001
   server: 62.72.163.54
@@ -11,13 +12,13 @@ proxies:
   tfo: false
   tls: false
   type: vmess
+  udp: false
   uuid: 55429656-9a94-422f-997d-b067695bc89d
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 2,9|🇭🇰 11|香港8|@ripaojiedian
+  name: 2|Hong Kong_Hong Kong_vmess_1125
   port: 13008
   server: 45.78.25.158
   skip-cert-verify: false
@@ -27,7 +28,7 @@ proxies:
   uuid: a074c66e-1107-475c-8bc7-9de7ef6620ed
 - alterId: 0
   cipher: auto
-  name: '2,11,24|🇭🇰 11|香港8|@ripaojiedian #1'
+  name: 2,24|🇭🇰 11|香港8|@ripaojiedian
   network: tcp
   port: '13008'
   server: 45.78.25.158
@@ -117,9 +118,18 @@ proxies:
     headers:
       Host: hk01.xfxnode.top
     path: /hk01
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 5,11|15|🇭🇰 香港3|@ripaojiedian
+  password: 42b6588e-7bf7-4aff-b0ce-074adb29bca7
+  port: 41888
+  server: 6ad1ae37883fcbf8.cdn.jiashule.com
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 5,27|10,11|香港8|@ripaojiedian
+  client-fingerprint: chrome
+  name: 5,11,27|10,11|香港8|@ripaojiedian
   network: ws
   port: '80'
   server: 16.163.143.214
@@ -161,7 +171,8 @@ proxies:
   uuid: be47e22f-188e-44bb-9cf2-4fb10496703d
 - alterId: 0
   cipher: auto
-  name: 5,27|10,11|香港7|@ripaojiedian
+  client-fingerprint: chrome
+  name: 5,11,27|10,11|香港7|@ripaojiedian
   network: ws
   port: '80'
   server: 18.162.141.165
@@ -304,7 +315,8 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 5,27|10,11|香港5|@ripaojiedian
+  client-fingerprint: chrome
+  name: 5,11,27|10,11|香港5|@ripaojiedian
   network: ws
   port: '80'
   server: 157.254.22.109
@@ -483,105 +495,6 @@ proxies:
   server: 183.236.51.50
   skip-cert-verify: true
   type: trojan
-- client-fingerprint: chrome
-  name: 9|🇭🇰 10,11|香港4|@ripaojiedian
-  password: lNOcIAxy
-  port: 51377
-  server: 36.151.195.24
-  skip-cert-verify: false
-  sni: 36.151.195.24
-  type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 9|🇭🇰 10,11|香港5|@ripaojiedian
-  network: ws
-  port: 10001
-  server: 62.72.163.54
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: fddb5ca7-cad2-4635-b86a-dfb5c5b9e446
-  ws-opts:
-    headers:
-      Host: 62.72.163.54
-    path: /
-- client-fingerprint: chrome
-  name: 9|12|HK_speednode_0064
-  network: ws
-  port: 32079
-  server: 119.28.189.227
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048security=tls
-- client-fingerprint: chrome
-  name: 9|12|HK_speednode_0065
-  network: ws
-  port: 443
-  server: 58.176.95.46
-  servername: dns68.putata.eu.org
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
-  ws-opts:
-    headers:
-      Host: dns68.putata.eu.org
-    path: /?ed=2048fp=randomized
-- client-fingerprint: chrome
-  name: 9|12|HK_speednode_0066
-  network: ws
-  port: 11417
-  server: 183.178.22.246
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048security=tls
-- client-fingerprint: chrome
-  name: 9|12|HK_speednode_0067
-  network: ws
-  port: 28717
-  server: 119.247.186.144
-  servername: dns68.putata.eu.org
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
-  ws-opts:
-    headers:
-      Host: dns68.putata.eu.org
-    path: /?ed=2048fp=randomized
-- client-fingerprint: chrome
-  name: 9|12|HK_speednode_0068
-  network: ws
-  port: 17771
-  server: 185.155.235.146
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048security=tls
 - client-fingerprint: randomized
   delay: 476
   name: 10|香港 004
@@ -1419,45 +1332,45 @@ proxies:
       Host: ''
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港 B HK
-  password: d58d49ed-ede8-48e3-812b-fce9238b7e00
-  port: 22881
-  server: hk2.iepl.cooc.icu
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港01-1C
-  password: 3c5e385d-8682-40da-9f05-b95d42dc7ec7
-  port: 34338
-  server: gd.xueyejiasu.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 28|🇭🇰 香港02-1B
-  password: 4ef89f63-3018-401c-8ea4-fb2ac2c993ac
+  password: d6da496c-8177-409d-9abd-513dbbccf27b
   port: 20035
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港03-1A
-  password: d6da496c-8177-409d-9abd-513dbbccf27b
+  name: 28|🇭🇰 香港01-1D
+  password: 9f997ddf-75b7-4992-a631-d5ba2315ff02
+  port: 34338
+  server: gd.xueyejiasu.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港03-1D
+  password: 9f997ddf-75b7-4992-a631-d5ba2315ff02
   port: 20052
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港 C HK
-  password: d58d49ed-ede8-48e3-812b-fce9238b7e00
-  port: 23881
-  server: hk3.iepl.cooc.icu
+  name: 28|🇭🇰 香港 A HK
+  password: 594228e7-0184-4f4f-abd9-7bb089a0f16d
+  port: 21881
+  server: hk1.iepl.cooc.icu
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港 A HK
-  password: d58d49ed-ede8-48e3-812b-fce9238b7e00
-  port: 21881
-  server: hk1.iepl.cooc.icu
+  name: 28|🇭🇰 香港 B HK
+  password: 594228e7-0184-4f4f-abd9-7bb089a0f16d
+  port: 22881
+  server: hk2.iepl.cooc.icu
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港 C HK
+  password: 594228e7-0184-4f4f-abd9-7bb089a0f16d
+  port: 23881
+  server: hk3.iepl.cooc.icu
   type: ss
   udp: true
 - alterId: 0

@@ -191,13 +191,17 @@ proxies:
     path: /linkvws
 - alpn:
   - http%2F1.1
-  name: 5|英国+伦敦Amazon数据中心
+  alterId: 0
+  name: 5,37|未知77 13.6MB/s
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 3.8.9.211
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - name: '5|>🇬🇧 GB|Ms|0720|TG@FProxies| #5'
   password: telegram-id-directvpn
   port: 22222
@@ -361,15 +365,36 @@ proxies:
     headers:
       Host: aveiror.com
     path: /linkvws
-- cipher: aes-128-gcm
-  name: 19|🇬🇧GB-212.102.47.129-0610
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知26 2.1MB/s
   password: shadowsocks
   port: 443
   server: 212.102.47.129
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知34 2.2MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.47.132
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知52 12.5MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.78
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 28|🇬🇧 英国 UK | BIZ
-  password: d58d49ed-ede8-48e3-812b-fce9238b7e00
+  password: 594228e7-0184-4f4f-abd9-7bb089a0f16d
   port: 35605
   server: uk.cooc.icu
   type: ss

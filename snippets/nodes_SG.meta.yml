@@ -182,12 +182,13 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 5,7|🔗 Vauth - 19
+  name: 5,7,37|未知100
   network: tcp
-  port: '54104'
+  port: 54104
   server: 183.236.51.23
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: '5|>🇸🇬 SG|Ms|0816|TG@FProxies| #1'
@@ -298,7 +299,8 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 5,27|10,11||@ripaojiedian
+  client-fingerprint: chrome
+  name: 5,11,27|10,11||@ripaojiedian
   network: ws
   port: '80'
   server: 18.141.188.80
@@ -407,6 +409,21 @@ proxies:
     path: '%2Ftg%40zdyz2'
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇸🇬SG-213.35.113.150-0602
+  network: ws
+  port: 80
+  server: 213.35.113.150
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: eaf5e01b-f27d-44cf-94ae-87196143eef9
+  ws-opts:
+    headers:
+      host: dl.kgvn.garenanow.com
+    path: /
+- alterId: 0
+  cipher: auto
   country: mattkaydiary.com|新加坡(SG)Singapore/Singapore_7
   name: '23,30|mattkaydiary.com|新加坡(SG)Singap... #1'
   network: ws
@@ -455,41 +472,35 @@ proxies:
     headers:
       Host: in-sg-1.onebox6.org
     path: /hls/cctv5phd.m3u8
-- name: 24|🇸🇬 新加坡 亚马逊(Amazon)公司数据中心
+- alterId: 0
+  name: 24,37|SG
   password: D7NwSqsRkCFf
   port: 15123
   server: 54.255.232.9
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: appsvs.shop
+  tls: true
   type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇸🇬 新加坡 C SG
+  password: 594228e7-0184-4f4f-abd9-7bb089a0f16d
+  port: 35107
+  server: sg3.iepl.cooc.icu
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|🇸🇬 新加坡 A SG
-  password: d58d49ed-ede8-48e3-812b-fce9238b7e00
+  password: 594228e7-0184-4f4f-abd9-7bb089a0f16d
   port: 35105
   server: sg1.iepl.cooc.icu
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|🇸🇬 新加坡 B SG
-  password: d58d49ed-ede8-48e3-812b-fce9238b7e00
+  password: 594228e7-0184-4f4f-abd9-7bb089a0f16d
   port: 35106
   server: sg2.iepl.cooc.icu
-  type: ss
-  udp: true
-- auth: e98f0454-41d4-4818-9803-4e9db99c1914
-  name: 28|🇸🇬 新加坡-1
-  password: e98f0454-41d4-4818-9803-4e9db99c1914
-  port: 30001
-  server: oracle-amd-singapore1.lanmaoyun.icu
-  skip-cert-verify: false
-  sni: main.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡 C SG
-  password: d58d49ed-ede8-48e3-812b-fce9238b7e00
-  port: 35107
-  server: sg3.iepl.cooc.icu
   type: ss
   udp: true
 - alterId: 0
