@@ -1,17 +1,25 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: '5|>🇺🇸 US|Ls|0816|TG@FProxies| #4'
-  network: tcp
-  port: '35601'
-  server: 120.232.153.40
-  servername: ''
+  client-fingerprint: chrome
+  name: 2,9,23,27|10| |@ripaojiedian
+  port: 45020
+  server: 183.236.51.23
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 2,5,24,27|10,11|香港4|@ripaojiedian
+  network: tcp
+  password: lNOcIAxy
+  port: 51377
+  server: 36.151.195.24
+  skip-cert-verify: true
+  type: trojan
 - alterId: 64
   cipher: auto
-  name: 5,7,11,24,27|11|香港|@ripaojiedian
+  name: 2,5,7,11,24,27|11|香港|@ripaojiedian
   network: tcp
   port: '45020'
   server: 183.236.51.23
@@ -19,6 +27,29 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 2,11,24,27,41|d*********g.com_2
+  network: tcp
+  port: '443'
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  tls: true
+  type: vmess
+  uuid: 044f0177-0675-4dcf-89d4-804b6788e518
+- alpn:
+  - http%2F1.1
+  name: 2,24,27,41|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  skip-cert-verify: false
+  sni: www.zitian.cn
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
 - name: '5,38|🇨🇳_CN_中国_38 #1'
   network: ws
   port: 2053
