@@ -1,4 +1,56 @@
 proxies:
+- client-fingerprint: chrome
+  name: 2,5,9,24,27|10,11|3|@ripaojiedian
+  network: tcp
+  password: d6d86a97-2bef-4f89-9527-ce2003377677
+  port: 13008
+  server: naiu-hk.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+- name: 2,5,24,27|10,11|香港4|@ripaojiedian
+  network: tcp
+  password: lNOcIAxy
+  port: 444
+  server: 36.151.195.83
+  skip-cert-verify: true
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 2,11,24,27,41|d*********g.com_2
+  network: tcp
+  port: '443'
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  tls: true
+  type: vmess
+  uuid: 044f0177-0675-4dcf-89d4-804b6788e518
+- alpn:
+  - http%2F1.1
+  alterId: 0
+  name: 2,24,27,37,41|d*********g.com_3
+  network: tcp
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  skip-cert-verify: true
+  sni: www.zitian.cn
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.zitian.cn
+- alterId: 64
+  cipher: auto
+  name: '5,7,24|🇨🇳 广东省广州市 移动 #1'
+  network: tcp
+  port: '54104'
+  server: 183.236.51.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: '5,38|🇨🇳_CN_中国_38 #1'
   network: ws
   port: 2053
@@ -590,15 +642,6 @@ proxies:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 8,24,37|DE国
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 26667
-  server: service.ouluyun9803.com
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
   name: 8|🇨🇳CN-120.233.205.133-189_1@189
   network: ws
@@ -659,16 +702,6 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: '%2Ftg%40zdyz2'
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-123.88.148.3...
-  network: tcp
-  port: '44806'
-  server: 123.88.148.36
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ae66331e-b6b4-4c6f-959f-6ed64cf97628
 - cipher: chacha20-ietf-poly1305
   name: 40|CN_speednode_0011
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
