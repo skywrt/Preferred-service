@@ -51,8 +51,7 @@ proxies:
   skip-cert-verify: true
   sni: z102.hongkongnode.top
   type: trojan
-- client-fingerprint: chrome
-  name: 5,11,24,27|10,11|香港4|@ripaojiedian
+- name: 5,24,27|10,11|香港4|@ripaojiedian
   network: tcp
   password: lNOcIAxy
   port: 444
@@ -60,8 +59,20 @@ proxies:
   skip-cert-verify: true
   type: trojan
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 5,9,11,24,37,40|CN_speednode_0045
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20001
+  server: hk1.mhw7e2.online
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
-  name: 5,27|10,11|香港5|@ripaojiedian
+  client-fingerprint: chrome
+  name: 5,9,11,27|10,11|香港5|@ripaojiedian
   network: ws
   port: '80'
   server: 38.207.142.31
@@ -88,6 +99,14 @@ proxies:
     headers:
       Host: entrance2-105.jjsagcajvv.xyz
     path: /
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 5,9,11|15|🇭🇰 香港R|@ripaojiedian
+  password: hGkQ6915tD
+  port: 16088
+  server: 103.161.255.195
+  tfo: false
+  type: ss
 - name: '5|>🇭🇰 HK|Ls|0720|TG@FProxies| #6'
   password: 97c7d36e-7c53-3ba4-9506-5629a8d27cfa
   port: 22741
@@ -201,16 +220,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 4c5c72f8-43bf-3e25-a171-3328619ac99e
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
+- cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,9,11,24,37|🇨🇳
-  password: 63b37069-ade8-4d4c-a6dc-1161df539069
-  port: 1342
-  server: gdyddx500.xiyunchen.cn
-  skip-cert-verify: true
+  name: 5,9,11|15|🇭🇰 香港|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 52.221.193.173
   tfo: false
-  tls: true
   type: ss
 - alterId: 2
   cipher: auto
@@ -256,7 +272,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5,7,27|11|香港3|@ripaojiedian
+  name: 5,7,11,27|11|香港3|@ripaojiedian
   network: tcp
   port: '44806'
   server: ambxxic01hk.dorabbb.top
@@ -273,6 +289,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 242eaf22-2c23-3181-a643-5e39bef2e08a
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 9,27|10| 3|@ripaojiedian
+  port: 44806
+  server: ambxxic01hk.dorabbb.top
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: fe9333e9-c864-41ea-8076-a0df85cc50de
 - client-fingerprint: chrome
   name: 9|🇭🇰 10,11|香港4|@ripaojiedian
   password: lNOcIAxy
@@ -283,13 +310,15 @@ proxies:
   type: trojan
 - client-fingerprint: randomized
   delay: 476
-  name: 10|香港 004
+  name: 10,40|HK_speednode_0190
   network: ws
   port: 11417
   server: 183.178.22.246
   servername: dns68.putata.eu.org
+  skip-cert-verify: false
   tls: true
   type: vless
+  udp: true
   uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
   ws-opts:
     headers:
@@ -337,35 +366,6 @@ proxies:
   ws-opts:
     headers:
       Host: dns68.putata.eu.org
-    path: /?ed=2048
-- delay: 1681
-  name: 10|香港 001
-  network: ws
-  port: 48301
-  server: 141.11.148.196
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- delay: 1947
-  name: 10|香港 002
-  network: ws
-  port: 11283
-  server: 38.6.219.151
-  servername: a.ssll.gay
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
     path: /?ed=2048
 - delay: 2547
   name: 10|香港 003
@@ -1176,30 +1176,22 @@ proxies:
       Host: fr.2121999.xyz
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港 C HK
-  password: 027fbaaa-68bb-4f21-a884-5c504fe4a4d0
-  port: 23881
-  server: hk3.iepl.cooc.icu
+  name: 28|🇭🇰 香港 B HK
+  password: 18e613d3-eaa5-4818-bb94-8a1df1d2045f
+  port: 22881
+  server: hk2.iepl.cooc.icu
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港 A HK
+  password: 18e613d3-eaa5-4818-bb94-8a1df1d2045f
+  port: 21881
+  server: hk1.iepl.cooc.icu
   type: ss
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 28|🇭🇰 香港-3-V4-1B
-  network: tcp
-  port: 60001
-  reality-opts:
-    public-key: nl1YF9LvLNCewa295lim5ytGT0fkf0XUoSJM01LMoWk
-    short-id: 4e87d75b
-  server: hk003.hy2.one
-  servername: www.python.org
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b0886b00-2915-4221-a858-d2ba3e432771
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 28|🇭🇰 香港-流媒体2x-1A
+  name: 28|🇭🇰 香港-流媒体2x
   network: tcp
   port: 55442
   reality-opts:
@@ -1211,21 +1203,40 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 0c388668-5995-43b8-ae6b-e66b757c9d49
+  uuid: 7d3b0ee0-25ac-4756-a59a-0d627308dbe9
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港 A HK
-  password: 027fbaaa-68bb-4f21-a884-5c504fe4a4d0
-  port: 21881
-  server: hk1.iepl.cooc.icu
+  name: 28|🇭🇰 香港 C HK
+  password: 18e613d3-eaa5-4818-bb94-8a1df1d2045f
+  port: 23881
+  server: hk3.iepl.cooc.icu
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港 B HK
-  password: 027fbaaa-68bb-4f21-a884-5c504fe4a4d0
-  port: 22881
-  server: hk2.iepl.cooc.icu
-  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 28|🇭🇰 香港-3-V4
+  network: tcp
+  port: 60001
+  reality-opts:
+    public-key: nl1YF9LvLNCewa295lim5ytGT0fkf0XUoSJM01LMoWk
+    short-id: 4e87d75b
+  server: hk003.hy2.one
+  servername: www.python.org
+  tfo: false
+  tls: true
+  type: vless
   udp: true
+  uuid: 7d3b0ee0-25ac-4756-a59a-0d627308dbe9
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-62.72.163.54:...
+  network: ws
+  port: 10001
+  server: 62.72.163.54
+  tls: false
+  type: vmess
+  uuid: 55429656-9a94-422f-997d-b067695bc89d
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-210.0.158.21...
@@ -1241,13 +1252,53 @@ proxies:
       Host: 19.lwdh.us
     path: /
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-62.72.163.54:...
+  cipher: chacha20-ietf-poly1305
+  name: 37|HK
+  password: 190067b9-63a3-4f8d-9c16-ee2737a87c14
+  port: 50255
+  server: 46.232.123.37
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- name: 40|HK_speednode_0191
   network: ws
-  port: 10001
-  server: 62.72.163.54
-  tls: false
-  type: vmess
-  uuid: 55429656-9a94-422f-997d-b067695bc89d
+  port: 80
+  server: 129.227.139.137
+  skip-cert-verify: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
-    path: /
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- client-fingerprint: randomized
+  name: 40|HK_speednode_0192
+  network: ws
+  port: 35002
+  server: 58.176.229.127
+  servername: dns68.putata.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
+  ws-opts:
+    headers:
+      Host: dns68.putata.eu.org
+    path: /?ed=2048
+- client-fingerprint: randomized
+  name: 40|HK_speednode_0193
+  network: ws
+  port: 35002
+  server: 58.176.229.127
+  servername: edgetunnel-free.pages.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: de44b044-8f90-4e18-b742-16591667ff96
+  ws-opts:
+    headers:
+      Host: edgetunnel-free.pages.dev
+    path: /?ed=2048

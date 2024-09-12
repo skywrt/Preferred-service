@@ -1,13 +1,20 @@
 proxies:
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 5,9,11,40|KR_speednode_0203
+  password: amazonskr05
+  port: 443
+  server: 43.203.242.24
+  tfo: false
+  type: ss
 - alterId: 64
   cipher: auto
-  name: 5,7,37|未知85
+  name: 5,7|🔗 Vauth - 20
   network: tcp
-  port: 45020
+  port: '45020'
   server: 183.236.51.23
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 2
@@ -77,7 +84,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 5,27|11|加坡|@ripaojiedian
+  name: 5,11,27|11|加坡|@ripaojiedian
   network: tcp
   port: '17575'
   server: relay.gz.flyidc.top
@@ -311,10 +318,22 @@ proxies:
     headers:
       Host: sg1.pkyun.website
     path: /sg1
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 9,11,27|10| |@ripaojiedian
+  password: lNOcIAxy
+  port: 17575
+  server: relay.gz.flyidc.top
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 2d9a81f6-e86e-48e6-9646-b3b1325f8d61
 - client-fingerprint: chrome
-  name: 9|12|SG_speednode_0167
+  name: 9|12|SG_speednode_0198
   network: ws
-  password: b84d16a244460e09
+  password: 182228812d1e0f23
   port: 3306
   server: 5.44.249.42
   skip-cert-verify: false
@@ -324,36 +343,6 @@ proxies:
     headers:
       Host: TG.WangCai2
     path: /gateway/connect
-- alterId: 0
-  cipher: auto
-  name: 10|新加坡 001
-  network: ws
-  port: 443
-  server: hkcft01.xqc.best
-  servername: d84zxlca209ol.cloudfront.net
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5601e7b3-d9b2-4f81-a1b5-59118a7c326d
-  ws-opts:
-    headers:
-      Host: d84zxlca209ol.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 10|新加坡 002
-  network: ws
-  port: 443
-  server: jpcft01.xqc.best
-  servername: dd7xps5fj6dfo.cloudfront.net
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 8433e640-96c0-493b-8fba-afd9474d3429
-  ws-opts:
-    headers:
-      Host: dd7xps5fj6dfo.cloudfront.net
-    path: /stream
 - alterId: 0
   cipher: auto
   name: 11|20|新加坡_由快嘴科技提供：kkzui.com111
@@ -382,7 +371,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇸🇬SG-213.35.113.150-0564
+  name: 19|🇸🇬SG-213.35.113.150-0583
   network: ws
   port: 80
   server: 213.35.113.150
@@ -440,66 +429,37 @@ proxies:
   tls: false
   type: vmess
   uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5
-- name: 27,40|SG_speednode_0198
-  network: ws
-  password: 182228812d1e0f23
-  port: 3306
-  server: 5.44.249.42
-  skip-cert-verify: true
-  sni: TG.WangCai2
-  type: trojan
-  udp: false
-  ws-opts:
-    headers:
-      Host: TG.WangCai_1
-    path: /gateway/connect
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇸🇬 新加坡1SS移动飞快
+  password: 7d3b0ee0-25ac-4756-a59a-0d627308dbe9
+  port: 23343
+  server: sg6.hy2.one
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 28|🇸🇬 新加坡02-V4-流媒体-1A
+  name: 28|🇸🇬 新加坡02-V4-流媒体
   network: ws
   port: 2052
   server: cf.hy2.one
   tls: false
   type: vmess
   udp: true
-  uuid: 0c388668-5995-43b8-ae6b-e66b757c9d49
+  uuid: 7d3b0ee0-25ac-4756-a59a-0d627308dbe9
   ws-opts:
     headers:
       Host: sg0002.hy-2.top
     path: /0
-- auth: 69fd2669-64e0-4122-831d-7492d630cc4e
-  name: 28|🇸🇬 新加坡-1
-  password: 69fd2669-64e0-4122-831d-7492d630cc4e
-  port: 30001
-  server: oracle-amd-singapore1.lanmaoyun.icu
-  skip-cert-verify: false
-  sni: main.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡 A SG
-  password: 027fbaaa-68bb-4f21-a884-5c504fe4a4d0
-  port: 35105
-  server: sg1.iepl.cooc.icu
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡1SS移动飞快-1A
-  password: 0c388668-5995-43b8-ae6b-e66b757c9d49
-  port: 23343
-  server: sg6.hy2.one
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡 B SG
-  password: 027fbaaa-68bb-4f21-a884-5c504fe4a4d0
-  port: 35106
-  server: sg2.iepl.cooc.icu
+  name: 28|🇸🇬 新加坡 C SG
+  password: 18e613d3-eaa5-4818-bb94-8a1df1d2045f
+  port: 35107
+  server: sg3.iepl.cooc.icu
   type: ss
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 28|🇸🇬 新加坡1-V4-1B
+  name: 28|🇸🇬 新加坡1-V4
   network: tcp
   port: 32051
   reality-opts:
@@ -511,12 +471,19 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: b0886b00-2915-4221-a858-d2ba3e432771
+  uuid: 7d3b0ee0-25ac-4756-a59a-0d627308dbe9
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡 C SG
-  password: 027fbaaa-68bb-4f21-a884-5c504fe4a4d0
-  port: 35107
-  server: sg3.iepl.cooc.icu
+  name: 28|🇸🇬 新加坡 A SG
+  password: 18e613d3-eaa5-4818-bb94-8a1df1d2045f
+  port: 35105
+  server: sg1.iepl.cooc.icu
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇸🇬 新加坡 B SG
+  password: 18e613d3-eaa5-4818-bb94-8a1df1d2045f
+  port: 35106
+  server: sg2.iepl.cooc.icu
   type: ss
   udp: true
 - alterId: 0
