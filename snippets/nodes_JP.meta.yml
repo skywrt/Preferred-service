@@ -626,12 +626,6 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: '%2Ftg%40zdyz2'
-- cipher: aes-256-cfb
-  name: 19,20,21,40|JP_speednode_0196
-  password: amazonskr05
-  port: 443
-  server: 3.112.200.4
-  type: ss
 - alterId: 0
   cipher: aes-128-gcm
   name: 19,20,21,37|未知65 1.1MB/s
@@ -641,11 +635,17 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- cipher: aes-256-cfb
-  name: 20,21,40|JP_speednode_0194
-  password: amazonskr05
-  port: 443
-  server: 54.238.155.217
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇯🇵JP-185.172.113.182-0649
+  password: G!yBwPWH3Vao
+  port: 804
+  server: 185.172.113.182
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇯🇵JP-185.172.113.182-0646
+  password: G!yBwPWH3Vao
+  port: 809
+  server: 185.172.113.182
   type: ss
 - alterId: 0
   cipher: auto
@@ -681,15 +681,22 @@ proxies:
   type: vmess
   uuid: f9771c19-c91c-41b5-9064-8768b51cec6d
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本 A JP
-  password: ae497cd4-7c27-4a3b-a928-4b937e01b2ba
-  port: 47100
-  server: jp1.iepl.cooc.icu
+  name: 28|🇯🇵 日本 C JP
+  password: 7050657a-5582-4265-b519-b018ea213f80
+  port: 19881
+  server: jp3.iepl.cooc.icu
   type: ss
   udp: true
-- auth: 3f3255ee-fc94-463e-8d7e-d0e318b705da
-  name: 28|🇯🇵 日本-2-1A
-  password: 3f3255ee-fc94-463e-8d7e-d0e318b705da
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本 B JP
+  password: 7050657a-5582-4265-b519-b018ea213f80
+  port: 47101
+  server: jp2.iepl.cooc.icu
+  type: ss
+  udp: true
+- auth: 06fe8788-1f8a-4074-9f8b-cdd31b2a4a77
+  name: 28|🇯🇵 日本-2
+  password: 06fe8788-1f8a-4074-9f8b-cdd31b2a4a77
   port: 30001
   server: oracle-amd-osaka1.lanmaoyun.icu
   skip-cert-verify: false
@@ -698,43 +705,445 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|🇯🇵 JP 海外用户
-  password: ae497cd4-7c27-4a3b-a928-4b937e01b2ba
+  password: 7050657a-5582-4265-b519-b018ea213f80
   port: 10001
   server: jp.cooc.icu
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本 C JP
-  password: ae497cd4-7c27-4a3b-a928-4b937e01b2ba
-  port: 19881
-  server: jp3.iepl.cooc.icu
+  name: 28|🇯🇵 日本 A JP
+  password: 7050657a-5582-4265-b519-b018ea213f80
+  port: 47100
+  server: jp1.iepl.cooc.icu
   type: ss
   udp: true
-- auth: 5a331423-0908-4402-9b6a-3a9cb34d2536
-  name: 28|🇯🇵 日本-1-1B
-  password: 5a331423-0908-4402-9b6a-3a9cb34d2536
+- auth: 06fe8788-1f8a-4074-9f8b-cdd31b2a4a77
+  name: 28|🇯🇵 日本-1
+  password: 06fe8788-1f8a-4074-9f8b-cdd31b2a4a77
   port: 30001
   server: oracle-amd-tokyo1.lanmaoyun.icu
   skip-cert-verify: false
   sni: tokyo.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本 B JP
-  password: ae497cd4-7c27-4a3b-a928-4b937e01b2ba
-  port: 47101
-  server: jp2.iepl.cooc.icu
-  type: ss
+- name: 40|JP_speednode_0254
+  network: ws
+  port: 40439
+  server: 91.199.209.241
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
-- cipher: aes-256-cfb
-  name: 40|JP_speednode_0195
-  password: amazonskr05
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0255
+  network: ws
+  port: 19125
+  server: 85.113.70.29
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0256
+  network: ws
+  port: 19217
+  server: 45.66.130.58
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0257
+  network: ws
+  port: 28865
+  server: 45.66.129.123
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0258
+  network: ws
+  port: 21997
+  server: 45.143.234.126
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0259
+  network: ws
+  port: 16091
+  server: 45.143.233.253
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0260
+  network: ws
+  port: 11156
+  server: 45.137.180.117
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0261
+  network: ws
+  port: 1904
+  server: 38.47.124.94
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0262
+  network: ws
+  port: 20309
+  server: 38.47.124.210
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0263
+  network: ws
+  port: 1233
+  server: 45.66.217.162
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0264
+  network: ws
+  port: 58429
+  server: 38.47.99.52
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0265
+  network: ws
+  port: 47000
+  server: 38.47.96.148
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0266
+  network: ws
+  port: 36521
+  server: 45.14.106.186
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0267
+  network: ws
+  port: 17232
+  server: 195.245.241.30
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0268
+  network: ws
+  port: 19703
+  server: 185.184.223.151
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0269
+  network: ws
+  port: 24686
+  server: 195.245.242.237
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0270
+  network: ws
+  port: 26512
+  server: 193.111.30.48
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0271
+  network: ws
+  port: 1112
+  server: 176.119.150.174
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0272
+  network: ws
+  port: 13054
+  server: 167.88.185.137
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0273
+  network: ws
+  port: 34237
+  server: 167.88.182.86
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0274
+  network: ws
   port: 443
-  server: 57.180.28.226
-  type: ss
-- cipher: rc4-md5
-  name: 40|JP_speednode_0197
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 172.105.199.111
-  type: ss
+  server: 154.64.226.138
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0275
+  network: ws
+  port: 56565
+  server: 103.201.130.137
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0276
+  network: ws
+  port: 22363
+  server: 103.201.130.137
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0277
+  network: ws
+  port: 57610
+  server: 103.232.213.26
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 40|JP_speednode_0278
+  network: tcp
+  port: 56702
+  reality-opts:
+    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
+    short-id: 792147b8
+  server: vljp.interld123456789.com
+  servername: addons.mozilla.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 54080d7d-5016-4b23-acfe-c0872844c55c
+- name: 40|JP_speednode_0279
+  network: ws
+  port: 31262
+  server: 103.151.40.23
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0280
+  network: ws
+  port: 34446
+  server: 206.190.238.68
+  servername: pages.tcorg.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1b36afe3-79d3-42c5-8ac2-407ca73ce300
+  ws-opts:
+    headers:
+      Host: pages.tcorg.filegear-sg.me
+    path: /?ed=2048
+- name: 40|JP_speednode_0281
+  network: ws
+  port: 2086
+  server: 3.112.254.49
+  servername: pages.tcorg.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1b36afe3-79d3-42c5-8ac2-407ca73ce300
+  ws-opts:
+    headers:
+      Host: pages.tcorg.filegear-sg.me
+    path: /?ed=2048
+- name: 40|JP_speednode_0282
+  network: ws
+  port: 54310
+  server: 103.75.70.25
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 40|JP_speednode_0283
+  network: ws
+  port: 57610
+  server: 103.232.213.26
+  servername: pages.tcorg.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1b36afe3-79d3-42c5-8ac2-407ca73ce300
+  ws-opts:
+    headers:
+      Host: pages.tcorg.filegear-sg.me
+    path: /?ed=2048
