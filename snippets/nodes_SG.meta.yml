@@ -1,4 +1,46 @@
 proxies:
+- client-fingerprint: randomized
+  fingerprint: ''
+  name: 3|3cc68269a70b454493b4dac17dffaa...
+  network: ws
+  port: 443
+  server: 103.172.110.103
+  servername: cmli.ali.f5.si
+  tls: true
+  type: vless
+  udp: false
+  uuid: 67e631ef-5b10-407f-b064-515240184b95
+  ws-opts:
+    headers:
+      host: cmli.ali.f5.si
+    path: /?ed=2560
+- client-fingerprint: randomized
+  fingerprint: ''
+  name: 3|347ed8f41859488189294308206453...
+  network: ws
+  port: 443
+  server: 103.172.110.102
+  servername: cmli.ali.f5.si
+  tls: true
+  type: vless
+  udp: false
+  uuid: 67e631ef-5b10-407f-b064-515240184b95
+  ws-opts:
+    headers:
+      host: cmli.ali.f5.si
+    path: /?ed=2560
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|62554b25cf844874b3486e05a34e1a...
+  network: ws
+  port: 80
+  server: 159.65.13.114
+  tls: false
+  type: vless
+  udp: false
+  uuid: 83341b3c-baa3-49d3-be75-5f2f44f63390
+  ws-opts:
+    path: /
 - alterId: 64
   cipher: auto
   name: 8|🇸🇬SG-159.223.94.156-176_1@176
@@ -166,19 +208,26 @@ proxies:
     headers:
       Host: sg2.3320.top
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡1SS移动飞快-1B
-  password: eb93b1dd-32e6-4090-a0b7-a7917619ad70
-  port: 23343
-  server: sg6.hy2.one
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 28|🇸🇬 新加坡02-V4-流媒体-1A
+  network: ws
+  port: 2052
+  server: cf.hy2.one
+  tls: false
+  type: vmess
   udp: true
-- auth: 5d52cbf5-9fcf-429f-8288-0705f2065171
-  name: 28|🇸🇬 新加坡-1
-  password: 5d52cbf5-9fcf-429f-8288-0705f2065171
+  uuid: caba5d51-98b6-4c2d-b52f-7921cba2fb30
+  ws-opts:
+    headers:
+      Host: sg0002.hy-2.top
+    path: /0
+- auth: 8d9127fa-c00e-4919-8fa4-93287ff939b9
+  name: 28|🇸🇬 新加坡-1-1B
+  password: 8d9127fa-c00e-4919-8fa4-93287ff939b9
   port: 30001
   server: oracle-amd-singapore1.lanmaoyun.icu
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: main.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
@@ -196,21 +245,14 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 39a8ba74-5516-45be-a366-9cb8ddb054ef
-- alterId: 0
-  cipher: auto
-  name: 28|🇸🇬 新加坡02-V4-流媒体-1B
-  network: ws
-  port: 2052
-  server: cf.hy2.one
-  tls: false
-  type: vmess
+  uuid: caba5d51-98b6-4c2d-b52f-7921cba2fb30
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇸🇬 新加坡1SS移动飞快-1A
+  password: caba5d51-98b6-4c2d-b52f-7921cba2fb30
+  port: 23343
+  server: sg6.hy2.one
+  type: ss
   udp: true
-  uuid: eb93b1dd-32e6-4090-a0b7-a7917619ad70
-  ws-opts:
-    headers:
-      Host: sg0002.hy-2.top
-    path: /0
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇸🇬 SG-5.34.176.111...
