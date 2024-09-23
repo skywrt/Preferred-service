@@ -29,13 +29,16 @@ proxies:
   tls: false
   type: vmess
   uuid: decf7c94-f0fc-4028-a504-85a77d9c806a
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 9,11,24,27|13|🇭🇰 香港4|@ripaojiedian
+  name: 9,11,24,27,37|🇭🇰HK香港2
   password: 7efd4673-1d09-4be0-858b-7ee5d8b33dcd
   port: 13913
   server: gdyddx500.xiyunchen.cn
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
 - client-fingerprint: chrome
   name: 9|🇭🇰 13,14|香港5|@ripaojiedian
@@ -566,12 +569,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- name: 24|🇭🇰 香港(油管:破解资源君2.0)
+- alterId: 0
+  name: '24,37|HK #1'
   password: eb50af3d-5339-4ef7-8471-6cde8dff1ba9
   port: 443
   server: 921hk.tfzhc.top
   skip-cert-verify: true
+  tls: true
   type: trojan
+  udp: true
 - name: 24,27|13,14|香港5|@ripaojiedian
   network: tcp
   password: tYpcKbqz
@@ -581,13 +587,13 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 28|🇭🇰 香港01-1A
-  password: d32e5f16-8312-414c-a070-055c47c482a2
+  password: 92ec7924-a717-49af-8869-7e2264838e0a
   port: 34338
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港03-1B
+  name: 28|🇭🇰 香港03-1A
   password: 92ec7924-a717-49af-8869-7e2264838e0a
   port: 20052
   server: gy.666666222.shop
@@ -595,22 +601,11 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|🇭🇰 香港02-1B
-  password: 92ec7924-a717-49af-8869-7e2264838e0a
+  password: 53891545-6c3b-41fb-81f1-c86c28e5ddd4
   port: 20035
   server: gy.666666222.shop
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-62.72.163.54:...
-  network: ws
-  port: 10001
-  server: 62.72.163.54
-  tls: false
-  type: vmess
-  uuid: 55429656-9a94-422f-997d-b067695bc89d
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-210.0.158.21...
@@ -626,10 +621,21 @@ proxies:
       Host: 19.lwdh.us
     path: /
 - alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-62.72.163.54:...
+  network: ws
+  port: 10001
+  server: 62.72.163.54
+  tls: false
+  type: vmess
+  uuid: 55429656-9a94-422f-997d-b067695bc89d
+  ws-opts:
+    path: /
+- alterId: 0
   cipher: aes-128-gcm
   name: 37|HK
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29217
+  port: 24725
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
@@ -638,7 +644,7 @@ proxies:
   cipher: aes-128-gcm
   name: 37|HK2
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29102
+  port: 29211
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
@@ -647,87 +653,33 @@ proxies:
   cipher: aes-128-gcm
   name: 37|HK3
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 24724
+  port: 25203
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
+  cipher: aes-128-gcm
   name: 37|HK4
-  network: ws
-  password: tg-dns68
-  port: 9443
-  server: 47.56.196.176
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29101
+  server: 91.199.84.195
   skip-cert-verify: true
-  sni: vip.putata.eu.org
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|HK5
+  network: ws
+  password: 95b
+  port: 443
+  server: 219.76.13.164
+  skip-cert-verify: true
+  sni: 30388d70-6f5c-4d7c-8daa-9d3df7c5c526.9150e878-8296-4798-a172-c3fe66b8dee5.ddnsgeek.com
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 37|HK5
-  password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29201
-  server: 91.199.84.195
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
   name: 37|HK6
-  password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29106
-  server: 91.199.84.195
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 37|HK7
-  password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29210
-  server: 91.199.84.195
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 37|HK8
-  password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 24211
-  server: 91.199.84.195
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 37|HK9
-  password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 24214
-  server: 91.199.84.195
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 37|HK10
-  password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29222
-  server: 91.199.84.195
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 37|HK11
-  password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 25204
-  server: 91.199.84.195
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 37|HK12
   network: ws
   password: 95b
   port: 34237
@@ -737,3 +689,50 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK7
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29106
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|HK8
+  network: ws
+  password: 95b
+  port: 443
+  server: 219.76.13.180
+  skip-cert-verify: true
+  sni: 30388d70-6f5c-4d7c-8daa-9d3df7c5c526.9150e878-8296-4798-a172-c3fe66b8dee5.ddnsgeek.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK9
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29209
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK10
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29111
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK11
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 25201
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
