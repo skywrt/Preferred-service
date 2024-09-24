@@ -15,18 +15,15 @@ proxies:
   server: gdyddx500.xiyunchen.cn
   tfo: false
   type: ss
-- alterId: 0
-  client-fingerprint: chrome
-  name: '9,24,27,37|HK #1'
+- client-fingerprint: chrome
+  name: 9,24,27|13,14|香港3|@ripaojiedian
   network: tcp
   password: cf8c51d3-e692-46a6-b351-4c5ef0b5efc3
   port: 13007
   server: naiu-hk.05vr9nyqg5.download
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
-  tls: true
   type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 9,11,24,27|13|🇭🇰 香港4|@ripaojiedian
@@ -43,13 +40,16 @@ proxies:
   skip-cert-verify: false
   sni: 36.151.192.201
   type: trojan
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 9,11,24,27|13|🇭🇰 香港6|@ripaojiedian
+  name: 9,11,24,27,37|🇭🇰HK香港2
   password: 44f7aa73-8c37-4c6a-8637-1db919640426
   port: 34676
   server: whcm.v6v.eu
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
@@ -640,13 +640,16 @@ proxies:
     headers:
       Host: data-hk-v2.shwjfkw.cn
     path: /hls/cctv5phd.m3u8
-- name: 24,27|13,14|香港5|@ripaojiedian
+- alterId: 0
+  name: '24,27,37|HK #1'
   network: tcp
   password: wwTIozXY
   port: 27131
   server: 36.151.192.201
   skip-cert-verify: true
+  tls: true
   type: trojan
+  udp: true
 - name: '24|15|HK_speednode_0184 #1'
   password: 95b
   port: 443
@@ -669,23 +672,23 @@ proxies:
   sni: 30388d70-6f5c-4d7c-8daa-9d3df7c5c526.9150e878-8296-4798-a172-c3fe66b8dee5.ddnsgeek.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港02-1C
-  password: e1263829-d785-4ca3-b7c7-733ead9d5209
+  name: 28|🇭🇰 香港02-1A
+  password: 7c4a8722-60c1-41fd-af4e-40f6afdaec52
   port: 20035
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港03-1D
-  password: 7c4a8722-60c1-41fd-af4e-40f6afdaec52
-  port: 20052
+  name: 28|🇭🇰 香港01-1B
+  password: 52bc9d7a-6c7c-4d61-b690-8e81a700cb95
+  port: 34338
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港01-1C
-  password: e1263829-d785-4ca3-b7c7-733ead9d5209
-  port: 34338
+  name: 28|🇭🇰 香港03-1A
+  password: 7c4a8722-60c1-41fd-af4e-40f6afdaec52
+  port: 20052
   server: gy.666666222.shop
   type: ss
   udp: true
@@ -718,17 +721,17 @@ proxies:
   cipher: aes-128-gcm
   name: 37|HK
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 24721
+  port: 29230
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
+  cipher: aes-128-gcm
   name: 37|HK2
-  password: 190067b9-63a3-4f8d-9c16-ee2737a87c14
-  port: 50206
-  server: 46.232.123.37
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 25204
+  server: 91.199.84.195
   skip-cert-verify: true
   tls: true
   type: ss
@@ -736,17 +739,17 @@ proxies:
   cipher: aes-128-gcm
   name: 37|HK3
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 24722
+  port: 24215
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  cipher: aes-128-gcm
+  cipher: chacha20-ietf-poly1305
   name: 37|HK4
-  password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29225
-  server: 91.199.84.195
+  password: 5ddbeb21-15fb-4aa5-8cc3-34df601c1f02
+  port: 50219
+  server: 46.232.123.37
   skip-cert-verify: true
   tls: true
   type: ss
@@ -754,7 +757,7 @@ proxies:
   cipher: aes-128-gcm
   name: 37|HK5
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29303
+  port: 29205
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
@@ -763,51 +766,31 @@ proxies:
   cipher: aes-128-gcm
   name: 37|HK6
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29401
+  port: 29224
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
+  cipher: aes-128-gcm
   name: 37|HK7
-  network: ws
-  password: 95b
-  port: 587
-  server: 20.239.55.42
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29219
+  server: 91.199.84.195
   skip-cert-verify: true
-  sni: fc071d49-af91-42d6-a20e-5a64e24a53bc.71a45835-dd0c-4d51-8bd4-9ccf9f223662.casacam.net
   tls: true
-  type: trojan
-  udp: true
+  type: ss
 - alterId: 0
   cipher: aes-128-gcm
   name: 37|HK8
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29212
+  port: 29204
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  cipher: aes-128-gcm
   name: 37|HK9
-  password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29109
-  server: 91.199.84.195
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 37|HK10
-  password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29221
-  server: 91.199.84.195
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 37|HK11
   network: ws
   password: 95b
   port: 443
@@ -818,10 +801,28 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|HK10
+  password: 190067b9-63a3-4f8d-9c16-ee2737a87c14
+  port: 50255
+  server: 46.232.123.37
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK11
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29106
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: aes-128-gcm
   name: 37|HK12
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29227
+  port: 29305
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
@@ -830,7 +831,7 @@ proxies:
   cipher: aes-128-gcm
   name: 37|HK13
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29107
+  port: 22213
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
@@ -839,7 +840,16 @@ proxies:
   cipher: aes-128-gcm
   name: 37|HK14
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29105
+  port: 23201
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK15
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 24722
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
