@@ -1,4 +1,23 @@
 proxies:
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: '9,11,24,27,37|HK #1'
+  password: f9c1b10b-379d-4e69-b8fa-fb925df2b8e2
+  port: 59096
+  server: gdyddx500.xiyunchen.cn
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 9,11,13,24,27|13|🇭🇰 香港2|@ripaojiedian
+  password: f9c1b10b-379d-4e69-b8fa-fb925df2b8e2
+  port: 18528
+  server: gdyddx500.xiyunchen.cn
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 9,11,24,27|13|🇭🇰 香港3|@ripaojiedian
@@ -7,14 +26,17 @@ proxies:
   server: gdyddx500.xiyunchen.cn
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: '9,24|🇭🇰 13,14|香港3|@ripaojiedian #1'
-  password: cf8c51d3-e692-46a6-b351-4c5ef0b5efc3
-  port: 13007
-  server: naiu-hk.05vr9nyqg5.download
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 9,27|13|🇭🇰 香港4|@ripaojiedian
+  port: 51194
+  server: 38.147.189.7
   skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 11f686f6-77fb-4ba0-a7c2-70c5f11ca804
 - client-fingerprint: chrome
   name: 9|🇭🇰 13,14|香港5|@ripaojiedian
   password: wwTIozXY
@@ -23,14 +45,25 @@ proxies:
   skip-cert-verify: false
   sni: 36.151.192.201
   type: trojan
-- cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf
   client-fingerprint: chrome
-  name: 9,11,24,27|13| |@ripaojiedian
-  password: f9c1b10b-379d-4e69-b8fa-fb925df2b8e2
-  port: 59096
-  server: gdyddx500.xiyunchen.cn
+  name: 9,11,27|13|🇭🇰 香港6|@ripaojiedian
+  password: asd123456
+  port: 8388
+  server: 103.36.90.194
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 9,27|13|🇭🇰 香港7|@ripaojiedian
+  port: 44801
+  server: ambxxic01hk.dorabbb.top
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: a98edd9d-1e4f-4e12-9c54-6c3814b49aba
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 9,11,24,27|13|🇭🇰 香港R|@ripaojiedian
@@ -304,6 +337,26 @@ proxies:
     headers:
       Host: dns68.putata.eu.org
     path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 11,27|14|香港4|@ripaojiedian
+  network: tcp
+  port: '51194'
+  server: 38.147.189.7
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 11f686f6-77fb-4ba0-a7c2-70c5f11ca804
+- alterId: 0
+  cipher: auto
+  name: 11,27|14|香港7|@ripaojiedian
+  network: tcp
+  port: '44801'
+  server: ambxxic01hk.dorabbb.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a98edd9d-1e4f-4e12-9c54-6c3814b49aba
 - name: 17|HK_youtube@资源分享师_238
   network: ws
   port: 29876
@@ -1091,6 +1144,13 @@ proxies:
   server: solink.ga
   skip-cert-verify: true
   type: trojan
+- name: 24|🇭🇰 13,14|香港3|@ripaojiedian
+  password: cf8c51d3-e692-46a6-b351-4c5ef0b5efc3
+  port: 13007
+  server: naiu-hk.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - name: 24,27|13,14|香港5|@ripaojiedian
   network: tcp
   password: wwTIozXY
@@ -1119,92 +1179,60 @@ proxies:
   skip-cert-verify: true
   sni: 30388d70-6f5c-4d7c-8daa-9d3df7c5c526.9150e878-8296-4798-a172-c3fe66b8dee5.ddnsgeek.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 27|13|🇭🇰 香港4|@ripaojiedian
-  port: 51194
-  server: 38.147.189.7
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 11f686f6-77fb-4ba0-a7c2-70c5f11ca804
-- cipher: chacha20-ietf
-  name: 27|13|🇭🇰 香港6|@ripaojiedian
-  password: asd123456
-  port: 8388
-  server: 103.36.90.194
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 27|13|🇭🇰 香港7|@ripaojiedian
-  port: 44801
-  server: ambxxic01hk.dorabbb.top
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: a98edd9d-1e4f-4e12-9c54-6c3814b49aba
-- alterId: 0
-  cipher: auto
-  name: 27|14|香港4|@ripaojiedian
-  network: tcp
-  port: '51194'
-  server: 38.147.189.7
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 11f686f6-77fb-4ba0-a7c2-70c5f11ca804
-- alterId: 0
-  cipher: auto
-  name: 27|14|香港7|@ripaojiedian
-  network: tcp
-  port: '44801'
-  server: ambxxic01hk.dorabbb.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a98edd9d-1e4f-4e12-9c54-6c3814b49aba
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港03-1D
-  password: f8dfd22c-34cb-4b79-9a04-7603de956277
-  port: 24226
-  server: afa007d388783f3a.cdn.jiashule.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港02-1A
+  name: 28|🇭🇰 香港03-1A
   password: 2220003e-ef3f-4c89-b986-c2eaeb21ae71
-  port: 20035
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港01-1C
-  password: e2398014-8c58-414d-a614-36740f92c3a4
-  port: 34338
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港01-1D
-  password: f8dfd22c-34cb-4b79-9a04-7603de956277
-  port: 36731
-  server: 0e8383f2446d374c.cdn.jiashule.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港03-1C
-  password: e2398014-8c58-414d-a614-36740f92c3a4
   port: 20052
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港02-1D
-  password: f8dfd22c-34cb-4b79-9a04-7603de956277
+  name: 28|🇭🇰 香港01-1E
+  password: 88a6a230-c919-4306-a974-e8c5521e7430
   port: 36731
+  server: 0e8383f2446d374c.cdn.jiashule.com
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 28|🇭🇰 香港-3-V4-1B
+  network: tcp
+  port: 60001
+  reality-opts:
+    public-key: nl1YF9LvLNCewa295lim5ytGT0fkf0XUoSJM01LMoWk
+    short-id: 4e87d75b
+  server: hk003.hy2.one
+  servername: www.python.org
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: ed76cc75-38b9-46f6-8efb-d9f78d57de04
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港04
+  password: 88a6a230-c919-4306-a974-e8c5521e7430
+  port: 22333
+  server: 0e8383f2446d374c.cdn.jiashule.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港01-1D
+  password: 13aa0d93-a756-4404-ada1-715c5776d6c6
+  port: 34338
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港02-1C
+  password: e2398014-8c58-414d-a614-36740f92c3a4
+  port: 20035
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港03-1E
+  password: 88a6a230-c919-4306-a974-e8c5521e7430
+  port: 24226
   server: afa007d388783f3a.cdn.jiashule.com
   type: ss
   udp: true
@@ -1222,29 +1250,25 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: bed32ff3-9415-4f01-ad35-ce1d840b55c1
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 28|🇭🇰 香港-3-V4-1B
-  network: tcp
-  port: 60001
-  reality-opts:
-    public-key: nl1YF9LvLNCewa295lim5ytGT0fkf0XUoSJM01LMoWk
-    short-id: 4e87d75b
-  server: hk003.hy2.one
-  servername: www.python.org
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e7ebebb3-2cf9-4e4f-b804-4e734f91083d
+  uuid: 9d636052-bfd1-4cb9-bf7c-c911250816b9
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港04
-  password: f8dfd22c-34cb-4b79-9a04-7603de956277
-  port: 22333
-  server: 0e8383f2446d374c.cdn.jiashule.com
+  name: 28|🇭🇰 香港02-1E
+  password: 88a6a230-c919-4306-a974-e8c5521e7430
+  port: 36731
+  server: afa007d388783f3a.cdn.jiashule.com
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-62.72.163.54:...
+  network: ws
+  port: 10001
+  server: 62.72.163.54
+  tls: false
+  type: vmess
+  uuid: 55429656-9a94-422f-997d-b067695bc89d
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-210.0.158.21...
@@ -1260,16 +1284,135 @@ proxies:
       Host: 19.lwdh.us
     path: /
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-62.72.163.54:...
+  cipher: aes-128-gcm
+  name: 37|HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29207
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK2
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29106
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK3
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 24725
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK4
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29230
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|HK5
   network: ws
-  port: 10001
-  server: 62.72.163.54
-  tls: false
-  type: vmess
-  uuid: 55429656-9a94-422f-997d-b067695bc89d
-  ws-opts:
-    path: /
+  password: tg-dns68
+  port: 21698
+  server: 156.251.180.181
+  skip-cert-verify: true
+  sni: vip.putata.eu.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK6
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 24724
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK7
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29304
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK8
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 23202
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK9
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29227
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK10
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29228
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK11
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 24726
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK12
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 24723
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|HK13
+  network: ws
+  password: 95b
+  port: 34237
+  server: 103.149.27.36
+  skip-cert-verify: true
+  sni: 30388d70-6f5c-4d7c-8daa-9d3df7c5c526.9150e878-8296-4798-a172-c3fe66b8dee5.ddnsgeek.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|HK14
+  password: 190067b9-63a3-4f8d-9c16-ee2737a87c14
+  port: 50255
+  server: 46.232.123.37
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - name: 40|HK_speednode_0178
   network: ws
   port: 23278
