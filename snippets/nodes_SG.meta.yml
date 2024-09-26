@@ -1,19 +1,11 @@
 proxies:
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 2,9,11,24,27|13|🇭🇰 香港6|@ripaojiedian
-  password: asd123456
-  port: 8388
-  server: 103.36.90.194
-  tfo: false
-  type: ss
 - client-fingerprint: chrome
-  name: 2,9,27,40|CA_speednode_0021
+  name: 2,9|15|CA_speednode_0021
   network: ws
   password: 95b
   port: 443
   server: 15.235.48.70
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: 8582b6f2-7192-4da8-a4cb-c480b71e6c58.e8e54e0f-6317-448a-9999-95f6e16f7117.ooguy.com
   type: trojan
   udp: false
@@ -75,6 +67,23 @@ proxies:
       Host: sg1.pkyun.website
     path: /sg1
 - client-fingerprint: chrome
+  name: '9,27|13,14||@ripaojiedian #1'
+  network: tcp
+  password: c471ef32-798d-40a0-a57c-acf3475a204e
+  port: 13027
+  server: naiu-sg.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: '9,11,27|13| |@ripaojiedian #2'
+  password: amazonskr05
+  port: 443
+  server: 52.78.116.186
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
   name: 9|15|SG_speednode_0328
   network: ws
   port: 443
@@ -104,22 +113,6 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: Telegram🇨🇳 @WangCai2 /?ed=2048security=tls
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: 10|新加坡 001
-  network: tcp
-  port: 24021
-  reality-opts:
-    public-key: RpeUUI-GjeFRNOOUBauRNYvvM7yVk5yihRI9Tig4jxc
-    short-id: 23aae802
-  server: sg.maple.icu
-  servername: www.apple.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 83512b4a-64a9-4058-80df-53d95e2fbaa0
 - name: 17|SG_youtube@资源分享师_208
   network: ws
   port: 2053
@@ -157,38 +150,38 @@ proxies:
   type: vmess
   uuid: 3dc5c1c9-7d8c-432e-daff-4422103a7918
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡01-1C
-  password: 9444f5a0-469e-48dd-be6e-d99f5c06994e
-  port: 20010
-  server: 0e8383f2446d374c.cdn.jiashule.com
+  name: 28|🇸🇬 新加坡03
+  password: f0ae7de7-9aa7-43cf-8bd1-792d75367adb
+  port: 22189
+  server: afa007d388783f3a.cdn.jiashule.com
   type: ss
   udp: true
-- auth: 6b42509d-846e-4699-95e6-75e75aad59e6
-  name: 28|🇸🇬 新加坡-1-1B
-  password: 6b42509d-846e-4699-95e6-75e75aad59e6
+- auth: e50f504d-3b00-43b3-8a2d-96ffba73e797
+  name: 28|🇸🇬 新加坡-1
+  password: e50f504d-3b00-43b3-8a2d-96ffba73e797
   port: 30001
   server: oracle-amd-singapore1.lanmaoyun.icu
   skip-cert-verify: true
   sni: main.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡05
-  password: 9444f5a0-469e-48dd-be6e-d99f5c06994e
-  port: 44055
-  server: 0e8383f2446d374c.cdn.jiashule.com
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 28|🇸🇬 新加坡02-V4-流媒体-1A
+  network: ws
+  port: 2052
+  server: cf.hy2.one
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡03
-  password: 9444f5a0-469e-48dd-be6e-d99f5c06994e
-  port: 22189
-  server: afa007d388783f3a.cdn.jiashule.com
-  type: ss
-  udp: true
+  uuid: 88f25d8a-002d-480a-8984-08b4d9963356
+  ws-opts:
+    headers:
+      Host: sg0002.hy-2.top
+    path: /0
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 28|🇸🇬 新加坡1-V4-1A
+  name: 28|🇸🇬 新加坡1-V4-1B
   network: tcp
   port: 32051
   reality-opts:
@@ -200,40 +193,33 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 1d9cf283-f207-4214-894f-f5378cb73a13
+  uuid: 51203f15-acec-4012-b448-06a45a5cc1b5
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡1SS移动飞快-1B
-  password: 950ab391-e2c7-47b7-9791-851958877fe7
-  port: 23343
-  server: sg6.hy2.one
+  name: 28|🇸🇬 新加坡05
+  password: f0ae7de7-9aa7-43cf-8bd1-792d75367adb
+  port: 44055
+  server: 0e8383f2446d374c.cdn.jiashule.com
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|🇸🇬 新加坡02-V4-流媒体-1A
-  network: ws
-  port: 2052
-  server: cf.hy2.one
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1d9cf283-f207-4214-894f-f5378cb73a13
-  ws-opts:
-    headers:
-      Host: sg0002.hy-2.top
-    path: /0
 - cipher: chacha20-ietf-poly1305
   name: 28|🇸🇬 新加坡06
-  password: 9444f5a0-469e-48dd-be6e-d99f5c06994e
+  password: f0ae7de7-9aa7-43cf-8bd1-792d75367adb
   port: 24715
   server: afa007d388783f3a.cdn.jiashule.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡04
-  password: 9444f5a0-469e-48dd-be6e-d99f5c06994e
-  port: 22189
+  name: 28|🇸🇬 新加坡01-1C
+  password: f0ae7de7-9aa7-43cf-8bd1-792d75367adb
+  port: 20010
   server: 0e8383f2446d374c.cdn.jiashule.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇸🇬 新加坡1SS移动飞快-1B
+  password: 51203f15-acec-4012-b448-06a45a5cc1b5
+  port: 23343
+  server: sg6.hy2.one
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -245,9 +231,16 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|🇸🇬 新加坡02
-  password: 9444f5a0-469e-48dd-be6e-d99f5c06994e
+  password: f0ae7de7-9aa7-43cf-8bd1-792d75367adb
   port: 20010
   server: afa007d388783f3a.cdn.jiashule.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇸🇬 新加坡04
+  password: f0ae7de7-9aa7-43cf-8bd1-792d75367adb
+  port: 22189
+  server: 0e8383f2446d374c.cdn.jiashule.com
   type: ss
   udp: true
 - name: 38|🇸🇬_SG_新加坡_2
@@ -286,21 +279,97 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- name: 40|SG_speednode_0328
+- client-fingerprint: chrome
+  name: 40|SG_speednode_0362
   network: ws
-  port: 443
-  server: 8.223.39.101
+  port: 80
+  server: 8.223.113.114
   servername: a.ssll.gay
   skip-cert-verify: false
-  tls: true
+  tfo: false
+  tls: false
   type: vless
-  udp: true
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
       Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 40|SG_speednode_0329
+    path: /Telegram🇨🇳 @WangCai_8 /?ed=2048
+- client-fingerprint: chrome
+  name: 40|SG_speednode_0363
+  network: ws
+  port: 80
+  server: 8.223.72.252
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳 @WangCai_8 /?ed=2048
+- client-fingerprint: chrome
+  name: 40|SG_speednode_0364
+  network: ws
+  port: 80
+  server: 52.163.67.59
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳 @WangCai_8 /?ed=2048
+- client-fingerprint: chrome
+  name: 40|SG_speednode_0365
+  network: ws
+  port: 80
+  server: 47.236.162.30
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳 @WangCai_8 /?ed=2048
+- client-fingerprint: chrome
+  name: 40|SG_speednode_0366
+  network: ws
+  port: 80
+  server: 8.222.92.72
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳 @WangCai_8 /?ed=2048
+- client-fingerprint: chrome
+  name: 40|SG_speednode_0367
+  network: ws
+  port: 80
+  server: 47.237.126.88
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳 @WangCai_8 /?ed=2048
+- name: 40|SG_speednode_0368
   network: ws
   port: 443
   server: 8.222.101.17
@@ -313,4 +382,48 @@ proxies:
   ws-opts:
     headers:
       Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
+- client-fingerprint: chrome
+  name: 40|SG_speednode_0369
+  network: ws
+  port: 443
+  server: 8.222.101.17
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
+- client-fingerprint: chrome
+  name: 40|SG_speednode_0370
+  network: ws
+  port: 80
+  server: 8.213.145.176
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳 @WangCai_8 /?ed=2048
+- name: 40|SG_speednode_0371
+  network: ws
+  port: 443
+  server: 8.223.39.101
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
