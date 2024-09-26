@@ -1,42 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 5|Singapore+04
-  network: tcp
-  port: 60001
-  reality-opts:
-    public-key: eUdPnuVKrbjOoM6SDYOGfVVwZcztXQdUoT2Y0z88R1E
-    short-id: 49b038a4
-  server: sg4.helloco.xyz
-  servername: python.org
-  tls: false
-  type: vless
-  uuid: 0fb66d34-7974-424e-92ee-e7a60925c6b1
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 5|Singapore+03
-  network: tcp
-  port: 60001
-  reality-opts:
-    public-key: W5725QFzaybXFjQkSX8-FAc6iqabzUHFYgT-AREchVY
-    short-id: 543759e8
-  server: sg3.helloco.xyz
-  servername: python.org
-  tls: false
-  type: vless
-  uuid: 0fb66d34-7974-424e-92ee-e7a60925c6b1
-- name: '5,38|🇸🇬_SG_新加坡_7 #1'
-  network: ws
-  port: 443
-  server: 27.50.49.13
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
 - name: '5,38|🇸🇬_SG_新加坡_2 #1'
   network: ws
   port: 8443
@@ -49,9 +11,64 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- client-fingerprint: chrome
+- name: '5,38|🇸🇬_SG_新加坡_7 #1'
+  network: ws
+  port: 443
+  server: 27.50.49.13
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2f%3fed%3d2048'
+- client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: 5|Singapore+02
+  name: '5|Singapore+01 #1'
+  network: tcp
+  port: 60001
+  reality-opts:
+    public-key: 0898XYGggRCKKuad0O-w5ccMWjxvip-JExGyjdv57xA
+    short-id: 9a853fa5
+  server: sg1.helloco.xyz
+  servername: python.org
+  tls: false
+  type: vless
+  uuid: 0fb66d34-7974-424e-92ee-e7a60925c6b1
+- client-fingerprint: chrome
+  name: '5,9,24,27|13,14||@ripaojiedian #1'
+  network: tcp
+  password: c471ef32-798d-40a0-a57c-acf3475a204e
+  port: 13027
+  server: naiu-sg.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: '5|Singapore+04 #1'
+  network: tcp
+  port: 60001
+  reality-opts:
+    public-key: eUdPnuVKrbjOoM6SDYOGfVVwZcztXQdUoT2Y0z88R1E
+    short-id: 49b038a4
+  server: sg4.helloco.xyz
+  servername: python.org
+  tls: false
+  type: vless
+  uuid: 0fb66d34-7974-424e-92ee-e7a60925c6b1
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: '5,9,11,24,27|13| |@ripaojiedian #2'
+  password: amazonskr05
+  port: 443
+  server: 52.78.116.186
+  tfo: false
+  type: ss
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '5|Singapore+02 #2'
   network: tcp
   port: 60001
   reality-opts:
@@ -74,27 +91,25 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '5,9,11,24,27|13| |@ripaojiedian #2'
-  password: amazonskr05
-  port: 443
-  server: 52.78.116.186
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
+- client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: 5|Singapore+01
+  name: '5|Singapore+03 #1'
   network: tcp
   port: 60001
   reality-opts:
-    public-key: 0898XYGggRCKKuad0O-w5ccMWjxvip-JExGyjdv57xA
-    short-id: 9a853fa5
-  server: sg1.helloco.xyz
+    public-key: W5725QFzaybXFjQkSX8-FAc6iqabzUHFYgT-AREchVY
+    short-id: 543759e8
+  server: sg3.helloco.xyz
   servername: python.org
   tls: false
   type: vless
   uuid: 0fb66d34-7974-424e-92ee-e7a60925c6b1
+- name: 5|新加坡+亚马逊(Amazon)公司数据中心
+  password: ac590e89-ba43-49a1-a8b2-38ec70dc7907
+  port: 20230
+  server: sg005.421421.xyz
+  sni: 421421.xyz
+  type: trojan
 - alterId: 64
   cipher: auto
   name: 8|🇸🇬SG-159.223.94.156-176_1@176
@@ -334,65 +349,23 @@ proxies:
   tls: false
   type: vmess
   uuid: 3dc5c1c9-7d8c-432e-daff-4422103a7918
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡06
-  password: b438bf5d-4c10-45be-947f-53ceb6944ad6
-  port: 24715
-  server: afa007d388783f3a.cdn.jiashule.com
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 28|🇸🇬 新加坡02-V4-流媒体-1B
+  name: 28|🇸🇬 新加坡02-V4-流媒体-1A
   network: ws
   port: 2052
   server: cf.hy2.one
   tls: false
   type: vmess
   udp: true
-  uuid: ab5cf767-1da8-4c8e-aaa4-61c05ff71d3d
+  uuid: e11e4d4b-0e5b-4f57-8e94-959f8cc7ed7b
   ws-opts:
     headers:
       Host: sg0002.hy-2.top
     path: /0
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡01-1A
-  password: 928ab53a-2090-486d-8558-b0b56c6f95bd
-  port: 57008
-  server: sg.zh779527.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡1SS移动飞快-1A
-  password: 895fd65b-c439-4922-bf25-973f5b5d21a4
-  port: 23343
-  server: sg6.hy2.one
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡02
-  password: b438bf5d-4c10-45be-947f-53ceb6944ad6
-  port: 20010
-  server: afa007d388783f3a.cdn.jiashule.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡05
-  password: b438bf5d-4c10-45be-947f-53ceb6944ad6
-  port: 44055
-  server: 0e8383f2446d374c.cdn.jiashule.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡03
-  password: b438bf5d-4c10-45be-947f-53ceb6944ad6
-  port: 22189
-  server: afa007d388783f3a.cdn.jiashule.com
-  type: ss
-  udp: true
-- auth: e50f504d-3b00-43b3-8a2d-96ffba73e797
-  name: 28|🇸🇬 新加坡-1-1A
-  password: e50f504d-3b00-43b3-8a2d-96ffba73e797
+- auth: e0d5af61-cb2a-4848-ab3f-9a1d70f73f21
+  name: 28|🇸🇬 新加坡-1-1B
+  password: e0d5af61-cb2a-4848-ab3f-9a1d70f73f21
   port: 30001
   server: oracle-amd-singapore1.lanmaoyun.icu
   skip-cert-verify: true
@@ -400,17 +373,10 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡04
-  password: b438bf5d-4c10-45be-947f-53ceb6944ad6
-  port: 22189
-  server: 0e8383f2446d374c.cdn.jiashule.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡01-1C
-  password: b438bf5d-4c10-45be-947f-53ceb6944ad6
-  port: 20010
-  server: 0e8383f2446d374c.cdn.jiashule.com
+  name: 28|🇸🇬 新加坡1SS移动飞快-1A
+  password: e11e4d4b-0e5b-4f57-8e94-959f8cc7ed7b
+  port: 23343
+  server: sg6.hy2.one
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -427,7 +393,14 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 895fd65b-c439-4922-bf25-973f5b5d21a4
+  uuid: e11e4d4b-0e5b-4f57-8e94-959f8cc7ed7b
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇸🇬 新加坡01-1A
+  password: 928ab53a-2090-486d-8558-b0b56c6f95bd
+  port: 57008
+  server: sg.zh779527.com
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   name: 40|SG_speednode_0362
   network: ws
