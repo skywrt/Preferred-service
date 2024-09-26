@@ -1,13 +1,28 @@
 proxies:
 - client-fingerprint: chrome
-  name: 5,9,24,27|13,14||@ripaojiedian
+  flow: xtls-rprx-vision
+  name: 5|🇹🇼台湾+1
   network: tcp
-  password: c471ef32-798d-40a0-a57c-acf3475a204e
-  port: 13035
-  server: naiu-other.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+  port: 50129
+  reality-opts:
+    public-key: _VV1HHy3iC9Q1GY0cu_oP9UffkvebWdRaVXWdPt3wls
+    short-id: 4777e889
+  server: tw.youxuan.wiki
+  servername: jellyfin.illya.tw
+  tls: false
+  type: vless
+  uuid: 182d151a-9fe8-4b33-a23b-36a02d8f3c60
+- name: 5|🇹🇼台湾+2
+  network: ws
+  port: 2086
+  server: qrzv.youxuan.wiki
+  tls: false
+  type: vless
+  uuid: 182d151a-9fe8-4b33-a23b-36a02d8f3c60
+  ws-opts:
+    headers:
+      Host: tw2.youxuan.wiki
+    path: '%2Fyouxuan'
 - name: 17|TW_youtube@资源分享师_134
   network: ws
   port: 27381
@@ -77,9 +92,16 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|🇹🇼 台湾 1-1B
-  password: 8bd3158c-280a-4314-ac65-d2e1af7dd3be
+  password: 506c271a-1718-46f6-bc1b-c86cb5acc259
   port: 20032
   server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 台湾06 NF解锁
+  password: 928ab53a-2090-486d-8558-b0b56c6f95bd
+  port: 57005
+  server: tw.speedasia.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -96,10 +118,17 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 27a03696-752f-449b-9791-6e19259b7759
+  uuid: 0e99c4f1-896c-4f47-93a4-6b17cfac8b23
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇹🇼 台湾01-1B
-  password: 8bd3158c-280a-4314-ac65-d2e1af7dd3be
+  name: 28|🇹🇼 台湾01 NF解锁
+  password: 928ab53a-2090-486d-8558-b0b56c6f95bd
+  port: 57004
+  server: hk.zh779527.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 台湾01-1A
+  password: 378d143e-8a9d-4763-8152-3227f53085fc
   port: 47564
   server: gy.666666222.shop
   type: ss
@@ -111,17 +140,12 @@ proxies:
   server: tw.zh779527.com
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇹🇼 台湾06 NF解锁
-  password: 928ab53a-2090-486d-8558-b0b56c6f95bd
-  port: 57005
-  server: tw.speedasia.xyz
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|TW 77.1KB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 223.165.4.173
+  skip-cert-verify: true
+  tls: true
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇹🇼 台湾01 NF解锁
-  password: 928ab53a-2090-486d-8558-b0b56c6f95bd
-  port: 57004
-  server: hk.zh779527.com
-  type: ss
-  udp: true
