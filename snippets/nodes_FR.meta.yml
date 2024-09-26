@@ -1,19 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|78cf65ddbeea4af3a2789a46fd3e1b...
-  network: ws
-  port: 22222
-  server: 15.188.128.189
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
 - alterId: 0
   cipher: auto
   name: 8|🇫🇷FR-213.32.63.176-186_1@186
@@ -129,6 +114,20 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: twitterfreecodes
+- delay: 1200
+  name: 10|法国 004
+  network: ws
+  port: 80
+  server: 45.80.110.201
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Twitterfreecodes
 - client-fingerprint: chrome
   delay: 1454
   name: 10|法国 005
@@ -165,15 +164,37 @@ proxies:
   port: 989
   server: 195.154.185.174
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇫🇷FR-193.160.130.245-2793
+  network: ws
+  port: 443
+  server: beyonddsz.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      host: beyonddsz.cfd
+    path: /linkws
 - name: '20,21|🇫🇷FR-13.39.212.162-0999 #1'
   password: telegram-id-directvpn
   port: 22222
   server: 13.39.212.162
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: 24|🇫🇷 法国 巴黎Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.180.80.176
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 28|🇫🇷 法国1-V6-1B
+  name: 28|🇫🇷 法国1-V6-1A
   network: tcp
   port: 63336
   reality-opts:
@@ -185,4 +206,4 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 51203f15-acec-4012-b448-06a45a5cc1b5
+  uuid: 895fd65b-c439-4922-bf25-973f5b5d21a4
