@@ -1,11 +1,31 @@
 proxies:
-- name: 5|🇯🇵 日本 · 05 · 线路2
+- name: 5|🇯🇵 日本 · 01 · 线路1
   network: tcp
   password: ae81349a-0b23-4870-8e1a-1b568a7fc821
-  port: 30054
+  port: 30009
   server: ae5f1a2a-fb75-4800.gttysd.com
   skip-cert-verify: true
-  sni: v1jp01.fuqiangren.com
+  sni: jp03.6kk.org
+  type: trojan
+- name: 5|日本-海豚白嫖
+  password: 233e69a4-34f5-379f-9012-fa191392f468
+  port: 43699
+  server: scm.zarelayv1.com
+  skip-cert-verify: true
+  type: trojan
+- name: 5|🇯🇵 日本 · 02 · 直连
+  network: tcp
+  password: ae81349a-0b23-4870-8e1a-1b568a7fc821
+  port: 41201
+  server: aws.gutingting.com
+  skip-cert-verify: true
+  sni: zzjp01.gutingting.com
+  type: trojan
+- name: '5|日本-海豚白嫖 #1'
+  password: 233e69a4-34f5-379f-9012-fa191392f468
+  port: 43699
+  server: ecu.zarelay.com
+  skip-cert-verify: true
   type: trojan
 - alterId: 0
   cipher: auto
@@ -18,42 +38,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 6ea392c2-0636-3d4f-a6a2-f38a76e216d3
-- name: 5|🇯🇵 日本 · 02 · 线路2
-  network: tcp
-  password: ae81349a-0b23-4870-8e1a-1b568a7fc821
-  port: 30044
-  server: ae5f1a2a-fb75-4800.gttysd.com
-  skip-cert-verify: true
-  sni: v1jp01.6kk.org
-  type: trojan
-- name: 5|🇯🇵 日本 · 02 · 直连
-  network: tcp
-  password: ae81349a-0b23-4870-8e1a-1b568a7fc821
-  port: 41201
-  server: aws.gutingting.com
-  skip-cert-verify: true
-  sni: zzjp01.gutingting.com
-  type: trojan
-- name: 5|日本-海豚白嫖
-  password: 233e69a4-34f5-379f-9012-fa191392f468
-  port: 43699
-  server: scm.zarelayv1.com
-  skip-cert-verify: true
-  type: trojan
-- name: '5|日本-海豚白嫖 #1'
-  password: 233e69a4-34f5-379f-9012-fa191392f468
-  port: 43699
-  server: ecu.zarelay.com
-  skip-cert-verify: true
-  type: trojan
-- name: 5|🇯🇵 日本 · 01 · 直连
-  network: tcp
-  password: ae81349a-0b23-4870-8e1a-1b568a7fc821
-  port: 41200
-  server: aws.gutingting.com
-  skip-cert-verify: true
-  sni: zzjp01.gutingting.com
-  type: trojan
 - name: 5|🇯🇵 日本 · 06 · 线路1
   network: tcp
   password: ae81349a-0b23-4870-8e1a-1b568a7fc821
@@ -62,13 +46,13 @@ proxies:
   skip-cert-verify: true
   sni: v1jp01.fuqiangren.com
   type: trojan
-- name: 5|🇯🇵 日本 · 04 · 线路2
+- name: 5|🇯🇵 日本 · 05 · 线路2
   network: tcp
   password: ae81349a-0b23-4870-8e1a-1b568a7fc821
-  port: 30045
+  port: 30054
   server: ae5f1a2a-fb75-4800.gttysd.com
   skip-cert-verify: true
-  sni: v1jp01.6kk.org
+  sni: v1jp01.fuqiangren.com
   type: trojan
 - name: 5|🇯🇵 日本 · 03 · 线路1
   network: tcp
@@ -78,13 +62,29 @@ proxies:
   skip-cert-verify: true
   sni: jp03.6kk.org
   type: trojan
-- name: 5|🇯🇵 日本 · 01 · 线路1
+- name: 5|🇯🇵 日本 · 02 · 线路2
   network: tcp
   password: ae81349a-0b23-4870-8e1a-1b568a7fc821
-  port: 30009
+  port: 30044
   server: ae5f1a2a-fb75-4800.gttysd.com
   skip-cert-verify: true
-  sni: jp03.6kk.org
+  sni: v1jp01.6kk.org
+  type: trojan
+- name: 5|🇯🇵 日本 · 01 · 直连
+  network: tcp
+  password: ae81349a-0b23-4870-8e1a-1b568a7fc821
+  port: 41200
+  server: aws.gutingting.com
+  skip-cert-verify: true
+  sni: zzjp01.gutingting.com
+  type: trojan
+- name: 5|🇯🇵 日本 · 04 · 线路2
+  network: tcp
+  password: ae81349a-0b23-4870-8e1a-1b568a7fc821
+  port: 30045
+  server: ae5f1a2a-fb75-4800.gttysd.com
+  skip-cert-verify: true
+  sni: v1jp01.6kk.org
   type: trojan
 - name: 8|🇯🇵JP-3.112.192.169-188_1@188
   password: umis0GDWL5RQ
@@ -179,45 +179,76 @@ proxies:
   tls: false
   type: vmess
   uuid: f0038a33-6b22-4449-8bef-c16829a9d3aa
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本02-1B
-  password: a06f825c-b9a0-4b3c-b9df-ad187dac29f7
-  port: 20004
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本04-1A
-  password: a8d5d403-bb58-4780-a9dd-24edd9b5aebc
-  port: 20008
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- name: 28|🇯🇵 日本02-1C
-  password: 3372b8f5-7aa1-47d5-b8e8-920077829242
-  port: 50102
-  server: 543428.laomao-53875.xyz
+- name: 28|🇯🇵 日本05
+  password: d11da05d-005b-4d5b-b003-b3ab06b727b4
+  port: 50105
+  server: 51548.laomao-53875.xyz
   skip-cert-verify: true
   sni: alibaba-cert.com
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本04-1A
+  password: a06f825c-b9a0-4b3c-b9df-ad187dac29f7
+  port: 20008
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - name: 28|🇯🇵 日本06
-  password: 3372b8f5-7aa1-47d5-b8e8-920077829242
+  password: d11da05d-005b-4d5b-b003-b3ab06b727b4
   port: 50106
   server: 84158.laomao-53875.xyz
   skip-cert-verify: true
   sni: alibaba-cert.com
   type: trojan
   udp: true
+- name: 28|🇯🇵 日本10
+  password: d11da05d-005b-4d5b-b003-b3ab06b727b4
+  port: 50110
+  server: 541778.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本02-1A
+  password: a06f825c-b9a0-4b3c-b9df-ad187dac29f7
+  port: 20004
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- name: 28|🇯🇵 日本04-1C
+  password: d11da05d-005b-4d5b-b003-b3ab06b727b4
+  port: 50104
+  server: 34258.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|🇯🇵 日本01-1B
-  password: a06f825c-b9a0-4b3c-b9df-ad187dac29f7
+  password: fc48acd5-b5aa-4226-8880-3682c64d4bee
   port: 20002
   server: gy.666666222.shop
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本03-1A
+  password: a06f825c-b9a0-4b3c-b9df-ad187dac29f7
+  port: 20006
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- name: 28|🇯🇵 日本01-1C
+  password: d11da05d-005b-4d5b-b003-b3ab06b727b4
+  port: 50101
+  server: 548778.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
 - name: 28|🇯🇵 日本03-1C
-  password: 3372b8f5-7aa1-47d5-b8e8-920077829242
+  password: d11da05d-005b-4d5b-b003-b3ab06b727b4
   port: 50103
   server: 543328.laomao-53875.xyz
   skip-cert-verify: true
@@ -225,64 +256,33 @@ proxies:
   type: trojan
   udp: true
 - name: 28|🇯🇵 日本09
-  password: 3372b8f5-7aa1-47d5-b8e8-920077829242
+  password: d11da05d-005b-4d5b-b003-b3ab06b727b4
   port: 50109
   server: 548748.laomao-53875.xyz
   skip-cert-verify: true
   sni: alibaba-cert.com
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本03-1A
-  password: a8d5d403-bb58-4780-a9dd-24edd9b5aebc
-  port: 20006
-  server: gy.666666222.shop
-  type: ss
+- name: 28|🇯🇵 日本02-1C
+  password: d11da05d-005b-4d5b-b003-b3ab06b727b4
+  port: 50102
+  server: 543428.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
   udp: true
 - name: 28|🇯🇵 日本08
-  password: 3372b8f5-7aa1-47d5-b8e8-920077829242
+  password: d11da05d-005b-4d5b-b003-b3ab06b727b4
   port: 50108
   server: 548718.laomao-53875.xyz
   skip-cert-verify: true
   sni: alibaba-cert.com
   type: trojan
   udp: true
-- name: 28|🇯🇵 日本05
-  password: 3372b8f5-7aa1-47d5-b8e8-920077829242
-  port: 50105
-  server: 51548.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- name: 28|🇯🇵 日本01-1C
-  password: 3372b8f5-7aa1-47d5-b8e8-920077829242
-  port: 50101
-  server: 548778.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- name: 28|🇯🇵 日本04-1C
-  password: 3372b8f5-7aa1-47d5-b8e8-920077829242
-  port: 50104
-  server: 34258.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
 - name: 28|🇯🇵 日本07
-  password: 3372b8f5-7aa1-47d5-b8e8-920077829242
+  password: d11da05d-005b-4d5b-b003-b3ab06b727b4
   port: 50107
   server: 457848.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- name: 28|🇯🇵 日本10
-  password: 3372b8f5-7aa1-47d5-b8e8-920077829242
-  port: 50110
-  server: 541778.laomao-53875.xyz
   skip-cert-verify: true
   sni: alibaba-cert.com
   type: trojan
