@@ -64,14 +64,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '9,11,20,21,24,27|13| |@ripaojiedian #2'
-  password: amazonskr05
-  port: 443
-  server: 3.38.255.233
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|新加坡(SG)Singapore/Singapore_7
@@ -88,24 +80,92 @@ proxies:
       host: v2-2.godlight.xyz
     path: /54f634fs
 - alterId: 0
-  cipher: aes-256-gcm
-  name: 24,37|🇸🇬SG新加坡2
-  password: d13dd4aa-7d78-47d8-908a-2d755670e885
-  port: 56132
-  server: sg-01.leco.ml
-  skip-cert-verify: true
+  cipher: auto
+  name: 24|🇸🇬 新加坡(油管:破解资源君2.0)
+  network: ws
+  port: '80'
+  server: sg1.vmess.tunnel.cx
+  tls: false
+  type: vmess
+  uuid: d34b55f6-3e85-11ed-b327-7f562a0dd2e6
+  ws-opts:
+    headers:
+      Host: cloudflare.com
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: '24|🇸🇬 新加坡(油管:破解资源君2.0) #1'
+  network: ws
+  port: '58026'
+  server: gtm-cn-7mz2vfdwc01.gtm-a3b6.com
   tls: true
-  type: ss
+  type: vmess
+  uuid: 677efd46-cd77-4321-a46d-9a8e3bee95f6
+  ws-opts:
+    headers:
+      Host: nice5609.xn--8lt534m.tk
+    path: /jyauvws
+- alterId: 0
+  cipher: auto
+  name: '24|🇸🇬 新加坡(油管:破解资源君2.0) #4'
+  network: tcp
+  port: '52356'
+  server: 00000000000000000000000000000000000000000000000000000000000025a.rui77.com
+  tls: false
+  type: vmess
+  uuid: f0038a33-6b22-4449-8bef-c16829a9d3aa
+- alterId: 0
+  cipher: auto
+  name: '24|🇸🇬 新加坡(油管:破解资源君2.0) #6'
+  network: tcp
+  port: '52356'
+  server: 00000000000000000000000000000000000000000000000000000000000026a.rui77.com
+  tls: false
+  type: vmess
+  uuid: f0038a33-6b22-4449-8bef-c16829a9d3aa
+- alterId: 0
+  cipher: auto
+  name: '24|🇸🇬 新加坡(油管:破解资源君2.0) #7'
+  network: ws
+  port: '80'
+  server: sg-v.sshmax.xyz
+  tls: false
+  type: vmess
+  uuid: 0baaf014-af04-4028-be53-f5c75bb276ae
+  ws-opts:
+    headers:
+      Host: sg-v.sshmax.xyz
+    path: /vmess
+- name: 27|13| 新加坡2|@ripaojiedian
+  password: '!!str 3672449442956713984'
+  port: 443
+  server: precise-piglet.mite885.beauty
+  skip-cert-verify: false
+  sni: precise-piglet.mite885.beauty
+  type: trojan
+- name: 27|14|新加坡2|@ripaojiedian
+  network: tcp
+  password: '!!str 3672449442956713984'
+  port: 443
+  server: precise-piglet.mite885.beauty
+  type: trojan
 - name: 28|🇸🇬 新加坡07
-  password: 1351a8f8-227e-42c9-8cb5-6af8040a54e6
+  password: 99a55e1a-d073-4a55-9d22-b3e4d79ac891
   port: 50407
   server: 65358.laomao-53875.xyz
   skip-cert-verify: true
   sni: alibaba-cert.com
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇸🇬 新加坡1SS移动飞快-1B
+  password: 5a8187fb-5a68-4d5c-84c5-a5d68891dc47
+  port: 23343
+  server: sg6.hy2.one
+  type: ss
+  udp: true
 - name: 28|🇸🇬 新加坡06
-  password: 1351a8f8-227e-42c9-8cb5-6af8040a54e6
+  password: 99a55e1a-d073-4a55-9d22-b3e4d79ac891
   port: 50406
   server: 98538.laomao-53875.xyz
   skip-cert-verify: true
@@ -113,49 +173,9 @@ proxies:
   type: trojan
   udp: true
 - name: 28|🇸🇬 新加坡09
-  password: 1351a8f8-227e-42c9-8cb5-6af8040a54e6
+  password: 99a55e1a-d073-4a55-9d22-b3e4d79ac891
   port: 50409
   server: 98358.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- name: 28|🇸🇬 新加坡08
-  password: 1351a8f8-227e-42c9-8cb5-6af8040a54e6
-  port: 50408
-  server: 96358.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- name: 28|🇸🇬 新加坡04
-  password: 1351a8f8-227e-42c9-8cb5-6af8040a54e6
-  port: 50404
-  server: 95858.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- name: 28|🇸🇬 新加坡01-1B
-  password: 1351a8f8-227e-42c9-8cb5-6af8040a54e6
-  port: 50401
-  server: 84758.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- name: 28|🇸🇬 新加坡03
-  password: 1351a8f8-227e-42c9-8cb5-6af8040a54e6
-  port: 50403
-  server: 16258.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- name: 28|🇸🇬 新加坡05
-  password: 1351a8f8-227e-42c9-8cb5-6af8040a54e6
-  port: 50405
-  server: 98758.laomao-53875.xyz
   skip-cert-verify: true
   sni: alibaba-cert.com
   type: trojan
@@ -169,31 +189,73 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 63e229c0-a33b-4e2a-b94d-04f3f8e42ad9
+  uuid: 5a8187fb-5a68-4d5c-84c5-a5d68891dc47
   ws-opts:
     headers:
       Host: sg0002.hy-2.top
     path: /0
-- name: 28|🇸🇬 新加坡02
-  password: 1351a8f8-227e-42c9-8cb5-6af8040a54e6
-  port: 50402
-  server: 46358.laomao-53875.xyz
+- name: 28|🇸🇬 新加坡05
+  password: 99a55e1a-d073-4a55-9d22-b3e4d79ac891
+  port: 50405
+  server: 98758.laomao-53875.xyz
   skip-cert-verify: true
   sni: alibaba-cert.com
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡1SS移动飞快-1B
-  password: 63e229c0-a33b-4e2a-b94d-04f3f8e42ad9
-  port: 23343
-  server: sg6.hy2.one
-  type: ss
-  udp: true
 - name: 28|🇸🇬 新加坡10
-  password: 1351a8f8-227e-42c9-8cb5-6af8040a54e6
+  password: 99a55e1a-d073-4a55-9d22-b3e4d79ac891
   port: 50410
   server: 64358.laomao-53875.xyz
   skip-cert-verify: true
   sni: alibaba-cert.com
   type: trojan
   udp: true
+- name: 28|🇸🇬 新加坡02
+  password: 99a55e1a-d073-4a55-9d22-b3e4d79ac891
+  port: 50402
+  server: 46358.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
+- name: 28|🇸🇬 新加坡08
+  password: 99a55e1a-d073-4a55-9d22-b3e4d79ac891
+  port: 50408
+  server: 96358.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
+- name: 28|🇸🇬 新加坡03
+  password: 99a55e1a-d073-4a55-9d22-b3e4d79ac891
+  port: 50403
+  server: 16258.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
+- name: 28|🇸🇬 新加坡04
+  password: 99a55e1a-d073-4a55-9d22-b3e4d79ac891
+  port: 50404
+  server: 95858.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
+- name: 28|🇸🇬 新加坡01-1B
+  password: 99a55e1a-d073-4a55-9d22-b3e4d79ac891
+  port: 50401
+  server: 84758.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 37|🇸🇬SG新加坡2
+  password: d13dd4aa-7d78-47d8-908a-2d755670e885
+  port: 56132
+  server: sg-01.leco.ml
+  skip-cert-verify: true
+  tls: true
+  type: ss
