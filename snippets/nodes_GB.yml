@@ -1,18 +1,34 @@
 proxies:
+- name: 5|🇬🇧 英国 · 01 · 线路3
+  network: tcp
+  password: ae81349a-0b23-4870-8e1a-1b568a7fc821
+  port: 20226
+  server: ae5f1a2a-fb75-4800.gttysd.com
+  skip-cert-verify: false
+  sni: v2uk01.fuqiangren.com
+  type: trojan
+- name: 5|🇬🇧 英国 · 02 · 线路3
+  network: tcp
+  password: ae81349a-0b23-4870-8e1a-1b568a7fc821
+  port: 20227
+  server: ae5f1a2a-fb75-4800.gttysd.com
+  skip-cert-verify: true
+  sni: v2uk01.fuqiangren.com
+  type: trojan
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|aad35ac7cf9a4de68f6a882c617f3b...
+  name: 5,7,36|🔒 VM-WS-NA 🇬🇧 GB-5.39.254.196:...
   network: ws
-  port: 443
-  server: 149.7.16.248
-  tls: true
+  port: '17800'
+  server: 5.39.254.196
+  servername: ''
+  tls: false
   type: vmess
-  udp: false
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
   ws-opts:
-    path: linkvws
+    headers:
+      Host: ''
+    path: /
 - name: 8|🇬🇧GB-3.9.164.189-194_1@194
   password: E6r93XCOsyM9
   port: 16733
@@ -67,19 +83,10 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 19,20,21,24,37|US 18.4MB/s
+  name: 19,20,21,37|US 18.4MB/s
   password: mps3FwmDjLrWaOVg
   port: 443
   server: series-a2.samanehha.co
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 24,37|🇨🇳江苏2 80.2KB/s
-  password: dd29d7ad-5fda-4f64-a57e-716ca6010e65
-  port: 10726
-  server: 122.195.189.15
   skip-cert-verify: true
   tls: true
   type: ss
