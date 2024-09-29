@@ -1,8 +1,16 @@
 proxies:
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 11,27|13|🇭🇰 香港R|@ripaojiedian
+  password: hGkQ6915tD
+  port: 16088
+  server: 103.161.255.195
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11,27,36|🔒 VM-WS-NA 🇭🇰 HK-220.246.57.32...
+  name: 11,19,27,36|🔒 VM-WS-NA 🇭🇰 HK-220.246.57.32...
   network: ws
   port: '16301'
   server: 220.246.57.32
@@ -16,24 +24,26 @@ proxies:
     headers:
       Host: ''
     path: /
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 11,27|13|🇭🇰 香港R|@ripaojiedian
-  password: hGkQ6915tD
-  port: 16088
-  server: 103.161.255.195
-  tfo: false
-  type: ss
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 11|16|香港3|@ripaojiedian
+  name: 11,27|14|香港|@ripaojiedian
   network: tcp
-  port: '52908'
-  server: 120.237.79.157
+  port: '57739'
+  server: 103.30.78.105
   servername: ''
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: f1a52841-0c10-4119-8617-7c3ff2a4a937
+- alterId: 0
+  cipher: auto
+  name: 11,27|14|香港2|@ripaojiedian
+  network: tcp
+  port: '47207'
+  server: 149.104.20.212
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 88e49a19-9448-4a15-adf0-db54c97e0ad4
 - alterId: 64
   cipher: auto
   name: 11,27|14|香港4|@ripaojiedian
@@ -531,6 +541,20 @@ proxies:
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
 - alterId: 0
   cipher: auto
+  name: 20,21,24|香港 电讯盈科有限公司
+  network: ws
+  port: 16301
+  server: 220.246.57.32
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
+  ws-opts:
+    headers:
+      Host: 220.246.57.32
+    path: /
+- alterId: 0
+  cipher: auto
   name: '24|🇭🇰 香港(油管:破解资源君2.0) #2'
   network: tcp
   port: '36676'
@@ -547,20 +571,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5
-- alterId: 0
-  cipher: auto
-  name: 24|香港 电讯盈科有限公司
-  network: ws
-  port: 16301
-  server: 220.246.57.32
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
-  ws-opts:
-    headers:
-      Host: 220.246.57.32
-    path: /
 - alterId: 0
   cipher: auto
   name: 27|13|🇭🇰 香港2|@ripaojiedian
@@ -581,26 +591,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 27|14|香港|@ripaojiedian
-  network: tcp
-  port: '57739'
-  server: 103.30.78.105
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1a52841-0c10-4119-8617-7c3ff2a4a937
-- alterId: 0
-  cipher: auto
-  name: 27|14|香港2|@ripaojiedian
-  network: tcp
-  port: '47207'
-  server: 149.104.20.212
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 88e49a19-9448-4a15-adf0-db54c97e0ad4
 - name: 27,40|HK_speednode_0179
   network: ws
   password: 95b
@@ -627,100 +617,20 @@ proxies:
     headers:
       Host: 68123106-3e43-4958-b75a-b06e81eabf79.50d88e28-a870-497d-bf87-c20fb6802871.camdvr.org
     path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
-- name: 28|🇭🇰 香港16
-  password: bdb490e9-5838-4217-8793-791af65a225f
-  port: 50016
-  server: 387878.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- name: 28|🇭🇰 香港08
-  password: bdb490e9-5838-4217-8793-791af65a225f
-  port: 50008
-  server: 845748.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- name: 28|🇭🇰 香港15
-  password: bdb490e9-5838-4217-8793-791af65a225f
-  port: 50015
-  server: 874878.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港02-1A
+  password: 1b84c3d0-7ab3-4afe-b66e-535e44f38869
+  port: 20035
+  server: gy.666666222.shop
+  type: ss
   udp: true
 - name: 28|🇭🇰 香港07
-  password: bdb490e9-5838-4217-8793-791af65a225f
+  password: d7e17854-a202-4bcc-9621-1128b0747e9e
   port: 50007
   server: 587845.laomao-53875.xyz
   skip-cert-verify: true
   sni: alibaba-cert.com
   type: trojan
-  udp: true
-- name: 28|🇭🇰 香港18
-  password: bdb490e9-5838-4217-8793-791af65a225f
-  port: 50018
-  server: 69878.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- name: 28|🇭🇰 香港13
-  password: bdb490e9-5838-4217-8793-791af65a225f
-  port: 50013
-  server: 56178.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- name: 28|🇭🇰 香港14
-  password: bdb490e9-5838-4217-8793-791af65a225f
-  port: 50014
-  server: 77878.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- name: 28|🇭🇰 香港03-1B
-  password: bdb490e9-5838-4217-8793-791af65a225f
-  port: 50003
-  server: 587458.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- name: 28|🇭🇰 香港02-1B
-  password: bdb490e9-5838-4217-8793-791af65a225f
-  port: 50002
-  server: 587848.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- name: 28|🇭🇰 香港10
-  password: bdb490e9-5838-4217-8793-791af65a225f
-  port: 50010
-  server: 574878.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- name: 28|🇭🇰 香港05
-  password: bdb490e9-5838-4217-8793-791af65a225f
-  port: 50005
-  server: 587878.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港01
-  password: 1b84c3d0-7ab3-4afe-b66e-535e44f38869
-  port: 34338
-  server: gy.666666222.shop
-  type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|🇭🇰 香港03-1A
@@ -729,73 +639,153 @@ proxies:
   server: gy.666666222.shop
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港02-1A
-  password: 1b84c3d0-7ab3-4afe-b66e-535e44f38869
-  port: 20035
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- name: 28|🇭🇰 香港09
-  password: bdb490e9-5838-4217-8793-791af65a225f
-  port: 50009
-  server: 878451.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- name: 28|🇭🇰 香港17
-  password: bdb490e9-5838-4217-8793-791af65a225f
-  port: 50017
-  server: 142878.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- name: 28|🇭🇰 香港19
-  password: bdb490e9-5838-4217-8793-791af65a225f
-  port: 50019
-  server: 13178.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- name: 28|🇭🇰 香港04
-  password: bdb490e9-5838-4217-8793-791af65a225f
-  port: 50004
-  server: 785148.laomao-53875.xyz
-  skip-cert-verify: true
-  sni: alibaba-cert.com
-  type: trojan
-  udp: true
-- name: 28|🇭🇰 香港12
-  password: bdb490e9-5838-4217-8793-791af65a225f
-  port: 50012
-  server: 8747878.laomao-53875.xyz
+- name: 28|🇭🇰 香港10
+  password: d7e17854-a202-4bcc-9621-1128b0747e9e
+  port: 50010
+  server: 574878.laomao-53875.xyz
   skip-cert-verify: true
   sni: alibaba-cert.com
   type: trojan
   udp: true
 - name: 28|🇭🇰 香港20
-  password: bdb490e9-5838-4217-8793-791af65a225f
+  password: d7e17854-a202-4bcc-9621-1128b0747e9e
   port: 50020
   server: 5548.laomao-53875.xyz
   skip-cert-verify: true
   sni: alibaba-cert.com
   type: trojan
   udp: true
+- name: 28|🇭🇰 香港05
+  password: d7e17854-a202-4bcc-9621-1128b0747e9e
+  port: 50005
+  server: 587878.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
+- name: 28|🇭🇰 香港08
+  password: d7e17854-a202-4bcc-9621-1128b0747e9e
+  port: 50008
+  server: 845748.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
+- name: 28|🇭🇰 香港06
+  password: d7e17854-a202-4bcc-9621-1128b0747e9e
+  port: 50006
+  server: 54847.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
+- name: 28|🇭🇰 香港16
+  password: d7e17854-a202-4bcc-9621-1128b0747e9e
+  port: 50016
+  server: 387878.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
+- name: 28|🇭🇰 香港15
+  password: d7e17854-a202-4bcc-9621-1128b0747e9e
+  port: 50015
+  server: 874878.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港01-1B
+  password: 5d7ed15b-84ce-42fd-abaa-0828c52a76a2
+  port: 34338
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- name: 28|🇭🇰 香港02-1C
+  password: d7e17854-a202-4bcc-9621-1128b0747e9e
+  port: 50002
+  server: 587848.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
+- name: 28|🇭🇰 香港17
+  password: d7e17854-a202-4bcc-9621-1128b0747e9e
+  port: 50017
+  server: 142878.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
+- name: 28|🇭🇰 香港13
+  password: d7e17854-a202-4bcc-9621-1128b0747e9e
+  port: 50013
+  server: 56178.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
+- name: 28|🇭🇰 香港12
+  password: d7e17854-a202-4bcc-9621-1128b0747e9e
+  port: 50012
+  server: 8747878.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
 - name: 28|🇭🇰 香港11
-  password: bdb490e9-5838-4217-8793-791af65a225f
+  password: d7e17854-a202-4bcc-9621-1128b0747e9e
   port: 50011
   server: 582548.laomao-53875.xyz
   skip-cert-verify: true
   sni: alibaba-cert.com
   type: trojan
   udp: true
-- name: 28|🇭🇰 香港06
-  password: bdb490e9-5838-4217-8793-791af65a225f
-  port: 50006
-  server: 54847.laomao-53875.xyz
+- name: 28|🇭🇰 香港09
+  password: d7e17854-a202-4bcc-9621-1128b0747e9e
+  port: 50009
+  server: 878451.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
+- name: 28|🇭🇰 香港19
+  password: d7e17854-a202-4bcc-9621-1128b0747e9e
+  port: 50019
+  server: 13178.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
+- name: 28|🇭🇰 香港14
+  password: d7e17854-a202-4bcc-9621-1128b0747e9e
+  port: 50014
+  server: 77878.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
+- name: 28|🇭🇰 香港04
+  password: d7e17854-a202-4bcc-9621-1128b0747e9e
+  port: 50004
+  server: 785148.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
+- name: 28|🇭🇰 香港18
+  password: d7e17854-a202-4bcc-9621-1128b0747e9e
+  port: 50018
+  server: 69878.laomao-53875.xyz
+  skip-cert-verify: true
+  sni: alibaba-cert.com
+  type: trojan
+  udp: true
+- name: 28|🇭🇰 香港03-1C
+  password: d7e17854-a202-4bcc-9621-1128b0747e9e
+  port: 50003
+  server: 587458.laomao-53875.xyz
   skip-cert-verify: true
   sni: alibaba-cert.com
   type: trojan
@@ -818,7 +808,7 @@ proxies:
   cipher: aes-128-gcm
   name: 37|HK
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 22211
+  port: 29105
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
@@ -827,7 +817,7 @@ proxies:
   cipher: aes-128-gcm
   name: 37|HK2
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 24725
+  port: 29305
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
@@ -836,65 +826,63 @@ proxies:
   cipher: aes-128-gcm
   name: 37|HK3
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 23202
+  port: 29108
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
+  cipher: aes-128-gcm
   name: 37|HK4
-  network: ws
-  password: 95b
-  port: 587
-  server: 20.239.55.42
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29213
+  server: 91.199.84.195
   skip-cert-verify: true
-  sni: fc071d49-af91-42d6-a20e-5a64e24a53bc.71a45835-dd0c-4d51-8bd4-9ccf9f223662.casacam.net
   tls: true
-  type: trojan
-  udp: true
+  type: ss
 - alterId: 0
+  cipher: aes-128-gcm
   name: 37|HK5
-  network: ws
-  password: 95b
-  port: 19998
-  server: 149.104.18.225
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29223
+  server: 91.199.84.195
   skip-cert-verify: true
-  sni: 547c921f-c9b1-4d57-bb25-ff5c79749783.a09c5a67-316e-45c6-a051-e6066737fd47.theworkpc.com
   tls: true
-  type: trojan
-  udp: true
+  type: ss
 - alterId: 0
   cipher: aes-128-gcm
   name: 37|HK6
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 25206
+  port: 29103
   server: 91.199.84.195
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|HK7
-  password: 5ddbeb21-15fb-4aa5-8cc3-34df601c1f02
-  port: 50219
-  server: 46.232.123.37
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
   cipher: aes-128-gcm
-  name: 37|HK8
+  name: 37|HK7
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29210
+  port: 25205
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
   type: ss
+- alterId: 0
+  name: 37|HK8
+  network: ws
+  password: 95b
+  port: 34237
+  server: 103.149.27.36
+  skip-cert-verify: true
+  sni: 30388d70-6f5c-4d7c-8daa-9d3df7c5c526.9150e878-8296-4798-a172-c3fe66b8dee5.ddnsgeek.com
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: aes-128-gcm
   name: 37|HK9
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29202
+  port: 29402
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
@@ -903,7 +891,7 @@ proxies:
   cipher: aes-128-gcm
   name: 37|HK10
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 25202
+  port: 29226
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
@@ -912,7 +900,7 @@ proxies:
   cipher: aes-128-gcm
   name: 37|HK11
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 24723
+  port: 29216
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
@@ -921,17 +909,63 @@ proxies:
   cipher: aes-128-gcm
   name: 37|HK12
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 22212
+  port: 29203
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|HK13 564.0KB/s
+  password: '!!str 3672449442956713984'
+  port: 443
+  server: 91.199.84.246
+  skip-cert-verify: true
+  sni: immense-buzzard.mite885.beauty
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK14
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 22211
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
   cipher: aes-128-gcm
-  name: 37|HK13
-  password: a-wym4ovY4Yw
-  port: 81
-  server: 218.250.217.111
+  name: 37|HK15
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 24212
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK16
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 25206
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK17
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29207
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK18
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29228
+  server: 91.199.84.195
   skip-cert-verify: true
   tls: true
   type: ss
