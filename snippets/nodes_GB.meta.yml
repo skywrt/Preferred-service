@@ -33,46 +33,6 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 9|🇬🇧 英国+v2rayfree.eu.org
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.93.173.218
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 9|🇬🇧 江苏省宿迁市+联通/蒲公英网络
-  password: dd29d7ad-5fda-4f64-a57e-716ca6010e65
-  port: 10723
-  server: 122.195.189.15
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 9|🇬🇧 江苏省宿迁市+联通/蒲公英网络 3
-  password: dd29d7ad-5fda-4f64-a57e-716ca6010e65
-  port: 10718
-  server: 122.195.189.15
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 9|🇬🇧 江苏省宿迁市+联通/蒲公英网络 4
-  password: dd29d7ad-5fda-4f64-a57e-716ca6010e65
-  port: 10708
-  server: yidong1.liulangdiqiu.life
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 9|🇬🇧 江苏省宿迁市+联通/蒲公英网络 6
-  password: dd29d7ad-5fda-4f64-a57e-716ca6010e65
-  port: 10714
-  server: yidong1.liulangdiqiu.life
-  tfo: false
-  type: ss
 - client-fingerprint: chrome
   delay: 1069
   name: 10|英国 004
@@ -203,53 +163,43 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: tg%40zdyz2
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知68 21.5MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.196
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - cipher: aes-128-gcm
   name: 19|🇬🇧GB-212.102.53.197-0815
   password: shadowsocks
   port: 443
   server: 212.102.53.197
   type: ss
-- name: '20,21,24|🇺🇸 美国 Amazon数据中心 #1'
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇬🇧GB-89.185.84.185-0588
+  password: gdt6FA0fOR3pBQdFcyHyfv
+  port: 12575
+  server: 89.185.84.185
+  type: ss
+- alterId: 0
+  name: 20,21,37|🇺🇸US美国4
   password: telegram-id-directvpn
   port: 22222
   server: 13.41.44.198
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
-- name: 20,21,24|🇬🇧 英国 伦敦Amazon数据中心
+  udp: true
+- name: '20,21|🇬🇧GB-35.178.163.209-1975 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 35.178.163.209
-  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 20,21,24|🇪🇸 西班牙 v2rayfree.eu.org
-  network: ws
-  port: '443'
-  server: 149.7.16.188
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 24|🇬🇧 英国 v2rayfree.eu.org
-  network: ws
-  port: '17805'
-  server: 5.39.254.196
-  tls: false
-  type: vmess
-  uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 0
   cipher: auto
   name: 30|🇬🇧 英国-200.3KB/s
@@ -261,6 +211,15 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: linkvws
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|GB国
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.239.249
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - name: 38|🇬🇧_GB_英国_6
   network: ws
   port: 2053
