@@ -1,14 +1,40 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: 11,24,27|14|香港4|@ripaojiedian
+  name: 11,24,27,37|2
   network: tcp
-  port: '35601'
+  port: 35601
   server: 120.232.153.40
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 11,27|13| |@ripaojiedian
+  password: ddfeaada-fcd6-4e8d-be0c-d4a847725d02
+  port: 25991
+  server: whcm.v6v.eu
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 11,27|13,14|香港3|@ripaojiedian
+  network: ws
+  port: '59501'
+  server: cm.laoliu.live
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 454e1e97-2dab-4abb-b770-adfa92be4d19
+  ws-opts:
+    headers:
+      Host: hk22.laoliu.store
+    path: /downloads_hk22
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 11,27|13|🇭🇰 香港R|@ripaojiedian
@@ -17,6 +43,16 @@ proxies:
   server: 103.161.255.195
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 11,27|14|香港5|@ripaojiedian
+  network: tcp
+  port: '44826'
+  server: ambxxid02hk.dorabbb.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ff6588e1-b3dd-42e8-8f5c-ff90bfbd935d
 - alterId: 0
   cipher: auto
   name: 18|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_1
@@ -543,47 +579,11 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 27|13,14|香港3|@ripaojiedian
-  network: ws
-  port: '59501'
-  server: cm.laoliu.live
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 454e1e97-2dab-4abb-b770-adfa92be4d19
-  ws-opts:
-    headers:
-      Host: hk22.laoliu.store
-    path: /downloads_hk22
-- alterId: 64
-  cipher: auto
-  name: 27|13|🇭🇰 香港4|@ripaojiedian
-  port: 35601
-  server: 120.232.153.40
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
   name: 27|13|🇭🇰 香港5|@ripaojiedian
   port: 44826
   server: ambxxid02hk.dorabbb.top
   skip-cert-verify: false
   tfo: false
-  tls: false
-  type: vmess
-  uuid: ff6588e1-b3dd-42e8-8f5c-ff90bfbd935d
-- alterId: 0
-  cipher: auto
-  name: 27|14|香港5|@ripaojiedian
-  network: tcp
-  port: '44826'
-  server: ambxxid02hk.dorabbb.top
-  servername: ''
   tls: false
   type: vmess
   uuid: ff6588e1-b3dd-42e8-8f5c-ff90bfbd935d
@@ -614,22 +614,22 @@ proxies:
       Host: 68123106-3e43-4958-b75a-b06e81eabf79.50d88e28-a870-497d-bf87-c20fb6802871.camdvr.org
     path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港02-1C
+  name: 28|🇭🇰 香港02-1A
   password: ee90fc86-7e60-43e4-a323-b24a15f273ae
   port: 20035
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港03-1B
-  password: 69ccf867-c155-46c4-ae83-5d1c8961d611
+  name: 28|🇭🇰 香港03-1A
+  password: ee90fc86-7e60-43e4-a323-b24a15f273ae
   port: 20052
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港01-1B
-  password: 69ccf867-c155-46c4-ae83-5d1c8961d611
+  name: 28|🇭🇰 香港01-1A
+  password: ee90fc86-7e60-43e4-a323-b24a15f273ae
   port: 34338
   server: gy.666666222.shop
   type: ss
@@ -652,20 +652,25 @@ proxies:
   cipher: aes-128-gcm
   name: 37|HK
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29101
+  port: 29205
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 37|HK2
-  password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29203
-  server: 91.199.84.195
+  cipher: auto
+  name: 37|HK2 905.1KB/s
+  network: ws
+  port: 12909
+  server: 210.0.158.219
   skip-cert-verify: true
   tls: true
-  type: ss
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    headers:
+      host: 19.lwdh.us
+    path: /
 - alterId: 0
   cipher: aes-128-gcm
   name: 37|HK3
@@ -676,11 +681,11 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  cipher: aes-128-gcm
+  cipher: chacha20-ietf-poly1305
   name: 37|HK4
-  password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 24725
-  server: 91.199.84.195
+  password: 5ddbeb21-15fb-4aa5-8cc3-34df601c1f02
+  port: 50219
+  server: 46.232.123.37
   skip-cert-verify: true
   tls: true
   type: ss
@@ -688,7 +693,7 @@ proxies:
   cipher: aes-128-gcm
   name: 37|HK5
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 25201
+  port: 25202
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
@@ -698,6 +703,62 @@ proxies:
   name: 37|HK6
   password: 69037302-0050-43ae-abf3-f8e62740aff1
   port: 29204
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK7
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29224
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK8
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29218
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK9
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29203
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|HK10
+  network: ws
+  password: 95b
+  port: 587
+  server: 20.239.55.42
+  skip-cert-verify: true
+  sni: fc071d49-af91-42d6-a20e-5a64e24a53bc.71a45835-dd0c-4d51-8bd4-9ccf9f223662.casacam.net
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK11
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 24214
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK12
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29208
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
