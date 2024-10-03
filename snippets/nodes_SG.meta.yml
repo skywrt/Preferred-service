@@ -52,6 +52,14 @@ proxies:
     headers:
       Host: sg1.pkyun.website
     path: /sg1
+- client-fingerprint: chrome
+  name: 9|🇸🇬 新加坡 Amazon数据中心
+  password: 2155145a-b1b5-443a-8977-670f6bd10f02
+  port: 50001
+  server: bgroup.node3.t.nodelist-airport.com
+  skip-cert-verify: false
+  sni: bgroup.node3.t.nodelist-airport.com
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: '11,27|13| |@ripaojiedian #2'
@@ -140,14 +148,23 @@ proxies:
     headers:
       Host: ''
     path: /vmess
-- name: 24|🇸🇬 新加坡 Amazon数据中心
+- alterId: 0
+  cipher: auto
+  name: 24,36|🔒 VM-TCP-NA 🇸🇬 SG-5.34.176.111...
+  network: tcp
+  port: 57614
+  server: 5.34.176.111
+  tls: false
+  type: vmess
+  uuid: 4e55ce40-9f8e-417d-f8ae-aa6af97a7097
+- name: '24|🇸🇬 新加坡 Amazon数据中心 #1'
   password: 2155145a-b1b5-443a-8977-670f6bd10f02
   port: 50001
   server: bgroup.node3.t.nodelist-airport.com
   skip-cert-verify: false
   type: trojan
 - auth: 3b42946f-6342-4925-8378-d4b51d1a8110
-  name: 28|🇸🇬 新加坡-1
+  name: 28|🇸🇬 新加坡-1-1A
   password: 3b42946f-6342-4925-8378-d4b51d1a8110
   port: 30001
   server: oracle-amd-singapore1.lanmaoyun.icu
@@ -155,15 +172,6 @@ proxies:
   sni: main.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-5.34.176.111...
-  network: tcp
-  port: 57614
-  server: 5.34.176.111
-  tls: false
-  type: vmess
-  uuid: 4e55ce40-9f8e-417d-f8ae-aa6af97a7097
 - name: 38|🇸🇬_SG_新加坡_2
   network: ws
   port: 8443

@@ -33,22 +33,17 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
-- client-fingerprint: chrome
-  name: 9|🇬🇧 英国 伦敦Amazon数据中心
-  password: telegram-id-directvpn
-  port: 22222
-  server: 3.9.161.40
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 9|🇬🇧 英国+v2rayfree.eu.org
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.126.239.249
+  name: 9|🇬🇧 英国 Technicolor SA
+  port: 52728
+  server: 141.11.251.231
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: d5e16b83-7b5c-45ea-d749-d6f6ad214447
 - client-fingerprint: chrome
   delay: 1069
   name: 10|英国 004
@@ -167,6 +162,16 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 11,24,36|🔒 VM-TCP-NA 🇺🇸 US-141.11.251.2...
+  network: tcp
+  port: '52728'
+  server: 141.11.251.231
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d5e16b83-7b5c-45ea-d749-d6f6ad214447
 - name: 17|GB_youtube@资源分享师_89
   network: ws
   port: 443
@@ -190,18 +195,38 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知52 13.6MB/s
+  name: 19,20,21,37|🇮🇹IT意大利2 20.9MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.80
+  server: 212.102.53.198
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|IT 19.8MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 20,21,37|🇺🇸US美国13 20.7MB/s
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.42.211.151
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
   cipher: auto
-  name: 24|🇬🇧 英国 V2CROSS.COM
+  name: '24|🇬🇧 英国 V2CROSS.COM #2'
   network: ws
-  port: '17808'
+  port: '1780'
   server: 5.39.254.196
   tls: false
   type: vmess
