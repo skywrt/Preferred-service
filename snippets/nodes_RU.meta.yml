@@ -22,16 +22,21 @@ proxies:
   type: trojan
   udp: false
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
+  cipher: auto
   client-fingerprint: chrome
-  name: 9,13,24,37|🇺RU
-  password: DkK3bmkKh2rdK9k6EXSOQv
-  port: 44908
-  server: 46.29.238.83
-  skip-cert-verify: true
+  name: 9,11|11|俄罗斯 v2rayfree.eu.org
+  network: ws
+  port: 443
+  server: 185.221.160.163
+  skip-cert-verify: false
   tfo: false
   tls: true
-  type: ss
+  type: vmess
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      Host: worker-mute-bar-1719.nifotok993.workers.dev
+    path: /glweidf.cfd/linkws
 - client-fingerprint: chrome
   delay: 1451
   name: 10,40|RU_speednode_0254
@@ -145,16 +150,6 @@ proxies:
     headers:
       Host: 213.159.76.238
     path: '%2Fvless'
-- name: 13|🇷🇺_RU_俄罗斯_4
-  network: ws
-  port: 8080
-  server: 213.159.76.238
-  servername: 213.159.76.238
-  tls: false
-  type: vless
-  uuid: 9f281d4d-1a02-4eb1-a6cc-d9391d3074fb
-  ws-opts:
-    path: /vless
 - name: 17|RU_youtube@资源分享师_196
   network: ws
   port: 443
@@ -191,6 +186,14 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: tg%40zdyz2
+- auth: 7665cfe7-b674-4e47-b676-3c9ef9697099
+  name: 28|🇷🇺 俄罗斯
+  password: 7665cfe7-b674-4e47-b676-3c9ef9697099
+  port: 8088
+  server: ru-01.jisovpn.site
+  skip-cert-verify: false
+  type: hysteria2
+  udp: true
 - alterId: 0
   cipher: auto
   name: 30|🇷🇺_RU_俄罗斯联邦_2

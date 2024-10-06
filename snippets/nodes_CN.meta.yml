@@ -26,7 +26,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 2,9,11,24,27|13|🇭🇰 香港3|@ripaojiedian
+  name: 2,11,24,27|13|🇭🇰 香港3|@ripaojiedian
   password: 0c7dac8f-070d-44e0-9e8c-f25fa4604fe9
   port: 39301
   server: hzhz1.sssyun.xyz
@@ -141,7 +141,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 2,11,13,16,27|14|德国|@ripaojiedian
+  name: 2,11,16,27|14|德国|@ripaojiedian
   network: tcp
   port: '43526'
   server: 120.232.153.71
@@ -161,17 +161,13 @@ proxies:
   uuid: 044f0177-0675-4dcf-89d4-804b6788e518
 - alpn:
   - http%2F1.1
-  alterId: 0
-  name: 2,27,37,41|d*********g.com_3
+  name: 2,27,41|d*********g.com_3
   network: tcp
   password: fuck
   port: 443
   server: 42.236.73.72
-  skip-cert-verify: true
   sni: www.zitian.cn
-  tls: true
   type: trojan
-  udp: true
   ws-opts:
     headers:
       Host: www.zitian.cn
@@ -766,28 +762,25 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- alterId: 0
-  client-fingerprint: chrome
-  name: '9,24,37|未命名 #6'
-  password: c471ef32-798d-40a0-a57c-acf3475a204e
-  port: 13011
-  server: naiu-jp.05vr9nyqg5.download
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 9|🇨🇳 广东省广州市 移动 3
-  port: 58831
-  server: 120.232.153.27
+  name: 9|🇨🇳 广东省广州市 移动
+  port: 42055
+  server: 120.232.153.37
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- client-fingerprint: chrome
+  name: '9,24|🇨🇳 广东省广州市 移动 #4'
+  password: c471ef32-798d-40a0-a57c-acf3475a204e
+  port: 13011
+  server: naiu-jp.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - alterId: 64
   cipher: auto
   name: '11|3,17|🇨🇳_CN_中国 #1'
@@ -799,10 +792,10 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '11,24|🇨🇳 广东省广州市 移动 #6'
+  name: 11|11|广东省广州市 移动
   network: tcp
-  port: '58831'
-  server: 120.232.153.27
+  port: '42055'
+  server: 120.232.153.37
   servername: ''
   tls: false
   type: vmess
@@ -819,13 +812,25 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: '%2Ftg%40zdyz2'
-- name: '24|🇨🇳 广东省广州市 移动 #3'
+- alterId: 0
+  name: 24,37|🇳
   password: c471ef32-798d-40a0-a57c-acf3475a204e
   port: 13008
   server: naiu-hk.05vr9nyqg5.download
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: cloudflare.node-ssl.cdn-alibaba.com
+  tls: true
   type: trojan
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: '24|🇨🇳 广东省广州市 移动 #6'
+  network: tcp
+  port: '58831'
+  server: 120.232.153.27
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 38|🇨🇳_CN_中国_38
   network: ws
   port: 2053
