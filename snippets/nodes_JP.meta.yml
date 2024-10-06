@@ -1,29 +1,12 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 2|Japan_Tokyo_vmess_115
-  port: 31184
-  server: 45.159.50.80
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 1852247b-8284-43d6-b0c7-d687464333a6
-- name: 2,24,27|13,14|日本5|@ripaojiedian
-  network: tcp
-  password: 0b0387b8-5258-386b-8744-dcacb2320d94
-  port: 443
-  server: 18.183.36.223
-  skip-cert-verify: true
-  sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 2|Japan_Osaka_vmess_1110
+  client-fingerprint: chrome
+  name: '2,11,20,21,27|13,14||@ripaojiedian #1'
   network: ws
-  port: '12000'
-  server: 172.234.86.166
-  servername: 172.234.86.166
+  port: '443'
+  server: 172.233.92.155
+  servername: 172.233.92.155
   skip-cert-verify: false
   tfo: false
   tls: true
@@ -31,25 +14,17 @@ proxies:
   uuid: af0bfcce-8730-4133-bdaa-f6b1da70fc1c
   ws-opts:
     headers:
-      Host: 172.234.86.166
-    path: /FhmYLiiu
-- cipher: aes-256-cfb
-  name: 2|Japan_Tokyo_ss_1121
-  password: amazonskr05
-  port: 443
-  server: 54.249.192.248
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 2|Japan_Tokyo_vmess_1125
+      Host: 172.233.92.155
+    path: /fdmCQbor
+- client-fingerprint: chrome
+  name: 2,9,24,27|13,14|日本5|@ripaojiedian
   network: tcp
-  port: '31184'
-  server: 45.159.50.80
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1852247b-8284-43d6-b0c7-d687464333a6
+  password: 0b0387b8-5258-386b-8744-dcacb2320d94
+  port: 443
+  server: 18.183.36.223
+  skip-cert-verify: true
+  sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+  type: trojan
 - name: 8|🇯🇵JP-3.112.192.169-188_1@188
   password: umis0GDWL5RQ
   port: 16717
@@ -70,39 +45,6 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '11,20,21,27|13,14||@ripaojiedian #1'
-  network: ws
-  port: '443'
-  server: 172.233.92.155
-  servername: 172.233.92.155
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: af0bfcce-8730-4133-bdaa-f6b1da70fc1c
-  ws-opts:
-    headers:
-      Host: 172.233.92.155
-    path: /fdmCQbor
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 11,27|13| 日本2|@ripaojiedian
-  password: 0c7dac8f-070d-44e0-9e8c-f25fa4604fe9
-  port: 39202
-  server: hzhz1.sssyun.xyz
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 11,20,21,27|13|🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 43.201.61.86
-  tfo: false
-  type: ss
 - name: 17|JP_youtube@资源分享师_177
   network: ws
   port: 8443
@@ -249,37 +191,14 @@ proxies:
   type: vmess
   uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本03-1B
-  password: 9c8d149d-3274-4566-955d-02e988082c89
-  port: 20006
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本04-1A
-  password: 80a8bc3e-a500-47e1-8a40-852825d52a44
-  port: 20008
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本02-1A
-  password: 80a8bc3e-a500-47e1-8a40-852825d52a44
+  name: 28|🇯🇵 日本02
+  password: a732caa6-81a0-467c-990d-8c3f352723cc
   port: 20004
   server: gy.666666222.shop
   type: ss
   udp: true
 - auth: 549c0826-780a-494e-8d0a-7174ec75e035
-  name: 28|🇯🇵 日本-2
-  password: 549c0826-780a-494e-8d0a-7174ec75e035
-  port: 30001
-  server: oracle-amd-osaka1.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: osaka.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
-- auth: 549c0826-780a-494e-8d0a-7174ec75e035
-  name: 28|🇯🇵 日本-1
+  name: 28|🇯🇵 日本-1-1A
   password: 549c0826-780a-494e-8d0a-7174ec75e035
   port: 30001
   server: oracle-amd-tokyo1.lanmaoyun.icu
@@ -287,10 +206,33 @@ proxies:
   sni: tokyo.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
+- auth: fa81705d-8384-49da-b458-eb45495019f1
+  name: 28|🇯🇵 日本-2-1B
+  password: fa81705d-8384-49da-b458-eb45495019f1
+  port: 30001
+  server: oracle-amd-osaka1.lanmaoyun.icu
+  skip-cert-verify: true
+  sni: osaka.nodes.lanmaoyun.icu
+  type: hysteria2
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本01-1A
-  password: 80a8bc3e-a500-47e1-8a40-852825d52a44
+  name: 28|🇯🇵 日本03
+  password: a732caa6-81a0-467c-990d-8c3f352723cc
+  port: 20006
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本01
+  password: a732caa6-81a0-467c-990d-8c3f352723cc
   port: 20002
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本04
+  password: a732caa6-81a0-467c-990d-8c3f352723cc
+  port: 20008
   server: gy.666666222.shop
   type: ss
   udp: true
