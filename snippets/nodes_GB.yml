@@ -42,33 +42,16 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
-  cipher: auto
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 9|🇬🇧 英国 Technicolor SA
-  port: 52728
-  server: 141.11.251.231
-  skip-cert-verify: false
+  name: 9,24,37|GB 86.0KB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.239.249
+  skip-cert-verify: true
   tfo: false
-  tls: false
-  type: vmess
-  uuid: d5e16b83-7b5c-45ea-d749-d6f6ad214447
-- client-fingerprint: chrome
-  name: '9,24|🇬🇧 英国 社会保险安全部 #2'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.21.36.254
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '11,24|🇬🇧 英国 Technicolor SA #1'
-  network: tcp
-  port: '52728'
-  server: 141.11.251.231
-  tls: false
-  type: vmess
-  uuid: d5e16b83-7b5c-45ea-d749-d6f6ad214447
+  tls: true
+  type: ss
 - alterId: 0
   cipher: auto
   name: 24|🇬🇧 英国(油管:破解资源君2.0)
@@ -89,6 +72,22 @@ proxies:
   uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2
 - alterId: 0
   cipher: auto
+  name: 24|🇬🇧 英国 Technicolor SA
+  network: tcp
+  port: '52728'
+  server: 141.11.251.231
+  tls: false
+  type: vmess
+  uuid: d5e16b83-7b5c-45ea-d749-d6f6ad214447
+- name: '24|🇬🇧 英国 社会保险安全部 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.21.36.254
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
   name: 30|🇬🇧 英国-200.3KB/s
   network: ws
   port: 443
@@ -98,12 +97,3 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: linkvws
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|GB国
-  password: W74XFALLLuw6m5IA
-  port: 443
-  server: 18.130.181.197
-  skip-cert-verify: true
-  tls: true
-  type: ss
