@@ -7,6 +7,12 @@ proxies:
   skip-cert-verify: true
   sni: www.icloud.com
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 5,12,13,22|CN-183.233.187.156-1104
+  password: 99301d55-a41f-4919-986b-1435996533aa
+  port: 20003
+  server: deepf.hjkdsak2.com
+  type: ss
 - alterId: 0
   cipher: auto
   name: 8|🇺🇸_US_美国->🇩🇪_DE_德国_1_0@0
@@ -401,7 +407,7 @@ proxies:
     path: /?ed=2048
 - grpc-opts:
     grpc-service-name: 443trojan
-  name: 8,22|RELAY-172.67.204.84-3125
+  name: 8,22|RELAY-172.67.204.84-3085
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
@@ -1056,39 +1062,49 @@ proxies:
     headers:
       Host: s1c.v2.v001sss.xyz
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 13,22|🇳CN-122.195.189.15-0598
-  password: dd29d7ad-5fda-4f64-a57e-716ca6010e65
-  port: 10720
-  server: 122.195.189.15
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 13|🇮🇷_IR_伊朗->🇫🇷_FR_法国_2
-  network: ws
-  port: 2083
-  server: 193.151.144.26
-  tls: false
-  type: vmess
-  uuid: 7b33bc8f-7014-4814-afb1-1c4d7f25314c
-  ws-opts:
-    headers:
-      Host: tv.filmnet.ir
-    path: /
-- name: 13|🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
+- name: 13|🇩🇪_DE_德国->🇺🇸_US_美国_1
   network: tcp
-  password: telegram-id-directvpn
+  password: telegram-id-privatevpns
   port: 22222
-  server: 13.37.24.49
+  server: 52.57.17.193
   sni: trojan.burgerip.co.ukhttp/1.1
   type: trojan
-- name: 16|🇺_US_美国->_IE_兰
-  password: telegram-id-directvpn
-  port: 22222
-  server: 3.97.171.112
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 13,20,21,22,24,37|未知88 433.6KB/s
+  password: gDFRe52uiIvVaxqPlqw439
+  port: 8080
+  server: 45.87.175.188
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 13,20,21,22|LT-45.87.175.178-1105
+  password: gDFRe52uiIvVaxqPlqw439
+  port: 8080
+  server: 45.87.175.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 13,20,21,22|🇷FR-45.158.171.19-1098
+  password: a8bt9fY0QsLS6eLnXUe0Ym
+  port: 8080
+  server: 45.158.171.19
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 13,19,20,21,22|🇷FR-45.158.171.36-1099
+  password: a8bt9fY0QsLS6eLnXUe0Ym
+  port: 8080
+  server: 45.158.171.36
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: '13,24|🇨🇳 广东省广州市 移动 #1'
+  network: tcp
+  port: '58831'
+  server: 120.232.153.27
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|中国香港/中国台湾(CN)China/Shenzhen/小东的程序未能精准识别(可能是中转节点)_3
@@ -1160,6 +1176,20 @@ proxies:
   uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
   ws-opts:
     path: /v2ray
+- alterId: 0
+  cipher: auto
+  name: '23,30|🇺🇸_US_美国->🇫🇷_FR_法国_1 #1'
+  network: ws
+  port: 2082
+  server: s1c.v2.v001sss.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 28|🇹🇼 台湾中转 01
   password: 3fa4261d-7e84-45f1-be62-89072b5c8d7f
