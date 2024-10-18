@@ -1,18 +1,10 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 2,5,11,27|13|🇭🇰 香港6|@ripaojiedian
+  name: 2,5,9,11,27|13|🇭🇰 香港6|@ripaojiedian
   password: b1bfb546-0259-44f0-8c9a-8b8702618df9
   port: 11001
   server: 183.240.255.75
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '2,5,11|15|🇭🇰 香港2|@ripaojiedian #1'
-  password: 4b3391e1-3cc6-4e82-816c-6b7bf516c12b
-  port: 29527
-  server: hzhz1.sssyun.xyz
   tfo: false
   type: ss
 - alterId: 0
@@ -31,14 +23,6 @@ proxies:
   password: hGkQ6915tD
   port: 16088
   server: 120.232.81.50
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '2,5,11|15|🇹🇼 台湾2|@ripaojiedian #1'
-  password: 4b3391e1-3cc6-4e82-816c-6b7bf516c12b
-  port: 40017
-  server: hzhz2.sssyun.xyz
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -77,10 +61,13 @@ proxies:
   type: trojan
 - alterId: 64
   cipher: auto
-  name: 2,27|13| 国|@ripaojiedian
+  client-fingerprint: chrome
+  name: 2,11,27|13| 国|@ripaojiedian
+  password: '!!str 3690911436885991424'
   port: 43526
   server: 120.232.153.71
   skip-cert-verify: false
+  sni: winning-doe.sheepdog670.boats
   tfo: false
   tls: false
   type: vmess
@@ -96,7 +83,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '2,5,11|16|香港3|@ripaojiedian #1'
+  name: 2,5|16|香港3|@ripaojiedian
   network: tcp
   port: '50023'
   server: 50023.baidu-cdn.top
@@ -106,7 +93,7 @@ proxies:
   uuid: 0900abc9-29a4-4f70-98de-336b5d4b79d6
 - alterId: 0
   cipher: auto
-  name: '2,5,11|16|日本3|@ripaojiedian #1'
+  name: 2,5|16|日本3|@ripaojiedian
   network: tcp
   port: '50032'
   server: 50032.baidu-cdn.top
@@ -148,24 +135,39 @@ proxies:
       Host: www.zitian.cn
 - alterId: 64
   cipher: auto
-  name: '5,11,24|🇨🇳 广东省广州市 移动 #5'
+  name: '5,13,24|🇨🇳 广东省中山市 移动 #1'
+  network: tcp
+  port: '46665'
+  server: 120.237.79.157
+  tls: false
+  type: vmess
+  uuid: 3ac820af-becb-45d7-9e7a-e33d02961bb3
+- alterId: 64
+  cipher: auto
+  name: 5,11,40|CN_speednode_0010
+  network: tcp
+  port: 33288
+  server: 183.236.48.161
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-cfb
+  name: '5,11|1|_CN_ #1'
+  password: hGkQ6915tD
+  port: 15082
+  server: 59.56.77.178
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: '5,13,24|🇨🇳 广东省广州市 移动 #5'
   network: tcp
   port: '58831'
   server: 120.232.153.27
   servername: ''
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 5,11,12,24,40|CN_speednode_0012
-  network: tcp
-  port: 33288
-  server: 183.236.48.166
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: '5,38|🇨🇳_CN_中国_38 #1'
   network: ws
@@ -179,21 +181,6 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- cipher: aes-256-cfb
-  name: '5,11|1|_CN_ #1'
-  password: hGkQ6915tD
-  port: 15082
-  server: 59.56.77.178
-  type: ss
-- alterId: 64
-  cipher: auto
-  name: '5,11,24|🇨🇳 广东省中山市 移动 #2'
-  network: tcp
-  port: '46665'
-  server: 120.237.79.157
-  tls: false
-  type: vmess
-  uuid: 3ac820af-becb-45d7-9e7a-e33d02961bb3
 - alterId: 64
   cipher: auto
   name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
@@ -795,15 +782,6 @@ proxies:
   ws-headers:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 8,24,37|DE国
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 20005
-  server: service.ouluyun9803.com
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 8|🇨🇳CN-117.149.247.11-173_1@173
   password: 8e949d75-3510-4678-8593-3c5032dd931a
@@ -827,70 +805,13 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   name: 9|🇨🇳 广东省广州市 移动
-  port: 58831
-  server: 120.232.153.27
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 9|🇨🇳 广东省中山市 移动
-  port: 46665
-  server: 120.237.79.157
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 3ac820af-becb-45d7-9e7a-e33d02961bb3
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 9,40|CN_speednode_0011
   port: 33288
-  server: 183.236.48.166
-  skip-cert-verify: true
+  server: 183.236.48.161
+  skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 17|CN_ youtube@资源分享师_8
-  network: tcp
-  port: '12975'
-  server: z2.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- alterId: 0
-  cipher: auto
-  name: 17|CN_ youtube@资源分享师_18
-  network: tcp
-  port: '12928'
-  server: z6.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- alterId: 0
-  cipher: auto
-  name: 17|CN_ youtube@资源分享师_17
-  network: ws
-  port: '12920'
-  server: z6.fragranceninja.com
-  servername: z6.fragranceninja.com
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: z6.fragranceninja.com
-    path: /
 - alterId: -1
   cipher: chacha20-ietf-poly1305
   name: 40|CN_speednode_0001
@@ -943,6 +864,16 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 40|CN_speednode_0011
+  port: 33288
+  server: 183.236.48.166
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-cfb
   name: 40|CN_speednode_0013
