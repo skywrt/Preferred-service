@@ -1,4 +1,25 @@
 proxies:
+- alterId: 2
+  cipher: auto
+  name: 5|>🇰🇷 KR|Ns|0914|TG@FProxies|
+  network: ws
+  port: '23611'
+  server: 11.v2-ray.cyou
+  tls: false
+  type: vmess
+  uuid: ad74e5d7-5136-3598-8635-872bbb1dd575
+  ws-opts:
+    headers:
+      Host: 11.v2-ray.cyou
+    path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 5,11,27|13| 国|@ripaojiedian
+  password: 0143905a-7f2d-4f95-a2d6-9947d4017bcd
+  port: 40016
+  server: hzhz2.sssyun.xyz
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 5,10|加拿大 025
@@ -14,12 +35,27 @@ proxies:
     headers:
       Host: uk-new01.daluquan.top
     path: /itdog?ed=2560
-- name: '5|>🇰🇷 KR|Ms|1013|TG@FProxies| #1'
-  password: 0e6dc261-9a31-4b5b-9a22-6cad07050e8a
-  port: 21017
-  server: 120.232.217.96
-  skip-cert-verify: true
-  type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 5,11,27|13|🇷 韩国|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 54.238.227.113
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '5|>🇰🇷 KR|Ms|1013|TG@FProxies| #1'
+  network: ws
+  port: '30001'
+  server: entrance3-89.jjsagcajvv.xyz
+  tls: false
+  type: vmess
+  uuid: 93a916b8-7557-3b07-917a-92242da06a65
+  ws-opts:
+    headers:
+      Host: entrance3-89.jjsagcajvv.xyz
+    path: /
 - alterId: 0
   cipher: auto
   name: 5|>🇰🇷 KR|Hs|0914|TG@FProxies|
@@ -33,19 +69,12 @@ proxies:
     headers:
       Host: ''
     path: /?ed=2560
-- alterId: 2
-  cipher: auto
-  name: 5|>🇰🇷 KR|Ns|0914|TG@FProxies|
-  network: ws
-  port: '23611'
-  server: 11.v2-ray.cyou
-  tls: false
-  type: vmess
-  uuid: ad74e5d7-5136-3598-8635-872bbb1dd575
-  ws-opts:
-    headers:
-      Host: 11.v2-ray.cyou
-    path: /
+- name: '5|>🇰🇷 KR|Ms|1013|TG@FProxies| #4'
+  password: 0e6dc261-9a31-4b5b-9a22-6cad07050e8a
+  port: 21017
+  server: 120.232.217.96
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|>🇰🇷 KR|Ms|0914|TG@FProxies|
@@ -55,6 +84,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 5fcf0569-dfd7-4904-9383-e5149cdd8d87
+- cipher: aes-256-cfb
+  name: 5,19|🇰🇷KR-3.35.222.240-0426
+  password: amazonskr05
+  port: 443
+  server: 3.35.222.240
+  type: ss
 - alterId: 0
   cipher: auto
   name: 5,10|加拿大 068
@@ -71,41 +106,6 @@ proxies:
     headers:
       Host: yx.niubi.site
     path: /niu?ed=2560
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 5,11,27|13|🇷 韩国|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 54.238.227.113
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 5,11,27|13| 国|@ripaojiedian
-  password: 0143905a-7f2d-4f95-a2d6-9947d4017bcd
-  port: 40016
-  server: hzhz2.sssyun.xyz
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '5|>🇰🇷 KR|Ms|1013|TG@FProxies| #5'
-  network: ws
-  port: '30001'
-  server: entrance3-89.jjsagcajvv.xyz
-  tls: false
-  type: vmess
-  uuid: 93a916b8-7557-3b07-917a-92242da06a65
-  ws-opts:
-    headers:
-      Host: entrance3-89.jjsagcajvv.xyz
-    path: /
-- cipher: aes-256-cfb
-  name: 5,19|🇰🇷KR-3.35.222.240-0426
-  password: amazonskr05
-  port: 443
-  server: 3.35.222.240
-  type: ss
 - name: 10|韩国 002
   network: ws
   password: CMLiu
@@ -133,7 +133,51 @@ proxies:
   type: vless
   udp: true
   uuid: 83512b4a-64a9-4058-80df-53d95e2fbaa0
-- name: 28|🇰🇷 韩国-三网优化2-6T
+- client-fingerprint: chrome
+  delay: 1296
+  flow: xtls-rprx-vision
+  name: 10|韩国 001
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: t_MDb0CgA1ZwyIj7NpJ2hvp85C9sH8Nsnd8etE8NKw4
+  server: 140.238.18.228
+  servername: updates.cdn-apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2353e75d-7cec-4e7f-9eae-e996117cac04
+- client-fingerprint: random
+  name: 10|韩国 003
+  network: ws
+  port: 14985
+  server: 61.81.181.169
+  servername: fc071d49-af91-42d6-a20e-5a64e24a53bc.71a45835-dd0c-4d51-8bd4-9ccf9f223662.casacam.net
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 113dd109-540e-4497-9d47-eed30315260f
+  ws-opts:
+    headers:
+      Host: fc071d49-af91-42d6-a20e-5a64e24a53bc.71a45835-dd0c-4d51-8bd4-9ccf9f223662.casacam.net
+    path: /edgetunnel.2424014450.workers.dev/?ed=2560&proxyip=61.81.181.169:14985
+- client-fingerprint: random
+  name: 10|韩国 005
+  network: ws
+  port: 17010
+  server: 211.248.216.119
+  servername: fc071d49-af91-42d6-a20e-5a64e24a53bc.71a45835-dd0c-4d51-8bd4-9ccf9f223662.casacam.net
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 113dd109-540e-4497-9d47-eed30315260f
+  ws-opts:
+    headers:
+      Host: fc071d49-af91-42d6-a20e-5a64e24a53bc.71a45835-dd0c-4d51-8bd4-9ccf9f223662.casacam.net
+    path: /edgetunnel.2424014450.workers.dev/?ed=2560&proxyip=211.248.216.119:17010
+- name: 28|🇰🇷 韩国-三网优化2-3R
   password: a078ea6b-1b66-496b-babd-88c2facba161
   port: 44732
   server: kr-qingyun.dwyun.me
@@ -142,17 +186,17 @@ proxies:
   type: trojan
   udp: true
 - auth: e1949df6-0e08-4765-98bb-f91301f39fa1
-  name: 28|🇰🇷 韩国-2
+  name: 28|🇰🇷 韩国-首尔-1A
   password: e1949df6-0e08-4765-98bb-f91301f39fa1
   port: 30001
-  server: oracle-arm-chuncheon2.lanmaoyun.icu
+  server: oracle-arm-seoul1.lanmaoyun.icu
   skip-cert-verify: true
   sni: korea.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- auth: e1949df6-0e08-4765-98bb-f91301f39fa1
-  name: 28|🇰🇷 韩国-1
-  password: e1949df6-0e08-4765-98bb-f91301f39fa1
+- auth: 3a5a8124-dada-40d0-98ee-d20fea7f700a
+  name: 28|🇰🇷 韩国-1-1B
+  password: 3a5a8124-dada-40d0-98ee-d20fea7f700a
   port: 30001
   server: oracle-arm-chuncheon1.lanmaoyun.icu
   skip-cert-verify: true
@@ -160,10 +204,10 @@ proxies:
   type: hysteria2
   udp: true
 - auth: e1949df6-0e08-4765-98bb-f91301f39fa1
-  name: 28|🇰🇷 韩国-首尔
+  name: 28|🇰🇷 韩国-2-1A
   password: e1949df6-0e08-4765-98bb-f91301f39fa1
   port: 30001
-  server: oracle-arm-seoul1.lanmaoyun.icu
+  server: oracle-arm-chuncheon2.lanmaoyun.icu
   skip-cert-verify: true
   sni: korea.nodes.lanmaoyun.icu
   type: hysteria2
