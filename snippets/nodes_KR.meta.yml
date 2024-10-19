@@ -1,16 +1,39 @@
 proxies:
-- alterId: 0
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 5,11,27|13| 国|@ripaojiedian
+  password: 0143905a-7f2d-4f95-a2d6-9947d4017bcd
+  port: 40016
+  server: hzhz2.sssyun.xyz
+  tfo: false
+  type: ss
+- alterId: 2
   cipher: auto
-  name: 5|>🇰🇷 KR|Ms|1013|TG@FProxies|
-  network: ws
-  port: '30001'
-  server: entrance3-89.jjsagcajvv.xyz
+  name: 5|🇰🇷 16 韩国 BGP
+  network: tcp
+  port: 4342
+  server: ru-1.dnspro.icu
   tls: false
   type: vmess
-  uuid: 93a916b8-7557-3b07-917a-92242da06a65
+  uuid: e36b038e-174f-3189-8a37-325907cb5e65
+- name: '5|>🇰🇷 KR|Ms|1013|TG@FProxies| #2'
+  password: 0e6dc261-9a31-4b5b-9a22-6cad07050e8a
+  port: 21017
+  server: 120.232.217.96
+  skip-cert-verify: true
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 5|>🇰🇷 KR|Ns|0914|TG@FProxies|
+  network: ws
+  port: '23611'
+  server: 11.v2-ray.cyou
+  tls: false
+  type: vmess
+  uuid: ad74e5d7-5136-3598-8635-872bbb1dd575
   ws-opts:
     headers:
-      Host: entrance3-89.jjsagcajvv.xyz
+      Host: 11.v2-ray.cyou
     path: /
 - alterId: 0
   cipher: auto
@@ -27,35 +50,6 @@ proxies:
     headers:
       Host: uk-new01.daluquan.top
     path: /itdog?ed=2560
-- alterId: 2
-  cipher: auto
-  name: 5|>🇰🇷 KR|Ns|0914|TG@FProxies|
-  network: ws
-  port: '23611'
-  server: 11.v2-ray.cyou
-  tls: false
-  type: vmess
-  uuid: ad74e5d7-5136-3598-8635-872bbb1dd575
-  ws-opts:
-    headers:
-      Host: 11.v2-ray.cyou
-    path: /
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 5,11,27|13|🇷 韩国|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 54.238.227.113
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 5,11,27|13| 国|@ripaojiedian
-  password: 0143905a-7f2d-4f95-a2d6-9947d4017bcd
-  port: 40016
-  server: hzhz2.sssyun.xyz
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: 5,10|加拿大 068
@@ -72,12 +66,6 @@ proxies:
     headers:
       Host: yx.niubi.site
     path: /niu?ed=2560
-- name: '5|>🇰🇷 KR|Ms|1013|TG@FProxies| #4'
-  password: 0e6dc261-9a31-4b5b-9a22-6cad07050e8a
-  port: 21017
-  server: 120.232.217.96
-  skip-cert-verify: true
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|>🇰🇷 KR|Ms|0914|TG@FProxies|
@@ -87,6 +75,27 @@ proxies:
   tls: false
   type: vmess
   uuid: 5fcf0569-dfd7-4904-9383-e5149cdd8d87
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 5,11,27|13|🇷 韩国|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 54.238.227.113
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '5|>🇰🇷 KR|Ms|1013|TG@FProxies| #6'
+  network: ws
+  port: '30001'
+  server: entrance3-89.jjsagcajvv.xyz
+  tls: false
+  type: vmess
+  uuid: 93a916b8-7557-3b07-917a-92242da06a65
+  ws-opts:
+    headers:
+      Host: entrance3-89.jjsagcajvv.xyz
+    path: /
 - alterId: 0
   cipher: auto
   name: 5|>🇰🇷 KR|Hs|0914|TG@FProxies|
@@ -100,6 +109,14 @@ proxies:
     headers:
       Host: ''
     path: /?ed=2560
+- client-fingerprint: chrome
+  name: 9|🇰🇷 韩国 首尔Oracle云计算数据中心
+  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+  port: 20985
+  server: ent1.imyourdaddy.top
+  skip-cert-verify: false
+  sni: sale.alibaba.com
+  type: trojan
 - name: 10|韩国 002
   network: ws
   password: CMLiu
@@ -207,37 +224,73 @@ proxies:
     headers:
       Host: lr.kpcloud.eu.org
     path: /blue
-- name: 28|🇰🇷 韩国-三网优化2-6Z
-  password: e479b56b-b56c-4e9d-8ef6-894f64be74d1
+- name: 17|韩国(yudou66.com 玉豆免费节点)
+  network: ws
+  port: 12273
+  server: 211.228.180.147
+  servername: dp.ylks.xyz
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: dp.ylks.xyz
+    path: '%2Fblue'
+- name: '17|韩国(yudou66.com 玉豆免费节点) #1'
+  network: ws
+  port: 21302
+  server: 116.47.10.236
+  servername: lp.ylks01.eu.org
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: lp.ylks01.eu.org
+    path: '%2Fblue'
+- name: '17|韩国(yudou66.com 玉豆免费节点) #2'
+  network: ws
+  port: 18050
+  server: 119.195.219.150
+  servername: dp.ylks.xyz
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: dp.ylks.xyz
+    path: '%2F%3Fproxyip%3Dproxyip.kr.fxxp.dedyp.io'
+- name: 28|🇰🇷 韩国-三网优化2-2E
+  password: 122ffea8-cc7b-4864-a45b-fe5a54ab15bf
   port: 44732
   server: kr-qingyun.dwyun.me
   skip-cert-verify: false
   sni: kr-qingyun.dwyun.me
   type: trojan
   udp: true
-- auth: c76f5b73-9a95-42f3-aead-6bcaea3ae6e9
-  name: 28|🇰🇷 韩国-2-1A
-  password: c76f5b73-9a95-42f3-aead-6bcaea3ae6e9
+- auth: ad4a839e-ed42-4edb-bde9-b0cc7cb8b433
+  name: 28|🇰🇷 韩国-首尔
+  password: ad4a839e-ed42-4edb-bde9-b0cc7cb8b433
   port: 30001
-  server: oracle-arm-chuncheon2.lanmaoyun.icu
+  server: oracle-arm-seoul1.lanmaoyun.icu
   skip-cert-verify: true
   sni: korea.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- auth: c76f5b73-9a95-42f3-aead-6bcaea3ae6e9
-  name: 28|🇰🇷 韩国-1-1A
-  password: c76f5b73-9a95-42f3-aead-6bcaea3ae6e9
+- auth: ad4a839e-ed42-4edb-bde9-b0cc7cb8b433
+  name: 28|🇰🇷 韩国-1
+  password: ad4a839e-ed42-4edb-bde9-b0cc7cb8b433
   port: 30001
   server: oracle-arm-chuncheon1.lanmaoyun.icu
   skip-cert-verify: true
   sni: korea.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- auth: c76f5b73-9a95-42f3-aead-6bcaea3ae6e9
-  name: 28|🇰🇷 韩国-首尔-1A
-  password: c76f5b73-9a95-42f3-aead-6bcaea3ae6e9
+- auth: ad4a839e-ed42-4edb-bde9-b0cc7cb8b433
+  name: 28|🇰🇷 韩国-2
+  password: ad4a839e-ed42-4edb-bde9-b0cc7cb8b433
   port: 30001
-  server: oracle-arm-seoul1.lanmaoyun.icu
+  server: oracle-arm-chuncheon2.lanmaoyun.icu
   skip-cert-verify: true
   sni: korea.nodes.lanmaoyun.icu
   type: hysteria2
