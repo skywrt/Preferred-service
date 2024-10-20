@@ -1,6 +1,6 @@
 proxies:
 - alterId: 0
-  name: 2,5,17,24,37|HK 49.1KB/s
+  name: '2,5,17,24,37|HK #1'
   network: tcp
   password: 981db44e-9f07-49eb-9ba0-6ab4939919a2
   port: 443
@@ -215,7 +215,8 @@ proxies:
       Host: hk6.ifastcdncache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,27|13|🇭🇰 香港3|@ripaojiedian
+  client-fingerprint: chrome
+  name: 5,11,27|13|🇭🇰 香港3|@ripaojiedian
   password: 91797a4c-47cb-4bf1-bc04-a3f2da51ef20
   port: 11001
   server: 183.232.229.165
@@ -255,7 +256,8 @@ proxies:
       Host: ''
     path: /path/283431252216
 - cipher: chacha20-ietf-poly1305
-  name: 5,27|13|🇭🇰 香港6|@ripaojiedian
+  client-fingerprint: chrome
+  name: 5,11,27|13|🇭🇰 香港6|@ripaojiedian
   password: dac09e78-6d93-431d-97fe-802854d87b17
   port: 40012
   server: hzhz2.sssyun.xyz
@@ -431,7 +433,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 5,27|14|香港2|@ripaojiedian
+  name: 5,11,27|14|香港2|@ripaojiedian
   network: tcp
   port: '35011'
   server: tanz-hk.01byx31qzn.download
@@ -440,13 +442,12 @@ proxies:
   type: vmess
   uuid: 548ff3c1-d8c8-3110-a65a-fb55573380c7
 - client-fingerprint: chrome
-  name: '9,17|美国(yudou66.com 玉豆免费节点) #82'
-  network: tcp
+  name: 9|🇭🇰 香港 环球全域电讯
   password: 981db44e-9f07-49eb-9ba0-6ab4939919a2
   port: 443
-  server: hknode07.oportal.cc
+  server: 203.184.132.166
   skip-cert-verify: false
-  sni: hknode07.oportal.cc
+  sni: 203.184.132.166
   type: trojan
 - client-fingerprint: randomized
   delay: 476
@@ -520,6 +521,33 @@ proxies:
   network: ws
   port: 443
   server: 103.220.72.40
+  servername: dr.ylks.xyz
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: dr.ylks.xyz
+    path: /blue
+- client-fingerprint: chrome
+  delay: 1786
+  flow: xtls-rprx-vision
+  name: 10|香港 011
+  network: tcp
+  port: 8080
+  reality-opts:
+    public-key: 3x7QUG16ssq3wplofSrfo1fWKX1De5SxWn0kxAjtZWI
+    short-id: c49c6263
+  server: hk1.youxuan.wiki
+  servername: zabbix.mikunet.work
+  tls: true
+  type: vless
+  udp: true
+  uuid: 15fb60ad-4acc-40f0-bf4f-8fec451489f5
+- name: 10|香港 012
+  network: ws
+  port: 443
+  server: 219.76.13.183
   servername: dr.ylks.xyz
   tls: true
   type: vless
@@ -987,9 +1015,9 @@ proxies:
 - alterId: 0
   cipher: aes-128-gcm
   name: 37|HK
-  password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 25203
-  server: 91.199.84.195
+  password: 3a690709-5011-4a6c-ab62-da2fb5291233
+  port: 50203
+  server: 38.150.12.188
   skip-cert-verify: true
   tls: true
   type: ss
@@ -997,36 +1025,25 @@ proxies:
   cipher: aes-128-gcm
   name: 37|HK3
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29218
+  port: 25202
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
+  cipher: aes-128-gcm
   name: 37|HK4
-  network: tcp
-  password: 9ff83a73-c9da-4233-a9e2-7fa9b83b5f75
-  port: 16212
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29208
   server: 91.199.84.195
   skip-cert-verify: true
-  sni: data.steamdownload.top
   tls: true
-  type: trojan
-  udp: true
+  type: ss
 - alterId: 0
   cipher: aes-128-gcm
   name: 37|HK5
   password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29106
-  server: 91.199.84.195
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 37|HK6
-  password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 22213
+  port: 29105
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
