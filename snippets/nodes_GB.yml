@@ -72,7 +72,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 5,28|🇬🇧 英国中转 03
-  password: 89dd875f-1152-44c8-a308-c0c8952f83a4
+  password: cbdb101b-0aec-433f-82e8-67a68c422ef1
   port: 13708
   server: gstdnb.myfczy168.top
   type: ss
@@ -114,11 +114,13 @@ proxies:
     path: /linkvws
 - alpn:
   - http/1.1
-  name: '5|英国+社会保险安全部 #1'
+  client-fingerprint: chrome
+  name: '5,9,24|🇬🇧 英国 社会保险安全部 #2'
   network: tcp
   password: telegram-id-directvpn
   port: 22222
   server: 51.20.176.193
+  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
 - name: '5|>🇬🇧 GB|Ms|0914|TG@FProxies| #2'
@@ -208,4 +210,10 @@ proxies:
   server: 141.98.101.178
   skip-cert-verify: true
   tls: true
+  type: ss
+- cipher: aes-128-gcm
+  name: 19|🇬🇧GB-212.102.53.194-0096
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
   type: ss

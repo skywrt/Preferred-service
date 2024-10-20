@@ -11,7 +11,7 @@ proxies:
   uuid: 9ec8f8eb-b6d9-459f-9dbe-fc7fffce7a28
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 2,5,11,27|13|🇵 日本特殊|@ripaojiedian
+  name: 2,5,11,20,21,27|13|🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 54.178.117.135
@@ -30,9 +30,9 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1187
-  name: 5,10|香港 006
+  name: 5,10,24|🇨🇳 江苏省 移动数据上网公共出口
   network: tcp
-  port: 15086
+  port: '15086'
   server: 15086.kuaiyin02.top
   skip-cert-verify: true
   tls: false
@@ -62,10 +62,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 740ba9a4-5de5-4422-a4e7-02b3dee80906
-- name: 5|日本+V2CROSS.COM
+- client-fingerprint: chrome
+  name: '5,9,24|🇯🇵 日本 v2rayfree.eu.org #1'
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   port: 20987
   server: ent1.imyourdaddy.top
+  skip-cert-verify: false
   sni: sale.alibaba.com
   type: trojan
 - name: 5|>🇯🇵 JP|Ns|1013|TG@FProxies|
@@ -134,16 +136,17 @@ proxies:
     headers:
       Host: jpcft01.xqc.best
     path: /stream
-- name: 5|日本+东京都Amazon数据中心
+- name: '5,24|🇯🇵 日本 东京都Amazon数据中心 #1'
   password: 2155145a-b1b5-443a-8977-670f6bd10f02
   port: 50001
   server: bgroup.node1.t.nodelist-airport.com
+  skip-cert-verify: false
   type: trojan
-- name: '5|>🇯🇵 JP|Ls|1013|TG@FProxies| #19'
+- name: '5,24|🇯🇵 日本 东京Amazon数据中心 #1'
   password: 4aa9ee7a-ffee-4ca4-a588-f5fa9e979c38
   port: 20230
   server: jp008.421421.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   type: trojan
 - alterId: 0
   cipher: auto
@@ -209,7 +212,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 5,28|🇯🇵 日本03-1B
-  password: c6a9b4c0-a533-419d-aa20-2571ea96f337
+  password: 1504060e-5204-4db5-bce4-1a3030e3dd52
   port: 20006
   server: gy.666666222.shop
   type: ss
@@ -248,8 +251,8 @@ proxies:
       Host: tls.85.node-for-bigairport.win
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,28|🇯🇵 日本01-1I
-  password: 30ccd9bf-35f5-4f1c-971e-c323bfc76b31
+  name: 5,28|🇯🇵 日本01-1G
+  password: 4362420a-3d99-4209-8c90-bf76fdce046f
   port: 20002
   server: gy.666666222.shop
   type: ss
@@ -422,6 +425,22 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
+- client-fingerprint: chrome
+  name: 9|🇯🇵 日本 东京Amazon数据中心
+  password: 4aa9ee7a-ffee-4ca4-a588-f5fa9e979c38
+  port: 20230
+  server: jp008.421421.xyz
+  skip-cert-verify: false
+  sni: jp008.421421.xyz
+  type: trojan
+- client-fingerprint: chrome
+  name: 9|🇯🇵 日本 东京都Amazon数据中心
+  password: 2155145a-b1b5-443a-8977-670f6bd10f02
+  port: 50001
+  server: bgroup.node1.t.nodelist-airport.com
+  skip-cert-verify: false
+  sni: bgroup.node1.t.nodelist-airport.com
+  type: trojan
 - name: 10|日本 001
   network: tcp
   password: 2aa1581d-bfc9-4d3a-84f3-742674fb5d3a
@@ -523,7 +542,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇯🇵JP-172.105.192.167-1287
+  name: 19|🇯🇵JP-172.105.192.167-1272
   network: ws
   port: 443
   server: jp1.119.buzz
@@ -535,20 +554,12 @@ proxies:
     headers:
       host: jp1.119.buzz
     path: /JFjmIXA
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇯🇵JP-172.105.192.167-1287 #2'
-  network: ws
+- cipher: aes-256-cfb
+  name: 19|🇯🇵JP-3.113.6.44-0426
+  password: amazonskr05
   port: 443
-  server: jp1.119.buzz
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 34e951fa-89f6-434f-88ae-c2a2c3f84b8a
-  ws-opts:
-    headers:
-      Host: jp1.119.buzz
-    path: /JFjmIXA
+  server: 3.113.6.44
+  type: ss
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|日本(JP)Japan/Tokyo_38
@@ -564,32 +575,32 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- auth: ae2e91b3-bea3-4922-a2b9-423a72780831
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本02-1B
+  password: 1504060e-5204-4db5-bce4-1a3030e3dd52
+  port: 20004
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本04-1A
+  password: 7ae851c5-8bf4-41a2-829b-7c7301236d95
+  port: 20008
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- auth: d6f3fae0-146a-41cf-bde7-f373f818950c
   name: 28|🇯🇵 日本-1
-  password: ae2e91b3-bea3-4922-a2b9-423a72780831
+  password: d6f3fae0-146a-41cf-bde7-f373f818950c
   port: 30001
   server: oracle-amd-tokyo1.lanmaoyun.icu
   skip-cert-verify: true
   sni: tokyo.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本02-1B
-  password: c6a9b4c0-a533-419d-aa20-2571ea96f337
-  port: 20004
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本04-1B
-  password: c6a9b4c0-a533-419d-aa20-2571ea96f337
-  port: 20008
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- auth: ae2e91b3-bea3-4922-a2b9-423a72780831
+- auth: d6f3fae0-146a-41cf-bde7-f373f818950c
   name: 28|🇯🇵 日本-2
-  password: ae2e91b3-bea3-4922-a2b9-423a72780831
+  password: d6f3fae0-146a-41cf-bde7-f373f818950c
   port: 30001
   server: oracle-amd-osaka1.lanmaoyun.icu
   skip-cert-verify: true
