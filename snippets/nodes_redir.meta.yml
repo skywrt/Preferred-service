@@ -1,4 +1,25 @@
 proxies:
+- name: 5|🇯🇵 日本BGP 中转 02 1.5x
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 46684
+  server: 21ceefda7d61800264c01e5837600e8f.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: passport.ucloud.cn
+  type: trojan
+- name: 5|🇺🇸 美国BGP 中转 03 1.5x
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 49979
+  server: 6ac8ea44149fad0796d3e2dbfb423015.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: api.ucloud.cn
+  type: trojan
+- name: 5|🇺🇸 美国BGP 中转 04 1.5x
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 45331
+  server: 2fb9df68d11f38afadd82a11d01eb35f.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: api.ucloud.cn
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '5,11|3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3 #1'
@@ -9,36 +30,20 @@ proxies:
   type: vmess
   uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
   ws-opts: {}
-- cipher: chacha20-ietf-poly1305
-  name: '5,11|1|_US_->_ES_ #1'
-  password: 2062a5ca-a34e-47bf-9810-db91185f07fc
-  port: 59019
-  server: fuck5.mmmmmmmmmm.cfd
-  type: ss
-- name: 5|🇺🇸_US_美国->🇧🇪_BE_比利时_2
-  network: ws
-  port: 80
-  server: 172.64.35.129
-  servername: cc.ailicf.us.kg
-  tls: false
-  type: vless
-  uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
-  ws-opts:
-    path: /b5cdabf0-e04
-- client-fingerprint: chrome
-  name: '5,13|🇺🇸_US_美国->🇮🇷_IR_伊朗 #1'
-  network: ws
-  port: 80
-  server: 151.101.194.219
-  servername: speedtest.net
-  tls: false
-  type: vless
-  uuid: 9891f357-ebb3-4d2d-b9ac-faf71a446b5d
-  ws-opts:
-    path: '%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%3Fed%3D2048'
 - alterId: 0
   cipher: auto
-  name: '5,10,11,23,30|二爷免费翻墙 https://1808.free.hr 节点... #252'
+  name: '5,7,11|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7 #1'
+  network: ws
+  port: 2086
+  server: 104.19.45.47
+  sni: ip14.freegradely.xyz
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '5,11,23,30|二爷免费翻墙 https://1808.free.hr 节点... #252'
   network: ws
   port: 2052
   server: 104.17.156.224
@@ -49,6 +54,33 @@ proxies:
     headers:
       Host: in4.wish.ml
     path: /
+- alterId: 0
+  cipher: auto
+  name: '5,11,23,30|二爷免费翻墙 https://1808.free.hr 节点... #253'
+  network: ws
+  port: 2052
+  server: 172.67.164.78
+  tls: false
+  type: vmess
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  ws-opts:
+    headers:
+      Host: in3.wish.ml
+    path: /
+- name: 5|🇭🇰香港BGP 中转 04 1.5x
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 46375
+  server: 7cc231847562ab85cfca9b6579db932f.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: console.ucloud.cn
+  type: trojan
+- name: 5|🇨🇳 台湾BGP 中转 01 1.5x
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 47777
+  server: 1139d9e60d0297d759415e94748e77eb.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: www.ahu.edu.cn
+  type: trojan
 - alterId: 64
   cipher: auto
   name: '5,11|3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4 #1'
@@ -58,6 +90,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 5|🇭🇰香港BGP 中转 02 1.5x
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 45162
+  server: f2adf59112b05deee67d8bad33369516.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: console.ucloud.cn
+  type: trojan
 - name: '5,13|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
   network: ws
   port: 8080
@@ -68,28 +107,100 @@ proxies:
   uuid: d754c7e2-09a6-4a74-a8b8-c60368be0789
   ws-opts:
     path: '%2F%40XvProxy----%40XvProxy----%40XvProxy----%40XvProxy----%40XvProxy----%40XvProxy----%40XvProxy----%40XvProxy----%40XvProxy----%40XvProxy----%40XvProxy----%40XvProxy'
-- alterId: 64
-  cipher: auto
-  name: 5,12,13,16|🇨🇳_CN_中国->🇷_FR_国
-  network: tcp
-  port: 46665
-  server: 120.237.79.157
+- name: '5,13|🇨🇷_CR_哥斯达黎加->🇺🇸_US_美国 #1'
+  network: ws
+  port: 8080
+  server: 190.93.247.56
+  servername: astech.ir.www.speedtest.net.www.zula.ir.cloudflare.com.hostirann.xYz.
   tls: false
-  type: vmess
-  uuid: 3ac820af-becb-45d7-9e7a-e33d02961bb3
+  type: vless
+  uuid: b2bd4c7f-1b17-433b-87a1-dfa6095c8f3f
+  ws-opts:
+    path: '%2Ftelegram-%40ASinTech%2Ctelegram-%40ASinTech%2Ctelegram-%40ASinTech%2Ctelegram-%40ASinTech%2Ctelegram-%40ASinTech%2Ctelegram-%40ASinTech%2Ctelegram-%40ASinTech%2Ctelegram-%40ASinTech%2Ctelegram-%40ASinTech%2Ctelegram-%40ASinTech%2Ctelegram-%40ASinTech%2Ctelegram-%40ASinTech%3Fed%3D2560'
 - alterId: 0
   cipher: auto
-  name: 5|🇮🇷_IR_伊朗->🇫🇷_FR_法国_2
+  name: '5,7,11|1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #... #2'
   network: ws
-  port: 2083
-  server: 193.151.144.26
+  port: 2086
+  server: 104.19.57.4
+  sni: ip11.freegradely.xyz
   tls: false
   type: vmess
-  uuid: 7b33bc8f-7014-4814-afb1-1c4d7f25314c
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- name: 5|🇯🇵 日本BGP 中转 01 1.5x
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 44696
+  server: c35dcf2087d7cc6d2cdeea44edbd22c0.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: passport.ucloud.cn
+  type: trojan
+- name: '5|🇯🇵 日本BGP 中转 02 1.5x #1'
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 42567
+  server: 30f2dc4f175872bb4b710e936076e918.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: passport.ucloud.cn
+  type: trojan
+- name: 5|🇭🇰香港BGP 中转 01 1.5x
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 43439
+  server: 13278c9b64c0a6ed607e9c6acff0977c.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: console.ucloud.cn
+  type: trojan
+- name: 5|🇨🇳 台湾BGP 中转 02 1.5x
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 42181
+  server: 28d84aac6f75afd29c52785cf42edcef.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: www.ahu.edu.cn
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5,12,13,20,21|🏁RELAY-172.67.71.122-2621 #1'
+  network: ws
+  port: 2082
+  server: russia.com
+  servername: ip18.6929198.xyz
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
     headers:
-      Host: tv.filmnet.ir
-    path: /
+      Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '5,7,11|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6 #1'
+  network: ws
+  port: 2086
+  server: 104.19.47.32
+  sni: ip14.freegradely.xyz
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- name: '5,13|🇺🇸_US_美国->🇷🇺_RU_俄罗斯 #2'
+  network: ws
+  port: 8080
+  server: 104.17.148.22
+  servername: test.flnsho.store.
+  tls: false
+  type: vless
+  uuid: d6c82fe7-d271-48d2-84fb-8d1068be949b
+  ws-opts:
+    path: '%2FG%2Fb4t6hy5n%2F%3Fed%3D80120'
+- alterId: 0
+  cipher: auto
+  name: '5,11|3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3 #1'
+  network: ws
+  port: 16928
+  server: 120.232.240.56
+  tls: false
+  type: vmess
+  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
+  ws-opts: {}
 - alterId: 0
   cipher: auto
   name: '5,8,11|3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2 #1'
@@ -106,16 +217,6 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '5,11|3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11 #1'
-  network: ws
-  port: 2086
-  server: 172.64.175.213
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
   name: '5,7,11|1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2 #1'
   network: ws
   port: 8080
@@ -125,15 +226,45 @@ proxies:
   type: vmess
   uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
   ws-opts: {}
-- name: 5|🇧🇪_BE_比利时->🇺🇸_US_美国
+- name: 5|🇸🇬 新加坡BGP 中转 02 1.5x
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 40629
+  server: 52d00311d5bcbd97455fb588db8c9381.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: www.ucloud.cn
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5,7,11|1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1 #1'
   network: ws
-  port: 80
-  server: 57.129.41.217
+  port: 2052
+  server: 104.19.21.240
+  sni: cdn2.freegradely.xyz
   tls: false
-  type: vless
-  uuid: 4004b4f2-d973-432f-8376-043a52cec187
-  ws-opts:
-    path: /vless/
+  type: vmess
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  ws-opts: {}
+- name: '5|🇨🇳 台湾BGP 中转 02 1.5x #1'
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 43641
+  server: 99499824939e3aee8a76b388ca5de985.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: www.ahu.edu.cn
+  type: trojan
+- name: '5|🇭🇰香港BGP 中转 01 1.5x #1'
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 41738
+  server: 6004c6dd2691cacb8d2ab7012ae30b82.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: console.ucloud.cn
+  type: trojan
+- name: '5|🇭🇰香港BGP 中转 04 1.5x #1'
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 43036
+  server: a26728a30e002de0b4abffa81aff6561.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: console.ucloud.cn
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '5,7,11|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4 #1'
@@ -147,46 +278,22 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '5,11|3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3 #1'
+  name: '5,11|1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1 #1'
   network: ws
   port: 2052
-  server: p3.v2raybrasil.cloud
+  server: cfcdn2.sanfencdn9.com
+  sni: ''
   tls: false
   type: vmess
-  uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
+  uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a
   ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '5,7,11|1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1 #1'
-  network: ws
-  port: 2052
-  server: 104.19.21.240
-  sni: cdn2.freegradely.xyz
-  tls: false
-  type: vmess
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '5,11|1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #... #3'
-  network: ws
-  port: 2086
-  server: 104.18.57.111
-  sni: ip11.freegradely.xyz
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts: {}
-- name: 5|🇺🇸_US_美国->🇧🇪_BE_比利时_1
-  network: ws
-  port: 80
-  server: 141.101.121.110
-  servername: ov-germany1.09vpn.com
-  tls: false
-  type: vless
-  uuid: f2a72ad0-d23f-4eed-96cb-7d970b1e784d
-  ws-opts:
-    path: /vless/?Vless_txt
+- name: 5|🇺🇸 美国BGP 中转 02 1.5x
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 47100
+  server: dddfccf78b1419fe74a4df54f15368b4.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: api.ucloud.cn
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '5,11|1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰 #1'
@@ -197,157 +304,40 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '5,10,11,23,30|二爷免费翻墙 https://1808.free.hr 节点... #253'
-  network: ws
-  port: 2052
-  server: 172.67.164.78
-  tls: false
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      Host: in3.wish.ml
-    path: /
-- name: 5|🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2
-  network: ws
-  port: 80
-  server: speedtest.net
-  servername: wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v20.drlimit.net
-  tls: false
-  type: vless
-  uuid: 841b83da-3916-4c83-808f-a0433118a1c7
-- name: 5|🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 13.37.24.49
-  sni: trojan.burgerip.co.ukhttp/1.1
+- name: 5|🇸🇬 新加坡BGP 中转 01 1.5x
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 47141
+  server: f0c079cc5b4b3ab7adb64df8c5d43f3d.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: www.ucloud.cn
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,7,11|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7 #1'
+  name: '5,11|3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8 #1'
   network: ws
   port: 2086
-  server: 104.19.45.47
-  sni: ip14.freegradely.xyz
+  server: 104.19.47.65
   tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- cipher: aes-256-cfb
-  name: '5,11|1|_FR_->_RU_ #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 163.172.64.22
-  type: ss
+- name: '5|🇭🇰香港BGP 中转 02 1.5x #1'
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 47591
+  server: 46d6a7bcd3e17bf98a9b866addf59ce9.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: console.ucloud.cn
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,7,11|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6 #1'
-  network: ws
-  port: 2086
-  server: 104.19.47.32
-  sni: ip14.freegradely.xyz
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '5,11|3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2 #1'
-  network: ws
-  port: 2052
-  server: 104.18.37.248
-  tls: false
-  type: vmess
-  uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '5,11|3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3 #1'
+  name: '5,11|2|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
   network: ws
   port: 16928
-  server: 120.232.240.56
+  server: vip3.niuniupremium.xyz
   tls: false
   type: vmess
-  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
+  uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
   ws-opts: {}
-- name: 5|🇮🇷_IR_伊朗->🇩🇪_DE_德国
-  network: ws
-  port: 8080
-  server: 217.60.192.135
-  tls: false
-  type: vless
-  uuid: 4a7728fb-6e86-4a1d-8380-6e64c9bff6f0
-  ws-opts:
-    path: /
-- name: '5,13|🇺🇸_US_美国->🇷🇺_RU_俄罗斯 #2'
-  network: ws
-  port: 8080
-  server: 104.17.148.22
-  servername: test.flnsho.store.
-  tls: false
-  type: vless
-  uuid: d6c82fe7-d271-48d2-84fb-8d1068be949b
-  ws-opts:
-    path: '%2FG%2Fb4t6hy5n%2F%3Fed%3D80120'
-- alterId: 0
-  cipher: auto
-  name: '5,11|1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1 #1'
-  network: ws
-  port: 2052
-  server: cfcdn2.sanfencdn9.com
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a
-  ws-opts: {}
-- name: 5|🇸🇪_SE_瑞典->🇷🇺_RU_俄罗斯
-  network: ws
-  port: 80
-  server: 185.146.173.92
-  servername: Uk1.vless.site.
-  tls: false
-  type: vless
-  uuid: a67cbb64-1e7a-5272-b5a6-cd7bb0de6adb
-  ws-opts:
-    path: /vless
-- name: '5,13|🇨🇷_CR_哥斯达黎加->🇺🇸_US_美国 #1'
-  network: ws
-  port: 8080
-  server: 190.93.247.56
-  servername: astech.ir.www.speedtest.net.www.zula.ir.cloudflare.com.hostirann.xYz.
-  tls: false
-  type: vless
-  uuid: b2bd4c7f-1b17-433b-87a1-dfa6095c8f3f
-  ws-opts:
-    path: '%2Ftelegram-%40ASinTech%2Ctelegram-%40ASinTech%2Ctelegram-%40ASinTech%2Ctelegram-%40ASinTech%2Ctelegram-%40ASinTech%2Ctelegram-%40ASinTech%2Ctelegram-%40ASinTech%2Ctelegram-%40ASinTech%2Ctelegram-%40ASinTech%2Ctelegram-%40ASinTech%2Ctelegram-%40ASinTech%2Ctelegram-%40ASinTech%3Fed%3D2560'
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '5,8,9,10,11,23,24,30|二爷免费翻墙 https://1808.free.hr 节点... #256'
-  network: ws
-  port: 2082
-  server: 104.21.8.157
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
-- name: 5|🇮🇷_IR_伊朗->🇫🇷_FR_法国_1
-  network: ws
-  port: 52722
-  server: 81.12.27.93
-  tls: false
-  type: vless
-  uuid: 2c3e2c41-4395-4df3-e788-cb9cc82beceb
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: '5,11|2|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1'
@@ -361,31 +351,112 @@ proxies:
     headers:
       Host: rpmlybgzsg2.yofnhkfc.xyz
     path: /video/3YKfzGw4
+- name: '5|🇯🇵 日本BGP 中转 01 1.5x #1'
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 48632
+  server: 2ad48caf402de45aafda812b85ae9af0.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: passport.ucloud.cn
+  type: trojan
+- name: 5|🇺🇸 美国BGP 中转 01 1.5x
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 40931
+  server: c07e590a8604bc95354b9a396b5d0a8b.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: api.ucloud.cn
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 5,12,13,20,21,40|US_speednode_0330
+  name: '5,11|3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3 #1'
   network: ws
-  port: 2082
-  server: russia.com
-  servername: ip18.6929198.xyz
+  port: 2052
+  server: p3.v2raybrasil.cloud
   tls: false
   type: vmess
-  udp: true
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '5,11|3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8 #1'
-  network: ws
-  port: 2086
-  server: 104.19.47.65
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
   ws-opts: {}
+- client-fingerprint: chrome
+  name: '5,13|🇺🇸_US_美国->🇮🇷_IR_伊朗 #1'
+  network: ws
+  port: 80
+  server: 151.101.194.219
+  servername: speedtest.net
+  tls: false
+  type: vless
+  uuid: 9891f357-ebb3-4d2d-b9ac-faf71a446b5d
+  ws-opts:
+    path: '%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%3Fed%3D2048'
+- alterId: 0
+  cipher: auto
+  name: '5,11|3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2 #1'
+  network: ws
+  port: 2052
+  server: 104.18.37.248
+  tls: false
+  type: vmess
+  uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
+  ws-opts: {}
+- name: '5|🇺🇸 美国BGP 中转 02 1.5x #1'
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 46256
+  server: c7853abfb62c15f91d1987786d937219.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: api.ucloud.cn
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: '5,11|1|_US_->_ES_ #1'
+  password: 2062a5ca-a34e-47bf-9810-db91185f07fc
+  port: 59019
+  server: fuck5.mmmmmmmmmm.cfd
+  type: ss
+- name: '5|🇸🇬 新加坡BGP 中转 01 1.5x #1'
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 47589
+  server: fc26f005e9833b0426e921fc375f47d8.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: www.ucloud.cn
+  type: trojan
+- cipher: aes-256-cfb
+  name: '5,11|1|_FR_->_RU_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 163.172.64.22
+  type: ss
+- name: '5|🇸🇬 新加坡BGP 中转 02 1.5x #1'
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 43425
+  server: 12b48c11b7085433b4259e43ee105cc0.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: www.ucloud.cn
+  type: trojan
+- name: 5|🇭🇰香港BGP 中转 03 1.5x
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 44366
+  server: 5ce00a3d18eecaf240298f0d1dd080aa.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: console.ucloud.cn
+  type: trojan
+- name: '5|🇺🇸 美国BGP 中转 04 1.5x #1'
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 43691
+  server: ace302ccdef65f9273bb1ddc8fc280fb.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: api.ucloud.cn
+  type: trojan
+- name: '5|🇨🇳 台湾BGP 中转 01 1.5x #1'
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 49239
+  server: 4cb938cfd93cd5ac227d52150bf6a577.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: www.ahu.edu.cn
+  type: trojan
+- name: '5|🇺🇸 美国BGP 中转 03 1.5x #1'
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 47603
+  server: 02f033b1d77ee2ae891e3ebd42769013.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: api.ucloud.cn
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '5,7,11|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5 #1'
@@ -397,12 +468,26 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
+- name: '5|🇭🇰香港BGP 中转 03 1.5x #1'
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 49900
+  server: 131136288a4d82b674c15722d177eb8b.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: console.ucloud.cn
+  type: trojan
+- name: '5|🇺🇸 美国BGP 中转 01 1.5x #1'
+  password: bc64f056-a20e-4944-abd0-f8f17c230e02
+  port: 44823
+  server: 72a72716d503a108f0728bee66bb110e.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: api.ucloud.cn
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,7,11|1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #... #2'
+  name: '5,11|1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #... #3'
   network: ws
   port: 2086
-  server: 104.19.57.4
+  server: 104.18.57.111
   sni: ip11.freegradely.xyz
   tls: false
   type: vmess
@@ -410,13 +495,13 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '5,11|2|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  name: '5,11|3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11 #1'
   network: ws
-  port: 16928
-  server: vip3.niuniupremium.xyz
+  port: 2086
+  server: 172.64.175.213
   tls: false
   type: vmess
-  uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
 - alterId: 0
   cipher: auto
@@ -1280,7 +1365,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '23|🇨🇳_CN_中国->🇺🇸_US_美国_1 #2'
+  name: '23|🇨🇳_CN_中国->🇺🇸_US_美国_1 #1'
   network: ws
   port: 16928
   server: vip3.niuniupremium.xyz
@@ -1349,7 +1434,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '23,30|🇺🇸_US_美国_5 #4'
+  name: '23,30|🇺🇸_US_美国_5 #3'
   network: ws
   port: 2082
   server: 172.67.130.140
@@ -1418,149 +1503,149 @@ proxies:
       host: uk.moss.network
     path: /d/65dd503.TG.WangCai2.WangCai_8:107690
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇹🇼 台湾中转 01
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
-  port: 27110
-  server: gstdnb.myfczy168.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇹🇼 台湾中转 04
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
-  port: 25149
-  server: gstdnb.myfczy168.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇹🇼 台湾中转 03
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
-  port: 14232
-  server: gstdnb.myfczy168.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡中转 01
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
-  port: 21667
-  server: gstdnb.myfczy168.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港中转 05
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
-  port: 20901
-  server: gstdnb.myfczy168.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港中转 04
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
-  port: 11618
-  server: gstdnb.myfczy168.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本中转 01
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
-  port: 13706
-  server: gstdnb.myfczy168.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本中转 02
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
-  port: 57661
-  server: gstdnb.myfczy168.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇺🇸 美国中转 01
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
-  port: 26858
-  server: gstdnb.myfczy168.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本中转 04
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
-  port: 38649
-  server: gstdnb.myfczy168.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本中转 03
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
-  port: 38225
-  server: gstdnb.myfczy168.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 28|🇭🇰 香港中转 01
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
+  password: ab838852-c7f5-43c7-851e-f617693073e4
   port: 43641
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇬🇧 英国中转 02
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
-  port: 34013
-  server: gstdnb.myfczy168.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港中转 02
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
-  port: 36858
-  server: gstdnb.myfczy168.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港中转 03
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
-  port: 14407
-  server: gstdnb.myfczy168.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇬🇧 英国中转 01
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
-  port: 29172
-  server: gstdnb.myfczy168.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇺🇸 美国中转 02
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
-  port: 15070
-  server: gstdnb.myfczy168.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡中转 03
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
-  port: 11599
-  server: gstdnb.myfczy168.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 28|🇺🇸 美国中转 03
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
+  password: ab838852-c7f5-43c7-851e-f617693073e4
   port: 23631
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|🇸🇬 新加坡中转 02
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
+  password: ab838852-c7f5-43c7-851e-f617693073e4
   port: 44776
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
+  name: 28|🇺🇸 美国中转 02
+  password: ab838852-c7f5-43c7-851e-f617693073e4
+  port: 15070
+  server: gstdnb.myfczy168.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港中转 05
+  password: ab838852-c7f5-43c7-851e-f617693073e4
+  port: 20901
+  server: gstdnb.myfczy168.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本中转 01
+  password: ab838852-c7f5-43c7-851e-f617693073e4
+  port: 13706
+  server: gstdnb.myfczy168.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇬🇧 英国中转 01
+  password: ab838852-c7f5-43c7-851e-f617693073e4
+  port: 29172
+  server: gstdnb.myfczy168.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本中转 02
+  password: ab838852-c7f5-43c7-851e-f617693073e4
+  port: 57661
+  server: gstdnb.myfczy168.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 台湾中转 03
+  password: ab838852-c7f5-43c7-851e-f617693073e4
+  port: 14232
+  server: gstdnb.myfczy168.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港中转 03
+  password: ab838852-c7f5-43c7-851e-f617693073e4
+  port: 14407
+  server: gstdnb.myfczy168.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港中转 02
+  password: ab838852-c7f5-43c7-851e-f617693073e4
+  port: 36858
+  server: gstdnb.myfczy168.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇺🇸 美国中转 01
+  password: ab838852-c7f5-43c7-851e-f617693073e4
+  port: 26858
+  server: gstdnb.myfczy168.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇸🇬 新加坡中转 03
+  password: ab838852-c7f5-43c7-851e-f617693073e4
+  port: 11599
+  server: gstdnb.myfczy168.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 台湾中转 01
+  password: ab838852-c7f5-43c7-851e-f617693073e4
+  port: 27110
+  server: gstdnb.myfczy168.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: 28|🇯🇵 日本中转 05
-  password: 1933adef-217d-4571-bcc1-07bd4e0e9030
+  password: ab838852-c7f5-43c7-851e-f617693073e4
   port: 21743
+  server: gstdnb.myfczy168.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本中转 03
+  password: ab838852-c7f5-43c7-851e-f617693073e4
+  port: 38225
+  server: gstdnb.myfczy168.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇬🇧 英国中转 02
+  password: ab838852-c7f5-43c7-851e-f617693073e4
+  port: 34013
+  server: gstdnb.myfczy168.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇸🇬 新加坡中转 01
+  password: ab838852-c7f5-43c7-851e-f617693073e4
+  port: 21667
+  server: gstdnb.myfczy168.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 台湾中转 04
+  password: ab838852-c7f5-43c7-851e-f617693073e4
+  port: 25149
+  server: gstdnb.myfczy168.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本中转 04
+  password: ab838852-c7f5-43c7-851e-f617693073e4
+  port: 38649
+  server: gstdnb.myfczy168.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港中转 04
+  password: ab838852-c7f5-43c7-851e-f617693073e4
+  port: 11618
   server: gstdnb.myfczy168.top
   type: ss
   udp: true

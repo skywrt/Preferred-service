@@ -1,16 +1,4 @@
 proxies:
-- name: '5,38|🇨🇳_CN_中国_38 #1'
-  network: ws
-  port: 2053
-  server: 103.184.44.62
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
 - cipher: aes-256-cfb
   name: '5,11|1|_CN_ #1'
   password: hGkQ6915tD
@@ -40,6 +28,18 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: '5,38|🇨🇳_CN_中国_38 #1'
+  network: ws
+  port: 2053
+  server: 103.184.44.62
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
   name: 8|🇨🇳CN-139.227.223.3-049_1@49
@@ -637,28 +637,6 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 9,27|13| |@ripaojiedian
-  port: 45020
-  server: 183.236.51.23
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 9|🇨🇳 广东省广州市 移动 2
-  port: 58831
-  server: 183.236.48.163
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 17|CN_youtube@资源分享师_5
@@ -694,7 +672,7 @@ proxies:
   type: vmess
   uuid: a32313ad-5e39-4f9a-9cad-512041790050
 - alterId: -1
-  name: 27,40|CN_speednode_0021
+  name: 27|15|CN_speednode_0021
   password: d6d86a97-2bef-4f89-9527-ce2003377677
   port: 13008
   server: naiu-hk.05vr9nyqg5.download
@@ -703,60 +681,132 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 40|CN_speednode_0016
+  name: 40|CN_speednode_0013
   password: 54f4e2f4-f0e1-4a15-a0cf-3a3234ab58fb
   port: 11001
   server: 183.232.229.165
+  tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: 40|CN_speednode_0017
+  name: 40|CN_speednode_0014
   port: 7890
   server: 39.69.146.4
   skip-cert-verify: true
   tls: false
   type: http
   udp: true
-- alterId: -1
-  cipher: chacha20-ietf-poly1305
-  name: 40|CN_speednode_0019
-  password: 5409bf78-b122-4b9b-9050-da36576f5bbc
-  port: 25991
-  server: tg_mfbpn03.52cloud.us.kg
-  type: ss
-- alterId: -1
-  cipher: chacha20-ietf-poly1305
-  name: 40|CN_speednode_0020
-  password: 5409bf78-b122-4b9b-9050-da36576f5bbc
-  port: 34676
-  server: tg_mfbpn03.52cloud.us.kg
-  type: ss
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 40|CN_speednode_0023
-  port: 52112
-  server: 183.236.51.23
-  skip-cert-verify: false
-  tfo: false
+- client-fingerprint: chrome
+  name: 40|CN_speednode_0015
+  port: 7890
+  server: 140.246.12.160
+  skip-cert-verify: true
   tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  type: http
+  udp: true
+- alterId: -1
+  client-fingerprint: chrome
+  name: 40|CN_speednode_0016
+  port: 7890
+  server: 182.92.216.171
+  skip-cert-verify: true
+  tls: false
+  type: http
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 40|CN_speednode_0017
+  password: 0f2dc2f1-4556-4a36-bbb1-f13a23ad73f3
+  port: 31640
+  server: gdcub.yunnode.win
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 40|CN_speednode_0018
+  password: 11300d6e-fa6e-4c2e-83aa-f0a0aa6311c4
+  port: 35637
+  server: gdcub.yunnode.win
+  type: ss
+- name: 40|CN_speednode_0019
+  password: 0c752bf8-4421-36bd-b97c-cd0d40726dcd
+  port: 22741
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: dufu.hongkongnode.top
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 40|CN_speednode_0020
+  password: 11300d6e-fa6e-4c2e-83aa-f0a0aa6311c4
+  port: 35627
+  server: gdcub.yunnode.win
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 40|CN_speednode_0022
+  password: 0f2dc2f1-4556-4a36-bbb1-f13a23ad73f3
+  port: 31738
+  server: gdcub.yunnode.win
+  type: ss
+- cipher: chacha20-ietf
+  name: 40|CN_speednode_0023
+  obfs: plain
+  obfs-param: 83e2a40208.microsoft.com
+  password: NaikoCloud
+  port: 15504
+  protocol: auth_aes128_md5
+  protocol-param: 40208:yYyiNvXTethxtYP7
+  server: dajbxtw.naikonode1.top
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 40|CN_speednode_0024
+  password: 0f2dc2f1-4556-4a36-bbb1-f13a23ad73f3
+  port: 31660
+  server: gdcub.yunnode.win
+  type: ss
+- name: 40|CN_speednode_0025
+  password: 0c752bf8-4421-36bd-b97c-cd0d40726dcd
+  port: 20279
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z279.hongkongnode.top
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 40|CN_speednode_0026
+  password: 0f2dc2f1-4556-4a36-bbb1-f13a23ad73f3
+  port: 31632
+  server: gdcub.yunnode.win
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 40|CN_speednode_0029
+  password: 0f2dc2f1-4556-4a36-bbb1-f13a23ad73f3
+  port: 31650
+  server: gdcub.yunnode.win
+  type: ss
 - alterId: 64
   cipher: auto
-  name: 40|CN_speednode_0026
-  network: tcp
-  port: 52112
-  server: 183.236.51.23
+  name: 40|CN_speednode_0030
+  port: 46665
+  server: 120.232.153.37
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  version: '2'
-- cipher: aes-256-cfb
-  name: 40|CN_speednode_0027
-  password: f52SZksXnGNfc72Q
-  port: 23382
-  server: 221.181.185.71
-  type: ss
+  uuid: 3ac820af-becb-45d7-9e7a-e33d02961bb3
+- cipher: chacha20-ietf
+  name: 40|CN_speednode_0031
+  obfs: plain
+  obfs-param: 83e2a40208.microsoft.com
+  password: NaikoCloud
+  port: 15102
+  protocol: auth_aes128_md5
+  protocol-param: 40208:yYyiNvXTethxtYP7
+  server: dajbxus.naikonode1.top
+  type: ssr
+  udp: true
+- name: 40|CN_speednode_0033
+  password: 0c752bf8-4421-36bd-b97c-cd0d40726dcd
+  port: 25238
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z267.hongkongnode.top
+  type: trojan
   udp: true
