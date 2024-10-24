@@ -2,47 +2,10 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: 5|欢乐时光-台湾 08
-  network: ws
-  port: 10244
-  server: 60.249.114.181
-  servername: happy.mianfeicf.lol
-  tls: true
-  type: vless
-  uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd
-  ws-opts:
-    headers:
-      Host: happy.mianfeicf.lol
-    path: '%2F%3Fed%3D2560'
-- alterId: 0
-  cipher: auto
-  name: 5|🇹🇼 10 台湾 BGP
-  network: ws
-  port: 3433
-  server: tw-gx-1.dnspro.icu
-  tls: false
-  type: vmess
-  uuid: e36b038e-174f-3189-8a37-325907cb5e65
-  ws-opts:
-    headers:
-      Host: mirrors.ustc.edu.cn
-    path: /iso
-- alterId: 0
-  cipher: auto
-  name: 5|🇹🇼 11 台湾 Home
-  network: tcp
-  port: 3344
-  server: tw-gx-4.dnspro.icu
-  tls: false
-  type: vmess
-  uuid: e36b038e-174f-3189-8a37-325907cb5e65
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 5|欢乐时光-台湾 01
+  name: 5|欢乐时光-台湾 05
   network: ws
   port: 81
-  server: 210.61.97.241
+  server: 122.116.86.104
   servername: happy.mianfeicf.lol
   tls: true
   type: vless
@@ -96,6 +59,15 @@ proxies:
     headers:
       Host: happy.mianfeicf.lol
     path: '%2F%3Fed%3D2560'
+- alterId: 0
+  cipher: auto
+  name: 5|🇹🇼 11 台湾 Home
+  network: tcp
+  port: 3344
+  server: tw-gx-4.dnspro.icu
+  tls: false
+  type: vmess
+  uuid: e36b038e-174f-3189-8a37-325907cb5e65
 - alpn:
   - h3
   client-fingerprint: random
@@ -111,13 +83,54 @@ proxies:
     headers:
       Host: happy.mianfeicf.lol
     path: '%2F%3Fed%3D2560'
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: 5|TW+01
+  network: tcp
+  port: 10204
+  reality-opts:
+    public-key: 7BVzXFI-E3LoOVqrT_LNe4VJ9DFYb0lGflNdTzpOZT8
+    short-id: bdf6b55f
+  server: hinet.cishanjichang.me
+  servername: cdn-dynmedia-1.microsoft.com
+  tls: false
+  type: vless
+  uuid: 89b90001-4206-4871-a99d-1744d48f215b
 - alpn:
   - h3
   client-fingerprint: random
-  name: 5|欢乐时光-台湾 05
+  name: 5|欢乐时光-台湾 08
+  network: ws
+  port: 10244
+  server: 60.249.114.181
+  servername: happy.mianfeicf.lol
+  tls: true
+  type: vless
+  uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd
+  ws-opts:
+    headers:
+      Host: happy.mianfeicf.lol
+    path: '%2F%3Fed%3D2560'
+- alterId: 0
+  cipher: auto
+  name: 5|🇹🇼 10 台湾 BGP
+  network: ws
+  port: 3433
+  server: tw-gx-1.dnspro.icu
+  tls: false
+  type: vmess
+  uuid: e36b038e-174f-3189-8a37-325907cb5e65
+  ws-opts:
+    headers:
+      Host: mirrors.ustc.edu.cn
+    path: /iso
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 5|欢乐时光-台湾 01
   network: ws
   port: 81
-  server: 122.116.86.104
+  server: 210.61.97.241
   servername: happy.mianfeicf.lol
   tls: true
   type: vless
@@ -141,30 +154,458 @@ proxies:
     headers:
       Host: happy.mianfeicf.lol
     path: '%2F%3Fed%3D2560'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 5|TW+01
-  network: tcp
-  port: 10204
-  reality-opts:
-    public-key: 7BVzXFI-E3LoOVqrT_LNe4VJ9DFYb0lGflNdTzpOZT8
-    short-id: bdf6b55f
-  server: hinet.cishanjichang.me
-  servername: cdn-dynmedia-1.microsoft.com
-  tls: false
-  type: vless
-  uuid: 89b90001-4206-4871-a99d-1744d48f215b
+- alterId: 0
+  cipher: auto
+  name: 22|TW-211.72.35.110-0004
+  network: ws
+  port: 443
+  server: 211.72.35.110
+  servername: lindo.cnabc.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: f6d7b072-de00-45dc-9e24-49f8cf43530d
+  ws-opts:
+    headers:
+      Host: lindo.cnabc.eu.org
+    path: /linod
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇹🇼 台湾01-1C
-  password: 2f4af283-0a96-48b1-bda1-6d6f03c1d04e
-  port: 47564
+  name: 22|TW-1.162.131.111-0871
+  password: 0d43fd02-cb36-4f3c-be19-c9cbed362646
+  port: 30443
+  server: tw1-vds7.anyhk.co
+  type: ss
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 22|TW-45.121.51.103-1342
+  network: http
+  port: 20715
+  server: 45.121.51.103
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f6406b6d-5487-46da-f793-46611269a306
+- alterId: 0
+  cipher: auto
+  name: 22|TW-165.154.246.71-1889
+  network: ws
+  port: 80
+  server: 165.154.246.71
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 13581ae8-65c9-4fbe-9c78-77fac9ca503a
+  ws-opts:
+    headers:
+      Host: 165.154.246.71
+    path: ?ed=2048
+- alterId: 1
+  cipher: auto
+  name: 22|TW-1.161.186.146-2101
+  network: ws
+  port: 64443
+  server: 1.161.186.146
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: cb7001c7-e495-41ac-b942-f25f60523414
+  ws-opts:
+    path: /clientarea
+- alterId: 0
+  cipher: auto
+  name: 22|🇼TW-114.42.198.166-2177
+  network: ws
+  port: 80
+  server: tw1g.jeidian.xyz
+  servername: tms.dingtalk.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 2d81eefd-7d1e-4ea7-b12c-5e426e08979d
+  ws-opts:
+    headers:
+      Host: tw1g.jeidian.xyz
+    path: /mugua
+- name: 22|🇼TW-1.162.129.212-2225
+  password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
+  port: 443
+  server: kaizen-tw-1.mielink-dns2.com
+  skip-cert-verify: false
+  sni: paydiu.com
+  type: trojan
+- name: 22|🇹🇼TW-1.162.157.83-2228
+  password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
+  port: 443
+  server: kaizen-tw-3.mielink-dns2.com
+  skip-cert-verify: false
+  sni: paydiu.com
+  type: trojan
+- name: 22|🇹🇼TW-118.167.17.174-2253
+  password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
+  port: 443
+  server: kaizen-tw-4.mielink-dns2.com
+  skip-cert-verify: false
+  sni: paydiu.com
+  type: trojan
+- name: 22|🇼TW-61.228.93.148-2254
+  password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
+  port: 443
+  server: kaizen-tw-2.mielink-dns2.com
+  skip-cert-verify: false
+  sni: paydiu.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 22|🇼TW-114.43.155.173-2307
+  network: ws
+  port: 45215
+  server: 012.AP.POP.node-for-smallairport.win
+  servername: 012.AP.POP.node-for-smallairport.win
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cd0e1cd4-9aac-41df-9746-4d76182c8009
+  ws-opts:
+    headers:
+      Host: 012.AP.POP.node-for-smallairport.win
+    path: /
+- alterId: 0
+  cipher: auto
+  country: mattkaydiary.com|中国台湾(TW)Taiwan/CityOffice_22
+  name: '22,23,30|mattkaydiary.com|中国台湾(TW)Taiwa... #3'
+  network: ws
+  port: 33792
+  server: 61.222.202.140
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e55cd182-01b0-4fb7-a510-363701a491c5
+  ws-opts:
+    headers:
+      host: 61.222.202.140
+    path: /
+- name: 22|TW-211.72.35.155-3240
+  password: b09d2aaa443af97a
+  port: 3389
+  server: 211.72.35.155
+  skip-cert-verify: false
+  type: trojan
+- name: 22|🇼TW-60.249.3.125-3269
+  password: 3febb05ea76a940f
+  port: 3389
+  server: 60.249.3.125
+  skip-cert-verify: false
+  type: trojan
+- name: 22|🇹🇼TW-211.72.35.157-4370
+  password: 8b475d9e868e43e0
+  port: 3389
+  server: 211.72.35.157
+  skip-cert-verify: false
+  type: trojan
+- name: 22|🇼TW-211.72.35.152-4356
+  password: b84d16a244460e09
+  port: 3389
+  server: 211.72.35.152
+  skip-cert-verify: false
+  type: trojan
+- name: 22|🇼TW-211.72.35.158-3323
+  password: 7b06d22a8a7c764f
+  port: 3389
+  server: 211.72.35.158
+  skip-cert-verify: false
+  type: trojan
+- name: 22|🇹🇼TW-60.249.3.227-3346
+  password: 7ac49a893e0bd10c
+  port: 3389
+  server: 60.249.3.227
+  skip-cert-verify: false
+  type: trojan
+- name: 22|🇹🇼TW-60.249.3.231-3366
+  password: 0cc6b4268dea0ba8
+  port: 3389
+  server: 60.249.3.231
+  skip-cert-verify: false
+  type: trojan
+- name: 22|🇹🇼TW-60.249.3.230-3448
+  password: 182228812d1e0f23
+  port: 3389
+  server: 60.249.3.230
+  skip-cert-verify: false
+  type: trojan
+- name: 22|🇼TW-211.72.35.154-3462
+  password: 7b06d22a8a7c764f
+  port: 3389
+  server: 211.72.35.154
+  skip-cert-verify: false
+  type: trojan
+- name: 22|🇼TW-60.249.3.226-3474
+  password: 7ac49a893e0bd10c
+  port: 3389
+  server: 60.249.3.226
+  skip-cert-verify: false
+  type: trojan
+- name: 22|🇼TW-60.249.3.228-3479
+  password: 7ac49a893e0bd10c
+  port: 3389
+  server: 60.249.3.228
+  skip-cert-verify: false
+  type: trojan
+- name: 22|🇼TW-60.249.3.229-3505
+  password: 182228812d1e0f23
+  port: 3389
+  server: 60.249.3.229
+  skip-cert-verify: false
+  type: trojan
+- name: 22|🇼TW-211.72.35.153-3541
+  password: 7b06d22a8a7c764f
+  port: 3389
+  server: 211.72.35.153
+  skip-cert-verify: false
+  type: trojan
+- name: 22|🇼TW-211.72.35.156-3555
+  password: 7b06d22a8a7c764f
+  port: 3389
+  server: 211.72.35.156
+  skip-cert-verify: false
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 22|🇼TW-211.72.35.110-5033
+  network: ws
+  port: 443
+  server: 211.72.35.110
+  servername: woideneu7.jsworld.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 2eb30779-2e8c-4b89-e6bd-a0ec760ca506
+  ws-opts:
+    headers:
+      Host: woideneu7.jsworld.eu.org
+    path: /nishikata
+- alterId: 0
+  cipher: auto
+  name: 22|🇹🇼TW-211.72.35.110-5034
+  network: ws
+  port: 443
+  server: 211.72.35.110
+  servername: euserv1.aifx.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 3953ce0d-25df-4427-8371-a8ac26cc36fe
+  ws-opts:
+    headers:
+      Host: euserv1.aifx.eu.org
+    path: /nishikata
+- alterId: 0
+  cipher: auto
+  name: 22|🇹🇼TW-211.72.35.110-5035
+  network: ws
+  port: 443
+  server: 211.72.35.110
+  servername: woideneu4.jsworld.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: cb6448e3-08e1-413d-bc17-d3b0dba9aae9
+  ws-opts:
+    headers:
+      Host: woideneu4.jsworld.eu.org
+    path: /nishikata
+- alterId: 0
+  cipher: auto
+  name: 22|🇹🇼TW-211.72.35.110-5036
+  network: ws
+  port: 443
+  server: 211.72.35.110
+  servername: haxeu7.jsworld.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: dfd1d80f-caf0-4b11-e0bb-733a2710a07a
+  ws-opts:
+    headers:
+      Host: haxeu7.jsworld.eu.org
+    path: /nishikata3
+- alterId: 0
+  cipher: auto
+  name: 22|🇹🇼TW-211.72.35.110-5037
+  network: ws
+  port: 443
+  server: 211.72.35.110
+  servername: woidenca1.jsworld.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: e87f326f-55ac-487f-a3d1-57c592bb663a
+  ws-opts:
+    headers:
+      Host: woidenca1.jsworld.eu.org
+    path: /nishikata3
+- name: 22|TW-2.58.242.43-5364
+  password: YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT
+  port: 443
+  server: 2.58.242.43
+  skip-cert-verify: false
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 22|🇼TW-220.130.80.179-5371
+  network: ws
+  port: 443
+  server: 220.130.80.179
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: ceb8a7f4-a45b-48a7-8f8e-ca7124a5ebee
+  ws-opts:
+    headers:
+      Host: v2ray2.udpgw.com
+    path: /howdy
+- alterId: 0
+  cipher: auto
+  name: 22|🇼TW-165.154.226.45-5373
+  network: ws
+  port: 80
+  server: 165.154.226.45
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: fa0702f4-8ec9-48e5-9b53-a0afb7c3717e
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 22|🇹🇼TW-211.72.35.110-5374
+  network: ws
+  port: 443
+  server: 211.72.35.110
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 541ca026-58d3-48f1-d6ef-3a05543ddcb7
+  ws-opts:
+    headers:
+      Host: ru.tzccifq.ga
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 22|🇹🇼TW-165.154.253.35-5376
+  network: ws
+  port: 443
+  server: tw-1.qwqjsq.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b0543a3b-d690-3ed9-9a81-f24f852e74f7
+  ws-opts:
+    headers:
+      Host: tw-1.qwqjsq.top
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 22|🇹🇼TW-61.216.85.68-5381
+  network: ws
+  port: 443
+  server: 61.216.85.68
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 5ba738e7-0abf-4935-b67e-d404a083d6a6
+  ws-opts:
+    headers:
+      Host: www.88612860.xyz
+    path: /path/243535322906
+- alterId: 2
+  cipher: auto
+  name: 22|🇼TW-114.37.209.177-5382
+  network: ws
+  port: 10001
+  server: ddns2.airtcp.vip
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 7f67fb11-832d-3492-adfe-63e0cceafbe0
+  ws-opts:
+    headers:
+      Host: ddns2.airtcp.vip
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 22|🇹🇼TW-165.154.246.107-5384
+  network: ws
+  port: 80
+  server: 165.154.246.107
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: fa0702f4-8ec9-48e5-9b53-a0afb7c3717e
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 22|🇹🇼TW-122.118.142.20-5391
+  network: ws
+  port: 11463
+  server: tw4.594888.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: dd7639cf-66dd-3038-ab0e-cefe7e9ef9fb
+  ws-opts:
+    headers:
+      Host: tw4.594888.xyz
+    path: /v2ray
+- alterId: 0
+  cipher: auto
+  name: 22|🇹🇼TW-122.118.130.103-5392
+  network: ws
+  port: 25551
+  server: tw3.594888.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: dd7639cf-66dd-3038-ab0e-cefe7e9ef9fb
+  ws-opts:
+    headers:
+      Host: tw3.594888.xyz
+    path: /v2ray
+- name: 22|TW-118.163.201.76-6084
+  password: 2FlAxyOy3ScaC5xNOSFeRqZgASj73CpIlCYTE8p4DaBD3Rn3zXe9Y80uaZwD6K
+  port: 443
+  server: levuior.taiwanesefood.link
+  skip-cert-verify: false
+  type: trojan
+- name: 22|TW-114.37.233.62-6577
+  password: ED177480-E516-11EA-8B44-BBC4E882BA0B
+  port: 20261
+  server: tw01.balala2016.xyz
+  skip-cert-verify: false
+  type: trojan
+- cipher: aes-256-cfb
+  name: 22|TW-61.220.130.70-8187
+  password: qwerREWQ@@
+  port: 50701
+  server: 61.220.130.70
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 台湾 1-1F
+  password: 61d14a91-eb68-47a3-906c-6de60909f0f6
+  port: 20032
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇹🇼 台湾 1-1G
-  password: 07de61c7-19c5-4d6a-a1ec-0a6214f27ee6
-  port: 20032
+  name: 28|🇹🇼 台湾01-1A
+  password: e8a3c267-78da-4c6b-bf6b-ce1b779cb3f6
+  port: 47564
   server: gy.666666222.shop
   type: ss
   udp: true
