@@ -1,39 +1,4 @@
 proxies:
-- name: 4|CH 1 → tg@nicevpn123
-  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
-  port: 11005
-  server: 64.110.64.80
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 4|CH 2 → tg@nicevpn123
-  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
-  port: 11007
-  server: 64.110.64.80
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 4|CH 3 → tg@nicevpn123
-  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
-  port: 11006
-  server: 64.110.64.80
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 4|CH 4 → tg@nicevpn123
-  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
-  port: 11004
-  server: 64.110.64.80
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 4|CH 5 → tg@nicevpn123
-  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
-  port: 11000
-  server: 64.110.64.80
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 1
   cipher: auto
   name: 5|瑞士 - 苏黎世 - GTHost - 1
@@ -49,11 +14,12 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 10|瑞士 001
+  name: 10,22|CH-194.87.18.224-1057
   network: ws
   port: 30000
   server: xr005.louwangzhiyu.xyz
   servername: xr001.louwangzhiyu.xyz
+  skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
@@ -62,32 +28,104 @@ proxies:
     headers:
       Host: www.louwangzhiyu.xyz
     path: /xyz
-- alterId: 0
-  cipher: auto
-  name: 10|瑞士 002
-  network: ws
-  port: 8080
-  server: xr005.louwangzhiyu.xyz
-  servername: xr001.louwangzhiyu.xyz
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 71557bf5-094e-4201-82ed-3f0e472af69d
-  ws-opts:
-    headers:
-      Host: www.louwangzhiyu.xyz
-    path: /xyz
+- cipher: aes-128-gcm
+  name: 19,20,21,22|🇨CH-156.146.62.161-0595
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.161
+  type: ss
+- cipher: aes-128-gcm
+  name: 19,20,21,22|CH-156.146.62.162-0591
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.162
+  type: ss
+- cipher: aes-128-gcm
+  name: '19,20,21,22|🇨🇭CH-156.146.62.163-0593 #2'
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.163
+  type: ss
+- cipher: aes-128-gcm
+  name: 19,20,21,22|🇭CH-156.146.62.164-0592
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.164
+  type: ss
 - alterId: 1
   cipher: auto
-  name: '20,21|🇨🇭CH-186.190.215.75-8041 #1'
+  name: 20,21,22|🇨CH-186.190.215.75-8041
   network: ws
   port: 443
   server: 186.190.215.75
   servername: ''
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
       Host: 186.190.215.75
+    path: linkvws
+- cipher: aes-256-cfb
+  name: 22|🇨CH-185.126.116.125-0093
+  password: aLpQtfEZe445QyHk
+  port: 9098
+  server: 185.126.116.125
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 22|🇭CH-194.87.18.224-1121
+  network: ws
+  port: 30002
+  server: xr005.louwangzhiyu.xyz
+  servername: xr001.louwangzhiyu.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 090cc0ef-713c-481c-aee1-6193515dc097
+  ws-opts:
+    headers:
+      Host: www.louwangzhiyu.xyz
+    path: /xyz
+- name: 22|CH-152.67.71.149-3342
+  password: 8a03bc28-2a33-42c4-be59-30464dbb9954
+  port: 18818
+  server: ch12.yukiss.eu.org
+  skip-cert-verify: false
+  type: trojan
+- cipher: aes-128-cfb
+  name: 22|🇨CH-156.146.62.160-4913
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.160
+  type: ss
+- alterId: 1
+  cipher: auto
+  name: 22|🇭CH-23.166.88.27-8056
+  network: ws
+  port: 443
+  server: 23.166.88.27
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 23.166.88.27
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 22|🇨🇭CH-186.190.215.149-8096
+  network: ws
+  port: 443
+  server: 186.190.215.149
+  servername: 186.190.215.149
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.149
     path: linkvws
