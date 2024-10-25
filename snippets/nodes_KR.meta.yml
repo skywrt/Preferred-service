@@ -338,30 +338,6 @@ proxies:
   server: 13.125.19.50
   type: ss
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 5|🇰🇷 16 韩国 BGP
-  network: tcp
-  port: 4342
-  server: ru-1.dnspro.icu
-  tls: false
-  type: vmess
-  uuid: e36b038e-174f-3189-8a37-325907cb5e65
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 5|欢乐时光-韩国 01
-  network: ws
-  port: 443
-  server: 132.145.94.80
-  servername: happy.mianfeicf.lol
-  tls: true
-  type: vless
-  uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd
-  ws-opts:
-    headers:
-      Host: happy.mianfeicf.lol
-    path: '%2F%3Fed%3D2560'
 - alpn:
   - h3
   client-fingerprint: random
@@ -377,6 +353,33 @@ proxies:
     headers:
       Host: happy.mianfeicf.lol
     path: '%2F%3Fed%3D2560'
+- alterId: 2
+  cipher: auto
+  name: 5|🇰🇷 16 韩国 BGP
+  network: tcp
+  port: 4342
+  server: ru-1.dnspro.icu
+  tls: false
+  type: vmess
+  uuid: e36b038e-174f-3189-8a37-325907cb5e65
+- alterId: 0
+  cipher: auto
+  name: 5,11,24,27|14|国|@ripaojiedian
+  network: tcp
+  port: '20937'
+  server: 45.94.68.200
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c0e6d2ab-9fc2-4a0f-8011-844e5b45ec0c
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 5,11,27|13|🇷 韩国特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 18.142.50.59
+  tfo: false
+  type: ss
 - alpn:
   - h3
   client-fingerprint: random
@@ -392,24 +395,21 @@ proxies:
     headers:
       Host: happy.mianfeicf.lol
     path: '%2F%3Fed%3D2560'
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 5,11,27|13|🇷 韩国特殊|@ripaojiedian
-  password: amazonskr05
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 5|欢乐时光-韩国 01
+  network: ws
   port: 443
-  server: 18.142.50.59
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 5,11,24,27|14|国|@ripaojiedian
-  network: tcp
-  port: '20937'
-  server: 45.94.68.200
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c0e6d2ab-9fc2-4a0f-8011-844e5b45ec0c
+  server: 132.145.94.80
+  servername: happy.mianfeicf.lol
+  tls: true
+  type: vless
+  uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd
+  ws-opts:
+    headers:
+      Host: happy.mianfeicf.lol
+    path: '%2F%3Fed%3D2560'
 - alpn:
   - h3
   client-fingerprint: random
@@ -461,25 +461,25 @@ proxies:
     headers:
       Host: dp.ylks.xyz
     path: '%2F%3Fproxyip%3Dproxyip.kr.fxxp.dedyp.io'
-- name: 28|🇰🇷 韩国-三网优化2-5W
-  password: 3056126b-3621-44a5-8d13-e296d0385b71
+- name: 28|🇰🇷 韩国-三网优化2-5M
+  password: e2972959-4ef3-4c7e-82d5-9c4a4b1532aa
   port: 44732
   server: kr-qingyun.dwyun.me
   skip-cert-verify: false
   sni: kr-qingyun.dwyun.me
   type: trojan
   udp: true
-- auth: 2d884fac-6ea8-4ede-aac5-5934c6dcae3e
-  name: 28|🇰🇷 韩国-2-1A
-  password: 2d884fac-6ea8-4ede-aac5-5934c6dcae3e
+- auth: e5b6383f-f77c-4542-863a-7dd0bbd24b36
+  name: 28|🇰🇷 韩国-首尔-1A
+  password: e5b6383f-f77c-4542-863a-7dd0bbd24b36
   port: 30001
-  server: oracle-arm-chuncheon2.lanmaoyun.icu
+  server: oracle-arm-seoul1.lanmaoyun.icu
   skip-cert-verify: true
   sni: korea.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
 - auth: e5b6383f-f77c-4542-863a-7dd0bbd24b36
-  name: 28|🇰🇷 韩国-1-1B
+  name: 28|🇰🇷 韩国-1-1A
   password: e5b6383f-f77c-4542-863a-7dd0bbd24b36
   port: 30001
   server: oracle-arm-chuncheon1.lanmaoyun.icu
@@ -487,11 +487,11 @@ proxies:
   sni: korea.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- auth: 2d884fac-6ea8-4ede-aac5-5934c6dcae3e
-  name: 28|🇰🇷 韩国-首尔-1A
-  password: 2d884fac-6ea8-4ede-aac5-5934c6dcae3e
+- auth: f79e2787-a21e-413c-bfe6-ad5c0c816186
+  name: 28|🇰🇷 韩国-2-1B
+  password: f79e2787-a21e-413c-bfe6-ad5c0c816186
   port: 30001
-  server: oracle-arm-seoul1.lanmaoyun.icu
+  server: oracle-arm-chuncheon2.lanmaoyun.icu
   skip-cert-verify: true
   sni: korea.nodes.lanmaoyun.icu
   type: hysteria2
