@@ -71,7 +71,7 @@ proxies:
   uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
 - alterId: 0
   cipher: auto
-  name: '2,5,11|16|香港6|@ripaojiedian #1'
+  name: 2,5|16|香港6|@ripaojiedian
   network: tcp
   port: '54037'
   server: 38.147.188.137
@@ -219,7 +219,8 @@ proxies:
   type: vmess
   uuid: e36b038e-174f-3189-8a37-325907cb5e65
 - cipher: chacha20-ietf-poly1305
-  name: 5,27|13|🇭🇰 香港6|@ripaojiedian
+  client-fingerprint: chrome
+  name: 5,11,27|13|🇭🇰 香港6|@ripaojiedian
   password: 99301d55-a41f-4919-986b-1435996533aa
   port: 20001
   server: 183.233.187.157
@@ -456,7 +457,8 @@ proxies:
       Host: happy.mianfeicf.lol
     path: '%2F%3Fed%3D2560'
 - cipher: chacha20-ietf-poly1305
-  name: 5,27|13|🇭🇰 香港3|@ripaojiedian
+  client-fingerprint: chrome
+  name: 5,11,27|13|🇭🇰 香港3|@ripaojiedian
   password: 1f3fbde2-c6ca-44a6-9445-180db90469d3
   port: 36002
   server: 45.87.103.75
@@ -516,7 +518,8 @@ proxies:
       Host: mirrors.ustc.edu.cn
     path: /iso
 - cipher: chacha20-ietf-poly1305
-  name: 5,27|13|🇭🇰 香港7|@ripaojiedian
+  client-fingerprint: chrome
+  name: 5,11,20,21,27|13|🇭🇰 香港7|@ripaojiedian
   password: 76dze09gQEvqS_jOuo
   port: 3913
   server: 144.202.112.106
@@ -534,7 +537,8 @@ proxies:
   uuid: 432dd1c8-b83c-47a0-82d9-453beeda35dc
 - alterId: 64
   cipher: auto
-  name: 5,27|13,14|香港2|@ripaojiedian
+  client-fingerprint: chrome
+  name: 5,11,27|13,14|香港2|@ripaojiedian
   network: ws
   port: '30006'
   server: 134.122.135.233
@@ -667,7 +671,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 10,20,21,36|🔒 VM-WS-TLS 🇭🇰 HK-27.124.10.14...
+  name: 10,36|🔒 VM-WS-TLS 🇭🇰 HK-27.124.10.14...
   network: ws
   port: 30000
   server: 27.124.10.146
@@ -1231,18 +1235,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇭🇰HK-141.98.234.93-0243
-  password: WfmxKX2FBJRU0Ie9VLIYDL
-  port: 20012
-  server: 141.98.234.93
-  type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 37|HK
-  password: '*'
-  port: 8080
-  server: 8.210.244.25
+  name: 19,37|HK 490.6KB/s
+  password: lgrMzllOsTUqHJp47k0lNq
+  port: 20012
+  server: 141.98.234.93
   skip-cert-verify: true
   tls: true
   type: ss
@@ -1259,20 +1257,27 @@ proxies:
   name: 37|HK3
   password: 325ba822-760d-4a51-9711-f72ba8d16933
   port: 10465
-  server: 45.146.232.172
+  server: 45.146.232.171
   skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
   tls: true
   type: trojan
   udp: true
 - alterId: 0
+  cipher: aes-128-gcm
   name: 37|HK4
-  network: tcp
-  password: 9ff83a73-c9da-4233-a9e2-7fa9b83b5f75
-  port: 16212
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29204
   server: 91.199.84.195
   skip-cert-verify: true
-  sni: data.steamdownload.top
   tls: true
-  type: trojan
-  udp: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK5
+  password: a-wym4ovY4Yw
+  port: 81
+  server: 218.250.217.111
+  skip-cert-verify: true
+  tls: true
+  type: ss
