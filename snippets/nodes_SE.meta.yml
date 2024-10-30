@@ -1,5 +1,5 @@
 proxies:
-- name: '5,13|🇸🇪_SE_瑞典 #1'
+- name: 5|🇸🇪_SE_瑞典
   network: ws
   port: 8080
   server: 185.146.173.58
@@ -60,12 +60,23 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36,37|未知83
+  name: 36|🔒 VM-TCP-NA 🇸🇪 SE-172.234.100....
   network: tcp
-  port: 8081
+  port: '8081'
   server: 172.234.100.119
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: ccea6d55-2309-4059-93dc-a62ce7cd3f7c
+- name: 40|SE_speednode_0030
+  network: ws
+  port: 8080
+  server: 185.146.173.58
+  skip-cert-verify: false
+  type: vless
+  udp: true
+  uuid: 9c92dd71-acac-422b-b23e-e764f8cba0de
+  ws-opts:
+    headers:
+      Host: lc72.lebasnoo.ir.
+    path: /servernett
