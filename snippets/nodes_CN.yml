@@ -217,6 +217,25 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
+- cipher: aes-256-cfb
+  name: '5,11|1|_CN_ #1'
+  password: hGkQ6915tD
+  port: 15082
+  server: 59.56.77.178
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '5,24|中国 #17'
+  network: ws
+  port: '12925'
+  server: z2.fragranceninja.com
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: z2.fragranceninja.com
+    path: /
 - alterId: 64
   cipher: auto
   name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
@@ -240,12 +259,13 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
-- cipher: aes-256-cfb
-  name: '5,11|1|_CN_ #1'
-  password: hGkQ6915tD
-  port: 15082
-  server: 59.56.77.178
-  type: ss
+- name: 5,24|未知
+  password: 5b4becce-5739-483f-97ec-68b81a855d68
+  port: 13021
+  server: naiu-us.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 8|🇨🇳CN-139.227.223.3-049_1@49
@@ -824,17 +844,6 @@ proxies:
   ws-headers:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 8,9,24,37|DE国
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 20005
-  server: service.ouluyun9803.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 8|🇨🇳CN-117.149.247.11-173_1@173
   password: 8e949d75-3510-4678-8593-3c5032dd931a
@@ -941,19 +950,6 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '24|中国 #17'
-  network: ws
-  port: '12925'
-  server: z2.fragranceninja.com
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: z2.fragranceninja.com
-    path: /
 - alterId: 0
   cipher: auto
   name: '24|中国 #18'
