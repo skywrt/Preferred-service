@@ -136,7 +136,8 @@ proxies:
       Host: ''
     path: 672a8b3b
 - cipher: chacha20-ietf-poly1305
-  name: 5,27|13| |@ripaojiedian
+  client-fingerprint: chrome
+  name: 5,11,27|13| |@ripaojiedian
   password: cd594a00-a48b-42c6-b71d-b99cd71a5a52
   port: 11001
   server: 183.240.255.75
@@ -178,7 +179,8 @@ proxies:
   type: vmess
   uuid: ad74e5d7-5136-3598-8635-872bbb1dd575
 - cipher: chacha20-ietf
-  name: 5,27|13|🇭🇰 香港2|@ripaojiedian
+  client-fingerprint: chrome
+  name: 5,11,27|13|🇭🇰 香港2|@ripaojiedian
   password: asd123456
   port: 8388
   server: 154.197.98.64
@@ -319,7 +321,8 @@ proxies:
   skip-cert-verify: true
   type: trojan
 - cipher: aes-256-cfb
-  name: 5,27|13|🇭🇰 香港6|@ripaojiedian
+  client-fingerprint: chrome
+  name: 5,11,27|13|🇭🇰 香港6|@ripaojiedian
   password: hGkQ6915tD
   port: 16088
   server: 120.232.81.50
@@ -347,7 +350,7 @@ proxies:
     path: /path/283431252216
 - alterId: 0
   cipher: auto
-  name: 5,27|14|港3|@ripaojiedian
+  name: 5,11,27|14|港3|@ripaojiedian
   network: tcp
   port: '20177'
   server: 38.147.189.214
@@ -418,7 +421,7 @@ proxies:
   uuid: 4b0e2010-9879-4a58-bcf7-b6aa133b4bdb
 - alterId: 0
   cipher: auto
-  name: 5,27|14|香港4|@ripaojiedian
+  name: 5,11,27|14|香港4|@ripaojiedian
   network: tcp
   port: '44806'
   server: ambxxic01hk.dorabbb.top
@@ -446,19 +449,6 @@ proxies:
   skip-cert-verify: true
   sni: z307.hongkongnode.top
   type: trojan
-- name: 10|香港 003
-  network: ws
-  password: a3ca0380-8a17-403a-a5b3-a9f6e59be193
-  port: 443
-  server: claw-ali-hkg-1ge.china-next-generation-any-path-smart-route-global.2h.ma
-  skip-cert-verify: true
-  sni: claw-ali-hkg-1ge.china-next-generation-any-path-smart-route-global.2h.ma
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: claw-ali-hkg-1ge.china-next-generation-any-path-smart-route-global.2h.ma
-    path: /a3ca0380-8a17-403a-a5b3-a9f6e59be193
 - alterId: 0
   cipher: auto
   name: 18|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_1
@@ -1042,20 +1032,6 @@ proxies:
   tls: false
   type: vmess
   uuid: b077b598-5ce4-4640-a0ba-af220303e3d1
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-210.0.158.21...
-  network: ws
-  port: '12909'
-  server: 210.0.158.219
-  servername: 19.lwdh.us
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    headers:
-      Host: 19.lwdh.us
-    path: /
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-27.124.10.14...
@@ -1071,23 +1047,25 @@ proxies:
       Host: www.60443882.xyz
     path: /path/011410073331
 - alterId: 0
-  name: 37|HK
-  password: 325ba822-760d-4a51-9711-f72ba8d16933
-  port: 10465
-  server: 45.146.232.171
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-210.0.158.21...
+  network: ws
+  port: '12909'
+  server: 210.0.158.219
+  servername: 19.lwdh.us
   tls: true
-  type: trojan
-  udp: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    headers:
+      Host: 19.lwdh.us
+    path: /
 - alterId: 0
-  name: 37|HK2
-  network: tcp
-  password: 9ff83a73-c9da-4233-a9e2-7fa9b83b5f75
-  port: 16212
+  cipher: aes-128-gcm
+  name: 37|HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29204
   server: 91.199.84.195
   skip-cert-verify: true
-  sni: data.steamdownload.top
   tls: true
-  type: trojan
-  udp: true
+  type: ss
