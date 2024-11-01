@@ -1166,7 +1166,7 @@ proxies:
   type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 2,5,11,12,16,20,21,27|13|🇺🇸 美国2|@ripaojiedian
+  name: 2,5,11,12,16,27|13|🇺🇸 美国2|@ripaojiedian
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 107.155.57.51
@@ -1371,7 +1371,7 @@ proxies:
 - alterId: 1
   cipher: auto
   delay: 1674
-  name: '5,10,20,21|🏁RELAY-104.21.15.186-1116 #1'
+  name: '5,10,11,20,21|🏁RELAY-104.21.15.186-1116 #1'
   network: ws
   port: 443
   server: c.serkat.org
@@ -1386,7 +1386,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '5,11|1,6|🇺🇸_US_美国 #14 #1'
+  name: 5,11,36|🔒 VM-WS-NA 🏴‍☠️ NA-104.19.46.1...
   network: ws
   port: 2052
   server: 104.19.46.123
@@ -1397,10 +1397,13 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '5|美国 CloudFlare节点 #1'
+  client-fingerprint: chrome
+  name: '5,9,11,24|🇺🇸 美国 CloudFlare节点 #23'
   network: ws
-  port: 80
+  port: '80'
   server: 104.16.60.8
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
@@ -1446,18 +1449,22 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,37|未知48 172.8KB/s
+  client-fingerprint: chrome
+  name: 5,9,24,37|未知48 172.8KB/s
   password: u17T3BvpYaaiuW2c
   port: 443
   server: 40.172.49.150
   skip-cert-verify: true
+  tfo: false
   tls: true
   type: ss
-- name: 5|美国+CloudFlare节点
+- client-fingerprint: chrome
+  name: 5,9|🇺🇸 美国 CloudFlare节点
   network: ws
   password: auto
   port: 443
   server: 104.20.18.142
+  skip-cert-verify: false
   sni: b96ef9ae.trojanfree-76s.pages.dev
   type: trojan
   ws-opts:
@@ -1470,25 +1477,15 @@ proxies:
   port: 443
   server: 3.39.227.28
   type: ss
-- alpn:
-  - h2,http/1.1
-  name: '5|美国+CloudFlare节点 #1'
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 172.64.150.145
-  sni: mindrOOm-5cz.pAgEs.dEV
-  type: trojan
-  ws-opts:
-    headers:
-      Host: mindroom-5cz.pages.dev
-    path: '%2FtrC8BM8bTsAF0AnLYL%3Fed%3D2560'
 - alterId: 1
   cipher: auto
-  name: '5|美国 CloudFlare节点 #2'
+  client-fingerprint: chrome
+  name: '5,9,11,24|🇺🇸 美国 CloudFlare节点 #14'
   network: ws
-  port: 443
+  port: '443'
   server: es.nurul.homes
+  skip-cert-verify: false
+  tfo: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1522,10 +1519,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '5|美国 CloudFlare节点 #3'
+  client-fingerprint: chrome
+  name: '5,9,11,24|🇺🇸 美国 CloudFlare节点 #17'
   network: ws
-  port: 2082
+  port: '2082'
   server: 104.26.7.132
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -1535,10 +1535,13 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '5|美国 CloudFlare节点 #4'
+  client-fingerprint: chrome
+  name: '5,9,11,24|🇺🇸 美国 CloudFlare节点 #4'
   network: ws
-  port: 2082
+  port: '2082'
   server: 104.16.149.244
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -1554,10 +1557,13 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 5,10|美国 129
+  client-fingerprint: chrome
+  name: '5,9,10,11,24|🇺🇸 美国 CloudFlare节点 #24'
   network: ws
-  port: 2082
+  port: '2082'
   server: 172.64.167.44
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -1611,10 +1617,13 @@ proxies:
   ws-opts: {}
 - alterId: 1
   cipher: auto
-  name: '5|美国 CloudFlare节点 #6'
+  client-fingerprint: chrome
+  name: '5,9,11,24|🇺🇸 美国 CloudFlare节点 #6'
   network: ws
-  port: 443
+  port: '443'
   server: cs.masjidd.homes
+  skip-cert-verify: false
+  tfo: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1632,11 +1641,14 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,20,21,23,30|二爷免费翻墙 https://1808.free.hr 节点... #392'
+  client-fingerprint: chrome
+  name: '5,9,11,20,21,23,24,30|二爷免费翻墙 https://1808.free.hr 节点... #392'
   network: ws
   port: 443
   server: denc36.xtooltech.cfd
   servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: true
   type: vmess
   uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
@@ -1646,10 +1658,13 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 5|美国 V2CROSS.COM
+  client-fingerprint: chrome
+  name: '5,9,11,24|🇺🇸 美国 v2rayfree.eu.org #1'
   network: ws
-  port: 443
+  port: '443'
   server: 66.241.124.229
+  skip-cert-verify: false
+  tfo: false
   tls: true
   type: vmess
   uuid: ea4909ef-7ca6-4b46-bf2e-6c07896ef338
@@ -1672,7 +1687,7 @@ proxies:
     path: /77848824
 - alterId: 0
   cipher: auto
-  name: 5,20,21,40|CA_speednode_0001
+  name: 5,11,20,21,24,40|CA_speednode_0001
   network: ws
   port: 443
   server: 23.162.200.227
@@ -1686,10 +1701,13 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '5|美国 CloudFlare节点 #8'
+  client-fingerprint: chrome
+  name: '5,9,11,24|🇺🇸 美国 CloudFlare节点 #8'
   network: ws
-  port: 2082
+  port: '2082'
   server: 104.19.47.65
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -1699,10 +1717,13 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 5,10|加拿大 168
+  client-fingerprint: chrome
+  name: '5,9,10,11,24|🇺🇸 美国 CloudFlare节点 #13'
   network: ws
-  port: 2082
+  port: '2082'
   server: 104.26.5.123
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -1756,10 +1777,13 @@ proxies:
     path: '%2Fb96ef9ae.trojanfree-76s.pages.dev%2F'
 - alterId: 0
   cipher: auto
-  name: '5|美国 CloudFlare节点 #10'
+  client-fingerprint: chrome
+  name: '5,9,11,24|🇺🇸 美国 CloudFlare节点 #18'
   network: ws
-  port: 2082
+  port: '2082'
   server: 104.20.17.186
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -1775,10 +1799,13 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '5|美国 CloudFlare节点 #11'
+  client-fingerprint: chrome
+  name: '5,9,11,24|🇺🇸 美国 CloudFlare节点 #15'
   network: ws
-  port: 2082
+  port: '2082'
   server: 104.19.45.11
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -1788,11 +1815,13 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 5,10|加拿大 181
+  client-fingerprint: chrome
+  name: '5,9,10,11,24|🇺🇸 美国 CloudFlare节点 #7'
   network: ws
-  port: 2082
+  port: '2082'
   server: 104.19.45.35
   skip-cert-verify: true
+  tfo: false
   tls: false
   type: vmess
   udp: true
@@ -1812,13 +1841,10 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '5,9,10,11,23,24,30|二爷免费翻墙 https://1808.free.hr 节点... #304'
+  name: '5,10,11,23,24,30|二爷免费翻墙 https://1808.free.hr 节点... #304'
   network: ws
   port: 8080
   server: www.darkroom.lol
-  skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
@@ -1828,11 +1854,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,37|未知29 189.0KB/s
+  client-fingerprint: chrome
+  name: 5,9,24,37|未知29 189.0KB/s
   password: u17T3BvpYaaiuW2c
   port: 443
   server: 40.172.67.243
   skip-cert-verify: true
+  tfo: false
   tls: true
   type: ss
 - alterId: 0
@@ -1941,14 +1969,11 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '5,9,10,11,23,24,30|二爷免费翻墙 https://1808.free.hr 节点... #307'
+  name: '5,10,11,23,24,30|二爷免费翻墙 https://1808.free.hr 节点... #307'
   network: ws
   port: 8880
   server: 104.21.82.183
   servername: ''
-  skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
@@ -2001,11 +2026,13 @@ proxies:
   ws-opts: {}
 - alpn:
   - http/1.1
-  name: 5|美国+Amazon数据中心
+  client-fingerprint: chrome
+  name: '5,9,24|🇺🇸 美国 Amazon数据中心 #1'
   network: tcp
   password: telegram-id-directvpn
   port: 22222
   server: 13.37.208.64
+  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
 - cipher: aes-256-gcm
@@ -2033,7 +2060,7 @@ proxies:
 - alterId: 1
   cipher: auto
   delay: 1295
-  name: '5,10,20,21|🏁RELAY-104.21.92.133-1184 #1'
+  name: '5,10,11,20,21|🏁RELAY-104.21.92.133-1184 #1'
   network: ws
   port: 443
   server: masjide.org
@@ -2048,10 +2075,13 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '5|美国 CloudFlare节点 #16'
+  client-fingerprint: chrome
+  name: '5,9,11,24|🇺🇸 美国 CloudFlare节点 #9'
   network: ws
-  port: 2082
+  port: '2082'
   server: 162.159.140.93
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -2073,11 +2103,13 @@ proxies:
     headers:
       Host: server31.beheshtbaneh.com
     path: /
-- name: '5|美国+CloudFlare节点 #6'
+- client-fingerprint: chrome
+  name: 5,9|🇺🇸 美国 CloudFlare节点 14
   network: ws
   password: cb1f26aa437d4bfa9b841d28503ce8cc
   port: 443
   server: 198.41.220.5
+  skip-cert-verify: false
   sni: jobscareertoday.com
   type: trojan
   ws-opts:
@@ -2800,6 +2832,121 @@ proxies:
     headers:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
+- client-fingerprint: chrome
+  name: 9|🇺🇸 美国 CloudFlare节点 3
+  network: ws
+  password: auto
+  port: 443
+  server: 172.67.161.104
+  skip-cert-verify: false
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- client-fingerprint: chrome
+  name: 9|🇺🇸 美国 CloudFlare节点 8
+  network: ws
+  password: auto
+  port: 443
+  server: 162.159.44.205
+  skip-cert-verify: false
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- client-fingerprint: chrome
+  name: 9|🇺🇸 美国 CloudFlare节点 9
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.19.103
+  skip-cert-verify: false
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- alterId: 1
+  cipher: auto
+  client-fingerprint: chrome
+  name: '9,24|🇺🇸 美国 CloudFlare节点 #12'
+  network: ws
+  port: '443'
+  server: masjide.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: masjide.org
+    path: /
+- client-fingerprint: chrome
+  name: 9,10|加拿大 020
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 172.66.47.53
+  skip-cert-verify: false
+  sni: 403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv
+    path: /trSo3btsDgOHHUM6Nb
+- client-fingerprint: chrome
+  name: 9,10|加拿大 185
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 172.64.150.145
+  skip-cert-verify: true
+  sni: mindrOOm-5cz.pAgEs.dEV
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mindrOOm-5cz.pAgEs.dEV
+    path: /trC8BM8bTsAF0AnLYL?ed=2560
+- alterId: 1
+  cipher: auto
+  client-fingerprint: chrome
+  name: '9,24|🇺🇸 美国 CloudFlare节点 #22'
+  network: ws
+  port: '443'
+  server: c.serkat.org
+  servername: c.serkat.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: c.serkat.org
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 9|🇺🇸 美国 v2rayfree.eu.org 2
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 23.162.200.227
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 10|美国 079
@@ -2894,7 +3041,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1125
-  name: 10|美国 243
+  name: '10,20,21|🏁RELAY-172.64.166.20-1042 #1'
   network: ws
   port: 2082
   server: 172.64.166.20
@@ -3417,10 +3564,11 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 10|美国 172
+  name: '10,20,21|🏁RELAY-104.21.14.181-1134 #1'
   network: ws
   port: 443
   server: c.tampay.info
+  servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3546,7 +3694,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.22.58.63-1164 #1'
+  name: '10,20,21|🏁RELAY-104.22.58.63-1164 #2'
   network: ws
   port: 80
   server: 104.22.58.63
@@ -3751,9 +3899,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,24|🇺🇸 美国 CloudFlare节点 #7'
+  name: 10|美国 029
   network: ws
-  port: '2095'
+  port: 2095
   server: 172.64.166.20
   tls: false
   type: vmess
@@ -3780,9 +3928,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '10,24|🇺🇸 美国 CloudFlare节点 #22'
+  name: 10|美国 280
   network: ws
-  port: '2095'
+  port: 2095
   server: 172.64.167.8
   skip-cert-verify: true
   tls: false
@@ -3865,9 +4013,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,24|🇺🇸 美国 CloudFlare节点 #13'
+  name: 10|美国 124
   network: ws
-  port: '443'
+  port: 443
   server: www.baldengineer.com
   servername: yen63jj36j3jfflan.thelastronin.cloudns.org
   skip-cert-verify: false
@@ -3965,9 +4113,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,24|🇺🇸 美国 CloudFlare节点 #25'
+  name: 10|美国 168
   network: ws
-  port: '2095'
+  port: 2095
   server: 104.21.238.100
   skip-cert-verify: false
   tls: false
@@ -4006,9 +4154,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 1
   cipher: auto
-  name: '10,24|🇺🇸 美国 CloudFlare节点 #2'
+  name: 10|美国 182
   network: ws
-  port: '443'
+  port: 443
   server: be.hkddisney.org
   skip-cert-verify: true
   tls: true
@@ -4021,9 +4169,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '10,24|🇺🇸 美国 CloudFlare节点 #6'
+  name: 10|美国 185
   network: ws
-  port: '2082'
+  port: 2082
   server: 172.64.167.35
   skip-cert-verify: true
   tls: false
@@ -4062,9 +4210,9 @@ proxies:
     path: /trC8BM8bTsAF0AnLYL?ed=2560
 - alterId: 0
   cipher: auto
-  name: '10,24|🇺🇸 美国 CloudFlare节点 #30'
+  name: 10|美国 274
   network: ws
-  port: '80'
+  port: 80
   server: 104.17.213.241
   skip-cert-verify: true
   tls: false
@@ -4103,9 +4251,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,24|🇺🇸 美国 CloudFlare节点 #5'
+  name: 10|美国 046
   network: ws
-  port: '2082'
+  port: 2082
   server: 172.64.166.33
   tls: false
   type: vmess
@@ -4116,9 +4264,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '10,24|🇺🇸 美国 CloudFlare节点 #31'
+  name: 10|美国 197
   network: ws
-  port: '2095'
+  port: 2095
   server: 172.64.99.22
   tls: false
   type: vmess
@@ -4202,7 +4350,7 @@ proxies:
     path: /
 - alpn:
   - http/1.1
-  name: '12,20,21|🇨🇦CA-3.98.16.101-0925 #1'
+  name: '12|🇺🇸_US_美国 #1'
   network: tcp
   password: telegram-id-directvpn
   port: 22222
@@ -4449,33 +4597,15 @@ proxies:
       Host: ''
     path: ''
 - cipher: chacha20-ietf-poly1305
-  name: 19|🇺🇸US-205.134.180.145-0591
+  name: 19|🇺🇸US-205.134.180.145-0618
   password: hgLCgfLRgB6d
   port: 443
   server: 205.134.180.145
   type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|US14 83.4MB/s
-  password: g13S7doXar0A
-  port: 443
-  server: 205.134.180.137
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|US26 64.1MB/s
-  password: 5cp9Z3iWnJZ2
-  port: 443
-  server: 205.134.180.150
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇺🇸US-38.14.107.233-8312
+  name: 19|🇺🇸US-38.14.107.233-8278
   network: ws
   port: 38003
   server: 38.14.107.233
@@ -4487,66 +4617,30 @@ proxies:
     headers:
       host: www.23179753.xyz
     path: /path/340434130032
-- cipher: aes-256-gcm
-  name: 19|🇺🇸US-154.3.8.151-0646
-  password: iUB0923RBA
-  port: 30067
-  server: 154.3.8.151
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇺🇸US-35.94.16.186-0920
-  password: amazonskr05
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|US26 64.1MB/s
+  password: 5cp9Z3iWnJZ2
   port: 443
-  server: 35.94.16.186
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇺🇸US-38.107.226.146-3034
-  password: H5S0hvcxRi#YLmgU
-  port: 1230
-  server: 38.107.226.146
+  server: 205.134.180.150
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇺🇸US-38.91.100.228-8235 #1'
+  client-fingerprint: chrome
+  name: 19|🇺🇸US-43.153.103.203-1246
   network: ws
   port: 443
-  server: 38.91.100.228
-  servername: ''
+  server: 43.153.103.203
+  skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
   ws-opts:
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21,23,30|二爷免费翻墙 https://1808.free.hr 节点... #361'
-  network: ws
-  port: 443
-  server: 23.154.136.2
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 23.154.136.2
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇺🇸US-38.99.82.203-8195 #1'
-  network: ws
-  port: 443
-  server: 38.99.82.203
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 38.99.82.203
-    path: /linkvws
+      host: shs.xiaoqi666.xyz
+    path: /
 - alterId: 0
   name: 20,21,37|US5
   network: tcp
@@ -4558,6 +4652,15 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 20,21,37|US14 83.4MB/s
+  password: g13S7doXar0A
+  port: 443
+  server: 205.134.180.137
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 1
   cipher: auto
   name: '20,21|🇺🇸US-38.99.82.137-8244 #1'
@@ -4574,31 +4677,31 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21,23,30|二爷免费翻墙 https://1808.free.hr 节点... #337'
+  name: '20,21|🇺🇸US-38.91.100.228-8235 #1'
   network: ws
   port: 443
-  server: 69.50.93.90
+  server: 38.91.100.228
   servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: 69.50.93.90
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇺🇸US-69.50.93.90-8284 #1'
+  name: '20,21|🇺🇸US-38.99.82.203-8195 #1'
   network: ws
   port: 443
-  server: 69.50.93.90
+  server: 38.99.82.203
   servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ''
+      Host: 38.99.82.203
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -4616,6 +4719,48 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
+  name: '20,21,23,30|二爷免费翻墙 https://1808.free.hr 节点... #337'
+  network: ws
+  port: 443
+  server: 69.50.93.90
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 69.50.93.90
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21,23,30|二爷免费翻墙 https://1808.free.hr 节点... #361'
+  network: ws
+  port: 443
+  server: 23.154.136.2
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 23.154.136.2
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇺🇸US-69.50.93.90-8284 #1'
+  network: ws
+  port: 443
+  server: 69.50.93.90
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
   name: '20,21|🇺🇸US-23.154.136.2-8232 #1'
   network: ws
   port: 443
@@ -4630,7 +4775,7 @@ proxies:
     path: /linkvws
 - alterId: 64
   cipher: auto
-  name: '20,21|🇺🇸US-38.14.107.233-8278 #1'
+  name: '20,21|🇺🇸US-38.14.107.233-8278 #2'
   network: ws
   port: 38003
   server: 38.14.107.233
@@ -4785,199 +4930,66 @@ proxies:
     headers:
       Host: 1229VM6.nnaotexiongditkgroup.top
     path: /1229VM6
-- alterId: 0
-  cipher: auto
-  name: '24|🇺🇸 美国 CloudFlare节点 #8'
-  network: ws
-  port: '2082'
-  server: 104.26.0.56
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip3.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '24|🇺🇸 美国 CloudFlare节点 #9'
-  network: ws
-  port: '2095'
-  server: 104.26.5.56
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: github.com/Alvin9999
+- name: '24|🇺🇸 美国 CloudFlare节点 #3'
+  password: auto
+  port: 443
+  server: 104.20.18.142
+  skip-cert-verify: false
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+- name: '24|🇺🇸 美国 CloudFlare节点 #5'
+  password: auto
+  port: 443
+  server: 172.67.161.104
+  skip-cert-verify: false
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
 - name: '24|🇺🇸 美国 CloudFlare节点 #10'
   password: auto
   port: 443
-  server: 172.64.35.209
+  server: 162.159.44.205
   skip-cert-verify: false
   sni: b96ef9ae.trojanfree-76s.pages.dev
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '24|🇺🇸 美国 CloudFlare节点 #12'
-  network: ws
-  port: '2095'
-  server: 172.67.70.92
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: github.com/Alvin9999
-- name: '24|🇺🇸 美国 CloudFlare节点 #14'
+- name: '24|🇺🇸 美国 CloudFlare节点 #11'
   password: auto
   port: 443
-  server: 104.20.18.183
+  server: 104.20.19.103
   skip-cert-verify: false
   sni: b96ef9ae.trojanfree-76s.pages.dev
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '24|🇺🇸 美国 CloudFlare节点 #19'
-  network: ws
-  port: '2082'
-  server: 172.64.167.15
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip3.6929198.xyz
-    path: github.com/Alvin9999
-- name: '24|🇺🇸 美国 CloudFlare节点 #23'
+- name: '24|🇺🇸 美国 CloudFlare节点 #16'
+  password: cb1f26aa437d4bfa9b841d28503ce8cc
+  port: 443
+  server: 198.41.220.5
+  skip-cert-verify: false
+  sni: jobscareertoday.com
+  type: trojan
+- name: '24|🇺🇸 美国 CloudFlare节点 #20'
   password: bpb-trojan
   port: 443
-  server: 104.18.37.111
+  server: 172.66.47.53
   skip-cert-verify: false
-  sni: mindrOOm-5cz.pAgEs.dEV
+  sni: 403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '24|🇺🇸 美国 CloudFlare节点 #26'
-  network: ws
-  port: '2095'
-  server: 172.64.166.33
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '24|🇺🇸 美国 CloudFlare节点 #27'
-  network: ws
-  port: '2095'
-  server: 104.19.45.11
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: github.com/Alvin9999
-- name: '24|🇺🇸 美国 CloudFlare节点 #28'
+- name: '24|🇺🇸 美国 CloudFlare节点 #21'
   password: bpb-trojan
   port: 443
   server: 172.64.150.145
   skip-cert-verify: false
   sni: mindrOOm-5cz.pAgEs.dEV
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '24|🇺🇸 美国 CloudFlare节点 #29'
-  network: ws
-  port: '8080'
-  server: 104.16.61.8
-  tls: false
-  type: vmess
-  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
-  ws-opts:
-    headers:
-      Host: hyfhhg.jadovah977.workers.dev
-    path: /jahfkjha.cfd/linkws
-- name: 24|🇺🇸 美国 Amazon EC2服务器
-  password: telegram-id-directvpn
-  port: 22222
-  server: 3.142.227.59
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '24|🇺🇸 美国 CloudFlare节点 #34'
-  password: 2e3562a819634de686ade78e434c0963
-  port: 443
-  server: 104.17.147.5
-  skip-cert-verify: false
-  sni: jobscareertoday.com
-  type: trojan
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 24,37|🇺🇸US美 2.0MB/s
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 23.150.248.122
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- name: '24|🇺🇸 美国 CloudFlare节点 #35'
-  password: bpb-trojan
-  port: 443
-  server: 172.66.44.203
-  skip-cert-verify: false
-  sni: 403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '24|🇺🇸 美国 CloudFlare节点 #36'
-  network: ws
-  port: '2082'
-  server: 104.17.106.151
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip3.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '24|🇺🇸 美国 CloudFlare节点 #37'
-  network: ws
-  port: '2082'
-  server: 104.19.45.47
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip3.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '24|🇺🇸 美国 CloudFlare节点 #38'
-  network: ws
-  port: '2095'
-  server: 104.19.45.31
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: github.com/Alvin9999
 - name: 24|🇺🇸 美国
   password: NISHIKUITAN222
   port: 443
   server: 104.20.19.100
-  skip-cert-verify: false
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #1'
+  password: NISHIKUITAN222
+  port: 443
+  server: 162.159.138.55
+  skip-cert-verify: true
   type: trojan
 - alterId: 0
   name: 24,37|US
@@ -4988,71 +5000,737 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '24|🇺🇸 美国 #2'
-  password: NISHIKUITAN222
-  port: 443
-  server: 162.159.138.55
-  skip-cert-verify: false
-  type: trojan
 - name: '24|🇺🇸 美国 #3'
   password: NISHIKUITAN222
   port: 443
-  server: 104.18.221.228
-  skip-cert-verify: false
+  server: 172.67.56.244
+  skip-cert-verify: true
   type: trojan
 - name: '24|🇺🇸 美国 #4'
   password: NISHIKUITAN222
   port: 443
-  server: 104.19.155.27
-  skip-cert-verify: false
+  server: 172.67.113.249
+  skip-cert-verify: true
   type: trojan
 - name: '24|🇺🇸 美国 #5'
   password: NISHIKUITAN222
   port: 443
-  server: 104.16.200.98
-  skip-cert-verify: false
+  server: 172.67.225.193
+  skip-cert-verify: true
   type: trojan
 - name: '24|🇺🇸 美国 #6'
   password: NISHIKUITAN222
   port: 443
-  server: 104.18.79.252
-  skip-cert-verify: false
+  server: 104.24.159.236
+  skip-cert-verify: true
   type: trojan
 - name: '24|🇺🇸 美国 #7'
   password: NISHIKUITAN222
   port: 443
-  server: 190.93.246.57
-  skip-cert-verify: false
+  server: 141.101.123.43
+  skip-cert-verify: true
   type: trojan
 - name: '24|🇺🇸 美国 #8'
   password: NISHIKUITAN222
   port: 443
-  server: 173.245.49.76
-  skip-cert-verify: false
+  server: 104.27.59.40
+  skip-cert-verify: true
   type: trojan
 - name: '24|🇺🇸 美国 #9'
   password: NISHIKUITAN222
   port: 443
-  server: 104.25.154.54
-  skip-cert-verify: false
+  server: 103.21.244.110
+  skip-cert-verify: true
   type: trojan
 - name: '24|🇺🇸 美国 #10'
   password: NISHIKUITAN222
   port: 443
-  server: 103.21.244.63
-  skip-cert-verify: false
+  server: 103.21.244.214
+  skip-cert-verify: true
   type: trojan
 - name: '24|🇺🇸 美国 #11'
   password: NISHIKUITAN222
   port: 443
-  server: 173.245.59.202
-  skip-cert-verify: false
+  server: 104.27.194.51
+  skip-cert-verify: true
   type: trojan
 - name: '24|🇺🇸 美国 #12'
   password: NISHIKUITAN222
   port: 443
+  server: 103.21.244.71
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #13'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.21.229.224
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #14'
+  password: NISHIKUITAN222
+  port: 443
+  server: 162.159.197.168
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #15'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.30.65
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #16'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.245.231
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #17'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.24.60.84
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #18'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.24.147.17
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #19'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.21.113.68
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #20'
+  password: NISHIKUITAN222
+  port: 443
+  server: 173.245.59.133
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #21'
+  password: NISHIKUITAN222
+  port: 443
   server: 162.159.26.126
-  skip-cert-verify: false
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #22'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.21.108.193
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #23'
+  password: NISHIKUITAN222
+  port: 443
+  server: 103.21.244.15
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #24'
+  password: NISHIKUITAN222
+  port: 443
+  server: 188.114.97.98
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #25'
+  password: NISHIKUITAN222
+  port: 443
+  server: 108.162.192.8
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #26'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.19.100.42
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #27'
+  password: NISHIKUITAN222
+  port: 443
+  server: 173.245.58.70
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #28'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.246.57
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #29'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.154.54
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #30'
+  password: NISHIKUITAN222
+  port: 443
+  server: 173.245.59.204
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #31'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.18.53.21
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #32'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.27.8.16
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #33'
+  password: NISHIKUITAN222
+  port: 443
+  server: 162.159.195.71
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #34'
+  password: NISHIKUITAN222
+  port: 443
+  server: 173.245.58.4
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #35'
+  password: NISHIKUITAN222
+  port: 443
+  server: 172.67.2.35
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #36'
+  password: NISHIKUITAN222
+  port: 443
+  server: 198.41.207.16
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #37'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.20.2.116
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #38'
+  password: NISHIKUITAN222
+  port: 443
+  server: 141.101.123.174
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #39'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.244.109
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #40'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.24.254.117
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #41'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.185.236
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #42'
+  password: NISHIKUITAN222
+  port: 443
+  server: 141.101.121.208
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #43'
+  password: NISHIKUITAN222
+  port: 443
+  server: 173.245.49.76
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #44'
+  password: NISHIKUITAN222
+  port: 443
+  server: 173.245.49.186
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #45'
+  password: NISHIKUITAN222
+  port: 443
+  server: 173.245.58.132
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #46'
+  password: NISHIKUITAN222
+  port: 443
+  server: 188.114.99.185
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #47'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.16.249.225
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #48'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.18.21.127
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #49'
+  password: NISHIKUITAN222
+  port: 443
+  server: 103.21.244.178
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #50'
+  password: NISHIKUITAN222
+  port: 443
+  server: 103.21.244.34
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #51'
+  password: NISHIKUITAN222
+  port: 443
+  server: 103.21.244.127
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #52'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.23.111.130
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #53'
+  password: NISHIKUITAN222
+  port: 443
+  server: 172.67.109.123
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #54'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.27.56.82
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #55'
+  password: NISHIKUITAN222
+  port: 443
+  server: 172.66.150.227
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #56'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.245.193
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #57'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.27.30.63
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #58'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.186.220
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #59'
+  password: NISHIKUITAN222
+  port: 443
+  server: 108.162.193.112
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #60'
+  password: NISHIKUITAN222
+  port: 443
+  server: 173.245.59.225
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #61'
+  password: NISHIKUITAN222
+  port: 443
+  server: 103.21.244.86
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #62'
+  password: NISHIKUITAN222
+  port: 443
+  server: 172.66.143.49
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #63'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.21.98.29
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #64'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.22.38.144
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #65'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.18.1.125
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #66'
+  password: NISHIKUITAN222
+  port: 443
+  server: 141.101.120.6
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #67'
+  password: NISHIKUITAN222
+  port: 443
+  server: 188.114.99.239
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #68'
+  password: NISHIKUITAN222
+  port: 443
+  server: 108.162.194.186
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #69'
+  password: NISHIKUITAN222
+  port: 443
+  server: 162.159.41.58
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #70'
+  password: NISHIKUITAN222
+  port: 443
+  server: 108.162.196.64
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #71'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.245.96
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #72'
+  password: NISHIKUITAN222
+  port: 443
+  server: 172.67.87.79
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #73'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.101.101
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #74'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.194.188
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #75'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.171.225
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #76'
+  password: NISHIKUITAN222
+  port: 443
+  server: 141.101.123.129
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #77'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.215.64
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #78'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.193.251
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #79'
+  password: NISHIKUITAN222
+  port: 443
+  server: 108.162.196.36
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #80'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.20.84.90
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #81'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.20.97.230
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #82'
+  password: NISHIKUITAN222
+  port: 443
+  server: 188.114.98.203
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #83'
+  password: NISHIKUITAN222
+  port: 443
+  server: 188.114.99.111
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #84'
+  password: NISHIKUITAN222
+  port: 443
+  server: 188.114.98.138
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #85'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.206.92
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #86'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.239.1
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #87'
+  password: NISHIKUITAN222
+  port: 443
+  server: 103.21.244.63
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #88'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.0.104
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #89'
+  password: NISHIKUITAN222
+  port: 443
+  server: 172.64.162.152
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #90'
+  password: NISHIKUITAN222
+  port: 443
+  server: 172.67.148.13
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #91'
+  password: NISHIKUITAN222
+  port: 443
+  server: 162.159.38.94
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #92'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.21.9.55
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #93'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.242.174
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #94'
+  password: NISHIKUITAN222
+  port: 443
+  server: 141.101.123.151
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #95'
+  password: NISHIKUITAN222
+  port: 443
+  server: 172.67.1.153
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #96'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.24.181.249
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #97'
+  password: NISHIKUITAN222
+  port: 443
+  server: 198.41.206.92
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #98'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.18.38.32
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #99'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.22.74.194
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #100'
+  password: NISHIKUITAN222
+  port: 443
+  server: 172.64.42.112
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #101'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.100.134
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #102'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.18.27.217
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #103'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.20.217.33
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #104'
+  password: NISHIKUITAN222
+  port: 443
+  server: 103.21.244.177
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #105'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.27.88.3
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #106'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.20.104.116
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #107'
+  password: NISHIKUITAN222
+  port: 443
+  server: 162.159.255.194
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #108'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.24.132.242
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #109'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.17.144.68
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #110'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.21.45.155
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #111'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.19.103.242
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #112'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.229.250
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #113'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.18.214.28
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #114'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.17.84.131
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #115'
+  password: NISHIKUITAN222
+  port: 443
+  server: 108.162.194.110
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #116'
+  password: NISHIKUITAN222
+  port: 443
+  server: 188.114.99.0
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #117'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.24.149.225
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #118'
+  password: NISHIKUITAN222
+  port: 443
+  server: 198.41.211.175
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #119'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.16.151.253
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #120'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.18.22.64
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #121'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.178.88
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #122'
+  password: NISHIKUITAN222
+  port: 443
+  server: 103.21.244.61
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #123'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.21.23.172
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #124'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.27.37.31
+  skip-cert-verify: true
   type: trojan
 - alterId: 0
   name: 24,37|🇺🇸US美国2
@@ -5063,16 +5741,580 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- name: '24|🇺🇸 美国 #126'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.76.106
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #127'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.24.22.118
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #128'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.21.45.67
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #129'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.18.87.210
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #130'
+  password: NISHIKUITAN222
+  port: 443
+  server: 103.21.244.125
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #131'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.17.202.139
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #132'
+  password: NISHIKUITAN222
+  port: 443
+  server: 108.162.192.89
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #133'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.18.253.136
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #134'
+  password: NISHIKUITAN222
+  port: 443
+  server: 188.114.99.129
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #135'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.245.167
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #136'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.18.205.4
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #137'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.246.234
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #138'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.160.173
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #139'
+  password: NISHIKUITAN222
+  port: 443
+  server: 188.114.99.33
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #140'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.16.248.47
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #141'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.20.208.74
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #142'
+  password: NISHIKUITAN222
+  port: 443
+  server: 162.159.45.133
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #143'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.244.64
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #144'
+  password: NISHIKUITAN222
+  port: 443
+  server: 198.41.208.75
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #145'
+  password: NISHIKUITAN222
+  port: 443
+  server: 173.245.59.202
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #146'
+  password: NISHIKUITAN222
+  port: 443
+  server: 162.159.0.132
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #147'
+  password: NISHIKUITAN222
+  port: 443
+  server: 198.41.217.90
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #148'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.16.229.2
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #149'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.16.200.98
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #150'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.244.153
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #151'
+  password: NISHIKUITAN222
+  port: 443
+  server: 108.162.198.219
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #152'
+  password: NISHIKUITAN222
+  port: 443
+  server: 103.21.244.240
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #153'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.16.91.200
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #154'
+  password: NISHIKUITAN222
+  port: 443
+  server: 108.162.194.66
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #155'
+  password: NISHIKUITAN222
+  port: 443
+  server: 198.41.199.153
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #156'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.16.200.34
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #157'
+  password: NISHIKUITAN222
+  port: 443
+  server: 162.159.6.171
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #158'
+  password: NISHIKUITAN222
+  port: 443
+  server: 188.114.98.128
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #159'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.246.56
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #160'
+  password: NISHIKUITAN222
+  port: 443
+  server: 103.21.244.169
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #161'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.18.73.172
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #162'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.19.154.204
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #163'
+  password: NISHIKUITAN222
+  port: 443
+  server: 188.114.97.25
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #164'
+  password: NISHIKUITAN222
+  port: 443
+  server: 188.114.97.186
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #165'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.244.199
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #166'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.18.79.252
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #167'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.244.229
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #168'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.18.109.137
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #169'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.246.21
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #170'
+  password: NISHIKUITAN222
+  port: 443
+  server: 188.114.97.248
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #171'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.16.64.11
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #172'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.16.10.129
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #173'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.18.149.10
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #174'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.17.236.17
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #175'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.16.198.249
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #176'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.18.144.129
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #177'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.245.133
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #178'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.21.109.51
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #179'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.19.225.155
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #180'
+  password: NISHIKUITAN222
+  port: 443
+  server: 198.41.209.227
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #181'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.18.252.56
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #182'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.17.30.82
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #183'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.247.56
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #184'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.16.189.90
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #185'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.245.201
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #186'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.244.113
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #187'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.16.228.244
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #188'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.19.214.36
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #189'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.16.27.135
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #190'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.19.249.177
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #191'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.18.221.228
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #192'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.21.233.224
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #193'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.25.194.109
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #194'
+  password: NISHIKUITAN222
+  port: 443
+  server: 188.114.98.57
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #195'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.244.38
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #196'
+  password: NISHIKUITAN222
+  port: 443
+  server: 141.101.114.105
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #197'
+  password: NISHIKUITAN222
+  port: 443
+  server: 108.162.198.61
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #198'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.247.179
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #199'
+  password: NISHIKUITAN222
+  port: 443
+  server: 103.21.244.40
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #200'
+  password: NISHIKUITAN222
+  port: 443
+  server: 188.114.96.113
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #201'
+  password: NISHIKUITAN222
+  port: 443
+  server: 188.114.97.126
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #202'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.21.227.93
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #203'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.19.155.27
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #204'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.246.156
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #205'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.18.242.40
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #206'
+  password: NISHIKUITAN222
+  port: 443
+  server: 173.245.59.87
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #207'
+  password: NISHIKUITAN222
+  port: 443
+  server: 188.114.97.215
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #208'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.244.126
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #209'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.246.77
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #210'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.16.21.203
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #211'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.21.234.229
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #212'
+  password: NISHIKUITAN222
+  port: 443
+  server: 188.114.97.166
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #213'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.247.146
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #214'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.19.212.73
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #215'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.244.137
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #216'
+  password: NISHIKUITAN222
+  port: 443
+  server: 188.114.98.219
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #217'
+  password: NISHIKUITAN222
+  port: 443
+  server: 190.93.247.170
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #218'
+  password: NISHIKUITAN222
+  port: 443
+  server: 188.114.96.96
+  skip-cert-verify: true
+  type: trojan
+- name: '24|🇺🇸 美国 #219'
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.24.249.67
+  skip-cert-verify: true
+  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇺🇸 美国 纽约2-1J
-  password: 3ed24775-de03-4f86-8bcb-4e51d7a663b9
+  name: 28|🇺🇸 美国 纽约2-1C
+  password: b7e88c10-ccc6-4243-a9f8-8ac8a7385684
   port: 20016
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇺🇸 美国 纽约01-1A
-  password: 80f55582-6879-4cd2-aebc-45526202b0c1
+  name: 28|🇺🇸 美国 纽约01-1C
+  password: b7e88c10-ccc6-4243-a9f8-8ac8a7385684
   port: 20013
   server: gy.666666222.shop
   type: ss
@@ -5132,12 +6374,32 @@ proxies:
     headers:
       host: Asdfghjkl10.unique69.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-23.154.136.4...
+  network: tcp
+  port: '22324'
+  server: 23.154.136.47
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇺🇸 US-142.0.134.24...
   network: tcp
   port: 45017
   server: 142.0.134.243
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-198.2.218.10...
+  network: tcp
+  port: '41400'
+  server: 198.2.218.108
+  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -5151,6 +6413,15 @@ proxies:
   tls: false
   type: vmess
   uuid: d5e16b83-7b5c-45ea-d749-d6f6ad214447
+- alterId: 64
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-107.148.207....
+  network: tcp
+  port: 48712
+  server: 107.148.207.249
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇺🇸 US-50.114.243.6...
@@ -5162,30 +6433,11 @@ proxies:
   uuid: b246e34d-bbd1-4016-8f74-ea461c37e411
 - alterId: 64
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-198.2.218.10...
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-198.2.234.99...
   network: tcp
-  port: '41400'
-  server: 198.2.218.108
+  port: '39771'
+  server: 198.2.234.99
   servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-38.75.137.27...
-  network: tcp
-  port: '22324'
-  server: 38.75.137.27
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-107.148.207....
-  network: tcp
-  port: 48712
-  server: 107.148.207.249
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -5195,16 +6447,6 @@ proxies:
   network: tcp
   port: 52143
   server: 142.4.104.33
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-198.2.234.99...
-  network: tcp
-  port: '39771'
-  server: 198.2.234.99
-  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -5286,6 +6528,15 @@ proxies:
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 139.64.165.115
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 37|🇺🇸US美 2.0MB/s
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 23.150.248.122
   skip-cert-verify: true
   tls: true
   type: ss
@@ -5583,21 +6834,3 @@ proxies:
   port: 42445
   server: 150.241.95.62
   type: ss
-- alpn:
-  - http/1.1
-  alterId: 0
-  cipher: auto
-  name: 40|US_speednode_0032
-  network: ws
-  port: 443
-  server: www.baldengineer.com
-  servername: yen63jj36j3jfflan.thelastronin.cloudns.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: yelan.thelastronin.cloudns.org
-    path: /linkws/afrhms16v.bestxray.buzz
