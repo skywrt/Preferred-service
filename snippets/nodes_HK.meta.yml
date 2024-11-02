@@ -19,7 +19,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 2,9,27|13|🇭🇰 香港5|@ripaojiedian
+  name: '2,9,27|13|🇭🇰 香港5|@ripaojiedian #1'
   port: 2902
   server: 143.92.42.65
   skip-cert-verify: false
@@ -30,7 +30,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 2,9,27|13|🇭🇰 香港6|@ripaojiedian
+  name: '2,9,27|13|🇭🇰 香港6|@ripaojiedian #1'
   port: 16372
   server: 38.147.188.106
   skip-cert-verify: false
@@ -40,7 +40,7 @@ proxies:
   uuid: ee422749-bb89-423b-9d2e-66acbe22bef1
 - cipher: chacha20-ietf
   client-fingerprint: chrome
-  name: 2,5,9,11,24,27|13|🇭🇰 香港8|@ripaojiedian
+  name: '2,5,9,11,24,27|13|🇭🇰 香港8|@ripaojiedian #1'
   password: asd123456
   port: 8388
   server: 38.147.190.72
@@ -48,7 +48,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 2,5,10,11,24,27|14|香港5|@ripaojiedian
+  name: '2,5,10,11,24,27|14|香港5|@ripaojiedian #1'
   network: tcp
   port: '2902'
   server: 143.92.42.65
@@ -58,7 +58,7 @@ proxies:
   uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
 - alterId: 0
   cipher: auto
-  name: 2,5,10,11,24,27|14|香港6|@ripaojiedian
+  name: '2,5,10,11,24,27|14|香港6|@ripaojiedian #1'
   network: tcp
   port: '16372'
   server: 38.147.188.106
@@ -66,28 +66,29 @@ proxies:
   tls: false
   type: vmess
   uuid: ee422749-bb89-423b-9d2e-66acbe22bef1
-- client-fingerprint: randomized
-  name: 5|HK-45102-Alibaba
-  network: ws
-  port: 39237
-  server: 8.218.103.198
-  servername: sub.putata.eu.org
-  tls: true
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: '5|HK+01 #1'
+  network: tcp
+  port: 19280
+  reality-opts:
+    public-key: F5_aTQFA2QRCig3L-qT0Qth76JdewSHK5MgEt_p8Dlo
+    short-id: a8bd783f
+  server: 103.17.99.54
+  servername: cdn-dynmedia-1.microsoft.com
+  tls: false
   type: vless
-  uuid: 88ff07e9-51f0-4608-8c5f-ba2fa8a6b18a
-  ws-opts:
-    headers:
-      Host: sub.putata.eu.org
-    path: '%2F%3Fed%3D2048'
+  uuid: 89b90001-4206-4871-a99d-1744d48f215b
 - alterId: 0
   cipher: auto
-  name: 5|光速官网续费:guangsu2023.com
+  name: 5|香港-lala-B
   network: tcp
-  port: '33311'
-  server: gsyz.m2k699.com
+  port: '41785'
+  server: 110.40.69.43
+  servername: ''
   tls: false
   type: vmess
-  uuid: d511b9c8-8b39-48ee-a038-85654ce5d987
+  uuid: 432dd1c8-b83c-47a0-82d9-453beeda35dc
 - client-fingerprint: randomized
   name: 5|HK-Tencent cloud computing
   network: ws
@@ -111,29 +112,6 @@ proxies:
   tls: true
   type: vless
   uuid: 89b90001-4206-4871-a99d-1744d48f215b
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: '5|HK+01 #1'
-  network: tcp
-  port: 19280
-  reality-opts:
-    public-key: F5_aTQFA2QRCig3L-qT0Qth76JdewSHK5MgEt_p8Dlo
-    short-id: a8bd783f
-  server: 103.17.99.54
-  servername: cdn-dynmedia-1.microsoft.com
-  tls: false
-  type: vless
-  uuid: 89b90001-4206-4871-a99d-1744d48f215b
-- alterId: 0
-  cipher: auto
-  name: 5|香港-lala-A
-  network: tcp
-  port: '34604'
-  server: 110.40.69.43
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 432dd1c8-b83c-47a0-82d9-453beeda35dc
 - alterId: 0
   cipher: auto
   name: 5|香港AK-B
@@ -146,14 +124,27 @@ proxies:
   uuid: 432dd1c8-b83c-47a0-82d9-453beeda35dc
 - alterId: 0
   cipher: auto
-  name: 5|香港-lala-B
+  name: 5|香港-lala-A
   network: tcp
-  port: '41785'
+  port: '34604'
   server: 110.40.69.43
   servername: ''
   tls: false
   type: vmess
   uuid: 432dd1c8-b83c-47a0-82d9-453beeda35dc
+- client-fingerprint: randomized
+  name: 5|HK-45102-Alibaba
+  network: ws
+  port: 39237
+  server: 8.218.103.198
+  servername: sub.putata.eu.org
+  tls: true
+  type: vless
+  uuid: 88ff07e9-51f0-4608-8c5f-ba2fa8a6b18a
+  ws-opts:
+    headers:
+      Host: sub.putata.eu.org
+    path: '%2F%3Fed%3D2048'
 - client-fingerprint: randomized
   delay: 476
   name: 10|香港 004
@@ -225,9 +216,9 @@ proxies:
     headers:
       Host: 5ae52850-e7f0-481c-8cff-6c1ed17fd9f1.91f1a2e9-9f15-4330-996f-0b6bc7c8fa5b.theworkpc.com
     path: /edgetunnel.2424014450.workers.dev/?ed=2560&proxyip=8.217.36.98:14934
-- client-fingerprint: chrome
+- client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 10,28|🇭🇰 香港-3-V4-1A
+  name: 10|香港 003
   network: tcp
   port: 60001
   reality-opts:
@@ -235,11 +226,10 @@ proxies:
     short-id: 4e87d75b
   server: hk003.hy2.one
   servername: www.python.org
-  tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: 949fcc19-6b34-4d96-a0ed-f1c1aae18b71
+  uuid: 8aaf6cec-4860-4710-9bb3-64de510bfea7
 - grpc-opts:
     grpc-service-name: hkvip101
   name: 10|香港 010
@@ -827,38 +817,23 @@ proxies:
   server: 141.98.234.93
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港02-1C
-  password: 8e76b8ea-eb48-436c-b9af-445fd74c94bd
-  port: 20035
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 28|🇭🇰 香港-流媒体2x-1B
-  network: tcp
-  port: 55442
-  reality-opts:
-    public-key: sS4V0lk9XYNJn6Ttu6Q7oxTjSoqTQ990_tzMi_y6kjI
-    short-id: a735f58f
-  server: xglmt.hy-2.sbs
-  servername: www.python.org
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5174fd1f-54a0-4a7d-9c87-0f83216bb7f9
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港01-1I
-  password: b603a8da-2a15-4814-a552-93bd18bfec15
+  name: 28|🇭🇰 香港01-1A
+  password: 112b3a20-90ab-411a-9b91-4a47f07f98f8
   port: 34338
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港03-1F
-  password: 112b3a20-90ab-411a-9b91-4a47f07f98f8
+  name: 28|🇭🇰 香港03-1E
+  password: cc15ac62-91c2-4343-8278-fca533fa2722
   port: 20052
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港02-1D
+  password: eb4ee5b6-7e89-479a-8eaf-a653d6ffd1a8
+  port: 20035
   server: gy.666666222.shop
   type: ss
   udp: true
