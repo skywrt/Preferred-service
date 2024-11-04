@@ -1,8 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 2,9|🇯🇵 14|日本2|@ripaojiedian
+  name: 2|Japan_Tokyo_vmess_1128
   port: 51313
   server: 45.159.50.136
   skip-cert-verify: false
@@ -12,7 +11,7 @@ proxies:
   uuid: fe7035e0-85da-4c64-9051-f5a3b380354a
 - alterId: 0
   cipher: auto
-  name: '2,5,10,11,24|🇯🇵 14|日本2|@ripaojiedian #1'
+  name: '2,5,24|🇯🇵 14|日本2|@ripaojiedian #1'
   network: tcp
   port: '51313'
   server: 45.159.50.136
@@ -146,7 +145,7 @@ proxies:
   uuid: 5e47e5fe-9b78-4938-bc57-a38c4477b1da
 - alterId: 0
   cipher: auto
-  name: '5,27|14|日本|@ripaojiedian #1'
+  name: '5,11,27|14|日本|@ripaojiedian #1'
   network: tcp
   port: '23468'
   server: 47.74.8.202
@@ -243,7 +242,8 @@ proxies:
   skip-cert-verify: true
   type: trojan
 - cipher: aes-256-cfb
-  name: 5,27|13|🇵 日本特殊|@ripaojiedian
+  client-fingerprint: chrome
+  name: 5,9,11,27|13|🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 52.198.194.170
@@ -354,7 +354,8 @@ proxies:
   type: vmess
   uuid: a32313ad-5e39-4f9a-9cad-512041790050
 - cipher: chacha20-ietf-poly1305
-  name: '5,27|13|🇯🇵 日本3|@ripaojiedian #1'
+  client-fingerprint: chrome
+  name: '5,9,11,27|13|🇯🇵 日本3|@ripaojiedian #1'
   password: 38798780-6d99-4896-8e3d-258e630c1265
   port: 40015
   server: hzhz2.sssyun.xyz
@@ -473,6 +474,17 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '9,27|13| |@ripaojiedian #2'
+  port: 23468
+  server: 47.74.8.202
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 9f563bc7-0481-41d2-f8fd-a4736ded9bc0
 - delay: 1557
   name: 10|日本 004
   network: ws
@@ -516,18 +528,6 @@ proxies:
     headers:
       Host: www.42703225.xyz
     path: /path/351212081517
-- name: 10|日本 009
-  network: ws
-  port: 443
-  server: 160.16.79.228
-  servername: ly.ylka.us.kg
-  tls: true
-  type: vless
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: ly.ylka.us.kg
-    path: /?ed=2560
 - name: 10|日本 002
   network: ws
   password: auto
@@ -700,12 +700,6 @@ proxies:
     headers:
       Host: lp.ylks.us.kg
     path: '%2F%3Fed%3D2560'
-- cipher: aes-128-gcm
-  name: 19|🇯🇵JP-149.22.87.240-1959
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.240
-  type: ss
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|日本(JP)Japan/Tokyo_38
@@ -752,4 +746,14 @@ proxies:
   skip-cert-verify: true
   sni: tokyo.nodes.lanmaoyun.icu
   type: hysteria2
+  udp: true
+- alterId: 0
+  name: 37|JP
+  password: 2aa1581d-bfc9-4d3a-84f3-742674fb5d3a
+  port: 20230
+  server: 3.112.36.219
+  skip-cert-verify: true
+  sni: 421421.xyz
+  tls: true
+  type: trojan
   udp: true

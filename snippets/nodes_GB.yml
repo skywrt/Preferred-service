@@ -27,13 +27,17 @@ proxies:
     path: /
 - alpn:
   - http/1.1
-  name: 5|英国+社会保险安全部
+  alterId: 0
+  name: 5,37|未知95 19.0MB/s
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 51.24.2.249
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5|英国
@@ -238,25 +242,49 @@ proxies:
     headers:
       Host: rac.679888.xyz
     path: /
-- cipher: aes-128-gcm
-  name: 19|🇬🇧GB-212.102.53.78-0725
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 12,13,37|未知55 2.9MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.78
+  server: 141.98.101.181
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21,23,30|二爷免费翻墙 https://1808.free.hr 节点... #414'
+  name: 13,36,37|未知36 12.7MB/s
+  network: ws
+  port: 52793
+  server: 5.39.254.196
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- cipher: aes-128-gcm
+  name: 19|🇬🇧GB-212.102.53.197-0766
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.197
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '20,21,23,30|二爷免费翻墙 https://1808.free.hr 节点... #314'
   network: ws
   port: 443
-  server: 149.7.16.188
+  server: 68.168.31.242
   servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: 149.7.16.188
+      Host: 68.168.31.242
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -288,20 +316,6 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇬🇧GB-149.7.16.174-8301 #1'
-  network: ws
-  port: 443
-  server: 149.7.16.174
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
   name: '20,21,23,30|二爷免费翻墙 https://1808.free.hr 节点... #313'
   network: ws
   port: 443
@@ -316,17 +330,17 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21,23,30|二爷免费翻墙 https://1808.free.hr 节点... #314'
+  name: '20,21,23,30|二爷免费翻墙 https://1808.free.hr 节点... #414'
   network: ws
   port: 443
-  server: 68.168.31.242
+  server: 149.7.16.188
   servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: 68.168.31.242
+      Host: 149.7.16.188
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -342,17 +356,3 @@ proxies:
     headers:
       Host: 172.99.190.209
     path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇬🇧 GB-5.39.254.196:...
-  network: ws
-  port: '52793'
-  server: 5.39.254.196
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
