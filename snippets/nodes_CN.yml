@@ -1,14 +1,12 @@
 proxies:
-- alterId: 64
-  cipher: auto
-  name: 2|China_None_vmess_1114
-  port: 48009
-  server: 183.236.51.23
-  skip-cert-verify: false
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 2,5,9,11,24,27|13| |@ripaojiedian
+  password: 895d48f1-eb49-41bc-8963-c12e407261cf
+  port: 12002
+  server: 58.254.183.32
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  type: ss
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -48,6 +46,18 @@ proxies:
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
+- alterId: 0
+  client-fingerprint: chrome
+  name: 2,5,9,24,27,37|JP
+  network: tcp
+  password: b264982e-e333-4085-ac04-406afef23455
+  port: 13012
+  server: naiu-jp.05vr9nyqg5.download
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  tls: true
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: '2,5,9,11,24,27|13| |@ripaojiedian #2'
@@ -77,16 +87,6 @@ proxies:
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '2,5,24|🇭🇰 14|香港|@ripaojiedian #1'
-  network: tcp
-  port: '48009'
-  server: 183.236.51.23
-  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -143,38 +143,6 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
-- cipher: aes-256-cfb
-  name: '5,11|1|_CN_ #1'
-  password: hGkQ6915tD
-  port: 15082
-  server: 59.56.77.178
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 5|CN.IPv4=TR420|TR|VIP.土耳其1
-  network: ws
-  port: '46020'
-  server: biedazjyd.zhangwei.li
-  tls: false
-  type: vmess
-  uuid: 93b7ddf9-4e71-4474-8992-75997e301b14
-  ws-opts:
-    headers:
-      Host: ''
-    path: /zh-cn
-- alterId: 0
-  cipher: auto
-  name: 5|CN.IPv4=AU422|AU|VIP.澳大利亚1
-  network: ws
-  port: '46022'
-  server: biedazjyd.zhangwei.li
-  tls: false
-  type: vmess
-  uuid: 93b7ddf9-4e71-4474-8992-75997e301b14
-  ws-opts:
-    headers:
-      Host: ''
-    path: /zh-cn
 - alterId: 64
   cipher: auto
   name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
@@ -200,6 +168,19 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
+  name: 5|CN.IPv4=TR420|TR|VIP.土耳其1
+  network: ws
+  port: '46020'
+  server: biedazjyd.zhangwei.li
+  tls: false
+  type: vmess
+  uuid: 93b7ddf9-4e71-4474-8992-75997e301b14
+  ws-opts:
+    headers:
+      Host: ''
+    path: /zh-cn
+- alterId: 0
+  cipher: auto
   name: 5|CN.IPv4=PL426|PL|VIP.波兰1
   network: ws
   port: '46026'
@@ -211,6 +192,25 @@ proxies:
     headers:
       Host: ''
     path: /zh-cn
+- alterId: 0
+  cipher: auto
+  name: 5|CN.IPv4=AU422|AU|VIP.澳大利亚1
+  network: ws
+  port: '46022'
+  server: biedazjyd.zhangwei.li
+  tls: false
+  type: vmess
+  uuid: 93b7ddf9-4e71-4474-8992-75997e301b14
+  ws-opts:
+    headers:
+      Host: ''
+    path: /zh-cn
+- cipher: aes-256-cfb
+  name: '5,11|1|_CN_ #1'
+  password: hGkQ6915tD
+  port: 15082
+  server: 59.56.77.178
+  type: ss
 - alterId: 0
   cipher: auto
   name: 8|🇨🇳CN-139.227.223.3-049_1@49
@@ -842,21 +842,12 @@ proxies:
   tls: true
   type: vmess
   uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- alterId: 0
-  cipher: auto
-  name: 24|🇨🇳 江苏省 移动
-  network: tcp
-  port: '15074'
-  server: 15074.kuaiyin02.top
-  tls: false
-  type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
 - alterId: 64
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
   network: tcp
-  port: '50004'
-  server: 112.132.212.19
+  port: '50002'
+  server: 112.132.215.12
   servername: ''
   tls: false
   type: vmess
@@ -873,17 +864,17 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
   network: tcp
-  port: '50002'
-  server: 112.132.215.12
+  port: '50004'
+  server: 112.132.212.19
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 40|CN_speednode_0003
+  name: 40|CN_speednode_0001
   port: 46602
   server: 183.236.51.23
   tls: false
