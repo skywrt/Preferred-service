@@ -1,8 +1,7 @@
 proxies:
 - alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  name: 2,9|🇭🇰 14|香港|@ripaojiedian
+  name: 2|China_None_vmess_1114
   port: 48009
   server: 183.236.51.23
   skip-cert-verify: false
@@ -24,8 +23,8 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 2,5,9,11,24,27,37|🇰HK
-  password: 1a9abdcb-57de-4027-8d00-d00efbfc4888
+  name: '2,5,9,11,24,27,37|HK #1'
+  password: a69ca599-2007-42b1-b69d-c0fc7b4e9ce7
   port: 11001
   server: 183.240.255.75
   skip-cert-verify: true
@@ -49,16 +48,13 @@ proxies:
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 2,5,9,11,24,27,37|KR国
+  name: '2,5,9,11,24,27|13| |@ripaojiedian #2'
   password: 38798780-6d99-4896-8e3d-258e630c1265
   port: 40016
   server: hzhz2.sssyun.xyz
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
 - alterId: 64
   cipher: auto
@@ -86,7 +82,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '2,5,11,24|🇭🇰 14|香港|@ripaojiedian #1'
+  name: '2,5,24|🇭🇰 14|香港|@ripaojiedian #1'
   network: tcp
   port: '48009'
   server: 183.236.51.23
@@ -116,7 +112,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '2,5,11,24,27|14|美国4|@ripaojiedian #1'
+  name: '2,5,11,13,24,27|14|美国4|@ripaojiedian #1'
   network: tcp
   port: '52112'
   server: 183.236.51.23
@@ -147,20 +143,37 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
+- cipher: aes-256-cfb
+  name: '5,11|1|_CN_ #1'
+  password: hGkQ6915tD
+  port: 15082
+  server: 59.56.77.178
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '5,11,23,24,30|二爷免费翻墙 https://1808.free.hr 节点... #306'
+  name: 5|CN.IPv4=TR420|TR|VIP.土耳其1
   network: ws
-  port: 20401
-  server: data-us-v1.shwjfkw.cn
-  servername: ''
+  port: '46020'
+  server: biedazjyd.zhangwei.li
   tls: false
   type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  uuid: 93b7ddf9-4e71-4474-8992-75997e301b14
   ws-opts:
     headers:
-      Host: data-us-v1.shwjfkw.cn
-    path: /debian
+      Host: ''
+    path: /zh-cn
+- name: '5,38|🇨🇳_CN_中国_38 #1'
+  network: ws
+  port: 2053
+  server: 103.184.44.62
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
   name: 5|CN.IPv4=AU422|AU|VIP.澳大利亚1
@@ -183,31 +196,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '5,38|🇨🇳_CN_中国_38 #1'
-  network: ws
-  port: 2053
-  server: 103.184.44.62
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
-  name: 5|CN.IPv4=TR420|TR|VIP.土耳其1
+  name: '5,11,23,24,30|二爷免费翻墙 https://1808.free.hr 节点... #306'
   network: ws
-  port: '46020'
-  server: biedazjyd.zhangwei.li
+  port: 20401
+  server: data-us-v1.shwjfkw.cn
+  servername: ''
   tls: false
   type: vmess
-  uuid: 93b7ddf9-4e71-4474-8992-75997e301b14
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
   ws-opts:
     headers:
-      Host: ''
-    path: /zh-cn
+      Host: data-us-v1.shwjfkw.cn
+    path: /debian
 - alterId: 0
   cipher: auto
   name: 5|CN.IPv4=PL426|PL|VIP.波兰1
@@ -221,12 +223,6 @@ proxies:
     headers:
       Host: ''
     path: /zh-cn
-- cipher: aes-256-cfb
-  name: '5,11|1|_CN_ #1'
-  password: hGkQ6915tD
-  port: 15082
-  server: 59.56.77.178
-  type: ss
 - alterId: 0
   cipher: auto
   name: 8|🇨🇳CN-139.227.223.3-049_1@49
@@ -873,15 +869,33 @@ proxies:
   tls: true
   type: vmess
   uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: 24|🇨🇳 江苏省 移动
+  network: tcp
+  port: '15074'
+  server: 15074.kuaiyin02.top
+  tls: false
+  type: vmess
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
 - alterId: 64
   cipher: auto
-  name: 36,37|未知117
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
   network: tcp
-  port: 59003
+  port: '50004'
+  server: 112.132.212.19
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  network: tcp
+  port: '59003'
   server: 183.236.51.36
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
@@ -890,16 +904,6 @@ proxies:
   network: tcp
   port: '50002'
   server: 112.132.215.12
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
-  network: tcp
-  port: '50004'
-  server: 112.132.212.19
   servername: ''
   tls: false
   type: vmess
