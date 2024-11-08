@@ -1,5 +1,5 @@
 proxies:
-- name: '5,13|🇳🇱_NL_荷兰->🇩🇪_DE_德国_2 #1'
+- name: 5|🇳🇱_NL_荷兰->🇩🇪_DE_德国_2
   network: ws
   port: 11030
   server: 46.38.142.55
@@ -8,7 +8,7 @@ proxies:
   uuid: de9de621-6aa6-48e8-b0fc-28c9513b272c
   ws-opts:
     path: '%2F'
-- name: '5,13|🇷🇺_RU_俄罗斯->🇩🇪_DE_德国 #1'
+- name: 5|🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
   network: tcp
   port: 443
   server: 147.45.147.73
@@ -136,6 +136,12 @@ proxies:
   type: vmess
   uuid: d6b6d982-d52f-465a-b988-85670b23f64a
   ws-opts: {}
+- cipher: aes-256-cfb
+  name: '5,11|1|_FR_->_RU_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 163.172.64.22
+  type: ss
 - alterId: 0
   cipher: auto
   name: '5,11|3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3 #1'
@@ -148,7 +154,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '5,10,12,13|🇺🇸_US_美国->🇨🇦_CA_加拿大_2 #1'
+  name: '5,10,12|🇺🇸_US_美国->🇨🇦_CA_加拿大 #1'
   network: ws
   port: 2095
   server: 172.64.198.249
@@ -183,7 +189,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '5,10,12,13,24|🇺🇸 美国 CloudFlare节点 #14'
+  name: '5,10,12,24|🇺🇸 美国 CloudFlare节点 #14'
   network: ws
   port: '2095'
   server: 172.64.175.213
@@ -267,7 +273,7 @@ proxies:
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
 - cipher: chacha20-ietf-poly1305
-  name: 5,13,16|🇪_DE_德国_1
+  name: 5,16|🇪_DE_德国_1
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.181
@@ -285,7 +291,7 @@ proxies:
     headers:
       Host: in3.wish.ml
     path: /
-- name: '5,12,13|🇹🇷_TR_土耳其->🇺🇸_US_美国 #2'
+- name: '5,12|🇹🇷_TR_土耳其->🇺🇸_US_美国 #1'
   network: ws
   port: 80
   server: 80.93.223.61
@@ -297,7 +303,7 @@ proxies:
     headers:
       Host: ipcfusa.dev
     path: '%2F%40iP_CF----%40iP_CF----%40iP_CF----%40iP_CF----%40iP_CF----%40iP_CF----%40iP_CF----%40iP_CF----%40iP_CF----%40iP_CF----%40iP_CF----%40iP_CF%2Fwild%2F%3Fed%3D2048'
-- name: '5,12,13|🇳🇱_NL_荷兰->🇩🇪_DE_德国_1 #1'
+- name: 5,12|🇳🇱_NL_荷兰->🇩🇪_DE_德国
   network: ws
   port: 18730
   server: 86.106.20.145
@@ -1129,6 +1135,91 @@ proxies:
     headers:
       Host: www.speedtest.net.B.lightning-6.LiVE.
     path: '%2F-LiV2ry%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6%3Fed%3D8880'
+- name: 13|🇺🇸_US_美国->🇧🇪_BE_比利时_1
+  network: ws
+  port: 80
+  server: 141.101.121.110
+  servername: ov-germany1.09vpn.com
+  tls: false
+  type: vless
+  uuid: f2a72ad0-d23f-4eed-96cb-7d970b1e784d
+  ws-opts:
+    path: /vless/?Vless_txt
+- name: 13|🇮🇷_IR_伊朗->🇩🇪_DE_德国
+  network: ws
+  port: 8080
+  server: 217.60.192.135
+  tls: false
+  type: vless
+  uuid: 4a7728fb-6e86-4a1d-8380-6e64c9bff6f0
+  ws-opts:
+    path: /
+- name: 13|🇺🇸_US_美国->🇧🇪_BE_比利时_2
+  network: ws
+  port: 80
+  server: 172.64.35.129
+  servername: cc.ailicf.us.kg
+  tls: false
+  type: vless
+  uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
+  ws-opts:
+    path: /b5cdabf0-e04
+- name: 13|🇧🇪_BE_比利时->🇺🇸_US_美国
+  network: ws
+  port: 80
+  server: 57.129.41.217
+  tls: false
+  type: vless
+  uuid: 4004b4f2-d973-432f-8376-043a52cec187
+  ws-opts:
+    path: /vless/
+- name: 13|🇮🇷_IR_伊朗->🇫🇷_FR_法国_1
+  network: ws
+  port: 52722
+  server: 81.12.27.93
+  tls: false
+  type: vless
+  uuid: 2c3e2c41-4395-4df3-e788-cb9cc82beceb
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 13|🇮🇷_IR_伊朗->🇫🇷_FR_法国_2
+  network: ws
+  port: 2083
+  server: 193.151.144.26
+  tls: false
+  type: vmess
+  uuid: 7b33bc8f-7014-4814-afb1-1c4d7f25314c
+  ws-opts:
+    headers:
+      Host: tv.filmnet.ir
+    path: /
+- name: 13|🇸🇪_SE_瑞典->🇷🇺_RU_俄罗斯
+  network: ws
+  port: 80
+  server: 185.146.173.92
+  servername: Uk1.vless.site.
+  tls: false
+  type: vless
+  uuid: a67cbb64-1e7a-5272-b5a6-cd7bb0de6adb
+  ws-opts:
+    path: /vless
+- name: 13|🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 13.37.24.49
+  sni: trojan.burgerip.co.ukhttp/1.1
+  type: trojan
+- name: 13|🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2
+  network: ws
+  port: 80
+  server: speedtest.net
+  servername: wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v20.drlimit.net
+  tls: false
+  type: vless
+  uuid: 841b83da-3916-4c83-808f-a0433118a1c7
 - alpn:
   - http/1.1
   name: 16|_IE_->_US_
@@ -1144,14 +1235,11 @@ proxies:
   port: 443
   server: 54.191.9.106
   type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 16,37|未知81 48.5KB/s
+- cipher: chacha20-ietf-poly1305
+  name: 16|🇪_DE_德国->🇳_CN_国
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.166
-  skip-cert-verify: true
-  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -1213,7 +1301,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 23|🇨🇳_CN_中国->🇺🇸_US_美国_1
+  name: '23|🇨🇳_CN_中国->🇺🇸_US_美国_1 #1'
   network: ws
   port: 16928
   server: vip3.niuniupremium.xyz

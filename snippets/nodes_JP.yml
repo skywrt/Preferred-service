@@ -265,8 +265,8 @@ proxies:
       Host: ''
     path: /path/073308302711
 - cipher: chacha20-ietf-poly1305
-  name: 5,28|🇯🇵 日本01-1M
-  password: f90b8a52-0bef-468d-8b65-b89438e758f0
+  name: 5,28|🇯🇵 日本01-1J
+  password: a6f63c64-8d1d-4fcc-a61f-1d57c5c76dc2
   port: 20002
   server: gy.666666222.shop
   type: ss
@@ -347,8 +347,8 @@ proxies:
   type: vmess
   uuid: a32313ad-5e39-4f9a-9cad-512041790050
 - cipher: chacha20-ietf-poly1305
-  name: 5,28|🇯🇵 日本03-1M
-  password: f90b8a52-0bef-468d-8b65-b89438e758f0
+  name: 5,28|🇯🇵 日本03-1F
+  password: da12732b-360d-4ccd-915c-3e64f8f44b1b
   port: 20006
   server: gy.666666222.shop
   type: ss
@@ -483,15 +483,15 @@ proxies:
       host: 140.238.48.194
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本04-1B
-  password: 150902db-e0e9-454c-81cd-5647d8cf8b4d
+  name: 28|🇯🇵 日本04-1I
+  password: 9d694567-2cbc-4d44-9f6c-7893c9259c33
   port: 20008
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本02-1G
-  password: 9d694567-2cbc-4d44-9f6c-7893c9259c33
+  name: 28|🇯🇵 日本02-1E
+  password: cde1a314-0db2-42a0-909f-f3288bc1a0d2
   port: 20004
   server: gy.666666222.shop
   type: ss
@@ -499,6 +499,45 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-132.145.123.2...
+  network: ws
+  port: '58373'
+  server: 132.145.123.206
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0ec2298b-b8b3-437a-8053-05bff19be248
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /wada12222
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知41 962.8KB/s
+  network: tcp
+  port: 23468
+  server: 47.74.8.202
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9f563bc7-0481-41d2-f8fd-a4736ded9bc0
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇯🇵 JP-103.106.228.2...
+  network: ws
+  port: '43215'
+  server: 103.106.228.234
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 70073dee-ea32-4e51-9a4e-2742a25f6de7
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /wada12222
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-WS-NA 🇯🇵 JP-132.145.123.2... #1'
   network: ws
   port: '58372'
   server: 132.145.123.206
@@ -519,51 +558,3 @@ proxies:
   tls: false
   type: vmess
   uuid: c9f5b2aa-d50c-48e0-fd7d-d4cdc325d905
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-47.74.8.202:...
-  network: tcp
-  port: '23468'
-  server: 47.74.8.202
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f563bc7-0481-41d2-f8fd-a4736ded9bc0
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-WS-NA 🇯🇵 JP-132.145.123.2... #1'
-  network: ws
-  port: '58373'
-  server: 132.145.123.206
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0ec2298b-b8b3-437a-8053-05bff19be248
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /wada12222
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇯🇵 JP-103.106.228.2...
-  network: ws
-  port: '43215'
-  server: 103.106.228.234
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 70073dee-ea32-4e51-9a4e-2742a25f6de7
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /wada12222
-- alterId: 0
-  name: 37|JP
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20987
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  tls: true
-  type: trojan
-  udp: true
