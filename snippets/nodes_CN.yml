@@ -38,8 +38,7 @@ proxies:
   server: 61.172.235.22
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: '2,5,9,24|🇯🇵 13,14|日本2|@ripaojiedian #1'
+- name: 2,16,24|🇯🇵 13,14|日本2|@ripaojiedian
   network: tcp
   password: b264982e-e333-4085-ac04-406afef23455
   port: 13018
@@ -47,8 +46,7 @@ proxies:
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
-- client-fingerprint: chrome
-  name: '2,5,9,24|🇯🇵 13,14|日本5|@ripaojiedian #1'
+- name: 2,24|🇯🇵 13,14|日本5|@ripaojiedian
   network: tcp
   password: b264982e-e333-4085-ac04-406afef23455
   port: 13012
@@ -56,6 +54,16 @@ proxies:
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 2,5,24,37|KR
+  password: 38798780-6d99-4896-8e3d-258e630c1265
+  port: 40016
+  server: hzhz2.sssyun.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -71,11 +79,11 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   name: 2,9,11,27|13|🇸 美国4|@ripaojiedian
-  password: b264982e-e333-4085-ac04-406afef23455
+  password: '!!str 3669023833404481536'
   port: 52112
   server: 183.236.51.23
   skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
+  sni: amazing-salmon.iguana938.mom
   tfo: false
   tls: false
   type: vmess
@@ -135,13 +143,13 @@ proxies:
       Host: www.zitian.cn
 - alterId: 0
   cipher: auto
-  name: '5|CN.IPv4=AU422|AU|VIP.澳大利亚1 #1'
+  name: 5|CN.IPv4=AU422|AU|VIP.澳大利亚1
   network: ws
   port: '46022'
   server: biedazjyd.zhangwei.li
   tls: false
   type: vmess
-  uuid: 69e0b2b6-769d-46c6-a0f9-7844480bf17f
+  uuid: 93b7ddf9-4e71-4474-8992-75997e301b14
   ws-opts:
     headers:
       Host: ''
@@ -162,26 +170,13 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: '5|CN.IPv4=PL426|PL|VIP.波兰1 #1'
-  network: ws
-  port: '46026'
-  server: biedazjyd.zhangwei.li
-  tls: false
-  type: vmess
-  uuid: 93b7ddf9-4e71-4474-8992-75997e301b14
-  ws-opts:
-    headers:
-      Host: ''
-    path: /zh-cn
-- alterId: 0
-  cipher: auto
-  name: '5|CN.IPv4=TR420|TR|VIP.土耳其1 #1'
+  name: 5|CN.IPv4=TR420|TR|VIP.土耳其1
   network: ws
   port: '46020'
   server: biedazjyd.zhangwei.li
   tls: false
   type: vmess
-  uuid: 69e0b2b6-769d-46c6-a0f9-7844480bf17f
+  uuid: 93b7ddf9-4e71-4474-8992-75997e301b14
   ws-opts:
     headers:
       Host: ''
@@ -192,6 +187,19 @@ proxies:
   port: 15082
   server: 59.56.77.178
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 5|CN.IPv4=PL426|PL|VIP.波兰1
+  network: ws
+  port: '46026'
+  server: biedazjyd.zhangwei.li
+  tls: false
+  type: vmess
+  uuid: 93b7ddf9-4e71-4474-8992-75997e301b14
+  ws-opts:
+    headers:
+      Host: ''
+    path: /zh-cn
 - alterId: 64
   cipher: auto
   name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
@@ -834,20 +842,21 @@ proxies:
   uuid: a32313ad-5e39-4f9a-9cad-512041790050
 - alterId: 64
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
+  name: 36,37|未知99
   network: tcp
-  port: '50004'
-  server: 112.132.212.19
+  port: 59003
+  server: 183.236.51.36
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
   network: tcp
-  port: '59003'
-  server: 183.236.51.36
+  port: '50004'
+  server: 112.132.212.19
   servername: ''
   tls: false
   type: vmess
