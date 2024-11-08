@@ -1,7 +1,8 @@
 proxies:
 - alpn:
   - http%2F1.1
-  name: 2,12,27,40|DE_speednode_0002
+  client-fingerprint: chrome
+  name: 2,9,12,24,27,40|DE_speednode_0002
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -177,16 +178,14 @@ proxies:
     path: /ray2
 - alterId: 0
   cipher: auto
-  name: 5,11,24|0|--35
+  name: 5|0|--25
   network: ws
-  port: '443'
+  port: 443
   server: 57.129.24.141
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
-    headers:
-      Host: ''
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -520,22 +519,10 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- client-fingerprint: chrome
+- delay: 1276
   grpc-opts:
     grpc-service-name: vsAzoREN3Iyuo2VCA3xzaKR
-  name: '9,12|🇩🇪_DE_德国 #1'
-  network: grpc
-  password: 8bcd0f06-c7f4-4548-b059-5410926ffac7
-  port: 443
-  server: 31.172.87.116
-  skip-cert-verify: true
-  sni: uni.fi
-  type: trojan
-- client-fingerprint: chrome
-  delay: 1276
-  grpc-opts:
-    grpc-service-name: vsAzoREN3Iyuo2VCA3xzaKR
-  name: 9,10|德国 020
+  name: 10|德国 020
   network: grpc
   password: 8bcd0f06-c7f4-4548-b059-5410926ffac7
   port: 443
@@ -577,9 +564,9 @@ proxies:
     path: /dangerzone
 - alterId: 0
   cipher: auto
-  name: 10,24|🇷🇺 俄罗斯
+  name: 10|德国 028
   network: ws
-  port: '33026'
+  port: 33026
   server: socks5tobefree.ydns.eu
   skip-cert-verify: true
   tls: true
@@ -590,9 +577,39 @@ proxies:
     headers:
       Host: socks5tobefree.ydns.eu
     path: /dangerzone
+- grpc-opts:
+    grpc-service-name: vsAzoREN3Iyuo2VCA3xzaKR
+  name: '12|🇩🇪_DE_德国 #1'
+  network: grpc
+  password: 8bcd0f06-c7f4-4548-b059-5410926ffac7
+  port: 443
+  server: 31.172.87.116
+  skip-cert-verify: true
+  sni: uni.fi
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 16|🇪_DE_国
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.164
+  type: ss
 - alterId: 1
   cipher: auto
-  name: '20,21|🇩🇪DE-23.158.56.145-8240 #1'
+  name: '20,21|🇩🇪DE-23.158.56.145-1819 #1'
+  network: ws
+  port: 443
+  server: 23.158.56.145
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 23.158.56.145
+    path: /linkvws
+- alterId: 1
+  cipher: auto
+  name: '20,21|🇩🇪DE-23.158.56.145-8325 #1'
   network: ws
   port: 443
   server: 23.158.56.145
@@ -604,38 +621,20 @@ proxies:
     headers:
       Host: 23.158.56.145
     path: linkvws
-- alterId: 1
+- alterId: 0
   cipher: auto
-  name: 20,21,24|🇺🇸 北美地区 V2CROSS.COM
+  name: '20,21|🇩🇪DE-57.129.24.125-8295 #1'
   network: ws
-  port: '443'
-  server: 23.158.56.145
+  port: 443
+  server: 57.129.24.125
   servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: 23.158.56.145
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
-- alterId: 0
-  name: 24,37|未知105
-  network: grpc
-  password: 8bcd0f06-c7f4-4548-b059-5410926ffac7
-  port: 443
-  server: 31.172.87.116
-  skip-cert-verify: true
-  sni: uni.fi
-  tls: true
-  type: trojan
-  udp: true
-- name: '24|15|DE_speednode_0003 #1'
-  password: 8bcd0f06-c7f4-4548-b059-5410926ffac7
-  port: 443
-  server: 31.172.87.116
-  skip-cert-verify: true
-  sni: testak.dd.msk.suh2
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-209.38.188...

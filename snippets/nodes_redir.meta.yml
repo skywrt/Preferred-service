@@ -183,9 +183,9 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '5,10,12,13|🇺🇸_US_美国->🇨🇦_CA_加拿大_1 #1'
+  name: '5,10,12,13,24|🇺🇸 美国 CloudFlare节点 #14'
   network: ws
-  port: 2095
+  port: '2095'
   server: 172.64.175.213
   servername: ip21.6016725.xyz
   tls: false
@@ -267,7 +267,7 @@ proxies:
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
 - cipher: chacha20-ietf-poly1305
-  name: 5,13,16,19|🇱🇹LT-45.87.175.181-0915
+  name: 5,13,16|🇪_DE_德国_1
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.181
@@ -1099,11 +1099,12 @@ proxies:
     path: /
 - alpn:
   - http/1.1
-  name: '12,20,21|🇩🇪DE-63.176.205.128-0977 #1'
+  name: 12,20,21,24|🇺🇸 美国 Sprint网络
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 63.176.205.128
+  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
 - name: '12|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
@@ -1142,6 +1143,15 @@ proxies:
   password: amazonskr05
   port: 443
   server: 54.191.9.106
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 16,37|未知81 48.5KB/s
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.166
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
