@@ -152,6 +152,12 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
+- cipher: aes-256-cfb
+  name: '5,11|1|_CN_ #1'
+  password: hGkQ6915tD
+  port: 15082
+  server: 59.56.77.178
+  type: ss
 - alterId: 0
   cipher: auto
   name: '5,24|中国 #9'
@@ -176,51 +182,6 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: '5,11,23,24,30|二爷免费翻墙 https://1808.free.hr 节点... #306'
-  network: ws
-  port: 20401
-  server: data-us-v1.shwjfkw.cn
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-us-v1.shwjfkw.cn
-    path: /debian
-- name: '5,38|🇨🇳_CN_中国_38 #1'
-  network: ws
-  port: 2053
-  server: 103.184.44.62
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
-- alterId: 0
-  cipher: auto
-  name: 5|CN.IPv4=PL426|PL|VIP.波兰1
-  network: ws
-  port: '46026'
-  server: biedazjyd.zhangwei.li
-  tls: false
-  type: vmess
-  uuid: 93b7ddf9-4e71-4474-8992-75997e301b14
-  ws-opts:
-    headers:
-      Host: ''
-    path: /zh-cn
-- cipher: aes-256-cfb
-  name: '5,11|1|_CN_ #1'
-  password: hGkQ6915tD
-  port: 15082
-  server: 59.56.77.178
-  type: ss
-- alterId: 0
-  cipher: auto
   name: 5|CN.IPv4=AU422|AU|VIP.澳大利亚1
   network: ws
   port: '46022'
@@ -241,6 +202,45 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '5,11,23,24,30|二爷免费翻墙 https://1808.free.hr 节点... #306'
+  network: ws
+  port: 20401
+  server: data-us-v1.shwjfkw.cn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-us-v1.shwjfkw.cn
+    path: /debian
+- alterId: 0
+  cipher: auto
+  name: 5|CN.IPv4=PL426|PL|VIP.波兰1
+  network: ws
+  port: '46026'
+  server: biedazjyd.zhangwei.li
+  tls: false
+  type: vmess
+  uuid: 93b7ddf9-4e71-4474-8992-75997e301b14
+  ws-opts:
+    headers:
+      Host: ''
+    path: /zh-cn
+- name: '5,38|🇨🇳_CN_中国_38 #1'
+  network: ws
+  port: 2053
+  server: 103.184.44.62
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
   name: 8|🇨🇳CN-139.227.223.3-049_1@49
@@ -893,16 +893,6 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
-  network: tcp
-  port: '50002'
-  server: 112.132.215.12
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
   name: 36,37|未知99
   network: tcp
   port: 59003
@@ -914,9 +904,21 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 40|CN_speednode_0001
-  port: 46602
-  server: 183.236.51.23
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
+  network: tcp
+  port: '50002'
+  server: 112.132.215.12
+  servername: ''
   tls: false
   type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 40|CN_speednode_0001
+  port: 35601
+  server: 120.232.153.41
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
