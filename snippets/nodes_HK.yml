@@ -126,7 +126,7 @@ proxies:
     path: /stream
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '5,9,11,24,27|13|🇭🇰 香港3|@ripaojiedian #1'
+  name: '5,9,24,27|13|🇭🇰 香港3|@ripaojiedian #1'
   password: 84856344-8644-46e0-98cb-5d54509ee059
   port: 14427
   server: atom.986886.xyz
@@ -426,6 +426,32 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: '11|15|🇭🇰 香港3|@ripaojiedian #1'
+  password: U4W5JSFDBCGUTTWN
+  port: 15002
+  server: 120.241.45.50
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 11|15|🇭🇰 香港4|@ripaojiedian
+  password: 4322aee9-98c9-4cf6-8cc5-4b3a9bc3a8ec
+  port: 11001
+  server: 183.232.229.165
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 11|16|香港6|@ripaojiedian
+  network: tcp
+  port: '34169'
+  server: 38.147.189.161
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b7edcefb-9720-4829-8257-842b9a29f8fc
 - alterId: 0
   cipher: auto
   name: 18|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_1
@@ -976,12 +1002,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇭🇰HK-141.98.234.93-0335
-  password: WfmxKX2FBJRU0Ie9VLIYDL
-  port: 20012
-  server: 141.98.234.93
-  type: ss
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-210.0.158.21...
@@ -996,6 +1016,16 @@ proxies:
     headers:
       Host: 19.lwdh.us
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-163.53.18.15...
+  network: tcp
+  port: '19901'
+  server: 163.53.18.154
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fa1b482c-ff16-4ba0-ad5f-a8e8d7bae396
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-27.124.10.14...
@@ -1011,16 +1041,6 @@ proxies:
       Host: www.60443882.xyz
     path: /path/011410073331
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-163.53.18.15...
-  network: tcp
-  port: '19901'
-  server: 163.53.18.154
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: fa1b482c-ff16-4ba0-ad5f-a8e8d7bae396
-- alterId: 0
   cipher: aes-128-gcm
   name: 37|HK
   password: 69037302-0050-43ae-abf3-f8e62740aff1
@@ -1029,28 +1049,3 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 37|HK2
-  network: ws
-  port: 12909
-  server: 210.0.158.219
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    headers:
-      host: 19.lwdh.us
-    path: /
-- alterId: 0
-  name: 37|HK3
-  network: tcp
-  password: de45945e-65ea-4d13-b29d-1835a4281023
-  port: 35002
-  server: 103.100.177.32
-  skip-cert-verify: true
-  sni: updates.sub-nthu.com
-  tls: true
-  type: trojan
-  udp: true
