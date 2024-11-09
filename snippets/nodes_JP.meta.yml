@@ -1,4 +1,32 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: '2,27|13| |@ripaojiedian #1'
+  port: 15836
+  server: 45.159.50.76
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: e1218e34-80a3-4a65-8524-88ca51e79191
+- alterId: 0
+  cipher: auto
+  name: '2,10,11,24,27|14|日本|@ripaojiedian #1'
+  network: tcp
+  port: '15836'
+  server: 45.159.50.76
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e1218e34-80a3-4a65-8524-88ca51e79191
+- name: 2,24,27,40|JP_speednode_0004
+  password: 8e4248f7-aae5-3a38-b99d-88bf1cd37e0d
+  port: 443
+  server: 35.75.8.137
+  skip-cert-verify: true
+  sni: fastly.cdn.steampipe.steamcontent.com
+  type: trojan
+  udp: true
 - name: '5|>🇯🇵 JP|Ms|1013|TG@FProxies| #19'
   password: 7dc5c202-622a-354a-8a93-9e2ca8cadd51
   port: 443
@@ -14,14 +42,6 @@ proxies:
   tls: true
   type: vmess
   uuid: 84031392-08f6-3d6f-b544-13f4c60ee48e
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 5,9,24,27|13|🇵 日本3|@ripaojiedian
-  password: 84856344-8644-46e0-98cb-5d54509ee059
-  port: 25617
-  server: atom.986886.xyz
-  tfo: false
-  type: ss
 - name: 5|日本|05|直连快
   network: tcp
   password: a48d9102-3eb4-4576-8de7-482e58bc1a39
@@ -30,12 +50,10 @@ proxies:
   skip-cert-verify: false
   sni: 2jpmax05.170809.xyz
   type: trojan
-- client-fingerprint: chrome
-  name: 5,9,24,27|13|🇯🇵 日本2|@ripaojiedian
+- name: 5|日本+东京Amazon数据中心
   password: '!!str 3669023833404481536'
   port: 443
   server: fleet-gopher.iguana938.mom
-  skip-cert-verify: false
   sni: fleet-gopher.iguana938.mom
   type: trojan
 - name: 5|>🇯🇵 JP|Ls|0914|TG@FProxies|
@@ -86,28 +104,12 @@ proxies:
   skip-cert-verify: true
   sni: z298.hongkongnode.top
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '5,9,11,24,27|13| |@ripaojiedian #1'
-  password: a58a5239-3b34-4c35-8724-953ef363015c
-  port: 11001
-  server: 61.172.235.22
-  tfo: false
-  type: ss
 - name: '5|>🇯🇵 JP|Ls|1013|TG@FProxies| #26'
   password: 5929884e-0c04-36fd-b06a-7539f80dae91
   port: 443
   server: 54.238.135.78
   skip-cert-verify: true
   type: trojan
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 5,9,24,27|13|🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 13.125.158.71
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: '5|>🇯🇵 JP|Ls|0914|TG@FProxies| #2'
@@ -262,8 +264,8 @@ proxies:
       Host: ''
     path: /path/073308302711
 - cipher: chacha20-ietf-poly1305
-  name: 5,28|🇯🇵 日本01-1J
-  password: 1df6f8fe-5160-4549-94dc-a36aeedafdc6
+  name: 5,28|🇯🇵 日本01-1B
+  password: 03efcd5d-27bf-431f-8eda-95abaf897517
   port: 20002
   server: gy.666666222.shop
   type: ss
@@ -289,12 +291,11 @@ proxies:
     headers:
       Host: tls.94.node-for-bigairport.win
     path: /
-- name: 5,24,27|14|日本4|@ripaojiedian
+- name: 5|日本4|@ripaojiedian
   network: tcp
   password: '!!str 3669023833404481536'
   port: 443
   server: amazing-salmon.iguana938.mom
-  skip-cert-verify: false
   type: trojan
 - name: '5|>🇯🇵 JP|Ls|0914|TG@FProxies| #5'
   password: 003b2307-ec64-3d90-8309-ac6b8122c797
@@ -350,16 +351,15 @@ proxies:
   tls: true
   type: vmess
   uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- name: 5,24,27|14|日本2|@ripaojiedian
+- name: 5|日本2|@ripaojiedian
   network: tcp
   password: '!!str 3669023833404481536'
   port: 443
   server: fleet-gopher.iguana938.mom
-  skip-cert-verify: false
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,28|🇯🇵 日本03-1D
-  password: f90b8a52-0bef-468d-8b65-b89438e758f0
+  name: 5,28|🇯🇵 日本03-1A
+  password: 8854d5cb-38e0-43fd-ad57-2c0d16298083
   port: 20006
   server: gy.666666222.shop
   type: ss
@@ -478,23 +478,6 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
-- client-fingerprint: chrome
-  name: 9,24,27|13|🇯🇵 日本4|@ripaojiedian
-  password: '!!str 3669023833404481536'
-  port: 443
-  server: amazing-salmon.iguana938.mom
-  skip-cert-verify: false
-  sni: amazing-salmon.iguana938.mom
-  type: trojan
-- client-fingerprint: chrome
-  name: 9,24,27,40|JP_speednode_0004
-  password: 8e4248f7-aae5-3a38-b99d-88bf1cd37e0d
-  port: 443
-  server: 35.75.8.137
-  skip-cert-verify: true
-  sni: fastly.cdn.steampipe.steamcontent.com
-  type: trojan
-  udp: true
 - delay: 1557
   name: 10|日本 004
   network: ws
@@ -508,45 +491,15 @@ proxies:
     headers:
       Host: sB-1U6.PAGes.DeV
     path: /6fzdo6vhq9d4ddj7/mtu4ljewms4ymdmumti3?ed=2560
-- delay: 1522
-  name: 10|日本 006
-  network: ws
-  port: 2087
-  server: 154.92.9.1
-  servername: Sb-1u6.paGEs.dEv
-  tls: true
-  type: vless
-  uuid: fca01448-d84a-436e-9aec-3be1ebdfb350
-  ws-opts:
-    headers:
-      Host: Sb-1u6.paGEs.dEv
-    path: /pc0cypuups4meoks/mtu4ljewms4ymdmumti3?ed=2560
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 11|15|🇯🇵 日本2|@ripaojiedian
-  password: 7DJY7GZN9AQ2AURN
-  port: 18001
-  server: 120.241.45.50
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '11|15|🇯🇵 日本特殊|@ripaojiedian #1'
-  password: amazonskr05
-  port: 443
-  server: 3.35.54.153
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 11|16|日本|@ripaojiedian
+- name: 10|日本 002
   network: tcp
-  port: '15836'
-  server: 45.159.50.76
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e1218e34-80a3-4a65-8524-88ca51e79191
+  password: cf13832b-4ca0-4fee-8e85-2b2411104e75
+  port: 20230
+  server: jp008.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
 - name: 17|荷兰(yudou66.com 玉豆免费节点)
   network: ws
   port: 443
@@ -622,22 +575,21 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- name: 24|🇯🇵 日本 V2CROSS.COM
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20987
-  server: 146.56.151.232
-  skip-cert-verify: false
-  sni: sale.alibaba.com
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本02-1A
-  password: 5b0a7562-32ff-42f2-9cbc-f4ccfcc7ee01
-  port: 20004
-  server: gy.666666222.shop
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 24|日期：11-09
+  network: ws
+  port: '2082'
+  server: 104.26.5.103
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip26.6929198.xyz
+    path: github.com/Alvin9999
 - auth: 1aafaa50-c064-4c6f-aa80-892741373404
-  name: 28|🇯🇵 日本-1
+  name: 28|🇯🇵 日本-1-1A
   password: 1aafaa50-c064-4c6f-aa80-892741373404
   port: 30001
   server: oracle-amd-tokyo1.lanmaoyun.icu
@@ -646,14 +598,21 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本04-1F
-  password: 7aad1e6b-a61f-4abb-850a-420ed1f107b6
+  name: 28|🇯🇵 日本04-1J
+  password: 6fbb3664-a66f-4f63-b978-0cd858788e18
   port: 20008
   server: gy.666666222.shop
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本02-1B
+  password: 03efcd5d-27bf-431f-8eda-95abaf897517
+  port: 20004
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - auth: 1aafaa50-c064-4c6f-aa80-892741373404
-  name: 28|🇯🇵 日本-2
+  name: 28|🇯🇵 日本-2-1A
   password: 1aafaa50-c064-4c6f-aa80-892741373404
   port: 30001
   server: oracle-amd-osaka1.lanmaoyun.icu
@@ -661,15 +620,6 @@ proxies:
   sni: osaka.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-107.148.1.76...
-  network: tcp
-  port: '20219'
-  server: 107.148.1.76
-  tls: false
-  type: vmess
-  uuid: c9f5b2aa-d50c-48e0-fd7d-d4cdc325d905
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-132.145.123.2...
@@ -680,6 +630,30 @@ proxies:
   tls: false
   type: vmess
   uuid: 0ec2298b-b8b3-437a-8053-05bff19be248
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /wada12222
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-47.74.8.202:...
+  network: tcp
+  port: '23468'
+  server: 47.74.8.202
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f563bc7-0481-41d2-f8fd-a4736ded9bc0
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇯🇵 JP-103.106.228.2...
+  network: ws
+  port: '43215'
+  server: 103.106.228.234
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 70073dee-ea32-4e51-9a4e-2742a25f6de7
   ws-opts:
     headers:
       Host: tms.dingtalk.com
@@ -698,30 +672,6 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /wada12222
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇯🇵 JP-103.106.228.2...
-  network: ws
-  port: '43215'
-  server: 103.106.228.234
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 70073dee-ea32-4e51-9a4e-2742a25f6de7
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /wada12222
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-47.74.8.202:...
-  network: tcp
-  port: '23468'
-  server: 47.74.8.202
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f563bc7-0481-41d2-f8fd-a4736ded9bc0
 - alterId: 0
   name: 37|JP
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
