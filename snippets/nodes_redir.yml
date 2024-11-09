@@ -138,7 +138,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '5,10,12|🇺🇸_US_美国->🇨🇦_CA_加拿大 #1'
+  name: 5,10|美国 197
   network: ws
   port: 2095
   server: 172.64.198.249
@@ -173,9 +173,9 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '5,10,12,24|🇺🇸 美国 CloudFlare节点 #14'
+  name: 5,10|美国 196
   network: ws
-  port: '2095'
+  port: 2095
   server: 172.64.175.213
   servername: ip21.6016725.xyz
   tls: false
@@ -1065,14 +1065,36 @@ proxies:
     path: /
 - alpn:
   - http/1.1
-  name: 12,20,21,24|🇺🇸 美国 Sprint网络
+  name: 12,24|🇮🇪 爱尔兰 都柏林Amazon数据中心
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 63.176.205.128
+  server: 54.228.87.128
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: 12|🇺🇸_US_美国->🇨🇳_CN_中国
+  network: ws
+  password: WOeXShhJpL
+  port: 443
+  server: 104.21.37.37
+  sni: 01jzus.zdzdzd.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 01jzus.zdzdzd.xyz
+    path: '%2Fjuzigongyi'
+- name: '12|🇺🇸_US_美国->🇨🇳_CN_中国 #1'
+  network: ws
+  password: WOeXShhJpL
+  port: 443
+  server: 104.16.79.128
+  sni: 01jzus.zdzdzd.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 01jzus.zdzdzd.xyz
+    path: '%2Fjuzigongyi'
 - alterId: 0
   cipher: auto
   name: 13|🇮🇷_IR_伊朗->🇫🇷_FR_法国_2
@@ -1321,7 +1343,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '30|🇺🇸_US_美国->🇨🇦_CA_加拿大 #3'
+  name: 30|🇺🇸_US_美国->🇨🇦_CA_加拿大
   network: ws
   port: 2052
   server: cdncdncdncdn.784654.xyz
