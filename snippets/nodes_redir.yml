@@ -115,6 +115,12 @@ proxies:
   port: 989
   server: 163.172.64.22
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 5,16|🇪_DE_国
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.166
+  type: ss
 - alterId: 0
   cipher: auto
   name: '5,11|3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2 #1'
@@ -1076,26 +1082,36 @@ proxies:
   server: 54.247.105.219
   sni: trojan.burgerip.co.uk
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 13|🇮🇷_IR_伊朗->🇫🇷_FR_法国_2
+- cipher: aes-256-cfb
+  name: '13,16|🇺🇸_US_美国_3 #3'
+  password: amazonskr05
+  port: 443
+  server: 54.202.75.206
+  type: ss
+- name: 13|🇺🇸_US_美国->🇮🇪_IE_爱尔兰_2
   network: ws
-  port: 2083
-  server: 193.151.144.26
-  tls: false
-  type: vmess
-  uuid: 7b33bc8f-7014-4814-afb1-1c4d7f25314c
+  password: 4732adfa16c6450bbef87264e41332db
+  port: 443
+  server: 104.17.215.18
+  skip-cert-verify: true
+  sni: jobscareerforstudent.com
+  type: trojan
   ws-opts:
     headers:
-      Host: tv.filmnet.ir
-    path: /
-- name: 13|🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 13.37.24.49
-  sni: trojan.burgerip.co.ukhttp/1.1
-  type: trojan
+      Host: jobscareerforstudent.com
+    path: /6b777a91
+- cipher: chacha20-ietf-poly1305
+  name: 13,16|🇪_DE_德国_1
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.181
+  type: ss
+- cipher: aes-256-cfb
+  name: '13,16|🇺🇸_US_美国_5 #2'
+  password: amazonskr05
+  port: 443
+  server: 35.85.38.218
+  type: ss
 - alpn:
   - http/1.1
   name: 16|_IE_->🇪🇸_ES_
@@ -1123,7 +1139,7 @@ proxies:
     headers:
       host: 01jzus.zdzdzd.xyz
     path: /juzigongyi
-- name: 16|🇺🇸_US_美国->🇨🇳_CN_中国_1
+- name: '16|🇺🇸_US_美国->🇨🇳_CN_中国_1 #1'
   network: ws
   password: WOeXShhJpL
   port: 443
@@ -1135,6 +1151,12 @@ proxies:
     headers:
       host: 01jzus.zdzdzd.xyz
     path: /juzigongyi
+- cipher: chacha20-ietf-poly1305
+  name: 16,20,21,24,27|0|-https://t.me/MrXbin-12
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.188
+  type: ss
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|中国香港/中国台湾(CN)China/Shenzhen/小东的程序未能精准识别(可能是中转节点)_3
@@ -1195,7 +1217,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '23|🇨🇳_CN_中国->🇺🇸_US_美国_1 #1'
+  name: 23|🇨🇳_CN_中国->🇺🇸_US_美国_1
   network: ws
   port: 16928
   server: vip3.niuniupremium.xyz
