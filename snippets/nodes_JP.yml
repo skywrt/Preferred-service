@@ -2,7 +2,7 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,11,24,27,37|JP
+  name: 5,9,11,24,27,37|JP
   password: 7DJY7GZN9AQ2AURN
   port: 18001
   server: 120.241.45.50
@@ -91,7 +91,7 @@ proxies:
     path: /stream
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '5,11,24,27|13| |@ripaojiedian #1'
+  name: '5,9,11,24,27|13| |@ripaojiedian #1'
   password: 372c936f-acce-4859-92fe-4286bb9d1e17
   port: 11001
   server: 61.172.235.22
@@ -419,6 +419,23 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
+- client-fingerprint: chrome
+  name: 9,24,27|13,14|日本3|@ripaojiedian
+  network: tcp
+  password: d90e5504-a42b-44c1-8289-3543471bf55a
+  port: 8443
+  server: n3.jp4589871.top
+  skip-cert-verify: false
+  sni: n3.jp4589871.top
+  type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 9,11,24,27|13|🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 52.79.157.153
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 10,36|🔒 VM-TCP-NA 🇯🇵 JP-150.66.24.10...
@@ -431,14 +448,15 @@ proxies:
   uuid: bc6c7c93-9245-47be-bfd7-c34a39d0f155
   ws-headers:
     Host: 150.66.24.104
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 11,27|13|🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 52.79.157.153
-  tfo: false
-  type: ss
+- name: 10|日本 002
+  network: tcp
+  password: 5c7dbef8-0fb5-4e88-bb84-24cafeb73f8d
+  port: 20230
+  server: jp005.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|日本(JP)Japan/Tokyo_38
@@ -467,28 +485,6 @@ proxies:
     headers:
       Host: ip26.6929198.xyz
     path: github.com/Alvin9999
-- name: 27|13,14|日本3|@ripaojiedian
-  network: tcp
-  password: d90e5504-a42b-44c1-8289-3543471bf55a
-  port: 8443
-  server: n3.jp4589871.top
-  skip-cert-verify: false
-  sni: n3.jp4589871.top
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇯🇵 JP-132.145.123.2...
-  network: ws
-  port: '58373'
-  server: 132.145.123.206
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0ec2298b-b8b3-437a-8053-05bff19be248
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /wada12222
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-47.74.8.202:...
@@ -501,7 +497,7 @@ proxies:
   uuid: 9f563bc7-0481-41d2-f8fd-a4736ded9bc0
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-WS-NA 🇯🇵 JP-132.145.123.2... #1'
+  name: 36|🔒 VM-WS-NA 🇯🇵 JP-132.145.123.2...
   network: ws
   port: '58372'
   server: 132.145.123.206
@@ -509,6 +505,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 70073dee-ea32-4e51-9a4e-2742a25f6de7
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /wada12222
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-WS-NA 🇯🇵 JP-132.145.123.2... #1'
+  network: ws
+  port: '58373'
+  server: 132.145.123.206
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0ec2298b-b8b3-437a-8053-05bff19be248
   ws-opts:
     headers:
       Host: tms.dingtalk.com

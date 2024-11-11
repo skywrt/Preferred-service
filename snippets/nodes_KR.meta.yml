@@ -14,7 +14,7 @@ proxies:
     path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '5,11,27|13| |@ripaojiedian #2'
+  name: '5,9,11,24,27|13| |@ripaojiedian #2'
   password: d4eeaa7b-43c6-49dc-8020-7389bba4d033
   port: 40016
   server: hzhz2.sssyun.xyz
@@ -87,6 +87,29 @@ proxies:
   tls: false
   type: vmess
   uuid: 5fcf0569-dfd7-4904-9383-e5149cdd8d87
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: '9,11,24,27|13|🇰🇷 韩国|@ripaojiedian #1'
+  password: amazonskr05
+  port: 443
+  server: 3.38.209.2
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: 9|15|KR_speednode_0024
+  network: ws
+  port: 33890
+  server: 221.166.163.61
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560security=tls
 - delay: 985
   name: 10,40|KR_speednode_0024
   network: ws
@@ -157,14 +180,42 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '11,27|13|🇰🇷 韩国|@ripaojiedian #1'
-  password: amazonskr05
-  port: 443
-  server: 3.38.209.2
-  tfo: false
-  type: ss
+- name: 10|韩国 001
+  network: ws
+  port: 38923
+  server: 58.230.12.228
+  servername: an.ylks.xyz
+  tls: true
+  type: vless
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: an.ylks.xyz
+    path: /blue
+- name: 10|韩国 005
+  network: ws
+  port: 30012
+  server: 115.93.4.10
+  servername: ln.ylks.us.kg
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: ln.ylks.us.kg
+    path: /?ed=2560
+- name: 10|韩国 008
+  network: ws
+  port: 30012
+  server: 220.86.175.229
+  servername: an.ylks.xyz
+  tls: true
+  type: vless
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: an.ylks.xyz
+    path: /blue
 - name: 17|韩国(yudou66.com 玉豆免费节点)
   network: ws
   port: 12273
@@ -203,20 +254,6 @@ proxies:
     path: '%2F%3Fproxyip%3Dproxyip.kr.fxxp.dedyp.io'
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇰🇷 KR-144.24.76.97:...
-  network: ws
-  port: '46271'
-  server: 144.24.76.97
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f99bfe05-e351-47df-e752-ac0aaea976dc
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-NA 🇰🇷 KR-193.123.244.1...
   network: ws
   port: '30359'
@@ -243,3 +280,17 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /wada12222
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇰🇷 KR-144.24.76.97:...
+  network: ws
+  port: '46271'
+  server: 144.24.76.97
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f99bfe05-e351-47df-e752-ac0aaea976dc
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
