@@ -1,11 +1,34 @@
 proxies:
-- name: 2,5,24|🇯🇵 13,14|日本3|@ripaojiedian
-  network: tcp
-  password: d90e5504-a42b-44c1-8289-3543471bf55a
-  port: 8443
-  server: n3.jp4589871.top
+- client-fingerprint: chrome
+  name: 2,9,24,27|13|🇯🇵 日本3|@ripaojiedian
+  password: an70aOaIjcCF43gOlSB6eKER53Z38DYDx8l9RCSCpYTwXS3pueyAqyFZx2zDNA
+  port: 443
+  server: plowman.meijireform.com
   skip-cert-verify: false
-  sni: n3.jp4589871.top
+  sni: plowman.meijireform.com
+  type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: '2,9,11,24,27|13|🇰🇷 韩国|@ripaojiedian #1'
+  password: amazonskr05
+  port: 443
+  server: 13.115.255.151
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 2,9,11,24,27|13|🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 52.192.66.69
+  tfo: false
+  type: ss
+- name: 2,24,27|14|日本3|@ripaojiedian
+  network: tcp
+  password: an70aOaIjcCF43gOlSB6eKER53Z38DYDx8l9RCSCpYTwXS3pueyAqyFZx2zDNA
+  port: 443
+  server: plowman.meijireform.com
+  skip-cert-verify: false
   type: trojan
 - name: '5|>🇯🇵 JP|Ms|0914|TG@FProxies| #8'
   password: 06f86f64-7d86-3c02-93db-ef6a4e740bb3
@@ -71,8 +94,8 @@ proxies:
       Host: tls.98.node-for-bigairport.win
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,28|🇯🇵 日本01-1B
-  password: e2c24168-5bf0-4f04-b4b2-400afcb729b1
+  name: 5,28|🇯🇵 日本01-1F
+  password: 0ca5f5f1-28ca-4b15-a008-26f8d9e398fc
   port: 20002
   server: gy.666666222.shop
   type: ss
@@ -199,7 +222,7 @@ proxies:
       Host: core.host-api.speedtest.net
     path: /kljllhsdagf
 - cipher: chacha20-ietf-poly1305
-  name: 5,28|🇯🇵 日本03-1E
+  name: 5,28|🇯🇵 日本03-1D
   password: 2d00b67c-250b-413d-a2aa-c6a50cc1f528
   port: 20006
   server: gy.666666222.shop
@@ -214,6 +237,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 5fcf0569-dfd7-4904-9383-e5149cdd8d87
+- name: 5|日本3|@ripaojiedian
+  network: tcp
+  password: d90e5504-a42b-44c1-8289-3543471bf55a
+  port: 8443
+  server: n3.jp4589871.top
+  sni: n3.jp4589871.top
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '5|>🇯🇵 JP|Hs|0914|TG@FProxies| #2'
@@ -422,39 +452,6 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: '9,11,24,27|13|🇯🇵 日本2|@ripaojiedian #1'
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.240
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: 9,27|13|🇯🇵 日本3|@ripaojiedian
-  password: an70aOaIjcCF43gOlSB6eKER53Z38DYDx8l9RCSCpYTwXS3pueyAqyFZx2zDNA
-  port: 443
-  server: plowman.meijireform.com
-  skip-cert-verify: false
-  sni: plowman.meijireform.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 9,27|13,14|日本4|@ripaojiedian
-  network: tcp
-  password: f181b265-5fd4-456e-ad2d-c9b0446e0d51
-  port: 27001
-  server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 9,11,27|13|🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 52.192.66.69
-  tfo: false
-  type: ss
 - client-fingerprint: chrome
   name: 9|15|JP_speednode_0023
   network: ws
@@ -472,11 +469,10 @@ proxies:
     path: /5Ve373mPjKg4vceF?edsecurity=tls
 - alterId: 0
   cipher: auto
-  name: 10,36|🔒 VM-TCP-NA 🇯🇵 JP-150.66.24.10...
+  name: 10|日本 001
   network: tcp
-  port: '16798'
+  port: 16798
   server: 150.66.24.104
-  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -585,61 +581,48 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- name: 24|🇯🇵 日本 V2CROSS.COM
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 21005
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: false
-  sni: alibabashop.com
-  type: trojan
-- name: 27|14|日本3|@ripaojiedian
-  network: tcp
-  password: an70aOaIjcCF43gOlSB6eKER53Z38DYDx8l9RCSCpYTwXS3pueyAqyFZx2zDNA
-  port: 443
-  server: plowman.meijireform.com
-  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本02-1A
-  password: 1f26b5a7-f78a-413b-805e-7a2404937b53
-  port: 20004
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本04-1D
-  password: 8ab58a6d-8899-4a00-90c7-77ef97e30b4e
+  name: 28|🇯🇵 日本04-1F
+  password: 0ca5f5f1-28ca-4b15-a008-26f8d9e398fc
   port: 20008
   server: gy.666666222.shop
   type: ss
   udp: true
-- auth: 83a60225-aadf-4b23-8172-62865b5383ad
-  name: 28|🇯🇵 日本-1
-  password: 83a60225-aadf-4b23-8172-62865b5383ad
-  port: 30001
-  server: oracle-amd-tokyo1.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: tokyo.nodes.lanmaoyun.icu
-  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本02-1E
+  password: 36b9d20a-a544-4240-b752-bce5c5781c63
+  port: 20004
+  server: gy.666666222.shop
+  type: ss
   udp: true
-- auth: 83a60225-aadf-4b23-8172-62865b5383ad
+- auth: ae94783a-7095-488d-88c2-eafb5ff67643
   name: 28|🇯🇵 日本-2
-  password: 83a60225-aadf-4b23-8172-62865b5383ad
+  password: ae94783a-7095-488d-88c2-eafb5ff67643
   port: 30001
   server: oracle-amd-osaka1.lanmaoyun.icu
   skip-cert-verify: true
   sni: osaka.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
+- auth: ae94783a-7095-488d-88c2-eafb5ff67643
+  name: 28|🇯🇵 日本-1
+  password: ae94783a-7095-488d-88c2-eafb5ff67643
+  port: 30001
+  server: oracle-amd-tokyo1.lanmaoyun.icu
+  skip-cert-verify: true
+  sni: tokyo.nodes.lanmaoyun.icu
+  type: hysteria2
+  udp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-132.145.123.2...
   network: ws
-  port: '58372'
+  port: '58373'
   server: 132.145.123.206
   servername: ''
   tls: false
   type: vmess
-  uuid: 70073dee-ea32-4e51-9a4e-2742a25f6de7
+  uuid: 0ec2298b-b8b3-437a-8053-05bff19be248
   ws-opts:
     headers:
       Host: tms.dingtalk.com
@@ -648,12 +631,12 @@ proxies:
   cipher: auto
   name: '36|🔒 VM-WS-NA 🇯🇵 JP-132.145.123.2... #1'
   network: ws
-  port: '58373'
+  port: '58372'
   server: 132.145.123.206
   servername: ''
   tls: false
   type: vmess
-  uuid: 0ec2298b-b8b3-437a-8053-05bff19be248
+  uuid: 70073dee-ea32-4e51-9a4e-2742a25f6de7
   ws-opts:
     headers:
       Host: tms.dingtalk.com
