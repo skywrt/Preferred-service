@@ -1,4 +1,54 @@
 proxies:
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|66a99a03ce484939918baf1dd016c1...
+  network: ws
+  port: 80
+  server: spdnet.fastly80-2.hosting-ip.com
+  tls: false
+  type: vless
+  udp: false
+  uuid: 1ffadc0e-009e-4ad8-99a3-d0d2eb2f9a24
+  ws-opts:
+    path: /Channel,SPDNET,SPDNET?ed=443
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|95208609d7804eb6936e2d5f16cf5f...
+  network: ws
+  port: 22222
+  server: 3.74.246.167
+  servername: telegram-channel-vlessconfig.sohala.uk
+  tls: true
+  type: vless
+  udp: false
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|d67559d69442466aa2b5cdaf8d3122...
+  network: ws
+  port: 80
+  server: polproxy.fastly80.hosting-ip.com
+  tls: false
+  type: vless
+  udp: false
+  uuid: cd0a48f0-b40f-4aca-931a-704d6f1ace2c
+  ws-opts:
+    path: /telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram?ed=2048
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|feaff08907654d9aae42ac5b922663...
+  network: grpc
+  port: 8443
+  server: 104.21.53.252
+  servername: a70.bluebana.info
+  tls: true
+  type: vless
+  udp: false
+  uuid: a55ff7d6-1566-4767-8daa-8fc7459b81ed
 - cipher: rc4-md5
   name: 5|PvCfh63wn4ewIEhLfExzfDEwMTN8VE...
   obfs: plain
@@ -333,11 +383,10 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: '5,10,20,21|🇩🇪DE-57.129.24.142-1291 #1'
+  name: 5,10|德国 005
   network: ws
   port: 443
   server: 57.129.24.142
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -453,11 +502,10 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,20,21|🇩🇪DE-57.129.24.141-8211 #1'
+  name: '5|>🇩🇪 DE|Ls|0914|TG@FProxies| #6'
   network: ws
-  port: 443
+  port: '443'
   server: 57.129.24.141
-  servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -512,6 +560,21 @@ proxies:
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
 - client-fingerprint: chrome
+  name: 9|15|DE_speednode_0008
+  network: ws
+  port: 8080
+  server: 91.107.191.214
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
   name: 9,40|DE_speednode_0010
   network: ws
   port: 2003
@@ -528,20 +591,20 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 9|15|DE_speednode_0011
+  name: 9|15|DE_speednode_0010
   network: ws
-  port: 8080
-  server: 176.9.50.58
+  port: 2003
+  server: 152.53.13.241
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tfo: false
-  tls: false
+  tls: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
       Host: vless.ifx.us.kg
-    path: /?ed=2560security=tls
+    path: /?ed=2560fp=chromefp=chrome
 - client-fingerprint: chrome
   delay: 1116
   name: 10,40|US_speednode_0037
@@ -630,24 +693,15 @@ proxies:
     headers:
       Host: almon3.h3in0.top
     path: /23491/h3ino
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇩🇪DE-146.19.247.152-1161
-  network: ws
-  port: 443
-  server: discord.vpnsell.beauty
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 57529232-b316-4b4e-abf1-9b6063ba0316
-  ws-opts:
-    headers:
-      host: discord.vpnsell.beauty
-    path: /29516/iliya
+- name: '20,21|🇩🇪DE-35.156.46.44-0751 #1'
+  password: telegram-id-directvpn
+  port: 22222
+  server: 35.156.46.44
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 1
   cipher: auto
-  name: '20,21|🇩🇪DE-23.158.56.145-8307 #1'
+  name: '20,21|🇩🇪DE-23.158.56.145-8346 #1'
   network: ws
   port: 443
   server: 23.158.56.145
@@ -659,36 +713,16 @@ proxies:
     headers:
       Host: 23.158.56.145
     path: linkvws
-- name: '20,21|🇩🇪DE-35.156.46.44-1293 #1'
-  password: telegram-id-directvpn
-  port: 22222
-  server: 35.156.46.44
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 1
-  cipher: auto
-  name: '20,21|🇩🇪DE-57.129.25.20-1825 #1'
-  network: ws
-  port: 443
-  server: 57.129.25.20
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 57.129.25.20
-    path: linkvws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-18...
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
   network: httpupgrade
-  port: '8880'
-  server: 188.114.99.187
+  port: '80'
+  server: 103.184.45.164
   servername: ''
   tls: false
   type: vmess
-  uuid: 011ee0e1-77bd-443a-9a51-a302b592a3ae
+  uuid: 782efefc-aac2-a7f2-6e2b-e42f7bc5d75a
 - alterId: 0
   cipher: auto
   name: 36,37|未知71 11.3MB/s
@@ -700,6 +734,16 @@ proxies:
   tls: true
   type: vmess
   uuid: 0deef0bd-91f9-4633-912d-329d928c7094
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-18...
+  network: httpupgrade
+  port: '8880'
+  server: 188.114.99.187
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 011ee0e1-77bd-443a-9a51-a302b592a3ae
 - client-fingerprint: chrome
   name: 40|DE_speednode_0008
   network: ws
