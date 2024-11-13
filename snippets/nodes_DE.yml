@@ -280,10 +280,11 @@ proxies:
     path: /jjzslsk
 - alterId: 0
   cipher: auto
-  name: '5|>🇩🇪 DE|Ls|0914|TG@FProxies| #2'
+  name: '5,20,21|🇩🇪DE-57.129.24.141-8211 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 57.129.24.141
+  servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -424,12 +425,15 @@ proxies:
     path: /ray2
 - alterId: 0
   cipher: auto
-  name: '5|>🇩🇪 DE|Ls|1013|TG@FProxies| #6'
+  name: '5,10,20,21|🇩🇪DE-57.129.24.142-1291 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 57.129.24.142
+  servername: ''
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -523,21 +527,24 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- cipher: chacha20-ietf-poly1305
-  name: 16|🇩🇪_DE_德国
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 16|🇩🇪_DE_德国_2
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.199
-  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇩🇪DE-146.19.247.152-1161
+  network: ws
+  port: 443
+  server: discord.vpnsell.beauty
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 57529232-b316-4b4e-abf1-9b6063ba0316
+  ws-opts:
+    headers:
+      host: discord.vpnsell.beauty
+    path: /29516/iliya
 - alterId: 1
   cipher: auto
-  name: '20,21|🇩🇪DE-23.158.56.145-8207 #1'
+  name: '20,21|🇩🇪DE-23.158.56.145-8307 #1'
   network: ws
   port: 443
   server: 23.158.56.145
@@ -549,13 +556,23 @@ proxies:
     headers:
       Host: 23.158.56.145
     path: linkvws
-- alterId: 0
+- name: '20,21|🇩🇪DE-35.156.46.44-1293 #1'
+  password: telegram-id-directvpn
+  port: 22222
+  server: 35.156.46.44
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 1
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-18...
-  network: httpupgrade
-  port: '8880'
-  server: 188.114.99.187
+  name: 20,21,24|🇫🇷 法国 国际航空电讯集团公司(SITA)
+  network: ws
+  port: '443'
+  server: 57.129.25.20
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 011ee0e1-77bd-443a-9a51-a302b592a3ae
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 57.129.25.20
+    path: linkvws
