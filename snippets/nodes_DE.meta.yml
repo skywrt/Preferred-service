@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 3|43709bf18c0642daa37b55dffeab1c...
+  name: 3|d21e12e13a4d4294969d569e20fa30...
   network: ws
   port: 80
   server: spdnet.fastly80-2.hosting-ip.com
@@ -540,15 +540,16 @@ proxies:
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
 - client-fingerprint: chrome
-  name: 9|15|DE_speednode_0010
+  name: 9,40|DE_speednode_0011
   network: ws
   port: 2003
   server: 152.53.13.241
   servername: vless.ifx.us.kg
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
   tls: true
   type: vless
+  udp: true
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
@@ -571,7 +572,7 @@ proxies:
     path: /?ed=2560security=tls
 - client-fingerprint: chrome
   delay: 1116
-  name: 10,40|US_speednode_0051
+  name: 10,40|US_speednode_0046
   network: ws
   port: 80
   server: 167.82.30.71
@@ -615,7 +616,7 @@ proxies:
     path: /?ed=2560
 - client-fingerprint: chrome
   delay: '1538'
-  name: 10,40|DE_speednode_0010
+  name: 10,40|DE_speednode_0009
   network: ws
   port: 2003
   server: 152.53.13.241
@@ -706,16 +707,51 @@ proxies:
     headers:
       Host: 57.129.25.20
     path: linkvws
-- name: 40|DE_speednode_0011
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-209.38.179.1...
+  network: tcp
+  port: '13378'
+  server: 209.38.179.185
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0deef0bd-91f9-4633-912d-329d928c7094
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-18...
+  network: httpupgrade
+  port: '8880'
+  server: 188.114.99.187
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 011ee0e1-77bd-443a-9a51-a302b592a3ae
+- client-fingerprint: chrome
+  name: 40|DE_speednode_0010
   network: ws
   port: 8080
-  server: 176.9.50.58
+  server: 91.107.191.214
   servername: vless.ifx.us.kg
+  skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
+- client-fingerprint: chrome
+  name: 40|DE_speednode_0012
+  network: ws
+  port: 2003
+  server: 152.53.14.225
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /ProxyIP=ProxyIP.US.fxxk.dedyn.io

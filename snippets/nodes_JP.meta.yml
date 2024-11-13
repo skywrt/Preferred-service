@@ -7,7 +7,7 @@ proxies:
   server: 43.207.113.77
   tfo: false
   type: ss
-- name: 2,5,24,27,40|JP_speednode_0021
+- name: '2,5,24|15|JP_speednode_0021 #1'
   network: tcp
   password: an70aOaIjcCF43gOlSB6eKER53Z38DYDx8l9RCSCpYTwXS3pueyAqyFZx2zDNA
   port: 443
@@ -139,12 +139,15 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 5|日本 - 东京 - SAKURA Internet Inc....
+  name: 5,40|CN_speednode_0007
   network: ws
-  port: '33202'
+  port: 33202
   server: yd2.ainivp.com
+  servername: yd2.ainivp.com
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 9204afcd-023e-781f-1abc-c12efccd1344
   ws-opts:
     headers:
@@ -718,20 +721,6 @@ proxies:
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-132.145.123.2...
   network: ws
-  port: '58373'
-  server: 132.145.123.206
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0ec2298b-b8b3-437a-8053-05bff19be248
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /wada12222
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-WS-NA 🇯🇵 JP-132.145.123.2... #1'
-  network: ws
   port: '58372'
   server: 132.145.123.206
   servername: ''
@@ -744,15 +733,20 @@ proxies:
     path: /wada12222
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-47.74.8.202:...
-  network: tcp
-  port: '23468'
-  server: 47.74.8.202
+  name: '36|🔒 VM-WS-NA 🇯🇵 JP-132.145.123.2... #1'
+  network: ws
+  port: '58373'
+  server: 132.145.123.206
   servername: ''
   tls: false
   type: vmess
-  uuid: 9f563bc7-0481-41d2-f8fd-a4736ded9bc0
-- name: 40|JP_speednode_0022
+  uuid: 0ec2298b-b8b3-437a-8053-05bff19be248
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /wada12222
+- client-fingerprint: chrome
+  name: 40|JP_speednode_0021
   network: ws
   port: 443
   server: zmaoz.faculty.ucdavis.edu
