@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   client-fingerprint: chrome
-  name: 2,9,24,27,37|JP
+  name: 2,9,24,37|JP
   password: an70aOaIjcCF43gOlSB6eKER53Z38DYDx8l9RCSCpYTwXS3pueyAqyFZx2zDNA
   port: 443
   server: plowman.meijireform.com
@@ -10,23 +10,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '2,5,9,11,20,21,27|13|🇰🇷 韩国|@ripaojiedian #1'
-  password: amazonskr05
-  port: 443
-  server: 13.115.255.151
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 2,5,9,11,27|13|🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 52.192.66.69
-  tfo: false
-  type: ss
-- name: 2,5,27,40|JP_speednode_0021
+- name: 2,5,24,27,40|JP_speednode_0021
   network: tcp
   password: an70aOaIjcCF43gOlSB6eKER53Z38DYDx8l9RCSCpYTwXS3pueyAqyFZx2zDNA
   port: 443
@@ -68,8 +52,8 @@ proxies:
       Host: ''
     path: /6ddb29ab
 - cipher: chacha20-ietf-poly1305
-  name: 5,28|🇯🇵 日本03-1E
-  password: 36b9d20a-a544-4240-b752-bce5c5781c63
+  name: 5,28|🇯🇵 日本03-1D
+  password: 56fa2318-5b5d-4327-9392-3289dcb260b1
   port: 20006
   server: gy.666666222.shop
   type: ss
@@ -207,8 +191,8 @@ proxies:
   sni: 1jp001.170809.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,28|🇯🇵 日本01-1E
-  password: 36b9d20a-a544-4240-b752-bce5c5781c63
+  name: 5,28|🇯🇵 日本01-1B
+  password: f2091730-3ae8-4a08-bd48-9e5ae977c310
   port: 20002
   server: gy.666666222.shop
   type: ss
@@ -529,27 +513,50 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- name: 24|🇯🇵 日本 V2CROSS.COM
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 21005
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: false
-  sni: alibabashop.com
-  type: trojan
+- alterId: 1
+  cipher: auto
+  name: 24|🇯🇵 日本 东京G-Core Lab
+  network: ws
+  port: '443'
+  server: 92.38.178.69
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 92.38.178.69
+    path: linkvws
+- cipher: aes-256-cfb
+  name: 27|13|🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 43.201.254.211
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本02-1C
-  password: 321a4228-877f-482b-bff1-3d22fafc6df1
+  name: 28|🇯🇵 日本02-1B
+  password: f2091730-3ae8-4a08-bd48-9e5ae977c310
   port: 20004
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本04-1A
-  password: 50909a82-eeb9-4eb4-b573-b65d14ba37d3
+  name: 28|🇯🇵 日本04-1E
+  password: 320ce5a9-372b-4079-b5ff-e3a79a2ae63e
   port: 20008
   server: gy.666666222.shop
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-47.74.8.202:...
+  network: tcp
+  port: '23468'
+  server: 47.74.8.202
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f563bc7-0481-41d2-f8fd-a4736ded9bc0
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-132.145.123.2...
@@ -578,13 +585,3 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /wada12222
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-47.74.8.202:...
-  network: tcp
-  port: '23468'
-  server: 47.74.8.202
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f563bc7-0481-41d2-f8fd-a4736ded9bc0
