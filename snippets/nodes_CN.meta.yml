@@ -1,14 +1,11 @@
 proxies:
-- alterId: 0
-  cipher: aes-256-gcm
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '2,9,11,24,27,37|HK #1'
+  name: 2,5,9,11,24,27|13| |@ripaojiedian
   password: Z4X7VYXFPCFSSWXP
   port: 15013
   server: 120.241.45.50
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
 - alterId: 64
   cipher: auto
@@ -42,7 +39,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '2,9,11,24,27|13|🇭🇰 香港6|@ripaojiedian #1'
+  name: '2,5,9,11,24,27|13|🇭🇰 香港6|@ripaojiedian #1'
   password: 047a730c-1f84-4aef-8e32-6c244ee5b92b
   port: 11001
   server: 183.232.229.165
@@ -61,7 +58,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '2,9,11,24,27|13| |@ripaojiedian #1'
+  name: '2,5,9,11,24,27|13| |@ripaojiedian #1'
   password: 173c0893-5ab2-4223-88ce-b6e8d512306b
   port: 34401
   server: 183.232.159.51
@@ -69,23 +66,26 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '2,9,11,24,27|13| |@ripaojiedian #2'
+  name: '2,5,9,11,24,27|13| |@ripaojiedian #2'
   password: 173c0893-5ab2-4223-88ce-b6e8d512306b
   port: 33238
   server: 183.232.159.51
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '2,9,11,24,27|13| |@ripaojiedian #3'
+  name: 2,5,9,11,24,27,37|KR国
   password: 7a2f5570-f469-4549-9273-549a5c85fb52
   port: 39206
   server: hzhz1.sssyun.xyz
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '2,9,11,24,27|13| |@ripaojiedian #4'
+  name: '2,5,9,11,24,27|13| |@ripaojiedian #4'
   password: 173c0893-5ab2-4223-88ce-b6e8d512306b
   port: 53062
   server: 183.232.159.51
@@ -94,7 +94,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 2,9,27,40|CN_speednode_0005
+  name: 2,9,27|13|🇬 新加坡2|@ripaojiedian
   port: 40002
   server: 183.236.48.163
   skip-cert-verify: false
@@ -186,12 +186,6 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
-- cipher: aes-256-cfb
-  name: '5,11|1|_CN_ #1'
-  password: hGkQ6915tD
-  port: 15082
-  server: 59.56.77.178
-  type: ss
 - name: '5,38|🇨🇳_CN_中国_38 #1'
   network: ws
   port: 2053
@@ -204,6 +198,28 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
+- alpn:
+  - http%2F1.1
+  name: 5|ICN
+  network: ws
+  password: dns68
+  port: 33312
+  server: 210.87.195.194
+  sni: trojan.putata.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: trojan.putata.us.kg
+    path: '%2F%3Fed%3D2560'
+- alterId: 64
+  cipher: auto
+  name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
+  network: tcp
+  port: 54882
+  server: 183.240.235.162
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: '5,11,23,24,30|二爷免费翻墙 https://1808.free.hr 节点... #306'
@@ -218,15 +234,12 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
-- alterId: 64
-  cipher: auto
-  name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
-  network: tcp
-  port: 54882
-  server: 183.240.235.162
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-cfb
+  name: '5,11|1|_CN_ #1'
+  password: hGkQ6915tD
+  port: 15082
+  server: 59.56.77.178
+  type: ss
 - alterId: 0
   cipher: auto
   name: 8|🇨🇳CN-139.227.223.3-049_1@49
@@ -860,16 +873,6 @@ proxies:
   uuid: a32313ad-5e39-4f9a-9cad-512041790050
 - alterId: 64
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
-  network: tcp
-  port: '50002'
-  server: 112.132.215.12
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
   network: tcp
   port: '50004'
@@ -880,10 +883,21 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  name: 36,37|未知125
   network: tcp
-  port: '59003'
+  port: 59003
   server: 183.236.51.36
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
+  network: tcp
+  port: '50002'
+  server: 112.132.215.12
   servername: ''
   tls: false
   type: vmess
