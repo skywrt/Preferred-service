@@ -1,4 +1,24 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 2|Taiwan_Taichung_ss_113
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)b5a99e1:21612
+    mode: tls
+  port: 2377
+  server: 211.22.161.134
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 2|Taiwan_Taichung_ss_114
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)b5a99e1:21612
+    mode: tls
+  port: 2377
+  server: 211.22.161.135
+  type: ss
 - name: 5|台湾01直连ChatGPT3
   network: tcp
   password: a48d9102-3eb4-4576-8de7-482e58bc1a39
@@ -122,13 +142,14 @@ proxies:
   skip-cert-verify: false
   sni: sg1111.170809.xyz
   type: trojan
-- name: '5|>🇹🇼 TW|Ls|1013|TG@FProxies| #1'
-  password: b69efde9-e279-36bf-b547-11f4e51dded9
+- name: 5,27,40|CN_speednode_0009
+  password: 6b679df8-c45c-394f-a4a3-db2721aae730
   port: 59021
   server: gy.58n.net
   skip-cert-verify: true
   sni: x100.flybar.work
   type: trojan
+  udp: true
 - name: 5|台湾|02奈飞ChatGPTC
   network: tcp
   password: a48d9102-3eb4-4576-8de7-482e58bc1a39
@@ -261,17 +282,9 @@ proxies:
   tls: false
   type: vmess
   uuid: 97abe3e5-1e1c-4458-962b-ef74972dc9b0
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: '9,11,27|13| |@ripaojiedian #1'
-  password: bd12f79e-3209-4970-83cd-5e1f3526ff51
-  port: 38793
-  server: lsjd.yunxiang8.mom
-  tfo: false
-  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 10,28|🇹🇼 台湾2-1A
+  name: 10,28|🇹🇼 台湾2-1B
   network: tcp
   port: 50052
   reality-opts:
@@ -283,7 +296,7 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 4fa18cb6-9031-46c9-b27c-c2e7fd9bd599
+  uuid: c31d34fc-78ba-44b8-9420-0bf6aa622122
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 10|台湾 002
@@ -299,7 +312,7 @@ proxies:
   udp: true
   uuid: 60769227-e2e3-490b-9a7e-a3e5d4875462
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇹🇼 台湾01-1C
+  name: 28|🇹🇼 台湾01-1A
   password: ad901d93-a1f9-4ab9-b24e-e888edb4ca53
   port: 47564
   server: gy.666666222.shop
@@ -333,3 +346,18 @@ proxies:
     headers:
       host: www.35709620.xyz
     path: /path/351212081517
+- client-fingerprint: chrome
+  name: 40|TW_speednode_0072
+  network: ws
+  port: 81
+  server: 210.61.97.241
+  servername: sub.putata.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88ff07e9-51f0-4608-8c5f-ba2fa8a6b18a
+  ws-opts:
+    headers:
+      Host: sub.putata.eu.org
+    path: /?ed=2048
