@@ -671,26 +671,50 @@ proxies:
   type: vmess
   uuid: 7ad8da0c-fda5-416b-9e72-47cc68313ffe
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港03-1A
-  password: cc98bfee-3777-4c69-8bdc-ffd671c56d88
+  name: 28|🇭🇰 香港02-1A
+  password: 22c50caf-c1b8-4170-8f4c-c209c2b95fb8
+  port: 20035
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港03-1B
+  password: 2df2441c-c372-478e-b197-488d0a245014
   port: 20052
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港01-1B
-  password: 2df2441c-c372-478e-b197-488d0a245014
+  name: 28|🇭🇰 香港01-1A
+  password: 22c50caf-c1b8-4170-8f4c-c209c2b95fb8
   port: 34338
   server: gy.666666222.shop
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港02-1B
-  password: 2df2441c-c372-478e-b197-488d0a245014
-  port: 20035
-  server: gy.666666222.shop
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-125.59.146.1...
+  network: tcp
+  port: '15086'
+  server: 125.59.146.198
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-210.0.158.21...
+  network: ws
+  port: '12909'
+  server: 210.0.158.219
+  servername: 19.lwdh.us
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    headers:
+      Host: 19.lwdh.us
+    path: /
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-27.124.10.14...
@@ -707,20 +731,6 @@ proxies:
     path: /path/011410073331
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-210.0.158.21...
-  network: ws
-  port: '12909'
-  server: 210.0.158.219
-  servername: 19.lwdh.us
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    headers:
-      Host: 19.lwdh.us
-    path: /
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-38.207.155.1...
   network: tcp
   port: '53385'
@@ -729,29 +739,8 @@ proxies:
   type: vmess
   uuid: 7ad8da0c-fda5-416b-9e72-47cc68313ffe
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-125.59.146.1...
-  network: tcp
-  port: '15086'
-  server: 125.59.146.198
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
-- alterId: 0
-  name: 37|HK
-  network: tcp
-  password: c4da094b-3487-4607-b703-bc380ea3f461
-  port: 27201
-  server: 45.146.232.171
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
   cipher: aes-128-gcm
-  name: 37|HK2
+  name: 37|HK
   password: bd12f79e-3209-4970-83cd-5e1f3526ff51
   port: 43683
   server: 91.103.122.32
@@ -759,21 +748,49 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  name: 37|HK3
-  password: 1a8050cd-50d8-4b7d-a73e-193222f39822
-  port: 22271
-  server: 45.146.232.173
+  cipher: aes-128-gcm
+  name: 37|HK2
+  password: bd12f79e-3209-4970-83cd-5e1f3526ff51
+  port: 38792
+  server: 91.103.122.32
   skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK3
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 25203
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|HK4
+  password: bd12f79e-3209-4970-83cd-5e1f3526ff51
+  port: 48491
+  server: 91.103.122.32
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|HK5
+  network: tcp
+  password: de45945e-65ea-4d13-b29d-1835a4281023
+  port: 35002
+  server: 103.100.177.32
+  skip-cert-verify: true
+  sni: updates.sub-nthu.com
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 37|HK4
+  name: 37|HK6
   network: tcp
   password: f181b265-5fd4-456e-ad2d-c9b0446e0d51
   port: 27001
-  server: 45.146.232.173
+  server: 45.146.232.172
   skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
   tls: true
