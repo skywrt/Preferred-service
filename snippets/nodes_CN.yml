@@ -1,9 +1,45 @@
 proxies:
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 2,5,11,22,24,27|13| |@ripaojiedian
+  password: 0MX167RBF00ZI9CR
+  port: 15014
+  server: 58.63.250.61
+  tfo: false
+  type: ss
 - alterId: 64
   cipher: auto
   name: '2,23,27,30|二爷翻墙https://1808.free.hr/_ CN_... #14'
   port: 56601
   server: 183.236.51.23
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '2,27|13|🇭🇰 香港3|@ripaojiedian #1'
+  port: 53002
+  server: 183.236.51.23
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: '2,5,11,22,24,27|13|🇭🇰 香港4|@ripaojiedian #1'
+  password: Z4ZQB7LIKEVW7H3A
+  port: 15004
+  server: 58.63.250.61
+  tfo: false
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: '2,27|13|🇭🇰 香港5|@ripaojiedian #1'
+  port: 59952
+  server: 183.236.48.158
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -20,16 +56,22 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  name: 2,5,22,24,37|🇯🇵JP日本2
-  network: tcp
-  password: 7c58bf11-9175-46d1-accf-e1883bf0d5f8
-  port: 28721
-  server: svip.88de.hongxingdl.vip
-  skip-cert-verify: true
-  sni: mmbiz1.redapricotcloud.com
+  cipher: auto
+  client-fingerprint: chrome
+  name: '2,5,11,22,24,27|13,14|日本2|@ripaojiedian #1'
+  network: ws
+  port: '33202'
+  server: yd2.ainivp.com
+  servername: yd2.ainivp.com
+  skip-cert-verify: false
+  tfo: false
   tls: true
-  type: trojan
-  udp: true
+  type: vmess
+  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
+  ws-opts:
+    headers:
+      Host: yd2.ainivp.com
+    path: /ray
 - alterId: 64
   cipher: auto
   name: 2,23,27,30,40|CN_speednode_0004
@@ -59,6 +101,26 @@ proxies:
   network: tcp
   port: '56601'
   server: 183.236.51.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '2,5,11,24,27|14|香港3|@ripaojiedian #1'
+  network: tcp
+  port: '53002'
+  server: 183.236.51.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '2,5,11,24,27|14|香港5|@ripaojiedian #1'
+  network: tcp
+  port: '59952'
+  server: 183.236.48.158
   servername: ''
   tls: false
   type: vmess
@@ -4056,6 +4118,13 @@ proxies:
   sni: jp01.abpilot.xyz
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 4|🇨🇳 CN 85 → tg@nicevpn123
+  password: 861de7db-5ada-4b36-903c-0ad6ba25d75a
+  port: 37999
+  server: j90r55t0im2kfwz6.3a-sg01.my777999.top
+  type: ss
+  udp: true
 - name: 4|🇨🇳 CN 86 → tg@nicevpn123
   password: 277E0712-F3F1-0435-CEC5-9177070F30FF
   port: 14513
@@ -4172,12 +4241,19 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-cfb
-  name: 5,11,22|🇳CN-59.56.77.178-0094
-  password: hGkQ6915tD
-  port: 15082
-  server: 59.56.77.178
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 5|🇨🇳四川CNx2
+  network: ws
+  port: '80'
+  server: 220.167.101.237
+  tls: false
+  type: vmess
+  uuid: 15b190b3-f974-4ee1-a289-613d14b38b81
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
 - alterId: 64
   cipher: auto
   name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
@@ -4189,13 +4265,42 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 5|浙江省宁波市 移动
-  network: tcp
-  port: 15073
-  server: 15073.kuaiyin02.top
+  name: 5|🇨🇳宁波CNx2
+  network: ws
+  port: '80'
+  server: 110.42.50.134
   tls: false
   type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+  uuid: 15b190b3-f974-4ee1-a289-613d14b38b81
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 5|🇨🇳湖北CNx3
+  network: ws
+  port: '80'
+  server: 27.30.78.139
+  tls: false
+  type: vmess
+  uuid: 15b190b3-f974-4ee1-a289-613d14b38b81
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- cipher: aes-256-gcm
+  name: 5,22|🇨CN-58.63.250.61-1912
+  password: PQN6UOVSN1RDYITF
+  port: 18016
+  server: 58.63.250.61
+  type: ss
+- cipher: aes-256-cfb
+  name: 5,11,22|🇳CN-59.56.77.178-0094
+  password: hGkQ6915tD
+  port: 15082
+  server: 59.56.77.178
+  type: ss
 - alterId: 0
   cipher: auto
   name: 8|🇨🇳CN-139.227.223.3-049_1@49
@@ -4789,6 +4894,20 @@ proxies:
   ws-path: /debian
 - alterId: 0
   cipher: auto
+  name: 17|CN_ youtube@资源分享师_17
+  network: ws
+  port: '12920'
+  server: z6.fragranceninja.com
+  servername: z6.fragranceninja.com
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: z6.fragranceninja.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 17|CN_youtube@资源分享师_5
   network: ws
   port: '46001'
@@ -4803,6 +4922,40 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
+  name: '17|美国(yudou66.com 玉豆免费节点) #87'
+  network: tcp
+  port: '12975'
+  server: z2.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: '17|美国(yudou66.com 玉豆免费节点) #85'
+  network: tcp
+  port: '30251'
+  server: hkt2.bika.hk
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9e88a10b-655c-5120-89d0-408634169561
+- alterId: 0
+  cipher: auto
+  name: 17|CN_youtube@资源分享师_1
+  network: ws
+  port: '12943'
+  server: z6.fragranceninja.com
+  servername: z6.fragranceninja.com
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: z6.fragranceninja.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 17|CN_youtube@资源分享师_9
   network: tcp
   port: '50021'
@@ -4813,6 +4966,20 @@ proxies:
   uuid: 9f5e9155-2356-40be-8549-ee2f3e45fe36
 - alterId: 0
   cipher: auto
+  name: 17|CN_youtube@资源分享师_12
+  network: ws
+  port: '13007'
+  server: z8.fragranceninja.com
+  servername: z8.fragranceninja.com
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: z8.fragranceninja.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 17|CN_youtube@资源分享师_13
   network: tcp
   port: '12970'
@@ -4821,6 +4988,16 @@ proxies:
   tls: true
   type: vmess
   uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 64
+  cipher: auto
+  name: 17|CN_youtube@资源分享师_14
+  network: tcp
+  port: '35601'
+  server: 120.232.153.40
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 22|CN-106.75.104.152-0001
@@ -5080,6 +5257,18 @@ proxies:
   server: 122.195.189.15
   type: ss
 - cipher: chacha20-ietf-poly1305
+  name: 22|🇨🇳CN-122.195.189.15-0309
+  password: dd29d7ad-5fda-4f64-a57e-716ca6010e65
+  port: 10714
+  server: yidong1.liulangdiqiu.life
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 22|🇨🇳CN-122.195.189.15-0311
+  password: dd29d7ad-5fda-4f64-a57e-716ca6010e65
+  port: 10726
+  server: yidong1.liulangdiqiu.life
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 22|🇨🇳CN-122.195.189.15-0312
   password: dd29d7ad-5fda-4f64-a57e-716ca6010e65
   port: 10708
@@ -5090,6 +5279,12 @@ proxies:
   password: uYhVA160ZoSg3AI5
   port: 6700
   server: 36.134.115.217
+  type: ss
+- cipher: aes-128-gcm
+  name: 22|🇳CN-183.238.50.20-0442
+  password: a3c29dd3-d366-4fc2-9efa-ec0c81519b75
+  port: 11789
+  server: pj.shakalaka.xyz
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 22|🇳CN-111.12.60.156-0445
@@ -5167,6 +5362,34 @@ proxies:
   port: 30001
   server: gdgs.tarioblink.me
   type: ss
+- cipher: aes-256-gcm
+  name: 22|🇨🇳CN-58.63.250.61-1329
+  password: 1S4F61F85M49UAJP
+  port: 15003
+  server: 58.63.250.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 22|🇨🇳CN-58.63.250.61-1926
+  password: QMOLGIKYZW15TD56
+  port: 15010
+  server: 58.63.250.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 22|🇳CN-101.132.80.243-1927
+  password: c61155b9-8a96-4190-9dfc-5a9d70b6f3d5
+  port: 30474
+  server: ll-hg.mtls.xyz
+  type: ss
+- alterId: 0
+  name: 22,37|🇯🇵JP日本2
+  password: 7c58bf11-9175-46d1-accf-e1883bf0d5f8
+  port: 28721
+  server: svip.88de.hongxingdl.vip
+  skip-cert-verify: true
+  sni: mmbiz1.redapricotcloud.com
+  tls: true
+  type: trojan
+  udp: true
 - name: 22|🇨🇳CN-120.236.197.205-1958
   password: ba4fedf8c217c146
   port: 3389
