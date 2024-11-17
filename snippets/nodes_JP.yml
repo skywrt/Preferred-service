@@ -1,5 +1,6 @@
 proxies:
-- name: 2,5,20,21,22,24,27|13,14||@ripaojiedian
+- client-fingerprint: chrome
+  name: 2,5,9,20,21,22,24,27|13,14||@ripaojiedian
   network: tcp
   password: AO0FjYBS38ZFCC2q93RpcAXySE6wON5apeaT83nDRDZlz7KxyeYC3xaDISgul4
   port: 28332
@@ -10,7 +11,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: '2,5,11,22,24,27|13,14|日本4|@ripaojiedian #1'
+  name: '2,5,9,11,22,24,27|13,14|日本4|@ripaojiedian #1'
   network: ws
   port: '443'
   server: 107.148.1.118
@@ -672,14 +673,11 @@ proxies:
     headers:
       Host: tls.96.node-for-bigairport.win
     path: /
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,22,37|未知131 1.3MB/s
+- cipher: aes-128-gcm
+  name: 19,20,21,22|🇵JP-149.22.87.240-0603
   password: shadowsocks
   port: 443
   server: 149.22.87.240
-  skip-cert-verify: true
-  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -982,16 +980,13 @@ proxies:
   server: 54.238.135.78
   skip-cert-verify: false
   type: trojan
-- alterId: 0
-  name: 22,37|JP
+- name: 22|🇵JP-54.249.161.173-1930
   password: 8zlR8O7E3S8uqex4xYnpp8O6C3lZejBCZO53eYD7XIAaaTBRC3Cj9SCFxlAwKAwD2yyN3
   port: 443
   server: 54.249.161.173
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: sniffle.meijireform.com
-  tls: true
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 22|JP-140.83.84.209-2215
@@ -2350,40 +2345,41 @@ proxies:
       host: 140.238.48.194
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本02-1C
-  password: e07a3a6f-1ed5-4b82-91fd-692b7c9ea65b
-  port: 20004
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本01-1F
-  password: 06a3a6ff-30d2-438f-9702-87823c4f4bb0
-  port: 20002
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本03-1G
-  password: 93eef942-3358-4444-8727-00f26f983679
+  name: 28|🇯🇵 日本03-1C
+  password: 32b48888-81c9-4561-85b3-baaf8218965f
   port: 20006
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|🇯🇵 日本04-1A
-  password: d6615ad1-af71-4fc5-a3dc-d530e0aeb662
+  password: f473bb26-7ace-4525-ac14-3f050bfceb6f
   port: 20008
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本02-1B
+  password: 1affeafa-6eac-4d38-838c-1d9118d879b2
+  port: 20004
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本01-1C
+  password: 32b48888-81c9-4561-85b3-baaf8218965f
+  port: 20002
   server: gy.666666222.shop
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-47.74.8.202:...
+  name: 36,37|未知36 2.8MB/s
   network: tcp
-  port: '23468'
+  port: 23468
   server: 47.74.8.202
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 9f563bc7-0481-41d2-f8fd-a4736ded9bc0
