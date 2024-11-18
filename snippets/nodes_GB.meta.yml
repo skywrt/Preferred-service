@@ -1,48 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|25586f9322c64740b065c841ee349b...
-  network: ws
-  port: 22222
-  server: 35.179.196.52
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|bc089ed8fe3a49d1a7d3a87132e0e9...
-  network: ws
-  port: 22222
-  server: 18.130.132.209
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|dd1053e3259f415e8d47e6699f81f2...
-  network: ws
-  port: 443
-  server: 16.724064.xyz
-  tls: true
-  type: vmess
-  udp: false
-  uuid: b7cf4466-956a-4639-b861-0cf78cbb6f8f
-  ws-opts:
-    path: /zlppvws
 - name: 4|🇬🇧 GB 1 → tg@nicevpn123
   password: your_password
   port: 443
@@ -871,20 +827,20 @@ proxies:
   port: 443
   server: 212.102.53.197
   type: ss
-- cipher: aes-128-gcm
-  name: '19,20,21,22|🇬🇧GB-212.102.53.80-0376 #2'
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,22,37|未知20 3.1MB/s
   password: shadowsocks
   port: 443
   server: 212.102.53.80
+  skip-cert-verify: true
+  tls: true
   type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,22,37|未知57 15.9MB/s
+- cipher: aes-128-gcm
+  name: 19,20,21,22|🇧GB-212.102.53.194-0104
   password: shadowsocks
   port: 443
   server: 212.102.53.194
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: aes-128-gcm
   name: 19,20,21,22|🇧GB-212.102.53.196-0634
@@ -898,11 +854,14 @@ proxies:
   port: 443
   server: 212.102.53.81
   type: ss
-- cipher: aes-128-gcm
-  name: 19,20,21,22|🇧GB-212.102.53.195-0437
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,22,37|未知56 6.1MB/s
   password: shadowsocks
   port: 443
   server: 212.102.53.195
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-128-gcm
   name: 19,20,21,22|🇧GB-212.102.53.78-0632
@@ -930,7 +889,8 @@ proxies:
   ws-opts:
     path: /linkvws
 - alterId: 0
-  name: 20,21,22,37|GB国 20.0MB/s
+  name: 20,21,22,37|未知6
+  network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 35.179.203.165
@@ -1072,13 +1032,17 @@ proxies:
   uuid: 5267ca71-97e6-44c8-8fb5-9fe4afe0954e
   ws-opts:
     path: /
-- name: 22|🇧GB-35.178.147.41-1361
+- alterId: 0
+  name: 22,37|未知106 807.1KB/s
+  network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 35.178.147.41
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: 22|🇧GB-185.108.105.129-1938
   password: WCuz7yrfZSCQQXSNrtGPz2HT
@@ -1779,6 +1743,20 @@ proxies:
   uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
   ws-opts:
     path: /ray
+- alterId: 0
+  cipher: auto
+  name: 22,36|🔒 VM-WS-NA 🇬🇧 GB-8.211.192.102...
+  network: ws
+  port: 20292
+  server: 8.211.192.102
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 57f5c2bd-bb79-4fd8-eea1-a84d1ddf3a21
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 22|🇧GB-172.99.190.50-7843

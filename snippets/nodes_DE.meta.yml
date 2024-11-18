@@ -1,92 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|428df43eb0a648e58d56e710515479...
-  network: tcp
-  port: 9393
-  server: 185.226.118.202
-  tls: false
-  type: vless
-  udp: false
-  uuid: 4f53514e-bf21-4d46-8c11-3ac9297927a6
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|ce9115262db54152a1548097100924...
-  network: ws
-  port: 22222
-  server: 3.125.184.61
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
-- client-fingerprint: chrome
-  fingerprint: ''
-  grpc-opts:
-    grpc-service-name: 2096vless
-  name: 3|c20280d1115f4f268b5858c48b1eb5...
-  network: grpc
-  port: 2096
-  server: protect.imageflowai.ir
-  tls: false
-  type: vless
-  udp: false
-  uuid: 4cd1e86a-db85-4826-b379-626d4512a524
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|b443282f9f7a439dafefa546b71d2c...
-  network: ws
-  port: 22222
-  server: 35.159.59.66
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|120fc7e2ca65435db886d2a40f9dbb...
-  network: ws
-  port: 80
-  server: 92.118.190.131
-  tls: false
-  type: vless
-  udp: false
-  uuid: 49699004-a1ba-4621-9744-3d41e98040a9
-  ws-opts:
-    path: /tf3gqdlcz4d9ATYNtIiFQxNPNVWGh
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|5917f55490bf4d11ada6fe6de42d6f...
-  network: tcp
-  port: 20543
-  server: 188.245.118.6
-  tls: false
-  type: vless
-  udp: false
-  uuid: 52cdad32-4470-4581-b100-37c7ec0be395
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|82d3c5063577445db9a16df4beb307...
-  network: ws
-  port: 443
-  server: 57.129.24.142
-  tls: true
-  type: vmess
-  udp: false
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: /linkvws
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 4,8,22,24,37|🇺RU
@@ -475,11 +387,14 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: 4|🇩🇪 DE 9 → tg@nicevpn123
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 4,37|未知40 1.7MB/s
   password: faBAoD54k87UJG7
   port: 2375
   server: 217.182.198.219
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -492,14 +407,11 @@ proxies:
   type: vmess
   uuid: 6d3404ef-27c6-48de-a83a-8ac6488760b4
   ws-opts: {}
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,12,16,22,37|未知47
+- cipher: chacha20-ietf-poly1305
+  name: 5,12,16,22|🇱NL-195.74.86.162-0887
   password: U2EIOHS5CMFms1vO5IhbJW
   port: 443
   server: 195.74.86.162
-  skip-cert-verify: true
-  tls: true
   type: ss
 - alpn:
   - h3
@@ -2223,13 +2135,3 @@ proxies:
   skip-cert-verify: false
   sni: frtgrpc.mainssh.xyz
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '80'
-  server: 103.184.45.164
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 782efefc-aac2-a7f2-6e2b-e42f7bc5d75a

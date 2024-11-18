@@ -1,14 +1,11 @@
 proxies:
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '2,5,9,11,22,24,27,37|HK #1'
+  name: 2,5,9,11,22,24,27|13| |@ripaojiedian
   password: 08d9dc3c-d2cc-4a08-961c-160c3cf00aed
   port: 12002
   server: 58.254.183.32
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
 - alterId: 64
   cipher: auto
@@ -21,20 +18,26 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 2,5,22,24,27|13,14|香港3|@ripaojiedian
+- alterId: 0
+  name: '2,5,22,24,27,37|HK #1'
   network: tcp
   password: QwwHvrnN
   port: 42292
   server: 36.151.192.198
   skip-cert-verify: true
+  tls: true
   type: trojan
-- cipher: aes-256-gcm
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '2,5,9,11,22,24,27|13|🇭🇰 香港4|@ripaojiedian #1'
+  name: 2,5,9,11,22,24,27,37|🇭🇰HK香港2
   password: Z4ZQB7LIKEVW7H3A
   port: 15004
   server: 58.63.250.61
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
 - alterId: 64
   cipher: auto
@@ -212,20 +215,6 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|b84f2a69558440cab9b60c3b397c39...
-  network: ws
-  port: 16928
-  server: 120.232.240.56
-  tls: false
-  type: vmess
-  udp: false
-  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
-  ws-opts:
-    path: None
 - alterId: 0
   cipher: auto
   name: 4|🇨🇳 CN 437 → tg@nicevpn123
@@ -4359,12 +4348,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 5|广东省广州市+移动
+- alterId: 0
+  name: 5,37|🇨🇳广东2
   password: f181b265-5fd4-456e-ad2d-c9b0446e0d51
   port: 27001
   server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+  skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 5,20,21,22|🇱PL-23.27.24.223-1851
   password: 29fefcc3-9ae1-4e01-a1d0-534fc1671121
@@ -5444,12 +5437,18 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  name: 22,37|未知66
-  password: 0MX167RBF00ZI9CR
-  port: 15014
+  name: 22,24,37|未知10
+  password: QMOLGIKYZW15TD56
+  port: 15010
   server: 58.63.250.61
   skip-cert-verify: true
   tls: true
+  type: ss
+- cipher: aes-256-gcm
+  name: 22|🇳CN-58.63.250.61-1905
+  password: 0MX167RBF00ZI9CR
+  port: 15014
+  server: 58.63.250.61
   type: ss
 - name: 22|🇨🇳CN-120.236.197.205-1945
   password: ba4fedf8c217c146
@@ -7036,16 +7035,15 @@ proxies:
   port: 870
   server: 183.240.222.15
   type: ss
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
-  network: tcp
-  port: '59003'
-  server: 183.236.51.36
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: aes-256-gcm
+  name: '24,37|未命名 #1'
+  password: AWWQESJRK4285LIN
+  port: 18007
+  server: 58.63.250.61
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
@@ -7058,7 +7056,17 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 36,37|未知73
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  network: tcp
+  port: '59003'
+  server: 183.236.51.36
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 36,37|未知136
   network: tcp
   port: 50002
   server: 112.132.215.12
