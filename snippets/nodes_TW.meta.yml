@@ -2,21 +2,6 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: 5|欢乐时光-台湾 01
-  network: ws
-  port: 81
-  server: 210.61.97.241
-  servername: happy.mianfeicf.lol
-  tls: true
-  type: vless
-  uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd
-  ws-opts:
-    headers:
-      Host: happy.mianfeicf.lol
-    path: '%2F%3Fed%3D2560'
-- alpn:
-  - h3
-  client-fingerprint: random
   name: 5|欢乐时光-台湾 03
   network: ws
   port: 81
@@ -45,17 +30,33 @@ proxies:
       Host: happy.mianfeicf.lol
     path: '%2F%3Fed%3D2560'
 - alterId: 0
-  client-fingerprint: chrome
-  name: 9,22,27,37|TW
-  network: tcp
-  password: 9b59e769-4324-41dc-8a9c-bcd718a7a757
-  port: 18147
-  server: svip.88de.hongxingdl.vip
-  skip-cert-verify: true
-  sni: mm2.redapricotcloud.com
+  cipher: auto
+  name: 5|🇹🇼台湾免流-02-ak
+  network: ws
+  port: '21111'
+  server: gy.xiyunchen.cn
+  tls: false
+  type: vmess
+  uuid: 15b190b3-f974-4ee1-a289-613d14b38b81
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 5|欢乐时光-台湾 01
+  network: ws
+  port: 81
+  server: 210.61.97.241
+  servername: happy.mianfeicf.lol
   tls: true
-  type: trojan
-  udp: true
+  type: vless
+  uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd
+  ws-opts:
+    headers:
+      Host: happy.mianfeicf.lol
+    path: '%2F%3Fed%3D2560'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 10|台湾 002
@@ -72,7 +73,7 @@ proxies:
   uuid: 60769227-e2e3-490b-9a7e-a3e5d4875462
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 10,28|🇹🇼 台湾2-1A
+  name: 10,28|🇹🇼 台湾2-1B
   network: tcp
   port: 50052
   reality-opts:
@@ -84,7 +85,7 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 77c6b86b-0502-4143-8487-4f47636ea858
+  uuid: 4bec5bb3-2b7b-463b-aac4-a552b77f69f2
 - client-fingerprint: safari
   flow: xtls-rprx-vision
   name: 10|台湾 003
@@ -169,34 +170,6 @@ proxies:
   type: vless
   udp: true
   uuid: fb55ff83-8455-4616-8f05-54715993b440
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 10|台湾 009
-  network: tcp
-  port: 30002
-  reality-opts:
-    public-key: YyW3SIQ8ZPzMlIr0GHupAhioBDlDtoc9BzTVwuAngDM
-    short-id: 8b6dc1a5
-  server: vajgb9.chinese-sm.com
-  servername: www.lovelive-anime.jp
-  tls: true
-  type: vless
-  udp: true
-  uuid: f22d3ad4-4362-40f7-a633-1dbc4ab9ae61
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 10|台湾 010
-  network: tcp
-  port: 30002
-  reality-opts:
-    public-key: zNaNwyaEjGqqD1RSFuJAoQA-e4OiTTUgJm3Bi6_BwXY
-    short-id: 14da529a
-  server: pqdabn.chinese-sm.com
-  servername: www.douyin.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: f22d3ad4-4362-40f7-a633-1dbc4ab9ae61
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: 10|台湾 011
@@ -207,20 +180,6 @@ proxies:
     short-id: 01c3fb99
   server: 82pavp.chinese-sm.com
   servername: www.douyin.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: fb55ff83-8455-4616-8f05-54715993b440
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 10|台湾 012
-  network: tcp
-  port: 30002
-  reality-opts:
-    public-key: Ni75NROYuTpyu3gs8osXqWMHlMyEOC0GLVwipdmF3xA
-    short-id: 08484e84
-  server: xevxwr.chinese-sm.com
-  servername: player.live-video.net
   tls: true
   type: vless
   udp: true
@@ -239,34 +198,34 @@ proxies:
   type: vless
   udp: true
   uuid: fb55ff83-8455-4616-8f05-54715993b440
-- client-fingerprint: chrome
+- client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 10|台湾 014
+  name: 10|台湾 009
   network: tcp
   port: 30002
   reality-opts:
-    public-key: z4sth42R56sV2Pvuu7kqGAhgr62_2uMsGvg3QajxtD8
-    short-id: c06b5ca5
-  server: cjqtur.chinese-sm.com
-  servername: object-bnolauncher-ct.bandainamco-ol.jp
+    public-key: ESKPxcQGKiJvmt12EePzehRIqrHaxmj96f1ACC0gcw4
+    short-id: 1d1d4faf
+  server: q47hch.chinese-sm.com
+  servername: content.cdp.bethesda.net
   tls: true
   type: vless
   udp: true
   uuid: f22d3ad4-4362-40f7-a633-1dbc4ab9ae61
-- client-fingerprint: chrome
+- client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 10|台湾 015
+  name: 10|台湾 010
   network: tcp
   port: 30002
   reality-opts:
-    public-key: YcCADTAK0vFG1esN8ca-I3NFnqk_nlaHNCEpFNsVtFg
-    short-id: 59bd221c
-  server: 7uzr4v.chinese-sm.com
-  servername: download-installer.cdn.mozilla.net
+    public-key: R6t4HkriPZSw1MDzNHpBe0d-R6S9nlJI7XJVcEw-cHc
+    short-id: 47e3a139
+  server: d2majj.chinese-sm.com
+  servername: addons.mozilla.org
   tls: true
   type: vless
   udp: true
-  uuid: f22d3ad4-4362-40f7-a633-1dbc4ab9ae61
+  uuid: fb55ff83-8455-4616-8f05-54715993b440
 - alterId: 0
   cipher: auto
   name: 22|TW-220.130.80.179-0025
@@ -400,28 +359,10 @@ proxies:
     headers:
       host: 61.222.202.140
     path: /
-- name: 22|TW-211.72.35.155-3314
-  password: b09d2aaa443af97a
-  port: 3389
-  server: 211.72.35.155
-  skip-cert-verify: false
-  type: trojan
 - name: 22|🇼TW-60.249.3.125-3343
   password: 3febb05ea76a940f
   port: 3389
   server: 60.249.3.125
-  skip-cert-verify: false
-  type: trojan
-- name: 22|🇹🇼TW-211.72.35.157-4444
-  password: 8b475d9e868e43e0
-  port: 3389
-  server: 211.72.35.157
-  skip-cert-verify: false
-  type: trojan
-- name: 22|🇼TW-211.72.35.152-4430
-  password: b84d16a244460e09
-  port: 3389
-  server: 211.72.35.152
   skip-cert-verify: false
   type: trojan
 - name: 22|🇼TW-211.72.35.158-3397
@@ -734,6 +675,20 @@ proxies:
   port: 50701
   server: 61.220.130.70
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 台湾 1-1B
+  password: c99f9721-12a8-4400-a7b0-83c56210fd71
+  port: 20032
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 台湾01-1A
+  password: e66dad5b-b752-41f9-b68c-76e2c72aa3a6
+  port: 47564
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇹🇼 TW-103.177.33.1...
