@@ -13,14 +13,6 @@ proxies:
   type: vless
   udp: true
   uuid: ef6706c2-ac66-4c39-bf16-208effa86922
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: '2,5,9,11,12,16,24,27|13| |@ripaojiedian #1'
-  password: dongtaiwang.com
-  port: 12345
-  server: 46.17.40.57
-  tfo: false
-  type: ss
 - alpn:
   - h3
   auth_str: dongtaiwang.com
@@ -57,6 +49,22 @@ proxies:
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3,5,11,23,30|🇷🇺_RU_俄罗斯联邦_1
+  network: ws
+  port: 12910
+  server: 45.136.245.240
+  servername: 22.lwdh.us
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    path: /
 - name: 4|🇷🇺 RU 18 → tg@nicevpn123
   password: 8b47d63f-1f8e-4f8e-a1e8-ead3686e5da6
   port: 443
@@ -884,9 +892,17 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: '5,9,11,12,16,24,27|13| |@ripaojiedian #1'
+  password: dongtaiwang.com
+  port: 12345
+  server: 46.17.40.57
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '5,13|🇷🇺_RU_俄罗斯 #2'
+  name: 5|🇷🇺_RU_俄罗斯
   network: ws
   port: 8080
   server: 195.58.49.192
@@ -910,19 +926,6 @@ proxies:
     headers:
       Host: happy.mianfeicf.lol
     path: '%2F%3Fed%3D2560'
-- alterId: 0
-  cipher: auto
-  name: 5,11,23,30|🇷🇺_RU_俄罗斯联邦_1
-  network: ws
-  port: 12910
-  server: 45.136.245.240
-  servername: 22.lwdh.us
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: 5|俄罗斯-莫斯科-001
@@ -1069,6 +1072,12 @@ proxies:
   password: UTJA57ypk2XKQpnm
   port: 9033
   server: 217.30.10.18
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 16|🇷🇺_RU_俄罗斯_2
+  password: 2fwufOmJ9ELfN4umzcHBfV
+  port: 12224
+  server: 194.87.82.28
   type: ss
 - name: 17|俄罗斯(yudou66.com 玉豆免费节点)
   network: ws
