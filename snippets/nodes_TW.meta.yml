@@ -2,6 +2,21 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
+  name: 5|欢乐时光-台湾 01
+  network: ws
+  port: 81
+  server: 210.61.97.241
+  servername: happy.mianfeicf.lol
+  tls: true
+  type: vless
+  uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd
+  ws-opts:
+    headers:
+      Host: happy.mianfeicf.lol
+    path: '%2F%3Fed%3D2560'
+- alpn:
+  - h3
+  client-fingerprint: random
   name: 5|欢乐时光-台湾 02
   network: ws
   port: 443
@@ -14,13 +29,31 @@ proxies:
     headers:
       Host: happy.mianfeicf.lol
     path: '%2F%3Fed%3D2560'
+- alterId: 0
+  cipher: auto
+  name: 5|台湾02
+  network: tcp
+  port: '40202'
+  server: r1.xinyo.me
+  tls: false
+  type: vmess
+  uuid: fcc3a4bd-f7f5-4a8c-a890-e70c6ec18c94
+- alterId: 0
+  cipher: auto
+  name: 5|台湾01|HINET
+  network: tcp
+  port: '40201'
+  server: r1.xinyo.me
+  tls: false
+  type: vmess
+  uuid: fcc3a4bd-f7f5-4a8c-a890-e70c6ec18c94
 - alpn:
   - h3
   client-fingerprint: random
-  name: 5|欢乐时光-台湾 01
+  name: 5|欢乐时光-台湾 03
   network: ws
   port: 81
-  server: 210.61.97.241
+  server: 220.135.202.250
   servername: happy.mianfeicf.lol
   tls: true
   type: vless
@@ -42,21 +75,6 @@ proxies:
     headers:
       Host: ''
     path: ''
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 5|欢乐时光-台湾 03
-  network: ws
-  port: 81
-  server: 220.135.202.250
-  servername: happy.mianfeicf.lol
-  tls: true
-  type: vless
-  uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd
-  ws-opts:
-    headers:
-      Host: happy.mianfeicf.lol
-    path: '%2F%3Fed%3D2560'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 10|台湾 002

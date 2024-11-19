@@ -124,14 +124,15 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
-  name: 2,9,27,40|CN_speednode_0007
+  name: 2,9,24,27,40|CN_speednode_0007
   password: QwwHvrnN
   port: 36900
   server: 36.151.192.198
   skip-cert-verify: true
   sni: 36.151.192.198
   type: trojan
-- name: 2,27,40|CN_speednode_0011
+- client-fingerprint: chrome
+  name: 2,9,24,27,40|CN_speednode_0011
   password: 189ee014-7856-3625-954c-91fb1a122bc6
   port: 20278
   server: gy.58n.net
@@ -4233,10 +4234,23 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 5|🇨🇳四川CNx2
+  name: 5|🇨🇳宁波CNx2
   network: ws
   port: '80'
-  server: 220.167.101.237
+  server: 110.42.50.134
+  tls: false
+  type: vmess
+  uuid: 15b190b3-f974-4ee1-a289-613d14b38b81
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 5|🇨🇳湖北CNx3
+  network: ws
+  port: '80'
+  server: 27.30.78.139
   tls: false
   type: vmess
   uuid: 15b190b3-f974-4ee1-a289-613d14b38b81
@@ -4255,23 +4269,10 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 5|🇨🇳湖北CNx3
+  name: 5|🇨🇳四川CNx2
   network: ws
   port: '80'
-  server: 27.30.78.139
-  tls: false
-  type: vmess
-  uuid: 15b190b3-f974-4ee1-a289-613d14b38b81
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: 5|🇨🇳宁波CNx2
-  network: ws
-  port: '80'
-  server: 110.42.50.134
+  server: 220.167.101.237
   tls: false
   type: vmess
   uuid: 15b190b3-f974-4ee1-a289-613d14b38b81
@@ -4870,6 +4871,14 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
+- client-fingerprint: chrome
+  name: 9|13,14,15|CN_speednode_0010
+  password: QwwHvrnN
+  port: 17806
+  server: 36.151.192.239
+  skip-cert-verify: false
+  sni: 36.151.192.239
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 17|CN_ youtube@资源分享师_17
@@ -4976,19 +4985,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '24|中国 #10'
-  network: ws
-  port: '33202'
-  server: yd2.ainivp.com
-  tls: true
-  type: vmess
-  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
-  ws-opts:
-    headers:
-      Host: yd2.ainivp.com
-    path: /ray
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....

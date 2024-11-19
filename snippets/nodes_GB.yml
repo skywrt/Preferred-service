@@ -462,9 +462,9 @@ proxies:
     path: /zlppvws
 - alterId: 1
   cipher: auto
-  name: 10|英国 001
+  name: '10,24|🇺🇸 美国 华盛顿Cogent通信公司 #3'
   network: ws
-  port: 443
+  port: '443'
   server: 38.114.120.211
   skip-cert-verify: true
   tls: true
@@ -475,12 +475,6 @@ proxies:
     headers:
       Host: 38.114.120.211
     path: linkvws
-- cipher: aes-128-gcm
-  name: 19|🇬🇧GB-212.102.53.78-0647
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.78
-  type: ss
 - alterId: 0
   cipher: aes-128-gcm
   name: 19,20,21,37|未知120 17.4MB/s
@@ -490,50 +484,33 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- cipher: aes-128-gcm
-  name: 19|🇬🇧GB-141.98.101.178-0251
-  password: shadowsocks
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇬🇧GB-129.151.93.231-1261
+  network: ws
   port: 443
-  server: 141.98.101.178
-  type: ss
+  server: 16.724064.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b7cf4466-956a-4639-b861-0cf78cbb6f8f
+  ws-opts:
+    headers:
+      host: 16.724064.xyz
+    path: /zlppvws
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 19,37|未知35
+  name: 20,21,37|未知35
   password: fSEPtYDmuBu7ZnFYXdHMt1
   port: 12575
   server: 89.185.84.185
   skip-cert-verify: true
   tls: true
   type: ss
-- name: '20,21|🇬🇧GB-35.179.203.165-1329 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.179.203.165
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '20,21|🇬🇧GB-35.178.147.41-1361 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.178.147.41
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: '20,21|🇬🇧GB-172.99.190.206-7840 #1'
-  network: ws
-  port: 443
-  server: 172.99.190.206
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇬🇧GB-149.7.16.174-7952 #1'
+  name: '20,21|🇬🇧GB-149.7.16.174-7950 #1'
   network: ws
   port: 443
   server: 149.7.16.174
@@ -547,7 +524,21 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 20,21,36,37|未知139
+  name: '20,21|🇬🇧GB-172.99.190.206-8033 #1'
+  network: ws
+  port: 443
+  server: 172.99.190.206
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知139
   network: ws
   port: 20292
   server: 8.211.192.102
@@ -558,9 +549,3 @@ proxies:
   uuid: 57f5c2bd-bb79-4fd8-eea1-a84d1ddf3a21
   ws-opts:
     path: /
-- name: 24|🇬🇧 英国 社会保险安全部
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.21.141.87
-  skip-cert-verify: false
-  type: trojan

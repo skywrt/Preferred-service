@@ -1,4 +1,19 @@
 proxies:
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|81c734d37e184ba0aeb633fe9e1e07...
+  network: ws
+  port: 22222
+  server: 13.39.145.13
+  servername: telegram-channel-vlessconfig.sohala.uk
+  tls: true
+  type: vless
+  udp: false
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
 - name: 4|🇫🇷 FR 1 → tg@nicevpn123
   password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
   port: 443
@@ -395,20 +410,28 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- name: 5,12|🇫🇷_FR_法国
-  password: telegram-id-directvpn
-  port: 22222
-  server: 35.181.79.128
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alpn:
   - h3
   client-fingerprint: random
-  name: 5|欢乐时光-法国 03
+  name: 5|欢乐时光-法国 02
+  network: ws
+  port: 2053
+  server: 95.182.98.206
+  servername: happy.mianfeicf.lol
+  tls: true
+  type: vless
+  uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd
+  ws-opts:
+    headers:
+      Host: happy.mianfeicf.lol
+    path: '%2F%3Fed%3D2560'
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 5|欢乐时光-法国 01
   network: ws
   port: 8443
-  server: 193.242.145.154
+  server: 13.38.105.183
   servername: happy.mianfeicf.lol
   tls: true
   type: vless
@@ -435,21 +458,6 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: 5|欢乐时光-法国 02
-  network: ws
-  port: 2053
-  server: 95.182.98.206
-  servername: happy.mianfeicf.lol
-  tls: true
-  type: vless
-  uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd
-  ws-opts:
-    headers:
-      Host: happy.mianfeicf.lol
-    path: '%2F%3Fed%3D2560'
-- alpn:
-  - h3
-  client-fingerprint: random
   name: '5|欢乐时光-法国 04 '
   network: ws
   port: 8443
@@ -465,10 +473,10 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: 5|欢乐时光-法国 01
+  name: 5|欢乐时光-法国 03
   network: ws
   port: 8443
-  server: 13.38.105.183
+  server: 193.242.145.154
   servername: happy.mianfeicf.lol
   tls: true
   type: vless
@@ -584,10 +592,53 @@ proxies:
     headers:
       Host: lu.kpcloud.eu.org
     path: /?ed=2048
+- name: 12|🇫🇷_FR_法国
+  password: telegram-id-directvpn
+  port: 22222
+  server: 35.181.79.128
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇫🇷FR-146.19.168.161-0225
+  name: 19|🇫🇷FR-193.160.130.245-8201
+  network: ws
+  port: 443
+  server: 193.160.130.245
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      host: beyonddsz.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇫🇷FR-193.160.130.245-8177
+  network: ws
+  port: 443
+  server: beyonddsz.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      host: beyonddsz.cfd
+    path: /linkws
+- cipher: aes-256-cfb
+  name: 19|🇫🇷FR-51.15.27.48-0706
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.27.48
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇫🇷FR-146.19.168.161-0219
   network: ws
   port: 443
   server: az05.beyondy.cfd
@@ -601,51 +652,7 @@ proxies:
     path: /link
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇫🇷FR-193.160.130.245-8223
-  network: ws
-  port: 443
-  server: beyonddsz.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    headers:
-      host: beyonddsz.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇫🇷FR-193.160.130.245-8247
-  network: ws
-  port: 443
-  server: 193.160.130.245
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    headers:
-      host: beyonddsz.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇫🇷FR-193.160.130.245-8145 #1'
-  network: ws
-  port: 443
-  server: 193.160.130.245
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    headers:
-      Host: beyonddsz.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇫🇷FR-51.77.20.137-7978 #1'
+  name: '20,21|🇫🇷FR-51.77.20.137-7966 #1'
   network: ws
   port: 443
   server: 51.77.20.137
@@ -659,7 +666,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-193.160.130.245-8120 #1'
+  name: '20,21|🇫🇷FR-193.160.130.245-8221 #1'
   network: ws
   port: 443
   server: beyonddsz.cfd
@@ -673,15 +680,22 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-146.19.168.161-0225 #2'
+  name: '20,21|🇫🇷FR-193.160.130.245-8245 #1'
   network: ws
   port: 443
-  server: az05.beyondy.cfd
+  server: 193.160.130.245
   servername: ''
   tls: true
   type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
   ws-opts:
     headers:
-      Host: az05.beyondy.cfd
-    path: /link
+      Host: beyonddsz.cfd
+    path: /linkws
+- name: 24|🇫🇷 法国 巴黎Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.188.100.159
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
