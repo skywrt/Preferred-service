@@ -9,7 +9,7 @@ proxies:
   type: vmess
   uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
   ws-opts: {}
-- name: '5,12|🇸🇪_SE_瑞典->🇺🇸_US_美国 #1'
+- name: 5|🇸🇪_SE_瑞典->🇺🇸_US_美国
   network: ws
   port: 8080
   server: 185.146.173.63
@@ -43,7 +43,7 @@ proxies:
   type: vmess
   uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a
   ws-opts: {}
-- name: '5,12|🇺🇸_US_美国->🇷🇺_RU_俄罗斯 #1'
+- name: 5|🇺🇸_US_美国->🇷🇺_RU_俄罗斯
   network: ws
   port: 80
   server: 151.101.194.165
@@ -56,11 +56,12 @@ proxies:
       Host: TheEndYou.Com
     path: '%2F%E2%80%8C%40Vpn_Shield--%40Vpn-Shield--%40Vpn-Shield--%40Vpn-Shield--%40Vpn-Shield--%40Vpn-Shield--%40Vpn-Shield--%40Vpn-Shield--%40Vpn-Shield--%40Vpn-Shield--%40Vpn-Shield--%40Vpn-Shield'
 - cipher: chacha20-ietf-poly1305
-  name: 5,22,24,40|LT_speednode_0027
-  password: 1RWwXhwfAB5gAEozU4G2Pg
+  name: 5,22,24,27,40|LT_speednode_0015
+  password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.87.175.188
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '5,11|3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3 #1'
@@ -139,7 +140,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '5,11|3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11 #1'
+  name: 5,11,36|🔒 VM-WS-NA 🏴‍☠️ NA-172.64.175....
   network: ws
   port: 2086
   server: 172.64.175.213
@@ -405,6 +406,27 @@ proxies:
     headers:
       host: mizban.arzonhost.ir
     path: /
+- name: 12|🇺🇸_US_美国->🇨🇳_CN_中国
+  network: ws
+  port: 8880
+  server: 104.17.147.22
+  tls: false
+  type: vless
+  uuid: 4b9fd21e-8ad9-4a20-bf21-0a1e81fc1068
+  ws-opts:
+    headers:
+      Host: ch.%E6%88%91%E7%9A%84%E5%90%8D%E5%AD%97%E4%BC%8A%E6%96%AF%E6%A2%85%E6%B4%9B.site.
+    path: '%2Fmelo%2F'
+- alterId: 0
+  cipher: auto
+  name: 12,36|🔒 VM-TCP-NA 🇮🇷 IR-2.182.174.21...
+  network: tcp
+  port: '9090'
+  server: 2.182.174.21
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fddf88ed-8c70-42ad-c12e-5f40841e6f00
 - name: 12|🇺🇸_US_美国->🇹🇷_TR_土耳其
   network: ws
   port: 80
@@ -417,44 +439,10 @@ proxies:
     headers:
       Host: www.iranserver.com.127.0.0.1.%D0%B2%D0%BE%D1%81%D1%82%D0%B5%D0%B9control.%E8%BE%B2%E9%81%94%E6%87%B2.wonkacapitano.buzz.
     path: '%2Fvless%23t-me-DarkVPNpro-t-me-DarkVPNpro-t-me-DarkVPNprot-me-DarkVPNprot-me-DarkVPNprot-me-DarkVPNprot-me-DarkVPNprot-me-DarkVPNpro%3Fed%3D2048'
-- name: '12|🇺🇸_US_美国->🇷🇺_RU_俄罗斯 #2'
-  network: ws
-  port: 80
-  server: 151.101.2.165
-  tls: false
-  type: vless
-  uuid: d47eebd4-80d7-4763-b7a6-9bc57f21f0dc
-  ws-opts:
-    headers:
-      Host: TheEndYou.Com
-    path: '%2F%E2%80%8C%40Vpn_Shield--%40Vpn-Shield--%40Vpn-Shield--%40Vpn-Shield--%40Vpn-Shield--%40Vpn-Shield--%40Vpn-Shield--%40Vpn-Shield--%40Vpn-Shield--%40Vpn-Shield--%40Vpn-Shield--%40Vpn-Shield'
-- name: 12|🇺🇸_US_美国->🇬🇧_GB_英国
-  network: ws
-  port: 80
-  server: 151.101.192.155
-  tls: false
-  type: vless
-  uuid: df38005b-6852-488d-bc2a-1fe648b25b99
-  ws-opts:
-    headers:
-      Host: UnitedKingdom.ISVvpn3467.ir
-    path: '%2FVLESS%3Fed%3D80'
-- name: '12|🇺🇸_US_美国->🇹🇷_TR_土耳其 #1'
-  network: ws
-  port: 80
-  server: 104.19.198.103
-  servername: tr1-vless.ctunnel.xyz
-  tls: false
-  type: vless
-  uuid: 243ff879-b317-4430-894e-767a131db2ca
-  ws-opts:
-    headers:
-      Host: www.iranserver.com.127.0.0.1.%D0%B2%D0%BE%D1%81%D1%82%D0%B5%D0%B9control.%E8%BE%B2%E9%81%94%E6%87%B2.wonkacapitano.buzz.
-    path: '%2Fvless%23t-me-DarkVPNpro-t-me-DarkVPNpro-t-me-DarkVPNprot-me-DarkVPNprot-me-DarkVPNprot-me-DarkVPNprot-me-DarkVPNprot-me-DarkVPNpro%3Fed%3D2048'
-- name: 12|🇺🇸_US_美国->🇨🇳_CN_中国
+- name: '12|🇺🇸_US_美国->🇨🇳_CN_中国 #2'
   network: ws
   port: 8880
-  server: 104.17.147.22
+  server: 104.17.148.22
   tls: false
   type: vless
   uuid: 4b9fd21e-8ad9-4a20-bf21-0a1e81fc1068
@@ -462,6 +450,27 @@ proxies:
     headers:
       Host: ch.%E6%88%91%E7%9A%84%E5%90%8D%E5%AD%97%E4%BC%8A%E6%96%AF%E6%A2%85%E6%B4%9B.site.
     path: '%2Fmelo%2F'
+- alpn:
+  - http/1.1
+  name: 12,24|🇺🇸 美国 弗吉尼亚州阿什本Amazon数据中心
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 34.232.172.166
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: '12|🇺🇸_US_美国->🇨🇳_CN_中国 #3'
+  network: ws
+  port: 80
+  server: 151.101.128.155
+  tls: false
+  type: vless
+  uuid: 79fc4bf6-fd2d-4714-98d7-eadec83d7115
+  ws-opts:
+    headers:
+      Host: spdnet.chanelspdnet.ir.
+    path: '%2FChannel%2CSPDNET%2CSPDNET%3Fed%3D80'
 - name: 13|🇺🇸_US_美国->🇧🇪_BE_比利时_1
   network: ws
   port: 80
