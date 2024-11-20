@@ -3,7 +3,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|dbec001eabd94645a3398edf856b17...
+  name: 3|4fd5c6e2bd1c4680be9ab757f6cf2d...
   network: ws
   port: 443
   server: 186.190.215.75
@@ -76,13 +76,20 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
+- cipher: aes-128-gcm
+  name: 19,20,21,22|🇭CH-156.146.62.164-0659
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.164
+  type: ss
 - alterId: 1
   cipher: auto
-  name: '20,21|🇨🇭CH-186.190.215.32-8003 #1'
+  name: '20,21,22|🇨🇭CH-186.190.215.32-8003 #2'
   network: ws
   port: 443
   server: 186.190.215.32
   servername: ''
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -92,11 +99,12 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: '20,21|🇨🇭CH-186.190.215.75-7944 #1'
+  name: 20,21,22|CH-186.190.215.75-7944
   network: ws
   port: 443
   server: 186.190.215.75
   servername: ''
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -104,3 +112,98 @@ proxies:
     headers:
       Host: 186.190.215.75
     path: linkvws
+- cipher: aes-256-cfb
+  name: 22|🇨CH-185.126.116.125-0099
+  password: aLpQtfEZe445QyHk
+  port: 9098
+  server: 185.126.116.125
+  type: ss
+- alterId: 1
+  cipher: auto
+  name: 22|CH-186.190.215.32-0656
+  network: ws
+  port: 443
+  server: 186.190.215.32
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.32
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 22|🇨🇭CH-186.190.215.75-0665
+  network: ws
+  port: 443
+  server: 186.190.215.75
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.75
+    path: /
+- name: 22|CH-152.67.71.149-3448
+  password: 8a03bc28-2a33-42c4-be59-30464dbb9954
+  port: 18818
+  server: ch12.yukiss.eu.org
+  skip-cert-verify: false
+  type: trojan
+- alterId: 1
+  cipher: auto
+  name: 22|CH-23.166.88.27-8183
+  network: ws
+  port: 443
+  server: 23.166.88.27
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 23.166.88.27
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 22|🇨🇭CH-186.190.215.149-8242
+  network: ws
+  port: 443
+  server: 186.190.215.149
+  servername: 186.190.215.149
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.149
+    path: linkvws
+- name: 40|CH_speednode_0004
+  network: ws
+  port: 587
+  server: 144.24.248.38
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: 40|CH_speednode_0005
+  network: ws
+  port: 8000
+  server: 179.43.144.10
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
