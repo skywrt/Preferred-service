@@ -157,7 +157,7 @@ proxies:
     path: /obdii.cfd/linkws
 - alterId: 0
   cipher: auto
-  name: 10,20,21,36|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.5...
+  name: '10,20,21|🏁RELAY-185.146.173.59-1224 #1'
   network: ws
   port: 80
   server: 185.146.173.59
@@ -200,13 +200,16 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: 20,21,24|🇸🇪 瑞典 斯德哥尔摩Amazon数据中心
+- alterId: 0
+  name: 20,21,24,37|SE
   password: telegram-id-privatevpns
   port: 22222
   server: 13.48.32.167
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 24|🇸🇪 瑞典 V2CROSS.COM
