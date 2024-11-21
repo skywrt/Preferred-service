@@ -1239,12 +1239,13 @@ proxies:
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
 - alterId: 0
   cipher: auto
-  name: 24,36|🔒 VM-TCP-NA 🇭🇰 HK-125.59.146.1...
+  name: 24,36,37|HK3
   network: tcp
-  port: '15086'
+  port: 15086
   server: 125.59.146.198
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
 - alterId: 0
@@ -1293,6 +1294,24 @@ proxies:
     headers:
       Host: hk1.runjustfast.com
     path: /31k64xkea01x
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 24,37|HK
+  password: 486c819c-dc4a-4981-8949-a02a6b327287
+  port: 24014
+  server: hk.ccdox.icu
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 24,37|🇭🇰HK香港2
+  password: 486c819c-dc4a-4981-8949-a02a6b327287
+  port: 34001
+  server: gychun.ccdox.icu
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - name: '24|🇭🇰 HK | 香港 Trojan 02 #1'
   password: d6917779-3141-403c-81b7-3e1d3a5b27b6
   port: 30101
@@ -1317,6 +1336,16 @@ proxies:
   uuid: 45e44017-85f9-4ea6-8bc5-37ab05b1d630
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-34.92.66.193...
+  network: tcp
+  port: '30251'
+  server: 34.92.66.193
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9e88a10b-655c-5120-89d0-408634169561
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-210.0.158.21...
   network: ws
   port: '12909'
@@ -1331,29 +1360,52 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36,37|HK 603.4KB/s
-  network: tcp
-  port: 30251
-  server: 34.92.66.193
-  servername: ''
-  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: claw.xmsl.us
+  name: 36|🔒 VM-GRPC-TLS 🇭🇰 HK-47.243.172...
+  network: grpc
+  port: '22101'
+  server: 47.243.172.173
+  servername: claw.xmsl.us
   tls: true
   type: vmess
-  uuid: 9e88a10b-655c-5120-89d0-408634169561
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa
+- alterId: 0
+  cipher: aes-128-gcm
+  name: '37|HK #1'
+  password: 83fd6a24-41c2-4158-ac18-6fcf0b842764
+  port: 10021
+  server: 91.199.84.65
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   name: 37|HK2
-  network: tcp
-  password: 9ff83a73-c9da-4233-a9e2-7fa9b83b5f75
-  port: 16212
-  server: 91.199.84.195
+  password: f181b265-5fd4-456e-ad2d-c9b0446e0d51
+  port: 27001
+  server: 45.146.232.173
   skip-cert-verify: true
-  sni: data.steamdownload.top
+  sni: q08m.vgraxiw73s.hasyaf.cn
   tls: true
   type: trojan
   udp: true
 - alterId: 0
+  cipher: auto
+  name: 37|HK4
+  network: ws
+  port: 12909
+  server: 210.0.158.219
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    headers:
+      host: 19.lwdh.us
+    path: /
+- alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 37|HK3
+  name: 37|HK5
   password: bd12f79e-3209-4970-83cd-5e1f3526ff51
   port: 39781
   server: 91.103.122.32
@@ -1361,12 +1413,11 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  name: 37|HK4
-  password: f181b265-5fd4-456e-ad2d-c9b0446e0d51
-  port: 27001
-  server: 45.146.232.173
+  name: 37|HK6
+  password: 981db44e-9f07-49eb-9ba0-6ab4939919a2
+  port: 443
+  server: 203.184.132.166
   skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
   tls: true
   type: trojan
   udp: true
