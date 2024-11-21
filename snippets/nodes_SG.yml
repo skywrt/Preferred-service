@@ -1,12 +1,21 @@
 proxies:
-- name: '2,24|🇸🇬 13,14|新加坡|@ripaojiedian #1'
+- client-fingerprint: chrome
+  name: '2,5,9,24,27|13,14||@ripaojiedian #4'
   network: tcp
-  password: 0ff8c310-3191-4071-925e-1f7be8f1f94f
+  password: 535b4471-205d-435e-8d1f-f1aa0d78910a
   port: 8009
-  server: n2.sps465ad81.top
+  server: n9.sps465ad81.top
   skip-cert-verify: false
-  sni: n2.sps465ad81.top
+  sni: n9.sps465ad81.top
   type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 2,5,9,11,20,21,24,27|13| 特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 13.229.238.238
+  tfo: false
+  type: ss
 - name: 4|🇸🇬 SG 1 → tg@nicevpn123
   password: ISpGyFeSDr06
   port: 17418
@@ -357,38 +366,12 @@ proxies:
     headers:
       Host: ''
     path: ''
-- client-fingerprint: chrome
-  name: 5,9,27|13,14|新加坡2|@ripaojiedian
-  network: tcp
-  password: ad6e2bae-d580-4117-aa37-a8c111100740
-  port: 13028
-  server: naiu-sg.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 5,9,11,20,21,27|13| 特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 13.229.238.238
-  tfo: false
-  type: ss
 - cipher: aes-256-cfb
   name: '5,11|1|_SG_ #1'
   password: amazonskr05
   port: 443
   server: 54.179.87.28
   type: ss
-- client-fingerprint: chrome
-  name: '5,9,27|13,14||@ripaojiedian #4'
-  network: tcp
-  password: 535b4471-205d-435e-8d1f-f1aa0d78910a
-  port: 8009
-  server: n9.sps465ad81.top
-  skip-cert-verify: false
-  sni: n9.sps465ad81.top
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|🇸🇬新加坡免流-01-lin
@@ -514,7 +497,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: a8a863dc-7f4e-4080-90ff-0b7178c16d9b
+  uuid: 9df87d42-e18c-4711-b0a5-480ddc91b38d
   ws-opts:
     headers:
       Host: sg0002.hy-2.top
@@ -523,8 +506,9 @@ proxies:
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇸🇬 SG-5.34.176.111...
   network: tcp
-  port: 57614
+  port: '57614'
   server: 5.34.176.111
+  servername: ''
   tls: false
   type: vmess
   uuid: 4e55ce40-9f8e-417d-f8ae-aa6af97a7097

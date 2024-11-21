@@ -1,12 +1,21 @@
 proxies:
-- name: '2,24|🇸🇬 13,14|新加坡|@ripaojiedian #1'
+- client-fingerprint: chrome
+  name: '2,5,9,24,27|13,14||@ripaojiedian #4'
   network: tcp
-  password: 0ff8c310-3191-4071-925e-1f7be8f1f94f
+  password: 535b4471-205d-435e-8d1f-f1aa0d78910a
   port: 8009
-  server: n2.sps465ad81.top
+  server: n9.sps465ad81.top
   skip-cert-verify: false
-  sni: n2.sps465ad81.top
+  sni: n9.sps465ad81.top
   type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 2,5,9,11,20,21,24,27|13| 特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 13.229.238.238
+  tfo: false
+  type: ss
 - name: 4|🇸🇬 SG 1 → tg@nicevpn123
   password: ISpGyFeSDr06
   port: 17418
@@ -357,23 +366,6 @@ proxies:
     headers:
       Host: ''
     path: ''
-- client-fingerprint: chrome
-  name: 5,9,27|13,14|新加坡2|@ripaojiedian
-  network: tcp
-  password: ad6e2bae-d580-4117-aa37-a8c111100740
-  port: 13028
-  server: naiu-sg.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 5,9,11,20,21,27|13| 特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 13.229.238.238
-  tfo: false
-  type: ss
 - alpn:
   - h3
   client-fingerprint: random
@@ -440,15 +432,6 @@ proxies:
     headers:
       Host: happy.mianfeicf.lol
     path: '%2F%3Fed%3D2560'
-- client-fingerprint: chrome
-  name: '5,9,27|13,14||@ripaojiedian #4'
-  network: tcp
-  password: 535b4471-205d-435e-8d1f-f1aa0d78910a
-  port: 8009
-  server: n9.sps465ad81.top
-  skip-cert-verify: false
-  sni: n9.sps465ad81.top
-  type: trojan
 - name: '5,38|🇸🇬_SG_新加坡_7 #1'
   network: ws
   port: 443
@@ -672,6 +655,15 @@ proxies:
     headers:
       host: v2-2.godlight.xyz
     path: /54f634fs
+- auth: 4a77f360-b559-4cc6-a471-9b23e06f1833
+  name: 28|🇸🇬 新加坡-1
+  password: 4a77f360-b559-4cc6-a471-9b23e06f1833
+  port: 30001
+  server: oracle-amd-singapore1.lanmaoyun.icu
+  skip-cert-verify: true
+  sni: main.nodes.lanmaoyun.icu
+  type: hysteria2
+  udp: true
 - alterId: 0
   cipher: auto
   name: 28|🇸🇬 新加坡02-V4-流媒体-1A
@@ -681,26 +673,18 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: a8a863dc-7f4e-4080-90ff-0b7178c16d9b
+  uuid: 9df87d42-e18c-4711-b0a5-480ddc91b38d
   ws-opts:
     headers:
       Host: sg0002.hy-2.top
     path: /0
-- auth: 5bb2abc5-e4c2-4fb1-9abe-e1c07d80c26c
-  name: 28|🇸🇬 新加坡-1
-  password: 5bb2abc5-e4c2-4fb1-9abe-e1c07d80c26c
-  port: 30001
-  server: oracle-amd-singapore1.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: main.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇸🇬 SG-5.34.176.111...
   network: tcp
-  port: 57614
+  port: '57614'
   server: 5.34.176.111
+  servername: ''
   tls: false
   type: vmess
   uuid: 4e55ce40-9f8e-417d-f8ae-aa6af97a7097
