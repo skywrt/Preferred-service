@@ -54,21 +54,27 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '2,5,9,11,24,27|13|🇭🇰 香港7|@ripaojiedian #1'
+  name: '2,5,9,11,24,27,37|HK #1'
   password: Z1K84W4D8G5KO54J
   port: 15011
   server: 58.63.250.61
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '2,5,9,11,24,27|13|🇭🇰 香港8|@ripaojiedian #1'
+  name: 2,5,9,11,24,27,37|🇭🇰HK香港2
   password: bb741d28-cd11-4ce8-8799-459407bacde8
   port: 32184
   server: 4.api-catssr.catcloud.host
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
 - name: '2,5,24,27|13,14||@ripaojiedian #1'
   network: tcp
@@ -88,22 +94,28 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '2,5,24,27|13,14||@ripaojiedian #2'
+- alterId: 0
+  name: 2,5,24,27,37|🇰🇷KR韩国2
   network: tcp
   password: QwwHvrnN
   port: 36900
   server: 36.151.192.198
   skip-cert-verify: true
+  tls: true
   type: trojan
-- client-fingerprint: chrome
-  name: 2,5,9,24,27|13,14|国2|@ripaojiedian
+  udp: true
+- alterId: 0
+  client-fingerprint: chrome
+  name: 2,5,9,24,27,37|🇰🇷KR国
   network: tcp
   password: ad6e2bae-d580-4117-aa37-a8c111100740
   port: 13036
   server: naiu-other.05vr9nyqg5.download
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: cloudflare.node-ssl.cdn-alibaba.com
+  tls: true
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 2,5,9,11,24,27|13| 韩国3|@ripaojiedian
@@ -1004,33 +1016,31 @@ proxies:
     path: /ray
 - alterId: 64
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
   network: tcp
-  port: '50002'
-  server: 112.132.215.12
+  port: '50004'
+  server: 112.132.212.19
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 36,37|未知83
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
   network: tcp
-  port: 50004
-  server: 112.132.212.19
+  port: '59003'
+  server: 183.236.51.36
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 36,37|未知133
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
   network: tcp
-  port: 59003
-  server: 183.236.51.36
+  port: '50002'
+  server: 112.132.215.12
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
