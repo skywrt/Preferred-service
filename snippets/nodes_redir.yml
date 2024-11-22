@@ -19,14 +19,17 @@ proxies:
   type: vmess
   uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
   ws-opts: {}
-- name: 5,13,24|🇫🇷 法国
+- alterId: 0
+  name: 5,24,37|FR国
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 52.47.48.218
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '5,11|1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1 #1'
@@ -57,7 +60,7 @@ proxies:
   ws-opts: {}
 - alterId: 64
   cipher: auto
-  name: '5,11,12,13,24,27|14|香港5|@ripaojiedian #1'
+  name: '5,11,12,24,27|14|香港5|@ripaojiedian #1'
   network: tcp
   port: '58831'
   server: 183.236.48.163
@@ -1080,6 +1083,26 @@ proxies:
     headers:
       Host: nginx-4561f180e2-anssdsfsdf.apps.ir-northwest1.arvancaas.ir
     path: '%2Fdownloadgame'
+- alterId: 0
+  cipher: auto
+  name: 13|🇮🇷_IR_伊朗->🇫🇷_FR_法国_2
+  network: ws
+  port: 2083
+  server: 193.151.144.26
+  tls: false
+  type: vmess
+  uuid: 7b33bc8f-7014-4814-afb1-1c4d7f25314c
+  ws-opts:
+    headers:
+      Host: tv.filmnet.ir
+    path: /
+- name: 13|🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 13.37.24.49
+  sni: trojan.burgerip.co.ukhttp/1.1
+  type: trojan
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|中国香港/中国台湾(CN)China/Shenzhen/小东的程序未能精准识别(可能是中转节点)_3
