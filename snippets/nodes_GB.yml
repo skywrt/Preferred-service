@@ -49,11 +49,10 @@ proxies:
   type: ss
 - alterId: 1
   cipher: auto
-  name: '10,20,21|🇬🇧GB-38.114.120.211-1129 #1'
+  name: 10|英国 001
   network: ws
   port: 443
   server: 38.114.120.211
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -90,14 +89,20 @@ proxies:
       Host: fcspring.ggff.net
     path: /tr?ed
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知18 14.4MB/s
-  password: shadowsocks
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇬🇧GB-217.163.76.147-1891
+  network: ws
   port: 443
-  server: 212.102.53.195
+  server: 217.163.76.147
   skip-cert-verify: true
   tls: true
-  type: ss
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: aes-128-gcm
   name: 19,20,21,37|未知70 11.5MB/s
@@ -107,23 +112,33 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- alterId: 1
-  cipher: auto
-  name: '20,21|🇬🇧GB-149.7.16.194-1313 #1'
-  network: ws
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知18 14.4MB/s
+  password: shadowsocks
   port: 443
-  server: 149.7.16.194
-  servername: ''
+  server: 212.102.53.195
+  skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇬🇧GB-172.99.190.206-8083 #1'
+  client-fingerprint: chrome
+  name: 19|🇬🇧GB-129.151.93.231-1855
+  network: ws
+  port: 443
+  server: 16.724064.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b7cf4466-956a-4639-b861-0cf78cbb6f8f
+  ws-opts:
+    headers:
+      host: 16.724064.xyz
+    path: /zlppvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇬🇧GB-172.99.190.206-7894 #1'
   network: ws
   port: 443
   server: 172.99.190.206
@@ -135,20 +150,34 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- alterId: 1
+- alterId: 0
   cipher: auto
-  name: '20,21|🇬🇧GB-172.99.190.50-1333 #1'
+  name: '20,21|🇬🇧GB-129.151.93.231-1855 #2'
   network: ws
   port: 443
-  server: 172.99.190.50
+  server: 16.724064.xyz
   servername: ''
   tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: b7cf4466-956a-4639-b861-0cf78cbb6f8f
   ws-opts:
     headers:
-      Host: ''
-    path: linkvws
+      Host: 16.724064.xyz
+    path: /zlppvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇬🇧GB-217.163.76.147-1891 #2'
+  network: ws
+  port: 443
+  server: 217.163.76.147
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
   name: '23,30|二爷免费翻墙网https://1808.free.hr/_G... #6'
@@ -233,10 +262,10 @@ proxies:
     headers:
       Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /
-- name: '24|🇬🇧 英国 社会保险安全部 #1'
+- name: 24|🇬🇧 英国 社会保险安全部
   password: telegram-id-directvpn
   port: 22222
-  server: 51.20.180.203
+  server: 51.44.145.72
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan

@@ -168,6 +168,15 @@ proxies:
     headers:
       host: PAgEs.dev
     path: ?ed=2560
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,8,24,37|🇪DE国
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 26667
+  server: service.ouluyun9803.com
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alpn:
   - h3
   client-fingerprint: random
@@ -196,10 +205,10 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: 5|欢乐时光-德国 02
+  name: 5|欢乐时光-德国 04
   network: ws
-  port: 443
-  server: 188.166.162.201
+  port: 2053
+  server: 217.61.105.75
   servername: happy.mianfeicf.lol
   tls: true
   type: vless
@@ -226,10 +235,10 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: 5|欢乐时光-德国 04
+  name: 5|欢乐时光-德国 02
   network: ws
-  port: 2053
-  server: 217.61.105.75
+  port: 443
+  server: 188.166.162.201
   servername: happy.mianfeicf.lol
   tls: true
   type: vless
@@ -425,17 +434,10 @@ proxies:
   tls: false
   type: vless
   uuid: b8e24ec7-b282-46a9-b1ed-92583b1a5120
-- cipher: chacha20-ietf-poly1305
-  name: 16,24,27|0|-https://t.me/MrXbin-2
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.178
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇩🇪DE-130.61.156.132-0709
+  name: 19|🇩🇪DE-130.61.156.132-0674
   network: ws
   port: 443
   server: frankfurt03.zgjok.com
@@ -447,23 +449,38 @@ proxies:
     headers:
       host: frankfurt03.zgjok.com
     path: /
-- alterId: 1
+- alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-23.158.56.145-8012 #1'
+  client-fingerprint: chrome
+  name: 19|🇩🇪DE-80.158.63.104-7975
   network: ws
   port: 443
-  server: 23.158.56.145
+  server: 80.158.63.104
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
+    path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-130.61.156.132-0674 #2'
+  network: ws
+  port: 443
+  server: frankfurt03.zgjok.com
   servername: ''
   tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 4f7c2243-a38a-4672-983b-f1378aee0a7f
   ws-opts:
     headers:
-      Host: 23.158.56.145
-    path: linkvws
+      Host: frankfurt03.zgjok.com
+    path: /
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-8065 #1'
+  name: '20,21|🇩🇪DE-57.129.24.125-7842 #1'
   network: ws
   port: 443
   server: 57.129.24.125
@@ -477,21 +494,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-80.158.63.104-8129 #1'
-  network: ws
-  port: 443
-  server: 80.158.63.104
-  servername: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
-    path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.141-8087 #1'
+  name: '20,21|🇩🇪DE-57.129.24.141-7900 #1'
   network: ws
   port: 443
   server: 57.129.24.141
@@ -531,20 +534,6 @@ proxies:
     headers:
       Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.169.55.15...
-  network: ws
-  port: '33026'
-  server: 89.169.55.152
-  servername: socks5tobefree.ydns.eu
-  tls: true
-  type: vmess
-  uuid: e00f5c12-09e3-490c-b702-29155b6dcc50
-  ws-opts:
-    headers:
-      Host: socks5tobefree.ydns.eu
-    path: /dangerzone
 - alterId: 0
   cipher: auto
   name: 36,37|未知125
