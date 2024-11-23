@@ -1,14 +1,11 @@
 proxies:
-- alterId: 0
-  name: 2,5,24,27,37|HK
+- name: 2,5,24,27|13,14||@ripaojiedian
   network: tcp
   password: QwwHvrnN
   port: 14505
   server: 36.151.192.242
   skip-cert-verify: true
-  tls: true
   type: trojan
-  udp: true
 - name: 2,5,24,27|13,14|香港2|@ripaojiedian
   network: tcp
   password: QwwHvrnN
@@ -65,23 +62,29 @@ proxies:
   server: 58.63.250.61
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '2,5,9,11,24,27|13|🇭🇰 香港8|@ripaojiedian #1'
+  name: '2,5,9,11,24,27,37|HK #1'
   password: BAIL27GTV8AIK2BC
   port: 15012
   server: 58.63.250.61
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
-- client-fingerprint: chrome
-  name: '2,5,9,24,27|13,14||@ripaojiedian #1'
+- alterId: 0
+  client-fingerprint: chrome
+  name: 2,5,9,24,27,37|TW
   network: tcp
   password: e44b6ab7-c0c1-470a-86bc-bc6ccd5bab52
   port: 18147
   server: svip.88de.hongxingdl.vip
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: mm2.redapricotcloud.com
+  tls: true
   type: trojan
+  udp: true
 - name: '2,5,24,27|13,14||@ripaojiedian #2'
   network: tcp
   password: QwwHvrnN
@@ -100,16 +103,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: 2,5,24,27,37|KR国
+- name: '2,5,24,27|13,14||@ripaojiedian #3'
   network: tcp
   password: QwwHvrnN
   port: 36900
   server: 36.151.192.198
   skip-cert-verify: true
-  tls: true
   type: trojan
-  udp: true
 - client-fingerprint: chrome
   name: 2,5,9,24,27|13,14|国2|@ripaojiedian
   network: tcp
@@ -1044,6 +1044,17 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
+  name: 36,37|未知28
+  network: tcp
+  port: 50002
+  server: 112.132.215.12
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
   network: tcp
   port: '50004'
@@ -1060,16 +1071,5 @@ proxies:
   server: 183.236.51.36
   servername: ''
   tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 36,37|未知142
-  network: tcp
-  port: 50002
-  server: 112.132.215.12
-  servername: ''
-  skip-cert-verify: true
-  tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24

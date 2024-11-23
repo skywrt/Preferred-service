@@ -104,24 +104,6 @@ proxies:
       host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /obdii.cfd:443/linkws
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知70 11.5MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.78
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知18 14.4MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 19|🇬🇧GB-129.151.93.231-1855
@@ -271,11 +253,23 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-62.112.221.4...
+  name: 36,37|未知110
   network: tcp
-  port: '3939'
+  port: 3939
   server: 62.112.221.47
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: c966a8e9-aed4-47dd-baaa-c830a99ebdfb
+- alterId: 0
+  name: 37|GB国
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 51.44.134.168
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
