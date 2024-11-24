@@ -1,10 +1,15 @@
 proxies:
-- name: 5|英国+伦敦Amazon数据中心
+- alterId: 0
+  name: 5,37|未知25
+  network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 35.179.190.208
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - name: 8|🇬🇧GB-3.9.164.189-194_1@194
   password: E6r93XCOsyM9
   port: 16733
@@ -67,28 +72,10 @@ proxies:
     path: /tr?ed
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知107 20.2MB/s
+  name: 19,20,21,37|未知9 17.4MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.78
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知72 17.3MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.80
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知77 17.2MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.81
+  server: 212.102.53.197
   skip-cert-verify: true
   tls: true
   type: ss
@@ -100,10 +87,10 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇬🇧GB-172.99.190.206-7913 #1'
+  name: '20,21|🇬🇧GB-149.7.16.174-7862 #1'
   network: ws
   port: 443
-  server: 172.99.190.206
+  server: 149.7.16.174
   servername: ''
   tls: true
   type: vmess
@@ -227,9 +214,3 @@ proxies:
   tls: false
   type: vmess
   uuid: c966a8e9-aed4-47dd-baaa-c830a99ebdfb
-- cipher: chacha20-ietf-poly1305
-  name: 40|GB_speednode_0012
-  password: vntxqHhPINXu5Ag6876fXO
-  port: 1080
-  server: 51.195.220.179
-  type: ss

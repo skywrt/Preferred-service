@@ -554,17 +554,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36,37|HK2
-  network: tcp
-  port: 15086
-  server: 125.59.146.198
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-210.0.158.21...
   network: ws
   port: '12909'
@@ -578,20 +567,23 @@ proxies:
       Host: 19.lwdh.us
     path: /
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 37|HK
-  password: 83fd6a24-41c2-4158-ac18-6fcf0b842764
-  port: 20004
-  server: 91.199.84.65
-  skip-cert-verify: true
-  tls: true
-  type: ss
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-125.59.146.1...
+  network: tcp
+  port: '15086'
+  server: 125.59.146.198
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|HK3
-  password: 58488114-45ae-4577-8764-7826ab621ee1
-  port: 50242
-  server: 46.232.123.24
+  name: '37|HK #1'
+  network: tcp
+  password: de45945e-65ea-4d13-b29d-1835a4281023
+  port: 35003
+  server: 103.100.177.32
   skip-cert-verify: true
+  sni: updates.sub-nthu.com
   tls: true
-  type: ss
+  type: trojan
+  udp: true
