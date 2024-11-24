@@ -1,20 +1,4 @@
 proxies:
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 2,5,9,11,24,27|13|🇯🇵 日本|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 54.199.66.30
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 2,5,9,11,20,21,24,27|13|🇷 韩国特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 3.112.124.200
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -619,6 +603,23 @@ proxies:
   server: 13.231.229.41
   type: ss
   udp: true
+- alterId: 64
+  cipher: auto
+  name: '5,11,24,27|14|日本2|@ripaojiedian #1'
+  network: tcp
+  port: '59952'
+  server: 183.236.48.158
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: '5,24,27|13,14||@ripaojiedian #1'
+  network: tcp
+  password: QwwHvrnN
+  port: 17806
+  server: 36.151.192.239
+  skip-cert-verify: true
+  type: trojan
 - name: 8|🇯🇵JP-3.112.192.169-188_1@188
   password: umis0GDWL5RQ
   port: 16717
@@ -647,6 +648,17 @@ proxies:
   skip-cert-verify: false
   sni: 36.151.192.239
   type: trojan
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 9,27|13| 日本2|@ripaojiedian
+  port: 59952
+  server: 183.236.48.158
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 10|日本 001
@@ -738,29 +750,63 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇯🇵 日本 东京Amazon数据中心
+  network: ws
+  port: '11521'
+  server: 00000000000000000000000002.node-for-smallairport.win
+  tls: true
+  type: vmess
+  uuid: ab0ab89d-de80-44bd-b938-cafda772976d
+  ws-opts:
+    headers:
+      Host: 00000000000000000000000002.node-for-smallairport.win
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本02-1C
-  password: f856bfa6-a57b-479d-8701-fe60711dfddf
-  port: 20004
-  server: gy.666666222.shop
+  name: 27|13|🇵 日本3|@ripaojiedian
+  password: a93aa7ad-a2fd-41c7-a9f4-2ad622d7756d
+  port: 11002
+  server: 61.172.235.22
+  tfo: false
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本04-1B
-  password: 6ec8e042-0588-481e-8f68-523ed29cdef1
+  name: 27|13|🇵 日本4|@ripaojiedian
+  password: 2852c164-1a5b-4628-b668-3554c7aa4453
+  port: 11001
+  server: 61.172.235.22
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 27|13|🇯🇵 日本|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 54.64.20.76
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本04-1E
+  password: 3e42701d-1386-4dbd-ad5e-cc47787208af
   port: 20008
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|🇯🇵 日本03-1G
-  password: ae8265fa-6a8b-4c8e-ae66-78414645f8b6
+  password: fb974a3e-520e-4b74-9e4f-42637396d515
   port: 20006
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本01-1H
+  name: 28|🇯🇵 日本02-1B
+  password: 6ec8e042-0588-481e-8f68-523ed29cdef1
+  port: 20004
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本01-1E
   password: 3e42701d-1386-4dbd-ad5e-cc47787208af
   port: 20002
   server: gy.666666222.shop
@@ -768,10 +814,10 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-62.3.6.160:5...
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-138.2.36.157...
   network: ws
-  port: 5555
-  server: 62.3.6.160
+  port: 8443
+  server: 138.2.36.157
   servername: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
   tls: true
   type: vmess
@@ -782,10 +828,10 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-138.2.36.157...
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-62.3.6.160:5...
   network: ws
-  port: 8443
-  server: 138.2.36.157
+  port: 5555
+  server: 62.3.6.160
   servername: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
   tls: true
   type: vmess
