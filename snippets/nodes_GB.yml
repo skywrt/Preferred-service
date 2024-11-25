@@ -1,21 +1,4 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|5617c153751343b6939bf1418bb5e4...
-  network: ws
-  port: 443
-  server: 217.163.76.116
-  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-  tls: true
-  type: vmess
-  udp: false
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-    path: /obdii.cfd:443/linkws
 - name: 8|🇬🇧GB-3.9.164.189-194_1@194
   password: E6r93XCOsyM9
   port: 16733
@@ -52,7 +35,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知27 10.7MB/s
+  name: 19,20,21,37|未知22 2.2MB/s
   password: shadowsocks
   port: 443
   server: 212.102.53.78
@@ -61,19 +44,19 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知82 10.9MB/s
+  name: 19,20,21,37|未知120 3.2MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.196
+  server: 212.102.53.197
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知20 12.4MB/s
+  name: 19,20,21,37|未知115 4.1MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.197
+  server: 141.98.101.178
   skip-cert-verify: true
   tls: true
   type: ss
@@ -83,6 +66,20 @@ proxies:
   network: ws
   port: 443
   server: 149.7.16.174
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇬🇧GB-172.99.190.206-7645 #1'
+  network: ws
+  port: 443
+  server: 172.99.190.206
   servername: ''
   tls: true
   type: vmess
@@ -196,13 +193,16 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 24|🇬🇧 英国
+- alterId: 0
+  name: 24,37|GB国
   password: telegram-id-directvpn
   port: 22222
   server: 51.44.46.48
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-62.112.221.4...
@@ -213,3 +213,9 @@ proxies:
   tls: false
   type: vmess
   uuid: c966a8e9-aed4-47dd-baaa-c830a99ebdfb
+- cipher: chacha20-ietf-poly1305
+  name: 40|GB_speednode_0012
+  password: vntxqHhPINXu5Ag6876fXO
+  port: 1080
+  server: 51.195.220.179
+  type: ss

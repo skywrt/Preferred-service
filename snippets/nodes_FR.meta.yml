@@ -1,24 +1,9 @@
 proxies:
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|f6431dc97e3d43ed9f727f6e282125...
-  network: ws
-  port: 22222
-  server: 35.180.70.73
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|082de6db20b64171b92613d18c609b...
+  name: 3|50d3f332424e4986b907226c1ed657...
   network: ws
   port: 443
   server: root.mid.al
@@ -31,6 +16,36 @@ proxies:
     headers:
       host: www.Arizona.edu
     path: /aries?ed=2048
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|32f6e405ae2042c4bb1a13a68b0728...
+  network: ws
+  port: 443
+  server: 141.101.122.217
+  servername: lv.ylks01.eu.org
+  tls: true
+  type: vless
+  udp: false
+  uuid: 8041c6d9-8359-4e57-a55d-8f14e99bb9bc
+  ws-opts:
+    headers:
+      host: lv.ylks01.eu.org
+    path: /?ed=2560
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|0f983951cfc14020b07c50a01755b8...
+  network: ws
+  port: 22222
+  server: 51.44.50.250
+  servername: telegram-channel-vlessconfig.sohala.uk
+  tls: true
+  type: vless
+  udp: false
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
 - alterId: 0
   cipher: auto
   name: 8|🇫🇷FR-213.32.63.176-186_1@186
@@ -118,21 +133,24 @@ proxies:
     headers:
       Host: lu.kpcloud.eu.org
     path: /?ed=2048
-- name: 10|法国 003
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇫🇷FR-146.19.168.161-0278
   network: ws
-  port: 2003
-  server: 2.58.56.31
-  servername: a.mifeng.us.kg
+  port: 443
+  server: az05.beyondy.cfd
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
   ws-opts:
     headers:
-      Host: a.mifeng.us.kg
-    path: /?ed=2560
+      host: az05.beyondy.cfd
+    path: /link
 - alterId: 0
-  name: 20,21,37|🇺🇸US美国3
+  name: 20,21,37|未知76
+  network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 13.37.190.233
@@ -155,35 +173,33 @@ proxies:
     headers:
       Host: tilebani.com
     path: /linkvws
-- name: 24|🇫🇷 法国 巴黎Amazon数据中心
+- alterId: 0
+  name: 24,37|FR国
+  network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 52.47.211.172
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 36,37|未知86 10.3MB/s
+  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-162.19.25.20...
   network: tcp
-  port: 44513
+  port: '44513'
   server: 162.19.25.207
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 4552bdb6-e008-43ac-926d-c6c6c5a6fc76
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇫🇷 FR-141.145.216....
-  network: ws
-  port: 2087
-  server: 141.145.216.142
-  servername: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+  cipher: aes-256-gcm
+  name: 37|🇫🇷FR法国2 1.7MB/s
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 149.202.82.172
+  skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /obdii.cfd:443/linkws
+  type: ss
