@@ -1,18 +1,21 @@
 proxies:
-- name: 2,5,24,27|13,14||@ripaojiedian
+- name: 2,24,27|13,14||@ripaojiedian
   network: tcp
   password: QwwHvrnN
   port: 14505
   server: 36.151.192.242
   skip-cert-verify: true
   type: trojan
-- name: 2,5,24,27|13,14|香港2|@ripaojiedian
+- alterId: 0
+  name: 2,24,27,37|HK
   network: tcp
   password: QwwHvrnN
   port: 42395
   server: 36.151.192.196
   skip-cert-verify: true
+  tls: true
   type: trojan
+  udp: true
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -27,7 +30,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: '2,9,27|13|🇭🇰 香港5|@ripaojiedian #1'
+  name: 2,9,27|13|🇭🇰 香港5|@ripaojiedian
   port: 58831
   server: 183.236.48.163
   skip-cert-verify: false
@@ -38,23 +41,15 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 2,5,9,11,24,37|HK
-  password: a93aa7ad-a2fd-41c7-a9f4-2ad622d7756d
+  name: 2,9,11,24,27,37|🇭🇰HK香港3
+  password: 38c4951c-4975-4737-a5d4-7faad420b4c5
   port: 11001
-  server: 183.232.229.164
+  server: 183.240.255.75
   skip-cert-verify: true
   tfo: false
   tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '2,5,9,11,24,27|13|🇭🇰 香港6|@ripaojiedian #1'
-  password: 38c4951c-4975-4737-a5d4-7faad420b4c5
-  port: 11001
-  server: 183.240.255.75
-  tfo: false
-  type: ss
-- name: '2,5,24,27|13,14||@ripaojiedian #1'
+- name: '2,24,27|13,14||@ripaojiedian #1'
   network: tcp
   password: QwwHvrnN
   port: 17806
@@ -63,8 +58,7 @@ proxies:
   type: trojan
 - alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  name: 2,9|🇯🇵 14|日本2|@ripaojiedian
+  name: 2|China_None_vmess_1123
   port: 59952
   server: 183.236.48.158
   skip-cert-verify: false
@@ -72,18 +66,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 2,5,9,11,24,27,37|JP
-  password: 2852c164-1a5b-4628-b668-3554c7aa4453
+  name: 2,9,11,24,27|13|🇵 日本4|@ripaojiedian
+  password: 4bd9a564-e41a-4d4b-9c62-7b2086221a9b
   port: 11001
   server: 61.172.235.22
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
-- name: '2,5,24,27|13,14||@ripaojiedian #2'
+- name: '2,24,27|13,14||@ripaojiedian #2'
   network: tcp
   password: QwwHvrnN
   port: 36900
@@ -92,7 +83,7 @@ proxies:
   type: trojan
 - alterId: 64
   cipher: auto
-  name: '2,5,11,24,27|14|香港3|@ripaojiedian #1'
+  name: 2,11,24,27|14|香港3|@ripaojiedian
   network: tcp
   port: '53002'
   server: 183.236.51.23
@@ -102,7 +93,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '2,5,11,12,16,24,27|14|香港5|@ripaojiedian #1'
+  name: 2,11,12,13,16,24,27|14|香港5|@ripaojiedian
   network: tcp
   port: '58831'
   server: 183.236.48.163
@@ -112,7 +103,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '2,5,11,24|🇯🇵 14|日本2|@ripaojiedian #1'
+  name: 2,24|🇯🇵 14|日本2|@ripaojiedian
   network: tcp
   port: '59952'
   server: 183.236.48.158
@@ -131,7 +122,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 2,5,11,24,27,41|d*********g.com_2
+  name: 2,11,24,27,41|d*********g.com_2
   network: tcp
   port: '443'
   server: 42.236.73.72
@@ -152,47 +143,6 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
-- cipher: aes-256-cfb
-  name: '5,11|1|_CN_ #1'
-  password: hGkQ6915tD
-  port: 15082
-  server: 59.56.77.178
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 5,11,24|🇨🇳 github.com/freefq - 广东省移动 7
-  network: ws
-  port: '20401'
-  server: data-us-v1.shwjfkw.cn
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-us-v1.shwjfkw.cn
-    path: /debian
-- alterId: 64
-  cipher: auto
-  name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
-  network: tcp
-  port: 54882
-  server: 183.240.235.162
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '5,38|🇨🇳_CN_中国_38 #1'
-  network: ws
-  port: 2053
-  server: 103.184.44.62
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
   name: 8|🇨🇳CN-139.227.223.3-049_1@49
@@ -771,6 +721,15 @@ proxies:
   ws-headers:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 8,24,37|DE
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 26667
+  server: service.ouluyun9803.com
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 8|🇨🇳CN-117.149.247.11-173_1@173
   password: 8e949d75-3510-4678-8593-3c5032dd931a
@@ -790,6 +749,35 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
+- cipher: aes-256-cfb
+  name: 11|1|_CN_
+  password: hGkQ6915tD
+  port: 15082
+  server: 59.56.77.178
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: '11|3,17|🇨🇳_CN_中国 #1'
+  network: tcp
+  port: 54882
+  server: 183.240.235.162
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 11,24|🇨🇳 github.com/freefq - 广东省移动 7
+  network: ws
+  port: '20401'
+  server: data-us-v1.shwjfkw.cn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-us-v1.shwjfkw.cn
+    path: /debian
 - alterId: 0
   cipher: auto
   name: 17|CN_ youtube@资源分享师_17
@@ -975,6 +963,27 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  network: tcp
+  port: '59003'
+  server: 183.236.51.36
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 36,37|未知46
+  network: tcp
+  port: 50004
+  server: 112.132.212.19
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇳 CN-47.92.152.16...
   network: tcp
   port: '50002'
@@ -983,27 +992,18 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 36,37|未知109
-  network: tcp
-  port: 59003
-  server: 183.236.51.36
-  servername: ''
-  skip-cert-verify: true
+- name: 38|🇨🇳_CN_中国_38
+  network: ws
+  port: 2053
+  server: 103.184.44.62
+  servername: juzibaipiao.5112233.xyz
   tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
-  network: tcp
-  port: '50004'
-  server: 112.132.212.19
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2f%3fed%3d2048'
 - cipher: chacha20-ietf-poly1305
   name: 40|CN_speednode_0002
   password: ed0358e8-c6a1-424e-8fd1-eb2e3ea02af5
