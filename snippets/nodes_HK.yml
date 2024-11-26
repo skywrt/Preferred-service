@@ -37,13 +37,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 9,11,24,27|13|🇭🇰 香港6|@ripaojiedian
+  name: 9,11,24,27,37|🇰HK
   password: bb741d28-cd11-4ce8-8799-459407bacde8
   port: 13274
   server: 2.api-catssr.catcloud.host
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
@@ -658,35 +661,26 @@ proxies:
   skip-cert-verify: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港03-1F
-  password: 1a76be45-3721-4943-9a04-4bff3c49dfa0
-  port: 20052
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港01-1E
+  name: 28|🇭🇰 香港01-1B
   password: 7097b700-9fbd-4640-ac8a-561289b9024d
   port: 34338
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港02-1I
-  password: 32cf44e1-7a39-4f1a-9dc8-f6e3ceb8be18
+  name: 28|🇭🇰 香港02-1C
+  password: 59228b81-2dd8-43c9-9516-e8168e35c7d2
   port: 20035
   server: gy.666666222.shop
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-163.53.18.15...
-  network: tcp
-  port: '19901'
-  server: 163.53.18.154
-  tls: false
-  type: vmess
-  uuid: 9c280b61-07d8-4263-813e-670d3eabf416
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港03-1B
+  password: 7097b700-9fbd-4640-ac8a-561289b9024d
+  port: 20052
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-210.0.158.21...
@@ -701,3 +695,34 @@ proxies:
     headers:
       Host: 19.lwdh.us
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-163.53.18.15...
+  network: tcp
+  port: '19901'
+  server: 163.53.18.154
+  tls: false
+  type: vmess
+  uuid: 9c280b61-07d8-4263-813e-670d3eabf416
+- alterId: 0
+  name: 37|HK
+  network: tcp
+  password: 4e399fb9-5a4c-49cd-9849-2051512f4c6c
+  port: 27101
+  server: 45.146.232.172
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|HK2
+  network: tcp
+  password: 9ff83a73-c9da-4233-a9e2-7fa9b83b5f75
+  port: 16212
+  server: 91.199.84.195
+  skip-cert-verify: true
+  sni: data.steamdownload.top
+  tls: true
+  type: trojan
+  udp: true
