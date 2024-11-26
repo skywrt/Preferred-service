@@ -3,7 +3,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|653a2ed2a99841d2ab9ad1a4111b45...
+  name: 3|49ce91fb0e0d4848a30a6087704381...
   network: ws
   port: 12109
   server: 112.69.4.50
@@ -20,7 +20,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|d891d81b3aa44b6c99d25ddc6427ac...
+  name: 3|aeba8e73bbd747b3b04a14f520bb7e...
   network: ws
   port: 12344
   server: 158.101.142.227
@@ -70,16 +70,8 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 9,11,24,27|13|🇵 日本3|@ripaojiedian
-  password: 3b2ea7fe-645d-4d79-b899-7170797a3399
+  password: 0620ba28-fc2e-4904-b34a-256883223a8f
   port: 11003
-  server: 61.172.235.22
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 9,11,24,27|13|🇵 日本4|@ripaojiedian
-  password: 4bd9a564-e41a-4d4b-9c62-7b2086221a9b
-  port: 11001
   server: 61.172.235.22
   tfo: false
   type: ss
@@ -120,7 +112,7 @@ proxies:
   udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 11,27|13| 日本2|@ripaojiedian
+  name: 11|15|🇯🇵 日本2|@ripaojiedian
   obfs: plain
   obfs-param: e0a3163814.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -228,38 +220,47 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- name: '24,27|13,14||@ripaojiedian #1'
-  network: tcp
+- name: '24|🇯🇵 13,14|日本|@ripaojiedian #1'
   password: QwwHvrnN
   port: 17806
   server: 36.151.192.239
   skip-cert-verify: true
   type: trojan
+- cipher: rc4-md5
+  name: 27|13| 日本2|@ripaojiedian
+  obfs: plain
+  obfs-param: 255e7112598.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40202
+  protocol: auth_aes128_md5
+  protocol-param: 112598:vcy7qi
+  server: 95b1cd85a0968ff2.cdn.jiashule.com
+  type: ssr
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本02-1F
-  password: 8bdeb878-5950-44d9-8c5b-3d77313a1641
-  port: 20004
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本01-1A
-  password: 7097b700-9fbd-4640-ac8a-561289b9024d
-  port: 20002
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本03-1A
-  password: 7097b700-9fbd-4640-ac8a-561289b9024d
+  name: 28|🇯🇵 日本03-1E
+  password: cd898710-6517-4d9f-935c-46136e309b44
   port: 20006
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本04-1C
-  password: 673ddc69-b2c4-43a1-9ced-f411f641751f
+  name: 28|🇯🇵 日本01-1A
+  password: 9a6ba8e3-7120-48a3-8759-c42dd2bf5edf
+  port: 20002
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本04-1B
+  password: 8bdeb878-5950-44d9-8c5b-3d77313a1641
   port: 20008
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本02-1G
+  password: 1a76be45-3721-4943-9a04-4bff3c49dfa0
+  port: 20004
   server: gy.666666222.shop
   type: ss
   udp: true
@@ -277,3 +278,36 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-103.200.30.8...
+  network: tcp
+  port: 45458
+  server: 103.200.30.8
+  tls: false
+  type: vmess
+  uuid: bbe8249a-3bfe-43c2-fe55-838e7ae13c45
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-112.69.4.50:...
+  network: ws
+  port: 12109
+  server: 112.69.4.50
+  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+    path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: none
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.104.82.173...
+  network: tcp
+  port: '35976'
+  server: 5.104.82.173
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: dccaf5fa-5482-49cb-8519-5434af52ccbc
