@@ -1,32 +1,11 @@
 proxies:
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 5,9,11,24,27|13| 日本2|@ripaojiedian
-  password: asd123456
-  port: 8388
-  server: 107.148.6.121
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 5|日本 东京Fastly节点
-  network: ws
-  port: 443
-  server: root.mid.al
-  tls: true
-  type: vmess
-  uuid: a983c698-cae4-4254-d047-51898ccd8ee7
-  ws-opts:
-    headers:
-      Host: kim.gov.kp
-    path: /aries?ed=2048
 - alpn:
   - h3
   client-fingerprint: random
-  name: 5|欢乐时光-日本 02
+  name: 5|欢乐时光-日本 01
   network: ws
   port: 443
-  server: 168.138.215.251
+  server: 131.186.60.210
   servername: mo.666888.lol
   tls: true
   type: vless
@@ -35,6 +14,21 @@ proxies:
     headers:
       Host: mo.666888.lol
     path: '%2F%3Fed%3D2560'
+- name: '5,24,27|13,14||@ripaojiedian #1'
+  network: tcp
+  password: QwwHvrnN
+  port: 44673
+  server: 36.151.192.203
+  skip-cert-verify: true
+  type: trojan
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 5,9,11,24,27|13| 日本2|@ripaojiedian
+  password: asd123456
+  port: 8388
+  server: 107.148.6.121
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 5,9,11,24,27|13|🇵 日本3|@ripaojiedian
@@ -51,33 +45,6 @@ proxies:
   server: 34.219.52.114
   tfo: false
   type: ss
-- name: '5,24,27|13,14||@ripaojiedian #1'
-  network: tcp
-  password: QwwHvrnN
-  port: 44673
-  server: 36.151.192.203
-  skip-cert-verify: true
-  type: trojan
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 5|欢乐时光-日本 01
-  network: ws
-  port: 443
-  server: 131.186.60.210
-  servername: mo.666888.lol
-  tls: true
-  type: vless
-  uuid: a7ffa000-87b7-4e42-9286-7be3c9d5353f
-  ws-opts:
-    headers:
-      Host: mo.666888.lol
-    path: '%2F%3Fed%3D2560'
-- name: 5|日本+亚马逊(Amazon)公司日本数据中心
-  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
-  port: 20230
-  server: jp006.421421.xyz
-  type: trojan
 - alpn:
   - h3
   client-fingerprint: random
@@ -93,13 +60,26 @@ proxies:
     headers:
       Host: mo.666888.lol
     path: '%2F%3Fed%3D2560'
+- alterId: 0
+  cipher: auto
+  name: 5,24|🇯🇵 日本 东京Fastly节点
+  network: ws
+  port: '443'
+  server: root.mid.al
+  tls: true
+  type: vmess
+  uuid: a983c698-cae4-4254-d047-51898ccd8ee7
+  ws-opts:
+    headers:
+      Host: kim.gov.kp
+    path: /aries?ed=2048
 - alpn:
   - h3
   client-fingerprint: random
-  name: 5|欢乐时光-日本 05
+  name: 5|欢乐时光-日本 04
   network: ws
-  port: 10000
-  server: 168.138.201.26
+  port: 443
+  server: 168.138.194.74
   servername: mo.666888.lol
   tls: true
   type: vless
@@ -111,10 +91,25 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: 5|欢乐时光-日本 04
+  name: 5|欢乐时光-日本 02
   network: ws
   port: 443
-  server: 168.138.194.74
+  server: 168.138.215.251
+  servername: mo.666888.lol
+  tls: true
+  type: vless
+  uuid: a7ffa000-87b7-4e42-9286-7be3c9d5353f
+  ws-opts:
+    headers:
+      Host: mo.666888.lol
+    path: '%2F%3Fed%3D2560'
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 5|欢乐时光-日本 05
+  network: ws
+  port: 10000
+  server: 168.138.201.26
   servername: mo.666888.lol
   tls: true
   type: vless
@@ -150,7 +145,15 @@ proxies:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
 - client-fingerprint: chrome
-  name: 9,27,40|JP_speednode_0020
+  name: 9|🇯🇵 13,14|日本|@ripaojiedian
+  password: QwwHvrnN
+  port: 44673
+  server: 36.151.192.203
+  skip-cert-verify: false
+  sni: 36.151.192.203
+  type: trojan
+- client-fingerprint: chrome
+  name: 9,24,27,40|JP_speednode_0020
   password: 24273330-85c9-3a6e-a0fd-58a6076a3a85
   port: 443
   server: 18.179.44.127
@@ -159,15 +162,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: '9,24|_中国 #33'
-  password: QwwHvrnN
-  port: 44673
-  server: 36.151.192.203
-  skip-cert-verify: true
-  sni: 36.151.192.203
-  type: trojan
-- client-fingerprint: chrome
-  name: 9,27,40|JP_speednode_0021
+  name: 9,24,27,40|JP_speednode_0021
   password: 24273330-85c9-3a6e-a0fd-58a6076a3a85
   port: 443
   server: 35.75.8.137
@@ -345,13 +340,6 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- name: 24|🇯🇵 _日本
-  password: dfe1ef9b-e590-3b93-816a-e58a908bce99
-  port: 443
-  server: 18.179.44.127
-  skip-cert-verify: true
-  sni: upos-hz-mirrorakam.akamaized.net
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 28|🇯🇵 日本01-1J
   password: ddba1f26-2587-489a-981e-cc655cfb3e94
