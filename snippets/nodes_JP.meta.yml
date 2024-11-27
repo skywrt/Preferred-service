@@ -14,13 +14,16 @@ proxies:
     headers:
       Host: mo.666888.lol
     path: '%2F%3Fed%3D2560'
-- name: '5,24,27|13,14||@ripaojiedian #1'
+- alterId: 0
+  name: 5,24,27,37|🇯🇵JP日本2
   network: tcp
   password: QwwHvrnN
   port: 44673
   server: 36.151.192.203
   skip-cert-verify: true
+  tls: true
   type: trojan
+  udp: true
 - cipher: chacha20-ietf
   client-fingerprint: chrome
   name: 5,9,11,24,27|13| 日本2|@ripaojiedian
@@ -29,13 +32,16 @@ proxies:
   server: 107.148.6.121
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 5,9,11,24,27|13|🇵 日本3|@ripaojiedian
+  name: 5,9,11,24,27,37|JP
   password: 6ed66cb3-734d-4cc9-918f-88b3f9e28249
   port: 11002
   server: 61.172.235.22
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
@@ -152,13 +158,15 @@ proxies:
   skip-cert-verify: false
   sni: 36.151.192.203
   type: trojan
-- client-fingerprint: chrome
-  name: 9,24,27,40|JP_speednode_0020
+- alterId: 0
+  client-fingerprint: chrome
+  name: 9,24,27,37,40|JP_speednode_0020
   password: 24273330-85c9-3a6e-a0fd-58a6076a3a85
   port: 443
   server: 18.179.44.127
   skip-cert-verify: true
   sni: fastly.cdn.steampipe.steamcontent.com
+  tls: true
   type: trojan
   udp: true
 - client-fingerprint: chrome
@@ -387,20 +395,6 @@ proxies:
   type: hysteria2
   udp: true
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-158.101.142....
-  network: ws
-  port: 12344
-  server: 158.101.142.227
-  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-    path: /obdii.cfd:443/linkws
-- alterId: 0
   cipher: none
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.104.82.173...
   network: tcp
@@ -416,6 +410,20 @@ proxies:
   network: ws
   port: 12109
   server: 112.69.4.50
+  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+    path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-158.101.142....
+  network: ws
+  port: 12344
+  server: 158.101.142.227
   servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
   tls: true
   type: vmess
