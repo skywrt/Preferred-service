@@ -736,15 +736,12 @@ proxies:
   server: 104.26.9.14
   skip-cert-verify: false
   type: trojan
-- alterId: 0
-  name: 24,37|HK
+- name: '24|🇭🇰 香港 #4'
   password: NISHIKUITAN111
   port: 443
   server: 104.26.3.213
-  skip-cert-verify: true
-  tls: true
+  skip-cert-verify: false
   type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|🇭🇰 香港01-1A
   password: ddba1f26-2587-489a-981e-cc655cfb3e94
@@ -783,6 +780,16 @@ proxies:
   uuid: 2c0fc90e-06a5-48c4-8e92-45c744bb350b
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-34.92.66.193...
+  network: tcp
+  port: '30251'
+  server: 34.92.66.193
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9e88a10b-655c-5120-89d0-408634169561
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-163.53.18.15...
   network: tcp
   port: '19901'
@@ -790,17 +797,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 9c280b61-07d8-4263-813e-670d3eabf416
-- alterId: 0
-  cipher: auto
-  name: 36,37|HK3 317.7KB/s
-  network: tcp
-  port: 30251
-  server: 34.92.66.193
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9e88a10b-655c-5120-89d0-408634169561
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-210.0.158.21...
@@ -816,24 +812,14 @@ proxies:
       Host: 19.lwdh.us
     path: /
 - alterId: 0
-  name: '37|HK #1'
-  password: 981db44e-9f07-49eb-9ba0-6ab4939919a2
-  port: 443
-  server: 203.184.132.166
+  cipher: chacha20-ietf-poly1305
+  name: 37|HK
+  password: njw9mL0INQQFW3xUiGqP4a
+  port: 36766
+  server: 141.98.234.195
   skip-cert-verify: true
   tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK2
-  password: f181b265-5fd4-456e-ad2d-c9b0446e0d51
-  port: 27001
-  server: 45.146.232.173
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
-  type: trojan
-  udp: true
+  type: ss
 - alpn:
   - http/1.1
   client-fingerprint: random
