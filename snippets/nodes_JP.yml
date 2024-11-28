@@ -9,14 +9,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 5,9,11,24,27|13| 日本2|@ripaojiedian
-  password: asd123456
-  port: 8388
-  server: 107.148.6.121
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
@@ -28,19 +20,11 @@ proxies:
   tfo: false
   tls: true
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 5,9,11,24,27|13|🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 34.219.52.114
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 5,24|🇯🇵 日本 东京Fastly节点
+  name: 5|日本 东京Fastly节点
   network: ws
-  port: '443'
+  port: 443
   server: root.mid.al
   tls: true
   type: vmess
@@ -105,7 +89,7 @@ proxies:
   udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 11,27|13|🇵 日本4|@ripaojiedian
+  name: 11|15|🇯🇵 日本4|@ripaojiedian
   obfs: plain
   obfs-param: 7cc15102946.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -213,40 +197,47 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
+- cipher: aes-256-cfb
+  name: 27|13|🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 54.250.148.116
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本03-1F
-  password: b223cd39-9274-4146-af5b-23f244ac813d
+  name: 28|🇯🇵 日本03-1G
+  password: a89674b0-ba1e-4091-97b0-3d328cb61baa
   port: 20006
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|🇯🇵 日本01-1A
-  password: c09d603a-0806-4096-b1e5-bdf0d697e06a
+  password: ddba1f26-2587-489a-981e-cc655cfb3e94
   port: 20002
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本02-1A
-  password: c09d603a-0806-4096-b1e5-bdf0d697e06a
-  port: 20004
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本04-1I
+  name: 28|🇯🇵 日本04-1G
   password: a89674b0-ba1e-4091-97b0-3d328cb61baa
   port: 20008
   server: gy.666666222.shop
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本02-1E
+  password: b223cd39-9274-4146-af5b-23f244ac813d
+  port: 20004
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-112.69.4.50:...
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-158.101.142....
   network: ws
-  port: 12109
-  server: 112.69.4.50
+  port: 12344
+  server: 158.101.142.227
   servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
   tls: true
   type: vmess
@@ -257,10 +248,10 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-158.101.142....
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-112.69.4.50:...
   network: ws
-  port: 12344
-  server: 158.101.142.227
+  port: 12109
+  server: 112.69.4.50
   servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
   tls: true
   type: vmess
