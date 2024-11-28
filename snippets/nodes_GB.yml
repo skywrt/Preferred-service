@@ -1,4 +1,21 @@
 proxies:
+- alterId: 1
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|e6cc6181fc804b8ca3aa87c14097b4...
+  network: ws
+  port: 443
+  server: 57.128.184.119
+  servername: 57.128.184.119
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      host: 57.128.184.119
+    path: linkvws
 - name: 8|🇬🇧GB-3.9.164.189-194_1@194
   password: E6r93XCOsyM9
   port: 16733
@@ -33,16 +50,34 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇬🇧GB-89.185.84.185-1302
-  password: gdt6FA0fOR3pBQdFcyHyfv
-  port: 12575
-  server: 89.185.84.185
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知75 16.0MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.193
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-128-gcm
+  name: 19|🇬🇧GB-212.102.53.78-0319
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.78
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知96 17.2MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇬🇧GB-172.236.13.89-7630
+  name: 19|🇬🇧GB-172.236.13.89-7587
   network: ws
   port: 443
   server: hms19.best-tizi.top
@@ -54,26 +89,6 @@ proxies:
     headers:
       host: hms19.best-tizi.top
     path: /linkws
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇬🇧GB-18.171.194.191-1300
-  password: mps3FwmDjLrWaOVg
-  port: 443
-  server: series-a2.samanehha.co
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇬🇧GB-149.7.16.174-7557 #1'
-  network: ws
-  port: 443
-  server: 149.7.16.174
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
 - alterId: 0
   cipher: auto
   name: '20,21|🇬🇧GB-172.99.190.206-7614 #1'
@@ -90,7 +105,21 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇬🇧GB-172.236.13.89-7587 #1'
+  name: '20,21|🇬🇧GB-149.7.16.174-7557 #1'
+  network: ws
+  port: 443
+  server: 149.7.16.174
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇬🇧GB-172.236.13.89-7587 #2'
   network: ws
   port: 443
   server: hms19.best-tizi.top
@@ -102,6 +131,20 @@ proxies:
     headers:
       Host: hms19.best-tizi.top
     path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇬🇧GB-129.151.93.231-1513 #1'
+  network: ws
+  port: 443
+  server: 16.724064.xyz
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: b7cf4466-956a-4639-b861-0cf78cbb6f8f
+  ws-opts:
+    headers:
+      Host: 16.724064.xyz
+    path: /zlppvws
 - alterId: 0
   cipher: auto
   name: '23,30|二爷翻墙网 https://1808.free.hr_GB_... #7'
@@ -216,11 +259,12 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-62.112.221.4...
+  name: 36,37|未知2
   network: tcp
-  port: '3939'
+  port: 3939
   server: 62.112.221.47
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: c966a8e9-aed4-47dd-baaa-c830a99ebdfb
