@@ -596,6 +596,17 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
+- alterId: 0
+  client-fingerprint: chrome
+  name: 9,24,27,37,40|CN_speednode_0007
+  password: f58da02d-f06b-3e2f-8956-67afe8f6a998
+  port: 20309
+  server: gyl.58n.net
+  skip-cert-verify: true
+  sni: z309.hongkongnode.top
+  tls: true
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: 11|1|_CN_
   password: hGkQ6915tD
@@ -801,15 +812,13 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /
-- alterId: 64
-  cipher: auto
-  name: 24|🇨🇳 广东省广州市 移动
+- name: 24,27|13,14||@ripaojiedian
   network: tcp
-  port: '58002'
-  server: 120.232.153.27
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  password: QwwHvrnN
+  port: 34185
+  server: 36.151.192.201
+  skip-cert-verify: true
+  type: trojan
 - name: 24,27|13,14|香港2|@ripaojiedian
   network: tcp
   password: QwwHvrnN
@@ -818,30 +827,49 @@ proxies:
   skip-cert-verify: true
   type: trojan
 - alterId: 0
-  name: 24,37,40|CN_speednode_0007
-  password: f58da02d-f06b-3e2f-8956-67afe8f6a998
-  port: 20309
-  server: gyl.58n.net
-  skip-cert-verify: true
-  sni: z309.hongkongnode.top
+  cipher: auto
+  name: '24|中国 #9'
+  network: ws
+  port: '33202'
+  server: yd2.ainivp.com
   tls: true
-  type: trojan
-  udp: true
-- name: 24,27|15|CN_speednode_0003
-  password: QwwHvrnN
-  port: 44673
-  server: 36.151.192.203
+  type: vmess
+  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
+  ws-opts:
+    headers:
+      Host: yd2.ainivp.com
+    path: /ray
+- name: '24|中国 #1'
+  password: NISHIKUITAN111
+  port: 443
+  server: 154.197.75.171
   skip-cert-verify: true
-  sni: 36.151.192.203
   type: trojan
-  udp: true
+- name: '24|中国 #2'
+  password: NISHIKUITAN111
+  port: 443
+  server: 154.197.121.175
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  name: '24|中国 #4'
+  network: ws
+  port: '33416'
+  server: yd2.ainivp.com
+  tls: true
+  type: vmess
+  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
+  ws-opts:
+    headers:
+      Host: yd2.ainivp.com
+    path: /ray
+- alterId: 64
+  cipher: auto
+  name: '24|中国 #11'
   network: tcp
-  port: '59003'
-  server: 183.236.51.36
-  servername: ''
+  port: '58831'
+  server: 120.232.153.27
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -851,6 +879,16 @@ proxies:
   network: tcp
   port: '50004'
   server: 112.132.212.19
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  network: tcp
+  port: '59003'
+  server: 183.236.51.36
   servername: ''
   tls: false
   type: vmess
