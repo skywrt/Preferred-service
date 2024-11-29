@@ -358,7 +358,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 4,20,21,22|🇷FR-145.239.6.202-2154
+  name: 4,19,20,21,22|🇷FR-145.239.6.202-2154
   password: pKEW8JPByTVTLtM
   port: 4444
   server: 145.239.6.202
@@ -400,12 +400,17 @@ proxies:
   server: 141.11.189.205
   type: ss
   udp: true
-- name: 5|英国+社会保险安全部
+- alterId: 0
+  name: 5,37|未知62 59.8KB/s
+  network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 51.20.200.130
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - name: 8|🇬🇧GB-3.9.164.189-194_1@194
   password: E6r93XCOsyM9
   port: 16733
@@ -440,45 +445,12 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
-- cipher: aes-128-gcm
-  name: '19,20,21,22|🇬🇧GB-212.102.53.197-0326 #2'
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.197
-  type: ss
-- cipher: aes-128-gcm
-  name: '19,20,21,22|🇬🇧GB-212.102.53.193-0321 #2'
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
-  type: ss
-- cipher: aes-128-gcm
-  name: 19,20,21,22|🇧GB-212.102.53.78-0328
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,22,37|🇮🇹IT意大利2 2.3MB/s
   password: shadowsocks
   port: 443
   server: 212.102.53.78
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,22,37|未知49 17.8MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-128-gcm
-  name: '19,20,21,22|🇬🇧GB-212.102.53.194-0103 #2'
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.194
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,22,37|未知29 15.5MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.80
   skip-cert-verify: true
   tls: true
   type: ss
@@ -488,11 +460,77 @@ proxies:
   port: 443
   server: 212.102.53.81
   type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,22,37|未知28 2.5MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.193
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - cipher: aes-128-gcm
-  name: '19,20,21,22|🇬🇧GB-141.98.101.178-0359 #2'
+  name: '19,20,21,22|🇬🇧GB-212.102.53.197-0326 #2'
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.197
+  type: ss
+- cipher: aes-128-gcm
+  name: '19,20,21,22|🇬🇧GB-212.102.53.194-0103 #3'
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,22,37|🇺RU 85.6KB/s
+  password: fSEPtYDmuBu7ZnFYXdHMt1
+  port: 12575
+  server: 89.185.84.185
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-128-gcm
+  name: '19,20,21,22|🇬🇧GB-212.102.53.80-0312 #2'
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.80
+  type: ss
+- cipher: aes-128-gcm
+  name: 19,20,21,22|🇧GB-212.102.53.195-0309
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇬🇧GB-172.236.13.89-9175
+  network: ws
+  port: 443
+  server: hms19.best-tizi.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  ws-opts:
+    headers:
+      host: hms19.best-tizi.top
+    path: /linkws
+- cipher: aes-128-gcm
+  name: 19|🇬🇧GB-141.98.101.179-1870
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.179
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,22,37|未知40 1.6MB/s
   password: shadowsocks
   port: 443
   server: 141.98.101.178
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -535,16 +573,13 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- alterId: 0
-  name: 20,21,22,37|🇺🇸US美国2
+- name: 20,21,22|🇧GB-18.134.42.243-1396
   password: telegram-id-privatevpns
   port: 22222
   server: 18.134.42.243
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
-  tls: true
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '20,21,22|🇬🇧GB-172.236.13.89-9245 #2'
@@ -1813,12 +1848,30 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 36,37|未知112
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-62.112.221.4...
   network: tcp
-  port: 3939
+  port: '3939'
   server: 62.112.221.47
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: c966a8e9-aed4-47dd-baaa-c830a99ebdfb
+- alterId: 0
+  name: 37|GB国
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.44.124.22
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 37|🇬🇧GB英国2 1.7MB/s
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 145.239.6.202
+  skip-cert-verify: true
+  tls: true
+  type: ss
