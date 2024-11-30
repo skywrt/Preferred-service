@@ -1,4 +1,14 @@
 proxies:
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 4,5,8,22,24,37|🇷🇺RU
+  password: 36ZCHeabUSfKjfQEvJ4HDV
+  port: 54170
+  server: 185.242.86.156
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
 - name: 4|🇩🇪 DE 17 → tg@nicevpn123
   password: ea630804-4d5d-4180-a464-a360e3793dc2
   port: 443
@@ -1959,15 +1969,25 @@ proxies:
   skip-cert-verify: false
   sni: frtgrpc.mainssh.xyz
   type: trojan
-- alterId: 0
-  name: 24,37|🇺🇸US美国15
+- name: 24|🇩🇪 _德国
   password: NISHIKUITAN111
   port: 443
   server: 185.135.9.137
   skip-cert-verify: true
-  tls: true
   type: trojan
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇩🇪 DE-5.39.252.182:...
+  network: ws
+  port: '1024'
+  server: 5.39.252.182
+  tls: false
+  type: vmess
+  uuid: 6530ffac-9cdd-4eec-a3c6-bcafeb041382
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.119....
@@ -1988,16 +2008,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 5480b44f-5823-4246-bb8e-8a371da6dc4c
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇩🇪 DE-5.39.252.182:...
-  network: ws
-  port: '1024'
-  server: 5.39.252.182
-  tls: false
-  type: vmess
-  uuid: d96881bf-51a3-4a32-865d-8b046caf9093
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
