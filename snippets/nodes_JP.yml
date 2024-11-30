@@ -623,7 +623,7 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 5,9,11,22,24,27,37|🇵JP日本2
+  name: 5,9,11,22,24,37|🇵JP日本2
   password: 8d0f3729-0c01-4a94-9b57-6ec8e352ddb6
   port: 11001
   server: 61.172.235.22
@@ -633,7 +633,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '5,11,24,27|14|日本3|@ripaojiedian #1'
+  name: '5,11,24|🇯🇵 14|日本3|@ripaojiedian #1'
   network: tcp
   port: '47118'
   server: 45.159.51.28
@@ -641,14 +641,6 @@ proxies:
   tls: false
   type: vmess
   uuid: ea034172-f33d-4f2b-a4a7-c700ca773f7a
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 5,9,11,22,24,27|13|🇯🇵 日本|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 52.196.65.55
-  tfo: false
-  type: ss
 - name: 8|🇯🇵JP-3.112.192.169-188_1@188
   password: umis0GDWL5RQ
   port: 16717
@@ -680,7 +672,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '9,27|13|🇯🇵 日本3|@ripaojiedian #1'
+  name: 9|🇯🇵 14|日本3|@ripaojiedian
   port: 47118
   server: 45.159.51.28
   skip-cert-verify: false
@@ -895,7 +887,7 @@ proxies:
   ws-opts:
     path: /
 - alterId: 0
-  name: 22,24,37|未知57
+  name: 22,37|未知57
   password: 8cb7ad4e-2d61-3950-bb33-1d2cc3e653dd
   port: 443
   server: 43.206.140.241
@@ -904,14 +896,14 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 22,24|15|JP_speednode_0026
+- name: 22|🇯🇵JP-18.179.44.127-1045
   password: 8cb7ad4e-2d61-3950-bb33-1d2cc3e653dd
   port: 443
   server: 18.179.44.127
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: steamcdn-a.akamaihd.net
   type: trojan
-- name: 22|JP-43.206.254.21-1288
+- name: 22,24|🇯🇵 日本 东京Amazon数据中心
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
   port: 20230
   server: jp006.421421.xyz
@@ -2464,17 +2456,41 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
+- cipher: rc4-md5
+  name: 27|13| 日本2|@ripaojiedian
+  obfs: plain
+  obfs-param: 255e7112598.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40201
+  protocol: auth_aes128_md5
+  protocol-param: 112598:vcy7qi
+  server: 95b1cd85a0968ff2.cdn.jiashule.com
+  type: ssr
+- cipher: aes-128-gcm
+  name: 27|13|🇵 日本3|@ripaojiedian
+  password: db6de241-8d8f-4c04-93f8-97e5ee13b349
+  port: 11021
+  server: group-aipop-81492.nutbit-node.lat
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 27|13|🇯🇵 日本|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 54.251.196.3
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本02-1H
-  password: 95fd5da3-8c64-4ceb-81cf-65d6caad8337
-  port: 20004
+  name: 28|🇯🇵 日本03-1A
+  password: 22efca0e-9038-43ab-b032-ad01d7f05935
+  port: 20006
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本03-1C
-  password: 23940215-be90-4d1e-8420-f111436fa5e7
-  port: 20006
+  name: 28|🇯🇵 日本02-1C
+  password: 7dca52f1-7750-4465-8cfa-28397cbfec29
+  port: 20004
   server: gy.666666222.shop
   type: ss
   udp: true
@@ -2486,8 +2502,8 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本01-1H
-  password: 95fd5da3-8c64-4ceb-81cf-65d6caad8337
+  name: 28|🇯🇵 日本01-1C
+  password: 7dca52f1-7750-4465-8cfa-28397cbfec29
   port: 20002
   server: gy.666666222.shop
   type: ss

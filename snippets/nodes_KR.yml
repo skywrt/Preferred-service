@@ -406,14 +406,6 @@ proxies:
   server: 13.125.19.50
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 5,9,11,22,24,27|13| 国特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 54.95.5.168
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: 22|KR-138.2.122.225-0039
@@ -1269,13 +1261,19 @@ proxies:
   type: ss
 - name: 24|🇰🇷 韩国 首尔Oracle云计算数据中心
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 21005
-  server: 132.145.87.107
-  skip-cert-verify: true
-  sni: ent1.imyourdaddy.top
+  port: 20980
+  server: ent1.imyourdaddy.top
+  skip-cert-verify: false
   type: trojan
-- name: 28|🇰🇷 韩国-三网优化2-1Z
-  password: f42ca757-3e90-40a0-9271-3161c1a0064e
+- name: '24|🇰🇷 韩国 首尔Oracle云计算数据中心 #1'
+  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+  port: 20983
+  server: ent1.imyourdaddy.top
+  skip-cert-verify: false
+  sni: sale.alibaba.com
+  type: trojan
+- name: 28|🇰🇷 韩国-三网优化2-5C
+  password: 98b73edf-8a40-44de-8a51-c9a75fa10b49
   port: 44732
   server: kr-qingyun.dwyun.me
   skip-cert-verify: false
@@ -1298,16 +1296,6 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇰🇷 KR-146.56.112.1...
-  network: tcp
-  port: '8888'
-  server: 146.56.112.110
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇰🇷 KR-175.203.204....
   network: ws
   port: 50035
@@ -1320,3 +1308,13 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇰🇷 KR-146.56.112.1...
+  network: tcp
+  port: '8888'
+  server: 146.56.112.110
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
