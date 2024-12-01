@@ -1,49 +1,13 @@
 proxies:
-- name: 4|CH 1 → tg@nicevpn123
-  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
-  port: 11005
-  server: 64.110.64.80
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 4|CH 2 → tg@nicevpn123
-  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
-  port: 11007
-  server: 64.110.64.80
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 4|CH 3 → tg@nicevpn123
-  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
-  port: 11006
-  server: 64.110.64.80
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 4|CH 4 → tg@nicevpn123
-  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
-  port: 11004
-  server: 64.110.64.80
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 4|CH 5 → tg@nicevpn123
-  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
-  port: 11000
-  server: 64.110.64.80
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 5|瑞士01-0.01×
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 20980
-  server: 132.145.87.107
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
+- cipher: aes-128-gcm
+  name: 20,21,22|CH-156.146.62.164-1290
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.164
+  type: ss
 - alterId: 1
   cipher: auto
-  name: 20,21,22|CH-186.190.215.32-9294
+  name: 20,21,22|CH-186.190.215.32-8104
   network: ws
   port: 443
   server: 186.190.215.32
@@ -57,20 +21,14 @@ proxies:
       Host: 186.190.215.32
     path: linkvws
 - cipher: aes-256-cfb
-  name: 22|CH-185.126.116.125-0105
+  name: 22|🇨CH-185.126.116.125-0154
   password: aLpQtfEZe445QyHk
   port: 9098
   server: 185.126.116.125
   type: ss
-- cipher: aes-128-gcm
-  name: 22|🇨CH-156.146.62.164-0357
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.164
-  type: ss
 - alterId: 1
   cipher: auto
-  name: 22|🇨🇭CH-186.190.215.32-0368
+  name: 22|CH-186.190.215.32-0385
   network: ws
   port: 443
   server: 186.190.215.32
@@ -97,15 +55,21 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /
-- name: 22|CH-152.67.71.149-4811
+- name: 22|CH-152.67.71.149-3580
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
+- cipher: aes-128-cfb
+  name: 22|🇨CH-156.146.62.160-5151
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.160
+  type: ss
 - alterId: 1
   cipher: auto
-  name: 22|CH-186.190.215.75-9463
+  name: 22|CH-186.190.215.75-8230
   network: ws
   port: 443
   server: 186.190.215.75
@@ -119,7 +83,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 22|🇭CH-140.238.212.95-9477
+  name: 22|🇭CH-140.238.212.95-8244
   network: ws
   port: 443
   server: 140.238.212.95
@@ -133,7 +97,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 22|🇭CH-23.166.88.27-9602
+  name: 22|🇨🇭CH-23.166.88.27-8367
   network: ws
   port: 443
   server: 23.166.88.27
@@ -147,7 +111,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 22|🇨🇭CH-186.190.215.149-9653
+  name: 22|🇨🇭CH-186.190.215.149-8418
   network: ws
   port: 443
   server: 186.190.215.149
