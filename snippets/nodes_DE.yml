@@ -504,16 +504,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- cipher: rc4-md5
-  name: 19|🇩🇪DE-193.108.119.230-0345
-  password: 14fFPrbezE3HDZzsMOr6
+- cipher: chacha20-ietf-poly1305
+  name: 16|_DE_国
+  password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
-  server: 193.108.119.230
+  server: 45.87.175.178
   type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇩🇪DE-130.61.156.132-0350
+  name: 19|🇩🇪DE-130.61.156.132-0375
   network: ws
   port: 443
   server: frankfurt03.zgjok.com
@@ -526,7 +526,7 @@ proxies:
       host: frankfurt03.zgjok.com
     path: /
 - cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-0397
+  name: 19|🇩🇪DE-80.92.204.106-0399
   password: M3t2ZEQcMGRWBjRa
   port: 9011
   server: 80.92.204.106
@@ -575,6 +575,26 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.119....
+  network: tcp
+  port: '12281'
+  server: 193.108.119.112
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 380eb5ae-a609-48ca-93b3-9d8564714c9c
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-94.130.190...
+  network: tcp
+  port: '7610'
+  server: 94.130.190.88
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5480b44f-5823-4246-bb8e-8a371da6dc4c
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.25.22...
   network: ws
   port: 443
@@ -600,21 +620,15 @@ proxies:
   uuid: 8931bc7c-018d-423b-9456-4b338f7db969
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-94.130.190...
-  network: tcp
-  port: '7610'
-  server: 94.130.190.88
-  servername: ''
-  tls: false
+  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.169.55.15...
+  network: ws
+  port: '33026'
+  server: 89.169.55.152
+  servername: socks5tobefree.ydns.eu
+  tls: true
   type: vmess
-  uuid: 5480b44f-5823-4246-bb8e-8a371da6dc4c
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.119....
-  network: tcp
-  port: '12281'
-  server: 193.108.119.112
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 380eb5ae-a609-48ca-93b3-9d8564714c9c
+  uuid: e00f5c12-09e3-490c-b702-29155b6dcc50
+  ws-opts:
+    headers:
+      Host: socks5tobefree.ydns.eu
+    path: /dangerzone
