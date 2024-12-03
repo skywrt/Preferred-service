@@ -28,6 +28,13 @@ proxies:
   sni: ru01.freeflyingcloud.xyz
   type: trojan
   udp: true
+- cipher: aes-256-cfb
+  name: 4,19|🇪🇸ES-5.188.181.201-0416
+  password: U6qnYRhfyDmn8sgn
+  port: 9041
+  server: 5.188.181.201
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 4|🇷🇺 RU 14 → tg@nicevpn123
@@ -48,6 +55,13 @@ proxies:
   password: TPqX8edgbAURcAMb
   port: 9079
   server: 217.30.10.68
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 4,19|🇪🇸ES-5.188.181.201-0423
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
+  server: 5.188.181.201
   type: ss
   udp: true
 - name: 4|🇷🇺 RU 17 → tg@nicevpn123
@@ -107,13 +121,6 @@ proxies:
   uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
   ws-opts:
     path: /hms02.fxiaomi.sbs/link
-- cipher: aes-256-cfb
-  name: 4,19|🇪🇸ES-5.188.181.201-0375
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
-  server: 5.188.181.201
-  type: ss
-  udp: true
 - cipher: aes-128-gcm
   name: 4|🇷🇺 RU 24 → tg@nicevpn123
   password: Telegram-ZEDMODEON
@@ -402,13 +409,6 @@ proxies:
   password: 1q7RNKaIk2wYO8fEPmEX0vWQ7Va+QRTA
   port: 8388
   server: 91.192.81.21
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 4|🇷🇺 RU 56 → tg@nicevpn123
-  password: BwcAUZk8hUFAkDGN
-  port: 9031
-  server: 45.89.52.66
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -786,25 +786,6 @@ proxies:
   udp: true
   ws-opts:
     path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fmahan'
-- cipher: chacha20-ietf-poly1305
-  name: 5,16|🇺_RU_斯
-  password: 3MgIhqwp4pjM8SKwixNkYZ
-  port: 33068
-  server: 193.124.22.253
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 5,11,23,30|🇷🇺_RU_俄罗斯联邦_1
-  network: ws
-  port: 12910
-  server: 45.136.245.240
-  servername: 22.lwdh.us
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: '5,11|2|🇷🇺_RU_俄罗斯联邦 #2'
@@ -829,10 +810,62 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5|[vmess]俄罗斯1｜1倍
+  name: 5|俄罗斯-喀山-001
+  network: ws
+  port: '6969'
+  server: 176.32.33.158
+  tls: false
+  type: vmess
+  uuid: 6b469585-4a07-4387-89cc-b28da026a9a7
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 5|俄罗斯-莫斯科-003
+  network: ws
+  port: '4900'
+  server: 176.32.35.198
+  tls: false
+  type: vmess
+  uuid: 6b469585-4a07-4387-89cc-b28da026a9a7
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 5,11,23,30|🇷🇺_RU_俄罗斯联邦_1
+  network: ws
+  port: 12910
+  server: 45.136.245.240
+  servername: 22.lwdh.us
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 5|俄罗斯-圣彼得堡-002
+  network: ws
+  port: '9696'
+  server: 195.58.49.12
+  tls: false
+  type: vmess
+  uuid: 6b469585-4a07-4387-89cc-b28da026a9a7
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 5|[vmess]俄罗斯2｜1倍
   network: ws
   port: '8880'
-  server: follow.ikuai66.xyz
+  server: log.bpminecraft.com
   tls: false
   type: vmess
   uuid: 47ca88f4-7dc9-401c-aef2-a7cc6d020c58
@@ -842,10 +875,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5|[vmess]俄罗斯2｜1倍
+  name: 5|[vmess]俄罗斯1｜1倍
   network: ws
   port: '8880'
-  server: log.bpminecraft.com
+  server: follow.ikuai66.xyz
   tls: false
   type: vmess
   uuid: 47ca88f4-7dc9-401c-aef2-a7cc6d020c58
@@ -869,6 +902,32 @@ proxies:
   sni: 004282c1-sbdj40-sdlngq-1n7jq.ru.z7zi.com
   type: trojan
   udp: false
+- client-fingerprint: chrome
+  name: 9,27,40|RU_speednode_0090
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 45.8.211.242
+  skip-cert-verify: true
+  sni: bpb.my79801.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: bpb.my79801.com
+    path: /tr
+- client-fingerprint: chrome
+  name: 9,27,40|RU_speednode_0091
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 185.174.138.239
+  skip-cert-verify: true
+  sni: bpb.my79801.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: bpb.my79801.com
+    path: /tr
 - alterId: 0
   cipher: auto
   name: '23,30|二爷翻墙网 https://1808.free.hr_RU_... #3'
@@ -911,30 +970,135 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /
-- name: 27,40|RU_speednode_0090
-  network: ws
+- name: '24|🇬🇧 _英国 #2'
   password: bpb-trojan
   port: 443
   server: 45.8.211.242
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: bpb.my79801.com
   type: trojan
-  ws-opts:
-    headers:
-      Host: bpb.my79801.com
-    path: /tr
-- name: 27,40|RU_speednode_0091
-  network: ws
+- name: '24|🇷🇺 _俄罗斯 #3'
   password: bpb-trojan
   port: 443
   server: 185.174.138.239
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: bpb.my79801.com
   type: trojan
+- name: '24|🇷🇺 _俄罗斯 #1'
+  password: NISHIKUITAN111
+  port: 443
+  server: 5.182.84.93
+  skip-cert-verify: false
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #2'
+  password: NISHIKUITAN111
+  port: 443
+  server: 185.174.138.239
+  skip-cert-verify: false
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #4'
+  password: NISHIKUITAN111
+  port: 443
+  server: 46.254.92.27
+  skip-cert-verify: false
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '24|🇷🇺 _俄罗斯 #5'
+  network: ws
+  port: '2082'
+  server: 5.182.85.176
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
     headers:
-      Host: bpb.my79801.com
-    path: /tr
+      Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '24|🇷🇺 _俄罗斯 #6'
+  network: ws
+  port: '2082'
+  server: 193.9.49.23
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '24|🇷🇺 _俄罗斯 #7'
+  network: ws
+  port: '2082'
+  server: 185.59.218.24
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '24|🇷🇺 _俄罗斯 #8'
+  network: ws
+  port: '2082'
+  server: 5.182.84.93
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '24|🇷🇺 _俄罗斯 #9'
+  network: ws
+  port: '2082'
+  server: 185.221.160.12
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '24|🇷🇺 _俄罗斯 #10'
+  network: ws
+  port: '2082'
+  server: 176.124.223.120
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '24|🇷🇺 _俄罗斯 #11'
+  network: ws
+  port: '2082'
+  server: 94.247.142.209
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- cipher: chacha20-ietf-poly1305
+  name: 24,27|0|-https://t.me/MrXbin-2
+  password: 6OAGLD+DOA6UcFp5Udf0r/UzyjwHV+yheNkoFDk6uL8=
+  port: 38753
+  server: 213.108.22.109
+  type: ss
 - alterId: 0
   cipher: auto
   name: 30|🇷🇺_RU_俄罗斯联邦_2
@@ -979,7 +1143,7 @@ proxies:
   server: 176.32.35.198
   tls: false
   type: vmess
-  uuid: e633794f-1864-466d-80ce-453c7f478893
+  uuid: 2e09dfcb-7dd6-4584-bbd5-137e1f55bb0c
   ws-opts:
     headers:
       Host: ''
