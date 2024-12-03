@@ -1,4 +1,18 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|900d77e7805a44c193e7bbd50308a7...
+  network: ws
+  port: 2086
+  server: 162.159.6.15
+  tls: false
+  type: vmess
+  udp: false
+  uuid: 9a471651-28cd-4b30-a180-f280059ba636
+  ws-opts:
+    path: /?ed=512
 - cipher: aes-256-cfb
   name: 4|🇯🇵 JP 1 → tg@nicevpn123
   password: amazonskr05
@@ -586,6 +600,18 @@ proxies:
   server: 13.231.229.41
   type: ss
   udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 5,9,11,27,28,37|JP
+  password: aaf875c9-d3cf-41d2-9698-365d66fd257a
+  port: 20004
+  server: gy.666666222.shop
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 5,9,11,24,27|13|🇵 日本特殊|@ripaojiedian
@@ -594,49 +620,13 @@ proxies:
   server: 47.129.236.42
   tfo: false
   type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 5,9,11,24,37|JP
-  password: b3d05306-e5ae-46ca-9deb-40dc2232912b
-  port: 11001
-  server: 61.172.235.22
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 5|[vmess]日本3｜1倍
-  network: ws
-  port: '2086'
-  server: www.digitalocean.com
-  tls: false
-  type: vmess
-  uuid: 47ca88f4-7dc9-401c-aef2-a7cc6d020c58
-  ws-opts:
-    headers:
-      Host: lnjp.pmcloud.top
-    path: /
-- alterId: 0
-  name: 5,24,27,37|未知102
+- name: '5,24,27|13,14||@ripaojiedian #2'
   network: tcp
   password: QwwHvrnN
   port: 27381
   server: 36.151.192.242
   skip-cert-verify: true
-  tls: true
   type: trojan
-  udp: true
-- alterId: 1
-  cipher: auto
-  name: 5|日本 - 东京 - Amazon.com, Inc. - 2
-  network: tcp
-  port: '21583'
-  server: vitsv-g03.jp03-7d22-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 22acc467-7440-386a-927a-d84be554b37e
 - alterId: 0
   cipher: auto
   name: 5|[vmess]日本1｜1倍
@@ -663,6 +653,27 @@ proxies:
     headers:
       Host: lnjp.pmcloud.top
     path: /
+- alterId: 0
+  cipher: auto
+  name: 5|[vmess]日本3｜1倍
+  network: ws
+  port: '2086'
+  server: www.digitalocean.com
+  tls: false
+  type: vmess
+  uuid: 47ca88f4-7dc9-401c-aef2-a7cc6d020c58
+  ws-opts:
+    headers:
+      Host: lnjp.pmcloud.top
+    path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 5,9,11,27|13| 日本2|@ripaojiedian
+  password: f0e7fd1e-0469-415f-95da-774021f16f36
+  port: 40003
+  server: soonjp.soon.guru
+  tfo: false
+  type: ss
 - name: 8|🇯🇵JP-3.112.192.169-188_1@188
   password: umis0GDWL5RQ
   port: 16717
@@ -683,6 +694,14 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
+- client-fingerprint: chrome
+  name: 9|🇯🇵 13,14|日本|@ripaojiedian
+  password: QwwHvrnN
+  port: 27381
+  server: 36.151.192.242
+  skip-cert-verify: false
+  sni: 36.151.192.242
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '23,30|二爷翻墙网 https://1808.free.hr_JP_... #6'
@@ -783,21 +802,6 @@ proxies:
       host: 140.238.48.194
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 27|13| 日本2|@ripaojiedian
-  password: f0e7fd1e-0469-415f-95da-774021f16f36
-  port: 40003
-  server: soonjp.soon.guru
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 27,28|🇯🇵 日本02-1A
-  password: 1a5443c2-a489-418b-8a1e-39062ae3ce9d
-  port: 20004
-  server: gy.666666222.shop
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 28|🇯🇵 日本01-1C
   password: c1b2d6ec-ed6d-434d-8e4f-9d67cbed312f
   port: 20002
@@ -832,17 +836,3 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: 40|JP_speednode_0027
-  network: ws
-  port: 80
-  server: root.mid.al
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: a983c698-cae4-4254-d047-51898ccd8ee7
-  ws-opts:
-    headers:
-      Host: kim.gov.kp
-    path: /aries?ed=2048
