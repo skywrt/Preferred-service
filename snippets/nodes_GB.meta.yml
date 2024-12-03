@@ -1,4 +1,104 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|72a223161d0a4041aaab90577b6e84...
+  network: ws
+  port: 443
+  server: 68.168.31.242
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '3,20,21|🇬🇧GB-149.7.16.174-7944 #1'
+  network: ws
+  port: 443
+  server: 149.7.16.174
+  servername: ''
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|95e5c935ccd94783acc08063823576...
+  network: ws
+  port: 443
+  server: 172.99.190.209
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|c80ddc5808fa42ea91115dc935d9b3...
+  network: ws
+  port: 8080
+  server: 37.230.62.172
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: false
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      host: a.mifeng.us.kg
+    path: /?ed=2560
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|1134d30af5cf42ed9ee58e6319b763...
+  network: ws
+  port: 22222
+  server: 51.24.38.131
+  servername: telegram-channel-vlessconfig.sohala.uk
+  tls: true
+  type: vless
+  udp: false
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|eeca28319bac4c799b976b1dd3dc1c...
+  network: ws
+  port: 22222
+  server: 18.169.87.87
+  servername: telegram-channel-vlessconfig.sohala.uk
+  tls: true
+  type: vless
+  udp: false
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|da22f041825c4330a377d885f8c88c...
+  network: tcp
+  port: 38631
+  server: 64.227.37.207
+  tls: false
+  type: vless
+  udp: false
+  uuid: fd25ae51-31f5-435f-a7b9-3a458aea2b7d
 - name: 4|🇬🇧 GB 1 → tg@nicevpn123
   password: your_password
   port: 443
@@ -357,11 +457,14 @@ proxies:
   server: 52.151.72.172
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 4,19|🇫🇷FR-145.239.6.202-5724
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 4,19,37|未知84 1.9MB/s
   password: pKEW8JPByTVTLtM
   port: 4444
   server: 145.239.6.202
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -590,7 +693,7 @@ proxies:
     path: /?ed=2560security=tls
 - alpn:
   - http/1.1
-  name: 12,16|_GB_国
+  name: 16|_GB_国
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -623,27 +726,28 @@ proxies:
     path: '%2Fblue'
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知20 18.6MB/s
+  name: 19,20,21,37|未知5 16.0MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.81
+  server: 212.102.53.195
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  cipher: auto
-  name: '20,21|🇬🇧GB-149.7.16.174-7944 #1'
-  network: ws
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知43 17.1MB/s
+  password: shadowsocks
   port: 443
-  server: 149.7.16.174
-  servername: ''
+  server: 212.102.53.194
+  skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇬🇧GB-89.185.84.185-0370
+  password: MdeeQzzQP9HTGvy3NKC9FR
+  port: 12575
+  server: 89.185.84.185
+  type: ss
 - alterId: 0
   cipher: auto
   name: '20,21|🇬🇧GB-172.99.190.206-7970 #1'
@@ -756,39 +860,38 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /
+- name: 27,40|GB_speednode_0005
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 185.193.29.193
+  skip-cert-verify: true
+  sni: bpb.my79801.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: bpb.my79801.com
+    path: /tr
+- name: 27,40|GB_speednode_0006
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 164.38.155.246
+  skip-cert-verify: true
+  sni: bpb.my79801.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: bpb.my79801.com
+    path: /tr
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-62.112.221.4...
+  name: 36,37|未知58
   network: tcp
-  port: '3939'
+  port: 3939
   server: 62.112.221.47
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: faee92bb-0370-4de4-8798-694023eeaa90
-- name: 40|GB_speednode_0012
-  network: ws
-  port: 8080
-  server: 37.230.62.172
-  servername: a.mifeng.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /?ed=2560
-- name: 40|GB_speednode_0013
-  network: ws
-  port: 8080
-  server: 109.61.95.21
-  servername: a.xn--i-sx6a60i.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg
-    path: /?ed=2560
