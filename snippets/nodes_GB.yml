@@ -357,14 +357,11 @@ proxies:
   server: 52.151.72.172
   type: ss
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 4,19,37|未知84 1.9MB/s
+- cipher: aes-256-gcm
+  name: 4,19|🇫🇷FR-145.239.6.202-6048
   password: pKEW8JPByTVTLtM
   port: 4444
   server: 145.239.6.202
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -552,27 +549,12 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知5 16.0MB/s
+  name: 19,20,21,37|未知65 1.4MB/s
   password: shadowsocks
   port: 443
   server: 212.102.53.195
   skip-cert-verify: true
   tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知43 17.1MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.194
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇬🇧GB-109.120.186.9-0400
-  password: s#W0tqg%@N
-  port: 23022
-  server: 109.120.186.9
   type: ss
 - alterId: 0
   cipher: auto
@@ -831,12 +813,25 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 36,37|未知58
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-62.112.221.4...
   network: tcp
-  port: 3939
+  port: '3939'
   server: 62.112.221.47
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: faee92bb-0370-4de4-8798-694023eeaa90
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇬🇧 GB-149.7.16.102...
+  network: ws
+  port: 443
+  server: 149.7.16.102
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: jader.fun
+    path: /linkvws
