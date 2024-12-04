@@ -43,7 +43,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 4,19|🇹🇷TR-45.89.52.66-9190
+  name: 4|🇷🇺 RU 10 → tg@nicevpn123
   password: U6qnYRhfyDmn8sgn
   port: 9041
   server: 45.89.52.66
@@ -158,7 +158,7 @@ proxies:
   ws-opts:
     path: /hms02.fxiaomi.sbs/link
 - cipher: aes-256-cfb
-  name: 4,19|🇪🇸ES-5.188.181.201-9149
+  name: 4,19|🇪🇸ES-5.188.181.201-0473
   password: S7KwUu7yBy58S3Ga
   port: 9042
   server: 5.188.181.201
@@ -410,7 +410,7 @@ proxies:
   ws-opts:
     path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fmahan'
 - cipher: aes-256-cfb
-  name: 4,19|🇹🇷TR-45.89.52.66-9188
+  name: 4|🇷🇺 RU 5 → tg@nicevpn123
   password: HSZuyJQcWe8dxNdF
   port: 9043
   server: 45.89.52.66
@@ -441,7 +441,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 4,19|🇹🇷TR-45.89.52.66-9191
+  name: 4|🇷🇺 RU 53 → tg@nicevpn123
   password: p9z5BVADH2YFs3MN
   port: 9040
   server: 45.89.52.66
@@ -462,7 +462,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 4,19|🇹🇷TR-45.89.52.66-9193
+  name: 4|🇷🇺 RU 56 → tg@nicevpn123
   password: BwcAUZk8hUFAkDGN
   port: 9031
   server: 45.89.52.66
@@ -869,6 +869,15 @@ proxies:
   ws-opts:
     path: /
 - alterId: 0
+  cipher: aes-256-gcm
+  name: 5,24,27,37|🇺RU俄罗斯2
+  password: dongtaiwang.com
+  port: 32233
+  server: 185.22.152.125
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
   name: '5,11|2|🇷🇺_RU_俄罗斯联邦 #2'
   network: tcp
@@ -1002,15 +1011,6 @@ proxies:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 24,27,37|RU 476.0KB/s
-  password: 6OAGLD+DOA6UcFp5Udf0r/UzyjwHV+yheNkoFDk6uL8=
-  port: 38753
-  server: 213.108.22.109
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
   name: '24|🇷🇺 俄罗斯 V2CROSS.COM #1'
   network: ws
@@ -1075,12 +1075,15 @@ proxies:
     headers:
       Host: ip18.6929198.xyz
     path: /github.com/Alvin9999
-- name: '24|🇷🇺 _俄罗斯 #9'
+- alterId: 0
+  name: 24,37|🇺RU
   password: NISHIKUITAN111
   port: 443
   server: 213.241.198.4
   skip-cert-verify: true
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇷🇺 _俄罗斯 #10'
   password: NISHIKUITAN111
   port: 443
@@ -1099,6 +1102,16 @@ proxies:
   uuid: 2cd0f258-d8cf-4c56-a5ec-5e400c1bbde8
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-80.85.154.14...
+  network: tcp
+  port: '30174'
+  server: 80.85.154.140
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b5f06a80-f13b-4a7b-8af5-79af1e3ca4ef
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇷🇺 RU-45.67.32.147...
