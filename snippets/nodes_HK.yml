@@ -134,13 +134,16 @@ proxies:
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
-- name: 5,24,27|13,14|香港2|@ripaojiedian
+- alterId: 0
+  name: 5,24,27,37|🇰HK香港2
   network: tcp
   password: QwwHvrnN
   port: 25241
   server: 36.151.192.196
   skip-cert-verify: true
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5,11,24,27|14|香港9|@ripaojiedian
@@ -161,13 +164,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 5,9,11,24,27|13|🇭🇰 香港10|@ripaojiedian
+  name: 5,9,11,24,27,37|🇭🇰HK香港3
   password: 36a91bbc-8181-4862-a947-eb4379a30fcf
   port: 11001
   server: 183.232.229.164
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
@@ -177,13 +183,16 @@ proxies:
   server: h-k01.loveroise.com
   tfo: false
   type: ss
-- name: 5,24,27|13,14||@ripaojiedian
+- alterId: 0
+  name: 5,24,27,37|HK
   network: tcp
   password: DNUMdmnJ
   port: 51377
   server: 36.151.192.242
   skip-cert-verify: true
+  tls: true
   type: trojan
+  udp: true
 - alterId: 64
   cipher: auto
   name: 5,11,24,27|14|香港3|@ripaojiedian
@@ -792,26 +801,40 @@ proxies:
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港03-1F
-  password: 1b3fb7ad-5b1f-4e11-a5b8-a76e39cb123a
+  name: 28|🇭🇰 香港03-1B
+  password: 502bfb4d-0349-4da7-b3e2-2721d8903db3
   port: 20052
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港01-1B
-  password: 4b7864be-c7e0-476b-983a-de82056e7bb0
+  name: 28|🇭🇰 香港01-1D
+  password: cb09ea89-fef0-4324-aace-9bd8599214a4
   port: 34338
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港02-1F
-  password: 1b3fb7ad-5b1f-4e11-a5b8-a76e39cb123a
+  name: 28|🇭🇰 香港02-1B
+  password: 502bfb4d-0349-4da7-b3e2-2721d8903db3
   port: 20035
   server: gy.666666222.shop
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-34.96.138.169...
+  network: ws
+  port: '55347'
+  server: 34.96.138.169
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fc7eb111-1292-4706-f4fb-afba1958924c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-34.92.66.193...
@@ -823,32 +846,20 @@ proxies:
   type: vmess
   uuid: 9e88a10b-655c-5120-89d0-408634169561
 - alterId: 0
-  name: 37|HK
-  password: f181b265-5fd4-456e-ad2d-c9b0446e0d51
-  port: 27001
-  server: 45.146.232.173
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
+  cipher: chacha20-ietf-poly1305
   name: 37|HK2
-  network: tcp
-  password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
-  port: 40091
-  server: 43.199.143.58
+  password: 6d247617-01a8-4720-9c4e-c5c68ebf75c5
+  port: 51161
+  server: 82.152.105.168
   skip-cert-verify: true
-  sni: hk12.bilibili.com
   tls: true
-  type: trojan
-  udp: true
+  type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 37|HK3 396.5KB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
+  name: 37|HK3 234.7KB/s
+  password: F585FCDB-6351-48D4-82C1-599B5447A589
+  port: 40000
+  server: 89.213.150.72
   skip-cert-verify: true
   tls: true
   type: ss
