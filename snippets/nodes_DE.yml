@@ -384,6 +384,13 @@ proxies:
   server: 217.182.198.219
   type: ss
   udp: true
+- name: 5|德国01-0.01×
+  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
+  port: 20992
+  server: 140.238.25.132
+  skip-cert-verify: true
+  sni: sale.alibaba.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '5,11|2|🇩🇪_DE_德国 #1'
@@ -426,23 +433,15 @@ proxies:
     headers:
       host: frankfurt03.zgjok.com
     path: /
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-2781
+  password: M3t2ZEQcMGRWBjRa
+  port: 9011
+  server: 80.92.204.106
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.141-8193 #1'
-  network: ws
-  port: 443
-  server: 57.129.24.141
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-8176 #1'
+  name: '20,21|🇩🇪DE-57.129.24.125-7902 #1'
   network: ws
   port: 443
   server: 57.129.24.125
@@ -456,15 +455,32 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36,37|未知57
-  network: httpupgrade
-  port: 2095
-  server: 188.114.99.187
+  name: 20,21,24|🇩🇪 德国 法兰克福Oracle云计算数据中心
+  network: ws
+  port: '443'
+  server: frankfurt03.zgjok.com
   servername: ''
-  skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 4bbdc1a2-73fa-4089-bb30-ddd3041196df
+  uuid: 4f7c2243-a38a-4672-983b-f1378aee0a7f
+  ws-opts:
+    headers:
+      Host: frankfurt03.zgjok.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-57.129.24.141-7897 #1'
+  network: ws
+  port: 443
+  server: 57.129.24.141
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
