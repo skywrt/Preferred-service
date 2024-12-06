@@ -348,10 +348,24 @@ proxies:
   server: 139.59.119.251
   type: ss
   udp: true
-- name: '5,38|🇸🇬_SG_新加坡_7 #1'
+- cipher: chacha20-ietf-poly1305
+  name: 5,40|CN_speednode_0017
+  password: 0cd4f4c0-9d64-48d8-a89b-ce2e85d84386
+  port: 19003
+  server: yy.vyunyunnode.top
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: '5,9,11,24,27|13| |@ripaojiedian #2'
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  port: 54030
+  server: s-g04.loveroise.com
+  tfo: false
+  type: ss
+- name: '5,38|🇸🇬_SG_新加坡_37 #1'
   network: ws
   port: 443
-  server: 27.50.49.13
+  server: 27.50.48.222
   servername: juzibaipiao.5112233.xyz
   tls: true
   type: vless
@@ -368,20 +382,19 @@ proxies:
   server: 54.251.196.3
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '5,9,11,24,27|13| |@ripaojiedian #2'
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54030
-  server: s-g04.loveroise.com
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: '5,11|1|_SG_ #1'
-  password: amazonskr05
-  port: 443
-  server: 54.179.87.28
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 5|新加坡new01（1倍率）
+  network: ws
+  port: '8080'
+  server: de-new01.daluquan.top
+  tls: false
+  type: vmess
+  uuid: e105c051-1b1f-4487-83ca-accf81c02055
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
 - name: '5,38|🇸🇬_SG_新加坡_2 #1'
   network: ws
   port: 8443
@@ -394,10 +407,16 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- name: '5,38|🇸🇬_SG_新加坡_37 #1'
+- cipher: aes-256-cfb
+  name: '5,11|1|_SG_ #1'
+  password: amazonskr05
+  port: 443
+  server: 54.179.87.28
+  type: ss
+- name: '5,38|🇸🇬_SG_新加坡_7 #1'
   network: ws
   port: 443
-  server: 27.50.48.222
+  server: 27.50.49.13
   servername: juzibaipiao.5112233.xyz
   tls: true
   type: vless
@@ -406,12 +425,48 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- cipher: chacha20-ietf-poly1305
-  name: 5,40|CN_speednode_0017
-  password: 0cd4f4c0-9d64-48d8-a89b-ce2e85d84386
-  port: 19003
-  server: yy.vyunyunnode.top
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 5|新加坡new01优选（1倍率）
+  network: ws
+  port: '8080'
+  server: go.daluquan.top
+  tls: false
+  type: vmess
+  uuid: e105c051-1b1f-4487-83ca-accf81c02055
+  ws-opts:
+    headers:
+      Host: de-new01.daluquan.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 5|新加坡西部（新加坡）
+  network: ws
+  port: '23451'
+  server: westsg2-ddns.oraclenat.cc
+  tls: false
+  type: vmess
+  uuid: e105c051-1b1f-4487-83ca-accf81c02055
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 5,10|加拿大 002
+  network: ws
+  port: 443
+  server: visa.com
+  servername: xjp.daluquan.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 302fe943-4bbe-4cd6-bdbd-4446aeb72b1e
+  ws-opts:
+    headers:
+      Host: xjp.daluquan.top
+    path: /
 - cipher: aes-256-cfb
   name: 8|🇸🇬SG-13.213.46.196-170_1@170
   password: amazonskr05
@@ -471,6 +526,12 @@ proxies:
     headers:
       Host: sg1.pkyun.website
     path: /sg1
+- cipher: aes-256-cfb
+  name: 19|🇸🇬SG-54.251.68.99-0985
+  password: amazonskr05
+  port: 443
+  server: 54.251.68.99
+  type: ss
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|新加坡(SG)Singapore/Singapore_7
