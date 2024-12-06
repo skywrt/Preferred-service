@@ -407,6 +407,12 @@ proxies:
   server: 141.11.189.205
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,40|CN_speednode_0030
+  password: 0cd4f4c0-9d64-48d8-a89b-ce2e85d84386
+  port: 19021
+  server: yy.vyunyunnode.top
+  type: ss
 - alterId: 0
   cipher: auto
   name: 5,12,13,24|🇬🇧 _英国
@@ -455,11 +461,14 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
-- cipher: aes-128-gcm
-  name: 19,20,21,24,40|GB_speednode_0025
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知8 11.5MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.193
+  server: 212.102.53.81
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -601,16 +610,6 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-147.45.179.1...
-  network: tcp
-  port: '8081'
-  server: 147.45.179.104
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: eb34d6d8-543a-4cff-9da4-379efb091e38
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-NA 🇬🇧 GB-5.39.254.196:...
   network: ws
   port: '23112'
@@ -623,3 +622,25 @@ proxies:
     headers:
       Host: ''
     path: ''
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-147.45.179.1...
+  network: tcp
+  port: '8081'
+  server: 147.45.179.104
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: eb34d6d8-543a-4cff-9da4-379efb091e38
+- alterId: 0
+  cipher: auto
+  name: 40|GB_speednode_0034
+  network: ws
+  port: 23112
+  server: 5.39.254.196
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
+  ws-opts:
+    path: /
