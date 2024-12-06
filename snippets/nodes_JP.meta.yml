@@ -3,7 +3,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|348680eda43e428f9ed859dc0ffae1...
+  name: 3|d1596fceb4ac4a61bfefeb100448ab...
   network: ws
   port: 12109
   server: 112.69.4.50
@@ -20,7 +20,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|6f1fc3f41afa4ca5ab6824e62a37e2...
+  name: 3|aa461cb7f7e74bd089a79333b917d5...
   network: ws
   port: 12344
   server: 158.101.142.227
@@ -620,14 +620,6 @@ proxies:
   server: 13.231.229.41
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 5,9,11,24,27|13|🇵 日本3|@ripaojiedian
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54102
-  server: j-p04.loveroise.com
-  tfo: false
-  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 5,9,11,19,24,27|13|🇵 日本特殊|@ripaojiedian
@@ -644,20 +636,45 @@ proxies:
   server: 61.172.235.22
   tfo: false
   type: ss
-- name: '5,24|🇯🇵 13,14|日本|@ripaojiedian #1'
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 5,9,11,24,27|13|🇵 日本3|@ripaojiedian
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  port: 54102
+  server: j-p04.loveroise.com
+  tfo: false
+  type: ss
+- name: 5,27|14|日本2|@ripaojiedian
+  network: ws
+  password: ouo
+  port: 16800
+  server: 152.70.101.24
+  sni: tr.koiok.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr.koiok.us.kg
+    path: '%2F%3Fed%3D2560'
+- name: 5,27,40|CN_speednode_0007
   network: tcp
   password: QwwHvrnN
-  port: 6985
-  server: 36.151.192.242
+  port: 12176
+  server: 36.151.192.239
   skip-cert-verify: true
   type: trojan
-- name: 5|日本02-0.01×
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 21101
-  server: 140.238.25.132
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 5|日本 东京Fastly节点
+  network: ws
+  port: 443
+  server: root.mid.al
+  tls: true
+  type: vmess
+  uuid: a983c698-cae4-4254-d047-51898ccd8ee7
+  ws-opts:
+    headers:
+      Host: kim.gov.kp
+    path: /aries?ed=2048
 - name: 8|🇯🇵JP-3.112.192.169-188_1@188
   password: umis0GDWL5RQ
   port: 16717
@@ -679,13 +696,26 @@ proxies:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
 - client-fingerprint: chrome
-  name: 9|🇯🇵 13,14|日本|@ripaojiedian
+  name: 9,40|CN_speednode_0009
   password: QwwHvrnN
-  port: 6985
-  server: 36.151.192.242
-  skip-cert-verify: false
-  sni: 36.151.192.242
+  port: 12176
+  server: 36.151.192.239
+  skip-cert-verify: true
+  sni: 36.151.192.239
   type: trojan
+- client-fingerprint: chrome
+  name: 9,11,27,40|JP_speednode_0027
+  network: ws
+  password: ouo
+  port: 16800
+  server: 152.70.101.24
+  skip-cert-verify: true
+  sni: tr.koiok.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr.koiok.us.kg
+    path: /?ed=2560
 - name: 17|荷兰(yudou66.com 玉豆免费节点)
   network: ws
   port: 443
@@ -845,29 +875,12 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- name: 27|13| 日本2|@ripaojiedian
-  network: ws
-  password: ouo
-  port: 16800
-  server: 152.70.101.24
-  skip-cert-verify: false
-  sni: tr.koiok.us.kg
+- name: '24|🇯🇵 13,14|日本|@ripaojiedian #1'
+  password: QwwHvrnN
+  port: 6985
+  server: 36.151.192.242
+  skip-cert-verify: true
   type: trojan
-  ws-opts:
-    headers:
-      Host: tr.koiok.us.kg
-    path: /?ed=2560
-- name: '27|14|日本2|@ripaojiedian #1'
-  network: ws
-  password: ouo
-  port: 16800
-  server: 152.70.101.24
-  sni: tr.koiok.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tr.koiok.us.kg
-    path: '%2F%3Fed%3D2560'
 - cipher: chacha20-ietf-poly1305
   name: 28|🇯🇵 日本03-1B
   password: f6273052-cfa9-45ca-b36e-9da96e5a13bd
@@ -928,3 +941,39 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /obdii.cfd:443/linkws
+- cipher: aes-256-cfb
+  name: 40|JP_speednode_0026
+  password: amazonskr05
+  port: 443
+  server: 54.199.12.31
+  type: ss
+- name: 40|JP_speednode_0028
+  network: ws
+  password: ouo
+  port: 16800
+  server: 152.70.101.24
+  skip-cert-verify: true
+  sni: tr.koiok.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr.koiok.us.kg
+    path: /%2F%3Fed%3D2560
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 40|JP_speednode_0029
+  network: ws
+  port: 443
+  server: Zmaoz.Faculty.UcdavIS.Edu
+  servername: Zmaoz.Faculty.UcdavIS.Edu.
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 35017be6-5b1c-4cd4-a248-95c4a99a46b1
+  ws-opts:
+    headers:
+      Host: meloch-de.com
+    path: /@melov2ray/ws?e@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpnd=2048
