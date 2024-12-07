@@ -116,7 +116,7 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 5,9,11,24,27,37|HK
+  name: 5,9,11,24,37|HK
   password: ea0f5ddd-2b70-4b4a-b61a-8d402093e52c
   port: 11001
   server: 183.232.229.165
@@ -148,14 +148,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: '5,9,11,24,27|13|🇭🇰 香港10|@ripaojiedian #1'
-  password: asd123456
-  port: 8388
-  server: 154.197.26.237
-  tfo: false
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 5,40|CN_speednode_0005
   password: 0cd4f4c0-9d64-48d8-a89b-ce2e85d84386
@@ -208,14 +200,6 @@ proxies:
   password: 0cd4f4c0-9d64-48d8-a89b-ce2e85d84386
   port: 19009
   server: yy.vyunyunnode.top
-  type: ss
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: '5,9,11,24,27|13|🇭🇰 香港9|@ripaojiedian #1'
-  password: asd123456
-  port: 8388
-  server: 38.147.190.72
-  tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 5,40|CN_speednode_0010
@@ -869,27 +853,64 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
+- name: '27|13|🇭🇰 香港8|@ripaojiedian #1'
+  network: ws
+  password: ouo
+  port: 18443
+  server: 18.162.246.4
+  skip-cert-verify: false
+  sni: tr.koiok.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr.koiok.us.kg
+    path: /?ed=2560
+- name: '27|14|香港8|@ripaojiedian #1'
+  network: ws
+  password: ouo
+  port: 18443
+  server: 18.162.246.4
+  sni: tr.koiok.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr.koiok.us.kg
+    path: '%2F%3Fed%3D2560'
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港03-1D
-  password: 94e55071-7093-4899-a232-fb4463131054
-  port: 20052
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港02-1C
+  name: 28|🇭🇰 香港02-1A
   password: 9eb5b973-9aee-4ded-bed8-1702ba0809dc
   port: 20035
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港01-1A
-  password: 79900583-9ac0-4c0d-ac59-55a39b47ae67
+  name: 28|🇭🇰 香港01-1C
+  password: e98ea483-d606-4c46-aa51-5a64d2d3ffdb
   port: 34338
   server: gy.666666222.shop
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港03-1A
+  password: 9eb5b973-9aee-4ded-bed8-1702ba0809dc
+  port: 20052
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-141.11.216.15...
+  network: ws
+  port: '17530'
+  server: 141.11.216.151
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fc7eb111-1292-4706-f4fb-afba1958924c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-34.92.66.193...
