@@ -107,26 +107,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 64
-  cipher: auto
-  name: '5,11,24,27|14|香港7|@ripaojiedian #1'
-  network: tcp
-  port: '46602'
-  server: 183.236.51.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '5,11,24,27|14|香港5|@ripaojiedian #1'
-  network: tcp
-  port: '58831'
-  server: 183.236.48.163
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: '5,9,11,24,27|13|🇭🇰 香港6|@ripaojiedian #1'
@@ -137,14 +117,34 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: '5,11,24,27|14|香港3|@ripaojiedian #1'
+  name: '5,11,24,27|14|香港5|@ripaojiedian #1'
   network: tcp
-  port: '32193'
-  server: 120.198.71.214
+  port: '58831'
+  server: 183.236.48.163
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '5,11,24,27|14|香港7|@ripaojiedian #1'
+  network: tcp
+  port: '46602'
+  server: 183.236.51.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  name: 5,24,27,37|🇰HK
+  network: tcp
+  password: QwwHvrnN
+  port: 18682
+  server: 36.151.192.242
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: '5,9,11,24,27|13|🇭🇰 香港4|@ripaojiedian #1'
@@ -160,6 +160,16 @@ proxies:
   server: 36.151.192.242
   skip-cert-verify: true
   type: trojan
+- alterId: 64
+  cipher: auto
+  name: '5,11,24,27|14|香港3|@ripaojiedian #1'
+  network: tcp
+  port: '32193'
+  server: 120.198.71.214
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 5,27|14|香港8|@ripaojiedian
   network: ws
   password: ouo
@@ -171,16 +181,6 @@ proxies:
     headers:
       Host: tr.koiok.us.kg
     path: '%2F%3Fed%3D2560'
-- alterId: 0
-  name: 5,24,27,37|🇰HK
-  network: tcp
-  password: QwwHvrnN
-  port: 18682
-  server: 36.151.192.242
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
   name: 9|🇭🇰 13,14|香港|@ripaojiedian
   password: DNUMdmnJ
@@ -780,58 +780,24 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- name: '24|🇺🇸 _美国 #38'
+- name: '24|🇭🇰 14|香港8|@ripaojiedian #1'
   password: ouo
   port: 18443
   server: 18.162.246.4
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: tr.koiok.us.kg
-  type: trojan
-- alterId: 0
-  name: 24,37|HK4
-  password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
-  port: 40913
-  server: 16ab1c69cdfdbf898aa6c5c5131dfa99.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: hk12.bilibili.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 24,37|HK2
-  password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
-  port: 49468
-  server: e365c3a06d49e21c6027fce9ee36f181.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: us1.bilibili.com
-  tls: true
-  type: trojan
-  udp: true
-- name: '24|🇺🇸 _美国 #35'
-  password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
-  port: 48385
-  server: eef72d13ad096a6703aabd5bae809848.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: de1.bilibili.com
-  type: trojan
-- name: '24|🇺🇸 _美国 #36'
-  password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
-  port: 47580
-  server: 26f3c1fb8b12d3dcbc594b4e5cad3f1a.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: ca1.bilibili.com
-  type: trojan
-- name: '24|🇺🇸 _美国 #37'
-  password: d75a2b07-34f4-454e-84ba-0de806c51b6d
-  port: 46509
-  server: dab1c8faaa893fecbc1e055db0894883.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: ca1.bilibili.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 28|🇭🇰 香港02-1B
   password: 6befdb02-8713-43fb-b8c1-cebad0876aef
   port: 20035
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港01-1A
+  password: fe5dd67c-f676-49ce-ace8-ad83ced378dc
+  port: 34338
   server: gy.666666222.shop
   type: ss
   udp: true
@@ -862,11 +828,22 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|HK3 49.3KB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
+  name: 37|HK2
+  password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
+  port: 49468
+  server: e365c3a06d49e21c6027fce9ee36f181.v1.cac.node-is.green
   skip-cert-verify: true
+  sni: us1.bilibili.com
   tls: true
-  type: ss
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|HK4
+  password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
+  port: 40913
+  server: 16ab1c69cdfdbf898aa6c5c5131dfa99.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
