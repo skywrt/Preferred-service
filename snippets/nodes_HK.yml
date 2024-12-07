@@ -107,35 +107,32 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,40|CN_speednode_0006
-  password: 0cd4f4c0-9d64-48d8-a89b-ce2e85d84386
-  port: 19025
-  server: yy.vyunyunnode.top
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 5,9,11,24,37|HK
-  password: ea0f5ddd-2b70-4b4a-b61a-8d402093e52c
-  port: 11001
-  server: 183.232.229.165
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 5,40|CN_speednode_0008
-  password: 0cd4f4c0-9d64-48d8-a89b-ce2e85d84386
-  port: 19023
-  server: yy.vyunyunnode.top
-  type: ss
+- alterId: 64
+  cipher: auto
+  name: '5,11,24,27|14|香港7|@ripaojiedian #1'
+  network: tcp
+  port: '46602'
+  server: 183.236.51.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '5,11,24,27|14|香港5|@ripaojiedian #1'
+  network: tcp
+  port: '58831'
+  server: 183.236.48.163
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '5,9,11,24,27|13|🇭🇰 香港4|@ripaojiedian #1'
+  name: '5,9,11,24,27|13|🇭🇰 香港6|@ripaojiedian #1'
   password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54002
-  server: h-k02.loveroise.com
+  port: 54000
+  server: h-k01.loveroise.com
   tfo: false
   type: ss
 - alterId: 64
@@ -148,64 +145,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: 5,40|CN_speednode_0005
-  password: 0cd4f4c0-9d64-48d8-a89b-ce2e85d84386
-  port: 19026
-  server: yy.vyunyunnode.top
-  type: ss
-- alterId: 64
-  cipher: auto
-  name: '5,11,24,27|14|香港5|@ripaojiedian #1'
-  network: tcp
-  port: '58831'
-  server: 183.236.48.163
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: 5,40|CN_speednode_0009
-  password: 0cd4f4c0-9d64-48d8-a89b-ce2e85d84386
-  port: 19002
-  server: yy.vyunyunnode.top
-  type: ss
-- alterId: 64
-  cipher: auto
-  name: '5,11,24,27|14|香港7|@ripaojiedian #1'
-  network: tcp
-  port: '46602'
-  server: 183.236.51.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 5,24,27|13,14|香港2|@ripaojiedian
-  network: tcp
-  password: QwwHvrnN
-  port: 18682
-  server: 36.151.192.242
-  skip-cert-verify: true
-  type: trojan
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '5,9,11,24,27|13|🇭🇰 香港6|@ripaojiedian #1'
+  name: '5,9,11,24,27,37|HK #1'
   password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54000
-  server: h-k01.loveroise.com
+  port: 54002
+  server: h-k02.loveroise.com
+  skip-cert-verify: true
   tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 5,40|CN_speednode_0007
-  password: 0cd4f4c0-9d64-48d8-a89b-ce2e85d84386
-  port: 19009
-  server: yy.vyunyunnode.top
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 5,40|CN_speednode_0010
-  password: 0cd4f4c0-9d64-48d8-a89b-ce2e85d84386
-  port: 19008
-  server: yy.vyunyunnode.top
+  tls: true
   type: ss
 - name: 5,24,27|13,14||@ripaojiedian
   network: tcp
@@ -214,12 +163,24 @@ proxies:
   server: 36.151.192.242
   skip-cert-verify: true
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 5,40|CN_speednode_0004
-  password: 0cd4f4c0-9d64-48d8-a89b-ce2e85d84386
-  port: 19027
-  server: yy.vyunyunnode.top
-  type: ss
+- name: 5,27|14|香港8|@ripaojiedian
+  network: ws
+  password: ouo
+  port: 18443
+  server: 18.162.246.4
+  sni: tr.koiok.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr.koiok.us.kg
+    path: '%2F%3Fed%3D2560'
+- name: 5,24,27|13,14|香港2|@ripaojiedian
+  network: tcp
+  password: QwwHvrnN
+  port: 18682
+  server: 36.151.192.242
+  skip-cert-verify: true
+  type: trojan
 - client-fingerprint: chrome
   name: 9|🇭🇰 13,14|香港|@ripaojiedian
   password: DNUMdmnJ
@@ -269,6 +230,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- client-fingerprint: chrome
+  name: 9,11,27|13|🇭🇰 香港8|@ripaojiedian
+  network: ws
+  password: ouo
+  port: 18443
+  server: 18.162.246.4
+  skip-cert-verify: false
+  sni: tr.koiok.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr.koiok.us.kg
+    path: /?ed=2560
 - client-fingerprint: chrome
   name: 9,24,27,40|HK_speednode_0035
   password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
@@ -853,29 +827,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- name: '27|13|🇭🇰 香港8|@ripaojiedian #1'
-  network: ws
-  password: ouo
-  port: 18443
-  server: 18.162.246.4
-  skip-cert-verify: false
-  sni: tr.koiok.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tr.koiok.us.kg
-    path: /?ed=2560
-- name: '27|14|香港8|@ripaojiedian #1'
-  network: ws
-  password: ouo
-  port: 18443
-  server: 18.162.246.4
-  sni: tr.koiok.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tr.koiok.us.kg
-    path: '%2F%3Fed%3D2560'
 - cipher: chacha20-ietf-poly1305
   name: 28|🇭🇰 香港02-1A
   password: 9eb5b973-9aee-4ded-bed8-1702ba0809dc
@@ -899,20 +850,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-141.11.216.15...
-  network: ws
-  port: '17530'
-  server: 141.11.216.151
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: fc7eb111-1292-4706-f4fb-afba1958924c
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-34.92.66.193...
   network: tcp
   port: '30251'
@@ -921,3 +858,34 @@ proxies:
   tls: false
   type: vmess
   uuid: 9e88a10b-655c-5120-89d0-408634169561
+- alterId: 0
+  name: 37|HK
+  password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
+  port: 47580
+  server: 18.166.210.61
+  skip-cert-verify: true
+  sni: ca1.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 37|HK3 78.4KB/s
+  network: ws
+  port: 17530
+  server: 141.11.216.151
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fc7eb111-1292-4706-f4fb-afba1958924c
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|HK4
+  password: woGi6ZwrKjCZglY9CrexNw
+  port: 36766
+  server: 141.98.234.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
