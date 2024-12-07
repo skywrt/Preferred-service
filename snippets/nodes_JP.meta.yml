@@ -3,7 +3,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|efcb1f05cbf54faea3a4e14927d977...
+  name: 3|67d4e104ac69400581dd7efcc1bc97...
   network: ws
   port: 12109
   server: 112.69.4.50
@@ -20,7 +20,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|0092d71e88c04950a9bb34a3492ddc...
+  name: 3|05a7052ffb8842179199a7ae7fa822...
   network: ws
   port: 12344
   server: 158.101.142.227
@@ -622,7 +622,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,9,11,27|13|🇵 日本特殊|@ripaojiedian
+  name: 5,9,11,24,27|13|🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 3.36.86.96
@@ -630,9 +630,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 5,24|🇯🇵 日本 东京Fastly节点
+  name: 5|日本 东京Fastly节点
   network: ws
-  port: '443'
+  port: 443
   server: root.mid.al
   tls: true
   type: vmess
@@ -751,7 +751,7 @@ proxies:
   type: trojan
 - alterId: 0
   client-fingerprint: chrome
-  name: 5,9,27,37|JP 611.0KB/s
+  name: 5,9,24,27,37|JP 611.0KB/s
   network: tcp
   password: 50cce31a-d637-4058-b2cd-9362de722d64
   port: 22269
@@ -864,6 +864,12 @@ proxies:
     headers:
       Host: lp.ylks.us.kg
     path: '%2F%3Fed%3D2560'
+- cipher: aes-256-cfb
+  name: 19|🇯🇵JP-54.65.202.4-0429
+  password: amazonskr05
+  port: 443
+  server: 54.65.202.4
+  type: ss
 - alterId: 0
   cipher: auto
   name: '23,30|二爷翻墙网 https://1808.free.hr_JP_... #6'
@@ -963,43 +969,10 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- name: 24|🇯🇵 13,14|日本|@ripaojiedian
-  password: QwwHvrnN
-  port: 12176
-  server: 36.151.192.239
-  skip-cert-verify: true
-  type: trojan
-- name: 24|🇯🇵 14|日本2|@ripaojiedian
-  password: ouo
-  port: 16800
-  server: 152.70.101.24
-  skip-cert-verify: false
-  sni: tr.koiok.us.kg
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 24|🇯🇵 _日本
-  network: ws
-  port: '2082'
-  server: 91.193.58.5
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
 - cipher: chacha20-ietf-poly1305
   name: 28|🇯🇵 日本03-1D
   password: 388f0349-810c-4a8a-a966-a4b09416db76
   port: 20006
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本02-1C
-  password: e98ea483-d606-4c46-aa51-5a64d2d3ffdb
-  port: 20004
   server: gy.666666222.shop
   type: ss
   udp: true
@@ -1050,11 +1023,28 @@ proxies:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /obdii.cfd:443/linkws
 - alpn:
+  - h2
+  - http%2F1.1
+  client-fingerprint: ios
+  name: 40|JP_speednode_0018
+  network: ws
+  port: 443
+  server: Zmaoz.Faculty.UcdavIS.Edu
+  servername: Zmaoz.Faculty.UcdavIS.Edu.
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 35017be6-5b1c-4cd4-a248-95c4a99a46b1
+  ws-opts:
+    headers:
+      Host: meloch-de.com
+    path: /@melov2ray/ws?ed=2048
+- alpn:
   - h3
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 40|JP_speednode_0040
+  name: 40|JP_speednode_0019
   network: ws
   port: 443
   server: Zmaoz.Faculty.UcdavIS.Edu
