@@ -9,14 +9,17 @@ proxies:
   sni: us1.bilibili.com
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 9,27,40|HK_speednode_0010
+- alterId: 0
+  client-fingerprint: chrome
+  name: 9,27,37,40|HK_speednode_0010
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
   port: 41288
   server: 218.190.230.207
   skip-cert-verify: true
   sni: hk12.bilibili.com
+  tls: true
   type: trojan
+  udp: true
 - client-fingerprint: chrome
   name: 9|🇭🇰 13,14|香港|@ripaojiedian
   password: DNUMdmnJ
@@ -56,7 +59,7 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 9,11,24,27,37|HK
+  name: 9,11,24,27,37|🇭🇰HK香港2
   password: PW5K9ORIVZQLTTCZ
   port: 15012
   server: 219.135.227.209
@@ -677,20 +680,26 @@ proxies:
   skip-cert-verify: false
   sni: hk12.bilibili.com
   type: trojan
-- name: 24|0,15|HK_speednode_0004
+- alterId: 0
+  name: 24,37|HK
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
   port: 41790
   server: ddbfb45e8b47580a5b2c2b5e43fa9213.v1.cac.node-is.green
   skip-cert-verify: true
   sni: us1.bilibili.com
+  tls: true
   type: trojan
-- name: 24,27,40|CN_speednode_0004
+  udp: true
+- alterId: 0
+  name: 24,27,37,40|CN_speednode_0004
   network: tcp
   password: QwwHvrnN
   port: 25241
   server: 36.151.192.203
   skip-cert-verify: true
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇭🇰 14|香港8|@ripaojiedian #1'
   password: ouo
   port: 18443
@@ -839,29 +848,22 @@ proxies:
       Host: tr.koiok.us.kg
     path: '%2F%3Fed%3D2560'
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港03-1D
-  password: ac0d51b6-1bf0-4a65-8408-e7652296c89a
-  port: 20052
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港02-1G
-  password: 52fd6a51-a841-4c31-aac9-9380fcdbc650
+  name: 28|🇭🇰 香港02-1A
+  password: 7b1580d5-f3e8-42e7-9f42-b9cf5547be34
   port: 20035
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港01-1D
-  password: ac0d51b6-1bf0-4a65-8408-e7652296c89a
-  port: 34338
+  name: 28|🇭🇰 香港03-1A
+  password: 7b1580d5-f3e8-42e7-9f42-b9cf5547be34
+  port: 20052
   server: gy.666666222.shop
   type: ss
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 28|🇭🇰 香港-流媒体2x-1A
+  name: 28|🇭🇰 香港-流媒体2x-1B
   network: tcp
   port: 55442
   reality-opts:
@@ -873,7 +875,14 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 4b55295c-afc1-40b0-97ee-028afa0e3c9a
+  uuid: f01b20dd-2169-4022-9399-42b9018cd6a9
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港01-1H
+  password: a069ebf9-1bba-4949-9928-61f032066f72
+  port: 34338
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-34.92.66.193...
@@ -885,23 +894,41 @@ proxies:
   type: vmess
   uuid: 9e88a10b-655c-5120-89d0-408634169561
 - alterId: 0
-  name: '37|HK #1'
-  network: tcp
+  name: 37|HK3
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 48169
-  server: 218.190.230.207
+  port: 48539
+  server: 16.162.254.204
   skip-cert-verify: true
   sni: hk12.bilibili.com
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 37|HK2
-  password: 50cce31a-d637-4058-b2cd-9362de722d64
-  port: 22269
-  server: 45.146.232.173
+  cipher: chacha20-ietf-poly1305
+  name: 37|HK4
+  password: FU9HUAR4ZPMXV9Wh815b3FGPi2EOfqHTdv5aDV0ZVJN25OWzcLUTHmFlw28xLE9n
+  port: 42658
+  server: 74.119.193.103
   skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|HK5
+  password: 6d247617-01a8-4720-9c4e-c5c68ebf75c5
+  port: 51161
+  server: 82.152.105.168
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|🇰HK
+  network: ws
+  password: ouo
+  port: 18443
+  server: 18.162.246.4
+  skip-cert-verify: true
+  sni: tr.koiok.us.kg
   tls: true
   type: trojan
   udp: true
