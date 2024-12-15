@@ -15,27 +15,11 @@ proxies:
   skip-cert-verify: false
   sni: 36.151.192.203
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 9,11,24,27|13| 香港3|@ripaojiedian
-  password: 718b6119-17fb-4700-a3ed-32e8417a3daa
-  port: 10002
-  server: hk02.51feitu.com
-  tfo: false
-  type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 9,11,24,27|13|🇭🇰 香港4|@ripaojiedian
   password: 9UB4OF8WZ0YXIPBD
   port: 15015
-  server: 219.135.227.209
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 9,11,24,27|13|🇭🇰 香港5|@ripaojiedian
-  password: PW5K9ORIVZQLTTCZ
-  port: 15012
   server: 219.135.227.209
   tfo: false
   type: ss
@@ -49,7 +33,7 @@ proxies:
     method: GET
     path:
     - /ljyed
-  name: 9,11,24,27|13,14|香港6|@ripaojiedian
+  name: '9,11,24|🇭🇰 13,14|香港6|@ripaojiedian #1'
   network: http
   port: '41001'
   server: hk1.tiljkc.top
@@ -651,6 +635,13 @@ proxies:
   server: 36.151.192.239
   skip-cert-verify: true
   type: trojan
+- name: 24,27|13,14|香港2|@ripaojiedian
+  network: tcp
+  password: QwwHvrnN
+  port: 25241
+  server: 36.151.192.203
+  skip-cert-verify: true
+  type: trojan
 - name: 26|V1-香港02∣K2线路∣1.5x
   password: ffa68efa-e282-4fae-a4c4-5f1fdaa76d81
   port: 21011
@@ -773,30 +764,73 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港02-1I
-  password: c4e6b4ff-e0bc-45f7-a8fc-d6e055413d3c
-  port: 20035
-  server: gy.666666222.shop
+- cipher: aes-256-gcm
+  name: 27|13| 香港3|@ripaojiedian
+  password: ANTGT74MO57KLLLE
+  port: 15011
+  server: 219.135.227.209
+  tfo: false
   type: ss
-  udp: true
+- name: 27|13|🇭🇰 香港5|@ripaojiedian
+  network: ws
+  password: ouo
+  port: 18443
+  server: 18.162.246.4
+  skip-cert-verify: false
+  sni: tr.koiok.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr.koiok.us.kg
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 27|13|🇭🇰 香港6|@ripaojiedian
+  port: 39041
+  server: hk1.tiljkc.top
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 8995f5b8-6ad5-3c29-836f-ec8baa292ba0
+- name: 27|14|香港5|@ripaojiedian
+  network: ws
+  password: ouo
+  port: 18443
+  server: 18.162.246.4
+  sni: tr.koiok.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr.koiok.us.kg
+    path: '%2F%3Fed%3D2560'
+- alterId: 0
+  cipher: auto
+  name: 27|14|香港6|@ripaojiedian
+  network: tcp
+  port: '39041'
+  server: hk1.tiljkc.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8995f5b8-6ad5-3c29-836f-ec8baa292ba0
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港03-1E
+  name: 28|🇭🇰 香港01-1E
   password: f682d46e-eedf-4313-b6d9-c501322e2fbf
-  port: 20052
+  port: 34338
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港01-1H
-  password: 09cb7e51-d3c9-4b0d-8f0b-8717b2c2fd3e
-  port: 34338
+  name: 28|🇭🇰 香港03-1C
+  password: 8ed0aaeb-3e3c-46f5-9f17-77bc2779a6a8
+  port: 20052
   server: gy.666666222.shop
   type: ss
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 28|🇭🇰 香港-流媒体2x-1B
+  name: 28|🇭🇰 香港-流媒体2x-1A
   network: tcp
   port: 55442
   reality-opts:
@@ -808,7 +842,14 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 970db8b5-db6a-4d24-92c8-abd141b1666b
+  uuid: 0219fcec-101f-4f99-abba-7d4b7b2ada62
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港02-1A
+  password: a3e469ed-2d50-456f-8e5f-4086b37765c4
+  port: 20035
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - alterId: 0
   name: 37|HK
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
