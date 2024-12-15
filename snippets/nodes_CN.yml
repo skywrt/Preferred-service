@@ -596,6 +596,12 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
+- cipher: aes-256-cfb
+  name: 11|1|_CN_
+  password: hGkQ6915tD
+  port: 15082
+  server: 59.56.77.178
+  type: ss
 - alterId: 64
   cipher: auto
   name: '11|3,17|🇨🇳_CN_中国 #1'
@@ -727,13 +733,30 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 24|🇨🇳 江苏省 移动
-  network: http
-  port: '53892'
-  server: jp1.tiljkc.top
+  name: 24|_中国
+  network: ws
+  port: '8443'
+  server: 154.197.121.35
   tls: true
   type: vmess
-  uuid: 8995f5b8-6ad5-3c29-836f-ec8baa292ba0
+  uuid: 8241ddc8-b5c5-4778-9635-331700c6ff48
+  ws-opts:
+    headers:
+      Host: jk.ylka.us.kg
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '24|_中国 #1'
+  network: ws
+  port: '8443'
+  server: 27.50.48.188
+  tls: true
+  type: vmess
+  uuid: 8241ddc8-b5c5-4778-9635-331700c6ff48
+  ws-opts:
+    headers:
+      Host: jk.ylka.us.kg
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 26|[111]🇨🇳CN-120.240.88.37-56760
   password: 0e91a29a-989d-4934-a1fb-7b653319397f
@@ -878,20 +901,20 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
   network: tcp
-  port: '59003'
-  server: 183.236.51.36
+  port: '50004'
+  server: 112.132.212.19
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
   network: tcp
-  port: '50004'
-  server: 112.132.212.19
+  port: '59003'
+  server: 183.236.51.36
   servername: ''
   tls: false
   type: vmess
