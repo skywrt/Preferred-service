@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 3|47d5f927bf52475488cd2cb5de3c73...
+  name: 3|af3587d42adf4ecda3e070fa48196a...
   network: ws
   port: 443
   server: de04.abvpn.ru
@@ -16,7 +16,7 @@ proxies:
     path: /websocket
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 3|3f1e2a602607496190c35fbe3832dd...
+  name: 3|4eafc9db08684a0d9f2a573d323749...
   network: ws
   port: 22222
   server: 63.177.47.8
@@ -33,7 +33,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|4be66cff848d4b4b9c0814791dc554...
+  name: 3|2a7282800df84ebe86098b87b194c7...
   network: ws
   port: 443
   server: 23.158.56.227
@@ -45,17 +45,26 @@ proxies:
     path: /linkvws
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 3|99ae6e62fb074cd58aa0f76b0f04a1...
-  network: tcp
+  http-opts:
+    headers:
+      Host:
+      - Telewebion.com
+    method: GET
+    path:
+    - /
+  name: 3,40|DE_speednode_0006
+  network: http
   port: 19984
   server: 188.245.215.46
+  servername: Telewebion.com
+  skip-cert-verify: false
   tls: false
   type: vless
   udp: false
   uuid: 13e15bfe-73f7-4bfe-a386-136451137fc3
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 3|6ff1f8fa15e74a4fafef12dcb1f25c...
+  name: 3|878a503fafae490f83ab5398b54362...
   network: ws
   port: 443
   server: hajlab.ucdavis.edu
@@ -70,7 +79,7 @@ proxies:
     path: /@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec?ed=8880
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 3|c0b3e7ce02064bd0b6735afadf1a30...
+  name: 3|b7c1eed2b4de4009a0fed64e9c0c35...
   network: ws
   port: 80
   server: spd.fastly80-3.hosting-ip.com
@@ -82,7 +91,7 @@ proxies:
     path: /x?ed=2048
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 3|3f1de465e5a548a78256f82893f239...
+  name: 3|214eb746627b49f0b99c5ca8f59e8d...
   network: ws
   port: 22222
   server: 3.126.71.119
@@ -97,7 +106,7 @@ proxies:
     path: /telegram-channel-vlessconfig-ws
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 3|7c098fae03ca4f8398777c260c2c6e...
+  name: 3|9f20bbd9be5a496f897b92d2a8acbc...
   network: ws
   port: 443
   server: hajlab.ucdavis.edu
@@ -112,7 +121,7 @@ proxies:
     path: '@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET?ed=2560'
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 3|be9453575d3e46f89dc555c14edd7a...
+  name: 3|349f88177b7f42c1966ed569e53184...
   network: ws
   port: 443
   server: hajlab.ucdavis.edu
@@ -127,7 +136,7 @@ proxies:
     path: '@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET?ed=2048'
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 3|8cd906d35d4a450bbf2397373038a9...
+  name: 3|48c9b33a057e4c6da3a1a26a4b2131...
   network: tcp
   port: 2083
   server: 78.110.121.220
@@ -179,12 +188,6 @@ proxies:
   type: vmess
   uuid: 6d3404ef-27c6-48de-a83a-8ac6488760b4
   ws-opts: {}
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇩🇪DE-81.19.141.45-6323
-  password: AqKTKaZ0yjR4NLQE8Y17Zu
-  port: 52873
-  server: 81.19.141.45
-  type: ss
 - cipher: rc4-md5
   name: 19|🇩🇪DE-193.108.119.230-1289
   password: 14fFPrbezE3HDZzsMOr6
@@ -236,23 +239,21 @@ proxies:
   port: 9042
   server: 80.92.204.106
   type: ss
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-5901
+  password: ZET59LF6DvCC8KVt
+  port: 9005
+  server: 80.92.204.106
+  type: ss
+- name: '20,21|🇩🇪DE-3.125.66.143-6284 #1'
+  password: telegram-id-directvpn
+  port: 22222
+  server: 3.125.66.143
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-130.61.156.132-6968 #1'
-  network: ws
-  port: 443
-  server: frankfurt03.zgjok.com
-  servername: frankfurt03.zgjok.com
-  tls: true
-  type: vmess
-  uuid: 4f7c2243-a38a-4672-983b-f1378aee0a7f
-  ws-opts:
-    headers:
-      Host: frankfurt03.zgjok.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-9206 #1'
+  name: '20,21|🇩🇪DE-57.129.24.125-8699 #1'
   network: ws
   port: 443
   server: 57.129.24.125
@@ -266,18 +267,41 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-172.104.142.89-6424 #2'
+  name: '20,21|🇩🇪DE-57.129.24.141-5729 #1'
   network: ws
   port: 443
-  server: hms26.xpengmotors.sbs
-  servername: hms26.xpengmotors.sbs
+  server: 57.129.24.141
+  servername: ''
   tls: true
   type: vmess
-  uuid: fb0a2de6-bf06-4ff0-97ce-c21abcdc2d55
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: hms26.xpengmotors.sbs
-    path: /linkws
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-130.61.156.132-0415 #1'
+  network: ws
+  port: 443
+  server: frankfurt03.zgjok.com
+  servername: frankfurt03.zgjok.com
+  tls: true
+  type: vmess
+  uuid: 4f7c2243-a38a-4672-983b-f1378aee0a7f
+  ws-opts:
+    headers:
+      Host: frankfurt03.zgjok.com
+    path: /
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 24,37|🇪DE 15.6KB/s
+  password: 2EtPqn6HYjUNcHohLfUpFQwnfjCCQ5mh1mJdEMCBucuWZ9P1udkRKHnVxuo55k1KXz2Fo6jrgt18W66opty1e4bm1jzfCfBb
+  port: 50841
+  server: 84.19.31.63
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - name: 26|V1-德国01∣K25线路∣1.5x
   password: 6307d00e-56e0-4d0d-afe9-254155638bdf
   port: 21188
@@ -344,4 +368,14 @@ proxies:
   servername: ''
   tls: false
   type: vmess
-  uuid: dc2800af-d3b3-4979-9334-502d05519b50
+  uuid: d3056969-e472-46f8-9429-03348fccae77
+- client-fingerprint: chrome
+  name: 40|DE_speednode_0008
+  network: tcp
+  port: 8443
+  server: 89.187.169.71
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6ff213b8-ccc7-4b5a-b4aa-37f7b792a1f1
