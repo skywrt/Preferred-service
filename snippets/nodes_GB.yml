@@ -48,24 +48,6 @@ proxies:
   port: 989
   server: 51.15.15.82
   type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知52 19.7MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.194
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知47 19.1MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 19|🇬🇧GB-18.169.154.69-0400
   password: mps3FwmDjLrWaOVg
@@ -85,15 +67,6 @@ proxies:
   server: 169.150.210.233
   type: ss
   udp: true
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知127 18.8MB/s
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   cipher: auto
   name: '20,21|🇬🇧GB-149.7.16.174-5971 #1'
@@ -122,6 +95,20 @@ proxies:
     headers:
       Host: ''
     path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇬🇧GB-149.7.16.188-5986 #1'
+  network: ws
+  port: 443
+  server: 149.7.16.188
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
 - alterId: 1
   cipher: auto
   name: '20,21|🇬🇧GB-149.7.16.194-5980 #1'
@@ -231,13 +218,3 @@ proxies:
   tls: false
   type: vmess
   uuid: eb34d6d8-543a-4cff-9da4-379efb091e38
-- alterId: 0
-  name: 37|GB国
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.9.201.139
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
