@@ -91,11 +91,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 4aaca0a5-7d55-3358-81ec-25b5e371ed90
-- cipher: aes-256-cfb
-  name: 19|🇯🇵JP-13.114.67.166-0400
-  password: amazonskr05
-  port: 443
-  server: 13.114.67.166
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇯🇵JP-94.177.131.71-5305
+  password: 82fb692e-1c8b-3a65-ad83-23ad9deee111
+  port: 61005
+  server: 2.forlive.live
   type: ss
 - alterId: 0
   cipher: auto
@@ -112,15 +112,13 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 24,37|JP 178.5KB/s
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: 160.19.78.75
+- name: 24,27,40|HK_speednode_0008
+  password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
+  port: 40091
+  server: 43.198.107.166
   skip-cert-verify: true
-  tls: true
-  type: ss
+  sni: hk12.bilibili.com
+  type: trojan
 - name: 26|每日连接前点更新订阅
   password: 6307d00e-56e0-4d0d-afe9-254155638bdf
   port: 40037
@@ -359,16 +357,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
-  network: tcp
-  port: '48898'
-  server: 13.112.49.171
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c47c48c9-01d5-4d77-b7fc-0f5d86d59e54
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇯🇵 JP-158.101.142....
   network: ws
   port: 12344
@@ -381,3 +369,13 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
+  network: tcp
+  port: '48898'
+  server: 13.112.49.171
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c47c48c9-01d5-4d77-b7fc-0f5d86d59e54
