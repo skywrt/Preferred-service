@@ -613,11 +613,14 @@ proxies:
   skip-cert-verify: false
   sni: fun-ostrich.treefrog761.one
   type: trojan
-- cipher: aes-128-gcm
-  name: 19|🇯🇵JP-149.22.87.241-0402
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,37|未知101 7.8MB/s
   password: shadowsocks
   port: 443
   server: 149.22.87.241
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -844,6 +847,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
+  network: tcp
+  port: '48898'
+  server: 13.112.49.171
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c47c48c9-01d5-4d77-b7fc-0f5d86d59e54
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇯🇵 JP-158.101.142....
   network: ws
   port: 12344
@@ -856,13 +869,3 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
-  network: tcp
-  port: '48898'
-  server: 13.112.49.171
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c47c48c9-01d5-4d77-b7fc-0f5d86d59e54
