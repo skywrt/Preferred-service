@@ -10,22 +10,19 @@ proxies:
 - client-fingerprint: chrome
   name: 9|🇭🇰 13,14|香港2|@ripaojiedian
   password: QwwHvrnN
-  port: 25241
-  server: 36.151.192.203
+  port: 36442
+  server: 223.113.54.145
   skip-cert-verify: false
-  sni: 36.151.192.203
+  sni: 223.113.54.145
   type: trojan
-- alterId: 0
-  cipher: auto
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 9|🇭🇰 14|香港3|@ripaojiedian
-  port: 39042
-  server: hk1.tiljkc.top
-  skip-cert-verify: false
+  name: 9,11,27|13| 香港3|@ripaojiedian
+  password: KGPWD7ZZY2F0ZYPY
+  port: 15007
+  server: 219.135.227.209
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 2e4e8fd5-5ffa-336c-83a8-d4f1fcf64d46
+  type: ss
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -40,9 +37,29 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 9|🇭🇰 14|香港5|@ripaojiedian
-  port: 29011
-  server: ccc-v3-11.rabbitpro-in-1.com
+  http-opts:
+    headers:
+      Host:
+      - api.teborder.com
+    method: GET
+    path:
+    - /game
+  name: 9,11,27|13,14|香港5|@ripaojiedian
+  network: http
+  port: '41002'
+  server: hk1.tiljkc.top
+  servername: api.teborder.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 869760fe-7f4f-320c-b223-697f8e870088
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 9,27|13|🇭🇰 香港6|@ripaojiedian
+  port: 29014
+  server: ccc-v3-14.rabbitpro-in-1.com
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -60,24 +77,38 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 9,27|13|🇭🇰 香港8|@ripaojiedian
+  port: 41020
+  server: 183.236.51.23
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
-  name: 9,24,27,40|HK_speednode_0007
+  name: '9,24|15|HK_speednode_0007 #1'
   password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
   port: 40091
   server: 43.198.203.106
   skip-cert-verify: true
   sni: hk12.bilibili.com
   type: trojan
-- client-fingerprint: chrome
-  name: 9,24,27,40|HK_speednode_0008
+- alterId: 0
+  client-fingerprint: chrome
+  name: 9,24,37|HK5
   password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
   port: 40091
   server: 43.198.107.166
   skip-cert-verify: true
   sni: hk12.bilibili.com
+  tls: true
   type: trojan
+  udp: true
 - client-fingerprint: chrome
-  name: 9,24,27,40|HK_speednode_0009
+  name: '9,24|15|HK_speednode_0009 #1'
   password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
   port: 40091
   server: 18.167.167.110
@@ -85,23 +116,13 @@ proxies:
   sni: hk12.bilibili.com
   type: trojan
 - client-fingerprint: chrome
-  name: 9,24,27,40|HK_speednode_0010
+  name: '9,24|15|HK_speednode_0010 #1'
   password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
   port: 40091
   server: 18.166.212.182
   skip-cert-verify: true
   sni: hk12.bilibili.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '11,24|🇭🇰 14|香港3|@ripaojiedian #1'
-  network: tcp
-  port: '39042'
-  server: hk1.tiljkc.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2e4e8fd5-5ffa-336c-83a8-d4f1fcf64d46
 - alterId: 64
   cipher: auto
   name: 11,24,27|14|香港4|@ripaojiedian
@@ -114,10 +135,10 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '11,24|🇭🇰 14|香港5|@ripaojiedian #1'
+  name: 11,27|14|香港6|@ripaojiedian
   network: tcp
-  port: '29011'
-  server: ccc-v3-11.rabbitpro-in-1.com
+  port: '29014'
+  server: ccc-v3-14.rabbitpro-in-1.com
   servername: ''
   tls: false
   type: vmess
@@ -127,6 +148,16 @@ proxies:
   name: 11,24,27|14|香港7|@ripaojiedian
   network: tcp
   port: '46602'
+  server: 183.236.51.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 11,27|14|香港8|@ripaojiedian
+  network: tcp
+  port: '41020'
   server: 183.236.51.23
   servername: ''
   tls: false
@@ -223,19 +254,6 @@ proxies:
     headers:
       Host: larger-marketing-amounts-skin.trycloudflare.com
     path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
-- alterId: 0
-  cipher: auto
-  name: 18|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_8
-  network: ws
-  port: 2095
-  server: 104.26.4.57
-  tls: false
-  type: vmess
-  uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
-  ws-opts:
-    headers:
-      Host: ssrsub.v03.ssrsub.com
-    path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
   name: 18|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_37
@@ -366,19 +384,6 @@ proxies:
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
 - alterId: 0
   cipher: auto
-  name: 18|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_27
-  network: ws
-  port: 8080
-  server: 162.159.130.208
-  tls: false
-  type: vmess
-  uuid: 55021a7c-bd6c-418e-be95-ceac8ba27b45
-  ws-opts:
-    headers:
-      Host: widescreen-instruction-breakdown-postage.trycloudflare.com
-    path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
-- alterId: 0
-  cipher: auto
   name: 18|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_40
   network: ws
   port: 8080
@@ -405,19 +410,6 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: 18|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_43
-  network: ws
-  port: 8080
-  server: fbi.gov
-  tls: false
-  type: vmess
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  ws-opts:
-    headers:
-      Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-- alterId: 0
-  cipher: auto
   name: 18|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_33
   network: ws
   port: 8080
@@ -442,19 +434,6 @@ proxies:
     headers:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-- alterId: 0
-  cipher: auto
-  name: 18|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_68
-  network: ws
-  port: 8080
-  server: 162.159.134.23
-  tls: false
-  type: vmess
-  uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
-  ws-opts:
-    headers:
-      Host: championship-bidding-oxygen-brochure.trycloudflare.com
-    path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
 - alterId: 0
   cipher: auto
   name: 18|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_54
@@ -556,19 +535,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 18|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_72
-  network: ws
-  port: 8080
-  server: 23.227.38.23
-  tls: false
-  type: vmess
-  uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b
-  ws-opts:
-    headers:
-      Host: uh-lawyers-instruments-kernel.trycloudflare.com
-    path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
-- alterId: 0
-  cipher: auto
   name: 18|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_56
   network: ws
   port: 8080
@@ -580,19 +546,6 @@ proxies:
     headers:
       Host: widescreen-instruction-breakdown-postage.trycloudflare.com
     path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
-- alterId: 0
-  cipher: auto
-  name: 18|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_52
-  network: ws
-  port: 8880
-  server: 94.140.0.110
-  tls: false
-  type: vmess
-  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
-  ws-opts:
-    headers:
-      Host: food.zhaal.ir
-    path: /
 - alterId: 0
   cipher: auto
   name: 18|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_75
@@ -695,19 +648,49 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- name: 24,27|13,14||@ripaojiedian
+- alterId: 0
+  name: 24,27,37|🇭🇰HK香港2
   network: tcp
   password: DNUMdmnJ
   port: 42395
   server: 36.151.192.239
   skip-cert-verify: true
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇭🇰 13,14|香港2|@ripaojiedian #1'
   password: QwwHvrnN
   port: 25241
   server: 36.151.192.203
   skip-cert-verify: true
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '24|🇭🇰 14|香港3|@ripaojiedian #1'
+  network: tcp
+  port: '39042'
+  server: hk1.tiljkc.top
+  tls: false
+  type: vmess
+  uuid: 2e4e8fd5-5ffa-336c-83a8-d4f1fcf64d46
+- alterId: 0
+  cipher: auto
+  name: 24|🇭🇰 14|香港5|@ripaojiedian
+  network: tcp
+  port: '29011'
+  server: ccc-v3-11.rabbitpro-in-1.com
+  tls: false
+  type: vmess
+  uuid: 4aaca0a5-7d55-3358-81ec-25b5e371ed90
+- alterId: 0
+  cipher: aes-128-gcm
+  name: '24,37|HK #1'
+  password: 34f92654-04c2-456f-9418-ababeef0d77b
+  port: 52466
+  server: 114.80.150.220
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - name: 26|V1-香港02∣K2线路∣1.5x
   password: ffa68efa-e282-4fae-a4c4-5f1fdaa76d81
   port: 21011
@@ -830,79 +813,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 27|13,14|香港2|@ripaojiedian
-  network: tcp
-  password: QwwHvrnN
-  port: 36442
-  server: 223.113.54.145
-  skip-cert-verify: true
-  type: trojan
-- cipher: aes-256-gcm
-  name: 27|13|🇰 香港3|@ripaojiedian
-  password: KGPWD7ZZY2F0ZYPY
-  port: 15007
-  server: 219.135.227.209
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - api.teborder.com
-    method: GET
-    path:
-    - /game
-  name: 27|13,14|香港5|@ripaojiedian
-  network: http
-  port: '41002'
-  server: hk1.tiljkc.top
-  servername: api.teborder.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 869760fe-7f4f-320c-b223-697f8e870088
-- alterId: 0
-  cipher: auto
-  name: 27|13|🇭🇰 香港6|@ripaojiedian
-  port: 29014
-  server: ccc-v3-14.rabbitpro-in-1.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 4aaca0a5-7d55-3358-81ec-25b5e371ed90
-- alterId: 64
-  cipher: auto
-  name: 27,40|CN_speednode_0001
-  port: 41020
-  server: 183.236.51.23
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 27|14|香港6|@ripaojiedian
-  network: tcp
-  port: '29014'
-  server: ccc-v3-14.rabbitpro-in-1.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4aaca0a5-7d55-3358-81ec-25b5e371ed90
-- alterId: 64
-  cipher: auto
-  name: 27|14|香港8|@ripaojiedian
-  network: tcp
-  port: '41020'
-  server: 183.236.51.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
   name: 28|🇭🇰 香港02-1E
   password: b144e371-46df-427d-84e8-050b33bf19ab
@@ -926,6 +836,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-115.126.79.1...
+  network: tcp
+  port: '18685'
+  server: 115.126.79.138
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3439c833-2ca5-4787-95f3-d26ef67a6a65
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-TLS 🇭🇰 HK-91.199.84.1...
   network: tcp
   port: '40380'
@@ -935,12 +855,42 @@ proxies:
   type: vmess
   uuid: 13364789-a8b2-4bcd-8df7-a794fb6f87e5
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-115.126.79.1...
+  cipher: chacha20-ietf-poly1305
+  name: 37|HK
+  password: 00f6f0c8-94f2-4963-95f2-2b0c38dd1ade
+  port: 27804
+  server: 213.130.141.113
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|HK2
+  password: 6d247617-01a8-4720-9c4e-c5c68ebf75c5
+  port: 51161
+  server: 82.152.105.168
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|HK3
   network: tcp
-  port: '18685'
-  server: 115.126.79.138
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3439c833-2ca5-4787-95f3-d26ef67a6a65
+  password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
+  port: 40091
+  server: 43.198.109.40
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|HK4
+  network: tcp
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 43373
+  server: 218.190.230.207
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
