@@ -214,7 +214,7 @@ proxies:
     path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,9,11,24,27|0,13| 特殊|@ripaojiedian
+  name: 5,9,11,24,27|13|🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 43.203.141.93
@@ -718,13 +718,35 @@ proxies:
   type: vmess
   uuid: c1ae98ab-35aa-36bf-b317-857006d2fdfb
 - client-fingerprint: chrome
-  name: '9,24|15|JP_speednode_0012 #1'
-  password: '!!str 3648425794742788096'
+  name: 9|15|JP_speednode_0010
+  network: ws
   port: 443
-  server: fun-ostrich.treefrog761.one
+  server: zmaoz.faculty.ucdavis.edu
+  servername: zmaoz.faculty.ucdavis.edu.
   skip-cert-verify: false
-  sni: fun-ostrich.treefrog761.one
-  type: trojan
+  tfo: false
+  tls: true
+  type: vless
+  uuid: bfb490c9-18d0-48a4-cb72-e4cc9002afde
+  ws-opts:
+    headers:
+      Host: zmaoz.faculty.ucdavis.edu.
+    path: /olem/ws?ed=4096fp=chrome
+- client-fingerprint: chrome
+  name: 9|15|JP_speednode_0011
+  network: ws
+  port: 443
+  server: zmaoz.faculty.ucdavis.edu
+  servername: zmaoz.faculty.ucdavis.edu
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 5ca4947a-3a0e-458e-9701-11e6805dae8f
+  ws-opts:
+    headers:
+      Host: zmaoz.faculty.ucdavis.edu
+    path: /@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed=2480fp=randomized
 - name: 17|荷兰(yudou66.com 玉豆免费节点)
   network: ws
   port: 443
@@ -800,6 +822,13 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
+- name: 24|15|JP_speednode_0012
+  password: '!!str 3648425794742788096'
+  port: 443
+  server: fun-ostrich.treefrog761.one
+  skip-cert-verify: false
+  sni: fun-ostrich.treefrog761.one
+  type: trojan
 - name: 26|每日连接前点更新订阅
   password: 6307d00e-56e0-4d0d-afe9-254155638bdf
   port: 40037
@@ -1028,6 +1057,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
+  network: tcp
+  port: '48898'
+  server: 13.112.49.171
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c47c48c9-01d5-4d77-b7fc-0f5d86d59e54
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇯🇵 JP-158.101.142....
   network: ws
   port: 12344
@@ -1040,16 +1079,6 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
-  network: tcp
-  port: '48898'
-  server: 13.112.49.171
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c47c48c9-01d5-4d77-b7fc-0f5d86d59e54
 - alpn:
   - h2
   - http/1.1
