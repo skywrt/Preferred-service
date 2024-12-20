@@ -81,7 +81,7 @@ proxies:
 - alterId: 0
   cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 5,9,12,27,37,40|NL_speednode_0016
+  name: 5,9,24,27,37,40|NL_speednode_0016
   password: shadowsocks
   port: 443
   server: 149.34.244.82
@@ -89,7 +89,7 @@ proxies:
   tfo: false
   tls: true
   type: ss
-- name: '5,12|🇺🇸_US_美国->🇮🇷_IR_伊朗 #1'
+- name: 5|🇺🇸_US_美国->🇮🇷_IR_伊朗
   network: ws
   port: 80
   server: 151.101.194.187
@@ -1064,28 +1064,26 @@ proxies:
     headers:
       host: mizban.arzonhost.ir
     path: /
-- name: '12|🇺🇸_US_美国->🇷🇺_RU_俄罗斯 #2'
+- name: '12|🇺🇸_US_美国->🇷🇺_RU_俄罗斯 #1'
   network: ws
   port: 80
-  server: 199.232.192.204
+  server: 199.232.196.204
   tls: false
   type: vless
   uuid: 913cdacd-2501-531a-8390-d2fcda924944
   ws-opts:
     headers:
       Host: JOiN--E-L-i-V-2-R-A-Y.net
-    path: '%2FTelegram%2C%40ELiV2RAY-Telegram%2C%40ELiV2RAY-Telegram%2C%40ELiV2RAY-%3Fed%3D2560'
-- name: '12|🇺🇸_US_美国->🇷🇺_RU_俄罗斯 #3'
-  network: ws
-  port: 80
-  server: 151.101.2.168
-  tls: false
-  type: vless
-  uuid: 531caad7-3533-405d-af03-7c01c3afdf32
-  ws-opts:
-    headers:
-      Host: het5h2.moi
-    path: '%2F%3Fed%3D2048'
+    path: /Telegram,@ELiV2RAY-Telegram,@ELiV2RAY-Telegram,@ELiV2RAY-%3Fed%3D2560
+- alpn:
+  - http/1.1
+  name: '12|🇺🇸_US_美国->🇷🇺_RU_俄罗斯 #2'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.170.89.224
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 12,16|🇷_IR_->🇷_TR_
   password: 21586aab-3a37-4f55-b8b7-5ae69572d403
