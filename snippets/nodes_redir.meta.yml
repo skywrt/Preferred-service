@@ -1,18 +1,21 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '5,8,11|3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2 #1'
+  name: '5,11|3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11 #1'
   network: ws
-  port: 2082
-  server: 172.67.130.140
-  skip-cert-verify: true
+  port: 2086
+  server: 172.64.175.213
   tls: false
   type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-headers:
-    Host: s1c.v2.v001sss.xyz
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-  ws-path: /
+- name: 5|🇯🇵|日本-中转 03
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9410
+  server: cn-shcu.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-02.oneok.link
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '5,11|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7 #1'
@@ -24,35 +27,26 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 5,9,12,16,24,27,40|NL_speednode_0014
-  password: shadowsocks
-  port: 443
-  server: 149.34.244.82
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
-  name: '5,11|3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3 #1'
+  name: '5,13|🇮🇷_IR_伊朗->🇫🇷_FR_法国_2 #1'
   network: ws
-  port: 2052
-  server: p3.v2raybrasil.cloud
+  port: 2083
+  server: 193.151.144.26
   tls: false
   type: vmess
-  uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '5,11|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4 #1'
-  network: ws
-  port: 2086
-  server: 104.19.47.79
-  sni: ip14.freegradely.xyz
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts: {}
+  uuid: 7b33bc8f-7014-4814-afb1-1c4d7f25314c
+  ws-opts:
+    headers:
+      Host: tv.filmnet.ir
+    path: /
+- name: 5|🇺🇸|美国-进阶中转 02
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 8320
+  server: cn-shcu.catcat-123.com
+  skip-cert-verify: false
+  sni: us-01.oneok.link
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '5,8,10,11|2|🇺🇸_US_美国->🇫🇷_FR_法国 #1'
@@ -66,16 +60,24 @@ proxies:
     headers:
       Host: s1c.v2.v001sss.xyz
     path: /
+- name: '5,13|🇧🇪_BE_比利时->🇺🇸_US_美国 #1'
+  network: ws
+  port: 80
+  server: 57.129.41.217
+  tls: false
+  type: vless
+  uuid: 4004b4f2-d973-432f-8376-043a52cec187
+  ws-opts:
+    path: /vless/
 - alterId: 0
   cipher: auto
-  name: '5,11|1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1 #1'
+  name: '5,11|3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8 #1'
   network: ws
-  port: 2052
-  server: 104.19.21.240
-  sni: cdn2.freegradely.xyz
+  port: 2086
+  server: 104.19.47.65
   tls: false
   type: vmess
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
 - alterId: 0
   cipher: auto
@@ -90,36 +92,197 @@ proxies:
     headers:
       Host: rpmlybgzsg2.yofnhkfc.xyz
     path: /video/3YKfzGw4
+- name: 5|🇯🇵|日本-中转 Disney+优化 02
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9415
+  server: cn-zb.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-03.oneok.link
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,11|3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11 #1'
+  name: '5,11|3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3 #1'
+  network: ws
+  port: 16928
+  server: 120.232.240.56
+  tls: false
+  type: vmess
+  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
+  ws-opts: {}
+- name: 5|🇸🇬|新加坡-中转 02
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9205
+  server: cn-fs.catcat-123.com
+  skip-cert-verify: false
+  sni: SG-02.oneok.link
+  type: trojan
+- name: 5|🇺🇸|美国-中转 03
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 8310
+  server: cn-bj.catcat-123.com
+  skip-cert-verify: false
+  sni: us-02.oneok.link
+  type: trojan
+- name: 5|🇯🇵|日本-中转 Disney+优化 04
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9415
+  server: cn-bj.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-03.oneok.link
+  type: trojan
+- name: 5|🇯🇵|日本原生-中转 03
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9425
+  server: cn-ah.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-03.oneok.link
+  type: trojan
+- name: 5|🇭🇰|香港-中转 03
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9135
+  server: cn-cqcm.catcat-123.com
+  skip-cert-verify: false
+  sni: hkbn-02.oneok.link
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5,11|1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1 #1'
+  network: ws
+  port: 2052
+  server: cfcdn2.sanfencdn9.com
+  sni: ''
+  tls: false
+  type: vmess
+  uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a
+  ws-opts: {}
+- name: 5|🇰🇷|韩国-中转 02
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9450
+  server: cn-ah.catcat-123.com
+  skip-cert-verify: false
+  sni: kr-01.oneok.link
+  type: trojan
+- name: 5|🇯🇵|日本-中转 02
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9410
+  server: cn-bj.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-02.oneok.link
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5,11|3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3 #1'
+  network: ws
+  port: 2052
+  server: p3.v2raybrasil.cloud
+  tls: false
+  type: vmess
+  uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
+  ws-opts: {}
+- name: 5|🇰🇷|韩国-中转 01
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9450
+  server: cn-shcu.catcat-123.com
+  skip-cert-verify: false
+  sni: kr-01.oneok.link
+  type: trojan
+- name: 5|🇺🇸|美国-中转 01
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 8300
+  server: cn-shcu.catcat-123.com
+  skip-cert-verify: false
+  sni: us-01.oneok.link
+  type: trojan
+- name: 5|🇺🇸|美国-中转 04
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 8310
+  server: cn-fs.catcat-123.com
+  skip-cert-verify: false
+  sni: us-02.oneok.link
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5,11|1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1 #1'
+  network: ws
+  port: 2052
+  server: 104.19.21.240
+  sni: cdn2.freegradely.xyz
+  tls: false
+  type: vmess
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  ws-opts: {}
+- name: '5,13|🇮🇷_IR_伊朗->🇫🇷_FR_法国_1 #1'
+  network: ws
+  port: 52722
+  server: 81.12.27.93
+  tls: false
+  type: vless
+  uuid: 2c3e2c41-4395-4df3-e788-cb9cc82beceb
+  ws-opts:
+    path: /
+- name: '5,13|🇮🇷_IR_伊朗->🇩🇪_DE_德国 #1'
+  network: ws
+  port: 8080
+  server: 217.60.192.135
+  tls: false
+  type: vless
+  uuid: 4a7728fb-6e86-4a1d-8380-6e64c9bff6f0
+  ws-opts:
+    path: /
+- name: 5|🇭🇰|香港-中转 02
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9130
+  server: cn-shcm.catcat-123.com
+  skip-cert-verify: false
+  sni: hkt-02.oneok.link
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: '5,11|1|_US_->_ES_ #1'
+  password: 2062a5ca-a34e-47bf-9810-db91185f07fc
+  port: 59019
+  server: fuck5.mmmmmmmmmm.cfd
+  type: ss
+- name: 5|🇯🇵|日本原生-中转 01
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9420
+  server: cn-shcu.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-03.oneok.link
+  type: trojan
+- name: 5|🇯🇵|日本-中转 Disney+优化 03
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9415
+  server: cn-ah.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-03.oneok.link
+  type: trojan
+- name: 5|🇸🇬|新加坡-中转 01
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9205
+  server: cn-shcm.catcat-123.com
+  skip-cert-verify: false
+  sni: SG-02.oneok.link
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5,11|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5 #1'
   network: ws
   port: 2086
-  server: 172.64.175.213
+  server: 104.19.46.39
+  sni: ''
   tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '5,11|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6 #1'
+  name: '5,11|2|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
   network: ws
-  port: 2086
-  server: 104.19.47.32
-  sni: ip14.freegradely.xyz
+  port: 16928
+  server: vip3.niuniupremium.xyz
   tls: false
   type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '5,11|1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰 #1'
-  network: ws
-  port: 2086
-  server: 172.64.198.249
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
   ws-opts: {}
 - alterId: 0
   cipher: auto
@@ -130,6 +293,16 @@ proxies:
   tls: false
   type: vmess
   uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '5,11|3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2 #1'
+  network: ws
+  port: 2052
+  server: 104.18.37.248
+  tls: false
+  type: vmess
+  uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
   ws-opts: {}
 - alterId: 0
   cipher: auto
@@ -144,23 +317,13 @@ proxies:
     headers:
       Host: in3.wish.ml
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '5,11|1|_US_->_ES_ #1'
-  password: 2062a5ca-a34e-47bf-9810-db91185f07fc
-  port: 59019
-  server: fuck5.mmmmmmmmmm.cfd
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '5,11|1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2 #1'
-  network: ws
-  port: 8080
-  server: 104.19.47.126
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-  ws-opts: {}
+- name: 5|🇺🇸|美国-中转 02
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 8310
+  server: cn-ah.catcat-123.com
+  skip-cert-verify: false
+  sni: us-02.oneok.link
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '5,11|1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #... #3'
@@ -172,43 +335,131 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
+- name: 5|🇯🇵|日本原生-中转 04
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9425
+  server: cn-fs.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-03.oneok.link
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5,8,11|3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2 #1'
+  network: ws
+  port: 2082
+  server: 172.67.130.140
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-headers:
+    Host: s1c.v2.v001sss.xyz
+  ws-opts: {}
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '5,10,11|2|🇺🇸_US_美国->🇮🇳_IN_印度 #2'
+  network: ws
+  port: 2052
+  server: 104.17.156.224
+  tls: false
+  type: vmess
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  ws-opts:
+    headers:
+      Host: in4.wish.ml
+    path: /
+- name: '5,13|🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2 #1'
+  network: ws
+  port: 80
+  server: speedtest.net
+  servername: wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v20.drlimit.net
+  tls: false
+  type: vless
+  uuid: 841b83da-3916-4c83-808f-a0433118a1c7
+- name: 5|🇸🇬|新加坡-中转 04
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9220
+  server: cn-ahcm.catcat-123.com
+  skip-cert-verify: false
+  sni: SG-05.oneok.link
+  type: trojan
+- name: '5,13|🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1 #1'
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 13.37.24.49
+  sni: trojan.burgerip.co.ukhttp/1.1
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5,11|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4 #1'
+  network: ws
+  port: 2086
+  server: 104.19.47.79
+  sni: ip14.freegradely.xyz
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
 - cipher: aes-256-cfb
   name: '5,11|1|_FR_->_RU_ #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 163.172.64.22
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '5,11|3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2 #1'
+- name: 5|🇹🇼|台湾-中转 02
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9310
+  server: cn-bj.catcat-123.com
+  skip-cert-verify: false
+  sni: hinet-01.oneok.link
+  type: trojan
+- name: 5|🇭🇰|香港-中转 04
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9150
+  server: cn-shcm.catcat-123.com
+  skip-cert-verify: false
+  sni: cmhk-01.oneok.link
+  type: trojan
+- name: '5,13|🇸🇪_SE_瑞典->🇷🇺_RU_俄罗斯 #1'
   network: ws
-  port: 2052
-  server: 104.18.37.248
+  port: 80
+  server: 185.146.173.92
+  servername: Uk1.vless.site.
   tls: false
-  type: vmess
-  uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '5,11|3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3 #1'
-  network: ws
-  port: 16928
-  server: 120.232.240.56
-  tls: false
-  type: vmess
-  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '5,11|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5 #1'
-  network: ws
-  port: 2086
-  server: 104.19.46.39
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts: {}
+  type: vless
+  uuid: a67cbb64-1e7a-5272-b5a6-cd7bb0de6adb
+  ws-opts:
+    path: /vless
+- name: 5|🇺🇸|美国-进阶中转 01
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 8320
+  server: cn-bj.catcat-123.com
+  skip-cert-verify: false
+  sni: us-01.oneok.link
+  type: trojan
+- name: 5|🇭🇰|香港-中转 06
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9130
+  server: cn-ahcm.catcat-123.com
+  skip-cert-verify: false
+  sni: hkt-02.oneok.link
+  type: trojan
+- name: 5|🇹🇼|台湾-中转 01
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9310
+  server: cn-ahcm.catcat-123.com
+  skip-cert-verify: false
+  sni: hinet-01.oneok.link
+  type: trojan
+- name: 5|🇰🇷|韩国-中转 03
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9450
+  server: cn-bj.catcat-123.com
+  skip-cert-verify: false
+  sni: kr-01.oneok.link
+  type: trojan
 - alterId: 64
   cipher: auto
   name: '5,11|3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4 #1'
@@ -218,33 +469,51 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 5|🇯🇵|日本原生-中转 02
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9420
+  server: cn-bj.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-03.oneok.link
+  type: trojan
+- name: 5|🇯🇵|日本-中转 Disney+优化 01
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9415
+  server: cn-shcu.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-03.oneok.link
+  type: trojan
+- name: 5|🇹🇼|台湾-中转 03
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9310
+  server: cn-fs.catcat-123.com
+  skip-cert-verify: false
+  sni: hinet-01.oneok.link
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,11|2|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
-  network: ws
-  port: 16928
-  server: vip3.niuniupremium.xyz
-  tls: false
-  type: vmess
-  uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '5,11|1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1 #1'
-  network: ws
-  port: 2052
-  server: cfcdn2.sanfencdn9.com
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '5,11|3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8 #1'
+  name: '5,11|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6 #1'
   network: ws
   port: 2086
-  server: 104.19.47.65
+  server: 104.19.47.32
+  sni: ip14.freegradely.xyz
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- name: 5|🇭🇰|香港-中转 05
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9140
+  server: cn-fs.catcat-123.com
+  skip-cert-verify: false
+  sni: hkt-01.oneok.link
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5,11|1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰 #1'
+  network: ws
+  port: 2086
+  server: 172.64.198.249
   tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
@@ -262,17 +531,32 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '5,10,11|2|🇺🇸_US_美国->🇮🇳_IN_印度 #2'
+  name: '5,11|1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2 #1'
   network: ws
-  port: 2052
-  server: 104.17.156.224
+  port: 8080
+  server: 104.19.47.126
+  sni: ''
   tls: false
   type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts: {}
+- name: '5,13|🇺🇸_US_美国->🇧🇪_BE_比利时_1 #1'
+  network: ws
+  port: 80
+  server: 141.101.121.110
+  servername: ov-germany1.09vpn.com
+  tls: false
+  type: vless
+  uuid: f2a72ad0-d23f-4eed-96cb-7d970b1e784d
   ws-opts:
-    headers:
-      Host: in4.wish.ml
-    path: /
+    path: /vless/?Vless_txt
+- name: 5|🇸🇬|新加坡-中转 03
+  password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
+  port: 9220
+  server: cn-shcm.catcat-123.com
+  skip-cert-verify: false
+  sni: SG-05.oneok.link
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 8|🇺🇸_US_美国->🇩🇪_DE_德国_1_0@0
@@ -1115,87 +1399,6 @@ proxies:
     headers:
       Host: joinbedeee-daily-configs.net
     path: '%2F%40Daily_Configs--%40Daily_Configs--%40Daily_Configs--%40Daily_Configs--%40Daily_Configs--%40Daily_Configs%3Fed%3D2056'
-- name: 13|🇺🇸_US_美国->🇧🇪_BE_比利时_1
-  network: ws
-  port: 80
-  server: 141.101.121.110
-  servername: ov-germany1.09vpn.com
-  tls: false
-  type: vless
-  uuid: f2a72ad0-d23f-4eed-96cb-7d970b1e784d
-  ws-opts:
-    path: /vless/?Vless_txt
-- name: 13|🇮🇷_IR_伊朗->🇩🇪_DE_德国
-  network: ws
-  port: 8080
-  server: 217.60.192.135
-  tls: false
-  type: vless
-  uuid: 4a7728fb-6e86-4a1d-8380-6e64c9bff6f0
-  ws-opts:
-    path: /
-- name: 13|🇧🇪_BE_比利时->🇺🇸_US_美国
-  network: ws
-  port: 80
-  server: 57.129.41.217
-  tls: false
-  type: vless
-  uuid: 4004b4f2-d973-432f-8376-043a52cec187
-  ws-opts:
-    path: /vless/
-- name: 13|🇮🇷_IR_伊朗->🇫🇷_FR_法国_1
-  network: ws
-  port: 52722
-  server: 81.12.27.93
-  tls: false
-  type: vless
-  uuid: 2c3e2c41-4395-4df3-e788-cb9cc82beceb
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 13|🇮🇷_IR_伊朗->🇫🇷_FR_法国_2
-  network: ws
-  port: 2083
-  server: 193.151.144.26
-  tls: false
-  type: vmess
-  uuid: 7b33bc8f-7014-4814-afb1-1c4d7f25314c
-  ws-opts:
-    headers:
-      Host: tv.filmnet.ir
-    path: /
-- name: 13|🇸🇪_SE_瑞典->🇷🇺_RU_俄罗斯
-  network: ws
-  port: 80
-  server: 185.146.173.92
-  servername: Uk1.vless.site.
-  tls: false
-  type: vless
-  uuid: a67cbb64-1e7a-5272-b5a6-cd7bb0de6adb
-  ws-opts:
-    path: /vless
-- name: 13|🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 13.37.24.49
-  sni: trojan.burgerip.co.ukhttp/1.1
-  type: trojan
-- name: 13|🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2
-  network: ws
-  port: 80
-  server: speedtest.net
-  servername: wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v20.drlimit.net
-  tls: false
-  type: vless
-  uuid: 841b83da-3916-4c83-808f-a0433118a1c7
-- cipher: aes-256-cfb
-  name: 16,27|0|-https://t.me/MrXbin-7
-  password: amazonskr05
-  port: 443
-  server: 34.222.136.128
-  type: ss
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|中国香港/中国台湾(CN)China/Shenzhen/小东的程序未能精准识别(可能是中转节点)_3
@@ -1256,7 +1459,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '23|🇨🇳_CN_中国->🇺🇸_US_美国_1 #2'
+  name: '23|🇨🇳_CN_中国->🇺🇸_US_美国_1 #3'
   network: ws
   port: 16928
   server: vip3.niuniupremium.xyz
@@ -1325,7 +1528,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '23,30|🇺🇸_US_美国_5 #3'
+  name: '23,30|🇺🇸_US_美国_5 #4'
   network: ws
   port: 2082
   server: 172.67.130.140
