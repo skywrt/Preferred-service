@@ -453,6 +453,16 @@ proxies:
   skip-cert-verify: false
   sni: hinet-01.oneok.link
   type: trojan
+- name: '5,13|🇺🇸_US_美国->🇧🇪_BE_比利时_2 #1'
+  network: ws
+  port: 80
+  server: 172.64.35.129
+  servername: cc.ailicf.us.kg
+  tls: false
+  type: vless
+  uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
+  ws-opts:
+    path: /b5cdabf0-e04
 - name: 5|🇰🇷|韩国-中转 03
   password: 7636d6dc-a3b1-465f-a1b8-d957473c4100
   port: 9450
@@ -1342,12 +1352,6 @@ proxies:
     headers:
       Host: joinbedeee-daily-configs.net
     path: '%2F%40Daily_Configs--%40Daily_Configs--%40Daily_Configs--%40Daily_Configs--%40Daily_Configs--%40Daily_Configs%3Fed%3D2056'
-- cipher: chacha20-ietf-poly1305
-  name: 12,16|🇷_IR_->🇷_TR_
-  password: 21586aab-3a37-4f55-b8b7-5ae69572d403
-  port: 1935
-  server: 85.133.241.75
-  type: ss
 - name: '12|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
   network: ws
   port: 80
@@ -1399,6 +1403,21 @@ proxies:
     headers:
       Host: joinbedeee-daily-configs.net
     path: '%2F%40Daily_Configs--%40Daily_Configs--%40Daily_Configs--%40Daily_Configs--%40Daily_Configs--%40Daily_Configs%3Fed%3D2056'
+- cipher: aes-256-cfb
+  name: 16|🇺🇸_US_美国->_CN_国
+  password: amazonskr05
+  port: 443
+  server: 54.218.229.170
+  type: ss
+- alpn:
+  - http/1.1
+  name: 16|🇺🇸_US_美国->🇺_RU_俄罗斯_1
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.170.89.224
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|中国香港/中国台湾(CN)China/Shenzhen/小东的程序未能精准识别(可能是中转节点)_3
@@ -1528,7 +1547,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '23,30|🇺🇸_US_美国_5 #4'
+  name: '23,30|🇺🇸_US_美国_5 #3'
   network: ws
   port: 2082
   server: 172.67.130.140
