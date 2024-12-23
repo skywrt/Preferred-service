@@ -1,7 +1,7 @@
 proxies:
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 5,9,11,19,20,21,24,26,27|0,13| 国|@ripaojiedian
+  name: 5,9,11,19,20,21,24,26,27|0,13| |@ripaojiedian
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 146.70.61.18
@@ -69,7 +69,7 @@ proxies:
   server: 3.10.166.41
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 5,24|🇬🇧 英国 社会保险安全部
+- name: 5|英国+社会保险安全部
   password: telegram-id-privatevpns
   port: 22222
   server: 51.44.48.128
@@ -149,10 +149,11 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
-- name: '20,21|🇬🇧GB-172.99.190.180-0445 #1'
-  password: 4732adfa16c6450bbef87264e41332db
+- name: '20,21,24|🇺🇸 _美国 #50'
+  password: 984e400bf5d541b7b0815913fe0c432a
   port: 443
   server: bangladeshipatri.com
+  skip-cert-verify: true
   type: trojan
 - alterId: 1
   cipher: auto
@@ -168,6 +169,20 @@ proxies:
     headers:
       Host: ''
     path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇬🇧GB-172.99.190.206-6046 #1'
+  network: ws
+  port: 443
+  server: 172.99.190.206
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: '20,21|🇬🇧GB-149.7.16.73-6020 #1'
@@ -230,9 +245,16 @@ proxies:
   server: 18.133.211.22
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: 24|🇬🇧 英国 社会保险安全部
+  password: telegram-id-directvpn
+  port: 22222
+  server: 51.24.29.57
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '24|🇬🇧 _英国 #4'
+  name: '24|🇬🇧 _英国 #3'
   network: ws
   port: '443'
   server: 158.180.228.226
@@ -243,32 +265,6 @@ proxies:
     headers:
       Host: beyonddsz.cfd
     path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '24|🇬🇧 _英国 #1'
-  network: ws
-  port: '8443'
-  server: 77.75.199.6
-  tls: true
-  type: vmess
-  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
-  ws-opts:
-    headers:
-      Host: lax1.ibgfw.top
-    path: /xrenvws
-- alterId: 0
-  cipher: auto
-  name: '24|🇬🇧 _英国 #2'
-  network: ws
-  port: '8443'
-  server: 188.244.122.249
-  tls: true
-  type: vmess
-  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
-  ws-opts:
-    headers:
-      Host: lax1.ibgfw.top
-    path: /xrenvws
 - name: 26|V2-英国01∣K29线路∣1.5x
   password: 6307d00e-56e0-4d0d-afe9-254155638bdf
   port: 21154
