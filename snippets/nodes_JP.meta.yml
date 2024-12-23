@@ -113,15 +113,15 @@ proxies:
   skip-cert-verify: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,28|🇯🇵 日本01-1A
-  password: 8203323b-d6c7-4f83-8e48-4a9623db89e6
+  name: 5,28|🇯🇵 日本01-1C
+  password: f2844b85-4d08-4415-94f9-f90c2ea3f9bf
   port: 20002
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 5,28|🇯🇵 日本04-1B
-  password: 2d09d970-a722-4137-a68e-04c1d63b353f
+  password: 8203323b-d6c7-4f83-8e48-4a9623db89e6
   port: 20008
   server: gy.666666222.shop
   type: ss
@@ -129,7 +129,7 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,9,11,24,27,37|🇯🇵JP日本2
+  name: 5,9,11,24,27,37|JP
   password: de6a05b7-6770-46b8-81b5-70675391db6a
   port: 32002
   server: vmvmvm123.jmvks.cn
@@ -235,7 +235,7 @@ proxies:
   uuid: d761806f-8a0c-4534-8201-a6b20f7aa04a
 - cipher: chacha20-ietf-poly1305
   name: 5,28|🇯🇵 日本02-1B
-  password: 2d09d970-a722-4137-a68e-04c1d63b353f
+  password: 8203323b-d6c7-4f83-8e48-4a9623db89e6
   port: 20004
   server: gy.666666222.shop
   type: ss
@@ -418,15 +418,6 @@ proxies:
     headers:
       Host: lp.ylks.us.kg
     path: '%2F%3Fed%3D2560'
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知79 3.3MB/s
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - cipher: aes-256-cfb
   name: 19|🇯🇵JP-13.230.239.136-0526
   password: amazonskr05
@@ -695,9 +686,9 @@ proxies:
   sni: dejs.stablize.top
   type: trojan
   udp: true
-- auth: 607dabeb-9c96-4964-8896-e11a916855e6
+- auth: 727f43eb-c212-4c9f-a4af-7e83da5b5447
   name: 28|🇯🇵 日本-2
-  password: 607dabeb-9c96-4964-8896-e11a916855e6
+  password: 727f43eb-c212-4c9f-a4af-7e83da5b5447
   port: 30001
   server: oracle-amd-osaka1.lanmaoyun.icu
   skip-cert-verify: true
@@ -706,20 +697,31 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|🇯🇵 日本03-1A
-  password: 8203323b-d6c7-4f83-8e48-4a9623db89e6
+  password: 2d09d970-a722-4137-a68e-04c1d63b353f
   port: 20006
   server: gy.666666222.shop
   type: ss
   udp: true
-- auth: 607dabeb-9c96-4964-8896-e11a916855e6
+- auth: 727f43eb-c212-4c9f-a4af-7e83da5b5447
   name: 28|🇯🇵 日本-1
-  password: 607dabeb-9c96-4964-8896-e11a916855e6
+  password: 727f43eb-c212-4c9f-a4af-7e83da5b5447
   port: 30001
   server: oracle-amd-tokyo1.lanmaoyun.icu
   skip-cert-verify: true
   sni: tokyo.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知126
+  network: tcp
+  port: 48898
+  server: 13.112.49.171
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c47c48c9-01d5-4d77-b7fc-0f5d86d59e54
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇯🇵 JP-158.101.142....
@@ -736,24 +738,14 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
+  name: 36,37|未知9 2.3MB/s
   network: tcp
-  port: '24445'
+  port: 24445
   server: 140.83.63.38
-  servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
-  network: tcp
-  port: '48898'
-  server: 13.112.49.171
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c47c48c9-01d5-4d77-b7fc-0f5d86d59e54
 - client-fingerprint: chrome
   name: 40|JP_speednode_0027
   network: ws
