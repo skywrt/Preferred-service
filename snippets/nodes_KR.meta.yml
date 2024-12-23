@@ -21,7 +21,7 @@ proxies:
   type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,9,11,19,20,21,24,27|13| 韩国特殊|@ripaojiedian
+  name: 5,9,11,19,20,21,24,27|0,13| |@ripaojiedian
   password: amazonskr05
   port: 443
   server: 52.68.44.53
@@ -35,7 +35,7 @@ proxies:
   sni: z264.hongkongnode.top
   type: trojan
 - client-fingerprint: chrome
-  name: 5,9,24,27|13,14|国|@ripaojiedian
+  name: '5,9,24|🇰🇷 13,14|韩国|@ripaojiedian #1'
   network: tcp
   password: 47a91992-6b70-4bb8-8c5f-f9600e0ba2da
   port: 40801
@@ -194,66 +194,75 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 28|🇰🇷 韩国-三网优化2-3H
-  password: f3d3fdad-a564-4845-a3d1-a2f64511ae6a
+- alterId: 0
+  cipher: auto
+  name: 27|13|🇷 韩国|@ripaojiedian
+  port: 35384
+  server: 45.94.68.206
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: b3e95701-dbd0-4a2f-a701-6ec815fb5ad2
+- alterId: 0
+  cipher: auto
+  name: 27|14|韩国|@ripaojiedian
+  network: tcp
+  port: '35384'
+  server: 45.94.68.206
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b3e95701-dbd0-4a2f-a701-6ec815fb5ad2
+- name: 28|🇰🇷 韩国-三网优化2-1U
+  password: ff5d4032-bf66-46b2-8f9b-b97526ab4185
   port: 44732
   server: kr-qingyun.dwyun.me
   skip-cert-verify: false
   sni: kr-qingyun.dwyun.me
   type: trojan
   udp: true
-- auth: f8e9db30-16a0-4b55-8d5e-dbdc6818d852
-  name: 28|🇰🇷 韩国-1
-  password: f8e9db30-16a0-4b55-8d5e-dbdc6818d852
-  port: 30001
-  server: oracle-arm-chuncheon1.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: korea.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
-- auth: f8e9db30-16a0-4b55-8d5e-dbdc6818d852
-  name: 28|🇰🇷 韩国-首尔
-  password: f8e9db30-16a0-4b55-8d5e-dbdc6818d852
-  port: 30001
-  server: oracle-arm-seoul1.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: korea.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
-- auth: f8e9db30-16a0-4b55-8d5e-dbdc6818d852
+- auth: cda04dcf-a38a-472b-ba6a-9f26cbffe342
   name: 28|🇰🇷 韩国-2
-  password: f8e9db30-16a0-4b55-8d5e-dbdc6818d852
+  password: cda04dcf-a38a-472b-ba6a-9f26cbffe342
   port: 30001
   server: oracle-arm-chuncheon2.lanmaoyun.icu
   skip-cert-verify: true
   sni: korea.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36,37|未知31 393.4KB/s
-  network: tcp
-  port: 8888
-  server: 146.56.112.110
-  servername: ''
+- auth: cda04dcf-a38a-472b-ba6a-9f26cbffe342
+  name: 28|🇰🇷 韩国-1
+  password: cda04dcf-a38a-472b-ba6a-9f26cbffe342
+  port: 30001
+  server: oracle-arm-chuncheon1.lanmaoyun.icu
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  sni: korea.nodes.lanmaoyun.icu
+  type: hysteria2
+  udp: true
+- auth: cda04dcf-a38a-472b-ba6a-9f26cbffe342
+  name: 28|🇰🇷 韩国-首尔
+  password: cda04dcf-a38a-472b-ba6a-9f26cbffe342
+  port: 30001
+  server: oracle-arm-seoul1.lanmaoyun.icu
+  skip-cert-verify: true
+  sni: korea.nodes.lanmaoyun.icu
+  type: hysteria2
+  udp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.1...
   network: ws
   port: '30002'
   server: 211.220.16.114
-  servername: cc2.1808.site
+  servername: obdii.cfd
   tls: true
   type: vmess
-  uuid: d3d8b781-f30d-4902-8eb0-58b1ca936bec
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-opts:
     headers:
-      Host: cc2.1808.site
-    path: /hgqqvws
+      Host: obdii.cfd
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇰🇷 KR-175.203.204....
@@ -270,10 +279,21 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇰🇷 KR-140.238.13.10...
+  name: 36,37|未知31 393.4KB/s
+  network: tcp
+  port: 8888
+  server: 146.56.112.110
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇰🇷 KR-140.238.31.10...
   network: ws
   port: '23451'
-  server: 140.238.13.102
+  server: 140.238.31.105
   tls: false
   type: vmess
   uuid: 4fb84dd5-af44-464c-99c4-f1fe589652cf
