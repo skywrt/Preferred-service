@@ -1093,7 +1093,7 @@ proxies:
   cipher: auto
   name: '36|🔒 VM-TCP-NA 🇭🇰 HK-218.253.32.1... #1'
   network: tcp
-  port: '58417'
+  port: '53125'
   server: 218.253.32.146
   servername: ''
   tls: false
@@ -1101,12 +1101,13 @@ proxies:
   uuid: 996ee9ca-f721-33f6-8a26-ed27df4975f0
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-218.253.32.1... #2'
+  name: 36,37|HK2
   network: tcp
-  port: '53125'
+  port: 58417
   server: 218.253.32.146
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 996ee9ca-f721-33f6-8a26-ed27df4975f0
 - alterId: 0
@@ -1121,6 +1122,25 @@ proxies:
   uuid: 996ee9ca-f721-33f6-8a26-ed27df4975f0
 - alterId: 0
   name: 37|HK
+  password: 50cce31a-d637-4058-b2cd-9362de722d64
+  port: 22269
+  server: 45.146.232.171
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK3
+  password: bd12f79e-3209-4970-83cd-5e1f3526ff51
+  port: 38792
+  server: 91.103.122.32
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|HK4
   password: 50cce31a-d637-4058-b2cd-9362de722d64
   port: 22269
   server: 45.146.232.173
