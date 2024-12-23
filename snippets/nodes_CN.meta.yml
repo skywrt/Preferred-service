@@ -1,22 +1,32 @@
 proxies:
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 5,9,13,16,19,20,21,24,26|[97]🇺🇸US-107.155.57.11-0220
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 107.155.57.11
-  tfo: false
-  type: ss
-  udp: true
+- name: 5,24|️_未知
+  password: 9ad5228f-3e01-4353-b717-935272e5f2d6
+  port: 13029
+  server: naiu-sg.05vr9nyqg5.download
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - alterId: 64
   cipher: auto
-  name: 5|广东省广州市 移动
+  name: 5,24|🇨🇳 广东省广州市 移动
   network: tcp
   port: '53002'
   server: 183.236.51.23
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: '5,38|🇨🇳_CN_中国_38 #1'
+  network: ws
+  port: 2053
+  server: 103.184.44.62
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2f%3fed%3d2048'
 - alterId: 64
   cipher: auto
   name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
@@ -46,18 +56,6 @@ proxies:
   port: 15082
   server: 59.56.77.178
   type: ss
-- name: '5,38|🇨🇳_CN_中国_38 #1'
-  network: ws
-  port: 2053
-  server: 103.184.44.62
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
   name: 8|🇨🇳CN-139.227.223.3-049_1@49
@@ -656,12 +654,28 @@ proxies:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
 - client-fingerprint: chrome
-  name: 9|15|CN_speednode_0005
-  password: QwwHvrnN
-  port: 34185
-  server: 36.151.192.201
+  name: 9|15|CN_speednode_0009
+  password: eb0c888c-0b55-4a0b-ba97-cfc6504e8213
+  port: 11242
+  server: ccc.cm.xiaomi-api.xyz
   skip-cert-verify: false
-  sni: 36.151.192.201
+  sni: ccc.cm.xiaomi-api.xyz
+  type: trojan
+- client-fingerprint: chrome
+  name: 9|15|CN_speednode_0010
+  password: eb0c888c-0b55-4a0b-ba97-cfc6504e8213
+  port: 11042
+  server: x1.xiaomi-api.xyz
+  skip-cert-verify: false
+  sni: x1.xiaomi-api.xyz
+  type: trojan
+- client-fingerprint: chrome
+  name: 9|15|CN_speednode_0011
+  password: eb0c888c-0b55-4a0b-ba97-cfc6504e8213
+  port: 11142
+  server: ccc.ct.xiaomi-api.xyz
+  skip-cert-verify: false
+  sni: ccc.ct.xiaomi-api.xyz
   type: trojan
 - alterId: 0
   cipher: auto
@@ -769,26 +783,22 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '24|🇨🇳 广东省广州市 移动 #1'
-  password: 9ad5228f-3e01-4353-b717-935272e5f2d6
-  port: 13029
-  server: naiu-sg.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
+- name: 24,27,40|CN_speednode_0009
+  password: eb0c888c-0b55-4a0b-ba97-cfc6504e8213
+  port: 11242
+  server: ccc.cm.xiaomi-api.xyz
+  skip-cert-verify: true
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '24|_中国 #2'
-  network: tcp
-  port: '64012'
-  server: in06.my1188.org
-  tls: false
-  type: vmess
-  uuid: fe0346d9-a972-3d8a-bac7-310604fa108f
-- name: '24|_中国 #3'
-  password: QwwHvrnN
-  port: 34185
-  server: 36.151.192.201
+- name: 24,27,40|CN_speednode_0010
+  password: eb0c888c-0b55-4a0b-ba97-cfc6504e8213
+  port: 11042
+  server: x1.xiaomi-api.xyz
+  skip-cert-verify: true
+  type: trojan
+- name: 24,27,40|CN_speednode_0011
+  password: eb0c888c-0b55-4a0b-ba97-cfc6504e8213
+  port: 11142
+  server: ccc.ct.xiaomi-api.xyz
   skip-cert-verify: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
@@ -933,33 +943,14 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 27,40|CN_speednode_0009
-  password: eb0c888c-0b55-4a0b-ba97-cfc6504e8213
-  port: 11242
-  server: ccc.cm.xiaomi-api.xyz
-  skip-cert-verify: true
-  type: trojan
-- name: 27,40|CN_speednode_0010
-  password: eb0c888c-0b55-4a0b-ba97-cfc6504e8213
-  port: 11042
-  server: x1.xiaomi-api.xyz
-  skip-cert-verify: true
-  type: trojan
-- name: 27,40|CN_speednode_0011
-  password: eb0c888c-0b55-4a0b-ba97-cfc6504e8213
-  port: 11142
-  server: ccc.ct.xiaomi-api.xyz
-  skip-cert-verify: true
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 36,37|未知120
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
   network: tcp
-  port: 50002
-  server: 112.132.215.12
+  port: '50004'
+  server: 112.132.212.19
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
@@ -974,12 +965,13 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
+  name: 36,37|未知120
   network: tcp
-  port: '50004'
-  server: 112.132.212.19
+  port: 50002
+  server: 112.132.215.12
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
