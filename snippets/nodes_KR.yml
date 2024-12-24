@@ -1,14 +1,18 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 5,10,11,24,27|14|国|@ripaojiedian
-  network: tcp
-  port: '35384'
-  server: 45.94.68.206
-  servername: ''
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|33bf412cce064045a8266120609e03...
+  network: ws
+  port: 23451
+  server: seoul-1ddns.aboutanime.eu.org
   tls: false
   type: vmess
-  uuid: b3e95701-dbd0-4a2f-a701-6ec815fb5ad2
+  udp: false
+  uuid: 2abe4c96-8542-48c5-b19d-9eec92586680
+  ws-opts:
+    path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: '5,9,11,24,27|13|🇰🇷 韩国|@ripaojiedian #1'
@@ -17,7 +21,24 @@ proxies:
   server: 52.194.212.235
   tfo: false
   type: ss
-- name: '5|>🇰🇷 KR|Ms|1115|TG@FProxies| #2'
+- alterId: 0
+  cipher: auto
+  name: 5,10,11,24,27|14|国|@ripaojiedian
+  network: tcp
+  port: '35384'
+  server: 45.94.68.206
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b3e95701-dbd0-4a2f-a701-6ec815fb5ad2
+- name: 5|>🇰🇷 KR|Ls|1115|TG@FProxies|
+  password: 5e5811c4-cf7f-3493-b268-98b440e8c5b9
+  port: 50355
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z264.hongkongnode.top
+  type: trojan
+- name: '5|>🇰🇷 KR|Ms|1115|TG@FProxies| #3'
   password: fac6d3c2-aa13-3869-9b20-8f63c545dd60
   port: 45168
   server: gy.58n.net
@@ -26,26 +47,32 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 5|>🇰🇷 KR|Ls|1115|TG@FProxies|
+  name: '5|>🇰🇷 KR|Ls|1115|TG@FProxies| #1'
+  network: ws
+  port: '22444'
+  server: gy.xiyunchen.cn
+  tls: false
+  type: vmess
+  uuid: 9ce1bcc2-f720-4ac2-8073-814705a16d31
+  ws-opts:
+    headers:
+      Host: gy.xiyunchen.cn
+    path: /
+- name: '5|>🇰🇷 KR|Ls|1115|TG@FProxies| #2'
+  password: 1d37f9df-241c-4fb7-b555-2c1f5a6c78e8
+  port: 19552
+  server: nc.cn1.xiaomi-api.xyz
+  skip-cert-verify: true
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5|>🇰🇷 KR|Ls|1115|TG@FProxies| #3'
   network: tcp
   port: '20021'
   server: i.needss.top
   tls: false
   type: vmess
   uuid: b8ed922a-2d00-4bf8-96c6-c2c26c7d3053
-- alterId: 0
-  cipher: auto
-  name: '5|>🇰🇷 KR|Ms|1115|TG@FProxies| #1'
-  network: ws
-  port: '443'
-  server: p.xiaolong.world
-  tls: true
-  type: vmess
-  uuid: b227726b-d76b-40cd-92cd-3beb81b93439
-  ws-opts:
-    headers:
-      Host: p.xiaolong.world
-    path: /b6d317eb90?ed=2048
 - alterId: 2
   cipher: auto
   name: 5|>🇰🇷 KR|Ns|1115|TG@FProxies|
@@ -59,32 +86,19 @@ proxies:
     headers:
       Host: 11.mamamajd.site
     path: /
-- name: '5|>🇰🇷 KR|Ls|1115|TG@FProxies| #2'
-  password: 5e5811c4-cf7f-3493-b268-98b440e8c5b9
-  port: 50355
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z264.hongkongnode.top
-  type: trojan
-- name: '5|>🇰🇷 KR|Ls|1115|TG@FProxies| #1'
-  password: 1d37f9df-241c-4fb7-b555-2c1f5a6c78e8
-  port: 19552
-  server: nc.cn1.xiaomi-api.xyz
-  skip-cert-verify: true
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: '5|>🇰🇷 KR|Ls|1115|TG@FProxies| #3'
+  name: '5|>🇰🇷 KR|Ms|1115|TG@FProxies| #4'
   network: ws
-  port: '22444'
-  server: gy.xiyunchen.cn
-  tls: false
+  port: '443'
+  server: p.xiaolong.world
+  tls: true
   type: vmess
-  uuid: 9ce1bcc2-f720-4ac2-8073-814705a16d31
+  uuid: b227726b-d76b-40cd-92cd-3beb81b93439
   ws-opts:
     headers:
-      Host: gy.xiyunchen.cn
-    path: /
+      Host: p.xiaolong.world
+    path: /b6d317eb90?ed=2048
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -96,12 +110,6 @@ proxies:
   tls: false
   type: vmess
   uuid: b3e95701-dbd0-4a2f-a701-6ec815fb5ad2
-- cipher: aes-256-cfb
-  name: 19,24,27|0|-https://t.me/MrXbin-12
-  password: amazonskr05
-  port: 443
-  server: 43.203.243.93
-  type: ss
 - name: 26|V2-韩国04∣K17线路∣1.5x
   password: 6307d00e-56e0-4d0d-afe9-254155638bdf
   port: 21118
@@ -180,30 +188,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.1...
-  network: ws
-  port: '30002'
-  server: 211.220.16.114
-  servername: obdii.cfd
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇰🇷 KR-146.56.112.1...
-  network: tcp
-  port: '8888'
-  server: 146.56.112.110
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.24...
   network: ws
   port: 40471
@@ -231,6 +215,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.1...
+  network: ws
+  port: '30002'
+  server: 211.220.16.114
+  servername: obdii.cfd
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇰🇷 KR-175.203.204....
   network: ws
   port: 50035
@@ -243,3 +241,13 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇰🇷 KR-146.56.112.1...
+  network: tcp
+  port: '8888'
+  server: 146.56.112.110
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
