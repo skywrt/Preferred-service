@@ -21,7 +21,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 5,9,11,27|13,14|国|@ripaojiedian
+  name: 5,9,11,24,27|13,14|国|@ripaojiedian
   network: ws
   port: '443'
   server: primer.ibilibi.li
@@ -245,31 +245,28 @@ proxies:
     headers:
       Host: kb.lii2010.us.kg
     path: /?ed=2560security=tls
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇫🇷FR-51.178.87.37-0509
-  password: G!yBwPWH3Vao
-  port: 807
-  server: 51.178.87.37
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇫🇷FR-51.178.87.37-5950
-  password: G!yBwPWH3Vao
-  port: 810
-  server: 51.178.87.37
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇫🇷FR-51.178.87.37-5949
-  password: G!yBwPWH3Vao
-  port: 805
-  server: 51.178.87.37
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇫🇷FR-146.19.168.161-8992
+  name: 19|🇫🇷FR-146.19.168.161-8916
   network: ws
   port: 443
   server: 146.19.168.161
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      host: az05.beyondy.cfd
+    path: /link
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇫🇷FR-146.19.168.161-5993
+  network: ws
+  port: 443
+  server: az05.beyondy.cfd
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -314,11 +311,12 @@ proxies:
     path: /link
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-194.9.172.65-6472 #1'
+  name: 20,21,40|FR_speednode_0010
   network: ws
   port: 443
   server: beyonddbc.sbs
   servername: beyonddbc.sbs
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 8d90c129-4156-4d6c-9115-24df25f26a02
@@ -340,13 +338,26 @@ proxies:
     headers:
       Host: az05.beyondy.cfd
     path: /link
-- name: 24|🇫🇷 _法国
+- name: 24|🇫🇷 法国 巴黎Amazon数据中心
   password: telegram-id-directvpn
   port: 22222
-  server: 52.47.148.121
+  server: 35.181.185.165
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24|🇫🇷 法国 法国计算机科学大学
+  network: ws
+  port: '443'
+  server: irvideo.cfd
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /linkws
 - name: 26|个别线路无法使用自行更换
   password: 6307d00e-56e0-4d0d-afe9-254155638bdf
   port: 21146
