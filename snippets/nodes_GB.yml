@@ -1,7 +1,47 @@
 proxies:
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 5,9,11,19,20,21,24,26,27|13| 国|@ripaojiedian
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.61.18
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 5,13,24,40|GB_speednode_0011
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.193
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '5|>🇭🇰 HK|Ms|1115|TG@FProxies| #4'
+  name: '5|>🇬🇧 GB|Ls|1115|TG@FProxies| #1'
+  network: ws
+  port: '2086'
+  server: cdn2.bpcdn.cc
+  tls: false
+  type: vmess
+  uuid: 8b45d379-702f-41b3-a6b2-9c87a01dcd5c
+  ws-opts:
+    headers:
+      Host: cdn2.bpcdn.cc
+    path: /
+- name: '5|>🇬🇧 GB|Ns|1115|TG@FProxies| #1'
+  password: telegram-id-directvpn
+  port: 22222
+  server: 18.171.18.192
+  skip-cert-verify: true
+  type: trojan
+- name: 5|英国+伦敦Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.11.192.242
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5|>🇭🇰 HK|Ms|1115|TG@FProxies| #3'
   network: ws
   port: '2086'
   server: cdn3.bpcdn.cc
@@ -12,17 +52,22 @@ proxies:
     headers:
       Host: cdn3.bpcdn.cc
     path: /
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 5,9,13,19,20,21,24,27,40|GB_speednode_0011
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
-  name: '5|>🇬🇧 GB|Ms|1115|TG@FProxies| #1'
+  name: 5|>🇬🇧 GB|Hs|1115|TG@FProxies|
+  network: ws
+  port: '443'
+  server: 16.724064.xyz
+  tls: true
+  type: vmess
+  uuid: b7cf4466-956a-4639-b861-0cf78cbb6f8f
+  ws-opts:
+    headers:
+      Host: 16.724064.xyz
+    path: /zlppvws
+- alterId: 0
+  cipher: auto
+  name: '5|>🇬🇧 GB|Ms|1115|TG@FProxies| #2'
   network: ws
   port: '80'
   server: 154.81.220.120
@@ -37,40 +82,6 @@ proxies:
   cipher: auto
   name: '5|>🇬🇧 GB|Ls|1115|TG@FProxies| #2'
   network: ws
-  port: '2086'
-  server: cdn2.bpcdn.cc
-  tls: false
-  type: vmess
-  uuid: 8b45d379-702f-41b3-a6b2-9c87a01dcd5c
-  ws-opts:
-    headers:
-      Host: cdn2.bpcdn.cc
-    path: /
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 5,9,11,20,21,24,26,27|13| 国|@ripaojiedian
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 146.70.61.18
-  tfo: false
-  type: ss
-  udp: true
-- name: 5|英国+社会保险安全部
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.21.92.151
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '5|>🇬🇧 GB|Ns|1115|TG@FProxies| #1'
-  password: telegram-id-directvpn
-  port: 22222
-  server: 18.171.18.192
-  skip-cert-verify: true
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '5|>🇬🇧 GB|Ls|1115|TG@FProxies| #1'
-  network: ws
   port: '443'
   server: b.jishuzhai.cloudns.biz
   tls: true
@@ -80,19 +91,6 @@ proxies:
     headers:
       Host: jiedian.jishuge.eu.org
     path: /hms19.best-tizi.top:443/linkws
-- alterId: 0
-  cipher: auto
-  name: 5|>🇬🇧 GB|Hs|1115|TG@FProxies|
-  network: ws
-  port: '443'
-  server: 16.724064.xyz
-  tls: true
-  type: vmess
-  uuid: b7cf4466-956a-4639-b861-0cf78cbb6f8f
-  ws-opts:
-    headers:
-      Host: 16.724064.xyz
-    path: /zlppvws
 - name: 8|🇬🇧GB-3.9.164.189-194_1@194
   password: E6r93XCOsyM9
   port: 16733
@@ -144,24 +142,6 @@ proxies:
     path: /xrenvws
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知83 651.5KB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.81
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知112 157.6KB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.197
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
   name: 19,20,21,37|未知44 1.8MB/s
   password: shadowsocks
   port: 443
@@ -169,26 +149,36 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- alterId: 1
-  cipher: auto
-  name: '20,21|🇬🇧GB-172.99.190.50-6032 #1'
-  network: ws
+- cipher: aes-128-gcm
+  name: 19|🇬🇧GB-212.102.53.195-1253
+  password: shadowsocks
   port: 443
-  server: 172.99.190.50
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: linkvws
+  server: 212.102.53.195
+  type: ss
+- cipher: aes-128-gcm
+  name: 19|🇬🇧GB-212.102.53.196-1254
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.196
+  type: ss
+- cipher: aes-128-gcm
+  name: 19|🇬🇧GB-212.102.53.194-0189
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
+  type: ss
+- name: '20,21|🇬🇧GB-18.175.95.186-6452 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.175.95.186
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '20,21|🇬🇧GB-149.7.16.174-6026 #1'
+  name: '20,21|🇬🇧GB-149.7.16.73-5983 #1'
   network: ws
   port: 443
-  server: 149.7.16.174
+  server: 149.7.16.73
   servername: ''
   tls: true
   type: vmess
@@ -199,7 +189,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇬🇧GB-172.99.190.206-6023 #1'
+  name: '20,21|🇬🇧GB-172.99.190.206-5975 #1'
   network: ws
   port: 443
   server: 172.99.190.206
@@ -213,7 +203,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇬🇧GB-149.7.16.188-5994 #1'
+  name: '20,21|🇬🇧GB-149.7.16.188-5946 #1'
   network: ws
   port: 443
   server: 149.7.16.188
@@ -225,9 +215,23 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇬🇧GB-149.7.16.174-5978 #1'
+  network: ws
+  port: 443
+  server: 149.7.16.174
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
 - alterId: 1
   cipher: auto
-  name: '20,21|🇬🇧GB-149.7.16.194-6021 #1'
+  name: '20,21|🇬🇧GB-149.7.16.194-5973 #1'
   network: ws
   port: 443
   server: 149.7.16.194
@@ -239,12 +243,12 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: '20,21|🇬🇧GB-149.7.16.73-6031 #1'
+  name: '20,21|🇬🇧GB-172.99.190.50-5984 #1'
   network: ws
   port: 443
-  server: 149.7.16.73
+  server: 172.99.190.50
   servername: ''
   tls: true
   type: vmess
@@ -252,28 +256,20 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-    path: /linkvws
-- name: '20,21,24|🇬🇧 _英国 #9'
+    path: linkvws
+- name: 24|🇬🇧 英国 伦敦Amazon数据中心
   password: telegram-id-privatevpns
   port: 22222
-  server: 18.175.2.75
-  skip-cert-verify: true
+  server: 52.56.219.23
+  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 24,40|IT_speednode_0017
-  network: ws
-  port: 443
-  server: 158.180.228.226
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    headers:
-      Host: beyonddsz.cfd
-    path: /linkws
+- cipher: chacha20-ietf-poly1305
+  name: 24,40|NO_speednode_0023
+  password: ZTqcA3pg0tY0qKKP240BQT
+  port: 48963
+  server: 51.13.115.105
+  type: ss
 - name: 26|V2-英国01∣K29线路∣1.5x
   password: 6307d00e-56e0-4d0d-afe9-254155638bdf
   port: 21154
@@ -286,6 +282,13 @@ proxies:
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 146.70.61.51
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 26|[97]🇬🇧GB-169.150.210.233-0196
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 169.150.210.233
   type: ss
   udp: true
 - name: '26|198,434,737|🇬🇧GB-132.1... #1'
