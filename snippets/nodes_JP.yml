@@ -1,14 +1,14 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,28|🇯🇵 日本01-1A
-  password: e1a3b02e-3e9e-4b87-b54e-e86aa8a14c52
+  name: 5,28|🇯🇵 日本01-1D
+  password: 9de2bbc3-4e6a-4b22-adc3-38c1c2144979
   port: 20002
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,9,11,24,27|0,13| |@ripaojiedian
+  name: '5,9,11,24,27|13|🇯🇵 日本特殊|@ripaojiedian #1'
   password: amazonskr05
   port: 443
   server: 52.79.248.193
@@ -94,8 +94,8 @@ proxies:
   type: vmess
   uuid: d761806f-8a0c-4534-8201-a6b20f7aa04a
 - cipher: chacha20-ietf-poly1305
-  name: 5,28|🇯🇵 日本02-1B
-  password: df965893-ef1a-4c64-ba7a-95ae175de691
+  name: 5,28|🇯🇵 日本02-1D
+  password: 9de2bbc3-4e6a-4b22-adc3-38c1c2144979
   port: 20004
   server: gy.666666222.shop
   type: ss
@@ -119,7 +119,7 @@ proxies:
   uuid: 84d83b7e-d390-3aee-901b-257a3a2fe79d
 - cipher: chacha20-ietf-poly1305
   name: 5,28|🇯🇵 日本04-1C
-  password: 047e6160-b989-42a3-9d33-642e2ee30f80
+  password: e1a3b02e-3e9e-4b87-b54e-e86aa8a14c52
   port: 20008
   server: gy.666666222.shop
   type: ss
@@ -587,19 +587,20 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|🇯🇵 日本03-1B
-  password: df965893-ef1a-4c64-ba7a-95ae175de691
+  password: 047e6160-b989-42a3-9d33-642e2ee30f80
   port: 20006
   server: gy.666666222.shop
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
+  name: 36,37|未知23 3.2MB/s
   network: tcp
-  port: '24445'
+  port: 24445
   server: 140.83.63.38
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
 - alterId: 0
@@ -618,12 +619,20 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: 36,37|未知129
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-47.74.42.113...
   network: tcp
-  port: 48898
+  port: '6211'
+  server: 47.74.42.113
+  tls: false
+  type: vmess
+  uuid: 9f2b91a3-6fbc-43c0-9803-4ddaabb08c7a
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
+  network: tcp
+  port: '48898'
   server: 13.112.49.171
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: c47c48c9-01d5-4d77-b7fc-0f5d86d59e54
