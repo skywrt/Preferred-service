@@ -8,11 +8,14 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  name: 5,13,24,40|GB_speednode_0011
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 5,24,37,40|GB_speednode_0011
   password: shadowsocks
   port: 443
   server: 212.102.53.193
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -141,11 +144,11 @@ proxies:
       Host: lax1.ibgfw.top
     path: /xrenvws
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知44 1.8MB/s
-  password: shadowsocks
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知66 17.2MB/s
+  password: mps3FwmDjLrWaOVg
   port: 443
-  server: 141.98.101.180
+  server: series-a2.varzesh360.co
   skip-cert-verify: true
   tls: true
   type: ss
@@ -154,6 +157,15 @@ proxies:
   password: shadowsocks
   port: 443
   server: 212.102.53.195
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知124 11.5MB/s
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-128-gcm
   name: 19|🇬🇧GB-212.102.53.196-1254
@@ -167,12 +179,17 @@ proxies:
   port: 443
   server: 212.102.53.194
   type: ss
-- name: '20,21|🇬🇧GB-18.175.95.186-6452 #1'
+- alterId: 0
+  name: 20,21,37|未知40
+  network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 18.175.95.186
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '20,21|🇬🇧GB-149.7.16.73-5983 #1'
@@ -285,7 +302,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 26|[97]🇬🇧GB-169.150.210.233-0196
+  name: 26,27|0|-https://t.me/MrXbin-15
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 169.150.210.233

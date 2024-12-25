@@ -905,15 +905,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 20,21,37|HK 4.3MB/s
-  password: WfmxKX2FBJRU0Ie9VLIYDL
-  port: 20012
-  server: 141.98.234.93
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - name: '24|🇭🇰 14|香港6|@ripaojiedian #1'
   password: TGCitizenScyu
   port: 443
@@ -1060,6 +1051,15 @@ proxies:
   uuid: 4a1a8c56-4e84-4520-92ec-240471cb213e
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-47.243.88.31...
+  network: tcp
+  port: '5745'
+  server: 47.243.88.31
+  tls: false
+  type: vmess
+  uuid: 9f2b91a3-6fbc-43c0-9803-4ddaabb08c7a
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-218.253.32.1...
   network: tcp
   port: '49185'
@@ -1072,7 +1072,7 @@ proxies:
   cipher: auto
   name: '36|🔒 VM-TCP-NA 🇭🇰 HK-218.253.32.1... #1'
   network: tcp
-  port: '53125'
+  port: '60317'
   server: 218.253.32.146
   servername: ''
   tls: false
@@ -1082,7 +1082,7 @@ proxies:
   cipher: auto
   name: '36|🔒 VM-TCP-NA 🇭🇰 HK-218.253.32.1... #2'
   network: tcp
-  port: '60317'
+  port: '58417'
   server: 218.253.32.146
   servername: ''
   tls: false
@@ -1092,21 +1092,52 @@ proxies:
   cipher: auto
   name: '36|🔒 VM-TCP-NA 🇭🇰 HK-218.253.32.1... #3'
   network: tcp
-  port: '58417'
+  port: '53125'
   server: 218.253.32.146
   servername: ''
   tls: false
   type: vmess
   uuid: 996ee9ca-f721-33f6-8a26-ed27df4975f0
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-47.243.88.31...
+  name: 37|HK
+  network: ws
+  password: TGCitizenScyu
+  port: 443
+  server: cf.zhetengsha.eu.org
+  skip-cert-verify: true
+  sni: maikeaxiang.me
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '37|HK #1'
+  password: j8BpeBQIGIwWY5tLqU5eyN
+  port: 36766
+  server: 141.98.234.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|HK2
+  password: a9e71cd5-ada9-42f5-b60c-a987ad57871f
+  port: 15006
+  server: 91.199.84.195
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|HK3
   network: tcp
-  port: '5745'
-  server: 47.243.88.31
-  tls: false
-  type: vmess
-  uuid: 9f2b91a3-6fbc-43c0-9803-4ddaabb08c7a
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 45590
+  server: 218.190.230.207
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
 - name: 40|HK_speednode_0012
   port: 4000
   server: hk9.ftq.ink
