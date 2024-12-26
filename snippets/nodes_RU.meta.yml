@@ -760,7 +760,7 @@ proxies:
     path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fmahan'
 - alterId: 0
   cipher: auto
-  name: 5,20,21,36|🔒 VM-WS-NA 🇷🇺 RU-46.29.161.224...
+  name: '5,20,21|🇷🇺RU-46.29.161.224-6631 #1'
   network: ws
   port: 29025
   server: 46.29.161.224
@@ -769,10 +769,14 @@ proxies:
   type: vmess
   uuid: 9c883f99-7105-4e39-876d-167c1a90fbe0
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: 5,24,40|RU_speednode_0036
+  h2-opts: {}
+  http-opts: {}
+  name: 5,24,27,40|RU_speednode_0036
   network: ws
   port: 29025
   server: 194.87.69.52
@@ -812,13 +816,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '5|俄罗斯 V2CROSS.COM #1'
+  client-fingerprint: chrome
+  name: 5,9|0|--51
   network: ws
   port: 29025
   server: 195.58.49.86
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 727d1e03-2aed-4190-bff5-30890097c1c4
+  uuid: ce329057-27f0-407b-818a-cda5d1f84601
   ws-opts:
     headers:
       Host: 195.58.49.86
@@ -1224,22 +1231,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 24,27,40|RU_speednode_0035
-  network: ws
-  port: 29025
-  server: 194.87.69.50
-  servername: 194.87.69.50
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 59c9c12d-7b09-46dc-ab42-21ad771fb696
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
   name: 30|🇷🇺_RU_俄罗斯联邦_2
   network: ws
   port: 13964
@@ -1249,19 +1240,6 @@ proxies:
   type: vmess
   uuid: 2cd0f258-d8cf-4c56-a5ec-5e400c1bbde8
   ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇷🇺 RU-194.87.69.42:...
-  network: ws
-  port: '5743'
-  server: 194.87.69.42
-  tls: false
-  type: vmess
-  uuid: f6a9a9e0-224f-4140-94dd-ec0830292db5
-  ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -1282,6 +1260,32 @@ proxies:
   tls: false
   type: vmess
   uuid: bd66c443-193a-4f06-8708-3d31a8be9401
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-194.87.69.42:...
+  network: ws
+  port: '5743'
+  server: 194.87.69.42
+  tls: false
+  type: vmess
+  uuid: 679070ac-4a61-44dd-9d1a-f3ff623214aa
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-194.87.68.115...
+  network: ws
+  port: '29025'
+  server: 194.87.68.115
+  tls: false
+  type: vmess
+  uuid: eaee29bf-f18c-455a-ac9b-43a500f7d2aa
   ws-opts:
     headers:
       Host: ''

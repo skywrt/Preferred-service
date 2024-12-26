@@ -524,14 +524,38 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 28|🇰🇷 韩国-三网优化2-3M
-  password: 92176acf-01e1-427e-b3d7-dded5f596f95
+- name: 28|🇰🇷 韩国-三网优化2-2I
+  password: a0e7539d-1edf-45a4-9ba3-cb05f8208e41
   port: 44732
   server: kr-qingyun.dwyun.me
   skip-cert-verify: false
   sni: kr-qingyun.dwyun.me
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-175.203.204....
+  network: ws
+  port: 50035
+  server: 175.203.204.222
+  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+    path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇰🇷 KR-146.56.112.1...
+  network: tcp
+  port: '8888'
+  server: 146.56.112.110
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.1...
@@ -548,29 +572,6 @@ proxies:
     path: /hgqqvws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇰🇷 KR-146.56.112.1...
-  network: tcp
-  port: '8888'
-  server: 146.56.112.110
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇰🇷 KR-193.122.115.7...
-  network: ws
-  port: '23451'
-  server: 193.122.115.74
-  tls: false
-  type: vmess
-  uuid: 2abe4c96-8542-48c5-b19d-9eec92586680
-  ws-opts:
-    headers:
-      Host: seoul-1ddns.aboutanime.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.24...
   network: ws
   port: 40471
@@ -585,15 +586,14 @@ proxies:
     path: /wada12222
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-175.203.204....
+  name: 36|🔒 VM-WS-NA 🇰🇷 KR-193.122.115.7...
   network: ws
-  port: 50035
-  server: 175.203.204.222
-  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-  tls: true
+  port: '23451'
+  server: 193.122.115.74
+  tls: false
   type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  uuid: 2abe4c96-8542-48c5-b19d-9eec92586680
   ws-opts:
     headers:
-      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-    path: /obdii.cfd:443/linkws
+      Host: seoul-1ddns.aboutanime.eu.org
+    path: /
