@@ -29,14 +29,14 @@ proxies:
   skip-cert-verify: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,28|🇯🇵 日本02-1B
-  password: df965893-ef1a-4c64-ba7a-95ae175de691
+  name: 5,28|🇯🇵 日本02-1A
+  password: 9cb6e0b8-65cc-4db5-879a-1bd74439ccf5
   port: 20004
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,28|🇯🇵 日本01-1A
+  name: 5,28|🇯🇵 日本01-1C
   password: 9de2bbc3-4e6a-4b22-adc3-38c1c2144979
   port: 20002
   server: gy.666666222.shop
@@ -286,8 +286,8 @@ proxies:
   skip-cert-verify: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,28|🇯🇵 日本04-1B
-  password: df965893-ef1a-4c64-ba7a-95ae175de691
+  name: 5,28|🇯🇵 日本04-1E
+  password: b23f8f3d-add0-4de7-b04f-c7d4fbc4c8e7
   port: 20008
   server: gy.666666222.shop
   type: ss
@@ -708,45 +708,31 @@ proxies:
   sni: dejs.stablize.top
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本03-1A
-  password: 9de2bbc3-4e6a-4b22-adc3-38c1c2144979
-  port: 20006
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- auth: 71b852bb-da9b-4bf9-be33-6b1d9a91bfdf
-  name: 28|🇯🇵 日本-1
-  password: 71b852bb-da9b-4bf9-be33-6b1d9a91bfdf
-  port: 30001
-  server: oracle-amd-tokyo1.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: tokyo.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
-- auth: 71b852bb-da9b-4bf9-be33-6b1d9a91bfdf
+- auth: 74f41eca-37f6-4a31-807c-446d13cf40b4
   name: 28|🇯🇵 日本-2
-  password: 71b852bb-da9b-4bf9-be33-6b1d9a91bfdf
+  password: 74f41eca-37f6-4a31-807c-446d13cf40b4
   port: 30001
   server: oracle-amd-osaka1.lanmaoyun.icu
   skip-cert-verify: true
   sni: osaka.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-158.101.142....
-  network: ws
-  port: 12344
-  server: 158.101.142.227
-  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-    path: /obdii.cfd:443/linkws
+- auth: 74f41eca-37f6-4a31-807c-446d13cf40b4
+  name: 28|🇯🇵 日本-1
+  password: 74f41eca-37f6-4a31-807c-446d13cf40b4
+  port: 30001
+  server: oracle-amd-tokyo1.lanmaoyun.icu
+  skip-cert-verify: true
+  sni: tokyo.nodes.lanmaoyun.icu
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本03-1A
+  password: 9cb6e0b8-65cc-4db5-879a-1bd74439ccf5
+  port: 20006
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
@@ -764,7 +750,21 @@ proxies:
   server: 47.74.42.113
   tls: false
   type: vmess
-  uuid: 9f2b91a3-6fbc-43c0-9803-4ddaabb08c7a
+  uuid: b3576ec3-b0a3-4f10-afa4-e5bdfd812fed
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-158.101.142....
+  network: ws
+  port: 12344
+  server: 158.101.142.227
+  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+    path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
