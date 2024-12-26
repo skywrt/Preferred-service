@@ -104,7 +104,7 @@ proxies:
   type: trojan
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 5,9,11,24,27,40|JP_speednode_0018
+  name: 5,9,11,19,24,27|13| |@ripaojiedian
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -112,7 +112,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,9,11,27|13|🇵 日本特殊|@ripaojiedian
+  name: 5,9,11,24,27|13|🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 43.207.232.228
@@ -368,6 +368,18 @@ proxies:
   sni: plowman.meijireform.com
   type: trojan
   udp: true
+- cipher: aes-128-gcm
+  name: 19|🇯🇵JP-149.22.87.240-6500
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|🇯🇵JP-54.238.219.226-6271
+  password: amazonskr05
+  port: 443
+  server: 54.238.219.226
+  type: ss
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|日本(JP)Japan/Tokyo_38
@@ -383,27 +395,32 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- name: 24|🇯🇵 日本 东京Amazon数据中心
-  password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
-  port: 20230
-  server: jp007.421421.xyz
-  skip-cert-verify: false
-  sni: 421421.xyz
-  type: trojan
-- name: 24|🇯🇵 _日本
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 21112
-  server: 146.56.142.126
-  skip-cert-verify: false
-  sni: gmarket.phantasy.life
-  type: trojan
-- name: '24|🇯🇵 _日本 #1'
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 21119
-  server: 146.56.142.126
-  skip-cert-verify: false
-  sni: gmarket.phantasy.life
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24|🇯🇵 _日本
+  network: ws
+  port: '443'
+  server: 47.91.18.127
+  tls: true
+  type: vmess
+  uuid: e8fa89a3-8e16-43dd-fd7c-1f4b04316186
+  ws-opts:
+    headers:
+      Host: ylks.zhuk.us.kg
+    path: /ylks
+- alterId: 0
+  cipher: auto
+  name: '24|🇯🇵 _日本 #2'
+  network: ws
+  port: '443'
+  server: 158.101.141.78
+  tls: true
+  type: vmess
+  uuid: e8fa89a3-8e16-43dd-fd7c-1f4b04316186
+  ws-opts:
+    headers:
+      Host: ylks.zhuk.us.kg
+    path: /ylks
 - name: 26|每日连接前点更新订阅
   password: 6307d00e-56e0-4d0d-afe9-254155638bdf
   port: 40037
@@ -621,34 +638,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-47.74.42.113...
-  network: tcp
-  port: '6211'
-  server: 47.74.42.113
-  tls: false
-  type: vmess
-  uuid: 9f2b91a3-6fbc-43c0-9803-4ddaabb08c7a
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
-  network: tcp
-  port: '24445'
-  server: 140.83.63.38
-  tls: false
-  type: vmess
-  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
-  network: tcp
-  port: '48898'
-  server: 13.112.49.171
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c47c48c9-01d5-4d77-b7fc-0f5d86d59e54
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇯🇵 JP-158.101.142....
   network: ws
   port: 12344
@@ -661,3 +650,31 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
+  network: tcp
+  port: '24445'
+  server: 140.83.63.38
+  tls: false
+  type: vmess
+  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-47.74.42.113...
+  network: tcp
+  port: '6211'
+  server: 47.74.42.113
+  tls: false
+  type: vmess
+  uuid: 9f2b91a3-6fbc-43c0-9803-4ddaabb08c7a
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
+  network: tcp
+  port: '48898'
+  server: 13.112.49.171
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c47c48c9-01d5-4d77-b7fc-0f5d86d59e54
