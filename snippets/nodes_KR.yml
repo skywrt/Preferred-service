@@ -3,14 +3,14 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|e5d04eafe62b4558b56badb6563e45...
+  name: 3|4d7c82123b1b43f0a3e908a3e83935...
   network: ws
   port: 23451
   server: seoul-1ddns.aboutanime.eu.org
   tls: false
   type: vmess
   udp: false
-  uuid: 64a13a91-df9d-4957-9a06-8923d5648541
+  uuid: 487dcdf2-82b7-4301-92c4-95a330175ade
   ws-opts:
     path: /
 - cipher: aes-256-cfb
@@ -105,17 +105,18 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇰🇷 KR-193.122.112.1...
+  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.1...
   network: ws
-  port: '23451'
-  server: 193.122.112.147
-  tls: false
+  port: '30002'
+  server: 211.220.16.114
+  servername: obdii.cfd
+  tls: true
   type: vmess
-  uuid: da486d87-9e56-4f68-a8fa-8865e006c1b1
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-opts:
     headers:
-      Host: seoul-1ddns.aboutanime.eu.org
-    path: /
+      Host: obdii.cfd
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇰🇷 KR-146.56.112.1...
@@ -126,34 +127,6 @@ proxies:
   tls: false
   type: vmess
   uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.1...
-  network: ws
-  port: '30002'
-  server: 211.220.16.114
-  servername: cc2.1808.site
-  tls: true
-  type: vmess
-  uuid: d3d8b781-f30d-4902-8eb0-58b1ca936bec
-  ws-opts:
-    headers:
-      Host: cc2.1808.site
-    path: /hgqqvws
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.24...
-  network: ws
-  port: 40471
-  server: 131.186.16.245
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a4141a2c-ca33-4237-add0-220a204e4ac3
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /wada12222
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇰🇷 KR-175.203.204....
@@ -168,3 +141,30 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇰🇷 KR-193.122.112.1...
+  network: ws
+  port: '23451'
+  server: 193.122.112.147
+  tls: false
+  type: vmess
+  uuid: 70c2f9fc-429a-4bf3-ab0e-70b5ad4f0a03
+  ws-opts:
+    headers:
+      Host: seoul-1ddns.aboutanime.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.24...
+  network: ws
+  port: 40471
+  server: 131.186.16.245
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a4141a2c-ca33-4237-add0-220a204e4ac3
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /wada12222
