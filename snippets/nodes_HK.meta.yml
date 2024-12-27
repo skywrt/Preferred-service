@@ -189,13 +189,16 @@ proxies:
   server: 125.88.149.205
   sni: bestbgp.doubledou.icu
   type: trojan
-- name: 5,24,27|13,14|香港2|@ripaojiedian
+- alterId: 0
+  name: 5,24,27,37|HK
   network: tcp
   password: QwwHvrnN
   port: 36442
   server: 223.113.54.145
   skip-cert-verify: true
+  tls: true
   type: trojan
+  udp: true
 - client-fingerprint: qq
   name: 5|[vless]香港2
   network: tcp
@@ -334,7 +337,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 9,27|13| 香港3|@ripaojiedian
+  name: 9,27|13|🇰 香港3|@ripaojiedian
   port: 52908
   server: 120.234.102.229
   skip-cert-verify: false
@@ -1038,21 +1041,28 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
   name: 28|🇭🇰 香港02-1B
-  password: bd829c2f-5550-4c8b-a663-60ecbc37ac6d
+  password: 48330d50-3a4e-4e2d-b904-de49a03221f3
   port: 20035
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港01-1A
-  password: 48330d50-3a4e-4e2d-b904-de49a03221f3
+  name: 28|🇭🇰 香港03-1C
+  password: 923eaec6-4484-44bc-a831-08c82a083901
+  port: 20052
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港01-1C
+  password: 923eaec6-4484-44bc-a831-08c82a083901
   port: 34338
   server: gy.666666222.shop
   type: ss
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 28|🇭🇰 香港-流媒体2x-1A
+  name: 28|🇭🇰 香港-流媒体2x-1B
   network: tcp
   port: 55442
   reality-opts:
@@ -1064,42 +1074,10 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 1a014537-27ac-4ae5-8dcd-90b6fd5ec63a
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港03-1B
-  password: bd829c2f-5550-4c8b-a663-60ecbc37ac6d
-  port: 20052
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港04
-  password: f8bd6496-970b-49a9-bb48-8f333e423353
-  port: 51956
-  server: 3d5eb78bd556db31.cdn.jiashule.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港03-1C
-  password: f8bd6496-970b-49a9-bb48-8f333e423353
-  port: 43685
-  server: 6b12118b5c7e50ae.cdn.jiashule.com
-  type: ss
-  udp: true
+  uuid: db317fe0-4062-4667-b231-f2ac2e0738e9
 - alterId: 0
   cipher: auto
-  name: 36,37|HK3
-  network: tcp
-  port: 58417
-  server: 218.253.32.146
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 996ee9ca-f721-33f6-8a26-ed27df4975f0
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-218.253.32.1... #1'
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-218.253.32.1...
   network: tcp
   port: '60317'
   server: 218.253.32.146
@@ -1109,9 +1087,19 @@ proxies:
   uuid: 996ee9ca-f721-33f6-8a26-ed27df4975f0
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-218.253.32.1... #2'
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-218.253.32.1... #1'
   network: tcp
   port: '53125'
+  server: 218.253.32.146
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 996ee9ca-f721-33f6-8a26-ed27df4975f0
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-218.253.32.1... #2'
+  network: tcp
+  port: '58417'
   server: 218.253.32.146
   servername: ''
   tls: false
@@ -1128,29 +1116,22 @@ proxies:
   type: vmess
   uuid: 996ee9ca-f721-33f6-8a26-ed27df4975f0
 - alterId: 0
-  name: 37|HK
-  password: a9e71cd5-ada9-42f5-b60c-a987ad57871f
-  port: 15006
-  server: 91.199.84.195
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 37|HK2
-  password: bd12f79e-3209-4970-83cd-5e1f3526ff51
-  port: 43684
-  server: 91.103.122.32
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 37|HK4
+  name: '37|HK #1'
   password: j8BpeBQIGIwWY5tLqU5eyN
   port: 36766
   server: 141.98.234.195
   skip-cert-verify: true
   tls: true
   type: ss
+- alterId: 0
+  name: 37|HK2
+  network: tcp
+  password: 3817daf8-0f2b-412f-b87b-3efa585423e8
+  port: 443
+  server: 45.158.22.33
+  skip-cert-verify: true
+  sni: us2.vpn.ong
+  tls: true
+  type: trojan
+  udp: true

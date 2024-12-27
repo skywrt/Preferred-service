@@ -344,7 +344,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '5,9,11,24,27|13| |@ripaojiedian #1'
+  name: 5,9,11,24,27|13| 特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 3.112.236.3
@@ -463,6 +463,15 @@ proxies:
   type: ss
   udp: true
 - alterId: 0
+  cipher: aes-256-gcm
+  name: 19,20,21,37|未知57 771.9KB/s
+  password: 4186370j1ebs50UqyHfXU
+  port: 8436
+  server: 217.197.160.225
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
   name: '20,21|🇸🇬SG-146.190.95.171-1468 #1'
   network: ws
@@ -504,12 +513,15 @@ proxies:
   skip-cert-verify: true
   sni: h.522226.xyz
   type: trojan
-- name: '24|🇺🇸 _美国 #29'
+- alterId: 0
+  name: 24,37|SG 335.7KB/s
   password: xjN4xcuPGg55
   port: 45800
   server: h.522226.xyz
   skip-cert-verify: true
+  tls: true
   type: trojan
+  udp: true
 - name: 26|V2-新加坡02∣K37线路∣1.5x
   password: ffa68efa-e282-4fae-a4c4-5f1fdaa76d81
   port: 21178
@@ -667,13 +679,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡01-AWS
-  password: f8bd6496-970b-49a9-bb48-8f333e423353
-  port: 53874
-  server: 6b12118b5c7e50ae.cdn.jiashule.com
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 28|🇸🇬 新加坡02-V4-流媒体-1B
@@ -683,44 +688,14 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: f08e1b5d-6a5b-4466-bafc-e11c79499557
+  uuid: db317fe0-4062-4667-b231-f2ac2e0738e9
   ws-opts:
     headers:
       Host: sg0002.hy-2.top
     path: /0
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇸🇬 新加坡02
-  password: f8bd6496-970b-49a9-bb48-8f333e423353
-  port: 37429
-  server: 3d5eb78bd556db31.cdn.jiashule.com
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-8.219.53.46:...
-  network: tcp
-  port: '2144'
-  server: 8.219.53.46
-  tls: false
-  type: vmess
-  uuid: 0ed5ef81-65c2-427a-85cc-765cc12cb9c1
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇸🇬 SG-103.106.229.2...
-  network: ws
-  port: 47928
-  server: 103.106.229.29
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a4141a2c-ca33-4237-add0-220a204e4ac3
-  ws-opts:
-    headers:
-      Host: ''
-    path: /wada12222
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-WS-NA 🇸🇬 SG-103.106.229.2... #1'
   network: ws
   port: 47930
   server: 103.106.229.29
@@ -742,3 +717,26 @@ proxies:
   tls: false
   type: vmess
   uuid: 4e55ce40-9f8e-417d-f8ae-aa6af97a7097
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-WS-NA 🇸🇬 SG-103.106.229.2... #1'
+  network: ws
+  port: 47928
+  server: 103.106.229.29
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a4141a2c-ca33-4237-add0-220a204e4ac3
+  ws-opts:
+    headers:
+      Host: ''
+    path: /wada12222
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-8.219.53.46:...
+  network: tcp
+  port: '2144'
+  server: 8.219.53.46
+  tls: false
+  type: vmess
+  uuid: 0ed5ef81-65c2-427a-85cc-765cc12cb9c1
