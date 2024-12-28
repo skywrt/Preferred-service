@@ -1,10 +1,10 @@
 proxies:
-- cipher: aes-128-gcm
+- cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,9,11,24,27,40|JP_speednode_0039
-  password: shadowsocks
+  name: 5,9,11,24,27|13|🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
   port: 443
-  server: 149.22.87.204
+  server: 18.181.162.137
   tfo: false
   type: ss
 - client-fingerprint: chrome
@@ -26,12 +26,12 @@ proxies:
     headers:
       Host: ''
     path: ''
-- cipher: aes-256-cfb
+- cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 5,9,11,24,27|13|🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
+  name: 5,9,11,19,24,27,40|JP_speednode_0039
+  password: shadowsocks
   port: 443
-  server: 18.181.162.137
+  server: 149.22.87.204
   tfo: false
   type: ss
 - alterId: 0
@@ -44,25 +44,6 @@ proxies:
   tls: false
   type: vmess
   uuid: fa98714c-1d2b-3b60-81e0-f7151110e801
-- alterId: 0
-  cipher: auto
-  name: 5|日本 阿里云
-  network: ws
-  port: 443
-  server: 47.91.18.127
-  tls: true
-  type: vmess
-  uuid: e8fa89a3-8e16-43dd-fd7c-1f4b04316186
-  ws-opts:
-    headers:
-      Host: ylks.zhuk.us.kg
-    path: /ylks
-- cipher: chacha20-ietf-poly1305
-  name: 5,40|CN_speednode_0002
-  password: 8a3b7d4b-39c4-4bb3-8775-56bd65b771da
-  port: 18109
-  server: zx2.1010520.xyz
-  type: ss
 - client-fingerprint: chrome
   name: 5,9,24,27|13,14|日本4|@ripaojiedian
   network: tcp
@@ -71,6 +52,18 @@ proxies:
   server: 120.233.26.140
   skip-cert-verify: false
   sni: jpcn2.doubledou.icu
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 5,40|CN_speednode_0002
+  password: 8a3b7d4b-39c4-4bb3-8775-56bd65b771da
+  port: 18109
+  server: zx2.1010520.xyz
+  type: ss
+- name: 5|日本+V2CROSS.COM
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  port: 20230
+  server: jp005.421421.xyz
+  sni: 421421.xyz
   type: trojan
 - cipher: aes-256-cfb
   name: 8|🇯🇵JP-54.199.83.239-171_1@171
@@ -230,6 +223,24 @@ proxies:
     headers:
       Host: lp.ylks.us.kg
     path: '%2F%3Fed%3D2560'
+- cipher: aes-256-cfb
+  name: 19|🇯🇵JP-54.238.219.226-0522
+  password: amazonskr05
+  port: 443
+  server: 54.238.219.226
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|🇯🇵JP-57.181.42.233-1272
+  password: amazonskr05
+  port: 443
+  server: 57.181.42.233
+  type: ss
+- cipher: aes-128-gcm
+  name: 19|🇯🇵JP-149.22.87.240-6516
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|日本(JP)Japan/Tokyo_38
@@ -245,6 +256,19 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇯🇵 _日本
+  network: ws
+  port: '443'
+  server: 158.101.141.78
+  tls: true
+  type: vmess
+  uuid: b9559c23-1379-4eef-e628-a6e87cc620c5
+  ws-opts:
+    headers:
+      Host: us.zhuk.us.kg
+    path: /ylks
 - name: 26|每日连接前点更新订阅
   password: 6307d00e-56e0-4d0d-afe9-254155638bdf
   port: 40037
@@ -503,16 +527,6 @@ proxies:
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
   network: tcp
-  port: '48898'
-  server: 13.112.49.171
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17... #1'
-  network: tcp
   port: '48897'
   server: 13.112.49.171
   servername: ''
@@ -535,14 +549,14 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
+  name: '36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17... #1'
   network: tcp
-  port: '24445'
-  server: 140.83.63.38
+  port: '48898'
+  server: 13.112.49.171
   servername: ''
   tls: false
   type: vmess
-  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
+  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
 - cipher: chacha20-ietf-poly1305
   name: 40|JP_speednode_0041
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv

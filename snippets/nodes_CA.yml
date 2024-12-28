@@ -1,62 +1,35 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 5|加拿大 - 旺市 - Cloudflare, Inc. - ...
-  network: ws
-  port: '8443'
-  server: 152.70.155.147
+  grpc-opts:
+    grpc-service-name: ''
+  name: 5|加拿大 魁北克省博阿努瓦OVH数据中心
+  network: grpc
+  port: '443'
+  server: 51.79.27.204
+  servername: ''
   tls: true
   type: vmess
-  uuid: 4c721b77-05e2-45d7-c445-f8c445073908
+  uuid: 55d1bdb3-170b-420e-a07d-b08bac0c6cff
+- alterId: 0
+  cipher: auto
+  name: 5|加拿大 - 旺市 - Cloudflare, Inc. - ...
+  network: ws
+  port: '2053'
+  server: ca.zhuk.us.kg
+  tls: true
+  type: vmess
+  uuid: be30fad5-8916-40cb-ed35-a1b7d32fff2b
   ws-opts:
     headers:
-      Host: ''
-    path: /ylks
+      Host: ca.zhuk.us.kg
+    path: /由零开始
 - cipher: chacha20-ietf-poly1305
   name: 5,40|CN_speednode_0007
   password: 8a3b7d4b-39c4-4bb3-8775-56bd65b771da
   port: 18789
   server: zx2.1010520.xyz
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 5|公益 加拿大 05
-  network: ws
-  port: '80'
-  server: cloudflare.182682.xyz
-  tls: false
-  type: vmess
-  uuid: d004d7f5-c98c-4fe3-8dd2-45e0001c9ff9
-  ws-opts:
-    headers:
-      Host: ca.yuyun.one
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 5|公益 加拿大 03
-  network: ws
-  port: '80'
-  server: api-ipv4.ip.sb
-  tls: false
-  type: vmess
-  uuid: d004d7f5-c98c-4fe3-8dd2-45e0001c9ff9
-  ws-opts:
-    headers:
-      Host: ca.yuyun.one
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 5|公益 加拿大 04
-  network: ws
-  port: '80'
-  server: fbi.gov
-  tls: false
-  type: vmess
-  uuid: d004d7f5-c98c-4fe3-8dd2-45e0001c9ff9
-  ws-opts:
-    headers:
-      Host: ca.yuyun.one
-    path: /
 - alterId: 0
   cipher: auto
   name: '5|加拿大 - 旺市 - Cloudflare, Inc. - ... #1'
@@ -70,39 +43,19 @@ proxies:
     headers:
       Host: ca.zhuk.us.kg
     path: /ylks
-- name: 5|🇨🇦V1-加拿大-IPv6
-  password: 9cb4048a-6c79-401b-ada0-8c16f7e52bc8
-  port: 49896
-  server: 43d064a109898e6f1e8acb7b1a712d24.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: ca1.bilibili.com
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '5|加拿大 - 旺市 - Cloudflare, Inc. - ... #2'
   network: ws
-  port: '2053'
-  server: ca.zhuk.us.kg
+  port: '8443'
+  server: 152.70.155.147
   tls: true
   type: vmess
-  uuid: be30fad5-8916-40cb-ed35-a1b7d32fff2b
+  uuid: 4c721b77-05e2-45d7-c445-f8c445073908
   ws-opts:
     headers:
-      Host: ca.zhuk.us.kg
-    path: /由零开始
-- alterId: 0
-  cipher: auto
-  name: 5|公益 加拿大 02
-  network: ws
-  port: '80'
-  server: cf.090227.xyz
-  tls: false
-  type: vmess
-  uuid: d004d7f5-c98c-4fe3-8dd2-45e0001c9ff9
-  ws-opts:
-    headers:
-      Host: ca.yuyun.one
-    path: /
+      Host: ''
+    path: /ylks
 - cipher: aes-256-gcm
   name: 8|🇨🇦CA-134.195.196.51-063_1@63
   password: pKEW8JPByTVTLtM
@@ -522,7 +475,7 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-172.67.151.228-0813 #1'
+  name: '10,20,21|🏁RELAY-172.67.151.228-0813 #2'
   network: ws
   port: 8880
   server: us-ccs.yuji2022.eu.org
@@ -663,11 +616,10 @@ proxies:
     path: /itdog?ed=2560
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.16.60.8-0840 #1'
+  name: 10|加拿大 058
   network: ws
   port: 8080
   server: 104.16.60.8
-  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -680,11 +632,10 @@ proxies:
     path: /ivideos.sbs/linkws
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.16.60.8-0841 #1'
+  name: 10|加拿大 059
   network: ws
   port: 2086
   server: 104.16.60.8
-  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -769,7 +720,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇨🇦CA-172.105.13.246-8841
+  name: 19|🇨🇦CA-172.105.13.246-8866
   network: ws
   port: 443
   server: denc36.xtooltech.cfd
@@ -783,7 +734,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-172.105.13.246-8866 #1'
+  name: '20,21|🇨🇦CA-172.105.13.246-8866 #2'
   network: ws
   port: 443
   server: denc36.xtooltech.cfd
@@ -795,46 +746,6 @@ proxies:
     headers:
       Host: adenc36v.xtooltech.cfd
     path: /linkws
-- name: '20,21|🇨🇦CA-99.79.151.157-6383 #1'
-  password: telegram-id-directvpn
-  port: 22222
-  server: 99.79.151.157
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇨🇦CA-134.195.198.147-8859 #1'
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇨🇦CA-23.162.200.227-8888 #1'
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- name: '20,21|🇨🇦CA-15.157.81.48-6382 #1'
-  password: telegram-id-directvpn
-  port: 22222
-  server: 15.157.81.48
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '20,21|🇨🇦CA-23.162.200.94-8849 #1'
@@ -851,7 +762,21 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '23|🇨🇦_CA_加拿大 #1'
+  name: '20,21|🇨🇦CA-23.162.200.227-8888 #1'
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 23|🇨🇦_CA_加拿大
   network: ws
   port: 443
   server: 158.51.121.36
@@ -864,22 +789,11 @@ proxies:
 - alterId: 0
   cipher: auto
   grpc-opts:
-    grpc-service-name: ''
-  name: 36|🔒 VM-GRPC-NA 🇨🇦 CA-51.79.27.20...
+    grpc-service-name: /
+  name: 24|🇨🇦 加拿大 魁北克省博阿努瓦OVH数据中心
   network: grpc
   port: '443'
   server: 51.79.27.204
-  servername: ''
   tls: true
   type: vmess
   uuid: 55d1bdb3-170b-420e-a07d-b08bac0c6cff
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-51.79.27.204...
-  network: tcp
-  port: '80'
-  server: 51.79.27.204
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 97244a00-16ba-43ce-9e6b-f6002290e485
