@@ -6,15 +6,6 @@ proxies:
   skip-cert-verify: false
   sni: uk-01.oneok.link
   type: trojan
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 5,37|未知119 102.3KB/s
-  password: 4230161T38A0WzaL1SuVL
-  port: 8030
-  server: 193.38.136.137
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - name: 5|🇬🇧|英国-IEPL 01
   password: 87109018-d550-4011-9ee6-3b0fdb5074cd
   port: 20020
@@ -63,40 +54,33 @@ proxies:
   server: 146.70.61.18
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇬🇧GB-149.7.16.73-6065 #1'
-  network: ws
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇬🇧GB-89.185.84.185-1238
+  password: HaZ5Ek7pur79uPPFs55USt
+  port: 12575
+  server: 89.185.84.185
+  type: ss
+- cipher: aes-128-gcm
+  name: 19|🇬🇧GB-141.98.101.179-0541
+  password: shadowsocks
   port: 443
-  server: 149.7.16.73
-  servername: ''
+  server: 141.98.101.179
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知11 2.3MB/s
+  password: oHguU86Hoa41HAncW88o4kEspy8sos9tkbnK6uLvsgfMetuFKEChk2QY6eR3a67NXAmWe2kD8vbhZEyuw2Gx1hDPXXSgmimt
+  port: 55988
+  server: 185.5.38.111
+  skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇬🇧GB-149.7.16.174-1456 #1'
+  name: '20,21|🇬🇧GB-149.7.16.174-6084 #1'
   network: ws
   port: 443
   server: 149.7.16.174
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 149.7.16.174
-    path: /linkvws
-- alterId: 1
-  cipher: auto
-  name: '20,21|🇬🇧GB-149.7.16.194-6073 #1'
-  network: ws
-  port: 443
-  server: 149.7.16.194
   servername: ''
   tls: true
   type: vmess
@@ -121,46 +105,18 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇬🇧GB-149.7.16.194-1432 #1'
+  name: '20,21|🇬🇧GB-172.99.190.50-1451 #1'
   network: ws
   port: 443
-  server: 149.7.16.194
+  server: 172.99.190.50
   servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: 149.7.16.194
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇬🇧GB-149.7.16.174-6084 #1'
-  network: ws
-  port: 443
-  server: 149.7.16.174
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇬🇧GB-172.99.190.206-6075 #1'
-  network: ws
-  port: 443
-  server: 172.99.190.206
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
+      Host: 172.99.190.50
+    path: linkvws
 - alterId: 1
   cipher: auto
   name: '20,21|🇬🇧GB-172.99.190.50-6066 #1'
@@ -177,17 +133,31 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇬🇧GB-172.99.190.206-1455 #1'
+  name: '20,21|🇬🇧GB-149.7.16.194-1432 #1'
   network: ws
   port: 443
-  server: 172.99.190.206
+  server: 149.7.16.194
   servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: 172.99.190.206
+      Host: 149.7.16.194
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇬🇧GB-149.7.16.73-1445 #1'
+  network: ws
+  port: 443
+  server: 149.7.16.73
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 149.7.16.73
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -205,7 +175,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇬🇧GB-149.7.16.73-1445 #1'
+  name: '20,21|🇬🇧GB-149.7.16.73-6065 #1'
   network: ws
   port: 443
   server: 149.7.16.73
@@ -215,36 +185,36 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: 149.7.16.73
+      Host: ''
     path: /linkvws
-- name: '20,21,24|🇺🇸 美国 Amazon数据中心 #2'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.43.233.119
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: '20,21|🇬🇧GB-172.99.190.50-1451 #1'
+  name: '20,21|🇬🇧GB-149.7.16.194-6073 #1'
   network: ws
   port: 443
-  server: 172.99.190.50
+  server: 149.7.16.194
   servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: 172.99.190.50
-    path: linkvws
-- name: 24|🇬🇧 英国 社会保险安全部
-  password: telegram-id-directvpn
-  port: 22222
-  server: 51.20.231.37
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇬🇧GB-149.7.16.174-1456 #1'
+  network: ws
+  port: 443
+  server: 149.7.16.174
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 149.7.16.174
+    path: /linkvws
 - name: 26|V2-英国01∣K29线路∣1.5x
   password: 6307d00e-56e0-4d0d-afe9-254155638bdf
   port: 21154

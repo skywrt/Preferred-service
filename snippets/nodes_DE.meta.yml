@@ -1,10 +1,10 @@
 proxies:
-- name: 5|🇩🇪|德国-IEPL 03
+- name: 5|🇩🇪|德国-IEPL 01
   password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 20003
-  server: iepl00.catcat-123.com
+  port: 20022
+  server: iepl-01.catcat-123.com
   skip-cert-verify: false
-  sni: de-03.oneok.link
+  sni: de-01.oneok.link
   type: trojan
 - alterId: 0
   cipher: auto
@@ -16,12 +16,19 @@ proxies:
   type: vmess
   uuid: 6d3404ef-27c6-48de-a83a-8ac6488760b4
   ws-opts: {}
-- name: 5|🇩🇪|德国-IEPL 01
+- name: 5|🇩🇪|德国-IEPL 03
   password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 20022
-  server: iepl-01.catcat-123.com
+  port: 20003
+  server: iepl00.catcat-123.com
   skip-cert-verify: false
-  sni: de-01.oneok.link
+  sni: de-03.oneok.link
+  type: trojan
+- name: 5|🇩🇪|德国-IEPL 02
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 20041
+  server: iepl00.catcat-123.com
+  skip-cert-verify: false
+  sni: de-02.oneok.link
   type: trojan
 - alterId: 0
   cipher: auto
@@ -36,13 +43,17 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- name: 5|🇩🇪|德国-IEPL 02
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 20041
-  server: iepl00.catcat-123.com
-  skip-cert-verify: false
-  sni: de-02.oneok.link
+- name: 5|德国+V2CROSS.COM
+  network: ws
+  password: tg-fq521free
+  port: 443
+  server: 194.76.18.129
+  sni: torjan.xn--xhq44j.eu.org
   type: trojan
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: '%2F'
 - name: 8|🇩🇪DE-52.58.179.46-180_1@180
   password: telegram-id-privatevpns
   port: 22222
@@ -63,45 +74,125 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇩🇪DE-172.104.247.121-8774
+  name: 19|🇩🇪DE-172.104.142.89-1365
   network: ws
   port: 443
-  server: 172.104.247.121
+  server: hms26.xpengmotors.sbs
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  uuid: fb0a2de6-bf06-4ff0-97ce-c21abcdc2d55
   ws-opts:
     headers:
-      host: ivideos.sbs
+      host: hms26.xpengmotors.sbs
     path: /linkws
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇩🇪DE-81.19.141.45-0466
+  password: CIZAAhQMKlkmW60Isq82PG
+  port: 52873
+  server: 81.19.141.45
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-5825
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-5816
+  password: 4R3hUfZ2FHhDmNcP
+  port: 9061
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-0537
+  password: XPtzA9sCug3SPR4c
+  port: 9025
+  server: 80.92.204.106
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇩🇪DE-130.61.156.132-5708
+  name: 19|🇩🇪DE-139.162.178.95-1479
   network: ws
   port: 443
-  server: frankfurt03.zgjok.com
+  server: hms23.fixedfloati.cfd
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 4f7c2243-a38a-4672-983b-f1378aee0a7f
+  uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e
   ws-opts:
     headers:
-      host: frankfurt03.zgjok.com
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇩🇪DE-150.241.95.63-0519
-  password: qbY6=zGuFl
-  port: 37774
-  server: 150.241.95.63
-  type: ss
+      host: fixedfloati.cfd
+    path: /linkwsd
 - cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-5403
-  password: VP8ZPxQpJtZRCjfZ
-  port: 9080
+  name: 19|🇩🇪DE-80.92.204.106-0536
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
   server: 80.92.204.106
   type: ss
+- name: '20,21|🇩🇪DE-18.159.67.87-6624 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.159.67.87
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-172.104.142.89-1365 #2'
+  network: ws
+  port: 443
+  server: hms26.xpengmotors.sbs
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: fb0a2de6-bf06-4ff0-97ce-c21abcdc2d55
+  ws-opts:
+    headers:
+      Host: hms26.xpengmotors.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-57.129.25.20-1443 #1'
+  network: ws
+  port: 443
+  server: 57.129.25.20
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 57.129.25.20
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-57.129.24.125-8760 #1'
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-139.162.178.95-1479 #2'
+  network: ws
+  port: 443
+  server: hms23.fixedfloati.cfd
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e
+  ws-opts:
+    headers:
+      Host: fixedfloati.cfd
+    path: /linkwsd
 - alterId: 0
   cipher: auto
   name: '20,21|🇩🇪DE-23.158.56.227-0870 #1'
@@ -118,54 +209,6 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-8760 #1'
-  network: ws
-  port: 443
-  server: 57.129.24.125
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
-- cipher: chacha20-ietf-poly1305
-  name: 20,21,24,40|DE_speednode_0029
-  password: kbmwAPhErPtyfPrGFusEoF6u4zcqJK/DjOGBJLLab9I=
-  port: 443
-  server: 3.v2.a.www.speedtest.net.2.op.jahesh-tolid.website
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-172.104.247.121-8721 #1'
-  network: ws
-  port: 443
-  server: 172.104.247.121
-  servername: ivideos.sbs
-  tls: true
-  type: vmess
-  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
-  ws-opts:
-    headers:
-      Host: ivideos.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-130.61.156.132-0480 #1'
-  network: ws
-  port: 443
-  server: frankfurt03.zgjok.com
-  servername: frankfurt03.zgjok.com
-  tls: true
-  type: vmess
-  uuid: 4f7c2243-a38a-4672-983b-f1378aee0a7f
-  ws-opts:
-    headers:
-      Host: frankfurt03.zgjok.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: '20,21|🇩🇪DE-57.129.24.125-1447 #1'
   network: ws
   port: 443
@@ -178,20 +221,6 @@ proxies:
     headers:
       Host: 57.129.24.125
     path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-57.129.25.20-1443 #1'
-  network: ws
-  port: 443
-  server: 57.129.25.20
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 57.129.25.20
-    path: linkvws
 - alterId: 0
   cipher: auto
   name: '20,21|🇩🇪DE-57.129.24.141-5798 #1'
@@ -222,25 +251,18 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-139.162.178.95-1479 #1'
+  name: '20,21|🇩🇪DE-130.61.156.132-0480 #1'
   network: ws
   port: 443
-  server: hms23.fixedfloati.cfd
-  servername: ''
+  server: frankfurt03.zgjok.com
+  servername: frankfurt03.zgjok.com
   tls: true
   type: vmess
-  uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e
+  uuid: 4f7c2243-a38a-4672-983b-f1378aee0a7f
   ws-opts:
     headers:
-      Host: fixedfloati.cfd
-    path: /linkwsd
-- name: 24|🇩🇪 德国 V2CROSS.COM
-  password: tg-fq521free
-  port: 443
-  server: 194.76.18.129
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
+      Host: frankfurt03.zgjok.com
+    path: /
 - name: 26|V1-德国01∣K25线路∣1.5x
   password: 6307d00e-56e0-4d0d-afe9-254155638bdf
   port: 21188
@@ -309,16 +331,6 @@ proxies:
   uuid: 842186c7-3eeb-48ee-8466-5a3a676bac63
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
-  network: httpupgrade
-  port: '2096'
-  server: 104.26.15.16
-  servername: tESt.OffERmiRacLeSHop.Top.
-  tls: true
-  type: vmess
-  uuid: 32eb9cf5-c4c7-40e3-b584-a4b1fc5833ec
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-78.47.131.25...
   network: tcp
   port: '100'
@@ -327,3 +339,13 @@ proxies:
   tls: false
   type: vmess
   uuid: dc2800af-d3b3-4979-9334-502d05519b50
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
+  network: httpupgrade
+  port: '2096'
+  server: 104.26.15.16
+  servername: tESt.OffERmiRacLeSHop.Top.
+  tls: true
+  type: vmess
+  uuid: 32eb9cf5-c4c7-40e3-b584-a4b1fc5833ec

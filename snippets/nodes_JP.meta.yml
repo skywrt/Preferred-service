@@ -1,4 +1,21 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: '5,11,24,27,30|14|日本|@ripaojiedian #2'
+  network: tcp
+  port: 38953
+  server: jpp1.pfdsddla.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2c610eac-882d-3944-a7c4-674c033f0073
+- name: 5|🇯🇵|日本-IEPL 02
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 20009
+  server: iepl02.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-02.oneok.link
+  type: trojan
 - name: 5|🇯🇵|日本原生-IEPL 03
   password: 87109018-d550-4011-9ee6-3b0fdb5074cd
   port: 20061
@@ -6,12 +23,47 @@ proxies:
   skip-cert-verify: false
   sni: JP-03.oneok.link
   type: trojan
-- name: 5|🇯🇵|日本-IEPL 03
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 5,9,11,24,27|13|🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 3.113.31.223
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 5|日本04
+  network: tcp
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp004.421421.xyz
+  servername: api.push.apple.com
+  tls: false
+  type: vless
+  uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- name: 5|🇯🇵|日本-进阶IEPL 02
   password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 20009
-  server: iepl-01.catcat-123.com
+  port: 20058
+  server: iepl00.catcat-123.com
   skip-cert-verify: false
   sni: JP-02.oneok.link
+  type: trojan
+- name: 5|日本08
+  network: tcp
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  port: 20230
+  server: jp008.421421.xyz
+  skip-cert-verify: false
+  sni: 421421.xyz
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -32,126 +84,6 @@ proxies:
     headers:
       Host: ''
     path: ''
-- name: 5|🇯🇵|日本-IEPL 02
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 20009
-  server: iepl02.catcat-123.com
-  skip-cert-verify: false
-  sni: JP-02.oneok.link
-  type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  grpc-opts:
-    grpc-service-name: ''
-  name: 5|日本03
-  network: tcp
-  port: 20230
-  reality-opts:
-    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
-    short-id: a7464bff
-  server: jp003.421421.xyz
-  servername: api.push.apple.com
-  tls: false
-  type: vless
-  uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 5,9,11,24,27|13|🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 3.113.31.223
-  tfo: false
-  type: ss
-- name: 5|🇯🇵|日本原生-IEPL 01
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 20030
-  server: iepl02.catcat-123.com
-  skip-cert-verify: false
-  sni: JP-03.oneok.link
-  type: trojan
-- name: 5|🇳🇬|尼日利亚-IEPL 02
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 20051
-  server: iepl03.catcat-123.com
-  skip-cert-verify: false
-  sni: NG-01.oneok.link
-  type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  grpc-opts:
-    grpc-service-name: ''
-  name: 5|日本04
-  network: tcp
-  port: 20230
-  reality-opts:
-    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
-    short-id: a7464bff
-  server: jp004.421421.xyz
-  servername: api.push.apple.com
-  tls: false
-  type: vless
-  uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '5,11,24,27,30|14|日本|@ripaojiedian #2'
-  network: tcp
-  port: 38953
-  server: jpp1.pfdsddla.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2c610eac-882d-3944-a7c4-674c033f0073
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  grpc-opts:
-    grpc-service-name: ''
-  name: 5|日本02
-  network: tcp
-  port: 20230
-  reality-opts:
-    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
-    short-id: a7464bff
-  server: jp002.421421.xyz
-  servername: api.push.apple.com
-  tls: false
-  type: vless
-  uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- client-fingerprint: chrome
-  name: 5,9,24,27,40|JP_speednode_0037
-  network: tcp
-  password: 13e7f6f8-4ec2-4060-a1b2-e78eba835ab2
-  port: 12187
-  server: xj.cokecloud.top
-  skip-cert-verify: false
-  sni: xj.cokecloud.top
-  type: trojan
-- name: 5|🇯🇵|日本原生-IEPL 02
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 20030
-  server: iepl01.catcat-123.com
-  skip-cert-verify: false
-  sni: JP-03.oneok.link
-  type: trojan
-- name: 5|日本06
-  network: tcp
-  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
-  port: 20230
-  server: jp006.421421.xyz
-  skip-cert-verify: false
-  sni: 421421.xyz
-  type: trojan
 - name: 5|🇳🇬|尼日利亚-IEPL 01
   password: 87109018-d550-4011-9ee6-3b0fdb5074cd
   port: 20051
@@ -159,64 +91,10 @@ proxies:
   skip-cert-verify: false
   sni: NG-01.oneok.link
   type: trojan
-- name: 5|日本07
-  network: tcp
-  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
-  port: 20230
-  server: jp007.421421.xyz
-  skip-cert-verify: false
-  sni: 421421.xyz
-  type: trojan
-- name: 5|🇯🇵|日本-进阶IEPL 02
+- name: 5|🇯🇵|日本原生-IEPL 01
   password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 20058
-  server: iepl00.catcat-123.com
-  skip-cert-verify: false
-  sni: JP-02.oneok.link
-  type: trojan
-- name: 5|🇯🇵|日本-IEPL 01
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 20009
-  server: iepl05.catcat-123.com
-  skip-cert-verify: false
-  sni: JP-02.oneok.link
-  type: trojan
-- name: 5|🇯🇵|日本-进阶IEPL 01
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 20058
-  server: iepl-00.catcat-123.com
-  skip-cert-verify: false
-  sni: JP-02.oneok.link
-  type: trojan
-- name: 5|日本08
-  network: tcp
-  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
-  port: 20230
-  server: jp008.421421.xyz
-  skip-cert-verify: false
-  sni: 421421.xyz
-  type: trojan
-- client-fingerprint: chrome
-  name: 5,9,24,27|13,14|日本4|@ripaojiedian
-  network: tcp
-  password: 2add6241-8fe8-3922-8347-da25e8ced601
-  port: 50001
-  server: 120.233.26.140
-  skip-cert-verify: false
-  sni: jpcn2.doubledou.icu
-  type: trojan
-- name: 5|日本05
-  network: tcp
-  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
-  port: 20230
-  server: jp005.421421.xyz
-  skip-cert-verify: false
-  sni: 421421.xyz
-  type: trojan
-- name: 5|🇯🇵|日本原生-IEPL 04
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 20061
-  server: iepl00.catcat-123.com
+  port: 20030
+  server: iepl02.catcat-123.com
   skip-cert-verify: false
   sni: JP-03.oneok.link
   type: trojan
@@ -239,12 +117,134 @@ proxies:
     headers:
       Host: ''
     path: ''
+- client-fingerprint: chrome
+  name: 5,9,24,27|13,14|日本4|@ripaojiedian
+  network: tcp
+  password: 2add6241-8fe8-3922-8347-da25e8ced601
+  port: 50001
+  server: 120.233.26.140
+  skip-cert-verify: false
+  sni: jpcn2.doubledou.icu
+  type: trojan
 - name: 5|🇯🇵|日本-进阶IEPL 03
   password: 87109018-d550-4011-9ee6-3b0fdb5074cd
   port: 20058
   server: iepl03.catcat-123.com
   skip-cert-verify: false
   sni: JP-02.oneok.link
+  type: trojan
+- name: 5|🇯🇵|日本原生-IEPL 02
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 20030
+  server: iepl01.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-03.oneok.link
+  type: trojan
+- client-fingerprint: chrome
+  name: 5,9,24,27,40|JP_speednode_0037
+  network: tcp
+  password: 13e7f6f8-4ec2-4060-a1b2-e78eba835ab2
+  port: 12187
+  server: xj.cokecloud.top
+  skip-cert-verify: false
+  sni: xj.cokecloud.top
+  type: trojan
+- name: 5|🇯🇵|日本-IEPL 03
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 20009
+  server: iepl-01.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-02.oneok.link
+  type: trojan
+- name: 5|🇯🇵|日本-进阶IEPL 01
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 20058
+  server: iepl-00.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-02.oneok.link
+  type: trojan
+- name: 5|🇯🇵|日本-IEPL 01
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 20009
+  server: iepl05.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-02.oneok.link
+  type: trojan
+- name: 5|日本05
+  network: tcp
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  port: 20230
+  server: jp005.421421.xyz
+  skip-cert-verify: false
+  sni: 421421.xyz
+  type: trojan
+- name: 5|日本06
+  network: tcp
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  port: 20230
+  server: jp006.421421.xyz
+  skip-cert-verify: false
+  sni: 421421.xyz
+  type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 5|日本03
+  network: tcp
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp003.421421.xyz
+  servername: api.push.apple.com
+  tls: false
+  type: vless
+  uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- name: 5|日本07
+  network: tcp
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  port: 20230
+  server: jp007.421421.xyz
+  skip-cert-verify: false
+  sni: 421421.xyz
+  type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 5|日本02
+  network: tcp
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp002.421421.xyz
+  servername: api.push.apple.com
+  tls: false
+  type: vless
+  uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- name: 5|🇯🇵|日本原生-IEPL 04
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 20061
+  server: iepl00.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-03.oneok.link
+  type: trojan
+- name: 5|🇳🇬|尼日利亚-IEPL 02
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 20051
+  server: iepl03.catcat-123.com
+  skip-cert-verify: false
+  sni: NG-01.oneok.link
   type: trojan
 - cipher: aes-256-cfb
   name: 8|🇯🇵JP-54.199.83.239-171_1@171
@@ -343,6 +343,12 @@ proxies:
     headers:
       Host: lp.ylks.us.kg
     path: '%2F%3Fed%3D2560'
+- cipher: aes-256-cfb
+  name: 19|🇯🇵JP-52.194.212.235-0509
+  password: amazonskr05
+  port: 443
+  server: 52.194.212.235
+  type: ss
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|日本(JP)Japan/Tokyo_38
@@ -625,18 +631,13 @@ proxies:
   uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-158.101.142....
-  network: ws
-  port: 12344
-  server: 158.101.142.227
-  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-  tls: true
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
+  network: tcp
+  port: '24445'
+  server: 140.83.63.38
+  tls: false
   type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-    path: /obdii.cfd:443/linkws
+  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
 - alterId: 0
   cipher: auto
   name: '36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17... #1'
@@ -649,10 +650,15 @@ proxies:
   uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
-  network: tcp
-  port: '24445'
-  server: 140.83.63.38
-  tls: false
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-158.101.142....
+  network: ws
+  port: 12344
+  server: 158.101.142.227
+  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+  tls: true
   type: vmess
-  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+    path: /obdii.cfd:443/linkws
