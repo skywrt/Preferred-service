@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '5,11,24,27|14|日本2|@ripaojiedian #1'
+  name: '5,11,24|🇯🇵 14|日本2|@ripaojiedian #1'
   network: tcp
   port: '28984'
   server: 45.159.50.143
@@ -17,14 +17,6 @@ proxies:
   skip-cert-verify: false
   sni: 421421.xyz
   type: trojan
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 5,9,11,24,27|13| |@ripaojiedian
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  tfo: false
-  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   grpc-opts:
@@ -46,14 +38,14 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '5,11,24,27|14|日本3|@ripaojiedian #1'
+  name: '5,11,24,27|14|日本|@ripaojiedian #1'
   network: tcp
   port: '38953'
   server: jpp1.pfdsddla.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 0ccaf60a-664e-38f3-8ebb-aa70d1de7d21
+  uuid: 2c610eac-882d-3944-a7c4-674c033f0073
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   grpc-opts:
@@ -73,14 +65,6 @@ proxies:
     headers:
       Host: ''
     path: ''
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '5,9,11,24,27|13|🇯🇵 日本特殊|@ripaojiedian #1'
-  password: amazonskr05
-  port: 443
-  server: 43.203.127.152
-  tfo: false
-  type: ss
 - client-fingerprint: chrome
   name: 5,9,24,27|13,14|日本4|@ripaojiedian
   network: tcp
@@ -200,7 +184,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '9,27|13|🇯🇵 日本2|@ripaojiedian #1'
+  name: 9|🇯🇵 14|日本2|@ripaojiedian
   port: 28984
   server: 45.159.50.143
   skip-cert-verify: false
@@ -211,14 +195,14 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '9,27|13|🇯🇵 日本3|@ripaojiedian #1'
+  name: 9,27|13| |@ripaojiedian
   port: 38953
   server: jpp1.pfdsddla.com
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 0ccaf60a-664e-38f3-8ebb-aa70d1de7d21
+  uuid: 2c610eac-882d-3944-a7c4-674c033f0073
 - name: 17|荷兰(yudou66.com 玉豆免费节点)
   network: ws
   port: 443
@@ -284,6 +268,13 @@ proxies:
   password: amazonskr05
   port: 443
   server: 43.207.232.228
+  type: ss
+- cipher: aes-256-cfb
+  name: 20,21,27|13|🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 3.113.31.223
+  tfo: false
   type: ss
 - alterId: 0
   cipher: auto
@@ -508,23 +499,33 @@ proxies:
   sni: dejs.stablize.top
   type: trojan
   udp: true
+- name: 27|13,14|日本2|@ripaojiedian
+  network: tcp
+  password: 13e7f6f8-4ec2-4060-a1b2-e78eba835ab2
+  port: 12187
+  server: xj.cokecloud.top
+  skip-cert-verify: false
+  sni: xj.cokecloud.top
+  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本03-1C
-  password: 2c0c15d3-deac-4a42-b893-0be9bd4276c2
-  port: 20006
+  name: 28|🇯🇵 日本04
+  password: 95acac8f-0cc3-468b-9579-93b1f6431b23
+  port: 20008
   server: gy.666666222.shop
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本02-1A
-  password: 0b0fd7be-a63e-4bc5-9bfe-2338c594b9e8
-  port: 20004
-  server: gy.666666222.shop
-  type: ss
+- auth: c5282c7a-6a9d-46e1-991a-bfbead7c0f27
+  name: 28|🇯🇵 日本-2
+  password: c5282c7a-6a9d-46e1-991a-bfbead7c0f27
+  port: 30001
+  server: oracle-amd-osaka1.lanmaoyun.icu
+  skip-cert-verify: true
+  sni: osaka.nodes.lanmaoyun.icu
+  type: hysteria2
   udp: true
-- auth: 4b10da63-7cd8-41ac-ad89-15428d88e79c
+- auth: c5282c7a-6a9d-46e1-991a-bfbead7c0f27
   name: 28|🇯🇵 日本-1
-  password: 4b10da63-7cd8-41ac-ad89-15428d88e79c
+  password: c5282c7a-6a9d-46e1-991a-bfbead7c0f27
   port: 30001
   server: oracle-amd-tokyo1.lanmaoyun.icu
   skip-cert-verify: true
@@ -532,28 +533,36 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本01-1C
-  password: 2c0c15d3-deac-4a42-b893-0be9bd4276c2
+  name: 28|🇯🇵 日本01
+  password: 95acac8f-0cc3-468b-9579-93b1f6431b23
   port: 20002
   server: gy.666666222.shop
   type: ss
   udp: true
-- auth: 4b10da63-7cd8-41ac-ad89-15428d88e79c
-  name: 28|🇯🇵 日本-2
-  password: 4b10da63-7cd8-41ac-ad89-15428d88e79c
-  port: 30001
-  server: oracle-amd-osaka1.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: osaka.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本04-1B
-  password: 642b501e-2328-41cb-8b4c-3f2edb757681
-  port: 20008
+  name: 28|🇯🇵 日本03
+  password: 95acac8f-0cc3-468b-9579-93b1f6431b23
+  port: 20006
   server: gy.666666222.shop
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 日本02
+  password: 95acac8f-0cc3-468b-9579-93b1f6431b23
+  port: 20004
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
+  network: tcp
+  port: '24445'
+  server: 140.83.63.38
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
@@ -566,13 +575,14 @@ proxies:
   uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
+  name: '36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17... #1'
   network: tcp
-  port: '24445'
-  server: 140.83.63.38
+  port: '48897'
+  server: 13.112.49.171
+  servername: ''
   tls: false
   type: vmess
-  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
+  uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇯🇵 JP-158.101.142....
@@ -587,16 +597,6 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17... #1'
-  network: tcp
-  port: '48897'
-  server: 13.112.49.171
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
 - cipher: chacha20-ietf-poly1305
   name: 40|JP_speednode_0013
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
