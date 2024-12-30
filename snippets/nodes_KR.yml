@@ -3,25 +3,84 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|8a6f7a4518214afdb2aa78d2ecede0...
+  name: '3,5|韩国 - 首尔特别市 - Oracle Corporatio... #1'
   network: ws
-  port: 23451
+  port: '23451'
   server: 132.226.229.16
   tls: false
   type: vmess
   udp: false
-  uuid: 64a13a91-df9d-4957-9a06-8923d5648541
+  uuid: 487dcdf2-82b7-4301-92c4-95a330175ade
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '5,9,11,24,27|13| |@ripaojiedian #1'
+  name: 5,9,11,24,27,40|CN_speednode_0018
   password: 09833a6f-4d46-426e-87fe-7793a5489f84
   port: 54008
   server: k-r01.loveroise.com
   tfo: false
   type: ss
-- name: '20,21|🇰🇷KR-144.24.88.133-6634 #1'
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: '5,9,11,27|13|🇰🇷 韩国2|@ripaojiedian #1'
+  password: qwerREWQ@@
+  port: 4231
+  server: 112.213.102.228
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: '5,9,11,27|13|🇰🇷 韩国3|@ripaojiedian #1'
+  password: qwerREWQ@@
+  port: 2105
+  server: 218.234.149.9
+  tfo: false
+  type: ss
+- name: 5|🇰🇷|韩国-IEPL 03
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 20014
+  server: iepl05.catcat-123.com
+  skip-cert-verify: false
+  sni: kr-01.oneok.link
+  type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: '5,9,11,27|13|🇰🇷 韩国特殊|@ripaojiedian #1'
+  password: amazonskr05
+  port: 443
+  server: 52.79.73.137
+  tfo: false
+  type: ss
+- name: 5|🇰🇷|韩国-IEPL 01
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 20014
+  server: iepl-00.catcat-123.com
+  skip-cert-verify: false
+  sni: kr-01.oneok.link
+  type: trojan
+- name: 5|🇰🇷|韩国-IEPL 02
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 20014
+  server: iepl-01.catcat-123.com
+  skip-cert-verify: false
+  sni: kr-01.oneok.link
+  type: trojan
+- cipher: aes-256-cfb
+  name: 19|🇰🇷KR-52.79.52.119-0845
+  password: amazonskr05
+  port: 443
+  server: 52.79.52.119
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|🇰🇷KR-43.200.1.13-0552
+  password: amazonskr05
+  port: 443
+  server: 43.200.1.13
+  type: ss
+- name: '20,21|🇰🇷KR-144.24.88.133-0490 #1'
   password: xjN4xcuPGg
   port: 45101
   server: a.522226.xyz
@@ -94,27 +153,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: '27|13|🇰🇷 韩国2|@ripaojiedian #1'
-  password: qwerREWQ@@
-  port: 4231
-  server: 112.213.102.228
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: '27|13|🇰🇷 韩国3|@ripaojiedian #1'
-  password: qwerREWQ@@
-  port: 2105
-  server: 218.234.149.9
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: '27|13|🇰🇷 韩国特殊|@ripaojiedian #1'
-  password: amazonskr05
-  port: 443
-  server: 52.79.73.137
-  tfo: false
-  type: ss
 - name: 28|🇰🇷 韩国-三网优化2-1H
   password: 1a7f8154-6080-4a2c-b72a-0d3f69796b6f
   port: 44732
@@ -125,14 +163,18 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇰🇷 KR-146.56.112.1...
-  network: tcp
-  port: '8888'
-  server: 146.56.112.110
-  servername: ''
-  tls: false
+  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.1...
+  network: ws
+  port: '30002'
+  server: 211.220.16.114
+  servername: obdii.cfd
+  tls: true
   type: vmess
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇰🇷 KR-175.203.204....
@@ -155,25 +197,11 @@ proxies:
   server: 132.226.229.16
   tls: false
   type: vmess
-  uuid: 523904ba-fcc1-407b-808c-335b47c16be1
+  uuid: 01f75e34-5063-4852-bc76-2f7635baf382
   ws-opts:
     headers:
       Host: seoul-1ddns.aboutanime.eu.org
     path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.1...
-  network: ws
-  port: '30002'
-  server: 211.220.16.114
-  servername: cc2.1808.site
-  tls: true
-  type: vmess
-  uuid: d3d8b781-f30d-4902-8eb0-58b1ca936bec
-  ws-opts:
-    headers:
-      Host: cc2.1808.site
-    path: /hgqqvws
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.24...
