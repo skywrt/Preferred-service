@@ -1,10 +1,45 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 5,16|🇺🇸_US_美国->_JP_
-  password: amazonskr05
-  port: 443
-  server: 54.245.207.144
-  type: ss
+- name: 5|🇯🇵|日本原生-中转 04
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 9425
+  server: cn-fs.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-03.oneok.link
+  type: trojan
+- name: 5|🇯🇵|日本-中转 01
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 9410
+  server: cn-shcu.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-02.oneok.link
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5,11|3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3 #1'
+  network: ws
+  port: 8080
+  server: 104.19.47.16
+  tls: false
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts: {}
+- name: 5|🇯🇵|日本-中转 02
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 9410
+  server: cn-bj.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-02.oneok.link
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5,11|2|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  network: ws
+  port: 16928
+  server: vip3.niuniupremium.xyz
+  tls: false
+  type: vmess
+  uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
+  ws-opts: {}
 - alterId: 0
   cipher: auto
   name: '5,11|3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11 #1'
@@ -15,20 +50,6 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- name: 5|🇺🇸|美国-中转 02
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 8310
-  server: cn-ah.catcat-123.com
-  skip-cert-verify: false
-  sni: us-02.oneok.link
-  type: trojan
-- name: 5|🇯🇵|日本-中转 01
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9410
-  server: cn-shcu.catcat-123.com
-  skip-cert-verify: false
-  sni: JP-02.oneok.link
-  type: trojan
 - name: 5|🇯🇵|日本-中转 Disney+优化 04
   password: 87109018-d550-4011-9ee6-3b0fdb5074cd
   port: 9415
@@ -36,114 +57,26 @@ proxies:
   skip-cert-verify: false
   sni: JP-03.oneok.link
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '5,11|2|🇺🇸_US_美国->🇮🇳_IN_印度 #2'
-  network: ws
-  port: 2052
-  server: 104.17.156.224
-  tls: false
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      Host: in4.wish.ml
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '5,11|2|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1'
-  network: ws
-  port: 2052
-  server: cfcdn2.sanfencdn9.com
-  tls: false
-  type: vmess
-  uuid: ccd92698-4499-472d-a06f-f90e7e89ba4f
-  ws-opts:
-    headers:
-      Host: rpmlybgzsg2.yofnhkfc.xyz
-    path: /video/3YKfzGw4
-- name: 5|🇺🇸|美国-中转 03
+- cipher: aes-256-cfb
+  name: '5,11|1|_FR_->_RU_ #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 163.172.64.22
+  type: ss
+- name: 5|🇹🇼|台湾-中转 02
   password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 8310
+  port: 9310
   server: cn-bj.catcat-123.com
   skip-cert-verify: false
-  sni: us-02.oneok.link
+  sni: hinet-01.oneok.link
   type: trojan
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 5,9,16,19,24,26,27|0|-https://t.me/MrXbin-20
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 194.5.215.59
-  tfo: false
-  type: ss
-  udp: true
-- name: 5|🇯🇵|日本原生-中转 04
+- name: 5|🇺🇸|美国-进阶中转 02
   password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9425
-  server: cn-fs.catcat-123.com
-  skip-cert-verify: false
-  sni: JP-03.oneok.link
-  type: trojan
-- name: 5|🇰🇷|韩国-中转 02
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9450
-  server: cn-ah.catcat-123.com
-  skip-cert-verify: false
-  sni: kr-01.oneok.link
-  type: trojan
-- name: 5|🇯🇵|日本原生-中转 03
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9425
-  server: cn-ah.catcat-123.com
-  skip-cert-verify: false
-  sni: JP-03.oneok.link
-  type: trojan
-- name: 5|🇯🇵|日本原生-中转 01
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9420
+  port: 8320
   server: cn-shcu.catcat-123.com
   skip-cert-verify: false
-  sni: JP-03.oneok.link
+  sni: us-01.oneok.link
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '5,11|2|🇺🇸_US_美国->🇮🇳_IN_印度 #1 #1'
-  network: ws
-  port: 2052
-  server: 172.67.164.78
-  tls: false
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      Host: in3.wish.ml
-    path: /
-- name: 5|🇭🇰|香港-中转 02
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9130
-  server: cn-shcm.catcat-123.com
-  skip-cert-verify: false
-  sni: hkt-02.oneok.link
-  type: trojan
-- name: 5|🇭🇰|香港-中转 03
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9135
-  server: cn-cqcm.catcat-123.com
-  skip-cert-verify: false
-  sni: hkbn-02.oneok.link
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '5,11|1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1 #1'
-  network: ws
-  port: 2052
-  server: 104.19.21.240
-  sni: cdn2.freegradely.xyz
-  tls: false
-  type: vmess
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-  ws-opts: {}
 - alterId: 0
   cipher: auto
   name: '5,11|1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰 #1'
@@ -154,30 +87,6 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '5,11|3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8 #1'
-  network: ws
-  port: 2086
-  server: 104.19.47.65
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts: {}
-- name: 5|🇸🇬|新加坡-中转 03
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9220
-  server: cn-shcm.catcat-123.com
-  skip-cert-verify: false
-  sni: SG-05.oneok.link
-  type: trojan
-- name: 5|🇭🇰|香港-中转 04
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9150
-  server: cn-shcm.catcat-123.com
-  skip-cert-verify: false
-  sni: cmhk-01.oneok.link
-  type: trojan
 - alterId: 64
   cipher: auto
   name: '5,11|3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4 #1'
@@ -187,127 +96,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 5,36|🔒 VM-TCP-NA 🇺🇸 US-107.148.207....
-  network: tcp
-  port: '48712'
-  server: 107.148.207.249
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 5,9,16,24,27|0|-https://t.me/MrXbin-42
-  password: amazonskr05
-  port: 443
-  server: 34.213.200.250
-  tfo: false
-  type: ss
-- name: 5|🇯🇵|日本-中转 Disney+优化 03
+- name: 5|🇯🇵|日本原生-中转 03
   password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9415
+  port: 9425
   server: cn-ah.catcat-123.com
   skip-cert-verify: false
   sni: JP-03.oneok.link
   type: trojan
-- name: 5,16|_GB_国
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 51.24.25.64
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '5,11|1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2 #1'
-  network: ws
-  port: 8080
-  server: 104.19.47.126
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-  ws-opts: {}
-- name: 5|🇭🇰|香港-中转 05
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9140
-  server: cn-fs.catcat-123.com
-  skip-cert-verify: false
-  sni: hkt-01.oneok.link
-  type: trojan
-- name: 5|🇺🇸|美国-进阶中转 02
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 8320
-  server: cn-shcu.catcat-123.com
-  skip-cert-verify: false
-  sni: us-01.oneok.link
-  type: trojan
-- name: 5|🇯🇵|日本原生-中转 02
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9420
-  server: cn-bj.catcat-123.com
-  skip-cert-verify: false
-  sni: JP-03.oneok.link
-  type: trojan
-- name: 5|🇸🇬|新加坡-中转 04
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9220
-  server: cn-ahcm.catcat-123.com
-  skip-cert-verify: false
-  sni: SG-05.oneok.link
-  type: trojan
-- name: 5|🇸🇬|新加坡-中转 01
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9195
-  server: cn-shcm.catcat-123.com
-  skip-cert-verify: false
-  sni: SG-00.oneok.link
-  type: trojan
-- name: 5|🇰🇷|韩国-中转 01
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9450
-  server: cn-shcu.catcat-123.com
-  skip-cert-verify: false
-  sni: kr-01.oneok.link
-  type: trojan
-- name: 5|🇸🇬|新加坡-中转 02
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9195
-  server: cn-fs.catcat-123.com
-  skip-cert-verify: false
-  sni: SG-00.oneok.link
-  type: trojan
-- name: 5|🇺🇸|美国-进阶中转 01
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 8320
-  server: cn-bj.catcat-123.com
-  skip-cert-verify: false
-  sni: us-01.oneok.link
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '5,11|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5 #1'
-  network: ws
-  port: 2086
-  server: 104.19.46.39
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '5,11|1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1 #1'
-  network: ws
-  port: 2052
-  server: cfcdn2.sanfencdn9.com
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a
-  ws-opts: {}
 - alterId: 0
   cipher: auto
   name: '5,11|1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #... #2'
@@ -326,27 +121,13 @@ proxies:
   skip-cert-verify: false
   sni: hinet-01.oneok.link
   type: trojan
-- name: 5|🇭🇰|香港-中转 06
+- name: 5|🇭🇰|香港-中转 03
   password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9130
-  server: cn-ahcm.catcat-123.com
+  port: 9135
+  server: cn-cqcm.catcat-123.com
   skip-cert-verify: false
-  sni: hkt-02.oneok.link
+  sni: hkbn-02.oneok.link
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '5,8,11|3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2 #1'
-  network: ws
-  port: 2082
-  server: 172.67.130.140
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-headers:
-    Host: s1c.v2.v001sss.xyz
-  ws-opts: {}
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: '5,11|3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2 #1'
@@ -357,15 +138,30 @@ proxies:
   type: vmess
   uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
   ws-opts: {}
+- name: 5|🇹🇼|台湾-中转 03
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 9310
+  server: cn-fs.catcat-123.com
+  skip-cert-verify: false
+  sni: hinet-01.oneok.link
+  type: trojan
+- name: 5|🇭🇰|香港-中转 02
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 9130
+  server: cn-shcm.catcat-123.com
+  skip-cert-verify: false
+  sni: hkt-02.oneok.link
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,11|3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3 #1'
+  name: '5,11|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7 #1'
   network: ws
-  port: 2052
-  server: p3.v2raybrasil.cloud
+  port: 2086
+  server: 104.19.45.47
+  sni: ip14.freegradely.xyz
   tls: false
   type: vmess
-  uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
 - alterId: 0
   cipher: auto
@@ -380,56 +176,26 @@ proxies:
     headers:
       Host: s1c.v2.v001sss.xyz
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '5,11|1|_US_->_ES_ #1'
-  password: 2062a5ca-a34e-47bf-9810-db91185f07fc
-  port: 59019
-  server: fuck5.mmmmmmmmmm.cfd
-  type: ss
-- name: 5|🇺🇸|美国-中转 01
+- name: 5|🇰🇷|韩国-中转 02
   password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 8300
-  server: cn-shcu.catcat-123.com
+  port: 9450
+  server: cn-ah.catcat-123.com
   skip-cert-verify: false
-  sni: us-01.oneok.link
+  sni: kr-01.oneok.link
+  type: trojan
+- name: 5,16|_GB_国
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 51.24.25.64
+  sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,11|3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3 #1'
-  network: ws
-  port: 16928
-  server: 120.232.240.56
-  tls: false
-  type: vmess
-  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
-  ws-opts: {}
-- name: 5|🇯🇵|日本-中转 02
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9410
-  server: cn-bj.catcat-123.com
-  skip-cert-verify: false
-  sni: JP-02.oneok.link
-  type: trojan
-- cipher: aes-256-cfb
-  name: '5,11|1|_FR_->_RU_ #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 163.172.64.22
-  type: ss
-- name: 5|🇺🇸|美国-中转 04
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 8310
-  server: cn-fs.catcat-123.com
-  skip-cert-verify: false
-  sni: us-02.oneok.link
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '5,11|1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #... #3'
+  name: '5,11|3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8 #1'
   network: ws
   port: 2086
-  server: 104.18.57.111
-  sni: ip11.freegradely.xyz
+  server: 104.19.47.65
   tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
@@ -441,13 +207,38 @@ proxies:
   skip-cert-verify: false
   sni: kr-01.oneok.link
   type: trojan
-- name: 5|🇹🇼|台湾-中转 03
+- name: 5|🇺🇸|美国-中转 03
   password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9310
-  server: cn-fs.catcat-123.com
+  port: 8310
+  server: cn-bj.catcat-123.com
   skip-cert-verify: false
-  sni: hinet-01.oneok.link
+  sni: us-02.oneok.link
   type: trojan
+- name: 5|🇭🇰|香港-中转 04
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 9150
+  server: cn-shcm.catcat-123.com
+  skip-cert-verify: false
+  sni: cmhk-01.oneok.link
+  type: trojan
+- name: 5|🇺🇸|美国-中转 02
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 8310
+  server: cn-ah.catcat-123.com
+  skip-cert-verify: false
+  sni: us-02.oneok.link
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5,11|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5 #1'
+  network: ws
+  port: 2086
+  server: 104.19.46.39
+  sni: ''
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
 - alterId: 0
   cipher: auto
   name: '5,11|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4 #1'
@@ -466,30 +257,124 @@ proxies:
   skip-cert-verify: false
   sni: JP-03.oneok.link
   type: trojan
+- name: 5|🇸🇬|新加坡-中转 03
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 9220
+  server: cn-shcm.catcat-123.com
+  skip-cert-verify: false
+  sni: SG-05.oneok.link
+  type: trojan
+- name: 5|🇸🇬|新加坡-中转 04
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 9220
+  server: cn-ahcm.catcat-123.com
+  skip-cert-verify: false
+  sni: SG-05.oneok.link
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,11|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7 #1'
+  name: '5,11|1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1 #1'
   network: ws
-  port: 2086
-  server: 104.19.45.47
-  sni: ip14.freegradely.xyz
+  port: 2052
+  server: 104.19.21.240
+  sni: cdn2.freegradely.xyz
   tls: false
   type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
   ws-opts: {}
-- name: 5|🇹🇼|台湾-中转 02
+- alterId: 0
+  cipher: auto
+  name: '5,11|3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3 #1'
+  network: ws
+  port: 16928
+  server: 120.232.240.56
+  tls: false
+  type: vmess
+  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
+  ws-opts: {}
+- name: 5|🇭🇰|香港-中转 06
   password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9310
+  port: 9130
+  server: cn-ahcm.catcat-123.com
+  skip-cert-verify: false
+  sni: hkt-02.oneok.link
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5,11|2|🇺🇸_US_美国->🇮🇳_IN_印度 #2'
+  network: ws
+  port: 2052
+  server: 104.17.156.224
+  tls: false
+  type: vmess
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  ws-opts:
+    headers:
+      Host: in4.wish.ml
+    path: /
+- cipher: aes-256-cfb
+  name: 5,16|🇺🇸_US_美国->_JP_
+  password: amazonskr05
+  port: 443
+  server: 54.245.207.144
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '5,11|1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1 #1'
+  network: ws
+  port: 2052
+  server: cfcdn2.sanfencdn9.com
+  sni: ''
+  tls: false
+  type: vmess
+  uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '5,11|2|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1'
+  network: ws
+  port: 2052
+  server: cfcdn2.sanfencdn9.com
+  tls: false
+  type: vmess
+  uuid: ccd92698-4499-472d-a06f-f90e7e89ba4f
+  ws-opts:
+    headers:
+      Host: rpmlybgzsg2.yofnhkfc.xyz
+    path: /video/3YKfzGw4
+- name: 5|🇯🇵|日本原生-中转 02
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 9420
   server: cn-bj.catcat-123.com
   skip-cert-verify: false
-  sni: hinet-01.oneok.link
-  type: trojan
-- name: 5|🇯🇵|日本-中转 Disney+优化 01
-  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
-  port: 9415
-  server: cn-shcu.catcat-123.com
-  skip-cert-verify: false
   sni: JP-03.oneok.link
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5,8,11|3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2 #1'
+  network: ws
+  port: 2082
+  server: 172.67.130.140
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-headers:
+    Host: s1c.v2.v001sss.xyz
+  ws-opts: {}
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: '5,11|1|_US_->_ES_ #1'
+  password: 2062a5ca-a34e-47bf-9810-db91185f07fc
+  port: 59019
+  server: fuck5.mmmmmmmmmm.cfd
+  type: ss
+- name: 5|🇸🇬|新加坡-中转 01
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 9195
+  server: cn-shcm.catcat-123.com
+  skip-cert-verify: false
+  sni: SG-00.oneok.link
   type: trojan
 - alterId: 0
   cipher: auto
@@ -502,26 +387,124 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
+- name: 5|🇸🇬|新加坡-中转 02
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 9195
+  server: cn-fs.catcat-123.com
+  skip-cert-verify: false
+  sni: SG-00.oneok.link
+  type: trojan
+- name: 5|🇯🇵|日本-中转 Disney+优化 03
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 9415
+  server: cn-ah.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-03.oneok.link
+  type: trojan
+- name: 5|🇺🇸|美国-进阶中转 01
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 8320
+  server: cn-bj.catcat-123.com
+  skip-cert-verify: false
+  sni: us-01.oneok.link
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,11|2|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  name: '5,11|3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3 #1'
   network: ws
-  port: 16928
-  server: vip3.niuniupremium.xyz
+  port: 2052
+  server: p3.v2raybrasil.cloud
   tls: false
   type: vmess
-  uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
+  uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
   ws-opts: {}
+- name: 5|🇭🇰|香港-中转 05
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 9140
+  server: cn-fs.catcat-123.com
+  skip-cert-verify: false
+  sni: hkt-01.oneok.link
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,11|3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3 #1'
+  name: '5,11|2|🇺🇸_US_美国->🇮🇳_IN_印度 #1 #1'
+  network: ws
+  port: 2052
+  server: 172.67.164.78
+  tls: false
+  type: vmess
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  ws-opts:
+    headers:
+      Host: in3.wish.ml
+    path: /
+- name: 5|🇺🇸|美国-中转 01
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 8300
+  server: cn-shcu.catcat-123.com
+  skip-cert-verify: false
+  sni: us-01.oneok.link
+  type: trojan
+- name: 5|🇯🇵|日本原生-中转 01
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 9420
+  server: cn-shcu.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-03.oneok.link
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5,11|1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2 #1'
   network: ws
   port: 8080
-  server: 104.19.47.16
+  server: 104.19.47.126
+  sni: ''
   tls: false
   type: vmess
   uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
   ws-opts: {}
+- name: 5|🇺🇸|美国-中转 04
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 8310
+  server: cn-fs.catcat-123.com
+  skip-cert-verify: false
+  sni: us-02.oneok.link
+  type: trojan
+- name: 5|🇯🇵|日本-中转 Disney+优化 01
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 9415
+  server: cn-shcu.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-03.oneok.link
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5,11|1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #... #3'
+  network: ws
+  port: 2086
+  server: 104.18.57.111
+  sni: ip11.freegradely.xyz
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- alterId: 64
+  cipher: auto
+  name: 5,36|🔒 VM-TCP-NA 🇺🇸 US-107.148.207....
+  network: tcp
+  port: '48712'
+  server: 107.148.207.249
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 5|🇰🇷|韩国-中转 01
+  password: 87109018-d550-4011-9ee6-3b0fdb5074cd
+  port: 9450
+  server: cn-shcu.catcat-123.com
+  skip-cert-verify: false
+  sni: kr-01.oneok.link
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 8|🇺🇸_US_美国->🇩🇪_DE_德国_1_0@0

@@ -3,7 +3,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3,5,24|🇳🇱 荷兰 V2CROSS.COM
+  name: 3,24|🇳🇱 荷兰 V2CROSS.COM
   network: ws
   port: '23451'
   server: 132.226.229.16
@@ -15,12 +15,12 @@ proxies:
     headers:
       Host: ''
     path: /
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,9,11,24,40|CN_speednode_0018
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54008
-  server: k-r01.loveroise.com
+  name: '5,9,11,27|13|🇰🇷 韩国|@ripaojiedian #1'
+  password: qwerREWQ@@
+  port: 3771
+  server: p225.panda004.net
   tfo: false
   type: ss
 - name: 5|🇰🇷|韩国-IEPL 03
@@ -32,10 +32,10 @@ proxies:
   type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '5,9,11,24,27|13|🇰🇷 韩国2|@ripaojiedian #1'
-  password: qwerREWQ@@
-  port: 4231
-  server: 112.213.102.228
+  name: 5,9,11,27|0,13| |@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 13.215.250.79
   tfo: false
   type: ss
 - name: 5|🇰🇷|韩国-IEPL 01
@@ -45,6 +45,14 @@ proxies:
   skip-cert-verify: false
   sni: kr-01.oneok.link
   type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: '5,9,11,24,27|13|🇰🇷 韩国2|@ripaojiedian #1'
+  password: qwerREWQ@@
+  port: 4231
+  server: 112.213.102.228
+  tfo: false
+  type: ss
 - name: 5|🇰🇷|韩国-IEPL 02
   password: 87109018-d550-4011-9ee6-3b0fdb5074cd
   port: 20014
@@ -57,6 +65,17 @@ proxies:
   password: amazonskr05
   port: 443
   server: 43.200.1.13
+  type: ss
+- name: '20,21|🇰🇷KR-144.24.88.133-0559 #1'
+  password: xjN4xcuPGg
+  port: 45101
+  server: a.522226.xyz
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 24,40|CN_speednode_0018
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  port: 54008
+  server: k-r01.loveroise.com
   type: ss
 - name: 26|V2-韩国04∣K17线路∣1.5x
   password: 6307d00e-56e0-4d0d-afe9-254155638bdf
@@ -126,13 +145,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: '27|13|🇰🇷 韩国|@ripaojiedian #1'
-  password: qwerREWQ@@
-  port: 3771
-  server: p225.panda004.net
-  tfo: false
-  type: ss
 - name: 28|🇰🇷 韩国-三网优化2-2P
   password: 282283ba-d031-4e69-b389-a334b5eacaf5
   port: 44732
@@ -143,14 +155,18 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇰🇷 KR-146.56.112.1...
-  network: tcp
-  port: '8888'
-  server: 146.56.112.110
-  servername: ''
-  tls: false
+  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.1...
+  network: ws
+  port: '30002'
+  server: 211.220.16.114
+  servername: obdii.cfd
+  tls: true
   type: vmess
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇰🇷 KR-132.226.229.1...
@@ -159,39 +175,11 @@ proxies:
   server: 132.226.229.16
   tls: false
   type: vmess
-  uuid: 64a13a91-df9d-4957-9a06-8923d5648541
+  uuid: b7f05d6b-0abb-4676-83f4-6b693b85bf09
   ws-opts:
     headers:
       Host: seoul-1ddns.aboutanime.eu.org
     path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-175.203.204....
-  network: ws
-  port: 50035
-  server: 175.203.204.222
-  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-    path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.1...
-  network: ws
-  port: '30002'
-  server: 211.220.16.114
-  servername: cc2.1808.site
-  tls: true
-  type: vmess
-  uuid: d3d8b781-f30d-4902-8eb0-58b1ca936bec
-  ws-opts:
-    headers:
-      Host: cc2.1808.site
-    path: /hgqqvws
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.24...
@@ -206,3 +194,17 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /wada12222
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-175.203.204....
+  network: ws
+  port: 50035
+  server: 175.203.204.222
+  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+    path: /obdii.cfd:443/linkws
