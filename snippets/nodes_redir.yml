@@ -29,9 +29,9 @@ proxies:
   ws-opts: {}
 - alterId: 64
   cipher: auto
-  name: '5,12,13|🇨🇳_CN_中国->🇸🇬_SG_新加坡 #2'
+  name: '5,12|🇨🇳_CN_中国->🇸🇬_SG_新加坡 #1'
   network: tcp
-  port: 40434
+  port: '40434'
   server: 183.236.51.23
   tls: false
   type: vmess
@@ -94,7 +94,7 @@ proxies:
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
 - cipher: aes-256-cfb
-  name: 5,13,19|🇺🇸US-54.200.223.152-6324
+  name: 5,19|🇺🇸US-54.200.223.152-6324
   password: amazonskr05
   port: 443
   server: 54.200.223.152
@@ -177,7 +177,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '5,13,24|🇺🇸 _美国 #35'
+  name: '5,24|🇺🇸 _美国 #35'
   network: tcp
   port: '22324'
   server: 38.99.82.128
@@ -186,11 +186,11 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: '5,12,13|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯 #2'
+  name: '5,12|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯 #1'
   network: ws
   port: 25230
   server: cm1.awslcn.info
-  servername: cm1.awslcn.info
+  servername: ''
   tls: false
   type: vmess
   uuid: 243eab52-9ac1-405c-887c-eb112c0985b8
@@ -289,6 +289,12 @@ proxies:
     headers:
       Host: tv.filmnet.ir
     path: /
+- cipher: aes-128-gcm
+  name: 5,12,24,27|0|-https://t.me/MrXbin-18
+  password: shadowsocks
+  port: 443
+  server: 149.34.244.82
+  type: ss
 - alterId: 0
   cipher: auto
   name: '5,11|1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰 #1'
@@ -323,7 +329,7 @@ proxies:
   type: vmess
   uuid: d6b6d982-d52f-465a-b988-85670b23f64a
   ws-opts: {}
-- name: '5,12,13|🇺🇦_UA_乌克兰->🇺🇸_US_美国 #2'
+- name: '5,12|🇺🇦_UA_乌克兰->🇺🇸_US_美国 #1'
   network: tcp
   password: Julius
   port: 443
@@ -1109,19 +1115,55 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '12,24|🇺🇸 美国 Sprint网络 #1'
+- alterId: 0
+  name: 12,24,37|US
   password: telegram-id-privatevpns
   port: 22222
   server: 63.176.126.186
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
-- name: '12|🇺🇸_US_美国->🇷🇺_RU_俄罗斯 #1'
+  udp: true
+- name: 12,27|0|-https://t.me/MrXbin-75
   password: Julius
   port: 443
   server: 104.219.41.229
   skip-cert-verify: true
   sni: miami.juliusnet.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 13|🇺🇸_US_美国->🇫🇷_FR_法国
+  network: ws
+  port: 2095
+  server: frsadubiaa.76898102.xyz
+  tls: false
+  type: vmess
+  uuid: 78fd41e5-346a-3bf4-b942-be0fad711979
+  ws-opts:
+    headers:
+      Host: frsadubias.76898102.xyz
+    path: /funsdfrh
+- alterId: 0
+  cipher: auto
+  name: 13|🇨🇳_CN_中国->🇮🇳_IN_印度
+  network: ws
+  port: 16626
+  server: yes.cnmjcn.net
+  tls: false
+  type: vmess
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  ws-opts:
+    headers:
+      Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+    path: /
+- name: 13|🇨🇳_CN_中国->🇬🇮_GI_直布罗陀
+  network: tcp
+  password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
+  port: 17728
+  server: gbs.pptv-tv.store
+  skip-cert-verify: true
   type: trojan
 - alterId: 0
   cipher: auto
