@@ -16,7 +16,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '5,9,11,27|13| |@ripaojiedian #1'
+  name: '5,9,11,24,27|13| |@ripaojiedian #1'
   password: f5136746-de79-46d0-b3be-d15d9992fa07
   port: 18109
   server: zx1.1010520.xyz
@@ -165,7 +165,7 @@ proxies:
   type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '5,9,11,24,27|13|🇯🇵 日本特殊|@ripaojiedian #1'
+  name: 5,9,11,24,27|13|🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 52.194.212.235
@@ -279,7 +279,7 @@ proxies:
   uuid: ea41ec11-1a57-40c5-aa97-4f6ba65aef9c
 - alterId: 0
   cipher: auto
-  name: '5,24|🇯🇵 _日本 #1'
+  name: 5|日本 东京Amazon数据中心
   network: ws
   port: '443'
   server: 54.199.222.232
@@ -371,7 +371,7 @@ proxies:
   uuid: 2278146c-8fb0-3683-8300-342238f8a9d0
 - alterId: 0
   cipher: auto
-  name: '10,24|🇸🇪 _瑞典 #1'
+  name: 10,24|🇸🇪 _瑞典
   network: ws
   port: '443'
   server: 141.147.154.214
@@ -386,10 +386,10 @@ proxies:
       Host: nl.zhuk.us.kg
     path: /ylks
 - cipher: aes-256-cfb
-  name: 19|🇯🇵JP-13.114.67.166-1257
+  name: 19|🇯🇵JP-54.178.191.236-6234
   password: amazonskr05
   port: 443
-  server: 13.114.67.166
+  server: 54.178.191.236
   type: ss
 - alterId: 0
   cipher: auto
@@ -406,46 +406,6 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- name: 24|🇯🇵 13,14|日本|@ripaojiedian
-  password: '!!str 3723507166611775488'
-  port: 443
-  server: fleet-weevil.boa152.lol
-  skip-cert-verify: false
-  sni: fleet-weevil.boa152.lol
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 24|🇦🇺 _澳大利亚
-  network: ws
-  port: '443'
-  server: 43.204.208.173
-  tls: true
-  type: vmess
-  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
-  ws-opts:
-    headers:
-      Host: nl.zhuk.us.kg
-    path: /ylks
-- name: '24|🇯🇵 日本 东京都Amazon数据中心 #1'
-  password: '!!str 3723507166611775488'
-  port: 443
-  server: 18.180.140.208
-  skip-cert-verify: false
-  sni: fleet-weevil.boa152.lol
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 24|🇯🇵 _日本
-  network: ws
-  port: '443'
-  server: 54.248.121.219
-  tls: true
-  type: vmess
-  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
-  ws-opts:
-    headers:
-      Host: nl.zhuk.us.kg
-    path: /ylks
 - name: 26|每日连接前点更新订阅
   password: 6307d00e-56e0-4d0d-afe9-254155638bdf
   port: 40037
@@ -663,21 +623,30 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
+  network: tcp
+  port: '48897'
+  server: 13.112.49.171
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
   network: tcp
   port: '24445'
   server: 140.83.63.38
-  servername: ''
   tls: false
   type: vmess
   uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
 - alterId: 1
   cipher: auto
-  name: 36|🔒 VM-TCP-TLS 🇯🇵 JP-3.112.132.1...
+  name: 36|🔒 VM-TCP-TLS 🇯🇵 JP-13.231.182....
   network: tcp
-  port: '28783'
-  server: 3.112.132.117
-  servername: 1oj86-g01.jp06-7c5a-vm0.entry.fr0307a.art
+  port: '21581'
+  server: 13.231.182.197
+  servername: ie9as-g01.jp01-0986-vm0.entry.fr0307a.art
   tls: true
   type: vmess
   uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
@@ -697,36 +666,35 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 1
   cipher: auto
-  name: 36|🔒 VM-TCP-TLS 🇯🇵 JP-13.231.182....
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-176.32.69.41...
   network: tcp
-  port: '21586'
-  server: 13.231.182.197
-  servername: zzsn4-g06.jp01-0986-vm0.entry.fr0307a.art
-  tls: true
+  port: '46482'
+  server: 176.32.69.41
+  tls: false
   type: vmess
-  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
 - alterId: 1
   cipher: auto
-  name: '36|🔒 VM-TCP-TLS 🇯🇵 JP-13.231.182.... #1'
+  name: 36|🔒 VM-TCP-TLS 🇯🇵 JP-13.231.134....
   network: tcp
-  port: '21581'
-  server: 13.231.182.197
-  servername: vzqlt-g01.jp01-0986-vm0.entry.fr0307a.art
+  port: '28783'
+  server: 13.231.134.72
+  servername: 1oj86-g01.jp06-7c5a-vm0.entry.fr0307a.art
   tls: true
   type: vmess
   uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
 - alterId: 1
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.115.229.2...
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-3.112.195.11...
   network: tcp
   port: '444'
-  server: 13.115.229.234
+  server: 3.112.195.110
   tls: false
   type: vmess
   uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
+  name: '36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17... #1'
   network: tcp
   port: '48898'
   server: 13.112.49.171
@@ -734,13 +702,13 @@ proxies:
   tls: false
   type: vmess
   uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17... #1'
+  name: '36|🔒 VM-TCP-TLS 🇯🇵 JP-13.231.182.... #1'
   network: tcp
-  port: '48897'
-  server: 13.112.49.171
-  servername: ''
-  tls: false
+  port: '21586'
+  server: 13.231.182.197
+  servername: zzsn4-g06.jp01-0986-vm0.entry.fr0307a.art
+  tls: true
   type: vmess
-  uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
+  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
