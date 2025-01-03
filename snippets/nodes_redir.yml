@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '5,13|🇺🇸_US_美国->🇩🇪_DE_德国 #13'
+  name: 5|🇺🇸_US_美国->🇩🇪_DE_德国
   network: ws
   port: 2087
   server: 104.21.69.44
@@ -33,9 +33,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 5|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
+  name: '5,13,24|_中国 #20'
   network: ws
-  port: 25230
+  port: '25230'
   server: cm1.awslcn.info
   servername: cm1.awslcn.info
   tls: false
@@ -69,7 +69,7 @@ proxies:
   ws-opts: {}
 - alterId: 64
   cipher: auto
-  name: '5,13|🇨🇳_CN_中国->🇩🇪_DE_德国 #3'
+  name: 5|🇨🇳_CN_中国->🇩🇪_DE_德国
   network: tcp
   port: 52707
   server: 183.237.20.148
@@ -162,7 +162,7 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- name: '5,13|🇨🇳_CN_中国->🇬🇮_GI_直布罗陀 #1'
+- name: 5|🇨🇳_CN_中国->🇬🇮_GI_直布罗陀
   network: tcp
   password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
   port: 17728
@@ -229,11 +229,12 @@ proxies:
   type: vmess
   uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
   ws-opts: {}
-- name: 5|🇰🇷_KR_韩国->🇫🇷_FR_法国
+- name: '5,16,24|🇰🇷 _韩国 #1'
   network: tcp
   password: e8105dfd24414268b6c7652c63731097
   port: 443
   server: 132.145.94.80
+  skip-cert-verify: false
   sni: yournextcareerstep.online
   type: trojan
 - alterId: 0
@@ -322,7 +323,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '5,13|🇨🇳_CN_中国->🇮🇳_IN_印度 #3'
+  name: '5|🇨🇳_CN_中国->🇮🇳_IN_印度 #1'
   network: ws
   port: 16626
   server: yes.cnmjcn.net
@@ -1106,92 +1107,46 @@ proxies:
     headers:
       host: mizban.arzonhost.ir
     path: /
-- name: '12,24|🇷🇺 俄罗斯 V2CROSS.COM #2'
+- name: '12,13,24|🇫🇷 _法国 #1'
+  network: tcp
   password: '!!str 3723507166611775488'
   port: 443
   server: 5.189.203.38
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: sacred-guppy.boa152.lol
   type: trojan
-- name: '12,24|🇷🇺 俄罗斯 V2CROSS.COM #7'
+- name: 12,24|🇫🇷 _法国
   password: '!!str 3723507166611775488'
   port: 443
   server: 5.189.203.50
   skip-cert-verify: false
   sni: devoted-starfish.boa152.lol
   type: trojan
-- name: 16|_FR_->_DE_国
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.181.123.5
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 64
-  cipher: auto
-  name: 16|_CN_国->🇬_SG_新加坡
-  network: tcp
-  port: 40434
-  server: 183.236.51.23
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 16|🇸_US_美国->🇳_CN_中国_1
-  network: tcp
-  port: 45017
-  server: 142.0.134.243
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  cipher: auto
-  name: 16|🇳_CN_中国->🇺_RU_俄罗斯
-  network: ws
-  port: 25230
-  server: cm1.awslcn.info
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: 243eab52-9ac1-405c-887c-eb112c0985b8
-  ws-opts:
-    headers:
-      host: cm1.awslcn.info
-    path: /
-- name: 16|🇺🇸_US_美国->🇪_DE_德国
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 63.176.126.186
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  name: 16,24,37|未知39
-  password: Julius
+  name: 13,37|未知139
+  network: tcp
+  password: '!!str 3723507166611775488'
   port: 443
-  server: 104.219.41.229
+  server: 195.231.76.174
   skip-cert-verify: true
-  sni: miami.juliusnet.com
+  sni: rich-sturgeon.treefrog761.one
   tls: true
   type: trojan
   udp: true
-- name: 16,24|🇺🇦 乌克兰 V2CROSS.COM
+- name: 13|🇮🇹_IT_意大利->🇧🇬_BG_保加利亚_2
   network: tcp
-  password: Julius
+  password: '!!str 3723507166611775488'
   port: 443
-  server: 193.106.248.196
-  skip-cert-verify: false
-  sni: miami.juliusnet.com
+  server: rich-sturgeon.treefrog761.one
+  skip-cert-verify: true
+  sni: rich-sturgeon.treefrog761.one
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 16|🇸_US_美国->🇩🇪_DE_德国_1
-  network: ws
-  port: 8013
-  server: 156.229.162.206
-  type: vmess
-  uuid: 1a474b28-0885-44c9-8eee-61e4e5ced5db
-  ws-opts:
-    headers:
-      host: tms.dingtalk.com
-    path: /wada12222
+- cipher: aes-256-cfb
+  name: 16|🇺🇸_US_美国->🇺_RU_俄罗斯
+  password: amazonskr05
+  port: 443
+  server: 34.222.136.128
+  type: ss
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|中国香港/中国台湾(CN)China/Shenzhen/小东的程序未能精准识别(可能是中转节点)_3

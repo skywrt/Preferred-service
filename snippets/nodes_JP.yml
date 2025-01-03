@@ -35,7 +35,7 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,9,11,27|13|🇵 日本2|@ripaojiedian
+  name: 5,9,11,24,27|13|🇵 日本2|@ripaojiedian
   password: WHSVXNV06K183IPW
   port: 18004
   server: 156.231.104.14
@@ -168,7 +168,7 @@ proxies:
     path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,9,11,27|13|🇵 日本特殊|@ripaojiedian
+  name: 5,9,11,24,27|13|🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 13.250.27.88
@@ -374,10 +374,10 @@ proxies:
       Host: tr.koxok.us.kg
     path: /?ed=2560
 - cipher: aes-256-cfb
-  name: 19|🇯🇵JP-54.178.191.236-6387
+  name: 19|🇯🇵JP-3.112.236.3-6224
   password: amazonskr05
   port: 443
-  server: 54.178.191.236
+  server: 3.112.236.3
   type: ss
 - name: '20,21|🇯🇵JP-74.226.136.204-0741 #1'
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
@@ -460,6 +460,13 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
+- name: '24|🇯🇵 14|日本|@ripaojiedian #1'
+  password: ouo
+  port: 443
+  server: 18.183.158.211
+  skip-cert-verify: false
+  sni: tr.koxok.us.kg
+  type: trojan
 - name: 26|每日连接前点更新订阅
   password: 6307d00e-56e0-4d0d-afe9-254155638bdf
   port: 40037
@@ -685,15 +692,25 @@ proxies:
   tls: false
   type: vmess
   uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
-- alterId: 1
+- alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.231.210.1...
+  name: '36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17... #1'
   network: tcp
-  port: '46482'
-  server: 13.231.210.196
+  port: '48897'
+  server: 13.112.49.171
+  servername: ''
   tls: false
   type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+  uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
+  network: tcp
+  port: '24445'
+  server: 140.83.63.38
+  tls: false
+  type: vmess
+  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇯🇵 JP-158.101.142....
@@ -708,23 +725,3 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
-  network: tcp
-  port: '24445'
-  server: 140.83.63.38
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17... #1'
-  network: tcp
-  port: '48897'
-  server: 13.112.49.171
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
