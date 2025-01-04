@@ -15,7 +15,7 @@ proxies:
     path: /debian
 - alterId: 64
   cipher: auto
-  name: '5,24|_中国 #7'
+  name: 5,24|🇨🇳 广东省广州市 移动
   network: tcp
   port: '53002'
   server: 183.236.51.23
@@ -646,6 +646,12 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
+- cipher: chacha20-ietf-poly1305
+  name: 16|🇨🇳_CN_中国
+  password: f5136746-de79-46d0-b3be-d15d9992fa07
+  port: 22349
+  server: zx1.1010520.xyz
+  type: ss
 - alterId: 0
   cipher: auto
   name: 17|CN_ youtube@资源分享师_17
@@ -754,49 +760,62 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 24|🇨🇳 广东省广州市 移动
-  network: tcp
-  port: '40565'
-  server: 120.232.153.63
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '24|_中国 #1'
-  network: tcp
-  port: '27512'
-  server: 103.149.183.178
-  tls: false
-  type: vmess
-  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
-- alterId: 64
-  cipher: auto
-  name: '24|_中国 #11'
-  network: tcp
-  port: '40972'
-  server: 120.232.153.63
-  tls: false
-  type: vmess
-  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
-- alterId: 64
-  cipher: auto
-  name: '24|_中国 #12'
+  name: '24|🇨🇳 广东省广州市 移动 #2'
   network: tcp
   port: '50052'
   server: 183.236.48.158
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: '24|_中国 #14'
+  name: 24|_中国
+  network: ws
+  port: '443'
+  server: 8.222.165.104
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-opts:
+    headers:
+      Host: nl.zhuk.us.kg
+    path: /ylks
+- alterId: 0
+  cipher: auto
+  name: '24|_中国 #1'
+  network: ws
+  port: '443'
+  server: 47.57.14.118
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-opts:
+    headers:
+      Host: nl.zhuk.us.kg
+    path: /ylks
+- alterId: 0
+  cipher: auto
+  name: '24|_中国 #2'
+  network: ws
+  port: '443'
+  server: 47.57.245.232
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-opts:
+    headers:
+      Host: nl.zhuk.us.kg
+    path: /ylks
+- alterId: 0
+  cipher: auto
+  name: 24,36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
   network: tcp
-  port: '46602'
-  server: 183.236.51.23
+  port: '27512'
+  server: 103.149.183.178
+  servername: ''
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
 - cipher: chacha20-ietf-poly1305
   name: 26|[111]🇨🇳CN-120.240.88.37-56760
   password: 0e91a29a-989d-4934-a1fb-7b653319397f
@@ -941,12 +960,13 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
+  name: 36,37|未知64
   network: tcp
-  port: '50004'
-  server: 112.132.212.19
+  port: 50002
+  server: 47.104.186.133
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
@@ -961,27 +981,14 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 36,37|未知64
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
   network: tcp
-  port: 50002
-  server: 47.104.186.133
+  port: '50004'
+  server: 112.132.212.19
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: 40|CN_speednode_0001
-  password: f5136746-de79-46d0-b3be-d15d9992fa07
-  port: 32481
-  server: zx2.1010520.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 40|CN_speednode_0002
-  password: f5136746-de79-46d0-b3be-d15d9992fa07
-  port: 26415
-  server: zx3.1010520.xyz
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 40|CN_speednode_0004
   password: f5136746-de79-46d0-b3be-d15d9992fa07
