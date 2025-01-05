@@ -97,12 +97,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '5,16,24|🇫🇷 _法国 #9'
+- name: 5|🇫🇷_FR_法国->🇺🇸_US_美国
   network: tcp
   password: '!!str 3723507166611775488'
   port: 443
   server: 5.189.203.38
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: sacred-guppy.boa152.lol
   type: trojan
 - name: 5|🇮🇹_IT_意大利->🇧🇬_BG_保加利亚_2
@@ -126,9 +126,9 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 5|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
+  name: '5,24|_中国 #5'
   network: ws
-  port: 25230
+  port: '25230'
   server: cm1.awslcn.info
   servername: cm1.awslcn.info
   tls: false
@@ -252,6 +252,12 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
+- cipher: aes-256-cfb
+  name: 5,19|🇺🇸US-54.200.223.152-6127
+  password: amazonskr05
+  port: 443
+  server: 54.200.223.152
+  type: ss
 - alterId: 0
   cipher: auto
   name: '5,11|2|🇺🇸_US_美国->🇮🇳_IN_印度 #2'
@@ -1140,48 +1146,50 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
 - cipher: aes-256-cfb
-  name: 12,24,40|US_speednode_0062
+  name: 12,40|US_speednode_0062
   password: qwerREWQ@@
   port: 4231
   server: 108.181.1.245
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 16|🇳_CN_中国->🇷_BR_
-  password: f5136746-de79-46d0-b3be-d15d9992fa07
-  port: 32481
-  server: zx2.1010520.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 16|🇨🇳_CN_中国->_RO_罗
-  password: f5136746-de79-46d0-b3be-d15d9992fa07
-  port: 26415
-  server: zx3.1010520.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 16|🇨🇳_CN_中国->🇪_DE_德国
-  password: f5136746-de79-46d0-b3be-d15d9992fa07
-  port: 18779
-  server: zx3.1010520.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 16|🇨🇳_CN_中国->🇩🇪_DE_德国_1
-  password: f5136746-de79-46d0-b3be-d15d9992fa07
-  port: 18779
-  server: zx2.1010520.xyz
-  type: ss
-- name: 16|🇷_FR_法国->🇺🇸_US_美国_1
-  password: '!!str 3723507166611775488'
+- cipher: aes-256-cfb
+  name: 16,19|🇺🇸US-54.245.207.144-0689
+  password: amazonskr05
   port: 443
-  server: 5.189.203.50
-  sni: devoted-starfish.boa152.lol
-  type: trojan
+  server: 54.245.207.144
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 16|🇨🇳_CN_中国->🇺_LU_
+  name: 16|_CN_国->🇺_LU_
   password: f5136746-de79-46d0-b3be-d15d9992fa07
   port: 27564
+  server: zx1.1010520.xyz
+  type: ss
+- name: 16,24,27,40|US_speednode_0065
+  password: '!!str 3723507166611775488'
+  port: 443
+  server: 3.135.39.68
+  skip-cert-verify: false
+  sni: native-tetra.boa152.lol
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 16|🇨🇳_CN_中国->🇺_RU_俄罗斯
+  password: f5136746-de79-46d0-b3be-d15d9992fa07
+  port: 56315
+  server: zx3.1010520.xyz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 16|🇨🇳_CN_中国->🇬_BG_亚
+  password: f5136746-de79-46d0-b3be-d15d9992fa07
+  port: 30571
   server: zx2.1010520.xyz
   type: ss
+- name: 16|🇷_FR_国->🇺_UA_
+  network: tcp
+  password: '!!str 3723507166611775488'
+  port: 443
+  server: sacred-guppy.boa152.lol
+  sni: sacred-guppy.boa152.lol
+  type: trojan
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|中国香港/中国台湾(CN)China/Shenzhen/小东的程序未能精准识别(可能是中转节点)_3
