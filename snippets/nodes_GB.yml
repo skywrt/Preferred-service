@@ -1,4 +1,17 @@
 proxies:
+- alpn:
+  - http/1.1
+  alterId: 0
+  name: 5,37|未知88
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.44.100.147
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
   name: 5|>🇬🇧 GB|Hs|0104|TG@FProxies|
@@ -14,7 +27,26 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '5|>🇬🇧 GB|Ms|1115|TG@FProxies| #2'
+  name: '5|>🇬🇧 GB|Ls|1115|TG@FProxies| #2'
+  network: ws
+  port: '2086'
+  server: cdn2.bpcdn.cc
+  tls: false
+  type: vmess
+  uuid: 13d29042-ab82-4195-9cd4-2bafc518e201
+  ws-opts:
+    headers:
+      Host: cdn2.bpcdn.cc
+    path: /
+- name: 5|>🇬🇧 GB|Ms|0104|TG@FProxies|
+  password: '!!str 3723507166611775488'
+  port: 443
+  server: boss-hound.boa152.lol
+  skip-cert-verify: true
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 5|>🇬🇧 GB|Ms|1115|TG@FProxies|
   network: ws
   port: '80'
   server: 154.81.220.120
@@ -25,6 +57,38 @@ proxies:
     headers:
       Host: ''
     path: /aa
+- alterId: 0
+  cipher: auto
+  name: '5|>🇬🇧 GB|Ls|1115|TG@FProxies| #1'
+  network: ws
+  port: '443'
+  server: b.jishuzhai.cloudns.biz
+  tls: true
+  type: vmess
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  ws-opts:
+    headers:
+      Host: jiedian.jishuge.eu.org
+    path: /hms19.best-tizi.top:443/linkws
+- alterId: 0
+  cipher: auto
+  name: '5,24|🇬🇧 _英国 #1'
+  network: ws
+  port: '443'
+  server: 51.20.99.157
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-opts:
+    headers:
+      Host: nl.zhuk.us.kg
+    path: /ylks
+- name: '5|>🇬🇧 GB|Ns|1115|TG@FProxies| #2'
+  password: telegram-id-directvpn
+  port: 22222
+  server: 18.171.18.192
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|>🇬🇧 GB|Hs|1115|TG@FProxies|
@@ -38,40 +102,6 @@ proxies:
     headers:
       Host: 16.724064.xyz
     path: /zlppvws
-- name: 5|>🇬🇧 GB|Ms|0104|TG@FProxies|
-  password: '!!str 3723507166611775488'
-  port: 443
-  server: boss-hound.boa152.lol
-  skip-cert-verify: true
-  type: trojan
-- name: '5|>🇬🇧 GB|Ns|1115|TG@FProxies| #2'
-  password: telegram-id-directvpn
-  port: 22222
-  server: 18.171.18.192
-  skip-cert-verify: true
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 5|>🇬🇧 GB|Ls|1115|TG@FProxies|
-  network: ws
-  port: '443'
-  server: b.jishuzhai.cloudns.biz
-  tls: true
-  type: vmess
-  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
-  ws-opts:
-    headers:
-      Host: jiedian.jishuge.eu.org
-    path: /hms19.best-tizi.top:443/linkws
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 5,19,20,21,37|未知109 20.7MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - name: 8|🇬🇧GB-3.9.164.189-194_1@194
   password: E6r93XCOsyM9
   port: 16733
@@ -106,55 +136,25 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
-- cipher: aes-128-gcm
-  name: 19,20,21,40|GB_speednode_0044
+- name: 12|🇬🇧_GB_英国
+  password: '!!str 3723507166611775488'
+  port: 443
+  server: leading-shrew.boa152.lol
+  skip-cert-verify: false
+  sni: leading-shrew.boa152.lol
+  type: trojan
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知109 20.7MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.197
-  type: ss
-- cipher: aes-128-gcm
-  name: 19,20,21,40|GB_speednode_0043
-  password: shadowsocks
-  port: 443
-  server: uk-dc1.yangon.club
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇬🇧GB-18.135.33.236-0894
-  password: mps3FwmDjLrWaOVg
-  port: 443
-  server: series-a2.samanehha.co
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇬🇧GB-149.7.16.188-5897 #1'
-  network: ws
-  port: 443
-  server: 149.7.16.188
-  servername: ''
+  server: 212.102.53.193
+  skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇬🇧GB-149.7.16.174-5898 #1'
-  network: ws
-  port: 443
-  server: 149.7.16.174
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
+  type: ss
 - alterId: 1
   cipher: auto
-  name: '20,21|🇬🇧GB-172.99.190.50-5906 #1'
+  name: '20,21|🇬🇧GB-172.99.190.50-5757 #1'
   network: ws
   port: 443
   server: 172.99.190.50
@@ -166,9 +166,37 @@ proxies:
     headers:
       Host: ''
     path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇬🇧GB-149.7.16.174-5749 #1'
+  network: ws
+  port: 443
+  server: 149.7.16.174
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇬🇧GB-149.7.16.188-5748 #1'
+  network: ws
+  port: 443
+  server: 149.7.16.188
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
 - alterId: 1
   cipher: auto
-  name: '20,21|🇬🇧GB-149.7.16.194-5893 #1'
+  name: '20,21|🇬🇧GB-149.7.16.194-5744 #1'
   network: ws
   port: 443
   server: 149.7.16.194
@@ -182,7 +210,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇬🇧GB-149.7.16.73-5907 #1'
+  name: '20,21|🇬🇧GB-149.7.16.73-5758 #1'
   network: ws
   port: 443
   server: 149.7.16.73
@@ -194,24 +222,38 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- name: '20,21|🇬🇧GB-3.10.106.168-6161 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.10.106.168
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '20,21|🇬🇧GB-13.43.18.60-1339 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.43.18.60
-  sni: trojan.burgerip.co.uk
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '24|🇬🇧 _英国 #2'
+  network: ws
+  port: '443'
+  server: 144.24.90.107
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-opts:
+    headers:
+      Host: nl.zhuk.us.kg
+    path: /ylks
 - alterId: 0
   cipher: auto
   name: '24|🇬🇧 _英国 #3'
   network: ws
   port: '443'
-  server: 51.20.99.157
+  server: 158.180.231.216
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-opts:
+    headers:
+      Host: nl.zhuk.us.kg
+    path: /ylks
+- alterId: 0
+  cipher: auto
+  name: '24|🇬🇧 _英国 #4'
+  network: ws
+  port: '443'
+  server: 79.76.98.46
   tls: true
   type: vmess
   uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
@@ -269,3 +311,30 @@ proxies:
     headers:
       Host: www.12268626.xyz
     path: /path/240811062813
+- alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - speedtest.net
+    method: GET
+    path:
+    - /
+  name: 40|GB_speednode_0041
+  network: http
+  port: 2082
+  server: 144.126.237.85
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f1d64f69-ab35-44aa-83e7-34a15813f9b5
+- alterId: 0
+  cipher: auto
+  name: 40|GB_speednode_0042
+  network: ws
+  port: 23169
+  server: 5.39.254.196
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
