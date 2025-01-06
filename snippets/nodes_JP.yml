@@ -132,7 +132,8 @@ proxies:
   server: 45.146.232.173
   skip-cert-verify: true
   type: trojan
-- name: '5,27|13,14||@ripaojiedian #1'
+- client-fingerprint: chrome
+  name: '5,9,27|13,14||@ripaojiedian #1'
   network: tcp
   password: 4687b1d7-dbc4-49f4-95d7-74b5048696de
   port: 28721
@@ -151,7 +152,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 5,11,27|13,14|日本2|@ripaojiedian
+  name: 5,9,11,24,27|13,14|日本2|@ripaojiedian
   network: ws
   port: '21001'
   server: csct.xxxxxx.one
@@ -188,7 +189,7 @@ proxies:
   uuid: ea41ec11-1a57-40c5-aa97-4f6ba65aef9c
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,11,20,21,27|13| 日本|@ripaojiedian
+  name: 5,9,11,20,21,27|13| 日本|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 122.248.193.242
@@ -383,6 +384,12 @@ proxies:
   skip-cert-verify: false
   sni: de01.trojanyyds.xyz
   type: trojan
+- cipher: aes-256-cfb
+  name: 19|🇯🇵JP-52.194.212.235-6021
+  password: amazonskr05
+  port: 443
+  server: 52.194.212.235
+  type: ss
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|日本(JP)Japan/Tokyo_38
@@ -398,19 +405,27 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- alterId: 0
-  cipher: auto
-  name: 24|🇯🇵 日本东京 Oracle云计算数据中心
-  network: ws
-  port: '443'
-  server: oci.cbu.net
-  tls: true
-  type: vmess
-  uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-  ws-opts:
-    headers:
-      Host: oci.cbu.net
-    path: /ccs
+- name: 24|🇯🇵 _日本
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: sg01.trojanyyds.xyz
+  skip-cert-verify: true
+  sni: sg01.trojanyyds.xyz
+  type: trojan
+- name: '24|🇯🇵 _日本 #1'
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: us01.trojanyyds.xyz
+  skip-cert-verify: true
+  sni: us01.trojanyyds.xyz
+  type: trojan
+- name: '24|🇯🇵 _日本 #3'
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: in01.trojanyyds.xyz
+  skip-cert-verify: true
+  sni: in01.trojanyyds.xyz
+  type: trojan
 - name: 26|每日连接前点更新订阅
   password: 6307d00e-56e0-4d0d-afe9-254155638bdf
   port: 40037
@@ -621,6 +636,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
+  network: tcp
+  port: '24445'
+  server: 140.83.63.38
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
   network: tcp
   port: '48897'
@@ -631,16 +656,6 @@ proxies:
   uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
-  network: tcp
-  port: '1069'
-  server: 152.69.197.60
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-- alterId: 0
-  cipher: auto
   name: '36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17... #1'
   network: tcp
   port: '48898'
@@ -649,13 +664,3 @@ proxies:
   tls: false
   type: vmess
   uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
-  network: tcp
-  port: '24445'
-  server: 140.83.63.38
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
