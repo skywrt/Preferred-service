@@ -88,7 +88,7 @@ proxies:
     path: /hms02.fxiaomi.sbs/link
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,9,27|0|-https://t.me/MrXbin-5
+  name: '5,9|0|--5 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.15.15.82
@@ -332,13 +332,26 @@ proxies:
     headers:
       Host: beyonddsz.cfd
     path: /linkws
-- name: 24|🇫🇷 法国 巴黎Amazon数据中心
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 20,21,37|未知50
+  password: G!yBwPWH3Vao
+  port: 807
+  server: 51.178.87.37
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 24,37|FR
+  network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 15.188.226.71
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 24|🇫🇷 _法国
@@ -428,17 +441,3 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇫🇷 FR-194.9.172.65...
-  network: ws
-  port: 443
-  server: 194.9.172.65
-  servername: beyonddbc.sbs
-  tls: true
-  type: vmess
-  uuid: 8d90c129-4156-4d6c-9115-24df25f26a02
-  ws-opts:
-    headers:
-      Host: beyonddbc.sbs
-    path: /linkws
