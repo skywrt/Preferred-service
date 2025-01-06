@@ -1,17 +1,5 @@
 proxies:
 - client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|a8222108128c4050923dd0eea09e77...
-  network: ws
-  port: 14040
-  server: 185.208.77.113
-  tls: false
-  type: vless
-  udp: false
-  uuid: a2691bdd-7989-4e7e-9c44-302e360c021f
-  ws-opts:
-    path: /
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
@@ -67,7 +55,7 @@ proxies:
   cipher: auto
   name: 5,20,21,36|🔒 VM-WS-NA 🇬🇧 GB-5.39.254.196:...
   network: ws
-  port: 23169
+  port: '23169'
   server: 5.39.254.196
   servername: ''
   tls: false
@@ -249,23 +237,6 @@ proxies:
   skip-cert-verify: true
   sni: boss-hound.boa152.lol
   type: trojan
-- alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - speedtest.net
-    method: GET
-    path:
-    - /
-  name: 10,40|GB_speednode_0041
-  network: http
-  port: 2082
-  server: 144.126.237.85
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f1d64f69-ab35-44aa-83e7-34a15813f9b5
 - name: 16|_GB_
   password: '!!str 3723507166611775488'
   port: 443
@@ -466,3 +437,20 @@ proxies:
     headers:
       Host: www.12268626.xyz
     path: /path/240811062813
+- alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - speedtest.net
+    method: GET
+    path:
+    - /
+  name: 40|GB_speednode_0041
+  network: http
+  port: 2082
+  server: 144.126.237.85
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f1d64f69-ab35-44aa-83e7-34a15813f9b5
