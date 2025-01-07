@@ -1,74 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|1ee50e6c0f1d45c88674cf459b66b0...
-  network: ws
-  port: 14040
-  server: 185.208.77.113
-  tls: false
-  type: vless
-  udp: false
-  uuid: a2691bdd-7989-4e7e-9c44-302e360c021f
-  ws-opts:
-    path: /
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|a4af6a2e66e4479e881c3d12b7daad...
-  network: ws
-  port: 22222
-  server: 13.42.67.231
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
-- client-fingerprint: random
-  fingerprint: ''
-  grpc-opts:
-    grpc-service-name: Free👨‍🚀
-  name: 3|19d00c01acd343b590e06c003aa4a1...
-  network: grpc
-  port: 443
-  server: 104.27.91.88
-  servername: wrcgbsu.qwapples.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 18758238-2625-2730-3689-f157ae275ad4
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|0b7af7f81ea34618a1f2d904ec5317...
-  network: ws
-  port: 22222
-  server: 18.168.136.208
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|6a7a8633def749f19d343a2932ce59...
-  network: ws
-  port: 22222
-  server: 3.10.186.47
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
 - alterId: 0
   cipher: auto
   name: 5|o英国222
@@ -200,6 +130,21 @@ proxies:
   server: 18.171.18.192
   skip-cert-verify: true
   type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 5,19,36|🔒 VM-WS-NA 🇬🇧 GB-5.39.254.196:...
+  network: ws
+  port: '23169'
+  server: 5.39.254.196
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - name: '5,38|🇬🇧_GB_英国_6 #1'
   network: ws
   port: 2053
@@ -354,24 +299,6 @@ proxies:
     headers:
       Host: lo.kpcloud.eu.org
     path: '%2Fblue'
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知74 6.2MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知134 4.8MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.79
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 1
   cipher: auto
   name: '20,21|🇬🇧GB-172.99.190.50-5791 #1'
@@ -463,13 +390,16 @@ proxies:
   skip-cert-verify: true
   sni: ssjj.esslh.filegear-sg.me
   type: trojan
-- name: '24|🇬🇧 _英国 #2'
+- alterId: 0
+  name: 24,37|GB国
   password: SSorg
   port: 38145
   server: 89.213.182.210
   skip-cert-verify: true
   sni: ssjj.esslh.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇬🇧 _英国 #3'
   password: SSorg
   port: 8443
@@ -534,3 +464,13 @@ proxies:
     headers:
       Host: www.12268626.xyz
     path: /path/240811062813
+- cipher: aes-128-cfb
+  name: 40|GB_speednode_0045
+  obfs: http_post
+  obfs-param: ''
+  password: $$Turb0VPN$$
+  port: 443
+  protocol: auth_aes128_md5
+  protocol-param: ''
+  server: ssca.irundns.net
+  type: ssr
