@@ -1,10 +1,10 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 5|o瑞士111
+  name: 5|o瑞士222
   network: ws
   port: '2082'
-  server: cf1.yunduanjc.top
+  server: cf2.yunduanjc.top
   tls: false
   type: vmess
   uuid: 592cd3d1-b236-4b16-bc9f-3dcbfcd6de30
@@ -14,10 +14,10 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 5|o瑞士222
+  name: 5|o瑞士111
   network: ws
   port: '2082'
-  server: cf2.yunduanjc.top
+  server: cf1.yunduanjc.top
   tls: false
   type: vmess
   uuid: 592cd3d1-b236-4b16-bc9f-3dcbfcd6de30
@@ -61,13 +61,39 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇭 CH-23.166.88.18...
-  network: tcp
-  port: '22324'
-  server: 23.166.88.183
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 40|CH_speednode_0002
+  network: ws
+  port: 443
+  server: 138.124.53.161
+  servername: ad4.transitkala.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 0ea2f1b5-48c5-40c2-8496-5fdf856caafe
+  ws-opts:
+    headers:
+      Host: ad4.transitkala.com
+    path: /
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 40|CH_speednode_0003
+  network: ws
+  port: 443
+  server: 138.124.54.108
+  servername: ad4.transitkala.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 0ea2f1b5-48c5-40c2-8496-5fdf856caafe
+  ws-opts:
+    headers:
+      Host: ad4.transitkala.com
+    path: /
