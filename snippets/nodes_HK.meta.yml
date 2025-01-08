@@ -52,7 +52,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 5,36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
+  name: '5,36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
   network: tcp
   port: '54675'
   server: 103.149.183.178
@@ -199,15 +199,18 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- client-fingerprint: chrome
-  name: 5,9,24,27|13,14|香港7|@ripaojiedian
+- alterId: 0
+  client-fingerprint: chrome
+  name: 5,9,24,27,37|🇰HK香港2
   network: tcp
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
   server: hk03.trojanyyds.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: hk03.trojanyyds.xyz
+  tls: true
   type: trojan
+  udp: true
 - alterId: 64
   cipher: auto
   name: '5,11,24,27|14|香港4|@ripaojiedian #1'
@@ -294,15 +297,6 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 5,24,37|未知104 1.1MB/s
-  password: AYbFL39bn4EfDXfDbueamN
-  port: 33155
-  server: 62.60.233.72
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - name: '5|>🇭🇰 HK|Hs|1115|TG@FProxies| #7'
   password: 165ebad5-2f9b-307d-b7e4-2b2ee84a4530
   port: 19210
@@ -1092,16 +1086,17 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-18.167.120.1...
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-154.83.88.10...
   network: tcp
-  port: '15074'
-  server: 18.167.120.158
+  port: '8888'
+  server: 154.83.88.106
+  servername: ''
   tls: false
   type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+  uuid: 7c97b618-741d-49f9-82c2-169a197d28c9
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
   network: tcp
   port: '27512'
   server: 103.149.183.178
@@ -1111,14 +1106,33 @@ proxies:
   uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-154.83.88.10...
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-18.167.120.1...
   network: tcp
-  port: '8888'
-  server: 154.83.88.106
-  servername: ''
+  port: '15074'
+  server: 18.167.120.158
   tls: false
   type: vmess
-  uuid: 7c97b618-741d-49f9-82c2-169a197d28c9
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+- alterId: 0
+  name: '37|HK #1'
+  network: tcp
+  password: a380943e-872a-41a2-96a7-dc078234a040
+  port: 40770
+  server: 18.167.167.250
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK2
+  password: bd12f79e-3209-4970-83cd-5e1f3526ff51
+  port: 43683
+  server: 91.103.122.32
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - name: 40|HK_speednode_0047
   network: ws
   port: 443
