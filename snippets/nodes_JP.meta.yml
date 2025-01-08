@@ -360,12 +360,6 @@ proxies:
   tls: false
   type: vmess
   uuid: e7973c73-8132-371c-86a9-85817d72fb4d
-- cipher: chacha20-ietf
-  name: 5,19|🇯🇵JP-107.148.6.121-6385
-  password: asd123456
-  port: 8388
-  server: 107.148.6.121
-  type: ss
 - alterId: 0
   cipher: auto
   name: '5|>🇯🇵 JP|Ns|1115|TG@FProxies| #12'
@@ -551,16 +545,22 @@ proxies:
       Host: lp.ylks.us.kg
     path: '%2F%3Fed%3D2560'
 - cipher: aes-256-cfb
-  name: 19|🇯🇵JP-54.238.219.226-6393
+  name: 19|🇯🇵JP-54.178.84.59-6415
   password: amazonskr05
   port: 443
-  server: 54.238.219.226
+  server: 54.178.84.59
   type: ss
-- name: '20,21,24|🇺🇸 _美国 #4'
+- cipher: aes-256-cfb
+  name: 19|🇯🇵JP-52.69.160.222-6412
+  password: amazonskr05
+  port: 443
+  server: 52.69.160.222
+  type: ss
+- name: '20,21,24|🇯🇵 _日本 #4'
   password: 5586eb05-1e5c-4b27-a276-86311547b95e
   port: 443
   server: waphk.mjt000.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: waphk.mjt000.com
   type: trojan
 - alterId: 0
@@ -578,40 +578,50 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- alterId: 0
-  cipher: auto
-  name: 24|日期：01-07
-  network: ws
-  port: '25240'
-  server: cm1.awslcn.info
-  tls: false
-  type: vmess
-  uuid: 243eab52-9ac1-405c-887c-eb112c0985b8
-  ws-opts:
-    headers:
-      Host: cm1.awslcn.info
-    path: /
-- name: 24|🇯🇵 _日本
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: us01.trojanyyds.xyz
+- name: 24|🇯🇵 日本 V2CROSS.COM
+  password: 4aa9ee7a-ffee-4ca4-a588-f5fa9e979c38
+  port: 20230
+  server: jp008.421421.xyz
   skip-cert-verify: false
-  sni: us01.trojanyyds.xyz
+  type: trojan
+- name: 24|日期：01-08
+  password: SSorg
+  port: 2083
+  server: 103.116.7.133
+  skip-cert-verify: true
+  sni: ssjj.esslh.filegear-sg.me
+  type: trojan
+- name: 24|🇯🇵 _日本
+  password: SSorg
+  port: 443
+  server: 103.116.7.189
+  skip-cert-verify: true
+  sni: ssjj.esslh.filegear-sg.me
   type: trojan
 - name: '24|🇯🇵 _日本 #1'
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  password: SSorg
   port: 443
-  server: in01.trojanyyds.xyz
-  skip-cert-verify: false
-  sni: in01.trojanyyds.xyz
+  server: 103.116.7.235
+  skip-cert-verify: true
+  sni: ssjj.esslh.filegear-sg.me
   type: trojan
-- name: '24|🇯🇵 _日本 #3'
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+- name: '24|🇯🇵 _日本 #2'
+  password: SSorg
   port: 443
-  server: tw02.trojanyyds.xyz
-  skip-cert-verify: false
-  sni: tw02.trojanyyds.xyz
+  server: 103.116.7.248
+  skip-cert-verify: true
+  sni: ssjj.esslh.filegear-sg.me
   type: trojan
+- alterId: 0
+  name: 24,37|US16
+  password: SSorg
+  port: 2083
+  server: 103.116.7.67
+  skip-cert-verify: true
+  sni: ssjj.esslh.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
 - name: 26|每日连接前点更新订阅
   password: 6307d00e-56e0-4d0d-afe9-254155638bdf
   port: 40037
@@ -822,15 +832,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
-  network: tcp
-  port: '24445'
-  server: 140.83.63.38
-  tls: false
-  type: vmess
-  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
   network: tcp
   port: '48897'
@@ -841,6 +842,16 @@ proxies:
   uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
+  network: tcp
+  port: '24445'
+  server: 140.83.63.38
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
+- alterId: 0
+  cipher: auto
   name: '36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17... #1'
   network: tcp
   port: '48898'
@@ -849,16 +860,6 @@ proxies:
   tls: false
   type: vmess
   uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
-  network: tcp
-  port: '1069'
-  server: 152.69.197.60
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
 - name: 40|JP_speednode_0057
   network: ws
   port: 443
