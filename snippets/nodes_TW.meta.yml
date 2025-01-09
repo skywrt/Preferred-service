@@ -13,7 +13,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,11,27|14|台湾2|@ripaojiedian #1'
+  name: '5,11,24,27|14|台湾2|@ripaojiedian #1'
   network: tcp
   port: '47436'
   server: 103.224.80.116
@@ -66,7 +66,8 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 5,24,27|13,14||@ripaojiedian
+- client-fingerprint: chrome
+  name: 5,9,24,27|13,14||@ripaojiedian
   network: tcp
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
@@ -109,6 +110,75 @@ proxies:
   server: 45.146.232.171
   skip-cert-verify: true
   type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 9,27|13| 台湾2|@ripaojiedian
+  port: 47436
+  server: 103.224.80.116
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 37069024-80fb-43ef-9ef2-b37a010a48e8
+- client-fingerprint: chrome
+  name: 9|15|TW_speednode_0104
+  network: ws
+  port: 81
+  server: 210.61.97.241
+  servername: ssvv.esslh.filegear-sg.me
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: c797aa8a-c03d-48da-9ad4-c9774b14bed2
+  ws-opts:
+    headers:
+      Host: ssvv.esslh.filegear-sg.me
+    path: /?ed=2560security=tls
+- client-fingerprint: chrome
+  name: 9|15|TW_speednode_0105
+  network: ws
+  port: 81
+  server: 210.61.97.241
+  servername: ssvv.esslh.filegear-sg.me
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: c797aa8a-c03d-48da-9ad4-c9774b14bed2
+  ws-opts:
+    headers:
+      Host: ssvv.esslh.filegear-sg.me
+    path: /security=tls
+- client-fingerprint: chrome
+  name: 9|15|TW_speednode_0106
+  network: ws
+  port: 443
+  server: 103.137.63.3
+  servername: ssvv.esslh.filegear-sg.me
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: c797aa8a-c03d-48da-9ad4-c9774b14bed2
+  ws-opts:
+    headers:
+      Host: ssvv.esslh.filegear-sg.me
+    path: /?ed=2560security=tls
+- client-fingerprint: chrome
+  name: 9,27,40|TW_speednode_0107
+  network: ws
+  password: SSorg
+  port: 443
+  server: 103.137.63.3
+  skip-cert-verify: false
+  sni: ssjj.esslh.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ssjj.esslh.filegear-sg.me
+    path: /
 - name: 26|台湾Taiwan 26 @nodpai
   password: 24822a1f-d142-3d26-9cff-d6095701255c
   port: 4245
@@ -152,28 +222,6 @@ proxies:
   ws-headers:
     Host: www.baidu.com
   ws-path: /pfzkm599xxckddt3
-- alterId: 0
-  cipher: auto
-  name: 27|13| 台湾2|@ripaojiedian
-  port: 47436
-  server: 103.224.80.116
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 37069024-80fb-43ef-9ef2-b37a010a48e8
-- name: 27,40|TW_speednode_0107
-  network: ws
-  password: SSorg
-  port: 443
-  server: 103.137.63.3
-  skip-cert-verify: false
-  sni: ssjj.esslh.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ssjj.esslh.filegear-sg.me
-    path: /
 - client-fingerprint: ios
   flow: xtls-rprx-vision
   name: 28|台灣11-直連-随缘节点-1A
