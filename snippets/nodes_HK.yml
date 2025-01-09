@@ -52,7 +52,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '5,36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
+  name: 5,36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
   network: tcp
   port: '54675'
   server: 103.149.183.178
@@ -1172,22 +1172,13 @@ proxies:
   uuid: 72500617-6a15-480e-9ac6-9fd9f8d817b7
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
+  name: 36,37|HK3
   network: tcp
-  port: '27512'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-154.83.88.10...
-  network: tcp
-  port: '8888'
+  port: 8888
   server: 154.83.88.106
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 7c97b618-741d-49f9-82c2-169a197d28c9
 - alterId: 0
@@ -1200,13 +1191,44 @@ proxies:
   type: vmess
   uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
 - alterId: 0
-  name: 37|HK
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
+  network: tcp
+  port: '27512'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
+- alterId: 1
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-183.179.210.8...
   network: ws
-  password: SSorg
-  port: 443
-  server: 154.211.8.90
+  port: '60234'
+  server: 183.179.210.84
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c4d65354-5321-3036-a611-6c42e88b7251
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK
+  password: bd12f79e-3209-4970-83cd-5e1f3526ff51
+  port: 43684
+  server: 91.103.122.32
   skip-cert-verify: true
-  sni: ssjj.esslh.filegear-sg.me
   tls: true
-  type: trojan
-  udp: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK2
+  password: 89b90001-4206-4871-a99d-1744d48f215b
+  port: 4001
+  server: 103.17.99.54
+  skip-cert-verify: true
+  tls: true
+  type: ss
