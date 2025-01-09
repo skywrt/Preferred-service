@@ -252,7 +252,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '5,12,13,24|_中国 #5'
+  name: '5,13,24|_中国 #5'
   network: ws
   port: '25230'
   server: cm1.awslcn.info
@@ -1068,14 +1068,14 @@ proxies:
       host: mizban.arzonhost.ir
     path: /
 - cipher: aes-256-cfb
-  name: '12,16|🇺🇸_US_美国_1 #2'
+  name: '12,13,16|🇺🇸_US_美国_2 #2'
   password: amazonskr05
   port: 443
-  server: 35.161.59.194
+  server: 54.200.223.152
   type: ss
 - alterId: 0
-  cipher: auto
-  name: 12,13,36|🔒 VM-TCP-NA 🇮🇷 IR-92.242.220.2...
+  cipher: chacha20-poly1305
+  name: 12,13,24,36|🔒 VM-TCP-NA 🇮🇷 IR-92.242.220.2...
   network: tcp
   port: '37885'
   server: 92.242.220.22
@@ -1083,15 +1083,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 8dee19ab-50ce-4d06-be42-5e53c8989ccc
-- alpn:
-  - http/1.1
-  name: '12|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.38.171.109
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 13|🇬🇧_GB_英国->🇷🇺_RU_俄罗斯
@@ -1111,6 +1102,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: rc4-md5
+  name: 13,16,19,20,21,26|[97]🇬🇧GB-146.70.61.18-0363
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.61.18
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 13,16|🇷_IR_->🇷_TR_
   password: 21586aab-3a37-4f55-b8b7-5ae69572d403
