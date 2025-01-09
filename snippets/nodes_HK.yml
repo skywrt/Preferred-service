@@ -1172,17 +1172,6 @@ proxies:
   uuid: 72500617-6a15-480e-9ac6-9fd9f8d817b7
 - alterId: 0
   cipher: auto
-  name: 36,37|HK3
-  network: tcp
-  port: 8888
-  server: 154.83.88.106
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 7c97b618-741d-49f9-82c2-169a197d28c9
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-18.167.120.1...
   network: tcp
   port: '15074'
@@ -1190,16 +1179,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
-  network: tcp
-  port: '27512'
-  server: 103.149.183.178
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-82.152.161.13...
+  network: ws
+  port: '36406'
+  server: 82.152.161.139
   servername: ''
   tls: false
   type: vmess
-  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
+  uuid: c4d65354-5321-3036-a611-6c42e88b7251
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 1
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-183.179.210.8...
@@ -1214,6 +1207,27 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
+  network: tcp
+  port: '27512'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
+- alterId: 0
+  cipher: auto
+  name: 36,37|HK3
+  network: tcp
+  port: 8888
+  server: 154.83.88.106
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 7c97b618-741d-49f9-82c2-169a197d28c9
 - alterId: 0
   cipher: aes-128-gcm
   name: 37|HK
