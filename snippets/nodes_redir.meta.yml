@@ -1105,7 +1105,7 @@ proxies:
       Host: PABLO-MOSTAFAA.COM
     path: '%2F'
 - alterId: 0
-  cipher: auto
+  cipher: chacha20-poly1305
   fingerprint: ''
   name: 12,13,16,24,28,36|🔒 VM-TCP-NA 🇮🇷 IR-92.242.220.2...
   network: tcp
@@ -1116,6 +1116,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 8dee19ab-50ce-4d06-be42-5e53c8989ccc
+- name: 12,28|14|🇺🇸_US_美国->🇧🇪_BE_比利时
+  network: ws
+  port: 80
+  server: 172.67.27.46
+  servername: cc.ailicf.us.kg
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
+  ws-opts:
+    headers:
+      Host: cc.ailicf.us.kg
+    path: /b5cdabf0-e04
 - alpn:
   - http/1.1
   name: 12,28|14|🇫🇷_FR_法国->🇷🇺_RU_俄罗斯
