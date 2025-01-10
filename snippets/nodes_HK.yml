@@ -54,7 +54,7 @@ proxies:
   type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,9,11,27|13|🇭🇰 香港8|@ripaojiedian #1'
+  name: '5,9,11,24,27|13|🇭🇰 香港8|@ripaojiedian #1'
   password: QDMKYVHZQVM77KA8
   port: 15013
   server: 8tv68qhq.slashdevslashnetslashtun.net
@@ -185,7 +185,7 @@ proxies:
   type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,9,11,27|13|🇭🇰 香港6|@ripaojiedian #1'
+  name: '5,9,11,24,27|13|🇭🇰 香港6|@ripaojiedian #1'
   password: 5TKI8YZMUS7LMA9E
   port: 15007
   server: qh62onjn.slashdevslashnetslashtun.net
@@ -994,24 +994,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- cipher: aes-256-cfb
-  name: 24,40|HK_speednode_0048
-  password: qwerREWQ@@
-  port: 4231
-  server: 112.213.102.228
-  type: ss
-- cipher: aes-256-gcm
-  name: 24,40|CN_speednode_0007
-  password: 6LE2F7E2WQWGJEYG
-  port: 15003
-  server: qh62onjn.slashdevslashnetslashtun.net
-  type: ss
-- cipher: aes-256-gcm
-  name: 24,40|CN_speednode_0014
-  password: Y4JZ69NZ4IMSVWMC
-  port: 15011
-  server: qh62onjn.slashdevslashnetslashtun.net
-  type: ss
 - name: '24|15|HK_speednode_0049 #1'
   password: SSorg
   port: 443
@@ -1175,6 +1157,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 65e07685-67a9-4068-9f5c-9c733c28c18b
+- alterId: 1
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-82.152.161.13...
+  network: ws
+  port: '36406'
+  server: 82.152.161.139
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c4d65354-5321-3036-a611-6c42e88b7251
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
@@ -1195,20 +1191,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 7c97b618-741d-49f9-82c2-169a197d28c9
-- alterId: 1
+- alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-82.152.161.13...
-  network: ws
-  port: '36406'
-  server: 82.152.161.139
-  servername: ''
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-18.167.120.1...
+  network: tcp
+  port: '15074'
+  server: 18.167.120.158
   tls: false
   type: vmess
-  uuid: c4d65354-5321-3036-a611-6c42e88b7251
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
 - alterId: 1
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-183.179.210.8...
@@ -1223,12 +1214,9 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-18.167.120.1...
-  network: tcp
-  port: '15074'
-  server: 18.167.120.158
-  tls: false
-  type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+- cipher: aes-256-cfb
+  name: 40|HK_speednode_0048
+  password: qwerREWQ@@
+  port: 4231
+  server: 112.213.102.228
+  type: ss
