@@ -1,5 +1,5 @@
 proxies:
-- name: 5|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
+- name: '5,12|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯 #2'
   network: tcp
   password: 38571ca6-6692-4559-b901-0bc5826b7661
   port: 60194
@@ -163,11 +163,8 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '5,12|🇮🇳_IN_印度->🇺🇸_US_美国 #1'
+- client-fingerprint: chrome
+  name: 5|🇮🇳_IN_印度->🇺🇸_US_美国
   network: ws
   port: 80
   server: 151.101.158.204
@@ -197,14 +194,6 @@ proxies:
   sni: trojan.burgerip.co.ukhttp/1.1
   type: trojan
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 5,9,12,16,24,27|0|-https://t.me/MrXbin-12
-  password: amazonskr05
-  port: 443
-  server: 34.222.136.128
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
   name: '5,11|1|_FR_->_RU_ #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
@@ -225,7 +214,7 @@ proxies:
     path: /video/3YKfzGw4
 - alterId: 0
   cipher: auto
-  name: '5,13,24|_中国 #6'
+  name: '5,12,13,24|_中国 #6'
   network: ws
   port: '25230'
   server: cm1.awslcn.info
@@ -1130,13 +1119,37 @@ proxies:
     headers:
       host: mizban.arzonhost.ir
     path: /
-- name: '12|🇮🇷_IR_伊朗->🇺🇸_US_美国 #1'
-  network: tcp
-  port: 8081
-  server: 87.107.155.124
+- name: 12|🇺🇸_US_美国->🇳🇱_NL_荷兰
+  network: ws
+  port: 80
+  server: 151.101.65.6
   tls: false
   type: vless
-  uuid: 19e069ab-560c-4ae2-979a-55b86a332446
+  uuid: 881c2728-f294-539e-adec-7d4b7201c751
+  ws-opts:
+    headers:
+      Host: PABLO-MOSTAFAA.COM
+    path: '%2F'
+- name: 12|🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
+  password: '!!str 3723507166611775488'
+  port: 443
+  server: 195.133.93.63
+  skip-cert-verify: true
+  sni: correct-redbird.boa152.lol
+  type: trojan
+- alpn:
+  - http/1.1
+  alterId: 0
+  name: 12,37|未知110
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.47.166.211
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
 - name: '13|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
   network: ws
   port: 80
@@ -1175,8 +1188,9 @@ proxies:
   cipher: auto
   name: 13,36|🔒 VM-TCP-NA 🇺🇸 US-107.148.207....
   network: tcp
-  port: 48712
+  port: '48712'
   server: 107.148.207.249
+  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -1220,6 +1234,12 @@ proxies:
   ws-opts:
     headers:
       Host: wWw.SpEeDtEsT.NeT.ZuLa.aIr.IkCoSaLeS.iR.D662599.v05.feadlenetwork19922h.net
+- cipher: aes-256-cfb
+  name: 16|_US_->🇷_RU_罗
+  password: amazonskr05
+  port: 443
+  server: 54.69.180.74
+  type: ss
 - cipher: aes-256-cfb
   name: 16,19|🇺🇸US-35.161.59.194-5424
   password: amazonskr05
@@ -1456,12 +1476,3 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- auth: 0cc2a80d-791f-4dba-b626-d33745a9c5e5
-  name: 28|🇭🇰 中转香港|5x
-  password: 0cc2a80d-791f-4dba-b626-d33745a9c5e5
-  port: 21064
-  server: ahkt.sulink.one
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true

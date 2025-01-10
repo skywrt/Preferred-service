@@ -36,14 +36,6 @@ proxies:
   server: p199.panda003.net
   tfo: false
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '5,9,11,20,21,24,27|13|🇰🇷 韩国特殊|@ripaojiedian #1'
-  password: amazonskr05
-  port: 443
-  server: 3.0.103.234
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: '5|>🇰🇷 KR|Ls|1115|TG@FProxies| #1'
@@ -138,6 +130,12 @@ proxies:
   port: 443
   server: 3.35.206.24
   type: ss
+- cipher: aes-256-cfb
+  name: 20,21,27|0|-https://t.me/MrXbin-4
+  password: amazonskr05
+  port: 443
+  server: 52.79.73.137
+  type: ss
 - name: 26|V2-韩国04∣K17线路∣1.5x
   password: 6307d00e-56e0-4d0d-afe9-254155638bdf
   port: 21118
@@ -206,9 +204,34 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- auth: ee733c52-4194-4ae3-9f70-3aa461eecfc2
-  name: 28|🇰🇷 国-1
-  password: ee733c52-4194-4ae3-9f70-3aa461eecfc2
+- cipher: aes-256-cfb
+  name: '27|13|🇰🇷 韩国|@ripaojiedian #1'
+  password: amazonskr05
+  port: 443
+  server: 13.229.216.218
+  tfo: false
+  type: ss
+- auth: fa77f967-f957-49c6-99f6-2d3f7e130f56
+  name: 28|🇷 韩国--1B
+  password: fa77f967-f957-49c6-99f6-2d3f7e130f56
+  port: 30001
+  server: oracle-arm-seoul1.lanmaoyun.icu
+  skip-cert-verify: true
+  sni: korea.nodes.lanmaoyun.icu
+  type: hysteria2
+  udp: true
+- auth: fa77f967-f957-49c6-99f6-2d3f7e130f56
+  name: 28|🇷 韩国-2-1B
+  password: fa77f967-f957-49c6-99f6-2d3f7e130f56
+  port: 30001
+  server: oracle-arm-chuncheon2.lanmaoyun.icu
+  skip-cert-verify: true
+  sni: korea.nodes.lanmaoyun.icu
+  type: hysteria2
+  udp: true
+- auth: b19a9a4a-beb4-4b0c-a547-406df30da396
+  name: 28|🇷 韩国-1-1A
+  password: b19a9a4a-beb4-4b0c-a547-406df30da396
   port: 30001
   server: oracle-arm-chuncheon1.lanmaoyun.icu
   skip-cert-verify: true
@@ -217,39 +240,40 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 28|🇰🇷 韩国 IEPL专线NO1
+  name: 28|🇷 韩国 IEPL专线NO1-1B
   port: 20021
   server: i.needss.top
   tls: false
   type: vmess
   udp: true
-  uuid: dc0a8da7-6a49-468d-ad71-d095090f57fb
-- name: 28|🇷 韩国-三网优化2-1D
-  password: a885e28e-5d1e-471b-a866-bc56451d5ae0
-  port: 44732
-  server: kr-qingyun.dwyun.me
-  skip-cert-verify: false
-  sni: kr-qingyun.dwyun.me
-  type: trojan
-  udp: true
-- auth: ee733c52-4194-4ae3-9f70-3aa461eecfc2
-  name: 28|🇷 韩国-2
-  password: ee733c52-4194-4ae3-9f70-3aa461eecfc2
-  port: 30001
-  server: oracle-arm-chuncheon2.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: korea.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
-- auth: ee733c52-4194-4ae3-9f70-3aa461eecfc2
-  name: 28|🇷 韩国-
-  password: ee733c52-4194-4ae3-9f70-3aa461eecfc2
-  port: 30001
-  server: oracle-arm-seoul1.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: korea.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
+  uuid: fb8d66fb-ed0e-41b7-9103-d285f574d6f2
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-175.203.204....
+  network: ws
+  port: 50035
+  server: 175.203.204.222
+  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+    path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇰🇷 KR-152.70.249.15...
+  network: ws
+  port: '23451'
+  server: 152.70.249.152
+  tls: false
+  type: vmess
+  uuid: 7eb08b9e-6f0b-4f54-b3f2-30fe440369c6
+  ws-opts:
+    headers:
+      Host: seoul-1ddns.aboutanime.eu.org
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.1...
@@ -266,34 +290,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇰🇷 KR-152.70.249.15...
-  network: ws
-  port: '23451'
-  server: 152.70.249.152
-  tls: false
-  type: vmess
-  uuid: 7eb08b9e-6f0b-4f54-b3f2-30fe440369c6
-  ws-opts:
-    headers:
-      Host: seoul-1ddns.aboutanime.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.24...
-  network: ws
-  port: 40471
-  server: 131.186.16.245
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a4141a2c-ca33-4237-add0-220a204e4ac3
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /wada12222
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.24... #1'
   network: ws
   port: 40474
   server: 131.186.16.245
@@ -307,18 +304,18 @@ proxies:
     path: /wada12222
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-175.203.204....
+  name: '36|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.24... #1'
   network: ws
-  port: 50035
-  server: 175.203.204.222
-  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-  tls: true
+  port: 40471
+  server: 131.186.16.245
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  uuid: a4141a2c-ca33-4237-add0-220a204e4ac3
   ws-opts:
     headers:
-      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-    path: /obdii.cfd:443/linkws
+      Host: tms.dingtalk.com
+    path: /wada12222
 - cipher: aes-256-cfb
   name: 40|KR_speednode_0067
   password: qwerREWQ@@
