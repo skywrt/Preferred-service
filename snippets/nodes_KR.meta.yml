@@ -200,13 +200,16 @@ proxies:
   skip-cert-verify: true
   sni: sstjj.esslh.filegear-sg.me
   type: trojan
-- name: '24|🇰🇷 _韩国 #2'
+- alterId: 0
+  name: 24,37|KR国
   password: SSorg
   port: 20443
   server: 106.240.1.52
   skip-cert-verify: true
   sni: sstjj.esslh.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇰🇷 _韩国 #3'
   password: SSorg
   port: 2053
@@ -327,6 +330,19 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-WS-NA 🇰🇷 KR-152.70.249.15...
+  network: ws
+  port: '23451'
+  server: 152.70.249.152
+  tls: false
+  type: vmess
+  uuid: 3204205f-5c11-4901-92c2-467fb07de902
+  ws-opts:
+    headers:
+      Host: seoul-1ddns.aboutanime.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.24...
   network: ws
   port: 40474
@@ -341,6 +357,20 @@ proxies:
     path: /wada12222
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.1...
+  network: ws
+  port: '30002'
+  server: 211.220.16.114
+  servername: obdii.cfd
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇰🇷 KR-175.203.204....
   network: ws
   port: 50035
@@ -353,20 +383,6 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.1...
-  network: ws
-  port: '30002'
-  server: 211.220.16.114
-  servername: cc2.1808.site
-  tls: true
-  type: vmess
-  uuid: d3d8b781-f30d-4902-8eb0-58b1ca936bec
-  ws-opts:
-    headers:
-      Host: cc2.1808.site
-    path: /hgqqvws
 - alterId: 0
   cipher: auto
   name: '36|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.24... #1'
