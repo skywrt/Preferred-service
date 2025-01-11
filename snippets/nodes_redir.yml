@@ -73,7 +73,7 @@ proxies:
   type: vmess
   uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
   ws-opts: {}
-- name: 5|🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
+- name: 5,16|🇷🇺_RU_俄罗斯->_DE_国
   network: tcp
   password: '!!str 3723507166611775488'
   port: 443
@@ -164,7 +164,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '5,12,13,24|_中国 #19'
+  name: '5,12,13,24|_中国 #14'
   network: ws
   port: '25230'
   server: cm1.awslcn.info
@@ -1086,11 +1086,11 @@ proxies:
     headers:
       host: mizban.arzonhost.ir
     path: /
-- name: '12,24|_中国 #12'
+- name: '12,16,24|_中国 #11'
   password: 38571ca6-6692-4559-b901-0bc5826b7661
   port: 60194
   server: ru0195.alibabaokz.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: ru0195.alibabaokz.com
   type: trojan
 - alterId: 0
@@ -1121,7 +1121,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
-  name: 13,20,21,26|[97]🇺🇸US-194.5.215.59-36292
+  name: 13,19,20,21,26|[97]🇺🇸US-194.5.215.59-36292
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 194.5.215.59
@@ -1134,6 +1134,29 @@ proxies:
   server: 146.70.61.18
   type: ss
   udp: true
+- alpn:
+  - http/1.1
+  name: 16|🇷_FR_国->🇷🇺_RU_俄罗斯
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.47.166.211
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '16|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_1 #1'
+  network: ws
+  port: 25230
+  server: cm1.awslcn.info
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: 243eab52-9ac1-405c-887c-eb112c0985b8
+  ws-opts:
+    headers:
+      host: cm1.awslcn.info
+    path: /
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|中国香港/中国台湾(CN)China/Shenzhen/小东的程序未能精准识别(可能是中转节点)_3
