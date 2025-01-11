@@ -1134,7 +1134,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 26|香港5
+  name: 26,40|CN_speednode_0003
   port: 54104
   server: 183.236.51.23
   skip-cert-verify: true
@@ -1171,15 +1171,37 @@ proxies:
   uuid: 107bc781-69af-4889-8d65-04e52a2ca485
 - alterId: 0
   cipher: auto
-  name: 36,37|HK
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-154.83.88.10...
   network: tcp
-  port: 8888
+  port: '8888'
   server: 154.83.88.106
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 7c97b618-741d-49f9-82c2-169a197d28c9
+- alterId: 1
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-183.179.210.8...
+  network: ws
+  port: '60234'
+  server: 183.179.210.84
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c4d65354-5321-3036-a611-6c42e88b7251
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-18.167.120.1...
+  network: tcp
+  port: '15074'
+  server: 18.167.120.158
+  tls: false
+  type: vmess
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
 - alterId: 0
   cipher: auto
   name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
@@ -1190,34 +1212,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-18.167.120.1...
-  network: tcp
-  port: '15074'
-  server: 18.167.120.158
-  tls: false
-  type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
-- alterId: 1
-  cipher: auto
-  name: 36,37|HK3
-  network: ws
-  port: 60234
-  server: 183.179.210.84
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c4d65354-5321-3036-a611-6c42e88b7251
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 37|HK2
-  password: 89b90001-4206-4871-a99d-1744d48f215b
-  port: 4001
-  server: 103.17.99.54
-  skip-cert-verify: true
-  tls: true
-  type: ss
