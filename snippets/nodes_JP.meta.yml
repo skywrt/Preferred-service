@@ -103,7 +103,7 @@ proxies:
   uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,9,11,27|13| 日本特殊|@ripaojiedian
+  name: 5,9,11,24,27|13| 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 3.35.17.138
@@ -209,7 +209,7 @@ proxies:
   type: trojan
 - alterId: 0
   client-fingerprint: chrome
-  name: 5,9,27,37|🇯🇵JP日本2
+  name: 5,9,24,27,37|🇯🇵JP日本2
   network: tcp
   password: e279c494-c426-443a-a034-a04516409242
   port: 13012
@@ -263,7 +263,7 @@ proxies:
   sni: JP-03.oneok.link
   type: trojan
 - client-fingerprint: chrome
-  name: 5,9,27|13,14|日本2|@ripaojiedian
+  name: 5,9,24,27|13,14|日本2|@ripaojiedian
   network: tcp
   password: 2ff730d5-567f-4800-8c76-5d9b07079eed
   port: 57468
@@ -399,6 +399,12 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
+- cipher: aes-256-cfb
+  name: 19|🇯🇵JP-3.112.236.3-6159
+  password: amazonskr05
+  port: 443
+  server: 3.112.236.3
+  type: ss
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|日本(JP)Japan/Tokyo_38
@@ -414,36 +420,41 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- name: '24|🇯🇵 _日本 #1'
+- name: 24|🇯🇵 日本 东京Amazon数据中心
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: us01.trojanyyds.xyz
+  skip-cert-verify: false
+  sni: us01.trojanyyds.xyz
+  type: trojan
+- name: '24|🇯🇵 日本 东京Amazon数据中心 #1'
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: tw02.trojanyyds.xyz
+  skip-cert-verify: false
+  sni: tw02.trojanyyds.xyz
+  type: trojan
+- name: '24|🇯🇵 日本 东京Amazon数据中心 #2'
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: in01.trojanyyds.xyz
+  skip-cert-verify: false
+  sni: in01.trojanyyds.xyz
+  type: trojan
+- name: '24|🇯🇵 _日本 #5'
   password: SSorg
   port: 2083
   server: 103.116.7.103
   skip-cert-verify: true
   sni: sstjj.esslh.filegear-sg.me
   type: trojan
-- name: 24|日期：01-11
-  password: SSorg
-  port: 443
-  server: 8.210.171.28
-  skip-cert-verify: true
-  sni: sstjj.esslh.filegear-sg.me
-  type: trojan
-- name: 24|🇯🇵 _日本
+- name: '24|🇯🇵 _日本 #1'
   password: SSorg
   port: 443
   server: 18.182.63.216
   skip-cert-verify: true
   sni: sstjj.esslh.filegear-sg.me
   type: trojan
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 24,37|🇵JP
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - name: 26|每日连接前点更新订阅
   password: 6307d00e-56e0-4d0d-afe9-254155638bdf
   port: 40037
@@ -654,6 +665,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
+  network: tcp
+  port: '24445'
+  server: 140.83.63.38
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
+- alterId: 0
+  cipher: auto
   name: 36,37|未知79
   network: tcp
   port: 48897
@@ -663,16 +684,6 @@ proxies:
   tls: true
   type: vmess
   uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
-  network: tcp
-  port: '1069'
-  server: 152.69.197.60
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
 - alterId: 0
   cipher: auto
   name: '36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17... #1'
@@ -685,10 +696,11 @@ proxies:
   uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
   network: tcp
-  port: '24445'
-  server: 140.83.63.38
+  port: '1069'
+  server: 152.69.197.60
+  servername: ''
   tls: false
   type: vmess
-  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf

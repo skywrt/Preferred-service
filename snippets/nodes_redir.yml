@@ -97,7 +97,7 @@ proxies:
   type: trojan
 - alterId: 0
   client-fingerprint: chrome
-  name: 5,9,24,27,37,40|CN_speednode_0004
+  name: 5,9,16,24,27,37,40|CN_speednode_0004
   network: tcp
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21332
@@ -1367,9 +1367,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '12,13,24|_中国 #14'
+  name: 12,13|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_2
   network: ws
-  port: '25230'
+  port: 25230
   server: cm1.awslcn.info
   servername: cm1.awslcn.info
   tls: false
@@ -1381,7 +1381,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '12,24|🇺🇸 _美国 #29'
+  name: '12|🇺🇸_US_美国->🇫🇷_FR_法国 #1'
   network: ws
   port: '80'
   server: 151.101.2.216
@@ -1400,12 +1400,18 @@ proxies:
   server: 195.133.93.135
   sni: pleased-airedale.boa152.lol
   type: trojan
-- name: 12,24|🇮🇪 爱尔兰 V2CROSS.COM
+- name: 12|🇮🇪_IE_爱尔兰->🇺🇸_US_美国
   password: telegram-id-privatevpns
   port: 22222
   server: 63.34.134.148
-  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 12|🇷🇺_RU_俄罗斯->🇰🇷_KR_韩国
+  password: '!!str 3723507166611775488'
+  port: 443
+  server: oriented-terrier.boa152.lol
+  skip-cert-verify: true
+  sni: oriented-terrier.boa152.lol
   type: trojan
 - alterId: 64
   cipher: auto
@@ -1444,7 +1450,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 13,16|🇳_CN_中国->🇸_US_美国
+  name: '13|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
   network: tcp
   port: 52112
   server: 183.236.51.23
@@ -1465,28 +1471,12 @@ proxies:
   server: 146.70.61.18
   type: ss
   udp: true
-- name: '16,24|_中国 #11'
+- name: '16,24|_中国 #8'
   password: 38571ca6-6692-4559-b901-0bc5826b7661
   port: 60194
   server: ru0195.alibabaokz.com
   skip-cert-verify: true
   sni: ru0195.alibabaokz.com
-  type: trojan
-- name: 16|🇷🇺_RU_俄罗斯->_DE_国
-  password: '!!str 3723507166611775488'
-  port: 443
-  server: 195.133.93.63
-  skip-cert-verify: true
-  sni: correct-redbird.boa152.lol
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 16|🇷_FR_国->🇷🇺_RU_俄罗斯
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.47.166.211
-  sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
   cipher: auto
@@ -1494,14 +1484,18 @@ proxies:
   network: ws
   port: 25230
   server: cm1.awslcn.info
-  skip-cert-verify: true
-  sni: ''
   type: vmess
   uuid: 243eab52-9ac1-405c-887c-eb112c0985b8
   ws-opts:
     headers:
       host: cm1.awslcn.info
     path: /
+- cipher: aes-256-gcm
+  name: '16|🇷🇺_RU_俄罗斯->🇺🇸_US_美国 #1'
+  password: 2a117bd4077d9a53
+  port: 16112
+  server: 45.8.158.238
+  type: ss
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|中国香港/中国台湾(CN)China/Shenzhen/小东的程序未能精准识别(可能是中转节点)_3
@@ -1562,7 +1556,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 23|🇨🇳_CN_中国->🇺🇸_US_美国_1
+  name: '23|🇨🇳_CN_中国->🇺🇸_US_美国_1 #1'
   network: ws
   port: 16928
   server: vip3.niuniupremium.xyz
