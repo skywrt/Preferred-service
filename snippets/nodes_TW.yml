@@ -61,18 +61,15 @@ proxies:
   skip-cert-verify: false
   sni: hinet-01.oneok.link
   type: trojan
-- alterId: 0
-  client-fingerprint: chrome
-  name: '5,9,20,21,24,27,37|TW #1'
+- client-fingerprint: chrome
+  name: 5,9,20,21,24,27|13,14|台湾2|@ripaojiedian
   network: tcp
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
   server: 74.226.136.204
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: tw02.trojanyyds.xyz
-  tls: true
   type: trojan
-  udp: true
 - name: 5|🇹🇼|台湾-IEPL 04
   password: 78a4290d-e023-4759-947a-53554ac4697d
   port: 20008
@@ -245,7 +242,16 @@ proxies:
   name: 37|TW
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 60.249.35.39
+  server: 211.22.161.134
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|TW2
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.28.137
   skip-cert-verify: true
   tls: true
   type: ss
