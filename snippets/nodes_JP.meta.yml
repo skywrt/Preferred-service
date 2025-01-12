@@ -1,25 +1,23 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 5|⚡️专线|日本03解锁|倍率1
+  name: 5|⚡️专线|日本02解锁|倍率1
   network: tcp
-  port: '16121'
+  port: '16120'
   server: zfd-jpv2.01byx31qzn.download
   tls: false
   type: vmess
   uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
-- alterId: 0
-  cipher: auto
-  name: 5|⚡️标准|日本04解锁|倍率1
-  network: tcp
-  port: '16122'
-  server: zfd-jpv1.01byx31qzn.download
-  tls: false
-  type: vmess
-  uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
-- client-fingerprint: edge
+- name: 5|🇯🇵|日本-进阶IEPL 01
+  password: 78a4290d-e023-4759-947a-53554ac4697d
+  port: 20058
+  server: iepl-00.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-02.oneok.link
+  type: trojan
+- client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: '5|🇯🇵JP+A[30Mbps|移动/联通] #2'
+  name: '5|🇯🇵JP+A[30Mbps|移动/联通] #1'
   network: tcp
   port: 25565
   reality-opts:
@@ -30,24 +28,38 @@ proxies:
   tls: false
   type: vless
   uuid: d5e9f8ef-a939-4d0d-8790-381f82b07208
-- alterId: 0
-  cipher: auto
-  name: 5|⚡️专线|日本04解锁|倍率1
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '5|🇯🇵JP+TYO+Sakura+1[三网|100Mbps|1... #1'
   network: tcp
-  port: '16122'
-  server: zfd-jpv2.01byx31qzn.download
+  port: 35649
+  reality-opts:
+    public-key: Ds1IYznSTnE7xtQotbfjoR_UhvbwRMwBdJQfdnXeFEI
+    short-id: '94700896'
+  server: sakuratyo1.telecom.moe
+  servername: d2j.com
   tls: false
-  type: vmess
-  uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
-- alterId: 0
-  cipher: auto
-  name: 5|⚡️专线|日本02解锁|倍率1
+  type: vless
+  uuid: d5e9f8ef-a939-4d0d-8790-381f82b07208
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 5|🇯🇵 日本|东京-IEPL-TS1
   network: tcp
-  port: '16120'
-  server: zfd-jpv2.01byx31qzn.download
+  port: 22399
+  reality-opts:
+    public-key: jza-kqA5vkt_ObdxtPoclHTlgDfdxmNqKPPru9f0mlE
+    short-id: 0f5fbc2f
+  server: sg-iepl.com
+  servername: www.python.org
   tls: false
-  type: vmess
-  uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
+  type: vless
+  uuid: 1e36add4-7284-4c58-8e2a-c335cbe7b526
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -66,6 +78,39 @@ proxies:
     path: /name
 - alterId: 0
   cipher: auto
+  name: 5|⚡️标准|日本03解锁|倍率1
+  network: tcp
+  port: '16121'
+  server: zfd-jpv1.01byx31qzn.download
+  tls: false
+  type: vmess
+  uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
+- name: 5|🇳🇬|尼日利亚-IEPL 01
+  password: 78a4290d-e023-4759-947a-53554ac4697d
+  port: 20051
+  server: iepl00.catcat-123.com
+  skip-cert-verify: false
+  sni: NG-01.oneok.link
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 5|⚡️专线|日本04解锁|倍率1
+  network: tcp
+  port: '16122'
+  server: zfd-jpv2.01byx31qzn.download
+  tls: false
+  type: vmess
+  uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 5,9,11,27|13| 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 3.35.17.138
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
   name: 5|⚡️专线|日本01解锁|倍率1
   network: tcp
   port: '16119'
@@ -73,9 +118,46 @@ proxies:
   tls: false
   type: vmess
   uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
-- client-fingerprint: edge
+- name: 5|🇯🇵TJ|日本C02|NF解锁
+  password: e27be03b-029c-4405-9225-63ccc78f53a1
+  port: 10116
+  server: cc.rk1.node-is.green
+  skip-cert-verify: true
+  sni: jp.01.naiun.bilibili.com
+  type: trojan
+- name: 5|🇯🇵TJ|日本C01|NF解锁
+  password: e27be03b-029c-4405-9225-63ccc78f53a1
+  port: 46327
+  server: 5741785e21aaacf15e2b4fe3657aa9b7.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: jp.01.naiun.bilibili.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 5|⚡️标准|日本01解锁|倍率1
+  network: tcp
+  port: '16119'
+  server: zfd-jpv1.01byx31qzn.download
+  tls: false
+  type: vmess
+  uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
+- name: 5|🇯🇵|日本-进阶IEPL 03
+  password: 78a4290d-e023-4759-947a-53554ac4697d
+  port: 20058
+  server: iepl03.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-02.oneok.link
+  type: trojan
+- name: 5|🇳🇬|尼日利亚-IEPL 02
+  password: 78a4290d-e023-4759-947a-53554ac4697d
+  port: 20051
+  server: iepl03.catcat-123.com
+  skip-cert-verify: false
+  sni: NG-01.oneok.link
+  type: trojan
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 5|🇯🇵JP+TYO+Sakura+2[IPV6|100Mbps...
+  name: '5|🇯🇵JP+TYO+Sakura+2[IPV6|100Mbps... #1'
   network: tcp
   port: 35649
   reality-opts:
@@ -86,6 +168,13 @@ proxies:
   tls: false
   type: vless
   uuid: d5e9f8ef-a939-4d0d-8790-381f82b07208
+- name: 5|🇯🇵|日本-IEPL 02
+  password: 78a4290d-e023-4759-947a-53554ac4697d
+  port: 20009
+  server: iepl02.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-02.oneok.link
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|⚡️标准|日本02解锁|倍率1
@@ -95,37 +184,100 @@ proxies:
   tls: false
   type: vmess
   uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 5|🇯🇵JP+TYO+Sakura+1[三网|100Mbps|1...
-  network: tcp
-  port: 35649
-  reality-opts:
-    public-key: Ds1IYznSTnE7xtQotbfjoR_UhvbwRMwBdJQfdnXeFEI
-    short-id: '94700896'
-  server: sakuratyo1.telecom.moe
-  servername: d2j.com
-  tls: false
-  type: vless
-  uuid: d5e9f8ef-a939-4d0d-8790-381f82b07208
 - alterId: 0
   cipher: auto
-  name: 5|⚡️标准|日本01解锁|倍率1
+  name: 5|⚡️标准|日本04解锁|倍率1
   network: tcp
-  port: '16119'
+  port: '16122'
   server: zfd-jpv1.01byx31qzn.download
   tls: false
   type: vmess
   uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
+- name: 5|🇯🇵|日本-IEPL 03
+  password: 78a4290d-e023-4759-947a-53554ac4697d
+  port: 20009
+  server: iepl-01.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-02.oneok.link
+  type: trojan
+- name: 5|🇯🇵|日本原生-IEPL 01
+  password: 78a4290d-e023-4759-947a-53554ac4697d
+  port: 20030
+  server: iepl02.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-03.oneok.link
+  type: trojan
+- alterId: 0
+  client-fingerprint: chrome
+  name: 5,9,27,37|🇯🇵JP日本2
+  network: tcp
+  password: e279c494-c426-443a-a034-a04516409242
+  port: 13012
+  server: naiu-jp.05vr9nyqg5.download
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  tls: true
+  type: trojan
+  udp: true
+- name: 5|日本+V2CROSS.COM
+  password: b44da489-fc70-4fd0-8997-a83b51f59267
+  port: 20230
+  server: jp005.421421.xyz
+  sni: 421421.xyz
+  type: trojan
+- name: 5|🇯🇵|日本原生-IEPL 02
+  password: 78a4290d-e023-4759-947a-53554ac4697d
+  port: 20030
+  server: iepl01.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-03.oneok.link
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 5|⚡️标准|日本03解锁|倍率1
+  name: 5|⚡️专线|日本03解锁|倍率1
   network: tcp
   port: '16121'
-  server: zfd-jpv1.01byx31qzn.download
+  server: zfd-jpv2.01byx31qzn.download
   tls: false
   type: vmess
   uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
+- name: 5|🇯🇵|日本原生-IEPL 04
+  password: 78a4290d-e023-4759-947a-53554ac4697d
+  port: 20061
+  server: iepl00.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-03.oneok.link
+  type: trojan
+- name: 5|🇯🇵|日本-进阶IEPL 02
+  password: 78a4290d-e023-4759-947a-53554ac4697d
+  port: 20058
+  server: iepl00.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-02.oneok.link
+  type: trojan
+- name: 5|🇯🇵|日本原生-IEPL 03
+  password: 78a4290d-e023-4759-947a-53554ac4697d
+  port: 20061
+  server: iepl03.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-03.oneok.link
+  type: trojan
+- client-fingerprint: chrome
+  name: 5,9,27|13,14|日本2|@ripaojiedian
+  network: tcp
+  password: 2ff730d5-567f-4800-8c76-5d9b07079eed
+  port: 57468
+  server: lm.kaiqsz.com
+  skip-cert-verify: false
+  sni: yg01.redapricotcloud.com
+  type: trojan
+- name: 5|🇯🇵|日本-IEPL 01
+  password: 78a4290d-e023-4759-947a-53554ac4697d
+  port: 20009
+  server: iepl05.catcat-123.com
+  skip-cert-verify: false
+  sni: JP-02.oneok.link
+  type: trojan
 - cipher: aes-256-cfb
   name: 8|🇯🇵JP-54.199.83.239-171_1@171
   password: doub.io
@@ -239,6 +391,15 @@ proxies:
       Host: lp.ylks.us.kg
     path: '%2F%3Fed%3D2560'
 - alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知124 3.3MB/s
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
   country: mattkaydiary.com|日本(JP)Japan/Tokyo_38
   name: '23|mattkaydiary.com|日本(JP)Japan/T... #1'
@@ -274,6 +435,15 @@ proxies:
   skip-cert-verify: true
   sni: sstjj.esslh.filegear-sg.me
   type: trojan
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 24,37|🇵JP
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - name: 26|每日连接前点更新订阅
   password: 6307d00e-56e0-4d0d-afe9-254155638bdf
   port: 40037
@@ -482,21 +652,17 @@ proxies:
   sni: dejs.stablize.top
   type: trojan
   udp: true
-- name: 27|13,14|日本2|@ripaojiedian
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知79
   network: tcp
-  password: 2ff730d5-567f-4800-8c76-5d9b07079eed
-  port: 57468
-  server: lm.kaiqsz.com
-  skip-cert-verify: false
-  sni: yg01.redapricotcloud.com
-  type: trojan
-- cipher: aes-256-cfb
-  name: 27|13| 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 3.35.17.138
-  tfo: false
-  type: ss
+  port: 48897
+  server: 13.112.49.171
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
@@ -509,27 +675,6 @@ proxies:
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
-  network: tcp
-  port: '48897'
-  server: 13.112.49.171
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
-- alterId: 0
-  cipher: auto
-  name: 36,37|未知23 384.9KB/s
-  network: tcp
-  port: 24445
-  server: 140.83.63.38
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
-- alterId: 0
-  cipher: auto
   name: '36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17... #1'
   network: tcp
   port: '48898'
@@ -538,3 +683,12 @@ proxies:
   tls: false
   type: vmess
   uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
+  network: tcp
+  port: '24445'
+  server: 140.83.63.38
+  tls: false
+  type: vmess
+  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17

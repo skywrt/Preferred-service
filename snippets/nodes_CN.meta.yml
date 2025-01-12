@@ -1,26 +1,63 @@
 proxies:
-- name: 5|🇺🇦 乌克兰-广东专线 Vik
+- alterId: 64
+  cipher: auto
+  name: '5,11,24,27|14|香港5|@ripaojiedian #1'
   network: tcp
-  password: 5c168463-6e4a-4655-9a13-e0770677181d
-  port: 32019
-  server: lbso.bnnodeservice.com
-  skip-cert-verify: false
-  sni: cert.bitbyte.one
-  type: trojan
+  port: '51704'
+  server: 183.236.51.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
+  network: tcp
+  port: 54882
+  server: 183.240.235.162
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-cfb
+  name: '5,11|1|_CN_ #1'
+  password: hGkQ6915tD
+  port: 15082
+  server: 59.56.77.178
+  type: ss
+- name: '5,38|🇨🇳_CN_中国_38 #1'
+  network: ws
+  port: 2053
+  server: 103.184.44.62
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
   ws-opts:
     headers:
-      Host: cert.bitbyte.one
-- name: 5|🇧🇷 巴西-广东专线 GCore 1
+      Host: juzibaipiao.5112233.xyz
+    path: '%2f%3fed%3d2048'
+- alterId: 64
+  cipher: auto
+  name: '5,24|🇨🇳 广东省广州市 移动 #1'
   network: tcp
-  password: 5c168463-6e4a-4655-9a13-e0770677181d
-  port: 32016
-  server: lbso.bnnodeservice.com
-  skip-cert-verify: false
-  sni: cert.bitbyte.one
-  type: trojan
+  port: '53002'
+  server: 183.236.51.23
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 5|🇨🇳[官方]👇Telegram群组👇
+  network: ws
+  port: '51201'
+  server: b.naiun.node-is.green
+  tls: false
+  type: vmess
+  uuid: e27be03b-029c-4405-9225-63ccc78f53a1
   ws-opts:
     headers:
-      Host: cert.bitbyte.one
+      Host: live.bilibili.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 5,11,24|🇨🇳 github.com/freefq - 广东省移动 7
@@ -35,196 +72,6 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
-- name: 5|🇦🇶 南极-广东专线 WARP
-  network: tcp
-  password: 5c168463-6e4a-4655-9a13-e0770677181d
-  port: 32041
-  server: lbso.bnnodeservice.com
-  skip-cert-verify: false
-  sni: cert.bitbyte.one
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cert.bitbyte.one
-- cipher: aes-256-cfb
-  name: '5,11|1|_CN_ #1'
-  password: hGkQ6915tD
-  port: 15082
-  server: 59.56.77.178
-  type: ss
-- name: 5|🇧🇷 巴西-广东专线 GCore 2
-  network: tcp
-  password: 5c168463-6e4a-4655-9a13-e0770677181d
-  port: 32025
-  server: lbso.bnnodeservice.com
-  skip-cert-verify: false
-  sni: cert.bitbyte.one
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cert.bitbyte.one
-- name: 5|🇹🇷 土耳其-广东专线 GCore
-  network: tcp
-  password: 5c168463-6e4a-4655-9a13-e0770677181d
-  port: 32026
-  server: lbso.bnnodeservice.com
-  skip-cert-verify: false
-  sni: cert.bitbyte.one
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cert.bitbyte.one
-- name: 5|🇦🇷 阿根廷-广东专线 DonWeb
-  network: tcp
-  password: 5c168463-6e4a-4655-9a13-e0770677181d
-  port: 32015
-  server: lbso.bnnodeservice.com
-  skip-cert-verify: false
-  sni: cert.bitbyte.one
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cert.bitbyte.one
-- name: 5|🇹🇷 土耳其-广东专线 Kapteyan
-  network: tcp
-  password: 5c168463-6e4a-4655-9a13-e0770677181d
-  port: 32014
-  server: lbso.bnnodeservice.com
-  skip-cert-verify: false
-  sni: cert.bitbyte.one
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cert.bitbyte.one
-- name: 5|🇵🇭 菲律宾-广东专线 Comfac
-  network: tcp
-  password: 5c168463-6e4a-4655-9a13-e0770677181d
-  port: 32030
-  server: lbso.bnnodeservice.com
-  skip-cert-verify: false
-  sni: cert.bitbyte.one
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cert.bitbyte.one
-- name: 5|🇦🇺 澳大利亚-广东专线 VUAU
-  network: tcp
-  password: 5c168463-6e4a-4655-9a13-e0770677181d
-  port: 32012
-  server: lbso.bnnodeservice.com
-  skip-cert-verify: false
-  sni: cert.bitbyte.one
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cert.bitbyte.one
-- client-fingerprint: chrome
-  name: 5,9,24,27,40|CN_speednode_0004
-  network: tcp
-  password: 7daf833c-37b9-4afc-8495-96590f03f781
-  port: 21332
-  server: 120.232.217.96
-  skip-cert-verify: true
-  sni: 120.232.217.96
-  type: trojan
-- name: 5|🇲🇾 马来西亚-广东专线 Shin
-  network: tcp
-  password: 5c168463-6e4a-4655-9a13-e0770677181d
-  port: 32038
-  server: lbso.bnnodeservice.com
-  skip-cert-verify: false
-  sni: cert.bitbyte.one
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cert.bitbyte.one
-- name: '5,38|🇨🇳_CN_中国_38 #1'
-  network: ws
-  port: 2053
-  server: 103.184.44.62
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
-- name: 5|🇹🇭 泰国-广东专线 Bangmod
-  network: tcp
-  password: 5c168463-6e4a-4655-9a13-e0770677181d
-  port: 32043
-  server: lbso.bnnodeservice.com
-  skip-cert-verify: false
-  sni: cert.bitbyte.one
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cert.bitbyte.one
-- name: 5|🇵🇭 菲律宾-广东专线 Zenlayer
-  network: tcp
-  password: 5c168463-6e4a-4655-9a13-e0770677181d
-  port: 32013
-  server: lbso.bnnodeservice.com
-  skip-cert-verify: false
-  sni: cert.bitbyte.one
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cert.bitbyte.one
-- name: 5|🇦🇺 澳大利亚-广东专线 GCore
-  network: tcp
-  password: 5c168463-6e4a-4655-9a13-e0770677181d
-  port: 32023
-  server: lbso.bnnodeservice.com
-  skip-cert-verify: false
-  sni: cert.bitbyte.one
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cert.bitbyte.one
-- name: 5|🇸🇦 沙特-广东专线 STC
-  network: tcp
-  password: 5c168463-6e4a-4655-9a13-e0770677181d
-  port: 32035
-  server: lbso.bnnodeservice.com
-  skip-cert-verify: false
-  sni: cert.bitbyte.one
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cert.bitbyte.one
-- name: 5|🇮🇳 印度-广东专线 GCore
-  network: tcp
-  password: 5c168463-6e4a-4655-9a13-e0770677181d
-  port: 32024
-  server: lbso.bnnodeservice.com
-  skip-cert-verify: false
-  sni: cert.bitbyte.one
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cert.bitbyte.one
-- name: 5|🇮🇳 印度-广东专线 DOIN
-  network: tcp
-  password: 5c168463-6e4a-4655-9a13-e0770677181d
-  port: 32017
-  server: lbso.bnnodeservice.com
-  skip-cert-verify: false
-  sni: cert.bitbyte.one
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cert.bitbyte.one
-- alterId: 64
-  cipher: auto
-  name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
-  network: tcp
-  port: 54882
-  server: 183.240.235.162
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 8|🇨🇳CN-139.227.223.3-049_1@49
@@ -822,14 +669,6 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- client-fingerprint: chrome
-  name: 9|🇨🇳 13|🇨🇳 中国6|@ripaojiedian
-  password: vzhXXZVw
-  port: 14505
-  server: 223.113.54.149
-  skip-cert-verify: false
-  sni: 223.113.54.149
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 17|CN_ youtube@资源分享师_17
@@ -945,7 +784,7 @@ proxies:
   tls: false
   type: vmess
   uuid: fa678492-65dd-3df0-800d-11f138b868ab
-- name: '24|🇨🇳 13|🇨🇳 中国6|@ripaojiedian #1'
+- name: 24|🇨🇳 13|🇨🇳 中国6|@ripaojiedian
   password: vzhXXZVw
   port: 14505
   server: 223.113.54.149
@@ -965,23 +804,23 @@ proxies:
   skip-cert-verify: true
   sni: sstjj.esslh.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 24,37|CN
+- name: '24|_中国 #3'
   password: SSorg
   port: 2053
   server: 154.197.64.166
   skip-cert-verify: true
   sni: sstjj.esslh.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
-- name: '24|_中国 #4'
+- alterId: 0
+  name: 24,37|CN
   password: SSorg
   port: 443
   server: 27.50.49.207
   skip-cert-verify: true
   sni: sstjj.esslh.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #5'
   password: SSorg
   port: 2096
@@ -1171,12 +1010,13 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
+  name: 36,37|未知43
   network: tcp
-  port: '50004'
+  port: 50004
   server: 112.132.212.19
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
