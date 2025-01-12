@@ -42,9 +42,21 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
+- cipher: aes-128-gcm
+  name: 12,19,20,21,27|0|-https://t.me/MrXbin-14
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.197
+  type: ss
+- cipher: aes-128-gcm
+  name: 12,19,20,21,24,27|0|-https://t.me/MrXbin-17
+  password: shadowsocks
+  port: 443
+  server: uk-dc1.yangon.club
+  type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 12,13,19,20,21,24,37|GB 10.4MB/s
+  name: 13,19,20,21,24,37|GB 10.4MB/s
   password: M7x1mGNOwhPiRB9jSxZJNy
   port: 6870
   server: 51.13.182.236
@@ -59,18 +71,6 @@ proxies:
   server: 212.102.53.196
   skip-cert-verify: true
   tls: true
-  type: ss
-- cipher: aes-128-gcm
-  name: 19,20,21,27|0|-https://t.me/MrXbin-12
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.197
-  type: ss
-- cipher: aes-128-gcm
-  name: 19,20,21,27|0|-https://t.me/MrXbin-13
-  password: shadowsocks
-  port: 443
-  server: uk-dc1.yangon.club
   type: ss
 - alterId: 0
   cipher: aes-128-gcm
@@ -121,6 +121,19 @@ proxies:
     headers:
       Host: ''
     path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 24|🇬🇧 英国 V2CROSS.COM
+  network: ws
+  port: '11325'
+  server: 5.39.252.204
+  tls: false
+  type: vmess
+  uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - name: 26|V2-英国01∣K29线路∣1.5x
   password: 6307d00e-56e0-4d0d-afe9-254155638bdf
   port: 21154
