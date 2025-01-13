@@ -62,8 +62,7 @@ proxies:
   server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 5,24,27,30|🇨🇳 省州市 移动
+- name: '5,24,27,30|13,14||@ripaojiedian #3'
   network: tcp
   password: vzhXXZVw
   port: 36442
@@ -156,13 +155,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
-- name: '5,24,27,30|13,14|2|@ripaojiedian #1'
+- alterId: 0
+  name: '5,24,27,30,37|HK #1'
   network: tcp
   password: vzhXXZVw
   port: 48544
   server: 36.150.215.220
   skip-cert-verify: true
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5|⚡️标准|香港04解锁|倍率1
@@ -204,6 +206,14 @@ proxies:
   type: vmess
   uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
 - client-fingerprint: chrome
+  name: 9|🇭🇰 13,14|香港|@ripaojiedian
+  password: vzhXXZVw
+  port: 36442
+  server: 223.113.54.145
+  skip-cert-verify: false
+  sni: 223.113.54.145
+  type: trojan
+- client-fingerprint: chrome
   name: 9|🇭🇰 13,14|香港2|@ripaojiedian
   password: vzhXXZVw
   port: 48544
@@ -214,7 +224,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 9,27,30|13|🇭 香港3|@ripaojiedian
+  name: '9,27,30|13| 香港3|@ripaojiedian #1'
   port: 52908
   server: 120.234.102.229
   skip-cert-verify: false
@@ -225,7 +235,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 9,27,30|广
+  name: '9,27,30|13|🇭🇰 香港4|@ripaojiedian #2'
   port: 53002
   server: 183.236.51.23
   skip-cert-verify: false
@@ -881,6 +891,26 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
+  network: tcp
+  port: '54675'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
+  network: tcp
+  port: '27512'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-185.14.47.13...
   network: tcp
   port: '3503'
@@ -888,16 +918,19 @@ proxies:
   tls: false
   type: vmess
   uuid: fa678492-65dd-3df0-800d-11f138b868ab
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-154.83.88.10...
-  network: tcp
-  port: '8888'
-  server: 154.83.88.106
+  name: 36,37|HK
+  network: ws
+  port: 60234
+  server: 183.179.210.84
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 7c97b618-741d-49f9-82c2-169a197d28c9
+  uuid: c4d65354-5321-3036-a611-6c42e88b7251
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-18.167.120.1...
@@ -909,38 +942,14 @@ proxies:
   uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-154.83.88.10...
   network: tcp
-  port: '27512'
-  server: 103.149.183.178
+  port: '8888'
+  server: 154.83.88.106
   servername: ''
   tls: false
   type: vmess
-  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
-  network: tcp
-  port: '54675'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
-- alterId: 1
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-183.179.210.8...
-  network: ws
-  port: '60234'
-  server: 183.179.210.84
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c4d65354-5321-3036-a611-6c42e88b7251
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  uuid: 7c97b618-741d-49f9-82c2-169a197d28c9
 - name: 40|HK_speednode_0014
   port: 4000
   server: hk9.ftq.ink

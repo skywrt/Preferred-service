@@ -626,15 +626,7 @@ proxies:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
 - client-fingerprint: chrome
-  name: 9|13,14,15|CN_speednode_0003
-  password: vzhXXZVw
-  port: 36442
-  server: 223.113.54.145
-  skip-cert-verify: false
-  sni: 223.113.54.145
-  type: trojan
-- client-fingerprint: chrome
-  name: 9|15|CN_speednode_0002
+  name: 9|15|CN_speednode_0001
   password: vzhXXZVw
   port: 12524
   server: 36.150.215.222
@@ -747,13 +739,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 24|_中国
+- alterId: 0
+  name: 24,37|🇨🇳CN中国2
   password: SSorg
   port: 2096
   server: 27.50.49.156
   skip-cert-verify: true
   sni: sstjj.esslh.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #1'
   password: SSorg
   port: 2087
@@ -761,16 +756,13 @@ proxies:
   skip-cert-verify: true
   sni: sstjj.esslh.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 24,37|🇨🇳CN国
+- name: '24|_中国 #2'
   password: SSorg
   port: 443
   server: 27.50.49.207
   skip-cert-verify: true
   sni: sstjj.esslh.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - name: '24|_中国 #3'
   password: SSorg
   port: 2053
@@ -785,13 +777,16 @@ proxies:
   skip-cert-verify: true
   sni: sstjj.esslh.filegear-sg.me
   type: trojan
-- name: '24|_中国 #20'
+- alterId: 0
+  name: 24,37|CN国
   password: SSorg
   port: 443
   server: 154.197.64.67
   skip-cert-verify: true
   sni: sstjj.esslh.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '24|_中国 #8'
@@ -834,22 +829,22 @@ proxies:
   skip-cert-verify: true
   sni: sstjj.esslh.filegear-sg.me
   type: trojan
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
-  network: tcp
-  port: '50004'
-  server: 112.132.212.19
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇳 CN-47.92.152.16...
   network: tcp
   port: '50002'
   server: 47.92.152.169
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
+  network: tcp
+  port: '50004'
+  server: 112.132.212.19
   servername: ''
   tls: false
   type: vmess
