@@ -10,7 +10,7 @@ proxies:
   type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,9,11,27|13|🇵 日本4|@ripaojiedian
+  name: 5,9,11,24,27|13|🇵 日本4|@ripaojiedian
   password: MMRTIYVECN33018T
   port: 18001
   server: 8tv68qhq.slashdevslashnetslashtun.net
@@ -27,7 +27,7 @@ proxies:
   uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,9,11,20,21,27|13|🇵 日本特殊|@ripaojiedian
+  name: 5,9,11,20,21,24,27|13|🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 43.206.222.22
@@ -35,7 +35,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '5,11,27|14|日本2|@ripaojiedian #1'
+  name: '5,11,24,27|14|日本2|@ripaojiedian #1'
   network: tcp
   port: '40866'
   server: 45.159.50.143
@@ -106,7 +106,7 @@ proxies:
     path: /name
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,9,11,27|13|🇵 日本3|@ripaojiedian
+  name: 5,9,11,24,27|13|🇵 日本3|@ripaojiedian
   password: D56RP4I5E1CWLAE3
   port: 18016
   server: w72tapyb.slashdevslashnetslashtun.net
@@ -263,7 +263,7 @@ proxies:
   tls: true
   type: ss
 - cipher: aes-256-cfb
-  name: 19|🇯🇵JP-43.207.192.4-0375
+  name: 19|🇯🇵JP-43.207.192.4-0489
   password: amazonskr05
   port: 443
   server: 43.207.192.4
@@ -274,16 +274,18 @@ proxies:
   server: us01.trojanyyds.xyz
   sni: us01.trojanyyds.xyz
   type: trojan
-- name: '20,21|🇯🇵JP-35.74.6.252-0446 #1'
+- name: '20,21,24|🇯🇵 日本 东京Amazon数据中心 #1'
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
   server: us02.trojanyyds.xyz
+  skip-cert-verify: false
   sni: us02.trojanyyds.xyz
   type: trojan
-- name: '20,21|🇯🇵JP-74.226.136.204-0488 #1'
+- name: 20,21,24|🇺🇸 美国 亚特兰大
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
   server: tw02.trojanyyds.xyz
+  skip-cert-verify: false
   sni: tw02.trojanyyds.xyz
   type: trojan
 - name: '20,21|🇯🇵JP-35.74.6.252-0466 #1'
@@ -298,10 +300,11 @@ proxies:
   server: in01.trojanyyds.xyz
   sni: in01.trojanyyds.xyz
   type: trojan
-- name: '20,21|🇯🇵JP-74.226.136.204-0480 #1'
+- name: '20,21,24|🇺🇸 美国 亚特兰大 #1'
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
   server: de01.trojanyyds.xyz
+  skip-cert-verify: false
   sni: de01.trojanyyds.xyz
   type: trojan
 - alterId: 0
@@ -319,41 +322,31 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- alterId: 0
-  name: 24,37|JP
-  password: 2ff730d5-567f-4800-8c76-5d9b07079eed
-  port: 57468
-  server: lm.kaiqsz.com
-  skip-cert-verify: true
-  sni: yg01.redapricotcloud.com
-  tls: true
+- name: 24|🇯🇵 日本 东京Amazon数据中心
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: us01.trojanyyds.xyz
+  skip-cert-verify: false
   type: trojan
-  udp: true
-- name: '24|15|JP_speednode_0008 #1'
+- name: '24|🇯🇵 _日本 #2'
   password: SSorg
   port: 2083
   server: 103.116.7.103
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: sstjj.esslh.filegear-sg.me
   type: trojan
-- alterId: 64
-  cipher: auto
-  name: 24|日期：01-12
-  network: ws
-  port: '30004'
-  server: 192.74.242.214
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.28620449.xyz
-    path: /path/1736464712891
-- name: '24|🇯🇵 _日本 #1'
+- name: 24|日期：01-13
+  password: SSorg
+  port: 443
+  server: 8.210.171.28
+  skip-cert-verify: true
+  sni: sstjj.esslh.filegear-sg.me
+  type: trojan
+- name: 24|🇯🇵 _日本
   password: SSorg
   port: 443
   server: 18.182.63.216
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: sstjj.esslh.filegear-sg.me
   type: trojan
 - name: 26|每日连接前点更新订阅
@@ -602,14 +595,14 @@ proxies:
   uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
   network: tcp
-  port: '1069'
-  server: 152.69.197.60
+  port: '48898'
+  server: 13.112.49.171
   servername: ''
   tls: false
   type: vmess
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
 - alterId: 0
   cipher: auto
   name: 36,37|未知8
@@ -623,11 +616,11 @@ proxies:
   uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17... #1'
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
   network: tcp
-  port: '48898'
-  server: 13.112.49.171
+  port: '1069'
+  server: 152.69.197.60
   servername: ''
   tls: false
   type: vmess
-  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
