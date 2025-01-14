@@ -1,4 +1,10 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 5,12,30|🇩🇪_DE_德国->🇳_CN_中国
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.87.175.157
+  type: ss
 - alterId: 0
   cipher: auto
   name: '5,11|2|🇩🇪_DE_德国 #1'
@@ -62,7 +68,7 @@ proxies:
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
 - client-fingerprint: chrome
-  name: 9,27,30,40|DE_speednode_0006
+  name: 9,24,27,30,40|DE_speednode_0006
   password: Oe5CMj3tiO
   port: 1935
   server: 3.127.116.35
@@ -123,7 +129,20 @@ proxies:
     headers:
       Host: aveiror.com
     path: /linkvws
-- name: 13,27|0|-https://t.me/MrXbin-51
+- alpn:
+  - http/1.1
+  alterId: 0
+  name: 12,30,37|未知30
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 54.93.128.162
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- name: 12,13,30|0|-https://t.me/MrXbin-51
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
   port: 443
@@ -210,43 +229,6 @@ proxies:
     headers:
       Host: 23.158.56.227
     path: /linkvws
-- name: '24|🇷🇺 _俄罗斯 #4'
-  password: '!!str 3723507166611775488'
-  port: 443
-  server: ample-cockatoo.boa152.lol
-  skip-cert-verify: true
-  sni: ample-cockatoo.boa152.lol
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
-  network: httpupgrade
-  port: '2096'
-  server: 104.26.15.16
-  servername: tESt.OffERmiRacLeSHop.Top.
-  tls: true
-  type: vmess
-  uuid: 32eb9cf5-c4c7-40e3-b584-a4b1fc5833ec
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-18...
-  network: httpupgrade
-  port: '8880'
-  server: 188.114.99.187
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d3efdf80-ef3d-45e9-a58e-bf0f18ba8a0b
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-78.47.131.25...
-  network: tcp
-  port: '100'
-  server: 78.47.131.252
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: dc2800af-d3b3-4979-9334-502d05519b50
 - alterId: 0
   cipher: auto
   name: 36,37|未知4
@@ -260,6 +242,16 @@ proxies:
   uuid: d898ce79-9048-4349-a539-d51d6c5a30c2
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NONE 🏴‍☠️ NA-...
+  network: httpupgrade
+  port: '2095'
+  server: 172.67.204.84
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2a504d9d-5091-46d4-b557-d2d4fa70d3b8
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-128.140.10...
   network: tcp
   port: 39651
@@ -267,3 +259,23 @@ proxies:
   tls: false
   type: vmess
   uuid: f394d55e-85e4-4702-bcfd-e04940298d4e
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-78.47.131.25...
+  network: tcp
+  port: '100'
+  server: 78.47.131.252
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: dc2800af-d3b3-4979-9334-502d05519b50
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-18...
+  network: httpupgrade
+  port: '8880'
+  server: 188.114.99.187
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d3efdf80-ef3d-45e9-a58e-bf0f18ba8a0b
