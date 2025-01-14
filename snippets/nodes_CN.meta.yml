@@ -1,10 +1,13 @@
 proxies:
-- cipher: aes-256-cfb
-  name: '5,11|1|_CN_ #1'
-  password: hGkQ6915tD
-  port: 15082
-  server: 59.56.77.178
-  type: ss
+- alterId: 64
+  cipher: auto
+  name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
+  network: tcp
+  port: 54882
+  server: 183.240.235.162
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 5,11,24|🇨🇳 github.com/freefq - 广东省移动 7
@@ -19,15 +22,12 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
-- alterId: 64
-  cipher: auto
-  name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
-  network: tcp
-  port: 54882
-  server: 183.240.235.162
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-cfb
+  name: '5,11|1|_CN_ #1'
+  password: hGkQ6915tD
+  port: 15082
+  server: 59.56.77.178
+  type: ss
 - name: '5,38|🇨🇳_CN_中国_38 #1'
   network: ws
   port: 2053
@@ -752,7 +752,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  name: 24,37|🇨🇳CN中国2
+  name: 24,37|CN
   password: SSorg
   port: 2096
   server: 27.50.49.156
@@ -789,16 +789,13 @@ proxies:
   skip-cert-verify: true
   sni: sstjj.esslh.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 24,37|CN国
+- name: '24|_中国 #20'
   password: SSorg
   port: 443
   server: 154.197.64.67
   skip-cert-verify: true
   sni: sstjj.esslh.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '24|_中国 #8'
@@ -841,12 +838,12 @@ proxies:
   skip-cert-verify: true
   sni: sstjj.esslh.filegear-sg.me
   type: trojan
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
   network: tcp
-  port: '50004'
-  server: 112.132.212.19
+  port: '59003'
+  server: 183.236.51.36
   servername: ''
   tls: false
   type: vmess
@@ -861,12 +858,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
   network: tcp
-  port: '59003'
-  server: 183.236.51.36
+  port: '50004'
+  server: 112.132.212.19
   servername: ''
   tls: false
   type: vmess
