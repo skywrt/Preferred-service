@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,9,11,24,27,30|13|🇯🇵 日本|@ripaojiedian
+  name: '5,9,11,24,27,30|13|🇯🇵 日本特殊|@ripaojiedian #2'
   password: amazonskr05
   port: 443
   server: 52.198.226.5
@@ -63,13 +63,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,9,11,24,27,30|13|🇵 日本4|@ripaojiedian #1'
+  name: 5,9,11,24,27,30,37|JP
   password: MMRTIYVECN33018T
   port: 18001
   server: 8tv68qhq.slashdevslashnetslashtun.net
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -93,13 +96,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,9,11,24,27,30|13|🇵 日本3|@ripaojiedian
+  name: 5,9,11,24,27,30,37|🇯🇵JP日本2
   password: D56RP4I5E1CWLAE3
   port: 18016
   server: w72tapyb.slashdevslashnetslashtun.net
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -270,6 +276,72 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  name: 9|15|JP_speednode_0018
+  network: ws
+  port: 2083
+  server: 103.116.7.103
+  servername: v.aivpn.filegear-sg.me
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 211bbb0b-70a7-4792-ad04-cb6e599d2b9e
+  ws-opts:
+    headers:
+      Host: v.aivpn.filegear-sg.me
+    path: /?ed=2560fp=random
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 9|15|JP_speednode_0019
+  network: ws
+  port: 2083
+  server: 103.116.7.67
+  servername: amedo.esslh.filegear-sg.me
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 70186b61-319d-42f2-9807-7df9594aa385
+  ws-opts:
+    headers:
+      Host: amedo.esslh.filegear-sg.me
+    path: /?ed=2560security=tls
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 9|15|JP_speednode_0020
+  network: ws
+  port: 2083
+  server: 103.116.7.133
+  servername: amedo.esslh.filegear-sg.me
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 70186b61-319d-42f2-9807-7df9594aa385
+  ws-opts:
+    headers:
+      Host: amedo.esslh.filegear-sg.me
+    path: /?ed=2560security=tls
+- client-fingerprint: chrome
+  name: 9|15|JP_speednode_0021
+  network: ws
+  port: 443
+  server: 103.116.7.248
+  servername: amedo.esslh.filegear-sg.me
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 70186b61-319d-42f2-9807-7df9594aa385
+  ws-opts:
+    headers:
+      Host: amedo.esslh.filegear-sg.me
+    path: /?ed=2560security=tls
 - name: 17|荷兰(yudou66.com 玉豆免费节点)
   network: ws
   port: 443
@@ -330,6 +402,15 @@ proxies:
     headers:
       Host: lp.ylks.us.kg
     path: '%2F%3Fed%3D2560'
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知85 2.0MB/s
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - cipher: aes-256-cfb
   name: 19|🇯🇵JP-43.206.222.22-0883
   password: amazonskr05
@@ -363,13 +444,16 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- name: 24|日期：01-14
+- alterId: 0
+  name: 24,37|未知94
   password: Aimer
   port: 443
   server: 8.210.171.28
   skip-cert-verify: true
   sni: ameqo.esslh.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: 24|🇯🇵 _日本
   password: Aimer
   port: 443
@@ -432,6 +516,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
+  network: tcp
+  port: '1069'
+  server: 152.69.197.60
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
   network: tcp
   port: '24445'
@@ -444,32 +538,22 @@ proxies:
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
   network: tcp
-  port: '48898'
-  server: 13.112.49.171
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
-  network: tcp
-  port: '1069'
-  server: 152.69.197.60
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17... #1'
-  network: tcp
   port: '48897'
   server: 13.112.49.171
   servername: ''
   tls: false
   type: vmess
   uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17... #1'
+  network: tcp
+  port: '48898'
+  server: 13.112.49.171
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
 - alpn:
   - h3
   client-fingerprint: random
