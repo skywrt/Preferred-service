@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '5,9,11,24,27,30|13|🇯🇵 日本特殊|@ripaojiedian #2'
+  name: '5,9,11,24,30|13|🇯🇵 日本特殊|@ripaojiedian #1'
   password: amazonskr05
   port: 443
   server: 52.198.226.5
@@ -31,7 +31,7 @@ proxies:
   uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '5,9,11,24,27,30|13|🇵 日本5|@ripaojiedian #1'
+  name: '5,9,11,24,30|13|🇵 日本5|@ripaojiedian #1'
   password: 3a2ba863-cbce-4991-84ac-4505c2253183
   port: 23910
   server: dns.a123.my
@@ -40,7 +40,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '5,9,10,11,24,27,30|13,14|日本2|@ripaojiedian #2'
+  name: '5,9,10,11,24,30|13,14|日本2|@ripaojiedian #1'
   network: ws
   port: 443
   server: jp.cowvpn.org
@@ -66,7 +66,7 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,9,11,24,27,30,37|JP
+  name: 5,9,11,24,30,37|JP
   password: MMRTIYVECN33018T
   port: 18001
   server: 8tv68qhq.slashdevslashnetslashtun.net
@@ -99,7 +99,7 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,9,11,24,27,30,37|🇯🇵JP日本2
+  name: 5,9,11,24,30,37|🇯🇵JP日本2
   password: D56RP4I5E1CWLAE3
   port: 18016
   server: w72tapyb.slashdevslashnetslashtun.net
@@ -461,13 +461,6 @@ proxies:
   skip-cert-verify: true
   sni: ameqo.esslh.filegear-sg.me
   type: trojan
-- name: 26|✪每日连接前点更新订阅
-  password: 0bc68743-cff8-4730-9818-9d8192ee335c
-  port: 21142
-  server: 120.232.217.96
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - name: 26|日本二 isp 解锁openai 2
   password: 05370912-92b0-4678-a739-d80261e8de33
   port: 21867
@@ -492,8 +485,9 @@ proxies:
   sni: bg.guangsu888.cc
   type: trojan
   udp: true
-- name: 26|日本02|解GPT|解NF|解TT 41
-  password: 8f16bdcc-810a-44ee-83c5-30d526f318f4
+- name: 26,27|13,14|日本4|@ripaojiedian
+  network: tcp
+  password: 78c245b7-b61c-4970-b4c2-d92a173ff16a
   port: 33345
   server: gs.huamao888.top
   skip-cert-verify: true
@@ -514,12 +508,34 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: aes-256-gcm
+  name: 27|13| 日本3|@ripaojiedian
+  password: 7ZD182CF9QZLXPRW
+  port: 18013
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 27|13|🇵 日本5|@ripaojiedian
+  password: bb3193b4-e426-40e9-9664-19b7bc331c30
+  port: 51578
+  server: chiyu.myfczy169.top
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 27|13|🇵 日本|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 18.136.123.141
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63.38...
   network: tcp
   port: '24445'
   server: 140.83.63.38
+  servername: ''
   tls: false
   type: vmess
   uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
@@ -527,12 +543,12 @@ proxies:
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
   network: tcp
-  port: '48898'
+  port: '48897'
   server: 13.112.49.171
   servername: ''
   tls: false
   type: vmess
-  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
+  uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
@@ -547,12 +563,12 @@ proxies:
   cipher: auto
   name: '36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17... #1'
   network: tcp
-  port: '48897'
+  port: '48898'
   server: 13.112.49.171
   servername: ''
   tls: false
   type: vmess
-  uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
+  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
 - alpn:
   - h3
   client-fingerprint: random

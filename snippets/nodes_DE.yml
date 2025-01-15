@@ -1,6 +1,48 @@
 proxies:
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|38bc087b4ae346878b500a19b00f2f...
+  network: ws
+  port: 2052
+  server: p1.v2raybrasil.xyz
+  tls: false
+  type: vmess
+  udp: false
+  uuid: a71c8f6c-5210-45a0-8f47-1d2556ee3083
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|a0e9350eae494879b23b5a0ca98b2a...
+  network: ws
+  port: 2052
+  server: p3.v2raybrasil.xyz
+  tls: false
+  type: vmess
+  udp: false
+  uuid: a71c8f6c-5210-45a0-8f47-1d2556ee3083
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|ce5c27ca5dc44323851e0c5a4119a4...
+  network: ws
+  port: 2082
+  server: c1.v2raybrasil.xyz
+  tls: false
+  type: vmess
+  udp: false
+  uuid: a71c8f6c-5210-45a0-8f47-1d2556ee3083
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
   name: '5,11|2|🇩🇪_DE_德国 #1'
   network: ws
   port: 45103
@@ -109,16 +151,16 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alpn:
-  - http/1.1
-  name: 12,30|🇪_DE_德国
+- alterId: 0
+  cipher: auto
+  name: 12,30,36|🔒 VM-TCP-NONE 🇩🇪 DE-5.75.135.1...
   network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 54.93.128.162
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '12,13,30|🇩🇪_DE_德国_1 #2'
+  port: 80
+  server: 5.75.135.123
+  tls: false
+  type: vmess
+  uuid: 6c2cfb86-be44-4f40-984b-d3331bc984a5
+- name: '13|🇩🇪_DE_德国_1 #1'
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
   port: 443
@@ -198,13 +240,14 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-5.75.135.1...
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-78.47.131.25...
   network: tcp
-  port: 80
-  server: 5.75.135.123
+  port: '100'
+  server: 78.47.131.252
+  servername: ''
   tls: false
   type: vmess
-  uuid: 6c2cfb86-be44-4f40-984b-d3331bc984a5
+  uuid: dc2800af-d3b3-4979-9334-502d05519b50
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇩🇪 DE-5.39.252.204:...
@@ -219,13 +262,3 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-78.47.131.25...
-  network: tcp
-  port: '100'
-  server: 78.47.131.252
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: dc2800af-d3b3-4979-9334-502d05519b50
