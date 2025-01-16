@@ -45,6 +45,12 @@ proxies:
     headers:
       Host: ''
     path: /
+- cipher: aes-256-cfb
+  name: '5,16|🇷🇺_RU_俄罗斯_1 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
+  type: ss
 - alterId: 0
   cipher: auto
   name: '5,11|2|🇷🇺_RU_俄罗斯联邦 #2'
@@ -175,12 +181,26 @@ proxies:
     headers:
       Host: ap.ylks.xyz
     path: '%2Fblue'
-- name: '24|🇷🇺 _俄罗斯 #1'
-  password: '!!str 3723507166611775488'
+- name: '24|🇷🇺 _俄罗斯 #4'
+  password: Aimer
   port: 443
-  server: ample-cockatoo.boa152.lol
-  skip-cert-verify: false
-  sni: ample-cockatoo.boa152.lol
+  server: 212.41.15.119
+  skip-cert-verify: true
+  sni: ameqo.esslh.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #5'
+  password: Aimer
+  port: 8443
+  server: 185.204.109.190
+  skip-cert-verify: true
+  sni: ameqo.esslh.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #3'
+  password: Aimer
+  port: 2087
+  server: 5.182.84.229
+  skip-cert-verify: true
+  sni: ameqo.esslh.filegear-sg.me
   type: trojan
 - alterId: 0
   cipher: auto
@@ -248,15 +268,18 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 28|🇺 俄罗斯-圣彼得堡-013-1I
+  name: 28,36|🔒 VM-WS-NA 🇷🇺 RU-194.87.69.52:...
   network: ws
-  port: 17926
+  port: '17926'
   server: 194.87.69.52
+  servername: ''
   tls: false
   type: vmess
   udp: true
-  uuid: 651f3f18-471f-4be0-a02a-c3c43fb1ce31
+  uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -424,3 +447,21 @@ proxies:
   tls: false
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: ios
+  name: 40|RU_speednode_0036
+  network: ws
+  port: 443
+  server: 46.254.92.33
+  servername: mmdserver.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  ws-opts:
+    headers:
+      Host: mmdserver.us.kg
+    path: /?ed=2048
