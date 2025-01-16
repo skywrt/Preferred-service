@@ -1029,26 +1029,12 @@ proxies:
     headers:
       host: mizban.arzonhost.ir
     path: /
-- name: 12,24,26,30|_CN_->_US_国
-  password: 7daf833c-37b9-4afc-8495-96590f03f781
-  port: 20820
-  server: 120.232.217.96
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 12,16,24,30|🇨🇳_CN_中国->🇺_RU_
+- name: 12,16,24,30|_CN_国->🇺_RU_
   password: 38571ca6-6692-4559-b901-0bc5826b7661
   port: 60194
   server: ru0195.alibabaokz.com
   skip-cert-verify: true
   sni: ru0195.alibabaokz.com
-  type: trojan
-- name: 12,16,24,30|🇳_CN_中国->🇺🇸_US_美国_1
-  password: 7daf833c-37b9-4afc-8495-96590f03f781
-  port: 21332
-  server: 120.232.217.96
-  skip-cert-verify: true
-  sni: 120.232.217.96
   type: trojan
 - name: 12,24,26,27,30,40|CN_speednode_0009
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
@@ -1058,37 +1044,23 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 12,30|_SK_斯->🇺🇸_US_美国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 156.146.40.194
-  type: ss
-- name: 12,24,30|🇸_US_美国->🇷_KR_国
-  password: fdd37849-e66c-464d-8b1c-56a1a16e05bf
+  name: 12,19,30|🇸_US_美国->🇷🇺_RU_俄罗斯
+  password: amazonskr05
   port: 443
-  server: 96.8.121.166
-  skip-cert-verify: true
-  sni: rnus.goudan.world
-  type: trojan
-- name: 12,26,30|🇨🇳_CN_中国->🇺🇸_US_美国_3
+  server: 52.27.15.25
+  type: ss
+- name: '12,24,26,30|🇨🇳_CN_中国->🇺🇸_US_美国_1 #1'
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
-  port: 21019
+  port: 40037
   server: 219.135.231.205
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 12,24,30|🇨🇳_CN_中国->🇷_KR_韩国
-  password: fdd37849-e66c-464d-8b1c-56a1a16e05bf
-  port: 443
-  server: 119.8.115.238
-  skip-cert-verify: true
-  sni: hwhk.goudan.world
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: '12,13,24|_中国 #17'
+  name: 12,13|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_2
   network: ws
-  port: '25230'
+  port: 25230
   server: cm1.awslcn.info
   servername: cm1.awslcn.info
   tls: false
@@ -1098,14 +1070,15 @@ proxies:
     headers:
       Host: cm1.awslcn.info
     path: /
-- name: 12,26,30|🇨🇳_CN_中国->🇺🇸_US_美国_5
+- name: 12,24,26,30|🇨🇳_CN_中国->🇺🇸_US_美国_2
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
-  port: 40037
+  port: 21019
   server: 219.135.231.205
   skip-cert-verify: true
   type: trojan
   udp: true
 - name: 12,24,26,27,30,40|CN_speednode_0008
+  network: tcp
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
   port: 21142
   server: 120.232.217.96
@@ -1140,7 +1113,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '13|🇨🇳_CN_中国->🇺🇸_US_美国 #7'
+  name: '13|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
   network: tcp
   port: 52112
   server: 183.236.51.23
@@ -1149,7 +1122,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 16,30|🇨🇳_CN_中国->🇺_RU_俄罗斯_1
+  name: '16,30|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_1 #2'
   network: ws
   port: 25230
   server: cm1.awslcn.info
@@ -1161,6 +1134,13 @@ proxies:
     headers:
       host: cm1.awslcn.info
     path: /
+- name: 16|🇨🇳_CN_中国->_US_国
+  password: 7daf833c-37b9-4afc-8495-96590f03f781
+  port: 21332
+  server: 120.232.217.96
+  skip-cert-verify: true
+  sni: 120.232.217.96
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 16|🇺🇸_US_美国->🇷_FR_国
@@ -1181,7 +1161,7 @@ proxies:
   server: 13.229.248.183
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 16,27|0|-https://t.me/MrXbin-9
+  name: 16,27,30|0|-https://t.me/MrXbin-9
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.87.175.157
