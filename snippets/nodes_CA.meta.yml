@@ -1,4 +1,49 @@
 proxies:
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|c3df35e6d09446d1adf128ff9c3f96...
+  network: ws
+  port: 22222
+  server: 54.195.71.33
+  servername: telegram-channel-vlessconfig.sohala.uk
+  tls: true
+  type: vless
+  udp: false
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- name: 5|🇨🇦_CA_加拿大
+  network: ws
+  port: 443
+  server: 23.227.38.22
+  servername: v2ray3.freegradely.xyz
+  tls: true
+  type: vless
+  uuid: ffb15cd2-0521-49de-b8aa-fb15d58c8075
+  ws-opts:
+    path: /bqbows
+- name: '5|🇨🇦_CA_加拿大 #1'
+  network: ws
+  port: 443
+  server: 23.227.38.23
+  servername: xray1.freegradely.xyz
+  tls: true
+  type: vless
+  uuid: 0773256c-d020-436d-afea-6eee7cb6c872
+  ws-opts:
+    path: /bodhws
+- name: '5|🇨🇦_CA_加拿大 #2'
+  network: ws
+  port: 443
+  server: 23.227.39.23
+  servername: xray1.freegradely.xyz
+  tls: true
+  type: vless
+  uuid: 0773256c-d020-436d-afea-6eee7cb6c872
+  ws-opts:
+    path: /bodhws
 - alterId: 0
   cipher: auto
   name: 5|[vmess]加拿大2｜1倍
@@ -27,15 +72,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5|⚡️专线|加拿大01标准|倍率5
-  network: tcp
-  port: '16294'
-  server: zfd-boardv2.01byx31qzn.download
-  tls: false
-  type: vmess
-  uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
-- alterId: 0
-  cipher: auto
   name: 5|[vmess]加拿大3｜1倍
   network: ws
   port: '8880'
@@ -47,6 +83,35 @@ proxies:
     headers:
       Host: doca.pmcloud.top
     path: /
+- name: '5|🇨🇦_CA_加拿大 #3'
+  network: ws
+  port: 443
+  server: 23.227.38.24
+  servername: xray1.freegradely.xyz
+  tls: true
+  type: vless
+  uuid: 0773256c-d020-436d-afea-6eee7cb6c872
+  ws-opts:
+    path: /bodhws
+- name: '5|🇨🇦_CA_加拿大 #4'
+  network: ws
+  port: 443
+  server: 23.227.39.24
+  servername: xray1.freegradely.xyz
+  tls: true
+  type: vless
+  uuid: 0773256c-d020-436d-afea-6eee7cb6c872
+  ws-opts:
+    path: /bodhws
+- alterId: 0
+  cipher: auto
+  name: 5|⚡️专线|加拿大01标准|倍率5
+  network: tcp
+  port: '16294'
+  server: zfd-boardv2.01byx31qzn.download
+  tls: false
+  type: vmess
+  uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
 - cipher: aes-256-gcm
   name: 8|🇨🇦CA-134.195.196.51-063_1@63
   password: pKEW8JPByTVTLtM
@@ -590,43 +655,6 @@ proxies:
     headers:
       Host: ameqo.esslh.filegear-sg.me
     path: /?ed=2560
-- name: 10|加拿大 031
-  network: ws
-  port: 2083
-  server: 172.67.210.4
-  servername: amedo.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 70186b61-319d-42f2-9807-7df9594aa385
-  ws-opts:
-    headers:
-      Host: amedo.esslh.filegear-sg.me
-    path: /?ed=2560
-- name: 10|加拿大 001
-  network: ws
-  port: 8880
-  server: 104.16.28.34
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 075a365b-b0c7-4ba3-b5a6-597850c223f9
-  ws-opts:
-    headers:
-      Host: sinaazizpor.wapgiz.workers.dev
-    path: /?ed=2048
-- client-fingerprint: chrome
-  name: 10|加拿大 002
-  network: grpc
-  port: 2053
-  server: 104.16.60.8
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 36a8a97b-9380-4cfb-9248-4f71a09f454c
 - alterId: 0
   cipher: auto
   name: 17|加拿大(yudou66.com 玉豆免费节点)
@@ -667,9 +695,27 @@ proxies:
     headers:
       Host: Sb-1u6.paGEs.dEv
     path: '%2Fpc0cypuups4meoks%2Fmtu4ljewms4ymdmumti3%3Fed%3D2560'
+- cipher: aes-128-gcm
+  name: 19|🇨🇦CA-149.22.95.183-0355
+  password: shadowsocks
+  port: 443
+  server: 149.22.95.183
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇨🇦CA-142.4.216.225-0470
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: ca225.vpnbook.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇨🇦CA-142.4.216.225-0468
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-134.195.198.147-8446 #1'
+  name: '20,21|🇨🇦CA-134.195.198.147-8287 #1'
   network: ws
   port: 443
   server: 134.195.198.147
@@ -683,7 +729,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 23|🇨🇦_CA_加拿大
+  name: '23|🇨🇦_CA_加拿大 #5'
   network: ws
   port: 443
   server: 158.51.121.36
