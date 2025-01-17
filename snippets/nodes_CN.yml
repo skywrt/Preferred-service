@@ -1,13 +1,4 @@
 proxies:
-- alterId: 64
-  cipher: auto
-  name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
-  network: tcp
-  port: 54882
-  server: 183.240.235.162
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 5,11,24|🇨🇳 github.com/freefq - 广东省移动 7
@@ -22,18 +13,27 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
+- cipher: aes-256-cfb
+  name: '5,11|1|_CN_ #1'
+  password: hGkQ6915tD
+  port: 15082
+  server: 59.56.77.178
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
+  network: tcp
+  port: 54882
+  server: 183.240.235.162
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 5,24,30|🇨🇳 广东省广州市 /区电信
   password: 6KYL3YM7UAOAE94Q
   port: 16016
   server: w72tapyb.slashdevslashnetslashtun.net
-  type: ss
-- cipher: aes-256-cfb
-  name: '5,11|1|_CN_ #1'
-  password: hGkQ6915tD
-  port: 15082
-  server: 59.56.77.178
   type: ss
 - alterId: 0
   cipher: auto
@@ -794,7 +794,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 24,26,27,30,40|CN_speednode_0005
+- name: 24,26,27,30,40|CN_speednode_0006
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
   port: 16233
   server: 120.232.217.96
@@ -808,56 +808,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 24|_中国
-  password: Aimer
-  port: 2053
-  server: 154.197.64.166
-  skip-cert-verify: false
-  sni: ameqo.esslh.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #1'
-  password: Aimer
-  port: 443
-  server: 27.50.49.207
-  skip-cert-verify: false
-  sni: ameqo.esslh.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #2'
-  password: Aimer
-  port: 2087
-  server: 154.197.64.189
-  skip-cert-verify: false
-  sni: ameqo.esslh.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #3'
-  password: Aimer
-  port: 443
-  server: 154.197.64.67
-  skip-cert-verify: false
-  sni: ameqo.esslh.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #4'
-  password: Aimer
-  port: 2096
-  server: 27.50.49.156
-  skip-cert-verify: false
-  sni: ameqo.esslh.filegear-sg.me
-  type: trojan
-- cipher: aes-256-gcm
-  name: 24,40|CN_speednode_0010
-  password: BUP3OYED8WELSLPM
-  port: 16004
-  server: w72tapyb.slashdevslashnetslashtun.net
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 24,37|未知11 118.2KB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 154.90.63.193
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: '24,37|HK #1'
@@ -867,22 +817,111 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- alterId: 0
+- name: '24|_中国 #6'
+  password: phXKwfrd
+  port: 21673
+  server: 223.111.144.12
+  skip-cert-verify: false
+  type: trojan
+- name: '24|_中国 #11'
+  password: fuck
+  port: 443
+  server: 42.236.73.72
+  skip-cert-verify: false
+  type: trojan
+- name: '24|_中国 #13'
+  password: Aimer
+  port: 2096
+  server: 27.50.49.156
+  skip-cert-verify: false
+  sni: ameqo.esslh.filegear-sg.me
+  type: trojan
+- name: '24|_中国 #14'
+  password: Aimer
+  port: 443
+  server: 27.50.49.207
+  skip-cert-verify: false
+  sni: ameqo.esslh.filegear-sg.me
+  type: trojan
+- name: '24|_中国 #15'
+  password: Aimer
+  port: 443
+  server: 8.210.171.28
+  skip-cert-verify: false
+  sni: ameqo.esslh.filegear-sg.me
+  type: trojan
+- alterId: 64
   cipher: auto
-  name: 24,36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
+  name: '24|_中国 #16'
+  network: ws
+  port: '41003'
+  server: 45.199.138.226
+  tls: true
+  type: vmess
+  uuid: f9fa3a9c-f7d5-414f-88e6-6970585d9949
+  ws-opts:
+    headers:
+      Host: www.36092822.xyz
+    path: /path/1737106641750
+- alterId: 64
+  cipher: auto
+  name: '24|_中国 #17'
   network: tcp
-  port: '50004'
-  server: 112.132.212.19
-  servername: ''
+  port: '40972'
+  server: 120.232.153.63
+  tls: false
+  type: vmess
+  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
+- alterId: 64
+  cipher: auto
+  name: '24|_中国 #18'
+  network: tcp
+  port: '52908'
+  server: 120.234.102.229
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '24|_中国 #16'
+  name: '24|_中国 #19'
   network: tcp
-  port: '50002'
-  server: 47.116.173.76
+  port: '50052'
+  server: 183.236.48.158
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '24|_中国 #20'
+  network: tcp
+  port: '56601'
+  server: 183.236.51.23
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '24|_中国 #21'
+  network: tcp
+  port: '46602'
+  server: 183.236.51.23
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: '24|_中国 #25'
+  password: Aimer
+  port: 2053
+  server: 154.197.64.166
+  skip-cert-verify: false
+  sni: ameqo.esslh.filegear-sg.me
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
+  network: tcp
+  port: '50004'
+  server: 112.132.212.19
+  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -906,13 +945,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  name: 40|CN_speednode_0009
+  password: 9a745aad-7df7-480b-8f6b-068ca21f6954
+  port: 27628
+  server: jhdfzvnq.xn--fiqs8sjz2bull.com
+  type: ss
+  udp: true
 - alterId: 64
   cipher: auto
-  name: 40|CN_speednode_0003
-  port: 54104
+  name: 40|CN_speednode_0010
+  port: 51037
   server: 183.236.51.23
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
