@@ -94,12 +94,6 @@ proxies:
     headers:
       Host: ''
     path: ''
-- cipher: aes-256-cfb
-  name: '5,16|🇷🇺_RU_俄罗斯_1 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.112
-  type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 5,24,30|🇸  新利亚JustHost
@@ -160,7 +154,7 @@ proxies:
     path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,16,24,30|🇺 俄罗斯 V2CROSS.COM 2
+  name: 5,24,30|🇺 俄罗斯 V2CROSS.COM 2
   password: dongtaiwang.com
   port: 23456
   server: 185.22.155.228
@@ -213,13 +207,14 @@ proxies:
     headers:
       Host: ameqo.esslh.filegear-sg.me
     path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇷🇺RU-45.151.62.54-5741
-  password: 0zyDRZ1XmNXaaCAN7KEA8a
-  port: 28825
-  server: 45.151.62.54
-  type: ss
 - name: 24|🇷🇺 _俄罗斯
+  password: Aimer
+  port: 443
+  server: 212.41.15.119
+  skip-cert-verify: false
+  sni: ameqo.esslh.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #1'
   password: Aimer
   port: 2087
   server: 5.182.84.229
@@ -228,7 +223,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 24,28|俄罗斯-圣彼得堡-012-1D
+  name: 28|俄罗斯-圣彼得堡-012-1D
   network: ws
   port: 17926
   server: 195.58.49.86
@@ -238,36 +233,6 @@ proxies:
   uuid: a2f8e6ce-c31a-45b5-81b1-0c72033c5443
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  name: '24|🇷🇺 _俄罗斯 #3'
-  network: ws
-  port: '17926'
-  server: 195.58.49.50
-  tls: false
-  type: vmess
-  uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- name: '24|🇷🇺 _俄罗斯 #4'
-  password: Aimer
-  port: 443
-  server: 212.41.15.119
-  skip-cert-verify: false
-  sni: ameqo.esslh.filegear-sg.me
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...
-  network: tcp
-  port: '47555'
-  server: 46.29.166.237
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇷🇺 RU-194.87.69.52:...
@@ -282,3 +247,13 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...
+  network: tcp
+  port: '47555'
+  server: 46.29.166.237
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
