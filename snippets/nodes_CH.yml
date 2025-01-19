@@ -24,12 +24,16 @@ proxies:
   server: 156.146.62.164
   type: ss
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇭 CH-23.166.88.18...
-  network: tcp
-  port: '22324'
-  server: 23.166.88.183
-  servername: ''
-  tls: false
+  cipher: none
+  name: 36|🔒 VM-WS-TLS 🇨🇭 CH-140.238.173....
+  network: ws
+  port: '8443'
+  server: 140.238.173.181
+  servername: fatcat.nevergonnagiveyouup.top
+  tls: true
   type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  uuid: 97a21172-89a0-411e-b017-6a27c61c743d
+  ws-opts:
+    headers:
+      Host: fatcat.nevergonnagiveyouup.top
+    path: /vmess-argo?ed=2048
