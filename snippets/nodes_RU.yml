@@ -5,7 +5,7 @@ proxies:
   fingerprint: ''
   name: 3,19,20,21,36|🔒 VM-WS-NA 🇷🇺 RU-45.8.159.241:...
   network: ws
-  port: 33395
+  port: '33395'
   server: 45.8.159.241
   servername: ''
   skip-cert-verify: true
@@ -44,6 +44,13 @@ proxies:
   uuid: eb060c08-f284-49be-adb8-5188fb0521a5
   ws-opts:
     path: /
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 5,24,30|🇸  新亚JustHost
+  password: dfc78593808d4f68
+  port: 16112
+  server: 45.130.147.138
+  type: ss
 - alterId: 0
   cipher: auto
   name: '5,11|2|🇷🇺_RU_俄罗斯联邦 #2'
@@ -67,16 +74,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5,24|🇷🇺 俄罗斯 V2CROSS.COM
+  client-fingerprint: chrome
+  name: 5,24,30|🇺 俄罗斯 V2CROSS.COM
   network: ws
-  port: '55899'
+  port: 55899
   server: 195.58.49.86
   tls: false
   type: vmess
   uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -94,6 +100,13 @@ proxies:
     headers:
       Host: ''
     path: ''
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 5,16,24,30|🇺 俄罗斯 V2CROSS.COM 2
+  password: dongtaiwang.com
+  port: 23456
+  server: 185.22.155.228
+  type: ss
 - name: 8|🇷🇺RU-176.32.35.167-210_1@209
   password: 85bce006-4885-11ee-8792-f23c9164ca5d
   port: 1007
@@ -475,16 +488,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...
-  network: tcp
-  port: '47555'
-  server: 46.29.166.237
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-NA 🇷🇺 RU-195.58.49.86:...
   network: ws
   port: '17926'
@@ -497,3 +500,13 @@ proxies:
     headers:
       Host: ''
     path: ''
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...
+  network: tcp
+  port: '47555'
+  server: 46.29.166.237
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
