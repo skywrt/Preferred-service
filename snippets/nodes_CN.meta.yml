@@ -15,14 +15,14 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: '5|中国 - 乌恰 - Baxet Group Inc. - 1... #6'
+  name: 5,24,36|🔒 VM-WS-NA 🇭🇰 HK-212.192.12.70...
   network: ws
   port: '17926'
   server: 212.192.12.70
   servername: ''
   tls: false
   type: vmess
-  uuid: dd89fd66-2ae4-4868-aae5-20e1977a84c4
+  uuid: 3644b069-d06e-40b5-872e-f3b4c0cbfa19
   ws-opts:
     headers:
       Host: ''
@@ -772,30 +772,28 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 24|_中国
-  network: tcp
-  port: '52908'
-  server: 120.234.102.229
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '24|_中国 #2'
-  network: tcp
-  port: '46602'
-  server: 183.236.51.23
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: '24|_中国 #6'
+  password: 38571ca6-6692-4559-b901-0bc5826b7661
+  port: 60194
+  server: ru0195.alibabaokz.com
+  skip-cert-verify: true
+  sni: ru0195.alibabaokz.com
+  type: trojan
 - alterId: 0
-  cipher: none
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
+  cipher: chacha20-ietf-poly1305
+  name: '24,37|HK #1'
+  password: 11a805f2-41a7-4cd8-8406-0470c3cde0d3
+  port: 6181
+  server: 45.250.184.183
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
   network: tcp
-  port: '50004'
-  server: 112.132.212.19
+  port: '50002'
+  server: 112.132.215.12
   servername: ''
   tls: false
   type: vmess
@@ -810,19 +808,49 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-120.26.55.22...
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
   network: tcp
-  port: '50002'
-  server: 120.26.55.225
+  port: '50004'
+  server: 112.132.212.19
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 40|CN_speednode_0002
+  name: 40|CN_speednode_0005
+  port: 44614
+  server: 120.198.71.219
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 40|CN_speednode_0006
+  port: 40565
+  server: 120.232.153.63
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 40|CN_speednode_0007
+  port: 54882
+  server: 183.236.48.163
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 40|CN_speednode_0008
   port: 48109
   server: 183.236.51.23
   skip-cert-verify: false
@@ -830,70 +858,28 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-cfb
-  name: 40|CN_speednode_0003
-  password: hGkQ6915tD
-  port: 16088
-  server: 120.232.81.50
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 40|CN_speednode_0004
-  password: a2c25d38-44dc-4b53-9377-9f98bd8d7e2b
-  port: 30003
-  server: 223.113.53.141
-  type: ss
-  udp: true
-- alterId: 2
+- alterId: 64
   cipher: auto
-  name: 40|CN_speednode_0005
-  network: ws
-  port: 22642
-  server: tk.hzlt.tkddns.xyz
+  name: 40|CN_speednode_0009
+  port: 51037
+  server: 183.236.51.23
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-b.tkong.cc
-    path: /
-- cipher: rc4-md5
-  name: 40|CN_speednode_0009
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40206
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 2.hublink.pro
-  type: ssr
-  udp: true
-- cipher: rc4-md5
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
   name: 40|CN_speednode_0010
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40211
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 2.hublink.pro
-  type: ssr
+  port: 54104
+  server: 183.236.51.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
-  name: 40|CN_speednode_0012
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40239
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 3.link-hub.click
-  type: ssr
-  udp: true
-- cipher: rc4-md5
-  name: 40|CN_speednode_0013
+  name: 40|CN_speednode_0011
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -903,84 +889,23 @@ proxies:
   server: 2.hublink.pro
   type: ssr
   udp: true
-- cipher: rc4-md5
-  name: 40|CN_speednode_0014
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40202
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 1.linkhub.degree
-  type: ssr
+- cipher: aes-256-cfb
+  name: 40|CN_speednode_0012
+  password: hGkQ6915tD
+  port: 15084
+  server: 120.232.81.50
+  type: ss
   udp: true
-- cipher: rc4-md5
-  name: 40|CN_speednode_0015
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40200
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 1.linkhub.degree
-  type: ssr
+- cipher: aes-256-cfb
+  name: 40|CN_speednode_0013
+  password: hGkQ6915tD
+  port: 16088
+  server: 120.232.81.50
+  type: ss
   udp: true
-- cipher: rc4-md5
-  name: 40|CN_speednode_0016
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40218
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 2.hublink.pro
-  type: ssr
-  udp: true
-- cipher: rc4-md5
-  name: 40|CN_speednode_0018
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40210
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 2.hublink.pro
-  type: ssr
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 40|CN_speednode_0021
-  port: 14100
-  server: dxv4.pai50288.uk
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
-- cipher: rc4-md5
-  name: 40|CN_speednode_0022
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40254
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 3.link-hub.click
-  type: ssr
-  udp: true
-- alterId: 64
-  cipher: auto
-  name: 40|CN_speednode_0024
-  port: 51037
-  server: 183.236.51.23
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 2
   cipher: auto
-  name: 40|CN_speednode_0025
+  name: 40|CN_speednode_0014
   network: ws
   port: 22641
   server: tk.hzlt.tkddns.xyz
@@ -993,14 +918,18 @@ proxies:
     headers:
       Host: zxjp-a.tkong.cc
     path: /
-- cipher: rc4-md5
-  name: 40|CN_speednode_0026
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40255
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 3.link-hub.click
-  type: ssr
+- alterId: 2
+  cipher: auto
+  name: 40|CN_speednode_0015
+  network: ws
+  port: 22642
+  server: tk.hzlt.tkddns.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
   udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-b.tkong.cc
+    path: /
