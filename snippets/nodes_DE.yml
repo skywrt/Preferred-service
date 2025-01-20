@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 5,11|11|0|--43
+  name: 5,11|11|0|--84
   network: tcp
   port: 80
   server: 94.182.150.230
@@ -33,7 +33,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '5,11,24|0|--62 #1'
+  name: '5,24|0|--62 #1'
   network: tcp
   port: '80'
   server: 94.182.150.231
@@ -248,26 +248,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-64.225.109.2...
-  network: tcp
-  port: '2082'
-  server: 64.225.109.206
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 48264b45-64b8-4e9f-8a88-cef41f20c736
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
-  network: httpupgrade
-  port: '2096'
-  server: 104.26.15.16
-  servername: tESt.OffERmiRacLeSHop.Top.
-  tls: true
-  type: vmess
-  uuid: 32eb9cf5-c4c7-40e3-b584-a4b1fc5833ec
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-5.75.135.1...
   network: tcp
   port: 11361
@@ -276,15 +256,19 @@ proxies:
   type: vmess
   uuid: 3d94d0c4-dccb-472d-ad8b-503a65316a77
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-145.223.101....
-  network: tcp
-  port: '20596'
-  server: 145.223.101.238
-  servername: ''
-  tls: false
+  cipher: none
+  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-47.254.171.1...
+  network: ws
+  port: '8443'
+  server: 47.254.171.15
+  servername: fatcat.nevergonnagiveyouup.top
+  tls: true
   type: vmess
-  uuid: 219c3a40-d366-4e7b-bd18-ea592d80d9a6
+  uuid: 97a21172-89a0-411e-b017-6a27c61c743d
+  ws-opts:
+    headers:
+      Host: fatcat.nevergonnagiveyouup.top
+    path: /vmess-argo?ed=2048
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
@@ -297,6 +281,16 @@ proxies:
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-145.223.101....
+  network: tcp
+  port: '20596'
+  server: 145.223.101.238
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 219c3a40-d366-4e7b-bd18-ea592d80d9a6
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-88.99.12.94:...
   network: tcp
   port: '100'
@@ -305,13 +299,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 1889d9ef-9d58-4427-bb3e-a08810c214eb
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-XHTTP-NONE 🇩🇪 DE-45.77.55...
-  network: xhttp
-  port: '44749'
-  server: 45.77.55.4
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 844b2dde-99e8-4023-a218-3b8349732475
