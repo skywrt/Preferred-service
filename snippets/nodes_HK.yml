@@ -102,7 +102,7 @@ proxies:
   skip-cert-verify: false
   sni: waphk.mjt000.com
   type: trojan
-- name: 5,27,30,40|CN_speednode_0011
+- name: 5,24,27,30,40|CN_speednode_0011
   network: tcp
   password: phXKwfrd
   port: 18681
@@ -112,7 +112,7 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,11,24,27,30|13|🇭🇰 香港5|@ripaojiedian #2'
+  name: '5,9,11,24,27,30|13|🇭🇰 香港5|@ripaojiedian #2'
   password: D8TQ0D993NS6XK0K
   port: 15008
   server: w72tapyb.slashdevslashnetslashtun.net
@@ -133,7 +133,7 @@ proxies:
     path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,11,24,27,30|13|🇭🇰 香港6|@ripaojiedian #2'
+  name: '5,9,11,24,27,30|13|🇭🇰 香港6|@ripaojiedian #2'
   password: K09H5MS4WFZH4414
   port: 15005
   server: 8tv68qhq.slashdevslashnetslashtun.net
@@ -191,7 +191,8 @@ proxies:
     headers:
       Host: 1f81e1c5bcd876c80bf3a8f070dcd4d5.mobgslb.tbcache.com
     path: /
-- name: '5,27,30|13,14|香港7|@ripaojiedian #1'
+- client-fingerprint: chrome
+  name: '5,9,24,27,30|13,14|香港7|@ripaojiedian #1'
   network: tcp
   password: be28a019-a855-4cd9-bfa1-1471c56921a4
   port: 13003
@@ -264,6 +265,25 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- client-fingerprint: chrome
+  name: 9|🇭🇰 13,14|香港|@ripaojiedian
+  password: phXKwfrd
+  port: 36442
+  server: 223.113.54.145
+  skip-cert-verify: false
+  sni: 223.113.54.145
+  type: trojan
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 9,27,30|🇳 广
+  port: 53002
+  server: 183.236.51.23
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: '11,27,30|13| 香港3|@ripaojiedian #1'
@@ -838,18 +858,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- cipher: aes-256-cfb
-  name: 19|🇭🇰HK-112.213.102.228-0506
-  password: qwerREWQ@@
-  port: 4231
-  server: 112.213.102.228
-  type: ss
-- name: 24|🇭🇰 13,14|香港2|@ripaojiedian
-  password: phXKwfrd
-  port: 42395
-  server: 36.150.215.219
-  skip-cert-verify: true
-  type: trojan
 - name: 26|V1-香港01∣K1线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21135
@@ -871,17 +879,57 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 64
+- alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 27,30|🇳 广
-  port: 53002
-  server: 183.236.51.23
-  skip-cert-verify: false
-  tfo: false
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-18.167.120.1...
+  network: tcp
+  port: '15074'
+  server: 18.167.120.158
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+- alterId: 1
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-183.179.210.8...
+  network: ws
+  port: '60234'
+  server: 183.179.210.84
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c4d65354-5321-3036-a611-6c42e88b7251
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-156.224.76.25...
+  network: ws
+  port: '3158'
+  server: 156.224.76.255
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  ws-opts:
+    headers:
+      Host: v87.emovpn.buzz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-WS-NA 🇭🇰 HK-156.224.76.25... #1'
+  network: ws
+  port: '8158'
+  server: 156.224.76.255
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-191.101.132.2...
@@ -898,72 +946,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-18.167.120.1...
-  network: tcp
-  port: '15074'
-  server: 18.167.120.158
-  tls: false
-  type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-156.224.76.25...
-  network: ws
-  port: '8158'
-  server: 156.224.76.255
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
-  ws-opts:
-    headers:
-      Host: pull.free.video.10010.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
-  network: tcp
-  port: '54675'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
-  network: tcp
-  port: '27512'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-WS-NA 🇭🇰 HK-89.185.31.75:... #1'
-  network: ws
-  port: '3110'
-  server: 89.185.31.75
-  servername: v13.emovpn.buzz
-  tls: false
-  type: vmess
-  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
-  ws-opts:
-    headers:
-      Host: v13.emovpn.buzz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-185.14.47.13...
-  network: tcp
-  port: '3503'
-  server: 185.14.47.132
-  tls: false
-  type: vmess
-  uuid: fa678492-65dd-3df0-800d-11f138b868ab
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-141.11.77.200...
   network: ws
   port: '5148'
@@ -978,6 +960,29 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-185.14.47.13...
+  network: tcp
+  port: '3503'
+  server: 185.14.47.132
+  tls: false
+  type: vmess
+  uuid: fa678492-65dd-3df0-800d-11f138b868ab
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-WS-NA 🇭🇰 HK-89.185.31.75:... #3'
+  network: ws
+  port: '3110'
+  server: 89.185.31.75
+  servername: v13.emovpn.buzz
+  tls: false
+  type: vmess
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  ws-opts:
+    headers:
+      Host: v13.emovpn.buzz
+    path: /
+- alterId: 0
+  cipher: auto
   name: '36|🔒 VM-WS-NA 🇭🇰 HK-191.101.132.2... #1'
   network: ws
   port: '1953'
@@ -989,34 +994,6 @@ proxies:
   ws-opts:
     headers:
       Host: pull.free.video.10010.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-WS-NA 🇭🇰 HK-156.224.76.25... #1'
-  network: ws
-  port: '3158'
-  server: 156.224.76.255
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
-  ws-opts:
-    headers:
-      Host: v87.emovpn.buzz
-    path: /
-- alterId: 1
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-183.179.210.8...
-  network: ws
-  port: '60234'
-  server: 183.179.210.84
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c4d65354-5321-3036-a611-6c42e88b7251
-  ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: chacha20-ietf-poly1305
