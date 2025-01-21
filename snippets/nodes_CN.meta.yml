@@ -1,23 +1,17 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '5,24|🇪🇸 _西班牙 #25'
+  name: 5,24,36|🔒 VM-WS-NA 🇭🇰 HK-212.192.12.70...
   network: ws
   port: '17926'
   server: 212.192.12.70
   tls: false
   type: vmess
-  uuid: 45ea75a3-5bd6-4951-b489-56ba06d7a40a
+  uuid: 192f7b8a-444f-4a0a-8ae1-b93ff72bb7ec
   ws-opts:
     headers:
       Host: ''
     path: /
-- cipher: aes-256-cfb
-  name: '5,11|1|_CN_ #1'
-  password: hGkQ6915tD
-  port: 15082
-  server: 59.56.77.178
-  type: ss
 - alterId: 64
   cipher: auto
   name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
@@ -39,13 +33,6 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 5,24,30|🇨🇳 广东省广州市 /区电信
-  password: 6KYL3YM7UAOAE94Q
-  port: 16016
-  server: w72tapyb.slashdevslashnetslashtun.net
-  type: ss
 - alterId: 0
   cipher: auto
   name: 5,11,24|🇨🇳 github.com/freefq - 广东省移动 7
@@ -60,6 +47,13 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 5,24,30|🇨🇳 广东省广州市 /区电信
+  password: 6KYL3YM7UAOAE94Q
+  port: 16016
+  server: w72tapyb.slashdevslashnetslashtun.net
+  type: ss
 - alterId: 0
   cipher: auto
   name: 8|🇨🇳CN-139.227.223.3-049_1@49
@@ -657,6 +651,12 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
+- cipher: aes-256-cfb
+  name: 11|1|_CN_
+  password: hGkQ6915tD
+  port: 15082
+  server: 59.56.77.178
+  type: ss
 - alterId: 0
   cipher: auto
   name: 17|CN_ youtube@资源分享师_17
@@ -777,6 +777,16 @@ proxies:
   skip-cert-verify: true
   sni: amepo.ambercc.filegear-sg.me
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-120.26.55.22...
+  network: tcp
+  port: '50002'
+  server: 120.26.55.225
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
@@ -797,39 +807,38 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-120.26.55.22...
-  network: tcp
-  port: '50002'
-  server: 120.26.55.225
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
+- cipher: aes-128-gcm
   name: 40|CN_speednode_0005
-  port: 48109
-  server: 183.236.51.23
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  password: 64ddb7e7-618b-4413-bd14-8b28372cc2a3
+  port: 50002
+  server: a1.1tsm-sab2qkybzqc4ujzufu5yqppaomvbqfmrjunx7dmbde1ktmr.cv
+  type: ss
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
+- cipher: rc4-md5
   name: 40|CN_speednode_0006
-  port: 54882
-  server: 183.236.48.163
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40206
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 2.hublink.pro
+  type: ssr
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: rc4-md5
+  name: 40|CN_speednode_0007
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40208
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 2.hublink.pro
+  type: ssr
+  udp: true
 - alterId: 64
   cipher: auto
-  name: 40|CN_speednode_0007
+  name: 40|CN_speednode_0008
   port: 51037
   server: 183.236.51.23
   skip-cert-verify: true
@@ -837,51 +846,85 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-cfb
-  name: 40|CN_speednode_0008
-  password: hGkQ6915tD
-  port: 15084
-  server: 120.232.81.50
-  type: ss
-  udp: true
 - alterId: 64
   cipher: auto
   name: 40|CN_speednode_0009
-  port: 54104
+  port: 48109
   server: 183.236.51.23
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 40|CN_speednode_0010
-  port: 40565
-  server: 120.232.153.63
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 40|CN_speednode_0012
-  network: ws
-  port: 22641
-  server: tk.hzlt.tkddns.xyz
+  name: 40|CN_speednode_0010
+  port: 49318
+  server: yoyo.cmyiphone.top
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-a.tkong.cc
-    path: /
+  uuid: 061d42d5-4e6a-4661-be04-80dcfb15b08f
+- cipher: chacha20-ietf-poly1305
+  name: 40|CN_speednode_0012
+  password: 061d42d5-4e6a-4661-be04-80dcfb15b08f
+  port: 49319
+  server: yoyo.cmyiphone.top
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 40|CN_speednode_0013
+  password: hGkQ6915tD
+  port: 16088
+  server: 120.232.81.50
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 40|CN_speednode_0014
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40210
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 2.hublink.pro
+  type: ssr
+  udp: true
+- cipher: rc4-md5
+  name: 40|CN_speednode_0015
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40254
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 3.link-hub.click
+  type: ssr
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: 40|CN_speednode_0016
+  port: 44614
+  server: 120.198.71.219
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 40|CN_speednode_0017
+  port: 14100
+  server: dxv4.pai50288.uk
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
 - alterId: 2
   cipher: auto
-  name: 40|CN_speednode_0013
+  name: 40|CN_speednode_0018
   network: ws
   port: 22642
   server: tk.hzlt.tkddns.xyz
