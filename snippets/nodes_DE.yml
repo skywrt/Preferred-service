@@ -1,57 +1,60 @@
 proxies:
+- alpn:
+  - http/1.1
+  name: '1,12,20,21|🇩🇪DE-35.157.231.252-0740 #2'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.157.231.252
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|ea390acdaa564e5391cef0e8996435...
+  name: '1,20,21|🇩🇪DE-57.129.24.125-8373 #2'
   network: ws
   port: 443
-  server: 57.129.28.69
+  server: 57.129.24.125
+  servername: ''
   tls: true
   type: vmess
-  udp: false
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|3f61752a933c4b948d2ce1690ecba0...
-  network: ws
-  port: 443
-  server: 57.129.25.22
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  udp: false
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3,19|🇩🇪DE-139.162.166.227-1361
+  name: '1,20,21|🇩🇪DE-139.162.166.227-1361 #3'
   network: ws
   port: 443
   server: gt021.bestforxray.buzz
-  skip-cert-verify: true
+  servername: ''
   tls: true
   type: vmess
-  udp: false
   uuid: c1fd780a-3408-4f48-a932-5832a28ce9f6
   ws-opts:
     headers:
-      host: ausgt02.bestforxray.buzz
+      Host: ausgt02.bestforxray.buzz
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 5,11,24,27,36|🔒 VM-TCP-NA 🇩🇪 DE-64.225.109.2...
+  name: '1,20,21|🇩🇪DE-57.129.24.141-5679 #2'
+  network: ws
+  port: 443
+  server: 57.129.24.141
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '5,11,24,27,30|14|德国|@ripaojiedian #1'
   network: tcp
-  port: '2082'
+  port: 2082
   server: 64.225.109.206
   servername: ''
   tls: false
@@ -81,9 +84,9 @@ proxies:
   uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
 - alterId: 0
   cipher: auto
-  name: '5,11,12,24,27|14|德国2|@ripaojiedian #1'
+  name: '5,11,12,24,27,30|14|德国2|@ripaojiedian #2'
   network: tcp
-  port: '80'
+  port: 80
   server: 94.182.150.230
   servername: ''
   tls: false
@@ -126,7 +129,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '11,27|13|🇩🇪 德国2|@ripaojiedian #1'
+  name: '11,27,30|13|🇩🇪 德国2|@ripaojiedian #2'
   password: a38f4d99-8726-3484-8341-91eb513e7a3c
   port: 80
   server: 94.182.150.230
@@ -136,15 +139,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
-- alpn:
-  - http/1.1
-  name: '12,20,21|🇩🇪DE-35.157.231.252-0740 #1'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.157.231.252
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -159,6 +153,21 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '19|🇩🇪DE-139.162.166.227-1361 #1'
+  network: ws
+  port: 443
+  server: gt021.bestforxray.buzz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c1fd780a-3408-4f48-a932-5832a28ce9f6
+  ws-opts:
+    headers:
+      host: ausgt02.bestforxray.buzz
+    path: /linkws
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -204,75 +213,3 @@ proxies:
   port: 9000
   server: 80.92.204.106
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-8373 #1'
-  network: ws
-  port: 443
-  server: 57.129.24.125
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-139.162.166.227-1361 #2'
-  network: ws
-  port: 443
-  server: gt021.bestforxray.buzz
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: c1fd780a-3408-4f48-a932-5832a28ce9f6
-  ws-opts:
-    headers:
-      Host: ausgt02.bestforxray.buzz
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.141-5679 #1'
-  network: ws
-  port: 443
-  server: 57.129.24.141
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-88.99.12.94:...
-  network: tcp
-  port: '100'
-  server: 88.99.12.94
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1889d9ef-9d58-4427-bb3e-a08810c214eb
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-145.223.101....
-  network: tcp
-  port: '20596'
-  server: 145.223.101.238
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 219c3a40-d366-4e7b-bd18-ea592d80d9a6
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
