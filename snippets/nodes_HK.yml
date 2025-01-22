@@ -1,9 +1,9 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: '5,11,24,27|14|香港4|@ripaojiedian #1'
+  name: '5,11,24,27,30|14|香港4|@ripaojiedian #2'
   network: tcp
-  port: '53002'
+  port: 53002
   server: 183.236.51.23
   servername: ''
   tls: false
@@ -19,9 +19,9 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,11,27|14|香港6|@ripaojiedian #1'
+  name: '5,11,24,27,30|14|香港6|@ripaojiedian #2'
   network: tcp
-  port: '64667'
+  port: 64667
   server: fiwejniavzoj.xn--fiqs8sjz2bull.com
   servername: ''
   tls: false
@@ -35,7 +35,7 @@ proxies:
   skip-cert-verify: true
   sni: data.steamdownload.top
   type: trojan
-- name: 5,24,27|13,14|香港2|@ripaojiedian
+- name: '5,24,27,30|13,14|香港2|@ripaojiedian #1'
   network: tcp
   password: phXKwfrd
   port: 18681
@@ -51,7 +51,7 @@ proxies:
   sni: data.steamdownload.top
   type: trojan
 - client-fingerprint: chrome
-  name: 5,9,27|13,14|香港3|@ripaojiedian
+  name: '5,9,24,27,30|13,14|香港3|@ripaojiedian #1'
   network: tcp
   password: a38f4d99-8726-3484-8341-91eb513e7a3c
   port: 36821
@@ -75,7 +75,8 @@ proxies:
   skip-cert-verify: true
   sni: data.steamdownload.top
   type: trojan
-- name: 5,24,27|13,14||@ripaojiedian
+- client-fingerprint: chrome
+  name: 5,24,27,30|🇳 州
   network: tcp
   password: phXKwfrd
   port: 36442
@@ -101,7 +102,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 9,27|13| 香港4|@ripaojiedian
+  name: '9,27,30|13| 香港4|@ripaojiedian #1'
   port: 53002
   server: 183.236.51.23
   skip-cert-verify: false
@@ -112,7 +113,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '9,27|13|🇭🇰 香港6|@ripaojiedian #1'
+  name: '9,27,30|13|🇭🇰 香港6|@ripaojiedian #2'
   port: 64667
   server: fiwejniavzoj.xn--fiqs8sjz2bull.com
   skip-cert-verify: false
@@ -122,7 +123,7 @@ proxies:
   uuid: cdc67dd7-1a08-4ac4-b04b-6f04d5dbadff
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 11,27|13|🇭🇰 香港5|@ripaojiedian
+  name: '11,27,30|13|🇭🇰 香港5|@ripaojiedian #1'
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -695,24 +696,11 @@ proxies:
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
 - cipher: chacha20-ietf-poly1305
-  name: 19|🇭🇰HK-141.98.234.93-0468
+  name: 19|🇭🇰HK-141.98.234.93-0474
   password: WfmxKX2FBJRU0Ie9VLIYDL
   port: 20012
   server: 141.98.234.93
   type: ss
-- cipher: aes-256-cfb
-  name: 19|🇭🇰HK-112.213.102.228-6054
-  password: qwerREWQ@@
-  port: 4231
-  server: 112.213.102.228
-  type: ss
-- name: 24|🇭🇰 13,14|香港7|@ripaojiedian
-  password: be28a019-a855-4cd9-bfa1-1471c56921a4
-  port: 13003
-  server: naiu-hk.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
 - name: 26|V1-香港01∣K1线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21135
@@ -743,9 +731,32 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-156.224.76.25...
+  network: ws
+  port: '8158'
+  server: 156.224.76.255
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-185.14.47.13...
+  network: tcp
+  port: '3503'
+  server: 185.14.47.132
+  tls: false
+  type: vmess
+  uuid: fa678492-65dd-3df0-800d-11f138b868ab
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-191.101.132.2...
   network: ws
-  port: '1359'
+  port: '1953'
   server: 191.101.132.236
   servername: ''
   tls: false
@@ -766,6 +777,30 @@ proxies:
   uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
+  network: tcp
+  port: '27512'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-WS-NA 🇭🇰 HK-191.101.132.2... #1'
+  network: ws
+  port: '1359'
+  server: 191.101.132.236
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-89.185.31.75:...
   network: ws
   port: '8226'
@@ -779,58 +814,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-WS-NA 🇭🇰 HK-89.185.31.75:... #1'
-  network: ws
-  port: '3110'
-  server: 89.185.31.75
-  servername: v13.emovpn.buzz
-  tls: false
-  type: vmess
-  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
-  ws-opts:
-    headers:
-      Host: v13.emovpn.buzz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-156.224.76.25...
-  network: ws
-  port: '8158'
-  server: 156.224.76.255
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
-  ws-opts:
-    headers:
-      Host: pull.free.video.10010.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-WS-NA 🇭🇰 HK-89.185.31.75:... #2'
-  network: ws
-  port: '1452'
-  server: 89.185.31.75
-  servername: v17.emovpn.buzz
-  tls: false
-  type: vmess
-  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
-  ws-opts:
-    headers:
-      Host: v17.emovpn.buzz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-185.14.47.13...
-  network: tcp
-  port: '3503'
-  server: 185.14.47.132
-  tls: false
-  type: vmess
-  uuid: fa678492-65dd-3df0-800d-11f138b868ab
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
   network: tcp
   port: '54675'
   server: 103.149.183.178
@@ -838,20 +822,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-WS-NA 🇭🇰 HK-89.185.31.75:... #3'
-  network: ws
-  port: '1336'
-  server: 89.185.31.75
-  servername: v21.emovpn.buzz
-  tls: false
-  type: vmess
-  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
-  ws-opts:
-    headers:
-      Host: v21.emovpn.buzz
-    path: /
 - alterId: 1
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-183.179.210.8...
@@ -868,17 +838,31 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-WS-NA 🇭🇰 HK-191.101.132.2... #1'
+  name: '36|🔒 VM-WS-NA 🇭🇰 HK-156.224.76.25... #1'
   network: ws
-  port: '1953'
-  server: 191.101.132.236
+  port: '3158'
+  server: 156.224.76.255
   servername: ''
   tls: false
   type: vmess
   uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
   ws-opts:
     headers:
-      Host: pull.free.video.10010.com
+      Host: v87.emovpn.buzz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-WS-NA 🇭🇰 HK-89.185.31.75:... #1'
+  network: ws
+  port: '1336'
+  server: 89.185.31.75
+  servername: v21.emovpn.buzz
+  tls: false
+  type: vmess
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  ws-opts:
+    headers:
+      Host: v21.emovpn.buzz
     path: /
 - alterId: 0
   cipher: auto
@@ -896,27 +880,31 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
-  network: tcp
-  port: '27512'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-WS-NA 🇭🇰 HK-156.224.76.25... #1'
+  name: '36|🔒 VM-WS-NA 🇭🇰 HK-89.185.31.75:... #2'
   network: ws
-  port: '3158'
-  server: 156.224.76.255
-  servername: ''
+  port: '3110'
+  server: 89.185.31.75
+  servername: v13.emovpn.buzz
   tls: false
   type: vmess
   uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
   ws-opts:
     headers:
-      Host: v87.emovpn.buzz
+      Host: v13.emovpn.buzz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-WS-NA 🇭🇰 HK-89.185.31.75:... #3'
+  network: ws
+  port: '1452'
+  server: 89.185.31.75
+  servername: v17.emovpn.buzz
+  tls: false
+  type: vmess
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  ws-opts:
+    headers:
+      Host: v17.emovpn.buzz
     path: /
 - alterId: 0
   cipher: chacha20-ietf-poly1305
