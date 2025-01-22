@@ -1,22 +1,22 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: '5,11,24,27|14|香港4|@ripaojiedian #1'
+  name: '5,11,24,27,30|14|香港4|@ripaojiedian #2'
   network: tcp
-  port: '53002'
+  port: 53002
   server: 183.236.51.23
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 5,24,27|13,14||@ripaojiedian
+- name: '5,24,27,30|13,14||@ripaojiedian #2'
   network: tcp
   password: phXKwfrd
   port: 36442
   server: 223.113.54.145
   skip-cert-verify: true
   type: trojan
-- name: 5,24,27|13,14|香港2|@ripaojiedian
+- name: '5,24,27,30|13,14|香港2|@ripaojiedian #1'
   network: tcp
   password: phXKwfrd
   port: 18681
@@ -24,7 +24,7 @@ proxies:
   skip-cert-verify: true
   type: trojan
 - client-fingerprint: chrome
-  name: 5,9,24,27|13,14|香港7|@ripaojiedian
+  name: 5,9,24,30|13,14|香港7|@ripaojiedian
   network: tcp
   password: be28a019-a855-4cd9-bfa1-1471c56921a4
   port: 13003
@@ -42,7 +42,7 @@ proxies:
   type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,9,11,24,27|13|🇭🇰 香港5|@ripaojiedian #1'
+  name: '5,9,11,24,30|13|🇭🇰 香港5|@ripaojiedian #2'
   password: D8TQ0D993NS6XK0K
   port: 15008
   server: w72tapyb.slashdevslashnetslashtun.net
@@ -50,7 +50,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,9,11,24,27|13|🇭🇰 香港6|@ripaojiedian #1'
+  name: '5,9,11,24,30|13|🇭🇰 香港6|@ripaojiedian #2'
   password: K09H5MS4WFZH4414
   port: 15005
   server: 8tv68qhq.slashdevslashnetslashtun.net
@@ -107,7 +107,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: '9,27|13|🇭🇰 香港4|@ripaojiedian #1'
+  name: 9,27,30|🇳 广
   port: 53002
   server: 183.236.51.23
   skip-cert-verify: false
@@ -117,7 +117,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 11,27|13| 香港3|@ripaojiedian
+  name: 11,30|13| 香港3|@ripaojiedian
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -716,34 +716,54 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- name: 27|13,14|香港3|@ripaojiedian
+  network: tcp
+  password: a38f4d99-8726-3484-8341-91eb513e7a3c
+  port: 36821
+  server: gy.58n.net
+  skip-cert-verify: false
+  sni: z262.hongkongnode.top
+  type: trojan
+- cipher: rc4-md5
+  name: '27|13|🇭🇰 香港5|@ripaojiedian #1'
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40206
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 2.hublink.pro
+  type: ssr
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-WS-NA 🇭🇰 HK-89.185.31.75:... #1'
-  network: ws
-  port: '3110'
-  server: 89.185.31.75
-  servername: v13.emovpn.buzz
+  name: '27|13|🇭🇰 香港6|@ripaojiedian #1'
+  port: 64667
+  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
-  ws-opts:
-    headers:
-      Host: v13.emovpn.buzz
-    path: /
+  uuid: cdc67dd7-1a08-4ac4-b04b-6f04d5dbadff
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-156.224.76.25...
-  network: ws
-  port: '3158'
-  server: 156.224.76.255
+  name: '27|14|香港6|@ripaojiedian #1'
+  network: tcp
+  port: '64667'
+  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
-  ws-opts:
-    headers:
-      Host: v87.emovpn.buzz
-    path: /
+  uuid: cdc67dd7-1a08-4ac4-b04b-6f04d5dbadff
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
+  network: tcp
+  port: '54675'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-191.101.132.2...
@@ -758,36 +778,12 @@ proxies:
     headers:
       Host: pull.free.video.10010.com
     path: /
-- alterId: 1
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-183.179.210.8...
-  network: ws
-  port: '60234'
-  server: 183.179.210.84
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c4d65354-5321-3036-a611-6c42e88b7251
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
-  network: tcp
-  port: '54675'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-141.11.77.200...
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-156.224.76.25...
   network: ws
-  port: '5148'
-  server: 141.11.77.200
+  port: '8158'
+  server: 156.224.76.255
   servername: ''
   tls: false
   type: vmess
@@ -812,15 +808,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-18.167.120.1...
-  network: tcp
-  port: '15074'
-  server: 18.167.120.158
-  tls: false
-  type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-185.14.47.13...
   network: tcp
   port: '3503'
@@ -828,6 +815,43 @@ proxies:
   tls: false
   type: vmess
   uuid: fa678492-65dd-3df0-800d-11f138b868ab
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-141.11.77.200...
+  network: ws
+  port: '5148'
+  server: 141.11.77.200
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-183.179.210.8...
+  network: ws
+  port: '60234'
+  server: 183.179.210.84
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c4d65354-5321-3036-a611-6c42e88b7251
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-18.167.120.1...
+  network: tcp
+  port: '15074'
+  server: 18.167.120.158
+  tls: false
+  type: vmess
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
 - alterId: 0
   cipher: auto
   name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
@@ -840,9 +864,23 @@ proxies:
   uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
 - alterId: 0
   cipher: auto
+  name: '36|🔒 VM-WS-NA 🇭🇰 HK-89.185.31.75:... #2'
+  network: ws
+  port: '3110'
+  server: 89.185.31.75
+  servername: v13.emovpn.buzz
+  tls: false
+  type: vmess
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  ws-opts:
+    headers:
+      Host: v13.emovpn.buzz
+    path: /
+- alterId: 0
+  cipher: auto
   name: '36|🔒 VM-WS-NA 🇭🇰 HK-156.224.76.25... #1'
   network: ws
-  port: '8158'
+  port: '3158'
   server: 156.224.76.255
   servername: ''
   tls: false
@@ -850,7 +888,7 @@ proxies:
   uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
   ws-opts:
     headers:
-      Host: pull.free.video.10010.com
+      Host: v87.emovpn.buzz
     path: /
 - alterId: 0
   cipher: chacha20-ietf-poly1305
@@ -881,3 +919,51 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 40|HK_speednode_0101
+  port: 443
+  reality-opts:
+    public-key: 7FUPFfHmcQGEF1WsK5UV28TAj_cZcBXgm_M9pFHBcEg
+    short-id: 6ba85179e30d4fc2
+  server: 82.152.163.123
+  servername: itunes.apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9d0a75d2-f747-4afa-b43f-d208af9e8f9a
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 40|HK_speednode_0102
+  port: 443
+  reality-opts:
+    public-key: 7FUPFfHmcQGEF1WsK5UV28TAj_cZcBXgm_M9pFHBcEg
+    short-id: 6ba85179e30d4fc2
+  server: hk04.ssr.ee
+  servername: itunes.apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9d0a75d2-f747-4afa-b43f-d208af9e8f9a
+- name: 40|HK_speednode_0103
+  port: 4000
+  server: ftq.ink
+  tls: true
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 40|HK_speednode_0105
+  port: 443
+  reality-opts:
+    public-key: IkdB1SppBdstqC4HmsnGn2uMrOJIRnfTN3f0GEmOpSo
+    short-id: 6ba85179e30d4fc2
+  server: hk08.ssr.ee
+  servername: itunes.apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9d0a75d2-f747-4afa-b43f-d208af9e8f9a

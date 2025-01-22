@@ -2,11 +2,11 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 5,9|🇬🇧 13,14|英国|@ripaojiedian
+  name: 5,9,12|🇬🇧_GB_英国
   network: ws
   port: 23985
   server: 5.39.254.196
-  servername: 5.39.254.196
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -31,12 +31,13 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 5,11,24,27|13,14|国|@ripaojiedian
+  name: 5,11,24,30,36|🔒 VM-WS-NA 🇬🇧 GB-5.39.254.196:...
   network: ws
-  port: '23985'
+  port: 23985
   server: 5.39.254.196
   servername: ''
   skip-cert-verify: false
+  sni: ''
   tfo: false
   tls: false
   type: vmess
@@ -247,30 +248,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇬🇧 GB-172.236.19.90...
-  network: ws
-  port: '4765'
-  server: 172.236.19.90
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
-  ws-opts:
-    headers:
-      Host: pull.free.video.10010.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-141.136.36.2...
-  network: tcp
-  port: '57918'
-  server: 141.136.36.206
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9a17a5da-0798-4bc1-b1b3-aeb1a8e69dee
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇬🇧 GB-51.89.78.48:...
@@ -285,3 +262,27 @@ proxies:
     headers:
       Host: www.12268626.xyz
     path: /path/240811062813
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-141.136.36.2...
+  network: tcp
+  port: '57918'
+  server: 141.136.36.206
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9a17a5da-0798-4bc1-b1b3-aeb1a8e69dee
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇬🇧 GB-172.236.19.90...
+  network: ws
+  port: '4765'
+  server: 172.236.19.90
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
