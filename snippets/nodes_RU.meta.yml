@@ -1,27 +1,4 @@
 proxies:
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 1000
-  fast-open: true
-  name: 2|Russia_None_hy_3
-  obfs: dongtaiwang.com
-  port: 15424
-  ports: 30000-40000
-  protocol: udp
-  server: 185.22.155.71
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria
-  up: 1000
-- fast-open: true
-  name: 2|Russia_Moscow_hy2_3
-  password: dongtaiwang.com
-  port: 50717
-  server: 46.17.41.189
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
 - name: 4,22|🇦CA-91.194.11.168-5621
   password: acfef609-b3c7-4e52-b292-8921d5fca90d
   port: 443
@@ -885,7 +862,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
 - cipher: aes-256-cfb
-  name: 5,12,22|PT-185.231.233.173-0711
+  name: '5,12,22,30|_RU_ #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.231.233.173
@@ -904,12 +881,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5,12,16,22,24,36|🔒 VM-WS-NA 🇷🇺 RU-45.8.159.241:...
+  name: 5,12,16,22,24,30,36|🔒 VM-WS-NA 🇷🇺 RU-45.8.159.241:...
   network: ws
   port: 33395
   server: 45.8.159.241
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: ''
   tls: false
   type: vmess
@@ -948,19 +925,20 @@ proxies:
       Host: ameqo.esslh.filegear-sg.me
     path: /?ed=2560
 - cipher: aes-256-cfb
-  name: 12,22|🇵🇹PT-185.231.233.112-0724
+  name: '12,22,30|🇷🇺_RU_俄罗斯_1 #2'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.231.233.112
   type: ss
 - alterId: 0
   cipher: auto
-  name: 12,22|🇺RU-194.87.69.50-0725
+  name: '12,22,30|🇺_RU_俄罗斯_2 #1'
   network: ws
   port: 17926
   server: 194.87.69.50
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
+  sni: ''
   tls: false
   type: vmess
   uuid: 680ab8f5-2d55-40bc-bf8d-a35bd63426a7
@@ -1266,19 +1244,16 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 22,28,36|🔒 VM-WS-NA 🇷🇺 RU-195.58.49.86:...
+  name: 22,28|--012-1H
   network: ws
-  port: '17926'
+  port: 17926
   server: 195.58.49.86
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 84ed56f8-38c8-4e25-9724-37c283aba7fc
+  uuid: 2a619dd6-b849-4173-9a34-339d6e9d65f3
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
