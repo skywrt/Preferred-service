@@ -1,20 +1,4 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3,22|🇪DE-23.158.56.227-5805
-  network: ws
-  port: 443
-  server: 23.158.56.227
-  servername: 23.158.56.227
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: false
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: /linkvws
 - name: 4,22|🇩🇪DE-51.75.77.237-5674
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
@@ -447,10 +431,11 @@ proxies:
   uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
 - alterId: 0
   cipher: auto
-  name: 5,16|🇷_IR_
+  name: 5,16,36|🔒 VM-TCP-NA 🇮🇷 IR-94.182.150.2...
   network: tcp
-  port: 80
+  port: '80'
   server: 94.182.150.230
+  servername: ''
   sni: ''
   tls: false
   type: vmess
@@ -1530,6 +1515,19 @@ proxies:
     path: /linkwsd
 - alterId: 0
   cipher: auto
+  name: 22|🇪DE-23.158.56.227-5805
+  network: ws
+  port: 443
+  server: 23.158.56.227
+  servername: 23.158.56.227
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
+- alterId: 0
+  cipher: auto
   name: 22,24,28|德国-法兰克福-001-1J
   network: ws
   port: 17926
@@ -1875,7 +1873,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 22,36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.25.25...
+  name: 22|🇩🇪DE-57.129.25.25-8331
   network: ws
   port: 443
   server: 57.129.25.25
@@ -2430,3 +2428,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 219c3a40-d366-4e7b-bd18-ea592d80d9a6
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72

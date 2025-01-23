@@ -1,27 +1,4 @@
 proxies:
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 1000
-  fast-open: true
-  name: 2|Russia_None_hy_3
-  obfs: dongtaiwang.com
-  port: 15424
-  ports: 30000-40000
-  protocol: udp
-  server: 185.22.155.71
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria
-  up: 1000
-- fast-open: true
-  name: 2|Russia_Moscow_hy2_3
-  password: dongtaiwang.com
-  port: 50717
-  server: 46.17.41.189
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
 - name: 4,22|🇦CA-91.194.11.168-5591
   password: acfef609-b3c7-4e52-b292-8921d5fca90d
   port: 443
@@ -908,7 +885,7 @@ proxies:
   client-fingerprint: chrome
   name: 5,12,16,19,22,24,36|🔒 VM-WS-NA 🇷🇺 RU-45.8.159.241:...
   network: ws
-  port: '33395'
+  port: 33395
   server: 45.8.159.241
   servername: ''
   skip-cert-verify: false
@@ -1254,16 +1231,19 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 22,28|俄罗斯-圣彼得堡-012-1D
+  name: 22,28,36|🔒 VM-WS-NA 🇷🇺 RU-195.58.49.86:...
   network: ws
-  port: 17926
+  port: '17926'
   server: 195.58.49.86
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 680ab8f5-2d55-40bc-bf8d-a35bd63426a7
+  uuid: 84ed56f8-38c8-4e25-9724-37c283aba7fc
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -1331,20 +1311,6 @@ proxies:
   skip-cert-verify: false
   sni: ngep.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇷🇺 RU-195.58.49.86:...
-  network: ws
-  port: '17926'
-  server: 195.58.49.86
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 960c95a9-8502-4cbc-a527-d40c2d68d2b1
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
 - alterId: 0
   cipher: auto
   name: 40|RU_speednode_0044

@@ -873,7 +873,7 @@ proxies:
   client-fingerprint: chrome
   name: 5,12,16,19,22,24,36|🔒 VM-WS-NA 🇷🇺 RU-45.8.159.241:...
   network: ws
-  port: '33395'
+  port: 33395
   server: 45.8.159.241
   servername: ''
   skip-cert-verify: false
@@ -1159,16 +1159,19 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 22,28|俄罗斯-圣彼得堡-012-1D
+  name: 22,28,36|🔒 VM-WS-NA 🇷🇺 RU-195.58.49.86:...
   network: ws
-  port: 17926
+  port: '17926'
   server: 195.58.49.86
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 680ab8f5-2d55-40bc-bf8d-a35bd63426a7
+  uuid: 84ed56f8-38c8-4e25-9724-37c283aba7fc
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -1236,20 +1239,6 @@ proxies:
   skip-cert-verify: false
   sni: ngep.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇷🇺 RU-195.58.49.86:...
-  network: ws
-  port: '17926'
-  server: 195.58.49.86
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 960c95a9-8502-4cbc-a527-d40c2d68d2b1
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
 - alterId: 0
   cipher: auto
   name: 40|RU_speednode_0044
