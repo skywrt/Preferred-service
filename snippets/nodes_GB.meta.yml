@@ -1,4 +1,16 @@
 proxies:
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|e8ff324b141440e18e3efa808cb575...
+  network: ws
+  port: 8080
+  server: 192.248.156.46
+  tls: false
+  type: vless
+  udp: false
+  uuid: 4c583599-2554-49b8-9b7f-13b9ceb08aff
+  ws-opts:
+    path: /
 - name: 4|🇬🇧 GB 1 → tg@nicevpn123
   password: your_password
   port: 443
@@ -477,9 +489,10 @@ proxies:
     path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
-  name: '5,22,24|🇬🇧 _英国 #2'
+  client-fingerprint: chrome
+  name: 5,22,24,30|🇧 英国 V2CROSS.COM
   network: ws
-  port: '23985'
+  port: 23985
   server: 5.39.254.196
   servername: ''
   skip-cert-verify: false
@@ -538,7 +551,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 12,16,22,24,30,36|🔒 VM-WS-NA 🇬🇧 GB-5.39.254.196:...
+  name: '12,16,22,24,30|_GB_国 #1'
   network: ws
   port: 23985
   server: 5.39.254.196
@@ -549,8 +562,6 @@ proxies:
   type: vmess
   uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - cipher: aes-256-cfb
   name: 12,19,22,30|🇧_GB_英国_1
@@ -2186,6 +2197,22 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36,40|GB_speednode_0036
+  network: ws
+  port: 23985
+  server: 5.39.254.196
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-141.136.36.2...
   network: tcp
   port: '57918'
@@ -2194,14 +2221,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 9a17a5da-0798-4bc1-b1b3-aeb1a8e69dee
-- alterId: 0
-  cipher: auto
-  name: 40|GB_speednode_0036
-  network: ws
-  port: 23985
-  server: 5.39.254.196
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
