@@ -109,7 +109,7 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,11,22,24,27,30|13|🇭🇰 香港5|@ripaojiedian #2'
+  name: 5,11,22,24,27,30|🇨🇳 广东省广州市荔湾区 /天河区电信 3
   password: L1SLK5APNHD6Z7P0
   port: 15013
   server: qh62onjn.slashdevslashnetslashtun.net
@@ -161,9 +161,9 @@ proxies:
   type: trojan
 - alterId: 64
   cipher: auto
-  name: '5,11|11|13|🇭🇰 香港2|@ripaojiedian #1'
+  name: 5,11,24|🇭🇰 13|🇭🇰 香港2|@ripaojiedian
   network: tcp
-  port: 48109
+  port: '48109'
   server: 183.236.51.23
   tls: false
   type: vmess
@@ -718,6 +718,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
+- cipher: chacha20-ietf-poly1305
+  name: 19,20,21,22|🇭HK-141.98.234.93-1214
+  password: WfmxKX2FBJRU0Ie9VLIYDL
+  port: 20012
+  server: 141.98.234.93
+  type: ss
 - alterId: 0
   cipher: auto
   name: 22|HK-207.46.147.148-0003
@@ -1871,13 +1877,15 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: '27,30|13|🇭🇰 香港2|@ripaojiedian #2'
+  client-fingerprint: chrome
+  name: 27,30,40|CN_speednode_0011
   port: 48109
   server: 183.236.51.23
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
+  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
@@ -1891,7 +1899,8 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '27,30|13|🇭🇰 香港4|@ripaojiedian #2'
+  client-fingerprint: chrome
+  name: 27,30|🇳 广东省广州市 移动 2
   port: 53002
   server: 183.236.51.23
   skip-cert-verify: false
@@ -1901,7 +1910,8 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '27,30|13|🇭🇰 香港6|@ripaojiedian #2'
+  client-fingerprint: chrome
+  name: 27,30|🇳 广东省市 移动
   port: 44614
   server: 120.198.71.219
   skip-cert-verify: false
@@ -1934,6 +1944,20 @@ proxies:
   uuid: dd8386b7-dffe-4978-8c13-22b8a4327654
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-141.11.77.200...
+  network: ws
+  port: '5148'
+  server: 141.11.77.200
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-18.167.120.1...
   network: tcp
   port: '15074'
@@ -1957,16 +1981,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
-  network: tcp
-  port: '27512'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-191.101.132.2...
   network: ws
   port: '1953'
@@ -1981,6 +1995,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
+  network: tcp
+  port: '27512'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
+- alterId: 0
+  cipher: auto
   name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
   network: tcp
   port: '54675'
@@ -1989,20 +2013,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-141.11.77.200...
-  network: ws
-  port: '5148'
-  server: 141.11.77.200
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
-  ws-opts:
-    headers:
-      Host: pull.free.video.10010.com
-    path: /
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 37|HK
