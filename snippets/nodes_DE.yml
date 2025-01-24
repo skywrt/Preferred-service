@@ -39,13 +39,6 @@ proxies:
   server: 217.182.198.219
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 4|🇩🇪 DE 15 → tg@nicevpn123
-  password: Uxm4ADwftKdXq5qRA4ZfHS
-  port: 1194
-  server: 49.13.10.50
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 4|🇩🇪 DE 16 → tg@nicevpn123
@@ -441,9 +434,9 @@ proxies:
   uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
 - alterId: 0
   cipher: auto
-  name: 5,10,16,24|🇮🇷 _伊朗
+  name: 5,10,16|🇷_IR_伊朗_1
   network: tcp
-  port: '80'
+  port: 80
   server: 94.182.150.231
   sni: ''
   tls: false
@@ -760,7 +753,7 @@ proxies:
   uuid: 36793d2c-0d5a-4a84-8862-f9c93e9af5b5
   ws-opts:
     path: /4ba99a39b90faa/
-- name: 22,24|🇺🇸 美国 Sprint网络
+- name: 22|🇪DE-63.177.20.40-0851
   password: telegram-id-directvpn
   port: 22222
   server: 63.177.20.40
@@ -796,7 +789,8 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 22,28|国--001-1N
+  client-fingerprint: chrome
+  name: 22,24,28,30|🇧 英国 V2CROSS.COM
   network: ws
   port: 17926
   server: 5.39.252.204
@@ -804,66 +798,66 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 472dbb78-a3e9-4c4c-a81a-733d52e93988
+  uuid: d1d5d046-5221-4051-951d-740730dff201
   ws-opts:
     path: /
-- name: '22,24|🇺🇸 _美国 #16'
+- name: 22|🇪DE-3.75.149.151-1428
   password: Aimer
   port: 443
   server: 3.75.149.151
   skip-cert-verify: false
   sni: ngep.ambercc.filegear-sg.me
   type: trojan
-- name: '22,24|🇺🇸 _美国 #17'
+- name: 22|🇪DE-3.71.189.51-1429
   password: Aimer
   port: 2053
   server: 3.71.189.51
   skip-cert-verify: false
   sni: ngep.ambercc.filegear-sg.me
   type: trojan
-- name: 22,24|🇩🇪 _德国
+- name: 22|🇩🇪DE-3.124.196.164-1430
   password: Aimer
   port: 443
   server: 3.124.196.164
   skip-cert-verify: false
   sni: ngep.ambercc.filegear-sg.me
   type: trojan
-- name: '22,24|🇩🇪 _德国 #1'
+- name: 22|🇩🇪DE-3.122.86.99-1431
   password: Aimer
   port: 443
   server: 3.122.86.99
   skip-cert-verify: false
   sni: ngep.ambercc.filegear-sg.me
   type: trojan
-- name: '22,24|🇺🇸 _美国 #18'
+- name: 22|🇩🇪DE-3.74.9.115-1432
   password: Aimer
   port: 8443
   server: 3.74.9.115
   skip-cert-verify: false
   sni: ngep.ambercc.filegear-sg.me
   type: trojan
-- name: '22,24|🇩🇪 _德国 #2'
+- name: 22|🇩🇪DE-3.123.255.167-1433
   password: Aimer
   port: 443
   server: 3.123.255.167
   skip-cert-verify: false
   sni: ngep.ambercc.filegear-sg.me
   type: trojan
-- name: '22,24|🇺🇸 _美国 #22'
+- name: 22|🇪DE-3.64.205.189-1439
   password: Aimer
   port: 443
   server: 3.64.205.189
   skip-cert-verify: false
   sni: ngep.ambercc.filegear-sg.me
   type: trojan
-- name: '22,24|🇺🇸 _美国 #23'
+- name: 22|🇪DE-18.159.111.125-1440
   password: Aimer
   port: 2053
   server: 18.159.111.125
   skip-cert-verify: false
   sni: ngep.ambercc.filegear-sg.me
   type: trojan
-- name: '22,24|🇩🇪 _德国 #3'
+- name: 22|🇪DE-217.110.20.141-1454
   password: Aimer
   port: 443
   server: 217.110.20.141
@@ -1912,14 +1906,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 22|🇪DE-57.129.25.22-8331
+  h2-opts: {}
+  http-opts: {}
+  name: 22,30|0|-https://t.me/MrXbin-64
   network: ws
   port: 443
   server: 57.129.25.22
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -2493,6 +2490,15 @@ proxies:
   skip-cert-verify: false
   sni: frtgrpc.mainssh.xyz
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-49.12.188....
+  network: tcp
+  port: 18344
+  server: 49.12.188.222
+  tls: false
+  type: vmess
+  uuid: 0851edda-3e31-4a5f-b56b-27b182baab39
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
