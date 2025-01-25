@@ -1,12 +1,4 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 4,5,8,22,24,30|🇺 俄罗斯 V2CROSS.COM
-  password: 36ZCHeabUSfKjfQEvJ4HDV
-  port: 54170
-  server: 185.242.86.156
-  type: ss
-  udp: true
 - name: 4,22|🇩🇪DE-51.75.77.237-5603
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
@@ -394,9 +386,9 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5,11,24,27,30,36|🔒 VM-TCP-NA 🇩🇪 DE-64.225.109.2...
+  name: '5,11,24,27,30|14|德国|@ripaojiedian #2'
   network: tcp
-  port: '2082'
+  port: 2082
   server: 64.225.109.206
   servername: ''
   tls: false
@@ -414,7 +406,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 5,36|🔒 VM-TCP-NA 🇩🇪 DE-5.75.201.39:...
+  name: 5,24,36|🔒 VM-TCP-NA 🇩🇪 DE-5.75.201.39:...
   network: tcp
   port: '59521'
   server: 5.75.201.39
@@ -466,46 +458,25 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: rc4-md5
-  name: 19,22|🇪DE-193.108.119.230-0479
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇩🇪DE-130.61.156.132-0525
+  network: ws
+  port: 443
+  server: frankfurt03.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 4f7c2243-a38a-4672-983b-f1378aee0a7f
+  ws-opts:
+    headers:
+      host: frankfurt03.zgjok.com
+    path: /
 - cipher: aes-256-cfb
-  name: 19,22|🇩🇪DE-80.92.204.106-5552
-  password: cp8pRSUAyLhTfVWH
-  port: 9064
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 19,22|🇩🇪DE-80.92.204.106-5350
-  password: c3NtHJ5ujV2tGDfj
-  port: 9084
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 19,22|🇩🇪DE-80.92.204.106-0511
-  password: BwcAUZk8hUFAkDGN
-  port: 9031
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 19,22|🇪DE-80.92.204.106-5331
-  password: a3GFYt36Sm82Vys9
-  port: 9000
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-gcm
-  name: 19,22|🇩🇪DE-23.157.88.61-6210
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 23.157.88.61
-  type: ss
-- cipher: aes-256-cfb
-  name: 19,22|🇩🇪DE-80.92.204.106-5551
-  password: NvS8N4Vf8qAGPSCL
-  port: 9046
+  name: 19,22|🇩🇪DE-80.92.204.106-5553
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
   server: 80.92.204.106
   type: ss
 - name: '20,21|🇩🇪DE-165.22.74.230-0449 #1'
@@ -636,10 +607,22 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /
+- cipher: rc4-md5
+  name: 22|🇪DE-193.108.119.230-0479
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - cipher: aes-256-cfb
   name: 22|🇩🇪DE-80.92.204.106-0505
   password: VP8ZPxQpJtZRCjfZ
   port: 9080
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 22|🇩🇪DE-80.92.204.106-0511
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-gcm
@@ -711,9 +694,9 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 22,24|🇫🇷 法国 国际航空电讯集团公司(SITA)
+  name: 22|🇪DE-57.129.24.124-1299
   network: ws
-  port: '443'
+  port: 443
   server: 57.129.24.124
   skip-cert-verify: false
   tls: true
@@ -723,21 +706,21 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
-- name: 22,24|🇩🇪 _德国
+- name: 22|🇩🇪DE-3.122.86.99-1408
   password: Aimer
   port: 443
   server: 3.122.86.99
   skip-cert-verify: false
   sni: ngep.ambercc.filegear-sg.me
   type: trojan
-- name: '22,24|🇺🇸 _美国 #46'
+- name: 22|🇪DE-3.74.9.115-1409
   password: Aimer
   port: 8443
   server: 3.74.9.115
   skip-cert-verify: false
   sni: ngep.ambercc.filegear-sg.me
   type: trojan
-- name: '22,24|🇩🇪 _德国 #1'
+- name: 22|🇪DE-3.124.196.164-1410
   password: Aimer
   port: 443
   server: 3.124.196.164
@@ -1215,6 +1198,12 @@ proxies:
   ws-opts:
     path: /cctv13/hd.m3u8
 - cipher: aes-256-cfb
+  name: 22|🇪DE-80.92.204.106-5331
+  password: a3GFYt36Sm82Vys9
+  port: 9000
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
   name: 22|🇩🇪DE-80.92.204.106-5332
   password: BejrQvtu9sqUeNuZ
   port: 9024
@@ -1224,6 +1213,12 @@ proxies:
   name: 22|🇪DE-80.92.204.106-5333
   password: ZET59LF6DvCC8KVt
   port: 9005
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 22|🇩🇪DE-80.92.204.106-5350
+  password: c3NtHJ5ujV2tGDfj
+  port: 9084
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
@@ -1323,9 +1318,15 @@ proxies:
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
-  name: 22|🇩🇪DE-80.92.204.106-5553
-  password: FAdUvMJUq5vDgKEq
-  port: 9006
+  name: 22|🇩🇪DE-80.92.204.106-5551
+  password: NvS8N4Vf8qAGPSCL
+  port: 9046
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 22|🇩🇪DE-80.92.204.106-5552
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
   server: 80.92.204.106
   type: ss
 - name: 22|🇪DE-139.162.158.172-5554
@@ -1442,7 +1443,8 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 22|🇩🇪DE-63.177.39.101-5932
+- client-fingerprint: chrome
+  name: 22,30|🇺🇸 美国 Sprint
   password: telegram-id-privatevpns
   port: 22222
   server: 63.177.39.101
@@ -1463,12 +1465,6 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 22|🇪DE-85.192.28.213-5966
-  password: 2f75IeSgXRNglLdvO61gIR
-  port: 6650
-  server: 85.192.28.213
-  type: ss
 - cipher: aes-256-cfb
   name: 22|🇪DE-80.92.204.106-6038
   password: BNmAXXxAHYpTRdzu
@@ -1518,6 +1514,12 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
+- cipher: aes-256-gcm
+  name: 22|🇩🇪DE-23.157.88.61-6210
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 23.157.88.61
+  type: ss
 - cipher: aes-256-gcm
   name: 22|🇪DE-193.108.117.75-6583
   password: PCnnH6SQSnfoS27
