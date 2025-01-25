@@ -884,40 +884,6 @@ proxies:
   type: trojan
   udp: false
 - cipher: aes-256-cfb
-  name: '12,16,22,30|_RU_ #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.173
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '12,16,22,30|🇺_RU_俄罗斯_2 #1'
-  network: ws
-  port: 17926
-  server: 194.87.69.50
-  servername: ''
-  skip-cert-verify: true
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: 680ab8f5-2d55-40bc-bf8d-a35bd63426a7
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '12,16,22,30|🇷🇺_RU_俄罗斯_3 #1'
-  network: ws
-  port: 33395
-  server: 45.8.159.241
-  servername: ''
-  skip-cert-verify: true
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
-  ws-opts:
-    path: /
-- cipher: aes-256-cfb
   name: 13,22|🇵PL-217.30.10.18-6195
   password: JdmRK9gMEqFgs8nP
   port: 9003
@@ -929,6 +895,38 @@ proxies:
   port: 9050
   server: 217.30.10.18
   type: ss
+- cipher: aes-256-cfb
+  name: 16,22|🇹PT-185.231.233.173-0469
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.173
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 16,22|🇷🇺RU-194.87.69.50-0742
+  network: ws
+  port: 17926
+  server: 194.87.69.50
+  skip-cert-verify: false
+  sni: ''
+  tls: false
+  type: vmess
+  uuid: 680ab8f5-2d55-40bc-bf8d-a35bd63426a7
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 16,22|🇺RU-45.8.159.241-0749
+  network: ws
+  port: 33395
+  server: 45.8.159.241
+  skip-cert-verify: false
+  sni: ''
+  tls: false
+  type: vmess
+  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   name: 22|🇺RU-45.136.244.181-0128
@@ -1188,6 +1186,19 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 24|🇷🇺 俄罗斯 V2CROSS.COM
+  network: ws
+  port: '23532'
+  server: 195.58.49.42
+  tls: false
+  type: vmess
+  uuid: 5057efc1-348d-41aa-a1a7-b35a65ed65fd
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...
