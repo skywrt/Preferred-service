@@ -260,7 +260,7 @@ proxies:
       Host: s1c.v2.v001sss.xyz
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,22|🇱LV-46.183.217.232-1045
+  name: 5,16,22|🇱LV-46.183.217.232-1045
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 46.183.217.232
@@ -306,7 +306,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 5,22,24|🇷🇺 俄罗斯 V2CROSS.COM
+  name: '5,16,22,24|🇷🇺 _俄罗斯 #5'
   network: ws
   port: '23532'
   server: 195.58.49.50
@@ -449,13 +449,13 @@ proxies:
   ws-opts:
     path: '%2F'
 - cipher: aes-256-gcm
-  name: 12,22,24,30|🇳_CN_中国->🇸_US_美国
+  name: 12,22|🇳CN-219.135.227.210-0707
   password: 71GJL31AYF3CXZ2K
   port: 17007
   server: qh62onjn.slashdevslashnetslashtun.net
   type: ss
-- name: '12,22,24,26,30|🇨🇳_CN_中国->🇺🇸_US_美国_1 #1'
-  password: 20a84ebf-9341-4f5f-8245-3975e2fdeee5
+- name: 12,22,24,26|连接着任意可用线路
+  password: 0bc68743-cff8-4730-9818-9d8192ee335c
   port: 21019
   server: 219.135.231.205
   skip-cert-verify: true
@@ -505,9 +505,8 @@ proxies:
   cipher: auto
   name: 13,36|🔒 VM-TCP-NA 🇺🇸 US-107.148.207....
   network: tcp
-  port: '48712'
+  port: 48712
   server: 107.148.207.249
-  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -543,7 +542,7 @@ proxies:
     headers:
       Host: wWw.SpEeDtEsT.NeT.ZuLa.aIr.IkCoSaLeS.iR.D662599.v04.feadlenetwork19922h.net
 - cipher: rc4-md5
-  name: 13,16,19,20,21,22|🇧GB-146.70.61.18-0480
+  name: 13,19,20,21,22|🇧GB-146.70.61.18-0480
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 146.70.61.18
@@ -559,28 +558,34 @@ proxies:
   ws-opts:
     headers:
       Host: wWw.SpEeDtEsT.NeT.ZuLa.aIr.IkCoSaLeS.iR.D662599.v05.feadlenetwork19922h.net
-- cipher: aes-256-cfb
-  name: 16,19,20,21,22|CH-84.17.53.160-0393
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 84.17.53.160
+- alterId: 0
+  cipher: auto
+  name: 16|_CN_国->🇺_RU_俄罗斯
+  network: ws
+  port: 25230
+  server: cm1.awslcn.info
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: 243eab52-9ac1-405c-887c-eb112c0985b8
+  ws-opts:
+    headers:
+      host: cm1.awslcn.info
+    path: /
+- cipher: aes-256-gcm
+  name: 16,22|🇨🇳CN-219.135.227.209-1284
+  password: U177NTV9CLY0D3SP
+  port: 17002
+  server: w72tapyb.slashdevslashnetslashtun.net
   type: ss
 - alpn:
   - http/1.1
-  name: 16|🇧_GB_英国->🇪_IE_爱尔兰
+  name: 16,22|🇪IE-54.73.212.66-5199
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 51.44.135.15
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 16|🇪_IE_爱尔兰->🇧_GB_英国
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 52.209.236.56
+  server: 54.73.212.66
+  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
@@ -667,18 +672,4 @@ proxies:
   ws-opts:
     headers:
       host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|_CN_国->🇷_RU_斯
-  network: ws
-  port: 25230
-  server: cm1.awslcn.info
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: 243eab52-9ac1-405c-887c-eb112c0985b8
-  ws-opts:
-    headers:
-      host: cm1.awslcn.info
     path: /
