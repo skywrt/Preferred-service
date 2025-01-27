@@ -17,11 +17,12 @@ proxies:
   server: enabling-cat.goat627.mom
   sni: enabling-cat.goat627.mom
   type: trojan
-- name: 5|🇫🇷_FR_法国->🇭🇺_HU_匈牙利
+- name: 5,24|🇫🇷 法国 巴黎Amazon数据中心
   network: tcp
   password: '!!str 3763495894587285504'
   port: 443
   server: worthy-pheasant.goat627.mom
+  skip-cert-verify: false
   sni: worthy-pheasant.goat627.mom
   type: trojan
 - alterId: 0
@@ -92,14 +93,15 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 5,16,22|RU-195.58.49.50-0558
+  client-fingerprint: chrome
+  name: 5,16,22,30|🇺 俄罗斯 V2CROSS.COM
   network: ws
   port: 23532
   server: 195.58.49.50
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: de4f8e2a-3ca2-4684-b774-e7e821dc2842
+  uuid: 47b79e95-3d2a-493b-9ac0-ef6783e656c2
   ws-opts:
     path: /
 - alterId: 0
@@ -112,7 +114,7 @@ proxies:
   type: vmess
   uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
   ws-opts: {}
-- name: 5,22,24,26|连接着任意可用线路
+- name: 5,22,26|连接着任意可用线路
   network: tcp
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
   port: 21019
@@ -142,7 +144,7 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- name: 5,24|🇹🇷 _土耳其
+- name: 5,24|🇹🇷 土耳其 V2CROSS.COM
   network: tcp
   password: '!!str 3763495982449565696'
   port: 443
@@ -357,7 +359,8 @@ proxies:
     headers:
       Host: in4.wish.ml
     path: /
-- name: '5,24|🇺🇸 美国 Amazon EC2服务器 #2'
+- client-fingerprint: chrome
+  name: 5,24,30|🇸 美国 Amazon EC2服务器 2
   network: tcp
   password: '!!str 3763495894587285504'
   port: 443
@@ -376,7 +379,7 @@ proxies:
   type: vmess
   uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
   ws-opts: {}
-- name: 5,22|🇨🇳CN-111.4.108.163-6104
+- name: '5,22,24|_中国 #21'
   network: tcp
   password: 38571ca6-6692-4559-b901-0bc5826b7661
   port: 60194
@@ -525,9 +528,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 12,13,22|🇨🇳CN-111.29.57.71-0739
+  name: '12,13,22,24|_中国 #27'
   network: ws
-  port: 25230
+  port: '25230'
   server: cm1.awslcn.info
   servername: cm1.awslcn.info
   skip-cert-verify: false
@@ -540,7 +543,8 @@ proxies:
     path: /
 - alpn:
   - http/1.1
-  name: 12,22,30|_GB_国->_IE_兰
+  client-fingerprint: chrome
+  name: 12,22,30|🇧 英国 Amazon数据中心
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -548,10 +552,11 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 12,30|🇷_TR_土耳其->🇸_US_美国
+- name: 12,24,30|🇷_TR_土耳其->🇸_US_美国
   password: '!!str 3763495894587285504'
   port: 443
   server: optimal-owl.goat627.mom
+  skip-cert-verify: false
   sni: optimal-owl.goat627.mom
   type: trojan
 - name: 13|🇺🇸_US_美国->🇩🇪_DE_德国

@@ -381,7 +381,7 @@ proxies:
   ws-opts:
     path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fmahan'
 - cipher: aes-256-cfb
-  name: 4,22|🇷TR-45.89.52.66-5543
+  name: 4,19,22|🇷TR-45.89.52.66-5543
   password: HSZuyJQcWe8dxNdF
   port: 9043
   server: 45.89.52.66
@@ -677,7 +677,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 4,22|🇹🇷TR-45.89.52.66-5467
+  name: 4,19,22|🇹🇷TR-45.89.52.66-5467
   password: GeregetR8cvQHzYr
   port: 9030
   server: 45.89.52.66
@@ -849,7 +849,7 @@ proxies:
     path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
-  name: 5,22,24,28,36|🔒 VM-WS-NA 🇷🇺 RU-195.58.49.42:...
+  name: 5,22,28,36|🔒 VM-WS-NA 🇷🇺 RU-195.58.49.42:...
   network: ws
   port: '23532'
   server: 195.58.49.42
@@ -879,11 +879,12 @@ proxies:
   uuid: d724758c-505b-43be-b313-717be1fddc8a
   ws-opts:
     path: '%2Fvless%23%40FREEV2RNG%2C%40FREEV2RNG%2C%40FREEV2RNG%2C%40FREEV2RNG%2C%40FREEV2RNG%2C%40FREEV2RNG%2C%40FREEV2RNG%2C%40FREEV2RNG%2C%40FREEV2RNG%2C%40FREEV2RNG%2C%40FREEV2RNG%2C%40FREEV2RNG'
-- name: '5|🇷🇺_RU_俄罗斯_3 #1'
+- name: '5,24|🇷🇺 _俄罗斯 #8'
   network: tcp
   password: '!!str 3763495982449565696'
   port: 443
   server: relaxed-jaybird.treefrog761.one
+  skip-cert-verify: false
   sni: relaxed-jaybird.treefrog761.one
   type: trojan
 - name: '5,12,30|🇷🇺_RU_俄罗斯 #1'
@@ -893,11 +894,10 @@ proxies:
   server: open-baboon.goat627.mom
   sni: open-baboon.goat627.mom
   type: trojan
-- name: 5,24|🇷🇺 俄罗斯 莫斯科
+- name: 5|俄罗斯+莫斯科
   password: '!!str 3763495894587285504'
   port: 443
   server: electric-sunbird.goat627.mom
-  skip-cert-verify: false
   sni: electric-sunbird.goat627.mom
   type: trojan
 - alterId: 0
@@ -929,14 +929,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '5,22,24|🇷🇺 _俄罗斯 #12'
+  name: 5,22|🇺RU-195.58.49.50-1455
   network: ws
-  port: '23532'
+  port: 23532
   server: 195.58.49.50
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 8438ed42-8094-4e83-8f3f-a9e0373f869b
+  uuid: 202e395b-15fb-43fc-b7e9-1b26bdbf2cdb
   ws-opts:
     headers:
       Host: 195.58.49.50
@@ -1094,25 +1094,24 @@ proxies:
     path: /6e9EtZ2dL
 - alterId: 0
   cipher: auto
-  name: '22,24|🇷🇺 _俄罗斯 #14'
+  name: 22|🇷🇺RU-195.58.49.42-1457
   network: ws
-  port: '23532'
+  port: 23532
   server: 195.58.49.42
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 43652f04-5ca5-4a50-95ed-10279e61128b
+  uuid: 8918bab6-db04-42a0-8f03-fbad063fe246
   ws-opts:
     headers:
       Host: 195.58.49.42
     path: /
 - alterId: 0
   cipher: auto
-  name: 22,36|🔒 VM-WS-NA 🇷🇺 RU-185.22.153.73...
+  name: 22|🇺RU-185.22.153.73-0860
   network: ws
-  port: '49663'
+  port: 49663
   server: 185.22.153.73
-  servername: 185.22.153.73
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1121,7 +1120,7 @@ proxies:
     headers:
       Host: 185.22.153.73
     path: github.com/Alvin9999
-- name: 22,24|🇲🇩 _摩尔多瓦
+- name: 22|🇺RU-46.3.109.215-1379
   password: Aimer
   port: 8443
   server: 46.3.109.215
@@ -1305,12 +1304,61 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
-- name: '24|🇷🇺 _俄罗斯 #4'
-  password: '!!str 3763495982449565696'
+- name: 24|🇷🇺 俄罗斯 V2CROSS.COM
+  password: '!!str 3763495894587285504'
   port: 443
-  server: faithful-goshawk.goat627.mom
+  server: 5.8.93.173
   skip-cert-verify: false
-  sni: faithful-goshawk.goat627.mom
+  sni: open-baboon.goat627.mom
+  type: trojan
+- name: 24|🇷🇺 _俄罗斯
+  password: Aimer
+  port: 2053
+  server: 176.124.223.40
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #2'
+  password: Aimer
+  port: 2096
+  server: 5.182.84.22
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #3'
+  password: Aimer
+  port: 8443
+  server: 92.243.74.2
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #4'
+  password: Aimer
+  port: 8443
+  server: 176.124.223.50
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #5'
+  password: Aimer
+  port: 2083
+  server: 213.241.198.59
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #6'
+  password: Aimer
+  port: 2053
+  server: 213.241.198.189
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #7'
+  password: Aimer
+  port: 8443
+  server: 77.238.236.134
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - alterId: 0
   cipher: auto
@@ -1322,6 +1370,34 @@ proxies:
   tls: false
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-45.8.159.241:...
+  network: ws
+  port: '33895'
+  server: 45.8.159.241
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-185.22.153.73...
+  network: ws
+  port: '49663'
+  server: 185.22.153.73
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: af7f07dc-d726-4b1e-967d-dbb6c594999f
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
 - alterId: 0
   cipher: auto
   name: 40|RU_speednode_0040

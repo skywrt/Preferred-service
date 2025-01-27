@@ -595,13 +595,13 @@ proxies:
   type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '5,11,22,27,30|13|🇵 日本特殊|@ripaojiedian #1'
+  name: '5,11,22,24,27,30|13|🇵 日本特殊|@ripaojiedian #1'
   password: amazonskr05
   port: 443
   server: 13.114.24.98
   tfo: false
   type: ss
-- name: 5,24|🇯🇵 日本 东京Amazon数据中心
+- name: 5|日本+东京Amazon数据中心
   password: '!!str 3763495894587285504'
   port: 443
   server: composed-anemone.goat627.mom
@@ -623,7 +623,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '5,11,27,30|14|日本|@ripaojiedian #2'
+  name: '5,11,24,27,30|14|日本|@ripaojiedian #2'
   network: tcp
   port: 52380
   server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
@@ -970,28 +970,31 @@ proxies:
   port: 8008
   server: 85.208.108.61
   type: ss
-- name: 22,24|0|--62
+- name: 22,24,27|0|-https://t.me/MrXbin-52
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
   server: tw02.trojanyyds.xyz
   skip-cert-verify: false
   sni: tw02.trojanyyds.xyz
   type: trojan
-- name: 22,24|0|--59
+  udp: true
+- name: 22,27|0|-https://t.me/MrXbin-48
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
   server: tw01.trojanyyds.xyz
   skip-cert-verify: false
   sni: tw01.trojanyyds.xyz
   type: trojan
-- name: 22|🇵JP-74.226.136.204-0741
+- client-fingerprint: chrome
+  name: 22,30|🇺🇸 美国 惠普HP
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
   server: us01.trojanyyds.xyz
   skip-cert-verify: false
   sni: us01.trojanyyds.xyz
   type: trojan
-- name: 22,24|0|--63
+- client-fingerprint: chrome
+  name: 22,27,30|🇸 美国 亚兰
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
   server: in01.trojanyyds.xyz
@@ -1016,19 +1019,25 @@ proxies:
   uuid: 927094d3-d678-4763-8591-e240d0bcae87
   ws-opts:
     path: /
-- name: 22,24|0|--60
+- name: 22,27|0|-https://t.me/MrXbin-47
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
   server: 74.226.136.204
   skip-cert-verify: true
   sni: us01.trojanyyds.xyz
   type: trojan
-- name: 22,24|0|--61
+- name: 22,27|0|-https://t.me/MrXbin-45
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
   server: sg02.trojanyyds.xyz
   skip-cert-verify: false
   type: trojan
+- cipher: aes-256-cfb
+  name: 22|🇵JP-43.207.72.50-0831
+  password: amazonskr05
+  port: 443
+  server: 43.207.72.50
+  type: ss
 - alterId: 0
   cipher: auto
   name: 22|🇯🇵JP-139.162.117.173-0871
@@ -1075,13 +1084,13 @@ proxies:
     headers:
       Host: 138.2.52.176
     path: /
-- name: 22,24|🇯🇵 _日本
+- name: 22|🇵JP-139.162.121.74-1400
   password: NPgLtT7xw3AXYGzN
   port: 5661
   server: jpcheca.motrix.xyz
   skip-cert-verify: false
   type: trojan
-- name: '22,24|🇯🇵 _日本 #2'
+- name: 22|🇯🇵JP-47.91.18.127-1434
   password: Aimer
   port: 443
   server: 47.91.18.127
@@ -2453,15 +2462,33 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- alterId: 0
-  cipher: auto
-  name: 24|🇯🇵 14|日本|@ripaojiedian
-  network: tcp
-  port: '19690'
-  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
-  tls: false
-  type: vmess
-  uuid: 38eda6f2-6e04-4484-8f82-e859e76612d6
+- name: 24|🇯🇵 日本 V2CROSS.COM
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  port: 20230
+  server: jp006.421421.xyz
+  skip-cert-verify: false
+  type: trojan
+- name: 24|🇯🇵 日本 东京都Amazon数据中心
+  password: '!!str 3763495894587285504'
+  port: 443
+  server: 18.180.126.191
+  skip-cert-verify: false
+  sni: top-aphid.goat627.mom
+  type: trojan
+- name: 24|🇯🇵 _日本
+  password: Aimer
+  port: 2087
+  server: 103.116.7.100
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇯🇵 _日本 #1'
+  password: Aimer
+  port: 2083
+  server: 103.116.7.67
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
 - name: 26|✪每日连接前点更新订阅
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
   port: 21142
@@ -2515,6 +2542,13 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  name: 30|🇵 日本 Amazon数据中心
+  password: '!!str 3763495894587285504'
+  port: 443
+  server: top-aphid.goat627.mom
+  sni: top-aphid.goat627.mom
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 36,37|未知105

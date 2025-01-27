@@ -445,7 +445,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
 - cipher: chacha20-ietf-poly1305
-  name: 5,22,30|🇧_GB_英国->🇮_IR_
+  name: 5,22,24,30|🇧_GB_英国->🇮_IR_
   password: pDExaycAIr2Pim7P3oPSIH
   port: 443
   server: 78.129.140.11
@@ -483,7 +483,7 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,20,21,22|NO-51.13.182.231-5652
+  name: 5,19,20,21,22|NO-51.13.182.231-5652
   password: J0lgxy4mb52CIJ8UUcEgts
   port: 3089
   server: 51.13.182.231
@@ -636,6 +636,12 @@ proxies:
       Host: lo.kpcloud.eu.org
     path: '%2Fblue'
 - cipher: aes-128-gcm
+  name: 19,20,21,22|🇧GB-212.102.53.80-0458
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.80
+  type: ss
+- cipher: aes-128-gcm
   name: 19,20,21,22|🇬🇧GB-212.102.53.195-0459
   password: shadowsocks
   port: 443
@@ -647,36 +653,6 @@ proxies:
   port: 443
   server: 212.102.53.196
   type: ss
-- cipher: aes-128-gcm
-  name: 19,20,21,22|🇧GB-212.102.53.78-0425
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.78
-  type: ss
-- cipher: aes-128-gcm
-  name: 19,20,21,22|🇬🇧GB-212.102.53.79-0451
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.79
-  type: ss
-- cipher: aes-128-gcm
-  name: 19,20,21,22|🇬🇧GB-212.102.53.194-0193
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.194
-  type: ss
-- cipher: aes-128-gcm
-  name: 19,20,21,22|🇧GB-212.102.53.80-0458
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.80
-  type: ss
-- cipher: aes-128-gcm
-  name: 19,20,21,22|🇬🇧GB-212.102.53.193-0428
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
-  type: ss
 - alterId: 0
   cipher: aes-128-gcm
   name: 19,20,21,22,37|未知32
@@ -687,16 +663,28 @@ proxies:
   tls: true
   type: ss
 - cipher: aes-128-gcm
-  name: 19,20,21,22|🇬🇧GB-141.98.101.178-0485
+  name: 19,20,21,22|🇬🇧GB-212.102.53.193-0428
   password: shadowsocks
   port: 443
-  server: 141.98.101.178
+  server: 212.102.53.193
   type: ss
 - cipher: aes-128-gcm
-  name: 19,20,21,22|🇧GB-141.98.101.180-0524
+  name: 19,20,21,22|🇬🇧GB-212.102.53.194-0193
   password: shadowsocks
   port: 443
-  server: 141.98.101.180
+  server: 212.102.53.194
+  type: ss
+- cipher: aes-128-gcm
+  name: 19,20,21,22|🇬🇧GB-212.102.53.79-0451
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.79
+  type: ss
+- cipher: aes-128-gcm
+  name: 19,20,21,22|🇧GB-212.102.53.78-0425
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.78
   type: ss
 - cipher: aes-128-gcm
   name: 19,20,21,22|🇧GB-141.98.101.182-0509
@@ -710,9 +698,16 @@ proxies:
   port: 443
   server: 141.98.101.179
   type: ss
+- cipher: aes-128-gcm
+  name: 19,20,21,22|🇧GB-141.98.101.180-0524
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.180
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 20,21,22|🇬🇧GB-5.39.254.196-5335
+  client-fingerprint: chrome
+  name: 19,20,21,22|🇬🇧GB-5.39.254.196-5335
   network: ws
   port: 25385
   server: 5.39.254.196
@@ -723,13 +718,19 @@ proxies:
   uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
   ws-opts:
     path: /
+- cipher: aes-128-gcm
+  name: 19,20,21,22|🇬🇧GB-141.98.101.178-0485
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
 - alterId: 0
   cipher: auto
   name: 20,21,22,24,36|🔒 VM-WS-NA 🇬🇧 GB-5.39.254.196:...
   network: ws
-  port: '25385'
+  port: 25385
   server: 5.39.254.196
-  servername: 5.39.254.196
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -809,7 +810,7 @@ proxies:
   uuid: 5267ca71-97e6-44c8-8fb5-9fe4afe0954e
   ws-opts:
     path: /
-- name: 22,24|🇺🇸 美国 Amazon数据中心
+- name: 22|GB-18.175.8.246-1334
   password: telegram-id-directvpn
   port: 22222
   server: 18.175.8.246
@@ -1325,7 +1326,10 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: linkvws
-- name: 22|🇧GB-13.42.172.101-5918
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 22,24,30|🇸 美国 Amazon数据中心 2
   password: telegram-id-privatevpns
   port: 22222
   server: 13.42.172.101
@@ -1339,11 +1343,12 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 22|GB-161.35.34.48-6112
+- client-fingerprint: chrome
+  name: 22,30|🇺🇸 美国 V2CROSS.COM 3
   password: 2cba4104747d49d18319e5ade1b93ab5
   port: 443
   server: 161.35.34.48
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: yourjobnavigator.online
   type: trojan
 - cipher: aes-256-gcm
@@ -2247,6 +2252,27 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
+- name: 24|🇬🇧 英国 社会保险安全部
+  password: '!!str 3763495894587285504'
+  port: 443
+  server: 51.21.55.43
+  skip-cert-verify: false
+  sni: refined-vervet.goat627.mom
+  type: trojan
+- name: 24|🇬🇧 _英国
+  password: Aimer
+  port: 443
+  server: 51.44.86.78
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇬🇧 _英国 #1'
+  password: Aimer
+  port: 2053
+  server: 194.164.32.27
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
 - name: 26|V2-英国03∣K71线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 20820
@@ -2254,6 +2280,13 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  name: 30|🇧 英国
+  password: '!!str 3763495894587285504'
+  port: 443
+  server: faithful-chicken.treefrog761.one
+  sni: faithful-chicken.treefrog761.one
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-141.136.36.2...

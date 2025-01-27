@@ -109,7 +109,7 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: '5,11,27,30|14|香港5|@ripaojiedian #2'
+  name: '5,11,24,27,30|14|香港5|@ripaojiedian #2'
   network: tcp
   port: 51037
   server: 183.236.51.23
@@ -153,11 +153,11 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 5,11,27,30,36|🔒 VM-TCP-NA 🇺🇸 US-142.0.134.24...
+  name: '5,11,24,27,30|14|香港3|@ripaojiedian #2'
   network: tcp
-  port: '45017'
+  port: 45017
   server: 142.0.134.242
   servername: ''
   tls: false
@@ -201,9 +201,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '5,22,24|🇦🇺 _澳大利亚 #2'
+  name: 5,22|🇭🇰HK-43.154.34.74-0852
   network: ws
-  port: '1935'
+  port: 1935
   server: 43.154.34.74
   skip-cert-verify: false
   tls: true
@@ -811,7 +811,13 @@ proxies:
   uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a
   ws-opts:
     path: /
-- name: 22,24|🇨🇳 广东省 移动
+- cipher: aes-256-cfb
+  name: 22|🇰HK-112.213.102.228-0813
+  password: qwerREWQ@@
+  port: 4231
+  server: 112.213.102.228
+  type: ss
+- name: 22,24|🇨🇳 广东省深圳市 移动
   password: dcaf63a2-9f6f-4de4-b19f-e418bad8cf3d
   port: 16212
   server: s.1fengxin.xyz
@@ -830,14 +836,14 @@ proxies:
   uuid: 80e94af6-e42a-4dbc-8f4b-c5f99bf97d3d
   ws-opts:
     path: /zh-cn/download
-- name: '22,24|🇨🇳 广东省 移动 #1'
+- name: 22|HK-185.14.47.239-1327
   password: dcaf63a2-9f6f-4de4-b19f-e418bad8cf3d
   port: 16202
   server: s.1fengxin.xyz
   skip-cert-verify: false
   sni: data.steamdownload.top
   type: trojan
-- name: '22,24|🇺🇸 _美国 #35'
+- name: 22|🇰HK-91.217.139.227-1460
   password: Aimer
   port: 8443
   server: 91.217.139.227
@@ -1964,15 +1970,16 @@ proxies:
     headers:
       Host: 081d1aad-rwcsg0-1n7jq.bn.p5pv.com
     path: /
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 24|🇭🇰 14|香港3|@ripaojiedian
+  name: 24,36|🔒 VM-TCP-NA 🇭🇰 HK-118.193.34.1...
   network: tcp
-  port: '54104'
-  server: 183.236.51.23
+  port: '52825'
+  server: 118.193.34.158
+  servername: ''
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 67ff500a-8484-4ed8-cf8f-b8d341534140
 - name: 26|V1-香港01∣K1线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21135
@@ -2006,7 +2013,8 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '27,30|13|🇭🇰 香港4|@ripaojiedian #2'
+  client-fingerprint: chrome
+  name: 27,30|🇨🇳 广东省广州 移动
   port: 40565
   server: 120.232.153.63
   skip-cert-verify: false
@@ -2036,6 +2044,54 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  name: '30|🇭🇰 香港 UCloud #2'
+  port: 52825
+  server: 118.193.34.158
+  tls: false
+  type: vmess
+  uuid: 67ff500a-8484-4ed8-cf8f-b8d341534140
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇭🇰 香港 UCloud 2
+  port: 21066
+  server: 118.193.38.173
+  tls: false
+  type: vmess
+  uuid: f11cf8ff-89b3-4c4c-fdf8-b47111d852d8
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
+  network: tcp
+  port: '27512'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
+  network: tcp
+  port: '54675'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-118.193.39.1...
+  network: tcp
+  port: '15366'
+  server: 118.193.39.104
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 30d50840-88b1-474b-a17f-9fca177918d2
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-18.167.120.1...
   network: tcp
   port: '15074'
@@ -2057,36 +2113,6 @@ proxies:
     headers:
       Host: pull.free.video.10010.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
-  network: tcp
-  port: '54675'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-118.193.39.1...
-  network: tcp
-  port: '15366'
-  server: 118.193.39.104
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 30d50840-88b1-474b-a17f-9fca177918d2
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
-  network: tcp
-  port: '27512'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-141.11.77.200...
