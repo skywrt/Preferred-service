@@ -37,8 +37,7 @@ proxies:
   skip-cert-verify: true
   sni: jp.mjt000.com
   type: trojan
-- client-fingerprint: chrome
-  name: 5,30|🇯🇵 日本 东京Amazon数据中心 2
+- name: 5|日本+东京Amazon数据中心
   password: '!!str 3767107462583558144'
   port: 443
   server: first-sawfly.goat627.mom
@@ -159,7 +158,8 @@ proxies:
   port: 443
   server: sg02.trojanyyds.xyz
   type: trojan
-- name: '20,21|🇯🇵JP-74.226.136.204-0723 #1'
+- client-fingerprint: chrome
+  name: 20,21,30|🇸 美国 特兰
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
   server: in01.trojanyyds.xyz
@@ -363,18 +363,15 @@ proxies:
   uuid: 808e9ed5-2d2c-47f4-a4bf-c04e00354b24
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇵 日本 Amazon中
-  network: ws
-  port: 11443
-  server: tls.01.node-for-bigairport.win
+  name: 36,37|未知105
+  network: tcp
+  port: 48897
+  server: 13.112.49.171
+  servername: ''
+  skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: tls.01.node-for-bigairport.win
-    path: /
+  uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
@@ -385,14 +382,3 @@ proxies:
   tls: false
   type: vmess
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-- alterId: 0
-  cipher: auto
-  name: 36,37|未知105
-  network: tcp
-  port: 48897
-  server: 13.112.49.171
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
