@@ -1,29 +1,4 @@
 proxies:
-- name: '5,16,24|🇫🇷 _法国 #5'
-  network: tcp
-  password: '!!str 3763495894587285504'
-  port: 443
-  server: honest-cow.goat627.mom
-  skip-cert-verify: true
-  sni: honest-cow.goat627.mom
-  type: trojan
-- name: 5|🇫🇷_FR_法国_1
-  network: tcp
-  password: '!!str 3763495894587285504'
-  port: 443
-  server: 35.180.240.183
-  sni: honest-cow.goat627.mom
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 5,24|🇫🇷 法国 巴黎Amazon数据中心
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.181.249.29
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 8|🇫🇷FR-213.32.63.176-186_1@186
@@ -99,9 +74,15 @@ proxies:
   port: 6379
   server: 149.202.82.172
   type: ss
+- cipher: aes-256-gcm
+  name: 12,30|_FR_
+  password: dongtaiwang.com
+  port: 12345
+  server: 163.172.121.25
+  type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 19,20,21,24,37|未知124 15.7MB/s
+  name: 19,20,21,37|未知124 15.7MB/s
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.158.171.136
@@ -110,31 +91,43 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 19,20,21,24,37|未知24
+  name: 19,20,21,37|未知24
   password: NJ7wyRgX86WyWt6HQinwnD
   port: 443
   server: 51.158.252.130
   skip-cert-verify: true
   tls: true
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇫🇷FR-45.158.171.132-0440
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.158.171.132
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇫🇷FR-163.5.159.231-8317
+  name: 19|🇫🇷FR-146.19.168.161-5743
   network: ws
   port: 443
-  server: irvideo.cfd
+  server: az05.beyondy.cfd
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
   ws-opts:
     headers:
-      host: irvideo.cfd
-    path: /linkws
+      host: az05.beyondy.cfd
+    path: /link
+- name: '20,21|🇫🇷FR-15.236.151.238-0863 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.236.151.238
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-51.77.20.137-8310 #1'
+  name: '20,21|🇫🇷FR-51.77.20.137-8446 #1'
   network: ws
   port: 443
   server: 51.77.20.137
@@ -148,35 +141,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-146.19.168.161-8308 #1'
-  network: ws
-  port: 443
-  server: 146.19.168.161
-  servername: az05.beyondy.cfd
-  tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: az05.beyondy.cfd
-    path: /link
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇫🇷FR-146.19.168.161-5648 #1'
-  network: ws
-  port: 443
-  server: az05.beyondy.cfd
-  servername: az05.beyondy.cfd
-  tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: az05.beyondy.cfd
-    path: /link
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇫🇷FR-163.5.159.231-8317 #2'
+  name: '20,21|🇫🇷FR-163.5.159.231-8453 #1'
   network: ws
   port: 443
   server: irvideo.cfd
@@ -190,12 +155,12 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '24|🇺🇸 _美国 #25'
+  name: 24|VMESS-未知>法国-NF解锁法国地区非自制剧-ChatG...
   network: ws
-  port: '443'
+  port: 443
   server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
   servername: ''
-  tls: true
+  tls: false
   type: vmess
   uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
   ws-opts:
@@ -203,92 +168,19 @@ proxies:
       Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     path: /azumase.ren
 - name: 24|🇫🇷 _法国
-  password: '!!str 3763495894587285504'
-  port: 443
-  server: 35.181.173.20
-  skip-cert-verify: true
-  sni: artistic-vulture.goat627.mom
+  password: Aimer
+  port: 8443
+  server: 141.11.203.191
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇫🇷 _法国 #1'
-  password: '!!str 3763495894587285504'
+  password: Aimer
   port: 443
-  server: worthy-pheasant.goat627.mom
-  skip-cert-verify: true
-  sni: worthy-pheasant.goat627.mom
+  server: 141.11.203.168
+  skip-cert-verify: false
+  sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '24|🇫🇷 _法国 #2'
-  network: ws
-  port: '443'
-  server: 194.9.172.65
-  tls: true
-  type: vmess
-  uuid: 8d90c129-4156-4d6c-9115-24df25f26a02
-  ws-opts:
-    headers:
-      Host: beyonddbc.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '24|🇫🇷 _法国 #3'
-  network: ws
-  port: '443'
-  server: beyonddbc.sbs
-  tls: true
-  type: vmess
-  uuid: 8d90c129-4156-4d6c-9115-24df25f26a02
-  ws-opts:
-    headers:
-      Host: beyonddbc.sbs
-    path: /linkws
-- name: '24|🇫🇷 _法国 #4'
-  password: '!!str 3763495894587285504'
-  port: 443
-  server: set-swan.goat627.mom
-  skip-cert-verify: true
-  sni: set-swan.goat627.mom
-  type: trojan
-- name: '24|🇫🇷 _法国 #6'
-  password: '!!str 3763495894587285504'
-  port: 443
-  server: grown-urchin.treefrog761.one
-  skip-cert-verify: true
-  sni: grown-urchin.treefrog761.one
-  type: trojan
-- name: '24|🇫🇷 _法国 #7'
-  password: '!!str 3763495894587285504'
-  port: 443
-  server: artistic-vulture.goat627.mom
-  skip-cert-verify: true
-  sni: artistic-vulture.goat627.mom
-  type: trojan
-- name: '24|🇫🇷 _法国 #8'
-  password: '!!str 3763495894587285504'
-  port: 443
-  server: maximum-ant.treefrog761.one
-  skip-cert-verify: true
-  sni: maximum-ant.treefrog761.one
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '24|🇫🇷 _法国 #9'
-  network: ws
-  port: '2082'
-  server: 5.196.29.123
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 24,40|speednode_0035
-  password: lnxc3CurVIHhXHy8AZeleq
-  port: 443
-  server: 62.210.88.22
-  type: ss
 - name: 26|V2-日本01∣K11线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21146
@@ -303,6 +195,24 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 28|法 CM NO1
+  port: 52108
+  server: qd.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 808e9ed5-2d2c-47f4-a4bf-c04e00354b24
+- alterId: 0
+  cipher: auto
+  name: 28|法国1
+  port: 45072
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 981ac37f-e090-4658-bb04-4df642cf8b72
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇫🇷 FR-57.128.184.1...

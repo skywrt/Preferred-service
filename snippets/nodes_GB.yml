@@ -1,10 +1,17 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 5,19,20,21,30|国 V2CROSS.COM
+  password: KuMFEVSJIgMhUW7K55V406
+  port: 443
+  server: 78.129.140.11
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 5|英国-优化3
+  name: '5|过滤掉3条线路 #1'
   network: ws
-  port: '16645'
-  server: t.cnmjcn.cyou
+  port: '16617'
+  server: yes.mojcn.com
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -21,10 +28,10 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 5|英国-优化-GPT
+  name: 5|英国-优化2
   network: ws
   port: '16645'
-  server: yes.mojcn.com
+  server: m.cnmjin.net
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -34,10 +41,23 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5|英国-优化2
+  name: 5|英国-优化3
   network: ws
   port: '16645'
-  server: m.cnmjin.net
+  server: t.cnmjcn.cyou
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 5|英国-优化-GPT
+  network: ws
+  port: '16645'
+  server: yes.mojcn.com
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -81,66 +101,45 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,24,37|未知32
+  name: 19,20,21,37|未知32
   password: shadowsocks
   port: 443
   server: 212.102.53.81
   skip-cert-verify: true
   tls: true
   type: ss
-- name: '20,21,24|🇺🇸 _美国 #135'
-  password: 2cba4104747d49d18319e5ade1b93ab5
-  port: 443
-  server: 161.35.34.48
-  skip-cert-verify: true
-  sni: yourjobnavigator.online
-  type: trojan
-- name: '20,21|🇬🇧GB-161.35.34.48-0511 #1'
+- name: '20,21|🇬🇧GB-161.35.34.48-0515 #1'
   password: 2cba4104747d49d18319e5ade1b93ab5
   port: 443
   server: yourjobnavigator.online
   type: trojan
-- name: '24|🇬🇧 _英国 #5'
-  password: '!!str 3763495894587285504'
+- name: 24|🇬🇧 _英国
+  password: Aimer
   port: 443
-  server: 51.24.15.245
-  skip-cert-verify: true
-  sni: settling-terrier.goat627.mom
+  server: 51.44.86.78
+  skip-cert-verify: false
+  sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇬🇧 _英国 #6'
-  password: '!!str 3763495894587285504'
-  port: 443
-  server: 51.20.156.114
-  skip-cert-verify: true
-  sni: faithful-chicken.treefrog761.one
+- name: '24|🇬🇧 _英国 #1'
+  password: Aimer
+  port: 8443
+  server: 176.53.144.206
+  skip-cert-verify: false
+  sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇬🇧 _英国 #15'
-  password: '!!str 3763495894587285504'
-  port: 443
-  server: 51.21.55.43
-  skip-cert-verify: true
-  sni: refined-vervet.goat627.mom
+- name: '24|🇬🇧 _英国 #2'
+  password: Aimer
+  port: 2053
+  server: 194.164.32.27
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇬🇧 _英国 #16'
-  password: '!!str 3763495894587285504'
+- name: '24|🇬🇧 _英国 #3'
+  password: Aimer
   port: 443
-  server: refined-vervet.goat627.mom
-  skip-cert-verify: true
-  sni: refined-vervet.goat627.mom
-  type: trojan
-- name: '24|🇬🇧 _英国 #23'
-  password: '!!str 3763495894587285504'
-  port: 443
-  server: settling-terrier.goat627.mom
-  skip-cert-verify: true
-  sni: settling-terrier.goat627.mom
-  type: trojan
-- name: '24|🇬🇧 _英国 #27'
-  password: '!!str 3763495894587285504'
-  port: 443
-  server: faithful-chicken.treefrog761.one
-  skip-cert-verify: true
-  sni: faithful-chicken.treefrog761.one
+  server: 51.44.86.78
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: 26|V2-英国03∣K71线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
