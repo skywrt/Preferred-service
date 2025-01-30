@@ -209,17 +209,9 @@ proxies:
   skip-cert-verify: true
   sni: hk12.bilibili.com
   type: trojan
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 5,30|🇬🇧 英国
-  password: NndL0jCrtotSTDNR
-  port: 8388
-  server: syd5.vpntype.dev
-  type: ss
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 5,30|🇧 英国 V2CROSS.COM
+  name: 5|英国 V2CROSS.COM
   network: ws
   port: 20300
   server: 185.121.134.12
@@ -227,6 +219,8 @@ proxies:
   type: vmess
   uuid: eb060c08-f284-49be-adb8-5188fb0521a5
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -420,13 +414,3 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-141.136.36.2...
-  network: tcp
-  port: '57918'
-  server: 141.136.36.206
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9a17a5da-0798-4bc1-b1b3-aeb1a8e69dee
