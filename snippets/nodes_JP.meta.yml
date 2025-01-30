@@ -1,4 +1,18 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|4d4a9d51d71e4e0cbb0bd8a6f52650...
+  network: ws
+  port: 23451
+  server: 1-osaka-p.aboutanime.eu.org
+  tls: false
+  type: vmess
+  udp: false
+  uuid: 7eb08b9e-6f0b-4f54-b3f2-30fe440369c6
+  ws-opts:
+    path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: '5,11,24,27,30|13|🇵 日本特殊|@ripaojiedian #1'
@@ -9,7 +23,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '5,11,27,30|14|日本3|@ripaojiedian #2'
+  name: '5,11,24,27,30|14|日本3|@ripaojiedian #2'
   network: tcp
   port: 63494
   server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
@@ -17,8 +31,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 2865a8a3-b9fe-4056-8378-5a03f2d4595e
-- client-fingerprint: chrome
-  name: 5,30|🇵 日本 东京Amazon数据中心
+- name: 5|日本+东京Amazon数据中心
   password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
   port: 20230
   server: jp005.421421.xyz
@@ -26,7 +39,7 @@ proxies:
   type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,11,27,30|13|🇵 日本2|@ripaojiedian #1'
+  name: '5,11,24,27,30|13|🇵 日本2|@ripaojiedian #1'
   password: 19ATYI5TXV0A3IVZ
   port: 18002
   server: 219.135.227.210
@@ -34,7 +47,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,11,27,30|13| |@ripaojiedian #4'
+  name: 5,11,24,27,30|🇳 省州市 /区
   password: BH3TD5M0B37Z4922
   port: 18016
   server: w72tapyb.slashdevslashnetslashtun.net
@@ -47,8 +60,7 @@ proxies:
   skip-cert-verify: true
   sni: jp.mjt000.com
   type: trojan
-- client-fingerprint: chrome
-  name: 5,30|🇵 日本 Amazon
+- name: 5|日本+东京都Amazon数据中心
   password: 47072f01-8e77-4136-8e85-b0f0d9d08f1d
   port: 20230
   server: jp007.421421.xyz
@@ -180,6 +192,12 @@ proxies:
     headers:
       Host: lp.ylks.us.kg
     path: '%2F%3Fed%3D2560'
+- cipher: aes-256-cfb
+  name: 19|🇯🇵JP-52.194.219.233-6498
+  password: amazonskr05
+  port: 443
+  server: 52.194.219.233
+  type: ss
 - alterId: 0
   cipher: aes-128-gcm
   name: 19,20,21,37|未知94 3.4MB/s
@@ -190,34 +208,10 @@ proxies:
   tls: true
   type: ss
 - cipher: aes-256-cfb
-  name: 19|🇯🇵JP-176.32.78.140-0456
-  password: amazonskr05
-  port: 443
-  server: 176.32.78.140
-  type: ss
-- cipher: aes-256-cfb
-  name: 19,40|speednode_0022
-  password: amazonskr05
-  port: 443
-  server: 54.95.145.3
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇯🇵JP-13.231.184.191-6012
-  password: amazonskr05
-  port: 443
-  server: 13.231.184.191
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇯🇵JP-13.114.24.98-0488
+  name: 19|🇯🇵JP-13.114.24.98-0540
   password: amazonskr05
   port: 443
   server: 13.114.24.98
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇯🇵JP-57.180.24.232-6087
-  password: amazonskr05
-  port: 443
-  server: 57.180.24.232
   type: ss
 - alterId: 0
   cipher: auto
@@ -234,59 +228,66 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- alterId: 0
-  cipher: auto
-  name: 24|🇯🇵 日本东京 Amazon数据中心
-  network: ws
-  port: '11443'
-  server: tls.17.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: tls.17.node-for-bigairport.win
-    path: /
+- name: 24|🇯🇵 日本 东京都Amazon数据中心
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  port: 20230
+  server: jp007.421421.xyz
+  skip-cert-verify: false
+  type: trojan
+- name: 24|日期：01-20
+  password: Aimer
+  port: 50000
+  server: 211.228.181.102
+  skip-cert-verify: true
+  sni: ngepy.ambercc.filegear-sg.me
+  type: trojan
 - name: 24|🇯🇵 _日本
   password: Aimer
   port: 443
-  server: 103.116.7.189
-  skip-cert-verify: false
+  server: 18.183.158.211
+  skip-cert-verify: true
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇯🇵 _日本 #1'
   password: Aimer
-  port: 2083
-  server: 103.116.7.133
-  skip-cert-verify: false
-  sni: ngepy.ambercc.filegear-sg.me
+  port: 443
+  server: 47.91.18.127
+  skip-cert-verify: true
+  sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇯🇵 _日本 #2'
   password: Aimer
   port: 443
-  server: 103.116.7.230
-  skip-cert-verify: false
-  sni: ngepy.ambercc.filegear-sg.me
+  server: 103.116.7.189
+  skip-cert-verify: true
+  sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇯🇵 _日本 #3'
   password: Aimer
-  port: 2087
-  server: 103.116.7.100
-  skip-cert-verify: false
-  sni: ngepx.ambercc.filegear-sg.me
+  port: 443
+  server: 103.116.7.230
+  skip-cert-verify: true
+  sni: ngepy.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇯🇵 _日本 #4'
   password: Aimer
   port: 2083
-  server: 103.116.7.67
-  skip-cert-verify: false
+  server: 103.116.7.103
+  skip-cert-verify: true
+  sni: ngepy.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇯🇵 _日本 #5'
+  password: Aimer
+  port: 2087
+  server: 103.116.7.100
+  skip-cert-verify: true
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇯🇵 _日本 #6'
   password: Aimer
   port: 2083
-  server: 103.116.7.103
-  skip-cert-verify: false
+  server: 103.116.7.67
+  skip-cert-verify: true
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: 26|✪每日连接前点更新订阅
@@ -359,6 +360,13 @@ proxies:
   server: gy.666666222.shop
   type: ss
   udp: true
+- client-fingerprint: chrome
+  name: 30|🇵 日本 东Amazon中
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  port: 20230
+  server: jp007.421421.xyz
+  sni: jp007.421421.xyz
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-150.230.61.11...
@@ -367,7 +375,7 @@ proxies:
   server: 150.230.61.110
   tls: false
   type: vmess
-  uuid: bd34c0f9-772f-4c92-a3bc-488b0fe82bc8
+  uuid: 4a2771e1-d31f-4590-812d-be880ba87997
   ws-opts:
     headers:
       Host: 1-osaka-p.aboutanime.eu.org

@@ -1,9 +1,9 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '5,13|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_2 #1'
+  name: '5,13,24|_中国 #31'
   network: ws
-  port: 25230
+  port: '25230'
   server: cm1.awslcn.info
   servername: cm1.awslcn.info
   tls: false
@@ -216,7 +216,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '5,24|_中国 #22'
+  name: '5,24|_中国 #2'
   network: ws
   port: '25230'
   server: 183.236.51.60
@@ -310,12 +310,11 @@ proxies:
   port: 989
   server: 163.172.64.22
   type: ss
-- name: '5,24|🇺🇸 _美国 #62'
+- name: 5|🇺🇸_US_美国->🇨🇳_CN_中国
   network: tcp
   password: '!!str 3767107462583558144'
   port: 443
   server: warm-rabbit.goat627.mom
-  skip-cert-verify: false
   sni: warm-rabbit.goat627.mom
   type: trojan
 - alterId: 0
@@ -1143,7 +1142,7 @@ proxies:
     path: /
 - alpn:
   - http/1.1
-  name: 12|🇺🇸_US_美国->🇫🇷_FR_法国
+  name: 12,16|🇸_US_美国->🇷_FR_法国
   network: tcp
   password: telegram-id-directvpn
   port: 22222
@@ -1152,14 +1151,14 @@ proxies:
   type: trojan
 - alterId: 64
   cipher: auto
-  name: '12|🇺🇸_US_美国->🇨🇳_CN_中国 #1'
+  name: 12,16|🇺🇸_US_美国->🇳_CN_中国
   network: tcp
   port: 45017
   server: 137.175.20.81
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 12|🇺🇸_US_美国->🇷🇺_RU_俄罗斯
+- name: 12,16|🇺🇸_US_美国->🇺_RU_
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
   server: ru01.trojanyyds.xyz
@@ -1203,7 +1202,7 @@ proxies:
     path: '%2Fws%2F%3Fed%3D2048'
 - alpn:
   - http/1.1
-  name: 12|🇩🇪_DE_德国->🇫🇷_FR_法国
+  name: 12,16|_DE_国->🇫🇷_FR_法国
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -1243,6 +1242,12 @@ proxies:
     headers:
       Host: xasshsga---RUBIKA.ir.speedtest.net.ARCHYU.IR
     path: '%2Fws%2F%3Fed%3D2048'
+- cipher: aes-256-gcm
+  name: 12,16,24,30|🇳_CN_中国->🇺🇸_US_美国
+  password: K0AA69ZLLFIBXP1Q
+  port: 17004
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  type: ss
 - name: 13|🇺🇸_US_美国->🇩🇪_DE_德国
   network: ws
   port: 80
@@ -1331,23 +1336,23 @@ proxies:
       Host: wWw.SpEeDtEsT.NeT.ZuLa.aIr.IkCoSaLeS.iR.D662599.v05.feadlenetwork19922h.net
 - alterId: 0
   cipher: auto
-  name: 16|_CN_->🇷🇺_RU_俄罗斯
+  name: 16|_CN_国->_US_国
   network: ws
-  port: 25230
-  server: 183.236.51.60
+  port: 25238
+  server: us1.awslcn.info
   skip-cert-verify: true
   sni: ''
   type: vmess
   uuid: 243eab52-9ac1-405c-887c-eb112c0985b8
   ws-opts:
     headers:
-      host: 183.236.51.60
+      host: us1.awslcn.info
     path: /
 - alterId: 0
   cipher: auto
-  name: '16|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_1 #2'
+  name: 16,30|🇨🇳_CN_中国->_GB_国
   network: ws
-  port: 25230
+  port: 25240
   server: cm1.awslcn.info
   skip-cert-verify: true
   sni: ''
@@ -1357,25 +1362,6 @@ proxies:
     headers:
       host: cm1.awslcn.info
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 16|🇷_TR_->_DE_国
-  password: fR09uI3YFOmtqJzwu2Eoqg
-  port: 4018
-  server: 2323.need9ping.ir
-  type: ss
-- name: 16|🇷_FR_国->🇳_CN_中国
-  network: tcp
-  password: '!!str 3763495894587285504'
-  port: 443
-  server: honest-cow.goat627.mom
-  sni: honest-cow.goat627.mom
-  type: trojan
-- cipher: aes-256-cfb
-  name: 16,19,40|speednode_0038
-  password: amazonskr05
-  port: 443
-  server: 54.189.160.123
-  type: ss
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|中国香港/中国台湾(CN)China/Shenzhen/小东的程序未能精准识别(可能是中转节点)_3
@@ -1436,7 +1422,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 23|🇨🇳_CN_中国->🇺🇸_US_美国_1
+  name: '23|🇨🇳_CN_中国->🇺🇸_US_美国_1 #1'
   network: ws
   port: 16928
   server: vip3.niuniupremium.xyz
@@ -1573,3 +1559,21 @@ proxies:
     headers:
       host: uk.moss.network
     path: /d/65dd503.TG.WangCai2.WangCai_8:107690
+- alterId: 0
+  cipher: auto
+  name: 30|🇨🇳_CN_中国->🇺_RU_
+  network: ws
+  port: 25230
+  server: 183.236.51.60
+  type: vmess
+  uuid: 243eab52-9ac1-405c-887c-eb112c0985b8
+  ws-opts:
+    headers:
+      host: 183.236.51.60
+    path: /
+- cipher: aes-256-gcm
+  name: 30|🇳_CN_中国->_IR_
+  password: b12360f4-33ba-4c9b-ae0c-3da5f8c6ed05
+  port: 19994
+  server: l98tygm6.wmdkwwurw.top
+  type: ss
