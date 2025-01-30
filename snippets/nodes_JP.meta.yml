@@ -1,31 +1,4 @@
 proxies:
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 5,11,24,30|13| 2|@ripaojiedian
-  password: 3RU9RZ91MGOPITE7
-  port: 18015
-  server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  grpc-opts:
-    grpc-service-name: ''
-  name: 5|日本 01 [聚合]解锁|1.0x
-  network: tcp
-  port: 10000
-  reality-opts:
-    public-key: xCUqnTXLBXrFGxHD0Bjak03ojvXmORrytznaW87QiRY
-    short-id: 155b37d2
-  server: juhejapan.bpjc.lol
-  servername: apple.com
-  tls: false
-  type: vless
-  uuid: e1bc3d2e-fd73-474b-99f9-02846bdb8e63
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: '5,11,24,27,30|13|🇵 日本特殊|@ripaojiedian #1'
@@ -34,21 +7,39 @@ proxies:
   server: 54.169.74.60
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: '5,11,27,30|14|日本3|@ripaojiedian #2'
+  network: tcp
+  port: 63494
+  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2865a8a3-b9fe-4056-8378-5a03f2d4595e
+- client-fingerprint: chrome
+  name: 5,30|🇵 日本 东京Amazon数据中心
+  password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
+  port: 20230
+  server: jp005.421421.xyz
+  sni: 421421.xyz
+  type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,11,24,30|13|🇵 日本3|@ripaojiedian #1'
-  password: W05U3QJLWPM8NDNH
-  port: 18014
+  name: '5,11,27,30|13|🇵 日本2|@ripaojiedian #1'
+  password: 19ATYI5TXV0A3IVZ
+  port: 18002
   server: 219.135.227.210
   tfo: false
   type: ss
-- name: 5|尼日利亚NI-T
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: ni.mjt000.com
-  skip-cert-verify: false
-  sni: ni.mjt000.com
-  type: trojan
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: '5,11,27,30|13| |@ripaojiedian #4'
+  password: BH3TD5M0B37Z4922
+  port: 18016
+  server: w72tapyb.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
 - name: 5|日本JP-T
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
@@ -56,11 +47,12 @@ proxies:
   skip-cert-verify: true
   sni: jp.mjt000.com
   type: trojan
-- name: 5|日本+东京Amazon数据中心
-  password: '!!str 3767107462583558144'
-  port: 443
-  server: first-sawfly.goat627.mom
-  sni: first-sawfly.goat627.mom
+- client-fingerprint: chrome
+  name: 5,30|🇵 日本 Amazon
+  password: 47072f01-8e77-4136-8e85-b0f0d9d08f1d
+  port: 20230
+  server: jp007.421421.xyz
+  sni: 421421.xyz
   type: trojan
 - alterId: 0
   cipher: auto
@@ -75,6 +67,13 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- name: 5|「🇯🇵」EMO | 冰灵果 x3
+  password: 0fc6dab0-02e2-46dc-b540-63cdc76b0c50
+  port: 659
+  server: t39.emoyes.top
+  skip-cert-verify: true
+  sni: www.python.org
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|日本-优化3
@@ -88,19 +87,13 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 5|日本 东京Amazon数据中心
-  network: ws
-  port: 11443
-  server: tls.01.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+- name: 5|尼日利亚NI-T
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: ni.mjt000.com
+  skip-cert-verify: false
+  sni: ni.mjt000.com
+  type: trojan
 - cipher: aes-256-cfb
   name: 8|🇯🇵JP-54.199.83.239-171_1@171
   password: doub.io
@@ -197,16 +190,22 @@ proxies:
   tls: true
   type: ss
 - cipher: aes-256-cfb
-  name: 19|🇯🇵JP-18.176.60.193-0457
+  name: 19|🇯🇵JP-176.32.78.140-0456
   password: amazonskr05
   port: 443
-  server: 18.176.60.193
+  server: 176.32.78.140
   type: ss
 - cipher: aes-256-cfb
-  name: 19,20,21,40|speednode_0022
+  name: 19,40|speednode_0022
   password: amazonskr05
   port: 443
   server: 54.95.145.3
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|🇯🇵JP-13.231.184.191-6012
+  password: amazonskr05
+  port: 443
+  server: 13.231.184.191
   type: ss
 - cipher: aes-256-cfb
   name: 19|🇯🇵JP-13.114.24.98-0488
@@ -214,41 +213,12 @@ proxies:
   port: 443
   server: 13.114.24.98
   type: ss
-- name: '20,21|🇯🇵JP-74.226.136.204-0720 #1'
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+- cipher: aes-256-cfb
+  name: 19|🇯🇵JP-57.180.24.232-6087
+  password: amazonskr05
   port: 443
-  server: us02.trojanyyds.xyz
-  sni: us02.trojanyyds.xyz
-  type: trojan
-- name: '20,21|🇯🇵JP-15.168.155.164-0722 #1'
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: us01.trojanyyds.xyz
-  sni: us01.trojanyyds.xyz
-  type: trojan
-- name: '20,21|🇯🇵JP-74.226.136.204-0808 #1'
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: tw02.trojanyyds.xyz
-  sni: tw02.trojanyyds.xyz
-  type: trojan
-- name: '20,21|🇯🇵JP-74.226.136.204-0809 #1'
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: sg02.trojanyyds.xyz
-  type: trojan
-- name: '20,21|🇯🇵JP-74.226.136.204-0723 #1'
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: in01.trojanyyds.xyz
-  sni: in01.trojanyyds.xyz
-  type: trojan
-- name: '20,21|🇯🇵JP-15.168.155.164-0719 #1'
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: tw01.trojanyyds.xyz
-  sni: tw01.trojanyyds.xyz
-  type: trojan
+  server: 57.180.24.232
+  type: ss
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|日本(JP)Japan/Tokyo_38
@@ -372,16 +342,9 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: 27|13|🇵 日本2|@ripaojiedian
-  password: 19ATYI5TXV0A3IVZ
-  port: 18002
-  server: 219.135.227.210
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 27|13|🇵 日本3|@ripaojiedian
+  name: '27,30|13|🇵 日本3|@ripaojiedian #1'
   port: 63494
   server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
   skip-cert-verify: false
@@ -389,39 +352,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 2865a8a3-b9fe-4056-8378-5a03f2d4595e
-- alterId: 0
-  cipher: auto
-  name: '27|14|日本3|@ripaojiedian #1'
-  network: tcp
-  port: '63494'
-  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2865a8a3-b9fe-4056-8378-5a03f2d4595e
-- alterId: 0
-  cipher: auto
-  name: 28|日本丨解-1J
-  port: 49303
-  server: yoyo.cmyiphone.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 25504dff-bf4d-4a69-b90b-28dc82743636
-- cipher: chacha20-ietf-poly1305
-  name: 28|日本02-1B
-  password: 182aac76-4b65-4efb-807e-f914626f76a5
-  port: 20004
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|日本03-1B
-  password: 182aac76-4b65-4efb-807e-f914626f76a5
-  port: 20006
-  server: gy.666666222.shop
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|日本04-1B
   password: 182aac76-4b65-4efb-807e-f914626f76a5
@@ -429,66 +359,19 @@ proxies:
   server: gy.666666222.shop
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|日本01-1A
-  password: 9186d073-2893-4f9e-9d85-18d5bbe0e0f9
-  port: 20002
-  server: gy.666666222.shop
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 28|日本NO.1
-  port: 45056
-  server: haa.dashuai.cyou
+  name: 36|🔒 VM-WS-NA 🇯🇵 JP-150.230.61.11...
+  network: ws
+  port: '23451'
+  server: 150.230.61.110
   tls: false
   type: vmess
-  udp: true
-  uuid: 981ac37f-e090-4658-bb04-4df642cf8b72
-- alterId: 0
-  cipher: auto
-  name: 28|日本NO.2
-  port: 45057
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 981ac37f-e090-4658-bb04-4df642cf8b72
-- alterId: 0
-  cipher: auto
-  name: 28|日本 IEPL专线NO3
-  port: 52117
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 808e9ed5-2d2c-47f4-a4bf-c04e00354b24
-- alterId: 0
-  cipher: auto
-  name: 28|日本 IEPL专线NO1
-  port: 20017
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 808e9ed5-2d2c-47f4-a4bf-c04e00354b24
-- client-fingerprint: chrome
-  name: 30|🇵 日本 Amazon
-  password: 0bfa2050-b165-4156-859c-70f36d300dce
-  port: 20230
-  server: jp006.421421.xyz
-  sni: 421421.xyz
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
-  network: tcp
-  port: '1069'
-  server: 152.69.197.60
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+  uuid: bd34c0f9-772f-4c92-a3bc-488b0fe82bc8
+  ws-opts:
+    headers:
+      Host: 1-osaka-p.aboutanime.eu.org
+    path: /
 - alterId: 0
   cipher: auto
   name: 36,37|未知105
@@ -502,14 +385,11 @@ proxies:
   uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇯🇵 JP-150.230.61.11...
-  network: ws
-  port: '23451'
-  server: 150.230.61.110
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
+  network: tcp
+  port: '1069'
+  server: 152.69.197.60
+  servername: ''
   tls: false
   type: vmess
-  uuid: 7eb08b9e-6f0b-4f54-b3f2-30fe440369c6
-  ws-opts:
-    headers:
-      Host: 1-osaka-p.aboutanime.eu.org
-    path: /
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf

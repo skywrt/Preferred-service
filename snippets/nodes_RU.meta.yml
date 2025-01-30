@@ -1,16 +1,23 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 5,11,23|🇷🇺_RU_俄罗斯联邦
+- name: '5,38|🇷🇺_RU_俄罗斯联邦_10 #1'
   network: ws
-  port: 12910
-  server: 45.136.245.240
-  skip-cert-verify: true
+  port: 2087
+  server: 185.176.24.140
+  servername: juzibaipiao.5112233.xyz
   tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
   ws-opts:
-    path: /
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2f%3fed%3d2048'
+- name: 5|俄罗斯RU-T
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: ru.mjt000.com
+  skip-cert-verify: false
+  sni: ru.mjt000.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 5,16|_RU_
@@ -24,6 +31,18 @@ proxies:
   uuid: 98ad0351-d756-4eac-8de0-e7a4e9761f87
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  name: 5,11,23|🇷🇺_RU_俄罗斯联邦
+  network: ws
+  port: 12910
+  server: 45.136.245.240
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    path: /
 - name: '5,24|🇷🇺 _俄罗斯 #23'
   network: tcp
   password: '!!str 3767107462583558144'
@@ -31,24 +50,6 @@ proxies:
   server: major-ape.goat627.mom
   skip-cert-verify: false
   sni: major-ape.goat627.mom
-  type: trojan
-- name: '5,38|🇷🇺_RU_俄罗斯联邦_10 #1'
-  network: ws
-  port: 2087
-  server: 185.176.24.140
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
-- name: 5|俄罗斯+V2CROSS.COM
-  password: '!!str 3767107462583558144'
-  port: 443
-  server: modest-bulldog.goat627.mom
-  sni: modest-bulldog.goat627.mom
   type: trojan
 - alterId: 0
   cipher: auto
@@ -59,13 +60,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 6a2afda8-8798-434c-8964-1deb4e7655a5
-- name: 5|俄罗斯RU-T
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: ru.mjt000.com
-  skip-cert-verify: false
-  sni: ru.mjt000.com
-  type: trojan
 - name: 8|🇷🇺RU-176.32.35.167-210_1@209
   password: 85bce006-4885-11ee-8792-f23c9164ca5d
   port: 1007
@@ -174,13 +168,6 @@ proxies:
     headers:
       Host: ap.ylks.xyz
     path: '%2Fblue'
-- cipher: chacha20-ietf-poly1305
-  name: '24,27,30|0|-https://t.me/MrXbin-11 #1'
-  password: MDZhNTAz
-  port: 8388
-  server: 89.221.224.166
-  type: ss
-  udp: true
 - name: 24|🇷🇺 _俄罗斯
   password: Aimer
   port: 2053
@@ -342,18 +329,6 @@ proxies:
   skip-cert-verify: false
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 28|俄罗斯-圣彼得堡-015-1B
-  network: ws
-  port: 64219
-  server: 195.58.49.42
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8701023a-ddc6-48c1-b8a2-e196e4d47c78
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇷🇺 RU-45.8.159.241:...
