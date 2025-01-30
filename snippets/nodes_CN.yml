@@ -1,13 +1,4 @@
 proxies:
-- alterId: 64
-  cipher: auto
-  name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
-  network: tcp
-  port: 54882
-  server: 183.240.235.162
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: '5|中国 - 乌恰 - Baxet Group Inc. - 1... #4'
@@ -16,7 +7,7 @@ proxies:
   server: 212.192.12.70
   tls: false
   type: vmess
-  uuid: d234240d-61ef-478d-9a86-864d70abc237
+  uuid: f039f9ed-2632-49f8-8e45-226870c4a0db
   ws-opts:
     headers:
       Host: ''
@@ -27,22 +18,6 @@ proxies:
   port: 15082
   server: 59.56.77.178
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '5,24|🇷🇺 _俄罗斯 #4'
-  network: tcp
-  port: '3503'
-  server: ocean.2022.2023.mlinuu.top
-  tls: false
-  type: vmess
-  uuid: fa678492-65dd-3df0-800d-11f138b868ab
-- name: 5|广东省广州市+移动
-  password: 2b39bbdd-a565-4f8e-b6b6-6b034b2076f4
-  port: 13022
-  server: naiu-us.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 5,11,24|🇨🇳 github.com/freefq - 广东省移动 7
@@ -57,6 +32,25 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
+- alterId: 64
+  cipher: auto
+  name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
+  network: tcp
+  port: 54882
+  server: 183.240.235.162
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: '5,24,30,37|HK #1'
+  password: 11a805f2-41a7-4cd8-8406-0470c3cde0d3
+  port: 6181
+  server: 45.250.184.183
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   cipher: auto
   name: 8|🇨🇳CN-139.227.223.3-049_1@49
@@ -654,6 +648,12 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
+- cipher: chacha20-ietf
+  name: 12,30|_CN_国
+  password: asd123456
+  port: 8388
+  server: 194.41.59.80
+  type: ss
 - alterId: 0
   cipher: auto
   name: 17|CN_ youtube@资源分享师_17
@@ -760,12 +760,91 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 24,27,40|speednode_0009
-  password: e279c494-c426-443a-a034-a04516409242
-  port: 13035
-  server: naiu-other.05vr9nyqg5.download
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
+- name: 24|_中国
+  password: 94d219c9-1afc-4d42-b090-8b3794764380
+  port: 443
+  server: 36.50.135.142
+  skip-cert-verify: false
+  sni: bs1.loadingip.com
+  type: trojan
+- name: '24|_中国 #1'
+  password: wb6368
+  port: 2053
+  server: 154.211.8.152
+  skip-cert-verify: false
+  sni: hsdgbuys.pages.dev
+  type: trojan
+- name: '24|_中国 #2'
+  password: Aimer
+  port: 2053
+  server: 154.211.8.152
+  skip-cert-verify: false
+  sni: ngepy.ambercc.filegear-sg.me
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '24|_中国 #3'
+  network: tcp
+  port: '10000'
+  server: 120.232.217.148
+  tls: false
+  type: vmess
+  uuid: b39c863d-98e2-491d-afd8-477c32f5ede7
+- name: '24|_中国 #4'
+  password: Aimer
+  port: 443
+  server: 154.197.64.206
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|_中国 #5'
+  password: Aimer
+  port: 443
+  server: 154.219.5.55
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|_中国 #6'
+  password: Aimer
+  port: 2083
+  server: 154.211.8.18
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|_中国 #7'
+  password: Aimer
+  port: 443
+  server: 154.197.64.206
+  skip-cert-verify: false
+  sni: ngepy.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|_中国 #8'
+  password: wb6368
+  port: 2083
+  server: 154.211.8.18
+  skip-cert-verify: false
+  sni: hsdgbuys.pages.dev
+  type: trojan
+- name: '24|_中国 #9'
+  password: Aimer
+  port: 2083
+  server: 27.50.49.154
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|_中国 #10'
+  password: Aimer
+  port: 443
+  server: 154.211.8.240
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|_中国 #11'
+  password: Aimer
+  port: 8443
+  server: 154.197.64.104
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: 24,26|连接着任意可用线路
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
@@ -774,89 +853,65 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 24|_中国
-  password: Aimer
-  port: 443
-  server: 154.197.64.233
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #1'
-  password: Aimer
-  port: 2053
-  server: 27.50.49.37
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #22'
-  password: Aimer
-  port: 8443
-  server: 27.50.49.166
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #23'
-  password: Aimer
-  port: 8443
-  server: 154.197.64.240
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #24'
-  password: Aimer
-  port: 443
-  server: 154.197.64.252
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #25'
-  password: Aimer
-  port: 8443
-  server: 154.197.64.104
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #26'
-  password: Aimer
-  port: 2053
-  server: 154.211.8.152
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #27'
-  password: Aimer
-  port: 443
-  server: 154.211.8.240
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #28'
-  password: Aimer
-  port: 443
-  server: 154.197.64.206
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #29'
+- name: '24|_中国 #13'
   password: Aimer
   port: 443
   server: 45.86.229.28
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #30'
+- name: '24|_中国 #14'
+  password: Aimer
+  port: 8443
+  server: 27.50.49.166
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|_中国 #15'
+  password: Aimer
+  port: 2053
+  server: 154.211.8.152
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|_中国 #16'
+  password: Aimer
+  port: 8443
+  server: 154.197.64.240
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|_中国 #18'
+  password: Aimer
+  port: 443
+  server: 154.197.64.252
+  skip-cert-verify: false
+  sni: ngepy.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|_中国 #19'
   password: Aimer
   port: 2083
   server: 154.211.8.18
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #32'
-  password: Aimer
-  port: 2222
-  server: 154.83.92.200
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
+- name: '24|_中国 #20'
+  password: 38571ca6-6692-4559-b901-0bc5826b7661
+  port: 60194
+  server: 221.131.165.206
+  skip-cert-verify: false
+  type: trojan
+- name: '24|_中国 #21'
+  password: 38571ca6-6692-4559-b901-0bc5826b7661
+  port: 60194
+  server: 221.131.165.207
+  skip-cert-verify: false
+  type: trojan
+- name: '24|_中国 #22'
+  password: 38571ca6-6692-4559-b901-0bc5826b7661
+  port: 60194
+  server: 221.131.165.210
+  skip-cert-verify: false
   type: trojan
 - alterId: 0
   cipher: none
