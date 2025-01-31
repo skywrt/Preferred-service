@@ -1,18 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 5,11,23|🇷🇺_RU_俄罗斯联邦
-  network: ws
-  port: 12910
-  server: 45.136.245.240
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
   name: 5|俄罗斯 - 圣彼得堡 - LLC Baxet - 2
   network: ws
   port: '23532'
@@ -36,12 +24,44 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
+- alterId: 0
+  cipher: auto
+  name: 5|俄罗斯-圣彼得堡-015
+  network: ws
+  port: '20301'
+  server: 195.58.49.42
+  tls: false
+  type: vmess
+  uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 5,11,23|🇷🇺_RU_俄罗斯联邦
+  network: ws
+  port: 12910
+  server: 45.136.245.240
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    path: /
 - name: 5|俄罗斯RU-T
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
   server: ru.mjt000.com
   skip-cert-verify: false
   sni: ru.mjt000.com
+  type: trojan
+- name: 5|🇷🇺_RU_俄罗斯
+  network: tcp
+  password: '!!str 3767107462583558144'
+  port: 443
+  server: major-ape.goat627.mom
+  sni: major-ape.goat627.mom
   type: trojan
 - alterId: 0
   cipher: auto
@@ -52,38 +72,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 6a2afda8-8798-434c-8964-1deb4e7655a5
-- name: 5|🇷🇺_RU_俄罗斯
-  network: tcp
-  password: '!!str 3767107462583558144'
-  port: 443
-  server: major-ape.goat627.mom
-  sni: major-ape.goat627.mom
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 5,28|--014-1Y
+  name: 5,36|🔒 VM-WS-NA 🇷🇺 RU-195.58.49.50:...
   network: ws
-  port: 20300
+  port: '20301'
   server: 195.58.49.50
+  servername: ''
   tls: false
   type: vmess
-  udp: true
-  uuid: 84ed56f8-38c8-4e25-9724-37c283aba7fc
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '5|俄罗斯 V2CROSS.COM #1'
-  network: ws
-  port: 20300
-  server: 195.58.49.42
-  tls: false
-  type: vmess
-  uuid: 2a619dd6-b849-4173-9a34-339d6e9d65f3
+  uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
   ws-opts:
     headers:
       Host: ''
-    path: /
+    path: ''
 - name: 8|🇷🇺RU-176.32.35.167-210_1@209
   password: 85bce006-4885-11ee-8792-f23c9164ca5d
   port: 1007
@@ -166,166 +168,144 @@ proxies:
     headers:
       Host: ap.ylks.xyz
     path: '%2Fblue'
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇷🇺RU-185.174.136.244-0499
-  password: dfs1KyFy9B_NXI0eDB3P7A
-  port: 1080
-  server: 185.174.136.244
-  type: ss
 - name: 24|🇷🇺 _俄罗斯
   password: Aimer
-  port: 2083
-  server: 213.241.198.59
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
+  port: 2096
+  server: 5.182.85.189
+  skip-cert-verify: false
+  sni: ngepy.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #1'
   password: Aimer
-  port: 2053
-  server: 176.124.223.40
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
+  port: 8443
+  server: 46.254.93.37
+  skip-cert-verify: false
+  sni: ngepy.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #2'
   password: Aimer
   port: 2096
-  server: 5.182.84.22
-  skip-cert-verify: true
+  server: 5.182.85.189
+  skip-cert-verify: false
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #3'
   password: Aimer
   port: 2083
   server: 213.241.198.56
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #4'
   password: Aimer
-  port: 2053
-  server: 46.254.93.211
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
+  port: 8443
+  server: 46.254.93.52
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #5'
   password: Aimer
-  port: 8443
-  server: 92.243.74.180
-  skip-cert-verify: true
+  port: 2087
+  server: 5.182.84.229
+  skip-cert-verify: false
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #6'
   password: Aimer
-  port: 8443
-  server: 176.124.223.50
-  skip-cert-verify: true
+  port: 2083
+  server: 5.182.84.52
+  skip-cert-verify: false
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #7'
   password: Aimer
-  port: 2053
-  server: 77.232.140.101
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
+  port: 2096
+  server: 5.182.84.22
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #8'
   password: Aimer
   port: 2053
   server: 213.241.198.189
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #9'
   password: Aimer
-  port: 8443
-  server: 77.238.236.134
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
+  port: 2053
+  server: 46.254.93.211
+  skip-cert-verify: false
+  sni: ngepy.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #10'
   password: Aimer
-  port: 8443
-  server: 92.243.74.2
-  skip-cert-verify: true
+  port: 2053
+  server: 77.232.140.101
+  skip-cert-verify: false
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #11'
   password: Aimer
-  port: 2087
-  server: 5.182.84.229
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
+  port: 2083
+  server: 213.241.198.59
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #12'
   password: Aimer
-  port: 2053
-  server: 5.182.86.252
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
+  port: 8443
+  server: 92.243.74.2
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #13'
   password: Aimer
   port: 8443
-  server: 46.254.93.37
-  skip-cert-verify: true
+  server: 92.243.74.180
+  skip-cert-verify: false
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #14'
   password: Aimer
-  port: 2083
-  server: 5.182.84.52
-  skip-cert-verify: true
+  port: 8443
+  server: 176.124.223.50
+  skip-cert-verify: false
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #15'
-  password: wb6368
+  password: Aimer
   port: 2087
-  server: 92.243.75.49
-  skip-cert-verify: true
-  sni: hsdgbuys.pages.dev
+  server: 46.254.92.142
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #16'
   password: Aimer
-  port: 443
-  server: 89.248.207.37
-  skip-cert-verify: true
+  port: 2053
+  server: 176.124.223.40
+  skip-cert-verify: false
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #17'
   password: Aimer
-  port: 2053
-  server: 46.254.92.201
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇷🇺 _俄罗斯 #18'
-  password: Aimer
   port: 8443
   server: 185.204.109.190
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #19'
-  password: Aimer
-  port: 2087
-  server: 46.254.92.142
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇷🇺 _俄罗斯 #20'
-  password: Aimer
-  port: 2096
-  server: 5.182.85.189
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇷🇺 _俄罗斯 #21'
-  password: Aimer
-  port: 8443
-  server: 46.254.93.52
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 28|俄罗斯-圣彼得堡-015-1A
+  network: ws
+  port: 20301
+  server: 195.58.49.42
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a44458f6-6535-45b0-a01e-72e3a70faf37
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇷🇺 RU-45.8.159.241:...
@@ -350,17 +330,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇷🇺 RU-195.58.49.50:...
-  network: ws
-  port: '20301'
-  server: 195.58.49.50
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
