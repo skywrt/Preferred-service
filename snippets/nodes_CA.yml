@@ -1,10 +1,19 @@
 proxies:
+- alpn:
+  - http/1.1
+  name: 5|加拿大+魁北克省蒙特利尔Amazon数据中心
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 52.60.198.228
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 5|加拿大-优化
+  name: 5|加拿大-优化2
   network: ws
   port: '16641'
-  server: yes.mojcn.com
+  server: m.cnmjcn.com
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -12,6 +21,13 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- name: 5|V1-加拿大-IPv6
+  password: 61130614-528c-4b45-ac9b-e7987cff4952
+  port: 42728
+  server: cc44a92e67c3a06550903ab1a79cd258.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: ca1.bilibili.com
+  type: trojan
 - name: 5|「🇨🇦」EMO | 冰糖心 x3
   password: 0fc6dab0-02e2-46dc-b540-63cdc76b0c50
   port: 264
@@ -21,10 +37,10 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 5|加拿大-优化2
+  name: 5|加拿大-优化
   network: ws
   port: '16641'
-  server: m.cnmjcn.com
+  server: yes.mojcn.com
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -45,13 +61,6 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- name: 5|V1-加拿大-IPv6
-  password: 61130614-528c-4b45-ac9b-e7987cff4952
-  port: 44479
-  server: 6eec20237bbaaa516a1f10da54049dd5.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: ca1.bilibili.com
-  type: trojan
 - cipher: aes-256-gcm
   name: 8|🇨🇦CA-134.195.196.51-063_1@63
   password: pKEW8JPByTVTLtM
@@ -443,7 +452,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2517
-  name: '10,20,21|🏁RELAY-198.41.209.70-0800 #1'
+  name: '10,20,21|🏁RELAY-104.16.155.10-0729 #1'
   network: ws
   port: 8880
   server: s1.db-link01.top
@@ -492,21 +501,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-23.162.200.227-8336 #1'
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇨🇦CA-134.195.198.147-8344 #1'
+  name: '20,21|🇨🇦CA-134.195.198.147-8328 #1'
   network: ws
   port: 443
   server: 134.195.198.147
@@ -518,6 +513,26 @@ proxies:
     headers:
       Host: inna.cfd
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇨🇦CA-23.162.200.227-8354 #1'
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- name: '20,21|🇨🇦CA-3.98.186.93-5953 #1'
+  password: telegram-id-directvpn
+  port: 22222
+  server: 3.98.186.93
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 23|🇨🇦_CA_加拿大
@@ -537,12 +552,3 @@ proxies:
   skip-cert-verify: false
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 28|加拿大 IEPL专线 NO1
-  port: 45112
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2a05828b-0690-4d4c-8099-ae727b953feb
