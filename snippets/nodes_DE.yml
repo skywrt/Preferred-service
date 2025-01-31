@@ -76,16 +76,10 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
 - cipher: rc4-md5
-  name: 19|🇩🇪DE-193.108.119.230-0506
+  name: 19|🇩🇪DE-193.108.119.230-1148
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇩🇪DE-185.177.229.245-6136
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
   type: ss
 - alterId: 0
   name: 20,21,37|未知115 434.8KB/s
@@ -116,10 +110,11 @@ proxies:
   server: 63.177.194.249
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '20,21|🇩🇪DE-3.124.239.121-6168 #1'
+- name: 20,21,24|🇩🇪 德国 黑森州法兰克福Amazon数据中心
   password: telegram-id-directvpn
   port: 22222
   server: 3.124.239.121
+  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
@@ -162,59 +157,56 @@ proxies:
   type: ssr
 - name: 24|🇩🇪 _德国
   password: Aimer
-  port: 8443
-  server: 91.107.253.14
-  skip-cert-verify: false
+  port: 443
+  server: 3.124.196.164
+  skip-cert-verify: true
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇩🇪 _德国 #1'
   password: Aimer
   port: 443
-  server: 3.124.196.164
-  skip-cert-verify: false
+  server: 3.122.86.99
+  skip-cert-verify: true
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇩🇪 _德国 #2'
   password: Aimer
   port: 8443
   server: 18.199.141.141
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇩🇪 _德国 #3'
   password: Aimer
-  port: 8443
-  server: 91.107.253.14
-  skip-cert-verify: false
+  port: 443
+  server: 188.166.162.201
+  skip-cert-verify: true
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇩🇪 _德国 #4'
   password: Aimer
-  port: 443
-  server: 3.122.86.99
-  skip-cert-verify: false
-  sni: ngepx.ambercc.filegear-sg.me
+  port: 8443
+  server: 178.128.198.120
+  skip-cert-verify: true
+  sni: ngepy.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇩🇪 _德国 #5'
+  password: Aimer
+  port: 8443
+  server: 91.107.253.14
+  skip-cert-verify: true
+  sni: ngepy.ambercc.filegear-sg.me
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-188.245.100....
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-188.245.95.1...
   network: tcp
-  port: '18926'
-  server: 188.245.100.168
+  port: '9416'
+  server: 188.245.95.151
   servername: ''
   tls: false
   type: vmess
-  uuid: 7ff9d116-95a9-4272-acc8-0db83168f4d0
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+  uuid: 3a256ff3-5a7f-4972-968b-568040356df5
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-159.69.120.9...
@@ -227,11 +219,11 @@ proxies:
   uuid: b5c3e2e8-dfb6-4a0a-b656-87e997610785
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-188.245.95.1...
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-188.245.100....
   network: tcp
-  port: '9416'
-  server: 188.245.95.151
+  port: '18926'
+  server: 188.245.100.168
   servername: ''
   tls: false
   type: vmess
-  uuid: 3a256ff3-5a7f-4972-968b-568040356df5
+  uuid: 7ff9d116-95a9-4272-acc8-0db83168f4d0
