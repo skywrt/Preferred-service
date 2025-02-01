@@ -1,23 +1,7 @@
 proxies:
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: '5,11,24,30|13| |@ripaojiedian #1'
-  password: AAV5FFSS0OWDY2UA
-  port: 15008
-  server: w72tapyb.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '5,11,24,27,30|13|🇭🇰 香港3|@ripaojiedian #2'
-  password: hGkQ6915tD
-  port: 16088
-  server: 120.232.81.50
-  tfo: false
-  type: ss
 - alterId: 64
   cipher: auto
-  name: 5,11,24,27,30|14|港5|@ripaojiedian
+  name: '5,11,24,27,30|14|香港5|@ripaojiedian #2'
   network: tcp
   port: 40565
   server: 120.232.153.63
@@ -25,6 +9,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 5|香港HY-优化
+  network: ws
+  port: '16632'
+  server: yes.mojcn.com
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 5|香港WAP-优化2
@@ -40,19 +37,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5|香港 02 解锁|80端口|1.0x
-  network: ws
-  port: '80'
-  server: 8.218.213.13
-  tls: false
-  type: vmess
-  uuid: 46f305f2-7950-470b-99ff-86cb919e1be5
-  ws-opts:
-    headers:
-      Host: apple.com
-    path: /path
-- alterId: 0
-  cipher: auto
   name: 5|香港WAP-优化
   network: ws
   port: '16622'
@@ -64,19 +48,32 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: '5,11,24,27,30|13|🇭🇰 香港3|@ripaojiedian #2'
+  password: hGkQ6915tD
+  port: 16088
+  server: 120.232.81.50
+  tfo: false
+  type: ss
+- name: '5,27,30|13,14||@ripaojiedian #2'
+  network: tcp
+  password: 75e1e3ca-01c0-431d-a03b-836449aa973f
+  port: 11735
+  server: lm.kaiqsz.com
+  skip-cert-verify: false
+  sni: yg01.redapricotcloud.com
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 5|香港HY-优化
-  network: ws
-  port: '16632'
-  server: yes.mojcn.com
+  name: '5,11,27,30|14|香港2|@ripaojiedian #2'
+  network: tcp
+  port: 11227
+  server: 103.224.80.37
+  servername: ''
   tls: false
   type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
+  uuid: 0549b941-23f0-4802-ab15-264402d3b6be
 - alterId: 0
   cipher: auto
   name: 5|香港 03 解锁|80端口|1.0x
@@ -103,6 +100,19 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 5|香港 02 解锁|80端口|1.0x
+  network: ws
+  port: '80'
+  server: 8.218.213.13
+  tls: false
+  type: vmess
+  uuid: 46f305f2-7950-470b-99ff-86cb919e1be5
+  ws-opts:
+    headers:
+      Host: apple.com
+    path: /path
 - name: 5|香港wap-T
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
@@ -673,13 +683,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 24,27,30,40|speednode_0050
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 103.104.247.47
-  type: ss
 - name: 26|V1-香港01∣K1线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21135
@@ -703,7 +706,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 27|13| 香港2|@ripaojiedian
+  name: '27,30|13| 香港2|@ripaojiedian #1'
   port: 11227
   server: 103.224.80.37
   skip-cert-verify: false
@@ -723,115 +726,14 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 27|14|香港2|@ripaojiedian
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-118.193.34.1...
   network: tcp
-  port: '11227'
-  server: 103.224.80.37
+  port: '52825'
+  server: 118.193.34.158
   servername: ''
   tls: false
   type: vmess
-  uuid: 0549b941-23f0-4802-ab15-264402d3b6be
-- cipher: aes-256-gcm
-  name: 28|公益路线-香港HK 限速50MBPS-1I
-  password: 4406d0b7-c0d2-474a-ba4d-819b4c3d8971
-  port: 49709
-  server: jg647hf446ghvw.eucs.cn
-  type: ss
-  udp: true
-- name: 28|港BGP 三网1x
-  password: 22de335c-eeb4-4380-b315-2e1f6a796f67
-  port: 45080
-  server: 64995ae3a022daabb0f77b10b5d6afd5.node.tro.node-is.green
-  skip-cert-verify: true
-  sni: live.douyin.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|香港 02-1A
-  password: 25504dff-bf4d-4a69-b90b-28dc82743636
-  port: 49319
-  server: yoyo.cmyiphone.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|香港 01-1D
-  port: 49301
-  server: yoyo.cmyiphone.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5eb4420c-37fc-45c5-a46f-e72d2b32299e
-- name: 28|香港BGP 转 03 1.5x
-  password: 22de335c-eeb4-4380-b315-2e1f6a796f67
-  port: 43442
-  server: b308d53eee23e644638ba4bf58c8c2fa.node.tro.node-is.green
-  skip-cert-verify: true
-  sni: console.ucloud.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|香港NO.1
-  port: 45050
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1febc3d3-f570-42da-8b48-9aa7beaf0e23
-- cipher: chacha20-ietf-poly1305
-  name: 28|香港03-1A
-  password: d956c11f-1074-4152-99cf-b5130143deef
-  port: 20052
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|香港02-1A
-  password: d956c11f-1074-4152-99cf-b5130143deef
-  port: 20035
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|香港01-1A
-  password: d956c11f-1074-4152-99cf-b5130143deef
-  port: 34338
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|香港
-  port: 19901
-  server: xg.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1febc3d3-f570-42da-8b48-9aa7beaf0e23
-- alterId: 0
-  cipher: auto
-  name: 28|香港 IEPL专线NO1
-  port: 20013
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6aaefe6e-d7a2-411f-aba5-3999ef375a8c
-- cipher: aes-128-gcm
-  name: 28|香港专线 2x
-  password: 22de335c-eeb4-4380-b315-2e1f6a796f67
-  port: 25000
-  server: lz.lianjianode.cc
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 30|🇰 香港 讯
-  password: 96cad374-7573-4463-8804-4665c2c3d932
-  port: 6001
-  server: 42.98.209.41
-  sni: ho82IA13QmjF5Atv.apple.com
-  type: trojan
+  uuid: 67ff500a-8484-4ed8-cf8f-b8d341534140
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-118.193.38.1...
@@ -844,23 +746,14 @@ proxies:
   uuid: f11cf8ff-89b3-4c4c-fdf8-b47111d852d8
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-118.193.34.1...
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
   network: tcp
-  port: '52825'
-  server: 118.193.34.158
-  tls: false
-  type: vmess
-  uuid: 67ff500a-8484-4ed8-cf8f-b8d341534140
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-118.193.39.1...
-  network: tcp
-  port: '15366'
-  server: 118.193.39.104
+  port: '27512'
+  server: 103.149.183.178
   servername: ''
   tls: false
   type: vmess
-  uuid: 30d50840-88b1-474b-a17f-9fca177918d2
+  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-118.193.34.2...
@@ -873,14 +766,24 @@ proxies:
   uuid: 93127065-1a5b-4816-d009-5bf5e0aa10b6
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
   network: tcp
-  port: '27512'
+  port: '54675'
   server: 103.149.183.178
   servername: ''
   tls: false
   type: vmess
-  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
+  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-118.193.39.1...
+  network: tcp
+  port: '15366'
+  server: 118.193.39.104
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 30d50840-88b1-474b-a17f-9fca177918d2
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-118.193.33.2...
@@ -891,16 +794,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 43740b3d-16b7-4d31-cf20-f1eab5e35bc9
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
-  network: tcp
-  port: '54675'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 37|HK

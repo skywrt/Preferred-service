@@ -1,40 +1,23 @@
 proxies:
-- alpn:
-  - http/1.1
-  name: '5,24|🇬🇧 _英国 #3'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 51.21.118.156
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 5|套餐到期：2025-02-23
+  network: ws
+  port: '20302'
+  server: 185.121.134.12
+  tls: false
+  type: vmess
+  uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
 - alterId: 0
   cipher: auto
   name: 5|英国-优化2
   network: ws
   port: '16645'
   server: m.cnmjin.net
-  tls: false
-  type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
-- name: 5|英国UK-T
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: uk.mjt000.com
-  skip-cert-verify: false
-  sni: uk.mjt000.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 5|英国-优化-GPT
-  network: ws
-  port: '16645'
-  server: yes.mojcn.com
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -55,6 +38,36 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 5|英国-优化-GPT
+  network: ws
+  port: '16645'
+  server: yes.mojcn.com
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 5,30|国
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.44.98.235
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 5|英国UK-T
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: uk.mjt000.com
+  skip-cert-verify: false
+  sni: uk.mjt000.com
+  type: trojan
 - name: 8|🇬🇧GB-3.9.164.189-194_1@194
   password: E6r93XCOsyM9
   port: 16733
@@ -98,7 +111,19 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- name: '20,21|🇬🇧GB-161.35.34.48-6310 #1'
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇬🇧GB-18.132.115.98-0406
+  password: mps3FwmDjLrWaOVg
+  port: 443
+  server: admin.c1.webramz.co
+  type: ss
+- cipher: aes-128-gcm
+  name: 19|🇬🇧GB-141.98.101.182-6215
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.182
+  type: ss
+- name: '20,21|🇬🇧GB-161.35.34.48-6397 #1'
   password: 2cba4104747d49d18319e5ade1b93ab5
   port: 443
   server: yourjobnavigator.online
@@ -124,6 +149,13 @@ proxies:
   skip-cert-verify: false
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
+- name: '24|🇬🇧 _英国 #3'
+  password: telegram-id-directvpn
+  port: 22222
+  server: 51.21.118.156
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - name: 26|V2-英国03∣K71线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 20820
@@ -131,10 +163,3 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 30|🇬🇧 英国 V2CROSS.COM
-  password: 3JSnOHtpA61ds9irgSZ6Mj
-  port: 34775
-  server: 77.239.99.180
-  type: ss

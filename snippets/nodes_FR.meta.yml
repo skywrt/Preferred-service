@@ -1,11 +1,25 @@
 proxies:
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 8,24,30|🇱  V2CROSS.COM
-  password: 7BcLdsO1WweoGD0X
-  port: 40368
-  server: 193.243.147.128
-  type: ss
+- name: 5|法国+OVH
+  password: 5e861ad0-df39-11ef-a02e-1239d0255272
+  port: 443
+  server: uk1.test3.net
+  type: trojan
+- client-fingerprint: chrome
+  name: 5,30|🇷 法国 OVH 2
+  password: 6e93a800-df39-11ef-ae10-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  sni: uk1.test3.net
+  type: trojan
+- alterId: 1
+  cipher: auto
+  name: 5|法国 国际航空电讯集团公司(SITA)
+  network: tcp
+  port: 21584
+  server: dbti0-g04.jp01-0986-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
 - alterId: 0
   cipher: auto
   name: 8|🇫🇷FR-213.32.63.176-186_1@186
@@ -89,7 +103,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知124 15.7MB/s
+  name: 19,37|未知124 15.7MB/s
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.158.171.136
@@ -171,15 +185,9 @@ proxies:
     headers:
       host: ''
     path: /
-- name: '20,21|🇫🇷FR-15.237.237.239-6113 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.237.237.239
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-51.77.20.137-8337 #1'
+  name: '20,21|🇫🇷FR-51.77.20.137-8450 #1'
   network: ws
   port: 443
   server: 51.77.20.137
@@ -193,7 +201,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-45.145.167.103-5615 #2'
+  name: '20,21|🇫🇷FR-45.145.167.103-5702 #1'
   network: ws
   port: 443
   server: indiavideo.sbs
@@ -207,7 +215,21 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-146.19.168.161-5612 #1'
+  name: '20,21|🇫🇷FR-163.5.159.231-8440 #1'
+  network: ws
+  port: 443
+  server: irvideo.cfd
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇫🇷FR-146.19.168.161-5699 #1'
   network: ws
   port: 443
   server: az05.beyondy.cfd
@@ -221,18 +243,18 @@ proxies:
     path: /link
 - alterId: 0
   cipher: auto
-  name: 24|VMESS-未知>法国-NF解锁法国地区非自制剧-ChatG...
+  name: '20,21|🇫🇷FR-146.19.168.161-8418 #1'
   network: ws
   port: 443
-  server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  servername: ''
-  tls: false
+  server: 146.19.168.161
+  servername: az05.beyondy.cfd
+  tls: true
   type: vmess
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
   ws-opts:
     headers:
-      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-    path: /azumase.ren
+      Host: az05.beyondy.cfd
+    path: /link
 - name: 24|🇫🇷 _法国
   password: Aimer
   port: 443
@@ -268,60 +290,13 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|法1
-  port: 45072
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1febc3d3-f570-42da-8b48-9aa7beaf0e23
-- alterId: 0
-  cipher: auto
-  name: 28|法国2
-  port: 45071
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1febc3d3-f570-42da-8b48-9aa7beaf0e23
-- alterId: 1
-  cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇷 法 国公司(SITA)
-  port: 21581
-  server: 7q8kz-g01.jp01-0986-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇫🇷 法国 国际航空电讯集团公司(SITA) 2
-  port: 21581
-  server: avm8w-g01.jp01-0986-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
-- alterId: 1
-  cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇷 法国 国际航空电讯集团公司(SITA) 3
-  port: 21581
-  server: vzqlt-g01.jp01-0986-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇷 法国 国际航空电讯集团公司(SITA) 6
-  port: 21581
-  server: zdnxt-g01.jp01-0986-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- client-fingerprint: chrome
+  name: 30|🇷 法国 OVH
+  password: 5e861ad0-df39-11ef-a02e-1239d0255272
+  port: 443
+  server: uk1.test3.net
+  sni: uk1.test3.net
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇫🇷 FR-57.128.184.1...
