@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,11,24,27|13|🇬 |@ripaojiedian
+  name: 5,11,24,27,30|13|🇬 |@ripaojiedian
   password: amazonskr05
   port: 443
   server: 54.255.22.224
@@ -17,9 +17,9 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 5,11,24,27|14|加坡2|@ripaojiedian
+  name: 5,11,24,30|14|加坡2|@ripaojiedian
   network: tcp
-  port: '49549'
+  port: 49549
   server: pudvkjvvgdol.xn--fiqs8sjz2bull.com
   servername: ''
   tls: false
@@ -33,7 +33,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,11,24,27|13| |@ripaojiedian #2'
+  name: '5,11,24,30|13| |@ripaojiedian #3'
   password: OYWWKWCLAJ8ZCO78
   port: 16009
   server: qh62onjn.slashdevslashnetslashtun.net
@@ -247,16 +247,20 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 27|13|🇬 新加坡2|@ripaojiedian
-  port: 49549
-  server: pudvkjvvgdol.xn--fiqs8sjz2bull.com
-  skip-cert-verify: false
+- cipher: aes-256-gcm
+  name: '27|13|🇸🇬 新加坡2|@ripaojiedian #1'
+  password: 8VB49D7PPZFHBJES
+  port: 16011
+  server: 154.196.244.21
   tfo: false
-  tls: false
-  type: vmess
-  uuid: dbb4c3e2-12de-4678-aafe-7e520b609098
+  type: ss
+- cipher: aes-256-gcm
+  name: 27|13|🇸🇬 新加坡3|@ripaojiedian
+  password: BCSHUPDQ1CGQ1W0Q
+  port: 16013
+  server: 154.196.244.23
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 28|新加坡西部-1I
@@ -308,13 +312,23 @@ proxies:
   uuid: 1febc3d3-f570-42da-8b48-9aa7beaf0e23
 - alterId: 0
   cipher: auto
+  name: 30|13|🇬 新加坡2|@ripaojiedian
+  port: 49549
+  server: pudvkjvvgdol.xn--fiqs8sjz2bull.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: dbb4c3e2-12de-4678-aafe-7e520b609098
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-NA 🇸🇬 SG-140.245.61.14...
   network: ws
   port: '23452'
   server: 140.245.61.142
   tls: false
   type: vmess
-  uuid: 786eeff8-126a-4d90-827d-da5d9410f0d4
+  uuid: 39973186-8925-492a-8bce-13b0a1a93f59
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
