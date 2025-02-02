@@ -1,15 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 5|德国 - 纽伦堡 - Hetzner Online GmbH...
-  network: tcp
-  port: '59521'
-  server: 5.75.201.39
-  tls: false
-  type: vmess
-  uuid: 53e6dd39-27d4-4063-817a-9c00b077a2b7
-- alterId: 0
-  cipher: auto
   name: 5|德国-优化2
   network: ws
   port: '16644'
@@ -44,6 +35,15 @@ proxies:
   type: vmess
   uuid: 6d3404ef-27c6-48de-a83a-8ac6488760b4
   ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: 5|德国 - 纽伦堡 - Hetzner Online GmbH...
+  network: tcp
+  port: '59521'
+  server: 5.75.201.39
+  tls: false
+  type: vmess
+  uuid: 53e6dd39-27d4-4063-817a-9c00b077a2b7
 - name: 8|🇩🇪DE-52.58.179.46-180_1@180
   password: telegram-id-privatevpns
   port: 22222
@@ -73,12 +73,6 @@ proxies:
   password: telegram-id-privatevpns
   port: 22222
   server: 52.58.149.106
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '20,21|🇩🇪DE-18.195.183.157-6009 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.195.183.157
   sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
@@ -111,59 +105,31 @@ proxies:
     path: /linkvws
 - name: 24|🇩🇪 _德国
   password: Aimer
-  port: 443
-  server: 3.122.86.99
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
+  port: 8443
+  server: 178.128.198.120
+  skip-cert-verify: false
+  sni: ngepy.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇩🇪 _德国 #1'
-  password: Aimer
-  port: 443
-  server: 3.124.196.164
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.159.145.181
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
   type: trojan
 - name: '24|🇩🇪 _德国 #2'
   password: Aimer
   port: 443
   server: 188.166.162.201
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
+  skip-cert-verify: false
+  sni: ngepz.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇩🇪 _德国 #3'
-  password: Aimer
-  port: 443
-  server: 188.166.162.201
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇩🇪 _德国 #4'
-  password: Aimer
-  port: 8443
-  server: 91.107.253.14
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇩🇪 _德国 #5'
-  password: Aimer
-  port: 8443
-  server: 178.128.198.120
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇩🇪 _德国 #6'
-  password: Aimer
-  port: 8443
-  server: 178.128.198.120
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇩🇪 _德国 #7'
-  password: Aimer
-  port: 8443
-  server: 91.107.253.14
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.195.183.157
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
   cipher: auto
@@ -177,7 +143,7 @@ proxies:
   uuid: b5c3e2e8-dfb6-4a0a-b656-87e997610785
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-188.245.10...
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-188.245.100....
   network: tcp
   port: '18926'
   server: 188.245.100.168
@@ -201,8 +167,9 @@ proxies:
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-138.199.162....
   network: tcp
-  port: 100
+  port: '100'
   server: 138.199.162.120
+  servername: ''
   tls: false
   type: vmess
   uuid: 1889d9ef-9d58-4427-bb3e-a08810c214eb

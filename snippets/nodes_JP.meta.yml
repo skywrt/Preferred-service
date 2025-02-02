@@ -1,10 +1,38 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '5,9,11,24,27,30|13| |@ripaojiedian #4'
+  name: '5,9,11,24,27,30|13| |@ripaojiedian #3'
   password: f1aaae80-3206-4b02-9283-739f0bdf0e36
   port: 24960
   server: 49.7.215.3
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 5|日本-优化3
+  network: ws
+  port: '16617'
+  server: t.cnmjcn.cyou
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 5,28|JP 02 BAGEVM
+  password: 01149516-6575-4826-91dc-1d63ea94e755
+  port: 34102
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: '5,9,11,24,27,30|13|🇵 日本2|@ripaojiedian #1'
+  password: f804de13-7228-441d-9fb9-5e46afea1deb
+  port: 12015
+  server: mdss-jp.04z3susick.download
   tfo: false
   type: ss
 - alterId: 0
@@ -20,21 +48,6 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- name: 5|日本JP-T
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: jp.mjt000.com
-  skip-cert-verify: true
-  sni: jp.mjt000.com
-  type: trojan
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: '5,9,11,24,27,30|13|🇵 日本2|@ripaojiedian #1'
-  password: f804de13-7228-441d-9fb9-5e46afea1deb
-  port: 12015
-  server: mdss-jp.04z3susick.download
-  tfo: false
-  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: '5,9,11,24,27,30|13|🇵 日本特殊|@ripaojiedian #1'
@@ -43,32 +56,13 @@ proxies:
   server: 52.79.147.203
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 5|日本 V2CROSS.COM
-  network: ws
-  port: 22356
-  server: 0000000000000000000000000071.cgroup-node-for-bigairport.sbs
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 5|日本-优化3
-  network: ws
-  port: '16617'
-  server: t.cnmjcn.cyou
-  tls: false
-  type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
+- name: 5|日本JP-T
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: jp.mjt000.com
+  skip-cert-verify: true
+  sni: jp.mjt000.com
+  type: trojan
 - name: 5|尼日利亚NI-T
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
@@ -171,6 +165,30 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
+- cipher: aes-256-cfb
+  name: 19,40|speednode_0016
+  password: amazonskr05
+  port: 443
+  server: 3.112.203.145
+  type: ss
+- cipher: aes-256-cfb
+  name: 19,20,21,40|speednode_0020
+  password: amazonskr05
+  port: 443
+  server: 52.195.223.31
+  type: ss
+- cipher: aes-256-cfb
+  name: 20,21,40|speednode_0019
+  password: amazonskr05
+  port: 443
+  server: 43.207.204.247
+  type: ss
+- cipher: aes-256-cfb
+  name: 20,21,40|speednode_0017
+  password: amazonskr05
+  port: 443
+  server: 52.194.212.178
+  type: ss
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|日本(JP)Japan/Tokyo_38
@@ -188,59 +206,31 @@ proxies:
     path: /
 - name: 24|🇯🇵 _日本
   password: Aimer
-  port: 443
-  server: 47.91.18.127
-  skip-cert-verify: true
+  port: 2083
+  server: 103.116.7.103
+  skip-cert-verify: false
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇯🇵 _日本 #1'
-  password: Aimer
-  port: 2083
-  server: 103.116.7.103
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇯🇵 _日本 #2'
   password: wb6368
   port: 2083
   server: 103.116.7.103
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: hsdgbuys.pages.dev
+  type: trojan
+- name: '24|🇯🇵 _日本 #2'
+  password: Aimer
+  port: 443
+  server: 103.116.7.189
+  skip-cert-verify: false
+  sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇯🇵 _日本 #3'
   password: Aimer
   port: 2083
-  server: 103.116.7.103
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇯🇵 _日本 #4'
-  password: Aimer
-  port: 2083
-  server: 103.116.7.67
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇯🇵 _日本 #5'
-  password: Aimer
-  port: 443
-  server: 103.116.7.189
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇯🇵 _日本 #6'
-  password: Aimer
-  port: 443
-  server: 103.116.7.230
-  skip-cert-verify: true
+  server: 103.116.7.133
+  skip-cert-verify: false
   sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇯🇵 _日本 #7'
-  password: Aimer
-  port: 2087
-  server: 103.116.7.100
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - name: 26|✪每日连接前点更新订阅
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
@@ -297,6 +287,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
+  network: tcp
+  port: '1069'
+  server: 152.69.197.60
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-150.230.61.11...
   network: ws
   port: '23451'
@@ -319,13 +319,3 @@ proxies:
   tls: true
   type: vmess
   uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
-  network: tcp
-  port: '1069'
-  server: 152.69.197.60
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
