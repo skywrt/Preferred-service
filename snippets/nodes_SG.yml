@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,11,20,21,24,27|13|🇬 特殊|@ripaojiedian
+  name: '5,9,11,20,21,24,27,30|13|🇬 特殊|@ripaojiedian #1'
   password: amazonskr05
   port: 443
   server: 54.151.148.166
@@ -9,7 +9,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,11,24,27|13|🇸🇬 新加坡3|@ripaojiedian #1'
+  name: '5,9,11,24,27,30|13|🇸🇬 新加坡3|@ripaojiedian #2'
   password: QKKO3C3UB1C57I58
   port: 16008
   server: 154.196.244.18
@@ -17,7 +17,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,11,24,27|13|🇸🇬 新加坡2|@ripaojiedian #1'
+  name: '5,9,11,24,27,30|13|🇸🇬 新加坡2|@ripaojiedian #2'
   password: YQCL9XWR1282EOSS
   port: 16004
   server: 154.196.244.14
@@ -25,7 +25,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,11,24,27|13| |@ripaojiedian #2'
+  name: '5,9,11,24,27,30|13| |@ripaojiedian #4'
   password: 1C4J5UPOMXZ9Q6R3
   port: 16015
   server: 154.196.244.25
@@ -218,9 +218,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '24,36|🔒 VM-WS-NA 🏴‍☠️ NA-198.41.209.... #1'
+  name: '24|VMESS-未知>新加坡-NF解锁新加坡自制剧-ChatGP... #3'
   network: ws
-  port: '80'
+  port: 80
   server: 198.41.209.70
   servername: ''
   tls: false
@@ -232,7 +232,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '24|VMESS-未知>新加坡-NF解锁新加坡自制剧-ChatGP... #4'
+  client-fingerprint: chrome
+  name: 24,30|🇺🇸 美国 CloudFlare节点 3
   network: ws
   port: 80
   server: 104.17.221.248
@@ -264,3 +265,31 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇬 新加坡 Amazon亚太中
+  network: ws
+  port: 22443
+  server: tls.11.node-for-bigairport.win
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: tls.11.node-for-bigairport.win
+    path: /
+- client-fingerprint: chrome
+  name: 30|🇸 新加坡 V2CROSS.COM
+  password: '!!str 3767107462583558144'
+  port: 443
+  server: subtle-seahorse.treefrog761.one
+  sni: subtle-seahorse.treefrog761.one
+  type: trojan
+- client-fingerprint: chrome
+  name: '30|🇸🇬 新加坡 Amazon数据中心 #1'
+  password: '!!str 3763495982449565696'
+  port: 443
+  server: 52.74.96.243
+  sni: square-walleye.treefrog761.one
+  type: trojan
