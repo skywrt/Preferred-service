@@ -1,44 +1,10 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '5|过滤掉3条线路 #1'
+  name: 5|套餐到期：长期有效
   network: ws
   port: '16617'
   server: yes.mojcn.com
-  tls: false
-  type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 5,28,36|🔒 VM-WS-NA 🇩🇪 DE-185.121.134.1...
-  network: ws
-  port: 20302
-  server: 185.121.134.12
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 108e3429-a500-44df-94e5-c315b2bacf2f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- name: 5|英国UK-T
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: uk.mjt000.com
-  skip-cert-verify: false
-  sni: uk.mjt000.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 5|英国-优化2
-  network: ws
-  port: '16645'
-  server: m.cnmjin.net
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -59,6 +25,13 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- name: 5|英国UK-T
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: uk.mjt000.com
+  skip-cert-verify: false
+  sni: uk.mjt000.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|英国-优化3
@@ -72,15 +45,19 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- alpn:
-  - http/1.1
-  name: 5|英国+社会保险安全部
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.44.98.235
-  sni: trojan.burgerip.co.uk
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 5|英国-优化2
+  network: ws
+  port: '16645'
+  server: m.cnmjin.net
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
 - name: 8|🇬🇧GB-3.9.164.189-194_1@194
   password: E6r93XCOsyM9
   port: 16733
@@ -125,16 +102,38 @@ proxies:
   tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
+  name: 19|🇬🇧GB-172.187.112.35-0421
+  password: mps3FwmDjLrWaOVg
+  port: 443
+  server: series-a1.samanehha.co
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇬🇧GB-172.187.112.35-0433
+  password: mps3FwmDjLrWaOVg
+  port: 443
+  server: series-a2.varzesh360.co
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇬🇧GB-172.187.112.35-0426
+  password: mps3FwmDjLrWaOVg
+  port: 443
+  server: series-a2.samanehha.co
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 19|🇬🇧GB-172.187.112.35-0423
   password: mps3FwmDjLrWaOVg
   port: 443
   server: admin.c1.webramz.co
   type: ss
-- name: 24|🇬🇧 英国 社会保险安全部
+- name: '20,21|🇬🇧GB-161.35.34.48-6371 #1'
+  password: 2cba4104747d49d18319e5ade1b93ab5
+  port: 443
+  server: yourjobnavigator.online
+  type: trojan
+- name: '20,21|🇬🇧GB-18.169.176.124-6254 #1'
   password: telegram-id-privatevpns
   port: 22222
-  server: 51.20.211.134
-  skip-cert-verify: false
+  server: 18.169.176.124
   sni: trojan.burgerip.co.uk
   type: trojan
 - name: 24|🇬🇧 _英国
