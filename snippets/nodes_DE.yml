@@ -75,13 +75,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- cipher: chacha20-ietf-poly1305
-  name: 9,24,30|0|🇪1 |  5.3MB/s
-  password: 352ec04c-fad2-49b7-b206-4b5d68e47ce6
-  port: 46247
-  server: jef20t3hhgi49hqubitpy4ytrt5qnzv1.02.01.de.k7h.lol
-  tfo: false
-  type: ss
 - name: '13,20,21|🇩🇪DE-165.22.74.230-0423 #1'
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -180,13 +173,6 @@ proxies:
   skip-cert-verify: true
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- client-fingerprint: chrome
-  name: 30|德Amazon数据中心
-  password: '!!str 3770966768580042752'
-  port: 443
-  server: mighty-urchin.goat627.mom
-  sni: mighty-urchin.goat627.mom
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-159.69.120.9...
@@ -197,16 +183,6 @@ proxies:
   tls: false
   type: vmess
   uuid: b5c3e2e8-dfb6-4a0a-b656-87e997610785
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.25.22...
@@ -233,12 +209,36 @@ proxies:
   uuid: 7ff9d116-95a9-4272-acc8-0db83168f4d0
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-WS-NA 🇩🇪 DE-185.135.9.19:...
+  network: ws
+  port: '2052'
+  server: 185.135.9.19
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: yellow-paper-029c.yvonna.workers.dev
+    path: /az05.beyondy.cfd/link?/TM@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-49.13.112.14...
+  network: tcp
+  port: '100'
+  server: 49.13.112.149
+  tls: false
+  type: vmess
+  uuid: 1889d9ef-9d58-4427-bb3e-a08810c214eb
+- alterId: 0
+  cipher: auto
   grpc-opts:
     grpc-service-name: ''
-  name: 36|🔒 VM-GRPC-NONE 🇩🇪 DE-91.107.24...
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-91.107.247....
   network: grpc
-  port: 18434
+  port: '18434'
   server: 91.107.247.219
+  servername: ''
   tls: true
   type: vmess
   uuid: 3ab7cd98-f84f-4649-bf23-dd4a1ce4c90a

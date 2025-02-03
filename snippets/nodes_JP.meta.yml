@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,9,11,24,27,30|13|🇵 日本|@ripaojiedian
+  name: 5,9,11,24,27|13|🇵 日本|@ripaojiedian
   password: FS0NUQEKML4CH312
   port: 18001
   server: 156.231.104.11
@@ -9,7 +9,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,9,11,24,27,30|0,13|🇯🇵 日本|@ripaojiedian
+  name: 5,9,11,24,27|0,13| |@ripaojiedian
   password: amazonskr05
   port: 443
   server: 13.215.205.85
@@ -17,7 +17,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,9,11,24,27,30|13|🇯🇵 日本2|@ripaojiedian #1'
+  name: 5,9,11,24,27|13|🇵 日本2|@ripaojiedian
   password: H0P889CX07EQNGNV
   port: 18005
   server: 156.231.104.15
@@ -129,22 +129,21 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 9,24,30|🇵 日本 Amazon数据中心
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: 443
-  server: japan-5.keenvpn.me
-  tfo: false
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
-  name: 9,19,24,27,30|0|🇵3 |  1.9MB/s
+  name: 9|0|🇯🇵2 |  5.4MB/s
   password: amazonskr05
   port: 443
-  server: 43.201.102.200
+  server: 43.207.76.121
   tfo: false
   type: ss
+- name: 9|0|🇯🇵4 |  4.4MB/s
+  password: e633b084-d0e9-39cb-9b22-5bbbdde78c20
+  port: 20071
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x71.flybar.work
+  tfo: false
+  type: trojan
 - name: 17|荷兰(yudou66.com 玉豆免费节点)
   network: ws
   port: 443
@@ -302,8 +301,7 @@ proxies:
   skip-cert-verify: true
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- client-fingerprint: chrome
-  name: 24,30|🇯🇵 日本 东京东京Amazon数据中心
+- name: '24|🇯🇵 _日本 #7'
   password: '!!str 3770966768580042752'
   port: 443
   server: real-hookworm.goat627.mom
@@ -363,21 +361,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 27|0|🇯🇵2 |  5.4MB/s
-  password: amazonskr05
-  port: 443
-  server: 43.207.76.121
-  type: ss
-  udp: true
-- name: 27|0|🇯🇵4 |  4.4MB/s
-  password: e633b084-d0e9-39cb-9b22-5bbbdde78c20
-  port: 20071
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x71.flybar.work
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|日本01-1B
   password: af4e8e84-39d4-4e6a-ac1c-00da39f0c9a3
@@ -423,6 +406,19 @@ proxies:
   uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-WS-NA 🇯🇵 JP-150.230.61.11...
+  network: ws
+  port: '23451'
+  server: 150.230.61.110
+  tls: false
+  type: vmess
+  uuid: 33afaa7d-05f8-42ef-8542-799a37d8f4b3
+  ws-opts:
+    headers:
+      Host: 1-osaka-p.aboutanime.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-156.246.94.94...
   network: ws
   port: '433'
@@ -445,16 +441,3 @@ proxies:
   tls: false
   type: vmess
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇯🇵 JP-150.230.61.11...
-  network: ws
-  port: '23451'
-  server: 150.230.61.110
-  tls: false
-  type: vmess
-  uuid: 33afaa7d-05f8-42ef-8542-799a37d8f4b3
-  ws-opts:
-    headers:
-      Host: 1-osaka-p.aboutanime.eu.org
-    path: /
