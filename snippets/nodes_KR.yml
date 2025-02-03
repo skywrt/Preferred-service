@@ -1,27 +1,41 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 1,5,20,21,22,24,30|🇷 韩国 Amazon数据中心
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: 443
-  server: south-korea-3.keenvpn.me
-  type: ss
 - cipher: aes-256-cfb
-  name: 1,20,21,22|🇷KR-3.36.115.19-6054
+  client-fingerprint: chrome
+  name: '5,11,19,20,21,22,24,27,30|13|🇰🇷 韩国|@ripaojiedian #2'
   password: amazonskr05
   port: 443
-  server: 3.36.115.19
+  server: 43.206.239.0
+  tfo: false
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 5,9,11,22,24,27,30,37|未知11 118.2KB/s
+  name: 5,11,22,24,27,30,37|未知11 118.2KB/s
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 154.90.63.193
   skip-cert-verify: true
   tfo: false
   tls: true
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 5,20,21,22,24,30|🇷 韩国 Amazon数据中心
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: south-korea-3.keenvpn.me
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 5,22,24,27|0|1 |  4.4MB/s
+  password: 0fb87888-dbee-4dbc-acfe-59d3cb605d3b
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+- cipher: aes-256-cfb
+  name: 20,21,22|🇷KR-3.36.115.19-6054
+  password: amazonskr05
+  port: 443
+  server: 3.36.115.19
   type: ss
 - alterId: 0
   cipher: auto
@@ -1127,3 +1141,17 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-220.123.48.1...
+  network: ws
+  port: '30002'
+  server: 220.123.48.124
+  servername: cc2.1808.site
+  tls: true
+  type: vmess
+  uuid: d3d8b781-f30d-4902-8eb0-58b1ca936bec
+  ws-opts:
+    headers:
+      Host: cc2.1808.site
+    path: /hgqqvws
