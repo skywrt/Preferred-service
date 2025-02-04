@@ -6,98 +6,6 @@ proxies:
   tls: false
   type: vless
   uuid: e1bb6cf4-f40c-481a-9a80-c76519b954e1
-- client-fingerprint: firefox
-  fingerprint: ''
-  name: 3|1a85af60fcb6472c9133882e106018...
-  network: ws
-  port: 443
-  server: 104.21.43.145
-  servername: sinavm_sinavm.sinabigo.ir
-  tls: true
-  type: vless
-  udp: false
-  uuid: c4258f50-fe5d-4b6c-9f09-5a193b7d34ef
-  ws-opts:
-    headers:
-      host: sinavm_sinavm.sinabigo.ir
-    path: /@ln2ray?ed=2560
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|67d957e1ea0c455eb70926eeaa6f59...
-  network: ws
-  port: 443
-  server: dd4.trackid.ir
-  servername: dd4.trackid.ir
-  tls: true
-  type: vless
-  udp: false
-  uuid: bf2434c2-2200-4c3e-a5dc-6f9aadd4fcd4
-  ws-opts:
-    headers:
-      host: dd4.trackid.ir
-    path: /
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|4f1f521862834b80a97a10496d2a35...
-  network: ws
-  port: 443
-  server: dd2.atelienaderr.ir
-  servername: dd2.atelienaderr.ir
-  tls: true
-  type: vless
-  udp: false
-  uuid: 6c198339-837d-4f61-940f-fa4f6776dc07
-  ws-opts:
-    headers:
-      host: dd2.atelienaderr.ir
-    path: /
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|d617203a4d5f439fb4c308d6e6b2cc...
-  network: ws
-  port: 22222
-  server: 18.157.72.42
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|4f3056e19557448da580ba5bf54bd1...
-  network: ws
-  port: 8080
-  server: zula.ir
-  tls: false
-  type: vless
-  udp: false
-  uuid: 350ba876-0706-4525-b342-f70062cb24f8
-  ws-opts:
-    path: /telegram---VPNCUSTOMIZE--telegram--VPNCUSTOMIZE--telegram--VPNCUSTOMIZE--telegram--VPNCUSTOMIZE--telegram----VPNCUSTOMIZE?ed=2048
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|f9abed63e5964971884f66655e33d3...
-  network: ws
-  port: 80
-  server: join.vpncustomize.fastly80-3.hosting-ip.com
-  tls: false
-  type: vless
-  udp: false
-  uuid: 350ba876-0706-4525-b342-f70062cb24f8
-  ws-opts:
-    path: /telegram-VPNCUSTOMIZE--telegram-VPNCUSTOMIZE--telegram---VPNCUSTOMIZE--telegram---VPNCUSTOMIZE--telegram---VPNCUSTOMIZE?ed=2048
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 4,5,8,22,24,30|🇷🇺 俄罗斯 V2CROSS.COM 2
-  password: 36ZCHeabUSfKjfQEvJ4HDV
-  port: 54170
-  server: 185.242.86.156
-  type: ss
-  udp: true
 - name: 4|🇩🇪 DE 17 → tg@nicevpn123
   password: ea630804-4d5d-4180-a464-a360e3793dc2
   port: 443
@@ -580,11 +488,11 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: rc4-md5
-  name: 19,20,21,22|🇪DE-193.108.119.230-1076
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
+- cipher: aes-256-cfb
+  name: 19,22|🇪DE-80.92.204.106-2415
+  password: M3t2ZEQcMGRWBjRa
+  port: 9011
+  server: 80.92.204.106
   type: ss
 - alterId: 0
   cipher: auto
@@ -614,11 +522,20 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- cipher: chacha20-ietf-poly1305
-  name: 20,21,22|🇪DE-185.177.229.245-0496
+- cipher: rc4-md5
+  name: 20,21,22|🇪DE-193.108.119.230-1076
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 20,21,22,37|未知11 3.0MB/s
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-256-cfb
   name: 20,21,22|🇪DE-80.92.204.106-5420
@@ -822,23 +739,23 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- alterId: 0
-  name: 22,24,37|🇸US美国5
+- name: '22,24|🇺🇸 _美国 #6'
   password: Aimer
   port: 443
   server: 3.75.149.151
   skip-cert-verify: true
   sni: ngepx.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
-- name: '22,24|🇩🇪 _德国 #1'
+- alterId: 0
+  name: 22,24,37|DE国
   password: Aimer
   port: 443
   server: 188.166.162.201
   skip-cert-verify: true
   sni: ngepz.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '22,24|🇩🇪 _德国 #2'
   password: Aimer
   port: 8443
@@ -846,43 +763,37 @@ proxies:
   skip-cert-verify: true
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 22,24,37|🇺🇸US美国10
+- name: '22,24|🇺🇸 _美国 #70'
   password: Aimer
   port: 443
   server: 3.64.205.189
   skip-cert-verify: true
   sni: ngepx.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
-- name: '22,24|🇺🇸 _美国 #73'
+- alterId: 0
+  name: 22,24,37|🇸US美国10
   password: Aimer
   port: 443
   server: 18.153.94.168
   skip-cert-verify: true
   sni: ngepx.ambercc.filegear-sg.me
+  tls: true
   type: trojan
-- alterId: 0
-  name: 22,24,37|🇳NL兰
+  udp: true
+- name: '22,24|🇳🇱 _荷兰 #6'
   password: Aimer
   port: 443
   server: 45.147.50.154
   skip-cert-verify: true
   sni: ngepz.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
-- alterId: 0
-  name: 22,24,37|DE国
+- name: '22,24|🇩🇪 _德国 #3'
   password: Aimer
   port: 443
   server: 3.122.86.99
   skip-cert-verify: true
   sni: ngepx.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - name: '22,24|🇺🇸 _美国 #74'
   password: Aimer
   port: 2083
@@ -1014,12 +925,6 @@ proxies:
     headers:
       Host: 138.68.90.231
     path: /cctv13/hd.m3u8
-- cipher: aes-256-cfb
-  name: 22|🇪DE-80.92.204.106-2415
-  password: M3t2ZEQcMGRWBjRa
-  port: 9011
-  server: 80.92.204.106
-  type: ss
 - cipher: aes-256-gcm
   name: 22|🇪DE-193.108.118.34-2602
   password: faBAoD54k87UJG7
@@ -2512,34 +2417,41 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-49.12.115.20...
+  name: 36,37|未知92
   network: tcp
-  port: '41887'
-  server: 49.12.115.200
+  port: 2020
+  server: 91.107.138.53
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: be564078-66d3-4307-f164-e90aa1bc3cfa
+  uuid: a04fc96f-f4cc-4032-866a-5441f3d1259f
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-162.55.171.2...
-  network: tcp
-  port: '100'
-  server: 162.55.171.226
+  grpc-opts:
+    grpc-service-name: ''
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-91.107.138....
+  network: grpc
+  port: '4040'
+  server: 91.107.138.53
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 1889d9ef-9d58-4427-bb3e-a08810c214eb
+  uuid: 36bfd56d-8cc1-47b1-a6fe-0336f0b1f906
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-159.69.120.9...
-  network: tcp
-  port: '41391'
-  server: 159.69.120.98
+  name: 36|🔒 VM-WS-NA 🇩🇪 DE-91.107.138.53...
+  network: ws
+  port: '3030'
+  server: 91.107.138.53
   servername: ''
   tls: false
   type: vmess
-  uuid: b5c3e2e8-dfb6-4a0a-b656-87e997610785
+  uuid: 9478a73a-9b97-4c1d-886b-5876b14a58d4
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
@@ -2550,6 +2462,48 @@ proxies:
   tls: true
   type: vmess
   uuid: 32eb9cf5-c4c7-40e3-b584-a4b1fc5833ec
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-138.199.158....
+  network: tcp
+  port: '100'
+  server: 138.199.158.245
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1889d9ef-9d58-4427-bb3e-a08810c214eb
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知27 590.2KB/s
+  network: tcp
+  port: 41887
+  server: 49.12.115.200
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: be564078-66d3-4307-f164-e90aa1bc3cfa
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知74 17.6MB/s
+  network: tcp
+  port: 41391
+  server: 159.69.120.98
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b5c3e2e8-dfb6-4a0a-b656-87e997610785
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -2564,11 +2518,12 @@ proxies:
   uuid: f4b8fcaa-7725-4813-be2d-e4c9cc3e3bae
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  name: 36,37|未知30
   network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
+  port: 5050
+  server: 91.107.138.53
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+  uuid: e2e0be70-1c5d-4dc5-8467-43e453b57b7a

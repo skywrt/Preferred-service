@@ -29,7 +29,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 4,22|🇸ES-5.188.181.201-6301
+  name: 4,19,22|🇸ES-5.188.181.201-6301
   password: U6qnYRhfyDmn8sgn
   port: 9041
   server: 5.188.181.201
@@ -122,7 +122,7 @@ proxies:
   ws-opts:
     path: /hms02.fxiaomi.sbs/link
 - cipher: aes-256-cfb
-  name: 4,20,21,22|🇸ES-5.188.181.201-5493
+  name: 4,19,20,21,22|🇸ES-5.188.181.201-5493
   password: S7KwUu7yBy58S3Ga
   port: 9042
   server: 5.188.181.201
@@ -184,7 +184,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 4,20,21,22|🇪ES-5.188.181.201-6274
+  name: 4,19,20,21,22|🇪ES-5.188.181.201-6274
   password: GeregetR8cvQHzYr
   port: 9030
   server: 5.188.181.201
@@ -326,7 +326,7 @@ proxies:
       Host: ab-test-frosty-flower-e7fb.tariroc864.workers.dev
     path: /hms02.fxiaomi.sbs/link
 - cipher: aes-256-cfb
-  name: 4,20,21,22|🇸ES-5.188.181.201-9463
+  name: 4,19,20,21,22|🇸ES-5.188.181.201-9463
   password: TN2YqghxeFDKZfLU
   port: 9037
   server: 5.188.181.201
@@ -870,15 +870,6 @@ proxies:
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     path: /
-- cipher: chacha20-ietf-poly1305
-  country: 🇨🇳CN
-  delay: 479
-  name: 5,9,22,24,30|0|🇺1 |  2.7MB/s
-  password: e3a183f4-1f0f-42ea-842a-f22195f67d09
-  port: 30003
-  server: gdgs.tarioblink.me
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   fingerprint: ''
@@ -1038,28 +1029,22 @@ proxies:
   skip-cert-verify: true
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 22,24,37|🇦UA乌克兰2
+- name: '22,24|🇺🇦 _乌克兰 #1'
   password: Aimer
   port: 2087
   server: 45.67.215.217
   skip-cert-verify: true
   sni: ngepy.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
-- alterId: 0
-  name: 22,24,37|UA
+- name: '22,24|🇺🇦 _乌克兰 #2'
   password: Aimer
   port: 2096
   server: 45.67.215.250
   skip-cert-verify: true
   sni: ngepx.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - alterId: 0
-  name: 22,24,37|🇷🇺RU俄罗斯3
+  name: 22,24,37|🇺RU俄罗斯7
   password: Aimer
   port: 443
   server: 89.248.207.37
@@ -1279,13 +1264,16 @@ proxies:
   skip-cert-verify: true
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #13'
+- alterId: 0
+  name: 24,37|🇺RU俄罗斯2
   password: Aimer
   port: 8443
   server: 46.254.93.52
   skip-cert-verify: true
   sni: ngepy.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇷🇺 _俄罗斯 #23'
   password: '!!str 3770966768580042752'
   port: 443
@@ -1297,30 +1285,6 @@ proxies:
   name: 30|🇺 俄罗斯 V2CROSS.COM
   network: ws
   password: Aimer
-  port: 2053
-  server: 176.124.223.40
-  sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ngepy.ambercc.filegear-sg.me
-    path: /
-- client-fingerprint: chrome
-  name: 30|🇷🇺 俄罗斯 V2CROSS.COM 3
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 46.254.93.52
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ngepx.ambercc.filegear-sg.me
-    path: /
-- client-fingerprint: chrome
-  name: 30|🇷🇺 俄罗斯 V2CROSS.COM 4
-  network: ws
-  password: Aimer
   port: 8443
   server: 176.53.144.206
   sni: ngepy.ambercc.filegear-sg.me
@@ -1329,14 +1293,3 @@ proxies:
     headers:
       Host: ngepy.ambercc.filegear-sg.me
     path: /
-- alterId: 0
-  name: 37|🇺RU俄罗斯6
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 91.107.253.14
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true

@@ -771,13 +771,7 @@ proxies:
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
 - cipher: chacha20-ietf-poly1305
-  name: 19,22|HK-141.98.234.93-0470
-  password: WfmxKX2FBJRU0Ie9VLIYDL
-  port: 20012
-  server: 141.98.234.93
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20,21,22|🇰HK-216.250.97.118-0479
+  name: 19,20,21,22|🇰HK-216.250.97.118-0479
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: hong-kong.keenvpn.me
@@ -796,6 +790,12 @@ proxies:
   skip-cert-verify: false
   sni: 68123106-3e43-4958-b75a-b06e81eabf79.50d88e28-a870-497d-bf87-c20fb6802871.camdvr.org
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 22|HK-141.98.234.93-0470
+  password: WfmxKX2FBJRU0Ie9VLIYDL
+  port: 20012
+  server: 141.98.234.93
+  type: ss
 - alterId: 0
   cipher: auto
   name: 22|🇰HK-20.239.145.115-0679
@@ -844,13 +844,16 @@ proxies:
   port: 8388
   server: 103.149.183.61
   type: ss
-- name: '22,24|_中国 #10'
+- alterId: 0
+  name: 22,24,37|🇳CN中国3
   password: Aimer
   port: 443
   server: 219.76.13.180
   skip-cert-verify: true
   sni: ngepz.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '22,24|_中国 #11'
   password: Aimer
   port: 35002
@@ -1978,20 +1981,18 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   name: 37|HK
-  password: 7D2WAX2FP3JBR1B6
-  port: 15006
-  server: 156.245.190.15
+  password: O6IKQIP6LAJ0C0S0
+  port: 15014
+  server: 156.245.190.23
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
   name: 37|HK2
-  network: tcp
-  password: 3817daf8-0f2b-412f-b87b-3efa585423e8
-  port: 443
-  server: 45.158.22.33
+  password: ba8d6492-f3f5-4376-aa88-1c3bda57a6d9
+  port: 58226
+  server: 213.130.141.113
   skip-cert-verify: true
-  sni: us2.vpn.ong
   tls: true
-  type: trojan
-  udp: true
+  type: ss
