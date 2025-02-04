@@ -294,15 +294,15 @@ proxies:
   cipher: auto
   name: 5|瑞典临时公用-共享100Mbps | 0x
   network: ws
-  port: '8443'
-  server: 1738636341.tencentapp.cn
-  servername: 1738636378.speed.sccapv.cccp.freefly.pp.ua
+  port: '2096'
+  server: 1738677741.tencentapp.cn
+  servername: 1738677778.speed.sccapv.cccp.freefly.pp.ua
   tls: true
   type: vmess
   uuid: e745037e-05be-4369-bf52-e2969747688a
   ws-opts:
     headers:
-      Host: 1738636378.speed.sccapv.cccp.freefly.pp.ua
+      Host: 1738677778.speed.sccapv.cccp.freefly.pp.ua
     path: /
 - name: 8|🇸🇪SE-95.164.33.62-233_1@232
   password: 0b1371aa-649d-41dc-9126-338c87936500
@@ -313,10 +313,16 @@ proxies:
   type: trojan
   ws-path: h=%2Fwebsocket
 - cipher: chacha20-ietf-poly1305
-  name: 20,21,22|🇪SE-46.246.98.155-5731
+  name: 19,22|🇪SE-46.246.98.155-0429
   password: UDcjYQ6Z6AIWxViZpqyOmO
   port: 44013
   server: 46.246.98.155
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20,21,22|🇪SE-94.228.165.178-5750
+  password: afKAHp1VfRWZu91LIi9o0D
+  port: 58176
+  server: 94.228.165.178
   type: ss
 - name: 22|SE-13.51.247.95-0286
   password: telegram-id-directvpn
@@ -353,22 +359,26 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 22|🇪SE-13.50.147.44-0386
+- alterId: 0
+  name: 22,37|未知40
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 13.50.120.25
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- name: 22|🇸SE-13.50.147.44-1066
   password: telegram-id-privatevpns
   port: 22222
   server: 13.50.147.44
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 22|🇸SE-13.61.103.214-1243
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.61.103.214
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - cipher: aes-256-cfb
-  name: 22|SE-13.48.142.87-1718
+  name: 22|SE-13.61.178.118-1791
   obfs: http_simple
   obfs-param: ''
   password: YpX2opBbrfqJzzMs
@@ -377,7 +387,7 @@ proxies:
   protocol-param: ''
   server: z0117.security-cloudfront-cdn.com
   type: ssr
-- name: 22|SE-13.48.202.26-1965
+- name: 22|SE-13.48.202.26-2038
   password: telegram-id-privatevpns
   port: 22222
   server: 13.48.202.26
@@ -386,7 +396,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 22|SE-13.50.153.230-3037
+  name: 22|SE-13.50.153.230-3062
   network: ws
   port: 25289
   server: 13.50.153.230
@@ -397,24 +407,18 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 22|SE-13.49.241.14-4412
+  name: 22|SE-13.49.241.14-4437
   password: pydQILh06AvJ
   port: 27092
   server: 13.49.241.14
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 22|SE-62.60.151.134-5660
+  name: 22|SE-62.60.151.134-5685
   password: vkQP4Fe2dFEA1rdWx0lAjH
   port: 60758
   server: 62.60.151.134
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 22|🇸🇪SE-94.228.165.178-5725
-  password: afKAHp1VfRWZu91LIi9o0D
-  port: 58176
-  server: 94.228.165.178
-  type: ss
-- name: 22|SE-13.51.213.12-5957
+- name: 22|SE-13.51.213.12-5982
   password: telegram-id-privatevpns
   port: 22222
   server: 13.51.213.12
@@ -432,66 +436,73 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- name: 22|🇸SE-13.61.103.214-6116
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.61.103.214
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - cipher: aes-256-cfb
-  name: 22|🇸SE-37.19.222.214-9523
+  name: 22|🇸SE-37.19.222.214-9550
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.214
   type: ss
 - cipher: aes-256-cfb
-  name: 22|🇪SE-37.19.222.213-9524
+  name: 22|🇪SE-37.19.222.213-9551
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.213
   type: ss
 - cipher: aes-256-cfb
-  name: 22|🇸🇪SE-37.19.222.212-9525
+  name: 22|🇸🇪SE-37.19.222.212-9552
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.212
   type: ss
 - cipher: aes-256-cfb
-  name: 22|🇸🇪SE-37.19.222.211-9526
+  name: 22|🇸🇪SE-37.19.222.211-9553
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.211
   type: ss
-- name: 22|🇸🇪SE-16.171.58.121-9925
+- name: 22|🇸🇪SE-16.171.58.121-9952
   password: telegram-id-privatevpns
   port: 22222
   server: 16.171.58.121
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 22|🇸SE-13.50.16.231-10080
+- name: 22|🇸SE-13.50.16.231-10107
   password: telegram-id-privatevpns
   port: 22222
   server: 13.50.16.231
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 22|🇸🇪SE-13.49.46.49-10081
+- name: 22|🇸🇪SE-13.49.46.49-10108
   password: telegram-id-privatevpns
   port: 22222
   server: 13.49.46.49
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 22|🇸🇪SE-13.49.224.224-10085
+- name: 22|🇸🇪SE-13.49.224.224-10112
   password: telegram-id-directvpn
   port: 22222
   server: 13.49.224.224
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 22|🇸🇪SE-13.48.45.205-10088
+- name: 22|🇸🇪SE-13.48.45.205-10115
   password: telegram-id-privatevpns
   port: 22222
   server: 13.48.45.205
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 22|🇸🇪SE-13.48.105.114-10094
+- name: 22|🇸🇪SE-13.48.105.114-10121
   password: telegram-id-directvpn
   port: 22222
   server: 13.48.105.114
