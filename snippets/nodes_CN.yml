@@ -4089,15 +4089,8 @@ proxies:
   port: 15082
   server: 59.56.77.178
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 5,22,24,30|_CN_国
-  password: vkQP4Fe2dFEA1rdWx0lAjH
-  port: 60758
-  server: 62.60.151.134
-  type: ss
-- client-fingerprint: chrome
-  name: 5,16,22,24,26,30|🇨🇳 广东省广州市区 信
-  password: 20a84ebf-9341-4f5f-8245-3975e2fdeee5
+- name: 5,16,22,24,26|连接着任意可用线路
+  password: 0bc68743-cff8-4730-9818-9d8192ee335c
   port: 21019
   server: 219.135.231.205
   skip-cert-verify: true
@@ -4969,14 +4962,17 @@ proxies:
   type: trojan
 - alpn:
   - http%2F1.1
-  name: 22,24,27,30,41|d*********g.com_3
+  alterId: 0
+  name: 22,24,27,37,41|d*********g.com_3
   network: tcp
   password: fuck
   port: 443
   server: 42.236.73.72
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.zitian.cn
+  tls: true
   type: trojan
+  udp: true
   ws-opts:
     headers:
       Host: www.zitian.cn
@@ -5474,62 +5470,61 @@ proxies:
   tls: false
   type: vmess
   uuid: fa4b6f8f-1264-45ec-9651-6160c12cabc5
-- name: '22,24,27,30|0|🇺🇸3 |  2.5MB/s #2'
+- name: 22,24|0|🇺🇸3 |  2.5MB/s
   password: f0b00f01-c9b3-352b-84e6-00bb2a719662
   port: 20278
   server: gy.58n.net
   skip-cert-verify: true
   sni: z278.hongkongnode.top
   type: trojan
-  udp: true
-- name: '22,24,27,30|0|🇵1 |  2.0MB/s #1'
+- alterId: 0
+  name: 22,24,37|未知4
   password: f0b00f01-c9b3-352b-84e6-00bb2a719662
   port: 41767
   server: gy.58n.net
   skip-cert-verify: true
   sni: x114.flybar.work
+  tls: true
   type: trojan
   udp: true
-- name: '22,24,27,30|0|🇺🇸6 |  5.1MB/s #2'
+- alterId: 0
+  name: 22,24,37|未知89
   password: f0b00f01-c9b3-352b-84e6-00bb2a719662
   port: 20294
   server: gy.58n.net
   skip-cert-verify: true
   sni: z294.hongkongnode.top
+  tls: true
   type: trojan
   udp: true
-- name: '22,24,27,30|0|🇬🇧4 |  2.9MB/s #2'
+- name: 22,24|0|🇬🇧4 |  2.9MB/s
   password: f0b00f01-c9b3-352b-84e6-00bb2a719662
   port: 20309
   server: gyl.58n.net
   skip-cert-verify: true
   sni: z309.hongkongnode.top
   type: trojan
-  udp: true
-- name: '22,24,27,30|0|🇯🇵3 |  5.7MB/s #2'
+- name: 22,24|0|🇯🇵3 |  5.7MB/s
   password: f0b00f01-c9b3-352b-84e6-00bb2a719662
   port: 20141
   server: gy.58n.net
   skip-cert-verify: true
   sni: z141.hongkongnode.top
   type: trojan
-  udp: true
-- name: '22,24,27,30|0|🇸7 |  1.3MB/s #1'
+- name: 22,24|0|🇺🇸7 |  1.3MB/s
   password: f0b00f01-c9b3-352b-84e6-00bb2a719662
   port: 20307
   server: gy.58n.net
   skip-cert-verify: true
   sni: z307.hongkongnode.top
   type: trojan
-  udp: true
-- name: '22,24,27,30|0|🇬1 |  5.6MB/s #1'
+- name: 22,24|0|🇸🇬1 |  5.6MB/s
   password: f0b00f01-c9b3-352b-84e6-00bb2a719662
   port: 17806
   server: gy.58n.net
   skip-cert-verify: true
   sni: x65.flybar.work
   type: trojan
-  udp: true
 - cipher: aes-128-cfb
   name: 22|🇨🇳CN-14.29.124.174-2328
   password: QazEdcTgb159@$*
@@ -6492,31 +6487,32 @@ proxies:
   sni: hsdgbuys.pages.dev
   type: trojan
 - alterId: 0
-  cipher: none
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
-  network: tcp
-  port: '50004'
-  server: 112.132.212.19
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: none
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
-  network: tcp
-  port: '59003'
-  server: 183.236.51.36
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇳 CN-120.26.55.22...
   network: tcp
   port: '50002'
   server: 120.26.55.225
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: none
+  name: 36,37|未知45
+  network: tcp
+  port: 59003
+  server: 183.236.51.36
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: none
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
+  network: tcp
+  port: '50004'
+  server: 112.132.212.19
   servername: ''
   tls: false
   type: vmess

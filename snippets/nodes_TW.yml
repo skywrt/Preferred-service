@@ -1,13 +1,12 @@
 proxies:
 - cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 5,22,30|台湾省中 中电信
+  name: 5,22|🇼TW-114.41.19.37-6014
   password: 79739832-b888-415a-a454-8b53911c944a
   port: 30332
   server: vps.200566.xyz
   type: ss
 - client-fingerprint: chrome
-  name: 5,22,24,27,30,40|speednode_0011
+  name: 5,22,24,27,40|speednode_0011
   network: tcp
   password: 7cd29891-fe78-4f8f-8844-abb31b9d9a75
   port: 18147
@@ -15,14 +14,17 @@ proxies:
   skip-cert-verify: false
   sni: mm2.redapricotcloud.com
   type: trojan
-- name: '5,22,24,27,30|13,14|台湾2|@ripaojiedian #1'
+- alterId: 0
+  name: 5,22,24,27,37|🇹TW
   network: tcp
   password: f1df4c41-0e78-400b-8588-eaa24bd8fd21
   port: 18147
   server: 120.198.71.173
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: mm2.redapricotcloud.com
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5|台湾-优化2-GPT
@@ -43,14 +45,17 @@ proxies:
   skip-cert-verify: false
   sni: hinet.mjt000.com
   type: trojan
-- name: '5,22,24,27,30|13,14||@ripaojiedian #1'
+- alterId: 0
+  name: 5,22,24,27,37|🇹🇼TW台湾2
   network: tcp
   password: 2b39bbdd-a565-4f8e-b6b6-6b034b2076f4
   port: 13035
   server: naiu-other.05vr9nyqg5.download
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: cloudflare.node-ssl.cdn-alibaba.com
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5|台湾-优化3
@@ -84,7 +89,7 @@ proxies:
   server: southvip1.pkyun.xyz
   type: ss
 - cipher: aes-256-cfb
-  name: 20,21,22|🇼TW-185.189.160.98-6013
+  name: 19,20,21,22|🇼TW-185.189.160.98-6013
   password: qwerREWQ@@
   port: 64759
   server: 185.189.160.98
@@ -458,11 +463,14 @@ proxies:
     headers:
       Host: tw3.594888.xyz
     path: /v2ray
-- cipher: chacha20-ietf-poly1305
-  name: 22|TW-2.58.241.42-5766
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 22,37|TW 92.1KB/s
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: 2.58.241.42
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 22|TW-2.58.241.42-6012

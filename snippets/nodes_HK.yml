@@ -109,9 +109,9 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: '5,11,24,27,30|14|香港5|@ripaojiedian #2'
+  name: '5,11,24,27|14|香港5|@ripaojiedian #1'
   network: tcp
-  port: 40565
+  port: '40565'
   server: 120.232.153.63
   servername: ''
   tls: false
@@ -119,7 +119,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '5,11,22,24,27,30|13|🇭🇰 香港3|@ripaojiedian #2'
+  name: '5,11,22,24,27|13|🇭🇰 香港3|@ripaojiedian #1'
   password: hGkQ6915tD
   port: 16088
   server: 120.232.81.50
@@ -127,9 +127,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '5,11,24,27,30|14|香港2|@ripaojiedian #2'
+  name: '5,11,24,27|14|香港2|@ripaojiedian #1'
   network: tcp
-  port: 50028
+  port: '50028'
   server: 50028.baidu-cdn.top
   servername: ''
   tls: false
@@ -137,9 +137,9 @@ proxies:
   uuid: adb6b92d-24c1-4dff-9efc-8ecedb84219b
 - alterId: 0
   cipher: auto
-  name: '5,11,24,27,30|14|香港|@ripaojiedian #2'
+  name: '5,11,24,27|14|香港|@ripaojiedian #1'
   network: tcp
-  port: 57658
+  port: '57658'
   server: 38.147.188.17
   servername: ''
   tls: false
@@ -177,13 +177,16 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: aes-128-gcm
+- alterId: 0
+  cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: '5,11,22,24,27,30|13|🇭🇰 香港4|@ripaojiedian #2'
+  name: 5,11,22,24,27,37|🇰HK
   password: 40983d6d-48be-4c9a-aa48-3aaf3146833e
   port: 12010
   server: mdss-hk.04z3susick.download
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -777,6 +780,12 @@ proxies:
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: hong-kong.keenvpn.me
+  type: ss
+- cipher: aes-256-cfb
+  name: 19,22|🇭🇰HK-112.213.102.228-5976
+  password: qwerREWQ@@
+  port: 4231
+  server: 112.213.102.228
   type: ss
 - alterId: 64
   cipher: auto
@@ -1474,12 +1483,6 @@ proxies:
   protocol-param: ''
   server: 150.107.46.21
   type: ssr
-- cipher: aes-256-cfb
-  name: 22|🇭🇰HK-112.213.102.228-5976
-  password: qwerREWQ@@
-  port: 4231
-  server: 112.213.102.228
-  type: ss
 - cipher: chacha20-ietf
   name: 22,40|speednode_0018
   password: asd123456
@@ -1993,8 +1996,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 27,30|🇨🇳 省市 移动
+  name: '27|13|🇭🇰 香港2|@ripaojiedian #1'
   port: 50028
   server: 50028.baidu-cdn.top
   skip-cert-verify: false
@@ -2004,8 +2006,7 @@ proxies:
   uuid: adb6b92d-24c1-4dff-9efc-8ecedb84219b
 - alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  name: 27,30|🇨🇳 广市 移动
+  name: '27|13|🇭🇰 香港5|@ripaojiedian #1'
   port: 40565
   server: 120.232.153.63
   skip-cert-verify: false
@@ -2024,6 +2025,16 @@ proxies:
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
   network: tcp
+  port: '27512'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
+  network: tcp
   port: '54675'
   server: 103.149.183.178
   servername: ''
@@ -2031,12 +2042,11 @@ proxies:
   type: vmess
   uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
 - alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
-  network: tcp
-  port: '27512'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
+  name: 37|HK
+  password: f6f037b8-d6f5-4892-9bb5-0f915cac5b3b
+  port: 158
+  server: 107.149.254.26
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
