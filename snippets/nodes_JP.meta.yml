@@ -47,7 +47,7 @@ proxies:
   type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,11,22,27|13|🇵 日本特殊|@ripaojiedian
+  name: 5,11,22,24,27,30|13|🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 52.78.197.177
@@ -91,7 +91,7 @@ proxies:
     path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 5,11,22,27|13|🇵 日本2|@ripaojiedian
+  name: '5,11,22,24,27,30|13|🇵 日本2|@ripaojiedian #1'
   password: 40983d6d-48be-4c9a-aa48-3aaf3146833e
   port: 12012
   server: mdss-jp.04z3susick.download
@@ -114,9 +114,9 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,11,27|14|日本|@ripaojiedian #1'
+  name: '5,11,24,27,30|14|日本|@ripaojiedian #2'
   network: tcp
-  port: '11171'
+  port: 11171
   server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
   servername: ''
   tls: false
@@ -145,7 +145,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5,24|🇯🇵 14|日本2|@ripaojiedian
+  name: 5|日本 - 东京 - Eons Data Communicat...
   network: tcp
   port: '60717'
   server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
@@ -371,65 +371,11 @@ proxies:
     headers:
       Host: lp.ylks.us.kg
     path: '%2F%3Fed%3D2560'
-- cipher: aes-128-gcm
-  name: 19,20,21,22|🇵JP-149.22.87.204-0484
-  password: shadowsocks
+- cipher: chacha20-ietf-poly1305
+  name: 19,20,21,22|🇵JP-52.197.171.218-0475
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
-  server: 149.22.87.204
-  type: ss
-- cipher: aes-128-gcm
-  name: 19,22|🇵JP-149.22.87.240-0492
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.240
-  type: ss
-- cipher: aes-256-cfb
-  name: 19,22|🇯🇵JP-3.112.149.177-0488
-  password: amazonskr05
-  port: 443
-  server: 3.112.149.177
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇯🇵JP-52.195.220.24-2288
-  password: amazonskr05
-  port: 443
-  server: 52.195.220.24
-  type: ss
-- cipher: aes-256-cfb
-  name: 19,22|🇯🇵JP-13.230.161.241-0496
-  password: amazonskr05
-  port: 443
-  server: 13.230.161.241
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇯🇵JP-13.114.103.2-2284
-  password: amazonskr05
-  port: 443
-  server: 13.114.103.2
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇯🇵JP-52.68.124.236-2282
-  password: amazonskr05
-  port: 443
-  server: 52.68.124.236
-  type: ss
-- cipher: aes-256-cfb
-  name: 19,22|🇯🇵JP-18.179.118.124-6024
-  password: amazonskr05
-  port: 443
-  server: 18.179.118.124
-  type: ss
-- cipher: aes-256-cfb
-  name: 19,22|🇯🇵JP-43.207.138.233-0490
-  password: amazonskr05
-  port: 443
-  server: 43.207.138.233
-  type: ss
-- cipher: aes-256-cfb
-  name: 19,20,21,22|🇯🇵JP-54.168.25.210-6026
-  password: amazonskr05
-  port: 443
-  server: 54.168.25.210
+  server: japan-5.keenvpn.me
   type: ss
 - alterId: 0
   cipher: aes-128-gcm
@@ -440,17 +386,41 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
+- cipher: aes-128-gcm
+  name: 19,22|🇵JP-149.22.87.240-0492
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+- cipher: aes-128-gcm
+  name: 19,20,21,22|🇵JP-149.22.87.204-0484
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
 - cipher: aes-256-cfb
   name: 19,22|🇯🇵JP-18.181.167.251-6020
   password: amazonskr05
   port: 443
   server: 18.181.167.251
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20,21,22|🇵JP-52.197.171.218-0475
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
+- cipher: aes-256-cfb
+  name: 19,22,24,30|0|🇵2 |  6.3MB/s
+  password: amazonskr05
   port: 443
-  server: japan-5.keenvpn.me
+  server: 54.250.238.74
+  type: ss
+- cipher: aes-256-cfb
+  name: 19,22|🇯🇵JP-13.231.129.236-6022
+  password: amazonskr05
+  port: 443
+  server: 13.231.129.236
+  type: ss
+- cipher: aes-256-cfb
+  name: 20,21,22|🇯🇵JP-54.168.25.210-6026
+  password: amazonskr05
+  port: 443
+  server: 54.168.25.210
   type: ss
 - alterId: 0
   cipher: auto
@@ -597,6 +567,30 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
+  name: 22|🇯🇵JP-3.112.149.177-0488
+  password: amazonskr05
+  port: 443
+  server: 3.112.149.177
+  type: ss
+- cipher: aes-256-cfb
+  name: 22|🇯🇵JP-43.207.138.233-0490
+  password: amazonskr05
+  port: 443
+  server: 43.207.138.233
+  type: ss
+- cipher: aes-256-cfb
+  name: 22|🇯🇵JP-43.207.112.160-0494
+  password: amazonskr05
+  port: 443
+  server: 43.207.112.160
+  type: ss
+- cipher: aes-256-cfb
+  name: 22|🇯🇵JP-13.230.161.241-0496
+  password: amazonskr05
+  port: 443
+  server: 13.230.161.241
+  type: ss
+- cipher: aes-256-cfb
   name: 22,40|speednode_0015
   password: amazonskr05
   port: 443
@@ -708,8 +702,14 @@ proxies:
     headers:
       Host: 138.2.52.176
     path: /
+- cipher: aes-256-cfb
+  name: 22|🇵JP-3.112.1.143-1334
+  password: amazonskr05
+  port: 443
+  server: 3.112.1.143
+  type: ss
 - alterId: 0
-  name: '22,24,37|US #1'
+  name: '22,37|US #1'
   password: Aimer
   port: 18081
   server: 48.210.224.47
@@ -718,7 +718,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 22,24|🇯🇵 _日本
+- name: 22|🇵JP-52.195.187.159-1356
   password: Aimer
   port: 443
   server: 52.195.187.159
@@ -1732,28 +1732,22 @@ proxies:
       Host: tls.19.node-for-bigairport.win
     path: /
 - cipher: aes-256-cfb
-  name: 22,27|0|🇵2 |  6.3MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.250.238.74
-  type: ss
-- cipher: aes-256-cfb
   name: 22|🇵JP-18.183.142.200-6017
   password: amazonskr05
   port: 443
   server: 18.183.142.200
   type: ss
 - cipher: aes-256-cfb
-  name: 22|🇯🇵JP-13.231.129.236-6022
-  password: amazonskr05
-  port: 443
-  server: 13.231.129.236
-  type: ss
-- cipher: aes-256-cfb
   name: 22|🇯🇵JP-3.112.151.97-6023
   password: amazonskr05
   port: 443
   server: 3.112.151.97
+  type: ss
+- cipher: aes-256-cfb
+  name: 22,27|0|🇯🇵2 |  6.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.179.118.124
   type: ss
 - cipher: aes-256-cfb
   name: 22|🇯🇵JP-54.248.40.18-6025
@@ -1790,7 +1784,7 @@ proxies:
       Host: tls.02.node-for-bigairport.win
     path: /
 - cipher: aes-256-cfb
-  name: 22|🇵JP-43.207.76.121-6191
+  name: 22,27|0|🇯🇵3 |  1.2MB/s
   password: amazonskr05
   port: 443
   server: 43.207.76.121
@@ -2282,12 +2276,12 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- name: '24|🇯🇵 _日本 #5'
-  password: Aimer
+- name: 24|🇯🇵 _日本
+  password: wb6368
   port: 2083
   server: 103.116.7.103
   skip-cert-verify: false
-  sni: ngepx.ambercc.filegear-sg.me
+  sni: hsdgbuys.pages.dev
   type: trojan
 - name: 26|✪每日连接前点更新订阅
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
@@ -2342,6 +2336,16 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: '27,30|0,13| |@ripaojiedian #1'
+  port: 11171
+  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 68512223-ea66-46fc-82f4-e22b597cdd5e
 - cipher: chacha20-ietf-poly1305
   name: 28|日本02-1B
   password: c8b42c50-2c7c-441d-a128-0cedae8ea8d9
@@ -2360,14 +2364,17 @@ proxies:
   uuid: 8c341e17-a96a-409b-b445-29acb393048c
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
-  network: tcp
-  port: '48897'
-  server: 13.112.49.171
-  servername: ''
+  name: 36|🔒 VM-WS-NA 🇯🇵 JP-150.230.61.11...
+  network: ws
+  port: '23451'
+  server: 150.230.61.110
   tls: false
   type: vmess
-  uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
+  uuid: 7318bc15-4bff-4e22-aac3-4d9f849930db
+  ws-opts:
+    headers:
+      Host: 1-osaka-p.aboutanime.eu.org
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
@@ -2380,14 +2387,25 @@ proxies:
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇯🇵 JP-150.230.61.11...
+  name: 36|🔒 VM-WS-NA 🇯🇵 JP-156.246.94.94...
   network: ws
-  port: '23451'
-  server: 150.230.61.110
+  port: '433'
+  server: 156.246.94.94
+  servername: ''
   tls: false
   type: vmess
-  uuid: 6651ab66-c7a5-4113-bec7-41f814de537f
+  uuid: bebdb5c1-e0cb-4319-b614-a0581fdd3158
   ws-opts:
     headers:
-      Host: 1-osaka-p.aboutanime.eu.org
+      Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
+  network: tcp
+  port: '48897'
+  server: 13.112.49.171
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0

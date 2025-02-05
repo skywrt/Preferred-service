@@ -1,6 +1,6 @@
 proxies:
 - cipher: aes-128-gcm
-  name: 5,22|🇰HK-185.14.47.239-5420
+  name: 5,16,22|🇰HK-185.14.47.239-5420
   password: 4a405b22-fca3-456c-a250-d6544158ba74
   port: 49108
   server: south.sf0jm.xyz
@@ -898,16 +898,9 @@ proxies:
   skip-cert-verify: false
   sni: z139.hongkongnode.top
   type: trojan
-- name: 22,24,26,27,40|speednode_0048
-  password: 20a84ebf-9341-4f5f-8245-3975e2fdeee5
-  port: 21019
-  server: 219.135.231.205
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alpn:
   - http%2F1.1
-  name: 22,24,27,41|d*********g.com_3
+  name: 22,24,27,30,41|d*********g.com_3
   network: tcp
   password: fuck
   port: 443
@@ -918,20 +911,38 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
-- name: 22,24|0|🇺🇸3 |  1.3MB/s
+- name: 22|CN-111.47.212.170-1331
   password: 5d499973-9b33-3919-8424-27d2460b074b
   port: 20306
   server: gy.58n.net
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: z306.hongkongnode.top
   type: trojan
-- name: 22,24|0|🇯🇵2 |  1.0MB/s
+- name: 22|🇳CN-111.47.212.170-1332
   password: 5d499973-9b33-3919-8424-27d2460b074b
   port: 20298
   server: gy.58n.net
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: z298.hongkongnode.top
   type: trojan
+- cipher: aes-128-gcm
+  name: 22|🇨🇳CN-183.236.51.6-1336
+  password: cbf3d234-6d24-47ec-a9cb-2c2692c5dcf1
+  port: 12008
+  server: mdss-hk.04z3susick.download
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 22|🇨🇳CN-183.214.197.27-1338
+  password: 8cbf6069-29f0-49d5-965f-ac752174de83
+  port: 34102
+  server: 183.214.197.27
+  type: ss
+- cipher: aes-128-gcm
+  name: 22|🇳CN-183.236.51.6-1339
+  password: cbf3d234-6d24-47ec-a9cb-2c2692c5dcf1
+  port: 12021
+  server: mdss-sg.04z3susick.download
+  type: ss
 - name: 22|🇨CN-120.236.197.205-1557
   password: ba4fedf8c217c146
   port: 3389
@@ -2012,12 +2023,6 @@ proxies:
   port: 46595
   server: bj.xissyun.com
   type: ss
-- cipher: aes-256-gcm
-  name: 22|🇳CN-113.99.142.171-6171
-  password: 5QCGV4AXFQAJE5KA
-  port: 18012
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  type: ss
 - cipher: aes-128-gcm
   name: 22|🇨🇳CN-119.167.212.243-6173
   password: e2c62a73-3132-48a6-a020-25c3ae0d8af2
@@ -2032,7 +2037,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
 - cipher: aes-256-cfb
-  name: 22,27|0|🇵4 |  4.8MB/s
+  name: 22,24,30|0|🇵4 |  4.8MB/s
   password: hGkQ6915tD
   port: 15084
   server: 120.232.81.50
@@ -2392,22 +2397,45 @@ proxies:
   port: 870
   server: 183.240.222.15
   type: ss
-- name: '24|_中国 #17'
+- name: 24|_中国
   password: Aimer
   port: 443
-  server: 154.197.64.206
+  server: 219.76.13.180
   skip-cert-verify: false
-  sni: ngepy.ambercc.filegear-sg.me
+  sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- alterId: 64
+- name: '24|_中国 #1'
+  password: Aimer
+  port: 443
+  server: 219.76.13.166
+  skip-cert-verify: false
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|_中国 #2'
+  password: Aimer
+  port: 8443
+  server: 156.255.90.175
+  skip-cert-verify: false
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+- alterId: 0
   cipher: auto
-  name: 36,37|未知74
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-120.26.55.22...
   network: tcp
-  port: 50002
-  server: 112.132.215.12
+  port: '50002'
+  server: 120.26.55.225
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: none
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
+  network: tcp
+  port: '50004'
+  server: 112.132.212.19
+  servername: ''
+  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
@@ -2416,16 +2444,6 @@ proxies:
   network: tcp
   port: '59003'
   server: 183.236.51.36
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
-  network: tcp
-  port: '50004'
-  server: 112.132.212.19
   servername: ''
   tls: false
   type: vmess
