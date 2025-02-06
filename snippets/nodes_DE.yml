@@ -24,7 +24,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '5,11|11|0|🇩🇪1 |  1.4MB/s #1'
+  name: 5|11|0|🇩🇪1 |  1.4MB/s
   network: tcp
   port: 45074
   server: haa.dashuai.cyou
@@ -96,10 +96,16 @@ proxies:
   server: 193.108.119.230
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 19,22|🇪DE-185.177.229.245-0490
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
+  name: 19,20,21,22|🇪DE-146.19.247.183-6132
+  password: ZTUxOTQ5
+  port: 1443
+  server: de1.opensocks.site
+  type: ss
+- cipher: aes-256-cfb
+  name: 19,20,21,22|🇪DE-80.92.204.106-5579
+  password: BNmAXXxAHYpTRdzu
+  port: 9020
+  server: 80.92.204.106
   type: ss
 - alterId: 0
   cipher: auto
@@ -116,12 +122,6 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
-- cipher: chacha20-ietf-poly1305
-  name: 20,21,22|🇪DE-146.19.247.183-6132
-  password: ZTUxOTQ5
-  port: 1443
-  server: de1.opensocks.site
-  type: ss
 - cipher: aes-256-cfb
   name: 20,21,22|🇪DE-80.92.204.106-5578
   password: GA9KzeEgvfxNrgmM
@@ -132,12 +132,6 @@ proxies:
   name: 20,21,22|🇪DE-80.92.204.106-5565
   password: VP8ZPxQpJtZRCjfZ
   port: 9080
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 20,21,22|🇪DE-80.92.204.106-5579
-  password: BNmAXXxAHYpTRdzu
-  port: 9020
   server: 80.92.204.106
   type: ss
 - name: 22|DE-149.50.74.62-0049
@@ -215,6 +209,12 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 22|🇪DE-185.177.229.245-0490
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
 - cipher: aes-256-gcm
   name: 22|🇪DE-145.239.1.100-0535
   password: KixLvKzwjekG00rm
@@ -306,18 +306,18 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '22,24|🇳🇱 _荷兰 #4'
+- name: 22,24|🇳🇱 _荷兰
   password: Aimer
   port: 443
   server: 45.147.50.154
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
 - name: '22,24|🇩🇪 _德国 #1'
   password: Aimer
   port: 443
   server: 188.166.162.201
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
 - cipher: chacha20-ietf-poly1305
@@ -2094,15 +2094,16 @@ proxies:
   uuid: f7709c90-3cd1-43d8-902e-cc4d6071f611
 - alterId: 0
   cipher: auto
-  name: 36,37|未知82 1014.5KB/s
-  network: tcp
-  port: 41391
-  server: 159.69.120.98
+  grpc-opts:
+    grpc-service-name: ''
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-91.107.247....
+  network: grpc
+  port: '49181'
+  server: 91.107.247.219
   servername: ''
-  skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: b5c3e2e8-dfb6-4a0a-b656-87e997610785
+  uuid: f0fef41d-e0c0-41f6-a957-3dcec9ee6c83
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
@@ -2135,15 +2136,15 @@ proxies:
   uuid: 32eb9cf5-c4c7-40e3-b584-a4b1fc5833ec
 - alterId: 0
   cipher: auto
-  grpc-opts:
-    grpc-service-name: ''
-  name: 36|🔒 VM-GRPC-NONE 🇩🇪 DE-91.107.24...
-  network: grpc
-  port: 49181
-  server: 91.107.247.219
+  name: 36,37|未知82 1014.5KB/s
+  network: tcp
+  port: 41391
+  server: 159.69.120.98
+  servername: ''
+  skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: f0fef41d-e0c0-41f6-a957-3dcec9ee6c83
+  uuid: b5c3e2e8-dfb6-4a0a-b656-87e997610785
 - alterId: 0
   cipher: auto
   name: 36,37|未知9 777.6KB/s
