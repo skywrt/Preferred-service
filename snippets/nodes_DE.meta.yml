@@ -299,13 +299,17 @@ proxies:
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 20,21,22|🇪DE-3.74.196.216-6106
+- alterId: 0
+  name: 20,21,22,37|未知81 1.4MB/s
+  network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 3.74.196.216
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 20,21,22|🇪DE-57.129.24.125-8325
@@ -421,14 +425,11 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 22,37|未知81 4.3MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 22|🇪DE-185.177.229.245-0569
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: aes-256-cfb
   name: 22|🇩🇪DE-80.92.204.106-0603
@@ -1354,21 +1355,14 @@ proxies:
     headers:
       Host: hms23.fixedfloati.cfd
     path: /linkwsd
-- alterId: 0
-  name: 22,37|未知61
-  network: tcp
+- name: 22|🇪DE-3.125.195.100-6144
   password: telegram-id-privatevpns
   port: 22222
   server: 3.125.195.100
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
-  tls: true
   type: trojan
-  udp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 22,30|🇸 美国 Amazon EC2
+- name: 22|🇪DE-3.74.116.116-6145
   password: telegram-id-directvpn
   port: 22222
   server: 3.74.116.116
@@ -2208,37 +2202,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-138.199.158....
-  network: tcp
-  port: '100'
-  server: 138.199.158.245
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1889d9ef-9d58-4427-bb3e-a08810c214eb
-- alterId: 0
-  cipher: auto
-  name: 36,37|未知108 13.8MB/s
-  network: tcp
-  port: 41887
-  server: 49.12.115.200
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: be564078-66d3-4307-f164-e90aa1bc3cfa
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-159.69.120.9...
-  network: tcp
-  port: '41391'
-  server: 159.69.120.98
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b5c3e2e8-dfb6-4a0a-b656-87e997610785
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🇩🇪 DE-91.1...
   network: httpupgrade
   port: '2096'
@@ -2249,6 +2212,16 @@ proxies:
   uuid: f46317ec-af35-4a93-8cd1-40047d9ba2d9
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-49.12.115.20...
+  network: tcp
+  port: '41887'
+  server: 49.12.115.200
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: be564078-66d3-4307-f164-e90aa1bc3cfa
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
   network: httpupgrade
   port: '2095'
@@ -2257,6 +2230,26 @@ proxies:
   tls: false
   type: vmess
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-162.55.171.2...
+  network: tcp
+  port: '100'
+  server: 162.55.171.226
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1889d9ef-9d58-4427-bb3e-a08810c214eb
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-159.69.120.9...
+  network: tcp
+  port: '41391'
+  server: 159.69.120.98
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b5c3e2e8-dfb6-4a0a-b656-87e997610785
 - alterId: 0
   cipher: auto
   grpc-opts:

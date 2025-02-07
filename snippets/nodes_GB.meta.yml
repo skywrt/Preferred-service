@@ -284,14 +284,11 @@ proxies:
   port: 443
   server: 212.102.53.79
   type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,22,37|未知56 13.8MB/s
+- cipher: aes-128-gcm
+  name: '19,20,21,22|🇬🇧GB-212.102.53.196-0474 #2'
   password: shadowsocks
   port: 443
   server: 212.102.53.196
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: aes-128-gcm
   name: '19,20,21,22|🇬🇧GB-141.98.101.179-0549 #2'
@@ -317,11 +314,14 @@ proxies:
   port: 1866
   server: 64.176.184.129
   type: ss
-- cipher: aes-128-gcm
-  name: '19,20,21,22|🇬🇧GB-141.98.101.180-0520 #2'
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,22,37|未知20 19.2MB/s
   password: shadowsocks
   port: 443
   server: 141.98.101.180
+  skip-cert-verify: true
+  tls: true
   type: ss
 - name: '20,21,22|🇬🇧GB-161.35.34.48-0445 #2'
   password: 2cba4104747d49d18319e5ade1b93ab5
@@ -972,7 +972,7 @@ proxies:
   server: series-a2.varzesh360.co
   type: ss
 - alterId: 0
-  name: 22,37|未知105
+  name: 22,37|未知54
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -982,13 +982,17 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 22|🇧GB-18.135.14.252-6151
+- alterId: 0
+  name: 22,37|未知119
+  network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 18.135.14.252
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - name: 22|🇧GB-13.41.215.105-6152
   password: telegram-id-privatevpns
   port: 22222
@@ -1923,16 +1927,13 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- alterId: 0
-  name: 24,37|未知90
+- name: 24|🇬🇧 英国 V2CROSS.COM
   password: 89f84d5e-4170-4c64-bc78-ac99953b103a
   port: 50020
   server: 5.83.221.31
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: jp03.6kk.org
-  tls: true
   type: trojan
-  udp: true
 - name: 24|🇬🇧 英国 社会保险安全部
   password: telegram-id-privatevpns
   port: 22222
@@ -1947,7 +1948,7 @@ proxies:
   skip-cert-verify: false
   sni: v2tw01.fuqiangren.com
   type: trojan
-- name: 24,30|0|2 |  4.1MB/s
+- name: 24|0|🇬🇧2 |  4.1MB/s
   password: '!!str 3774827088566296576'
   port: 443
   server: allowed-bear.insect388.motorcycles
@@ -1968,10 +1969,3 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 30|🇬🇧 英国 V2CROSS.COM 2
-  password: 89f84d5e-4170-4c64-bc78-ac99953b103a
-  port: 50011
-  server: 5.83.221.31
-  sni: sk05.zygbx.com
-  type: trojan

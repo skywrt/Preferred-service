@@ -21,7 +21,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,11,22,24,27,30|13|🇸🇬 新加坡2|@ripaojiedian #2'
+  name: '5,11,22,24,27|13|🇸🇬 新加坡2|@ripaojiedian #1'
   password: UEC9F1QB458GMQEK
   port: 16010
   server: w72tapyb.slashdevslashnetslashtun.net
@@ -29,19 +29,22 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '5,11,20,21,22,24,27,30|13|🇬 特殊|@ripaojiedian #1'
+  name: 5,11,20,21,22,24,27|13|🇬 特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 13.125.94.61
   tfo: false
   type: ss
-- name: '5,24|🇸🇬 _新加坡 #1'
+- alterId: 0
+  name: 5,24,37|🇸🇬SG新加坡2
   password: '!!str 3774827088566296576'
   port: 443
   server: probable-drum.treefrog761.one
   skip-cert-verify: true
   sni: probable-drum.treefrog761.one
+  tls: true
   type: trojan
+  udp: true
 - name: '5|新加坡08|流媒体 #1'
   network: tcp
   password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
@@ -58,19 +61,16 @@ proxies:
   skip-cert-verify: true
   sni: 421421.xyz
   type: trojan
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,11,22,24,27,30|13|🇸🇬 新加坡3|@ripaojiedian #2'
+  name: 5,11,22,24,27,37|🇸SG
   password: 0HBGSZP1UCOGQDZW
   port: 16002
   server: 183.61.177.234
+  skip-cert-verify: true
   tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: '5,22,24,30|0|🇸🇬5 |  2.8MB/s #1'
-  password: amazonskr05
-  port: 443
-  server: 13.250.99.8
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -87,7 +87,7 @@ proxies:
     path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,11,22,24,27,30|13|🇬 |@ripaojiedian
+  name: 5,11,22,24,27|13|🇬 |@ripaojiedian
   password: 2XZNFVL28OOLLELR
   port: 16005
   server: 8tv68qhq.slashdevslashnetslashtun.net
@@ -707,20 +707,11 @@ proxies:
   port: 443
   server: 13.213.9.167
   type: ss
-- cipher: aes-256-cfb
-  name: '22,24,30|0|🇸🇬4 |  2.5MB/s #1'
-  password: amazonskr05
-  port: 443
-  server: 18.141.24.255
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 22,37|未知58 475.1KB/s
+- cipher: chacha20-ietf-poly1305
+  name: 22|🇸🇬SG-64.176.85.73-0563
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 64.176.85.73
-  skip-cert-verify: true
-  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -780,15 +771,12 @@ proxies:
   port: 443
   server: 13.229.128.74
   type: ss
-- alterId: 0
-  name: 22,37|SG
+- name: 22|🇬SG-38.180.249.177-1363
   password: installshield
   port: 8443
   server: 38.180.249.177
-  skip-cert-verify: true
-  tls: true
+  skip-cert-verify: false
   type: trojan
-  udp: true
 - cipher: aes-256-cfb
   name: 22|🇬SG-47.129.38.168-1365
   password: amazonskr05
@@ -1316,13 +1304,6 @@ proxies:
   ws-opts:
     path: /anti13.zingfast.vn
 - cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 22,24,30|亚 V2CROSS.COM
-  password: 3FB23A19-9424-40C7-9139-3540228283FA
-  port: 40005
-  server: sgp.fastsoonlink.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: 22|🇸SG-156.244.9.92-5874
   password: f8f7aCzcPKbsF8p3
   port: 990
@@ -1335,14 +1316,6 @@ proxies:
   server: 13.250.47.75
   type: ss
 - cipher: aes-256-cfb
-  country: 🇸🇬SG
-  delay: 255
-  name: 22,24,30|0|🇬3 |  6.7MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.136.211.144
-  type: ss
-- cipher: aes-256-cfb
   name: 22|🇸🇬SG-13.229.199.138-5973
   password: amazonskr05
   port: 443
@@ -1353,12 +1326,6 @@ proxies:
   password: asd123456
   port: 8388
   server: 202.162.109.169
-  type: ss
-- cipher: aes-256-cfb
-  name: '22,24,30|0|🇸🇬2 |  4.9MB/s #1'
-  password: amazonskr05
-  port: 443
-  server: 13.229.229.102
   type: ss
 - cipher: aes-256-cfb
   name: 22|🇸🇬SG-54.254.191.196-5976
@@ -1887,12 +1854,6 @@ proxies:
     headers:
       host: v2-2.godlight.xyz
     path: /54f634fs
-- cipher: aes-256-cfb
-  name: 24,30|0|1 |  10.9MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.179.0.37
-  type: ss
 - name: 24|🇸🇬 _新加坡
   password: '!!str 3774827088566296576'
   port: 443
@@ -1916,10 +1877,10 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇸🇬 SG-217.142.191.1...
+  name: 36|🔒 VM-WS-NA 🇸🇬 SG-140.245.34.13...
   network: ws
   port: '23452'
-  server: 217.142.191.10
+  server: 140.245.34.135
   tls: false
   type: vmess
   uuid: a8c12d0d-76f9-4b78-a030-3776944a01e8

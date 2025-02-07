@@ -1205,24 +1205,30 @@ proxies:
   skip-cert-verify: false
   sni: z141.hongkongnode.top
   type: trojan
-- client-fingerprint: chrome
-  name: 22,24,27,30,40|speednode_0011
+- alterId: 0
+  client-fingerprint: chrome
+  name: 22,24,27,37,40|speednode_0011
   password: 7cd29891-fe78-4f8f-8844-abb31b9d9a75
   port: 18147
   server: nb_ae7a7.kaiqsz.com
   skip-cert-verify: false
   sni: mm2.redapricotcloud.com
+  tls: true
   type: trojan
+  udp: true
 - alpn:
   - http%2F1.1
-  name: 22,24,27,30,41|d*********g.com_3
+  alterId: 0
+  name: 22,24,27,37,41|d*********g.com_3
   network: tcp
   password: fuck
   port: 443
   server: 42.236.73.72
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.zitian.cn
+  tls: true
   type: trojan
+  udp: true
   ws-opts:
     headers:
       Host: www.zitian.cn
@@ -1233,14 +1239,11 @@ proxies:
   skip-cert-verify: false
   sni: gmarket.phantasy.life
   type: trojan
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 22,37|🇭🇰HK香港2
+- cipher: aes-128-gcm
+  name: 22|🇨🇳CN-183.236.51.6-1359
   password: b2e5c36c-257c-4a11-ae20-4fb99d44606a
   port: 12001
   server: mdss-hk.04z3susick.download
-  skip-cert-verify: true
-  tls: true
   type: ss
 - name: 22|🇨🇳CN-183.236.51.50-1361
   password: 2b39bbdd-a565-4f8e-b6b6-6b034b2076f4
@@ -1249,29 +1252,12 @@ proxies:
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 22,37|JP
+- cipher: aes-128-gcm
+  name: 22|🇳CN-183.236.51.6-1362
   password: b2e5c36c-257c-4a11-ae20-4fb99d44606a
   port: 12012
   server: mdss-jp.04z3susick.download
-  skip-cert-verify: true
-  tls: true
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 22,27|0|🇷1 |  2.7MB/s
-  network: ws
-  port: 40396
-  server: sd3.forlive.live
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 81e16736-5ede-4050-bc4c-3062a63c926d
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
 - name: 22|🇨🇳CN-120.236.197.205-1467
   password: ba4fedf8c217c146
   port: 3389
@@ -2838,71 +2824,53 @@ proxies:
   port: 46595
   server: bj.xissyun.com
   type: ss
-- client-fingerprint: chrome
-  name: 30|🇨🇳 广东省 移动 2
-  password: 89f84d5e-4170-4c64-bc78-ac99953b103a
-  port: 50033
-  server: ae5f1a2a-fb75-4800.gttysd.com
-  sni: ae5f1a2a-fb75-4800.gttysd.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 30|🇨🇳 广东省 移动 3
-  password: 89f84d5e-4170-4c64-bc78-ac99953b103a
-  port: 50017
-  server: ae5f1a2a-fb75-4800.gttysd.com
-  sni: ae5f1a2a-fb75-4800.gttysd.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 30|🇨🇳 广东省 移动 4
-  password: 89f84d5e-4170-4c64-bc78-ac99953b103a
-  port: 50046
-  server: gnpid1111.ndycom.com
-  sni: gnpid1111.ndycom.com
-  type: trojan
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇨🇳 广东省 移动 5
-  port: 50027
-  server: 50027.baidu-cdn.top
-  tls: false
-  type: vmess
-  uuid: b222084f-7993-4518-a940-b1fdac146995
-- client-fingerprint: chrome
-  name: 30|🇳 广东省 移动 6
-  password: 89f84d5e-4170-4c64-bc78-ac99953b103a
-  port: 50042
-  server: gnpid1111.ndycom.com
-  sni: gnpid1111.ndycom.com
-  type: trojan
-- alterId: 0
-  cipher: none
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  name: 36,37|未知13
   network: tcp
-  port: '59003'
-  server: 183.236.51.36
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-47.92.152.16...
-  network: tcp
-  port: '50002'
+  port: 50002
   server: 47.92.152.169
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 36,37|未知41
-  network: tcp
-  port: 50004
-  server: 112.132.212.19
   servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: none
+  name: 36,37|未知49
+  network: tcp
+  port: 59003
+  server: 183.236.51.36
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
+  network: tcp
+  port: '50004'
+  server: 112.132.212.19
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  name: 37|🇨🇳广东2
+  password: 89f84d5e-4170-4c64-bc78-ac99953b103a
+  port: 50010
+  server: gnpid1111.ndycom.com
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇨🇳广东3
+  password: 89f84d5e-4170-4c64-bc78-ac99953b103a
+  port: 50043
+  server: ae5f1a2a-fb75-4800.gttysd.com
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
