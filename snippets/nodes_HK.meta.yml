@@ -74,7 +74,7 @@ proxies:
     path: /
 - alterId: 32
   cipher: auto
-  name: 4,22|🇭🇰HK-182.16.1.194-9588
+  name: 4,22|🇭🇰HK-182.16.1.194-9462
   network: ws
   port: 80
   server: hrgdvpn.flycdnedc55.vip
@@ -108,15 +108,30 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: aes-256-gcm
+  cipher: auto
+  name: '5,11,24,27|14|香港2|@ripaojiedian #1'
+  network: tcp
+  port: '32450'
+  server: 38.147.188.160
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1fa824bb-a682-4827-821f-9adc444a2a0f
+- cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,11,22,24,27,37|🇰HK
+  name: '5,11,22,24,27|13|🇭🇰 香港6|@ripaojiedian #1'
+  password: hGkQ6915tD
+  port: 16088
+  server: 120.232.81.50
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: '5,11,22,24,27|13|🇭🇰 香港5|@ripaojiedian #1'
   password: KPOQG1L4BS2PKML1
   port: 15004
   server: ti3hyra4.slashdevslashnetslashtun.net
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
@@ -128,22 +143,21 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 5,11,24|🇭🇰 香港2|@ripaojiedian
+  name: '5,11,24,27|14|香港|@ripaojiedian #1'
   network: tcp
-  port: '12926'
-  server: 38.147.189.163
+  port: '18423'
+  server: 38.147.188.94
   servername: ''
   tls: false
   type: vmess
-  uuid: e2103b64-fdfd-4efb-8330-c1c1ff0efdea
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '5,11,22,24,27|13|🇭🇰 香港6|@ripaojiedian #1'
-  password: hGkQ6915tD
-  port: 16088
-  server: 120.232.81.50
-  tfo: false
-  type: ss
+  uuid: d74f7655-eb59-4b48-9f8f-98a9c64a9e10
+- name: 5|香港 02（HKT）
+  password: 69dd9741-0ae4-4bd2-bb32-46ca96d05128
+  port: 6001
+  server: tj-hk-2.aikunapp.com
+  skip-cert-verify: true
+  sni: pWUSEWyp3TciJooq.apple.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|香港HY-优化2
@@ -157,19 +171,33 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- name: 5|香港 01（HKT）
+  password: 69dd9741-0ae4-4bd2-bb32-46ca96d05128
+  port: 6001
+  server: tj-hk-1.aikunapp.com
+  skip-cert-verify: true
+  sni: XNYD8SDx1PCcBi1f.apple.com
+  type: trojan
+- alterId: 0
+  cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 5,11,22,24,27,37|🇭🇰HK
+  password: OJCMTKCU4OMRTZB0
+  port: 15007
+  server: qh62onjn.slashdevslashnetslashtun.net
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 5|香港HY-优化
-  network: ws
-  port: '16632'
-  server: yes.mojcn.com
+  name: 5|HK-香港 TCP 6666
+  network: tcp
+  port: '6666'
+  server: hkt.072659.xyz
   tls: false
   type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
+  uuid: f435af7b-d36e-4e8d-9c0f-3017bb71e2c9
 - alterId: 0
   cipher: auto
   name: 5|香港WAP-优化2
@@ -183,13 +211,38 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- name: 5,22,24|🇭🇰 香港|@ripaojiedian
-  network: tcp
-  password: 3aec9607-0136-4ca1-90c2-553a0322b25e
-  port: 40383
-  server: zfa01.333210.xyz
+- alterId: 0
+  cipher: auto
+  name: 5|HK-香港 WS 8888
+  network: ws
+  port: '8888'
+  server: hkt.072659.xyz
+  tls: false
+  type: vmess
+  uuid: f435af7b-d36e-4e8d-9c0f-3017bb71e2c9
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 5|香港HY-优化
+  network: ws
+  port: '16632'
+  server: yes.mojcn.com
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
+- name: 5|香港 新协议
+  password: 69dd9741-0ae4-4bd2-bb32-46ca96d05128
+  port: 6001
+  server: aws-hkhk.aikunapp.com
   skip-cert-verify: true
-  sni: cdn.alibaba.com
+  sni: bootcdn.xuexi.cn
   type: trojan
 - alterId: 0
   cipher: auto
@@ -204,26 +257,17 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- name: 5|15|🇭🇰 香港2|@ripaojiedian
-  password: 3aec9607-0136-4ca1-90c2-553a0322b25e
-  port: 12926
-  server: 38.147.189.163
-  skip-cert-verify: false
-  sni: cdn.alibaba.com
-  type: trojan
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '11|15|🇭🇰 香港2|@ripaojiedian #1'
-  password: 3aec9607-0136-4ca1-90c2-553a0322b25e
-  port: 12926
-  server: 38.147.189.163
+  name: '11,27|13|🇭🇰 香港2|@ripaojiedian #1'
+  port: 32450
+  server: 38.147.188.160
   skip-cert-verify: false
-  sni: cdn.alibaba.com
   tfo: false
   tls: false
   type: vmess
-  uuid: e2103b64-fdfd-4efb-8330-c1c1ff0efdea
+  uuid: 1fa824bb-a682-4827-821f-9adc444a2a0f
 - alterId: 0
   cipher: auto
   name: 18|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_1
@@ -762,30 +806,29 @@ proxies:
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
 - cipher: chacha20-ietf-poly1305
-  name: 19,22|🇰HK-216.250.97.118-6232
+  name: 19,22|🇰HK-216.250.97.118-6425
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: hong-kong.keenvpn.me
   type: ss
 - cipher: chacha20-ietf
-  name: 19,22|🇰HK-103.149.183.61-1478
+  name: 19,22|🇰HK-103.149.183.61-6424
   password: asd123456
   port: 8388
   server: 103.149.183.61
   type: ss
 - cipher: aes-256-cfb
-  name: 19,20,21,22|🇰HK-112.213.102.228-1479
+  name: 19,22|HK-112.213.102.228-0545
   password: qwerREWQ@@
   port: 4231
   server: 112.213.102.228
   type: ss
 - alterId: 64
   cipher: auto
-  name: 22|HK-43.154.208.92-0006
+  name: 22|🇰HK-43.154.208.92-0089
   network: ws
   port: 53613
   server: 43.154.208.92
-  servername: hk10.linkeden.co
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -794,22 +837,30 @@ proxies:
     headers:
       Host: hk10.linkeden.co
     path: /hk10/getData
-- name: 22|🇰HK-47.76.72.116-0401
+- alterId: 0
+  cipher: auto
+  name: 22|🇭🇰HK-207.46.147.148-0125
+  network: ws
+  port: 443
+  server: fullaccesstohongkongnet.azurewebsites.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
+  ws-opts:
+    headers:
+      Host: fullaccesstohongkongnet.azurewebsites.net
+    path: /ws
+- name: 22|🇰HK-47.76.72.116-0350
   password: a3ca0380-8a17-403a-a5b3-a9f6e59be193
   port: 443
   server: claw-ali-hkg-1ge.china-next-generation-any-path-smart-route-global.2h.ma
   skip-cert-verify: false
   sni: claw-ali-hkg-1ge.china-next-generation-any-path-smart-route-global.2h.ma
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 22|HK-141.98.234.93-0606
-  password: WfmxKX2FBJRU0Ie9VLIYDL
-  port: 20012
-  server: 141.98.234.93
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 22|🇰HK-20.239.145.115-0788
+  name: 22|🇭🇰HK-20.239.145.115-0737
   network: ws
   port: 443
   server: 20.239.145.115
@@ -821,7 +872,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 22|🇰HK-165.154.244.100-0820
+  name: 22|🇰HK-165.154.244.100-0769
   network: ws
   port: 443
   server: 165.154.244.100
@@ -833,7 +884,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 22|🇰HK-104.208.96.44-1163
+  name: 22|🇰HK-104.208.96.44-1124
   network: ws
   port: 80
   server: 104.208.96.44
@@ -843,66 +894,36 @@ proxies:
   uuid: 80e94af6-e42a-4dbc-8f4b-c5f99bf97d3d
   ws-opts:
     path: /zh-cn/download
-- cipher: aes-128-gcm
-  name: 22|🇰HK-185.14.47.239-1586
-  password: f05b3273-80bc-4161-a606-5830e84075d6
-  port: 29204
-  server: sssssssss1.f1c.lol
+- cipher: chacha20-ietf-poly1305
+  name: 22|HK-141.98.234.93-1445
+  password: WfmxKX2FBJRU0Ie9VLIYDL
+  port: 20012
+  server: 141.98.234.93
   type: ss
-- name: 22|🇰HK-107.149.254.26-1633
-  password: 43af8cd1-b378-490e-bccf-f04628bc8db4
-  port: 158
-  server: 107.149.254.26
+- name: 22|🇭🇰HK-91.199.84.112-1621
+  password: 3aec9607-0136-4ca1-90c2-553a0322b25e
+  port: 40383
+  server: zfa01.333210.xyz
   skip-cert-verify: false
+  sni: cdn.alibaba.com
   type: trojan
-- name: 22,24|🇬🇧 _英国
+- alterId: 0
+  name: 22,24,37|🇬🇧GB英国2
   password: Aimer
   port: 8443
   server: 83.229.123.36
-  skip-cert-verify: false
-  sni: ngepo.ambercc.filegear-sg.me
-  type: trojan
-- alterId: 0
-  name: 22,37|🇨🇳CN中国2
-  password: Aimer
-  port: 58443
-  server: 58.176.10.111
   skip-cert-verify: true
   sni: ngepo.ambercc.filegear-sg.me
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  name: 22,37|🇺🇸US美国3
-  password: Aimer
-  port: 52001
-  server: 45.87.103.154
-  skip-cert-verify: true
-  sni: ngepo.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- name: 22|🇰HK-58.176.95.46-1709
-  password: Aimer
-  port: 443
-  server: 58.176.95.46
-  skip-cert-verify: false
-  sni: ngepo.ambercc.filegear-sg.me
-  type: trojan
-- name: 22|🇭🇰HK-103.30.76.210-1714
-  password: Aimer
-  port: 444
-  server: 103.30.76.210
-  skip-cert-verify: false
-  sni: ngepo.ambercc.filegear-sg.me
-  type: trojan
 - alterId: 0
   cipher: auto
   http-opts:
     method: GET
     path:
     - /
-  name: 22|🇰HK-8.210.131.2-2171
+  name: 22|🇰HK-8.210.131.2-2100
   network: http
   port: 31357
   server: 8.210.131.2
@@ -916,7 +937,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-47.242.69.124-2179
+  name: 22|🇭🇰HK-47.242.69.124-2108
   network: http
   port: 54620
   server: 47.242.69.124
@@ -930,7 +951,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇰HK-47.243.230.222-2199
+  name: 22|🇰HK-47.243.230.222-2128
   network: http
   port: 35668
   server: 47.243.230.222
@@ -944,7 +965,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇰HK-47.243.187.171-2222
+  name: 22|🇰HK-47.243.187.171-2151
   network: http
   port: 60808
   server: 47.243.187.171
@@ -958,7 +979,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-47.243.185.128-2229
+  name: 22|🇭🇰HK-47.243.185.128-2158
   network: http
   port: 47365
   server: 47.243.185.128
@@ -972,7 +993,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-8.210.15.231-2323
+  name: 22|🇭🇰HK-8.210.15.231-2252
   network: http
   port: 41083
   server: 8.210.15.231
@@ -987,7 +1008,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇰HK-47.242.26.30-2333
+  name: 22|🇰HK-47.242.26.30-2262
   network: http
   port: 28045
   server: 47.242.26.30
@@ -997,26 +1018,11 @@ proxies:
   uuid: bb73d6fe-9700-4607-8dc1-eb9f15253e9d
 - alterId: 0
   cipher: auto
-  name: 22|🇰HK-207.46.147.148-2365
-  network: ws
-  port: 443
-  server: fullaccesstohongkongnet.azurewebsites.net
-  servername: fullaccesstohongkongnet.azurewebsites.net
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
-  ws-opts:
-    headers:
-      Host: fullaccesstohongkongnet.azurewebsites.net
-    path: /ws
-- alterId: 0
-  cipher: auto
   http-opts:
     method: GET
     path:
     - /
-  name: 22|🇰HK-47.242.65.80-2380
+  name: 22|🇰HK-47.242.65.80-2309
   network: http
   port: 62307
   server: 47.242.65.80
@@ -1031,7 +1037,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-8.210.236.45-2387
+  name: 22|🇭🇰HK-8.210.236.45-2316
   network: http
   port: 61228
   server: 8.210.236.45
@@ -1040,13 +1046,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 7e0ee5c7-46ff-42f8-ab7c-06d8227da454
-- name: 22|🇰HK-103.135.103.229-2398
+- name: 22|🇰HK-103.135.103.229-2327
   password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
   port: 443
   server: 103.135.103.229
   skip-cert-verify: false
   type: trojan
-- name: 22|🇭🇰HK-1.64.14.97-2399
+- name: 22|🇭🇰HK-1.64.14.97-2328
   password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
   port: 443
   server: kaizen-hk-8.mielink-dns2.com
@@ -1059,7 +1065,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-47.242.1.160-2415
+  name: 22|🇭🇰HK-47.242.1.160-2344
   network: http
   port: 36298
   server: 47.242.1.160
@@ -1074,7 +1080,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-8.210.166.114-2418
+  name: 22|🇭🇰HK-8.210.166.114-2347
   network: http
   port: 48236
   server: 8.210.166.114
@@ -1083,7 +1089,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 9a3ab916-0662-45ae-8844-8efa29365f84
-- name: 22|🇰HK-43.154.172.79-2462
+- name: 22|🇰HK-43.154.172.79-2391
   password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27
   port: 10102
   server: 43.154.172.79
@@ -1095,7 +1101,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-8.210.248.210-2472
+  name: 22|🇭🇰HK-8.210.248.210-2401
   network: http
   port: 54570
   server: 8.210.248.210
@@ -1109,7 +1115,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-47.242.21.177-2474
+  name: 22|🇭🇰HK-47.242.21.177-2403
   network: http
   port: 51007
   server: 47.242.21.177
@@ -1120,7 +1126,7 @@ proxies:
   uuid: 318b3dd1-09cf-4980-81ed-6cf689e5825a
 - alterId: 0
   cipher: auto
-  name: 22|🇰HK-202.64.124.252-2502
+  name: 22|🇰HK-202.64.124.252-2431
   network: ws
   port: 80
   server: 202.64.124.252
@@ -1130,20 +1136,20 @@ proxies:
   uuid: 58d4ad2b-82d5-4847-b88c-889de4d38c19
   ws-opts:
     path: /
-- name: 22|🇰HK-103.152.221.186-2509
+- name: 22|🇰HK-103.152.221.186-2438
   password: giosZwLNqAUWxczWJDYqXQDgNLMYwbKI
   port: 889
   server: ahgjs-4-tr-0.hkg-01.o-two.xyz
   skip-cert-verify: false
   sni: o-two.bond
   type: trojan
-- name: 22|🇭🇰HK-103.103.245.125-2522
+- name: 22|🇭🇰HK-103.103.245.125-2451
   password: a70b39d1-62ea-4d9e-b681-9c5408352234
   port: 50418
   server: 103.103.245.125
   skip-cert-verify: false
   type: trojan
-- name: 22|🇰HK-202.64.124.148-2624
+- name: 22|🇰HK-202.64.124.148-2556
   password: 7b4066ae-accc-11eb-a8bf-f23c91cfbbc9
   port: 443
   server: ssl.tcpbbr.net
@@ -1155,7 +1161,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇰HK-8.210.20.159-2683
+  name: 22|🇰HK-8.210.20.159-2615
   network: http
   port: 45751
   server: 8.210.20.159
@@ -1169,7 +1175,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇰HK-8.210.153.242-2689
+  name: 22|🇰HK-8.210.153.242-2621
   network: http
   port: 48577
   server: 8.210.153.242
@@ -1183,7 +1189,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-8.210.206.163-2691
+  name: 22|🇭🇰HK-8.210.206.163-2623
   network: http
   port: 45719
   server: 8.210.206.163
@@ -1197,7 +1203,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇰HK-47.242.52.13-2872
+  name: 22|🇰HK-47.242.52.13-2804
   network: http
   port: 31152
   server: 47.242.52.13
@@ -1211,7 +1217,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇰HK-8.210.48.219-2878
+  name: 22|🇰HK-8.210.48.219-2810
   network: http
   port: 26812
   server: 8.210.48.219
@@ -1225,7 +1231,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-47.242.95.19-2969
+  name: 22|🇭🇰HK-47.242.95.19-2901
   network: http
   port: 40988
   server: 47.242.95.19
@@ -1239,7 +1245,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-8.210.70.156-2976
+  name: 22|🇭🇰HK-8.210.70.156-2908
   network: http
   port: 54148
   server: 8.210.70.156
@@ -1248,78 +1254,78 @@ proxies:
   type: vmess
   uuid: 1346261e-3201-4932-bfba-df869ab48116
 - cipher: chacha20-ietf-poly1305
-  name: 22|🇰HK-148.66.56.99-3087
+  name: 22|🇰HK-148.66.56.99-3019
   password: G!yBwPWH3Vao
   port: 802
   server: 148.66.56.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 22|🇰HK-148.66.56.99-3092
+  name: 22|🇰HK-148.66.56.99-3024
   password: G!yBwPWH3Vao
   port: 800
   server: 148.66.56.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 22|🇭🇰HK-148.66.56.99-3102
+  name: 22|🇭🇰HK-148.66.56.99-3034
   password: G!yBwPWH3Vao
   port: 804
   server: 148.66.56.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 22|🇰HK-148.66.56.99-3116
+  name: 22|🇰HK-148.66.56.99-3048
   password: G!yBwPWH3Vao
   port: 807
   server: 148.66.56.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 22|🇭🇰HK-148.66.56.99-3124
+  name: 22|🇭🇰HK-148.66.56.99-3056
   password: G!yBwPWH3Vao
   port: 806
   server: 148.66.56.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 22|🇭🇰HK-148.66.56.99-3129
+  name: 22|🇭🇰HK-148.66.56.99-3061
   password: G!yBwPWH3Vao
   port: 808
   server: 148.66.56.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 22|🇭🇰HK-148.66.56.99-3147
+  name: 22|🇭🇰HK-148.66.56.99-3079
   password: G!yBwPWH3Vao
   port: 805
   server: 148.66.56.99
   type: ss
-- name: 22|🇰HK-103.20.223.168-3162
+- name: 22|🇰HK-103.20.223.168-3094
   password: 58236154-f8ba-42cd-91b0-88cff4634702
   port: 50208
   server: cn-hk-30.fnhffffe4.cc
   skip-cert-verify: false
   type: trojan
-- name: 22|🇰HK-194.156.99.39-3183
+- name: 22|🇰HK-194.156.99.39-3115
   password: xxoo
   port: 443
   server: 194.156.99.39
   skip-cert-verify: false
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 22|🇭🇰HK-148.66.56.99-3231
+  name: 22|🇭🇰HK-148.66.56.99-3163
   password: G!yBwPWH3Vao
   port: 801
   server: 148.66.56.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 22|🇰HK-148.66.56.99-3251
+  name: 22|🇰HK-148.66.56.99-3183
   password: G!yBwPWH3Vao
   port: 810
   server: 148.66.56.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 22|🇰HK-148.66.56.99-3280
+  name: 22|🇰HK-148.66.56.99-3212
   password: G!yBwPWH3Vao
   port: 803
   server: 148.66.56.99
   type: ss
-- name: 22|🇰HK-45.11.104.94-3293
+- name: 22|🇰HK-45.11.104.94-3225
   password: d4e41ff772c7fd45
   port: 3389
   server: 45.11.104.94
@@ -1328,7 +1334,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 22|🇭🇰HK-185.14.47.240-3353
+  name: 22|🇭🇰HK-185.14.47.240-3285
   network: ws
   port: 2086
   server: 185.14.47.240
@@ -1340,7 +1346,7 @@ proxies:
     path: /aries
 - alterId: 0
   cipher: auto
-  name: 22|🇰HK-188.116.22.171-3373
+  name: 22|🇰HK-188.116.22.171-3305
   network: ws
   port: 443
   server: 188.116.22.171
@@ -1351,32 +1357,32 @@ proxies:
   ws-opts:
     path: /vmess
 - cipher: chacha20-ietf-poly1305
-  name: 22|🇰HK-148.66.56.99-3381
+  name: 22|🇰HK-148.66.56.99-3313
   password: G!yBwPWH3Vao
   port: 812
   server: 148.66.56.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 22|🇰HK-148.66.56.99-3382
+  name: 22|🇰HK-148.66.56.99-3314
   password: G!yBwPWH3Vao
   port: 811
   server: 148.66.56.99
   type: ss
-- name: 22|🇰HK-210.0.158.220-3445
+- name: 22|🇰HK-210.0.158.220-3377
   password: 750a29bf-0a40-437f-b120-38de74ae7eaf
   port: 28443
   server: 210.0.158.220
   skip-cert-verify: false
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 22|🇰HK-148.66.56.99-3561
+  name: 22|🇰HK-148.66.56.99-3493
   password: G!yBwPWH3Vao
   port: 809
   server: 148.66.56.99
   type: ss
 - alterId: 0
   cipher: auto
-  name: 22|🇰HK-188.116.22.171-4379
+  name: 22|🇰HK-188.116.22.171-4311
   network: ws
   port: 80
   server: 188.116.22.171
@@ -1388,7 +1394,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 22|🇰HK-219.76.152.189-4451
+  name: 22|🇰HK-219.76.152.189-4383
   network: ws
   port: 8300
   server: hk3.grpc.stream
@@ -1401,14 +1407,14 @@ proxies:
       Host: hk3.grpc.stream
     path: /event
 - cipher: chacha20-ietf-poly1305
-  name: 22|🇭🇰HK-148.66.56.98-4672
+  name: 22|🇭🇰HK-148.66.56.98-4604
   password: G!yBwPWH3Vao
   port: 805
   server: 148.66.56.98
   type: ss
 - alterId: 0
   cipher: auto
-  name: 22|🇰HK-104.208.117.86-4775
+  name: 22|🇰HK-104.208.117.86-4707
   network: ws
   port: 443
   server: univstar-104-208-117-86.nip.io
@@ -1422,7 +1428,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 22|🇰HK-18.167.121.42-4821
+  name: 22|🇰HK-18.167.121.42-4753
   network: ws
   port: 35781
   server: 18.167.121.42
@@ -1434,7 +1440,7 @@ proxies:
     path: /hk.wumaojichang.ml
 - alterId: 0
   cipher: auto
-  name: 22|🇰HK-20.239.179.251-5008
+  name: 22|🇰HK-20.239.179.251-4940
   network: ws
   port: 50044
   server: 20.239.179.251
@@ -1444,14 +1450,14 @@ proxies:
   uuid: a12e496e-f89a-434a-8011-108846f0e412
   ws-opts:
     path: /
-- name: 22|🇭🇰HK-20.187.85.198-5188
+- name: 22|🇭🇰HK-20.187.85.198-5120
   password: b26e31e5-eac1-45b0-9069-83830bd69521
   port: 443
   server: 20.187.85.198
   skip-cert-verify: false
   sni: hkt.iamnotagoodman.com
   type: trojan
-- name: 22|🇰HK-104.208.100.101-5189
+- name: 22|🇰HK-104.208.100.101-5121
   password: ceaea123-1b4b-469b-8358-bcd5f5529305
   port: 443
   server: 104.208.100.101
@@ -1460,7 +1466,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 22|🇭🇰HK-20.239.179.251-5389
+  name: 22|🇭🇰HK-20.239.179.251-5321
   network: ws
   port: 50045
   server: 20.239.179.251
@@ -1471,13 +1477,13 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 22|HK-203.23.128.33-5946
+  name: 22|🇭HK-203.23.128.33-5854
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
 - cipher: aes-256-cfb
-  name: 22|HK-150.107.46.21-6201
+  name: 22|HK-150.107.46.21-6111
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: iFqnzSscN
@@ -1487,41 +1493,49 @@ proxies:
   server: 150.107.46.21
   type: ssr
 - cipher: chacha20-ietf
+  name: 22|🇰HK-194.41.59.80-6180
+  password: asd123456
+  port: 8388
+  server: 194.41.59.80
+  type: ss
+- cipher: chacha20-ietf
   name: 22,40|speednode_0018
   password: asd123456
   port: 8388
   server: 154.197.26.237
   type: ss
-- cipher: chacha20-ietf
-  name: 22|🇰HK-194.41.59.80-6234
-  password: asd123456
-  port: 8388
-  server: 194.41.59.80
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 22|🇰HK-18.167.116.160-6327
+  name: 22|🇰HK-18.167.96.164-6432
   network: ws
-  port: 22356
-  server: 0000000000000000000000000071.cgroup-node-for-bigairport.sbs
+  port: 42360
+  server: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
   skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
   ws-opts:
     headers:
-      Host: 0000000000000000000000000071.cgroup-node-for-bigairport.sbs
+      Host: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
     path: /
-- name: 22|🇰HK-91.199.84.112-6459
-  password: 3aec9607-0136-4ca1-90c2-553a0322b25e
-  port: 40383
-  server: 91.199.84.112
-  skip-cert-verify: false
-  sni: cdn.alibaba.com
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 22|🇰HK-8.218.140.111-7221
+  name: 22|🇭🇰HK-18.163.102.244-6453
+  network: ws
+  port: 443
+  server: tls.06.node-for-bigairport.win
+  servername: tls.06.node-for-bigairport.win
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
+  ws-opts:
+    headers:
+      Host: tls.06.node-for-bigairport.win
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 22|🇰HK-8.218.140.111-7095
   network: ws
   port: 34193
   server: 8.218.140.111
@@ -1532,42 +1546,42 @@ proxies:
   uuid: 544bf832-7df2-4ce1-aafc-9258a28b7cfb
   ws-opts:
     path: /hk
-- name: 22|🇰HK-43.198.12.229-8505
+- name: 22|🇰HK-43.198.12.229-8379
   password: ae7cc604-d970-4200-9a9b-eb45087b4fc1
   port: 28443
   server: 43.198.12.229
   skip-cert-verify: false
   sni: mzy.hruqoaw.cn
   type: trojan
-- name: 22|🇰HK-119.247.119.212-8511
+- name: 22|🇰HK-119.247.119.212-8385
   password: bb5b1337-fa9e-4e00-b8c6-1110e626171d
   port: 443
   server: 119.247.119.212
   skip-cert-verify: false
   sni: sg-01.tiktokcdn.top
   type: trojan
-- name: 22|🇭🇰HK-219.76.13.181-8512
+- name: 22|🇭🇰HK-219.76.13.181-8386
   password: SyOxpKxC8u5jgNa3DCZ34y3D9CRenFcaABpYATEeqI2RSaXD76zS8YF0Owl3lZ
   port: 443
   server: 219.76.13.181
   skip-cert-verify: false
   sni: arbettp.freetrade.link
   type: trojan
-- name: 22|🇭🇰HK-219.76.13.180-8513
+- name: 22|🇭🇰HK-219.76.13.180-8387
   password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0
   port: 443
   server: 219.76.13.180
   skip-cert-verify: false
   sni: stutter.freetrade.link
   type: trojan
-- name: 22|🇭🇰HK-47.52.101.237-8515
+- name: 22|🇭🇰HK-47.52.101.237-8389
   password: ZRYSly2IRuFlgpZCaep3Ey3DDXqTDczO04aeC8F36OjaYSCABnA573wN8xxK9S
   port: 443
   server: 47.52.101.237
   skip-cert-verify: false
   sni: httah.freetrade.link
   type: trojan
-- name: 22|🇭🇰HK-219.76.13.175-8518
+- name: 22|🇭🇰HK-219.76.13.175-8392
   password: ZFYOpKqD8uEClpZ2ya83cyCDalwSOYz3F3eCxnBD4eSXNSR5R0aAATj7I3x69g
   port: 443
   server: 219.76.13.175
@@ -1580,7 +1594,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-8.218.83.148-8526
+  name: 22|🇭🇰HK-8.218.83.148-8400
   network: http
   port: 63239
   server: 8.218.83.148
@@ -1595,7 +1609,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇰HK-8.210.234.189-8540
+  name: 22|🇰HK-8.210.234.189-8414
   network: http
   port: 46644
   server: 8.210.234.189
@@ -1610,7 +1624,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇰HK-8.218.73.227-8541
+  name: 22|🇰HK-8.218.73.227-8415
   network: http
   port: 58641
   server: 8.218.73.227
@@ -1625,7 +1639,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-8.218.80.207-8542
+  name: 22|🇭🇰HK-8.218.80.207-8416
   network: http
   port: 58793
   server: 8.218.80.207
@@ -1640,7 +1654,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-8.218.86.250-8543
+  name: 22|🇭🇰HK-8.218.86.250-8417
   network: http
   port: 22362
   server: 8.218.86.250
@@ -1655,7 +1669,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-8.210.34.212-8544
+  name: 22|🇭🇰HK-8.210.34.212-8418
   network: http
   port: 51578
   server: 8.210.34.212
@@ -1670,7 +1684,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-8.210.203.189-8545
+  name: 22|🇭🇰HK-8.210.203.189-8419
   network: http
   port: 37309
   server: 8.210.203.189
@@ -1685,7 +1699,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-8.218.86.226-8546
+  name: 22|🇭🇰HK-8.218.86.226-8420
   network: http
   port: 51616
   server: 8.218.86.226
@@ -1700,7 +1714,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇰HK-8.218.63.184-8549
+  name: 22|🇰HK-8.218.63.184-8423
   network: http
   port: 20113
   server: 8.218.63.184
@@ -1715,7 +1729,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-8.218.85.43-8550
+  name: 22|🇭🇰HK-8.218.85.43-8424
   network: http
   port: 43645
   server: 8.218.85.43
@@ -1730,7 +1744,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-47.242.56.3-8552
+  name: 22|🇭🇰HK-47.242.56.3-8426
   network: http
   port: 37064
   server: 47.242.56.3
@@ -1745,7 +1759,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-47.242.205.255-8555
+  name: 22|🇭🇰HK-47.242.205.255-8429
   network: http
   port: 49935
   server: 47.242.205.255
@@ -1756,7 +1770,7 @@ proxies:
   uuid: 3ffddc7c-80a3-4677-ab9e-30da4190ec6a
 - alterId: 0
   cipher: auto
-  name: 22|🇭🇰HK-47.243.62.222-8557
+  name: 22|🇭🇰HK-47.243.62.222-8431
   network: ws
   port: 443
   server: 47.243.62.222
@@ -1773,7 +1787,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-47.242.61.125-8559
+  name: 22|🇭🇰HK-47.242.61.125-8433
   network: http
   port: 51784
   server: 47.242.61.125
@@ -1788,7 +1802,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-47.242.243.218-8560
+  name: 22|🇭🇰HK-47.242.243.218-8434
   network: http
   port: 48471
   server: 47.242.243.218
@@ -1803,7 +1817,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇭🇰HK-47.243.36.34-8570
+  name: 22|🇭🇰HK-47.243.36.34-8444
   network: http
   port: 55986
   server: 47.243.36.34
@@ -1812,7 +1826,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 87ed289f-cae3-49b4-bbe3-23da298c0e81
-- name: 22|🇰HK-20.24.192.3-8573
+- name: 22|🇰HK-20.24.192.3-8447
   password: ca2345ba-46e7-3991-b1b7-45d18954caf1
   port: 20712
   server: 20.24.192.3
@@ -1821,7 +1835,7 @@ proxies:
   type: trojan
 - alterId: 1
   cipher: auto
-  name: 22|🇰HK-5.188.33.172-9009
+  name: 22|🇰HK-5.188.33.172-8884
   network: ws
   port: 443
   server: 5.188.33.172
@@ -1835,7 +1849,7 @@ proxies:
     path: linkvws
 - alterId: 64
   cipher: auto
-  name: 22|🇭🇰HK-27.124.10.146-9089
+  name: 22|🇭🇰HK-27.124.10.146-8964
   network: ws
   port: 30000
   server: 27.124.10.146
@@ -1849,7 +1863,7 @@ proxies:
     path: /path/011410073331
 - alterId: 0
   cipher: auto
-  name: 22|🇭🇰HK-8.217.99.103-9122
+  name: 22|🇭🇰HK-8.217.99.103-8997
   network: ws
   port: 443
   server: n1721189676.ryjml.cn
@@ -1864,7 +1878,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 22|🇭🇰HK-47.238.123.151-9124
+  name: 22|🇭🇰HK-47.238.123.151-8999
   network: ws
   port: 443
   server: n1721118448.ryjml.cn
@@ -1879,7 +1893,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 22|🇭🇰HK-182.16.1.194-9160
+  name: 22|🇭🇰HK-182.16.1.194-9035
   network: ws
   port: 80
   server: 182.16.1.194
@@ -1891,7 +1905,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 22|HK-118.107.244.83-9425
+  name: 22|HK-118.107.244.83-9300
   network: ws
   port: 443
   server: 118.107.244.83
@@ -1905,7 +1919,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 22|🇭🇰HK-18.166.64.40-9440
+  name: 22|🇭🇰HK-18.166.64.40-9315
   network: ws
   port: 80
   server: 18.166.64.40
@@ -1917,7 +1931,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 22|🇭🇰HK-18.162.49.79-9441
+  name: 22|🇭🇰HK-18.162.49.79-9316
   network: ws
   port: 80
   server: 18.162.49.79
@@ -1929,7 +1943,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 22|🇰HK-18.166.64.105-9447
+  name: 22|🇰HK-18.166.64.105-9322
   network: ws
   port: 80
   server: 18.166.64.105
@@ -1941,7 +1955,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 22|🇭🇰HK-18.162.111.219-9448
+  name: 22|🇭🇰HK-18.162.111.219-9323
   network: ws
   port: 80
   server: 18.162.111.219
@@ -1951,7 +1965,7 @@ proxies:
   uuid: 35a409bd-433b-478c-bd5f-4b59c3a88690
   ws-opts:
     path: /
-- name: 22|🇭🇰HK-103.234.53.23-9628
+- name: 22|🇭🇰HK-103.234.53.23-9502
   password: 73658d71-be45-4495-bc3e-e69d36ce73b5
   port: 50014
   server: cn-hk-51.fnhffffe4.cc
@@ -1960,7 +1974,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 22|HK-218.255.149.45-9930
+  name: 22|HK-218.255.149.45-9804
   network: ws
   port: 80
   server: 218.255.149.45
@@ -1970,7 +1984,7 @@ proxies:
   uuid: 4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d
   ws-opts:
     path: /
-- name: 22|HK-103.234.53.23-10621
+- name: 22|HK-103.234.53.23-10495
   password: 73658d71-be45-4495-bc3e-e69d36ce73b5
   port: 50014
   server: 103.234.53.23
@@ -1979,7 +1993,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 22|🇰HK-203.218.71.40-10654
+  name: 22|🇰HK-203.218.71.40-10528
   network: ws
   port: 80
   server: 081d1aad-rwcsg0-1n7jq.bn.p5pv.com
@@ -2012,142 +2026,50 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '27|13|🇭🇰 香港2|@ripaojiedian #1'
-  port: 32450
-  server: 38.147.188.160
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 1fa824bb-a682-4827-821f-9adc444a2a0f
-- cipher: aes-256-gcm
-  name: '27|13|🇭🇰 香港4|@ripaojiedian #1'
-  password: OJCMTKCU4OMRTZB0
-  port: 15007
-  server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 27|14|香港|@ripaojiedian
-  network: tcp
-  port: '18423'
-  server: 38.147.188.94
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d74f7655-eb59-4b48-9f8f-98a9c64a9e10
-- alterId: 0
-  cipher: auto
-  name: '27|14|香港2|@ripaojiedian #1'
-  network: tcp
-  port: '32450'
-  server: 38.147.188.160
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1fa824bb-a682-4827-821f-9adc444a2a0f
 - cipher: chacha20-ietf-poly1305
-  name: 28|公益路线2-香港HK 限速50MBPS-1B
-  password: 220fb354-b8c4-4143-aeb2-b001c956a20c
-  port: 43362
+  name: 28|线1-香港HK 50MBPS-1F
+  password: 92e83160-ebcb-4fbe-a177-393c1b2220ec
+  port: 49709
   server: jg647hf446ghvw.eucs.cn
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|香港01-1B
-  password: 10b9788e-eace-4eae-86a0-f4152bbc8a50
-  port: 34338
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|香港03-1A
-  password: c9c825c1-d2c7-4e59-9391-53ffa5b622f3
-  port: 20052
-  server: gy.666666222.shop
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 28|香港 IEPL专线NO1
-  port: 20013
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9b757190-c053-4117-a23c-552d16d56506
-- alterId: 0
-  cipher: auto
-  name: 28|港
-  port: 19901
-  server: xg.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e589d916-cfc6-4ff6-9397-a42e97d50df4
-- alterId: 0
-  cipher: auto
-  name: 36,37|HK 77.6KB/s
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
   network: tcp
-  port: 54675
+  port: '54675'
   server: 103.149.183.178
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
+  name: 36,37|HK2 347.9KB/s
   network: tcp
-  port: '27512'
+  port: 27512
   server: 103.149.183.178
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
 - alterId: 0
-  name: 37|HK2
-  network: tcp
-  password: 3817daf8-0f2b-412f-b87b-3efa585423e8
+  name: 37|HK
+  password: Aimer
   port: 443
-  server: 45.158.22.33
+  server: 219.76.13.180
   skip-cert-verify: true
-  sni: us2.vpn.ong
+  sni: ngepz.ambercc.filegear-sg.me
   tls: true
   type: trojan
   udp: true
 - alterId: 0
+  cipher: aes-256-gcm
   name: 37|HK3
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 156.255.90.175
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK4
-  network: tcp
-  password: Aimer
-  port: 1935
-  server: 43.154.34.74
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|HK5
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: 443
-  server: 216.250.97.118
+  password: E5OU5DTSKBZCOFIQ
+  port: 15012
+  server: 156.245.190.21
   skip-cert-verify: true
   tls: true
   type: ss
