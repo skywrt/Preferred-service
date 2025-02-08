@@ -39,13 +39,16 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /?ed=2048
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,11,22,24,27|13|🇯🇵 日本3|@ripaojiedian #1'
+  name: 5,11,22,24,27,37|🇵JP
   password: 8UB3I39KM113QT9N
   port: 18002
   server: 183.61.177.234
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -1008,14 +1011,17 @@ proxies:
   udp: true
 - alpn:
   - http%2F1.1
-  name: 22,24,27,41|d*********g.com_3
+  alterId: 0
+  name: 22,24,27,37,41|d*********g.com_3
   network: tcp
   password: fuck
   port: 443
   server: 42.236.73.72
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.zitian.cn
+  tls: true
   type: trojan
+  udp: true
   ws-opts:
     headers:
       Host: www.zitian.cn
@@ -1063,14 +1069,11 @@ proxies:
   port: 36175
   server: free.2weradf.xyz
   type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 22,37|未命名
+- cipher: aes-128-gcm
+  name: 22|🇳CN-183.236.51.6-1614
   password: 8d204ccb-ca6f-43f3-bdeb-310d9eee3701
   port: 12032
   server: mdss-tw.04z3susick.download
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 22|🇨🇳CN-120.232.217.88-1616
@@ -2598,31 +2601,32 @@ proxies:
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
-  network: tcp
-  port: '50004'
-  server: 112.132.212.19
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
-  network: tcp
-  port: '50002'
-  server: 112.132.215.12
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
   cipher: none
   name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
   network: tcp
   port: '59003'
   server: 183.236.51.36
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知8
+  network: tcp
+  port: 50002
+  server: 112.132.215.12
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
+  network: tcp
+  port: '50004'
+  server: 112.132.212.19
   servername: ''
   tls: false
   type: vmess
