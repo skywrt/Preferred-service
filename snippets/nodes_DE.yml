@@ -14,14 +14,23 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '5,11|2|🇩🇪_DE_德国 #1'
+  name: 5|德国 - 兰河畔林堡 - OVH SAS - 1
   network: ws
-  port: 45103
-  server: de-frankfurt-oracle-b26cf5.ip1.shop
+  port: '80'
+  server: 151.101.130.133
   tls: false
   type: vmess
-  uuid: 6d3404ef-27c6-48de-a83a-8ac6488760b4
-  ws-opts: {}
+  uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
+  ws-opts:
+    headers:
+      Host: ''
+    path: /racevpn?telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn
+- cipher: chacha20-ietf-poly1305
+  name: 5,8|🇨🇳CN-120.238.122.160-167_1@167
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20005
+  server: service.ouluyun9803.com
+  type: ss
 - alterId: 0
   cipher: auto
   name: 5|德国-优化
@@ -35,25 +44,16 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 5,8|🇨🇳CN-120.238.122.160-166_1@166
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 26667
-  server: service.ouluyun9803.com
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 5|德国 - Frankfurt Am Main - Hetzn...
+  name: '5,11|2|🇩🇪_DE_德国 #1'
   network: ws
-  port: '2083'
-  server: 91.107.166.68
+  port: 45103
+  server: de-frankfurt-oracle-b26cf5.ip1.shop
   tls: false
   type: vmess
-  uuid: 5016d935-aacb-4ac3-987c-a306afeed4c4
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  uuid: 6d3404ef-27c6-48de-a83a-8ac6488760b4
+  ws-opts: {}
 - name: 8|🇩🇪DE-52.58.179.46-180_1@180
   password: telegram-id-privatevpns
   port: 22222
@@ -71,7 +71,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- name: 13|🇩🇪_DE_德国_1
+- name: '13,20,21|🇩🇪DE-165.22.74.230-0464 #1'
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
   port: 443
@@ -85,6 +85,27 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
+- cipher: rc4-md5
+  name: 19|🇩🇪DE-193.108.119.230-0494
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-0547
+  password: c3NtHJ5ujV2tGDfj
+  port: 9084
+  server: 80.92.204.106
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,37|未知88 3.1MB/s
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   cipher: auto
   name: '20,21|🇩🇪DE-57.129.24.125-8444 #1'
@@ -115,21 +136,33 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-159.69.120.9...
-  network: tcp
-  port: '41391'
-  server: 159.69.120.98
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b5c3e2e8-dfb6-4a0a-b656-87e997610785
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-49.13.112.14...
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-138.199.158....
   network: tcp
   port: '100'
-  server: 49.13.112.149
+  server: 138.199.158.245
   servername: ''
   tls: false
   type: vmess
   uuid: 1889d9ef-9d58-4427-bb3e-a08810c214eb
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知85 10.4MB/s
+  network: tcp
+  port: 41391
+  server: 159.69.120.98
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b5c3e2e8-dfb6-4a0a-b656-87e997610785
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: ''
+  name: 36|🔒 VM-GRPC-NONE 🇩🇪 DE-91.107.24...
+  network: grpc
+  port: 46175
+  server: 91.107.247.219
+  tls: true
+  type: vmess
+  uuid: 9b85f25f-7e2b-4ec9-841e-54ade3d1e9be

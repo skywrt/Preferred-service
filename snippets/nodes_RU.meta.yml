@@ -1,10 +1,16 @@
 proxies:
-- cipher: aes-256-cfb
-  name: '5,16|🇷🇺_RU_俄罗斯_4 #2'
-  password: U6qnYRhfyDmn8sgn
-  port: 9041
-  server: 217.30.10.18
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 5,11,23|🇷🇺_RU_俄罗斯联邦
+  network: ws
+  port: 12910
+  server: 45.136.245.240
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    path: /
 - name: 5|俄罗斯RU-T
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
@@ -14,13 +20,13 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 5|俄罗斯 - 圣彼得堡 - LLC Baxet - 2
+  name: '5,12|🇷🇺_RU_俄罗斯 #3'
   network: ws
-  port: '20311'
+  port: 20313
   server: 195.58.49.42
   tls: false
   type: vmess
-  uuid: 9522bb36-eb01-42e7-89f2-75edf52eae10
+  uuid: c32dc6ea-b141-4555-8af7-b72a1b48d2f6
   ws-opts:
     headers:
       Host: ''
@@ -34,19 +40,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 6a2afda8-8798-434c-8964-1deb4e7655a5
-- alpn:
-  - h2
-  - http/1.1
-  name: 5|俄罗斯新西伯利亚+justhost.ru
-  network: tcp
-  password: '@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven'
-  port: 8443
-  server: 195.133.52.153
-  sni: ru2.asc-sam.io
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ru2.asc-sam.io
 - name: '5,38|🇷🇺_RU_俄罗斯联邦_10 #1'
   network: ws
   port: 2087
@@ -67,6 +60,18 @@ proxies:
   server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
+- cipher: aes-256-cfb
+  name: 5,16|🇺_RU_俄罗斯_1
+  password: ueLXVkvh4hckhErQ
+  port: 9060
+  server: 217.30.10.18
+  type: ss
+- cipher: aes-256-cfb
+  name: '5,16|🇷🇺_RU_俄罗斯_4 #2'
+  password: U6qnYRhfyDmn8sgn
+  port: 9041
+  server: 217.30.10.18
+  type: ss
 - name: 5|🇷🇺俄罗斯（IPV6节点）
   network: tcp
   port: 8080
@@ -74,24 +79,6 @@ proxies:
   tls: false
   type: vless
   uuid: 9a0b490f-cce5-411c-9d00-6ac95a0ba41c
-- alterId: 0
-  cipher: auto
-  name: 5,11,23|🇷🇺_RU_俄罗斯联邦
-  network: ws
-  port: 12910
-  server: 45.136.245.240
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    path: /
-- cipher: aes-256-cfb
-  name: 5,16|🇺_RU_俄罗斯_1
-  password: ueLXVkvh4hckhErQ
-  port: 9060
-  server: 217.30.10.18
-  type: ss
 - name: 8|🇷🇺RU-176.32.35.167-210_1@209
   password: 85bce006-4885-11ee-8792-f23c9164ca5d
   port: 1007
@@ -114,19 +101,30 @@ proxies:
   sni: 004282c1-sbdj40-sdlngq-1n7jq.ru.z7zi.com
   type: trojan
   udp: false
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: JoinBadeChannel@antimeli
+  name: 10|俄罗斯 001
+  network: grpc
+  port: 8443
+  reality-opts:
+    public-key: Paai0w6bHcKmaZzm8Sljt8uKydSYX5h1t3G_Y3T-Rm0
+    short-id: f74b9234
+  server: 188.227.84.54
+  servername: www.speedtest.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 79e1374d-7f94-4da6-97ad-5ce28a5d393e
 - alterId: 0
-  cipher: auto
-  name: '12|🇷🇺_RU_俄罗斯 #3'
-  network: ws
-  port: 20313
-  server: 195.58.49.42
-  tls: false
-  type: vmess
-  uuid: c32dc6ea-b141-4555-8af7-b72a1b48d2f6
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  cipher: chacha20-ietf-poly1305
+  name: 12,24,37|🇺RU 144.9KB/s
+  password: NjBlZDlk
+  port: 8388
+  server: is3.opensocks.site
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - cipher: aes-256-cfb
   name: '13,16|🇷🇺_RU_俄罗斯_3 #2'
   password: FG5ddLsMPbV5CutE
@@ -211,17 +209,14 @@ proxies:
     headers:
       Host: ap.ylks.xyz
     path: '%2Fblue'
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇷🇺RU-45.151.62.54-0459
-  password: 0zyDRZ1XmNXaaCAN7KEA8a
-  port: 28825
-  server: 45.151.62.54
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24,27|0|🇺1 |  1.9MB/s
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 24,37|🇨🇳广
   password: a422f6de-f257-49d4-b4cf-1254fb9eb39e
   port: 30003
   server: gdgs.tarioblink.me
+  skip-cert-verify: true
+  tls: true
   type: ss
 - name: 24|🇷🇺 _俄罗斯
   password: Aimer
@@ -230,6 +225,16 @@ proxies:
   skip-cert-verify: false
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...
+  network: tcp
+  port: '47555'
+  server: 46.29.166.237
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇷🇺 RU-213.241.198....
@@ -244,13 +249,3 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...
-  network: tcp
-  port: '47555'
-  server: 46.29.166.237
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
