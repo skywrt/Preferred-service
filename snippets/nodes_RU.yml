@@ -1,13 +1,30 @@
 proxies:
+- cipher: aes-256-cfb
+  name: '5,16|🇷🇺_RU_俄罗斯_4 #3'
+  password: U6qnYRhfyDmn8sgn
+  port: 9041
+  server: 217.30.10.18
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '5,11|2|🇷🇺_RU_俄罗斯联邦 #2'
-  network: tcp
-  port: 35972
-  server: 45.147.200.170
+  name: 5|俄罗斯 - 圣彼得堡 - LLC Baxet - 1
+  network: ws
+  port: '20313'
+  server: 195.58.49.42
   tls: false
   type: vmess
-  uuid: 6a2afda8-8798-434c-8964-1deb4e7655a5
+  uuid: 32d35c64-0cec-4753-8f4a-6e7dbf67c61d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- name: 5|俄罗斯RU-T
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: ru.mjt000.com
+  skip-cert-verify: false
+  sni: ru.mjt000.com
+  type: trojan
 - cipher: aes-256-cfb
   name: 5,16|🇺_RU_俄罗斯_1
   password: ueLXVkvh4hckhErQ
@@ -26,45 +43,21 @@ proxies:
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  name: '5,11|2|🇷🇺_RU_俄罗斯联邦 #2'
+  network: tcp
+  port: 35972
+  server: 45.147.200.170
+  tls: false
+  type: vmess
+  uuid: 6a2afda8-8798-434c-8964-1deb4e7655a5
 - cipher: aes-256-cfb
   name: 5,16|🇺_RU_
   password: TN2YqghxeFDKZfLU
   port: 9037
   server: 217.30.10.18
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 5|俄罗斯 V2CROSS.COM
-  network: ws
-  port: 8443
-  server: 193.9.49.89
-  tls: true
-  type: vmess
-  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
-  ws-opts:
-    headers:
-      Host: lax1.ibgfw.top
-    path: /xrenvws
-- name: 5|俄罗斯RU-T
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: ru.mjt000.com
-  skip-cert-verify: false
-  sni: ru.mjt000.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 5|俄罗斯 - 圣彼得堡 - LLC Baxet - 1
-  network: ws
-  port: '20313'
-  server: 195.58.49.42
-  tls: false
-  type: vmess
-  uuid: 32d35c64-0cec-4753-8f4a-6e7dbf67c61d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - name: 8|🇷🇺RU-176.32.35.167-210_1@209
   password: 85bce006-4885-11ee-8792-f23c9164ca5d
   port: 1007
@@ -88,7 +81,7 @@ proxies:
   type: trojan
   udp: false
 - cipher: aes-256-cfb
-  name: '13,16|🇷🇺_RU_俄罗斯_3 #2'
+  name: '13,16|🇷🇺_RU_俄罗斯_3 #3'
   password: FG5ddLsMPbV5CutE
   port: 9050
   server: 217.30.10.18
@@ -100,28 +93,35 @@ proxies:
   server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
-  name: '16|🇷🇺_RU_俄罗斯_4 #2'
-  password: U6qnYRhfyDmn8sgn
-  port: 9041
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
   name: '16|🇷🇺_RU_俄罗斯_5 #1'
   password: cp8pRSUAyLhTfVWH
   port: 9064
   server: 217.30.10.18
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇷🇺RU-45.151.62.54-0449
+  password: 0zyDRZ1XmNXaaCAN7KEA8a
+  port: 28825
+  server: 45.151.62.54
+  type: ss
 - name: 24|🇷🇺 _俄罗斯
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: true
+  sni: hsdgbuys.pages.dev
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #1'
   password: Aimer
   port: 2087
   server: 92.243.75.49
   skip-cert-verify: true
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #1'
+- name: '24|🇷🇺 _俄罗斯 #2'
   password: Aimer
-  port: 8443
-  server: 185.204.109.190
+  port: 2053
+  server: 5.35.68.249
   skip-cert-verify: true
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
@@ -132,13 +132,27 @@ proxies:
   skip-cert-verify: true
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 28|俄罗斯 斯克-1A
-  password: fa42d3c1-a5b7-4e71-b843-61d89cc9d07d
-  port: 58838
-  server: southvip1.pkyun.xyz
-  type: ss
-  udp: true
+- name: '24|🇷🇺 _俄罗斯 #4'
+  password: Aimer
+  port: 8443
+  server: 185.204.109.190
+  skip-cert-verify: true
+  sni: ngepo.ambercc.filegear-sg.me
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇷🇺 RU-213.241.198....
+  network: ws
+  port: '8443'
+  server: 213.241.198.57
+  servername: lax1.ibgfw.top
+  tls: true
+  type: vmess
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  ws-opts:
+    headers:
+      Host: lax1.ibgfw.top
+    path: /xrenvws
 - alterId: 0
   cipher: auto
   name: 36,37|未知108 968.5KB/s

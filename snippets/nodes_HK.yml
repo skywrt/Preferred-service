@@ -1,10 +1,17 @@
 proxies:
+- name: 5|香港wap-T
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: waphk.mjt000.com
+  skip-cert-verify: false
+  sni: waphk.mjt000.com
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 5|香港WAP-优化2
+  name: 5|香港WAP-优化
   network: ws
   port: '16622'
-  server: m.cnmjin.net
+  server: yes.mojcn.com
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -12,38 +19,6 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 5,11,24|🇭🇰 香港|@ripaojiedian
-  network: tcp
-  port: '18423'
-  server: 38.147.188.94
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d74f7655-eb59-4b48-9f8f-98a9c64a9e10
-- alterId: 0
-  cipher: auto
-  name: 5|香港HY-优化2
-  network: ws
-  port: '16632'
-  server: m.cnmjin.net
-  tls: false
-  type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
-- name: 5,24,40|HK_speednode_0119
-  network: tcp
-  password: 43e5eeacbad3032bfe4c25a2f011b6b7
-  port: 443
-  server: 104.251.227.182
-  skip-cert-verify: true
-  sni: hezijiasuqi.com
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 5|香港HY-优化
@@ -69,6 +44,16 @@ proxies:
   uuid: 234dcf63-5809-44fd-9c53-86f51f2e76a7
 - alterId: 0
   cipher: auto
+  name: 5,11,24|🇭🇰 香港|@ripaojiedian
+  network: tcp
+  port: '18423'
+  server: 38.147.188.94
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d74f7655-eb59-4b48-9f8f-98a9c64a9e10
+- alterId: 0
+  cipher: auto
   name: 5,11,24|🇭🇰 香港2|@ripaojiedian
   network: tcp
   port: '12875'
@@ -77,19 +62,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 1a3f584c-0960-48ef-a161-942c91e8ab64
-- name: 5|香港wap-T
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: waphk.mjt000.com
-  skip-cert-verify: false
-  sni: waphk.mjt000.com
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 5|香港WAP-优化
+  name: 5|香港WAP-优化2
   network: ws
   port: '16622'
-  server: yes.mojcn.com
+  server: m.cnmjin.net
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -97,6 +75,50 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- name: 5,24,40|HK_speednode_0119
+  network: tcp
+  password: 43e5eeacbad3032bfe4c25a2f011b6b7
+  port: 443
+  server: 104.251.227.182
+  skip-cert-verify: true
+  sni: hezijiasuqi.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 5|香港HY-优化2
+  network: ws
+  port: '16632'
+  server: m.cnmjin.net
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 5|福星公益节点 香港 01 1x
+  network: ws
+  port: '8080'
+  server: fxjcfxjcfxjcfxjcfxjcfxjcfxjcfxjc.fuxing.buzz
+  tls: false
+  type: vmess
+  uuid: 7011104b-6e18-4fad-8386-a5b43a4b40e1
+  ws-opts:
+    headers:
+      Host: fxhk300mbps.fuxing.buzz
+    path: /fuxing?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 5,36|🔒 VM-TCP-NONE 🇭🇰 HK-203.23.128...
+  network: tcp
+  port: 52785
+  server: 203.23.128.229
+  tls: false
+  type: vmess
+  uuid: e6384328-7de2-43e5-840b-8c746efa8d5d
 - alterId: 0
   cipher: auto
   name: 18|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_1
@@ -660,27 +682,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- cipher: chacha20-ietf-poly1305
-  name: 24,28|HK 01 ALICE-1A
-  password: fa42d3c1-a5b7-4e71-b843-61d89cc9d07d
-  port: 34001
-  server: southvip1.pkyun.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 24,28|HK 03 LAIN-1A
-  password: fa42d3c1-a5b7-4e71-b843-61d89cc9d07d
-  port: 34003
-  server: southvip1.pkyun.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 24,28|HK 04 BAGEVM-1A
-  password: fa42d3c1-a5b7-4e71-b843-61d89cc9d07d
-  port: 34004
-  server: southvip1.pkyun.xyz
-  type: ss
-  udp: true
 - name: 26|V1-香港01∣K1线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21135
@@ -703,24 +704,10 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|公益路线1-香港HK 限速50MBPS-1R
-  password: 671cc29b-4048-4ce6-9c91-305ea7c8111b
+  name: 28|益路线1-香港HK 限速50MBPS-1E
+  password: dd3f37c3-0a54-47fb-84f4-0aa9e2b0aec5
   port: 49709
   server: jg647hf446ghvw.eucs.cn
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|香港01-1A
-  password: 4fbc2126-dbae-4681-8d0f-3af98e5b5d65
-  port: 34338
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|香港03-1B
-  password: 6c38e691-1950-4b18-8f97-67aed2e6aad6
-  port: 20052
-  server: gy.666666222.shop
   type: ss
   udp: true
 - alterId: 0
@@ -735,15 +722,6 @@ proxies:
   uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇭🇰 HK-203.23.128...
-  network: tcp
-  port: 52785
-  server: 203.23.128.229
-  tls: false
-  type: vmess
-  uuid: e6384328-7de2-43e5-840b-8c746efa8d5d
-- alterId: 0
-  cipher: auto
   name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
   network: tcp
   port: '27512'
@@ -752,6 +730,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-20.6.155.159...
+  network: ws
+  port: '2080'
+  server: 20.6.155.159
+  servername: hk4.556855.xyz
+  tls: true
+  type: vmess
+  uuid: 63769deb-4153-4b98-aba3-31bc07e53a2d
+  ws-opts:
+    headers:
+      Host: hk4.556855.xyz
+    path: /
 - alterId: 0
   name: 37|HK
   password: 7e7331ba-5095-405a-b301-c2a8e75c7d58
