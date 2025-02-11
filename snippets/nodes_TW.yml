@@ -76,11 +76,14 @@ proxies:
   tls: false
   type: vmess
   uuid: f6406b6d-5487-46da-f793-46611269a306
-- cipher: chacha20-ietf-poly1305
-  name: 22|🇹🇼TW-2.58.241.42-1067
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 22,37|TW 933.4KB/s
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: 2.58.241.42
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 22|🇹🇼TW-2.58.241.42-1068
@@ -172,28 +175,10 @@ proxies:
     headers:
       host: 61.222.202.140
     path: /
-- name: 22|TW-211.72.35.155-2644
-  password: b09d2aaa443af97a
-  port: 3389
-  server: 211.72.35.155
-  skip-cert-verify: false
-  type: trojan
 - name: 22|🇼TW-60.249.3.125-2673
   password: 3febb05ea76a940f
   port: 3389
   server: 60.249.3.125
-  skip-cert-verify: false
-  type: trojan
-- name: 22|🇹🇼TW-211.72.35.157-3774
-  password: 8b475d9e868e43e0
-  port: 3389
-  server: 211.72.35.157
-  skip-cert-verify: false
-  type: trojan
-- name: 22|🇼TW-211.72.35.152-3760
-  password: b84d16a244460e09
-  port: 3389
-  server: 211.72.35.152
   skip-cert-verify: false
   type: trojan
 - name: 22|🇼TW-211.72.35.158-2727
@@ -803,6 +788,19 @@ proxies:
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇹🇼 TW-114.44.80.187...
   network: ws
+  port: '25777'
+  server: 114.44.80.187
+  tls: false
+  type: vmess
+  uuid: 0663228f-646a-4c7c-b14a-bde613c0c237
+  ws-opts:
+    headers:
+      Host: www.douyin.com
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-WS-NA 🇹🇼 TW-114.44.80.187... #1'
+  network: ws
   port: '25780'
   server: 114.44.80.187
   servername: ''
@@ -815,14 +813,15 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-WS-NA 🇹🇼 TW-114.44.80.187... #1'
+  name: 37|TW2
   network: ws
-  port: '25777'
+  port: 25780
   server: 114.44.80.187
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 0663228f-646a-4c7c-b14a-bde613c0c237
+  uuid: 6b83a28c-e872-4f7e-9b13-ffcef4b5fc44
   ws-opts:
     headers:
-      Host: www.douyin.com
+      host: www.douyin.com
     path: /?ed=1024
