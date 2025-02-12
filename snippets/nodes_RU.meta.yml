@@ -163,18 +163,6 @@ proxies:
   type: vless
   udp: true
   uuid: 665b6586-00af-4615-afc3-6310590489c1
-- cipher: aes-256-gcm
-  name: '12,24,30|_RU_ #1'
-  password: dongtaiwang.com
-  port: 12330
-  server: 46.17.40.190
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '12,24,30|🇷🇺_RU_俄罗斯_2 #4'
-  password: NjBlZDlk
-  port: 8388
-  server: is3.opensocks.site
-  type: ss
 - cipher: aes-256-cfb
   name: 16|_RU_
   password: p9z5BVADH2YFs3MN
@@ -266,15 +254,34 @@ proxies:
       Host: ap.ylks.xyz
     path: '%2Fblue'
 - alterId: 0
-  name: 24,37|🇺RU
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
+  cipher: auto
+  name: 24|🇷🇺 俄罗斯 V2CROSS.COM
+  network: tcp
+  port: '100'
+  server: 91.107.183.68
+  tls: false
+  type: vmess
+  uuid: baf0f385-cd6c-4fdb-a060-be835e9be4b1
+- alterId: 0
+  cipher: auto
+  name: '24|🇷🇺 _俄罗斯 #1'
+  network: ws
+  port: '17479'
+  server: 185.22.153.73
+  tls: false
+  type: vmess
+  uuid: af7f07dc-d726-4b1e-967d-dbb6c594999f
+  ws-opts:
+    headers:
+      Host: ''
+    path: github.com/Alvin9999
+- name: '24|🇷🇺 _俄罗斯 #2'
+  password: Aimer
+  port: 2053
+  server: 46.29.235.31
   skip-cert-verify: true
-  sni: hsdgbuys.pages.dev
-  tls: true
+  sni: agepq.ambercc.filegear-sg.me
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...
@@ -286,21 +293,15 @@ proxies:
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
-  cipher: auto
-  name: 36,40|RU_speednode_0074
-  network: ws
-  port: 2082
-  server: 45.142.120.190
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  name: 37|🇺RU
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: true
+  sni: hsdgbuys.pages.dev
+  tls: true
+  type: trojan
   udp: true
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: yellow-paper-029c.yvonna.workers.dev
-    path: /az05.beyondy.cfd/link#@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2570
 - name: 40|RU_speednode_0073
   network: ws
   port: 80
@@ -315,3 +316,18 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- alterId: 0
+  cipher: auto
+  name: 40|RU_speednode_0074
+  network: ws
+  port: 2082
+  server: 45.142.120.190
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: yellow-paper-029c.yvonna.workers.dev
+    path: /az05.beyondy.cfd/link#@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2570

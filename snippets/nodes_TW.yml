@@ -19,11 +19,12 @@ proxies:
   skip-cert-verify: false
   sni: hinet.mjt000.com
   type: trojan
-- name: 5|台湾|@ripaojiedian
+- name: 5,24|🇨🇳 台湾|@ripaojiedian
   network: tcp
   password: 069a7054-7269-554b-bfab-a7f2651f92e5
   port: 5302
   server: dozo01.flztjc.top
+  skip-cert-verify: false
   sni: tw-2-545.flztjc.net
   type: trojan
 - alterId: 0
@@ -52,17 +53,11 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: aes-256-cfb
-  name: 19|🇹🇼TW-185.189.160.98-0452
-  password: qwerREWQ@@
-  port: 64759
-  server: 185.189.160.98
-  type: ss
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇹🇼 TW-114.44.80.187...
   network: ws
-  port: 25774
+  port: '25780'
   server: 114.44.80.187
   tls: false
   type: vmess
@@ -73,13 +68,26 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-WS-NA 🇹🇼 TW-114.44.80.187... #2'
+  name: '36|🔒 VM-WS-NA 🇹🇼 TW-114.44.80.187... #1'
   network: ws
   port: '25777'
   server: 114.44.80.187
   tls: false
   type: vmess
   uuid: 0663228f-646a-4c7c-b14a-bde613c0c237
+  ws-opts:
+    headers:
+      Host: www.douyin.com
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-WS-NA 🇹🇼 TW-114.44.80.187... #2'
+  network: ws
+  port: 25774
+  server: 114.44.80.187
+  tls: false
+  type: vmess
+  uuid: 6b83a28c-e872-4f7e-9b13-ffcef4b5fc44
   ws-opts:
     headers:
       Host: www.douyin.com
