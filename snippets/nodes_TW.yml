@@ -171,10 +171,28 @@ proxies:
     headers:
       host: 61.222.202.140
     path: /
+- name: 22|TW-211.72.35.155-2597
+  password: b09d2aaa443af97a
+  port: 3389
+  server: 211.72.35.155
+  skip-cert-verify: false
+  type: trojan
 - name: 22|🇼TW-60.249.3.125-2626
   password: 3febb05ea76a940f
   port: 3389
   server: 60.249.3.125
+  skip-cert-verify: false
+  type: trojan
+- name: 22|🇹🇼TW-211.72.35.157-3727
+  password: 8b475d9e868e43e0
+  port: 3389
+  server: 211.72.35.157
+  skip-cert-verify: false
+  type: trojan
+- name: 22|🇼TW-211.72.35.152-3713
+  password: b84d16a244460e09
+  port: 3389
+  server: 211.72.35.152
   skip-cert-verify: false
   type: trojan
 - name: 22|🇼TW-211.72.35.158-2680
@@ -513,10 +531,24 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-WS-NA 🇹🇼 TW-1.162.184.77:...
+  network: ws
+  port: '25780'
+  server: 1.162.184.77
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6b83a28c-e872-4f7e-9b13-ffcef4b5fc44
+  ws-opts:
+    headers:
+      Host: www.douyin.com
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
   name: 37|TW
   network: ws
   port: 25780
-  server: 111.243.107.90
+  server: 1.162.184.77
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -525,13 +557,3 @@ proxies:
     headers:
       host: www.douyin.com
     path: /?ed=1024
-- alterId: 0
-  name: 37|TW2
-  password: Aimer
-  port: 443
-  server: 188.253.6.210
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
