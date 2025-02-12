@@ -129,17 +129,27 @@ proxies:
   server: 185.231.233.112
   type: ss
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知92 5.9MB/s
+  password: 0zyDRZ1XmNXaaCAN7KEA8a
+  port: 28825
+  server: 45.151.62.54
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
-  name: 24|🇷🇺 俄罗斯 V2CROSS.COM
+  name: 24,36|🔒 VM-TCP-NA 🇩🇪 DE-91.107.183.6...
   network: tcp
   port: '100'
   server: 91.107.183.68
+  servername: ''
   tls: false
   type: vmess
-  uuid: baf0f385-cd6c-4fdb-a060-be835e9be4b1
+  uuid: 1889d9ef-9d58-4427-bb3e-a08810c214eb
 - alterId: 0
   cipher: auto
-  name: '24|🇷🇺 _俄罗斯 #1'
+  name: 24,36|🔒 VM-WS-NA 🇷🇺 RU-185.22.153.73...
   network: ws
   port: '17479'
   server: 185.22.153.73
@@ -159,36 +169,51 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...
+  name: 36,37|未知123 4.0MB/s
   network: tcp
-  port: '47555'
+  port: 47555
   server: 46.29.166.237
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
-  name: 37|🇺RU
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
-  skip-cert-verify: true
-  sni: hsdgbuys.pages.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
   cipher: auto
-  name: 40|RU_speednode_0074
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-185.174.138.1...
   network: ws
-  port: 2082
-  server: 45.142.120.190
-  skip-cert-verify: false
+  port: '2052'
+  server: 185.174.138.199
+  servername: ''
   tls: false
   type: vmess
-  udp: true
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: yellow-paper-029c.yvonna.workers.dev
+    path: /az05.beyondy.cfd/link?/TM@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-45.142.120.19...
+  network: ws
+  port: '2082'
+  server: 45.142.120.190
+  servername: ''
+  tls: false
+  type: vmess
   uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
   ws-opts:
     headers:
       Host: yellow-paper-029c.yvonna.workers.dev
     path: /az05.beyondy.cfd/link#@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2570
+- alterId: 0
+  cipher: auto
+  name: 40|RU_speednode_0093
+  network: ws
+  port: 20316
+  server: 195.58.49.42
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a26d5b32-2207-4c0e-8854-3093429f8810

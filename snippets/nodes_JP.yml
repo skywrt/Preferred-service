@@ -71,15 +71,6 @@ proxies:
   skip-cert-verify: false
   sni: ni.mjt000.com
   type: trojan
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 5,11,24,40|CN_speednode_0006
-  password: ee2d2b8b-18b0-4fdd-afd1-a7c0030ec635
-  port: 58148
-  server: lm.kaiqsz.com
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 5|日本-优化3
@@ -142,11 +133,10 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: 10,36|🔒 VM-TCP-NA 🇺🇸 US-45.76.60.123...
+  name: 10|日本 002
   network: tcp
-  port: '8881'
+  port: 8881
   server: 45.76.60.123
-  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -155,10 +145,19 @@ proxies:
     Host: moi.ir
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知91 3.5MB/s
+  name: 19,20,21,37|未知138
+  password: shadowsocks7
+  port: 443
+  server: 149.22.87.240
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知130 1.9MB/s
   password: shadowsocks
   port: 443
-  server: 149.22.87.241
+  server: 149.22.87.204
   skip-cert-verify: true
   tls: true
   type: ss
@@ -177,6 +176,13 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 24,40|CN_speednode_0010
+  password: 1f2a2f7f-d95e-43b6-bab9-212f679b749e
+  port: 34103
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
 - name: 26|✪每日连接前点更新订阅
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
   port: 21142
@@ -208,8 +214,8 @@ proxies:
   sni: bg.guangsu888.cc
   type: trojan
   udp: true
-- name: 26,40|CN_speednode_0030
-  password: 78c245b7-b61c-4970-b4c2-d92a173ff16a
+- name: 26|日本02|解GPT|解NF|解TT 41
+  password: 8f16bdcc-810a-44ee-83c5-30d526f318f4
   port: 33345
   server: gs.huamao888.top
   skip-cert-verify: true
@@ -232,6 +238,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-35.74.241.14...
+  network: tcp
+  port: '46482'
+  server: 35.74.241.14
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.17...
   network: tcp
   port: '48897'
@@ -242,6 +258,20 @@ proxies:
   uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-WS-NA 🇯🇵 JP-156.246.94.94...
+  network: ws
+  port: '433'
+  server: 156.246.94.94
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bebdb5c1-e0cb-4319-b614-a0581fdd3158
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
   network: tcp
   port: '1069'
@@ -250,20 +280,3 @@ proxies:
   tls: false
   type: vmess
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-57.181.170.3...
-  network: tcp
-  port: '46482'
-  server: 57.181.170.3
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8
-- cipher: aes-256-cfb
-  name: 40|JP_speednode_0039
-  password: amazonskr05
-  port: 443
-  server: 54.249.60.76
-  type: ss
-  udp: true
