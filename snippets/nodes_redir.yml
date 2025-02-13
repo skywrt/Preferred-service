@@ -43,10 +43,9 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 5,10,12,24,30|🇺🇸 美国 FastlyAnycast节点
+  name: '5,10,12,24|🇺🇸 _美国 #5'
   network: ws
-  port: 80
+  port: '80'
   server: 151.101.0.155
   servername: telegram-isvvpn.ir
   skip-cert-verify: true
@@ -59,12 +58,6 @@ proxies:
     headers:
       Host: telegram-isvvpn.ir
     path: /racevpn
-- cipher: chacha20-ietf-poly1305
-  name: 5,22|🇺🇸US-103.219.193.17-5216
-  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
-  port: 40001
-  server: us.fastsoonlink.com
-  type: ss
 - alterId: 0
   cipher: auto
   name: '5,11|3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3 #1'
@@ -85,15 +78,6 @@ proxies:
   type: vmess
   uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
   ws-opts: {}
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,16,19,20,21,22,37|未知51 17.5MB/s
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 193.29.139.189
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   cipher: auto
   name: '5,8,11|2|🇺🇸_US_美国->🇫🇷_FR_法国 #1'
@@ -145,12 +129,6 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- cipher: aes-128-gcm
-  name: '5,19,20,21,22|🇬🇧GB-212.102.53.197-0396 #2'
-  password: shadowsocks
-  port: 443
-  server: uk-dc1.yangon.club
-  type: ss
 - alterId: 0
   cipher: auto
   name: '5,11|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5 #1'
@@ -230,7 +208,7 @@ proxies:
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,22|🇺🇸US-35.90.18.213-0112
+  name: '5,11|1|_US_->_ES_ #1'
   password: 2062a5ca-a34e-47bf-9810-db91185f07fc
   port: 59019
   server: fuck5.mmmmmmmmmm.cfd
@@ -305,7 +283,7 @@ proxies:
       Host: in3.wish.ml
     path: /
 - cipher: aes-256-cfb
-  name: 5,11,22|🇷FR-163.172.64.22-0102
+  name: '5,11|1|_FR_->_RU_ #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 163.172.64.22
@@ -350,12 +328,12 @@ proxies:
     path: /
 - grpc-opts:
     grpc-service-name: 443trojan
-  name: 8,22|RELAY-172.67.204.84-2213
+  name: 8|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
   server: 172.67.204.84
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: cdn-21.gsmxreality.com
   type: trojan
   udp: true
@@ -440,8 +418,7 @@ proxies:
     headers:
       host: mizban.arzonhost.ir
     path: /
-- client-fingerprint: chrome
-  name: 12,20,21,22,30|Amazon数据中心
+- name: '12,20,21|🇮🇪IE-54.155.7.122-0683 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 54.155.7.122
@@ -450,45 +427,33 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  fingerprint: ''
-  name: 12,30|🇺🇸_US_美国->_CN_国
+  name: 12|🇺🇸_US_美国->🇨🇳_CN_中国
   network: tcp
-  port: 15717
+  port: '15717'
   server: 104.245.97.166
   servername: ''
-  sni: ''
   tls: false
   type: vmess
   uuid: 8b252dc4-b20c-419f-8f62-be72f057938f
 - alpn:
   - http/1.1
-  alterId: 0
-  name: 12,22,24,30,37|未知124
+  name: 12,24|🇩🇪 德国 黑森州法兰克福Amazon数据中心
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 3.126.41.247
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
-  tls: true
   type: trojan
-  udp: true
-- cipher: chacha20-ietf
-  name: 12,22,30|🇺🇸_US_美国->🇪_BE_比利时
-  password: asd123456
-  port: 8388
-  server: 137.175.113.193
-  type: ss
-- client-fingerprint: chrome
-  name: 12,22,24,26,30|🇳 广东省广州市云 信
-  password: 20a84ebf-9341-4f5f-8245-3975e2fdeee5
+- name: 12,24,26|连接着任意可用线路
+  password: 0bc68743-cff8-4730-9818-9d8192ee335c
   port: 21019
   server: 219.135.231.205
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 12,19,22,30|🇺🇸_US_美国->🇪_BE_比利时_1
+  name: 12,19|🇺🇸US-54.218.124.184-0362
   password: amazonskr05
   port: 443
   server: 54.218.124.184
@@ -503,12 +468,6 @@ proxies:
   type: vmess
   uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
   ws-opts: {}
-- cipher: rc4-md5
-  name: '13,19,20,21,22|🇺🇸US-107.155.57.11-0345 #2'
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 107.155.57.11
-  type: ss
 - alterId: 64
   cipher: auto
   name: 13,36|🔒 VM-TCP-NA 🇺🇸 US-107.148.207....
@@ -528,18 +487,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: rc4-md5
-  name: '13,19,20,21,22|🇺🇸US-194.5.215.59-0337 #2'
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 194.5.215.59
-  type: ss
-- cipher: rc4-md5
-  name: 13,19,20,21,22|🇧GB-146.70.61.18-0373
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 146.70.61.18
-  type: ss
 - alterId: 0
   cipher: auto
   name: 13|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_2
@@ -556,7 +503,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '16,30|🇺🇸_US_美国->_DE_国 #1'
+  name: 16|🇺🇸_US_美国->_DE_国
   network: ws
   port: 80
   server: join.ISVvpn.fastly80-3.hosting-ip.com
@@ -569,7 +516,7 @@ proxies:
 - alterId: 0
   cipher: auto
   fingerprint: ''
-  name: 16,30|🇺🇸_US_美国->🇪_DE_德国_1
+  name: '16|🇺🇸_US_美国->🇩🇪_DE_德国_1 #1'
   network: ws
   port: 80
   server: 151.101.0.155
@@ -685,6 +632,20 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
+  name: 23|🇺🇸_US_美国->🇬🇧_GB_英国_2
+  network: ws
+  port: 8880
+  server: 104.19.40.237
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  ws-opts:
+    headers:
+      host: uk.moss.network
+    path: /d/65dd503.TG.WangCai2.WangCai_8:107690
+- alterId: 0
+  cipher: auto
   name: '23|🇺🇸_US_美国->🇫🇷_FR_法国_3 #1'
   network: ws
   port: 2082
@@ -699,14 +660,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '30|🇺🇸_US_美国->🇩🇪_DE_德国_2 #2'
+  name: 23|🇺🇸_US_美国->🇬🇧_GB_英国_4
   network: ws
-  port: 80
-  server: plex.com
-  sni: ''
+  port: 8880
+  server: 104.19.40.211
+  skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
   ws-opts:
     headers:
-      host: telegram-isvvpn.ir
-    path: /racevpn?telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn
+      host: uk.moss.network
+    path: /d/65dd503.TG.WangCai2.WangCai_8:107690
