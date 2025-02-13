@@ -1,12 +1,4 @@
 proxies:
-- name: 5,24|🇨🇳 台湾|@ripaojiedian
-  network: tcp
-  password: 069a7054-7269-554b-bfab-a7f2651f92e5
-  port: 5302
-  server: dozo01.flztjc.top
-  skip-cert-verify: false
-  sni: tw-2-545.flztjc.net
-  type: trojan
 - name: 5|台湾WAP-T-GPT
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
@@ -14,57 +6,33 @@ proxies:
   skip-cert-verify: false
   sni: hinet.mjt000.com
   type: trojan
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 5|🇹🇼台湾+3
-  network: tcp
-  port: 23929
-  reality-opts:
-    public-key: q6BCNg-15X1VFYJubCAjXNYj8Wf8JvgexBh8toGnU3E
-    short-id: 24522e6b
-  server: tw5.7896543.xyz
-  servername: www.microsoft.com
-  tls: false
-  type: vless
-  uuid: 9a0b490f-cce5-411c-9d00-6ac95a0ba41c
 - alterId: 0
   cipher: auto
-  name: 5|台湾
+  name: 5|台湾-优化2-GPT
   network: ws
-  port: '443'
-  server: 104.18.149.75
-  servername: tw.insbot.filegear-sg.me
-  tls: true
+  port: '16616'
+  server: m.cnmjin.net
+  tls: false
   type: vmess
-  uuid: 56529ad8-61d2-4bfa-aa0b-a800719cb5fe
+  uuid: da91214e-b022-4f61-a724-01c538170e62
   ws-opts:
     headers:
-      Host: tw.insbot.filegear-sg.me
-    path: /aa
-- name: 5|🇹🇼台湾+4
-  network: ws
-  port: 2086
-  server: qrzv.youxuan.wiki
-  tls: false
-  type: vless
-  uuid: 9a0b490f-cce5-411c-9d00-6ac95a0ba41c
-  ws-opts:
-    headers:
-      Host: tw3c.youxuan.wiki
-    path: '%2Fyouxuan'
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 5|🇹🇼台湾+1
-  network: tcp
-  port: 20530
-  reality-opts:
-    public-key: _VV1HHy3iC9Q1GY0cu_oP9UffkvebWdRaVXWdPt3wls
-    short-id: 4777e889
-  server: tw.youxuan.wiki
-  servername: jellyfin.illya.tw
-  tls: false
-  type: vless
-  uuid: 9a0b490f-cce5-411c-9d00-6ac95a0ba41c
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
+- name: 5|Trojan-台湾2 | 低倍率
+  password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
+  port: 48285
+  server: a558d576384e0619527896c92dd74b20.lh.gtm.node-is.green
+  skip-cert-verify: true
+  sni: tctw1.bilibili.com
+  type: trojan
+- name: '5|Trojan-台湾2 | 低倍率 #1'
+  password: b64ec383-e598-465a-9e59-70e9b0d87f66
+  port: 43092
+  server: a92c2085cb742955dd1eff0ed26829d8.lh.gtm.node-is.green
+  skip-cert-verify: true
+  sni: tctw1.bilibili.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|台湾-优化3
@@ -80,20 +48,51 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5|台湾-优化2-GPT
+  name: 5,10|美国 070
   network: ws
-  port: '16616'
-  server: m.cnmjin.net
-  tls: false
+  port: 443
+  server: 104.18.149.75
+  servername: tw.insbot.filegear-sg.me
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
+  udp: true
+  uuid: 56529ad8-61d2-4bfa-aa0b-a800719cb5fe
   ws-opts:
     headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
-- client-fingerprint: safari
+      Host: tw.insbot.filegear-sg.me
+    path: /aa
+- name: '5|Trojan-台湾2 | 低倍率 #2'
+  password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
+  port: 48285
+  server: 5e7e94acf7dc53ff7d4c6455d0c3339d.lh.gtm.node-is.green
+  skip-cert-verify: true
+  sni: tctw1.bilibili.com
+  type: trojan
+- client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 5|🇹🇼台湾+2
+  name: '5|🇹🇼台湾+1 #1'
+  network: tcp
+  port: 20530
+  reality-opts:
+    public-key: _VV1HHy3iC9Q1GY0cu_oP9UffkvebWdRaVXWdPt3wls
+    short-id: 4777e889
+  server: tw.youxuan.wiki
+  servername: jellyfin.illya.tw
+  tls: false
+  type: vless
+  uuid: 9a0b490f-cce5-411c-9d00-6ac95a0ba41c
+- name: '5|Trojan-台湾2 | 低倍率 #3'
+  password: b64ec383-e598-465a-9e59-70e9b0d87f66
+  port: 40929
+  server: 943ff4627127a5624096af2a0e75efd9.lh.gtm.node-is.green
+  skip-cert-verify: true
+  sni: tctw1.bilibili.com
+  type: trojan
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: '5|🇹🇼台湾+2 #1'
   network: tcp
   port: 30182
   reality-opts:
@@ -104,6 +103,40 @@ proxies:
   tls: false
   type: vless
   uuid: 9a0b490f-cce5-411c-9d00-6ac95a0ba41c
+- name: '5|Trojan-台湾2 | 低倍率 #4'
+  password: 593c3d63-04c7-4bbb-a03f-114eba08636c
+  port: 43129
+  server: b5e27a110ed47b5d6aabe38a16c0af1e.lh.gtm.node-is.green
+  skip-cert-verify: true
+  sni: tctw1.bilibili.com
+  type: trojan
+- name: '5|Trojan-台湾1 | 低倍率 #3'
+  password: 07e55e4a-ef94-4e81-addc-b62532cb503a
+  port: 10116
+  server: cc.rk1.node-is.green
+  skip-cert-verify: true
+  sni: tctw1.bilibili.com
+  type: trojan
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: '5|🇹🇼台湾+3 #1'
+  network: tcp
+  port: 23929
+  reality-opts:
+    public-key: q6BCNg-15X1VFYJubCAjXNYj8Wf8JvgexBh8toGnU3E
+    short-id: 24522e6b
+  server: tw5.7896543.xyz
+  servername: www.microsoft.com
+  tls: false
+  type: vless
+  uuid: 9a0b490f-cce5-411c-9d00-6ac95a0ba41c
+- name: '5|Trojan-台湾2 | 低倍率 #5'
+  password: 593c3d63-04c7-4bbb-a03f-114eba08636c
+  port: 48744
+  server: ec477294bd8fd2483b03caa63bb02984.lh.gtm.node-is.green
+  skip-cert-verify: true
+  sni: tctw1.bilibili.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|台湾-优化
@@ -117,6 +150,40 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- name: 5|🇹🇼台湾+4
+  network: ws
+  port: 2086
+  server: qrzv.youxuan.wiki
+  tls: false
+  type: vless
+  uuid: 9a0b490f-cce5-411c-9d00-6ac95a0ba41c
+  ws-opts:
+    headers:
+      Host: tw3c.youxuan.wiki
+    path: '%2Fyouxuan'
+- name: '5|Trojan-台湾2 | 低倍率 #6'
+  password: 07e55e4a-ef94-4e81-addc-b62532cb503a
+  port: 41363
+  server: bb02fdb60f04ef744a105f551a1a2f5f.lh.gtm.node-is.green
+  skip-cert-verify: true
+  sni: tctw1.bilibili.com
+  type: trojan
+- name: '5|Trojan-台湾2 | 低倍率 #7'
+  password: 07e55e4a-ef94-4e81-addc-b62532cb503a
+  port: 47929
+  server: ee410b20a49bafbbb946f79b1788d573.lh.gtm.node-is.green
+  skip-cert-verify: true
+  sni: tctw1.bilibili.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '28|台湾1 #4'
+  port: 45078
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0ffde50a-0977-45b0-8dbd-2f78cee83f6b
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇹🇼 TW-1.162.184.77:...
@@ -130,18 +197,4 @@ proxies:
   ws-opts:
     headers:
       Host: www.douyin.com
-    path: /?ed=1024
-- alterId: 0
-  cipher: auto
-  name: 37|TW
-  network: ws
-  port: 25780
-  server: 1.162.184.77
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6b83a28c-e872-4f7e-9b13-ffcef4b5fc44
-  ws-opts:
-    headers:
-      host: www.douyin.com
     path: /?ed=1024
