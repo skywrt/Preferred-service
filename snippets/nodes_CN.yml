@@ -3529,6 +3529,14 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 4,8,24,30|🇹 意大利 V2CROSS.COM 2
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 26667
+  server: service.ouluyun9803.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: 4|🇨🇳 CN 504 → tg@nicevpn123
   password: 3bf7be43-e331-4dad-856c-8d312dedea90
   port: 46091
@@ -4104,13 +4112,12 @@ proxies:
     headers:
       Host: www.douyin.com
     path: /?ed=1024
-- client-fingerprint: chrome
-  name: 5,12,16,24,26,30|🇳 广东省广市
+- name: 5,12,16,24,26,30|_CN_国->🇸_US_美国
   network: tcp
   password: 20a84ebf-9341-4f5f-8245-3975e2fdeee5
   port: 21019
   server: 219.135.231.205
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
   udp: true
 - alterId: 0
@@ -4723,21 +4730,6 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- alterId: 0
-  cipher: auto
-  name: '9,24|2,11|2,11|2,11|2,11|2,11|2,11|... #57'
-  network: ws
-  port: '16928'
-  server: vip3.niuniupremium.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
-  ws-opts:
-    headers:
-      Host: vip3.niuniupremium.xyz
-    path: /
 - alterId: 64
   cipher: auto
   name: '9|🇨🇳 3,11,17|🇨🇳_CN_中国 #1'
@@ -4870,33 +4862,10 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇨🇳 CN-113.56.219.34...
-  network: ws
-  port: '8888'
-  server: 113.56.219.34
-  tls: false
-  type: vmess
-  uuid: f435af7b-d36e-4e8d-9c0f-3017bb71e2c9
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /?ed=2048
-- alterId: 0
-  cipher: none
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-47.92.152.16...
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
   network: tcp
   port: '50002'
-  server: 47.92.152.169
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: none
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
-  network: tcp
-  port: '59003'
-  server: 183.236.51.36
+  server: 112.132.215.12
   servername: ''
   tls: false
   type: vmess
@@ -4911,6 +4880,30 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: none
+  name: 36,37|未知119
+  network: tcp
+  port: 59003
+  server: 183.236.51.36
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇨🇳 CN-113.56.219.34...
+  network: ws
+  port: '8888'
+  server: 113.56.219.34
+  tls: false
+  type: vmess
+  uuid: f435af7b-d36e-4e8d-9c0f-3017bb71e2c9
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 40|CN_speednode_0007
