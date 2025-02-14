@@ -1972,7 +1972,8 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 4,5,8|🇨🇳CN-120.238.122.160-163_1@163
+  client-fingerprint: chrome
+  name: 4,5,8,30|🇮 意大利 V2CROSS.COM
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
@@ -2338,12 +2339,13 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 4,5,11,24|🇨🇳 11,12|广东省移动 7
+  name: '4,5,9,11,24|️_未知 #7'
   network: ws
   port: '20401'
   server: data-us-v1.shwjfkw.cn
   servername: ''
   skip-cert-verify: true
+  tfo: false
   tls: false
   type: vmess
   udp: true
@@ -4111,7 +4113,7 @@ proxies:
     path: /?ed=1024
 - alterId: 64
   cipher: auto
-  name: '5,11,24|🇨🇳 3,11,17|🇨🇳_CN_中国 #1'
+  name: '5,11,24|_中国 #5'
   network: tcp
   port: '54882'
   server: 183.240.235.162
@@ -4709,6 +4711,16 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
+- alterId: 64
+  cipher: auto
+  name: '9|🇨🇳 3,11,17|🇨🇳_CN_中国 #1'
+  port: 54882
+  server: 183.240.235.162
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 17|CN_ youtube@资源分享师_17
@@ -4815,13 +4827,40 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '24|_中国 #2'
+- name: 24|_中国
   password: Aimer
-  port: 1443
-  server: 103.148.72.147
+  port: 443
+  server: 116.206.93.56
+  skip-cert-verify: false
+  sni: agepw.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|_中国 #1'
+  password: Aimer
+  port: 35002
+  server: 58.176.229.127
   skip-cert-verify: false
   sni: agepq.ambercc.filegear-sg.me
   type: trojan
+- alterId: 0
+  name: 24,37|🇺🇸US美国2
+  password: '!!str 65086441068973800'
+  port: 45402
+  server: 120.232.153.123
+  skip-cert-verify: true
+  sni: live-serval.shiner427.skin
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: none
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-47.92.152.16...
+  network: tcp
+  port: '50002'
+  server: 47.92.152.169
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
@@ -4838,16 +4877,6 @@ proxies:
   network: tcp
   port: '59003'
   server: 183.236.51.36
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: none
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-47.104.186.1...
-  network: tcp
-  port: '50002'
-  server: 47.104.186.133
   servername: ''
   tls: false
   type: vmess
