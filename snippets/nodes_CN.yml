@@ -2341,7 +2341,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 4,5,11,24|🇨🇳 12|广东省移动 7
+  name: 4,5,11,24|🇨🇳 11,12|广东省移动 7
   network: ws
   port: '20401'
   server: data-us-v1.shwjfkw.cn
@@ -3530,7 +3530,8 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 4,8|🇨🇳CN-120.238.122.160-166_1@166
+  client-fingerprint: chrome
+  name: 4,8,30|🇷 国 KT
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
@@ -4088,7 +4089,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '5,11,24|🇨🇳 3,17|🇨🇳_CN_中国 #1'
+  name: '5,11,24|🇨🇳 3,11,17|🇨🇳_CN_中国 #1'
   network: tcp
   port: '54882'
   server: 183.240.235.162
@@ -4108,7 +4109,8 @@ proxies:
     headers:
       Host: www.douyin.com
     path: /?ed=1024
-- name: 5,24|🇯🇵 日本2|@ripaojiedian
+- client-fingerprint: chrome
+  name: 5,24,30|🇳 广东省广州市 移动 2
   network: tcp
   password: dc15d997-8b26-4294-870e-c90a5784dca4
   port: 13011
@@ -4834,16 +4836,6 @@ proxies:
   sni: agepq.ambercc.filegear-sg.me
   type: trojan
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
-  network: tcp
-  port: '50004'
-  server: 112.132.212.19
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
   cipher: none
   name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
   network: tcp
@@ -4853,12 +4845,23 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: none
+  name: 36,37|未知106
+  network: tcp
+  port: 50002
+  server: 47.104.186.133
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
   network: tcp
-  port: '50002'
-  server: 112.132.215.12
+  port: '50004'
+  server: 112.132.212.19
   servername: ''
   tls: false
   type: vmess
