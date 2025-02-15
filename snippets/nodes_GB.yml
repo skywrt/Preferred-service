@@ -420,32 +420,6 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 5|日本-优化
-  network: ws
-  port: '16617'
-  server: yes.mojcn.com
-  tls: false
-  type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 5|英国-优化-GPT
-  network: ws
-  port: '16645'
-  server: yes.mojcn.com
-  tls: false
-  type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
 - alpn:
   - http/1.1
   name: 5|🇬🇧_GB_英国_2
@@ -468,25 +442,33 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- name: 5|🇬🇧_GB_英国
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.43.210.187
+  skip-cert-verify: true
+  sni: trojan.miwan.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 5,24,36|🔒 VM-TCP-NA 🇰🇷 KR-158.180.80.2...
-  network: tcp
-  port: '6644'
-  server: 158.180.80.227
-  servername: ''
+  name: 5|英国-优化-GPT
+  network: ws
+  port: '16645'
+  server: yes.mojcn.com
   tls: false
   type: vmess
-  uuid: 0bc1cdbd-da5f-40ea-8823-797edf28aac0
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,37|未知115 9.6MB/s
-  password: wvlCz49CFBG7DMq2uD6P5i
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
+- name: 5|英国+伦敦Amazon数据中心
+  password: '!!str 3778399737045327872'
   port: 443
-  server: 78.129.140.11
-  skip-cert-verify: true
-  tls: true
-  type: ss
+  server: simple-toad.adder289.quest
+  sni: simple-toad.adder289.quest
+  type: trojan
 - name: 5|英国UK-T
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
@@ -537,55 +519,101 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
+- delay: 991
+  name: 10|英国 003
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.9.235.192
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知29 9.3MB/s
+  name: 19,20,21,37|未知46 10.5MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.194
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知31 7.5MB/s
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 64.176.184.129
+  server: 212.102.53.80
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知13 1.6MB/s
+  name: 19,20,21,37|未知55 10.9MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知10 9.9MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.197
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,37|未知20 8.9MB/s
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,37|未知53 920.1KB/s
   password: shadowsocks
   port: 443
   server: 141.98.101.180
   skip-cert-verify: true
   tls: true
   type: ss
+- cipher: aes-128-gcm
+  name: 19|🇬🇧GB-141.98.101.179-0432
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.179
+  type: ss
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知14 4.5MB/s
+  name: 19,37|未知63 1.2MB/s
   password: shadowsocks
   port: 443
   server: 141.98.101.182
   skip-cert-verify: true
   tls: true
   type: ss
-- name: '20,21|🇬🇧GB-52.56.255.243-6161 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.56.255.243
-  sni: trojan.burgerip.co.uk
+- name: '20,21|🇬🇧GB-161.35.34.48-6023 #1'
+  password: 2cba4104747d49d18319e5ade1b93ab5
+  port: 443
+  server: yourjobnavigator.online
   type: trojan
-- name: 24|🇬🇧 英国 伦敦Amazon数据中心
+- alterId: 0
+  cipher: auto
+  name: 24,36|🔒 VM-TCP-NA 🇰🇷 KR-158.180.80.2...
+  network: tcp
+  port: '6644'
+  server: 158.180.80.227
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0bc1cdbd-da5f-40ea-8823-797edf28aac0
+- alterId: 0
+  name: 24,37|GB国
+  network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 18.130.203.179
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - name: 24|🇬🇧 _英国
   password: Aimer
   port: 8443
@@ -600,13 +628,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|英兰-1B
-  password: b580f547-7747-498b-8ae1-b3c9b132ce65
-  port: 58811
-  server: southvip1.pkyun.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-172.99.190...
@@ -618,15 +639,6 @@ proxies:
   uuid: e922d485-98a7-475a-9a47-cde3722ac82e
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
-  network: tcp
-  port: 26924
-  server: 68.168.31.184
-  tls: false
-  type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-46.250.253...
   network: tcp
   port: 46617
@@ -636,6 +648,16 @@ proxies:
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-209.97.176.1...
+  network: tcp
+  port: '8081'
+  server: 209.97.176.198
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3873beec-44c6-45be-8900-d184a1d0ee8f
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-38.114.120...
   network: tcp
   port: 47567
@@ -643,6 +665,15 @@ proxies:
   tls: false
   type: vmess
   uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
+  network: tcp
+  port: 26924
+  server: 68.168.31.184
+  tls: false
+  type: vmess
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-149.7.16.1...

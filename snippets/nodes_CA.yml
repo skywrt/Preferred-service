@@ -988,33 +988,6 @@ proxies:
   server: 142.202.48.43
   type: ss
   udp: true
-- name: 5|Trojan-加拿大2 | 低倍率
-  password: 07e55e4a-ef94-4e81-addc-b62532cb503a
-  port: 43409
-  server: 610a56670daf53c9be7e6ea428b48835.lh.gtm.node-is.green
-  skip-cert-verify: true
-  sni: tcca1.bilibili.com
-  type: trojan
-- name: 5|Trojan-加拿大1 | 低倍率
-  password: 07e55e4a-ef94-4e81-addc-b62532cb503a
-  port: 10116
-  server: cc.rk1.node-is.green
-  skip-cert-verify: true
-  sni: tcca1.bilibili.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 5|加拿大-优化2
-  network: ws
-  port: '16641'
-  server: m.cnmjcn.com
-  tls: false
-  type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
 - alterId: 0
   cipher: auto
   name: 5|加拿大-优化3
@@ -1028,16 +1001,14 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 5,36|🔒 VM-TCP-NA 🇨🇦 CA-23.162.200.9...
+- name: 5|🇨🇦_CA_加拿大
   network: tcp
-  port: '20182'
-  server: 23.162.200.91
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19
+  password: telegram-id-directvpn
+  port: 22222
+  server: 15.223.142.94
+  skip-cert-verify: true
+  sni: trojan.miwan.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|加拿大-优化
@@ -1051,13 +1022,19 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- name: '5|Trojan-加拿大2 | 低倍率 #1'
-  password: 07e55e4a-ef94-4e81-addc-b62532cb503a
-  port: 43409
-  server: ae73ac68711a02ed63c97f217ab03dbc.lh.gtm.node-is.green
-  skip-cert-verify: true
-  sni: tcca1.bilibili.com
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 5|加拿大-优化2
+  network: ws
+  port: '16641'
+  server: m.cnmjcn.com
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
 - cipher: aes-256-gcm
   name: 8|🇨🇦CA-134.195.196.51-063_1@63
   password: pKEW8JPByTVTLtM
@@ -1431,45 +1408,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|加拿大 015
+  name: '10,20,21,24|🇺🇸 美国 CloudFlare节点 #1'
   network: ws
-  port: 8880
-  server: s2.db-link01.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-177-17-45.s2.db-link01.top
-    path: /dabai.in172.67.92.156
-- name: 10,16|_CA_大
-  network: tcp
-  password: 3bcd9e33-8377-4b32-af33-217158577ff3
-  port: 443
-  server: 172.105.103.27
-  skip-cert-verify: true
-  sni: kdlsupport.zendesk.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 10|加拿大 016
-  network: ws
-  port: 80
-  server: s5.db-link02.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-235-225-209.s5.db-link02.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '10,20,21|🏁RELAY-104.17.221.248-0751 #1'
-  network: ws
-  port: 8880
-  server: s1.db-link02.top
+  port: '2052'
+  server: 104.16.155.10
   servername: ''
   skip-cert-verify: true
   tfo: false
@@ -1479,8 +1421,90 @@ proxies:
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: 100-103-58-39.s1.db-link02.top
-    path: /dabai.in104.25.249.215
+      Host: 100-102-247-92.s1.db-link02.top
+    path: /dabai.in104.25.175.137
+- alterId: 0
+  cipher: auto
+  name: '10,20,21|🏁RELAY-198.41.209.70-0849 #1'
+  network: ws
+  port: 80
+  server: s1.cn-db.top
+  servername: ''
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-215-151-174.s1.cn-db.top
+    path: /dabai.in172.64.34.18
+- alterId: 0
+  cipher: auto
+  name: 10|加拿大 003
+  network: ws
+  port: 8080
+  server: s1.db-link01.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-79-28-26.s1.db-link01.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10|加拿大 004
+  network: ws
+  port: 8880
+  server: s2.cn-db.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-165-40-54.s2.cn-db.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10|加拿大 005
+  network: ws
+  port: 8080
+  server: s5.db-link02.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-149-191-2.s5.db-link02.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '10,20,21,24|🇺🇸 美国 CloudFlare节点 #5'
+  network: ws
+  port: '80'
+  server: 104.16.155.10
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  ws-opts:
+    headers:
+      Host: chunchuan.kejixiaoqi666.store
+    path: /
+- name: 16|_CA_大
+  network: tcp
+  password: 3bcd9e33-8377-4b32-af33-217158577ff3
+  port: 443
+  server: 172.105.103.27
+  skip-cert-verify: true
+  sni: kdlsupport.zendesk.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 17|加拿大(yudou66.com 玉豆免费节点)
@@ -1509,9 +1533,21 @@ proxies:
     headers:
       Host: www.bing.com
     path: github.com/Alvin9999
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇨🇦CA-185.213.20.227-0394
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.213.20.227
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇨🇦CA-142.4.216.225-0459
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-134.195.198.147-8210 #1'
+  name: '20,21|🇨🇦CA-134.195.198.147-8065 #1'
   network: ws
   port: 443
   server: 134.195.198.147
@@ -1525,7 +1561,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 23|🇨🇦_CA_加拿大
+  name: '23|🇨🇦_CA_加拿大 #1'
   network: ws
   port: 443
   server: 158.51.121.36
@@ -1544,3 +1580,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇨🇦 CA-23.162.200...
+  network: tcp
+  port: 20182
+  server: 23.162.200.91
+  tls: false
+  type: vmess
+  uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19
