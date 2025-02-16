@@ -345,14 +345,17 @@ proxies:
   server: coherent-drum.adder289.quest
   skip-cert-verify: true
   type: trojan
-- client-fingerprint: chrome
-  name: 5,11,24|🇰🇷 15|🇰🇷 韩国2|@ripaojiedian
+- alterId: 0
+  client-fingerprint: chrome
+  name: 5,11,24,37|🇷KR国
   password: '!!str 3778399737045327872'
   port: 443
   server: coherent-drum.adder289.quest
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: coherent-drum.adder289.quest
+  tls: true
   type: trojan
+  udp: true
 - client-fingerprint: chrome
   name: 10|韩国 001
   network: ws
@@ -732,17 +735,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36,37|未知63
-  network: tcp
-  port: 6644
-  server: 158.180.80.227
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 0bc1cdbd-da5f-40ea-8823-797edf28aac0
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇰🇷 KR-220.123.48.1...
   network: ws
   port: '30002'
@@ -755,3 +747,13 @@ proxies:
     headers:
       Host: cc2.1808.site
     path: /hgqqvws
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇰🇷 KR-158.180.80.2...
+  network: tcp
+  port: '6644'
+  server: 158.180.80.227
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0bc1cdbd-da5f-40ea-8823-797edf28aac0
