@@ -109,31 +109,17 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5|香港 Google云计算数据中心
-  network: tcp
-  port: 30251
-  server: 34.92.208.172
+  name: 5|香港HY-优化2
+  network: ws
+  port: '16632'
+  server: m.cnmjin.net
   tls: false
   type: vmess
-  uuid: 9e88a10b-655c-5120-89d0-408634169561
-- alterId: 0
-  cipher: auto
-  name: 5,11,24|🇭🇰 11|11|11|11|11|11|11|11,16|...
-  network: tcp
-  port: '21718'
-  server: AZHJ.dmak.cyou
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
-- name: 5|[vless]香港01
-  network: tcp
-  port: 35591
-  server: r318.zongyunti.site
-  servername: min.zongyunti.site
-  tls: true
-  type: vless
-  uuid: 842ecf01-d3d8-4a3c-9537-9ccc5d5b4981
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
 - alterId: 0
   cipher: aes-256-gcm
   client-fingerprint: chrome
@@ -145,17 +131,17 @@ proxies:
   tfo: false
   tls: true
   type: ss
-- name: 5,24|🇭🇰 香港4|@ripaojiedian
+- name: 5|[vless]香港01
   network: tcp
-  password: 43e5eeacbad3032bfe4c25a2f011b6b7
-  port: 443
-  server: 104.251.227.182
-  skip-cert-verify: true
-  sni: hezijiasuqi.com
-  type: trojan
-- name: 5|[vless]香港02
+  port: 35591
+  server: r318.zongyunti.site
+  servername: min.zongyunti.site
+  tls: true
+  type: vless
+  uuid: 842ecf01-d3d8-4a3c-9537-9ccc5d5b4981
+- name: 5|[vless]香港03
   network: tcp
-  port: 35592
+  port: 35593
   server: r318.zongyunti.site
   servername: min.zongyunti.site
   tls: true
@@ -174,35 +160,17 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 5|香港WAP-优化
-  network: ws
-  port: '16622'
-  server: yes.mojcn.com
-  tls: false
-  type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 5|香港HY-优化2
-  network: ws
-  port: '16632'
-  server: m.cnmjin.net
-  tls: false
-  type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
-- name: 5|[vless]香港03
+- name: 5,24|🇭🇰 香港4|@ripaojiedian
   network: tcp
-  port: 35593
+  password: 43e5eeacbad3032bfe4c25a2f011b6b7
+  port: 443
+  server: 104.251.227.182
+  skip-cert-verify: true
+  sni: hezijiasuqi.com
+  type: trojan
+- name: 5|[vless]香港02
+  network: tcp
+  port: 35592
   server: r318.zongyunti.site
   servername: min.zongyunti.site
   tls: true
@@ -214,6 +182,19 @@ proxies:
   network: ws
   port: '16622'
   server: m.cnmjin.net
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 5|香港WAP-优化
+  network: ws
+  port: '16622'
+  server: yes.mojcn.com
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -758,6 +739,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
+- name: 20,21,24|🇺🇸 _美国
+  password: 4c7ca962-1b57-4e67-88fe-bdbed579df4d
+  port: 10005
+  server: v3.littlexing.eu.org
+  skip-cert-verify: false
+  sni: v3.littlexing.eu.org
+  type: trojan
 - name: 26|V1-香港01∣K1线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21135
@@ -778,6 +766,22 @@ proxies:
   server: 219.135.231.205
   skip-cert-verify: true
   type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 28|香港
+  port: 19901
+  server: xg.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5c48c8b6-573e-4f98-88bc-98aa45e4f904
+- cipher: chacha20-ietf-poly1305
+  name: 28|公益路线1-香港HK 限速50MBPS-1I
+  password: 671cc29b-4048-4ce6-9c91-305ea7c8111b
+  port: 49709
+  server: jg647hf446ghvw.eucs.cn
+  type: ss
   udp: true
 - alterId: 0
   cipher: auto

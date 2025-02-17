@@ -962,6 +962,19 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 5|加拿大-优化2
+  network: ws
+  port: '16641'
+  server: m.cnmjcn.com
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 5|加拿大-优化3
   network: ws
   port: '16641'
@@ -986,29 +999,6 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 5|加拿大-优化2
-  network: ws
-  port: '16641'
-  server: m.cnmjcn.com
-  tls: false
-  type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
-- alpn:
-  - http/1.1
-  name: 5,24|🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 99.79.19.102
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - cipher: aes-256-gcm
   name: 8|🇨🇦CA-134.195.196.51-063_1@63
   password: pKEW8JPByTVTLtM
@@ -1382,7 +1372,24 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.19.48.236-0770 #2'
+  name: '10,20,21|🏁RELAY-104.16.155.10-0791 #2'
+  network: ws
+  port: 2052
+  server: 104.16.155.10
+  servername: ''
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-102-247-92.s1.db-link02.top
+    path: /dabai.in104.25.175.137
+- alterId: 0
+  cipher: auto
+  name: '10,20,21|🏁RELAY-104.17.221.248-0792 #2'
   network: ws
   port: 80
   server: s1.cn-db.top
@@ -1441,11 +1448,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.16.155.10-0234 #2'
+  name: 10|加拿大 006
   network: ws
   port: 80
   server: 104.16.155.10
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1456,11 +1462,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.16.155.10-0808 #1'
+  name: 10|加拿大 007
   network: ws
   port: 80
   server: s5.cn-db.top
-  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -1501,22 +1506,6 @@ proxies:
     headers:
       Host: 100-47-154-9.s1.cn-db.top
     path: /
-- alterId: 0
-  cipher: auto
-  name: '10,24|🇺🇸 美国 CloudFlare节点 #3'
-  network: ws
-  port: '2052'
-  server: s1.db-link02.top
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 975cb2da-5437-37c6-88ba-6a08b74ea53c
-  ws-opts:
-    headers:
-      Host: 100-193-104-61.s1.db-link02.top
-    path: /dabai.in104.21.168.159
 - alterId: 0
   cipher: auto
   delay: 2287
@@ -1575,15 +1564,9 @@ proxies:
     headers:
       Host: www.bing.com
     path: github.com/Alvin9999
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇨🇦CA-185.213.20.227-5676
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.213.20.227
-  type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-134.195.198.147-8058 #1'
+  name: '20,21|🇨🇦CA-134.195.198.147-8170 #1'
   network: ws
   port: 443
   server: 134.195.198.147
@@ -1609,19 +1592,21 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇨🇦 CA-38.111.114...
+  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-38.111.114.1...
   network: tcp
-  port: 14812
+  port: '14812'
   server: 38.111.114.153
+  servername: ''
   tls: false
   type: vmess
   uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇨🇦 CA-23.162.200...
+  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-23.162.200.9...
   network: tcp
-  port: 20182
+  port: '20182'
   server: 23.162.200.91
+  servername: ''
   tls: false
   type: vmess
   uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19

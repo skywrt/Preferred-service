@@ -1,6 +1,13 @@
 proxies:
+- name: '0|⚜️Telegram: @IP_CF🇩🇪'
+  network: grpc
+  port: 8880
+  server: 138.199.146.80
+  tls: false
+  type: vless
+  uuid: e1bb6cf4-f40c-481a-9a80-c76519b954e1
 - cipher: chacha20-ietf-poly1305
-  name: 4,5,8|🇳🇱NL-185.242.86.156-156_1@156
+  name: 4,8|🇳🇱NL-185.242.86.156-156_1@156
   password: 36ZCHeabUSfKjfQEvJ4HDV
   port: 54170
   server: 185.242.86.156
@@ -391,12 +398,6 @@ proxies:
   server: 217.182.198.219
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 5,12,16|_DE_国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 134.255.210.49
-  type: ss
 - alterId: 0
   cipher: auto
   name: 5|德国-优化
@@ -410,6 +411,18 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 5,12,20,21,30|🇩_DE_国
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.192
+  type: ss
+- cipher: aes-256-cfb
+  name: '5,12,16,30|🇩🇪_DE_德国_1 #3'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 134.255.210.49
+  type: ss
 - alterId: 0
   cipher: auto
   name: 5|德国-优化2
@@ -476,16 +489,15 @@ proxies:
       Host: telegram-channel-vlessconfig.sohala.uk
     path: /telegram-channel-vlessconfig-ws
 - delay: 1211
-  name: 10,24|🇩🇪 _德国
+  name: 10|德国 004
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 3.121.12.144
-  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- name: '13,20,21|🇩🇪DE-165.22.74.230-0496 #1'
+- name: '13|🇩🇪_DE_德国_1 #2'
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
   port: 443
@@ -500,38 +512,68 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 19|🇩🇪DE-146.19.247.183-0427
-  password: ZTUxOTQ5
-  port: 8388
-  server: 146.19.247.183
+  name: 28|尼 加德-1B
+  password: 6e50f7b4-2383-4f08-9542-604ba74fa807
+  port: 58828
+  server: southvip1.pkyun.xyz
   type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|斯德尔-1B
+  password: 6e50f7b4-2383-4f08-9542-604ba74fa807
+  port: 58824
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|塞尔维亚 尔德-1B
+  password: 6e50f7b4-2383-4f08-9542-604ba74fa807
+  port: 58840
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-8051 #1'
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
+  network: tcp
+  port: '24164'
+  server: 193.108.117.143
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-45.146.255.5...
+  network: tcp
+  port: '17054'
+  server: 45.146.255.57
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9dc7b9d7-9145-4649-b7e3-1a1729d98127
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-193.108.11...
+  network: tcp
+  port: 15713
+  server: 193.108.118.136
+  tls: false
+  type: vmess
+  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.25.25...
   network: ws
   port: 443
-  server: 57.129.24.125
-  servername: ''
+  server: 57.129.25.25
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.141-5577 #1'
-  network: ws
-  port: 443
-  server: 57.129.24.141
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
+      Host: f.khilei.com
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -547,34 +589,6 @@ proxies:
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
-  network: tcp
-  port: '24164'
-  server: 193.108.117.143
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-193.108.11...
-  network: tcp
-  port: 15713
-  server: 193.108.118.136
-  tls: false
-  type: vmess
-  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-23.158.56....
-  network: tcp
-  port: 48961
-  server: 23.158.56.21
-  tls: false
-  type: vmess
-  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-146.103.40...
   network: tcp
   port: 7030
@@ -582,26 +596,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 01d407a6-4b5f-4674-852f-68c65826d832
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-45.146.255.5...
-  network: tcp
-  port: '17054'
-  server: 45.146.255.57
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9dc7b9d7-9145-4649-b7e3-1a1729d98127
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-159.69.120.9...
-  network: tcp
-  port: '41391'
-  server: 159.69.120.98
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b5c3e2e8-dfb6-4a0a-b656-87e997610785
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
@@ -614,14 +608,24 @@ proxies:
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-162.55.171.2...
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
   network: tcp
-  port: '100'
-  server: 162.55.171.226
+  port: '48961'
+  server: 23.158.56.21
   servername: ''
   tls: false
   type: vmess
-  uuid: 1889d9ef-9d58-4427-bb3e-a08810c214eb
+  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
+  network: httpupgrade
+  port: '2083'
+  server: 104.21.71.8
+  servername: tabnak.ITN24.IR
+  tls: true
+  type: vmess
+  uuid: 69b71aec-c5d0-4ca2-ab23-0ff21c8468b0
 - name: 40|DE_speednode_0030
   password: '!!str 65086441068973800'
   port: 443
