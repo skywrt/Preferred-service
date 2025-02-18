@@ -19,8 +19,14 @@ proxies:
   skip-cert-verify: false
   sni: ru.mjt000.com
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 5,12,30|🇺_RU_
+  password: OTVlMzcy
+  port: 8388
+  server: 185.231.205.179
+  type: ss
 - cipher: aes-256-cfb
-  name: 5,12,16|🇷_RU_俄罗斯
+  name: 5,12,16,30|🇺_RU_俄罗斯_2
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.231.233.173
@@ -77,7 +83,7 @@ proxies:
   udp: false
 - alterId: 0
   cipher: auto
-  name: '12|🇷🇺_RU_俄罗斯 #2'
+  name: 12,30|🇷_RU_俄罗斯_1
   network: ws
   port: 20321
   server: 195.58.49.42
@@ -85,9 +91,18 @@ proxies:
   type: vmess
   uuid: b1e8e96b-3173-4917-87ca-878fdde67120
   ws-opts:
-    headers:
-      Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知62
+  network: tcp
+  port: 47555
+  server: 46.29.166.237
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇷🇺 RU-31.129.105.23...
@@ -99,13 +114,3 @@ proxies:
   uuid: 793e03cc-2b08-4d1b-bb0b-592567d19043
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...
-  network: tcp
-  port: '47555'
-  server: 46.29.166.237
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860

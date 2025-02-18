@@ -1,35 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|e1289512398d42a4a55fc4b7d0f493...
-  network: grpc
-  port: 8585
-  server: 91.107.188.10
-  tls: true
-  type: vmess
-  udp: false
-  uuid: b58ea041-b264-42b3-b928-4b395967d759
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|816ae6f42ed5416f8a43c83ba01964...
-  network: ws
-  port: 443
-  server: 139.162.178.95
-  servername: fixedfloati.cfd
-  tls: true
-  type: vmess
-  udp: false
-  uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e
-  ws-opts:
-    headers:
-      host: fixedfloati.cfd
-    path: /linkwsd
-- alterId: 0
-  cipher: auto
   name: 5|德国-优化
   network: ws
   port: '16644'
@@ -42,7 +13,7 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: aes-256-cfb
-  name: 5,12,16|_DE_国
+  name: '5,12,16,30|_DE_国 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 134.255.210.49
@@ -65,6 +36,15 @@ proxies:
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,37|未知63 10.9MB/s
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.192
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -117,6 +97,15 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知113
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - cipher: aes-256-cfb
   name: 19|🇩🇪DE-80.92.204.106-5377
   password: 4R3hUfZ2FHhDmNcP
@@ -164,53 +153,13 @@ proxies:
   uuid: b58ea041-b264-42b3-b928-4b395967d759
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
-  network: httpupgrade
-  port: '2083'
-  server: 104.21.71.8
-  servername: tabnak.ITN24.IR
-  tls: true
-  type: vmess
-  uuid: 69b71aec-c5d0-4ca2-ab23-0ff21c8468b0
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-193.108.11...
   network: tcp
-  port: '24164'
+  port: 24164
   server: 193.108.117.143
-  servername: ''
   tls: false
   type: vmess
   uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
-  network: tcp
-  port: '48961'
-  server: 23.158.56.21
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-162.55.171.2...
-  network: tcp
-  port: '100'
-  server: 162.55.171.226
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1889d9ef-9d58-4427-bb3e-a08810c214eb
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-193.108.11...
-  network: tcp
-  port: 15713
-  server: 193.108.118.136
-  tls: false
-  type: vmess
-  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-45.146.255.5...
@@ -223,14 +172,14 @@ proxies:
   uuid: 9dc7b9d7-9145-4649-b7e3-1a1729d98127
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
   network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
+  port: '2083'
+  server: 104.21.71.8
+  servername: tabnak.ITN24.IR
+  tls: true
   type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+  uuid: 69b71aec-c5d0-4ca2-ab23-0ff21c8468b0
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-146.103.40...
@@ -240,16 +189,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 01d407a6-4b5f-4674-852f-68c65826d832
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-159.69.120.9...
-  network: tcp
-  port: '41391'
-  server: 159.69.120.98
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b5c3e2e8-dfb6-4a0a-b656-87e997610785
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -262,6 +201,46 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知135 619.3KB/s
+  network: tcp
+  port: 41391
+  server: 159.69.120.98
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b5c3e2e8-dfb6-4a0a-b656-87e997610785
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NONE 🇩🇪 DE-193.108.11... #1'
+  network: tcp
+  port: 15713
+  server: 193.108.118.136
+  tls: false
+  type: vmess
+  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-162.55.171.2...
+  network: tcp
+  port: '100'
+  server: 162.55.171.226
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1889d9ef-9d58-4427-bb3e-a08810c214eb
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知126 52.1KB/s
+  network: tcp
+  port: 48961
+  server: 23.158.56.21
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
 - name: 40|DE_speednode_0031
   password: '!!str 3782591447421952000'
   port: 443

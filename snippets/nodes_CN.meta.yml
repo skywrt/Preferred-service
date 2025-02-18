@@ -762,13 +762,16 @@ proxies:
   skip-cert-verify: false
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #1'
+- alterId: 0
+  name: 24,37|CN国
   password: Aimer
   port: 2053
   server: 154.211.8.152
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agept.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #2'
   password: Aimer
   port: 443
@@ -776,6 +779,17 @@ proxies:
   skip-cert-verify: false
   sni: agept.ambercc.filegear-sg.me
   type: trojan
+- alterId: 0
+  cipher: none
+  name: 36,37|未知83
+  network: tcp
+  port: 59003
+  server: 183.236.51.36
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇨🇳 CN-113.56.219.34...
@@ -789,32 +803,12 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /?ed=2048
-- alterId: 0
-  cipher: none
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
-  network: tcp
-  port: '59003'
-  server: 183.236.51.36
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
   network: tcp
   port: '50002'
   server: 112.132.215.12
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
-  network: tcp
-  port: '50004'
-  server: 112.132.212.19
   servername: ''
   tls: false
   type: vmess
@@ -833,6 +827,16 @@ proxies:
     headers:
       Host: bn1.hk.tifa.pro
     path: /windows10
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
+  network: tcp
+  port: '50004'
+  server: 112.132.212.19
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
   name: 40|CN_speednode_0004
   password: 8771d456-6779-4c33-a796-b6defc67bc75
