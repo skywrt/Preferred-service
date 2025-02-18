@@ -19,8 +19,14 @@ proxies:
   skip-cert-verify: false
   sni: ru.mjt000.com
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 5,12,20,21,30|🇺_RU_
+  password: OTVlMzcy
+  port: 8388
+  server: 185.231.205.179
+  type: ss
 - cipher: aes-256-cfb
-  name: 5,12,16|🇷_RU_俄罗斯
+  name: 5,12,16,30|🇺_RU_俄罗斯_2
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.231.233.173
@@ -77,7 +83,7 @@ proxies:
   udp: false
 - alterId: 0
   cipher: auto
-  name: '12|🇷🇺_RU_俄罗斯 #2'
+  name: 12,30|🇷_RU_俄罗斯_1
   network: ws
   port: 20321
   server: 195.58.49.42
@@ -85,8 +91,6 @@ proxies:
   type: vmess
   uuid: b1e8e96b-3173-4917-87ca-878fdde67120
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - name: 24|🇷🇺 _俄罗斯
   password: Aimer
@@ -120,16 +124,6 @@ proxies:
   uuid: 793e03cc-2b08-4d1b-bb0b-592567d19043
   ws-opts:
     path: /
-- alterId: 0
-  name: 37|RU
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
-  skip-cert-verify: true
-  sni: hsdgbuys.pages.dev
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 40|RU_speednode_0093
