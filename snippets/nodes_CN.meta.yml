@@ -1,30 +1,4 @@
 proxies:
-- name: '5,38|🇨🇳_CN_中国_38 #1'
-  network: ws
-  port: 2053
-  server: 103.184.44.62
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
-- alterId: 0
-  cipher: auto
-  name: '5,11|12|github.com/freefq - 广东省移动 7 #1'
-  network: ws
-  port: '20401'
-  server: data-us-v1.shwjfkw.cn
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-us-v1.shwjfkw.cn
-    path: /debian
 - cipher: aes-256-cfb
   name: '5,11|1|_CN_ #1'
   password: hGkQ6915tD
@@ -40,6 +14,32 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '5,11|12|github.com/freefq - 广东省移动 7 #1'
+  network: ws
+  port: '20401'
+  server: data-us-v1.shwjfkw.cn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-us-v1.shwjfkw.cn
+    path: /debian
+- name: '5,38|🇨🇳_CN_中国_38 #1'
+  network: ws
+  port: 2053
+  server: 103.184.44.62
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
   name: 8|🇨🇳CN-139.227.223.3-049_1@49
@@ -762,16 +762,13 @@ proxies:
   skip-cert-verify: false
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 24,37|CN国
+- name: '24|_中国 #1'
   password: Aimer
   port: 2053
   server: 154.211.8.152
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: agept.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - name: '24|_中国 #2'
   password: Aimer
   port: 443
@@ -779,6 +776,16 @@ proxies:
   skip-cert-verify: false
   sni: agept.ambercc.filegear-sg.me
   type: trojan
+- alterId: 64
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
+  network: tcp
+  port: '50002'
+  server: 112.132.215.12
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇨🇳 CN-113.56.219.34...
@@ -794,31 +801,10 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: none
-  name: 36,37|未知83
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
   network: tcp
-  port: 59003
+  port: '59003'
   server: 183.236.51.36
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
-  network: tcp
-  port: '50002'
-  server: 112.132.215.12
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
-  network: tcp
-  port: '50004'
-  server: 112.132.212.19
   servername: ''
   tls: false
   type: vmess
@@ -837,175 +823,389 @@ proxies:
     headers:
       Host: bn1.hk.tifa.pro
     path: /windows10
-- cipher: chacha20-ietf-poly1305
+- alterId: 64
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
+  network: tcp
+  port: '50004'
+  server: 112.132.212.19
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 40|CN_speednode_0001
+  port: 26014
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
+  name: 40|CN_speednode_0002
+  port: 26011
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
+  name: 40|CN_speednode_0003
+  port: 26023
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0004
-  password: 8771d456-6779-4c33-a796-b6defc67bc75
-  port: 12822
-  server: twn-02-zz.manatraffic.top
-  type: ss
+  port: 26021
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0005
-  password: 8771d456-6779-4c33-a796-b6defc67bc75
-  port: 11413
-  server: hkg-03-zz.manatraffic.top
-  type: ss
+  port: 26022
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0006
-  password: 8771d456-6779-4c33-a796-b6defc67bc75
-  port: 11562
-  server: sgp-02-zz.manatraffic.top
-  type: ss
+  port: 26024
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0007
-  password: 1834fc79-7f4b-4e2b-9048-17c7b809fc44
-  port: 19013
-  server: yy1.vyunyunnode.top
-  type: ss
+  port: 26034
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0008
-  password: 1834fc79-7f4b-4e2b-9048-17c7b809fc44
-  port: 19088
-  server: yy1.vyunyunnode.top
-  type: ss
+  port: 26031
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0009
-  password: 1834fc79-7f4b-4e2b-9048-17c7b809fc44
-  port: 19006
-  server: yy1.vyunyunnode.top
-  type: ss
+  port: 26033
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0010
-  password: 8771d456-6779-4c33-a796-b6defc67bc75
-  port: 11561
-  server: sgp-01-zz.manatraffic.top
-  type: ss
+  port: 26032
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0011
-  password: 1834fc79-7f4b-4e2b-9048-17c7b809fc44
-  port: 19003
-  server: yy1.vyunyunnode.top
-  type: ss
+  port: 26051
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0012
-  password: 8771d456-6779-4c33-a796-b6defc67bc75
-  port: 14202
-  server: jpn-02-zz.manatraffic.top
-  type: ss
+  port: 26013
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0013
-  password: 1834fc79-7f4b-4e2b-9048-17c7b809fc44
-  port: 16603
-  server: yy1.vyunyunnode.top
-  type: ss
+  port: 26074
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0014
-  password: 1834fc79-7f4b-4e2b-9048-17c7b809fc44
-  port: 19019
-  server: yy1.vyunyunnode.top
-  type: ss
+  port: 26012
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0015
-  password: 8771d456-6779-4c33-a796-b6defc67bc75
-  port: 11563
-  server: sgp-03-zz.manatraffic.top
-  type: ss
+  port: 26071
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0016
-  password: 1834fc79-7f4b-4e2b-9048-17c7b809fc44
-  port: 19009
-  server: yy1.vyunyunnode.top
-  type: ss
+  port: 26073
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0017
-  password: 8771d456-6779-4c33-a796-b6defc67bc75
-  port: 14201
-  server: jpn-01-zz.manatraffic.top
-  type: ss
+  port: 26072
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0018
-  password: 8771d456-6779-4c33-a796-b6defc67bc75
-  port: 11412
-  server: hkg-02-zz.manatraffic.top
-  type: ss
+  port: 26231
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0019
-  password: 3FB23A19-9424-40C7-9139-3540228283FA
-  port: 40000
-  server: hk.fastsoonlink.com
-  type: ss
+  port: 26081
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0020
-  password: 1834fc79-7f4b-4e2b-9048-17c7b809fc44
-  port: 19014
-  server: yy1.vyunyunnode.top
-  type: ss
+  port: 26082
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: aes-128-gcm
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- cipher: aes-256-gcm
   name: 40|CN_speednode_0021
-  password: 64ddb7e7-618b-4413-bd14-8b28372cc2a3
-  port: 51201
-  server: a1.1tsm-sab2qkybzqc4ujzufu5yqppaomvbqfmrjunx7dmbde1ktmr.cv
+  password: c1JpS2F6dHRDQWl3UTl0VVRoZU5YOFRraGlDellJV3M=
+  port: 37310
+  server: tengx.wwwq.net
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0022
-  password: 1834fc79-7f4b-4e2b-9048-17c7b809fc44
-  port: 19027
-  server: yy1.vyunyunnode.top
-  type: ss
+  port: 26111
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0023
-  password: 8771d456-6779-4c33-a796-b6defc67bc75
-  port: 13501
-  server: usa-01-zz.manatraffic.top
-  type: ss
+  port: 26093
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0024
-  password: 1834fc79-7f4b-4e2b-9048-17c7b809fc44
-  port: 19015
-  server: yy1.vyunyunnode.top
-  type: ss
+  port: 26092
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: rc4-md5
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
   name: 40|CN_speednode_0025
+  port: 26094
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
+  name: 40|CN_speednode_0026
+  port: 26091
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
+  name: 40|CN_speednode_0027
+  port: 26151
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
+  name: 40|CN_speednode_0028
+  port: 26141
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
+  name: 40|CN_speednode_0029
+  port: 26191
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
+  name: 40|CN_speednode_0030
+  port: 26201
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
+  name: 40|CN_speednode_0031
+  port: 26221
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
+  name: 40|CN_speednode_0032
+  port: 26181
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
+  name: 40|CN_speednode_0033
+  port: 26211
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
+  name: 40|CN_speednode_0034
+  port: 26101
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- cipher: rc4-md5
+  name: 40|CN_speednode_0035
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
-  port: 40200
+  port: 40210
   protocol: auth_aes128_md5
   protocol-param: 92902:pFWGOQ
-  server: 1.link-hub.blog
+  server: 2.hublink.pro
   type: ssr
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 40|CN_speednode_0026
-  password: 1834fc79-7f4b-4e2b-9048-17c7b809fc44
-  port: 19008
-  server: yy1.vyunyunnode.top
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0036
+  password: b637f2e47b7827b308ebf399008075d2
+  port: 28164
+  server: 119.167.230.252
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 40|CN_speednode_0027
-  password: 3FB23A19-9424-40C7-9139-3540228283FA
-  port: 40005
-  server: 103.216.253.197
-  type: ss
+- cipher: rc4-md5
+  name: 40|CN_speednode_0037
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40211
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 2.hublink.pro
+  type: ssr
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 40|CN_speednode_0038
+  port: 26161
+  server: 183.2.194.142
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
