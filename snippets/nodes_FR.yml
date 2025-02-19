@@ -1,50 +1,18 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 5|Tip:中文【回家.魔法狗.com】
-  network: ws
-  port: '443'
-  server: h.mofagou.com
-  tls: true
-  type: vmess
-  uuid: f807f0b8-ead7-4d6a-badd-faec149d3101
-  ws-opts:
-    headers:
-      Host: ''
-    path: /mfg
-- alterId: 0
-  cipher: auto
-  name: '5|法国1|IEPL #1'
+  name: '5,24|_中国 #30'
   network: tcp
   port: '26141'
   server: 183.2.194.142
   tls: false
   type: vmess
-  uuid: f62cb479-7a74-4cdc-95cb-4c7e712df67e
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
 - cipher: chacha20-ietf-poly1305
   name: 5,16|🇷_FR_国
   password: MzZjN
   port: 8388
   server: 146.19.106.5
-  type: ss
-- name: 5,24|🇫🇷 法国 巴黎Amazon数据中心
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.181.197.222
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '5|法国+巴黎Amazon数据中心 #1'
-  password: telegram-id-directvpn
-  port: 22222
-  server: 52.47.207.189
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- cipher: aes-256-gcm
-  name: 8|🇫🇷FR-193.243.147.128-160_1@160
-  password: 7BcLdsO1WweoGD0X
-  port: 40368
-  server: 193.243.147.128
   type: ss
 - alterId: 0
   cipher: auto
@@ -133,9 +101,40 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19,20,21,36|🔒 VM-WS-NA 🇫🇷 FR-5.196.29.123:...
+  name: '19,20,21|🇫🇷FR-207.180.248.6-5655 #1'
   network: ws
-  port: '2082'
+  port: 40109
+  server: 207.180.248.6
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c74de759-10d7-4b75-9363-7d26ed323d47
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vmess-argo?ed=2048
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇫🇷FR-163.5.159.231-7859
+  network: ws
+  port: 443
+  server: irvideo.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      host: irvideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '19,20,21|🇫🇷FR-5.196.29.123-0548 #1'
+  network: ws
+  port: 2082
   server: 5.196.29.123
   servername: ''
   skip-cert-verify: true
@@ -148,7 +147,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-51.77.20.137-7861 #1'
+  name: '20,21|🇫🇷FR-51.77.20.137-7850 #1'
   network: ws
   port: 443
   server: 51.77.20.137
@@ -162,9 +161,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-146.19.168.161-7892 #1'
+  name: 20,21,36|🔒 VM-WS-TLS 🇫🇷 FR-146.19.168.1...
   network: ws
-  port: 443
+  port: '443'
   server: 146.19.168.161
   servername: az05.beyondy.cfd
   tls: true
@@ -178,8 +177,15 @@ proxies:
   password: Aimer
   port: 443
   server: 141.11.203.168
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: agepy.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇫🇷 _法国 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.181.197.222
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
   type: trojan
 - name: 26|V2-日本01∣K11线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
@@ -195,6 +201,15 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 28|法国2
+  port: 45071
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 931fe9f5-e7b7-48ad-9e03-03209bd6e9af
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228...

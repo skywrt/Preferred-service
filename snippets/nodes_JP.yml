@@ -1,25 +1,39 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '5|日本2|IEPL|Arteria #1'
+  name: '5,24|_中国 #17'
   network: tcp
   port: '26072'
   server: 183.2.194.142
   tls: false
   type: vmess
   uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- name: 5|尼日利亚NI-T
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: ni.mjt000.com
+  skip-cert-verify: false
+  sni: ni.mjt000.com
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '5|日本4|IEPL|Arteria #1'
+  name: '5,24|_中国 #16'
   network: tcp
   port: '26074'
   server: 183.2.194.142
   tls: false
   type: vmess
-  uuid: f62cb479-7a74-4cdc-95cb-4c7e712df67e
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- name: 5|日本JP-T
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: jp.mjt000.com
+  skip-cert-verify: true
+  sni: jp.mjt000.com
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '5|日本3|IEPL #1'
+  name: '5,24|_中国 #2'
   network: tcp
   port: '26073'
   server: 183.2.194.142
@@ -41,21 +55,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '5|日本1|IEPL #1'
+  name: '5,24|_中国 #1'
   network: tcp
   port: '26071'
   server: 183.2.194.142
   tls: false
   type: vmess
-  uuid: f62cb479-7a74-4cdc-95cb-4c7e712df67e
-- name: 5,24|🇯🇵 日本4|@ripaojiedian
-  network: tcp
-  password: 1e63e585ab2fef3adcc9ea75a62abc23
-  port: 443
-  server: 49.212.170.40
-  skip-cert-verify: true
-  sni: hezijiasuqi.com
-  type: trojan
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
 - alterId: 0
   cipher: auto
   name: 5|日本-优化2
@@ -69,19 +75,13 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- name: 5|日本JP-T
-  password: da91214e-b022-4f61-a724-01c538170e62
+- name: 5,24|🇯🇵 日本4|@ripaojiedian
+  network: tcp
+  password: 1e63e585ab2fef3adcc9ea75a62abc23
   port: 443
-  server: jp.mjt000.com
+  server: 49.212.170.40
   skip-cert-verify: true
-  sni: jp.mjt000.com
-  type: trojan
-- name: 5|尼日利亚NI-T
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: ni.mjt000.com
-  skip-cert-verify: false
-  sni: ni.mjt000.com
+  sni: hezijiasuqi.com
   type: trojan
 - cipher: aes-256-cfb
   name: 8|🇯🇵JP-54.199.83.239-171_1@171
@@ -125,11 +125,11 @@ proxies:
       host: 140.238.48.194
     path: /
 - name: 24|🇯🇵 _日本
-  password: Aimer
+  password: wb6368
   port: 2083
-  server: 103.116.7.133
-  skip-cert-verify: true
-  sni: agept.ambercc.filegear-sg.me
+  server: 103.116.7.103
+  skip-cert-verify: false
+  sni: hsdgbuys.pages.dev
   type: trojan
 - name: 26|✪每日连接前点更新订阅
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
@@ -184,6 +184,29 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|本03-1B
+  password: 98b48cdd-d675-471b-9989-a53b1874b7df
+  port: 20006
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 28|日本NO.2
+  port: 45057
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 931fe9f5-e7b7-48ad-9e03-03209bd6e9af
+- cipher: chacha20-ietf-poly1305
+  name: 28|日本02-1A
+  password: 296ba77f-6d47-4011-bc98-3c11e7b30d4c
+  port: 20004
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-150.230.61.11...
@@ -192,7 +215,7 @@ proxies:
   server: 150.230.61.110
   tls: false
   type: vmess
-  uuid: 33afaa7d-05f8-42ef-8542-799a37d8f4b3
+  uuid: 39973186-8925-492a-8bce-13b0a1a93f59
   ws-opts:
     headers:
       Host: 1-osaka-p.aboutanime.eu.org

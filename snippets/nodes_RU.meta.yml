@@ -1,4 +1,17 @@
 proxies:
+- cipher: aes-256-cfb
+  name: 5,12,16|🇷_RU_俄罗斯
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.173
+  type: ss
+- name: 5|俄罗斯01-0.8×
+  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
+  port: 20071
+  server: 111.243.144.236
+  skip-cert-verify: false
+  sni: taobao.phantasy.life
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 5,11,23|🇷🇺_RU_俄罗斯联邦
@@ -11,15 +24,13 @@ proxies:
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  name: '5|俄罗斯1|IEPL #1'
-  network: tcp
-  port: '26101'
-  server: 183.2.194.142
-  tls: false
-  type: vmess
-  uuid: f62cb479-7a74-4cdc-95cb-4c7e712df67e
+- name: 5|俄罗斯RU-T
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: ru.mjt000.com
+  skip-cert-verify: false
+  sni: ru.mjt000.com
+  type: trojan
 - name: '5,38|🇷🇺_RU_俄罗斯联邦_10 #1'
   network: ws
   port: 2087
@@ -34,15 +45,6 @@ proxies:
     path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
-  name: '5,11|2|🇷🇺_RU_俄罗斯联邦 #2'
-  network: tcp
-  port: 35972
-  server: 45.147.200.170
-  tls: false
-  type: vmess
-  uuid: 6a2afda8-8798-434c-8964-1deb4e7655a5
-- alterId: 0
-  cipher: auto
   name: 5|俄罗斯 - 圣彼得堡 - LLC Baxet - 1
   network: ws
   port: '20323'
@@ -54,26 +56,33 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 5|俄罗斯01-0.8×
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 20071
-  server: 111.243.144.236
-  skip-cert-verify: false
-  sni: taobao.phantasy.life
-  type: trojan
-- cipher: aes-256-cfb
-  name: 5,12,16|🇷_RU_俄罗斯
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.173
-  type: ss
-- name: 5|俄罗斯RU-T
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: ru.mjt000.com
-  skip-cert-verify: false
-  sni: ru.mjt000.com
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 5,24,36|🔒 VM-TCP-NONE 🇫🇮 FI-46.8.237.1...
+  network: tcp
+  port: 49148
+  server: 46.8.237.183
+  tls: false
+  type: vmess
+  uuid: 05893cbf-1aa3-4c91-a0f5-ad1e6c5f6aeb
+- alterId: 0
+  cipher: auto
+  name: '5,24|_中国 #33'
+  network: tcp
+  port: '26101'
+  server: 183.2.194.142
+  tls: false
+  type: vmess
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
+  name: '5,11|2|🇷🇺_RU_俄罗斯联邦 #2'
+  network: tcp
+  port: 35972
+  server: 45.147.200.170
+  tls: false
+  type: vmess
+  uuid: 6a2afda8-8798-434c-8964-1deb4e7655a5
 - name: 8|🇷🇺RU-176.32.35.167-210_1@209
   password: 85bce006-4885-11ee-8792-f23c9164ca5d
   port: 1007
@@ -204,56 +213,30 @@ proxies:
     path: '%2Fblue'
 - name: 24|🇷🇺 _俄罗斯
   password: Aimer
-  port: 443
-  server: 212.41.15.119
-  skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇷🇺 _俄罗斯 #1'
-  password: Aimer
-  port: 2053
-  server: 194.87.252.135
-  skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇷🇺 _俄罗斯 #2'
-  password: Aimer
   port: 2087
   server: 92.243.75.49
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: agepy.ambercc.filegear-sg.me
   type: trojan
 - alterId: 0
-  name: 24,37|🇷🇺RU
-  password: Aimer
-  port: 8443
-  server: 92.243.74.239
+  cipher: chacha20-ietf-poly1305
+  name: 24,37|未知23 95.7KB/s
+  password: NjBlZDlk
+  port: 8388
+  server: 89.221.224.166
   skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
   tls: true
-  type: trojan
-  udp: true
-- name: '24|🇷🇺 _俄罗斯 #4'
-  password: Aimer
-  port: 2053
-  server: 46.29.235.31
-  skip-cert-verify: true
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇷🇺 _俄罗斯 #5'
-  password: Aimer
-  port: 2087
-  server: 92.243.75.49
-  skip-cert-verify: true
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇷🇺 _俄罗斯 #6'
-  password: Aimer
-  port: 8443
-  server: 92.243.74.180
-  skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
-  type: trojan
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...
+  network: tcp
+  port: '47555'
+  server: 46.29.166.237
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇷🇺 RU-31.129.105.23...
@@ -265,6 +248,16 @@ proxies:
   uuid: 793e03cc-2b08-4d1b-bb0b-592567d19043
   ws-opts:
     path: /
+- alterId: 0
+  name: 37|🇷🇺RU
+  password: Aimer
+  port: 8443
+  server: 92.243.74.239
+  skip-cert-verify: true
+  sni: agepy.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
 - name: 40|RU_speednode_0032
   network: ws
   port: 80

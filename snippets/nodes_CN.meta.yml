@@ -5,15 +5,6 @@ proxies:
   port: 15082
   server: 59.56.77.178
   type: ss
-- alterId: 64
-  cipher: auto
-  name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
-  network: tcp
-  port: 54882
-  server: 183.240.235.162
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: '5,11|12|github.com/freefq - 广东省移动 7 #1'
@@ -28,6 +19,15 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
+- alterId: 64
+  cipher: auto
+  name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
+  network: tcp
+  port: 54882
+  server: 183.240.235.162
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: '5,38|🇨🇳_CN_中国_38 #1'
   network: ws
   port: 2053
@@ -619,9 +619,9 @@ proxies:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
 - cipher: chacha20-ietf-poly1305
-  name: 8|🇨🇳CN-120.238.122.160-163_1@163
+  name: 8|🇨🇳CN-120.238.122.160-166_1@166
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 20003
+  port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -749,90 +749,76 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 24|_中国
-  password: Aimer
-  port: 2083
-  server: 27.50.48.186
-  skip-cert-verify: true
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-- alterId: 0
-  name: 24,37|CN国
-  password: Aimer
-  port: 2096
-  server: 27.50.49.188
-  skip-cert-verify: true
-  sni: agept.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 24,37|🇨🇳CN中国2
-  password: Aimer
-  port: 2083
-  server: 27.50.48.189
-  skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
 - name: '24|_中国 #3'
-  password: Aimer
-  port: 2087
-  server: 154.197.64.189
-  skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #4'
-  password: Aimer
-  port: 443
-  server: 154.197.64.67
-  skip-cert-verify: true
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #5'
-  password: Aimer
-  port: 2087
-  server: 154.211.8.109
-  skip-cert-verify: true
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #6'
-  password: Aimer
-  port: 443
-  server: 154.197.64.67
-  skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #7'
-  password: Aimer
-  port: 2053
-  server: 154.211.8.152
-  skip-cert-verify: true
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #8'
   password: Aimer
   port: 443
   server: 8.219.165.74
-  skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #9'
-  password: Aimer
-  port: 27489
-  server: 45.251.10.227
-  skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #10'
-  password: Aimer
-  port: 443
-  server: 8.212.44.95
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: agepy.ambercc.filegear-sg.me
   type: trojan
 - alterId: 0
+  cipher: auto
+  name: '24|_中国 #4'
+  network: tcp
+  port: '54082'
+  server: 120.232.153.40
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: '24|_中国 #10'
+  password: Aimer
+  port: 443
+  server: 154.197.64.67
+  skip-cert-verify: false
+  sni: agepy.ambercc.filegear-sg.me
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '24|_中国 #19'
+  network: tcp
+  port: '40165'
+  server: 120.232.153.63
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: '24|_中国 #21'
+  password: Aimer
+  port: 8443
+  server: 154.197.64.248
+  skip-cert-verify: false
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|_中国 #25'
+  password: Aimer
+  port: 2053
+  server: 154.211.8.152
+  skip-cert-verify: false
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '24|_中国 #29'
+  network: tcp
+  port: '14100'
+  server: dxv4.pai50288.uk
+  tls: false
+  type: vmess
+  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
+- name: '24|_中国 #32'
+  password: Aimer
+  port: 443
+  server: 8.212.44.95
+  skip-cert-verify: false
+  sni: agepy.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|_中国 #40'
+  password: Aimer
+  port: 443
+  server: 154.197.64.67
+  skip-cert-verify: false
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+- alterId: 64
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
   network: tcp
@@ -842,19 +828,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇨🇳 CN-113.56.219.34...
-  network: ws
-  port: '8888'
-  server: 113.56.219.34
-  tls: false
-  type: vmess
-  uuid: f435af7b-d36e-4e8d-9c0f-3017bb71e2c9
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /?ed=2048
 - alterId: 2
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇨🇳 CN-183.232.155.4...
@@ -890,6 +863,39 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇨🇳 CN-113.56.219.34...
+  network: ws
+  port: '8888'
+  server: 113.56.219.34
+  tls: false
+  type: vmess
+  uuid: f435af7b-d36e-4e8d-9c0f-3017bb71e2c9
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /?ed=2048
+- alterId: 0
+  name: 37|CN国
+  password: Aimer
+  port: 2096
+  server: 27.50.49.188
+  skip-cert-verify: true
+  sni: agept.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇨🇳CN中国2
+  password: Aimer
+  port: 2083
+  server: 27.50.48.189
+  skip-cert-verify: true
+  sni: agepy.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 64
   cipher: auto
   name: 40|CN_speednode_0003
