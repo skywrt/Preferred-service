@@ -749,13 +749,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-128-gcm
-  name: 24,40|CN_speednode_0007
-  password: b637f2e47b7827b308ebf399008075d2
-  port: 28164
-  server: 119.167.230.252
-  type: ss
-  udp: true
 - name: 24|_中国
   password: Aimer
   port: 2083
@@ -763,20 +756,26 @@ proxies:
   skip-cert-verify: true
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #1'
+- alterId: 0
+  name: 24,37|CN国
   password: Aimer
   port: 2096
   server: 27.50.49.188
   skip-cert-verify: true
   sni: agept.ambercc.filegear-sg.me
+  tls: true
   type: trojan
-- name: '24|_中国 #2'
+  udp: true
+- alterId: 0
+  name: 24,37|🇨🇳CN中国2
   password: Aimer
   port: 2083
   server: 27.50.48.189
   skip-cert-verify: true
   sni: agepy.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #3'
   password: Aimer
   port: 2087
@@ -834,15 +833,28 @@ proxies:
   sni: agepy.ambercc.filegear-sg.me
   type: trojan
 - alterId: 0
-  cipher: none
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
   network: tcp
-  port: '59003'
-  server: 183.236.51.36
+  port: '50004'
+  server: 112.132.212.19
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇨🇳 CN-113.56.219.34...
+  network: ws
+  port: '8888'
+  server: 113.56.219.34
+  tls: false
+  type: vmess
+  uuid: f435af7b-d36e-4e8d-9c0f-3017bb71e2c9
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /?ed=2048
 - alterId: 2
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇨🇳 CN-183.232.155.4...
@@ -858,41 +870,29 @@ proxies:
       Host: bn1.hk.tifa.pro
     path: /windows10
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇨🇳 CN-113.56.219.34...
-  network: ws
-  port: '8888'
-  server: 113.56.219.34
-  tls: false
+  cipher: none
+  name: 36,37|未知65
+  network: tcp
+  port: 50002
+  server: 47.92.152.169
+  servername: ''
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: f435af7b-d36e-4e8d-9c0f-3017bb71e2c9
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /?ed=2048
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
+  cipher: none
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
   network: tcp
-  port: '50004'
-  server: 112.132.212.19
+  port: '59003'
+  server: 183.236.51.36
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
-  network: tcp
-  port: '50002'
-  server: 112.132.215.12
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 40|CN_speednode_0005
+  name: 40|CN_speednode_0003
   port: 59104
   server: 183.236.51.38
   skip-cert-verify: false
@@ -901,18 +901,7 @@ proxies:
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
-  name: 40|CN_speednode_0006
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40217
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 1.link-hub.blog
-  type: ssr
-  udp: true
-- cipher: rc4-md5
-  name: 40|CN_speednode_0008
+  name: 40|CN_speednode_0004
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -922,16 +911,20 @@ proxies:
   server: 1.link-hub.blog
   type: ssr
   udp: true
-- cipher: aes-128-gcm
-  name: 40|CN_speednode_0009
-  password: b637f2e47b7827b308ebf399008075d2
-  port: 22040
-  server: 119.167.230.252
-  type: ss
+- cipher: rc4-md5
+  name: 40|CN_speednode_0005
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40217
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 1.link-hub.blog
+  type: ssr
   udp: true
 - alterId: 2
   cipher: auto
-  name: 40|CN_speednode_0010
+  name: 40|CN_speednode_0006
   network: ws
   port: 22642
   server: tk.hzlt.tkddns.xyz

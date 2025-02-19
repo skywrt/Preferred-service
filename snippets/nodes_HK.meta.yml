@@ -1,16 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  fingerprint: ''
-  grpc-opts:
-    grpc-service-name: vless-grpc
-  name: 3|27c084f3917849e6a2f55da4494300...
-  network: grpc
-  port: 8880
-  server: 5.252.23.173
-  tls: false
-  type: vless
-  udp: false
-  uuid: 9ac37507-dc17-5313-8125-c6f588c60103
 - alterId: 0
   cipher: auto
   name: '5|香港2|IEPL #1'
@@ -37,7 +25,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
-- name: 5,24,40|HK_speednode_0014
+- name: 5,24,40|HK_speednode_0007
   network: tcp
   password: 1e63e585ab2fef3adcc9ea75a62abc23
   port: 443
@@ -92,13 +80,6 @@ proxies:
   skip-cert-verify: false
   sni: waphk.mjt000.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 5,40|CN_speednode_0004
-  password: 3FB23A19-9424-40C7-9139-3540228283FA
-  port: 40000
-  server: hk.fastsoonlink.com
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: '5|香港4|IEPL|HKT #1'
@@ -719,15 +700,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|HK5 1.0MB/s
-  password: WfmxKX2FBJRU0Ie9VLIYDL
-  port: 20012
-  server: 141.98.234.93
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - name: 26|V1-香港01∣K1线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21135
@@ -751,17 +723,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36,37|HK8 316.6KB/s
-  network: tcp
-  port: 27512
-  server: 103.149.183.178
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-20.6.155.159...
   network: ws
   port: '2080'
@@ -776,7 +737,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
   network: tcp
   port: '54675'
   server: 103.149.183.178
@@ -785,10 +746,30 @@ proxies:
   type: vmess
   uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
 - alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
+  network: tcp
+  port: '27512'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
+- alterId: 0
   name: 37|HK
+  password: Aimer
+  port: 443
+  server: 219.76.13.180
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|HK2
   network: tcp
   password: b2d0b65a-616c-433d-8e7b-08af61017fa8
-  port: 43396
+  port: 27002
   server: 45.146.232.172
   skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
@@ -796,53 +777,47 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|HK 352.5KB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 154.90.37.139
+  cipher: aes-256-gcm
+  name: 37|HK3
+  password: wJGsonf9xIUUgTIh
+  port: 8388
+  server: 103.253.43.210
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  name: 37|HK2
-  password: 7e7331ba-5095-405a-b301-c2a8e75c7d58
-  port: 158
-  server: 107.149.254.26
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK3
-  password: 3bcd9e33-8377-4b32-af33-217158577ff3
-  port: 443
-  server: 103.211.32.111
-  skip-cert-verify: true
-  sni: kdlsupport.zendesk.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
   name: 37|HK4
   network: tcp
   password: 7d858e5a-664e-419f-b6a1-c3bceb8ac208
-  port: 27103
-  server: 45.146.232.171
+  port: 27102
+  server: 45.146.232.173
   skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  cipher: aes-256-gcm
-  name: 37|HK6
-  password: 0HLKWXU2MV5KGEX4
-  port: 15013
-  server: 156.245.190.22
+  name: 37|HK5
+  network: tcp
+  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
+  port: 42881
+  server: 45.146.232.173
   skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
   tls: true
-  type: ss
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|HK6
+  network: tcp
+  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
+  port: 27101
+  server: 45.146.232.173
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   name: 37|HK7
   network: tcp
@@ -855,21 +830,10 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 37|HK9
+  name: 37|HK8
   network: tcp
-  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
-  port: 27002
-  server: 45.146.232.171
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK10
-  network: tcp
-  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
-  port: 46668
+  password: 7d858e5a-664e-419f-b6a1-c3bceb8ac208
+  port: 27102
   server: 45.146.232.172
   skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
@@ -877,19 +841,28 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 37|HK11
-  network: tcp
-  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
-  port: 43396
-  server: 45.146.232.173
+  cipher: aes-256-gcm
+  name: 37|HK9
+  password: 0HLKWXU2MV5KGEX4
+  port: 15013
+  server: 156.245.190.22
   skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|HK10
+  network: tcp
+  password: 3bcd9e33-8377-4b32-af33-217158577ff3
+  port: 443
+  server: 103.211.32.109
+  skip-cert-verify: true
+  sni: kdlsupport.zendesk.com
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: aes-256-gcm
-  name: 37|HK12
+  name: 37|HK11
   password: AN3FTAV65XV9BQKG
   port: 15009
   server: 156.245.190.18
