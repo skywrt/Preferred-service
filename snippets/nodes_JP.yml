@@ -609,6 +609,17 @@ proxies:
   type: vmess
   uuid: f62cb479-7a74-4cdc-95cb-4c7e712df67e
 - alterId: 0
+  cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 5,11,24,37|未知122 25.8KB/s
+  password: PGF2TGUCHQBC5IP5
+  port: 18016
+  server: 156.231.104.26
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
   name: '5|日本1|IEPL #1'
   network: tcp
@@ -617,13 +628,6 @@ proxies:
   tls: false
   type: vmess
   uuid: f62cb479-7a74-4cdc-95cb-4c7e712df67e
-- cipher: chacha20-ietf-poly1305
-  name: 5,40|CN_speednode_0007
-  password: 66061261-61d0-4243-a56f-393f38a6e99d
-  port: 14202
-  server: jpn-02-zz.manatraffic.top
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 5|日本 - 东京 - Baxet Group Inc. - 1
@@ -653,13 +657,6 @@ proxies:
   skip-cert-verify: false
   sni: ni.mjt000.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 5,40|CN_speednode_0008
-  password: 66061261-61d0-4243-a56f-393f38a6e99d
-  port: 14201
-  server: jpn-01-zz.manatraffic.top
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 5|日本-优化2
@@ -715,6 +712,15 @@ proxies:
     headers:
       Host: agept.ambercc.filegear-sg.me
     path: /?ed=2560
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知132 4.7MB/s
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - cipher: aes-256-cfb
   name: 19|🇯🇵JP-57.180.246.231-5776
   password: amazonskr05
@@ -743,13 +749,16 @@ proxies:
   skip-cert-verify: true
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇯🇵 _日本 #1'
+- alterId: 0
+  name: 24,37|JP
   password: Aimer
   port: 2083
   server: 103.116.7.133
   skip-cert-verify: true
   sni: agept.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: 26|✪每日连接前点更新订阅
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
   port: 21142
@@ -837,19 +846,6 @@ proxies:
   uuid: 70776c8b-5771-495a-8f73-8185b98ce74a
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇯🇵 JP-150.230.61.11...
-  network: ws
-  port: '23451'
-  server: 150.230.61.110
-  tls: false
-  type: vmess
-  uuid: 33afaa7d-05f8-42ef-8542-799a37d8f4b3
-  ws-opts:
-    headers:
-      Host: 1-osaka-p.aboutanime.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
   network: tcp
   port: '1069'
@@ -858,3 +854,16 @@ proxies:
   tls: false
   type: vmess
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇯🇵 JP-150.230.61.11...
+  network: ws
+  port: '23451'
+  server: 150.230.61.110
+  tls: false
+  type: vmess
+  uuid: 39973186-8925-492a-8bce-13b0a1a93f59
+  ws-opts:
+    headers:
+      Host: 1-osaka-p.aboutanime.eu.org
+    path: /

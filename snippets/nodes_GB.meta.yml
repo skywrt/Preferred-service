@@ -1,4 +1,16 @@
 proxies:
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|a08bbb4d641d408d961c4161a9fa86...
+  network: ws
+  port: 80
+  server: spdnet.fastly80-3.hosting-ip.com
+  tls: false
+  type: vless
+  udp: false
+  uuid: b6d7cf47-ad52-4019-889f-d2ff40f3b684
+  ws-opts:
+    path: /spdnet?ed=1024
 - name: 4|🇬🇧 GB 1 → tg@nicevpn123
   password: your_password
   port: 443
@@ -285,11 +297,14 @@ proxies:
   server: 51.143.142.183
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 4|🇬🇧 GB 44 → tg@nicevpn123
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 4,37|未知115 1.8MB/s
   password: XKFKl2rULjIp74
   port: 8008
   server: 145.239.6.202
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - name: 4|🇬🇧 GB 45 → tg@nicevpn123
@@ -616,6 +631,24 @@ proxies:
     headers:
       Host: lo.kpcloud.eu.org
     path: '%2Fblue'
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知62 10.3MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知113 10.0MB/s
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 19|🇬🇧GB-64.176.184.129-0507
   password: oXGp1+ihlfKg826H
@@ -642,24 +675,14 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-209.97.176.1...
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
   network: tcp
-  port: '8081'
-  server: 209.97.176.198
+  port: '47567'
+  server: 38.114.120.12
   servername: ''
   tls: false
   type: vmess
-  uuid: 3873beec-44c6-45be-8900-d184a1d0ee8f
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
-  network: tcp
-  port: '55577'
-  server: 172.99.190.207
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
+  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
@@ -669,16 +692,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
-  network: tcp
-  port: '47567'
-  server: 38.114.120.12
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-149.7.16.149...
@@ -699,14 +712,22 @@ proxies:
   tls: false
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 40|GB_speednode_0025
-  port: 443
-  server: 143.47.237.215
-  servername: dj-download-gb.xn--4gq62f52gopi49k.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d09ca4de-431d-4e43-bdfb-ce3d0586d7ba
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-172.99.190...
+  network: tcp
+  port: 55577
+  server: 172.99.190.207
+  tls: false
+  type: vmess
+  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-209.97.176.1...
+  network: tcp
+  port: '8081'
+  server: 209.97.176.198
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3873beec-44c6-45be-8900-d184a1d0ee8f
