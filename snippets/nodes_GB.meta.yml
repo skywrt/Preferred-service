@@ -1,4 +1,46 @@
 proxies:
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|75b417230dff48d198216219bfc006...
+  network: ws
+  port: 80
+  server: spdnet.fastly80-3.hosting-ip.com
+  tls: false
+  type: vless
+  udp: false
+  uuid: b6d7cf47-ad52-4019-889f-d2ff40f3b684
+  ws-opts:
+    path: /spdnet?ed=1024
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|7b5f03ac03b14d7999b5b4c8fd4b67...
+  network: ws
+  port: 22222
+  server: 35.179.98.57
+  servername: telegram-channel-vlessconfig.sohala.uk
+  tls: true
+  type: vless
+  udp: false
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|7676a49b112e445b8b51fced59afbd...
+  network: ws
+  port: 22222
+  server: 18.175.104.36
+  servername: telegram-channel-vlessconfig.sohala.uk
+  tls: true
+  type: vless
+  udp: false
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
 - name: 4|🇬🇧 GB 1 → tg@nicevpn123
   password: your_password
   port: 443
@@ -674,25 +716,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36,37|未知44 568.4KB/s
-  network: tcp
-  port: 46617
-  server: 46.250.253.232
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
-  network: tcp
-  port: 26924
-  server: 68.168.31.184
-  tls: false
-  type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-209.97.176.1...
   network: tcp
   port: '8081'
@@ -703,13 +726,24 @@ proxies:
   uuid: 3873beec-44c6-45be-8900-d184a1d0ee8f
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-38.114.120...
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
   network: tcp
-  port: 47567
+  port: '47567'
   server: 38.114.120.12
+  servername: ''
   tls: false
   type: vmess
   uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知44 568.4KB/s
+  network: tcp
+  port: 46617
+  server: 46.250.253.232
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-149.7.16.149...
