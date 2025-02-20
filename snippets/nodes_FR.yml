@@ -401,6 +401,13 @@ proxies:
   port: 8388
   server: 146.19.106.5
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 5,40|CN_speednode_0013
+  password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
+  port: 40034
+  server: fr.fastsoonlink.com
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 8|🇫🇷FR-213.32.63.176-186_1@186
@@ -428,46 +435,6 @@ proxies:
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知74
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.158.171.141
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇫🇷FR-146.19.168.161-5409
-  network: ws
-  port: 443
-  server: az05.beyondy.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      host: az05.beyondy.cfd
-    path: /link
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19,20,21,36|🔒 VM-WS-NA 🇫🇷 FR-207.180.248.6...
-  network: ws
-  port: 40109
-  server: 207.180.248.6
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c74de759-10d7-4b75-9363-7d26ed323d47
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess-argo?ed=2048
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -515,6 +482,20 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
+  name: '20,21|🇫🇷FR-163.5.159.231-7865 #1'
+  network: ws
+  port: 443
+  server: irvideo.cfd
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
   name: '20,21|🇫🇷FR-146.19.168.161-7841 #1'
   network: ws
   port: 443
@@ -541,15 +522,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|法国2
-  port: 45071
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 931fe9f5-e7b7-48ad-9e03-03209bd6e9af
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228...
