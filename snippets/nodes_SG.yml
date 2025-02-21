@@ -368,14 +368,6 @@ proxies:
   port: 443
   server: 54.179.87.28
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: '5,11|15|🇸🇬 新加坡4|@ripaojiedian #1'
-  password: I6DRVVQ4OOMIRMJD
-  port: 16015
-  server: 154.196.244.25
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: 5|新加坡-优化3
@@ -389,14 +381,6 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '5,11|15|🇸🇬 狮城特殊|@ripaojiedian #1'
-  password: amazonskr05
-  port: 443
-  server: 13.114.153.253
-  tfo: false
-  type: ss
 - cipher: aes-256-cfb
   name: 8|🇸🇬SG-13.213.46.196-170_1@170
   password: amazonskr05
@@ -480,19 +464,23 @@ proxies:
   password: Aimer
   port: 443
   server: 18.136.16.233
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 24,37|🇸SG
+- name: '24|🇸🇬 _新加坡 #1'
   password: Aimer
-  port: 2222
-  server: 20.184.3.9
+  port: 443
+  server: 150.109.11.223
   skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
-  tls: true
+  sni: agepy.aimercc.filegear-sg.me
   type: trojan
-  udp: true
+- name: '24|🇸🇬 _新加坡 #2'
+  password: Aimer
+  port: 443
+  server: 13.250.38.94
+  skip-cert-verify: true
+  sni: agepy.aimercc.filegear-sg.me
+  type: trojan
 - name: 26|V2-新加坡02∣K37线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21178
@@ -529,38 +517,11 @@ proxies:
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233...
   network: tcp
-  port: 50678
-  server: 62.146.233.53
-  tls: false
-  type: vmess
-  uuid: 5d1ec6e7-fd58-4e85-91c5-6335a86d2775
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233... #1'
-  network: tcp
   port: 43763
   server: 62.146.233.159
   tls: false
   type: vmess
   uuid: 1ddf3ade-5b8c-420c-84f6-f96979ec3080
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232...
-  network: tcp
-  port: 14372
-  server: 62.146.232.159
-  tls: false
-  type: vmess
-  uuid: ed1d7ea8-bf40-4a4a-8eac-8e57798ba6f7
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233... #2'
-  network: tcp
-  port: 38324
-  server: 62.146.233.115
-  tls: false
-  type: vmess
-  uuid: f863ef99-5ef0-4321-aaac-a476a5e8c3fb
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.233.1...
@@ -573,10 +534,19 @@ proxies:
   uuid: 9266df42-0830-48c2-8509-4c57b30fe29d
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇸🇬 SG-140.245.46.19...
+  name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-109.123.23...
+  network: tcp
+  port: 59032
+  server: 109.123.232.74
+  tls: false
+  type: vmess
+  uuid: 96ab7e1f-bf0d-45cd-8ebc-c8be2f8d43cd
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇸🇬 SG-140.245.42.10...
   network: ws
   port: '23452'
-  server: 140.245.46.19
+  server: 140.245.42.108
   tls: false
   type: vmess
   uuid: e6592058-1e2d-4068-8d4a-6f4e2d044008
@@ -586,13 +556,22 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232... #1'
+  name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232...
   network: tcp
   port: 33281
   server: 62.146.232.156
   tls: false
   type: vmess
   uuid: 24eda0ea-acf0-4538-a001-f746a480237a
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232... #1'
+  network: tcp
+  port: 14372
+  server: 62.146.232.159
+  tls: false
+  type: vmess
+  uuid: ed1d7ea8-bf40-4a4a-8eac-8e57798ba6f7
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-154.26.137...
@@ -614,10 +593,29 @@ proxies:
   uuid: 16509262-dbe2-43ba-99ce-07913d2a18b4
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-109.123.23...
+  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233... #1'
   network: tcp
-  port: 59032
-  server: 109.123.232.74
+  port: 38324
+  server: 62.146.233.115
   tls: false
   type: vmess
-  uuid: 96ab7e1f-bf0d-45cd-8ebc-c8be2f8d43cd
+  uuid: f863ef99-5ef0-4321-aaac-a476a5e8c3fb
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233... #2'
+  network: tcp
+  port: 50678
+  server: 62.146.233.53
+  tls: false
+  type: vmess
+  uuid: 5d1ec6e7-fd58-4e85-91c5-6335a86d2775
+- alterId: 0
+  name: 37|🇸SG
+  password: Aimer
+  port: 2222
+  server: 20.184.3.9
+  skip-cert-verify: true
+  sni: agepy.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
