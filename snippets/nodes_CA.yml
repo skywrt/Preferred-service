@@ -426,6 +426,22 @@ proxies:
     headers:
       Host: us4Bb5oSgJA.fzbqfrse.xyz
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: '9,27,30|0|🇦加大 01 | 1x CA #1'
+  password: 918d1ffb-16c4-4345-bec3-85c4bbf94d3c
+  port: 31441
+  server: free.2apzhfa.xyz
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '9,27,30|1|🇦 加拿大 01 | 1x CA #1'
+  password: 35949c41-b32f-4021-b58f-80933a9e713e
+  port: 36441
+  server: free.2weradf.xyz
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '10,20,21|🏁RELAY-104.19.48.236-0703 #1'
@@ -625,36 +641,23 @@ proxies:
     headers:
       Host: ''
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 27|0|🇦 加大 01 | 1x CA
-  password: 46dff0c7-99f3-4eaa-8c91-d3d200b81804
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|1|🇦加拿大 01 | 1x CA
-  password: f21d4fa3-e129-4efe-889d-cb2ec93c85e6
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇨🇦 CA-23.162.200...
+  name: 36,37|未知58
   network: tcp
   port: 20182
   server: 23.162.200.91
-  tls: false
+  servername: ''
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-38.111.114.1...
+  name: 36|🔒 VM-TCP-NONE 🇨🇦 CA-38.111.114...
   network: tcp
-  port: '14812'
+  port: 14812
   server: 38.111.114.153
-  servername: ''
   tls: false
   type: vmess
   uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
