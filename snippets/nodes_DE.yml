@@ -1,19 +1,7 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|f968353cc82d4a7297147307f3e07c...
-  network: grpc
-  port: 123
-  server: 91.107.188.10
-  tls: true
-  type: vmess
-  udp: false
-  uuid: 553db147-5e63-41cc-9a67-5a2643c84539
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|2|国 01 | 1x DE
-  password: 26a92afa-a89b-44f7-820d-61f63d5b66dc
+  name: '5,9,24,27,30|0|国 01 | 1x DE #1'
+  password: ce432a92-f768-4d5e-aaee-054b018ee9ea
   port: 31471
   server: free.2apzhfa.xyz
   tfo: false
@@ -111,24 +99,23 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 16|_DE_
+- alterId: 0
+  name: 16,37|未知88 16.9MB/s
+  network: tcp
   password: '!!str 3782591447421952000'
   port: 443
   server: 52.57.173.145
   skip-cert-verify: true
   sni: patient-ghost.treefrog761.one
-  type: trojan
-- alterId: 0
-  name: 20,21,37|🇺🇸US美国5
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 3.77.68.120
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
   tls: true
   type: trojan
   udp: true
+- name: '20,21|🇩🇪DE-3.77.68.120-0898 #1'
+  password: telegram-id-directvpn
+  port: 22222
+  server: 3.77.68.120
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '20,21|🇩🇪DE-57.129.24.125-8052 #1'
@@ -163,13 +150,16 @@ proxies:
   server: nextstepcareer.online
   sni: nextstepcareer.online
   type: trojan
-- name: 24|🇩🇪 _德国
+- alterId: 0
+  name: 24,37|DE国
   password: Aimer
   port: 2096
   server: 195.201.27.54
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agepy.aimercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 28|德国-1A
@@ -186,26 +176,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  grpc-opts:
-    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
-  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
-  network: grpc
-  port: '15145'
-  server: 88.198.172.25
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-159.69.120.9...
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-23.158.56....
   network: tcp
-  port: '41391'
-  server: 159.69.120.98
-  servername: ''
+  port: 48961
+  server: 23.158.56.21
   tls: false
   type: vmess
-  uuid: b5c3e2e8-dfb6-4a0a-b656-87e997610785
+  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
@@ -218,6 +195,15 @@ proxies:
   uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-146.103.40...
+  network: tcp
+  port: 7030
+  server: 146.103.40.214
+  tls: false
+  type: vmess
+  uuid: 01d407a6-4b5f-4674-852f-68c65826d832
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
   network: httpupgrade
   port: '2095'
@@ -228,13 +214,27 @@ proxies:
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-23.158.56....
+  name: 36,37|未知31
   network: tcp
-  port: 48961
-  server: 23.158.56.21
-  tls: false
+  port: 100
+  server: 162.55.171.226
+  servername: ''
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
+  uuid: 1889d9ef-9d58-4427-bb3e-a08810c214eb
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
+  network: grpc
+  port: '15145'
+  server: 88.198.172.25
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
@@ -245,22 +245,3 @@ proxies:
   tls: true
   type: vmess
   uuid: 69b71aec-c5d0-4ca2-ab23-0ff21c8468b0
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-162.55.171.2...
-  network: tcp
-  port: '100'
-  server: 162.55.171.226
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1889d9ef-9d58-4427-bb3e-a08810c214eb
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-146.103.40...
-  network: tcp
-  port: 7030
-  server: 146.103.40.214
-  tls: false
-  type: vmess
-  uuid: 01d407a6-4b5f-4674-852f-68c65826d832
