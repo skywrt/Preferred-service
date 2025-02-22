@@ -57,6 +57,13 @@ proxies:
   server: 217.30.10.68
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  name: 4|🇷🇺 RU 16 → tg@nicevpn123
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
+  server: 5.188.181.201
+  type: ss
+  udp: true
 - name: 4|🇷🇺 RU 17 → tg@nicevpn123
   network: ws
   password: maHanVPpN
@@ -409,13 +416,6 @@ proxies:
   password: p9z5BVADH2YFs3MN
   port: 9040
   server: 45.89.52.66
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 4,19|🇰🇿KZ-213.156.137.67-0411
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 213.156.137.67
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -832,12 +832,31 @@ proxies:
   skip-cert-verify: false
   sni: ru.mjt000.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 5,12,24,30|🇺_RU_
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,12,24,37|未知97 91.4KB/s
   password: NjBlZDlk
   port: 8388
   server: 89.221.224.166
+  skip-cert-verify: true
+  tls: true
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27|0|🇺  01 | 1x RU
+  password: 98f35821-a028-465e-8969-e205ac9f4e9d
+  port: 36511
+  server: free.2weradf.xyz
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27|1|🇺俄罗斯 01 | 1x RU
+  password: 048dd1bb-9237-4c38-9138-4dbcee48ec83
+  port: 31511
+  server: free.2apzhfa.xyz
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '5,11|2|🇷🇺_RU_俄罗斯联邦 #2'
@@ -863,31 +882,13 @@ proxies:
   sni: 004282c1-sbdj40-sdlngq-1n7jq.ru.z7zi.com
   type: trojan
   udp: false
-- cipher: chacha20-ietf-poly1305
-  name: 9,24,27,30|0|🇺俄罗斯 01 | 1x RU
-  password: a8ee4a88-19a7-40ef-8caf-aafaaba06a1d
-  port: 31511
-  server: free.2apzhfa.xyz
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 9,24,27,30,37|🇷🇺RU
-  password: 35949c41-b32f-4021-b58f-80933a9e713e
-  port: 36511
-  server: free.2weradf.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 10|俄罗斯 005
+  name: '10,20,21|🏁RELAY-185.174.138.199-0736 #1'
   network: ws
   port: 2052
   server: 185.174.138.199
+  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -900,10 +901,11 @@ proxies:
     path: /az05.beyondy.cfd/link?/TM
 - alterId: 0
   cipher: auto
-  name: 10|俄罗斯 001
+  name: '10,20,21|🏁RELAY-185.174.138.196-0737 #1'
   network: ws
   port: 2082
   server: 185.174.138.196
+  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -942,7 +944,7 @@ proxies:
       Host: agepy.ambercc.filegear-sg.me
     path: /?ed=2560
 - cipher: aes-256-cfb
-  name: 12,16,30|🇺_RU_俄罗斯_1
+  name: '12,16|🇷🇺_RU_俄罗斯_1 #2'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.231.233.173
