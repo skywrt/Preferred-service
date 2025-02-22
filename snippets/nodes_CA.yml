@@ -1,30 +1,17 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 5|加拿大-优化
+  name: 5|加拿大 - 蒙特利尔 - OVH SAS - 1
   network: ws
-  port: '16641'
-  server: yes.mojcn.com
-  tls: false
+  port: '443'
+  server: cdncdncdn.aikunapp.com
+  tls: true
   type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
+  uuid: 830a6085-9aeb-449b-bfd2-1924eb972941
   ws-opts:
     headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 5|加拿大-优化2
-  network: ws
-  port: '16641'
-  server: m.cnmjcn.com
-  tls: false
-  type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
+      Host: cdncdncdn.aikunapp.com
+    path: /vmess_ws/smjc/index?ed=8192
 - alterId: 0
   cipher: auto
   name: 5|加拿大-优化3
@@ -40,25 +27,38 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5|加拿大 - 蒙特利尔 - OVH SAS - 1
+  name: 5|加拿大-优化
   network: ws
-  port: '443'
-  server: cdncdncdn.aikunapp.com
-  tls: true
+  port: '16641'
+  server: yes.mojcn.com
+  tls: false
   type: vmess
-  uuid: 830a6085-9aeb-449b-bfd2-1924eb972941
+  uuid: da91214e-b022-4f61-a724-01c538170e62
   ws-opts:
     headers:
-      Host: cdncdncdn.aikunapp.com
-    path: /vmess_ws/smjc/index?ed=8192
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|🇦加大 01 | 1x CA #1'
-  password: ce432a92-f768-4d5e-aaee-054b018ee9ea
+  name: 5,9,24,27|2|🇦加大 01 | 1x CA
+  password: 28519301-6814-4acd-85ca-4230057dd322
   port: 31441
   server: free.2apzhfa.xyz
   tfo: false
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 5|加拿大-优化2
+  network: ws
+  port: '16641'
+  server: m.cnmjcn.com
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
 - cipher: aes-256-gcm
   name: 8|🇨🇦CA-134.195.196.51-063_1@63
   password: pKEW8JPByTVTLtM
@@ -449,11 +449,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.16.155.10-0744 #1'
+  name: 10|加拿大 001
   network: ws
   port: 2052
   server: s2.db-link01.top
-  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -481,13 +480,12 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2097
-  name: '10,20,21|🏁RELAY-104.17.213.241-0781 #1'
+  name: 10|加拿大 003
   network: ws
   port: 2095
   server: s1.cn-db.top
   servername: 100-139-204-73.s1.cn-db.top
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
@@ -593,29 +591,9 @@ proxies:
     headers:
       Host: www.bing.com
     path: github.com/Alvin9999
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇨🇦CA-142.4.216.225-0460
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-23.162.200.227-8054 #1'
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇨🇦CA-134.195.198.147-8044 #1'
+  name: '20,21|🇨🇦CA-134.195.198.147-8061 #1'
   network: ws
   port: 443
   server: 134.195.198.147
@@ -626,6 +604,20 @@ proxies:
   ws-opts:
     headers:
       Host: inna.cfd
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇨🇦CA-23.162.200.227-8043 #1'
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -641,19 +633,21 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇨🇦 CA-23.162.200...
+  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-38.111.114.1...
   network: tcp
-  port: 20182
-  server: 23.162.200.91
-  tls: false
-  type: vmess
-  uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇨🇦 CA-38.111.114...
-  network: tcp
-  port: 14812
+  port: '14812'
   server: 38.111.114.153
+  servername: ''
   tls: false
   type: vmess
   uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-23.162.200.9...
+  network: tcp
+  port: '20182'
+  server: 23.162.200.91
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19

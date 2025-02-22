@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 3|32f5e6a4c89141caadd08aa06507fa...
+  name: 3|b3ba605b744b4ccd954a8eb9a9477c...
   network: ws
   port: 443
   server: 144.24.200.164
@@ -16,22 +16,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 3|392e1aaffb8849debb98b50e24c7a9...
-  network: ws
-  port: 22222
-  server: 35.181.192.188
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|816d4a711e0f4edabced48bf0ed1d0...
+  name: 3|f109c10c33ff43b386b61d293f51ae...
   network: ws
   port: 22222
   server: 51.44.191.69
@@ -44,6 +29,34 @@ proxies:
     headers:
       host: telegram-channel-vlessconfig.sohala.uk
     path: /telegram-channel-vlessconfig-ws
+- name: 5|🇫🇷|法国-IEPL 01
+  password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
+  port: 20024
+  server: iepl00.catcat321.com
+  skip-cert-verify: true
+  type: trojan
+- name: 5|🇫🇷|法国-IEPL 02
+  password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
+  port: 20064
+  server: iepl01.catcat321.com
+  skip-cert-verify: false
+  sni: fr-01.oneok.link
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 5|法国1|IEPL
+  network: tcp
+  port: '26141'
+  server: 183.2.194.142
+  tls: false
+  type: vmess
+  uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
+- name: 5|法国+巴黎Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.181.121.99
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - cipher: aes-256-gcm
   name: 8|🇫🇷FR-193.243.147.128-160_1@160
   password: 7BcLdsO1WweoGD0X
@@ -135,34 +148,15 @@ proxies:
   server: 149.202.82.172
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 9|1|🇫🇷1 |  3.2MB/s
-  password: 7243745919d6de49a5db
-  port: 45578
-  server: console.02.aliyun.aq.kunlunaqs.com
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知58
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.158.171.110
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知21 13.4MB/s
+  name: 19|🇫🇷FR-45.158.171.151-0391
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
-  server: 45.158.171.146
-  skip-cert-verify: true
-  tls: true
+  server: 45.158.171.151
   type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇫🇷FR-146.19.168.161-7985
+  name: 19|🇫🇷FR-146.19.168.161-8041
   network: ws
   port: 443
   server: 146.19.168.161
@@ -174,54 +168,15 @@ proxies:
     headers:
       host: az05.beyondy.cfd
     path: /link
+- cipher: aes-256-cfb
+  name: 19|🇫🇷FR-51.15.15.82-0465
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.15.82
+  type: ss
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇫🇷FR-163.5.159.231-7966
-  network: ws
-  port: 443
-  server: irvideo.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      host: irvideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇫🇷FR-146.19.168.161-5646
-  network: ws
-  port: 443
-  server: az05.beyondy.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      host: az05.beyondy.cfd
-    path: /link
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇫🇷FR-5.196.29.123-0466
-  network: ws
-  port: 2082
-  server: 5.196.29.123
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇫🇷FR-51.77.20.137-8071 #1'
+  name: '20,21|🇫🇷FR-51.77.20.137-8069 #1'
   network: ws
   port: 443
   server: 51.77.20.137
@@ -235,24 +190,10 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-163.5.159.231-8032 #1'
+  name: '20,21|🇫🇷FR-146.19.168.161-5787 #1'
   network: ws
   port: 443
-  server: irvideo.cfd
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇫🇷FR-146.19.168.161-8041 #1'
-  network: ws
-  port: 443
-  server: 146.19.168.161
+  server: az05.beyondy.cfd
   servername: az05.beyondy.cfd
   tls: true
   type: vmess
@@ -261,6 +202,20 @@ proxies:
     headers:
       Host: az05.beyondy.cfd
     path: /link
+- alterId: 0
+  cipher: auto
+  name: 20,21,36|🔒 VM-WS-NA 🇫🇷 FR-5.196.29.123:...
+  network: ws
+  port: 2082
+  server: 5.196.29.123
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 24|VMESS-未知>法国-NF解锁法国地区非自制剧-ChatG...
@@ -275,7 +230,7 @@ proxies:
     headers:
       Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     path: /azumase.ren
-- name: '24|🇫🇷 _法国 #1'
+- name: 24|🇫🇷 _法国
   password: Aimer
   port: 443
   server: 141.11.203.168
@@ -296,20 +251,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇫🇷 FR-57.128.184.1...
-  network: ws
-  port: 443
-  server: 57.128.184.127
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: baradiha.com
-    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228...
