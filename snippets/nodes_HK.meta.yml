@@ -131,14 +131,14 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: '5,24,27,30|0|🇭🇰香港 03 | 1x HK #1'
-  password: a4c7d995-372e-4116-9fbc-5e7740de162c
+  password: 3a38cf75-c66e-421c-8e43-de69d816a54e
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,11,24,27,30|🇨🇳 广东省东莞市 电信IDC业务段 2
+  name: '5,11,24,27,30|12|🇭🇰 香港7|@ripaojiedian #2'
   password: TCEL1H0XD7TWAKI0
   port: 15011
   server: qh62onjn.slashdevslashnetslashtun.net
@@ -152,16 +152,13 @@ proxies:
   server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 5,11,24,27,30,37|🇭🇰HK香港2
+  name: '5,11,24,27,30|12|🇭🇰 香港2|@ripaojiedian #2'
   password: 2be0c954-4291-45ea-b47d-ca713180550b
   port: 52611
   server: hk01.x.quickcht3.club
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -186,18 +183,14 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- alterId: 0
-  client-fingerprint: chrome
-  name: 5,24,27,30,37|HK
+- name: '5,24,27,30|12,13|香港|@ripaojiedian #1'
   network: tcp
   password: 1e63e585ab2fef3adcc9ea75a62abc23
   port: 443
   server: 104.251.227.182
   skip-cert-verify: true
   sni: hezijiasuqi.com
-  tls: true
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 5|香港HY-优化
@@ -222,7 +215,7 @@ proxies:
   uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
 - cipher: chacha20-ietf-poly1305
   name: '5,24,27,30|0|🇭🇰香港 02 | 1x HK #2'
-  password: a4c7d995-372e-4116-9fbc-5e7740de162c
+  password: 3a38cf75-c66e-421c-8e43-de69d816a54e
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
@@ -292,8 +285,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 5,30|V2CROSS.COM
+  password: 3FB23A19-9424-40C7-9139-3540228283FA
+  port: 40000
+  server: hk.fastsoonlink.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 5,24,27,30|0|🇰 01 | 1x HK
-  password: a4c7d995-372e-4116-9fbc-5e7740de162c
+  password: 3a38cf75-c66e-421c-8e43-de69d816a54e
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
@@ -335,7 +335,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf
   client-fingerprint: chrome
-  name: '11,27,30|2,12|🇰 香港9|@ripaojiedian #1'
+  name: '11,27,30|12|🇭🇰 香港9|@ripaojiedian #1'
   obfs: plain
   obfs-param: c499e93390.wns.windows.com
   password: mtbv8n
@@ -914,6 +914,26 @@ proxies:
   uuid: 9bffecef-77db-4021-a02b-cc9915bcbb23
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
+  network: tcp
+  port: '54675'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
+  network: tcp
+  port: '27512'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-20.6.155.159...
   network: ws
   port: '2080'
@@ -926,190 +946,6 @@ proxies:
     headers:
       Host: hk4.556855.xyz
     path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
-  network: tcp
-  port: '27512'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
-  network: tcp
-  port: '54675'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 37|HK 31.2KB/s
-  password: ZDGC0Q2E112UAJO6
-  port: 15014
-  server: 156.245.190.23
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 37|HK2
-  network: tcp
-  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
-  port: 27401
-  server: 45.146.232.172
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK3
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 219.76.13.166
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 37|HK4
-  password: DW1B46PTWS3XSPYU
-  port: 15003
-  server: 156.245.190.12
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 37|HK5
-  network: tcp
-  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
-  port: 27401
-  server: 45.146.232.171
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK6
-  network: tcp
-  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
-  port: 27103
-  server: 45.146.232.173
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK7
-  password: 89f84d5e-4170-4c64-bc78-ac99953b103a
-  port: 50020
-  server: 5.83.221.31
-  skip-cert-verify: true
-  sni: jp03.6kk.org
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK8
-  network: tcp
-  password: 7d858e5a-664e-419f-b6a1-c3bceb8ac208
-  port: 10465
-  server: 45.146.232.172
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK9
-  network: tcp
-  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
-  port: 42881
-  server: 45.146.232.173
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK10
-  network: tcp
-  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
-  port: 42881
-  server: 45.146.232.171
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK11
-  network: tcp
-  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
-  port: 46668
-  server: 45.146.232.173
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK12
-  network: tcp
-  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
-  port: 42881
-  server: 45.146.232.172
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK13
-  password: 89f84d5e-4170-4c64-bc78-ac99953b103a
-  port: 50011
-  server: 5.83.221.31
-  skip-cert-verify: true
-  sni: sk05.zygbx.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK14
-  password: 89f84d5e-4170-4c64-bc78-ac99953b103a
-  port: 50043
-  server: 5.83.221.31
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK15
-  password: a1b36c4d-446b-4402-9370-ec6dbf79e143
-  port: 159
-  server: 107.149.254.26
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK16
-  password: 89f84d5e-4170-4c64-bc78-ac99953b103a
-  port: 50018
-  server: 5.83.221.31
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
 - name: 40|HK_speednode_0018
   network: ws
   port: 443
