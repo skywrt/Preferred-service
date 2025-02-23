@@ -1,26 +1,86 @@
 proxies:
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 5,11,24,27|11|🇬 2|@ripaojiedian
-  password: 8WDLSCVIFB4I26GB
-  port: 16011
-  server: 154.196.244.21
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 5,11,19,20,21,24,27|11|🇬 特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 3.38.214.76
-  tfo: false
-  type: ss
-- name: 5|🇸🇬|新加坡-进阶IEPL 01
+- name: 5|🇸🇬|新加坡-IEPL 01
   password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
-  port: 20060
-  server: iepl05.catcat321.com
+  port: 20036
+  server: iepl-01.catcat321.com
   skip-cert-verify: true
   type: trojan
+- name: 5|新加坡08|流媒体
+  network: tcp
+  password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+  port: 20230
+  server: sg008.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+- name: '5,38|🇸🇬_SG_新加坡_2 #1'
+  network: ws
+  port: 8443
+  server: 27.50.49.232
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2f%3fed%3d2048'
+- name: 5|新加坡05|流媒体
+  network: tcp
+  password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+  port: 20230
+  server: sg005.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+- name: 5|新加坡06|流媒体
+  network: ws
+  password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+  port: 20230
+  server: sg006.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 5,11,27|11|🇬 特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 54.169.104.136
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 5|新加坡03|流媒体
+  network: tcp
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: sg003.421421.xyz
+  servername: www.alibaba.com
+  tls: false
+  type: vless
+  uuid: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 5|新加坡-优化
+  network: ws
+  port: '16618'
+  server: yes.mojcn.com
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 5|新加坡2|IEPL
@@ -30,92 +90,88 @@ proxies:
   tls: false
   type: vmess
   uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
-- name: 5|🇸🇬|新加坡-IEPL 02
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 5|新加坡04|流媒体
+  network: tcp
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: sg004.421421.xyz
+  servername: www.alibaba.com
+  tls: false
+  type: vless
+  uuid: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- name: 5|🇸🇬|新加坡-进阶IEPL 03
   password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
-  port: 20039
+  port: 20060
   server: iepl02.catcat321.com
   skip-cert-verify: true
   type: trojan
-- name: 5|🇸🇬|新加坡-IEPL 01
-  password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
-  port: 20036
-  server: iepl-01.catcat321.com
-  skip-cert-verify: true
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 5|新加坡-优化2
-  network: ws
-  port: '16618'
-  server: m.cnmjin.net
-  tls: false
-  type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
 - name: 5|🇸🇬|新加坡-进阶IEPL 02
   password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
   port: 20060
   server: iepl03.catcat321.com
   skip-cert-verify: true
   type: trojan
-- name: '5,38|🇸🇬_SG_新加坡_37 #1'
-  network: ws
-  port: 443
-  server: 27.50.48.222
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
-- name: '5,38|🇸🇬_SG_新加坡_7 #1'
-  network: ws
-  port: 443
-  server: 27.50.49.13
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
-- name: 5|新加坡SG-T
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: sg.mjt000.com
-  skip-cert-verify: true
-  sni: sg.mjt000.com
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 5,24,27|14|🇬新加坡 02 | 1x SG
-  password: 7c068976-2f9d-4000-9a6e-f8ab3f8d9f0d
+- alterId: 0
+  cipher: auto
+  name: 5|新加坡1|IEPL
+  network: tcp
+  port: '26031'
+  server: 183.2.194.142
+  tls: false
+  type: vmess
+  uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,24,27,37|SG
+  password: 251da565-7087-491c-b314-293070fa43df
   port: 31173
   server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,24,27|14|🇬新加坡 03 | 1x SG
-  password: 7c068976-2f9d-4000-9a6e-f8ab3f8d9f0d
-  port: 31175
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 5,11,24,27,37|🇸SG
-  password: YHK82TR73114VN9O
-  port: 16016
-  server: 154.196.244.26
   skip-cert-verify: true
-  tfo: false
   tls: true
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 5|新加坡02|流媒体
+  network: tcp
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: sg002.421421.xyz
+  servername: www.alibaba.com
+  tls: false
+  type: vless
+  uuid: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: '5,11,24,27|11| 2|@ripaojiedian #1'
+  password: 8WDLSCVIFB4I26GB
+  port: 16011
+  server: 154.196.244.21
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: '5,11|1|_SG_ #1'
+  password: amazonskr05
+  port: 443
+  server: 54.179.87.28
   type: ss
 - alterId: 0
   cipher: auto
@@ -130,6 +186,67 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 5,11,24,27|11|🇬 新加坡5|@ripaojiedian
+  password: YHK82TR73114VN9O
+  port: 16016
+  server: 154.196.244.26
+  tfo: false
+  type: ss
+- name: 5|🇸🇬|新加坡-IEPL 03
+  password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
+  port: 20040
+  server: iepl01.catcat321.com
+  skip-cert-verify: true
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27|14|🇬新加坡 03 | 1x SG
+  password: 251da565-7087-491c-b314-293070fa43df
+  port: 31175
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: 5|🇸🇬|新加坡-IEPL 02
+  password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
+  port: 20039
+  server: iepl02.catcat321.com
+  skip-cert-verify: true
+  type: trojan
+- name: 5|新加坡SG-T
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: sg.mjt000.com
+  skip-cert-verify: true
+  sni: sg.mjt000.com
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27|14|🇬新加坡 01 | 1x SG
+  password: 251da565-7087-491c-b314-293070fa43df
+  port: 31171
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: 5|新加坡07|流媒体
+  network: tcp
+  password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+  port: 20230
+  server: sg007.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+- name: '5,38|🇸🇬_SG_新加坡_37 #1'
+  network: ws
+  port: 443
+  server: 27.50.48.222
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
   name: 5|新加坡4|IEPL
@@ -141,51 +258,27 @@ proxies:
   uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
 - alterId: 0
   cipher: auto
-  name: 5|新加坡1|IEPL
-  network: tcp
-  port: '26031'
-  server: 183.2.194.142
+  name: 5|新加坡-优化2
+  network: ws
+  port: '16618'
+  server: m.cnmjin.net
   tls: false
   type: vmess
-  uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
-- name: 5|🇸🇬|新加坡-IEPL 03
-  password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
-  port: 20040
-  server: iepl01.catcat321.com
-  skip-cert-verify: true
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 5,24,27|14|🇬新加坡 01 | 1x SG
-  password: 7c068976-2f9d-4000-9a6e-f8ab3f8d9f0d
-  port: 31171
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- name: 5|🇸🇬|新加坡-进阶IEPL 03
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
+- name: 5|🇸🇬|新加坡-进阶IEPL 01
   password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
   port: 20060
-  server: iepl02.catcat321.com
+  server: iepl05.catcat321.com
   skip-cert-verify: true
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 5|新加坡3|IEPL
-  network: tcp
-  port: '26033'
-  server: 183.2.194.142
-  tls: false
-  type: vmess
-  uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
-- cipher: aes-256-cfb
-  name: '5,11|1|_SG_ #1'
-  password: amazonskr05
-  port: 443
-  server: 54.179.87.28
-  type: ss
-- name: '5,38|🇸🇬_SG_新加坡_2 #1'
+- name: '5,38|🇸🇬_SG_新加坡_7 #1'
   network: ws
-  port: 8443
-  server: 27.50.49.232
+  port: 443
+  server: 27.50.49.13
   servername: juzibaipiao.5112233.xyz
   tls: true
   type: vless
@@ -196,17 +289,13 @@ proxies:
     path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
-  name: 5|新加坡-优化
-  network: ws
-  port: '16618'
-  server: yes.mojcn.com
+  name: 5|新加坡3|IEPL
+  network: tcp
+  port: '26033'
+  server: 183.2.194.142
   tls: false
   type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
+  uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
 - cipher: aes-256-cfb
   name: 8|🇸🇬SG-13.213.46.196-170_1@170
   password: amazonskr05
@@ -344,13 +433,60 @@ proxies:
     headers:
       Host: agedu.aimercc.filegear-sg.me
     path: /?ed=2560
-- cipher: rc4-md5
-  name: 19,20,21,40|SG_speednode_0087
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.45
-  type: ss
+- name: 10|新加坡 006
+  network: ws
+  port: 443
+  server: 13.250.38.94
+  servername: agedu.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      Host: agedu.aimercc.filegear-sg.me
+    path: /?ed=2560
+- name: 10|新加坡 007
+  network: ws
+  password: Aimer
+  port: 443
+  server: 13.250.38.94
+  skip-cert-verify: true
+  sni: agepy.aimercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: agepy.aimercc.filegear-sg.me
+    path: /?ed=2560
+- name: 10|新加坡 008
+  network: ws
+  password: Aimer
+  port: 9997
+  server: 52.220.205.101
+  skip-cert-verify: true
+  sni: agepy.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: agepy.ambercc.filegear-sg.me
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: 10|新加坡 009
+  network: ws
+  password: Aimer
+  port: 443
+  server: 150.109.11.223
+  skip-cert-verify: true
+  sni: agepy.aimercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: agepy.aimercc.filegear-sg.me
+    path: /?ed=2560
 - name: '20,21|🇸🇬SG-139.59.119.143-0485 #1'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -394,26 +530,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-194.233.72.2...
-  network: tcp
-  port: '27575'
-  server: 194.233.72.228
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 16509262-dbe2-43ba-99ce-07913d2a18b4
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233...
-  network: tcp
-  port: 43763
-  server: 62.146.233.159
-  tls: false
-  type: vmess
-  uuid: 1ddf3ade-5b8c-420c-84f6-f96979ec3080
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233... #1'
   network: tcp
   port: 38324
   server: 62.146.233.115
@@ -422,43 +539,17 @@ proxies:
   uuid: f863ef99-5ef0-4321-aaac-a476a5e8c3fb
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232...
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.232.1...
   network: tcp
-  port: 33281
+  port: '33281'
   server: 62.146.232.156
+  servername: ''
   tls: false
   type: vmess
   uuid: 24eda0ea-acf0-4538-a001-f746a480237a
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-154.26.137...
-  network: tcp
-  port: 44104
-  server: 154.26.137.42
-  tls: false
-  type: vmess
-  uuid: e9933a4c-e56e-458c-bcf4-9cb3875bba55
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232... #1'
-  network: tcp
-  port: 14372
-  server: 62.146.232.159
-  tls: false
-  type: vmess
-  uuid: ed1d7ea8-bf40-4a4a-8eac-8e57798ba6f7
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233... #2'
-  network: tcp
-  port: 36712
-  server: 62.146.233.112
-  tls: false
-  type: vmess
-  uuid: 9266df42-0830-48c2-8509-4c57b30fe29d
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233... #3'
+  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233... #1'
   network: tcp
   port: 50678
   server: 62.146.233.53
@@ -474,3 +565,49 @@ proxies:
   tls: false
   type: vmess
   uuid: 96ab7e1f-bf0d-45cd-8ebc-c8be2f8d43cd
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-194.233.72.2...
+  network: tcp
+  port: '27575'
+  server: 194.233.72.228
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 16509262-dbe2-43ba-99ce-07913d2a18b4
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233... #2'
+  network: tcp
+  port: 43763
+  server: 62.146.233.159
+  tls: false
+  type: vmess
+  uuid: 1ddf3ade-5b8c-420c-84f6-f96979ec3080
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233... #3'
+  network: tcp
+  port: 36712
+  server: 62.146.233.112
+  tls: false
+  type: vmess
+  uuid: 9266df42-0830-48c2-8509-4c57b30fe29d
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-154.26.137...
+  network: tcp
+  port: 44104
+  server: 154.26.137.42
+  tls: false
+  type: vmess
+  uuid: e9933a4c-e56e-458c-bcf4-9cb3875bba55
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232...
+  network: tcp
+  port: 14372
+  server: 62.146.232.159
+  tls: false
+  type: vmess
+  uuid: ed1d7ea8-bf40-4a4a-8eac-8e57798ba6f7

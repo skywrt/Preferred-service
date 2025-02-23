@@ -1,6 +1,51 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: '5,24|_中国 #1'
+  network: tcp
+  port: '54082'
+  server: 120.232.153.40
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 5,24|🇨🇳 广东省广州市 移动
+  network: tcp
+  port: '40172'
+  server: 120.232.153.63
+  tls: false
+  type: vmess
+  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
+- alterId: 0
+  cipher: auto
+  name: '5,24|_中国 #20'
+  network: tcp
+  port: '51754'
+  server: 183.236.51.38
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '5,24|_中国 #11'
+  network: tcp
+  port: '59104'
+  server: 183.236.51.38
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
+  network: tcp
+  port: 54882
+  server: 183.240.235.162
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
   name: '5,11|12|github.com/freefq - 广东省移动 7 #1'
   network: ws
   port: '20401'
@@ -13,57 +58,12 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
-- alterId: 64
-  cipher: auto
-  name: '5,11|3,17|🇨🇳_CN_中国 #1 #1'
-  network: tcp
-  port: 54882
-  server: 183.240.235.162
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '5,24|_中国 #20'
-  network: tcp
-  port: '51754'
-  server: 183.236.51.38
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 5|广东省江门市 移动
-  network: tcp
-  port: '52908'
-  server: 120.234.102.229
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 5|广东省湛江市 移动
-  network: tcp
-  port: '41259'
-  server: 120.198.71.216
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-cfb
   name: '5,11|1|_CN_ #1'
   password: hGkQ6915tD
   port: 15082
   server: 59.56.77.178
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '5|广东省广州市 移动 #1'
-  network: tcp
-  port: '40002'
-  server: 120.232.153.40
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 8|🇨🇳CN-139.227.223.3-049_1@49
@@ -649,12 +649,6 @@ proxies:
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 8|🇨🇳CN-120.238.122.160-166_1@166
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 26667
-  server: service.ouluyun9803.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: 8|🇨🇳CN-120.238.122.160-167_1@167
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
@@ -794,42 +788,30 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '24|_中国 #1'
-  network: tcp
-  port: '54082'
-  server: 120.232.153.40
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: 24,37|CN国
+- name: '24|_中国 #2'
   password: Aimer
   port: 21698
   server: 156.251.180.181
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: agept.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
-- name: '24|_中国 #3'
+- alterId: 0
+  name: 24,37|🇳CN国
   password: Aimer
   port: 2087
   server: 154.211.8.98
-  skip-cert-verify: false
-  sni: agepy.aimercc.filegear-sg.me
-  type: trojan
-- alterId: 0
-  name: 24,37|🇭PH
-  password: Aimer
-  port: 2087
-  server: 154.211.8.109
   skip-cert-verify: true
-  sni: agept.ambercc.filegear-sg.me
+  sni: agepy.aimercc.filegear-sg.me
   tls: true
   type: trojan
   udp: true
+- name: '24|_中国 #4'
+  password: Aimer
+  port: 2087
+  server: 154.211.8.109
+  skip-cert-verify: false
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
 - name: '24|_中国 #5'
   password: Aimer
   port: 443
@@ -872,15 +854,6 @@ proxies:
   skip-cert-verify: false
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- alterId: 64
-  cipher: auto
-  name: '24|_中国 #11'
-  network: tcp
-  port: '59104'
-  server: 183.236.51.38
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: '24|_中国 #12'
@@ -922,16 +895,13 @@ proxies:
   skip-cert-verify: false
   sni: agepy.aimercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 24,37|🇳CN中国2
+- name: '24|_中国 #18'
   password: Aimer
   port: 8443
   server: 154.197.64.248
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: agepy.aimercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - name: '24|_中国 #19'
   password: Aimer
   port: 2087
@@ -961,24 +931,23 @@ proxies:
   sni: agept.ambercc.filegear-sg.me
   type: trojan
 - alterId: 0
-  cipher: none
-  name: 36,37|未知53
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
   network: tcp
-  port: 59003
-  server: 183.236.51.36
-  servername: ''
-  skip-cert-verify: true
-  tls: true
+  port: '50004'
+  server: 112.132.212.19
+  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
+  name: 36,37|未知78
   network: tcp
-  port: '50002'
+  port: 50002
   server: 112.132.215.12
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 2
@@ -996,12 +965,14 @@ proxies:
       Host: bn1.hk.tifa.pro
     path: /windows10
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212....
+  cipher: none
+  name: 36,37|未知112
   network: tcp
-  port: '50004'
-  server: 112.132.212.19
-  tls: false
+  port: 59003
+  server: 183.236.51.36
+  servername: ''
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
@@ -1018,21 +989,6 @@ proxies:
   cipher: auto
   name: 40|CN_speednode_0007
   network: ws
-  port: 22643
-  server: tk.hzlt.tkddns.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-c.tkong.cc
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 40|CN_speednode_0009
-  network: ws
   port: 22641
   server: tk.hzlt.tkddns.xyz
   skip-cert-verify: true
@@ -1043,4 +999,19 @@ proxies:
   ws-opts:
     headers:
       Host: zxjp-a.tkong.cc
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 40|CN_speednode_0008
+  network: ws
+  port: 22643
+  server: tk.hzlt.tkddns.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-c.tkong.cc
     path: /

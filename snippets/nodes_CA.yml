@@ -25,12 +25,18 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- cipher: aes-128-gcm
+  name: 5,12,19,20,21,27|1|1 |  5.2MB/s
+  password: shadowsocks
+  port: 443
+  server: 149.34.244.82
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 5|加拿大-优化
+  name: 5|加拿大-优化2
   network: ws
   port: '16641'
-  server: yes.mojcn.com
+  server: m.cnmjcn.com
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -40,17 +46,17 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 5,24,27|14|🇦加大 01 | 1x CA
-  password: 7c068976-2f9d-4000-9a6e-f8ab3f8d9f0d
+  password: 251da565-7087-491c-b314-293070fa43df
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5|加拿大-优化2
+  name: 5|加拿大-优化
   network: ws
   port: '16641'
-  server: m.cnmjcn.com
+  server: yes.mojcn.com
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -591,28 +597,14 @@ proxies:
       Host: www.bing.com
     path: github.com/Alvin9999
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知62 22.2MB/s
-  password: shadowsocks
-  port: 443
-  server: 149.22.95.183
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知3 107.7MB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
   skip-cert-verify: true
   tls: true
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇨🇦CA-134.195.198.147-8061 #1'
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
-    path: /linkvws
 - alterId: 0
   cipher: auto
   name: '20,21|🇨🇦CA-23.162.200.227-8043 #1'
@@ -629,6 +621,20 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
+  name: '20,21|🇨🇦CA-134.195.198.147-8061 #1'
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /linkvws
+- alterId: 0
+  cipher: auto
   name: 23|🇨🇦_CA_加拿大
   network: ws
   port: 443
@@ -641,10 +647,11 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇨🇦 CA-23.162.200...
+  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-23.162.200.9...
   network: tcp
-  port: 20182
+  port: '20182'
   server: 23.162.200.91
+  servername: ''
   tls: false
   type: vmess
   uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19
