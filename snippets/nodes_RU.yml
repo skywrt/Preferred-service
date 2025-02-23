@@ -38,8 +38,8 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|2|🇺 01 | 1x RU
-  password: 5f775b77-7b07-4b53-afd1-a937e5f1ac34
+  name: 5,24,27|14|🇺 01 | 1x RU
+  password: 7c068976-2f9d-4000-9a6e-f8ab3f8d9f0d
   port: 31511
   server: free.2apzhfa.xyz
   type: ss
@@ -114,10 +114,11 @@ proxies:
     path: /az05.beyondy.cfd/link?/TM
 - alterId: 0
   cipher: auto
-  name: '10,24|🇷🇺 _俄罗斯 #11'
+  name: 10,24,36|🔒 VM-WS-NA 🇷🇺 RU-185.174.138.1...
   network: ws
-  port: '2082'
+  port: 2082
   server: 185.174.138.196
+  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -170,12 +171,12 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- name: 24|🇷🇺 _俄罗斯
+- name: '24|🇷🇺 _俄罗斯 #2'
   password: Aimer
-  port: 8443
-  server: 92.243.74.239
+  port: 2087
+  server: 46.254.93.134
   skip-cert-verify: false
-  sni: agepy.ambercc.filegear-sg.me
+  sni: agept.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #1'
   password: Aimer
@@ -184,12 +185,19 @@ proxies:
   skip-cert-verify: false
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #2'
+- name: '24|🇷🇺 俄罗斯 V2CROSS.COM #2'
   password: Aimer
-  port: 2087
-  server: 46.254.93.134
+  port: 8443
+  server: 46.254.93.243
   skip-cert-verify: false
   sni: agept.ambercc.filegear-sg.me
+  type: trojan
+- name: 24|🇷🇺 _俄罗斯
+  password: Aimer
+  port: 8443
+  server: 92.243.74.239
+  skip-cert-verify: false
+  sni: agepy.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #3'
   password: Aimer
@@ -263,20 +271,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇷🇺 RU-31.129.105.23...
-  network: ws
-  port: '16231'
-  server: 31.129.105.239
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 793e03cc-2b08-4d1b-bb0b-592567d19043
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...
   network: tcp
   port: '47555'
@@ -285,3 +279,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-31.129.105.23...
+  network: ws
+  port: '16231'
+  server: 31.129.105.239
+  tls: false
+  type: vmess
+  uuid: 793e03cc-2b08-4d1b-bb0b-592567d19043
+  ws-opts:
+    path: /
