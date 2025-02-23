@@ -338,55 +338,42 @@ proxies:
   server: 13.125.19.50
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 5|韩国1IEPL
-  network: tcp
-  port: '26081'
-  server: 183.2.194.142
-  tls: false
-  type: vmess
-  uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
-- cipher: chacha20-ietf-poly1305
-  name: 5,24,27|0| 01 | 1x KR
-  password: 8605ff01-502b-4ccd-8e39-2fdc069cb5d7
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- name: 5|🇰🇷|韩国-IEPL 01
-  password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
-  port: 20014
-  server: iepl-00.catcat321.com
-  skip-cert-verify: true
-  type: trojan
 - name: 5|🇰🇷|韩国-IEPL 03
   password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
   port: 20014
   server: iepl05.catcat321.com
   skip-cert-verify: true
+  sni: mp.weixin.qq.com
+  type: trojan
+- name: 5|🇰🇷|韩国-IEPL 02
+  password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
+  port: 20014
+  server: iepl-01.catcat321.com
+  skip-cert-verify: true
+  sni: mp.weixin.qq.com
   type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,11,24,27|12|🇷 韩国|@ripaojiedian
+  name: '5,11,19,20,21,24,27,30|12|🇰🇷 韩国|@ripaojiedian #1'
   password: amazonskr05
   port: 443
   server: 18.143.149.127
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|0|🇷韩国 02 | 1x KR
-  password: 8605ff01-502b-4ccd-8e39-2fdc069cb5d7
+  name: 5,24,27,30|0|🇷国 01 | 1x KR
+  password: a4c7d995-372e-4116-9fbc-5e7740de162c
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,24,27,30|0|🇷韩国 02 | 1x KR #1'
+  password: a4c7d995-372e-4116-9fbc-5e7740de162c
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 5|🇰🇷|韩国-IEPL 02
-  password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
-  port: 20014
-  server: iepl-01.catcat321.com
-  skip-cert-verify: true
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|韩国2IEPL|Sejong
@@ -396,19 +383,22 @@ proxies:
   tls: false
   type: vmess
   uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
-- alpn:
-  - http%2F1.1
-  name: 5|韩国+KT电信
-  network: ws
-  password: Aimer
-  port: 50003
-  server: 175.199.169.221
-  sni: agept.ambercc.filegear-sg.me
+- name: 5|🇰🇷|韩国-IEPL 01
+  password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
+  port: 20014
+  server: iepl-00.catcat321.com
+  skip-cert-verify: true
+  sni: mp.weixin.qq.com
   type: trojan
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: '%2F%3Fed%3D2560'
+- alterId: 0
+  cipher: auto
+  name: 5|韩国1IEPL
+  network: tcp
+  port: '26081'
+  server: 183.2.194.142
+  tls: false
+  type: vmess
+  uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
 - client-fingerprint: chrome
   name: 10|韩国 001
   network: ws
@@ -941,12 +931,13 @@ proxies:
     headers:
       Host: dp.ylks.xyz
     path: '%2F%3Fproxyip%3Dproxyip.kr.fxxp.dedyp.io'
-- cipher: aes-256-cfb
-  name: 19|🇰🇷KR-13.124.62.225-0475
-  password: amazonskr05
+- name: '24,27,30|2|🇷1 |  5.7MB/s #1'
+  password: '!!str 3787016351714123776'
   port: 443
-  server: 13.124.62.225
-  type: ss
+  server: amusing-jaybird.treefrog761.one
+  skip-cert-verify: true
+  sni: amusing-jaybird.treefrog761.one
+  type: trojan
 - name: 24|🇰🇷 _韩国
   password: Aimer
   port: 10071
@@ -994,15 +985,6 @@ proxies:
   port: 21017
   server: 120.232.217.96
   skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 27,37|未知98 100.3KB/s
-  password: '!!str 3782591447421952000'
-  port: 443
-  server: equipped-mouse.treefrog761.one
-  skip-cert-verify: true
-  tls: true
   type: trojan
   udp: true
 - alterId: 0
