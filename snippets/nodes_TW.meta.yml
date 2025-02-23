@@ -7,16 +7,13 @@ proxies:
   server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- alterId: 0
-  cipher: aes-256-gcm
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,11,24,27,37|TW
+  name: 5,11,24,27|12|🇼 台湾3|@ripaojiedian
   password: Y2U58S90E3GST1AQ
   port: 21001
   server: ti3hyra4.slashdevslashnetslashtun.net
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -79,21 +76,21 @@ proxies:
   tls: false
   type: vmess
   uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
-- cipher: chacha20-ietf-poly1305
-  name: 5,24,27|0| 01 | 1x TW
-  password: 003dd3d1-4b91-4f41-b0c7-4c8fdc07de01
-  port: 31241
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 5,24,27,37|🇹🇼TW台湾2
-  password: 251da565-7087-491c-b314-293070fa43df
-  port: 31245
+  password: 003dd3d1-4b91-4f41-b0c7-4c8fdc07de01
+  port: 31241
   server: free.2apzhfa.xyz
   skip-cert-verify: true
   tls: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27|0|🇼台湾 03 | 1x TW
+  password: 8605ff01-502b-4ccd-8e39-2fdc069cb5d7
+  port: 31245
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - name: 5|🇹🇼|台湾-IEPL 02
@@ -185,11 +182,14 @@ proxies:
   server: iepl03.catcat321.com
   skip-cert-verify: true
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 5,24,27|0|🇼台湾 02 | 1x TW
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '5,24,27,37|TW #1'
   password: 003dd3d1-4b91-4f41-b0c7-4c8fdc07de01
   port: 31243
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - name: 5|🇹🇼|台湾-IEPL 03
@@ -213,6 +213,29 @@ proxies:
   server: iepl04.catcat321.com
   skip-cert-verify: true
   type: trojan
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 11|15|🇹🇼 台湾|@ripaojiedian
+  password: 3e26a8cfb09fda219b36
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45573
+  server: console.03.aliyun.aq.kunlunaqs.com
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 11|15|🇹🇼 台湾5|@ripaojiedian
+  obfs: plain
+  obfs-param: c499e93390.wns.windows.com
+  password: mtbv8n
+  port: 1206
+  protocol: auth_aes128_md5
+  protocol-param: 93390:TDWk1JwybHq
+  server: aiatw6.primeconectin.pro
+  type: ssr
 - alterId: 0
   cipher: auto
   name: 28|台湾1
@@ -222,8 +245,29 @@ proxies:
   type: vmess
   udp: true
   uuid: 1327e4b9-a3c6-44e6-8537-23d72a38ffb9
+- alterId: 0
+  name: 37|TW
+  password: Aimer
+  port: 443
+  server: 188.253.6.210
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|TW2
+  network: grpc
+  password: 67eb147db1c0f8c5
+  port: 443
+  server: 60.249.28.59
+  skip-cert-verify: true
+  sni: 007.com
+  tls: true
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
-  name: 40|TW_speednode_0136
+  name: 40|TW_speednode_0090
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
