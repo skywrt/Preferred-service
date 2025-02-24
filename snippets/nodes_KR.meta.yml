@@ -6,14 +6,6 @@ proxies:
   skip-cert-verify: true
   sni: mp.weixin.qq.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0| 01 | 1x KR
-  password: b38bfb72-5096-45d1-83e8-0870b9b1460e
-  port: 31311
-  server: free.2apzhfa.xyz
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 5|韩国1IEPL
@@ -32,7 +24,7 @@ proxies:
   type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,9,11,27|12|🇷 韩国特殊|@ripaojiedian
+  name: 5,9,11,24,27|12| 韩国|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 54.254.236.133
@@ -41,7 +33,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 5,9,11,27|12,13|国|@ripaojiedian
+  name: '5,9,11,24,27|12,13||@ripaojiedian #1'
   network: ws
   port: '22223'
   server: free-kr.faforex.eu.org
@@ -62,6 +54,12 @@ proxies:
   skip-cert-verify: true
   sni: mp.weixin.qq.com
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 5,8|🇨🇳CN-120.238.122.160-167_1@167
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20005
+  server: service.ouluyun9803.com
+  type: ss
 - alterId: 0
   cipher: auto
   name: 5|韩国2IEPL|Sejong
@@ -71,14 +69,6 @@ proxies:
   tls: false
   type: vmess
   uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|🇷韩国 02 | 1x KR
-  password: b38bfb72-5096-45d1-83e8-0870b9b1460e
-  port: 31313
-  server: free.2apzhfa.xyz
-  tfo: false
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   name: 10|韩国 001
   network: ws
@@ -627,55 +617,18 @@ proxies:
     headers:
       Host: dp.ylks.xyz
     path: '%2F%3Fproxyip%3Dproxyip.kr.fxxp.dedyp.io'
-- cipher: aes-256-cfb
-  name: 19|🇰🇷KR-13.124.62.225-0467
-  password: amazonskr05
-  port: 443
-  server: 13.124.62.225
-  type: ss
-- alterId: 0
-  name: 24,37|🇰🇷KR国 4.3MB/s
-  password: '!!str 3782591447421952000'
-  port: 443
-  server: sincere-stud.adder289.quest
-  skip-cert-verify: true
-  sni: sincere-stud.adder289.quest
-  tls: true
-  type: trojan
-  udp: true
-- name: '24|🇰🇷 _韩国 #2'
+- name: 24|🇰🇷 _韩国
   password: Aimer
   port: 21082
   server: 222.120.196.136
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agepy.aimercc.filegear-sg.me
   type: trojan
-- name: '24|🇰🇷 _韩国 #3'
-  password: Aimer
-  port: 12395
-  server: 121.140.238.170
-  skip-cert-verify: false
-  sni: agepy.aimercc.filegear-sg.me
-  type: trojan
-- name: '24|🇰🇷 _韩国 #4'
+- name: '24|🇰🇷 _韩国 #1'
   password: Aimer
   port: 10071
   server: 220.122.114.61
-  skip-cert-verify: false
-  sni: agepy.aimercc.filegear-sg.me
-  type: trojan
-- name: '24|🇰🇷 _韩国 #5'
-  password: Aimer
-  port: 12220
-  server: 220.80.154.29
-  skip-cert-verify: false
-  sni: agepy.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇰🇷 _韩国 #6'
-  password: Aimer
-  port: 38122
-  server: 218.158.249.21
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agepy.aimercc.filegear-sg.me
   type: trojan
 - name: 26|V2-韩国03∣K16线路∣
@@ -699,3 +652,13 @@ proxies:
     headers:
       Host: cc2.1808.site
     path: /hgqqvws
+- alterId: 0
+  name: 37|🇰🇷KR国 4.3MB/s
+  password: '!!str 3782591447421952000'
+  port: 443
+  server: sincere-stud.adder289.quest
+  skip-cert-verify: true
+  sni: sincere-stud.adder289.quest
+  tls: true
+  type: trojan
+  udp: true
