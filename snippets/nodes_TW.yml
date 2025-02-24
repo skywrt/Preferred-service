@@ -42,13 +42,16 @@ proxies:
   skip-cert-verify: false
   sni: hinet.mjt000.com
   type: trojan
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,9,11,24,27,30|12|🇼 台湾3|@ripaojiedian #1'
+  name: 5,9,11,24,27,30,37|TW
   password: Y2U58S90E3GST1AQ
   port: 21001
   server: ti3hyra4.slashdevslashnetslashtun.net
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -125,7 +128,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: '5,9,24,27,30|0|🇼台湾 03 | 1x TW #1'
-  password: 3286980e-661e-466b-a72b-dbc457957ec0
+  password: 36a117c1-edf9-42a9-b23c-23e45ede07e7
   port: 31245
   server: free.2apzhfa.xyz
   tfo: false
@@ -149,7 +152,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: '5,9,24,27,30|0|🇼台湾 02 | 1x TW #1'
-  password: 3286980e-661e-466b-a72b-dbc457957ec0
+  password: 36a117c1-edf9-42a9-b23c-23e45ede07e7
   port: 31243
   server: free.2apzhfa.xyz
   tfo: false
@@ -168,15 +171,12 @@ proxies:
   skip-cert-verify: false
   sni: tw.catxstar.com
   type: trojan
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30,37|TW #1'
-  password: b38bfb72-5096-45d1-83e8-0870b9b1460e
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,24,27,30|0| 01 | 1x TW #1'
+  password: 36a117c1-edf9-42a9-b23c-23e45ede07e7
   port: 31241
   server: free.2apzhfa.xyz
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
   udp: true
 - name: 5|🇹🇼|台湾-IEPL 02
@@ -223,7 +223,7 @@ proxies:
   type: vmess
   uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
 - cipher: aes-256-gcm
-  name: '9,27,30|2|🇼1 |  5.7MB/s #1'
+  name: '9,27,30|2|🇼1 |  5.9MB/s #1'
   password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
   port: 21140
   server: 581023.horace.im
@@ -251,7 +251,7 @@ proxies:
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - alterId: 0
   cipher: auto
-  name: '11,27,30|2|🇼2 |  2.9MB/s #1'
+  name: 11|11|2|🇹🇼2 |  2.9MB/s
   network: tcp
   port: 31135
   server: 910281.chasel.sbs
@@ -260,21 +260,10 @@ proxies:
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - alterId: 0
   cipher: auto
-  name: '11,27,30|2|🇼3 |  2.4MB/s #1'
+  name: 11|11|2|🇹🇼3 |  2.4MB/s
   network: tcp
   port: 31140
   server: 581023.horace.im
   tls: false
   type: vmess
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  name: 37|TW
-  network: grpc
-  password: 67eb147db1c0f8c5
-  port: 443
-  server: 60.249.28.59
-  skip-cert-verify: true
-  sni: 007.com
-  tls: true
-  type: trojan
-  udp: true

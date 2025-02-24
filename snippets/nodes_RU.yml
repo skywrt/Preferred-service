@@ -50,24 +50,14 @@ proxies:
   skip-cert-verify: true
   sni: mp.weixin.qq.com
   type: trojan
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30,37|🇷🇺RU俄罗斯3
-  password: b38bfb72-5096-45d1-83e8-0870b9b1460e
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,24,27,30|0|🇺 01 | 1x RU #1'
+  password: 36a117c1-edf9-42a9-b23c-23e45ede07e7
   port: 31511
   server: free.2apzhfa.xyz
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 5,30|亚 V2CROSS.COM
-  password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
-  port: 40031
-  server: ru.fastsoonlink.com
-  type: ss
 - cipher: aes-256-cfb
   name: '5,16|🇷🇺_RU_俄罗斯_1 #2'
   password: f8f7aCzcPKbsF8p3
@@ -107,14 +97,14 @@ proxies:
   type: vmess
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - cipher: aes-256-gcm
-  name: '9,27,30|2|🇷🇺2 |  4.3MB/s #2'
+  name: 9|2|🇷🇺2 |  4.3MB/s
   password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
   port: 21105
   server: 581610.eveline.lol
   tfo: false
   type: ss
 - cipher: aes-256-gcm
-  name: '9,27,30|2|🇷🇺3 |  7.7MB/s #2'
+  name: 9|2|🇷🇺3 |  7.7MB/s
   password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
   port: 21121
   server: 581610.eveline.lol
@@ -218,7 +208,7 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: '11,27,30|2|🇺1 |  5.8MB/s #1'
+  name: 11|11|2|🇷🇺1 |  5.8MB/s
   network: tcp
   port: 31110
   server: 581023.horace.im
@@ -227,22 +217,13 @@ proxies:
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - alterId: 0
   cipher: auto
-  name: '11,27,30|2|🇷🇺4 |  3.4MB/s #2'
+  name: '11,27,30|2|🇷🇺1 |  5.3MB/s #1'
   network: tcp
   port: 31101
   server: 910281.chasel.sbs
   tls: false
   type: vmess
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 16,19,20,21,37|未知10 1.7MB/s
-  password: NjBlZDlk
-  port: 8388
-  server: 89.221.224.166
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - name: 24|🇷🇺 俄罗斯 V2CROSS.COM
   password: wb6368
   port: 2087
@@ -264,13 +245,16 @@ proxies:
   skip-cert-verify: true
   sni: agepy.aimercc.filegear-sg.me
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #2'
+- alterId: 0
+  name: 24,37|🇺RU2
   password: Aimer
   port: 2053
   server: 46.254.92.201
   skip-cert-verify: true
   sni: agepy.aimercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇷🇺 _俄罗斯 #3'
   password: Aimer
   port: 2087
@@ -278,13 +262,16 @@ proxies:
   skip-cert-verify: true
   sni: agepy.aimercc.filegear-sg.me
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #4'
+- alterId: 0
+  name: 24,37|🇺RU
   password: Aimer
   port: 444
   server: 92.63.192.110
   skip-cert-verify: true
   sni: agepy.aimercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇷🇺 _俄罗斯 #5'
   password: Aimer
   port: 2053
@@ -313,23 +300,3 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  name: 37|🇷RU
-  password: Aimer
-  port: 2087
-  server: 92.243.75.49
-  skip-cert-verify: true
-  sni: agepy.aimercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|🇺RU俄罗斯2
-  password: Aimer
-  port: 8443
-  server: 92.243.74.180
-  skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
