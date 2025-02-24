@@ -9,7 +9,7 @@ proxies:
   type: vmess
   uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
 - cipher: aes-256-cfb
-  name: 5,24,40|SG_speednode_0079
+  name: 5,40|SG_speednode_0079
   password: amazonskr05
   port: 443
   server: 13.229.180.183
@@ -58,7 +58,7 @@ proxies:
     path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,11,24,27|12|🇬 新加坡2|@ripaojiedian
+  name: '5,11,24,27,30|12|🇬 新加坡2|@ripaojiedian #1'
   password: 8WDLSCVIFB4I26GB
   port: 16011
   server: 154.196.244.21
@@ -66,7 +66,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,11,24,27|12|🇸🇬 新加坡5|@ripaojiedian #1'
+  name: '5,11,24,27,30|12|🇸🇬 新加坡5|@ripaojiedian #2'
   password: YHK82TR73114VN9O
   port: 16016
   server: 154.196.244.26
@@ -81,7 +81,7 @@ proxies:
   type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 5,11,24,27|12|🇬 特殊|@ripaojiedian
+  name: '5,11,24,27,30|12|🇬 特殊|@ripaojiedian #1'
   password: amazonskr05
   port: 443
   server: 54.169.104.136
@@ -142,8 +142,8 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|0|🇬新加坡 02 | 1x SG
-  password: 32640554-946b-41c0-bec9-9a9b0f591886
+  name: '5,24,27,30|0|🇬新加坡 02 | 1x SG #1'
+  password: b20bca51-fc75-4a5c-a5a9-5e72c8683926
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
@@ -211,8 +211,8 @@ proxies:
   sni: mp.weixin.qq.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|0| 01 | 1x SG
-  password: 32640554-946b-41c0-bec9-9a9b0f591886
+  name: 5,24,27,30|0|加 01 | 1x SG
+  password: b20bca51-fc75-4a5c-a5a9-5e72c8683926
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
@@ -265,8 +265,8 @@ proxies:
   server: 54.179.87.28
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|0|🇬新加坡 03 | 1x SG
-  password: 32640554-946b-41c0-bec9-9a9b0f591886
+  name: '5,24,27,30|0|🇬新加坡 03 | 1x SG #1'
+  password: b20bca51-fc75-4a5c-a5a9-5e72c8683926
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
@@ -499,7 +499,7 @@ proxies:
     path: /?ed=2560
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 11,27|12|🇬 新加坡|@ripaojiedian
+  name: '11,27,30|12|🇬 新加坡|@ripaojiedian #1'
   password: f4cd0a554e9d0558c581
   plugin: obfs
   plugin-opts:
@@ -535,13 +535,14 @@ proxies:
     headers:
       host: v2-2.godlight.xyz
     path: /54f634fs
-- name: '24|2|🇸🇬1 |  5.7MB/s #1'
-  password: fe10330c-c392-37c0-a1d7-29b1c780e04c
-  port: 20299
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x299.flybar.work
-  type: trojan
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  delay: 388
+  name: '24,27,30|2|🇸🇬6 |  10.6MB/s #1'
+  password: amazonskr05
+  port: 443
+  server: 13.229.55.109
+  type: ss
 - name: '24|14|SG_speednode_0088 #1'
   password: Aimer
   port: 2087
@@ -550,17 +551,24 @@ proxies:
   sni: agepy.ambercc.filegear-sg.me
   type: trojan
 - name: 24|🇸🇬 _新加坡
-  password: Aimer
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
-  server: 150.109.11.223
-  skip-cert-verify: true
-  sni: agepy.aimercc.filegear-sg.me
+  server: connectwithemployers.online
+  skip-cert-verify: false
+  sni: connectwithemployers.online
   type: trojan
 - name: '24|🇸🇬 _新加坡 #1'
   password: Aimer
   port: 443
   server: 13.250.38.94
-  skip-cert-verify: true
+  skip-cert-verify: false
+  sni: agepy.aimercc.filegear-sg.me
+  type: trojan
+- name: '24|🇸🇬 _新加坡 #2'
+  password: Aimer
+  port: 443
+  server: 150.109.11.223
+  skip-cert-verify: false
   sni: agepy.aimercc.filegear-sg.me
   type: trojan
 - name: 26|V2-新加坡02∣K37线路∣
@@ -577,16 +585,45 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.232.1...
-  network: tcp
-  port: '33281'
-  server: 62.146.232.156
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 24eda0ea-acf0-4538-a001-f746a480237a
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  delay: 411
+  name: '27,30|2|🇸🇬2 |  3.6MB/s #1'
+  password: amazonskr05
+  port: 443
+  server: 13.229.82.37
+  type: ss
+- name: '27,30|2|🇸🇬3 |  6.1MB/s #1'
+  password: fd85b7f4-3cba-392a-bb81-4b4d5789007a
+  port: 30712
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x83.flybar.work
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: '27,30|2|🇸🇬4 |  6.1MB/s #1'
+  password: amazonskr05
+  port: 443
+  server: 13.229.111.3
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  delay: 492
+  name: '27,30|2|🇸🇬5 |  6.5MB/s #1'
+  password: amazonskr05
+  port: 443
+  server: 54.254.169.121
+  type: ss
+- cipher: aes-256-cfb
+  delay: 267
+  name: '27,30|2|🇸🇬7 |  6.1MB/s #1'
+  password: amazonskr05
+  port: 443
+  server: 52.77.249.55
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233...
@@ -607,13 +644,41 @@ proxies:
   uuid: 96ab7e1f-bf0d-45cd-8ebc-c8be2f8d43cd
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-154.26.137...
+  network: tcp
+  port: 44104
+  server: 154.26.137.42
+  tls: false
+  type: vmess
+  uuid: e9933a4c-e56e-458c-bcf4-9cb3875bba55
+- alterId: 0
+  cipher: auto
   name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233... #1'
+  network: tcp
+  port: 38324
+  server: 62.146.233.115
+  tls: false
+  type: vmess
+  uuid: f863ef99-5ef0-4321-aaac-a476a5e8c3fb
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233... #2'
   network: tcp
   port: 50678
   server: 62.146.233.53
   tls: false
   type: vmess
   uuid: 5d1ec6e7-fd58-4e85-91c5-6335a86d2775
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.232.1...
+  network: tcp
+  port: '33281'
+  server: 62.146.232.156
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 24eda0ea-acf0-4538-a001-f746a480237a
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇸🇬 SG-194.233.72.2...
@@ -624,24 +689,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 16509262-dbe2-43ba-99ce-07913d2a18b4
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233... #2'
-  network: tcp
-  port: 38324
-  server: 62.146.233.115
-  tls: false
-  type: vmess
-  uuid: f863ef99-5ef0-4321-aaac-a476a5e8c3fb
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-154.26.137...
-  network: tcp
-  port: 44104
-  server: 154.26.137.42
-  tls: false
-  type: vmess
-  uuid: e9933a4c-e56e-458c-bcf4-9cb3875bba55
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232...
