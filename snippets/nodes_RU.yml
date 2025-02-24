@@ -1,45 +1,4 @@
 proxies:
-- cipher: aes-256-cfb
-  name: '5,16|🇷🇺_RU_俄罗斯_1 #2'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.173
-  type: ss
-- cipher: aes-256-cfb
-  name: '5,12,30|🇷🇺_RU_俄罗斯_2 #2'
-  password: UkXRsXvR6buDMG2Y
-  port: 9001
-  server: 217.30.10.18
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 5|俄罗斯1|IEPL
-  network: tcp
-  port: '26101'
-  server: 183.2.194.142
-  tls: false
-  type: vmess
-  uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
-- cipher: chacha20-ietf-poly1305
-  name: 5,24,27,30|0|🇺俄罗斯 01 | 1x RU
-  password: b20bca51-fc75-4a5c-a5a9-5e72c8683926
-  port: 31511
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,8|🇳🇱NL-185.242.86.156-156_1@156
-  password: 36ZCHeabUSfKjfQEvJ4HDV
-  port: 54170
-  server: 185.242.86.156
-  type: ss
-- name: 5|🇷🇺|俄罗斯-IEPL 02
-  password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
-  port: 20057
-  server: iepl03.catcat321.com
-  skip-cert-verify: true
-  sni: mp.weixin.qq.com
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 5,11,23|🇷🇺_RU_俄罗斯联邦
@@ -52,26 +11,22 @@ proxies:
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     path: /
-- cipher: aes-256-cfb
-  name: 5,12,30|🇷_RU_俄罗斯_1
-  password: QWDDvVE9npNurQfA
-  port: 9026
-  server: 217.30.10.18
-  type: ss
-- name: 5|🇷🇺|俄罗斯-IEPL 01
+- name: 5|🇷🇺|俄罗斯-IEPL 02
   password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
-  port: 20026
-  server: iepl01.catcat321.com
+  port: 20057
+  server: iepl03.catcat321.com
   skip-cert-verify: true
   sni: mp.weixin.qq.com
   type: trojan
-- name: 5|俄罗斯RU-T
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: ru.mjt000.com
-  skip-cert-verify: false
-  sni: ru.mjt000.com
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 5|俄罗斯1|IEPL
+  network: tcp
+  port: '26101'
+  server: 183.2.194.142
+  tls: false
+  type: vmess
+  uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
 - alterId: 0
   cipher: auto
   name: '5,11|2|🇷🇺_RU_俄罗斯联邦 #2'
@@ -81,6 +36,37 @@ proxies:
   tls: false
   type: vmess
   uuid: 6a2afda8-8798-434c-8964-1deb4e7655a5
+- name: 5|俄罗斯RU-T
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: ru.mjt000.com
+  skip-cert-verify: false
+  sni: ru.mjt000.com
+  type: trojan
+- name: 5|🇷🇺|俄罗斯-IEPL 01
+  password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
+  port: 20026
+  server: iepl01.catcat321.com
+  skip-cert-verify: true
+  sni: mp.weixin.qq.com
+  type: trojan
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27,37|🇷🇺RU俄罗斯3
+  password: b38bfb72-5096-45d1-83e8-0870b9b1460e
+  port: 31511
+  server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '5,16|🇷🇺_RU_俄罗斯_1 #2'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.173
+  type: ss
 - name: 8|🇷🇺RU-176.32.35.167-210_1@209
   password: 85bce006-4885-11ee-8792-f23c9164ca5d
   port: 1007
@@ -176,23 +162,27 @@ proxies:
     headers:
       Host: agept.ambercc.filegear-sg.me
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: '12,30|🇷🇺_RU_俄罗斯_3 #2'
-  password: XPtzA9sCug3SPR4c
-  port: 9025
-  server: 217.30.10.18
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 16|🇺_RU_
+- name: 10|俄罗斯 009
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 46.254.92.201
+  skip-cert-verify: true
+  sni: agepy.aimercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: agepy.aimercc.filegear-sg.me
+    path: /?ed=2560
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 16,20,21,37|未知10 1.7MB/s
   password: NjBlZDlk
   port: 8388
   server: 89.221.224.166
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇷🇺RU-45.151.62.54-0490
-  password: 0zyDRZ1XmNXaaCAN7KEA8a
-  port: 28825
-  server: 45.151.62.54
+  skip-cert-verify: true
+  tls: true
   type: ss
 - name: '24|🇷🇺 _俄罗斯 #2'
   password: Aimer
@@ -201,13 +191,16 @@ proxies:
   skip-cert-verify: false
   sni: agepy.aimercc.filegear-sg.me
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #3'
+- alterId: 0
+  name: 24,37|🇺RU俄罗斯2
   password: Aimer
   port: 8443
   server: 92.243.74.180
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agepy.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇷🇺 _俄罗斯 #4'
   password: Aimer
   port: 8443
@@ -222,13 +215,16 @@ proxies:
   skip-cert-verify: false
   sni: agepy.aimercc.filegear-sg.me
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #6'
+- alterId: 0
+  name: 24,37|🇷RU
   password: Aimer
   port: 2087
   server: 92.243.75.49
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agepy.aimercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇷🇺 _俄罗斯 #7'
   password: Aimer
   port: 2053
@@ -257,12 +253,6 @@ proxies:
   skip-cert-verify: false
   sni: agepy.aimercc.filegear-sg.me
   type: trojan
-- cipher: aes-256-cfb
-  name: 30|🇷_RU_罗
-  password: UTJA57ypk2XKQpnm
-  port: 9033
-  server: 217.30.10.18
-  type: ss
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇷🇺 RU-31.129.105.23...

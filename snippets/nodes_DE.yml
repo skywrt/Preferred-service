@@ -1,36 +1,13 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 5,8|🇨🇳CN-120.238.122.160-163_1@163
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 20003
-  server: service.ouluyun9803.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 5,8|🇨🇳CN-120.238.122.160-166_1@166
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 26667
-  server: service.ouluyun9803.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 5,24,27,30|0|🇪德国 01 | 1x DE
-  password: b20bca51-fc75-4a5c-a5a9-5e72c8683926
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 5|德国-优化2
-  network: ws
-  port: '16644'
-  server: m.cnmjcn.com
+  name: 5|尼德兰1|IEPL
+  network: tcp
+  port: '26181'
+  server: 183.2.194.142
   tls: false
   type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
+  uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
 - alterId: 0
   cipher: auto
   name: '5,11|2|🇩🇪_DE_德国 #1'
@@ -41,42 +18,41 @@ proxies:
   type: vmess
   uuid: 6d3404ef-27c6-48de-a83a-8ac6488760b4
   ws-opts: {}
-- name: 5|🇩🇪|德国-IEPL 02
-  password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
-  port: 20041
-  server: iepl00.catcat321.com
-  skip-cert-verify: true
-  sni: mp.weixin.qq.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27|0|国 01 | 1x DE
+  password: b38bfb72-5096-45d1-83e8-0870b9b1460e
+  port: 31471
+  server: free.2apzhfa.xyz
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 5|德国 - 杜塞尔多夫 - Felix Gassan - 2
-  network: ws
-  port: '443'
-  server: eu9.998998.best
-  tls: true
-  type: vmess
-  uuid: 07b7b563-f868-49fb-943a-6425e3dc34d9
-  ws-opts:
-    headers:
-      Host: eu9.998998.best
-    path: /jsedr6deersed6h?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 5|尼德兰1|IEPL
+  name: 5|德国1|IEPL|DeutscheTelekom
   network: tcp
-  port: '26181'
+  port: '26131'
   server: 183.2.194.142
   tls: false
   type: vmess
   uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
-- name: 5|🇩🇪|德国-IEPL 01
-  password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
-  port: 20022
-  server: iepl-01.catcat321.com
-  skip-cert-verify: true
-  sni: mp.weixin.qq.com
+- alpn:
+  - http/1.1
+  name: 5|🇩🇪_DE_德国
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.199.197.7
+  sni: trojan.burgerip.co.uk
   type: trojan
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,19,20,21,37|未知59 196.8KB/s
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.171
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   cipher: auto
   name: 5|德国-优化
@@ -90,27 +66,6 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 5|德国1|IEPL|DeutscheTelekom
-  network: tcp
-  port: '26131'
-  server: 183.2.194.142
-  tls: false
-  type: vmess
-  uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
-- alterId: 0
-  cipher: auto
-  name: 5|2|🇩🇪1 |  28.7MB/s
-  network: ws
-  port: 443
-  server: eu9.998998.best
-  servername: server54-4.998877.best
-  tls: true
-  type: vmess
-  uuid: 07b7b563-f868-49fb-943a-6425e3dc34d9
-  ws-opts:
-    path: /jsedr6deersed6h?ed=2560
 - name: 5|🇩🇪|德国-IEPL 03
   password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
   port: 20003
@@ -118,14 +73,32 @@ proxies:
   skip-cert-verify: true
   sni: mp.weixin.qq.com
   type: trojan
-- alpn:
-  - http/1.1
-  name: 5|🇩🇪_DE_德国
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.199.197.7
-  sni: trojan.burgerip.co.uk
+- alterId: 0
+  cipher: auto
+  name: 5|德国-优化2
+  network: ws
+  port: '16644'
+  server: m.cnmjcn.com
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
+- name: 5|🇩🇪|德国-IEPL 01
+  password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
+  port: 20022
+  server: iepl-01.catcat321.com
+  skip-cert-verify: true
+  sni: mp.weixin.qq.com
+  type: trojan
+- name: 5|🇩🇪|德国-IEPL 02
+  password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
+  port: 20041
+  server: iepl00.catcat321.com
+  skip-cert-verify: true
+  sni: mp.weixin.qq.com
   type: trojan
 - name: 8|🇩🇪DE-52.58.179.46-180_1@180
   password: telegram-id-privatevpns
@@ -171,6 +144,12 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
+- cipher: rc4-md5
+  name: 19|🇩🇪DE-193.108.119.230-0487
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - cipher: aes-256-cfb
   name: 19|🇩🇪DE-80.92.204.106-5945
   password: Sn5B7jTqr76aCJT8
@@ -183,12 +162,13 @@ proxies:
   port: 9098
   server: 80.92.204.106
   type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-5941
-  password: XPtzA9sCug3SPR4c
-  port: 9025
-  server: 80.92.204.106
-  type: ss
+- name: '20,21,24|🇩🇪 _德国 #1'
+  password: 4732adfa16c6450bbef87264e41332db
+  port: 443
+  server: nextstepcareer.online
+  skip-cert-verify: false
+  sni: nextstepcareer.online
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '20,21|🇩🇪DE-57.129.24.141-5945 #1'
@@ -217,20 +197,6 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
-- name: '20,21,24|🇩🇪 _德国 #1'
-  password: 4732adfa16c6450bbef87264e41332db
-  port: 443
-  server: nextstepcareer.online
-  skip-cert-verify: false
-  sni: nextstepcareer.online
-  type: trojan
-- name: '20,21,24|🇺🇸 _美国 #38'
-  password: telegram-id-directvpn
-  port: 22222
-  server: 18.153.144.26
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 24|🇩🇪 _德国
@@ -253,6 +219,30 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
+  name: 28|德国-1W
+  network: ws
+  port: 443
+  server: visa.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a11e6009-ceb2-47b4-ad6d-b08b95ec95d5
+  ws-opts:
+    headers:
+      Host: go.daluquan.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-162.55.171.2...
+  network: tcp
+  port: '100'
+  server: 162.55.171.226
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1889d9ef-9d58-4427-bb3e-a08810c214eb
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
   network: tcp
   port: '24164'
@@ -261,25 +251,6 @@ proxies:
   tls: false
   type: vmess
   uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-RAW-NA 🇩🇪 DE-49.13.112.14...
-  network: raw
-  port: '100'
-  server: 49.13.112.149
-  tls: false
-  type: vmess
-  uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
@@ -301,6 +272,36 @@ proxies:
   uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-159.69.120.9...
+  network: tcp
+  port: '41391'
+  server: 159.69.120.98
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b5c3e2e8-dfb6-4a0a-b656-87e997610785
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-146.103.40...
+  network: tcp
+  port: 7030
+  server: 146.103.40.214
+  tls: false
+  type: vmess
+  uuid: 01d407a6-4b5f-4674-852f-68c65826d832
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知34
+  network: httpupgrade
+  port: 2095
+  server: 104.19.150.10
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
   grpc-opts:
     grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
   name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
@@ -311,12 +312,3 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-146.103.40...
-  network: tcp
-  port: 7030
-  server: 146.103.40.214
-  tls: false
-  type: vmess
-  uuid: 01d407a6-4b5f-4674-852f-68c65826d832
