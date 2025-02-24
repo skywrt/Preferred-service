@@ -52,12 +52,21 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,24,37|🇷🇺RU俄罗斯3
+  name: 5,9,24,27,30,37|🇷🇺RU俄罗斯3
   password: b38bfb72-5096-45d1-83e8-0870b9b1460e
   port: 31511
   server: free.2apzhfa.xyz
   skip-cert-verify: true
+  tfo: false
   tls: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 5,30|亚 V2CROSS.COM
+  password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
+  port: 40031
+  server: ru.fastsoonlink.com
   type: ss
 - cipher: aes-256-cfb
   name: '5,16|🇷🇺_RU_俄罗斯_1 #2'
@@ -87,6 +96,40 @@ proxies:
   sni: 004282c1-sbdj40-sdlngq-1n7jq.ru.z7zi.com
   type: trojan
   udp: false
+- alterId: 0
+  cipher: auto
+  name: 9|2|🇷🇺1 |  5.8MB/s
+  port: 31110
+  server: 581023.horace.im
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- cipher: aes-256-gcm
+  name: '9,27,30|2|🇷🇺2 |  4.3MB/s #2'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21105
+  server: 581610.eveline.lol
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: '9,27,30|2|🇷🇺3 |  7.7MB/s #2'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21121
+  server: 581610.eveline.lol
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 9|2|🇷🇺4 |  3.4MB/s
+  port: 31101
+  server: 910281.chasel.sbs
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - alterId: 0
   cipher: auto
   name: 10|俄罗斯 005
@@ -174,6 +217,24 @@ proxies:
       Host: agepy.aimercc.filegear-sg.me
     path: /?ed=2560
 - alterId: 0
+  cipher: auto
+  name: '11,27,30|2|🇺1 |  5.8MB/s #1'
+  network: tcp
+  port: 31110
+  server: 581023.horace.im
+  tls: false
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: '11,27,30|2|🇷🇺4 |  3.4MB/s #2'
+  network: tcp
+  port: 31101
+  server: 910281.chasel.sbs
+  tls: false
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 16,19,20,21,37|未知10 1.7MB/s
   password: NjBlZDlk
@@ -238,6 +299,20 @@ proxies:
   skip-cert-verify: true
   sni: agepu.ambercc.filegear-sg.me
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-31.129.105.23...
+  network: ws
+  port: '16231'
+  server: 31.129.105.239
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 793e03cc-2b08-4d1b-bb0b-592567d19043
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   name: 37|🇷RU
   password: Aimer

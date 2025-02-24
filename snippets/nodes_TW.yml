@@ -44,7 +44,7 @@ proxies:
   type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,9,11,24,27|12|🇼 台湾3|@ripaojiedian
+  name: '5,9,11,24,27,30|12|🇼 台湾3|@ripaojiedian #1'
   password: Y2U58S90E3GST1AQ
   port: 21001
   server: ti3hyra4.slashdevslashnetslashtun.net
@@ -75,7 +75,7 @@ proxies:
   type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,9,11,24,27|12|🇼 2|@ripaojiedian
+  name: '5,9,11,24,27,30|12|🇼 台湾2|@ripaojiedian #1'
   password: QF377GGQ00RATCMK
   port: 21004
   server: 8tv68qhq.slashdevslashnetslashtun.net
@@ -110,7 +110,7 @@ proxies:
   type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,9,11,24,27|12|🇼 台湾4|@ripaojiedian
+  name: '5,9,11,24,27,30|12|🇼 台湾4|@ripaojiedian #1'
   password: HQJQFA7U2Z5HGZWH
   port: 21003
   server: w72tapyb.slashdevslashnetslashtun.net
@@ -123,6 +123,14 @@ proxies:
   skip-cert-verify: true
   sni: mp.weixin.qq.com
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,24,27,30|0|🇼台湾 03 | 1x TW #1'
+  password: 3286980e-661e-466b-a72b-dbc457957ec0
+  port: 31245
+  server: free.2apzhfa.xyz
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5|台湾3|IEPL|HINET
@@ -139,6 +147,14 @@ proxies:
   skip-cert-verify: true
   sni: mp.weixin.qq.com
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,24,27,30|0|🇼台湾 02 | 1x TW #1'
+  password: 3286980e-661e-466b-a72b-dbc457957ec0
+  port: 31243
+  server: free.2apzhfa.xyz
+  tfo: false
+  type: ss
+  udp: true
 - name: 5|🇹🇼|台湾-IEPL 01
   password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
   port: 20071
@@ -154,13 +170,15 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: '5,24,37|TW #1'
+  name: '5,9,24,27,30,37|TW #1'
   password: b38bfb72-5096-45d1-83e8-0870b9b1460e
   port: 31241
   server: free.2apzhfa.xyz
   skip-cert-verify: true
+  tfo: false
   tls: true
   type: ss
+  udp: true
 - name: 5|🇹🇼|台湾-IEPL 02
   password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
   port: 20044
@@ -204,20 +222,51 @@ proxies:
   tls: false
   type: vmess
   uuid: f45021fa-6aa9-4a78-9a42-c2be566d01ba
-- cipher: aes-128-gcm
-  name: 9,24,27|2|1 |  3.7MB/s
-  password: 7b218398-f93d-41aa-907e-97c6e45f6d4c
-  port: 12029
-  server: mdss-tw.04z3susick.download
+- cipher: aes-256-gcm
+  name: '9,27,30|2|🇼1 |  5.7MB/s #1'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21140
+  server: 581023.horace.im
   tfo: false
   type: ss
-- cipher: aes-128-gcm
-  name: '9,24,27|2|🇹🇼2 |  6.2MB/s #3'
-  password: 7b218398-f93d-41aa-907e-97c6e45f6d4c
-  port: 12032
-  server: mdss-tw.04z3susick.download
+- alterId: 0
+  cipher: auto
+  name: 9|2|🇹🇼2 |  2.9MB/s
+  port: 31135
+  server: 910281.chasel.sbs
+  skip-cert-verify: true
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: 9|2|🇹🇼3 |  2.4MB/s
+  port: 31140
+  server: 581023.horace.im
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: '11,27,30|2|🇼2 |  2.9MB/s #1'
+  network: tcp
+  port: 31135
+  server: 910281.chasel.sbs
+  tls: false
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: '11,27,30|2|🇼3 |  2.4MB/s #1'
+  network: tcp
+  port: 31140
+  server: 581023.horace.im
+  tls: false
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - alterId: 0
   name: 37|TW
   network: grpc
