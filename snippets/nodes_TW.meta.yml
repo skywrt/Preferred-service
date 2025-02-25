@@ -1,11 +1,17 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|0|🇼台湾 02 | 1x TW #1'
-  password: 8e4d3b8f-c597-4731-bce1-948256e4c8de
-  port: 31243
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 5|台湾-优化
+  network: ws
+  port: '16616'
+  server: yes.mojcn.com
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: '5,9,11,24,27,30|12|🇼 台湾4|@ripaojiedian #1'
@@ -14,6 +20,22 @@ proxies:
   server: w72tapyb.slashdevslashnetslashtun.net
   tfo: false
   type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: '5,9,11,24,27,30|12|🇼 台湾2|@ripaojiedian #1'
+  password: QF377GGQ00RATCMK
+  port: 21004
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,24,27,30|0|🇼台湾 03 | 1x TW #1'
+  password: 3d206e76-25c3-409d-9aca-21fcc85cb42a
+  port: 31245
+  server: free.2apzhfa.xyz
+  tfo: false
+  type: ss
+  udp: true
 - name: 5|台湾WAP-T-GPT
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
@@ -34,26 +56,14 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 5|台湾-优化
-  network: ws
-  port: '16616'
-  server: yes.mojcn.com
-  tls: false
-  type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|0|🇼台湾 03 | 1x TW #1'
-  password: 8e4d3b8f-c597-4731-bce1-948256e4c8de
-  port: 31245
-  server: free.2apzhfa.xyz
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: '5,9,11,24,27,30|12|🇼 台湾3|@ripaojiedian #1'
+  password: Y2U58S90E3GST1AQ
+  port: 21001
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 5|台湾-优化3
@@ -68,48 +78,30 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|0| 01 | 1x TW #1'
-  password: 8e4d3b8f-c597-4731-bce1-948256e4c8de
+  name: '5,9,24,27,30|0| 01 | 1x TW #1'
+  password: 3d206e76-25c3-409d-9aca-21fcc85cb42a
   port: 31241
   server: free.2apzhfa.xyz
+  tfo: false
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 9|1|🇹🇼1 |  4.0MB/s
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21139
-  server: 581023.horace.im
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,24,27,30|0|🇼台湾 02 | 1x TW #1'
+  password: 3d206e76-25c3-409d-9aca-21fcc85cb42a
+  port: 31243
+  server: free.2apzhfa.xyz
   tfo: false
   type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 9,37|未知60
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21137
-  server: 581610.eveline.lol
+  udp: true
+- name: '9,24,27,30|2|🇼1 |  6.1MB/s #1'
+  password: dc60df50-8c99-3d27-aa81-cd93e16de9fe
+  port: 59021
+  server: gy.58n.net
   skip-cert-verify: true
+  sni: x100.flybar.work
   tfo: false
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 9|1|🇹🇼3 |  5.1MB/s
-  port: 31142
-  server: 510613.frederica.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: 11|11|1|🇹🇼3 |  5.1MB/s
-  network: tcp
-  port: 31142
-  server: 510613.frederica.xyz
-  tls: false
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: 40|TW_speednode_0059
   password: f8f7aCzcPKbsF8p3
