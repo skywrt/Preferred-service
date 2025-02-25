@@ -1,34 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|387cfbe4902e43429dd78733d67bd3...
-  network: ws
-  port: 22222
-  server: 13.36.182.28
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|73c53e63968f4234b81b664b54cc45...
-  network: ws
-  port: 22222
-  server: 13.39.252.223
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
 - cipher: aes-256-gcm
   name: 8|🇫🇷FR-193.243.147.128-160_1@160
   password: 7BcLdsO1WweoGD0X
@@ -111,12 +81,21 @@ proxies:
   server: 149.202.82.172
   type: ss
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,24,37|未知29 11.0MB/s
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: beesyar.org
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇫🇷FR-146.19.168.161-8252
+  name: 19|🇫🇷FR-146.19.168.161-5738
   network: ws
   port: 443
-  server: 146.19.168.161
+  server: az05.beyondy.cfd
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -128,28 +107,18 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19,20,21,36|🔒 VM-WS-NA 🇫🇷 FR-5.196.29.123:...
+  name: 19|🇫🇷FR-163.5.159.231-8111
   network: ws
-  port: '2082'
-  server: 5.196.29.123
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 20,21,37|未知29 11.0MB/s
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: beesyar.org
+  port: 443
+  server: irvideo.cfd
   skip-cert-verify: true
   tls: true
-  type: ss
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      host: irvideo.cfd
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: '20,21|🇫🇷FR-51.77.20.137-8261 #1'
@@ -186,6 +155,20 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
+  name: 20,21,36|🔒 VM-WS-NA 🇫🇷 FR-5.196.29.123:...
+  network: ws
+  port: '2082'
+  server: 5.196.29.123
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
   name: 24|VMESS-未知>法国-NF解锁法国地区非自制剧-ChatG...
   network: ws
   port: 443
@@ -214,6 +197,15 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228...
+  network: tcp
+  port: 21809
+  server: 38.109.228.113
+  tls: false
+  type: vmess
+  uuid: a6179475-489c-4bcc-b05c-481386295b93
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇫🇷 FR-57.128.184.1...
   network: ws
   port: 443
@@ -226,12 +218,3 @@ proxies:
     headers:
       Host: baradiha.com
     path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228...
-  network: tcp
-  port: 21809
-  server: 38.109.228.113
-  tls: false
-  type: vmess
-  uuid: a6179475-489c-4bcc-b05c-481386295b93
