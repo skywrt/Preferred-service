@@ -1,15 +1,7 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|🇼台湾 02 | 1x TW
-  password: 46a64e73-3f18-4279-a466-cfc5b1158271
-  port: 31243
-  server: free.2apzhfa.xyz
-  tfo: false
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,9,11,24,27|12|🇼 台湾4|@ripaojiedian
+  name: 5,9,11,24,27|11|🇼 台湾4|@ripaojiedian
   password: HQJQFA7U2Z5HGZWH
   port: 21003
   server: w72tapyb.slashdevslashnetslashtun.net
@@ -48,14 +40,6 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|🇼台湾 03 | 1x TW
-  password: 46a64e73-3f18-4279-a466-cfc5b1158271
-  port: 31245
-  server: free.2apzhfa.xyz
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 5|台湾-优化3
@@ -69,23 +53,39 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0| 01 | 1x TW
-  password: 46a64e73-3f18-4279-a466-cfc5b1158271
-  port: 31241
-  server: free.2apzhfa.xyz
+- cipher: aes-256-gcm
+  name: 9,27|1|1 |  4.0MB/s
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21139
+  server: 581023.horace.im
   tfo: false
   type: ss
-  udp: true
-- name: 9,24,27|2|🇼1 |  4.0MB/s
-  password: c4e04a71-f597-37e5-b07a-0fcd048a2f84
-  port: 36821
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z262.hongkongnode.top
+- cipher: aes-256-gcm
+  name: '9,27|1|🇹🇼2 |  1.4MB/s #1'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21137
+  server: 581610.eveline.lol
   tfo: false
-  type: trojan
-  udp: true
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 9|1|🇹🇼3 |  5.1MB/s
+  port: 31142
+  server: 510613.frederica.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: 11,27|1|🇼3 |  5.1MB/s
+  network: tcp
+  port: 31142
+  server: 510613.frederica.xyz
+  tls: false
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - alterId: 0
   name: 37|TW
   password: Aimer
