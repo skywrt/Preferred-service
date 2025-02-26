@@ -9,7 +9,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 5,30|亚太地区 V2CROSS.COM 2
+  name: 5,30|V2CROSS.COM
   password: 3FB23A19-9424-40C7-9139-3540228283FA
   port: 40000
   server: hk.fastsoonlink.com
@@ -29,7 +29,7 @@ proxies:
     path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,9,11,24,27,30|12|🇭🇰 香港5|@ripaojiedian #2'
+  name: 5,9,11,24,27,30|🇨🇳 广东省东莞市 电信IDC业务段 2
   password: 2H98UZT9LT1TE3X9
   port: 15008
   server: w72tapyb.slashdevslashnetslashtun.net
@@ -50,7 +50,7 @@ proxies:
     path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,9,11,24,27,30|12|🇭🇰 香港7|@ripaojiedian #2'
+  name: 5,9,11,24,27,30|🇳 广东省东市 IDC务
   password: TCEL1H0XD7TWAKI0
   port: 15011
   server: qh62onjn.slashdevslashnetslashtun.net
@@ -76,7 +76,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '5,9,11,24,27,30|12|🇭🇰 香港2|@ripaojiedian #1'
+  name: '5,9,11,24,27,30|2,12|🇭🇰 香港2|@ripaojiedian #2'
   password: 2be0c954-4291-45ea-b47d-ca713180550b
   port: 52611
   server: hk01.x.quickcht3.club
@@ -115,7 +115,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: '5,9,24,27,30|0|🇭🇰香港 03 | 1x HK #1'
-  password: 28d1ba55-0941-4e5a-b516-b505f3816fec
+  password: 40b68698-78dc-4e1c-948a-13b8143b85e1
   port: 31145
   server: free.2apzhfa.xyz
   tfo: false
@@ -158,7 +158,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: '5,9,24,27,30|0|🇭🇰香港 02 | 1x HK #2'
-  password: 28d1ba55-0941-4e5a-b516-b505f3816fec
+  password: 40b68698-78dc-4e1c-948a-13b8143b85e1
   port: 31143
   server: free.2apzhfa.xyz
   tfo: false
@@ -766,6 +766,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 19,20,21,30|🇰 香港 HostHatch
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: 216.250.97.118
+  type: ss
 - name: 26|V1-香港01∣K1线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21135
@@ -816,14 +823,18 @@ proxies:
   uuid: ac8452df-4fb9-486a-ae99-47ac6c28066e
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
-  network: tcp
-  port: '54675'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
+  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-20.6.155.159...
+  network: ws
+  port: '2080'
+  server: 20.6.155.159
+  servername: hk4.556855.xyz
+  tls: true
   type: vmess
-  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
+  uuid: 63769deb-4153-4b98-aba3-31bc07e53a2d
+  ws-opts:
+    headers:
+      Host: hk4.556855.xyz
+    path: /
 - alterId: 0
   cipher: auto
   name: 36,37|HK 60.6KB/s
@@ -837,18 +848,14 @@ proxies:
   uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-20.6.155.159...
-  network: ws
-  port: '2080'
-  server: 20.6.155.159
-  servername: hk4.556855.xyz
-  tls: true
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
+  network: tcp
+  port: '54675'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 63769deb-4153-4b98-aba3-31bc07e53a2d
-  ws-opts:
-    headers:
-      Host: hk4.556855.xyz
-    path: /
+  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
 - alterId: 0
   name: 37|HK2
   network: tcp
