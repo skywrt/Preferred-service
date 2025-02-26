@@ -1,7 +1,22 @@
 proxies:
+- cipher: aes-256-cfb
+  name: '5,16|🇷🇺_RU_俄罗斯_3 #3'
+  password: XPtzA9sCug3SPR4c
+  port: 9025
+  server: 217.30.10.18
+  type: ss
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 5,9,12,19,27|2|🇺1 |  1.7MB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.173
+  tfo: false
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|🇺 01 | 1x RU #1'
-  password: 40b68698-78dc-4e1c-948a-13b8143b85e1
+  name: 5,9,24,27|1|🇺 01 | 1x RU
+  password: 004a3a8a-50e0-4b2c-8592-29a3893f137c
   port: 31511
   server: free.2apzhfa.xyz
   tfo: false
@@ -19,6 +34,13 @@ proxies:
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     path: /
+- name: 5|俄罗斯RU-T
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: ru.mjt000.com
+  skip-cert-verify: false
+  sni: ru.mjt000.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '5,11|2|🇷🇺_RU_俄罗斯联邦 #2'
@@ -40,13 +62,15 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- name: 5|俄罗斯RU-T
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: ru.mjt000.com
-  skip-cert-verify: false
-  sni: ru.mjt000.com
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 5,24,36|🔒 VM-TCP-NA 🇫🇮 FI-188.130.154....
+  network: tcp
+  port: '22946'
+  server: 188.130.154.56
+  tls: false
+  type: vmess
+  uuid: 7ed1d138-37f7-41f7-843d-d4f2bdbba913
 - name: 8|🇷🇺RU-176.32.35.167-210_1@209
   password: 85bce006-4885-11ee-8792-f23c9164ca5d
   port: 1007
@@ -69,18 +93,7 @@ proxies:
   sni: 004282c1-sbdj40-sdlngq-1n7jq.ru.z7zi.com
   type: trojan
   udp: false
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 9,30|🇺 俄罗斯 V2CROSS.COM
-  port: 22946
-  server: 188.130.154.56
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 7ed1d138-37f7-41f7-843d-d4f2bdbba913
-- name: 10,40|RU_speednode_0050
+- name: 10,40|RU_speednode_0046
   network: ws
   port: 80
   server: 185.174.138.194
@@ -94,131 +107,21 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- alterId: 0
-  cipher: auto
-  name: 10|俄罗斯 005
-  network: ws
-  port: 2052
-  server: 185.174.138.199
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: yellow-paper-029c.yvonna.workers.dev
-    path: /az05.beyondy.cfd/link?/TM
-- alterId: 0
-  cipher: auto
-  name: 10|俄罗斯 001
-  network: ws
-  port: 2082
-  server: 185.174.138.196
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: yellow-paper-029c.yvonna.workers.dev
-    path: /az05.beyondy.cfd/link?/TM
-- name: 10|俄罗斯 002
-  network: ws
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
-  skip-cert-verify: true
-  sni: hsdgbuys.pages.dev
-  tfo: false
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: hsdgbuys.pages.dev
-    path: /
-- name: 10|俄罗斯 003
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 92.243.74.180
-  skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- delay: 2293
-  name: 10|俄罗斯 006
-  network: ws
-  port: 2087
-  server: 92.243.75.49
-  servername: zmc.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: zmc.bgm2024.us.kg
-    path: /?ed=2560
-- name: 10|俄罗斯 007
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 46.254.93.243
-  skip-cert-verify: true
-  sni: agept.ambercc.filegear-sg.me
-  tfo: false
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: JoinBadeChannel@antimeli
-  name: 10|俄罗斯 008
+  name: 10|俄罗斯 001
   network: grpc
   port: 8443
   reality-opts:
-    public-key: 4FtHhoVD7TxmNBnNDCHmLiCJrdPOlUEaCU5IDFwERHc
-    short-id: feac68
-  server: 188.227.107.89
+    public-key: btaC-4IwgXj-SqKxJqhmrFzn-7bzuOOcDS0VMhyar0k
+    short-id: 966cc1f0bc0ec166
+  server: 78.111.86.113
   servername: www.speedtest.net
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 3f5c4213-9faf-4958-8572-40e11e829d0d
-- name: 10|俄罗斯 009
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 46.254.92.201
-  skip-cert-verify: true
-  sni: agepy.aimercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 11,24,36|🔒 VM-TCP-NONE 🇫🇮 FI-188.130.15...
-  network: tcp
-  port: 22946
-  server: 188.130.154.56
-  tls: false
-  type: vmess
-  uuid: 7ed1d138-37f7-41f7-843d-d4f2bdbba913
+  uuid: a4be0cc0-67a0-4b19-959e-06e4c2c9ec01
 - cipher: aes-256-cfb
   name: 16|🇷_RU_罗
   password: UTJA57ypk2XKQpnm
@@ -229,12 +132,6 @@ proxies:
   name: 16|🇷_RU_俄罗斯_1
   password: QWDDvVE9npNurQfA
   port: 9026
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
-  name: '16|🇷🇺_RU_俄罗斯_3 #2'
-  password: XPtzA9sCug3SPR4c
-  port: 9025
   server: 217.30.10.18
   type: ss
 - name: 17|俄罗斯(yudou66.com 玉豆免费节点)
@@ -297,27 +194,20 @@ proxies:
     headers:
       Host: ap.ylks.xyz
     path: '%2Fblue'
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇷🇺RU-45.151.62.54-0427
-  password: 0zyDRZ1XmNXaaCAN7KEA8a
-  port: 28825
-  server: 45.151.62.54
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇷🇺 RU-31.129.105.23...
+  name: 36,37|未知8 6.1MB/s
   network: ws
-  port: '16231'
+  port: 16231
   server: 31.129.105.239
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 793e03cc-2b08-4d1b-bb0b-592567d19043
   ws-opts:
-    headers:
-      Host: ''
     path: /
-- name: 40|RU_speednode_0051
+- name: 40|RU_speednode_0047
   network: ws
   port: 8080
   server: 185.174.138.197
@@ -331,7 +221,7 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /
-- name: 40|RU_speednode_0052
+- name: 40|RU_speednode_0048
   network: ws
   port: 80
   server: 185.174.138.194
