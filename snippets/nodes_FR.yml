@@ -9,7 +9,8 @@ proxies:
   type: vmess
   uuid: b8d2b7da-cd51-4d8f-ab47-e04365d4f295
 - cipher: aes-256-gcm
-  name: 8|🇫🇷FR-193.243.147.128-160_1@160
+  client-fingerprint: chrome
+  name: 8,30|🇱 兰 V2CROSS.COM
   password: 7BcLdsO1WweoGD0X
   port: 40368
   server: 193.243.147.128
@@ -65,11 +66,14 @@ proxies:
   port: 7307
   server: 54.36.174.181
   type: ss
-- cipher: aes-256-gcm
-  name: '8|SS-法国:波兰-locked-ChatGPT-TikTok... #3'
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 8,37|未知27 646.1KB/s
   password: KixLvKzwjekG00rm
   port: 8000
   server: 54.36.174.181
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-256-gcm
   name: '8|SS-法国:波兰-locked-ChatGPT-TikTok... #4'
@@ -88,6 +92,20 @@ proxies:
   password: zDNVedRFPQexG9v
   port: 6379
   server: 149.202.82.172
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 19,20,21,30|🇺🇸 美国 V2CROSS.COM 2
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: beesyar.org
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 19,20,21,30|🇺🇸 美国 V2CROSS.COM 3
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.158.171.146
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 19|🇫🇷FR-45.158.171.136-1209
@@ -192,10 +210,10 @@ proxies:
     path: /link
 - alterId: 0
   cipher: aes-256-gcm
-  name: 20,21,37|未知27 312.0KB/s
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 54.36.174.181
+  name: 20,21,37|未知31 1.8MB/s
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 149.202.82.172
   skip-cert-verify: true
   tls: true
   type: ss
@@ -215,20 +233,16 @@ proxies:
     path: /azumase.ren
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 24,27,30|1|🇷1 |  5.1MB/s
+  name: 24|1|🇫🇷1 |  5.1MB/s
   network: ws
-  port: 80
+  port: '80'
   server: 151.101.64.155
-  servername: telegram-isvvpn.dev
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 6e3ac406-a15b-461d-8b05-ca01b284d9a0
   ws-opts:
     headers:
-      HOST: telegram-isvvpn.dev
+      Host: ''
     path: /racevpn
 - name: 26|V2-日本01∣K11线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
@@ -244,6 +258,20 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇫🇷 FR-146.59.55.50...
+  network: ws
+  port: 443
+  server: 146.59.55.50
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: o.metuji.com
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228...
