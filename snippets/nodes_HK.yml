@@ -57,7 +57,6 @@ proxies:
   sni: waphk.mjt000.com
   type: trojan
 - alterId: 0
-  client-fingerprint: chrome
   name: 5,9,24,27,30,37|CN
   network: tcp
   password: 1e63e585ab2fef3adcc9ea75a62abc23
@@ -129,6 +128,30 @@ proxies:
     headers:
       Host: hk03s.5b61a7f6-0d90.cfd
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: '9,24,27,30|0| 01 | 1x HK #1'
+  password: 19fda5a0-12f2-4faa-985e-5972e8656141
+  port: 31141
+  server: free.2apzhfa.xyz
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '9,24,27,30|0|🇭🇰香港 02 | 1x HK #1'
+  password: 19fda5a0-12f2-4faa-985e-5972e8656141
+  port: 31143
+  server: free.2apzhfa.xyz
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '9,24,27,30|0|🇭🇰香港 03 | 1x HK #1'
+  password: 19fda5a0-12f2-4faa-985e-5972e8656141
+  port: 31145
+  server: free.2apzhfa.xyz
+  tfo: false
+  type: ss
+  udp: true
 - name: '9,24,27,30|12,13|香港3|@ripaojiedian #1'
   network: tcp
   password: Vad3.123a)asd1234-asdasd.asdazzS.123
@@ -745,16 +768,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
-  network: tcp
-  port: '54675'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-20.6.155.159...
   network: ws
   port: '2080'
@@ -767,6 +780,16 @@ proxies:
     headers:
       Host: hk4.556855.xyz
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
+  network: tcp
+  port: '54675'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
 - alterId: 0
   cipher: auto
   name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'

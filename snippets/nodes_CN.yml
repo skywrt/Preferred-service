@@ -56,13 +56,17 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 5,24|🇨🇳 广东省湛江市 移动
+  name: '5,24,27,30|2|🇰2 |  1.4MB/s #1'
   network: tcp
-  port: '50095'
+  port: 50095
   server: 120.198.71.219
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.198.71.219
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 8|🇨🇳CN-139.227.223.3-049_1@49
@@ -845,11 +849,13 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇨🇳 广
-  port: 36002
-  server: 120.232.153.40
-  tls: false
+  name: 36,37|未知53
+  network: tcp
+  port: 50004
+  server: 112.132.212.19
+  servername: ''
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
@@ -858,16 +864,6 @@ proxies:
   network: tcp
   port: '59003'
   server: 183.236.51.36
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: none
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-47.104.186.1...
-  network: tcp
-  port: '50002'
-  server: 47.104.186.133
   servername: ''
   tls: false
   type: vmess
@@ -886,3 +882,13 @@ proxies:
     headers:
       Host: bn1.hk.tifa.pro
     path: /windows10
+- alterId: 0
+  cipher: none
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-47.104.186.1...
+  network: tcp
+  port: '50002'
+  server: 47.104.186.133
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
