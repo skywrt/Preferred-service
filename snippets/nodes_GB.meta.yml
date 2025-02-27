@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 0,3|cd6cee2968434cdc871c01428b3194...
+  name: 0,3|54ff2f4d1f1b47bea3f72c77829c00...
   network: grpc
   port: 8880
   server: 157.180.20.109
@@ -11,7 +11,7 @@ proxies:
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 3|83788602140c4a9fb8ed57f1c09180...
+  name: 3|b76bae1a6a21482b87a094c960543d...
   network: ws
   port: 22222
   server: 18.132.131.9
@@ -24,6 +24,30 @@ proxies:
     headers:
       host: telegram-channel-vlessconfig.sohala.uk
     path: /telegram-channel-vlessconfig-ws
+- client-fingerprint: chrome
+  fingerprint: ''
+  grpc-opts:
+    grpc-service-name: 7392vless
+  name: 3|f4e302db068140c59925f41cef6d16...
+  network: grpc
+  port: 7392
+  server: 157.245.43.54
+  tls: false
+  type: vless
+  udp: false
+  uuid: b496ab0f-e8dc-4931-b555-83c9bfecac7d
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|e09884d6bb23401f96a605a2324165...
+  network: ws
+  port: 80
+  server: 151.101.158.204
+  tls: false
+  type: vless
+  udp: false
+  uuid: ff5891c6-3b9d-42e1-9051-bf8e75545aac
+  ws-opts:
+    path: /melo/ws?ed=2048
 - name: '5,38|🇬🇧_GB_英国_6 #1'
   network: ws
   port: 2053
@@ -63,8 +87,7 @@ proxies:
     path: '%2f%3fed%3d2048'
 - alpn:
   - http/1.1
-  client-fingerprint: chrome
-  name: 5,30|🇧 国
+  name: 5|英国+社会保险安全部
   network: tcp
   password: telegram-id-directvpn
   port: 22222
@@ -263,19 +286,10 @@ proxies:
     path: '%2Fblue'
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知69 10.4MB/s
+  name: 19,20,21,37|未知63 3.3MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.195
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知118 13.8MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.196
+  server: 212.102.53.194
   skip-cert-verify: true
   tls: true
   type: ss
@@ -321,24 +335,34 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36,37|未知116
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
   network: tcp
-  port: 8081
-  server: 209.97.176.198
+  port: '47567'
+  server: 38.114.120.12
   servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3873beec-44c6-45be-8900-d184a1d0ee8f
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-149.7.16.1...
-  network: tcp
-  port: 37101
-  server: 149.7.16.149
   tls: false
   type: vmess
-  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
+  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
+  network: tcp
+  port: '55577'
+  server: 172.99.190.207
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-209.97.176.1...
+  network: tcp
+  port: '8081'
+  server: 209.97.176.198
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3873beec-44c6-45be-8900-d184a1d0ee8f
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
@@ -350,24 +374,24 @@ proxies:
   uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-149.7.16.1...
   network: tcp
-  port: '46617'
-  server: 46.250.253.232
-  servername: ''
+  port: 37101
+  server: 149.7.16.149
   tls: false
   type: vmess
-  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
+  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
+  name: 36,37|未知65 488.5KB/s
   network: tcp
-  port: '55577'
-  server: 172.99.190.207
+  port: 46617
+  server: 46.250.253.232
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
+  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - name: 40|GB_speednode_0009
   network: ws
   port: 443
