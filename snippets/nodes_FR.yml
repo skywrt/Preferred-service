@@ -21,6 +21,12 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- cipher: aes-256-gcm
+  name: 8|🇫🇷FR-193.243.147.128-160_1@160
+  password: 7BcLdsO1WweoGD0X
+  port: 40368
+  server: 193.243.147.128
+  type: ss
 - alterId: 0
   cipher: auto
   name: 8|🇫🇷FR-213.32.63.176-186_1@186
@@ -99,37 +105,22 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇫🇷FR-146.19.168.161-5718
+  name: 19|🇫🇷FR-163.5.159.231-7935
   network: ws
   port: 443
-  server: az05.beyondy.cfd
+  server: irvideo.cfd
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
   ws-opts:
     headers:
-      host: az05.beyondy.cfd
-    path: /link
+      host: irvideo.cfd
+    path: /linkws
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇫🇷FR-146.19.168.161-8127
-  network: ws
-  port: 443
-  server: 146.19.168.161
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      host: az05.beyondy.cfd
-    path: /link
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '19,20,21|🇫🇷FR-5.196.29.123-6039 #1'
+  name: '19,20,21|🇫🇷FR-5.196.29.123-6039 #2'
   network: ws
   port: 2082
   server: 5.196.29.123
@@ -142,27 +133,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇫🇷FR-163.5.159.231-8112
-  network: ws
-  port: 443
-  server: irvideo.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      host: irvideo.cfd
-    path: /linkws
-- cipher: aes-256-gcm
-  name: 19|🇫🇷FR-149.202.82.172-5651
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 149.202.82.172
-  type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 20,21,37|未知99 3.3MB/s
@@ -202,7 +172,7 @@ proxies:
     path: /link
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-163.5.159.231-7935 #1'
+  name: '20,21|🇫🇷FR-163.5.159.231-7935 #2'
   network: ws
   port: 443
   server: irvideo.cfd
@@ -242,13 +212,23 @@ proxies:
     headers:
       Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     path: /azumase.ren
-- name: 24|🇫🇷 法国 巴黎Amazon数据中心
-  password: telegram-id-directvpn
-  port: 22222
-  server: 15.188.155.109
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 24,27|2|🇷2 |  2.3MB/s
+  network: ws
+  port: 80
+  server: 151.101.128.155
+  servername: telegram-isvvpn.dev
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6e3ac406-a15b-461d-8b05-ca01b284d9a0
+  ws-opts:
+    headers:
+      HOST: telegram-isvvpn.dev
+    path: /racevpn
 - name: 26|V2-日本01∣K11线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21146
