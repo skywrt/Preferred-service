@@ -1289,30 +1289,6 @@ proxies:
     headers:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-- cipher: chacha20-ietf-poly1305
-  name: 9,24,27|0|🇸国 01 | 1x US Los Angeles
-  password: 08f67450-f724-4d8f-86f5-a29b5aed25f2
-  port: 31211
-  server: free.2apzhfa.xyz
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 9,24,27|0|🇸美国家宽 02 | 1x US Los Angeles
-  password: 08f67450-f724-4d8f-86f5-a29b5aed25f2
-  port: 31213
-  server: free.2apzhfa.xyz
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 9,24,27|0|🇸美国 03 | 1x US Washington
-  password: 08f67450-f724-4d8f-86f5-a29b5aed25f2
-  port: 31215
-  server: free.2apzhfa.xyz
-  tfo: false
-  type: ss
-  udp: true
 - name: 9|2|🇺🇸12 |  5.9MB/s
   password: ab29fd16-e7bd-3b20-9583-dd82a1d2cccc
   port: 20278
@@ -2144,34 +2120,26 @@ proxies:
     headers:
       Host: us03s.5d8ecf82.cfd
     path: /
-- cipher: aes-128-gcm
-  name: 24,27|2|🇸2 |  4.1MB/s
-  password: 8f9ee4d3-f070-43ab-a0cd-b708d9e8de10
-  port: 12020
-  server: mdss-sg.04z3susick.download
-  type: ss
 - cipher: aes-256-cfb
-  name: '24,27|2|🇺🇸6 |  2.6MB/s #1'
+  name: 24,27|2|🇺🇸8 |  4.1MB/s
   password: amazonskr05
   port: 443
   server: 54.212.61.99
   type: ss
-- name: '24,27|2|🇺🇸8 |  1.2MB/s #1'
+- name: 24|2|🇺🇸8 |  1.2MB/s
   password: 5c36d88d-1196-3b10-b982-c376d4574ef0
   port: 20305
   server: gy.58n.net
   skip-cert-verify: true
   sni: z305.hongkongnode.top
   type: trojan
-  udp: true
-- name: '24,27|2|🇺🇸11 |  3.7MB/s #1'
+- name: 24|2|🇺🇸11 |  3.7MB/s
   password: 5c36d88d-1196-3b10-b982-c376d4574ef0
   port: 22741
   server: gy.58n.net
   skip-cert-verify: true
   sni: dufu.hongkongnode.top
   type: trojan
-  udp: true
 - name: 26|V3-美国03∣K63线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21148
@@ -2207,14 +2175,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 27|2|🇺🇸4 |  5.5MB/s
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 52.33.5.226
-  type: ssr
 - alterId: 0
   cipher: auto
   name: 28|美国-1O
@@ -2236,6 +2196,49 @@ proxies:
   server: gy.666666222.shop
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.249.0...
+  network: tcp
+  port: '48160'
+  server: 15.204.249.0
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5b113c12-4dd4-4bb5-9c01-cff092b559e3
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.86.12...
+  network: tcp
+  port: '35696'
+  server: 15.204.86.120
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cad0504a-a9dc-4d29-8844-b11b69f14a8d
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇺🇸 US-151.101.192.1...
+  network: ws
+  port: '80'
+  server: 151.101.192.155
+  tls: false
+  type: vmess
+  uuid: 6e3ac406-a15b-461d-8b05-ca01b284d9a0
+  ws-opts:
+    headers:
+      Host: telegram-isvvpn.dev
+    path: /racevpn
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-45.76.60.10:...
+  network: tcp
+  port: '8881'
+  server: 45.76.60.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.33.56.47:...
@@ -2252,20 +2255,6 @@ proxies:
     path: /path/1739973313415
 - alterId: 64
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇺🇸 US-108.186.26.1...
-  network: ws
-  port: '37004'
-  server: 108.186.26.167
-  servername: www.64933771.xyz
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.64933771.xyz
-    path: /path/1739973894418
-- alterId: 64
-  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇺🇸 US-137.175.39.1...
   network: ws
   port: '38002'
@@ -2278,26 +2267,16 @@ proxies:
     headers:
       Host: www.61974602.xyz
     path: /path/1739973313415
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-45.76.60.10:...
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-142.4.104.33...
   network: tcp
-  port: '8881'
-  server: 45.76.60.10
+  port: '52143'
+  server: 142.4.104.33
   servername: ''
   tls: false
   type: vmess
-  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.86.12...
-  network: tcp
-  port: '35696'
-  server: 15.204.86.120
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cad0504a-a9dc-4d29-8844-b11b69f14a8d
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇺🇸 US-192.74.224.1...
@@ -2314,26 +2293,6 @@ proxies:
     path: /path/1739973313415
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.249.0...
-  network: tcp
-  port: '48160'
-  server: 15.204.249.0
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5b113c12-4dd4-4bb5-9c01-cff092b559e3
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-142.4.104.33...
-  network: tcp
-  port: '52143'
-  server: 142.4.104.33
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.248.9...
   network: tcp
   port: '30562'
@@ -2342,6 +2301,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 82466715-6a58-4046-a363-a0d18e5b2ab4
+- alterId: 64
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇺🇸 US-108.186.26.1...
+  network: ws
+  port: '37004'
+  server: 108.186.26.167
+  servername: www.64933771.xyz
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.64933771.xyz
+    path: /path/1739973894418
 - alterId: 0
   cipher: aes-256-gcm
   name: 37|US 1.6MB/s
