@@ -1,4 +1,41 @@
 proxies:
+- cipher: aes-256-cfb
+  name: '5,12,16|🇷🇺_RU_俄罗斯_3 #3'
+  password: XPtzA9sCug3SPR4c
+  port: 9025
+  server: 217.30.10.18
+  type: ss
+- name: 5|俄罗斯RU-T
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: ru.mjt000.com
+  skip-cert-verify: false
+  sni: ru.mjt000.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 5,11,23|🇷🇺_RU_俄罗斯联邦
+  network: ws
+  port: 12910
+  server: 45.136.245.240
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    path: /
+- cipher: aes-256-cfb
+  name: '5,16|🇷🇺_RU_俄罗斯_2 #3'
+  password: UkXRsXvR6buDMG2Y
+  port: 9001
+  server: 217.30.10.18
+  type: ss
+- cipher: aes-256-cfb
+  name: 5,12,27|2|🇺2 |  9.2MB/s
+  password: BejrQvtu9sqUeNuZ
+  port: 9024
+  server: 217.30.10.18
+  type: ss
 - name: '5,38|🇷🇺_RU_俄罗斯联邦_10 #1'
   network: ws
   port: 2087
@@ -13,31 +50,14 @@ proxies:
     path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
-  name: 5,11,23|🇷🇺_RU_俄罗斯联邦
-  network: ws
-  port: 12910
-  server: 45.136.245.240
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    path: /
-- name: 5|俄罗斯RU-T
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: ru.mjt000.com
-  skip-cert-verify: false
-  sni: ru.mjt000.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 5,36|🔒 VM-TCP-NA 🇫🇮 FI-188.130.154....
+  ip-version: dual
+  name: 5,10,36|🔒 VM-TCP-NA 🇫🇮 FI-188.130.154....
   network: tcp
   port: '22946'
   server: 188.130.154.56
   tls: false
   type: vmess
+  udp: true
   uuid: 7ed1d138-37f7-41f7-843d-d4f2bdbba913
 - alterId: 0
   cipher: auto
@@ -71,8 +91,8 @@ proxies:
   type: trojan
   udp: false
 - cipher: chacha20-ietf-poly1305
-  name: 9,24,27|2|🇺 01 | 1x RU
-  password: b7bc90e3-d977-4c3e-bfb6-1a904e625d85
+  name: 9,24,27|0|🇺 01 | 1x RU
+  password: 564e0778-46f5-4c02-85ae-f249ea6046c9
   port: 31511
   server: free.2apzhfa.xyz
   tfo: false
@@ -108,12 +128,6 @@ proxies:
   type: vless
   uuid: a4be0cc0-67a0-4b19-959e-06e4c2c9ec01
 - cipher: aes-256-cfb
-  name: '12,16|🇷🇺_RU_俄罗斯_3 #2'
-  password: XPtzA9sCug3SPR4c
-  port: 9025
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
   name: 16|🇷_RU_罗
   password: UTJA57ypk2XKQpnm
   port: 9033
@@ -123,12 +137,6 @@ proxies:
   name: 16|🇷_RU_俄罗斯_1
   password: QWDDvVE9npNurQfA
   port: 9026
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
-  name: '16|🇷🇺_RU_俄罗斯_2 #2'
-  password: UkXRsXvR6buDMG2Y
-  port: 9001
   server: 217.30.10.18
   type: ss
 - name: 17|俄罗斯(yudou66.com 玉豆免费节点)
@@ -191,12 +199,6 @@ proxies:
     headers:
       Host: ap.ylks.xyz
     path: '%2Fblue'
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇷🇺RU-45.151.62.54-1275
-  password: 0zyDRZ1XmNXaaCAN7KEA8a
-  port: 28825
-  server: 45.151.62.54
-  type: ss
 - alterId: 0
   cipher: auto
   name: 24|🇷🇺 俄罗斯 V2CROSS.COM
@@ -208,16 +210,17 @@ proxies:
   uuid: 5d904885-74c5-4c07-95cf-e0989d287c37
 - alterId: 0
   cipher: auto
-  name: 36,37|未知65 4.4MB/s
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-31.129.105.23...
   network: ws
-  port: 16231
+  port: '16231'
   server: 31.129.105.239
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 793e03cc-2b08-4d1b-bb0b-592567d19043
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - name: 40|RU_speednode_0047
   network: ws

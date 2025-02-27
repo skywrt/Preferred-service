@@ -8,12 +8,73 @@ proxies:
   tls: false
   type: vmess
   uuid: b8d2b7da-cd51-4d8f-ab47-e04365d4f295
+- alpn:
+  - http/1.1
+  name: 5|英国+伦敦Amazon数据中心
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 35.178.238.219
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 5|英国UK-T
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: uk.mjt000.com
+  skip-cert-verify: false
+  sni: uk.mjt000.com
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 5|英国-优化3
+  name: 5|🇺🇸 美国2
+  network: ws
+  port: '80'
+  server: 53abc7.6028-9104-191b.cfd
+  tls: false
+  type: vmess
+  uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
+  ws-opts:
+    headers:
+      Host: us02s.6028-9104-191b.cfd
+    path: /
+- name: '5|英国+伦敦Amazon数据中心 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.130.53.155
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 5|英国-优化2
   network: ws
   port: '16645'
-  server: t.cnmjcn.cyou
+  server: m.cnmjin.net
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 5|日本-优化
+  network: ws
+  port: '16617'
+  server: yes.mojcn.com
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 5|英国-优化-GPT
+  network: ws
+  port: '16645'
+  server: yes.mojcn.com
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -30,44 +91,10 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 5,36|🔒 VM-WS-NA 🇩🇪 DE-185.121.134.1...
-  network: ws
-  port: '20332'
-  server: 185.121.134.12
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 363d0358-29c1-4319-9210-1b335b171501
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: 5|英国-优化-GPT
+  name: 5|英国-优化3
   network: ws
   port: '16645'
-  server: yes.mojcn.com
-  tls: false
-  type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
-- name: 5|英国UK-T
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: uk.mjt000.com
-  skip-cert-verify: false
-  sni: uk.mjt000.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 5|英国-优化2
-  network: ws
-  port: '16645'
-  server: m.cnmjin.net
+  server: t.cnmjcn.cyou
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -110,8 +137,8 @@ proxies:
   server: 51.140.34.50
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 9,24,27|2|🇧国家宽 01 | 1x UK
-  password: b7bc90e3-d977-4c3e-bfb6-1a904e625d85
+  name: 9,24,27|0|国家宽 01 | 1x UK
+  password: 564e0778-46f5-4c02-85ae-f249ea6046c9
   port: 31271
   server: free.2apzhfa.xyz
   tfo: false
@@ -119,32 +146,23 @@ proxies:
   udp: true
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知64 10.4MB/s
+  name: 19,20,21,37|未知73 339.5KB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.193
+  server: 141.98.101.180
   skip-cert-verify: true
   tls: true
   type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知22 963.6KB/s
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.179
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- name: '20,21|🇬🇧GB-161.35.34.48-0322 #1'
-  password: 2cba4104747d49d18319e5ade1b93ab5
-  port: 443
-  server: yourjobnavigator.online
-  sni: yourjobnavigator.online
-  type: trojan
 - name: '20,21|🇬🇧GB-161.35.34.48-0323 #1'
   password: 2cba4104747d49d18319e5ade1b93ab5
   port: 443
   server: 161.35.34.48
+  sni: yourjobnavigator.online
+  type: trojan
+- name: '20,21|🇬🇧GB-161.35.34.48-0322 #1'
+  password: 2cba4104747d49d18319e5ade1b93ab5
+  port: 443
+  server: yourjobnavigator.online
   sni: yourjobnavigator.online
   type: trojan
 - name: 26|V2-英国03∣K71线路∣
@@ -154,6 +172,35 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
+  network: tcp
+  port: 26924
+  server: 68.168.31.184
+  tls: false
+  type: vmess
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
+  network: tcp
+  port: '47567'
+  server: 38.114.120.12
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  network: tcp
+  port: '46617'
+  server: 46.250.253.232
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-209.97.176.1...
@@ -175,16 +222,6 @@ proxies:
   uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
-  network: tcp
-  port: '46617'
-  server: 46.250.253.232
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
   network: tcp
   port: '55577'
@@ -193,22 +230,3 @@ proxies:
   tls: false
   type: vmess
   uuid: e922d485-98a7-475a-9a47-cde3722ac82e
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
-  network: tcp
-  port: '47567'
-  server: 38.114.120.12
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
-  network: tcp
-  port: 26924
-  server: 68.168.31.184
-  tls: false
-  type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
