@@ -1,14 +1,6 @@
 proxies:
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '5,9,11,24,27,30|12|🇼 台湾3|@ripaojiedian #1'
-  password: Y2U58S90E3GST1AQ
-  port: 21001
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
   name: '5,9,11,24,27,30|12|🇼 台湾2|@ripaojiedian #1'
   password: QF377GGQ00RATCMK
   port: 21004
@@ -28,9 +20,16 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- name: 5|台湾WAP-T-GPT
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: hinet.mjt000.com
+  skip-cert-verify: false
+  sni: hinet.mjt000.com
+  type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,9,11,24,27,30|🇨🇳 广东省东市 IDC
+  name: '5,9,11,24,27,30|12|🇼 台湾4|@ripaojiedian #1'
   password: HQJQFA7U2Z5HGZWH
   port: 21003
   server: w72tapyb.slashdevslashnetslashtun.net
@@ -49,6 +48,14 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: '5,9,11,24,27,30|12|🇼 台湾3|@ripaojiedian #1'
+  password: Y2U58S90E3GST1AQ
+  port: 21001
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 5|台湾-优化3
@@ -62,13 +69,47 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- name: 5|台湾WAP-T-GPT
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: hinet.mjt000.com
-  skip-cert-verify: false
-  sni: hinet.mjt000.com
+- alterId: 0
+  cipher: auto
+  name: 24|1|🇹🇼1 |  6.0MB/s
+  network: tcp
+  port: '15201'
+  server: tw-detour-01.grabgo.pro
+  tls: false
+  type: vmess
+  uuid: f837b510-7050-4dec-b182-a777dc358469
+- alterId: 2
+  cipher: auto
+  name: '24,27,30|1|🇹🇼2 |  2.1MB/s #2'
+  network: ws
+  port: 23619
+  server: 19.mamamajd.site
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2d0466cf-016f-3777-97f1-8d2df5d67bba
+  ws-opts:
+    headers:
+      Host: 19.mamamajd.site
+    path: /
+- name: '24,27,30|1|🇹🇼3 |  6.0MB/s #2'
+  password: af2bfe05-e7c6-388b-ad41-e091b214f0e0
+  port: 33323
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z261.hongkongnode.top
   type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '27,30|1|🇹🇼1 |  6.0MB/s #2'
+  port: 15201
+  server: tw-detour-01.grabgo.pro
+  tls: false
+  type: vmess
+  uuid: f837b510-7050-4dec-b182-a777dc358469
 - alterId: 0
   name: 37|TW
   password: Aimer
