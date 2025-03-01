@@ -65,11 +65,10 @@ proxies:
 - alterId: 0
   cipher: auto
   ip-version: dual
-  name: 5,10,12,36|🔒 VM-TCP-NA 🇫🇮 FI-188.130.154....
+  name: 5,10,12|🇷🇺_RU_俄罗斯
   network: tcp
   port: '22946'
   server: 188.130.154.56
-  servername: ''
   tls: false
   type: vmess
   udp: true
@@ -116,8 +115,8 @@ proxies:
   type: trojan
   udp: false
 - cipher: chacha20-ietf-poly1305
-  name: 9,24,27|0|🇺 01 | 1x RU
-  password: 0d6e5ed2-f3c4-4351-a1cf-e45273e74605
+  name: '9,24,27,30|0|🇺 01 | 1x RU #1'
+  password: 87a80f35-79bc-43f2-8f0f-1da51361850e
   port: 31511
   server: free.2apzhfa.xyz
   tfo: false
@@ -225,12 +224,19 @@ proxies:
   server: 33333.need9ping.ir
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24,27|1|🇺 俄罗斯 01 | 1x RU
-  password: 21da1e6a-c4fb-4b6c-87f9-403c52760544
+  name: '24,27,30|1|🇺 俄罗斯 01 | 1x RU #1'
+  password: 4f034bf4-a9e4-4050-bda1-ac5151194571
   port: 36511
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 30|🇺 俄罗斯 V2CROSS.COM
+  password: oVfvPkqJFCjOEbBsbmOtIiAuqgmEFOEf332F26C8lwEwQng9
+  port: 31348
+  server: 213.156.138.138
+  type: ss
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇷🇺 RU-31.129.105.23...
@@ -245,6 +251,16 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...
+  network: tcp
+  port: '47555'
+  server: 46.29.166.237
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - name: 40|RU_speednode_0047
   network: ws
   port: 8080

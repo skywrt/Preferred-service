@@ -100,8 +100,8 @@ proxies:
   server: 51.140.34.50
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 9,24,27|0|国家宽 01 | 1x UK
-  password: 0d6e5ed2-f3c4-4351-a1cf-e45273e74605
+  name: '9,24,27,30|0|国家宽 01 | 1x UK #1'
+  password: 87a80f35-79bc-43f2-8f0f-1da51361850e
   port: 31271
   server: free.2apzhfa.xyz
   tfo: false
@@ -167,8 +167,8 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 24,27|1|🇧 英国住宅IP 01 | 1x UK
-  password: 21da1e6a-c4fb-4b6c-87f9-403c52760544
+  name: '24,27,30|1|🇧 英国住宅IP 01 | 1x UK #1'
+  password: 4f034bf4-a9e4-4050-bda1-ac5151194571
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -180,16 +180,25 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '27,30|2|🇬🇧1 |  4.4MB/s #1'
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 84858fa.vpnhat.t.me:73643
+    mode: tls
+  port: 2377
+  server: 84858fa.e1.gladns.com
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
   network: tcp
-  port: '47567'
-  server: 38.114.120.12
-  servername: ''
+  port: 26924
+  server: 68.168.31.184
   tls: false
   type: vmess
-  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-209.97.176.1...
@@ -202,14 +211,13 @@ proxies:
   uuid: 3873beec-44c6-45be-8900-d184a1d0ee8f
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-149.7.16.1...
   network: tcp
-  port: '55577'
-  server: 172.99.190.207
-  servername: ''
+  port: 37101
+  server: 149.7.16.149
   tls: false
   type: vmess
-  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
+  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
@@ -222,19 +230,21 @@ proxies:
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-149.7.16.1...
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
   network: tcp
-  port: 37101
-  server: 149.7.16.149
+  port: '55577'
+  server: 172.99.190.207
+  servername: ''
   tls: false
   type: vmess
-  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
+  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
   network: tcp
-  port: 26924
-  server: 68.168.31.184
+  port: '47567'
+  server: 38.114.120.12
+  servername: ''
   tls: false
   type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
+  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
