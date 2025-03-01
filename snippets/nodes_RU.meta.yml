@@ -9,7 +9,7 @@ proxies:
   type: vmess
   uuid: 6a2afda8-8798-434c-8964-1deb4e7655a5
 - cipher: aes-256-cfb
-  name: '5,12,16|🇷🇺_RU_俄罗斯_6 #2'
+  name: '5,16|🇷🇺_RU_俄罗斯_6 #2'
   password: XPtzA9sCug3SPR4c
   port: 9025
   server: 217.30.10.18
@@ -21,7 +21,7 @@ proxies:
   server: 185.242.86.156
   type: ss
 - cipher: aes-256-cfb
-  name: '5,12,16|🇷🇺_RU_俄罗斯_3 #3'
+  name: '5,16|🇷🇺_RU_俄罗斯_3 #3'
   password: BejrQvtu9sqUeNuZ
   port: 9024
   server: 217.30.10.18
@@ -57,7 +57,7 @@ proxies:
   server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
-  name: 5,12,16|🇷_RU_俄罗斯
+  name: 5,16|🇷_RU_俄罗斯
   password: TPqX8edgbAURcAMb
   port: 9079
   server: 217.30.10.18
@@ -65,9 +65,9 @@ proxies:
 - alterId: 0
   cipher: auto
   ip-version: dual
-  name: 5,10,12|🇷🇺_RU_俄罗斯
+  name: 5,10|俄罗斯 002
   network: tcp
-  port: '22946'
+  port: 22946
   server: 188.130.154.56
   tls: false
   type: vmess
@@ -114,14 +114,6 @@ proxies:
   sni: 004282c1-sbdj40-sdlngq-1n7jq.ru.z7zi.com
   type: trojan
   udp: false
-- cipher: chacha20-ietf-poly1305
-  name: '9,24,27,30|0|🇺 01 | 1x RU #1'
-  password: 87a80f35-79bc-43f2-8f0f-1da51361850e
-  port: 31511
-  server: free.2apzhfa.xyz
-  tfo: false
-  type: ss
-  udp: true
 - name: 10,40|RU_speednode_0046
   network: ws
   port: 80
@@ -224,19 +216,22 @@ proxies:
   server: 33333.need9ping.ir
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '24,27,30|1|🇺 俄罗斯 01 | 1x RU #1'
-  password: 4f034bf4-a9e4-4050-bda1-ac5151194571
+  name: 24,27|0|🇺  01 | 1x RU
+  password: 4fc32814-481b-48bc-b9cb-db70eec82206
   port: 36511
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 30|🇺 俄罗斯 V2CROSS.COM
-  password: oVfvPkqJFCjOEbBsbmOtIiAuqgmEFOEf332F26C8lwEwQng9
-  port: 31348
-  server: 213.156.138.138
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...
+  network: tcp
+  port: '47555'
+  server: 46.29.166.237
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇷🇺 RU-31.129.105.23...
@@ -251,16 +246,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...
-  network: tcp
-  port: '47555'
-  server: 46.29.166.237
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - name: 40|RU_speednode_0047
   network: ws
   port: 8080

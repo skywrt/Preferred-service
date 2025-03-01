@@ -240,7 +240,7 @@ proxies:
   type: vmess
   uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a
   ws-opts: {}
-- name: '5,12|🇮🇷_IR_伊朗->🇺🇸_US_美国 #1'
+- name: 5,12|🇮🇷_IR_伊朗->🇷🇺_RU_俄罗斯
   network: ws
   port: 23297
   server: 37.202.237.107
@@ -1095,7 +1095,38 @@ proxies:
     headers:
       host: mizban.arzonhost.ir
     path: /
-- name: '13|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
+- alterId: 0
+  cipher: auto
+  name: '12|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
+  network: ws
+  port: '80'
+  server: 151.101.64.155
+  tls: false
+  type: vmess
+  uuid: 6e3ac406-a15b-461d-8b05-ca01b284d9a0
+  ws-opts:
+    headers:
+      Host: telegram-isvvpn.dev
+    path: /racevpn
+- name: 12|🇨🇳_CN_中国->🇺🇸_US_美国
+  password: c7fc812c-7c57-3386-8140-07935d060404
+  port: 20288
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z288.hongkongnode.top
+  type: trojan
+- name: 12|🇺🇸_US_美国->🇷🇴_RO_罗马尼亚
+  network: ws
+  port: 80
+  server: 104.22.52.235
+  tls: false
+  type: vless
+  uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
+  ws-opts:
+    headers:
+      Host: cc.ailicf.us.kg
+    path: /b5cdabf0-e04
+- name: '13|🇺🇸_US_美国->🇩🇪_DE_德国 #2'
   network: ws
   port: 80
   server: 151.101.2.219
@@ -1140,7 +1171,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 13|🇨🇳_CN_中国->🇺🇸_US_美国
+  name: '13|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
   network: tcp
   port: 52112
   server: 183.236.51.23

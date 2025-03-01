@@ -99,56 +99,21 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '9,24,27,30|0|国家宽 01 | 1x UK #1'
-  password: 87a80f35-79bc-43f2-8f0f-1da51361850e
-  port: 31271
-  server: free.2apzhfa.xyz
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知89 17.5MB/s
+  name: 19,20,21,37|未知124 19.6MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.78
+  server: 212.102.53.194
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知106 13.0MB/s
+  name: 19,20,21,37|未知97 14.3MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.80
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知124 15.0MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知46 8.7MB/s
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.182
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知100 3.7MB/s
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
+  server: 212.102.53.81
   skip-cert-verify: true
   tls: true
   type: ss
@@ -159,16 +124,19 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 24|🇬🇧 英国 社会保险安全部
+- alterId: 0
+  name: 24,37|GB 584.5KB/s
   password: telegram-id-privatevpns
   port: 22222
   server: 51.44.191.88
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '24,27,30|1|🇧 英国住宅IP 01 | 1x UK #1'
-  password: 4f034bf4-a9e4-4050-bda1-ac5151194571
+  name: 24,27|0| 国住宅IP 01 | 1x UK
+  password: 4fc32814-481b-48bc-b9cb-db70eec82206
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -180,16 +148,16 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '27,30|2|🇬🇧1 |  4.4MB/s #1'
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 84858fa.vpnhat.t.me:73643
-    mode: tls
-  port: 2377
-  server: 84858fa.e1.gladns.com
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
+  network: tcp
+  port: '55577'
+  server: 172.99.190.207
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
@@ -199,16 +167,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-209.97.176.1...
-  network: tcp
-  port: '8081'
-  server: 209.97.176.198
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3873beec-44c6-45be-8900-d184a1d0ee8f
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-149.7.16.1...
@@ -230,16 +188,6 @@ proxies:
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
-  network: tcp
-  port: '55577'
-  server: 172.99.190.207
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
   network: tcp
   port: '47567'
@@ -248,3 +196,13 @@ proxies:
   tls: false
   type: vmess
   uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-209.97.176.1...
+  network: tcp
+  port: '8081'
+  server: 209.97.176.198
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3873beec-44c6-45be-8900-d184a1d0ee8f
