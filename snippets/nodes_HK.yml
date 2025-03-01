@@ -98,12 +98,12 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
-  name: 5,9,24,27,30|🇰 香港 Clayer Limited数据中心
+  name: 5,9,24,27,30|🇰 香港 Clayer Limited中
   network: tcp
   password: 1e63e585ab2fef3adcc9ea75a62abc23
   port: 443
   server: 104.251.227.182
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: hezijiasuqi.com
   tfo: false
   type: trojan
@@ -141,24 +141,24 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '9,24,27,30|1|🇭🇰香港 01 | 1x HK #1'
-  password: 6f31be51-d440-415b-9c5d-50f7b2b456a8
+  name: '9,24,27,30|0| 01 | 1x HK #1'
+  password: 76daa2f8-107b-4db2-87c8-17f35b45a53d
   port: 31141
   server: free.2apzhfa.xyz
   tfo: false
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '9,24,27,30|1|🇭🇰香港 02 | 1x HK #1'
-  password: 6f31be51-d440-415b-9c5d-50f7b2b456a8
+  name: '9,24,27,30|0|🇭🇰香港 02 | 1x HK #1'
+  password: 76daa2f8-107b-4db2-87c8-17f35b45a53d
   port: 31143
   server: free.2apzhfa.xyz
   tfo: false
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '9,24,27,30|1|🇭🇰香港 03 | 1x HK #1'
-  password: 6f31be51-d440-415b-9c5d-50f7b2b456a8
+  name: '9,24,27,30|0|🇭🇰香港 03 | 1x HK #1'
+  password: 76daa2f8-107b-4db2-87c8-17f35b45a53d
   port: 31145
   server: free.2apzhfa.xyz
   tfo: false
@@ -746,22 +746,22 @@ proxies:
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
 - cipher: chacha20-ietf-poly1305
-  name: '24,27,30|0|🇭🇰 香港IP 03 | 1x HK #1'
-  password: 118916b0-fa7d-4177-9025-abb7d813a9b0
+  name: '24,27,30|1|🇭🇰 香港IP 03 | 1x HK #1'
+  password: 0f0b82ed-33da-4289-8196-3f88b8559b55
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '24,27,30|0|  01 | 1x HK #1'
-  password: 118916b0-fa7d-4177-9025-abb7d813a9b0
+  name: '24,27,30|1|🇭🇰 香港 01 | 1x HK #1'
+  password: 0f0b82ed-33da-4289-8196-3f88b8559b55
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '24,27,30|0|🇭🇰 香港 02 | 1x HK #1'
-  password: 118916b0-fa7d-4177-9025-abb7d813a9b0
+  name: '24,27,30|1|🇭🇰 香港 02 | 1x HK #1'
+  password: 0f0b82ed-33da-4289-8196-3f88b8559b55
   port: 36143
   server: free.2weradf.xyz
   type: ss
@@ -789,8 +789,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 27,30|🇳 广东省广市 移动
+  name: '27,30|12|🇭🇰 香港9|@ripaojiedian #1'
   port: 42120
   server: 183.236.51.38
   skip-cert-verify: false
@@ -798,16 +797,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
-  network: tcp
-  port: '27512'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-20.6.155.159...
@@ -824,11 +813,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
   network: tcp
-  port: '54675'
+  port: '27512'
   server: 103.149.183.178
   servername: ''
+  tls: false
+  type: vmess
+  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-RAW-NA 🇭🇰 HK-103.149.183....
+  network: raw
+  port: '54675'
+  server: 103.149.183.178
   tls: false
   type: vmess
   uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
