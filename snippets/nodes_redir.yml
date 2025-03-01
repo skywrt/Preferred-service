@@ -50,12 +50,6 @@ proxies:
   uuid: d6b6d982-d52f-465a-b988-85670b23f64a
   ws-opts: {}
 - cipher: aes-256-cfb
-  name: '5,12,30|🇺🇸_US_美国->🇷🇺_RU_俄罗斯 #2'
-  password: amazonskr05
-  port: 443
-  server: 54.190.1.125
-  type: ss
-- cipher: aes-256-cfb
   name: 5,9|2|🇺🇸4 |  3.1MB/s
   password: amazonskr05
   port: 443
@@ -200,10 +194,9 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 5,10,24,30|🇺🇸 美国 Fastly全Anycast节点
+  name: 5,10,24|🇺🇸 _美国
   network: ws
-  port: 80
+  port: '80'
   server: AC.fastly80-2.hosting-ip.com
   servername: telegram-isvvpn.dev
   skip-cert-verify: true
@@ -218,8 +211,7 @@ proxies:
     path: /racevpn
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 5,24,30|🇺🇸 美国 Fastly全球Anycast节点 3
+  name: 5|美国 Fastly全球Anycast节点
   network: ws
   port: 80
   server: 151.101.128.155
@@ -1082,12 +1074,6 @@ proxies:
     headers:
       host: mizban.arzonhost.ir
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 12,24,30|_DE_国->_CN_国
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.181
-  type: ss
 - alterId: 0
   cipher: auto
   name: 13|🇬🇧_GB_英国->🇷🇺_RU_俄罗斯
@@ -1104,6 +1090,7 @@ proxies:
   network: tcp
   port: 48712
   server: 107.148.207.249
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1334,3 +1321,36 @@ proxies:
     headers:
       host: uk.moss.network
     path: /d/65dd503.TG.WangCai2.WangCai_8:107690
+- alterId: 0
+  cipher: auto
+  name: 30|_US_->_DE_国
+  network: ws
+  port: 80
+  server: 151.101.64.155
+  type: vmess
+  uuid: 6e3ac406-a15b-461d-8b05-ca01b284d9a0
+  ws-opts:
+    headers:
+      host: telegram-isvvpn.dev
+    path: /racevpn
+- cipher: chacha20-ietf
+  name: 30|🇺🇸_US_美国->_CN_国
+  password: asd123456
+  port: 8388
+  server: 137.175.113.193
+  type: ss
+- cipher: aes-256-cfb
+  name: 30|🇺_RU_->🇩🇪_DE_德国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.173
+  type: ss
+- alpn:
+  - http/1.1
+  name: 30|🇸_US_美国->🇺_AU_
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.73.176.102
+  sni: trojan.burgerip.co.uk
+  type: trojan
