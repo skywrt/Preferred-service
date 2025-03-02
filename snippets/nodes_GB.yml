@@ -19,12 +19,20 @@ proxies:
   skip-cert-verify: false
   sni: uk.mjt000.com
   type: trojan
-- name: '5,20,21|🇬🇧GB-3.11.161.141-5649 #1'
+- alpn:
+  - http/1.1
+  alterId: 0
+  client-fingerprint: chrome
+  name: 5,20,21,30,37|未知71
+  network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 3.11.161.141
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5|英国-优化-GPT
@@ -51,30 +59,28 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- name: '5,20,21|🇬🇧GB-3.9.142.131-6173 #1'
+- alterId: 0
+  name: 5,20,21,37|未知98 754.5KB/s
   password: telegram-id-privatevpns
   port: 22222
   server: 3.9.142.131
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30,37|GB
-  password: f554f619-34b2-4dc9-83a1-f5b0053cd709
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,24,27,30|0| 国住宅IP 01 | 1x UK #1'
+  password: bc1e4dbc-f2db-4077-9b56-5f1bd35fcbfc
   port: 36271
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30,37|🇧GB英国2
-  password: f937b7fc-664f-4c17-8577-dd7144f85311
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,24,27,30|1|🇧英国家宽 01 | 1x UK #1'
+  password: 757e21c1-9276-4c3b-b8a5-148bc790192c
   port: 31271
   server: free.2apzhfa.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - name: 5|英国
@@ -118,35 +124,22 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
-- alterId: 0
-  name: 9,37|未命名
+- name: 9|2|🇬🇧1 |  5.3MB/s
   password: e36034d8-1f0c-3721-bca4-2d9d98352fd2
   port: 11215
   server: gy.58n.net
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: z268.hongkongnode.top
-  tls: true
   type: trojan
   udp: true
-- alterId: 0
-  name: 9,37|未知2
+- name: 9|2|🇬🇧2 |  4.6MB/s
   password: e36034d8-1f0c-3721-bca4-2d9d98352fd2
   port: 20309
   server: gyl.58n.net
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: z309.hongkongnode.top
-  tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 20,21,37|未知7 20.9MB/s
-  password: 7kxlu80MRzBQ74VB0W20k7
-  port: 443
-  server: 78.129.140.11
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - name: 26|V2-英国03∣K71线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 20820
@@ -154,25 +147,15 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
-  network: tcp
-  port: '55577'
-  server: 172.99.190.207
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
-  network: tcp
-  port: 26924
-  server: 68.168.31.184
-  tls: false
-  type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 30|🇧 英国 安
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.20.150.210
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
@@ -185,14 +168,14 @@ proxies:
   uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
   network: tcp
-  port: '46617'
-  server: 46.250.253.232
+  port: '55577'
+  server: 172.99.190.207
   servername: ''
   tls: false
   type: vmess
-  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
+  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-149.7.16.149...
@@ -203,3 +186,22 @@ proxies:
   tls: false
   type: vmess
   uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  network: tcp
+  port: '46617'
+  server: 46.250.253.232
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
+  network: tcp
+  port: 26924
+  server: 68.168.31.184
+  tls: false
+  type: vmess
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
