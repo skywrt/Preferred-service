@@ -6,9 +6,24 @@ proxies:
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|646f86f4a3b445c4a9616cec81de4d...
+  network: ws
+  port: 22222
+  server: 18.175.14.113
+  servername: telegram-channel-vlessconfig.sohala.uk
+  tls: true
+  type: vless
+  udp: false
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|1|🇧 英国住宅IP 01 | 1x UK
-  password: 56ce51e3-f61e-4489-a749-162678142cc0
+  name: 5,9,24,27,30|14|🇧 英国住宅IP 01 | 1x UK
+  password: 055c1955-2d68-41b3-92c4-de25347e0e79
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -38,7 +53,8 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- name: 5|英国+社会保险安全部
+- client-fingerprint: chrome
+  name: 5,30|🇧 英国
   password: telegram-id-privatevpns
   port: 22222
   server: 51.20.58.226
@@ -106,13 +122,6 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|国家宽 01 | 1x UK
-  password: f9072b3d-7efa-4bbf-8adf-f885f3e39717
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - name: '5,38|🇬🇧_GB_英国_26 #1'
   network: ws
   port: 443
@@ -244,6 +253,12 @@ proxies:
   uuid: 7b1c5bee-19f1-422f-8be2-e03175fabe4a
   ws-opts:
     path: '%2F%3Fed%3D2048'
+- cipher: aes-128-gcm
+  name: 12,19,20,21,24,30|_GB_国_1
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.196
+  type: ss
 - name: '17|英国(yudou66.com 玉豆免费节点) #1'
   network: ws
   port: 443
@@ -302,25 +317,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
-  network: tcp
-  port: 26924
-  server: 68.168.31.184
-  tls: false
-  type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
-  network: tcp
-  port: '55577'
-  server: 172.99.190.207
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
-- alterId: 0
-  cipher: auto
   name: 36,37|未知29 11.5MB/s
   network: tcp
   port: 37101
@@ -350,3 +346,22 @@ proxies:
   tls: false
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
+  network: tcp
+  port: '55577'
+  server: 172.99.190.207
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
+  network: tcp
+  port: 26924
+  server: 68.168.31.184
+  tls: false
+  type: vmess
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
