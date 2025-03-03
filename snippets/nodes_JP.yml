@@ -17,7 +17,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|0|  01 | 1x JP
-  password: 3e7acb81-8bfb-4597-af40-eead49c03617
+  password: 0108f55f-f7ff-4c82-b8d3-7b4f19edcbf1
   port: 36111
   server: free.2weradf.xyz
   type: ss
@@ -29,13 +29,6 @@ proxies:
   port: 18008
   server: w72tapyb.slashdevslashnetslashtun.net
   tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '5,9|0|🇯🇵4 |  3.5MB/s #1'
-  password: amazonskr05
-  port: 443
-  server: 18.183.221.195
   type: ss
   udp: true
 - alterId: 0
@@ -107,7 +100,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|0|🇵 日本 02 | 1x JP
-  password: 3e7acb81-8bfb-4597-af40-eead49c03617
+  password: 0108f55f-f7ff-4c82-b8d3-7b4f19edcbf1
   port: 36113
   server: free.2weradf.xyz
   type: ss
@@ -144,6 +137,13 @@ proxies:
   skip-cert-verify: false
   sni: ni.mjt000.com
   type: trojan
+- cipher: aes-256-cfb
+  name: '5,9|0|🇯🇵5 |  6.0MB/s #1'
+  password: amazonskr05
+  port: 443
+  server: 54.64.124.92
+  type: ss
+  udp: true
 - name: 5|日本06
   network: tcp
   password: d0d98f45-15ec-4a5a-9ccd-d4089e2204d9
@@ -152,21 +152,14 @@ proxies:
   skip-cert-verify: true
   sni: 421421.xyz
   type: trojan
-- name: '5,20,21|🇯🇵JP-52.196.239.29-5596 #1'
+- name: 5|日本07
   network: tcp
-  password: 4deefa4b-349d-4db8-be3c-d4d61c862718
+  password: d0d98f45-15ec-4a5a-9ccd-d4089e2204d9
   port: 20230
   server: jp007.421421.xyz
   skip-cert-verify: true
   sni: 421421.xyz
   type: trojan
-- cipher: aes-256-cfb
-  name: '5,9|0|🇯🇵3 |  2.4MB/s #1'
-  password: amazonskr05
-  port: 443
-  server: 13.230.20.120
-  type: ss
-  udp: true
 - name: 5|日本JP-T
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
@@ -175,7 +168,7 @@ proxies:
   sni: jp.mjt000.com
   type: trojan
 - cipher: aes-256-cfb
-  name: '5,9|0|🇯🇵7 |  3.4MB/s #1'
+  name: 5,9,27|2|🇯🇵3 |  1.2MB/s
   password: amazonskr05
   port: 443
   server: 13.231.162.239
@@ -314,26 +307,11 @@ proxies:
       Host: tls.09.node-for-bigairport.win
     path: /
 - cipher: aes-256-cfb
-  name: 19|🇯🇵JP-18.181.211.125-2346
+  name: 19|🇯🇵JP-3.112.1.95-1170
   password: amazonskr05
   port: 443
-  server: 18.181.211.125
+  server: 3.112.1.95
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇯🇵JP-43.207.165.71-5880
-  network: ws
-  port: 11443
-  server: tls.17.node-for-bigairport.win
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      host: tls.17.node-for-bigairport.win
-    path: /
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|日本(JP)Japan/Tokyo_38
@@ -408,61 +386,40 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: aes-128-gcm
+  name: 27|2|🇯🇵1 |  1.9MB/s
+  password: 32c41b01-84be-11ef-bb6b-bc241111d95d
+  port: 28029
+  server: js.wnwwv.cn
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 27|2|🇯🇵2 |  11.7MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.112.30.167
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 27|2|🇯🇵4 |  2.6MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.183.164.43
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-3.112.241.13...
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-54.248.176.2...
   network: ws
-  port: 22443
-  server: 3.112.241.13
-  servername: tls.11.node-for-bigairport.win
+  port: 11443
+  server: 54.248.176.238
+  servername: tls.01.node-for-bigairport.win
   tls: true
   type: vmess
   uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
   ws-opts:
     headers:
-      Host: tls.11.node-for-bigairport.win
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-54.168.205.8...
-  network: ws
-  port: 22356
-  server: 54.168.205.82
-  servername: 0000000000000000000000000071.cgroup-node-for-bigairport.sbs
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: 0000000000000000000000000071.cgroup-node-for-bigairport.sbs
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-52.196.131.1...
-  network: ws
-  port: 23443
-  server: 52.196.131.194
-  servername: tls.04.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: tls.04.node-for-bigairport.win
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-54.248.14.23...
-  network: ws
-  port: 14443
-  server: 54.248.14.232
-  servername: tls.14.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: tls.14.node-for-bigairport.win
+      Host: tls.01.node-for-bigairport.win
     path: /
 - alterId: 0
   cipher: auto
@@ -486,6 +443,71 @@ proxies:
   ws-opts:
     headers:
       Host: 0000000000000000000000000076.cgroup-node-for-bigairport.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-54.168.205.8...
+  network: ws
+  port: 22356
+  server: 54.168.205.82
+  servername: 0000000000000000000000000071.cgroup-node-for-bigairport.sbs
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000071.cgroup-node-for-bigairport.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-103.168.155....
+  network: ws
+  port: 888
+  server: 103.168.155.40
+  servername: cdn.cjhh.lol
+  tls: true
+  type: vmess
+  uuid: 8d994cc0-a8a7-4f66-b1e4-771c7e7c6ecd
+  ws-opts:
+    headers:
+      Host: cdn.cjhh.lol
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-20.78.127.14...
+  network: tcp
+  port: '550'
+  server: 20.78.127.141
+  tls: false
+  type: vmess
+  uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-54.248.14.23...
+  network: ws
+  port: 14443
+  server: 54.248.14.232
+  servername: tls.14.node-for-bigairport.win
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: tls.14.node-for-bigairport.win
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-52.196.131.1...
+  network: ws
+  port: 23443
+  server: 52.196.131.194
+  servername: tls.04.node-for-bigairport.win
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: tls.04.node-for-bigairport.win
     path: /
 - alterId: 0
   cipher: auto
@@ -516,15 +538,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-20.78.127.14...
-  network: tcp
-  port: '550'
-  server: 20.78.127.141
-  tls: false
-  type: vmess
-  uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
-- alterId: 0
-  cipher: auto
   name: 36,37|未知97
   network: tcp
   port: 1069
@@ -534,34 +547,6 @@ proxies:
   tls: true
   type: vmess
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-54.248.176.2...
-  network: ws
-  port: 11443
-  server: 54.248.176.238
-  servername: tls.01.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: tls.01.node-for-bigairport.win
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-103.168.155....
-  network: ws
-  port: 888
-  server: 103.168.155.40
-  servername: cdn.cjhh.lol
-  tls: true
-  type: vmess
-  uuid: 8d994cc0-a8a7-4f66-b1e4-771c7e7c6ecd
-  ws-opts:
-    headers:
-      Host: cdn.cjhh.lol
-    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇯🇵 JP-13.115.38.21...
@@ -575,4 +560,18 @@ proxies:
   ws-opts:
     headers:
       Host: tls.13.node-for-bigairport.win
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-3.112.241.13...
+  network: ws
+  port: 22443
+  server: 3.112.241.13
+  servername: tls.11.node-for-bigairport.win
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: tls.11.node-for-bigairport.win
     path: /
