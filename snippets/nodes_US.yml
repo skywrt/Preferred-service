@@ -70,7 +70,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 5,11,24,27|13|美国2|@ripaojiedian
+  name: 5,11,24,27|12|美国2|@ripaojiedian
   network: tcp
   port: '44014'
   server: 120.198.71.219
@@ -103,15 +103,15 @@ proxies:
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|🇸 国 01 | 1x US Los Angeles
-  password: 5b5d6a65-3617-41c8-827e-40d5cd80f323
+  name: 5,9,24,27|14|🇸 美国 01 | 1x US Los Angeles
+  password: fc45304d-e531-4ee7-8c94-c96e5de286e7
   port: 36211
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|🇸 美国 03 | 1x US Washington
-  password: 5b5d6a65-3617-41c8-827e-40d5cd80f323
+  name: 5,9,24,27|14|🇸 美国 03 | 1x US Washington
+  password: fc45304d-e531-4ee7-8c94-c96e5de286e7
   port: 36215
   server: free.2weradf.xyz
   type: ss
@@ -317,8 +317,8 @@ proxies:
       Host: us6_0.wish.ml
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|2|🇸美国 03 | 1x US Washington
-  password: f2e22b1f-f6f7-4328-bd22-f4ccaf098ff4
+  name: 5,9,24,27|0|🇸美国 03 | 1x US Washington
+  password: f9567a6a-1f34-4969-a090-544681c7d0af
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
@@ -396,8 +396,8 @@ proxies:
       Host: 100-49-141-209.s1.db-link02.top
     path: /dabai.in104.17.169.115
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|🇸 美国住宅IP 02 | 1x US Los Ange...
-  password: 5b5d6a65-3617-41c8-827e-40d5cd80f323
+  name: 5,9,24,27|14|🇸 美国住宅IP 02 | 1x US Los Ang...
+  password: fc45304d-e531-4ee7-8c94-c96e5de286e7
   port: 36213
   server: free.2weradf.xyz
   type: ss
@@ -435,8 +435,8 @@ proxies:
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|2|🇸美国 01 | 1x US Los Angeles
-  password: f2e22b1f-f6f7-4328-bd22-f4ccaf098ff4
+  name: 5,9,24,27|0|🇸国 01 | 1x US Los Angeles
+  password: f9567a6a-1f34-4969-a090-544681c7d0af
   port: 31211
   server: free.2apzhfa.xyz
   type: ss
@@ -470,8 +470,8 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|2|🇸美国家宽 02 | 1x US Los Angeles
-  password: f2e22b1f-f6f7-4328-bd22-f4ccaf098ff4
+  name: 5,9,24,27|0|🇸美国家宽 02 | 1x US Los Angeles
+  password: f9567a6a-1f34-4969-a090-544681c7d0af
   port: 31213
   server: free.2apzhfa.xyz
   type: ss
@@ -1313,12 +1313,12 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 854
-  name: 9,10|美国 038
+  name: 9,10,11,27|1|🌀3- |  4.6MB/s
   network: ws
   port: 443
   server: 104.18.24.41
   servername: server9-3.998877.best
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
@@ -1340,7 +1340,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 9,11,27|12|🇸 美国2|@ripaojiedian
+  name: 9,11,27|11|🇸 美国2|@ripaojiedian
   password: Vad3.123a)asd1234-asdasd.asdazzS.123
   port: 44014
   server: 120.198.71.219
@@ -1399,14 +1399,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10,12|🇺🇸_US_美国->🇷🇺_RU_俄罗斯
+  ip-version: dual
+  name: 10,11,12,27|1|🇪2 |  2.1MB/s
   network: ws
-  port: '80'
+  port: 80
   server: 151.101.66.168
   servername: ''
   sni: ''
   tls: false
   type: vmess
+  udp: true
   uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
   ws-opts:
     headers:
@@ -1716,6 +1718,51 @@ proxies:
     headers:
       Host: amd.al
     path: /XESALISTHEBEST?ed=2048
+- alterId: 2
+  cipher: auto
+  name: 11,27|1|🇸3 |  1.7MB/s
+  network: ws
+  port: 23615
+  server: 15.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 741ad2be-59ee-3607-be11-59f4a2a87929
+  ws-opts:
+    headers:
+      Host: 15.mamamajd.site
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 11,27|1|🇺🇸7 |  4.1MB/s
+  network: ws
+  port: 23618
+  server: 18.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 741ad2be-59ee-3607-be11-59f4a2a87929
+  ws-opts:
+    headers:
+      Host: 18.mamamajd.site
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 11,27|1|🇺🇸9 |  5.1MB/s
+  network: ws
+  port: 23616
+  server: 16.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 741ad2be-59ee-3607-be11-59f4a2a87929
+  ws-opts:
+    headers:
+      Host: 16.mamamajd.site
+    path: /
 - name: '13|🇺🇸_US_美国_8 #1'
   network: tcp
   password: telegram-id-directvpn
@@ -2779,6 +2826,20 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 27|1|🇺🇸1 |  5.6MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.236.101.195
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 27|1|🇺🇸6 |  1.2MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.143.186.182
+  type: ss
 - alterId: 0
   cipher: auto
   name: 28|美国-拉斯维加斯-002-1F
@@ -2821,48 +2882,6 @@ proxies:
     headers:
       Host: biazh.mmzhk.website
     path: /
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.11.69.42:...
-  network: ws
-  port: 30003
-  server: 38.11.69.42
-  servername: www.52140341.xyz
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.52140341.xyz
-    path: /path/1733218657472
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇺🇸 US-35.167.98.67...
-  network: ws
-  port: 42360
-  server: 35.167.98.67
-  servername: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.48.227.23...
-  network: ws
-  port: 47778
-  server: 38.48.227.231
-  servername: www.42266451.xyz
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.42266451.xyz
-    path: /path/240811062813
 - alterId: 0
   cipher: auto
   name: 36,37|US15 58.5MB/s
@@ -2873,6 +2892,26 @@ proxies:
   tls: true
   type: vmess
   uuid: 82466715-6a58-4046-a363-a0d18e5b2ab4
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.249.0...
+  network: tcp
+  port: '48160'
+  server: 15.204.249.0
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5b113c12-4dd4-4bb5-9c01-cff092b559e3
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.86.12...
+  network: tcp
+  port: '35696'
+  server: 15.204.86.120
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cad0504a-a9dc-4d29-8844-b11b69f14a8d
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇺🇸 US-137.175.23.1...
@@ -2889,23 +2928,41 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.249.0...
-  network: tcp
-  port: '48160'
-  server: 15.204.249.0
-  tls: false
+  name: 36|🔒 VM-WS-TLS 🇺🇸 US-35.167.98.67...
+  network: ws
+  port: 42360
+  server: 35.167.98.67
+  servername: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
+  tls: true
   type: vmess
-  uuid: 5b113c12-4dd4-4bb5-9c01-cff092b559e3
-- alterId: 0
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
+    path: /
+- alterId: 64
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇺🇸 US-142.4.104.33...
   network: tcp
   port: '52143'
   server: 142.4.104.33
-  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.11.69.42:...
+  network: ws
+  port: 30003
+  server: 38.11.69.42
+  servername: www.52140341.xyz
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.52140341.xyz
+    path: /path/1733218657472
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇺🇸 US-2.58.87.221:1...
@@ -2920,16 +2977,20 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.86.12...
-  network: tcp
-  port: '35696'
-  server: 15.204.86.120
-  servername: ''
-  tls: false
+  name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.48.227.23...
+  network: ws
+  port: 47778
+  server: 38.48.227.231
+  servername: www.42266451.xyz
+  tls: true
   type: vmess
-  uuid: cad0504a-a9dc-4d29-8844-b11b69f14a8d
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.42266451.xyz
+    path: /path/240811062813
 - alterId: 0
   name: 37|US
   network: ws

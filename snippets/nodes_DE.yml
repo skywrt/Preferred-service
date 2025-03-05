@@ -1,6 +1,20 @@
 proxies:
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|e914db2d322d41e7b67e6ab71deb39...
+  network: ws
+  port: 443
+  server: 57.129.24.142
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
+- alterId: 0
+  cipher: auto
   name: 5|德国-优化2
   network: ws
   port: '16644'
@@ -33,8 +47,8 @@ proxies:
   type: vmess
   uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0| 国 01 | 1x DE
-  password: 5b5d6a65-3617-41c8-827e-40d5cd80f323
+  name: 5,9,24,27|14|🇪 德国 01 | 1x DE
+  password: fc45304d-e531-4ee7-8c94-c96e5de286e7
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -81,18 +95,21 @@ proxies:
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
 - alterId: 0
   cipher: auto
-  name: 9|0|🇩🇪1 |  4.6MB/s
+  h2-opts: {}
+  http-opts: {}
+  name: 9,11,27|1|🇪1 |  16.9MB/s
   network: ws
   port: 80
   server: www.aetv.com
   servername: amd.al
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
   ws-opts:
     headers:
+      HOST: amd.al
       Host: www.aetv.com
     path: /XESALISTHEBEST?ed=2048
 - alterId: 0
@@ -184,13 +201,16 @@ proxies:
     path: /XESALISTHEBEST?ed=2048
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
-  network: tcp
-  port: '48961'
-  server: 23.158.56.21
-  tls: false
+  grpc-opts:
+    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
+  network: grpc
+  port: '15145'
+  server: 88.198.172.25
+  servername: ''
+  tls: true
   type: vmess
-  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
+  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
@@ -203,16 +223,23 @@ proxies:
   uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
 - alterId: 0
   cipher: auto
-  grpc-opts:
-    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
-  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
-  network: grpc
-  port: '15145'
-  server: 88.198.172.25
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
+  network: tcp
+  port: '15713'
+  server: 193.108.118.136
   servername: ''
-  tls: true
+  tls: false
   type: vmess
-  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
+  network: tcp
+  port: '48961'
+  server: 23.158.56.21
+  tls: false
+  type: vmess
+  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
@@ -227,13 +254,3 @@ proxies:
     headers:
       Host: www.80347320.xyz
     path: /path/240811062813
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
-  network: tcp
-  port: '15713'
-  server: 193.108.118.136
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
