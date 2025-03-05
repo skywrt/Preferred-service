@@ -1,12 +1,11 @@
 proxies:
-- name: 5,27|2|🇯🇵4 |  4.1MB/s
-  password: 8b02315b-7ea4-3cd1-9e10-bd0eb58b1748
+- name: 5|0|🇯🇵2 |  6.3MB/s
+  password: 4e0c3a4b-bdac-3950-b736-2c90b76ee530
   port: 20071
   server: gy.58n.net
   skip-cert-verify: true
   sni: x71.flybar.work
   type: trojan
-  udp: true
 - name: 5|日本05
   network: tcp
   password: d0d98f45-15ec-4a5a-9ccd-d4089e2204d9
@@ -15,16 +14,19 @@ proxies:
   skip-cert-verify: true
   sni: 421421.xyz
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|2|🇸9 |  2.8MB/s
-  password: c4168a67-1290-4d8a-9462-04705999594a
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27,37|JP
+  password: 49b81dd6-d1d8-4096-b5a8-f77301bc5af4
   port: 36111
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,9,11,24,27|12|🇵 日本|@ripaojiedian
+  name: 5,9,11,24,27|11|🇵 日本|@ripaojiedian
   password: 4S85LF2Q3QK92171
   port: 18008
   server: w72tapyb.slashdevslashnetslashtun.net
@@ -39,7 +41,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,9,11,24,27|12|🇵 日本3|@ripaojiedian
+  name: 5,9,11,24,27|11|🇵 日本3|@ripaojiedian
   password: 84HMRAWILKB49QUZ
   port: 18002
   server: ti3hyra4.slashdevslashnetslashtun.net
@@ -57,8 +59,8 @@ proxies:
   type: vmess
   uuid: c06797d5-fa41-4b48-b132-d268d2acb302
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|🇵 日本 03 | 1x JP
-  password: bffc7269-f0bd-44e8-ac83-d402aa68c8c0
+  name: 5,9,24,27|1|🇵 日本 03 | 1x JP
+  password: 49b81dd6-d1d8-4096-b5a8-f77301bc5af4
   port: 36115
   server: free.2weradf.xyz
   type: ss
@@ -90,15 +92,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|🇵 日本 02 | 1x JP
-  password: bffc7269-f0bd-44e8-ac83-d402aa68c8c0
+  name: 5,9,24,27|1|🇵 日本 02 | 1x JP
+  password: 49b81dd6-d1d8-4096-b5a8-f77301bc5af4
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|1|🇵日本 01 | 1x JP
-  password: d36da08d-38e9-427b-9287-db8c13e1afbe
+  name: 5,9,24,27|14|🇵日本 01 | 1x JP
+  password: 361cb2f0-9db3-4563-b150-78299202e7b9
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
@@ -112,7 +114,7 @@ proxies:
   type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,9,11,24,27|12|🇵 日本2|@ripaojiedian
+  name: 5,9,11,24,27|11|🇵 日本2|@ripaojiedian
   password: YMB3QL85L7F1KJR7
   port: 18013
   server: 8tv68qhq.slashdevslashnetslashtun.net
@@ -128,8 +130,8 @@ proxies:
   sni: 421421.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|1|🇵日本 03 | 1x JP
-  password: d36da08d-38e9-427b-9287-db8c13e1afbe
+  name: 5,9,24,27|14|🇵日本 03 | 1x JP
+  password: 361cb2f0-9db3-4563-b150-78299202e7b9
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
@@ -163,14 +165,11 @@ proxies:
   port: 443
   server: 13.230.20.120
   type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,37|JP
-  password: 68b4faba-ebc9-4f70-a171-0439406b2a32
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,24,27|14|🇯🇵日本 02 | 1x JP #1'
+  password: 361cb2f0-9db3-4563-b150-78299202e7b9
   port: 31113
   server: free.2apzhfa.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - name: 5|日本JP-T
@@ -212,61 +211,52 @@ proxies:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
 - cipher: aes-256-cfb
-  name: 9,19|🇯🇵JP-18.179.10.10-6102
+  name: 9,20,21,27|0|🇵2 |  4.5MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.181.198.147
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 9|🇯🇵 11|🇯🇵 日本4|@ripaojiedian
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 52.199.164.162
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 9,11,27|11|🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 54.179.221.27
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 9,11,27|11|🇵 日本4|@ripaojiedian
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 8d21436:87091
+    mode: tls
+  port: 2377
+  server: 52.199.164.162
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|🇯🇵JP-18.179.10.10-6102
   password: amazonskr05
   port: 443
   server: 18.179.10.10
   type: ss
-  udp: true
 - cipher: aes-256-cfb
-  name: 9|1|🇯🇵2 |  3.6MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.183.232.26
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 9,19|🇯🇵JP-3.112.30.167-6032
+  name: 19|🇯🇵JP-3.112.30.167-6032
   password: amazonskr05
   port: 443
   server: 3.112.30.167
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 9,27|12|🇵 日本4|@ripaojiedian
-  port: 35565
-  server: 120.198.71.214
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 9,11,27|12|🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 54.151.184.124
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 11,24,27|13|日本4|@ripaojiedian
-  network: tcp
-  port: '35565'
-  server: 120.198.71.214
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-cfb
-  name: 20,21,27|2|🇵3 |  5.8MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.115.246.98
   type: ss
 - alterId: 0
   cipher: auto
@@ -342,35 +332,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 27|2|🇯🇵1 |  5.4MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.249.42.175
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-103.168.155....
-  network: ws
-  port: 888
-  server: 103.168.155.40
-  servername: cdn.cjhh.lol
-  tls: true
-  type: vmess
-  uuid: 8d994cc0-a8a7-4f66-b1e4-771c7e7c6ecd
-  ws-opts:
-    headers:
-      Host: cdn.cjhh.lol
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.230.235.2...
-  network: tcp
-  port: '48889'
-  server: 13.230.235.247
-  tls: false
-  type: vmess
-  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-150.230.61.11...
@@ -386,59 +347,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-18.183.171.2...
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-103.168.155....
   network: ws
-  port: 52351
-  server: 18.183.171.215
-  servername: 0000000000000000000000000042.bgroup-node-for-bigairport.sbs
+  port: 888
+  server: 103.168.155.40
+  servername: cdn.cjhh.lol
   tls: true
   type: vmess
-  uuid: b71f9e84-86c9-49c4-b5f4-b33b35ee7410
+  uuid: 8d994cc0-a8a7-4f66-b1e4-771c7e7c6ecd
   ws-opts:
     headers:
-      Host: 0000000000000000000000000042.bgroup-node-for-bigairport.sbs
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-52.196.123.2...
-  network: ws
-  port: 42358
-  server: 52.196.123.235
-  servername: 0000000000000000000000000076.cgroup-node-for-bigairport.sbs
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: 0000000000000000000000000076.cgroup-node-for-bigairport.sbs
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-3.112.193.70...
-  network: ws
-  port: '23443'
-  server: 3.112.193.70
-  servername: tls.04.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: tls.04.node-for-bigairport.win
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-18.183.149.1...
-  network: ws
-  port: 22356
-  server: 18.183.149.132
-  servername: 0000000000000000000000000071.cgroup-node-for-bigairport.sbs
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: 0000000000000000000000000071.cgroup-node-for-bigairport.sbs
+      Host: cdn.cjhh.lol
     path: /
 - alterId: 0
   cipher: auto
@@ -456,14 +375,32 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
-  network: tcp
-  port: '1069'
-  server: 152.69.197.60
-  servername: ''
-  tls: false
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-18.183.149.1...
+  network: ws
+  port: 22356
+  server: 18.183.149.132
+  servername: 0000000000000000000000000071.cgroup-node-for-bigairport.sbs
+  tls: true
   type: vmess
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000071.cgroup-node-for-bigairport.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-18.183.171.2...
+  network: ws
+  port: 52351
+  server: 18.183.171.215
+  servername: 0000000000000000000000000042.bgroup-node-for-bigairport.sbs
+  tls: true
+  type: vmess
+  uuid: b71f9e84-86c9-49c4-b5f4-b33b35ee7410
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000042.bgroup-node-for-bigairport.sbs
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.165.173....
@@ -485,6 +422,34 @@ proxies:
   uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-3.112.193.70...
+  network: ws
+  port: '23443'
+  server: 3.112.193.70
+  servername: tls.04.node-for-bigairport.win
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: tls.04.node-for-bigairport.win
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-52.196.123.2...
+  network: ws
+  port: 42358
+  server: 52.196.123.235
+  servername: 0000000000000000000000000076.cgroup-node-for-bigairport.sbs
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000076.cgroup-node-for-bigairport.sbs
+    path: /
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇯🇵 JP-3.112.219.18...
   network: ws
   port: 11443
@@ -497,3 +462,22 @@ proxies:
     headers:
       Host: tls.01.node-for-bigairport.win
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.230.235.2...
+  network: tcp
+  port: '48889'
+  server: 13.230.235.247
+  tls: false
+  type: vmess
+  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
+  network: tcp
+  port: '1069'
+  server: 152.69.197.60
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf

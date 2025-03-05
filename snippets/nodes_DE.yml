@@ -12,11 +12,14 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|1|🇪德国 01 | 1x DE
-  password: d36da08d-38e9-427b-9287-db8c13e1afbe
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27,37|DE国
+  password: 361cb2f0-9db3-4563-b150-78299202e7b9
   port: 31471
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -29,8 +32,8 @@ proxies:
   type: vmess
   uuid: b52f0a62-068c-41bf-a4f6-ac3faddded46
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0| 国 01 | 1x DE
-  password: bffc7269-f0bd-44e8-ac83-d402aa68c8c0
+  name: 5,9,24,27|1|🇪 国 01 | 1x DE
+  password: 49b81dd6-d1d8-4096-b5a8-f77301bc5af4
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -77,17 +80,40 @@ proxies:
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
 - alterId: 0
   cipher: auto
-  name: '11,24|2|🇩🇪1 |  4.9MB/s #1'
+  h2-opts: {}
+  http-opts: {}
+  name: 9,11,27|0|1 |  4.6MB/s
   network: ws
-  port: '80'
-  server: 151.101.130.168
+  port: 80
+  server: www.aetv.com
   servername: amd.al
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
   ws-opts:
     headers:
-      Host: ''
+      HOST: amd.al
+      Host: www.aetv.com
+    path: /XESALISTHEBEST?ed=2048
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: '9,11,27|0|🇩🇪2 |  1.1MB/s #1'
+  network: ws
+  port: 80
+  server: 151.101.194.168
+  servername: amd.al
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
+  ws-opts:
+    headers:
+      HOST: amd.al
     path: /XESALISTHEBEST?ed=2048
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
@@ -103,11 +129,14 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-5542
-  password: GA9KzeEgvfxNrgmM
-  port: 9019
-  server: 80.92.204.106
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,37|未知99 3.4MB/s
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-256-cfb
   name: 19|🇩🇪DE-80.92.204.106-5540
@@ -116,21 +145,9 @@ proxies:
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-5539
-  password: TN2YqghxeFDKZfLU
-  port: 9037
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
   name: 19|🇩🇪DE-80.92.204.106-5710
   password: 4R3hUfZ2FHhDmNcP
   port: 9061
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-5543
-  password: BNmAXXxAHYpTRdzu
-  port: 9020
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
@@ -153,12 +170,6 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
-- name: '20,21|🇩🇪DE-18.153.113.46-6158 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.153.113.46
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '20,21|🇩🇪DE-57.129.24.141-5687 #1'
@@ -175,15 +186,49 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36,37|未知81 106.5KB/s
+  name: '24|2|🇩🇪1 |  4.9MB/s #1'
+  network: ws
+  port: '80'
+  server: 151.101.130.168
+  tls: false
+  type: vmess
+  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
+  ws-opts:
+    headers:
+      Host: ''
+    path: /XESALISTHEBEST?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
   network: tcp
-  port: 24164
+  port: '24164'
   server: 193.108.117.143
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
+  network: tcp
+  port: '15713'
+  server: 193.108.118.136
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
+  network: grpc
+  port: '15145'
+  server: 88.198.172.25
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
@@ -207,25 +252,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
-  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
-  network: grpc
-  port: '15145'
-  server: 88.198.172.25
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
-  network: tcp
-  port: '15713'
-  server: 193.108.118.136
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
