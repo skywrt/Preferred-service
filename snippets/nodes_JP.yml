@@ -16,7 +16,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|0|  01 | 1x JP
-  password: 3e7032f0-e0d5-4f83-b7f3-229603dcfdee
+  password: d062bf43-ebad-4ad2-9aeb-bc9824cc4981
   port: 36111
   server: free.2weradf.xyz
   type: ss
@@ -42,7 +42,7 @@ proxies:
   uuid: c06797d5-fa41-4b48-b132-d268d2acb302
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|0|🇵 日本 03 | 1x JP
-  password: 3e7032f0-e0d5-4f83-b7f3-229603dcfdee
+  password: d062bf43-ebad-4ad2-9aeb-bc9824cc4981
   port: 36115
   server: free.2weradf.xyz
   type: ss
@@ -75,14 +75,14 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|0|🇵 日本 02 | 1x JP
-  password: 3e7032f0-e0d5-4f83-b7f3-229603dcfdee
+  password: d062bf43-ebad-4ad2-9aeb-bc9824cc4981
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|1|🇵日本 01 | 1x JP
-  password: 88ceceaf-2826-4d33-9974-771877a0c805
+  password: 84f14f5e-7199-4d45-aaf4-20d4b56473fa
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
@@ -113,7 +113,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|1|🇵日本 03 | 1x JP
-  password: 88ceceaf-2826-4d33-9974-771877a0c805
+  password: 84f14f5e-7199-4d45-aaf4-20d4b56473fa
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
@@ -143,7 +143,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|1|🇯🇵日本 02 | 1x JP
-  password: 88ceceaf-2826-4d33-9974-771877a0c805
+  password: 84f14f5e-7199-4d45-aaf4-20d4b56473fa
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
@@ -241,48 +241,6 @@ proxies:
   server: 54.65.101.11
   tfo: false
   type: ss
-- cipher: aes-256-cfb
-  name: 19|🇯🇵JP-18.181.198.147-0750
-  password: amazonskr05
-  port: 443
-  server: 18.181.198.147
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇯🇵JP-13.230.110.170-6022
-  password: amazonskr05
-  port: 443
-  server: 13.230.110.170
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇯🇵JP-13.231.193.189-0328
-  password: amazonskr05
-  port: 443
-  server: 13.231.193.189
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇯🇵JP-3.112.30.167-6028
-  password: amazonskr05
-  port: 443
-  server: 3.112.30.167
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇯🇵JP-13.230.141.176-0327
-  password: amazonskr05
-  port: 443
-  server: 13.230.141.176
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇯🇵JP-13.115.246.98-0333
-  password: amazonskr05
-  port: 443
-  server: 13.115.246.98
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇯🇵JP-18.183.232.26-6024
-  password: amazonskr05
-  port: 443
-  server: 18.183.232.26
-  type: ss
 - alterId: 0
   cipher: aes-128-gcm
   name: 19,20,21,37|未知58 10.8MB/s
@@ -292,12 +250,21 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- cipher: aes-256-cfb
-  name: 19|🇯🇵JP-18.179.10.10-6023
-  password: amazonskr05
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇯🇵JP-13.112.224.236-6048
+  network: ws
   port: 443
-  server: 18.179.10.10
-  type: ss
+  server: tls.06.node-for-bigairport.win
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
+  ws-opts:
+    headers:
+      host: tls.06.node-for-bigairport.win
+    path: /
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|日本(JP)Japan/Tokyo_38
@@ -372,30 +339,26 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  name: 27,37|未知53
-  password: ce4d9355-973f-36a0-96a0-ced7719d20ea
-  port: 20076
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x76.flybar.work
-  tls: true
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
-  name: 27|2|🇯🇵3 |  3.3MB/s
+  name: 27|2|🇯🇵1 |  6.1MB/s
   password: amazonskr05
   port: 443
-  server: 43.203.244.103
+  server: 43.206.231.214
   type: ss
   udp: true
-- name: 27|2|🇯🇵4 |  3.0MB/s
-  password: ce4d9355-973f-36a0-96a0-ced7719d20ea
-  port: 20140
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z140.hongkongnode.top
-  type: trojan
+- cipher: aes-256-cfb
+  name: 27|2|🇯🇵2 |  1.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.250.174.86
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 27|2|🇯🇵3 |  8.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.179.198.70
+  type: ss
   udp: true
 - alterId: 0
   cipher: auto
