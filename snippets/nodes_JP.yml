@@ -16,7 +16,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|0|  01 | 1x JP
-  password: d062bf43-ebad-4ad2-9aeb-bc9824cc4981
+  password: 1dc675f1-5800-456e-9a27-1a38d468117b
   port: 36111
   server: free.2weradf.xyz
   type: ss
@@ -42,7 +42,7 @@ proxies:
   uuid: c06797d5-fa41-4b48-b132-d268d2acb302
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|0|🇵 日本 03 | 1x JP
-  password: d062bf43-ebad-4ad2-9aeb-bc9824cc4981
+  password: 1dc675f1-5800-456e-9a27-1a38d468117b
   port: 36115
   server: free.2weradf.xyz
   type: ss
@@ -75,14 +75,14 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|0|🇵 日本 02 | 1x JP
-  password: d062bf43-ebad-4ad2-9aeb-bc9824cc4981
+  password: 1dc675f1-5800-456e-9a27-1a38d468117b
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|1|🇵日本 01 | 1x JP
-  password: 84f14f5e-7199-4d45-aaf4-20d4b56473fa
+  password: 53997698-4a1d-4ea1-ace0-88e9fa1920e5
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
@@ -113,7 +113,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|1|🇵日本 03 | 1x JP
-  password: 84f14f5e-7199-4d45-aaf4-20d4b56473fa
+  password: 53997698-4a1d-4ea1-ace0-88e9fa1920e5
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
@@ -143,7 +143,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|1|🇯🇵日本 02 | 1x JP
-  password: 84f14f5e-7199-4d45-aaf4-20d4b56473fa
+  password: 53997698-4a1d-4ea1-ace0-88e9fa1920e5
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
@@ -186,28 +186,31 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
-- cipher: chacha20-ietf-poly1305
-  name: 9|🇯🇵 12|🇯🇵 日本4|@ripaojiedian
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 52.199.164.162
+- cipher: aes-256-cfb
+  name: '9,27|2|🇯🇵1 |  4.8MB/s #1'
+  password: amazonskr05
+  port: 443
+  server: 54.250.174.86
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '9,27|2|🇯🇵3 |  1.5MB/s #1'
+  password: hGkQ6915tD
+  port: 15084
+  server: 120.232.81.50
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 9|🇯🇵 日本4|@ripaojiedian
+  name: 9|🇯🇵 12|🇯🇵 日本3|@ripaojiedian
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8d21436:87091
-    mode: tls
   port: 2377
-  server: 52.199.164.162
+  server: 18.179.197.162
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11,27|12,13|日本4|@ripaojiedian
+  name: 9,11,27|12,13|日本4|@ripaojiedian
   network: ws
   port: '80'
   server: a41da1ab-5ae0-fa3e-eabe-70e680bdf1bf.castlepeakhospital.moe
@@ -216,14 +219,24 @@ proxies:
   tfo: false
   tls: false
   type: vmess
+  udp: true
   uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
   ws-opts:
     headers:
       Host: tms.dingtalk.com
     path: /
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 9,11,27|12|🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 54.65.101.11
+  tfo: false
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 11,27|12|🇵 日本3|@ripaojiedian
+  name: 9,11,27|12|🇵 日本3|@ripaojiedian
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -233,14 +246,7 @@ proxies:
   server: 18.179.197.162
   tfo: false
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 11,27|12|🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 54.65.101.11
-  tfo: false
-  type: ss
+  udp: true
 - alterId: 0
   cipher: aes-128-gcm
   name: 19,20,21,37|未知58 10.8MB/s
@@ -339,37 +345,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 27|2|🇯🇵1 |  6.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 43.206.231.214
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 27|2|🇯🇵2 |  1.3MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.250.174.86
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 27|2|🇯🇵3 |  8.3MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.179.198.70
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
-  network: tcp
-  port: '1069'
-  server: 152.69.197.60
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-150.230.61.11...
@@ -401,3 +376,13 @@ proxies:
   tls: false
   type: vmess
   uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
+  network: tcp
+  port: '1069'
+  server: 152.69.197.60
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
