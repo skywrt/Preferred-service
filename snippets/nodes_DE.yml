@@ -1,6 +1,37 @@
 proxies:
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|296dc7eb02864bf1880fb6c001468c...
+  network: ws
+  port: 443
+  server: glweidf.cfd
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|69df65dd16324caab082c74f514f6c...
+  network: ws
+  port: 443
+  server: irhms03.dongfeng.cfd
+  servername: hms03.dongfeng.cfd
+  tls: true
+  type: vmess
+  udp: false
+  uuid: fa5b55cd-cafc-4de0-a4c8-722e02a9f58e
+  ws-opts:
+    headers:
+      host: hms03.dongfeng.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
   name: 5|德国-优化2
   network: ws
   port: '16644'
@@ -40,13 +71,6 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0| 国 01 | 1x DE
-  password: a5b0a3cd-2714-4d78-ac56-cc53e568c0e9
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: '5,11|2|🇩🇪_DE_德国 #1'
@@ -87,6 +111,22 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
+- alterId: 0
+  cipher: auto
+  name: 10|德国 001
+  network: ws
+  port: 443
+  server: irhms03.dongfeng.cfd
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: fa5b55cd-cafc-4de0-a4c8-722e02a9f58e
+  ws-opts:
+    headers:
+      Host: hms03.dongfeng.cfd
+    path: /linkws
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -186,30 +226,15 @@ proxies:
     headers:
       Host: ''
     path: /XESALISTHEBEST?ed=2048
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
-  network: ws
-  port: 30005
-  server: 89.163.231.19
-  servername: www.80347320.xyz
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.80347320.xyz
-    path: /path/240811062813
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-162.55.171.2...
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
   network: tcp
-  port: '100'
-  server: 162.55.171.226
-  servername: ''
+  port: '48961'
+  server: 23.158.56.21
   tls: false
   type: vmess
-  uuid: 1889d9ef-9d58-4427-bb3e-a08810c214eb
+  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -224,13 +249,24 @@ proxies:
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
   network: tcp
-  port: '48961'
-  server: 23.158.56.21
+  port: '15713'
+  server: 193.108.118.136
+  servername: ''
   tls: false
   type: vmess
-  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
+  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-49.13.112.14...
+  network: tcp
+  port: '100'
+  server: 49.13.112.149
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1889d9ef-9d58-4427-bb3e-a08810c214eb
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
@@ -241,16 +277,20 @@ proxies:
   tls: false
   type: vmess
   uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
-  network: tcp
-  port: '15713'
-  server: 193.108.118.136
-  servername: ''
-  tls: false
+  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
+  network: ws
+  port: 30005
+  server: 89.163.231.19
+  servername: www.80347320.xyz
+  tls: true
   type: vmess
-  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.80347320.xyz
+    path: /path/240811062813
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.41.21...
