@@ -1,14 +1,14 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30|0|🇦加拿大 01 | 1x CA
-  password: fdd93a3c-0067-40d7-9a76-d72770e0c30c
+  name: 5,9,24,27|0|🇦加大 01 | 1x CA
+  password: 0931e335-d345-43ee-8f35-510a92c40493
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|2|🇦 加拿大 01 | 1x CA #1'
-  password: c231cb75-1bf0-4980-941a-61cd068823f9
+  name: 5,9,24,27|1|🇦 加拿大 01 | 1x CA
+  password: 5322c3ef-d47d-46b6-9448-ffa698c35b8e
   port: 36441
   server: free.2weradf.xyz
   type: ss
@@ -458,10 +458,11 @@ proxies:
     path: /dabai.in172.67.2.142
 - alterId: 0
   cipher: auto
-  name: 10|加拿大 002
+  name: '10,20,21|🏁RELAY-104.19.48.236-0738 #1'
   network: ws
   port: 8880
   server: s4.db-link02.top
+  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -581,31 +582,30 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 16,19|🇨🇦CA-51.79.103.76-0763
+  name: 16,19,36|🔒 VM-WS-NA 🇨🇦 CA-51.79.103.76:...
   network: ws
   port: 80
   server: 51.79.103.76
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
     headers:
-      host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      Host: ''
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '16,20,21|🇨🇦CA-51.79.102.253-5569 #1'
+  name: 16|🇨🇦_CA_加拿大_1
   network: ws
   port: 80
   server: 51.79.102.253
-  servername: ''
-  tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
     headers:
-      Host: ''
+      host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
@@ -635,15 +635,6 @@ proxies:
     headers:
       Host: www.bing.com
     path: github.com/Alvin9999
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知19 36.6MB/s
-  password: shadowsocks
-  port: 443
-  server: 149.22.95.183
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   cipher: auto
   name: '20,21|🇨🇦CA-134.195.198.147-8047 #1'
@@ -684,24 +675,15 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- cipher: aes-256-gcm
-  name: '30|_CA_ #1'
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 23.154.136.132
-  type: ss
-- cipher: aes-256-gcm
-  name: '30|🇨🇦_CA_加拿大_1 #1'
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 23.154.136.132
-  type: ss
-- cipher: aes-256-gcm
-  name: 30|🇦_CA_加拿大_2
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 23.154.136.132
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-38.111.114.1...
+  network: tcp
+  port: '14812'
+  server: 38.111.114.153
+  tls: false
+  type: vmess
+  uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇨🇦 CA-23.162.200...
@@ -711,13 +693,3 @@ proxies:
   tls: false
   type: vmess
   uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-38.111.114.1...
-  network: tcp
-  port: '14812'
-  server: 38.111.114.153
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
