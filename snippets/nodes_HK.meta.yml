@@ -94,7 +94,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|2|🇭🇰香港 03 | 1x HK
-  password: 34014378-1513-4c35-a7cc-f28eb7f10b6e
+  password: 6543fb01-b0e7-4d5b-8c7e-1c769bf815ee
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
@@ -108,11 +108,14 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|  01 | 1x HK
-  password: c28bd05a-877f-4620-9409-15a0c86e79d0
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27,37|🇰HK香港2
+  password: 35d5786e-abb1-4454-b2b2-8d3bd9b37ec3
   port: 36141
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -143,7 +146,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|2|🇭🇰香港 02 | 1x HK
-  password: 34014378-1513-4c35-a7cc-f28eb7f10b6e
+  password: 6543fb01-b0e7-4d5b-8c7e-1c769bf815ee
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
@@ -151,7 +154,7 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: '5,9,24,27,37|HK #1'
-  password: 5099a579-b513-49f9-8372-d7ff60a8e3cf
+  password: 6543fb01-b0e7-4d5b-8c7e-1c769bf815ee
   port: 31141
   server: free.2apzhfa.xyz
   skip-cert-verify: true
@@ -173,19 +176,16 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|0|🇭🇰 香港IP 03 | 1x HK
-  password: c28bd05a-877f-4620-9409-15a0c86e79d0
+  password: 35d5786e-abb1-4454-b2b2-8d3bd9b37ec3
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,37|未知122
-  password: 3f7ee4a8-ac50-4c35-921c-0834e400868a
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27|0|🇭🇰 香港 02 | 1x HK
+  password: 35d5786e-abb1-4454-b2b2-8d3bd9b37ec3
   port: 36143
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - name: 9,27|12,13|香港9|@ripaojiedian
@@ -782,18 +782,13 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-5.83.221.31:3...
-  network: ws
-  port: 30041
-  server: 5.83.221.31
-  servername: sh01.fastcloud.club
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-185.14.47.13...
+  network: tcp
+  port: 3503
+  server: 185.14.47.132
   tls: false
   type: vmess
-  uuid: d3d90998-7bfd-4fc6-930e-35bf96083d8b
-  ws-opts:
-    headers:
-      Host: v02.gutingting.com
-    path: /aceamedv
+  uuid: fa678492-65dd-3df0-800d-11f138b868ab
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
@@ -810,10 +805,23 @@ proxies:
   network: tcp
   port: '27512'
   server: 103.149.183.178
-  servername: ''
   tls: false
   type: vmess
   uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-5.83.221.31:3...
+  network: ws
+  port: 30041
+  server: 5.83.221.31
+  servername: sh01.fastcloud.club
+  tls: false
+  type: vmess
+  uuid: d3d90998-7bfd-4fc6-930e-35bf96083d8b
+  ws-opts:
+    headers:
+      Host: v02.gutingting.com
+    path: /aceamedv
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-163.53.18.21...
@@ -824,38 +832,17 @@ proxies:
   type: vmess
   uuid: 8e2f05a4-4be3-4fa1-82fd-d90499c7ece1
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-185.14.47.13...
-  network: tcp
-  port: 3503
-  server: 185.14.47.132
-  tls: false
-  type: vmess
-  uuid: fa678492-65dd-3df0-800d-11f138b868ab
-- alterId: 0
+  cipher: chacha20-ietf-poly1305
   name: 37|HK
-  network: tcp
-  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
-  port: 27401
-  server: 45.146.232.173
+  password: dbefcef0-836b-4d58-aa05-146f7e63f06f
+  port: 61005
+  server: 45.196.222.10
   skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
   tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK2
-  password: Aimer
-  port: 587
-  server: 91.217.139.169
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
+  type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  name: 37|HK3
+  name: 37|HK2
   password: PT2N60DCUH6VCQPC
   port: 15004
   server: 156.245.190.13
@@ -863,44 +850,31 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  name: 37|HK4
-  password: 459d23f4-dcfd-4fef-9ba3-ef0ad10fc336
+  name: 37|HK3
+  password: b26e31e5-eac1-45b0-9069-83830bd69521
   port: 443
-  server: 20.2.151.159
+  server: 20.187.85.198
   skip-cert-verify: true
-  sni: jp.mjt001.com
+  sni: hkt.iamnotagoodman.com
   tls: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 37|HK4
+  password: QLuTHfBuCJrMMSDT
+  port: 8388
+  server: 103.253.43.210
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   name: 37|HK5
-  network: tcp
-  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
-  port: 42881
-  server: 45.146.232.171
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK6
-  password: c1596d35-5f68-4cef-bf5f-ac0d2ab88b2f
-  port: 30053
+  password: b46a2da5-79eb-47d1-ad1e-30b988c0f93b
+  port: 20224
   server: 5.83.221.31
   skip-cert-verify: true
-  sni: v2phl01.fuqiangren.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK7
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 83.229.123.36
-  skip-cert-verify: true
-  sni: agepq.ambercc.filegear-sg.me
+  sni: v2usa01.fuqiangren.com
   tls: true
   type: trojan
   udp: true
