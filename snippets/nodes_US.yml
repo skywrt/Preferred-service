@@ -216,19 +216,12 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,37|US #1'
+  name: '5,9,24,37|US #1'
   password: 35d5786e-abb1-4454-b2b2-8d3bd9b37ec3
   port: 36211
   server: free.2weradf.xyz
   skip-cert-verify: true
   tls: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|2|🇸 美国 03 | 1x US Washington
-  password: 39f8afa3-bc36-4d19-b72c-7f9ea61ef9f3
-  port: 36215
-  server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -433,7 +426,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|0|🇸美国 03 | 1x US Washington
-  password: cf9a14f8-e02a-46f5-885f-492858a85eb2
+  password: 48475310-5459-4a8c-bded-85300324158e
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
@@ -511,8 +504,8 @@ proxies:
       Host: 100-49-141-209.s1.db-link02.top
     path: /dabai.in104.17.169.115
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|2|🇸 美国住宅IP 02 | 1x US Los Ange...
-  password: 39f8afa3-bc36-4d19-b72c-7f9ea61ef9f3
+  name: 5,9,24,27|1|1- |  2.4MB/s
+  password: e7ac3e26-b517-49b1-8ce9-62bcf1158542
   port: 36213
   server: free.2weradf.xyz
   type: ss
@@ -551,7 +544,7 @@ proxies:
   ws-opts: {}
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|0|🇸国 01 | 1x US Los Angeles
-  password: cf9a14f8-e02a-46f5-885f-492858a85eb2
+  password: 48475310-5459-4a8c-bded-85300324158e
   port: 31211
   server: free.2apzhfa.xyz
   type: ss
@@ -586,7 +579,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|0|🇸美国家宽 02 | 1x US Los Angeles
-  password: cf9a14f8-e02a-46f5-885f-492858a85eb2
+  password: 48475310-5459-4a8c-bded-85300324158e
   port: 31213
   server: free.2apzhfa.xyz
   type: ss
@@ -1502,16 +1495,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  ip-version: dual
-  name: 10,11,12,27|1|🇪1 |  5.5MB/s
+  name: 10,11,12|🇺🇸_US_美国->🇷🇺_RU_俄罗斯
   network: ws
-  port: 80
+  port: '80'
   server: 151.101.66.168
   servername: ''
   sni: ''
   tls: false
   type: vmess
-  udp: true
   uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
   ws-opts:
     headers:
@@ -2932,14 +2923,12 @@ proxies:
     path: /etorpdhdow36gehnyue?ed=2560
 - alterId: 2
   cipher: auto
-  name: 11,27|1|🇺🇸2 |  1.9MB/s
+  name: 11|11|1|🇺🇸2 |  1.9MB/s
   network: ws
   port: 23613
   server: 13.mamamajd.site
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 594c76bd-847f-3569-a82c-2dd90e4b9bf2
   ws-opts:
     headers:
@@ -4118,13 +4107,84 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  country: 🇯🇵JP
-  delay: 460
   name: 27|1|🇺🇸1 |  6.0MB/s
   password: amazonskr05
   port: 443
-  server: 52.195.170.255
+  server: 3.38.97.249
   type: ss
+  udp: true
+- name: 27|1|🇺🇸6 |  1.7MB/s
+  password: e06739e1-5c25-32de-8fb7-95ce8e8f9576
+  port: 20307
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z307.hongkongnode.top
+  type: trojan
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-142.4.104.33...
+  network: tcp
+  port: '52143'
+  server: 142.4.104.33
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.99.82.193...
+  network: ws
+  port: '443'
+  server: 38.99.82.193
+  servername: tilebani.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 36,37|US39 28.5MB/s
+  network: ws
+  port: 38848
+  server: 74.48.159.226
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 20fed645-619c-4ca1-c00e-743ea8a3b51f
+  ws-opts:
+    path: /6c8e5a1b
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.248.9...
+  network: tcp
+  port: '30562'
+  server: 15.204.248.92
+  tls: false
+  type: vmess
+  uuid: 82466715-6a58-4046-a363-a0d18e5b2ab4
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.86.12...
+  network: tcp
+  port: '35696'
+  server: 15.204.86.120
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cad0504a-a9dc-4d29-8844-b11b69f14a8d
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.249.0...
+  network: tcp
+  port: '48160'
+  server: 15.204.249.0
+  tls: false
+  type: vmess
+  uuid: 5b113c12-4dd4-4bb5-9c01-cff092b559e3
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.11.69.42:...
@@ -4141,27 +4201,18 @@ proxies:
     path: /path/1733218657472
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.249.0...
-  network: tcp
-  port: '48160'
-  server: 15.204.249.0
+  name: 36|🔒 VM-WS-NA 🇺🇸 US-2.58.87.221:1...
+  network: ws
+  port: '12269'
+  server: 2.58.87.221
   servername: ''
   tls: false
   type: vmess
-  uuid: 5b113c12-4dd4-4bb5-9c01-cff092b559e3
-- alterId: 0
-  cipher: auto
-  name: 36,37|US39 28.5MB/s
-  network: ws
-  port: 38848
-  server: 74.48.159.226
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 20fed645-619c-4ca1-c00e-743ea8a3b51f
+  uuid: db85ff0e-c33f-401d-c415-4c7cce135704
   ws-opts:
-    path: /6c8e5a1b
+    headers:
+      Host: ''
+    path: /
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.48.227.23...
@@ -4176,48 +4227,6 @@ proxies:
     headers:
       Host: www.42266451.xyz
     path: /path/240811062813
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-142.4.104.33...
-  network: tcp
-  port: '52143'
-  server: 142.4.104.33
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.86.12...
-  network: tcp
-  port: '35696'
-  server: 15.204.86.120
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cad0504a-a9dc-4d29-8844-b11b69f14a8d
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇺🇸 US-2.58.87.221:1...
-  network: ws
-  port: '12269'
-  server: 2.58.87.221
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: db85ff0e-c33f-401d-c415-4c7cce135704
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.248.9...
-  network: tcp
-  port: '30562'
-  server: 15.204.248.92
-  tls: false
-  type: vmess
-  uuid: 82466715-6a58-4046-a363-a0d18e5b2ab4
 - alterId: 0
   name: 37|US
   password: Aimer
