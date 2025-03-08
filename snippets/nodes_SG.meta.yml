@@ -32,24 +32,27 @@ proxies:
     headers:
       Host: ''
     path: ''
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,11,24,27|12|🇸🇬 新加坡2|@ripaojiedian
+  name: 5,11,24,27,37|🇸🇬SG新加坡2
   password: BFYCOKHTC8HIWWRB
   port: 16006
   server: ti3hyra4.slashdevslashnetslashtun.net
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|1|🇬新加坡 03 | 1x SG
-  password: 7bd4636d-a9a2-4c53-bd90-1b8dfaf3451f
+  name: 5,24,27|2|🇬新加坡 03 | 1x SG
+  password: 5d44b0dc-590b-4525-8c99-2c531e803ac1
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|1|🇬新加坡 02 | 1x SG
-  password: 7bd4636d-a9a2-4c53-bd90-1b8dfaf3451f
+  name: 5,24,27|2|🇸🇬新加坡 02 | 1x SG
+  password: 5d44b0dc-590b-4525-8c99-2c531e803ac1
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
@@ -81,16 +84,13 @@ proxies:
   skip-cert-verify: true
   sni: sg.mjt000.com
   type: trojan
-- alterId: 0
-  cipher: aes-256-gcm
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,11,24,27,37|SG
+  name: 5,11,24,27|12|🇬 新加坡|@ripaojiedian
   password: 0407WKIEIXMTLGC6
   port: 16007
   server: qh62onjn.slashdevslashnetslashtun.net
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -132,8 +132,15 @@ proxies:
   sni: x130.flybar.work
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|1| 01 | 1x SG
-  password: 7bd4636d-a9a2-4c53-bd90-1b8dfaf3451f
+  name: 5,24,27|1|🇬  01 | 1x SG
+  password: 7ec3ace5-d3bf-459f-b4cf-21be97cc281f
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27|2|🇬新加坡 01 | 1x SG
+  password: 5d44b0dc-590b-4525-8c99-2c531e803ac1
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
@@ -151,6 +158,16 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,24,27,37|SG
+  password: 77c64255-ddfc-41b2-851c-ea1c7adda3c6
+  port: 36173
+  server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
 - name: 5|新加坡06|流媒体
   network: ws
   password: d0d98f45-15ec-4a5a-9ccd-d4089e2204d9
@@ -231,6 +248,13 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27|1|🇬 新加坡 03 | 1x SG
+  password: 7ec3ace5-d3bf-459f-b4cf-21be97cc281f
+  port: 36175
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - name: 5|新加坡07|流媒体
   network: tcp
   password: d0d98f45-15ec-4a5a-9ccd-d4089e2204d9
@@ -368,6 +392,21 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: aes-256-cfb
+  name: 27|0|🇸🇬2 |  2.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.229.110.23
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.233.1...
+  network: tcp
+  port: 36712
+  server: 62.146.233.112
+  tls: false
+  type: vmess
+  uuid: 9266df42-0830-48c2-8509-4c57b30fe29d
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232...
@@ -379,32 +418,14 @@ proxies:
   uuid: 13e13a3e-e981-4eea-a9fc-13e50628fd9b
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232... #1'
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.232.1...
   network: tcp
-  port: 14372
-  server: 62.146.232.159
-  tls: false
-  type: vmess
-  uuid: ed1d7ea8-bf40-4a4a-8eac-8e57798ba6f7
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232... #2'
-  network: tcp
-  port: 52856
-  server: 62.146.232.157
-  tls: false
-  type: vmess
-  uuid: ed54e388-bfc5-4b36-ae4d-8b3cd460d3d4
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-154.26.129.2...
-  network: tcp
-  port: '57143'
-  server: 154.26.129.247
+  port: '33281'
+  server: 62.146.232.156
   servername: ''
   tls: false
   type: vmess
-  uuid: 28efbf36-079a-4c98-8470-d13458db6ee6
+  uuid: 24eda0ea-acf0-4538-a001-f746a480237a
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233...
@@ -416,13 +437,15 @@ proxies:
   uuid: 1ddf3ade-5b8c-420c-84f6-f96979ec3080
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233... #1'
+  name: 36,37|未知118 268.7KB/s
   network: tcp
-  port: 50678
-  server: 62.146.233.53
-  tls: false
+  port: 57143
+  server: 154.26.129.247
+  servername: ''
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 5d1ec6e7-fd58-4e85-91c5-6335a86d2775
+  uuid: 28efbf36-079a-4c98-8470-d13458db6ee6
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-154.26.137...
@@ -443,35 +466,13 @@ proxies:
   uuid: 96ab7e1f-bf0d-45cd-8ebc-c8be2f8d43cd
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇸🇬 SG-140.245.36.17...
-  network: ws
-  port: '23452'
-  server: 140.245.36.177
-  tls: false
-  type: vmess
-  uuid: e6592058-1e2d-4068-8d4a-6f4e2d044008
-  ws-opts:
-    headers:
-      Host: westsg2-ddns.oraclenat.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.233.1...
+  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232... #1'
   network: tcp
-  port: 36712
-  server: 62.146.233.112
+  port: 52856
+  server: 62.146.232.157
   tls: false
   type: vmess
-  uuid: 9266df42-0830-48c2-8509-4c57b30fe29d
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.232.1...
-  network: tcp
-  port: '33281'
-  server: 62.146.232.156
-  tls: false
-  type: vmess
-  uuid: 24eda0ea-acf0-4538-a001-f746a480237a
+  uuid: ed54e388-bfc5-4b36-ae4d-8b3cd460d3d4
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇸🇬 SG-194.233.72.2...
@@ -481,3 +482,34 @@ proxies:
   tls: false
   type: vmess
   uuid: 16509262-dbe2-43ba-99ce-07913d2a18b4
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232... #2'
+  network: tcp
+  port: 14372
+  server: 62.146.232.159
+  tls: false
+  type: vmess
+  uuid: ed1d7ea8-bf40-4a4a-8eac-8e57798ba6f7
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇸🇬 SG-217.142.186.1...
+  network: ws
+  port: '23452'
+  server: 217.142.186.136
+  tls: false
+  type: vmess
+  uuid: e6592058-1e2d-4068-8d4a-6f4e2d044008
+  ws-opts:
+    headers:
+      Host: westsg2-ddns.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233... #1'
+  network: tcp
+  port: 50678
+  server: 62.146.233.53
+  tls: false
+  type: vmess
+  uuid: 5d1ec6e7-fd58-4e85-91c5-6335a86d2775
