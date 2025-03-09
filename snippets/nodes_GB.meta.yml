@@ -15,8 +15,8 @@ proxies:
       host: telegram-channel-vlessconfig.sohala.uk
     path: /telegram-channel-vlessconfig-ws
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|0| 国住宅IP 01 | 1x UK
-  password: 1beb3c61-f8fd-4ebe-88a6-900a81c90076
+  name: 5,24,27|14|🇧 英国住宅IP 01 | 1x UK
+  password: a6d22632-10d5-447f-b530-0bb42c44ddd3
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -115,8 +115,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|1|🇧英国家宽 01 | 1x UK
-  password: 1c700ac5-8571-48c5-ab6f-0f34453f1095
+  name: 5,24,27|0|国家宽 01 | 1x UK
+  password: 6374864b-df65-4491-b1ce-1852f364059c
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -250,6 +250,15 @@ proxies:
   uuid: 7b1c5bee-19f1-422f-8be2-e03175fabe4a
   ws-opts:
     path: '%2F%3Fed%3D2048'
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 12,19,20,21,24,37|未知52 3.6MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.196
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - name: '17|英国(yudou66.com 玉豆免费节点) #1'
   network: ws
   port: 443
@@ -274,24 +283,33 @@ proxies:
     headers:
       Host: lo.kpcloud.eu.org
     path: '%2Fblue'
-- cipher: aes-128-gcm
-  name: 19|🇬🇧GB-141.98.101.178-0466
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知5 2.0MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.79
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知82 3.7MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.193
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知16 2.2MB/s
   password: shadowsocks
   port: 443
   server: 141.98.101.178
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: aes-256-cfb
-  name: 19|🇬🇧GB-62.100.205.48-0346
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 62.100.205.48
-  type: ss
-- name: '20,21|🇬🇧GB-13.42.199.61-6091 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.42.199.61
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - name: 24|🇬🇧 英国 伦敦Amazon数据中心
   password: telegram-id-privatevpns
   port: 22222
@@ -312,9 +330,20 @@ proxies:
   network: tcp
   port: '47567'
   server: 38.114.120.12
+  servername: ''
   tls: false
   type: vmess
   uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
+  network: tcp
+  port: '26924'
+  server: 68.168.31.184
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-149.7.16.149...
@@ -335,16 +364,6 @@ proxies:
   tls: false
   type: vmess
   uuid: e922d485-98a7-475a-9a47-cde3722ac82e
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
-  network: tcp
-  port: '26924'
-  server: 68.168.31.184
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
