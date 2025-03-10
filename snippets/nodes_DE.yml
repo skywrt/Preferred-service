@@ -1,6 +1,18 @@
 proxies:
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|291e987a1c774b868732dce9563274...
+  network: grpc
+  port: 80
+  server: 5.75.198.165
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 8570ae17-f93f-47c5-9cf0-94b8a8e9d192
+- alterId: 0
+  cipher: auto
   name: 5|德国-优化2
   network: ws
   port: '16644'
@@ -13,8 +25,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|2|🇪德国 01 | 1x DE
-  password: 4a8dd5a9-9611-440a-bbbb-7ef5cd0cb2b9
+  name: '5,24,27,30|13|国 01 | 1x DE #1'
+  password: 1203ca85-d0d5-488f-a483-97a0a8e73395
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -29,23 +41,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,12,20,21,24,37|🇪DE德国2
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.154
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,24,27,37|DE国
-  password: a2d337bc-0584-4669-bbc1-2d65826c5c14
+- cipher: chacha20-ietf-poly1305
+  name: '5,24,27,30|14|🇪 德国 01 | 1x DE #1'
+  password: 199e2984-f81d-46aa-913f-167e90a23575
   port: 36471
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -125,11 +125,10 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2518
-  name: '10,20,21|🇩🇪DE-139.162.180.91-0846 #2'
+  name: 10|德国 004
   network: ws
   port: 443
   server: hms07.xfixedfloat.cfd
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -197,15 +196,29 @@ proxies:
     headers:
       host: adenc36v.xtooltech.cfd
     path: /linkws
-- name: '20,21|🇩🇪DE-3.73.157.246-0967 #1'
-  password: telegram-id-directvpn
+- name: '20,21|🇩🇪DE-63.177.174.200-0992 #1'
+  password: telegram-id-privatevpns
   port: 22222
-  server: 3.73.157.246
+  server: 63.177.174.200
   sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.141-5640 #1'
+  name: '20,21|🇩🇪DE-57.129.24.125-8056 #1'
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-57.129.24.141-5646 #1'
   network: ws
   port: 443
   server: 57.129.24.141
@@ -217,16 +230,16 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- name: '20,21|🇩🇪DE-57.129.50.213-5969 #1'
-  password: dXjPoF4W3I
-  port: 1935
-  server: x1ger-ovh.devefun.net
-  sni: x1ger-ovh.devefun.net
-  type: trojan
-- name: '20,21|🇩🇪DE-57.129.50.213-5428 #1'
+- name: '20,21|🇩🇪DE-57.129.50.213-5434 #1'
   password: dXjPoF4W3I
   port: 1935
   server: 57.129.50.213
+  sni: x1ger-ovh.devefun.net
+  type: trojan
+- name: '20,21|🇩🇪DE-57.129.50.213-5975 #1'
+  password: dXjPoF4W3I
+  port: 1935
+  server: x1ger-ovh.devefun.net
   sni: x1ger-ovh.devefun.net
   type: trojan
 - alterId: 0
@@ -244,18 +257,14 @@ proxies:
     path: /XESALISTHEBEST?ed=2048
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.25.22...
-  network: ws
-  port: 443
-  server: 57.129.25.22
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-18...
+  network: httpupgrade
+  port: '80'
+  server: 188.114.98.110
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: o.metuji.com
-    path: /linkvws
+  uuid: 32763470-5925-4df8-a615-77a18d25eeac
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -268,16 +277,6 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
-  network: tcp
-  port: '15713'
-  server: 193.108.118.136
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
@@ -303,12 +302,21 @@ proxies:
     path: /path/240811062813
 - alterId: 0
   cipher: auto
-  name: 36,37|未知32 8.8MB/s
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
   network: tcp
-  port: 24164
+  port: '15713'
+  server: 193.108.118.136
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
+  network: tcp
+  port: '24164'
   server: 193.108.117.143
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35

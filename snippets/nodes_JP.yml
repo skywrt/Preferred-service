@@ -14,16 +14,19 @@ proxies:
   skip-cert-verify: true
   sni: 421421.xyz
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 5,24,27|0|  01 | 1x JP
-  password: 4995be32-477a-4847-9923-e3ad3d5c07ba
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,24,27,30,37|🇯🇵JP日本3
+  password: 1b903bb1-1714-4ae5-9f51-e825ec649188
   port: 36111
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,11,24,27|12|🇵 日本|@ripaojiedian
+  name: 5,11,24,27,30|🇨🇳 广东省东莞市 电信IDC业务段 3
   password: 4S85LF2Q3QK92171
   port: 18008
   server: w72tapyb.slashdevslashnetslashtun.net
@@ -39,11 +42,14 @@ proxies:
   tls: false
   type: vmess
   uuid: c06797d5-fa41-4b48-b132-d268d2acb302
-- cipher: chacha20-ietf-poly1305
-  name: 5,24,27|0,1|1 |  1.5MB/s
-  password: 4995be32-477a-4847-9923-e3ad3d5c07ba
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,24,27,30,37|🇯🇵JP日本2
+  password: 1b903bb1-1714-4ae5-9f51-e825ec649188
   port: 36115
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -73,15 +79,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|0|🇵 日本 02 | 1x JP
-  password: 4995be32-477a-4847-9923-e3ad3d5c07ba
+  name: '5,24,27,30|14|🇯🇵 日本 02 | 1x JP #1'
+  password: 199e2984-f81d-46aa-913f-167e90a23575
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|2|🇵日本 01 | 1x JP
-  password: 4a8dd5a9-9611-440a-bbbb-7ef5cd0cb2b9
+  name: '5,24,27,30|13|🇵日本 01 | 1x JP #1'
+  password: 1203ca85-d0d5-488f-a483-97a0a8e73395
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
@@ -93,16 +99,13 @@ proxies:
   skip-cert-verify: true
   sni: z141.hongkongnode.top
   type: trojan
-- alterId: 0
-  cipher: aes-256-gcm
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,11,24,27,37|JP
+  name: '5,11,24,27,30|10|🇵 日本2|@ripaojiedian #1'
   password: YMB3QL85L7F1KJR7
   port: 18013
   server: 8tv68qhq.slashdevslashnetslashtun.net
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
 - name: 5|日本08
   network: tcp
@@ -113,8 +116,8 @@ proxies:
   sni: 421421.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|2|🇵日本 03 | 1x JP
-  password: 4a8dd5a9-9611-440a-bbbb-7ef5cd0cb2b9
+  name: '5,24,27,30|13|🇵日本 03 | 1x JP #1'
+  password: 1203ca85-d0d5-488f-a483-97a0a8e73395
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
@@ -143,8 +146,8 @@ proxies:
   sni: 421421.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|2|🇯🇵日本 02 | 1x JP
-  password: 4a8dd5a9-9611-440a-bbbb-7ef5cd0cb2b9
+  name: '5,24,27,30|13|🇵日本 02 | 1x JP #1'
+  password: 1203ca85-d0d5-488f-a483-97a0a8e73395
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
@@ -187,22 +190,12 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
-- alterId: 0
-  cipher: auto
-  name: 11,24,27|13|日本3|@ripaojiedian
-  network: tcp
-  port: '35565'
-  server: 120.198.71.214
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 11,27|12|🇵 日本特殊|@ripaojiedian
+  name: '11,27,30|10|🇵 日本特殊|@ripaojiedian #1'
   password: amazonskr05
   port: 443
-  server: 54.250.26.118
+  server: 18.140.61.7
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -218,10 +211,28 @@ proxies:
   server: 43.206.231.214
   type: ss
 - cipher: aes-256-cfb
+  name: 19|🇯🇵JP-54.199.0.211-2356
+  password: amazonskr05
+  port: 443
+  server: 54.199.0.211
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|🇯🇵JP-57.180.54.251-6015
+  password: amazonskr05
+  port: 443
+  server: 57.180.54.251
+  type: ss
+- cipher: aes-256-cfb
   name: 19|🇯🇵JP-54.238.115.236-6027
   password: amazonskr05
   port: 443
   server: 54.238.115.236
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|🇯🇵JP-57.180.243.140-2382
+  password: amazonskr05
+  port: 443
+  server: 57.180.243.140
   type: ss
 - alterId: 0
   cipher: auto
@@ -244,6 +255,15 @@ proxies:
   server: jp005.421421.xyz
   skip-cert-verify: false
   type: trojan
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 24,37|JP 110.9KB/s
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - name: 26|✪每日连接前点更新订阅
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
   port: 21142
@@ -299,33 +319,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 27|12|🇯🇵 日本3|@ripaojiedian
-  port: 35565
-  server: 120.198.71.214
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 27|12,13|日本4|@ripaojiedian
-  network: tcp
-  password: 64770f2e-b784-4331-938e-26cd54e3eff1
-  port: 28713
-  server: wb.kaiqsz.com
-  skip-cert-verify: true
-  sni: mmbiz1.redapricotcloud.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-20.78.127.14...
-  network: tcp
-  port: '550'
-  server: 20.78.127.141
-  tls: false
-  type: vmess
-  uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
   network: tcp
   port: '1069'
@@ -346,20 +339,6 @@ proxies:
   ws-opts:
     headers:
       Host: 1-osaka-p.aboutanime.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-3.112.212.13...
-  network: ws
-  port: 22357
-  server: 3.112.212.135
-  servername: 0000000000000000000000000073.cgroup-node-for-bigairport.sbs
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: 0000000000000000000000000073.cgroup-node-for-bigairport.sbs
     path: /
 - alterId: 0
   cipher: auto

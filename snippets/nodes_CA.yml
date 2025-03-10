@@ -1,19 +1,16 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|2|🇦加拿大 01 | 1x CA
-  password: 4a8dd5a9-9611-440a-bbbb-7ef5cd0cb2b9
+  name: '5,24,27,30|13|🇦加大 01 | 1x CA #1'
+  password: 1203ca85-d0d5-488f-a483-97a0a8e73395
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,24,27,37|CA
-  password: a2d337bc-0584-4669-bbc1-2d65826c5c14
+- cipher: chacha20-ietf-poly1305
+  name: '5,24,27,30|14|🇦 加拿大 01 | 1x CA #1'
+  password: 199e2984-f81d-46aa-913f-167e90a23575
   port: 36441
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -446,7 +443,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1166
-  name: '10,20,21|🏁RELAY-198.41.209.70-0716 #1'
+  name: '10,20,21|🏁RELAY-104.17.221.248-0716 #1'
   network: ws
   port: 2052
   server: s1.db-link01.top
@@ -477,10 +474,11 @@ proxies:
     path: /dabai.in104.25.239.131
 - alterId: 0
   cipher: auto
-  name: 10|加拿大 003
+  name: '10,20,21|🏁RELAY-104.16.155.10-0724 #1'
   network: ws
   port: 8080
   server: 104.16.155.10
+  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -565,10 +563,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|加拿大 010
+  name: '10,20,21|🏁RELAY-104.16.155.10-0765 #1'
   network: ws
   port: 2095
   server: s4.db-link02.top
+  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -582,10 +581,12 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2329
-  name: 10|加拿大 012
+  name: '10,20,21|🏁RELAY-198.41.209.70-0855 #1'
   network: ws
   port: 2086
   server: s5.cn-db.top
+  servername: ''
+  tls: false
   type: vmess
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
@@ -594,10 +595,11 @@ proxies:
     path: /dabai.in172.64.19.89
 - alterId: 0
   cipher: auto
-  name: 10|加拿大 013
+  name: '10,20,21|🏁RELAY-104.17.213.241-0858 #1'
   network: ws
   port: 2052
   server: s4.db-link02.top
+  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -610,10 +612,11 @@ proxies:
     path: /dabai.in172.64.8.26
 - alterId: 0
   cipher: auto
-  name: 10|加拿大 014
+  name: '10,20,21|🏁RELAY-104.16.155.10-0879 #1'
   network: ws
   port: 8880
   server: s1.db-link01.top
+  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -626,10 +629,11 @@ proxies:
     path: /dabai.in172.67.95.35
 - alterId: 0
   cipher: auto
-  name: 10|加拿大 015
+  name: '10,20,21|🇬🇧GB-68.168.31.196-0881 #1'
   network: ws
   port: 443
   server: 68.168.31.196
+  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: true
@@ -684,7 +688,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-23.162.200.227-8049 #1'
+  name: '20,21|🇨🇦CA-23.162.200.227-8092 #1'
   network: ws
   port: 443
   server: 23.162.200.227
@@ -710,28 +714,15 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-38.111.114.1...
+  name: 36,37|未知110 49.4MB/s
   network: tcp
-  port: '14812'
+  port: 14812
   server: 38.111.114.153
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇨🇦 CA-141.195.112.5...
-  network: ws
-  port: 20007
-  server: 141.195.112.53
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇦 CA-23.162.200.9...
