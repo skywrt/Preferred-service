@@ -3,20 +3,6 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|f269427f9a774127903bf91b7beeb6...
-  network: ws
-  port: 23008
-  server: 207.90.237.96
-  tls: false
-  type: vmess
-  udp: false
-  uuid: 039cee66-7c65-4685-b4a4-b29f4e1e46b3
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
   name: 3,19|🏁RELAY-188.114.99.205-0783
   network: ws
   port: 443
@@ -128,6 +114,20 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27|1|🇸 美国 01 | 1x US Los Angeles
+  password: 36003305-74ca-4b22-a9c1-77b28261c142
+  port: 36211
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27|2|🇭🇰1 |  5.0MB/s
+  password: 7ec8197a-c3ca-474c-9717-f5275befc40f
+  port: 36215
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '5|美国 CloudFlare节点 #1'
@@ -330,7 +330,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|0|🇸美国 03 | 1x US Washington
-  password: 8c63e0b9-ebbb-405e-80b5-068accb0c740
+  password: 685afd67-f780-4e02-a831-f05d89892833
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
@@ -407,6 +407,13 @@ proxies:
     headers:
       Host: 100-49-141-209.s1.db-link02.top
     path: /dabai.in104.17.169.115
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27|1|🇸 美国住宅IP 02 | 1x US Los Ange...
+  password: 36003305-74ca-4b22-a9c1-77b28261c142
+  port: 36213
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '5,11|1,6|🇺🇸_US_美国 #19 #1'
@@ -441,7 +448,7 @@ proxies:
   ws-opts: {}
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|0|🇸国 01 | 1x US Los Angeles
-  password: 8c63e0b9-ebbb-405e-80b5-068accb0c740
+  password: 685afd67-f780-4e02-a831-f05d89892833
   port: 31211
   server: free.2apzhfa.xyz
   type: ss
@@ -476,7 +483,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|0|🇸美国家宽 02 | 1x US Los Angeles
-  password: 8c63e0b9-ebbb-405e-80b5-068accb0c740
+  password: 685afd67-f780-4e02-a831-f05d89892833
   port: 31213
   server: free.2apzhfa.xyz
   type: ss
@@ -1340,7 +1347,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 9,11,27|12|🇺🇸 美国2|@ripaojiedian
+  name: 9,11,27|12|🇸 美国2|@ripaojiedian
   password: bba1cfff-9e0b-4cb6-9df4-c741c75e59a8
   port: 44014
   server: 120.198.71.219
@@ -3194,9 +3201,9 @@ proxies:
     path: /Q3cz2AWTPMCtDGV1L6R1Jz18eIUw
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.17.213.241-0876 #2'
+  name: 10,20,21,36|🔒 VM-WS-NA 🏴‍☠️ NA-104.17.213....
   network: ws
-  port: 2086
+  port: '2086'
   server: 104.17.213.241
   servername: ''
   skip-cert-verify: true
@@ -4573,6 +4580,34 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇺🇸 US-35.94.189.51...
+  network: ws
+  port: 52353
+  server: 35.94.189.51
+  servername: 0000000000000000000000000046.bgroup-node-for-bigairport.sbs
+  tls: true
+  type: vmess
+  uuid: b71f9e84-86c9-49c4-b5f4-b33b35ee7410
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000046.bgroup-node-for-bigairport.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇺🇸 US-2.58.87.221:1...
+  network: ws
+  port: '12269'
+  server: 2.58.87.221
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: db85ff0e-c33f-401d-c415-4c7cce135704
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.11.69.42:...
@@ -4587,6 +4622,20 @@ proxies:
     headers:
       Host: www.52140341.xyz
     path: /path/1733218657472
+- alterId: 64
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.48.227.23...
+  network: ws
+  port: 47778
+  server: 38.48.227.231
+  servername: www.42266451.xyz
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.42266451.xyz
+    path: /path/240811062813
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇺🇸 US-142.4.104.33...
@@ -4608,83 +4657,14 @@ proxies:
   uuid: 5b113c12-4dd4-4bb5-9c01-cff092b559e3
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.248.9...
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.86.12...
   network: tcp
-  port: '30562'
-  server: 15.204.248.92
-  tls: false
-  type: vmess
-  uuid: 82466715-6a58-4046-a363-a0d18e5b2ab4
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇺🇸 US-74.48.159.226...
-  network: ws
-  port: '38848'
-  server: 74.48.159.226
+  port: '35696'
+  server: 15.204.86.120
   servername: ''
   tls: false
   type: vmess
-  uuid: 20fed645-619c-4ca1-c00e-743ea8a3b51f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /6c8e5a1b
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇺🇸 US-2.58.87.221:1...
-  network: ws
-  port: '12269'
-  server: 2.58.87.221
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: db85ff0e-c33f-401d-c415-4c7cce135704
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.48.227.23...
-  network: ws
-  port: 47778
-  server: 38.48.227.231
-  servername: www.42266451.xyz
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.42266451.xyz
-    path: /path/240811062813
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇺🇸 US-52.38.132.14...
-  network: ws
-  port: 22357
-  server: 52.38.132.140
-  servername: 0000000000000000000000000073.cgroup-node-for-bigairport.sbs
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: 0000000000000000000000000073.cgroup-node-for-bigairport.sbs
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇺🇸 US-34.220.42.16...
-  network: ws
-  port: 42360
-  server: 34.220.42.160
-  servername: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
-    path: /
+  uuid: cad0504a-a9dc-4d29-8844-b11b69f14a8d
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇺🇸 US-44.246.213.1...
@@ -4701,28 +4681,55 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇺🇸 US-35.94.189.51...
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.248.9...
+  network: tcp
+  port: '30562'
+  server: 15.204.248.92
+  tls: false
+  type: vmess
+  uuid: 82466715-6a58-4046-a363-a0d18e5b2ab4
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇺🇸 US-52.38.132.14...
   network: ws
-  port: 52353
-  server: 35.94.189.51
-  servername: 0000000000000000000000000046.bgroup-node-for-bigairport.sbs
+  port: 22357
+  server: 52.38.132.140
+  servername: 0000000000000000000000000073.cgroup-node-for-bigairport.sbs
   tls: true
   type: vmess
-  uuid: b71f9e84-86c9-49c4-b5f4-b33b35ee7410
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
   ws-opts:
     headers:
-      Host: 0000000000000000000000000046.bgroup-node-for-bigairport.sbs
+      Host: 0000000000000000000000000073.cgroup-node-for-bigairport.sbs
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.86.12...
-  network: tcp
-  port: '35696'
-  server: 15.204.86.120
+  name: 36|🔒 VM-WS-NA 🇺🇸 US-74.48.159.226...
+  network: ws
+  port: '38848'
+  server: 74.48.159.226
   servername: ''
   tls: false
   type: vmess
-  uuid: cad0504a-a9dc-4d29-8844-b11b69f14a8d
+  uuid: 20fed645-619c-4ca1-c00e-743ea8a3b51f
+  ws-opts:
+    headers:
+      Host: ''
+    path: /6c8e5a1b
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇺🇸 US-34.220.42.16...
+  network: ws
+  port: 42360
+  server: 34.220.42.160
+  servername: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
+    path: /
 - alterId: 0
   cipher: aes-256-gcm
   name: 37|US
