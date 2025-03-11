@@ -13,8 +13,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|14|🇪德国 01 | 1x DE #1'
-  password: 4a0b37d9-d6ad-44a6-a9b2-95e43edf43a0
+  name: 5,24,27|2|🇪德国 01 | 1x DE
+  password: 5aaa2df6-e98e-49f9-97ab-2a1819f6f516
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -31,7 +31,7 @@ proxies:
   uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,24,27,30,37|DE
+  name: 5,24,27,37|DE
   password: adbda395-5eaa-407c-980e-5446ba6c7df1
   port: 36471
   server: free.2weradf.xyz
@@ -193,10 +193,7 @@ proxies:
   server: 3.65.99.140
   sni: trojan.burgerip.co.uk
   type: trojan
-- alpn:
-  - http/1.1
-  name: '20,21,30|_US_ #1'
-  network: tcp
+- name: '20,21|🇩🇪DE-18.159.91.234-6006 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 18.159.91.234
@@ -243,27 +240,40 @@ proxies:
     headers:
       Host: ''
     path: /XESALISTHEBEST?ed=2048
-- alpn:
-  - http/1.1
-  name: 30|_DE_国
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 52.59.96.213
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
-  grpc-opts:
-    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
-  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
-  network: grpc
-  port: '15145'
-  server: 88.198.172.25
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
+  network: tcp
+  port: '24164'
+  server: 193.108.117.143
   servername: ''
+  tls: false
+  type: vmess
+  uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-18...
+  network: httpupgrade
+  port: '80'
+  server: 188.114.98.110
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 32763470-5925-4df8-a615-77a18d25eeac
+- alterId: 64
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
+  network: ws
+  port: 30005
+  server: 89.163.231.19
+  servername: www.80347320.xyz
   tls: true
   type: vmess
-  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.80347320.xyz
+    path: /path/240811062813
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
@@ -283,27 +293,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
-  network: ws
-  port: 30005
-  server: 89.163.231.19
-  servername: www.80347320.xyz
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.80347320.xyz
-    path: /path/240811062813
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
-  network: tcp
-  port: '24164'
-  server: 193.108.117.143
+  grpc-opts:
+    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
+  network: grpc
+  port: '15145'
+  server: 88.198.172.25
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
+  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
