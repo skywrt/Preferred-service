@@ -9,8 +9,8 @@ proxies:
   type: vmess
   uuid: 6a2afda8-8798-434c-8964-1deb4e7655a5
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|0|🇺 01 | 1x RU #1'
-  password: 4a1f5564-7386-44af-b023-b627f002c3e7
+  name: 5,24,27|0|🇺 01 | 1x RU
+  password: cac82c6f-028a-491d-ae9f-d2e6993faacf
   port: 31511
   server: free.2apzhfa.xyz
   type: ss
@@ -34,11 +34,14 @@ proxies:
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|1|🇺 俄罗斯 01 | 1x RU #1'
-  password: cd3204f0-9413-4a89-ab43-a65013b2bd89
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,24,27,37|🇺RU
+  password: 3a3f99ad-4539-4bc0-985c-4108b54e2ad5
   port: 36511
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -147,6 +150,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 793e03cc-2b08-4d1b-bb0b-592567d19043
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-185.22.152.23...
+  network: ws
+  port: 23009
+  server: 185.22.152.236
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a940fa03-5c1a-40d2-a9a3-329b724a5076
   ws-opts:
     headers:
       Host: ''
