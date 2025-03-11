@@ -14,7 +14,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,24,27,37|🇪DE
+  name: 5,24,27,30,37|🇪DE
   password: 4a0b37d9-d6ad-44a6-a9b2-95e43edf43a0
   port: 31471
   server: free.2apzhfa.xyz
@@ -33,8 +33,8 @@ proxies:
   type: vmess
   uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|1|🇪 德国 01 | 1x DE
-  password: f4db0a40-d30d-463e-87a3-3ccfb60893ab
+  name: '5,24,27,30|1|🇪 德国 01 | 1x DE #1'
+  password: cd3204f0-9413-4a89-ab43-a65013b2bd89
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -97,7 +97,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🇩🇪DE-172.104.238.247-0865 #1'
+  name: '10,20,21|🇩🇪DE-172.104.203.137-0865 #1'
   network: ws
   port: 443
   server: denc36.xtooltech.cfd
@@ -115,11 +115,10 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2518
-  name: '10,20,21|🇩🇪DE-139.162.180.91-0899 #1'
+  name: 10|德国 004
   network: ws
   port: 443
   server: hms07.xfixedfloat.cfd
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -145,7 +144,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇩🇪DE-172.104.147.172-0836
+  name: 19|🇩🇪DE-172.104.147.172-0904
   network: ws
   port: 443
   server: hms082.gwdef.sbs
@@ -157,43 +156,32 @@ proxies:
     headers:
       host: gwdef.sbs
     path: /linkws
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇩🇪DE-139.162.180.91-0831
-  network: ws
-  port: 443
-  server: hms07.xfixedfloat.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
-  ws-opts:
-    headers:
-      host: afrhms07.xfixedfloat.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇩🇪DE-172.104.238.247-0797
-  network: ws
-  port: 443
-  server: denc36.xtooltech.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
-  ws-opts:
-    headers:
-      host: adenc36v.xtooltech.cfd
-    path: /linkws
-- name: '20,21|🇩🇪DE-3.65.99.140-6007 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.65.99.140
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '20,21|🇩🇪DE-18.159.91.234-6006 #1'
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-5721
+  password: XPtzA9sCug3SPR4c
+  port: 9025
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-5718
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: '20,21|8J%2BHr%2FCfh7VKUC0xOC4xODEuMj... #1'
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: eAokbaDN6
+  port: '8081'
+  protocol: origin
+  protocol-param: ''
+  server: jp-am48-6.eqnode.net
+  type: ssr
+- alpn:
+  - http/1.1
+  name: '20,21,30|_US_ #1'
+  network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 18.159.91.234
@@ -201,21 +189,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-8134 #1'
-  network: ws
-  port: 443
-  server: 57.129.24.125
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.141-5703 #1'
+  name: '20,21|🇩🇪DE-57.129.24.141-5687 #1'
   network: ws
   port: 443
   server: 57.129.24.141
@@ -226,6 +200,20 @@ proxies:
   ws-opts:
     headers:
       Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-57.129.24.125-8114 #1'
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -242,23 +230,27 @@ proxies:
     path: /XESALISTHEBEST?ed=2048
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
-  network: tcp
-  port: '15713'
-  server: 193.108.118.136
-  servername: ''
+  name: 28|德国法兰克福-1N
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
   tls: false
   type: vmess
-  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
+  udp: true
+  uuid: 356dd6f9-6671-432c-bb3b-dd5d7c649659
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alpn:
+  - http/1.1
+  name: 30|_DE_国
   network: tcp
-  port: '48961'
-  server: 23.158.56.21
-  tls: false
-  type: vmess
-  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
+  password: telegram-id-directvpn
+  port: 22222
+  server: 52.59.96.213
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
@@ -275,6 +267,26 @@ proxies:
     path: /path/240811062813
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
+  network: tcp
+  port: '24164'
+  server: 193.108.117.143
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-18...
+  network: httpupgrade
+  port: '80'
+  server: 188.114.98.110
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 32763470-5925-4df8-a615-77a18d25eeac
+- alterId: 0
+  cipher: auto
   grpc-opts:
     grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
   name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
@@ -287,11 +299,30 @@ proxies:
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
-  network: tcp
-  port: '24164'
-  server: 193.108.117.143
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
   servername: ''
   tls: false
   type: vmess
-  uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
+  network: tcp
+  port: '48961'
+  server: 23.158.56.21
+  tls: false
+  type: vmess
+  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
+  network: tcp
+  port: '15713'
+  server: 193.108.118.136
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
