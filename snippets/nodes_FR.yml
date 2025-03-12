@@ -62,26 +62,29 @@ proxies:
   port: 8000
   server: 54.36.174.181
   type: ss
-- cipher: aes-256-gcm
-  name: '8|SS-法国:波兰-locked-ChatGPT-TikTok... #4'
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 54.36.174.181
-  type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  name: 8,37|未知22 1.5MB/s
-  password: TEzjfAYq2IjtuoS
-  port: 6697
+  name: 8,37|未知53 1.1MB/s
+  password: g5MeD6Ft3CWlJId
+  port: 5004
   server: 54.36.174.181
   skip-cert-verify: true
   tls: true
   type: ss
 - cipher: aes-256-gcm
-  name: '8|SS-法国-locked-ChatGPT-TikTok-Yo... #1'
+  name: '8|SS-法国:波兰-locked-ChatGPT-TikTok... #5'
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 54.36.174.181
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 8,37|未知91 1.7MB/s
   password: zDNVedRFPQexG9v
   port: 6379
   server: 149.202.82.172
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -164,21 +167,6 @@ proxies:
     headers:
       Host: a.baradiha.com
     path: /linkvws
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇫🇷FR-45.158.171.110-0509
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.158.171.110
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知122 10.5MB/s
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.158.171.151
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -225,6 +213,15 @@ proxies:
       host: az05.beyondy.cfd
     path: /link
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 20,21,37|未知69 133.1KB/s
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.66
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
   name: '20,21|🇫🇷FR-51.77.20.137-8106 #1'
   network: ws
@@ -239,11 +236,20 @@ proxies:
       Host: tilebani.com
     path: /linkvws
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 20,21,37|未知33 2.0MB/s
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.158.171.136
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-146.19.168.161-5715 #1'
+  name: '20,21|🇫🇷FR-146.19.168.161-8103 #1'
   network: ws
   port: 443
-  server: az05.beyondy.cfd
+  server: 146.19.168.161
   servername: az05.beyondy.cfd
   tls: true
   type: vmess
@@ -254,10 +260,10 @@ proxies:
     path: /link
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-146.19.168.161-8103 #1'
+  name: '20,21|🇫🇷FR-146.19.168.161-5715 #1'
   network: ws
   port: 443
-  server: 146.19.168.161
+  server: az05.beyondy.cfd
   servername: az05.beyondy.cfd
   tls: true
   type: vmess
@@ -279,6 +285,20 @@ proxies:
   ws-opts:
     headers:
       Host: irvideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇫🇷FR-146.19.168.112-8239 #1'
+  network: ws
+  port: 443
+  server: hms19.best-tizi.top
+  servername: hms19.best-tizi.top
+  tls: true
+  type: vmess
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  ws-opts:
+    headers:
+      Host: hms19.best-tizi.top
     path: /linkws
 - alterId: 0
   cipher: auto
@@ -310,15 +330,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228...
-  network: tcp
-  port: 21809
-  server: 38.109.228.113
-  tls: false
-  type: vmess
-  uuid: a6179475-489c-4bcc-b05c-481386295b93
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇫🇷 FR-51.77.20.131...
   network: tcp
   port: '22324'
@@ -327,3 +338,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228...
+  network: tcp
+  port: 21809
+  server: 38.109.228.113
+  tls: false
+  type: vmess
+  uuid: a6179475-489c-4bcc-b05c-481386295b93
