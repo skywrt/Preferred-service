@@ -119,15 +119,15 @@ proxies:
   ws-opts:
     path: /v9f5gzrc#id-@AB_841
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|1|🇦加拿大 01 | 1x CA
-  password: 34beba20-7313-4b1f-b76e-cf001794d19d
+  name: 5,9,24,27,30|0|加大 01 | 1x CA
+  password: 1c18853e-c415-4150-a661-34faa23e9c89
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|🇦 加大 01 | 1x CA
-  password: 1811ea8a-402f-4010-9916-be754143fee2
+  name: '5,9,24,27,30|2|🇦 加拿大 01 | 1x CA #1'
+  password: 30940013-fb38-4241-8d90-575c04b258c3
   port: 36441
   server: free.2weradf.xyz
   type: ss
@@ -561,7 +561,7 @@ proxies:
     path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 9,11,27|12|🇦 加拿大|@ripaojiedian
+  name: '9,11,27,30|12|🇦 加拿大|@ripaojiedian #1'
   password: eath1eicieSh_!MMyb~4HT,}bC@ohpheiRaighier0shohd
   port: 8388
   server: 95.217.158.231
@@ -570,8 +570,9 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   delay: 1166
-  name: '10,20,21|🏁RELAY-104.16.155.10-0769 #2'
+  name: 10,20,21,30|🇺🇸 美国 CloudFlare节点 10
   network: ws
   port: 2052
   server: s1.db-link01.top
@@ -586,7 +587,8 @@ proxies:
     path: /dabai.in172.67.2.142
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.16.155.10-0775 #2'
+  client-fingerprint: chrome
+  name: 10,20,21,30|🇺🇸 美国 CloudFlare节点 12
   network: ws
   port: 8880
   server: s4.db-link02.top
@@ -693,7 +695,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|加拿大 010
+  client-fingerprint: chrome
+  name: 10,30|🇺🇸 美国 CloudFlare节点 9
   network: ws
   port: 2095
   server: s4.db-link02.top
@@ -843,19 +846,21 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-38.111.114.1...
-  network: tcp
-  port: '14812'
-  server: 38.111.114.153
-  tls: false
-  type: vmess
-  uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇦 CA-23.162.200.9...
   network: tcp
   port: '20182'
   server: 23.162.200.91
+  servername: ''
   tls: false
   type: vmess
   uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-38.111.114.1...
+  network: tcp
+  port: '14812'
+  server: 38.111.114.153
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
