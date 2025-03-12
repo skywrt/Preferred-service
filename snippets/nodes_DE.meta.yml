@@ -176,7 +176,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|0|国 01 | 1x DE
-  password: dae1c7a9-b152-43b5-9539-12381879f909
+  password: d7e1ece0-62a1-4400-95fc-f9224c8d53cc
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -193,7 +193,7 @@ proxies:
   uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27|2|🇪 德国 01 | 1x DE
-  password: bb6a2b9e-2952-45ff-87d6-3d646f1697d6
+  password: 5da5f38a-a670-4987-9b98-f1c2fcd8c014
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -454,27 +454,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-49.13.0.13...
-  network: tcp
-  port: '49808'
-  server: 49.13.0.130
-  tls: false
-  type: vmess
-  uuid: ee7a20fa-cf57-4709-b48b-24bdb7d965cb
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
-  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
-  network: grpc
-  port: '15145'
-  server: 88.198.172.25
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
   network: tcp
   port: '24164'
@@ -483,6 +462,26 @@ proxies:
   tls: false
   type: vmess
   uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
+  network: tcp
+  port: '48961'
+  server: 23.158.56.21
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
@@ -499,14 +498,16 @@ proxies:
     path: /path/240811062813
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
-  network: tcp
-  port: '48961'
-  server: 23.158.56.21
+  grpc-opts:
+    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
+  network: grpc
+  port: '15145'
+  server: 88.198.172.25
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
+  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
@@ -517,3 +518,12 @@ proxies:
   tls: false
   type: vmess
   uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-49.13.0.13...
+  network: tcp
+  port: '49808'
+  server: 49.13.0.130
+  tls: false
+  type: vmess
+  uuid: ee7a20fa-cf57-4709-b48b-24bdb7d965cb
