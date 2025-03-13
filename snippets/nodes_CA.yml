@@ -113,21 +113,21 @@ proxies:
   uuid: cefe6e80-fb3e-11ef-b038-205c6d5f5d78
   ws-opts:
     path: /v9f5gzrc#id-@AB_841
-- cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|14|🇦加拿大 01 | 1x CA #1'
-  password: 9292e68e-9bc9-43ed-a448-0a25122ed0a5
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 5,9,24,27,30,37|CA
-  password: a6d80e66-7fcf-4f29-a936-b9b5390d8d67
-  port: 36441
-  server: free.2weradf.xyz
+  password: d36541f9-a6cc-419a-817d-49b1ace645b4
+  port: 31441
+  server: free.2apzhfa.xyz
   skip-cert-verify: true
   tls: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,24,27,30|2|🇦 加拿大 01 | 1x CA #1'
+  password: 5eb27964-25aa-4530-b05a-f3ca833d3cd4
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -575,7 +575,8 @@ proxies:
     path: /dabai.in172.67.2.142
 - alterId: 0
   cipher: auto
-  name: 10|加拿大 002
+  client-fingerprint: chrome
+  name: 10,30|🇺🇸 美国 CloudFlare节点 11
   network: ws
   port: 8880
   server: s4.db-link02.top
@@ -591,7 +592,8 @@ proxies:
     path: /dabai.in104.25.239.131
 - alterId: 0
   cipher: auto
-  name: 10|加拿大 003
+  client-fingerprint: chrome
+  name: 10,30|🇺🇸 美国 CloudFlare节点 13
   network: ws
   port: 8080
   server: 104.16.155.10
@@ -622,12 +624,10 @@ proxies:
 - alterId: 0
   cipher: auto
   ip-version: dual
-  name: 10,36|🔒 VM-WS-NA 🇨🇦 CA-51.79.102.253...
+  name: 10|加拿大 006
   network: ws
-  port: '80'
+  port: 80
   server: 51.79.102.253
-  servername: ''
-  tls: false
   type: vmess
   udp: true
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -792,11 +792,11 @@ proxies:
       Host: www.bing.com
     path: github.com/Alvin9999
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知7 11.9MB/s
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知22 17.6MB/s
+  password: shadowsocks
+  port: 443
+  server: 149.22.95.183
   skip-cert-verify: true
   tls: true
   type: ss
@@ -842,21 +842,20 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36,37|未知117 25.4MB/s
-  network: tcp
-  port: 14812
-  server: 38.111.114.153
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇦 CA-23.162.200.9...
   network: tcp
   port: '20182'
   server: 23.162.200.91
+  servername: ''
   tls: false
   type: vmess
   uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-38.111.114.1...
+  network: tcp
+  port: '14812'
+  server: 38.111.114.153
+  tls: false
+  type: vmess
+  uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
