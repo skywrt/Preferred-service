@@ -75,8 +75,15 @@ proxies:
   sni: waphk.mjt000.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|  01 | 1x HK
-  password: 080f75b4-2f31-4b3f-b675-0f18e96305b7
+  name: 5,24,27|0|🇭🇰香港 03 | 1x HK
+  password: 5c4e96af-c5a5-4833-836b-5f733adc240e
+  port: 31145
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27|2|🇭🇰 香港 01 | 1x HK
+  password: 050a8282-513a-4918-a843-57381d9281e4
   port: 36141
   server: free.2weradf.xyz
   type: ss
@@ -109,13 +116,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,24,37|🇰HK香港3
+  name: 5,24,27,37|🇰HK香港3
   password: d7e1ece0-62a1-4400-95fc-f9224c8d53cc
   port: 31143
   server: free.2apzhfa.xyz
   skip-cert-verify: true
   tls: true
   type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27|0| 01 | 1x HK
+  password: 5c4e96af-c5a5-4833-836b-5f733adc240e
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5|香港WAP-优化2
@@ -130,8 +145,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|🇭🇰 香港IP 03 | 1x HK
-  password: 080f75b4-2f31-4b3f-b675-0f18e96305b7
+  name: 5,9,24,27|2|🇭🇰 香港IP 03 | 1x HK
+  password: 050a8282-513a-4918-a843-57381d9281e4
   port: 36145
   server: free.2weradf.xyz
   type: ss
@@ -194,7 +209,7 @@ proxies:
   udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 9,11,27|12|🇭🇰 香港4|@ripaojiedian
+  name: 9,11,27|1,12|🇭🇰 香港4|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -207,7 +222,7 @@ proxies:
   udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 9,11,27|12|🇭🇰 香港3|@ripaojiedian
+  name: 9,11,27|1,12|🇭🇰 香港3|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -768,6 +783,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇭🇰HK-141.98.234.93-0523
+  password: WfmxKX2FBJRU0Ie9VLIYDL
+  port: 20012
+  server: 141.98.234.93
+  type: ss
 - name: 26|V1-香港01∣K1线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21135
@@ -821,16 +842,6 @@ proxies:
   uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
-  network: tcp
-  port: '27512'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-5.83.221.31:3...
   network: ws
   port: 30041
@@ -843,6 +854,16 @@ proxies:
     headers:
       Host: v02.gutingting.com
     path: /aceamedv
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
+  network: tcp
+  port: '27512'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
 - alterId: 0
   name: 37|HK
   network: tcp
