@@ -115,16 +115,16 @@ proxies:
   ws-opts:
     path: /v9f5gzrc#id-@AB_841
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|1|🇦加拿大 01 | 1x CA
-  password: 632a88b2-38c4-4497-a361-9079d2e6723e
+  name: 5,24,27,30|0|加大 01 | 1x CA
+  password: 8117c584-cd05-493a-962d-43396c681de5
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,37|CA
-  password: 5da5f38a-a670-4987-9b98-f1c2fcd8c014
+  name: 5,9,24,27,30,37|CA
+  password: a6d80e66-7fcf-4f29-a936-b9b5390d8d67
   port: 36441
   server: free.2weradf.xyz
   skip-cert-verify: true
@@ -652,7 +652,8 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.19.48.236-0772 #1'
+  client-fingerprint: chrome
+  name: 10,20,21,30|🇸 美国 CloudFlare节点 8
   network: ws
   port: 2082
   server: s4.db-link02.top
@@ -790,11 +791,14 @@ proxies:
     headers:
       Host: www.bing.com
     path: github.com/Alvin9999
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇨🇦CA-142.4.216.225-0520
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,37|未知7 11.9MB/s
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -838,12 +842,13 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-38.111.114.1...
+  name: 36,37|未知117 25.4MB/s
   network: tcp
-  port: '14812'
+  port: 14812
   server: 38.111.114.153
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
 - alterId: 0
