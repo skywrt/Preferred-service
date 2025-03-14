@@ -175,8 +175,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30|1|🇪德国 01 | 1x DE
-  password: 0ae46b78-61a3-412b-a1cb-26a640173d9c
+  name: '5,9,24,27,30|1|🇪德国 01 | 1x DE #1'
+  password: 43985f68-106b-434f-affb-17b2bbdedf26
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -192,8 +192,8 @@ proxies:
   type: vmess
   uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|2|🇪 德国 01 | 1x DE #1'
-  password: 0691a8a6-29b5-4a3f-87f1-93fe929bfcce
+  name: '5,9,24,27,30|0| 国 01 | 1x DE #1'
+  password: 2950baac-98a4-4b8b-8eaf-11059e0af1f8
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -330,30 +330,12 @@ proxies:
   server: 52.59.96.213
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇩🇪DE-85.90.194.200-0471
-  password: d0fa3a9b-2115-4cc0-a8f5-7f4f7caf6ec1
+- cipher: rc4-md5
+  name: 19|🇩🇪DE-193.108.119.230-6176
+  password: 14fFPrbezE3HDZzsMOr6
   port: 8080
-  server: 85.90.194.200
+  server: 193.108.119.230
   type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-0500
-  password: M3t2ZEQcMGRWBjRa
-  port: 9011
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-5538
-  password: GA9KzeEgvfxNrgmM
-  port: 9019
-  server: 80.92.204.106
-  type: ss
-- name: '20,21|🇩🇪DE-3.123.121.1-5933 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.123.121.1
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '20,21|🇩🇪DE-57.129.24.125-8060 #1'
@@ -368,26 +350,12 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.141-5669 #1'
-  network: ws
-  port: 443
-  server: 57.129.24.141
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- cipher: rc4-md5
-  name: 20,21,27,30|0|🇺1 |  1.4MB/s
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
+- name: '20,21|🇩🇪DE-3.65.150.197-1011 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.65.150.197
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '24|2|🇩🇪1 |  4.9MB/s #1'
@@ -413,14 +381,16 @@ proxies:
   uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
+  grpc-opts:
+    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
+  network: grpc
+  port: '15145'
+  server: 88.198.172.25
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
@@ -441,18 +411,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
-  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
-  network: grpc
-  port: '15145'
-  server: 88.198.172.25
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...

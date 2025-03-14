@@ -12,8 +12,8 @@ proxies:
   udp: false
   uuid: bd49346f-1d80-4726-b982-af101ca889c4
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|2|🇧 英国住宅IP 01 | 1x UK #1'
-  password: 0691a8a6-29b5-4a3f-87f1-93fe929bfcce
+  name: '5,9,24,27,30|0| 国住宅IP 01 | 1x UK #1'
+  password: 2950baac-98a4-4b8b-8eaf-11059e0af1f8
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -112,8 +112,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30|1|🇧国家宽 01 | 1x UK
-  password: 0ae46b78-61a3-412b-a1cb-26a640173d9c
+  name: '5,9,24,27,30|1|🇧英国家宽 01 | 1x UK #1'
+  password: 43985f68-106b-434f-affb-17b2bbdedf26
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -287,28 +287,16 @@ proxies:
     headers:
       Host: lo.kpcloud.eu.org
     path: '%2Fblue'
-- name: '20,21|🇬🇧GB-18.134.59.0-1034 #1'
-  password: telegram-id-directvpn
-  port: 22222
-  server: 18.134.59.0
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '20,21|🇬🇧GB-18.175.7.60-5940 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.175.7.60
-  sni: trojan.burgerip.co.uk
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇬🇧GB-94.72.97.160-6191
+  password: 3b06f96b73d2584c
+  port: 11102
+  server: 94.72.97.160
+  type: ss
 - name: '20,21|🇬🇧GB-18.169.71.154-5939 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 18.169.71.154
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '20,21|🇬🇧GB-18.168.68.77-5941 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.168.68.77
   sni: trojan.burgerip.co.uk
   type: trojan
 - name: 24|🇬🇧 英国 伦敦Amazon数据中心
@@ -325,6 +313,16 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  network: tcp
+  port: '46617'
+  server: 46.250.253.232
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
@@ -347,26 +345,6 @@ proxies:
   uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
-  network: tcp
-  port: '55577'
-  server: 172.99.190.207
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
-  network: tcp
-  port: '46617'
-  server: 46.250.253.232
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
   network: tcp
   port: '47567'
@@ -375,3 +353,13 @@ proxies:
   tls: false
   type: vmess
   uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
+  network: tcp
+  port: '55577'
+  server: 172.99.190.207
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
