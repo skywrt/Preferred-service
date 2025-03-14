@@ -97,15 +97,15 @@ proxies:
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30|1|🇸 美国 01 | 1x US Los Angeles
-  password: 6dcd37b6-4019-4738-a9cd-e2ab63c532c7
+  name: 5,9,24,27,30|0|🇸 美国 01 | 1x US Los Angeles
+  password: 8b10615f-d74f-44d9-986a-1691d68d681c
   port: 36211
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇸 美国 03 | 1x US Washington #1'
-  password: 6dcd37b6-4019-4738-a9cd-e2ab63c532c7
+  name: '5,9,24,27,30|0|🇸 美国 03 | 1x US Washington #1'
+  password: 8b10615f-d74f-44d9-986a-1691d68d681c
   port: 36215
   server: free.2weradf.xyz
   type: ss
@@ -151,7 +151,8 @@ proxies:
     path: /dabai.in104.25.184.216
 - alterId: 0
   cipher: auto
-  name: '5,11|12|github.com/freefq - 美国Fastl... #1'
+  client-fingerprint: chrome
+  name: 5,11,30|🇺🇸 美国 FastlyAnycast节点
   network: ws
   port: 443
   server: gov.uk
@@ -164,13 +165,15 @@ proxies:
     path: /77848824
 - alterId: 2
   cipher: auto
-  name: 5|0|🇺🇸3 |  5.3MB/s
+  name: '5,11,27,30|2|🇸1 |  6.1MB/s #1'
   network: ws
   port: 23617
   server: 17.mamamajd.site
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 975eba47-5d04-3761-aca6-4bfee48b8fe9
+  udp: true
+  uuid: 64bd0474-54da-3dae-adb4-419370db4fc4
   ws-opts:
     headers:
       Host: 17.mamamajd.site
@@ -311,8 +314,8 @@ proxies:
       Host: us6_0.wish.ml
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|14|🇸美国 03 | 1x US Washington #1'
-  password: 02a01dec-7e62-492e-9771-401a03d61bd2
+  name: '5,9,24,27,30|1|🇸美国 03 | 1x US Washington #1'
+  password: 677e410e-6f70-4995-b92c-9fbba980e11e
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
@@ -390,8 +393,8 @@ proxies:
       Host: 100-49-141-209.s1.db-link02.top
     path: /dabai.in104.17.169.115
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇸 美国住宅IP 02 | 1x US Los Ange... #1'
-  password: 6dcd37b6-4019-4738-a9cd-e2ab63c532c7
+  name: '5,9,24,27,30|0|🇸 美国住宅IP 02 | 1x US Los Ange... #1'
+  password: 8b10615f-d74f-44d9-986a-1691d68d681c
   port: 36213
   server: free.2weradf.xyz
   type: ss
@@ -1323,7 +1326,7 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '9,11,27,30|11|🇸 美国3|@ripaojiedian #1'
+  name: '9,11,27,30|12|🇸 美国3|@ripaojiedian #1'
   password: FKCY4YH4V4EKLDLC
   port: 17002
   server: ti3hyra4.slashdevslashnetslashtun.net
@@ -1332,7 +1335,7 @@ proxies:
   udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: '9,11,27,30|11|🇸 美国|@ripaojiedian #1'
+  name: '9,11,27,30|12|🇸 美国|@ripaojiedian #1'
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -1345,7 +1348,7 @@ proxies:
   udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: '9,11,27,30|11|🇺🇸 美国2|@ripaojiedian #1'
+  name: '9,11,27,30|12|🇺🇸 美国2|@ripaojiedian #1'
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -1964,7 +1967,8 @@ proxies:
     path: /dabai.in104.25.249.215
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.21.18.227-0773 #2'
+  client-fingerprint: chrome
+  name: 10,20,21,30|🇺🇸 美国 CloudFlare节点 7
   network: ws
   port: 443
   server: 104.21.18.227
@@ -2289,8 +2293,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 10,20,21,30|🇺🇸 美国 CloudFlare节点 7
+  name: '10,20,21|🏁RELAY-104.21.83.208-0819 #2'
   network: ws
   port: 443
   server: 104.21.83.208
@@ -4508,12 +4511,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: '27,30|0|🇺🇸3 |  5.0MB/s #1'
-  password: amazonskr05
-  port: 443
-  server: 34.210.253.95
-  type: ss
 - alterId: 0
   cipher: auto
   name: 28|美国-1T
@@ -4531,10 +4528,129 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 30|🇸 美国 CloudFlare
+  name: 30|🇺🇸 美国 CloudFlare
+  network: ws
+  port: 2095
+  server: 104.17.213.241
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-206-104-218.s1.db-link01.top
+    path: /dabai.in172.67.93.174
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇺🇸 美国 CloudFlare节点 2
+  network: ws
+  port: 443
+  server: 104.18.149.76
+  tls: true
+  type: vmess
+  uuid: 506b46ce-568f-47a7-f0dd-0864fb7f8040
+  ws-opts:
+    headers:
+      Host: sg.kkp.me.eu.org
+    path: /aa
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇺🇸 美国 CloudFlare节点 3
+  network: ws
+  port: 2086
+  server: s1.db-link01.top
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-191-129-167.s1.db-link01.top
+    path: /dabai.in172.64.32.189
+- client-fingerprint: chrome
+  name: 30|🇺🇸 美国 (Amazon)
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.177.186.124
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇺🇸 美国 V2CROSS.COM 2
+  network: ws
+  port: 8443
+  server: 167.68.5.215
+  tls: true
+  type: vmess
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  ws-opts:
+    headers:
+      Host: lax1.ibgfw.top
+    path: /xrenvws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30,36|🔒 VM-WS-NA 🇺🇸 US-207.90.238.13...
+  network: ws
+  port: '20010'
+  server: 207.90.238.136
+  tls: false
+  type: vmess
+  uuid: a4488c20-d540-4a16-834e-7678acabbd99
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇺🇸 美国 CloudFlare节点 4
+  network: ws
+  port: 2083
+  server: tasnim.twn24.ir
+  tls: true
+  type: vmess
+  uuid: 51d9bcfa-b2fb-4d73-eb92-7c4cdefae4c0
+  ws-opts:
+    headers:
+      Host: tasnim.twn24.ir
+    path: /@M3HDIO1
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇺🇸 美国 CloudFlare节点 5
+  network: ws
+  port: 8080
+  server: s1.db-link02.top
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-213-61-102.s1.db-link02.top
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇺🇸 美国 CloudFlare节点 6
+  network: ws
+  port: 443
+  server: 104.17.233.86
+  tls: true
+  type: vmess
+  uuid: 1d1483f2-7bea-5e99-ad64-8decb150d06a
+  ws-opts:
+    headers:
+      Host: 28000000000.fastroot.ir
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇺🇸 美国 CloudFlare节点 8
   network: ws
   port: 80
-  server: 104.17.213.241
+  server: 104.16.155.10
   tls: false
   type: vmess
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
@@ -4545,203 +4661,78 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 30|🇸 美国 CloudFlare节点 2
+  name: 30|🇺🇸 美国 CloudFlare节点 9
   network: ws
-  port: 8880
-  server: 104.16.155.10
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-103-58-39.s1.db-link02.top
-    path: /dabai.in104.25.249.215
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: /
-  name: 30|🇺🇸 美国 CloudFlare节点 5
-  network: grpc
-  port: 2087
-  server: 172.64.32.217
-  servername: 155138206163.datrsmbmrm.fun
-  tls: true
-  type: vmess
-  uuid: 2a3263e2-891c-4446-b474-a8c63acb6e25
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇸 美国 CloudFlare节点 6
-  network: ws
-  port: 2086
-  server: s2.cn-db.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-28-190-253.s2.cn-db.top
-    path: /
-- client-fingerprint: chrome
-  name: 30|🇺🇸 美国 州西市(Amazon)
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.177.186.124
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: freesg01
-  name: 30|🇺🇸 美国 荷州Microsoft数据中心
-  network: grpc
-  password: 86cceddb-c08a-3ffb-a7f0-cf6ab53739a7
-  port: 13498
-  server: 23.94.192.19
-  sni: freesg01.jd0001.top
-  type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇸 美国 CloudFlare节点 8
-  network: ws
-  port: 2082
+  port: 8080
   server: s2.db-link02.top
   tls: false
   type: vmess
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: 100-4-20-123.s2.db-link02.top
-    path: /dabai.in104.21.83.57
+      Host: 100-119-151-248.s2.db-link02.top
+    path: /dabai.in172.64.41.150
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-142.4.104.33...
-  network: tcp
-  port: '52143'
-  server: 142.4.104.33
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.99.82.193...
+  client-fingerprint: chrome
+  name: 30|🇺🇸 美国 CloudFlare节点 10
   network: ws
   port: 443
-  server: 38.99.82.193
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  server: Us7-04.890624.xyZ
+  servername: us7-04.890624.xyz
   tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
   ws-opts:
     headers:
-      Host: tilebani.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇺🇸 US-44.247.51.12...
-  network: ws
-  port: 14443
-  server: 44.247.51.128
-  servername: tls.14.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: tls.14.node-for-bigairport.win
+      Host: Us7-04.890624.xyZ
     path: /
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 30|🇺🇸 美国 Amazon EC2
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.76.90.39
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇺🇸 US-207.90.236.21...
+  client-fingerprint: chrome
+  name: 30|🇺🇸 美国 CloudFlare节点 11
   network: ws
-  port: 21008
-  server: 207.90.236.21
-  servername: ''
+  port: 443
+  server: 104.21.42.243
+  tls: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-opts:
+    headers:
+      Host: sgfqkqmltcy.site
+    path: /rbqqvws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇺🇸 美国 CloudFlare节点 12
+  network: ws
+  port: 2095
+  server: s1.db-link02.top
   tls: false
   type: vmess
-  uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: 100-33-108-197.s1.db-link02.top
+    path: /dabai.in104.24.248.64
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.249.0...
   network: tcp
   port: '48160'
   server: 15.204.249.0
-  servername: ''
   tls: false
   type: vmess
   uuid: 5b113c12-4dd4-4bb5-9c01-cff092b559e3
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.48.227.23...
-  network: ws
-  port: 47778
-  server: 38.48.227.231
-  servername: www.42266451.xyz
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.42266451.xyz
-    path: /path/240811062813
-- alterId: 0
-  cipher: auto
-  name: 36,37|US35
-  network: ws
-  port: 38848
-  server: 74.48.159.226
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 20fed645-619c-4ca1-c00e-743ea8a3b51f
-  ws-opts:
-    path: /6c8e5a1b
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.248.9...
-  network: tcp
-  port: '30562'
-  server: 15.204.248.92
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 82466715-6a58-4046-a363-a0d18e5b2ab4
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇺🇸 US-34.209.105.1...
-  network: ws
-  port: 11443
-  server: 34.209.105.177
-  servername: tls.01.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: tls.01.node-for-bigairport.win
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.11.69.42:...
-  network: ws
-  port: 30003
-  server: 38.11.69.42
-  servername: www.52140341.xyz
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.52140341.xyz
-    path: /path/1733218657472
 - alterId: 0
   cipher: auto
   name: 36,37|US25 47.5MB/s
@@ -4755,17 +4746,17 @@ proxies:
   uuid: cad0504a-a9dc-4d29-8844-b11b69f14a8d
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇺🇸 US-54.187.89.13...
+  name: 36|🔒 VM-WS-TLS 🇺🇸 US-34.211.84.17...
   network: ws
-  port: 42360
-  server: 54.187.89.137
-  servername: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
+  port: 11443
+  server: 34.211.84.170
+  servername: tls.01.node-for-bigairport.win
   tls: true
   type: vmess
   uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
   ws-opts:
     headers:
-      Host: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
+      Host: tls.01.node-for-bigairport.win
     path: /
 - alterId: 0
   cipher: auto
@@ -4783,18 +4774,38 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇺🇸 US-18.237.175.1...
-  network: ws
-  port: 33443
-  server: 18.237.175.133
-  servername: tls.19.node-for-bigairport.win
-  tls: true
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.248.9...
+  network: tcp
+  port: '30562'
+  server: 15.204.248.92
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  uuid: 82466715-6a58-4046-a363-a0d18e5b2ab4
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇺🇸 US-207.90.236.21...
+  network: ws
+  port: 21008
+  server: 207.90.236.21
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
   ws-opts:
     headers:
-      Host: tls.19.node-for-bigairport.win
+      Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-142.4.104.33...
+  network: tcp
+  port: '52143'
+  server: 142.4.104.33
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇺🇸 US-2.58.87.221:1...
@@ -4811,17 +4822,73 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇺🇸 US-207.90.238.13...
+  name: 36,37|US35
   network: ws
-  port: '20010'
-  server: 207.90.238.136
-  tls: false
+  port: 38848
+  server: 74.48.159.226
+  servername: ''
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 14595997-1a42-4a23-aaa7-bee451535a36
+  uuid: 20fed645-619c-4ca1-c00e-743ea8a3b51f
+  ws-opts:
+    path: /6c8e5a1b
+- alterId: 64
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.11.69.42:...
+  network: ws
+  port: 30003
+  server: 38.11.69.42
+  servername: www.52140341.xyz
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
-      Host: ''
+      Host: www.52140341.xyz
+    path: /path/1733218657472
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇺🇸 US-34.220.223.2...
+  network: ws
+  port: 42360
+  server: 34.220.223.22
+  servername: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇺🇸 US-35.86.152.24...
+  network: ws
+  port: 14443
+  server: 35.86.152.240
+  servername: tls.14.node-for-bigairport.win
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: tls.14.node-for-bigairport.win
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.48.227.23...
+  network: ws
+  port: 47778
+  server: 38.48.227.231
+  servername: www.42266451.xyz
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.42266451.xyz
+    path: /path/240811062813
 - alterId: 0
   name: 37|US
   network: tcp
