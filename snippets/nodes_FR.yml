@@ -62,11 +62,14 @@ proxies:
   port: 8118
   server: 149.202.82.172
   type: ss
-- cipher: aes-256-gcm
-  name: 8,19|🇫🇷FR-54.36.174.181-5573
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 8,19,37|未知34 1.7MB/s
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 54.36.174.181
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-256-gcm
   name: '8|SS-法国:波兰-locked-ChatGPT-TikTok... #2'
@@ -179,6 +182,12 @@ proxies:
     headers:
       Host: a.baradiha.com
     path: /linkvws
+- cipher: chacha20-ietf-poly1305
+  name: 19,20,21,30|_BE_
+  password: e014f8ab71735926
+  port: 20568
+  server: 57.128.190.245
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 19|🇫🇷FR-45.158.171.146-0376
   password: QCXDxuDlTTMD7jtgHUjIoj
@@ -329,19 +338,24 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: '27,30|2|🇫🇷2 |  5.9MB/s #1'
-  password: amazonskr05
-  port: 443
-  server: 57.180.25.228
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-38.109.228.1...
+  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-51.77.20.131...
   network: tcp
-  port: '21809'
-  server: 38.109.228.113
+  port: '22324'
+  server: 51.77.20.131
   servername: ''
   tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知85 9.1MB/s
+  network: tcp
+  port: 21809
+  server: 38.109.228.113
+  servername: ''
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: a6179475-489c-4bcc-b05c-481386295b93
