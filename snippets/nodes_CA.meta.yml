@@ -747,11 +747,14 @@ proxies:
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|🇦 加大 01 | 1x CA #1'
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27,30,37|🇦CA大
   password: 9c1efcf1-e66f-4bf3-8c80-c17f3a86920f
   port: 36441
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -1199,7 +1202,8 @@ proxies:
     path: /dabai.in172.67.2.142
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-198.41.209.70-0750 #1'
+  client-fingerprint: chrome
+  name: 10,20,21,30|🇸 美国 CloudFlare节点 2
   network: ws
   port: 8880
   server: s4.db-link02.top
@@ -1322,8 +1326,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 10,20,21,30|🇸 美国 CloudFlare
+  name: '10,20,21|🏁RELAY-104.16.155.10-0793 #1'
   network: ws
   port: 2095
   server: s4.db-link02.top
@@ -1368,7 +1371,8 @@ proxies:
     path: /dabai.in172.64.19.89
 - alterId: 0
   cipher: auto
-  name: 10|加拿大 013
+  client-fingerprint: chrome
+  name: 10,30|🇺🇸 美国 CloudFlare节点 5
   network: ws
   port: 2052
   server: s4.db-link02.top
@@ -1467,6 +1471,24 @@ proxies:
       Host: Sb-1u6.paGEs.dEv
     path: '%2Fpc0cypuups4meoks%2Fmtu4ljewms4ymdmumti3%3Fed%3D2560'
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知60 27.2MB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知93 18.1MB/s
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 19|🇨🇦CA-51.79.102.253-0773
@@ -1509,6 +1531,13 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,21,30|🇺🇸 美 V2CROSS.COM
+  password: 620c5b5108120a72
+  port: 11201
+  server: 23.162.56.206
+  type: ss
 - alterId: 0
   cipher: auto
   name: '23|🇨🇦_CA_加拿大 #1'
@@ -1523,6 +1552,16 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-23.162.200.9...
+  network: tcp
+  port: '20182'
+  server: 23.162.200.91
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇦 CA-38.111.114.1...
   network: tcp
   port: '14812'
@@ -1531,12 +1570,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-23.162.200.9...
-  network: tcp
-  port: '20182'
-  server: 23.162.200.91
-  tls: false
-  type: vmess
-  uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19
