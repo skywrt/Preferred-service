@@ -14,15 +14,15 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇬新加坡 03 | 1x SG #1'
-  password: 677e410e-6f70-4995-b92c-9fbba980e11e
+  name: '5,9,24,27,30|14|🇬新加坡 03 | 1x SG #1'
+  password: 094f0607-6fd4-42ba-9489-edf9f87784b2
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇸🇬新加坡 02 | 1x SG #1'
-  password: 677e410e-6f70-4995-b92c-9fbba980e11e
+  name: '5,9,24,27,30|14|🇸🇬新加坡 02 | 1x SG #2'
+  password: 094f0607-6fd4-42ba-9489-edf9f87784b2
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
@@ -64,14 +64,14 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: '5,9,24,27,30|0|  01 | 1x SG #1'
-  password: 8b10615f-d74f-44d9-986a-1691d68d681c
+  password: a2da603a-1c42-4924-aeff-7240ab62e438
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇬新加坡 01 | 1x SG #1'
-  password: 677e410e-6f70-4995-b92c-9fbba980e11e
+  name: '5,9,24,27,30|14|🇬新加坡 01 | 1x SG #1'
+  password: 094f0607-6fd4-42ba-9489-edf9f87784b2
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
@@ -91,7 +91,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: '5,9,24,27,30|0|🇬 新加坡 02 | 1x SG #1'
-  password: 8b10615f-d74f-44d9-986a-1691d68d681c
+  password: a2da603a-1c42-4924-aeff-7240ab62e438
   port: 36173
   server: free.2weradf.xyz
   type: ss
@@ -230,7 +230,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '9,11,27,30|12|🇬 |@ripaojiedian #1'
+  name: '9,11,27,30|11|🇬 |@ripaojiedian #1'
   password: amazonskr05
   port: 443
   server: 47.128.154.164
@@ -239,7 +239,7 @@ proxies:
   udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: '9,11,27,30|12|🇬 新加坡|@ripaojiedian #1'
+  name: '9,11,27,30|11|🇬 新加坡|@ripaojiedian #1'
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -252,7 +252,7 @@ proxies:
   udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: '9,11,27,30|12|🇸🇬 新加坡2|@ripaojiedian #1'
+  name: '9,11,27,30|11|🇸🇬 新加坡2|@ripaojiedian #1'
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -314,27 +314,19 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: '27,30|2|🇸🇬1 |  5.6MB/s #1'
-  password: amazonskr05
-  port: 443
-  server: 54.169.134.156
-  type: ss
-- cipher: aes-256-cfb
-  name: '27,30|2|🇸🇬2 |  7.2MB/s #1'
-  password: amazonskr05
-  port: 443
-  server: 54.254.93.88
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.233.1...
-  network: tcp
-  port: 36712
-  server: 62.146.233.112
+  name: 36|🔒 VM-WS-NA 🇸🇬 SG-140.245.55.18...
+  network: ws
+  port: '23452'
+  server: 140.245.55.189
   tls: false
   type: vmess
-  uuid: 9266df42-0830-48c2-8509-4c57b30fe29d
+  uuid: a8c12d0d-76f9-4b78-a030-3776944a01e8
+  ws-opts:
+    headers:
+      Host: westsg2-ddns.oraclenat.cc
+    path: /
 - alterId: 0
   cipher: auto
   name: 36,37|未知84 53.8KB/s
@@ -346,6 +338,15 @@ proxies:
   tls: true
   type: vmess
   uuid: 16509262-dbe2-43ba-99ce-07913d2a18b4
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.233.1...
+  network: tcp
+  port: 36712
+  server: 62.146.233.112
+  tls: false
+  type: vmess
+  uuid: 9266df42-0830-48c2-8509-4c57b30fe29d
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇸🇬 SG-154.26.129.2...
@@ -377,18 +378,14 @@ proxies:
   uuid: 24eda0ea-acf0-4538-a001-f746a480237a
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇸🇬 SG-46.137.231.22...
-  network: ws
-  port: 40000
-  server: 46.137.231.221
+  name: '36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.232.1... #1'
+  network: tcp
+  port: '53144'
+  server: 62.146.232.153
   servername: ''
   tls: false
   type: vmess
-  uuid: 13364789-a8b2-4bcd-8df7-a794fb6f87e5
-  ws-opts:
-    headers:
-      Host: down.dingtalk.com
-    path: /bby
+  uuid: 13e13a3e-e981-4eea-a9fc-13e50628fd9b
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232...
@@ -400,24 +397,15 @@ proxies:
   uuid: ed54e388-bfc5-4b36-ae4d-8b3cd460d3d4
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.232.1... #1'
-  network: tcp
-  port: '53144'
-  server: 62.146.232.153
+  name: 36|🔒 VM-WS-NA 🇸🇬 SG-13.212.143.48...
+  network: ws
+  port: 40000
+  server: 13.212.143.48
   servername: ''
   tls: false
   type: vmess
-  uuid: 13e13a3e-e981-4eea-a9fc-13e50628fd9b
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇸🇬 SG-140.245.37.15...
-  network: ws
-  port: '23452'
-  server: 140.245.37.156
-  tls: false
-  type: vmess
-  uuid: 64dd856e-e659-40fd-af53-cdfaddcc7622
+  uuid: 13364789-a8b2-4bcd-8df7-a794fb6f87e5
   ws-opts:
     headers:
-      Host: westsg2-ddns.oraclenat.cc
-    path: /
+      Host: down.dingtalk.com
+    path: /bby
