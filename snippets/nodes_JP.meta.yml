@@ -15,15 +15,15 @@ proxies:
   sni: 421421.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|  01 | 1x JP #1'
-  password: a159cf0c-7e2e-4b55-8fe2-5023e9fed870
+  name: 5,9,24,27|14|🇵 日本 01 | 1x JP
+  password: f484cf1b-dc9b-4436-be97-578bc4399461
   port: 36111
   server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: '5,24|🇯🇵 13|日本4|@ripaojiedian #1'
+  name: '5,24|🇯🇵 13|日本4|@ripaojiedian #2'
   network: tcp
   port: '48019'
   server: 45.159.51.116
@@ -32,8 +32,8 @@ proxies:
   type: vmess
   uuid: c06797d5-fa41-4b48-b132-d268d2acb302
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|🇵 日本 03 | 1x JP #1'
-  password: a159cf0c-7e2e-4b55-8fe2-5023e9fed870
+  name: 5,9,24,27|14|🇵 日本 03 | 1x JP
+  password: f484cf1b-dc9b-4436-be97-578bc4399461
   port: 36115
   server: free.2weradf.xyz
   type: ss
@@ -84,15 +84,15 @@ proxies:
       Host: ''
     path: ''
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|🇵 日本 02 | 1x JP #1'
-  password: a159cf0c-7e2e-4b55-8fe2-5023e9fed870
+  name: 5,9,24,27|14|🇯🇵 日本 02 | 1x JP
+  password: f484cf1b-dc9b-4436-be97-578bc4399461
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|2|🇵日本 01 | 1x JP #1'
-  password: 0e6a15d1-d98e-463d-aa34-9b784d94d548
+  name: 5,9,24,27|0| 01 | 1x JP
+  password: b42c6346-5062-4e22-9480-c00cbd74f10a
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
@@ -142,12 +142,12 @@ proxies:
     headers:
       Host: ''
     path: ''
-- name: '5,27,30|1|2- |  5.9MB/s #1'
+- name: 5|日本08
   network: tcp
-  password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+  password: d0d98f45-15ec-4a5a-9ccd-d4089e2204d9
   port: 20230
   server: jp008.421421.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: 421421.xyz
   type: trojan
 - client-fingerprint: chrome
@@ -170,8 +170,8 @@ proxies:
       Host: ''
     path: ''
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|2|🇵日本 03 | 1x JP #1'
-  password: 0e6a15d1-d98e-463d-aa34-9b784d94d548
+  name: 5,9,24,27|0|🇵日本 03 | 1x JP
+  password: b42c6346-5062-4e22-9480-c00cbd74f10a
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
@@ -200,8 +200,8 @@ proxies:
   sni: 421421.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|2|🇯🇵日本 02 | 1x JP #1'
-  password: 0e6a15d1-d98e-463d-aa34-9b784d94d548
+  name: 5,9,24,27|0|🇵日本 02 | 1x JP
+  password: b42c6346-5062-4e22-9480-c00cbd74f10a
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
@@ -245,39 +245,70 @@ proxies:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
 - cipher: rc4-md5
-  name: 9|🇯🇵 11|🇯🇵 日本|@ripaojiedian
+  name: 9|🇯🇵 12|🇯🇵 日本|@ripaojiedian
   password: efanccyun
   port: 8764
   server: cn01.efan8867801.xyz
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 9|🇯🇵 11|🇯🇵 日本2|@ripaojiedian
+  name: 9|🇯🇵 12|🇯🇵 日本2|@ripaojiedian
   password: efanccyun
   port: 8761
   server: cn01.efan8867801.xyz
   type: ss
   udp: true
-- cipher: rc4-md5
-  name: 9|🇯🇵 日本2|@ripaojiedian
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202503131222137-I1Qlb2V1Rh.download.microsoft.com
-    mode: http
-  port: 8761
-  server: cn01.efan8867801.xyz
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 9,11,27|11|🇵 日本4|@ripaojiedian
+  password: 1S109X5IY8M2ZD3N
+  port: 18007
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 9,11,27|11|🇯🇵 日本5|@ripaojiedian
+  password: 1KGUQG74ONAKMGN8
+  port: 18004
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 9,11,27|11|🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 18.143.164.214
+  tfo: false
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 9|🇯🇵 日本|@ripaojiedian
+  client-fingerprint: chrome
+  name: 9,11,27|11|🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202503131222137-I1Qlb2V1Rh.download.microsoft.com
+    host: 202503140983506-gBQ0aA7o7i.download.microsoft.com
     mode: http
   port: 8764
   server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 9,11,27|11|🇵 日本2|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202503140983506-gBQ0aA7o7i.download.microsoft.com
+    mode: http
+  port: 8761
+  server: cn01.efan8867801.xyz
+  tfo: false
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -345,54 +376,6 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: '11,27,30|12|🇵 日本|@ripaojiedian #1'
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202503140983506-gBQ0aA7o7i.download.microsoft.com
-    mode: http
-  port: 8764
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: '11,27,30|12|🇯🇵 日本2|@ripaojiedian #1'
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202503140983506-gBQ0aA7o7i.download.microsoft.com
-    mode: http
-  port: 8761
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: '11,27,30|12|🇵 日本4|@ripaojiedian #1'
-  password: 1S109X5IY8M2ZD3N
-  port: 18007
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: '11,27,30|12|🇵 日本5|@ripaojiedian #1'
-  password: 1KGUQG74ONAKMGN8
-  port: 18004
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '11,27,30|12|🇵 日本特殊|@ripaojiedian #1'
-  password: amazonskr05
-  port: 443
-  server: 18.143.164.214
-  tfo: false
-  type: ss
 - name: 12|🇯🇵_JP_日本
   network: ws
   port: 80
@@ -555,30 +538,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
-  network: tcp
-  port: '1069'
-  server: 152.69.197.60
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-52.192.32.3:...
-  network: ws
-  port: 22357
-  server: 52.192.32.3
-  servername: 0000000000000000000000000073.cgroup-node-for-bigairport.sbs
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: 0000000000000000000000000073.cgroup-node-for-bigairport.sbs
-    path: /
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.230.235.2...
   network: tcp
   port: '48889'
@@ -599,3 +558,36 @@ proxies:
     headers:
       Host: 1-osaka-p.aboutanime.eu.org
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-20.78.127.14...
+  network: tcp
+  port: '550'
+  server: 20.78.127.141
+  tls: false
+  type: vmess
+  uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-52.192.32.3:...
+  network: ws
+  port: 22357
+  server: 52.192.32.3
+  servername: 0000000000000000000000000073.cgroup-node-for-bigairport.sbs
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000073.cgroup-node-for-bigairport.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
+  network: tcp
+  port: '1069'
+  server: 152.69.197.60
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
