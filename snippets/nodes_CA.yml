@@ -114,17 +114,20 @@ proxies:
   ws-opts:
     path: /v9f5gzrc#id-@AB_841
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|14|🇦加拿大 01 | 1x CA #1'
-  password: 094f0607-6fd4-42ba-9489-edf9f87784b2
+  name: 5,9,24,27|0|🇦加大 01 | 1x CA
+  password: b1b00e5b-1caf-4a42-a1cd-bf2e548b0069
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|🇦 加大 01 | 1x CA #1'
-  password: a2da603a-1c42-4924-aeff-7240ab62e438
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27,37|CA
+  password: a20702a7-eba0-4da4-abbe-8ce4fa72c806
   port: 36441
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -557,7 +560,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1166
-  name: '10,20,21|🏁RELAY-198.41.209.70-0721 #2'
+  name: '10,20,21|🏁RELAY-104.16.155.10-0721 #1'
   network: ws
   port: 2052
   server: s1.db-link01.top
@@ -572,12 +575,10 @@ proxies:
     path: /dabai.in172.67.2.142
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 10,20,21,30|🇺🇸 美国 CloudFlare节点 4
+  name: 10|加拿大 002
   network: ws
   port: 8880
   server: s4.db-link02.top
-  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -621,10 +622,12 @@ proxies:
 - alterId: 0
   cipher: auto
   ip-version: dual
-  name: 10|加拿大 006
+  name: '10,20,21|🇨🇦CA-51.79.102.253-0750 #1'
   network: ws
   port: 80
   server: 51.79.102.253
+  servername: ''
+  tls: false
   type: vmess
   udp: true
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -650,7 +653,7 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.17.213.241-0757 #2'
+  name: '10,20,21|🏁RELAY-198.41.209.70-0757 #1'
   network: ws
   port: 2082
   server: s4.db-link02.top
@@ -681,12 +684,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 10,20,21,30|🇺🇸 美国 CloudFlare节点 8
+  name: 10|加拿大 010
   network: ws
   port: 2095
   server: s4.db-link02.top
-  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -700,10 +701,12 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2329
-  name: 10|加拿大 012
+  name: '10,20,21|🏁RELAY-104.17.213.241-0860 #1'
   network: ws
   port: 2086
   server: s5.cn-db.top
+  servername: ''
+  tls: false
   type: vmess
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
@@ -712,11 +715,10 @@ proxies:
     path: /dabai.in172.64.19.89
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.17.221.248-0863 #2'
+  name: 10|加拿大 013
   network: ws
   port: 2052
   server: s4.db-link02.top
-  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -791,22 +793,25 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 19,37|未知72 310.8KB/s
+  name: 19,20,21,37|未知133 780.1KB/s
   password: 620c5b5108120a72
   port: 11201
   server: 23.162.56.206
   skip-cert-verify: true
   tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇨🇦CA-142.4.216.225-0425
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知66 18.7MB/s
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
-  server: ca225.vpnbook.com
+  server: 142.4.216.225
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-134.195.198.147-8038 #1'
+  name: '20,21|🇨🇦CA-134.195.198.147-8053 #1'
   network: ws
   port: 443
   server: 134.195.198.147
@@ -820,7 +825,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-23.162.200.227-8036 #1'
+  name: '20,21|🇨🇦CA-23.162.200.227-8052 #1'
   network: ws
   port: 443
   server: 23.162.200.227
@@ -850,6 +855,7 @@ proxies:
   network: tcp
   port: '20182'
   server: 23.162.200.91
+  servername: ''
   tls: false
   type: vmess
   uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19

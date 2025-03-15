@@ -33,15 +33,15 @@ proxies:
       Host: ''
     path: ''
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|14|🇬新加坡 03 | 1x SG #1'
-  password: 094f0607-6fd4-42ba-9489-edf9f87784b2
+  name: 5,9,24,27|0|🇬新加坡 03 | 1x SG
+  password: b1b00e5b-1caf-4a42-a1cd-bf2e548b0069
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|14|🇸🇬新加坡 02 | 1x SG #2'
-  password: 094f0607-6fd4-42ba-9489-edf9f87784b2
+  name: 5,9,24,27|0|🇬新加坡 02 | 1x SG
+  password: b1b00e5b-1caf-4a42-a1cd-bf2e548b0069
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
@@ -112,16 +112,19 @@ proxies:
   skip-cert-verify: true
   sni: x130.flybar.work
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|  01 | 1x SG #1'
-  password: a2da603a-1c42-4924-aeff-7240ab62e438
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27,37|SG
+  password: a20702a7-eba0-4da4-abbe-8ce4fa72c806
   port: 36171
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|14|🇬新加坡 01 | 1x SG #1'
-  password: 094f0607-6fd4-42ba-9489-edf9f87784b2
+  name: 5,9,24,27|0| 01 | 1x SG
+  password: b1b00e5b-1caf-4a42-a1cd-bf2e548b0069
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
@@ -140,8 +143,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|🇬 新加坡 02 | 1x SG #1'
-  password: a2da603a-1c42-4924-aeff-7240ab62e438
+  name: 5,9,24,27|14|🇸🇬 新加坡 02 | 1x SG
+  password: c4351017-7954-4115-80d7-7c6a7fff2b39
   port: 36173
   server: free.2weradf.xyz
   type: ss
@@ -218,14 +221,11 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30,37|SG
-  password: 6dcd37b6-4019-4738-a9cd-e2ab63c532c7
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27|14|🇬 新加坡 03 | 1x SG
+  password: c4351017-7954-4115-80d7-7c6a7fff2b39
   port: 36175
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - name: 5|新加坡07|流媒体
@@ -308,50 +308,71 @@ proxies:
       Host: sg1.pkyun.website
     path: /sg1
 - cipher: rc4-md5
-  name: 9|🇸🇬 11|🇸🇬 新加坡|@ripaojiedian
+  name: 9|🇸🇬 12|🇸🇬 新加坡|@ripaojiedian
   password: efanccyun
   port: 8722
   server: cn01.efan8867801.xyz
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 9|🇸🇬 11|🇸🇬 新加坡2|@ripaojiedian
+  name: 9|🇸🇬 12|🇸🇬 新加坡2|@ripaojiedian
   password: efanccyun
   port: 8724
   server: cn01.efan8867801.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 9,11,27|1,11|🇬 新加坡3|@ripaojiedian
+  password: ZI7MN86GBSHSFW50
+  port: 16014
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 9,11,27,37|🇸SG2
+  password: WG8GVCDPUARVY5TU
+  port: 16010
+  server: w72tapyb.slashdevslashnetslashtun.net
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: ss
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '9,11,27,30|11|🇬 |@ripaojiedian #1'
+  name: 9,11,27|11|🇸🇬 |@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 47.128.154.164
+  server: 43.201.85.71
   tfo: false
   type: ss
   udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: '9,11,27,30|11|🇬 新加坡|@ripaojiedian #1'
+  name: 9,11,27|1,11|🇬 新加坡2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202503131222137-I1Qlb2V1Rh.download.microsoft.com
+    host: 202503140983506-gBQ0aA7o7i.download.microsoft.com
     mode: http
-  port: 8722
+  port: 8724
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
   udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: '9,11,27,30|11|🇸🇬 新加坡2|@ripaojiedian #1'
+  name: 9,11,27|11|🇬 新加坡|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202503131222137-I1Qlb2V1Rh.download.microsoft.com
+    host: 202503140983506-gBQ0aA7o7i.download.microsoft.com
     mode: http
-  port: 8724
+  port: 8722
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
@@ -437,15 +458,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36,37|未知84 53.8KB/s
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.232.1...
   network: tcp
-  port: 27575
-  server: 194.233.72.228
+  port: '33281'
+  server: 62.146.232.156
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: 16509262-dbe2-43ba-99ce-07913d2a18b4
+  uuid: 24eda0ea-acf0-4538-a001-f746a480237a
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.233.1...
@@ -457,33 +477,14 @@ proxies:
   uuid: 9266df42-0830-48c2-8509-4c57b30fe29d
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-154.26.129.2...
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-194.233.72.2...
   network: tcp
-  port: '57143'
-  server: 154.26.129.247
+  port: '27575'
+  server: 194.233.72.228
   servername: ''
   tls: false
   type: vmess
-  uuid: 28efbf36-079a-4c98-8470-d13458db6ee6
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-154.26.137...
-  network: tcp
-  port: 44104
-  server: 154.26.137.42
-  tls: false
-  type: vmess
-  uuid: e9933a4c-e56e-458c-bcf4-9cb3875bba55
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.232.1...
-  network: tcp
-  port: '33281'
-  server: 62.146.232.156
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 24eda0ea-acf0-4538-a001-f746a480237a
+  uuid: 16509262-dbe2-43ba-99ce-07913d2a18b4
 - alterId: 0
   cipher: auto
   name: '36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.232.1... #1'
@@ -494,6 +495,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 13e13a3e-e981-4eea-a9fc-13e50628fd9b
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知76 1.2MB/s
+  network: tcp
+  port: 57143
+  server: 154.26.129.247
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 28efbf36-079a-4c98-8470-d13458db6ee6
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232...
@@ -517,3 +529,12 @@ proxies:
     headers:
       Host: down.dingtalk.com
     path: /bby
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-154.26.137...
+  network: tcp
+  port: 44104
+  server: 154.26.137.42
+  tls: false
+  type: vmess
+  uuid: e9933a4c-e56e-458c-bcf4-9cb3875bba55
