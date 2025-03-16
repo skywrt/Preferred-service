@@ -125,6 +125,13 @@ proxies:
   port: 6379
   server: 149.202.82.172
   type: ss
+- cipher: aes-128-gcm
+  name: 9|1|🇫🇷2 |  11.3MB/s
+  password: ec588545-292e-4a11-ada2-d62e599af928
+  port: 24564
+  server: sg.76681f9610f175c6.com
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 10,18|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_52
@@ -190,10 +197,11 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: 10|法国 005
+  name: '10,20,21|🏁RELAY-141.11.203.194-0905 #1'
   network: ws
   port: 8443
   server: 141.11.203.194
+  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: true
@@ -222,14 +230,22 @@ proxies:
       Host: a.baradiha.com
     path: /linkvws
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,30,37|未知86 20.2MB/s
-  password: 99eedf8e9170c8a4
-  port: 48977
-  server: 57.128.190.214
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 11,27|2|🇫🇷3 |  3.3MB/s
+  network: ws
+  port: 2052
+  server: 185.174.138.199
+  servername: yellow-paper-029c.yvonna.workers.dev
   skip-cert-verify: true
-  tls: true
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      HOST: yellow-paper-029c.yvonna.workers.dev
+    path: /az05.beyondy.cfd/link?/TM
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -306,17 +322,17 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-193.160.130.102-6155 #1'
+  name: '20,21|🇫🇷FR-146.19.168.112-8393 #1'
   network: ws
   port: 443
-  server: afrhms16v.bestxray.buzz
-  servername: afrhms16v.bestxray.buzz
+  server: hms19.best-tizi.top
+  servername: hms19.best-tizi.top
   tls: true
   type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
   ws-opts:
     headers:
-      Host: afrhms16v.bestxray.buzz
+      Host: hms19.best-tizi.top
     path: /linkws
 - alterId: 0
   cipher: auto
@@ -334,17 +350,17 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-146.19.168.112-8393 #1'
+  name: '20,21|🇫🇷FR-193.160.130.102-6155 #1'
   network: ws
   port: 443
-  server: hms19.best-tizi.top
-  servername: hms19.best-tizi.top
+  server: afrhms16v.bestxray.buzz
+  servername: afrhms16v.bestxray.buzz
   tls: true
   type: vmess
-  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
   ws-opts:
     headers:
-      Host: hms19.best-tizi.top
+      Host: afrhms16v.bestxray.buzz
     path: /linkws
 - alterId: 0
   cipher: auto
@@ -360,34 +376,6 @@ proxies:
     headers:
       Host: irvideo.cfd
     path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇫🇷FR-146.19.168.161-8254 #1'
-  network: ws
-  port: 443
-  server: 146.19.168.161
-  servername: az05.beyondy.cfd
-  tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: az05.beyondy.cfd
-    path: /link
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇫🇷FR-146.19.168.161-5791 #1'
-  network: ws
-  port: 443
-  server: az05.beyondy.cfd
-  servername: az05.beyondy.cfd
-  tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: az05.beyondy.cfd
-    path: /link
 - alterId: 0
   cipher: auto
   name: 24|VMESS-未知>法国-NF解锁法国地区非自制剧-ChatG...
@@ -416,6 +404,16 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-51.77.20.131...
+  network: tcp
+  port: '22324'
+  server: 51.77.20.131
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇫🇷 FR-38.109.228.1...

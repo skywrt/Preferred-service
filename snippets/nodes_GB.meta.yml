@@ -12,8 +12,8 @@ proxies:
   udp: false
   uuid: bd49346f-1d80-4726-b982-af101ca889c4
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30|0|🇧 英国住宅IP 01 | 1x UK
-  password: 1960f1cd-959d-49d4-928c-acd38bdab11a
+  name: 5,9,24,27|0| 国住宅IP 01 | 1x UK
+  password: 5c948d62-94b3-4c1b-ab7d-c2d787d80cc5
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -111,13 +111,6 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|2|🇧英国家宽 01 | 1x UK #1'
-  password: bf9abf53-0b80-4bc7-aa24-3efa43e49c83
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - name: '5,38|🇬🇧_GB_英国_26 #1'
   network: ws
   port: 443
@@ -256,18 +249,35 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 10,28|德国法兰克福-1C
+  name: 10|英国 004
   network: ws
   port: 23451
   server: frankfurt.faforex.eu.org
   tls: false
   type: vmess
   udp: true
-  uuid: fea5a1ed-027c-49d5-9cac-bc7f310b2d1e
+  uuid: 36fb7fe7-b1e7-4f65-a2d5-ce944d44f582
   ws-opts:
     headers:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 11|11|2|🇬🇧2 |  1.4MB/s
+  network: tcp
+  port: 41699
+  server: 183.236.51.38
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 11,19,20,21,27|12|🇧 英国|@ripaojiedian
+  password: 99eedf8e9170c8a4
+  port: 48977
+  server: 57.128.190.214
+  tfo: false
+  type: ss
 - name: 12|🇬🇧_GB_英国
   network: ws
   port: 80
@@ -301,11 +311,14 @@ proxies:
     headers:
       Host: lo.kpcloud.eu.org
     path: '%2Fblue'
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇬🇧GB-94.72.97.160-5821
-  password: 3b06f96b73d2584c
-  port: 11102
-  server: 94.72.97.160
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知20 20.3MB/s
+  password: 4f20786f016f5a7c
+  port: 15273
+  server: 198.244.149.246
+  skip-cert-verify: true
+  tls: true
   type: ss
 - name: 24|🇬🇧 英国 伦敦Amazon数据中心
   password: telegram-id-privatevpns
@@ -321,22 +334,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 30|_GB_国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.23.63
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
-  network: tcp
-  port: '55577'
-  server: 172.99.190.207
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
@@ -349,16 +346,6 @@ proxies:
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
-  network: tcp
-  port: '26924'
-  server: 68.168.31.184
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
   network: tcp
   port: '47567'
@@ -369,11 +356,32 @@ proxies:
   uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-149.7.16.149...
+  name: 36,37|未知47 11.9MB/s
   network: tcp
-  port: '37101'
+  port: 37101
   server: 149.7.16.149
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
+  network: tcp
+  port: '26924'
+  server: 68.168.31.184
   servername: ''
   tls: false
   type: vmess
-  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
+  network: tcp
+  port: '55577'
+  server: 172.99.190.207
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
