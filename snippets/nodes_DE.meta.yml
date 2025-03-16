@@ -174,6 +174,13 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27,30|0|🇪德国 01 | 1x DE
+  password: ca3cf30e-ff18-40d6-b0fd-9bbd337cc207
+  port: 31471
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5,36|🔒 VM-TCP-NA 🇩🇪 DE-138.199.158....
@@ -185,8 +192,8 @@ proxies:
   type: vmess
   uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0| 国 01 | 1x DE
-  password: 5c948d62-94b3-4c1b-ab7d-c2d787d80cc5
+  name: '5,9,24,27,30|1|🇪 德国 01 | 1x DE #1'
+  password: 1cb63334-18b6-4765-a4cd-a8d3887ac2dc
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -238,13 +245,33 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- cipher: aes-128-gcm
-  name: 9|1|🇩🇪1 |  2.6MB/s
-  password: ec588545-292e-4a11-ada2-d62e599af928
-  port: 24531
-  server: wy.76681f9610f175c6.com
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  country: 🇺🇸US
+  delay: 1316
+  name: 9,27,30,37|未知60 5.6MB/s
+  password: 7cbfe78195fbf19c
+  port: 11738
+  server: 100.42.182.73
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
+- alterId: 2
+  cipher: auto
+  name: '9,11,27,30|2|🇪2 |  1.7MB/s #1'
+  network: ws
+  port: 23616
+  server: 16.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1b9719ae-8c39-36c5-af06-9ef62248530d
+  ws-opts:
+    headers:
+      Host: 16.mamamajd.site
+    path: /
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: 2086vless
@@ -322,16 +349,16 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 16|🇪_DE_国
+  name: 16,19|🇱🇹LT-45.87.175.188-0349
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.188
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇩🇪DE-45.10.154.245-0468
-  password: 11955ffa5b58cae3
-  port: 26268
-  server: 45.10.154.245
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-5589
+  password: a3GFYt36Sm82Vys9
+  port: 9000
+  server: 80.92.204.106
   type: ss
 - alterId: 0
   cipher: auto
@@ -361,6 +388,12 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
+- cipher: rc4-md5
+  name: 20,21,30|🇩_DE_国
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - alterId: 0
   cipher: auto
   name: '24|2|🇩🇪1 |  4.9MB/s #1'
@@ -374,6 +407,37 @@ proxies:
     headers:
       Host: ''
     path: /XESALISTHEBEST?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
+  network: tcp
+  port: '15713'
+  server: 193.108.118.136
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知114 71.1KB/s
+  network: tcp
+  port: 48961
+  server: 23.158.56.21
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
@@ -396,27 +460,6 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
-- alterId: 0
-  cipher: auto
-  name: 36,37|未知114 71.1KB/s
-  network: tcp
-  port: 48961
-  server: 23.158.56.21
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
-  network: tcp
-  port: '15713'
-  server: 193.108.118.136
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
@@ -431,17 +474,3 @@ proxies:
     headers:
       Host: www.80347320.xyz
     path: /path/240811062813
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.25.22...
-  network: ws
-  port: 443
-  server: 57.129.25.22
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: o.metuji.com
-    path: /linkvws

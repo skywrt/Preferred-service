@@ -1,7 +1,7 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0| 国住宅IP 01 | 1x UK
-  password: 5c948d62-94b3-4c1b-ab7d-c2d787d80cc5
+  name: '5,9,24,27,30|1|🇧 英国住宅IP 01 | 1x UK #1'
+  password: 1cb63334-18b6-4765-a4cd-a8d3887ac2dc
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -51,6 +51,13 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27,30|0|🇧英国家宽 01 | 1x UK
+  password: ca3cf30e-ff18-40d6-b0fd-9bbd337cc207
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - name: 5|英国UK-T
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
@@ -120,6 +127,15 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 9,11,20,21,27,30|🇷 国 国(SITA)
+  password: 99eedf8e9170c8a4
+  port: 48977
+  server: 57.128.190.214
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 10|英国 003
@@ -151,23 +167,6 @@ proxies:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
 - alterId: 0
-  cipher: auto
-  name: 11|11|2|🇬🇧2 |  1.4MB/s
-  network: tcp
-  port: 41699
-  server: 183.236.51.38
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 11,19,20,21,27|12|🇧 英国|@ripaojiedian
-  password: 99eedf8e9170c8a4
-  port: 48977
-  server: 57.128.190.214
-  tfo: false
-  type: ss
-- alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 19,20,21,37|未知20 20.3MB/s
   password: 4f20786f016f5a7c
@@ -190,26 +189,19 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
-  network: tcp
-  port: '46617'
-  server: 46.250.253.232
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
-  network: tcp
-  port: '47567'
-  server: 38.114.120.12
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
+- cipher: aes-256-cfb
+  name: 30|_GB_国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
+  type: ss
+- client-fingerprint: chrome
+  name: 30|🇧 英国 Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.9.7.252
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 36,37|未知47 11.9MB/s
@@ -223,14 +215,14 @@ proxies:
   uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
   network: tcp
-  port: '26924'
-  server: 68.168.31.184
+  port: '47567'
+  server: 38.114.120.12
   servername: ''
   tls: false
   type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
+  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
@@ -241,3 +233,23 @@ proxies:
   tls: false
   type: vmess
   uuid: e922d485-98a7-475a-9a47-cde3722ac82e
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  network: tcp
+  port: '46617'
+  server: 46.250.253.232
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
+  network: tcp
+  port: '26924'
+  server: 68.168.31.184
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
