@@ -24,7 +24,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: '5,9,24,27,30|0|🇺 01 | 1x RU #1'
-  password: ca3cf30e-ff18-40d6-b0fd-9bbd337cc207
+  password: 7a973c52-ce58-426d-9505-21fe0f5d0c22
   port: 31511
   server: free.2apzhfa.xyz
   type: ss
@@ -50,7 +50,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: '5,9,24,27,30|1|🇺 俄罗斯 01 | 1x RU #1'
-  password: 1cb63334-18b6-4765-a4cd-a8d3887ac2dc
+  password: 94bef836-5610-4536-844a-a35fcac9fb5f
   port: 36511
   server: free.2weradf.xyz
   type: ss
@@ -119,7 +119,7 @@ proxies:
   udp: false
 - alterId: 0
   cipher: auto
-  name: '9,11,27,30|2|🇺1 |  3.0MB/s #1'
+  name: '9,11,27,30|2|🇺1 |  1.6MB/s #1'
   network: ws
   port: 23015
   server: 185.22.152.236
@@ -223,6 +223,18 @@ proxies:
   tls: true
   type: vless
   uuid: db9b2317-e0a5-4fc6-94d1-94679aaed414
+- alterId: 0
+  cipher: auto
+  name: '11,27,30|2|🇷🇺2 |  2.1MB/s #1'
+  network: ws
+  port: 22008
+  server: 46.17.43.122
+  tls: false
+  type: vmess
+  uuid: cfd7baa6-c313-4582-8efc-57e4f3e88ee8
+  ws-opts:
+    headers: {}
+    path: /
 - name: 17|俄罗斯(yudou66.com 玉豆免费节点)
   network: ws
   port: 443
@@ -283,6 +295,15 @@ proxies:
     headers:
       Host: ap.ylks.xyz
     path: '%2Fblue'
+- alpn:
+  - h3%2Ch2%2Chttp%2F1.1
+  client-fingerprint: random
+  name: 30|🇬 俄罗斯西利亚 justhost.ru
+  password: '%40NoForcedHeaven%40NoForcedHeaven%40NoForcedHeaven%40NoForcedHeaven%40NoForcedHeaven'
+  port: 8443
+  server: 195.133.52.153
+  sni: ru2.asc-sam.io
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...

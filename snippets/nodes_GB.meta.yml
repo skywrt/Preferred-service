@@ -13,7 +13,7 @@ proxies:
   uuid: bd49346f-1d80-4726-b982-af101ca889c4
 - cipher: chacha20-ietf-poly1305
   name: '5,9,24,27,30|1|🇧 英国住宅IP 01 | 1x UK #1'
-  password: 1cb63334-18b6-4765-a4cd-a8d3887ac2dc
+  password: 94bef836-5610-4536-844a-a35fcac9fb5f
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -113,7 +113,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27,30|0|🇧英国家宽 01 | 1x UK
-  password: ca3cf30e-ff18-40d6-b0fd-9bbd337cc207
+  password: 7a973c52-ce58-426d-9505-21fe0f5d0c22
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -213,7 +213,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 9,11,20,21,27,30|🇷 国 国(SITA)
+  name: '9,11,20,21,27,30|12|🇧 英国|@ripaojiedian #1'
   password: 99eedf8e9170c8a4
   port: 48977
   server: 57.128.190.214
@@ -277,6 +277,36 @@ proxies:
     headers:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
+- alterId: 2
+  cipher: auto
+  name: '11,27,30|2|🇧1 |  1.4MB/s #1'
+  network: ws
+  port: 23613
+  server: 13.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8239585e-7b18-3bc0-8281-3d215bce941d
+  ws-opts:
+    headers:
+      Host: 13.mamamajd.site
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '11,27,30|2|🇬🇧2 |  1.3MB/s #1'
+  network: ws
+  port: 23605
+  server: 5.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8239585e-7b18-3bc0-8281-3d215bce941d
+  ws-opts:
+    headers:
+      Host: 5.mamamajd.site
+    path: /
 - name: 12|🇬🇧_GB_英国
   network: ws
   port: 80
@@ -339,13 +369,34 @@ proxies:
   port: 989
   server: 51.15.23.63
   type: ss
-- client-fingerprint: chrome
-  name: 30|🇧 英国 Amazon数据中心
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 30|🇧 英国 Amazon
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.10.6.143
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 30|🇧 英国 伦敦Amazon数据中心 2
   password: telegram-id-privatevpns
   port: 22222
   server: 3.9.7.252
   sni: trojan.burgerip.co.uk
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  network: tcp
+  port: '46617'
+  server: 46.250.253.232
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - alterId: 0
   cipher: auto
   name: 36,37|未知47 11.9MB/s
@@ -357,6 +408,16 @@ proxies:
   tls: true
   type: vmess
   uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
+  network: tcp
+  port: '26924'
+  server: 68.168.31.184
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
@@ -377,23 +438,3 @@ proxies:
   tls: false
   type: vmess
   uuid: e922d485-98a7-475a-9a47-cde3722ac82e
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
-  network: tcp
-  port: '46617'
-  server: 46.250.253.232
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
-  network: tcp
-  port: '26924'
-  server: 68.168.31.184
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
