@@ -1,7 +1,7 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30|2|🇧 英国住宅IP 01 | 1x UK
-  password: 9f2d6fd0-db37-48e5-a40e-b2cbab84c61c
+  name: 5,9,24,27,30|0|🇧 英国住宅IP 01 | 1x UK
+  password: ef2103e1-a296-4123-8122-7c57e0cb0a42
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -128,16 +128,13 @@ proxies:
   sni: young.golfland.club
   type: trojan
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 9,11,12,16,20,21,27,30,37|GB 2.7MB/s
+  name: '9,11,16,20,21,27,30|12|🇧 英国|@ripaojiedian #1'
   password: 99eedf8e9170c8a4
   port: 48977
   server: 57.128.190.214
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -171,11 +168,23 @@ proxies:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
 - alterId: 0
+  cipher: auto
+  name: 12,30|🇧_GB_英国
+  network: ws
+  port: 20016
+  server: 5.39.252.72
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5240bc9d-5706-48a5-8754-0147b887ec12
+  ws-opts:
+    path: /
+- alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知65 10.2MB/s
+  name: 19,20,21,37|未知20 14.4MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.197
+  server: 212.102.53.195
   skip-cert-verify: true
   tls: true
   type: ss
@@ -191,13 +200,15 @@ proxies:
   port: 443
   server: 141.98.101.178
   type: ss
-- name: '20,21|🇬🇧GB-18.135.32.201-5761 #1'
+- client-fingerprint: chrome
+  name: 20,21,30|🇺🇸 美国
   password: telegram-id-privatevpns
   port: 22222
   server: 18.135.32.201
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '20,21|🇬🇧GB-18.175.72.223-5760 #1'
+- client-fingerprint: chrome
+  name: 20,21,30|🇺🇸 美国 Amazon中
   password: telegram-id-privatevpns
   port: 22222
   server: 18.175.72.223
@@ -217,17 +228,36 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 30|🇧_GB_英国
-  network: ws
-  port: 20016
-  server: 5.39.252.72
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  delay: 760
+  name: 27,30|2|🇧1 |  2.7MB/s
+  password: WKQOJA6MCJLFJPPC
+  port: 19002
+  server: 206.245.211.12
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  delay: 874
+  name: '27,30|2|🇬🇧2 |  1.5MB/s #1'
+  password: CEHN6OCZVPMGBK56
+  port: 19007
+  server: 206.245.211.17
+  type: ss
+- alpn:
+  - http/1.1
+  alterId: 0
+  client-fingerprint: chrome
+  name: 30,37|未知48 14.9MB/s
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.20.24.202
   skip-cert-verify: true
-  type: vmess
-  uuid: 5240bc9d-5706-48a5-8754-0147b887ec12
-  ws-opts:
-    path: /
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-149.7.16.149...
@@ -240,16 +270,6 @@ proxies:
   uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
-  network: tcp
-  port: '26924'
-  server: 68.168.31.184
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
   network: tcp
   port: '47567'
@@ -260,14 +280,14 @@ proxies:
   uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
   network: tcp
-  port: '46617'
-  server: 46.250.253.232
+  port: '26924'
+  server: 68.168.31.184
   servername: ''
   tls: false
   type: vmess
-  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
@@ -278,3 +298,14 @@ proxies:
   tls: false
   type: vmess
   uuid: e922d485-98a7-475a-9a47-cde3722ac82e
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知65 535.8KB/s
+  network: tcp
+  port: 46617
+  server: 46.250.253.232
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
