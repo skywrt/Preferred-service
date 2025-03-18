@@ -7,15 +7,8 @@ proxies:
   sni: hinet.mjt000.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇼台湾 03 | 1x TW #1'
-  password: 59027208-1d66-4604-bcce-eb7308439506
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30|0|🇼  01 | 1x TW
-  password: 2dde428b-8c36-4ca0-86ec-a9f735808999
+  name: 5,9,24,27|0|  01 | 1x TW
+  password: d5d8a326-b56c-416d-b91f-1f1c5b155663
   port: 36241
   server: free.2weradf.xyz
   type: ss
@@ -33,16 +26,19 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇼台湾 01 | 1x TW #1'
-  password: 59027208-1d66-4604-bcce-eb7308439506
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,24,37|🇹TW
+  password: be5be78f-bcc2-4802-bed1-0f4417fb0426
   port: 31241
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|🇼 台湾 03 | 1x TW #1'
-  password: 2dde428b-8c36-4ca0-86ec-a9f735808999
+  name: 5,9,24,27|0|🇼 台湾 03 | 1x TW
+  password: d5d8a326-b56c-416d-b91f-1f1c5b155663
   port: 36245
   server: free.2weradf.xyz
   type: ss
@@ -61,17 +57,10 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|🇼 台湾 02 | 1x TW #1'
-  password: 2dde428b-8c36-4ca0-86ec-a9f735808999
+  name: 5,9,24,27|0|🇼 台湾 02 | 1x TW
+  password: d5d8a326-b56c-416d-b91f-1f1c5b155663
   port: 36243
   server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇹🇼台湾 02 | 1x TW #1'
-  password: 59027208-1d66-4604-bcce-eb7308439506
-  port: 31243
-  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -89,13 +78,24 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|台湾1-1A
-  port: 45078
-  server: haa.dashuai.cyou
+  name: 11,27|13|台湾2|@ripaojiedian
+  network: tcp
+  port: '11112'
+  server: bgp1.bgp1.miaomiaowu114514.org
+  servername: ''
   tls: false
   type: vmess
-  udp: true
-  uuid: 0e84d7b3-aeb0-47fa-8205-f6fb9274ac2b
+  uuid: 035374e8-60ff-34b3-9e7a-cca4cce31013
+- alterId: 0
+  cipher: auto
+  name: 27|12|🇼 台湾2|@ripaojiedian
+  port: 11112
+  server: bgp1.bgp1.miaomiaowu114514.org
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 035374e8-60ff-34b3-9e7a-cca4cce31013
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTP-TLS 🇹🇼 TW-118.167.3....

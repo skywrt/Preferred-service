@@ -1,12 +1,9 @@
 proxies:
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30,37|GB
-  password: 09db0c0c-e47f-4f30-b16a-1d47500249bc
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27|0| 国住宅IP 01 | 1x UK
+  password: d5d8a326-b56c-416d-b91f-1f1c5b155663
   port: 36271
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -54,13 +51,6 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇧英国家宽 01 | 1x UK #1'
-  password: 59027208-1d66-4604-bcce-eb7308439506
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - name: 5|英国UK-T
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
@@ -130,8 +120,7 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
-- client-fingerprint: chrome
-  name: 9,30|🇺🇸 美国 Amazon数据中心 3
+- name: 9|1|🇬🇧1 |  3.1MB/s
   password: Fl4B9jyFAwE4XgFxuICw8pD0NCYIneA22OyYO30enl8Kxe3a3xcpDEyqa79CTNSpRA5D8
   port: 443
   server: young.golfland.club
@@ -139,13 +128,16 @@ proxies:
   sni: young.golfland.club
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '9,11,12,27,30|12|🇧 英国|@ripaojiedian #1'
+  name: 9,11,12,16,20,21,27,37|GB 2.7MB/s
   password: 99eedf8e9170c8a4
   port: 48977
   server: 57.128.190.214
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -166,39 +158,45 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 10,20,21,28|德国法兰克福-1S
+  name: 10,28|德国
   network: ws
   port: 23451
   server: frankfurt.faforex.eu.org
-  servername: ''
   tls: false
   type: vmess
   udp: true
-  uuid: 8a1099c7-4e66-43ca-b9d5-752ff8bb0157
+  uuid: a9003640-13c9-4d3d-8e14-c6c6250eef29
   ws-opts:
     headers:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,24,37|未知75 16.0MB/s
+  name: 19,20,21,37|未知65 10.2MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.196
+  server: 212.102.53.197
   skip-cert-verify: true
   tls: true
   type: ss
-- alterId: 0
-  name: 20,21,37|未知51
-  network: tcp
+- cipher: aes-128-gcm
+  name: 19|🇬🇧GB-141.98.101.178-0485
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- name: '20,21|🇬🇧GB-18.135.32.201-5761 #1'
   password: telegram-id-privatevpns
   port: 22222
-  server: 13.42.211.66
-  skip-cert-verify: true
+  server: 18.135.32.201
   sni: trojan.burgerip.co.uk
-  tls: true
   type: trojan
-  udp: true
+- name: '20,21|🇬🇧GB-18.175.72.223-5760 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.175.72.223
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - name: 24|🇬🇧 英国 伦敦Amazon数据中心
   password: telegram-id-privatevpns
   port: 22222
@@ -213,39 +211,26 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  delay: 731
-  name: '27,30|2|🇬🇧1 |  1.4MB/s #1'
-  password: FS37F61GBAIXJF6E
-  port: 19003
-  server: 206.245.211.13
-  type: ss
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 30,36|🔒 VM-WS-NA 🇩🇪 DE-5.39.252.72:2...
-  network: ws
-  port: '20016'
-  server: 5.39.252.72
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5240bc9d-5706-48a5-8754-0147b887ec12
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
   network: tcp
-  port: '55577'
-  server: 172.99.190.207
+  port: '46617'
+  server: 46.250.253.232
   servername: ''
   tls: false
   type: vmess
-  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
+  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
+  network: tcp
+  port: '26924'
+  server: 68.168.31.184
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-149.7.16.149...
@@ -268,21 +253,11 @@ proxies:
   uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
   network: tcp
-  port: '46617'
-  server: 46.250.253.232
+  port: '55577'
+  server: 172.99.190.207
   servername: ''
   tls: false
   type: vmess
-  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
-  network: tcp
-  port: '26924'
-  server: 68.168.31.184
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
+  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
