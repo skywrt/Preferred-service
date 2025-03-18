@@ -200,24 +200,26 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|1|🇪德国 01 | 1x DE
-  password: be5be78f-bcc2-4802-bed1-0f4417fb0426
+  client-fingerprint: chrome
+  name: 5,9,24,27,30|🇨🇳 广东省广州市 移动 11
+  password: 59027208-1d66-4604-bcce-eb7308439506
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5|德国 - Falkenstein - Hetzner Onl...
+  name: 5,36|🔒 VM-TCP-NA 🇩🇪 DE-138.199.158....
   network: tcp
   port: '100'
   server: 138.199.158.245
+  servername: ''
   tls: false
   type: vmess
-  uuid: b52f0a62-068c-41bf-a4f6-ac3faddded46
+  uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0| 国 01 | 1x DE
-  password: 2428d580-5064-4a07-a425-a8205fe7b960
+  name: '5,9,24,27,30|0| 国 01 | 1x DE #1'
+  password: 2dde428b-8c36-4ca0-86ec-a9f735808999
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -279,7 +281,8 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 9|1|🇩🇪4 |  2.1MB/s
+- client-fingerprint: chrome
+  name: 9,30|🇺🇸 美国 Amazon EC2
   password: l9S4ONBOZT236Dx9Ap7ScDnYCwAp0IASDDY3F2FyCCyRl8qeeu8layZ3KCZEazjOa65N3
   port: 28334
   server: yecea.coffeekit.net
@@ -351,31 +354,22 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  country: 🇮IR
-  delay: 750
-  h2-opts: {}
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 11,27|2|🇪2 |  1.9MB/s
+  name: 11,36|🔒 VM-HTTP-NA 🇩🇪 DE-91.107.241....
   network: http
   port: 10683
   server: 91.107.241.36
-  skip-cert-verify: true
+  servername: ''
   tls: false
   type: vmess
   uuid: 42a6b3ff-9f36-4b1c-a0ea-82f2fd1472f9
 - alterId: 2
   cipher: auto
-  name: 11,27|2|🇪3 |  2.4MB/s
+  name: 11|11|2|🇩🇪3 |  2.4MB/s
   network: ws
   port: 23616
   server: 16.mamamajd.site
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: c10a0e2f-3b88-3f96-bbc5-8941b97b4995
   ws-opts:
     headers:
@@ -451,18 +445,23 @@ proxies:
     headers:
       Host: ''
     path: /XESALISTHEBEST?ed=2048
+- client-fingerprint: chrome
+  name: 30|🇪 德国 Amazon中
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.156.177.2
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
-  grpc-opts:
-    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
-  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
-  network: grpc
-  port: '15145'
-  server: 88.198.172.25
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
+  network: tcp
+  port: '15713'
+  server: 193.108.118.136
   servername: ''
-  tls: true
+  tls: false
   type: vmess
-  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
@@ -475,85 +474,16 @@ proxies:
   uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
+  grpc-opts:
+    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
+  network: grpc
+  port: '15145'
+  server: 88.198.172.25
   servername: ''
-  tls: false
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.25.22...
-  network: ws
-  port: 443
-  server: 57.129.25.22
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: o.metuji.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇩🇪 DE-158.180.48.19...
-  network: ws
-  port: 23451
-  server: 158.180.48.19
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 36fb7fe7-b1e7-4f65-a2d5-ce944d44f582
-  ws-opts:
-    headers:
-      Host: us-new03.daluquan.top
-    path: /itdog?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-91.107.241.3...
-  network: tcp
-  port: '10683'
-  server: 91.107.241.36
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 42a6b3ff-9f36-4b1c-a0ea-82f2fd1472f9
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇩🇪 DE-5.39.252.72:2...
-  network: ws
-  port: '20016'
-  server: 5.39.252.72
-  tls: false
-  type: vmess
-  uuid: d70f67ae-135c-4a78-a245-4cc81c93983d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
-  network: tcp
-  port: '48961'
-  server: 23.158.56.21
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
-  network: tcp
-  port: '15713'
-  server: 193.108.118.136
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
+  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
@@ -568,3 +498,27 @@ proxies:
     headers:
       Host: www.80347320.xyz
     path: /path/240811062813
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
+  network: tcp
+  port: '48961'
+  server: 23.158.56.21
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇩🇪 DE-158.180.48.19...
+  network: ws
+  port: 23451
+  server: 158.180.48.19
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 36fb7fe7-b1e7-4f65-a2d5-ce944d44f582
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
