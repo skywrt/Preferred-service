@@ -700,14 +700,11 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 12,30,37|未知120
+- cipher: aes-256-gcm
+  name: 12,30|_CN_
   password: Z2GB4O1R4RIVDVF2
   port: 20039
   server: 91.148.135.48
-  skip-cert-verify: true
-  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -817,49 +814,50 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 24|🇨🇳 湖北省 移动(全省通用)
   password: c443be95-725d-4da3-a60f-d35af5bfbff8
-  port: 17742
-  server: us2.pptv-tv.store
+  port: 17756
+  server: gb1.pptv-tv.store
   skip-cert-verify: false
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '24|_中国 #25'
-  network: tcp
-  port: '40102'
-  server: 120.232.153.63
-  tls: false
-  type: vmess
-  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
 - name: '24|🇨🇳 湖北省 移动(全省通用) #1'
   password: c443be95-725d-4da3-a60f-d35af5bfbff8
-  port: 17712
-  server: sg2.pptv-tv.store
+  port: 17720
+  server: ae1.pptv-tv.store
   skip-cert-verify: false
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '24|_中国 #33'
+  name: '24|_中国 #31'
   network: tcp
-  port: '59554'
-  server: 183.236.51.38
+  port: '31998'
+  server: 120.234.102.229
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: '24|🇨🇳 湖北省 移动(全省通用) #2'
   password: c443be95-725d-4da3-a60f-d35af5bfbff8
-  port: 17752
-  server: vn2.pptv-tv.store
+  port: 17741
+  server: us1.pptv-tv.store
   skip-cert-verify: false
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '24|_中国 #39'
-  network: tcp
-  port: '53902'
-  server: 183.236.51.38
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 24,30|🇨🇳 东省 移动
+  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
+  port: 21115
+  server: okanc.node-is.green
+  type: ss
+- name: '24|🇨🇳 湖北省 移动(全省通用) #3'
+  password: c443be95-725d-4da3-a60f-d35af5bfbff8
+  port: 17755
+  server: de1.pptv-tv.store
+  skip-cert-verify: false
+  type: trojan
+- name: '24|🇨🇳 湖北省 移动(全省通用) #4'
+  password: c443be95-725d-4da3-a60f-d35af5bfbff8
+  port: 17722
+  server: jp2.pptv-tv.store
+  skip-cert-verify: false
+  type: trojan
 - alterId: 2
   cipher: auto
   name: 24|🇨🇳 湖南省 移动
@@ -873,6 +871,13 @@ proxies:
     headers:
       Host: zxjp-a.tkong.cc
     path: /
+- name: '24|🇭🇰 13|香港|@ripaojiedian #2'
+  password: a38c9e28-9960-4e31-9f18-ed2495a756aa
+  port: 40021
+  server: vt-bana2-cn-11.ghpgwqswodgzv.com
+  skip-cert-verify: false
+  sni: vt-bana2-cn-11.ghpgwqswodgzv.com
+  type: trojan
 - name: 24|_中国
   password: Aimer
   port: 443
@@ -915,13 +920,16 @@ proxies:
   skip-cert-verify: false
   sni: agepl.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #6'
+- alterId: 0
+  name: 24,37|CN国
   password: Aimer
   port: 443
   server: 47.242.11.244
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agepj.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '24|_中国 #32'
@@ -942,10 +950,10 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '24|_中国 #31'
+  name: '24|_中国 #39'
   network: tcp
-  port: '31998'
-  server: 120.234.102.229
+  port: '53902'
+  server: 183.236.51.38
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -960,6 +968,24 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
+  name: '24|_中国 #25'
+  network: tcp
+  port: '40102'
+  server: 120.232.153.63
+  tls: false
+  type: vmess
+  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
+- alterId: 0
+  cipher: auto
+  name: '24|_中国 #33'
+  network: tcp
+  port: '59554'
+  server: 183.236.51.38
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
   name: '24|_中国 #37'
   network: tcp
   port: '40105'
@@ -967,15 +993,54 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- client-fingerprint: chrome
+  name: 30|🇨🇳 湖北省 移动(全省通用) 2
+  password: c443be95-725d-4da3-a60f-d35af5bfbff8
+  port: 17743
+  server: us3.pptv-tv.store
+  sni: us3.pptv-tv.store
+  type: trojan
+- client-fingerprint: chrome
+  name: 30|🇨🇳 湖北省 移动(全省通用) 3
+  password: c443be95-725d-4da3-a60f-d35af5bfbff8
+  port: 17712
+  server: sg2.pptv-tv.store
+  sni: sg2.pptv-tv.store
+  type: trojan
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 30|🇳 广东省市
+  name: 30|🇨🇳 广东省广州市 移动
+  port: 51182
+  server: 120.232.153.40
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇨🇳 广东省广州市 移动 2
+  port: 40105
+  server: 120.232.153.63
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇨🇳 广东省市 移动
   port: 42055
   server: 120.198.71.219
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- client-fingerprint: chrome
+  name: 30|🇨🇳 湖北省 移动(全省通用) 4
+  password: c443be95-725d-4da3-a60f-d35af5bfbff8
+  port: 17701
+  server: hk1.iqiyi-tv.site
+  sni: hk1.iqiyi-tv.site
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇨🇳 CN-120.232.17.7...

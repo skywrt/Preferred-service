@@ -33,6 +33,34 @@ proxies:
     headers:
       host: cc2.1808.site
     path: /hgqqvws
+- cipher: chacha20-ietf-poly1305
+  name: '5,24,27,30|0|🇷 韩国 02 | 1x KR #1'
+  password: 2512b452-7cf6-4a71-8b1e-d6d21c16639c
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,24,27,30|2|🇰🇷韩国 02 | 1x KR #1'
+  password: bda18736-92c0-41b4-bd85-393179dd0d4d
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,24,27,30|2|🇷韩国 01 | 1x KR #1'
+  password: bda18736-92c0-41b4-bd85-393179dd0d4d
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27,30|0|🇷 韩国 01 | 1x KR
+  password: 2512b452-7cf6-4a71-8b1e-d6d21c16639c
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - name: 5|0|🇰🇷1 |  1.0MB/s
   password: 4e0c3a4b-bdac-3950-b736-2c90b76ee530
   port: 45168
@@ -48,7 +76,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 9,11,24,27,30|12|🇷 韩国|@ripaojiedian
+  name: '9,11,24,27,30|12|🇷 韩国|@ripaojiedian #1'
   password: amazonskr05
   port: 443
   server: 13.114.76.143
@@ -134,13 +162,16 @@ proxies:
     headers:
       Host: dp.ylks.xyz
     path: '%2F%3Fproxyip%3Dproxyip.kr.fxxp.dedyp.io'
-- name: 24|🇰🇷 _韩国
+- alterId: 0
+  name: 24,37|KR
   password: Aimer
   port: 4433
   server: 54.180.230.114
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agepj.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇰🇷 _韩国 #1'
   password: Aimer
   port: 50000
@@ -218,3 +249,17 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-220.123.48.1...
+  network: ws
+  port: '30002'
+  server: 220.123.48.124
+  servername: cc2.1808.site
+  tls: true
+  type: vmess
+  uuid: d3d8b781-f30d-4902-8eb0-58b1ca936bec
+  ws-opts:
+    headers:
+      Host: cc2.1808.site
+    path: /hgqqvws
