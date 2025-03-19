@@ -16,7 +16,7 @@ proxies:
     path: /telegram-channel-vlessconfig-ws
 - cipher: chacha20-ietf-poly1305
   name: 5,24,27,30|0|🇧 英国住宅IP 01 | 1x UK
-  password: 2512b452-7cf6-4a71-8b1e-d6d21c16639c
+  password: 62aa96d4-fb83-4ff2-9aba-7df55b4c816a
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -115,8 +115,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|2|🇧英国家宽 01 | 1x UK #1'
-  password: bda18736-92c0-41b4-bd85-393179dd0d4d
+  name: '5,24,27,30|1|🇧英国家宽 01 | 1x UK #1'
+  password: 68617b1d-c770-4b70-bea0-f256c5bb9b29
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -308,15 +308,6 @@ proxies:
       Host: lo.kpcloud.eu.org
     path: '%2Fblue'
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知18 11.1MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.80
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 19,20,21,37|未知15 13.7MB/s
   password: 4f20786f016f5a7c
@@ -335,9 +326,18 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知18 11.1MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.80
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇬🇧GB-45.158.77.187-0836
+  name: 19|🇬🇧GB-45.158.77.187-0826
   network: ws
   port: 443
   server: linde06.indiavideo.sbs
@@ -349,17 +349,6 @@ proxies:
     headers:
       host: linde06.indiavideo.sbs
     path: /linkws
-- alterId: 0
-  name: 24,37|未知48
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.130.219.235
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
 - name: 24|🇬🇧 _英国
   password: Aimer
   port: 443
@@ -376,15 +365,24 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36,37|未知6 48.0KB/s
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
   network: tcp
-  port: 26924
-  server: 68.168.31.184
+  port: '47567'
+  server: 38.114.120.12
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
+  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  network: tcp
+  port: '46617'
+  server: 46.250.253.232
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-149.7.16.149...
@@ -407,21 +405,12 @@ proxies:
   uuid: e922d485-98a7-475a-9a47-cde3722ac82e
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
+  name: 36,37|未知6 48.0KB/s
   network: tcp
-  port: '47567'
-  server: 38.114.120.12
+  port: 26924
+  server: 68.168.31.184
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
-  network: tcp
-  port: '46617'
-  server: 46.250.253.232
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
