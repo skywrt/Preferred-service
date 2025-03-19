@@ -700,11 +700,14 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- cipher: aes-256-gcm
-  name: 12,24,30|_CN_
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 12,24,37|未知120
   password: Z2GB4O1R4RIVDVF2
   port: 20039
   server: 91.148.135.48
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -812,13 +815,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 24,30|🇳 江省州市
-  password: ec588545-292e-4a11-ada2-d62e599af928
-  port: 24502
-  server: alsh.76681f9610f175c6.com
-  type: ss
 - alterId: 0
   cipher: auto
   name: '24|_中国 #37'
@@ -864,56 +860,22 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: '24,27,30|2|🇸6 |  4.4MB/s #1'
+  name: '24|_中国 #47'
   network: tcp
-  port: 51095
+  port: '51095'
   server: 120.198.71.219
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '27,30|2|1-CN |  4.8MB/s #1'
-  network: ws
-  port: 21013
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  uuid: 24485c23-59cd-484c-8e43-64f0230fae92
-  ws-opts:
-    headers: {}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '27,30|2|🌀2-CN |  4.5MB/s #1'
-  network: ws
-  port: 23018
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  uuid: 9a586b99-98ac-40e0-a00d-3aa7ed742f43
-  ws-opts:
-    headers: {}
-    path: /
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 30|🇨🇳 广东省广州市 云
-  password: ec588545-292e-4a11-ada2-d62e599af928
-  port: 24502
-  server: tcgz.76681f9610f175c6.com
-  type: ss
-- alterId: 0
-  cipher: none
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
-  network: tcp
-  port: '59003'
-  server: 183.236.51.36
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: '24|_中国 #54'
+  password: 7pE3OSjFe9xFey8YyCgaIaz3Zu2CORpananc34DRlgSyO83XTyNjC4xAIue30YKFCCDlx
+  port: 443
+  server: sohtsa.taiwanesefood.link
+  skip-cert-verify: false
+  sni: sohtsa.taiwanesefood.link
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇨🇳 CN-120.232.17.7...
@@ -928,3 +890,13 @@ proxies:
     headers:
       Host: yd2.ainivp.com
     path: /ray
+- alterId: 0
+  cipher: none
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  network: tcp
+  port: '59003'
+  server: 183.236.51.36
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
