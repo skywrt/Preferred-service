@@ -131,31 +131,39 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 10|英国 004
+  name: '10,28|未命名 #1'
   network: ws
   port: 23451
   server: frankfurt.faforex.eu.org
   tls: false
   type: vmess
   udp: true
-  uuid: 36fb7fe7-b1e7-4f65-a2d5-ce944d44f582
+  uuid: a9003640-13c9-4d3d-8e14-c6c6250eef29
   ws-opts:
     headers:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
 - alterId: 0
   cipher: auto
-  name: 12|🇬🇧_GB_英国
+  name: 12,30|🇧_GB_英国
   network: ws
-  port: '20016'
+  port: 20016
   server: 5.39.252.72
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 5240bc9d-5706-48a5-8754-0147b887ec12
   ws-opts:
-    headers:
-      Host: ''
     path: /
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知100 2.1MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.80
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   cipher: aes-128-gcm
   name: 19,20,21,37|未知35 2.3MB/s
@@ -166,34 +174,26 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知100 2.1MB/s
-  password: shadowsocks
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇬🇧GB-45.158.77.187-0836
+  network: ws
   port: 443
-  server: 212.102.53.80
+  server: linde06.indiavideo.sbs
   skip-cert-verify: true
   tls: true
-  type: ss
-- name: 24|🇬🇧 英国 伦敦Amazon数据中心
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.178.131.63
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '24|🇬🇧 英国 伦敦Amazon数据中心 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.130.219.235
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '24|🇯🇵 12|🇯🇵 日本5|@ripaojiedian #1'
-  password: '!!str 74260712244661900'
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      host: linde06.indiavideo.sbs
+    path: /linkws
+- name: 24|🇬🇧 _英国
+  password: Aimer
   port: 443
-  server: gorgeous-bull.shiner427.skin
+  server: 158.179.180.156
   skip-cert-verify: false
-  sni: gorgeous-bull.shiner427.skin
+  sni: agepl.ambercc.filegear-sg.me
   type: trojan
 - name: 26|V2-英国03∣K71线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
@@ -202,6 +202,34 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  name: 30|🇧 英国 Amazon中
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.130.219.235
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知106 104.2KB/s
+  network: tcp
+  port: 26924
+  server: 68.168.31.184
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
+  network: tcp
+  port: '47567'
+  server: 38.114.120.12
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
@@ -224,16 +252,6 @@ proxies:
   uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
-  network: tcp
-  port: '47567'
-  server: 38.114.120.12
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
   network: tcp
   port: '55577'
@@ -242,14 +260,3 @@ proxies:
   tls: false
   type: vmess
   uuid: e922d485-98a7-475a-9a47-cde3722ac82e
-- alterId: 0
-  cipher: auto
-  name: 36,37|未知106 104.2KB/s
-  network: tcp
-  port: 26924
-  server: 68.168.31.184
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
