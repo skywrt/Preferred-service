@@ -34,15 +34,29 @@ proxies:
       host: cc2.1808.site
     path: /hgqqvws
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|0|🇷 韩国 02 | 1x KR #1'
-  password: fc3c2eb2-18e5-4060-9529-c6827c2323ec
+  name: 5,24,27|0|🇷 韩国 02 | 1x KR
+  password: a4ba3ba9-a8e0-4afe-91a2-a6439746f0af
   port: 36313
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27,30|0|🇷 国 01 | 1x KR
-  password: fc3c2eb2-18e5-4060-9529-c6827c2323ec
+  name: 5,24,27|2|🇰🇷韩国 02 | 1x KR
+  password: b08356e7-e225-48b6-a0e7-4f077d6b0105
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27|2|🇷韩国 01 | 1x KR
+  password: b08356e7-e225-48b6-a0e7-4f077d6b0105
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27|0|  01 | 1x KR
+  password: a4ba3ba9-a8e0-4afe-91a2-a6439746f0af
   port: 36311
   server: free.2weradf.xyz
   type: ss
@@ -105,7 +119,7 @@ proxies:
     path: /linkws
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '11,27,30|12|🇷 韩国|@ripaojiedian #1'
+  name: 11,24,27|12|🇷 韩国|@ripaojiedian
   password: 96edc7d4-7490-48ff-99cc-496b0f4a27e9
   port: 31778
   server: xm.miloli.cc
@@ -113,19 +127,12 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '11,27,30|12|🇷 韩国特殊|@ripaojiedian #1'
+  name: 11,24,27|12|🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 52.78.98.141
   tfo: false
   type: ss
-- name: 24|🇰🇷 韩国 KT电信
-  password: Aimer
-  port: 17776
-  server: 112.186.163.26
-  skip-cert-verify: false
-  sni: agepj.ambercc.filegear-sg.me
-  type: trojan
 - name: 26|V2-韩国03∣K16线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21017
@@ -133,41 +140,10 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 30|🇷 韩国 KT
-  network: ws
-  password: Aimer
-  port: 50004
-  server: 183.96.243.131
-  sni: agepl.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: agepl.ambercc.filegear-sg.me
-    path: /
-- client-fingerprint: chrome
-  name: 30|🇰🇷 韩国 KT电信 2
-  network: ws
-  password: Aimer
-  port: 17776
-  server: 112.186.163.26
-  sni: agepj.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: agepj.ambercc.filegear-sg.me
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-220.123.48.1...
-  network: ws
-  port: '30002'
-  server: 220.123.48.124
-  servername: cc2.1808.site
-  tls: true
-  type: vmess
-  uuid: d3d8b781-f30d-4902-8eb0-58b1ca936bec
-  ws-opts:
-    headers:
-      Host: cc2.1808.site
-    path: /hgqqvws
+- cipher: aes-256-gcm
+  name: 28|V1 | 韩国1
+  password: 5c4dd967-8262-4799-b0ba-3989aff2881b
+  port: 49026
+  server: 223.244.16.218
+  type: ss
+  udp: true

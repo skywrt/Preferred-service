@@ -7,8 +7,15 @@ proxies:
   sni: hinet.mjt000.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|0|  01 | 1x TW #1'
-  password: fc3c2eb2-18e5-4060-9529-c6827c2323ec
+  name: 5,24,27|2|🇼台湾 03 | 1x TW
+  password: b08356e7-e225-48b6-a0e7-4f077d6b0105
+  port: 31245
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27|0|  01 | 1x TW
+  password: a4ba3ba9-a8e0-4afe-91a2-a6439746f0af
   port: 36241
   server: free.2weradf.xyz
   type: ss
@@ -27,8 +34,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|0|🇼 台湾 03 | 1x TW #1'
-  password: fc3c2eb2-18e5-4060-9529-c6827c2323ec
+  name: 5,24,27|2|🇼台湾 01 | 1x TW
+  password: b08356e7-e225-48b6-a0e7-4f077d6b0105
+  port: 31241
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27|0|🇼 台湾 03 | 1x TW
+  password: a4ba3ba9-a8e0-4afe-91a2-a6439746f0af
   port: 36245
   server: free.2weradf.xyz
   type: ss
@@ -47,10 +61,17 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|0|🇼 台湾 02 | 1x TW #1'
-  password: fc3c2eb2-18e5-4060-9529-c6827c2323ec
+  name: 5,24,27|0|🇼 台湾 02 | 1x TW
+  password: a4ba3ba9-a8e0-4afe-91a2-a6439746f0af
   port: 36243
   server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27|2|🇹🇼台湾 02 | 1x TW
+  password: b08356e7-e225-48b6-a0e7-4f077d6b0105
+  port: 31243
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -68,9 +89,9 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '11,24,27,30|13|台湾|@ripaojiedian #1'
+  name: 11,24,27|13|台湾|@ripaojiedian
   network: tcp
-  port: 50002
+  port: '50002'
   server: 112.132.215.12
   servername: ''
   tls: false
@@ -78,7 +99,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '11,27,30|12|🇼 台湾2|@ripaojiedian #1'
+  name: 11,24,27|12|🇼 台湾2|@ripaojiedian
   password: 96edc7d4-7490-48ff-99cc-496b0f4a27e9
   port: 42151
   server: xm.miloli.cc
@@ -86,7 +107,7 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: '27,30|12|🇼 台湾|@ripaojiedian #1'
+  name: 27|12|🇼 台湾|@ripaojiedian
   port: 50002
   server: 112.132.215.12
   skip-cert-verify: false
@@ -94,11 +115,62 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-128-gcm
+  name: 28|TW TPE TWD-1MSC--1.2
+  password: 4a8f25d8-c48e-443e-8130-e8492e8c479b
+  port: 41018
+  server: szhx.rcmnk.cn
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|台湾 1-1B
-  password: fbdcb352-9e5a-422e-8e7e-39b499cc8abd
+  password: 250c45aa-84a1-4cec-948b-93aef4945d32
   port: 20032
   server: gy.666666222.shop
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '28|台湾 #1'
+  port: 27830
+  server: ppx1.6128888.xyz
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 855f4046-9c97-4234-be4c-a56ae787fc64
+- cipher: aes-128-gcm
+  name: 28|TW TPE TWDS T宁夏CM 1.2-您吃了吗-1.2
+  password: 4a8f25d8-c48e-443e-8130-e8492e8c479b
+  port: 24869
+  server: awslx.rcmnk.cn
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 28|TW TPE TWDS T长沙CM 1.2-您吃了吗-1.2
+  password: 4a8f25d8-c48e-443e-8130-e8492e8c479b
+  port: 14939
+  server: csyd.rcmnk.cn
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 28|V1 | 台湾2
+  password: 5c4dd967-8262-4799-b0ba-3989aff2881b
+  port: 49022
+  server: 223.244.16.218
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 28|V1 | 台湾1
+  password: 5c4dd967-8262-4799-b0ba-3989aff2881b
+  port: 49021
+  server: 223.244.16.218
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 28|TW TPE TWDS T都CM 1.2-您吃了吗-1.2
+  password: 4a8f25d8-c48e-443e-8130-e8492e8c479b
+  port: 19416
+  server: 117.173.88.171
   type: ss
   udp: true
 - alterId: 0
