@@ -15,8 +15,8 @@ proxies:
   sni: 421421.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|0|  01 | 1x JP #1'
-  password: 005925a4-a249-42e8-9392-896974d41b95
+  name: 5,24,27,30|0,2|🇵3 |  2.8MB/s
+  password: db71b2c0-8693-43b4-a510-df61b0611304
   port: 36111
   server: free.2weradf.xyz
   type: ss
@@ -32,8 +32,8 @@ proxies:
   type: vmess
   uuid: c06797d5-fa41-4b48-b132-d268d2acb302
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|0|🇵 日本 03 | 1x JP #1'
-  password: 005925a4-a249-42e8-9392-896974d41b95
+  name: '5,24,27,30|0,2|🇵2 |  5.5MB/s #1'
+  password: db71b2c0-8693-43b4-a510-df61b0611304
   port: 36115
   server: free.2weradf.xyz
   type: ss
@@ -65,15 +65,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|0|🇵 日本 02 | 1x JP #1'
-  password: 005925a4-a249-42e8-9392-896974d41b95
+  name: '5,24,27,30|0,2|🇵1 |  5.5MB/s #1'
+  password: db71b2c0-8693-43b4-a510-df61b0611304
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|2|🇵日本 01 | 1x JP #1'
-  password: 44713045-ce41-47d5-80df-f744eda5bd27
+  name: 5,24,27,30|1|🇵日本 01 | 1x JP
+  password: 42945eda-9458-4fd4-a33d-54c3e8007013
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
@@ -94,8 +94,8 @@ proxies:
   sni: 421421.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|2|🇵日本 03 | 1x JP #1'
-  password: 44713045-ce41-47d5-80df-f744eda5bd27
+  name: '5,24,27,30|1|🇵日本 03 | 1x JP #1'
+  password: 42945eda-9458-4fd4-a33d-54c3e8007013
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
@@ -124,8 +124,8 @@ proxies:
   sni: 421421.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|2|🇯🇵日本 02 | 1x JP #1'
-  password: 44713045-ce41-47d5-80df-f744eda5bd27
+  name: '5,24,27,30|1|🇯🇵日本 02 | 1x JP #1'
+  password: 42945eda-9458-4fd4-a33d-54c3e8007013
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
@@ -283,6 +283,16 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
+- alterId: 0
+  cipher: none
+  name: 24,36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  network: tcp
+  port: '59003'
+  server: 183.236.51.36
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 26|✪每日连接前点更新订阅
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
   port: 21142
@@ -338,18 +348,14 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-18.183.126.1...
-  network: ws
-  port: 22357
-  server: 18.183.126.100
-  servername: 0000000000000000000000000073.cgroup-node-for-bigairport.sbs
-  tls: true
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
+  network: tcp
+  port: '1069'
+  server: 152.69.197.60
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: 0000000000000000000000000073.cgroup-node-for-bigairport.sbs
-    path: /
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.230.235.2...
@@ -370,11 +376,15 @@ proxies:
   uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
-  network: tcp
-  port: '1069'
-  server: 152.69.197.60
-  servername: ''
-  tls: false
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-18.183.126.1...
+  network: ws
+  port: 22357
+  server: 18.183.126.100
+  servername: 0000000000000000000000000073.cgroup-node-for-bigairport.sbs
+  tls: true
   type: vmess
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000073.cgroup-node-for-bigairport.sbs
+    path: /

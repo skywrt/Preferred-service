@@ -52,15 +52,15 @@ proxies:
       host: lax2.ibgfw.top
     path: /dyajvws
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|2|🇦加拿大 01 | 1x CA #1'
-  password: 44713045-ce41-47d5-80df-f744eda5bd27
+  name: '5,24,27,30|1|🇦加拿大 01 | 1x CA #1'
+  password: 42945eda-9458-4fd4-a33d-54c3e8007013
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27,30|0| 加大 01 | 1x CA
-  password: 005925a4-a249-42e8-9392-896974d41b95
+  name: 5,24,27,30|0|🇨 加大 01 | 1x CA
+  password: db71b2c0-8693-43b4-a510-df61b0611304
   port: 36441
   server: free.2weradf.xyz
   type: ss
@@ -618,7 +618,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.17.221.248-0787 #1'
+  client-fingerprint: chrome
+  name: 10,20,21,24,30|🇺🇸 美国 CloudFlare节点 10
   network: ws
   port: 2095
   server: s4.db-link02.top
@@ -767,14 +768,17 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-38.111.114.1...
-  network: tcp
-  port: '14812'
-  server: 38.111.114.153
-  servername: ''
+  name: '24|🇨🇦 _加拿大 #1'
+  network: ws
+  port: '443'
+  server: 68.168.31.196
   tls: false
   type: vmess
-  uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇦 CA-23.162.200.9...
@@ -785,3 +789,13 @@ proxies:
   tls: false
   type: vmess
   uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-38.111.114.1...
+  network: tcp
+  port: '14812'
+  server: 38.111.114.153
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
