@@ -1069,26 +1069,26 @@ proxies:
   server: 84.17.53.160
   type: ss
 - cipher: aes-256-cfb
-  name: 12,16,24,30|🇺🇸_US_美国->🇮_FI_芬兰
+  ip-version: dual
+  name: '12,16,24,27,30|1|🇸2 |  4.5MB/s #1'
   password: amazonskr05
   port: 443
   server: 54.184.74.88
+  tls: false
   type: ss
-- client-fingerprint: chrome
-  grpc-opts:
+  udp: true
+- grpc-opts:
     grpc-service-name: i8oL7PsxV002zYFTmiIeg
-  ip-version: dual
-  name: 12,16,27,30|🇸 美国 V2CROSS.COM
+  name: 12,16,30|🇺🇸_US_美国->🇰_DK_丹麦_1
   network: grpc
   password: 576c81b6-4976-4fe3-b1a9-05a9c302e98e
   port: 443
   server: 192.3.130.103
-  skip-cert-verify: false
   sni: us10-01zl.huangshang.filegear-sg.me
   type: trojan
   udp: true
 - cipher: rc4-md5
-  name: 12,13,19,20,21,30|_RO_->🇺🇸_US_美国
+  name: 12,13,19,20,21,27,30|_RO_->🇺🇸_US_美国
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 194.5.215.59
@@ -1107,8 +1107,9 @@ proxies:
   cipher: auto
   name: 13,36|🔒 VM-TCP-NA 🇺🇸 US-107.148.207....
   network: tcp
-  port: 48712
+  port: '48712'
   server: 107.148.207.249
+  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -1121,6 +1122,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: rc4-md5
+  name: 13,19|🇬🇧GB-146.70.61.18-0382
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.61.18
+  type: ss
 - alterId: 0
   cipher: auto
   name: 13|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_2

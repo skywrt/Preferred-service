@@ -16,7 +16,7 @@ proxies:
     path: /telegram-channel-vlessconfig-ws
 - cipher: chacha20-ietf-poly1305
   name: 5,24,27,30|0|🇧 英国住宅IP 01 | 1x UK
-  password: db71b2c0-8693-43b4-a510-df61b0611304
+  password: fc3c2eb2-18e5-4060-9529-c6827c2323ec
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -114,13 +114,6 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|1|🇧英国家宽 01 | 1x UK #1'
-  password: 42945eda-9458-4fd4-a33d-54c3e8007013
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - name: '5,38|🇬🇧_GB_英国_26 #1'
   network: ws
   port: 443
@@ -301,23 +294,12 @@ proxies:
     headers:
       Host: lo.kpcloud.eu.org
     path: '%2Fblue'
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,24,37|未知31 9.3MB/s
-  password: shadowsocks
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: '19,20,21,30|🇺🇸 美国 V2CROSS.COM #1'
+  password: mps3FwmDjLrWaOVg
   port: 443
-  server: 141.98.101.178
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,24,37|未知118 10.1MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.80
-  skip-cert-verify: true
-  tls: true
+  server: series-a2.varzesh360.co
   type: ss
 - alterId: 0
   cipher: auto
@@ -334,6 +316,18 @@ proxies:
     headers:
       host: linde06.indiavideo.sbs
     path: /linkws
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇬🇧GB-198.244.142.16-1233
+  password: 7b6c5a7d36f65bc7
+  port: 11205
+  server: 198.244.142.16
+  type: ss
+- name: '20,21|🇬🇧GB-18.134.54.61-6044 #1'
+  password: telegram-id-directvpn
+  port: 22222
+  server: 18.134.54.61
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - name: 24|🇬🇧 英国 社会保险安全部
   password: telegram-id-privatevpns
   port: 22222
@@ -341,15 +335,6 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 24,37|未知86 8.7MB/s
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.180
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - name: 26|V2-英国03∣K71线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 20820
@@ -357,13 +342,30 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 30|🇧 英国 Amazon数据中心
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.9.150.130
-  sni: trojan.burgerip.co.uk
-  type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇧 英国 V2CROSS.COM
+  network: ws
+  port: 443
+  server: 193.123.56.79
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      Host: beyonddsz.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  network: tcp
+  port: '46617'
+  server: 46.250.253.232
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
@@ -404,14 +406,3 @@ proxies:
   tls: false
   type: vmess
   uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
-- alterId: 0
-  cipher: auto
-  name: 36,37|未知74 217.4KB/s
-  network: tcp
-  port: 46617
-  server: 46.250.253.232
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
