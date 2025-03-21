@@ -45,10 +45,17 @@ proxies:
   sni: waphk.mjt000.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|🇭🇰香港 03 | 1x HK
-  password: 2b749355-25f1-47df-b282-df50b480af26
+  name: 5,9,24,27|2|🇭🇰香港 03 | 1x HK
+  password: 49eac356-f88c-47d3-a7b5-d6094754451f
   port: 31145
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27|0|  01 | 1x HK
+  password: 71707016-8758-4550-8f39-b328a4d96384
+  port: 36141
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -78,17 +85,20 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|🇭🇰香港 02 | 1x HK
-  password: 2b749355-25f1-47df-b282-df50b480af26
+  name: 5,9,24,27|2|🇭🇰香港 02 | 1x HK
+  password: 49eac356-f88c-47d3-a7b5-d6094754451f
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0| 01 | 1x HK
-  password: 2b749355-25f1-47df-b282-df50b480af26
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27,37|🇰HK
+  password: 09a9cf28-a696-4de5-811c-cdc368e06d06
   port: 31141
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -104,18 +114,18 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf
-  name: 9,24,27|2|🇰1 |  2.0MB/s
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27|0|🇭🇰 香港IP 03 | 1x HK
+  password: 71707016-8758-4550-8f39-b328a4d96384
+  port: 36145
+  server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf
-  name: '9,24,27|2|🇭🇰3 |  1.0MB/s #2'
-  password: asd123456
-  port: 8388
-  server: 154.197.26.237
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27|0|🇭🇰 香港 02 | 1x HK
+  password: 71707016-8758-4550-8f39-b328a4d96384
+  port: 36143
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -769,40 +779,19 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
-  network: tcp
-  port: '27512'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-47.239.197.1...
-  network: tcp
-  port: '46880'
-  server: 47.239.197.189
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 09fe1d6b-a273-4fce-c899-76597cfe1e9a
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-5.83.221.31:3...
-  network: ws
-  port: 30041
-  server: 5.83.221.31
-  servername: sh01.fastcloud.club
-  tls: false
-  type: vmess
-  uuid: d3d90998-7bfd-4fc6-930e-35bf96083d8b
-  ws-opts:
-    headers:
-      Host: v02.gutingting.com
-    path: /aceamedv
+- cipher: chacha20-ietf-poly1305
+  name: 27|1|🇭🇰1 |  8.8MB/s
+  password: 630a9504-13b7-4c32-885c-3332bab95df3
+  port: 49709
+  server: jg647hf446ghvw.gym0boy.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf
+  name: 27|1|🇭🇰5 |  1.3MB/s
+  password: asd123456
+  port: 8388
+  server: 103.149.182.61
+  type: ss
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-18.163.118.1...
@@ -817,6 +806,26 @@ proxies:
     headers:
       Host: 0000000000000000000000000046.bgroup-node-for-bigairport.sbs
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-47.239.197.1...
+  network: tcp
+  port: '46880'
+  server: 47.239.197.189
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 09fe1d6b-a273-4fce-c899-76597cfe1e9a
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
+  network: tcp
+  port: '27512'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-163.53.18.21...
@@ -845,3 +854,109 @@ proxies:
   tls: false
   type: vmess
   uuid: fa678492-65dd-3df0-800d-11f138b868ab
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-5.83.221.31:3...
+  network: ws
+  port: 30041
+  server: 5.83.221.31
+  servername: sh01.fastcloud.club
+  tls: false
+  type: vmess
+  uuid: d3d90998-7bfd-4fc6-930e-35bf96083d8b
+  ws-opts:
+    headers:
+      Host: v02.gutingting.com
+    path: /aceamedv
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 37|HK
+  password: PT2N60DCUH6VCQPC
+  port: 15004
+  server: 156.245.190.13
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|HK2
+  password: 3e836edc-e738-4e63-964d-ad61d9e3f27b
+  port: 61007
+  server: 45.196.222.10
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|HK3
+  network: tcp
+  password: 7505bf2d-9d04-46a3-b91e-d1115c5dcba8
+  port: 13740
+  server: 154.64.246.217
+  skip-cert-verify: true
+  sni: ssl-hg.lihuayun.top
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|HK4
+  password: c1596d35-5f68-4cef-bf5f-ac0d2ab88b2f
+  port: 30056
+  server: 5.83.221.31
+  skip-cert-verify: true
+  sni: v1kr01.fuqiangren.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|HK5
+  password: 64ddb7e7-618b-4413-bd14-8b28372cc2a3
+  port: 59001
+  server: 45.196.248.148
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|HK6
+  network: tcp
+  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
+  port: 27401
+  server: 45.146.232.171
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|HK7
+  network: tcp
+  password: 7505bf2d-9d04-46a3-b91e-d1115c5dcba8
+  port: 13780
+  server: 154.64.246.217
+  skip-cert-verify: true
+  sni: b-hk.lihuayun.click
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|HK8
+  network: tcp
+  password: Aimer
+  port: 1935
+  server: 43.154.34.74
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|HK9
+  network: tcp
+  password: 7505bf2d-9d04-46a3-b91e-d1115c5dcba8
+  port: 13710
+  server: 154.64.246.217
+  skip-cert-verify: true
+  sni: aus.lihua.click
+  tls: true
+  type: trojan
+  udp: true

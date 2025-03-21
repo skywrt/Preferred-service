@@ -738,9 +738,9 @@ proxies:
   ws-path: /debian
 - alterId: 0
   cipher: auto
-  name: 9,11,24,27|2|5-CN |  1.8MB/s
+  name: '9,11,24|🇨🇳 2|🌀5-CN |  1.8MB/s #1'
   network: ws
-  port: 21022
+  port: '21022'
   server: 212.192.13.110
   skip-cert-verify: false
   tls: false
@@ -748,6 +748,8 @@ proxies:
   udp: true
   uuid: 2b6bead8-60e6-4168-96be-ebdb7a19830c
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -894,13 +896,16 @@ proxies:
   skip-cert-verify: false
   sni: agepj.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #10'
+- alterId: 0
+  name: 24,37|🇨CN国
   password: Aimer
   port: 2087
   server: 156.225.72.246
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agepj.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #8'
   password: Aimer
   port: 2096

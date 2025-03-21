@@ -34,17 +34,31 @@ proxies:
       host: cc2.1808.site
     path: /hgqqvws
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|🇷韩国 02 | 1x KR
-  password: 2b749355-25f1-47df-b282-df50b480af26
+  name: 5,24,27|0|🇷 韩国 02 | 1x KR
+  password: 71707016-8758-4550-8f39-b328a4d96384
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27|2|🇰🇷韩国 02 | 1x KR
+  password: 49eac356-f88c-47d3-a7b5-d6094754451f
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0| 01 | 1x KR
-  password: 2b749355-25f1-47df-b282-df50b480af26
+  name: 5,9,24,27|2|🇷韩国 01 | 1x KR
+  password: 49eac356-f88c-47d3-a7b5-d6094754451f
   port: 31311
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27|0|  01 | 1x KR
+  password: 71707016-8758-4550-8f39-b328a4d96384
+  port: 36311
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -114,20 +128,26 @@ proxies:
     headers:
       Host: dp.ylks.xyz
     path: '%2F%3Fproxyip%3Dproxyip.kr.fxxp.dedyp.io'
-- name: 24|1|🇰🇷3 |  6.1MB/s
+- alterId: 0
+  name: 24,37|未知11
   password: 72988ae1-ce6d-37c3-a5ce-bc8c701f1dc3
   port: 50355
   server: gy.58n.net
   skip-cert-verify: true
   sni: z264.hongkongnode.top
+  tls: true
   type: trojan
-- name: 24|🇰🇷 _韩国
+  udp: true
+- alterId: 0
+  name: 24,37|KR国
   password: Aimer
   port: 50003
   server: 221.164.192.95
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agepj.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: 26|V2-韩国03∣K16线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21017
@@ -135,17 +155,3 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-220.123.48.1...
-  network: ws
-  port: '30002'
-  server: 220.123.48.124
-  servername: cc2.1808.site
-  tls: true
-  type: vmess
-  uuid: d3d8b781-f30d-4902-8eb0-58b1ca936bec
-  ws-opts:
-    headers:
-      Host: cc2.1808.site
-    path: /hgqqvws
