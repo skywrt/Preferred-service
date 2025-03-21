@@ -38,11 +38,14 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|国 01 | 1x DE #1'
-  password: 8df7ba5c-ed86-4d06-a55e-ffb7a7be4b4d
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27,30,37|🇩🇪DE德国2
+  password: 13355112-4353-4809-9eca-8d9782aac18b
   port: 31471
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -55,13 +58,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
-- cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|2|🇪 德国 01 | 1x DE #1'
-  password: 4be0e4fd-f3cf-4708-ad10-e019cd0778b4
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: '5,11|2|🇩🇪_DE_德国 #1'
@@ -102,13 +98,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- cipher: aes-128-gcm
+- alterId: 0
+  cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: '9,11,24,27,30|12|🇪 德国|@ripaojiedian #1'
+  name: 9,11,24,27,30,37|🇪DE德国3
   password: 8cc065a7-fada-4628-9397-b9bd614261a5
   port: 12038
   server: mdss-other.04z3susick.download
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
   udp: true
 - name: 13|🇩🇪_DE_德国_1
@@ -125,15 +124,6 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知107 3.3MB/s
-  password: 7cbfe78195fbf19c
-  port: 11738
-  server: 100.42.182.73
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - cipher: aes-256-gcm
   name: 19|🇩🇪DE-217.182.198.219-5473
   password: PCnnH6SQSnfoS27
@@ -168,20 +158,26 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- name: '24,27,30|1|🇪3 |  5.6MB/s #1'
+- alterId: 0
+  name: 24,37|未知33
   password: 0597af27-0972-45de-a32f-d320348cb765
   port: 43583
   server: aafrtpfxr.del01i9zjfegelp.5xfsur8v62.gosdk.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
   type: trojan
-- name: '24|🇩🇪 _德国 #1'
+  udp: true
+- alterId: 0
+  name: 24,37|DE
   password: Aimer
   port: 8443
   server: 91.107.253.14
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agepj.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
@@ -228,17 +224,6 @@ proxies:
     path: /path/240811062813
 - alterId: 0
   cipher: auto
-  name: 36,37|未知6 62.3KB/s
-  network: tcp
-  port: 48961
-  server: 23.158.56.21
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
-- alterId: 0
-  cipher: auto
   grpc-opts:
     grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
   name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
@@ -249,3 +234,13 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+- alterId: 0
+  name: 37|🇪DE德国4 49.1KB/s
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.58.65.13
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
