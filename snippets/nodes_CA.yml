@@ -20,7 +20,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3,19|🏁RELAY-172.67.183.220-7919
+  name: 3,19|🏁RELAY-172.67.183.220-7895
   network: ws
   port: 443
   server: 172.67.183.220
@@ -53,7 +53,7 @@ proxies:
     path: /dyajvws
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,37|CA
+  name: 5,9,24,27,30,37|CA
   password: 09a9cf28-a696-4de5-811c-cdc368e06d06
   port: 31441
   server: free.2apzhfa.xyz
@@ -62,8 +62,8 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|0|🇦 加大 01 | 1x CA
-  password: 71707016-8758-4550-8f39-b328a4d96384
+  name: '5,24,27,30|2|🇦 加拿大 01 | 1x CA #1'
+  password: 4be0e4fd-f3cf-4708-ad10-e019cd0778b4
   port: 36441
   server: free.2weradf.xyz
   type: ss
@@ -497,7 +497,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 9,11,24,28|🇨🇦 加拿大-多伦多-001-1A
+  name: '9,11,24,27,28,30|1|🇦1 |  2.7MB/s #1'
   network: ws
   port: 20022
   server: 141.195.112.53
@@ -505,7 +505,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 42bbc5e6-e973-4aad-8480-24509118b3e1
+  uuid: 15f1e492-cb1e-4ac0-8646-8f6c54f820ae
   ws-opts:
     path: /
 - alterId: 0
@@ -525,10 +525,11 @@ proxies:
     path: /dabai.in172.67.2.142
 - alterId: 0
   cipher: auto
-  name: 10|加拿大 002
+  name: '10,20,21|🏁RELAY-104.17.221.248-0744 #1'
   network: ws
   port: 8880
   server: s4.db-link02.top
+  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -572,10 +573,12 @@ proxies:
 - alterId: 0
   cipher: auto
   ip-version: dual
-  name: 10|加拿大 006
+  name: '10,20,21|🇨🇦CA-51.79.102.253-0767 #2'
   network: ws
   port: 80
   server: 51.79.102.253
+  servername: ''
+  tls: false
   type: vmess
   udp: true
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -614,22 +617,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇨🇦CA-51.79.102.253-0753
-  network: ws
-  port: 80
-  server: 51.79.102.253
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇨🇦CA-51.79.103.76-5768
+  name: 19|🇨🇦CA-51.79.103.76-5704
   network: ws
   port: 80
   server: 51.79.103.76
@@ -643,18 +631,19 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-23.162.200.227-7890 #1'
+  client-fingerprint: chrome
+  name: 19|🇨🇦CA-51.79.102.253-1086
   network: ws
-  port: 443
-  server: 23.162.200.227
-  servername: ''
-  tls: true
+  port: 80
+  server: 51.79.102.253
+  skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
     headers:
-      Host: ''
-    path: /linkvws
+      host: 51.79.102.253
+    path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
   name: '20,21|🇨🇦CA-134.195.198.147-7893 #1'
@@ -671,17 +660,31 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 20,21,24|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T...
+  name: '20,21|🇨🇦CA-23.162.200.227-7890 #1'
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 20,21,24,36|🔒 VM-WS-NA 🇨🇦 CA-51.79.103.76:...
   network: ws
   port: 80
-  server: 51.79.102.253
+  server: 51.79.103.76
   servername: ''
   tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
     headers:
-      Host: 51.79.102.253
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
@@ -697,17 +700,17 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 24,36|🔒 VM-WS-NA 🇨🇦 CA-51.79.103.76:...
+  name: 24|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T...
   network: ws
   port: 80
-  server: 51.79.103.76
+  server: 51.79.102.253
   servername: ''
   tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      Host: 51.79.102.253
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
