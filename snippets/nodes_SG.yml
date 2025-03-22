@@ -1,14 +1,14 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|14|🇬新加坡 03 | 1x SG #1'
-  password: cc240562-e69e-49d2-91b0-fa943645563c
+  name: '5,9,24,27,30|1|🇬新加坡 03 | 1x SG #1'
+  password: bac6f863-3347-4af7-acf0-83e8fba746a6
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|14|🇸🇬新加坡 02 | 1x SG #2'
-  password: cc240562-e69e-49d2-91b0-fa943645563c
+  name: '5,9,24,27,30|1|🇸🇬新加坡 02 | 1x SG #1'
+  password: bac6f863-3347-4af7-acf0-83e8fba746a6
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
@@ -50,7 +50,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27,30|0|🇬 新加坡 01 | 1x SG
-  password: cd8732c8-fe30-425d-a9f6-2c52d7330d63
+  password: 7c493c21-b1cb-438b-ad59-ba13064dd5b3
   port: 36171
   server: free.2weradf.xyz
   type: ss
@@ -119,7 +119,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: '5,9,24,27,30|0|🇬 新加坡 03 | 1x SG #1'
-  password: cd8732c8-fe30-425d-a9f6-2c52d7330d63
+  password: 7c493c21-b1cb-438b-ad59-ba13064dd5b3
   port: 36175
   server: free.2weradf.xyz
   type: ss
@@ -203,22 +203,22 @@ proxies:
     headers:
       Host: sg1.pkyun.website
     path: /sg1
-- name: '9,27,30|1|🇬1 |  1.5MB/s #1'
+- name: 9|1|🇸🇬1 |  1.5MB/s
   password: e393f59c-9cd0-33ec-8a2f-235c5b30a220
   port: 20299
   server: gy.58n.net
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: x299.flybar.work
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: '9,27,30|1|🇬2 |  2.8MB/s #1'
+  name: 9|1|🇸🇬2 |  2.8MB/s
   password: amazonskr05
   port: 443
   server: 54.169.134.156
   type: ss
   udp: true
-- name: '9,24,27,30|11,12|加坡3|@ripaojiedian #1'
+- name: '9,24,27,30|12,13|加坡3|@ripaojiedian #1'
   network: tcp
   password: 0597af27-0972-45de-a32f-d320348cb765
   port: 42881
@@ -229,7 +229,7 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '9,11,24,27,30|11|🇬 新加坡2|@ripaojiedian #1'
+  name: '9,11,24,27,30|12|🇬 新加坡2|@ripaojiedian #1'
   password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
   port: 21115
   server: okanc.node-is.green
@@ -238,7 +238,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '9,11,20,21,24,27,30|11|🇬 特殊|@ripaojiedian #1'
+  name: '9,11,20,21,24,27,30|12|🇬 特殊|@ripaojiedian #1'
   password: amazonskr05
   port: 443
   server: 18.183.126.95
@@ -289,15 +289,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233...
-  network: tcp
-  port: 50678
-  server: 62.146.233.53
-  tls: false
-  type: vmess
-  uuid: 5d1ec6e7-fd58-4e85-91c5-6335a86d2775
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-154.26.137...
   network: tcp
   port: 44104
@@ -307,14 +298,13 @@ proxies:
   uuid: e9933a4c-e56e-458c-bcf4-9cb3875bba55
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-154.26.129.2...
+  name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232...
   network: tcp
-  port: '57143'
-  server: 154.26.129.247
-  servername: ''
+  port: 52856
+  server: 62.146.232.157
   tls: false
   type: vmess
-  uuid: 28efbf36-079a-4c98-8470-d13458db6ee6
+  uuid: ed54e388-bfc5-4b36-ae4d-8b3cd460d3d4
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.232.1...
@@ -327,14 +317,11 @@ proxies:
   uuid: 13e13a3e-e981-4eea-a9fc-13e50628fd9b
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇸🇬 SG-140.245.55.25...
-  network: ws
-  port: '23452'
-  server: 140.245.55.253
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-154.26.129.2...
+  network: tcp
+  port: '57143'
+  server: 154.26.129.247
+  servername: ''
   tls: false
   type: vmess
-  uuid: 6abfbd44-62aa-4ad3-8b5a-aa4ef40466f5
-  ws-opts:
-    headers:
-      Host: westsg2-ddns.oraclenat.cc
-    path: /
+  uuid: 28efbf36-079a-4c98-8470-d13458db6ee6
