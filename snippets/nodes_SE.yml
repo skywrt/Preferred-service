@@ -17,24 +17,28 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 19|🇸🇪SE-121.127.46.147-0369
+  name: 19|🇸🇪SE-121.127.46.147-0421
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 121.127.46.147
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 24|🇸🇪 _瑞典
-  network: ws
-  port: '443'
-  server: 185.146.173.158
-  tls: false
-  type: vmess
-  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇸🇪SE-188.126.93.105-0442
+  password: 70Xwg0SbHSL8CuCkiLuGhO
+  port: 15128
+  server: sto2.g.edgeservers.org
+  type: ss
+- allowInsecure: ''
+  client-fingerprint: chrome
+  name: 24,27,30|🇪 瑞 德Amazon中
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 13.48.201.219
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.9...
