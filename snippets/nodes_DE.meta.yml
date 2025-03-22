@@ -182,8 +182,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30|0|🇪国 01 | 1x DE
-  password: b78bd4dd-e0c2-436d-9931-bd897a147233
+  name: 5,9,24,27|1|🇪德国 01 | 1x DE
+  password: 300005ea-5374-43d3-be05-eb42a64fb5ce
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -199,14 +199,14 @@ proxies:
   type: vmess
   uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
 - cipher: chacha20-ietf-poly1305
-  name: 5,19|🇱🇹LT-45.87.175.154-0242
+  name: 5,19|🇱🇹LT-45.87.175.154-0211
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.154
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇪 德国 01 | 1x DE #1'
-  password: 0438e881-4bc5-43a2-abc3-830b8370fb86
+  name: 5,9,24,27|0| 国 01 | 1x DE
+  password: 4d1eb626-4c14-4a2f-b06b-229164fe4f46
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -273,32 +273,6 @@ proxies:
   tls: true
   type: vless
   uuid: 46b06e2c-e5e0-4ad2-ad3e-9f316d7d3065
-- alterId: 2
-  cipher: auto
-  name: 11|11|2|🇩🇪5 |  5.0MB/s
-  network: ws
-  port: 23618
-  server: 18.mamamajd.site
-  tls: false
-  type: vmess
-  uuid: 12f982df-dbb3-3288-b784-0a86c8f0706f
-  ws-opts:
-    headers:
-      Host: 18.mamamajd.site
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 11|11|2|🇩🇪11 |  4.5MB/s
-  network: ws
-  port: 23616
-  server: 16.mamamajd.site
-  tls: false
-  type: vmess
-  uuid: 12f982df-dbb3-3288-b784-0a86c8f0706f
-  ws-opts:
-    headers:
-      Host: 16.mamamajd.site
-    path: /
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -313,35 +287,25 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇩🇪DE-100.42.177.164-5793
-  password: 0b381b31811f4d98
-  port: 26905
-  server: 100.42.177.164
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-5622
-  password: BwcAUZk8hUFAkDGN
-  port: 9031
-  server: 80.92.204.106
-  type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-8064 #1'
+  client-fingerprint: chrome
+  name: '19,20,21|🇩🇪DE-185.85.241.196-5875 #1'
   network: ws
-  port: 443
-  server: 57.129.24.125
-  servername: ''
-  tls: true
+  port: 8080
+  server: 185.85.241.196
+  servername: www.bing.com
+  skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: a9b84c67-6143-4db3-abc0-d9fa332205cc
   ws-opts:
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
+      Host: ''
+    path: a9b84c67-6143-4db3-abc0-d9fa332205cc-vm
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.141-5603 #1'
+  name: '20,21|🇩🇪DE-57.129.24.141-5554 #1'
   network: ws
   port: 443
   server: 57.129.24.141
@@ -355,26 +319,18 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  grpc-opts:
-    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
-  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
-  network: grpc
-  port: '15145'
-  server: 88.198.172.25
+  name: '20,21|🇩🇪DE-57.129.24.125-8068 #1'
+  network: ws
+  port: 443
+  server: 57.129.24.125
   servername: ''
   tls: true
   type: vmess
-  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
-  network: tcp
-  port: '24164'
-  server: 193.108.117.143
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
@@ -385,30 +341,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇩🇪 DE-91.107.148.11...
-  network: ws
-  port: '80'
-  server: 91.107.148.11
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e64fa11e-efec-44bf-a2e1-4854fdb33c16
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-XHTTP-NA 🇩🇪 DE-91.107.148...
-  network: xhttp
-  port: '2083'
-  server: 91.107.148.11
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5fe882a3-af66-4a5a-88ac-984dc84badff
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
@@ -426,15 +358,15 @@ proxies:
 - alterId: 0
   cipher: auto
   grpc-opts:
-    grpc-service-name: ''
-  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-91.107.148....
+    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
   network: grpc
-  port: '2052'
-  server: 91.107.148.11
+  port: '15145'
+  server: 88.198.172.25
   servername: ''
   tls: true
   type: vmess
-  uuid: b558536d-f64c-4c3c-86ff-fd69cc853ff7
+  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
@@ -445,3 +377,13 @@ proxies:
   tls: false
   type: vmess
   uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
+  network: tcp
+  port: '24164'
+  server: 193.108.117.143
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
