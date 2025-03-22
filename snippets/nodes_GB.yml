@@ -1,7 +1,7 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0| 国住宅IP 01 | 1x UK
-  password: 4d1eb626-4c14-4a2f-b06b-229164fe4f46
+  name: 5,9,24,27,30|0|🇧 国住宅IP 01 | 1x UK
+  password: cd8732c8-fe30-425d-a9f6-2c52d7330d63
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -52,8 +52,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|1|🇧英国家宽 01 | 1x UK
-  password: 300005ea-5374-43d3-be05-eb42a64fb5ce
+  name: '5,9,24,27,30|14|🇧英国家宽 01 | 1x UK #1'
+  password: cc240562-e69e-49d2-91b0-fa943645563c
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -141,26 +141,39 @@ proxies:
     headers:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
-- alterId: 2
-  cipher: auto
-  name: 11,24,27|2|🇧2 |  1.1MB/s
-  network: ws
-  port: 23613
-  server: 13.mamamajd.site
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知45 5.5MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ffa4efea-a32b-398c-8e43-4e11e3dc63dc
-  ws-opts:
-    headers:
-      Host: 13.mamamajd.site
-    path: /
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知57 3.5MB/s
+  password: 4f20786f016f5a7c
+  port: 15273
+  server: 198.244.149.246
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 20,21,37|未知7 4.4MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.79
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 24|🇬🇧 英国 V2CROSS.COM
+  client-fingerprint: chrome
+  name: 24,30|🇧 英国 V2CROSS.COM
   network: ws
-  port: '443'
+  port: 443
   server: 193.123.59.111
   tls: true
   type: vmess
@@ -169,6 +182,19 @@ proxies:
     headers:
       Host: beyonddsz.cfd
     path: /linkws
+- alterId: 2
+  cipher: auto
+  name: '24|2|🇬🇧2 |  1.1MB/s #1'
+  network: ws
+  port: '23613'
+  server: 13.mamamajd.site
+  tls: false
+  type: vmess
+  uuid: ffa4efea-a32b-398c-8e43-4e11e3dc63dc
+  ws-opts:
+    headers:
+      Host: 13.mamamajd.site
+    path: /
 - name: 26|V2-英国03∣K71线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 20820
@@ -178,14 +204,25 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
   network: tcp
-  port: '26924'
-  server: 68.168.31.184
+  port: '55577'
+  server: 172.99.190.207
   servername: ''
   tls: false
   type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
+  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知49 407.9KB/s
+  network: tcp
+  port: 46617
+  server: 46.250.253.232
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-149.7.16.149...
@@ -198,16 +235,6 @@ proxies:
   uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
-  network: tcp
-  port: '46617'
-  server: 46.250.253.232
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
   network: tcp
   port: '47567'
@@ -218,11 +245,11 @@ proxies:
   uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
   network: tcp
-  port: '55577'
-  server: 172.99.190.207
+  port: '26924'
+  server: 68.168.31.184
   servername: ''
   tls: false
   type: vmess
-  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
