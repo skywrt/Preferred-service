@@ -55,7 +55,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: '5,9,24,27,30|0|🇭🇰香港 03 | 1x HK #1'
-  password: 7eddc3fa-ed7f-488d-a273-388eb435f8d3
+  password: 23f5e2c3-d68c-41c8-8f21-fab3504ee2db
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
@@ -98,14 +98,14 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: '5,9,24,27,30|0|🇭🇰香港 02 | 1x HK #1'
-  password: 7eddc3fa-ed7f-488d-a273-388eb435f8d3
+  password: 23f5e2c3-d68c-41c8-8f21-fab3504ee2db
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 5,9,24,27,30|0|🇭🇰 01 | 1x HK
-  password: 7eddc3fa-ed7f-488d-a273-388eb435f8d3
+  password: 23f5e2c3-d68c-41c8-8f21-fab3504ee2db
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
@@ -124,20 +124,20 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|2|🇭🇰 香港IP 03 | 1x HK #1'
-  password: 3e1c88df-43f8-4b5f-b176-3623b9114942
+  name: '5,9,24,27,30|1|🇭🇰 香港IP 03 | 1x HK #1'
+  password: 9a53a881-3073-447f-ae3d-a2cbb6299b0d
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|2|🇭🇰 香港 02 | 1x HK #1'
-  password: 3e1c88df-43f8-4b5f-b176-3623b9114942
+  name: '5,9,24,27,30|1|🇭🇰 香港 02 | 1x HK #1'
+  password: 9a53a881-3073-447f-ae3d-a2cbb6299b0d
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: '9,24,27,30|1,12,13|香港6|@ripaojiedian #1'
+- name: '9,24,27,30|12,13|香港6|@ripaojiedian #1'
   network: tcp
   password: VMhGp5wEIyCDf90T
   port: 42303
@@ -146,11 +146,11 @@ proxies:
   sni: hk06.run.place
   type: trojan
   udp: true
-- name: 9|1|🇭🇰4 |  5.7MB/s
-  password: f3f77845-1b35-3def-945f-2bf030f52223
+- name: '9,27,30|2|🇰5 |  5.1MB/s #1'
+  password: f00f490e-c01c-3fa1-a5b3-831fbe4c2d8c
   port: 20307
   server: gy.58n.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: z307.hongkongnode.top
   type: trojan
   udp: true
@@ -801,6 +801,14 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- name: '27,30|2|🇭🇰2 |  6.1MB/s #1'
+  password: f00f490e-c01c-3fa1-a5b3-831fbe4c2d8c
+  port: 28678
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z143.hongkongnode.top
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-5.83.221.31:3...
@@ -815,6 +823,25 @@ proxies:
     headers:
       Host: v02.gutingting.com
     path: /aceamedv
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
+  network: tcp
+  port: '27512'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-185.14.47.13...
+  network: tcp
+  port: 3503
+  server: 185.14.47.132
+  tls: false
+  type: vmess
+  uuid: fa678492-65dd-3df0-800d-11f138b868ab
 - alterId: 0
   cipher: auto
   name: 36,37|HK 279.7KB/s
@@ -835,15 +862,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 0f9e955e-0fb4-4fab-a7f7-09ec5e4080fc
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-185.14.47.13...
-  network: tcp
-  port: 3503
-  server: 185.14.47.132
-  tls: false
-  type: vmess
-  uuid: fa678492-65dd-3df0-800d-11f138b868ab
 - alterId: 0
   name: 37|HK2
   network: tcp
