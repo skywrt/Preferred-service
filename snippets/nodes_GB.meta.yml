@@ -118,8 +118,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|国家宽 01 | 1x UK
-  password: 40dcdf1e-e3c1-4824-9641-6dc20c814020
+  name: 5,9|🇬🇧 0|🇬🇧英国家宽 01 | 1x UK
+  password: 7b9b5ee9-041e-4898-a540-85973b21e273
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -219,9 +219,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '9,24|1|🇬🇧3 |  4.3MB/s #2'
+  name: 9|1|🇬🇧3 |  4.3MB/s
   network: ws
-  port: '2083'
+  port: 2083
   server: Support.onetwothree123.ir
   servername: support.onetwothree123.ir
   skip-cert-verify: false
@@ -264,7 +264,22 @@ proxies:
     path: /itdog?ed=2560
 - alterId: 2
   cipher: auto
-  name: 11,27|2|🇬🇧4 |  4.9MB/s
+  name: 11,24,27|1|1 |  5.1MB/s
+  network: ws
+  port: 23605
+  server: 5.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 966476e3-5c3e-39a8-b91d-ba6a66b70115
+  ws-opts:
+    headers:
+      Host: 5.mamamajd.site
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '11,24,27|1|🇬🇧4 |  4.9MB/s #2'
   network: ws
   port: 23613
   server: 13.mamamajd.site
@@ -302,11 +317,11 @@ proxies:
       Host: lo.kpcloud.eu.org
     path: '%2Fblue'
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知58 20.6MB/s
-  password: 4f20786f016f5a7c
-  port: 15273
-  server: 198.244.149.246
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知74 17.5MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.79
   skip-cert-verify: true
   tls: true
   type: ss
@@ -329,29 +344,25 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇬🇧GB-45.158.77.187-5993
-  network: ws
-  port: 443
-  server: linde06.indiavideo.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-  ws-opts:
-    headers:
-      host: linde06.indiavideo.sbs
-    path: /linkws
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 20,21,37|未知74 17.5MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.79
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知58 20.6MB/s
+  password: 4f20786f016f5a7c
+  port: 15273
+  server: 198.244.149.246
   skip-cert-verify: true
   tls: true
   type: ss
+- alterId: 0
+  name: 20,21,37|未知103
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.43.29.99
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '20,21|🇬🇧GB-45.158.77.187-6022 #1'
@@ -367,13 +378,6 @@ proxies:
       Host: linde06.indiavideo.sbs
     path: /linkws
 - name: 24|🇬🇧 英国 社会保险安全部
-  password: telegram-id-directvpn
-  port: 22222
-  server: 51.44.138.115
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '24|🇬🇧 英国 社会保险安全部 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 51.24.52.189
@@ -389,6 +393,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  network: tcp
+  port: '46617'
+  server: 46.250.253.232
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
+- alterId: 0
+  cipher: auto
   name: 36,37|未知36 29.4KB/s
   network: tcp
   port: 47567
@@ -400,26 +414,6 @@ proxies:
   uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
-  network: tcp
-  port: '26924'
-  server: 68.168.31.184
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
-  network: tcp
-  port: '46617'
-  server: 46.250.253.232
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-149.7.16.149...
   network: tcp
   port: '37101'
@@ -428,6 +422,16 @@ proxies:
   tls: false
   type: vmess
   uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
+  network: tcp
+  port: '26924'
+  server: 68.168.31.184
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...

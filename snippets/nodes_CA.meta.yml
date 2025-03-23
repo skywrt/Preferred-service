@@ -135,7 +135,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3,19|🏁RELAY-172.67.131.17-8137
+  name: 3,19|🏁RELAY-172.67.131.17-8037
   network: ws
   port: 443
   server: 172.67.131.17
@@ -520,7 +520,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3,19|🏁RELAY-172.67.183.220-8066
+  name: 3,19|🏁RELAY-172.67.183.220-7982
   network: ws
   port: 443
   server: 172.67.183.220
@@ -933,15 +933,15 @@ proxies:
       host: UK1-vLEss.greenSSH.ORg
     path: /vless
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|🇦加大 01 | 1x CA
-  password: 40dcdf1e-e3c1-4824-9641-6dc20c814020
+  name: 5,9|🇨🇦 0|🇨🇦加拿大 01 | 1x CA
+  password: 7b9b5ee9-041e-4898-a540-85973b21e273
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|1|🇦 加拿大 01 | 1x CA
-  password: d6e1f81c-9832-44da-bfaa-31c7d95ae67d
+  name: 5,9,24,27|2|🇦 加大 01 | 1x CA
+  password: a9fcbfe2-3dda-41a0-a24e-ef2fa93b8b4b
   port: 36441
   server: free.2weradf.xyz
   type: ss
@@ -1390,7 +1390,7 @@ proxies:
     path: /dabai.in172.67.2.142
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.19.48.236-0695 #1'
+  name: '10,20,21|🏁RELAY-104.19.48.236-0695 #2'
   network: ws
   port: 8880
   server: s4.db-link02.top
@@ -1407,10 +1407,11 @@ proxies:
     path: /dabai.in104.25.239.131
 - alterId: 0
   cipher: auto
-  name: 10|加拿大 003
+  name: '10,20,21|🏁RELAY-104.16.155.10-0697 #1'
   network: ws
   port: 8080
   server: 104.16.155.10
+  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -1453,10 +1454,12 @@ proxies:
 - alterId: 0
   cipher: auto
   ip-version: dual
-  name: 10|加拿大 006
+  name: '10,20,21|🇨🇦CA-51.79.102.253-0718 #1'
   network: ws
   port: 80
   server: 51.79.102.253
+  servername: ''
+  tls: false
   type: vmess
   udp: true
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -1464,17 +1467,6 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  name: 11|11|2|🇨🇦1 |  1.6MB/s
-  network: ws
-  port: 20025
-  server: 141.195.112.53
-  tls: false
-  type: vmess
-  uuid: b7274fbe-2377-4413-8b3b-22e72539178e
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: 17|加拿大(yudou66.com 玉豆免费节点)
@@ -1515,12 +1507,6 @@ proxies:
     headers:
       Host: Sb-1u6.paGEs.dEv
     path: '%2Fpc0cypuups4meoks%2Fmtu4ljewms4ymdmumti3%3Fed%3D2560'
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇨🇦CA-142.4.216.225-0433
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: ca225.vpnbook.com
-  type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 19,20,21,37|未知129 18.4MB/s
@@ -1533,32 +1519,18 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇨🇦CA-51.79.103.76-1096
+  name: 19|🇨🇦CA-51.79.102.253-1079
   network: ws
   port: 80
-  server: 51.79.103.76
+  server: 51.79.102.253
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
     headers:
-      host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      host: 51.79.102.253
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇨🇦CA-134.195.198.147-7979 #1'
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
-    path: /linkvws
 - alterId: 0
   cipher: auto
   name: '20,21|🇨🇦CA-23.162.200.227-7993 #1'
@@ -1575,19 +1547,35 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '23|🇨🇦_CA_加拿大 #1'
+  name: '20,21|🇨🇦CA-134.195.198.147-7979 #1'
   network: ws
   port: 443
-  server: 158.51.121.36
-  skip-cert-verify: true
+  server: 134.195.198.147
+  servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      Host: inna.cfd
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 24|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T...
+  name: '20,21,24|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T... #1'
+  network: ws
+  port: 80
+  server: 51.79.103.76
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
+  name: 20,21,24|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T...
   network: ws
   port: 80
   server: 51.79.102.253
@@ -1601,18 +1589,16 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '24|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T... #1'
+  name: '23|🇨🇦_CA_加拿大 #1'
   network: ws
-  port: 80
-  server: 51.79.103.76
-  servername: ''
-  tls: false
+  port: 443
+  server: 158.51.121.36
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /IOebhLMhl1CTbFHbL95myfRX2
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 24,36|🔒 VM-TCP-NA 🇺🇸 US-142.214.153....
