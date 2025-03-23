@@ -6,19 +6,16 @@ proxies:
   skip-cert-verify: false
   sni: hinet.mjt000.com
   type: trojan
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30,37|🇹TW
-  password: cc240562-e69e-49d2-91b0-fa943645563c
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27|1|🇼台湾 03 | 1x TW
+  password: ecae5ea0-c8a4-4934-9333-993a8b64ddca
   port: 31245
   server: free.2apzhfa.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|  01 | 1x TW #1'
-  password: d78a0849-f363-4200-a523-c7c04410ee34
+  name: 5,9,24,27|0|  01 | 1x TW
+  password: f61743ec-7529-4aa5-b7c1-f1e5f410926c
   port: 36241
   server: free.2weradf.xyz
   type: ss
@@ -37,17 +34,20 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇼台湾 01 | 1x TW #1'
-  password: 2b917485-b24b-4c0f-bad3-b97baad4df61
+  name: 5,9,24,27|1|🇼台湾 01 | 1x TW
+  password: ecae5ea0-c8a4-4934-9333-993a8b64ddca
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|🇼 台湾 03 | 1x TW #1'
-  password: d78a0849-f363-4200-a523-c7c04410ee34
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27,37|🇹🇼TW台湾2
+  password: f61743ec-7529-4aa5-b7c1-f1e5f410926c
   port: 36245
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -64,15 +64,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|🇼 台湾 02 | 1x TW #1'
-  password: d78a0849-f363-4200-a523-c7c04410ee34
+  name: 5,9,24,27|0|🇼 台湾 02 | 1x TW
+  password: f61743ec-7529-4aa5-b7c1-f1e5f410926c
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇹🇼台湾 02 | 1x TW #1'
-  password: 2b917485-b24b-4c0f-bad3-b97baad4df61
+  name: 5,9,24,27|1|🇹🇼台湾 02 | 1x TW
+  password: ecae5ea0-c8a4-4934-9333-993a8b64ddca
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
@@ -98,16 +98,37 @@ proxies:
   sni: x100.flybar.work
   type: trojan
   udp: true
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: '11,24,27,30|13|台湾|@ripaojiedian #1'
+  name: 11,27|13|台湾2|@ripaojiedian
   network: tcp
-  port: 50002
-  server: 112.132.215.12
+  port: '11110'
+  server: 156.224.77.98
   servername: ''
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 111032f8-eabc-46c0-fe89-8acceaeb34e5
+- alterId: 0
+  cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 11,27,37|🇹TW 191.5KB/s
+  password: 9CREQ4Q7QTCEHO4R
+  port: 21005
+  server: 150.116.11.9
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 27|12|🇼 台湾2|@ripaojiedian
+  port: 11110
+  server: 156.224.77.98
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 111032f8-eabc-46c0-fe89-8acceaeb34e5
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTP-TLS 🇹🇼 TW-118.167.0....
