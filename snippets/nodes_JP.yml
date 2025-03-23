@@ -1,11 +1,12 @@
 proxies:
-- name: 5|0|🇯🇵2 |  6.3MB/s
-  password: 4e0c3a4b-bdac-3950-b736-2c90b76ee530
+- name: 5,27|2|🇯🇵10 |  5.3MB/s
+  password: 33003801-8cb0-32da-af43-032cd5e944fa
   port: 20071
   server: gy.58n.net
   skip-cert-verify: true
   sni: x71.flybar.work
   type: trojan
+  udp: true
 - name: 5|日本05
   network: tcp
   password: d0d98f45-15ec-4a5a-9ccd-d4089e2204d9
@@ -93,11 +94,14 @@ proxies:
   skip-cert-verify: true
   sni: 421421.xyz
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|🇵日本 03 | 1x JP
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27,37|JP
   password: 40dcdf1e-e3c1-4824-9641-6dc20c814020
   port: 31115
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - name: 5|尼日利亚NI-T
@@ -137,12 +141,15 @@ proxies:
   skip-cert-verify: true
   sni: jp.mjt000.com
   type: trojan
-- name: 5,24|🇯🇵 日本东京 Amazon数据中心
+- alterId: 0
+  name: 5,24,37|🇯🇵JP日本2
   password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
   port: 20230
   server: jp007.421421.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
+  tls: true
   type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: 8|🇯🇵JP-54.199.83.239-171_1@171
   password: doub.io
@@ -214,7 +221,7 @@ proxies:
   uuid: 6A5C1155-BC24-F312-5E67-9E735E36E19A
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '9,11,16,24,27|12|🇵 日本|@ripaojiedian #1'
+  name: 9,11,16,24,27|12|🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 13.229.233.60
@@ -352,23 +359,46 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 27|2|🇯🇵9 |  6.3MB/s
-  password: f0adb579-c185-3f3f-9795-adaeb36b676b
+- name: 27|2|🇯🇵4 |  5.2MB/s
+  password: 33003801-8cb0-32da-af43-032cd5e944fa
+  port: 20298
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z298.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 27|2|🇯🇵5 |  6.3MB/s
+  password: 33003801-8cb0-32da-af43-032cd5e944fa
+  port: 20300
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z300.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 27|2|🇯🇵7 |  6.1MB/s
+  password: 33003801-8cb0-32da-af43-032cd5e944fa
+  port: 41767
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x114.flybar.work
+  type: trojan
+  udp: true
+- name: 27|2|🇯🇵9 |  5.9MB/s
+  password: 33003801-8cb0-32da-af43-032cd5e944fa
+  port: 54178
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x115.flybar.work
+  type: trojan
+  udp: true
+- name: 27|2|🇯🇵11 |  6.3MB/s
+  password: 33003801-8cb0-32da-af43-032cd5e944fa
   port: 20059
   server: gy.58n.net
   skip-cert-verify: true
   sni: x59.flybar.work
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.230.235.2...
-  network: tcp
-  port: '48889'
-  server: 13.230.235.247
-  tls: false
-  type: vmess
-  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
@@ -379,6 +409,15 @@ proxies:
   tls: false
   type: vmess
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.230.235.2...
+  network: tcp
+  port: '48889'
+  server: 13.230.235.247
+  tls: false
+  type: vmess
+  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-20.78.127.14...
