@@ -39,25 +39,24 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30|0|🇪国 01 | 1x DE
-  password: 7b9b5ee9-041e-4898-a540-85973b21e273
+  name: 5,9,24,27|0|国 01 | 1x DE
+  password: 40dcdf1e-e3c1-4824-9641-6dc20c814020
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5,36|🔒 VM-TCP-NA 🇩🇪 DE-138.199.158....
+  name: 5|德国 - Falkenstein - Hetzner Onl...
   network: tcp
   port: '100'
   server: 138.199.158.245
-  servername: ''
   tls: false
   type: vmess
-  uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
+  uuid: b52f0a62-068c-41bf-a4f6-ac3faddded46
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|2|🇪 德国 01 | 1x DE #1'
-  password: 8850680f-5d82-4eb7-a727-8f98150f158b
+  name: 5,9,24,27|1|🇪 德国 01 | 1x DE
+  password: d6e1f81c-9832-44da-bfaa-31c7d95ae67d
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -104,8 +103,7 @@ proxies:
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 9,11,24,27,30|🇺🇸 美国 CloudFlare节点 12
+  name: 9,11,24,27|2|🇪6 |  5.2MB/s
   network: ws
   port: 443
   server: 172.67.71.217
@@ -119,6 +117,21 @@ proxies:
     headers:
       Host: 1t3chx0.zed23.web1337.net
     path: /fixedfloati.cfd/linkwsd
+- alterId: 2
+  cipher: auto
+  name: 11,27|2|🇪2 |  3.8MB/s
+  network: ws
+  port: 23618
+  server: 18.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: da96c362-b8b5-31af-9be6-26cdb48368be
+  ws-opts:
+    headers:
+      Host: 18.mamamajd.site
+    path: /
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -136,17 +149,18 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇩🇪DE-185.85.241.196-5875
+  name: 19,36|🔒 VM-WS-NA 🇩🇪 DE-185.85.241.19...
   network: ws
-  port: 8080
+  port: '8080'
   server: 185.85.241.196
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: a9b84c67-6143-4db3-abc0-d9fa332205cc
   ws-opts:
     headers:
-      host: ''
+      Host: ''
     path: a9b84c67-6143-4db3-abc0-d9fa332205cc-vm
 - cipher: aes-256-cfb
   name: 19|🇩🇪DE-80.92.204.106-5400
@@ -231,6 +245,16 @@ proxies:
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
   network: tcp
   port: '15713'
@@ -241,26 +265,24 @@ proxies:
   uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
 - alterId: 0
   cipher: auto
-  grpc-opts:
-    grpc-service-name: ''
-  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-138.201.190...
-  network: grpc
-  port: '2096'
-  server: 138.201.190.167
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 5cdb1f4e-f88b-4735-a121-bde53b7aaea1
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
+  network: tcp
+  port: '24164'
+  server: 193.108.117.143
   servername: ''
   tls: false
   type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+  uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
+  network: tcp
+  port: '48961'
+  server: 23.158.56.21
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
@@ -277,35 +299,13 @@ proxies:
     path: /path/240811062813
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
-  network: tcp
-  port: '24164'
-  server: 193.108.117.143
+  grpc-opts:
+    grpc-service-name: ''
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-138.201.190...
+  network: grpc
+  port: '2096'
+  server: 138.201.190.167
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇩🇪 DE-185.85.241.19...
-  network: ws
-  port: '2052'
-  server: 185.85.241.194
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6b1a8762-30d3-4953-a71b-7e1a84c3a437
-  ws-opts:
-    headers:
-      Host: www.bing.com
-    path: 6b1a8762-30d3-4953-a71b-7e1a84c3a437-vm
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
-  network: tcp
-  port: '48961'
-  server: 23.158.56.21
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
+  uuid: 5cdb1f4e-f88b-4735-a121-bde53b7aaea1
