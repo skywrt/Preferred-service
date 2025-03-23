@@ -1,14 +1,14 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|1|🇬新加坡 03 | 1x SG
-  password: ecae5ea0-c8a4-4934-9333-993a8b64ddca
+  name: '5,9,24,27,30|0|🇬新加坡 03 | 1x SG #1'
+  password: 7b9b5ee9-041e-4898-a540-85973b21e273
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|1|🇸🇬新加坡 02 | 1x SG
-  password: ecae5ea0-c8a4-4934-9333-993a8b64ddca
+  name: '5,9,24,27,30|0|🇬新加坡 02 | 1x SG #1'
+  password: 7b9b5ee9-041e-4898-a540-85973b21e273
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
@@ -49,15 +49,15 @@ proxies:
   sni: x130.flybar.work
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|  01 | 1x SG
-  password: f61743ec-7529-4aa5-b7c1-f1e5f410926c
+  name: '5,9,24,27,30|2|🇬 新加坡 01 | 1x SG #1'
+  password: 8850680f-5d82-4eb7-a727-8f98150f158b
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|1|🇬新加坡 01 | 1x SG
-  password: ecae5ea0-c8a4-4934-9333-993a8b64ddca
+  name: 5,9,24,27,30|0|🇬新加坡 01 | 1x SG
+  password: 7b9b5ee9-041e-4898-a540-85973b21e273
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
@@ -76,8 +76,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|🇬 新加坡 02 | 1x SG
-  password: f61743ec-7529-4aa5-b7c1-f1e5f410926c
+  name: '5,9,24,27,30|2|🇸🇬 新加坡 02 | 1x SG #1'
+  password: 8850680f-5d82-4eb7-a727-8f98150f158b
   port: 36173
   server: free.2weradf.xyz
   type: ss
@@ -112,8 +112,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|🇬 新加坡 03 | 1x SG
-  password: f61743ec-7529-4aa5-b7c1-f1e5f410926c
+  name: '5,9,24,27,30|2|🇬 新加坡 03 | 1x SG #1'
+  password: 8850680f-5d82-4eb7-a727-8f98150f158b
   port: 36175
   server: free.2weradf.xyz
   type: ss
@@ -197,39 +197,41 @@ proxies:
     headers:
       Host: sg1.pkyun.website
     path: /sg1
-- name: 9|1|🇸🇬1 |  1.5MB/s
-  password: e393f59c-9cd0-33ec-8a2f-235c5b30a220
-  port: 20299
-  server: gy.58n.net
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: '9,11,20,21,24,27,30|1,12|🇸🇬 |@ripaojiedian #1'
+  password: amazonskr05
+  port: 443
+  server: 3.35.138.170
+  tfo: false
+  type: ss
+  udp: true
+- name: '9,24,27,30|1|🇬1 |  2.5MB/s #1'
+  password: 1e1f22c7-9cbf-4c02-a1eb-b47c7a8a915c
+  port: 48291
+  server: wb.kaiqsz.com
   skip-cert-verify: false
-  sni: x299.flybar.work
+  sni: mmbiz1.redapricotcloud.com
   type: trojan
   udp: true
-- name: '9,24|🇸🇬 12,13|新加坡3|@ripaojiedian #1'
-  password: 0597af27-0972-45de-a32f-d320348cb765
-  port: 42881
-  server: aafrtpfxr.sgl02i9zjfegelp.5xfsur8v62.gosdk.xyz
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: '9,11,24,27,30|12|🇸🇬 新加坡|@ripaojiedian #1'
+  password: amazonskr05
+  port: 443
+  server: 54.251.193.0
+  tfo: false
+  type: ss
   udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 9,11,24,27|12|🇬 新加坡2|@ripaojiedian
+  name: '9,11,24,27,30|12|🇬 新加坡2|@ripaojiedian #1'
   password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
   port: 21115
   server: okanc.node-is.green
   tfo: false
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 11,27|12|🇸🇬 新加坡|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 54.251.193.0
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|新加坡(SG)Singapore/Singapore_7
@@ -245,13 +247,6 @@ proxies:
     headers:
       host: v2-2.godlight.xyz
     path: /54f634fs
-- name: 24|🇸🇬 _新加坡
-  password: Aimer
-  port: 587
-  server: 52.163.98.70
-  skip-cert-verify: false
-  sni: agepj.ambercc.filegear-sg.me
-  type: trojan
 - name: 26|V2-新加坡02∣K37线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21178
@@ -268,10 +263,10 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇸🇬 SG-217.142.191.1...
+  name: 36|🔒 VM-WS-NA 🇸🇬 SG-217.142.187.1...
   network: ws
   port: '23452'
-  server: 217.142.191.113
+  server: 217.142.187.125
   tls: false
   type: vmess
   uuid: 7cd4f10f-5eae-4840-ae94-472f7a8209ad
