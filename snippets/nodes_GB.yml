@@ -1,7 +1,7 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30|0|🇧 国住宅IP 01 | 1x UK
-  password: e6fbcfc1-2497-4423-a3a9-28ace6aa8e34
+  name: 5,9,24,27|2|🇧 英国住宅IP 01 | 1x UK
+  password: 78342185-23b7-401a-8059-07bbb04f3361
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -52,8 +52,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇧英国家宽 01 | 1x UK #1'
-  password: d9a35271-ea2a-4288-99f4-51f69d4e05e0
+  name: 5,9,24,27|0|国家宽 01 | 1x UK
+  password: 2a414476-443b-44a1-aacd-43e0d920fe83
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -141,39 +141,62 @@ proxies:
     headers:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
-- name: '20,21|🇬🇧GB-13.43.29.99-6111 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.43.29.99
-  sni: trojan.burgerip.co.uk
-  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 11,24,27|1|🇧4 |  4.8MB/s
+  network: ws
+  port: 23605
+  server: 5.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 301654ab-08d4-39fd-aa26-d9d0d7a8f62d
+  ws-opts:
+    headers:
+      Host: 5.mamamajd.site
+    path: /
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知50 18.1MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.81
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇬🇧GB-45.158.77.187-6022 #1'
+  client-fingerprint: chrome
+  name: 19|🇬🇧GB-45.158.77.187-5879
   network: ws
   port: 443
   server: linde06.indiavideo.sbs
-  servername: linde06.indiavideo.sbs
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
   ws-opts:
     headers:
-      Host: linde06.indiavideo.sbs
+      host: linde06.indiavideo.sbs
     path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '24|🇬🇧 _英国 #1'
-  network: ws
-  port: '443'
-  server: 144.24.200.164
-  tls: false
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+- allowInsecure: ''
+  name: 20,21,24,27|1|🇧3 |  5.5MB/s
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.41.16.175
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+- name: 24|🇬🇧 _英国
+  password: telegram-id-directvpn
+  port: 22222
+  server: 52.56.203.122
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - name: 26|V2-英国03∣K71线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 20820
@@ -181,47 +204,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 30|🇧 英国 Amazon数据中心
-  password: telegram-id-directvpn
-  port: 22222
-  server: 52.56.203.122
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇧 英国 V2CROSS.COM
-  network: ws
-  port: 20025
-  server: 5.39.252.72
-  tls: false
-  type: vmess
-  uuid: 720d308b-c48a-40c1-a320-cf6b1caa92a5
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
-  network: tcp
-  port: '47567'
-  server: 38.114.120.12
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
-  network: tcp
-  port: '55577'
-  server: 172.99.190.207
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
@@ -252,3 +234,23 @@ proxies:
   tls: false
   type: vmess
   uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
+  network: tcp
+  port: '55577'
+  server: 172.99.190.207
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
+  network: tcp
+  port: '47567'
+  server: 38.114.120.12
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c

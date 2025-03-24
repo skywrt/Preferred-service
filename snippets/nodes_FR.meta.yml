@@ -13,6 +13,12 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
+- cipher: aes-256-gcm
+  name: 8|🇫🇷FR-193.243.147.128-160_1@160
+  password: 7BcLdsO1WweoGD0X
+  port: 40368
+  server: 193.243.147.128
+  type: ss
 - alterId: 0
   cipher: auto
   name: 8|🇫🇷FR-213.32.63.176-186_1@186
@@ -70,11 +76,14 @@ proxies:
   port: 8000
   server: 54.36.174.181
   type: ss
-- cipher: aes-256-gcm
-  name: '8|SS-法国:波兰-locked-ChatGPT-TikTok... #4'
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 8,37|未知133 1.8MB/s
   password: g5MeD6Ft3CWlJId
   port: 5004
   server: 54.36.174.181
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-256-gcm
   name: '8|SS-法国:波兰-locked-ChatGPT-TikTok... #5'
@@ -105,22 +114,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇫🇷FR-163.5.121.254-5866
-  network: ws
-  port: 443
-  server: obdii.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇫🇷FR-163.5.159.231-8006
+  name: 19|🇫🇷FR-163.5.159.231-7818
   network: ws
   port: 443
   server: irvideo.cfd
@@ -135,36 +129,21 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇫🇷FR-146.19.168.112-8038
+  name: 19|🇫🇷FR-146.19.168.161-5451
   network: ws
   port: 443
-  server: hms19.best-tizi.top
+  server: az05.beyondy.cfd
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
   ws-opts:
     headers:
-      host: hms19.best-tizi.top
-    path: /linkws
+      host: az05.beyondy.cfd
+    path: /link
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇫🇷FR-45.145.165.114-8015
-  network: ws
-  port: 443
-  server: beyonddsz.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    headers:
-      host: beyonddsz.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇫🇷FR-51.77.20.137-8013 #1'
+  name: '20,21|🇫🇷FR-51.77.20.137-7988 #1'
   network: ws
   port: 443
   server: 51.77.20.137
@@ -176,9 +155,15 @@ proxies:
     headers:
       Host: tilebani.com
     path: /linkvws
+- name: '20,21|🇫🇷FR-13.39.228.64-5984 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.39.228.64
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-163.5.159.231-8006 #2'
+  name: '20,21|🇫🇷FR-163.5.159.231-7955 #1'
   network: ws
   port: 443
   server: irvideo.cfd
@@ -192,69 +177,87 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '24|🇫🇷 _法国 #5'
+  name: '20,21|🇫🇷FR-146.19.168.161-7990 #1'
   network: ws
-  port: '443'
-  server: 163.5.159.231
-  tls: false
+  port: 443
+  server: 146.19.168.161
+  servername: az05.beyondy.cfd
+  tls: true
   type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: az05.beyondy.cfd
+    path: /link
 - alterId: 0
   cipher: auto
-  name: '24|🇫🇷 _法国 #6'
+  name: '20,21|🇫🇷FR-146.19.168.112-8022 #1'
   network: ws
-  port: '443'
-  server: obdii.cfd
-  tls: false
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '24|🇫🇷 _法国 #7'
-  network: ws
-  port: '443'
+  port: 443
   server: hms19.best-tizi.top
-  tls: false
+  servername: hms19.best-tizi.top
+  tls: true
   type: vmess
   uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
   ws-opts:
     headers:
       Host: hms19.best-tizi.top
-    path: /
+    path: /linkws
 - alterId: 0
   cipher: auto
-  name: '24|🇫🇷 _法国 #8'
+  name: '20,21|🇫🇷FR-146.19.168.161-5721 #1'
   network: ws
-  port: '443'
-  server: 146.19.168.161
-  tls: false
+  port: 443
+  server: az05.beyondy.cfd
+  servername: az05.beyondy.cfd
+  tls: true
   type: vmess
   uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: az05.beyondy.cfd
+    path: /link
 - alterId: 0
   cipher: auto
-  name: '24|🇫🇷 _法国 #9'
+  name: '20,21|🇫🇷FR-45.145.166.209-5903 #1'
   network: ws
-  port: '8443'
-  server: 141.11.203.194
-  tls: false
+  port: 443
+  server: hms26.xpengmotors.sbs
+  servername: hms26.xpengmotors.sbs
+  tls: true
   type: vmess
-  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
+  uuid: fb0a2de6-bf06-4ff0-97ce-c21abcdc2d55
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: hms26.xpengmotors.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇫🇷FR-45.145.165.114-7958 #1'
+  network: ws
+  port: 443
+  server: beyonddsz.cfd
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      Host: beyonddsz.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 24|🇫🇷 法国 OVH
+  network: ws
+  port: '443'
+  server: 51.77.20.132
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: a.baradiha.com
+    path: /linkvws
 - name: 26|V2-日本01∣K11线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21146
@@ -289,3 +292,12 @@ proxies:
   tls: false
   type: vmess
   uuid: a6179475-489c-4bcc-b05c-481386295b93
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|FR国
+  password: 99eedf8e9170c8a4
+  port: 48977
+  server: 57.128.190.214
+  skip-cert-verify: true
+  tls: true
+  type: ss

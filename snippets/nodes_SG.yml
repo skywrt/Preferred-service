@@ -1,14 +1,17 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇬新加坡 03 | 1x SG #1'
-  password: d9a35271-ea2a-4288-99f4-51f69d4e05e0
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27,37|SG
+  password: 2a414476-443b-44a1-aacd-43e0d920fe83
   port: 31175
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇸🇬新加坡 02 | 1x SG #1'
-  password: d9a35271-ea2a-4288-99f4-51f69d4e05e0
+  name: 5,9,24,27|0|🇬新加坡 02 | 1x SG
+  password: 2a414476-443b-44a1-aacd-43e0d920fe83
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
@@ -49,15 +52,15 @@ proxies:
   sni: x130.flybar.work
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30|0| 加 01 | 1x SG
-  password: e6fbcfc1-2497-4423-a3a9-28ace6aa8e34
+  name: 5,9,24,27|2|🇬 新加坡 01 | 1x SG
+  password: 78342185-23b7-401a-8059-07bbb04f3361
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇬新加坡 01 | 1x SG #1'
-  password: d9a35271-ea2a-4288-99f4-51f69d4e05e0
+  name: 5,9,24,27|0| 01 | 1x SG
+  password: 2a414476-443b-44a1-aacd-43e0d920fe83
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
@@ -76,8 +79,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|🇬 新加坡 02 | 1x SG #1'
-  password: e6fbcfc1-2497-4423-a3a9-28ace6aa8e34
+  name: 5,9,24,27|2|🇸🇬 新加坡 02 | 1x SG
+  password: 78342185-23b7-401a-8059-07bbb04f3361
   port: 36173
   server: free.2weradf.xyz
   type: ss
@@ -112,8 +115,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|🇬 新加坡 03 | 1x SG #1'
-  password: e6fbcfc1-2497-4423-a3a9-28ace6aa8e34
+  name: 5,9,24,27|2|🇬 新加坡 03 | 1x SG
+  password: 78342185-23b7-401a-8059-07bbb04f3361
   port: 36175
   server: free.2weradf.xyz
   type: ss
@@ -197,38 +200,52 @@ proxies:
     headers:
       Host: sg1.pkyun.website
     path: /sg1
-- cipher: aes-256-cfb
+- alterId: 0
+  cipher: auto
+  name: 11,24,27|13|新加坡2|@ripaojiedian
+  network: tcp
+  port: '10710'
+  server: 120.198.71.184
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: CE361194-7D70-614C-780B-D3BDB61D0257
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: '9,11,20,21,24,27,30|12|🇬 新加坡|@ripaojiedian #1'
-  password: amazonskr05
-  port: 443
-  server: 54.251.193.0
+  name: 11,27|12|🇬 新加坡2|@ripaojiedian
+  password: '!!str 74260705449889500'
+  port: 10710
+  server: 120.198.71.184
+  skip-cert-verify: false
+  sni: grown-doberman.shiner427.skin
   tfo: false
-  type: ss
-  udp: true
+  tls: false
+  type: vmess
+  uuid: CE361194-7D70-614C-780B-D3BDB61D0257
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '9,11,24,27,30|12|🇬 新加坡2|@ripaojiedian #1'
-  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
-  port: 21115
-  server: okanc.node-is.green
+  name: 11,24,27|12|🇬 新加坡|@ripaojiedian
+  password: DHJHLK4FAV0ABTK6
+  port: 16003
+  server: 154.196.244.13
   tfo: false
   type: ss
-  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 11,24,27|12|🇬 新加坡3|@ripaojiedian
+  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
+  port: 11008
+  server: 120.232.150.248
+  tfo: false
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '9,11,24,27,30|12|🇬 特殊|@ripaojiedian #1'
+  name: 11,24,27|12|🇬 特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 3.35.138.170
+  server: 3.112.18.99
   tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19|🇸🇬SG-13.213.69.248-0828
-  password: amazonskr05
-  port: 443
-  server: 13.213.69.248
   type: ss
 - alterId: 0
   cipher: auto
@@ -245,6 +262,12 @@ proxies:
     headers:
       host: v2-2.godlight.xyz
     path: /54f634fs
+- cipher: aes-256-cfb
+  name: 24,27|1|🇬1 |  3.9MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.169.134.156
+  type: ss
 - name: 26|V2-新加坡02∣K37线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21178
@@ -274,16 +297,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.232.1...
-  network: tcp
-  port: '53144'
-  server: 62.146.232.153
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 13e13a3e-e981-4eea-a9fc-13e50628fd9b
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232...
   network: tcp
   port: 52856
@@ -300,3 +313,13 @@ proxies:
   tls: false
   type: vmess
   uuid: e9933a4c-e56e-458c-bcf4-9cb3875bba55
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.232.1...
+  network: tcp
+  port: '53144'
+  server: 62.146.232.153
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 13e13a3e-e981-4eea-a9fc-13e50628fd9b
