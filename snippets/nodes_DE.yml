@@ -39,25 +39,26 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|0|国 01 | 1x DE
-  password: 2a414476-443b-44a1-aacd-43e0d920fe83
+  name: 5,9,24,27,30|0|🇪德国 01 | 1x DE
+  password: 25cadf19-a372-4b64-9cfb-8104b11e8969
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5,37|未知103
+  name: 5,36,37|未知103
   network: tcp
   port: 100
   server: 138.199.158.245
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|2|🇪 德国 01 | 1x DE
-  password: 78342185-23b7-401a-8059-07bbb04f3361
+  name: '5,9,24,27,30|1|🇪 德国 01 | 1x DE #1'
+  password: 6962a290-398c-45fc-8801-1f369acabb8b
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -102,36 +103,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- alterId: 2
-  cipher: auto
-  name: 11,24,27|1|🇪1 |  5.0MB/s
-  network: ws
-  port: 23618
-  server: 18.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 301654ab-08d4-39fd-aa26-d9d0d7a8f62d
-  ws-opts:
-    headers:
-      Host: 18.mamamajd.site
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '11,24,27|1|🇩🇪6 |  5.0MB/s #2'
-  network: ws
-  port: 23616
-  server: 16.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 301654ab-08d4-39fd-aa26-d9d0d7a8f62d
-  ws-opts:
-    headers:
-      Host: 16.mamamajd.site
-    path: /
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -192,21 +163,28 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
+- cipher: rc4-md5
+  name: 20,21,30|🇪_DE_国->🇪_SE_
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24,27|1|🇪8 |  3.9MB/s
+  name: '24,27,30|2|🇩🇪4 |  1.3MB/s #3'
   password: 11955ffa5b58cae3
   port: 26268
   server: 45.10.154.245
   type: ss
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-165.22.79....
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
   network: tcp
-  port: 9438
-  server: 165.22.79.129
+  port: '24164'
+  server: 193.108.117.143
+  servername: ''
   tls: false
   type: vmess
-  uuid: e3c1bc3b-9bd3-4890-bf18-f21e84da7c65
+  uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
 - alterId: 0
   cipher: auto
   name: 36,37|未知134 1.1MB/s
@@ -234,14 +212,13 @@ proxies:
     path: /path/240811062813
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-165.22.79....
   network: tcp
-  port: '48961'
-  server: 23.158.56.21
-  servername: ''
+  port: 9438
+  server: 165.22.79.129
   tls: false
   type: vmess
-  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
+  uuid: e3c1bc3b-9bd3-4890-bf18-f21e84da7c65
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -256,24 +233,14 @@ proxies:
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
   network: tcp
-  port: '24164'
-  server: 193.108.117.143
+  port: '48961'
+  server: 23.158.56.21
   servername: ''
   tls: false
   type: vmess
-  uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
+  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -286,3 +253,13 @@ proxies:
   tls: true
   type: vmess
   uuid: 5cdb1f4e-f88b-4735-a121-bde53b7aaea1
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
