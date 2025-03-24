@@ -13,30 +13,26 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|1|🇪德国 01 | 1x DE #1'
-  password: e3e1fb45-6329-450a-a548-369f47cc579f
+  name: '5,24,27,30|2|🇪德国 01 | 1x DE #1'
+  password: 7828b2ea-4715-427c-80f7-4296670d79be
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5,36|🔒 VM-TCP-NA 🇩🇪 DE-138.199.158....
+  name: 5|德国 - Falkenstein - Hetzner Onl...
   network: tcp
   port: '100'
   server: 138.199.158.245
-  servername: ''
   tls: false
   type: vmess
-  uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,24,27,30,37|DE
-  password: bab31764-1661-4220-9ac3-72abdfb3f120
+  uuid: b52f0a62-068c-41bf-a4f6-ac3faddded46
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27,30|0|🇪 德国 01 | 1x DE
+  password: 0ffd6a6c-8dc6-4312-9217-0771006fb2f1
   port: 36471
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -79,36 +75,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- alterId: 2
-  cipher: auto
-  name: '11,24,27,30|2|🇪1 |  1.8MB/s #1'
-  network: ws
-  port: 23618
-  server: 18.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 308e66c9-5afe-31f7-a326-cf56e22cd5e2
-  ws-opts:
-    headers:
-      Host: 18.mamamajd.site
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '11,24,27,30|2|🇩🇪2 |  4.8MB/s #3'
-  network: ws
-  port: 23616
-  server: 16.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 308e66c9-5afe-31f7-a326-cf56e22cd5e2
-  ws-opts:
-    headers:
-      Host: 16.mamamajd.site
-    path: /
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -170,6 +136,32 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
+- alterId: 2
+  cipher: auto
+  name: '24|2|🇩🇪1 |  1.8MB/s #1'
+  network: ws
+  port: '23618'
+  server: 18.mamamajd.site
+  tls: false
+  type: vmess
+  uuid: 308e66c9-5afe-31f7-a326-cf56e22cd5e2
+  ws-opts:
+    headers:
+      Host: 18.mamamajd.site
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '24|2|🇩🇪2 |  4.8MB/s #1'
+  network: ws
+  port: '23616'
+  server: 16.mamamajd.site
+  tls: false
+  type: vmess
+  uuid: 308e66c9-5afe-31f7-a326-cf56e22cd5e2
+  ws-opts:
+    headers:
+      Host: 16.mamamajd.site
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
@@ -194,27 +186,44 @@ proxies:
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
-  grpc-opts:
-    grpc-service-name: ''
-  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-138.201.190...
-  network: grpc
-  port: '2096'
-  server: 138.201.190.167
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
+  network: tcp
+  port: '24164'
+  server: 193.108.117.143
   servername: ''
-  tls: true
+  tls: false
   type: vmess
-  uuid: 5cdb1f4e-f88b-4735-a121-bde53b7aaea1
+  uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
 - alterId: 0
   cipher: auto
-  name: 36,37|未知67
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
   network: httpupgrade
-  port: 2095
+  port: '2095'
   server: 104.19.150.10
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.18...
+  network: tcp
+  port: '22324'
+  server: 23.158.56.184
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
+  network: tcp
+  port: '48961'
+  server: 23.158.56.21
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
@@ -231,21 +240,13 @@ proxies:
     path: /path/240811062813
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
-  network: tcp
-  port: '24164'
-  server: 193.108.117.143
+  grpc-opts:
+    grpc-service-name: ''
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-138.201.190...
+  network: grpc
+  port: '2096'
+  server: 138.201.190.167
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
-  network: tcp
-  port: '48961'
-  server: 23.158.56.21
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
+  uuid: 5cdb1f4e-f88b-4735-a121-bde53b7aaea1

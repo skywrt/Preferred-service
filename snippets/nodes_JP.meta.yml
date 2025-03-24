@@ -1,12 +1,11 @@
 proxies:
-- name: '5,24,27,30|2|🇯🇵11 |  6.2MB/s #3'
+- name: '5,24|2|🇯🇵11 |  6.2MB/s #1'
   password: 02d12d30-3d79-3c88-afe1-688b867d005f
   port: 20071
   server: gy.58n.net
   skip-cert-verify: true
   sni: x71.flybar.work
   type: trojan
-  udp: true
 - name: 5|日本05
   network: tcp
   password: d0d98f45-15ec-4a5a-9ccd-d4089e2204d9
@@ -15,14 +14,11 @@ proxies:
   skip-cert-verify: true
   sni: 421421.xyz
   type: trojan
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,24,27,30,37|JP
-  password: bab31764-1661-4220-9ac3-72abdfb3f120
+- cipher: chacha20-ietf-poly1305
+  name: '5,24,27,30|0|  01 | 1x JP #1'
+  password: 0ffd6a6c-8dc6-4312-9217-0771006fb2f1
   port: 36111
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -35,11 +31,14 @@ proxies:
   tls: false
   type: vmess
   uuid: c06797d5-fa41-4b48-b132-d268d2acb302
-- cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|0|🇵 日本 03 | 1x JP #1'
-  password: 10e0aa34-3524-4a0d-aff5-3fbe7790583a
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,24,27,30,37|JP
+  password: 0ffd6a6c-8dc6-4312-9217-0771006fb2f1
   port: 36115
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -89,14 +88,14 @@ proxies:
     path: ''
 - cipher: chacha20-ietf-poly1305
   name: '5,24,27,30|0|🇵 日本 02 | 1x JP #1'
-  password: 10e0aa34-3524-4a0d-aff5-3fbe7790583a
+  password: 0ffd6a6c-8dc6-4312-9217-0771006fb2f1
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|1|🇵日本 01 | 1x JP #1'
-  password: e3e1fb45-6329-450a-a548-369f47cc579f
+  name: '5,24,27,30|2|🇵日本 01 | 1x JP #1'
+  password: 7828b2ea-4715-427c-80f7-4296670d79be
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
@@ -174,8 +173,8 @@ proxies:
       Host: ''
     path: ''
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|1|🇵日本 03 | 1x JP #1'
-  password: e3e1fb45-6329-450a-a548-369f47cc579f
+  name: '5,24,27,30|2|🇵日本 03 | 1x JP #1'
+  password: 7828b2ea-4715-427c-80f7-4296670d79be
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
@@ -204,8 +203,8 @@ proxies:
   sni: 421421.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|1|🇯🇵日本 02 | 1x JP #1'
-  password: e3e1fb45-6329-450a-a548-369f47cc579f
+  name: '5,24,27,30|2|🇯🇵日本 02 | 1x JP #1'
+  password: 7828b2ea-4715-427c-80f7-4296670d79be
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
@@ -442,30 +441,27 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- name: '24,27,30|2|🇵2 |  6.2MB/s #1'
+- name: '24|2|🇯🇵2 |  6.2MB/s #1'
   password: 02d12d30-3d79-3c88-afe1-688b867d005f
   port: 20142
   server: gy.58n.net
   skip-cert-verify: true
   sni: z142.hongkongnode.top
   type: trojan
-  udp: true
-- name: '24,27,30|2|🇯🇵4 |  5.0MB/s #2'
+- name: '24|2|🇯🇵4 |  5.0MB/s #1'
   password: 02d12d30-3d79-3c88-afe1-688b867d005f
   port: 41767
   server: gy.58n.net
   skip-cert-verify: true
   sni: x114.flybar.work
   type: trojan
-  udp: true
-- name: '24,27,30|2|🇵10 |  6.3MB/s #1'
+- name: '24|2|🇯🇵10 |  6.3MB/s #1'
   password: 02d12d30-3d79-3c88-afe1-688b867d005f
   port: 20140
   server: gy.58n.net
   skip-cert-verify: true
   sni: z140.hongkongnode.top
   type: trojan
-  udp: true
 - name: '24,27,30|12|🇯🇵 日本6|@ripaojiedian #1'
   password: '!!str 74260705449889500'
   port: 443
@@ -535,15 +531,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-20.78.127.14...
-  network: tcp
-  port: '550'
-  server: 20.78.127.141
-  tls: false
-  type: vmess
-  uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
   network: tcp
   port: '1069'
@@ -561,3 +548,12 @@ proxies:
   tls: false
   type: vmess
   uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-20.78.127.14...
+  network: tcp
+  port: '550'
+  server: 20.78.127.141
+  tls: false
+  type: vmess
+  uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
