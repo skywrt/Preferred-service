@@ -1,32 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|3c443fe0c738461184e1cc3c2eede6...
-  network: grpc
-  port: 2096
-  server: 49.13.30.52
-  tls: true
-  type: vmess
-  udp: false
-  uuid: cf150778-4d5c-494b-9d8e-68f60983038a
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|a41eb2ba30974380941b22692834c1...
-  network: ws
-  port: 443
-  server: 57.129.24.142
-  tls: true
-  type: vmess
-  udp: false
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: /linkvws
-- alterId: 0
-  cipher: auto
   name: 5|德国-优化2
   network: ws
   port: '16644'
@@ -40,20 +14,21 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: '5,24,27,30|1|🇪德国 01 | 1x DE #1'
-  password: fbbe816d-f9dc-4679-9d54-d669be8664ea
+  password: e3e1fb45-6329-450a-a548-369f47cc579f
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5|德国 - Falkenstein - Hetzner Onl...
+  name: 5,36|🔒 VM-TCP-NA 🇩🇪 DE-138.199.158....
   network: tcp
   port: '100'
   server: 138.199.158.245
+  servername: ''
   tls: false
   type: vmess
-  uuid: b52f0a62-068c-41bf-a4f6-ac3faddded46
+  uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 5,24,27,30,37|DE
@@ -104,6 +79,36 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
+- alterId: 2
+  cipher: auto
+  name: '11,24,27,30|2|🇪1 |  1.8MB/s #1'
+  network: ws
+  port: 23618
+  server: 18.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 308e66c9-5afe-31f7-a326-cf56e22cd5e2
+  ws-opts:
+    headers:
+      Host: 18.mamamajd.site
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '11,24,27,30|2|🇩🇪2 |  4.8MB/s #3'
+  network: ws
+  port: 23616
+  server: 16.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 308e66c9-5afe-31f7-a326-cf56e22cd5e2
+  ws-opts:
+    headers:
+      Host: 16.mamamajd.site
+    path: /
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -118,41 +123,21 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇩🇪DE-185.177.229.245-1079
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
+- cipher: rc4-md5
+  name: 19,20,21,30|🇪_DE_国->🇪_SE_
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
   type: ss
 - cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-0468
-  password: M3t2ZEQcMGRWBjRa
-  port: 9011
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-5445
-  password: 4R3hUfZ2FHhDmNcP
-  port: 9061
+  name: 19|🇩🇪DE-80.92.204.106-0436
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
   server: 80.92.204.106
   type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.141-5697 #1'
-  network: ws
-  port: 443
-  server: 57.129.24.141
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-7967 #1'
+  name: '20,21|🇩🇪DE-57.129.24.125-7756 #1'
   network: ws
   port: 443
   server: 57.129.24.125
@@ -164,78 +149,27 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
-- cipher: rc4-md5
-  name: 20,21,30|🇪_DE_国->🇪_SE_
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 30|🇪 德国 州兰Amazon数据中心
-  password: telegram-id-directvpn
-  port: 22222
-  server: 18.195.217.3
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
+  name: '20,21|🇩🇪DE-57.129.24.141-5503 #1'
   network: ws
-  port: 30005
-  server: 89.163.231.19
-  servername: www.80347320.xyz
+  port: 443
+  server: 57.129.24.141
+  servername: ''
   tls: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: www.80347320.xyz
-    path: /path/240811062813
-- alterId: 0
-  cipher: auto
-  name: 36,37|未知67
-  network: httpupgrade
-  port: 2095
-  server: 104.19.150.10
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
-  network: tcp
-  port: '48961'
-  server: 23.158.56.21
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: ''
-  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-138.201.190...
-  network: grpc
-  port: '2096'
-  server: 138.201.190.167
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 5cdb1f4e-f88b-4735-a121-bde53b7aaea1
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
-  network: tcp
-  port: '24164'
-  server: 193.108.117.143
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
+      Host: ''
+    path: /linkvws
+- name: 20,21,30|🇸_US_美国_2
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.73.6.39
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
@@ -258,3 +192,60 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: ''
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-138.201.190...
+  network: grpc
+  port: '2096'
+  server: 138.201.190.167
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 5cdb1f4e-f88b-4735-a121-bde53b7aaea1
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知67
+  network: httpupgrade
+  port: 2095
+  server: 104.19.150.10
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 64
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
+  network: ws
+  port: 30005
+  server: 89.163.231.19
+  servername: www.80347320.xyz
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.80347320.xyz
+    path: /path/240811062813
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
+  network: tcp
+  port: '24164'
+  server: 193.108.117.143
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
+  network: tcp
+  port: '48961'
+  server: 23.158.56.21
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
