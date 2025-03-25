@@ -7,15 +7,15 @@ proxies:
   sni: hinet.mjt000.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|🇼台湾 03 | 1x TW #1'
-  password: d1308c82-564c-4393-86b1-3080342e7892
+  name: 5,24,27|2|🇼台湾 03 | 1x TW
+  password: e196bff1-9e1f-4600-aa46-c801c2157adb
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇼 台湾 01 | 1x TW #1'
-  password: 82f01735-9ad6-4b86-847c-815b43a8a74b
+  name: 5,24,27|0|  01 | 1x TW
+  password: 74d96924-8ff6-49d1-b328-c4a51b4175e3
   port: 36241
   server: free.2weradf.xyz
   type: ss
@@ -34,15 +34,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0| 01 | 1x TW #1'
-  password: d1308c82-564c-4393-86b1-3080342e7892
+  name: 5,24,27|2|🇼台湾 01 | 1x TW
+  password: e196bff1-9e1f-4600-aa46-c801c2157adb
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇼 台湾 03 | 1x TW #1'
-  password: 82f01735-9ad6-4b86-847c-815b43a8a74b
+  name: 5,24,27|0|🇼 台湾 03 | 1x TW
+  password: 74d96924-8ff6-49d1-b328-c4a51b4175e3
   port: 36245
   server: free.2weradf.xyz
   type: ss
@@ -61,15 +61,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇹🇼 台湾 02 | 1x TW #1'
-  password: 82f01735-9ad6-4b86-847c-815b43a8a74b
+  name: 5,24,27|0|🇼 台湾 02 | 1x TW
+  password: 74d96924-8ff6-49d1-b328-c4a51b4175e3
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|🇼台湾 02 | 1x TW #1'
-  password: d1308c82-564c-4393-86b1-3080342e7892
+  name: 5,24,27|2|🇹🇼台湾 02 | 1x TW
+  password: e196bff1-9e1f-4600-aa46-c801c2157adb
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
@@ -87,21 +87,35 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: aes-128-gcm
-  name: 9|1|🇹🇼5 |  1.2MB/s
-  password: VMhGp5wEIyCDf90T
-  port: 15375
-  server: bsuqian01.dynu.net
-  type: ss
-  udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|TW
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 125.227.86.46
+  cipher: auto
+  client-fingerprint: chrome
+  name: 11,24,27|12,13|台湾2|@ripaojiedian
+  network: tcp
+  password: d7d8a8cd-239b-4b4e-93d9-dc3d89332ac9
+  port: 42765
+  server: wb.kaiqsz.com
   skip-cert-verify: true
-  tls: true
+  sni: mmbiz1.redapricotcloud.com
+  tfo: false
+  tls: false
+  type: trojan
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 11,24,27|12|🇼 台湾|@ripaojiedian
+  password: 4bccdfb7-f45b-44bb-9cd3-fb6f8fc8072f
+  port: 41705
+  server: zf1.10101251.xyz
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 11,24,27|12|🇹🇼 台湾3|@ripaojiedian
+  password: RLPW44KAFL6K2LNA
+  port: 21005
+  server: 150.116.11.9
+  tfo: false
   type: ss
 - cipher: aes-256-cfb
   name: 40|TW_speednode_0055
