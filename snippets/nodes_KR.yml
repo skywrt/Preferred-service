@@ -1,6 +1,34 @@
 proxies:
-- name: '5,24|2|🇰🇷1 |  5.5MB/s #1'
-  password: fd5cd906-c72b-3e1c-8eba-11dfa31614df
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,24,27,30|1|🇰🇷 韩国 02 | 1x KR #1'
+  password: 82f01735-9ad6-4b86-847c-815b43a8a74b
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,24,27,30|0|🇷韩国 02 | 1x KR #1'
+  password: d1308c82-564c-4393-86b1-3080342e7892
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27,30|0|🇷国 01 | 1x KR
+  password: d1308c82-564c-4393-86b1-3080342e7892
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,24,27,30|1|🇷 韩国 01 | 1x KR #1'
+  password: 82f01735-9ad6-4b86-847c-815b43a8a74b
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 5|0|🇰🇷1 |  1.0MB/s
+  password: 4e0c3a4b-bdac-3950-b736-2c90b76ee530
   port: 45168
   server: gy.58n.net
   skip-cert-verify: true
@@ -12,7 +40,7 @@ proxies:
   port: 20005
   server: service.ouluyun9803.com
   type: ss
-- name: '9,20,21|🇭🇰HK-45.146.232.173-0776 #1'
+- name: 9|1|🇰🇷1 |  6.1MB/s
   password: d041d96a-09a5-405f-ba3d-f56e3b444fb9
   port: 46668
   server: aafrtpfxr.krl01i9zjfegelp.5xfsur8v62.gosdk.xyz
@@ -22,23 +50,17 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 9,11,24,27,30|12|🇷 国特殊|@ripaojiedian
+  name: '9,11,19,20,21,24,27,30|12|🇷 韩国特殊|@ripaojiedian #1'
   password: amazonskr05
   port: 443
   server: 47.129.223.247
   tfo: false
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 19|🇰🇷KR-54.180.1.213-0459
-  password: amazonskr05
-  port: 443
-  server: 54.180.1.213
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇰🇷KR-220.123.48.124-2299
+  name: 19|🇰🇷KR-220.123.48.124-2173
   network: ws
   port: 30002
   server: si.1808.site
@@ -50,6 +72,28 @@ proxies:
     headers:
       host: obdii.cfd
     path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 20,21,23|KR>加拿大 多伦多
+  network: ws
+  port: 30002
+  server: si.1808.site
+  servername: obdii.cfd
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+- name: '24,27,30|2|🇷3 |  3.2MB/s #1'
+  password: b746399a-2169-330a-a824-e0a24bd2b526
+  port: 50355
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z264.hongkongnode.top
+  type: trojan
+  udp: true
 - name: 24|🇰🇷 _韩国
   password: Aimer
   port: 20443
