@@ -1,5 +1,20 @@
 proxies:
 - client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|772484a9eb2a4abba8760b2f84116a...
+  network: ws
+  port: 443
+  server: 47.129.240.60
+  servername: host
+  tls: true
+  type: vless
+  udp: false
+  uuid: c39fadc5-5930-43e1-b301-7cbcf4bc892a
+  ws-opts:
+    headers:
+      host: host
+    path: /
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
@@ -19,15 +34,15 @@ proxies:
       Host: ''
     path: ''
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|2|🇬新加坡 03 | 1x SG
-  password: a38320ed-8856-4197-97c9-0f859afc5a64
+  name: 5,9,24,27|1|🇬新加坡 03 | 1x SG
+  password: 44199489-2864-4598-adbf-d28331053b42
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|2|🇸🇬新加坡 02 | 1x SG
-  password: a38320ed-8856-4197-97c9-0f859afc5a64
+  name: 5,9,24,27|1|🇸🇬新加坡 02 | 1x SG
+  password: 44199489-2864-4598-adbf-d28331053b42
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
@@ -91,23 +106,24 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- name: 5|0|🇸🇬1 |  6.3MB/s
-  password: 4e0c3a4b-bdac-3950-b736-2c90b76ee530
+- name: 5,24,27|2|🇬1 |  6.3MB/s
+  password: fd5cd906-c72b-3e1c-8eba-11dfa31614df
   port: 20130
   server: gy.58n.net
   skip-cert-verify: true
   sni: x130.flybar.work
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,27|0|  01 | 1x SG
-  password: eff8571c-9f2a-4861-9fe1-25bdd61b3497
+  name: 5,9,24,27|0|  01 | 1x SG
+  password: 12802909-1e07-463a-8027-18c59308fa26
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|2|🇬新加坡 01 | 1x SG
-  password: a38320ed-8856-4197-97c9-0f859afc5a64
+  name: 5,9,24,27|1|🇬新加坡 01 | 1x SG
+  password: 44199489-2864-4598-adbf-d28331053b42
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
@@ -126,8 +142,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,27|0|🇬 新加坡 02 | 1x SG
-  password: eff8571c-9f2a-4861-9fe1-25bdd61b3497
+  name: 5,9,24,27|0|🇬 新加坡 02 | 1x SG
+  password: 12802909-1e07-463a-8027-18c59308fa26
   port: 36173
   server: free.2weradf.xyz
   type: ss
@@ -205,8 +221,8 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,27|0|🇬 新加坡 03 | 1x SG
-  password: eff8571c-9f2a-4861-9fe1-25bdd61b3497
+  name: 5,9,24,27|0|🇬 新加坡 03 | 1x SG
+  password: 12802909-1e07-463a-8027-18c59308fa26
   port: 36175
   server: free.2weradf.xyz
   type: ss
@@ -291,28 +307,28 @@ proxies:
       Host: sg1.pkyun.website
     path: /sg1
 - cipher: aes-256-cfb
-  name: 9,20,21,27|1|🇬1 |  6.0MB/s
+  name: '9,20,21,24,27|2|🇸🇬5 |  5.3MB/s #2'
   password: amazonskr05
   port: 443
   server: 13.213.69.248
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '9,27|1|🇸🇬2 |  6.1MB/s #1'
+  name: 9|1|🇸🇬2 |  6.1MB/s
   password: amazonskr05
   port: 443
   server: 54.169.103.201
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '9,27|1|🇸🇬3 |  2.8MB/s #1'
+  name: 9|1|🇸🇬3 |  2.8MB/s
   password: amazonskr05
   port: 443
   server: 54.169.134.156
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '9,20,21,24,27|1|🇸🇬7 |  5.9MB/s #1'
+  name: 9,20,21,24,27|2|🇬2 |  6.2MB/s
   password: amazonskr05
   port: 443
   server: 54.169.138.225
@@ -320,7 +336,7 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 9,11,27|12|🇬 新加坡|@ripaojiedian
+  name: 9,11,24,27|12|🇬 新加坡|@ripaojiedian
   password: YH7ZS7TPHVH3226U
   port: 16010
   server: w72tapyb.slashdevslashnetslashtun.net
@@ -338,7 +354,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 9,11,27|12|🇬 特殊|@ripaojiedian
+  name: 9,11,24,27|12|🇬 特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 3.112.13.110
@@ -387,29 +403,22 @@ proxies:
     headers:
       host: v2-2.godlight.xyz
     path: /54f634fs
-- name: '24|1|🇸🇬2 |  3.0MB/s #1'
-  password: b86e8900-f2cb-37fb-83a6-f43fd068db49
-  port: 20129
+- name: 24,27|2|🇬3 |  3.5MB/s
+  password: fd5cd906-c72b-3e1c-8eba-11dfa31614df
+  port: 20299
   server: gy.58n.net
   skip-cert-verify: true
-  sni: x129.flybar.work
+  sni: x299.flybar.work
   type: trojan
-- name: '24|1|🇸🇬4 |  1.4MB/s #1'
-  password: b86e8900-f2cb-37fb-83a6-f43fd068db49
-  port: 30712
+  udp: true
+- name: '24,27|2|🇸🇬4 |  6.3MB/s #2'
+  password: fd5cd906-c72b-3e1c-8eba-11dfa31614df
+  port: 17806
   server: gy.58n.net
   skip-cert-verify: true
-  sni: x83.flybar.work
+  sni: x65.flybar.work
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '24|🇸🇬 13|新加坡2|@ripaojiedian #1'
-  network: tcp
-  port: '10710'
-  server: 120.198.71.184
-  tls: false
-  type: vmess
-  uuid: CE361194-7D70-614C-780B-D3BDB61D0257
+  udp: true
 - name: 26|V2-新加坡02∣K37线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21178
@@ -426,17 +435,13 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇸🇬 SG-140.245.41.24...
-  network: ws
-  port: '23452'
-  server: 140.245.41.245
+  name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232...
+  network: tcp
+  port: 52856
+  server: 62.146.232.157
   tls: false
   type: vmess
-  uuid: 6abfbd44-62aa-4ad3-8b5a-aa4ef40466f5
-  ws-opts:
-    headers:
-      Host: westsg2-ddns.oraclenat.cc
-    path: /
+  uuid: ed54e388-bfc5-4b36-ae4d-8b3cd460d3d4
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-154.26.137...
@@ -456,12 +461,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 13e13a3e-e981-4eea-a9fc-13e50628fd9b
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232...
-  network: tcp
-  port: 52856
-  server: 62.146.232.157
-  tls: false
-  type: vmess
-  uuid: ed54e388-bfc5-4b36-ae4d-8b3cd460d3d4

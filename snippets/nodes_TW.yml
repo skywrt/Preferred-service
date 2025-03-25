@@ -7,15 +7,15 @@ proxies:
   sni: hinet.mjt000.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|2|🇼台湾 03 | 1x TW
-  password: a38320ed-8856-4197-97c9-0f859afc5a64
+  name: 5,9,24,27|1|🇼台湾 03 | 1x TW
+  password: 44199489-2864-4598-adbf-d28331053b42
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,27|0|  01 | 1x TW
-  password: eff8571c-9f2a-4861-9fe1-25bdd61b3497
+  name: 5,9,24,27|0|  01 | 1x TW
+  password: 12802909-1e07-463a-8027-18c59308fa26
   port: 36241
   server: free.2weradf.xyz
   type: ss
@@ -34,15 +34,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|2|🇼台湾 01 | 1x TW
-  password: a38320ed-8856-4197-97c9-0f859afc5a64
+  name: 5,9,24,27|1|🇼台湾 01 | 1x TW
+  password: 44199489-2864-4598-adbf-d28331053b42
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,27|0|🇼 台湾 03 | 1x TW
-  password: eff8571c-9f2a-4861-9fe1-25bdd61b3497
+  name: 5,9,24,27|0|🇼 台湾 03 | 1x TW
+  password: 12802909-1e07-463a-8027-18c59308fa26
   port: 36245
   server: free.2weradf.xyz
   type: ss
@@ -62,7 +62,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,9,27,37|🇹🇼TW台湾3
+  name: 5,9,24,27,37|🇹🇼TW台湾3
   password: eff8571c-9f2a-4861-9fe1-25bdd61b3497
   port: 36243
   server: free.2weradf.xyz
@@ -94,11 +94,42 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: aes-128-gcm
-  name: 9,27|1|🇼5 |  1.2MB/s
+  name: 9|1|🇹🇼5 |  1.2MB/s
   password: VMhGp5wEIyCDf90T
   port: 15375
   server: bsuqian01.dynu.net
   type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 11,24,27|2|🇼6 |  1.3MB/s
+  network: ws
+  port: 23619
+  server: 19.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: fa155c2f-c4a3-3fa2-ac58-8be6cb517a1a
+  ws-opts:
+    headers:
+      Host: 19.mamamajd.site
+    path: /
+- name: 24,27|2|🇼4 |  6.3MB/s
+  password: fd5cd906-c72b-3e1c-8eba-11dfa31614df
+  port: 59021
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x100.flybar.work
+  type: trojan
+  udp: true
+- name: '24,27|2|🇹🇼11 |  6.3MB/s #2'
+  password: fd5cd906-c72b-3e1c-8eba-11dfa31614df
+  port: 36821
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z262.hongkongnode.top
+  type: trojan
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
