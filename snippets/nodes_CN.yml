@@ -659,15 +659,6 @@ proxies:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 16,19,20,21,37|未知109 424.4KB/s
-  password: UP3JN98C6EOR
-  port: 443
-  server: 62.60.233.21
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
   name: 17|CN_ youtube@资源分享师_17
   network: ws
@@ -773,13 +764,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 24|_中国
+- alterId: 0
+  name: 24,37|🇨CN国
   password: Aimer
   port: 2053
   server: 154.197.64.132
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agepk.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #1'
   password: Aimer
   port: 2083
@@ -787,15 +781,6 @@ proxies:
   skip-cert-verify: false
   sni: agepk.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
-  network: tcp
-  port: '59003'
-  server: 183.236.51.36
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇳 CN-47.92.152.16...
@@ -819,3 +804,12 @@ proxies:
     headers:
       Host: yd2.ainivp.com
     path: /ray
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  network: tcp
+  port: '59003'
+  server: 183.236.51.36
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
