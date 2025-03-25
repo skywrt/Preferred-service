@@ -97,15 +97,15 @@ proxies:
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|0|🇸 国 01 | 1x US Los Angeles
-  password: 74d96924-8ff6-49d1-b328-c4a51b4175e3
+  name: 5,24,27|1|🇸 美国 01 | 1x US Los Angeles
+  password: 8bb2f76d-9f65-43fa-b635-2272a78da39b
   port: 36211
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|0|🇸 美国 03 | 1x US Washington
-  password: 74d96924-8ff6-49d1-b328-c4a51b4175e3
+  name: 5,24,27|1|🇸 美国 03 | 1x US Washington
+  password: 8bb2f76d-9f65-43fa-b635-2272a78da39b
   port: 36215
   server: free.2weradf.xyz
   type: ss
@@ -311,8 +311,8 @@ proxies:
       Host: us6_0.wish.ml
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|2|🇸美国 03 | 1x US Washington
-  password: e196bff1-9e1f-4600-aa46-c801c2157adb
+  name: 5,24,27|0|🇸美国 03 | 1x US Washington
+  password: 917c1c6c-92ef-468b-8cf8-80adead8d9ab
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
@@ -390,8 +390,8 @@ proxies:
       Host: 100-49-141-209.s1.db-link02.top
     path: /dabai.in104.17.169.115
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|0|🇸 美国住宅IP 02 | 1x US Los Ange...
-  password: 74d96924-8ff6-49d1-b328-c4a51b4175e3
+  name: 5,24,27|1|🇸 美国住宅IP 02 | 1x US Los Ange...
+  password: 8bb2f76d-9f65-43fa-b635-2272a78da39b
   port: 36213
   server: free.2weradf.xyz
   type: ss
@@ -429,8 +429,8 @@ proxies:
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|2|🇸美国 01 | 1x US Los Angeles
-  password: e196bff1-9e1f-4600-aa46-c801c2157adb
+  name: 5,24,27|0|🇸国 01 | 1x US Los Angeles
+  password: 917c1c6c-92ef-468b-8cf8-80adead8d9ab
   port: 31211
   server: free.2apzhfa.xyz
   type: ss
@@ -1788,7 +1788,7 @@ proxies:
   server: 34.216.142.212
   type: ss
 - cipher: aes-256-cfb
-  name: 12,19|🇺🇸US-35.161.163.245-0639
+  name: 12,19,27|2|🇺🇸10 |  2.0MB/s
   password: amazonskr05
   port: 443
   server: 35.161.163.245
@@ -1803,6 +1803,12 @@ proxies:
   sni: us10-01zl.huangshang.filegear-sg.me
   type: trojan
   udp: true
+- cipher: aes-256-cfb
+  name: 12,27|2|🇸7 |  5.6MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.185.253.219
+  type: ss
 - name: '13|🇺🇸_US_美国_8 #1'
   network: tcp
   password: telegram-id-directvpn
@@ -2167,18 +2173,17 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19,36|🔒 VM-WS-NA 🇺🇸 US-185.184.70.90...
+  name: 19|🇺🇸US-185.184.70.90-5747
   network: ws
   port: 2082
   server: 185.184.70.90
-  servername: www.bing.com
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 7e84b5b9-e9fe-4dbe-906d-4abd67c09376
   ws-opts:
     headers:
-      Host: ''
+      host: ''
     path: 7e84b5b9-e9fe-4dbe-906d-4abd67c09376-vm
 - cipher: aes-256-gcm
   name: 19|🇺🇸US-38.121.43.71-4567
@@ -2894,30 +2899,49 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- allowInsecure: '1'
-  name: 27|1|🇺🇸17 |  2.5MB/s
-  network: tcp
-  password: '!!str 74260704627805900'
-  port: 443
-  server: 95.85.93.167
+- name: 27|2|🇺🇸8 |  5.1MB/s
+  password: b1bddf1f-a663-3bf1-b7c0-7b4e65f4c116
+  port: 20304
+  server: gy.58n.net
   skip-cert-verify: true
-  sni: positive-treefrog.shiner427.skin
-  tls: true
+  sni: z304.hongkongnode.top
   type: trojan
+  udp: true
+- name: 27|2|🇺🇸17 |  4.7MB/s
+  password: b1bddf1f-a663-3bf1-b7c0-7b4e65f4c116
+  port: 25238
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z267.hongkongnode.top
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇺🇸 US-74.48.159.226...
+  name: 36|🔒 VM-WS-NA 🇺🇸 US-185.122.164.4...
   network: ws
-  port: '38848'
-  server: 74.48.159.226
-  servername: ''
+  port: 2082
+  server: 185.122.164.48
+  servername: www.bing.com
   tls: false
   type: vmess
-  uuid: 20fed645-619c-4ca1-c00e-743ea8a3b51f
+  uuid: 737ff2b6-0e5d-48b5-9d4e-b9998e3ce1c1
   ws-opts:
     headers:
       Host: ''
-    path: /6c8e5a1b
+    path: 737ff2b6-0e5d-48b5-9d4e-b9998e3ce1c1-vm
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇺🇸 US-137.131.52.17...
+  network: ws
+  port: '23451'
+  server: 137.131.52.173
+  tls: false
+  type: vmess
+  uuid: 150a990b-3a9b-4742-866a-8e1611faf316
+  ws-opts:
+    headers:
+      Host: phx-plus-1ddns.faforex.eu.org
+    path: /
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.48.227.23...
@@ -2934,6 +2958,36 @@ proxies:
     path: /path/240811062813
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-142.214.153....
+  network: tcp
+  port: '30606'
+  server: 142.214.153.82
+  tls: false
+  type: vmess
+  uuid: 4012915a-0190-4cbd-ba2c-3f751c66f127
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.248.9...
+  network: tcp
+  port: '30562'
+  server: 15.204.248.92
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 82466715-6a58-4046-a363-a0d18e5b2ab4
+- alterId: 0
+  cipher: auto
+  name: 36,37|US2 59.9MB/s
+  network: tcp
+  port: 35696
+  server: 15.204.86.120
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: cad0504a-a9dc-4d29-8844-b11b69f14a8d
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.249.0...
   network: tcp
   port: '48160'
@@ -2942,6 +2996,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 5b113c12-4dd4-4bb5-9c01-cff092b559e3
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇺🇸 US-74.48.159.226...
+  network: ws
+  port: '38848'
+  server: 74.48.159.226
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 20fed645-619c-4ca1-c00e-743ea8a3b51f
+  ws-opts:
+    headers:
+      Host: ''
+    path: /6c8e5a1b
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇺🇸 US-2.58.87.221:1...
@@ -2956,16 +3024,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.248.9...
-  network: tcp
-  port: '30562'
-  server: 15.204.248.92
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 82466715-6a58-4046-a363-a0d18e5b2ab4
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇺🇸 US-142.4.104.33...
@@ -2975,39 +3033,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇺🇸 US-137.131.52.17...
-  network: ws
-  port: '23451'
-  server: 137.131.52.173
-  tls: false
-  type: vmess
-  uuid: 150a990b-3a9b-4742-866a-8e1611faf316
-  ws-opts:
-    headers:
-      Host: phx-plus-1ddns.faforex.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36,37|US2 59.9MB/s
-  network: tcp
-  port: 35696
-  server: 15.204.86.120
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: cad0504a-a9dc-4d29-8844-b11b69f14a8d
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-142.214.153....
-  network: tcp
-  port: 30606
-  server: 142.214.153.82
-  tls: false
-  type: vmess
-  uuid: 4012915a-0190-4cbd-ba2c-3f751c66f127
 - alterId: 0
   name: 37|US
   network: ws
