@@ -1,32 +1,4 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇰🇷 韩国 02 | 1x KR #1'
-  password: bc3c3bc9-4c2f-497f-a2ce-c8047eb3d805
-  port: 36313
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|🇷韩国 02 | 1x KR #1'
-  password: 8fbd32ee-a40e-4cfe-9af2-2043c77a879f
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30|0|🇷国 01 | 1x KR
-  password: 8fbd32ee-a40e-4cfe-9af2-2043c77a879f
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇷 韩国 01 | 1x KR #1'
-  password: bc3c3bc9-4c2f-497f-a2ce-c8047eb3d805
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - name: '5,24|2|🇰🇷1 |  5.5MB/s #1'
   password: fd5cd906-c72b-3e1c-8eba-11dfa31614df
   port: 45168
@@ -50,7 +22,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '9,11,24,27,30|12|🇷 韩国特殊|@ripaojiedian #1'
+  name: 9,11,24,27,30|12|🇷 国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 47.129.223.247
@@ -99,20 +71,26 @@ proxies:
   skip-cert-verify: false
   sni: agepm.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇰🇷 _韩国 #3'
+- alterId: 0
+  name: 24,37|🇰🇷KR韩国3
   password: Aimer
   port: 21233
   server: 121.155.61.102
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agepn.ambercc.filegear-sg.me
+  tls: true
   type: trojan
-- name: '24|🇰🇷 _韩国 #4'
+  udp: true
+- alterId: 0
+  name: 24,37|🇰🇷KR韩国4
   password: Aimer
   port: 50000
   server: 121.190.81.4
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agepn.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇰🇷 _韩国 #5'
   password: Aimer
   port: 12136
@@ -162,20 +140,26 @@ proxies:
   skip-cert-verify: false
   sni: agepm.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇰🇷 _韩国 #12'
+- alterId: 0
+  name: 24,37|🇷KR韩国2
   password: Aimer
   port: 21276
   server: 211.33.238.198
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agepm.ambercc.filegear-sg.me
+  tls: true
   type: trojan
-- name: '24|🇰🇷 _韩国 #13'
+  udp: true
+- alterId: 0
+  name: 24,37|KR国
   password: Aimer
   port: 20018
   server: 121.164.75.109
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agepm.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇰🇷 _韩国 #14'
   password: Aimer
   port: 10283

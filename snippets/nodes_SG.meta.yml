@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 3|a1d09170b98543868631e0608ba012...
+  name: 3|26d3db2e868041618b0e325f212fba...
   network: ws
   port: 443
   server: 47.129.240.60
@@ -18,7 +18,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|469b49eb7de248cbadaae5e91a0fdc...
+  name: 3|e004a88cd75444089e591e6fca34f0...
   network: ws
   port: 443
   server: 188.114.96.3
@@ -50,18 +50,14 @@ proxies:
     headers:
       Host: ''
     path: ''
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|🇬新加坡 03 | 1x SG #1'
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,24,37|🇸SG
   password: 8fbd32ee-a40e-4cfe-9af2-2043c77a879f
   port: 31175
   server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|🇬新加坡 02 | 1x SG #1'
-  password: 8fbd32ee-a40e-4cfe-9af2-2043c77a879f
-  port: 31173
-  server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - name: '5,38|🇸🇬_SG_新加坡_2 #1'
@@ -130,20 +126,6 @@ proxies:
   skip-cert-verify: true
   sni: x130.flybar.work
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇬 新加坡 01 | 1x SG #1'
-  password: bc3c3bc9-4c2f-497f-a2ce-c8047eb3d805
-  port: 36171
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30|0|🇬加 01 | 1x SG
-  password: 8fbd32ee-a40e-4cfe-9af2-2043c77a879f
-  port: 31171
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 5|新加坡-优化2
@@ -157,13 +139,6 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇸🇬 新加坡 02 | 1x SG #1'
-  password: bc3c3bc9-4c2f-497f-a2ce-c8047eb3d805
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - name: 5|新加坡06|流媒体
   network: ws
   password: d0d98f45-15ec-4a5a-9ccd-d4089e2204d9
@@ -236,13 +211,6 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇬 新加坡 03 | 1x SG #1'
-  password: bc3c3bc9-4c2f-497f-a2ce-c8047eb3d805
-  port: 36175
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - name: 5|新加坡07|流媒体
   network: tcp
   password: d0d98f45-15ec-4a5a-9ccd-d4089e2204d9
@@ -338,7 +306,7 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 9,11,24,27,30|🇳 广
+  name: 9,11,24,27,30|🇨🇳 广
   password: YH7ZS7TPHVH3226U
   port: 16010
   server: w72tapyb.slashdevslashnetslashtun.net
@@ -435,15 +403,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232...
-  network: tcp
-  port: 52856
-  server: 62.146.232.157
-  tls: false
-  type: vmess
-  uuid: ed54e388-bfc5-4b36-ae4d-8b3cd460d3d4
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.232.1...
   network: tcp
   port: '53144'
@@ -452,6 +411,28 @@ proxies:
   tls: false
   type: vmess
   uuid: 13e13a3e-e981-4eea-a9fc-13e50628fd9b
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇸🇬 SG-140.245.59.23...
+  network: ws
+  port: '23452'
+  server: 140.245.59.231
+  tls: false
+  type: vmess
+  uuid: 1750482b-4be5-41b9-9714-222536498e9d
+  ws-opts:
+    headers:
+      Host: westsg2-ddns.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232...
+  network: tcp
+  port: 52856
+  server: 62.146.232.157
+  tls: false
+  type: vmess
+  uuid: ed54e388-bfc5-4b36-ae4d-8b3cd460d3d4
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-154.26.137...

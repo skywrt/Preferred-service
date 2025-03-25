@@ -8,13 +8,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 6a2afda8-8798-434c-8964-1deb4e7655a5
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|0|🇺 01 | 1x RU #1'
-  password: 8fbd32ee-a40e-4cfe-9af2-2043c77a879f
-  port: 31511
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - name: 5|俄罗斯RU-T
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
@@ -34,11 +27,14 @@ proxies:
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇺 俄罗斯 01 | 1x RU #1'
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,24,37|🇺RU
   password: bc3c3bc9-4c2f-497f-a2ce-c8047eb3d805
   port: 36511
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - name: 8|🇷🇺RU-176.32.35.167-210_1@209
@@ -129,6 +125,16 @@ proxies:
   skip-cert-verify: false
   sni: agepm.ambercc.filegear-sg.me
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...
+  network: tcp
+  port: '47555'
+  server: 46.29.166.237
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇷🇺 RU-31.129.105.23...
