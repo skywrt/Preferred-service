@@ -16,7 +16,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: '5,24,27,30|1|🇵 日本 01 | 1x JP #1'
-  password: 8a610d76-c421-4a9e-8786-462cadc630ae
+  password: ef76bcfd-fc44-4c15-8d94-74c03399ee22
   port: 36111
   server: free.2weradf.xyz
   type: ss
@@ -31,11 +31,14 @@ proxies:
   tls: false
   type: vmess
   uuid: c06797d5-fa41-4b48-b132-d268d2acb302
-- cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|1|🇵 日本 03 | 1x JP #1'
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,24,27,30,37|JP
   password: 8a610d76-c421-4a9e-8786-462cadc630ae
   port: 36115
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -83,19 +86,16 @@ proxies:
     headers:
       Host: ''
     path: ''
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,24,27,30,37|JP
-  password: 94de0cd0-14f0-4fc6-ba12-eb064ed1cc3d
+- cipher: chacha20-ietf-poly1305
+  name: '5,24,27,30|1|🇯🇵 日本 02 | 1x JP #1'
+  password: ef76bcfd-fc44-4c15-8d94-74c03399ee22
   port: 36113
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27,30|0|🇵 01 | 1x JP
-  password: f04eaa92-bd79-4287-9683-1f8a2888bb42
+  name: '5,24,27,30|0| 01 | 1x JP #1'
+  password: 3355902b-a0c3-4f23-be2e-087ac345f811
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
@@ -174,7 +174,7 @@ proxies:
     path: ''
 - cipher: chacha20-ietf-poly1305
   name: '5,24,27,30|0|🇵日本 03 | 1x JP #1'
-  password: f04eaa92-bd79-4287-9683-1f8a2888bb42
+  password: 3355902b-a0c3-4f23-be2e-087ac345f811
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
@@ -204,7 +204,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: '5,24,27,30|0|🇵日本 02 | 1x JP #1'
-  password: f04eaa92-bd79-4287-9683-1f8a2888bb42
+  password: 3355902b-a0c3-4f23-be2e-087ac345f811
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
@@ -334,7 +334,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '11,24,27,30|12|🇵 日本3|@ripaojiedian #1'
+  name: 11,24,27,30|🇳
   password: ee19fceb-cedc-4832-b460-fccf24fdc8be
   port: 11001
   server: 61.172.235.22
@@ -423,6 +423,15 @@ proxies:
   server: 3.112.172.152
   type: ss
 - alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知113 13.1MB/s
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
   country: mattkaydiary.com|日本(JP)Japan/Tokyo_38
   name: '23|mattkaydiary.com|日本(JP)Japan/T... #1'
@@ -437,13 +446,16 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- name: '24,27,30|2,12|🇯🇵 日本8|@ripaojiedian #1'
+- alterId: 0
+  name: 24,27,30,37|🇵JP日本2 73.3KB/s
   password: '!!str 74260704627805900'
   port: 443
   server: gorgeous-gopher.shiner427.skin
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: gorgeous-gopher.shiner427.skin
+  tls: true
   type: trojan
+  udp: true
 - name: '24,27,30|12|🇯🇵 日本7|@ripaojiedian #1'
   password: '!!str 74260704627805900'
   port: 443
@@ -525,6 +537,14 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- name: '27,30|2|🇯🇵10 |  4.5MB/s #1'
+  password: 8415db3c-1547-3e91-ad91-1804add41978
+  port: 20139
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z139.hongkongnode.top
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '27,30|12|🇯🇵 日本4|@ripaojiedian #1'
@@ -601,6 +621,28 @@ proxies:
   server: gy.666666222.shop
   type: ss
   udp: true
+- client-fingerprint: chrome
+  name: 30|🇵 日本 cogentco.com
+  password: 6aqnYj7NA2CAeSeZpY34RIC3KzNzDO33aOOaZSxFSc5ETBcwXeyaDF3qC9A907y2nXT8S
+  port: 443
+  server: 154.31.114.12
+  type: trojan
+- client-fingerprint: chrome
+  name: 30|🇵 日本东京都 cogentco.com 2
+  password: 6aqnYj7NA2CAeSeZpY34RIC3KzNzDO33aOOaZSxFSc5ETBcwXeyaDF3qC9A907y2nXT8S
+  port: 443
+  server: visual.superpokemon.com
+  sni: visual.superpokemon.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.230.235.2...
+  network: tcp
+  port: '48889'
+  server: 13.230.235.247
+  tls: false
+  type: vmess
+  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
@@ -611,12 +653,3 @@ proxies:
   tls: false
   type: vmess
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.230.235.2...
-  network: tcp
-  port: '48889'
-  server: 13.230.235.247
-  tls: false
-  type: vmess
-  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a

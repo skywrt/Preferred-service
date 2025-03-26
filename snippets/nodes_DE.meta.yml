@@ -13,8 +13,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27,30|0|🇪国 01 | 1x DE
-  password: f04eaa92-bd79-4287-9683-1f8a2888bb42
+  name: '5,24,27,30|0|国 01 | 1x DE #1'
+  password: 3355902b-a0c3-4f23-be2e-087ac345f811
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -29,14 +29,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,24,27,30,37|DE国
-  password: 94de0cd0-14f0-4fc6-ba12-eb064ed1cc3d
+- cipher: chacha20-ietf-poly1305
+  name: '5,24,27,30|1|🇪 德国 01 | 1x DE #1'
+  password: ef76bcfd-fc44-4c15-8d94-74c03399ee22
   port: 36471
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - name: 5|备用🍖@xkmfjd_🇩🇪
@@ -142,6 +139,15 @@ proxies:
   port: 9020
   server: 80.92.204.106
   type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知57 206.0KB/s
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - cipher: aes-256-cfb
   name: 19|🇩🇪DE-80.92.204.106-5597
   password: cp8pRSUAyLhTfVWH
@@ -210,6 +216,18 @@ proxies:
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
+  grpc-opts:
+    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
+  network: grpc
+  port: '15145'
+  server: 88.198.172.25
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
   network: httpupgrade
   port: '2087'
@@ -220,24 +238,25 @@ proxies:
   uuid: 024f6455-d9df-4d14-91e3-42fa209d6609
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
+  name: 36,37|未知78 84.6KB/s
   network: tcp
-  port: '24164'
+  port: 24164
   server: 193.108.117.143
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
-  network: tcp
-  port: '48961'
-  server: 23.158.56.21
-  servername: ''
-  tls: false
+  name: '36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #1'
+  network: httpupgrade
+  port: '2053'
+  server: 104.21.64.1
+  servername: mIzaN.TWN24.ir
+  tls: true
   type: vmess
-  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
+  uuid: 8e09a4d7-80fc-4bb3-b3fb-1eb23211756a
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
@@ -254,6 +273,16 @@ proxies:
     path: /path/240811062813
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
+  network: tcp
+  port: '48961'
+  server: 23.158.56.21
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.18...
   network: tcp
   port: '22324'
@@ -262,15 +291,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
-  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
-  network: grpc
-  port: '15145'
-  server: 88.198.172.25
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
