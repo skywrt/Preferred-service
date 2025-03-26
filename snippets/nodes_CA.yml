@@ -1,32 +1,17 @@
 proxies:
 - alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3,19|🏁RELAY-104.21.18.227-7919
-  network: ws
-  port: 443
-  server: 104.21.18.227
-  servername: jahfkjha.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: false
-  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
-  ws-opts:
-    headers:
-      host: jahfkjha.cfd
-    path: /linkws
-- cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|0|🇦加大 01 | 1x CA #1'
-  password: 8b7350f5-b6f3-4cba-b5c4-b950a175f05e
+  cipher: chacha20-ietf-poly1305
+  name: 5,24,27,30,37|CA
+  password: d738f670-67c9-4dfd-8b53-4ca6a5eae578
   port: 31441
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|1|🇦 加拿大 01 | 1x CA #1'
-  password: 30e80d68-6459-4269-8ea2-13f0cbb8bd29
+  name: 5,24,27,30|0| 加大 01 | 1x CA
+  password: 3e62cfbf-2be1-4bdd-9b9f-9cc14862a960
   port: 36441
   server: free.2weradf.xyz
   type: ss
@@ -475,7 +460,7 @@ proxies:
     path: /dabai.in172.67.2.142
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-198.41.209.70-0747 #1'
+  name: '10,20,21|🏁RELAY-198.41.209.70-0747 #2'
   network: ws
   port: 8880
   server: s4.db-link02.top
@@ -492,7 +477,7 @@ proxies:
     path: /dabai.in104.25.239.131
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.16.155.10-0749 #1'
+  name: '10,20,21|🏁RELAY-104.16.155.10-0749 #2'
   network: ws
   port: 8080
   server: 104.16.155.10
@@ -524,7 +509,7 @@ proxies:
 - alterId: 0
   cipher: auto
   ip-version: dual
-  name: '10,20,21|🇨🇦CA-51.79.102.253-0770 #2'
+  name: '10,20,21|🇨🇦CA-51.79.102.253-0770 #1'
   network: ws
   port: 80
   server: 51.79.102.253
@@ -565,45 +550,6 @@ proxies:
     headers:
       Host: www.bing.com
     path: github.com/Alvin9999
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知67 13.2MB/s
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇨🇦CA-51.79.103.76-1103
-  network: ws
-  port: 80
-  server: 51.79.103.76
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇨🇦CA-51.79.102.253-0770
-  network: ws
-  port: 80
-  server: 51.79.102.253
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
   name: '20,21|🇨🇦CA-23.162.200.227-7843 #1'
@@ -658,13 +604,16 @@ proxies:
     headers:
       Host: 51.79.102.253
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- name: 24|🇨🇦 _加拿大
+- alterId: 0
+  name: 24,37|🇨🇦CA加拿大2
   password: Aimer
   port: 2087
   server: 104.234.239.235
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agepm.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇨🇦 _加拿大 #1'
   password: Aimer
   port: 2087
@@ -684,12 +633,11 @@ proxies:
   uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19
 - alterId: 0
   cipher: auto
-  name: 36,37|未知42 19.4KB/s
+  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-38.111.114.1...
   network: tcp
-  port: 14812
+  port: '14812'
   server: 38.111.114.153
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
