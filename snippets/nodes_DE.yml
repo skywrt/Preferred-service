@@ -14,7 +14,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 5,24,27|0|国 01 | 1x DE
-  password: 7fac219a-fd3b-4a08-aae0-861b04292af3
+  password: b151a721-7cab-4789-a067-34df9c94bfa3
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -79,6 +79,33 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
+- alterId: 0
+  cipher: auto
+  name: 11,20,21,24,27|2|🇪5 |  5.6MB/s
+  network: ws
+  port: 443
+  server: 172.67.71.217
+  servername: 1t3chx0.zed23.web1337.net
+  tls: true
+  type: vmess
+  uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e
+  ws-opts:
+    headers:
+      Host: 1t3chx0.zed23.web1337.net
+    path: /fixedfloati.cfd/linkwsd
+- alterId: 0
+  cipher: auto
+  name: 11,12,24,27|2|🇪10 |  4.8MB/s
+  network: tcp
+  port: 56635
+  server: 185.231.59.202
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: dd9a594a-0572-4365-84da-e6dc8022c05a
+  ws-headers:
+    Host: 185.231.59.202
+  ws-path: /
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -157,32 +184,6 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
-- alterId: 2
-  cipher: auto
-  name: '24|2|🇩🇪1 |  3.8MB/s #1'
-  network: ws
-  port: '23618'
-  server: 18.mamamajd.site
-  tls: false
-  type: vmess
-  uuid: e3d5e3d6-9ee7-3571-9dda-05d298a40f1b
-  ws-opts:
-    headers:
-      Host: 18.mamamajd.site
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '24|2|🇩🇪4 |  5.1MB/s #1'
-  network: ws
-  port: '23616'
-  server: 16.mamamajd.site
-  tls: false
-  type: vmess
-  uuid: e3d5e3d6-9ee7-3571-9dda-05d298a40f1b
-  ws-opts:
-    headers:
-      Host: 16.mamamajd.site
-    path: /
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -197,14 +198,38 @@ proxies:
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
-  network: tcp
-  port: '24164'
-  server: 193.108.117.143
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
   servername: ''
   tls: false
   type: vmess
-  uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 64
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
+  network: ws
+  port: 30005
+  server: 89.163.231.19
+  servername: www.80347320.xyz
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.80347320.xyz
+    path: /path/240811062813
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
+  network: httpupgrade
+  port: '2087'
+  server: 172.67.161.74
+  servername: support.sabapardaziran.ir
+  tls: true
+  type: vmess
+  uuid: 024f6455-d9df-4d14-91e3-42fa209d6609
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
@@ -225,30 +250,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
-  network: ws
-  port: 30005
-  server: 89.163.231.19
-  servername: www.80347320.xyz
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.80347320.xyz
-    path: /path/240811062813
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.117....
+  network: tcp
+  port: '24164'
+  server: 193.108.117.143
   servername: ''
   tls: false
   type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+  uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
