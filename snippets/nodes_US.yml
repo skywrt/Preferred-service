@@ -98,7 +98,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,24,27,37|🇺🇸US美国4
+  name: 5,24,27,30,37|🇺🇸US美国4
   password: 94de0cd0-14f0-4fc6-ba12-eb064ed1cc3d
   port: 36211
   server: free.2weradf.xyz
@@ -107,8 +107,8 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|1|🇸 美国 03 | 1x US Washington
-  password: 35cb73cc-bf49-4543-9435-ffc6ef61111d
+  name: '5,24,27,30|1|🇸 美国 03 | 1x US Washington #1'
+  password: 8a610d76-c421-4a9e-8786-462cadc630ae
   port: 36215
   server: free.2weradf.xyz
   type: ss
@@ -314,8 +314,8 @@ proxies:
       Host: us6_0.wish.ml
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|0|🇸美国 03 | 1x US Washington
-  password: b151a721-7cab-4789-a067-34df9c94bfa3
+  name: '5,24,27,30|0|🇸美国 03 | 1x US Washington #1'
+  password: f04eaa92-bd79-4287-9683-1f8a2888bb42
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
@@ -393,8 +393,8 @@ proxies:
       Host: 100-49-141-209.s1.db-link02.top
     path: /dabai.in104.17.169.115
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|1|🇸 美国住宅IP 02 | 1x US Los Ange...
-  password: 35cb73cc-bf49-4543-9435-ffc6ef61111d
+  name: '5,24,27,30|1|🇸 美国住宅IP 02 | 1x US Los Ange... #1'
+  password: 8a610d76-c421-4a9e-8786-462cadc630ae
   port: 36213
   server: free.2weradf.xyz
   type: ss
@@ -433,7 +433,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,24,27,37|🇺🇸US美国3
+  name: 5,24,27,30,37|🇺🇸US美国3
   password: 7fac219a-fd3b-4a08-aae0-861b04292af3
   port: 31211
   server: free.2apzhfa.xyz
@@ -470,8 +470,8 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|0|🇸美国家宽 02 | 1x US Los Angeles
-  password: b151a721-7cab-4789-a067-34df9c94bfa3
+  name: '5,24,27,30|0|🇸美国家宽 02 | 1x US Los Angeles #1'
+  password: f04eaa92-bd79-4287-9683-1f8a2888bb42
   port: 31213
   server: free.2apzhfa.xyz
   type: ss
@@ -1742,28 +1742,40 @@ proxies:
     headers:
       Host: phx-plus-1ddns.faforex.eu.org
     path: /
-- alterId: 2
+- alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: '11,24,27|2|🇺🇸3 |  2.3MB/s #2'
+  name: '11,27,30|2|🇸15 |  3.3MB/s #1'
   network: ws
-  port: 22642
-  server: tk.hzlt.tkddns.xyz
-  servername: tk.hzlt.tkddns.xyz
-  skip-cert-verify: true
+  port: 443
+  raw:
+    add: bazar.ir
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: us1.vmessvh.site
+    id: 50c4cdaf-33cd-4bb7-91d1-a400652ca39e
+    net: ws
+    path: /vmess
+    port: '443'
+    ps: Join+Telegram:@FarahVPN
+    scy: none
+    sni: us1.vmessvh.site
+    tls: tls
+    type: ''
+    v: '2'
+  server: bazar.ir
+  servername: us1.vmessvh.site
   tls: true
   type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  uuid: 50c4cdaf-33cd-4bb7-91d1-a400652ca39e
   ws-opts:
     headers:
-      Host: zxjp-b.tkong.cc
-    path: /
+      Host: us1.vmessvh.site
+    path: /vmess
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11,24,27|12|🇺🇸 美国4|@ripaojiedian
+  name: '11,24,27,30|12|🇸 美国4|@ripaojiedian #1'
   password: '!!str 74260704627805900'
   port: 443
   server: capital-hyena.shiner427.skin
@@ -1775,7 +1787,7 @@ proxies:
   uuid: b2259281-bad1-499a-bde4-4df89ff286bd
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 11,27|12|🇸 美国|@ripaojiedian
+  name: '11,27,30|12|🇸 美国|@ripaojiedian #1'
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -1787,7 +1799,7 @@ proxies:
   type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 11,27|12|🇺🇸 美国2|@ripaojiedian
+  name: '11,27,30|12|🇺🇸 美国2|@ripaojiedian #1'
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -1799,34 +1811,64 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 11,24,27|2,12|🇺🇸 美国5|@ripaojiedian
+  name: '11,24,27,30|12|🇸 美国5|@ripaojiedian #1'
   password: d8285a86cdb003de
   port: 16112
   server: 46.17.40.113
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: 12,19|🇺🇸US-35.95.11.206-0676
+  name: 12,19,30|_US_
   password: amazonskr05
   port: 443
   server: 35.95.11.206
   type: ss
 - cipher: aes-256-cfb
-  name: 12,16|🇺🇸_US_美国_13
+  name: '12,30|🇺🇸_US_美国_1 #4'
+  password: amazonskr05
+  port: 443
+  server: 54.185.253.219
+  type: ss
+- cipher: aes-256-cfb
+  name: 12,30|🇸_US_美国_3
+  password: amazonskr05
+  port: 443
+  server: 34.222.2.112
+  type: ss
+- cipher: aes-256-cfb
+  name: '12,16,30|🇺🇸_US_美国_5 #4'
   password: amazonskr05
   port: 443
   server: 44.242.208.211
   type: ss
 - cipher: aes-256-cfb
-  name: '12,16|🇺🇸_US_美国_6 #2'
+  name: '12,30|🇺🇸_US_美国_7 #3'
+  password: amazonskr05
+  port: 443
+  server: 52.27.128.220
+  type: ss
+- cipher: aes-256-cfb
+  name: '12,16,30|🇺🇸_US_美国_9 #3'
   password: amazonskr05
   port: 443
   server: 34.216.142.212
   type: ss
+- cipher: aes-256-cfb
+  name: 12,30|🇸_US_美国_10
+  password: amazonskr05
+  port: 443
+  server: 35.89.254.58
+  type: ss
+- cipher: aes-256-cfb
+  name: '12,30|🇺🇸_US_美国_11 #2'
+  password: amazonskr05
+  port: 443
+  server: 54.244.97.108
+  type: ss
 - alpn:
   - http/1.1
   alterId: 0
-  name: 12,37|未知126
+  name: 12,30,37|未知126
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -1836,6 +1878,24 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- cipher: aes-256-cfb
+  name: '12,30|🇺🇸_US_美国_14 #1'
+  password: amazonskr05
+  port: 443
+  server: 35.161.163.245
+  type: ss
+- cipher: aes-256-cfb
+  name: 12,16,20,21,30|🇺🇸_US_美国_15
+  password: amazonskr05
+  port: 443
+  server: 35.87.29.54
+  type: ss
+- cipher: aes-256-cfb
+  name: 12,30|🇸_US_美国_16
+  password: amazonskr05
+  port: 443
+  server: 34.219.71.252
+  type: ss
 - name: '13|🇺🇸_US_美国_8 #1'
   network: tcp
   password: telegram-id-directvpn
@@ -2523,13 +2583,7 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: aes-256-cfb
-  name: 24,27|2|🇸19 |  1.4MB/s
-  password: amazonskr05
-  port: 443
-  server: 52.40.170.193
-  type: ss
-- name: 24,27|13|美国4|@ripaojiedian
+- name: '24,27,30|13|美国4|@ripaojiedian #1'
   network: tcp
   password: '!!str 74260704627805900'
   port: 443
@@ -2779,34 +2833,95 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 28|🇺🇸 圣何塞1
+  network: ws
+  port: 443
+  server: 443ip.yangmie.online
+  servername: shs111.kejixiaoqi666.store
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c554532a-ece4-4b7a-a32b-764be9f7e18a
+  ws-opts:
+    headers:
+      Host: shs111.kejixiaoqi666.store
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇺🇸 圣何塞5
+  network: ws
+  port: 443
+  server: cf.090227.xyz
+  servername: shs111.kejixiaoqi666.store
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c554532a-ece4-4b7a-a32b-764be9f7e18a
+  ws-opts:
+    headers:
+      Host: shs111.kejixiaoqi666.store
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇺🇸 美国 纽约01
-  password: 9cb23639-81c9-493c-bc82-c3a83bc88509
+  name: 28|🇺🇸 美国 纽约01-1B
+  password: d726d93c-a839-4030-8380-0428e2044277
   port: 20013
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇺🇸 美国 纽约2
-  password: 9cb23639-81c9-493c-bc82-c3a83bc88509
+  name: 28|🇺🇸 美国 纽约2-1B
+  password: d726d93c-a839-4030-8380-0428e2044277
   port: 20016
   server: gy.666666222.shop
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇺🇸 US-185.184.70.90...
+  name: 28|🇺🇸 圣何塞4
   network: ws
-  port: 2082
-  server: 185.184.70.90
-  servername: www.bing.com
-  tls: false
+  port: 443
+  server: xiaoqi.yangmie.online
+  servername: shs111.kejixiaoqi666.store
+  tls: true
   type: vmess
-  uuid: 7e84b5b9-e9fe-4dbe-906d-4abd67c09376
+  udp: true
+  uuid: c554532a-ece4-4b7a-a32b-764be9f7e18a
   ws-opts:
     headers:
-      Host: ''
-    path: 7e84b5b9-e9fe-4dbe-906d-4abd67c09376-vm
+      Host: shs111.kejixiaoqi666.store
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇺🇸 圣何塞3
+  network: ws
+  port: 443
+  server: bestcf.top
+  servername: shs111.kejixiaoqi666.store
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c554532a-ece4-4b7a-a32b-764be9f7e18a
+  ws-opts:
+    headers:
+      Host: shs111.kejixiaoqi666.store
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇺🇸 圣何塞2
+  network: ws
+  port: 443
+  server: bestcf.mfwl.art
+  servername: shs111.kejixiaoqi666.store
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c554532a-ece4-4b7a-a32b-764be9f7e18a
+  ws-opts:
+    headers:
+      Host: shs111.kejixiaoqi666.store
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇺🇸 US-2.58.87.221:1...
@@ -2821,6 +2936,48 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-142.214.153....
+  network: tcp
+  port: 30606
+  server: 142.214.153.82
+  tls: false
+  type: vmess
+  uuid: 4012915a-0190-4cbd-ba2c-3f751c66f127
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.86.12...
+  network: tcp
+  port: '35696'
+  server: 15.204.86.120
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cad0504a-a9dc-4d29-8844-b11b69f14a8d
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇺🇸 US-137.131.52.17...
+  network: ws
+  port: '23451'
+  server: 137.131.52.173
+  tls: false
+  type: vmess
+  uuid: 150a990b-3a9b-4742-866a-8e1611faf316
+  ws-opts:
+    headers:
+      Host: phx-plus-1ddns.faforex.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.249.0...
+  network: tcp
+  port: '48160'
+  server: 15.204.249.0
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5b113c12-4dd4-4bb5-9c01-cff092b559e3
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.48.227.23...
@@ -2837,54 +2994,6 @@ proxies:
     path: /path/240811062813
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.86.12...
-  network: tcp
-  port: '35696'
-  server: 15.204.86.120
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cad0504a-a9dc-4d29-8844-b11b69f14a8d
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.249.0...
-  network: tcp
-  port: '48160'
-  server: 15.204.249.0
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5b113c12-4dd4-4bb5-9c01-cff092b559e3
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.248.9...
-  network: tcp
-  port: '30562'
-  server: 15.204.248.92
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 82466715-6a58-4046-a363-a0d18e5b2ab4
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-142.214.153....
-  network: tcp
-  port: 30606
-  server: 142.214.153.82
-  tls: false
-  type: vmess
-  uuid: 4012915a-0190-4cbd-ba2c-3f751c66f127
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-142.4.104.33...
-  network: tcp
-  port: 52143
-  server: 142.4.104.33
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
   name: 36,37|US30
   network: ws
   port: 38848
@@ -2896,19 +3005,25 @@ proxies:
   uuid: 20fed645-619c-4ca1-c00e-743ea8a3b51f
   ws-opts:
     path: /6c8e5a1b
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇺🇸 US-137.131.52.17...
-  network: ws
-  port: '23451'
-  server: 137.131.52.173
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-142.4.104.33...
+  network: tcp
+  port: 52143
+  server: 142.4.104.33
   tls: false
   type: vmess
-  uuid: 150a990b-3a9b-4742-866a-8e1611faf316
-  ws-opts:
-    headers:
-      Host: phx-plus-1ddns.faforex.eu.org
-    path: /
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.248.9...
+  network: tcp
+  port: '30562'
+  server: 15.204.248.92
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 82466715-6a58-4046-a363-a0d18e5b2ab4
 - alterId: 0
   name: 37|US
   network: tcp
