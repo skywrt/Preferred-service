@@ -1,9 +1,16 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|14|🇦加大 01 | 1x CA
-  password: 0b4f844b-d73c-458a-a85a-728d66826f7b
+  name: 5,24,27|0|🇦加大 01 | 1x CA
+  password: 7fac219a-fd3b-4a08-aae0-861b04292af3
   port: 31441
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27|2|🇦 加拿大 01 | 1x CA
+  password: 94de0cd0-14f0-4fc6-ba12-eb064ed1cc3d
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -450,7 +457,7 @@ proxies:
     path: /dabai.in172.67.2.142
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.17.221.248-0747 #1'
+  name: '10,20,21|🏁RELAY-104.17.221.248-0747 #2'
   network: ws
   port: 8880
   server: s4.db-link02.top
@@ -498,7 +505,7 @@ proxies:
 - alterId: 0
   cipher: auto
   ip-version: dual
-  name: '10,20,21|🇨🇦CA-51.79.102.253-0770 #1'
+  name: '10,20,21|🇨🇦CA-51.79.102.253-0770 #2'
   network: ws
   port: 80
   server: 51.79.102.253
@@ -542,10 +549,25 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇨🇦CA-51.79.103.76-1076
+  name: 19|🇨🇦CA-51.79.103.76-1103
   network: ws
   port: 80
   server: 51.79.103.76
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇨🇦CA-51.79.102.253-0770
+  network: ws
+  port: 80
+  server: 51.79.102.253
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -584,33 +606,21 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 20,21,36|🔒 VM-WS-NA 🇨🇦 CA-50.114.177.14...
+  name: '20,21,24|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T... #1'
   network: ws
-  port: 20030
-  server: 50.114.177.145
+  port: 80
+  server: 51.79.103.76
   servername: ''
   tls: false
   type: vmess
-  uuid: d7f90cbf-b8b5-44c3-a71e-3b2d916480f7
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '23|🇨🇦_CA_加拿大 #1'
-  network: ws
-  port: 443
-  server: 158.51.121.36
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 24|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T...
+  name: 20,21,24|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T...
   network: ws
   port: 80
   server: 51.79.102.253
@@ -624,18 +634,16 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '24|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T... #1'
+  name: '23|🇨🇦_CA_加拿大 #1'
   network: ws
-  port: 80
-  server: 51.79.103.76
-  servername: ''
-  tls: false
+  port: 443
+  server: 158.51.121.36
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /IOebhLMhl1CTbFHbL95myfRX2
+    path: /linkvws
 - name: 24|🇨🇦 _加拿大
   password: Aimer
   port: 2087

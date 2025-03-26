@@ -7,10 +7,17 @@ proxies:
   sni: hinet.mjt000.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|14|🇼台湾 03 | 1x TW
-  password: 0b4f844b-d73c-458a-a85a-728d66826f7b
+  name: 5,24,27|0|🇼台湾 03 | 1x TW
+  password: 7fac219a-fd3b-4a08-aae0-861b04292af3
   port: 31245
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27|2|🇼 台湾 01 | 1x TW
+  password: 94de0cd0-14f0-4fc6-ba12-eb064ed1cc3d
+  port: 36241
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -27,10 +34,17 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|14|🇼台湾 01 | 1x TW
-  password: 0b4f844b-d73c-458a-a85a-728d66826f7b
+  name: 5,24,27|0| 01 | 1x TW
+  password: 7fac219a-fd3b-4a08-aae0-861b04292af3
   port: 31241
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27|2|🇼 台湾 03 | 1x TW
+  password: 94de0cd0-14f0-4fc6-ba12-eb064ed1cc3d
+  port: 36245
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -47,8 +61,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|14|🇼台湾 02 | 1x TW
-  password: 0b4f844b-d73c-458a-a85a-728d66826f7b
+  name: 5,24,27|2|🇹🇼 台湾 02 | 1x TW
+  password: 94de0cd0-14f0-4fc6-ba12-eb064ed1cc3d
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,24,27|0|🇼台湾 02 | 1x TW
+  password: 7fac219a-fd3b-4a08-aae0-861b04292af3
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
@@ -66,35 +87,34 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- alterId: 0
+- alterId: 2
   cipher: auto
-  client-fingerprint: chrome
-  name: 11,24,27|11,12|台湾2|@ripaojiedian
-  network: tcp
-  password: d7d8a8cd-239b-4b4e-93d9-dc3d89332ac9
-  port: 42765
-  server: wb.kaiqsz.com
+  name: 11,27|1|🇼8 |  1.7MB/s
+  network: ws
+  port: 23619
+  server: 19.mamamajd.site
   skip-cert-verify: true
-  sni: mmbiz1.redapricotcloud.com
-  tfo: false
   tls: false
-  type: trojan
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  type: vmess
+  udp: true
+  uuid: 11e9f815-3aed-39c2-805f-e17fb3aa7291
+  ws-opts:
+    headers:
+      Host: 19.mamamajd.site
+    path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 11,12,24,27|0,11|🇹🇼 |@ripaojiedian
-  password: 4bccdfb7-f45b-44bb-9cd3-fb6f8fc8072f
-  port: 41705
-  server: zf1.10101251.xyz
+  name: 11,27|12|🇼 台湾2|@ripaojiedian
+  password: 560b7d65c1f4b12a
+  port: 19111
+  server: 194.87.69.122
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 11,24,27|11|🇼 台湾3|@ripaojiedian
-  password: RLPW44KAFL6K2LNA
-  port: 21005
-  server: 150.116.11.9
-  tfo: false
+- cipher: aes-256-cfb
+  name: 19|🇹🇼TW-185.189.160.98-0483
+  password: qwerREWQ@@
+  port: 64759
+  server: 185.189.160.98
   type: ss
 - name: '24|2|🇹🇼3 |  6.2MB/s #1'
   password: b1bddf1f-a663-3bf1-b7c0-7b4e65f4c116

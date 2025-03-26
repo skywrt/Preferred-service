@@ -658,12 +658,6 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- cipher: chacha20-ietf-poly1305
-  name: 16|🇨🇳_CN_中国
-  password: UP3JN98C6EOR
-  port: 443
-  server: 62.60.233.21
-  type: ss
 - alterId: 0
   cipher: auto
   name: 17|CN_ youtube@资源分享师_17
@@ -771,6 +765,15 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
+  cipher: aes-256-gcm
+  name: '24,37|未命名 #1'
+  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
+  port: 21115
+  server: okanc.node-is.green
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
   name: 24|_中国
   network: tcp
@@ -788,9 +791,9 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 24,27|0|🇭🇰20 |  1.4MB/s
+  name: '24|_中国 #2'
   network: tcp
   port: '51039'
   server: 183.236.51.38
@@ -811,13 +814,16 @@ proxies:
   skip-cert-verify: false
   sni: agepn.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #5'
+- alterId: 0
+  name: 24,37|🇳CN国
   password: Aimer
   port: 443
   server: 154.197.64.27
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agepm.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #6'
   password: Aimer
   port: 2083
@@ -839,16 +845,13 @@ proxies:
   skip-cert-verify: false
   sni: agepm.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 24,37|🇨🇳CN中国2
+- name: '24|_中国 #9'
   password: Aimer
   port: 2083
   server: 154.218.15.250
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: agepm.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - name: '24|_中国 #10'
   password: Aimer
   port: 443
@@ -856,16 +859,13 @@ proxies:
   skip-cert-verify: false
   sni: agepm.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 24,37|🇨🇳CN中国3
+- name: '24|_中国 #11'
   password: Aimer
   port: 2096
   server: 27.50.49.188
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: agepm.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - name: '24|_中国 #12'
   password: Aimer
   port: 2083
@@ -919,15 +919,6 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-47.92.152.16...
-  network: tcp
-  port: '50002'
-  server: 47.92.152.169
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇨🇳 CN-120.232.17.7...
   network: ws
   port: 33202
@@ -941,12 +932,11 @@ proxies:
       Host: yd2.ainivp.com
     path: /ray
 - alterId: 0
-  name: 37|CN国
-  password: Aimer
-  port: 2087
-  server: 45.194.53.81
-  skip-cert-verify: true
-  sni: agepn.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-47.92.152.16...
+  network: tcp
+  port: '50002'
+  server: 47.92.152.169
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
