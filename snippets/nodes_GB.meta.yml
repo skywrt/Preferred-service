@@ -1,37 +1,7 @@
 proxies:
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|dd03226a36664c4082c2714fb4b406...
-  network: ws
-  port: 22222
-  server: 13.43.126.43
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|7f596f243dca4db89fb7b74b736fa0...
-  network: ws
-  port: 22222
-  server: 35.179.63.122
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|1| 国住宅IP 01 | 1x UK #1'
-  password: 361dc721-e37e-4656-9fdf-90229a75f6ec
+  name: '5,24,27,30|0| 国住宅IP 01 | 1x UK #1'
+  password: ebd58efa-b86f-4f1a-9e8b-48497aa1b2ea
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -131,13 +101,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,24,37|GB国
+  name: 5,24,27,30,37|GB国
   password: f0cacdc9-3c44-4465-ab19-ec25ddc15c72
   port: 31271
   server: free.2apzhfa.xyz
   skip-cert-verify: true
   tls: true
   type: ss
+  udp: true
 - name: '5,38|🇬🇧_GB_英国_26 #1'
   network: ws
   port: 443
@@ -263,7 +234,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '11,24,27,30|12|🇧 英国|@ripaojiedian #1'
+  name: '11,24,27,30|11|🇧 英国|@ripaojiedian #1'
   password: '!!str 74260704627805900'
   port: 443
   server: many-macaque.shiner427.skin
@@ -275,7 +246,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '11,24,27,30|12|🇧 英国2|@ripaojiedian #1'
+  name: '11,24,27,30|11|🇧 英国2|@ripaojiedian #1'
   password: ZO1QJ521XRQLT9T1
   port: 19011
   server: 206.245.211.21
@@ -323,33 +294,62 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- cipher: aes-128-gcm
-  name: 19|🇬🇧GB-141.98.101.182-0403
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.182
-  type: ss
-- cipher: aes-128-gcm
-  name: 19|🇬🇧GB-141.98.101.180-0418
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.180
-  type: ss
-- name: '24|2|🇬🇧2 |  4.9MB/s #1'
-  password: telegram-id-directvpn
-  port: 22222
-  server: 3.10.73.239
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '24|2|🇬🇧5 |  5.0MB/s #1'
+- name: '20,21|🇬🇧GB-35.179.211.231-0913 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 35.179.211.231
-  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '24,27,30|13|英国|@ripaojiedian #1'
+- allowInsecure: '1'
+  name: '24,27,30|1|🇧2 |  3.8MB/s #1'
+  network: tcp
+  password: '!!str 74260704627805900'
+  port: 443
+  server: 109.107.159.248
+  skip-cert-verify: true
+  sni: willing-possum.shiner427.skin
+  tls: true
+  type: trojan
+- allowInsecure: '1'
+  name: '24,27,30|1|🇬🇧3 |  4.6MB/s #3'
+  network: tcp
+  password: '!!str 74260704627805900'
+  port: 443
+  server: 109.107.159.118
+  skip-cert-verify: true
+  sni: adapting-halibut.shiner427.skin
+  tls: true
+  type: trojan
+- allowInsecure: ''
+  name: '24,27,30|1|🇬🇧5 |  5.2MB/s #3'
+  network: tcp
+  password: '!!str 74260704627805900'
+  port: 443
+  server: willing-possum.shiner427.skin
+  skip-cert-verify: false
+  tls: true
+  type: trojan
+- allowInsecure: ''
+  name: '24,27,30|1|🇧8 |  4.3MB/s #1'
+  network: tcp
+  password: '!!str 74260704627805900'
+  port: 443
+  server: adapting-halibut.shiner427.skin
+  skip-cert-verify: false
+  tls: true
+  type: trojan
+- allowInsecure: '1'
+  client-fingerprint: chrome
+  name: 24,27,30|V2CROSS.COM
+  network: tcp
+  password: '!!str 74260704627805900'
+  port: 443
+  server: 109.107.159.206
+  skip-cert-verify: true
+  sni: direct-hen.shiner427.skin
+  tls: true
+  type: trojan
+- name: '24,27,30|12|英国|@ripaojiedian #1'
   network: tcp
   password: '!!str 74260704627805900'
   port: 443
@@ -409,25 +409,24 @@ proxies:
   type: vmess
   udp: true
   uuid: d3dcb7f5-ead4-4ab9-b0f5-3a0c0fbaf0ab
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 30|🇧 英国 保
-  password: telegram-id-directvpn
-  port: 22222
-  server: 51.20.11.172
-  sni: trojan.burgerip.co.uk
+- client-fingerprint: chrome
+  name: 30|🇬🇧 英国 V2CROSS.COM 2
+  password: '!!str 74260704627805900'
+  port: 443
+  server: 85.234.65.146
+  skip-cert-verify: true
+  sni: intense-hornet.shiner427.skin
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
   network: tcp
-  port: '47567'
-  server: 38.114.120.12
+  port: '55577'
+  server: 172.99.190.207
   servername: ''
   tls: false
   type: vmess
-  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
+  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇬🇧 GB-31.25.237.9:2...
@@ -442,6 +441,16 @@ proxies:
     headers:
       Host: www.bing.com
     path: 7c81d0a8-8e23-44d4-94b5-56d33b7af07d-vm
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-149.7.16.149...
+  network: tcp
+  port: '37101'
+  server: 149.7.16.149
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
@@ -464,21 +473,11 @@ proxies:
   uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-149.7.16.149...
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
   network: tcp
-  port: '37101'
-  server: 149.7.16.149
+  port: '47567'
+  server: 38.114.120.12
   servername: ''
   tls: false
   type: vmess
-  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
-  network: tcp
-  port: '55577'
-  server: 172.99.190.207
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
+  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
