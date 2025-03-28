@@ -1,7 +1,7 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27|1| 国住宅IP 01 | 1x UK
-  password: 23d71dbe-b000-45b0-a4ba-83db445e9317
+  name: '5,24,27,30|2| 国住宅IP 01 | 1x UK #1'
+  password: 70489bd4-1d86-48b9-86a5-eaa971ce384d
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -137,7 +137,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11,24,27,37|🇬GB 6.6MB/s
+  name: 11,24,27,30,37|🇬GB 6.6MB/s
   password: '!!str 74260704627805900'
   port: 443
   server: many-macaque.shiner427.skin
@@ -150,7 +150,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 11,24,27|12|🇧 英国2|@ripaojiedian
+  name: '11,24,27,30|12|🇧 英国2|@ripaojiedian #1'
   password: ZO1QJ521XRQLT9T1
   port: 19011
   server: 206.245.211.21
@@ -202,45 +202,17 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
-  name: 24,37|未知71 3.9MB/s
-  password: '!!str 74260704627805900'
-  port: 443
-  server: 109.107.159.248
+  name: 24,37|未知131
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.21.25.36
   skip-cert-verify: true
-  sni: willing-possum.shiner427.skin
+  sni: trojan.burgerip.co.uk
   tls: true
   type: trojan
   udp: true
-- name: '24|1|🇬🇧3 |  4.6MB/s #1'
-  password: '!!str 74260704627805900'
-  port: 443
-  server: 109.107.159.118
-  skip-cert-verify: true
-  sni: adapting-halibut.shiner427.skin
-  type: trojan
-- name: '24|1|🇬🇧5 |  5.2MB/s #1'
-  password: '!!str 74260704627805900'
-  port: 443
-  server: willing-possum.shiner427.skin
-  skip-cert-verify: false
-  type: trojan
-- alterId: 0
-  name: 24,37|🇯JO 2.0MB/s
-  password: '!!str 74260704627805900'
-  port: 443
-  server: adapting-halibut.shiner427.skin
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- name: '24|1|🇬🇧9 |  1.5MB/s #1'
-  password: '!!str 74260704627805900'
-  port: 443
-  server: 109.107.159.206
-  skip-cert-verify: true
-  sni: direct-hen.shiner427.skin
-  type: trojan
-- name: 24,27|13|英国|@ripaojiedian
+- name: '24,27,30|13|英国|@ripaojiedian #1'
   network: tcp
   password: '!!str 74260704627805900'
   port: 443
@@ -300,6 +272,15 @@ proxies:
   type: vmess
   udp: true
   uuid: d3dcb7f5-ead4-4ab9-b0f5-3a0c0fbaf0ab
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 30|🇧 英国
+  password: telegram-id-directvpn
+  port: 22222
+  server: 51.21.140.78
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
@@ -312,16 +293,6 @@ proxies:
   uuid: e922d485-98a7-475a-9a47-cde3722ac82e
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
-  network: tcp
-  port: '46617'
-  server: 46.250.253.232
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
   network: tcp
   port: '47567'
@@ -330,6 +301,16 @@ proxies:
   tls: false
   type: vmess
   uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  network: tcp
+  port: '46617'
+  server: 46.250.253.232
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
