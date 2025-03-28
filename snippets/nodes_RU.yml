@@ -9,8 +9,8 @@ proxies:
   type: vmess
   uuid: 6a2afda8-8798-434c-8964-1deb4e7655a5
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇺 01 | 1x RU #1'
-  password: 534c3a56-123a-4bc0-b7ae-4a383a0b923d
+  name: 5,9,11,24,27,30|13| 01 | 1x RU
+  password: 2389973d-db9e-4b2b-b1fb-7e54f7804858
   port: 31511
   server: free.2apzhfa.xyz
   type: ss
@@ -35,8 +35,8 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇺 俄罗斯 01 | 1x RU #1'
-  password: 8e53f6fc-1dfd-40e1-af79-e6fdd0cbd79d
+  name: '5,9,24,27,30|14|🇺 俄罗斯 01 | 1x RU #1'
+  password: a55f977e-f817-4125-a405-fab5397e2ce7
   port: 36511
   server: free.2weradf.xyz
   type: ss
@@ -63,19 +63,6 @@ proxies:
   sni: 004282c1-sbdj40-sdlngq-1n7jq.ru.z7zi.com
   type: trojan
   udp: false
-- alterId: 0
-  cipher: auto
-  name: 9|2|🇷🇺1 |  1.9MB/s
-  network: ws
-  port: 23031
-  server: 195.133.5.127
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d7c34d84-f217-4902-88aa-a5ada6eb2c7a
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: '10,20,21|🏁RELAY-213.241.198.57-0766 #2'
@@ -135,13 +122,16 @@ proxies:
   skip-cert-verify: false
   sni: agepm.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #6'
+- alterId: 0
+  name: 24,37|🇷🇺RU俄罗斯3
   password: Aimer
   port: 2053
   server: 77.232.140.101
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agepv.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇷🇺 _俄罗斯 #7'
   password: Aimer
   port: 2087
@@ -156,16 +146,13 @@ proxies:
   skip-cert-verify: false
   sni: agepm.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 24,37|🇷🇺RU俄罗斯2
+- name: '24|🇷🇺 _俄罗斯 #9'
   password: Aimer
   port: 8443
   server: 92.243.74.2
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: agepm.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - name: '24|🇷🇺 _俄罗斯 #10'
   password: Aimer
   port: 8443
@@ -222,13 +209,16 @@ proxies:
   skip-cert-verify: false
   sni: agepn.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #18'
+- alterId: 0
+  name: 24,37|🇺RU
   password: Aimer
   port: 2096
   server: 5.182.84.50
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agepm.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇷🇺 _俄罗斯 #19'
   password: Aimer
   port: 2096
@@ -250,13 +240,16 @@ proxies:
   skip-cert-verify: false
   sni: agepm.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #22'
+- alterId: 0
+  name: 24,37|🇺RU俄罗斯2
   password: Aimer
   port: 2053
   server: 89.110.86.132
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: agepm.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇷🇺 _俄罗斯 #23'
   password: Aimer
   port: 8443
@@ -271,6 +264,42 @@ proxies:
   skip-cert-verify: false
   sni: agepm.ambercc.filegear-sg.me
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-46.17.43.122:...
+  network: ws
+  port: '22031'
+  server: 46.17.43.122
+  tls: false
+  type: vmess
+  uuid: be2e5d52-dff5-4adc-be05-d22b0b688898
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-176.32.35.148...
+  network: ws
+  port: '21031'
+  server: 176.32.35.148
+  tls: false
+  type: vmess
+  uuid: ea50474c-4ade-441a-bf30-b799cec05a43
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...
+  network: tcp
+  port: '47555'
+  server: 46.29.166.237
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇷🇺 RU-31.129.105.23...
