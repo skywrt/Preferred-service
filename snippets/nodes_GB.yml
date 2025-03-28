@@ -1,7 +1,7 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|1|🇧 英国住宅IP 01 | 1x UK
-  password: 06568f3f-034e-4304-a1f3-0419ada957a5
+  name: 5,9,11,24,27|1|🇧 英国住宅IP 01 | 1x UK
+  password: e98d740f-2d63-40a7-a8ca-9dbc016ca7d4
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -52,8 +52,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,27|0|国家宽 01 | 1x UK
-  password: 30d45dd6-76d5-44b4-935e-b637baed573c
+  name: '5,9,11,24,27|0|国家宽 01 | 1x UK #1'
+  password: d18db58f-efc0-4578-a553-48326236045e
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -127,7 +127,7 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
-- name: '9,27|2|🇬🇧1 |  5.3MB/s #1'
+- name: 9,24|🇺🇸 美国 V2CROSS.COM
   password: 2cba4104747d49d18319e5ade1b93ab5
   port: 443
   server: yourjobnavigator.online
@@ -135,11 +135,11 @@ proxies:
   sni: yourjobnavigator.online
   type: trojan
   udp: true
-- name: '9,24,27|2|🇬🇧2 |  3.7MB/s #1'
+- name: 9|2|🇬🇧2 |  3.7MB/s
   password: 2cba4104747d49d18319e5ade1b93ab5
   port: 443
   server: 161.35.34.48
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: yourjobnavigator.online
   type: trojan
   udp: true
@@ -205,42 +205,18 @@ proxies:
   port: 55988
   server: mx2.drawnrisha.one
   type: ss
-- name: 20,21,24|🇺🇸 美国 麻省理工学院
+- name: '20,21|🇬🇧GB-18.132.30.238-1116 #1'
   password: telegram-id-directvpn
   port: 22222
   server: 18.132.30.238
-  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- alterId: 0
-  name: 24,37|GB 1008.0KB/s
-  password: telegram-id-privatevpns
+- name: 24|🇬🇧 英国 伦敦Amazon数据中心
+  password: telegram-id-directvpn
   port: 22222
-  server: 51.21.25.36
-  skip-cert-verify: true
+  server: 3.9.62.198
+  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
-- name: '24|🇬🇧 12|🇬🇧 英国|@ripaojiedian #1'
-  password: '!!str 74260704627805900'
-  port: 443
-  server: many-macaque.shiner427.skin
-  skip-cert-verify: false
-  sni: many-macaque.shiner427.skin
-  type: trojan
-- name: '24|🇬🇧 13|英国|@ripaojiedian #1'
-  password: '!!str 74260704627805900'
-  port: 443
-  server: many-macaque.shiner427.skin
-  skip-cert-verify: false
-  type: trojan
-- name: 24|🇬🇧 _英国
-  password: Aimer
-  port: 8443
-  server: 176.53.144.206
-  skip-cert-verify: false
-  sni: agepv.ambercc.filegear-sg.me
   type: trojan
 - name: 26|V2-英国03∣K71线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
@@ -290,15 +266,24 @@ proxies:
   uuid: d3dcb7f5-ead4-4ab9-b0f5-3a0c0fbaf0ab
 - alterId: 0
   cipher: auto
-  name: 36,37|未知58 6.6MB/s
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
   network: tcp
-  port: 37101
-  server: 149.7.16.149
+  port: '46617'
+  server: 46.250.253.232
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
+  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
+  network: tcp
+  port: '26924'
+  server: 68.168.31.184
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
@@ -321,21 +306,22 @@ proxies:
   uuid: e922d485-98a7-475a-9a47-cde3722ac82e
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  name: 36,37|未知58 6.6MB/s
   network: tcp
-  port: '46617'
-  server: 46.250.253.232
+  port: 37101
+  server: 149.7.16.149
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
+  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
-  network: tcp
-  port: '26924'
-  server: 68.168.31.184
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
+  name: 37|GB 1008.0KB/s
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.21.25.36
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
