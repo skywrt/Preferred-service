@@ -1045,24 +1045,31 @@ proxies:
   uuid: 93bd0d96-1d8c-4008-bf7f-fe4c69ca7ca6
 - alterId: 0
   cipher: auto
-  name: 12|🇺🇸_US_美国->🇨🇳_CN_中国
+  name: 12,30|🇺🇸_US_美国->_CN_国
   network: ws
-  port: '20030'
+  port: 20030
   server: 207.90.238.136
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: ea50474c-4ade-441a-bf30-b799cec05a43
   ws-opts:
-    headers:
-      Host: ''
     path: /
+- cipher: aes-256-gcm
+  name: 12,30|🇳_CN_中国->🇸_US_美国
+  password: 4bccdfb7-f45b-44bb-9cd3-fb6f8fc8072f
+  port: 41705
+  server: zf1.10101251.xyz
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 12,36|🔒 VM-TCP-NA 🇵🇱 PL-91.185.184.6...
+  fingerprint: ''
+  name: 12,30,36|🔒 VM-TCP-NA 🇵🇱 PL-91.185.184.6...
   network: tcp
   port: '24301'
   server: 91.185.184.61
   servername: ''
+  sni: ''
   tls: false
   type: vmess
   uuid: d1ea8c41-67a6-4f63-e47a-c4adaca1d1a4
@@ -1074,7 +1081,8 @@ proxies:
   type: vless
   uuid: 361427b1-5cf9-4ae6-bd1b-5dbf99a21b61
 - cipher: chacha20-ietf-poly1305
-  name: '12,20,21,24,27,30|2|1 |  1.9MB/s #1'
+  client-fingerprint: chrome
+  name: 12,20,21,24,30|V2CROSS.COM
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.188
