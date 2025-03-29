@@ -1024,37 +1024,30 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 12,30|🇺🇸_US_美国->_CN_国
+  name: 12|🇺🇸_US_美国->🇨🇳_CN_中国
   network: ws
-  port: 20030
+  port: '20030'
   server: 207.90.238.136
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: ea50474c-4ade-441a-bf30-b799cec05a43
   ws-opts:
+    headers:
+      Host: ''
     path: /
-- cipher: aes-256-gcm
-  name: 12,30|🇳_CN_中国->🇸_US_美国
-  password: 4bccdfb7-f45b-44bb-9cd3-fb6f8fc8072f
-  port: 41705
-  server: zf1.10101251.xyz
-  type: ss
 - alterId: 0
   cipher: auto
-  fingerprint: ''
-  name: 12,30,36|🔒 VM-TCP-NA 🇵🇱 PL-91.185.184.6...
+  name: 12,36|🔒 VM-TCP-NA 🇵🇱 PL-91.185.184.6...
   network: tcp
   port: '24301'
   server: 91.185.184.61
   servername: ''
-  sni: ''
   tls: false
   type: vmess
   uuid: d1ea8c41-67a6-4f63-e47a-c4adaca1d1a4
 - cipher: chacha20-ietf-poly1305
-  name: 12,24,30|_DE_国->🇸_IS_冰岛
-  password: 4a2rfixophdjffa8KVA4Aa
+  name: '12,20,21,24,27,30|2|1 |  1.9MB/s #1'
+  password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.188
   type: ss
@@ -1068,13 +1061,12 @@ proxies:
   type: vmess
   uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
   ws-opts: {}
-- alterId: 0
+- alterId: 64
   cipher: auto
   name: 13,36|🔒 VM-TCP-NA 🇺🇸 US-107.148.207....
   network: tcp
-  port: '48712'
+  port: 48712
   server: 107.148.207.249
-  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -1087,6 +1079,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: rc4-md5
+  name: 13,19|🇬🇧GB-146.70.61.18-0316
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.61.18
+  type: ss
 - alterId: 0
   cipher: auto
   name: 13|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_2

@@ -12,6 +12,13 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,11,24,27,30|1|🇪德国 01 | 1x DE #1'
+  password: 61a5e767-1068-42ff-9b18-e44938afbf01
+  port: 31471
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5|德国 - Falkenstein - Hetzner Onl...
@@ -31,8 +38,8 @@ proxies:
   tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0|🇪 德国 01 | 1x DE
-  password: 82a0ed52-ac8e-49d9-b833-4bddad020ba0
+  name: '5,9,11,24,27,30|0| 国 01 | 1x DE #1'
+  password: c24f1481-6d27-4901-98e9-dd3d01c895dd
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -77,6 +84,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
+- cipher: chacha20-ietf-poly1305
+  name: 9,19|🇱🇹LT-45.87.175.178-0861
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.178
+  type: ss
+  udp: true
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -91,18 +105,69 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19,20,21,36|🔒 VM-WS-NA 🇩🇪 DE-136.243.156.1...
+  network: ws
+  port: 31500
+  server: 136.243.156.121
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: dc92d50a-af9e-48e7-bff5-afe481e10d0e
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vmess-argo?ed=2048
 - cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-0484
+  name: 19|🇩🇪DE-80.92.204.106-5596
+  password: ZET59LF6DvCC8KVt
+  port: 9005
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-5607
+  password: f63gg8EruDnUrmz4
+  port: 9010
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-5715
+  password: aLpQtfEZe445QyHk
+  port: 9098
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-5710
+  password: XPtzA9sCug3SPR4c
+  port: 9025
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-5606
   password: c3NtHJ5ujV2tGDfj
   port: 9084
   server: 80.92.204.106
   type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-0494
-  password: BwcAUZk8hUFAkDGN
-  port: 9031
-  server: 80.92.204.106
+- cipher: aes-256-gcm
+  name: 19|🇩🇪DE-217.182.198.219-5746
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 217.182.198.219
   type: ss
+- alterId: 0
+  name: 20,21,37|未知108
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 63.176.58.244
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: 28|🇩🇪 VIP 德国1-1B
   password: 558bfa68-0305-4350-8316-7f2d641ad375
@@ -110,70 +175,6 @@ proxies:
   server: de01.jiasudu.buzz
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
-  network: httpupgrade
-  port: '2053'
-  server: 104.21.71.8
-  servername: tabnak.itn24.ir
-  tls: true
-  type: vmess
-  uuid: eadb71af-ec0d-4651-82e9-7c01c4fb6cd3
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #1'
-  network: httpupgrade
-  port: '2087'
-  server: 104.21.44.185
-  servername: register.onetwothree123.ir
-  tls: true
-  type: vmess
-  uuid: 52502547-0bf4-4b86-95ba-9a37ce655a72
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-91.107.255.1...
-  network: tcp
-  port: '80'
-  server: 91.107.255.113
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: bc197c34-6f69-4d81-ab2e-bc942f750c44
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
-  network: ws
-  port: 30005
-  server: 89.163.231.19
-  servername: www.80347320.xyz
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.80347320.xyz
-    path: /path/240811062813
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
-  network: tcp
-  port: '15713'
-  server: 193.108.118.136
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -197,3 +198,67 @@ proxies:
   tls: true
   type: vmess
   uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-91.107.255.1...
+  network: tcp
+  port: '80'
+  server: 91.107.255.113
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bc197c34-6f69-4d81-ab2e-bc942f750c44
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
+  network: tcp
+  port: '15713'
+  server: 193.108.118.136
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
+  network: httpupgrade
+  port: '2087'
+  server: 104.21.44.185
+  servername: register.onetwothree123.ir
+  tls: true
+  type: vmess
+  uuid: 52502547-0bf4-4b86-95ba-9a37ce655a72
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #1'
+  network: httpupgrade
+  port: '2053'
+  server: 104.21.71.8
+  servername: tabnak.itn24.ir
+  tls: true
+  type: vmess
+  uuid: eadb71af-ec0d-4651-82e9-7c01c4fb6cd3
+- alterId: 64
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
+  network: ws
+  port: 30005
+  server: 89.163.231.19
+  servername: www.80347320.xyz
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.80347320.xyz
+    path: /path/240811062813
