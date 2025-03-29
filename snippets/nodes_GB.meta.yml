@@ -1,7 +1,7 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: '5,9,11,24,27,30|0| 国住宅IP 01 | 1x UK #1'
-  password: 4330ee8e-557f-4133-b66c-cb22cb61826f
+  password: 82a0ed52-ac8e-49d9-b833-4bddad020ba0
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -99,13 +99,6 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|2|🇧英国家宽 01 | 1x UK #1'
-  password: 3dfb33e3-798c-49f5-b50e-c8700b2cd110
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - name: '5,38|🇬🇧_GB_英国_26 #1'
   network: ws
   port: 443
@@ -200,12 +193,11 @@ proxies:
   server: 51.140.34.50
   type: ss
 - delay: 1757
-  name: 10,40|CH_speednode_0002
+  name: 10|英国 001
   network: ws
   port: 443
   server: 144.24.243.207
   servername: dd8.transitkala.com
-  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
@@ -254,10 +246,10 @@ proxies:
     path: '%2Fblue'
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知52 3.8MB/s
+  name: 19,20,21,37|未知18 16.6MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.195
+  server: 212.102.53.78
   skip-cert-verify: true
   tls: true
   type: ss
@@ -332,23 +324,15 @@ proxies:
   uuid: e922d485-98a7-475a-9a47-cde3722ac82e
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-46.250.253...
+  name: 36,37|未知67 29.8KB/s
   network: tcp
-  port: 28872
-  server: 46.250.253.234
-  tls: false
-  type: vmess
-  uuid: 762b3923-5885-4c5f-886f-e62788512338
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
-  network: tcp
-  port: '47567'
-  server: 38.114.120.12
+  port: 26924
+  server: 68.168.31.184
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-149.7.16.149...
@@ -361,22 +345,69 @@ proxies:
   uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
   network: tcp
-  port: '46617'
-  server: 46.250.253.232
+  port: '47567'
+  server: 38.114.120.12
   servername: ''
   tls: false
   type: vmess
-  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
+  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
 - alterId: 0
   cipher: auto
-  name: 36,37|未知6 124.5KB/s
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-46.250.253...
   network: tcp
-  port: 26924
-  server: 68.168.31.184
+  port: 28872
+  server: 46.250.253.234
+  tls: false
+  type: vmess
+  uuid: 762b3923-5885-4c5f-886f-e62788512338
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知23 598.9KB/s
+  network: tcp
+  port: 46617
+  server: 46.250.253.232
   servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
+  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: 40|GB_speednode_0090
+  port: 443
+  server: 143.47.237.215
+  servername: dj-download-gb.xn--4gq62f52gopi49k.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: fc192221-b239-45a6-9988-d234df699f0d
+- name: 40|GB_speednode_0091
+  network: ws
+  port: 443
+  server: 217.163.76.102
+  servername: in.youlingkais.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: in.youlingkais.filegear-sg.me
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: 40|GB_speednode_0092
+  port: 80
+  reality-opts:
+    public-key: DZzAtolzThTEwEjUnyLN5lzhvzMtKPOAvPA8K8luAhE
+    short-id: 7d2e829be0
+  server: 84.234.28.63
+  servername: refersion.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 98d8274c-3159-7718-4042-19544c9d2ff6
