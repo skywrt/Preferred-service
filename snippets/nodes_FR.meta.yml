@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 3|271e07b035b8408f991aa3301df34c...
+  name: 3|d4fa948694534133aa81871dcd2676...
   network: ws
   port: 22222
   server: 15.237.168.147
@@ -16,7 +16,7 @@ proxies:
     path: /telegram-channel-vlessconfig-ws
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 3|bf011d1be8e9432a8c93b56453afa8...
+  name: 3|3e956ae31d8549faa4d20e6d086256...
   network: ws
   port: 22222
   server: 13.37.126.24
@@ -104,6 +104,12 @@ proxies:
   port: 6697
   server: 54.36.174.181
   type: ss
+- cipher: aes-256-gcm
+  name: '8|SS-法国-locked-ChatGPT-TikTok-Yo... #1'
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 149.202.82.172
+  type: ss
 - alterId: 0
   cipher: auto
   name: 10,18|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_52
@@ -120,23 +126,32 @@ proxies:
     path: /
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 19,37|未知33 13.9MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  name: 19,20,21,37|未知4 1.6MB/s
+  password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
-  server: 45.158.171.110
+  server: 45.158.171.146
   skip-cert-verify: true
   tls: true
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇫🇷FR-45.158.171.132-5606
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.158.171.132
   type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇫🇷FR-45.145.166.209-5697
+  name: 19|🇫🇷FR-45.145.165.114-7926
+  network: ws
+  port: 443
+  server: beyonddsz.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      host: beyonddsz.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇫🇷FR-45.145.166.209-5864
   network: ws
   port: 443
   server: hms26.xpengmotors.sbs
@@ -148,60 +163,66 @@ proxies:
     headers:
       host: hms26.xpengmotors.sbs
     path: /linkws
-- cipher: aes-256-gcm
-  name: 19|🇫🇷FR-149.202.82.172-5468
-  password: KixLvKzwjekG00rm
-  port: 5500
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  name: 19|🇫🇷FR-149.202.82.172-5315
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 149.202.82.172
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 19,37|未知16 1.7MB/s
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 149.202.82.172
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  name: 19|🇫🇷FR-149.202.82.172-5472
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 149.202.82.172
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 19,20,21,37|未知25 1.2MB/s
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 149.202.82.172
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  name: 19|🇫🇷FR-149.202.82.172-5470
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 149.202.82.172
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 19,37|未知82 1.8MB/s
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 149.202.82.172
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-163.5.159.231-7750 #1'
+  client-fingerprint: chrome
+  name: 19|🇫🇷FR-146.19.168.161-5707
+  network: ws
+  port: 443
+  server: az05.beyondy.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      host: az05.beyondy.cfd
+    path: /link
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇫🇷FR-45.145.165.114-7926 #2'
+  network: ws
+  port: 443
+  server: beyonddsz.cfd
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      Host: beyonddsz.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇫🇷FR-146.19.168.161-7916 #1'
+  network: ws
+  port: 443
+  server: 146.19.168.161
+  servername: az05.beyondy.cfd
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: az05.beyondy.cfd
+    path: /link
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇫🇷FR-146.19.168.161-5707 #2'
+  network: ws
+  port: 443
+  server: az05.beyondy.cfd
+  servername: az05.beyondy.cfd
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: az05.beyondy.cfd
+    path: /link
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇫🇷FR-163.5.159.231-7914 #1'
   network: ws
   port: 443
   server: irvideo.cfd
@@ -213,25 +234,19 @@ proxies:
     headers:
       Host: irvideo.cfd
     path: /linkws
-- name: '20,21|🇫🇷FR-13.37.18.215-5877 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.37.18.215
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-45.145.165.114-7800 #1'
+  name: '20,21|🇫🇷FR-45.145.166.209-5864 #2'
   network: ws
   port: 443
-  server: beyonddsz.cfd
-  servername: ''
+  server: hms26.xpengmotors.sbs
+  servername: hms26.xpengmotors.sbs
   tls: true
   type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  uuid: fb0a2de6-bf06-4ff0-97ce-c21abcdc2d55
   ws-opts:
     headers:
-      Host: beyonddsz.cfd
+      Host: hms26.xpengmotors.sbs
     path: /linkws
 - alterId: 0
   cipher: auto
