@@ -1024,35 +1024,39 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 12,36|🔒 VM-WS-NA 🇺🇸 US-207.90.238.13...
+  name: 12,30|🇺🇸_US_美国->_CN_国
   network: ws
-  port: '20030'
+  port: 20030
   server: 207.90.238.136
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 3a4acd31-f733-4e37-99d8-7fc46c4097b8
+  uuid: ea50474c-4ade-441a-bf30-b799cec05a43
   ws-opts:
-    headers:
-      Host: ''
     path: /
+- cipher: aes-256-gcm
+  name: 12,30|🇳_CN_中国->🇸_US_美国
+  password: 4bccdfb7-f45b-44bb-9cd3-fb6f8fc8072f
+  port: 41705
+  server: zf1.10101251.xyz
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 12,36|🔒 VM-TCP-NA 🇵🇱 PL-91.185.184.6...
+  fingerprint: ''
+  name: 12,30,36|🔒 VM-TCP-NA 🇵🇱 PL-91.185.184.6...
   network: tcp
   port: '24301'
   server: 91.185.184.61
   servername: ''
+  sni: ''
   tls: false
   type: vmess
   uuid: d1ea8c41-67a6-4f63-e47a-c4adaca1d1a4
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '12,24,27|2|🇳🇱3 |  4.5MB/s #2'
-  password: 1RWwXhwfAB5gAEozU4G2Pg
+- cipher: chacha20-ietf-poly1305
+  name: 12,24,30|_DE_国->🇸_IS_冰岛
+  password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.188
-  skip-cert-verify: true
-  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -1064,12 +1068,13 @@ proxies:
   type: vmess
   uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
   ws-opts: {}
-- alterId: 64
+- alterId: 0
   cipher: auto
   name: 13,36|🔒 VM-TCP-NA 🇺🇸 US-107.148.207....
   network: tcp
-  port: 48712
+  port: '48712'
   server: 107.148.207.249
+  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
