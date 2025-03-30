@@ -55,8 +55,8 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|1|🇭🇰 香港 01 | 1x HK
-  password: be9c70bf-0ccc-4253-ab1c-bd3054a231c7
+  name: '5,11,24,27|0|  01 | 1x HK #1'
+  password: 89e88c29-bd12-4118-b4e6-6fc15a95d6bb
   port: 36141
   server: free.2weradf.xyz
   type: ss
@@ -88,8 +88,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|0|🇭🇰香港 02 | 1x HK
-  password: 2e1c785f-34a7-4cda-b79a-a45b44c6c0df
+  name: 5,11,24,27|2|🇭🇰香港 02 | 1x HK
+  password: eb5812ae-8009-463b-9f15-bf16a3f593e5
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
@@ -118,15 +118,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|1|🇭🇰 香港IP 03 | 1x HK #1'
-  password: be9c70bf-0ccc-4253-ab1c-bd3054a231c7
+  name: '5,11,24,27|0|🇭🇰 香港IP 03 | 1x HK #1'
+  password: 89e88c29-bd12-4118-b4e6-6fc15a95d6bb
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|1|🇭🇰 香港 02 | 1x HK #1'
-  password: be9c70bf-0ccc-4253-ab1c-bd3054a231c7
+  name: '5,11,24,27|0|🇭🇰 香港 02 | 1x HK #1'
+  password: 89e88c29-bd12-4118-b4e6-6fc15a95d6bb
   port: 36143
   server: free.2weradf.xyz
   type: ss
@@ -175,7 +175,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '11,27|13|香港|@ripaojiedian #1'
+  name: '11,24,27|13|香港|@ripaojiedian #1'
   network: tcp
   port: '10295'
   server: 103.30.78.24
@@ -745,6 +745,19 @@ proxies:
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
 - alterId: 0
   cipher: auto
+  name: 24|🇭🇰 香港 Amazon数据中心
+  network: ws
+  port: '42359'
+  server: 0000000000000000000000000078.cgroup-node-for-bigairport.sbs
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000078.cgroup-node-for-bigairport.sbs
+    path: /
+- alterId: 0
+  cipher: auto
   name: 24|🇭🇰 香港02{优化2|V2ray}
   network: ws
   port: '25242'
@@ -1090,22 +1103,22 @@ proxies:
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
   network: tcp
-  port: '27512'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
-  network: tcp
   port: '54675'
   server: 103.149.183.178
   servername: ''
   tls: false
   type: vmess
   uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
+  network: tcp
+  port: '27512'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
 - alterId: 0
   name: 37|HK
   password: b504c643-d081-4c90-8f50-9b0bf0b0902d
@@ -1293,3 +1306,17 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- name: 40|HK_speednode_0238
+  network: ws
+  port: 443
+  server: 43.129.171.137
+  servername: edfgv.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edfgv.aimercc.filegear-sg.me
+    path: /?ed=2560
