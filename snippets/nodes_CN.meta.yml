@@ -688,19 +688,6 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- alterId: 0
-  cipher: auto
-  name: 9|🇨🇳 2|🌀14-CN |  1.9MB/s
-  network: ws
-  port: 21036
-  server: 212.192.12.56
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f3273718-a30d-4a75-8921-e73f0415e277
-  ws-opts:
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: 16|🇨🇳_CN_中国
   password: UP3JN98C6EOR
@@ -846,6 +833,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 24|_中国
+  network: ws
+  port: '8443'
+  server: 45.205.0.22
+  tls: true
+  type: vmess
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  ws-opts:
+    headers:
+      Host: lax1.ibgfw.top
+    path: /xrenvws
+- alterId: 0
+  cipher: auto
   name: '24|_中国 #1'
   network: ws
   port: '8443'
@@ -899,15 +899,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇨🇳 广东省广市 移
-  port: 59554
-  server: 183.236.51.38
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇨🇳 CN-120.232.17.7...
   network: ws
   port: 33202
@@ -922,20 +913,20 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
-  network: tcp
-  port: '59003'
-  server: 183.236.51.36
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇳 CN-47.104.186.1...
   network: tcp
   port: '50002'
   server: 47.104.186.133
   servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  network: tcp
+  port: '59003'
+  server: 183.236.51.36
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -1091,6 +1082,13 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: chacha20-ietf-poly1305
+  name: 40|CN_speednode_0014
+  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
+  port: 11006
+  server: 183.232.229.164
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 40|CN_speednode_0015
@@ -1221,33 +1219,6 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: aes-256-cfb
-  name: 40|CN_speednode_0025
-  obfs: tls1.2_ticket_auth
-  obfs-param: sg2-cdn-route.couldflare-cdn.com
-  password: uiACqrIr
-  port: 56138
-  protocol: origin
-  protocol-param: ''
-  server: cm2.xcone.xyz
-  type: ssr
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 40|CN_speednode_0026
-  network: ws
-  port: 22643
-  server: tk.hzlt.tkddns.xyz
-  servername: zxjp-c.tkong.cc
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-c.tkong.cc
-    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 40|CN_speednode_0027
