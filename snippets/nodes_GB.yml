@@ -1,19 +1,5 @@
 proxies:
 - alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|155ad1db1d394c1189b8cbd4a8cd96...
-  network: ws
-  port: 2086
-  server: 31.25.237.9
-  tls: false
-  type: vmess
-  udp: false
-  uuid: 7c81d0a8-8e23-44d4-94b5-56d33b7af07d
-  ws-opts:
-    path: 7c81d0a8-8e23-44d4-94b5-56d33b7af07d-vm
-- alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 5,11,24,27,30,37|🇬🇧GB英国2
   password: 65102c31-2191-4f38-bb89-d3a7050fe608
@@ -161,14 +147,20 @@ proxies:
     headers:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
-- cipher: aes-256-cfb
-  name: 11|1|🇬🇧1 |  4.7MB/s
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 62.100.205.48
-  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 11|1|🇬🇧5 |  5.2MB/s
+  network: ws
+  port: 443
+  server: 188.114.96.2
+  servername: linde06.indiavideo.sbs
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
 - alterId: 0
   cipher: aes-128-gcm
   name: 19,20,21,37|未知51 14.2MB/s
@@ -232,19 +224,55 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 24,30|🇧 英国 Amazon数据中心
+  password: telegram-id-directvpn
+  port: 22222
+  server: 3.10.81.192
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24|🇬🇧 英国01{移动|V2ray}
+  network: ws
+  port: '25240'
+  server: cm.awslcn.info
+  tls: false
+  type: vmess
+  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
+  ws-opts:
+    headers:
+      Host: cm.awslcn.info
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇬🇧 英国02{移动|V2ray}
+  network: ws
+  port: '25240'
+  server: cm1.awslcn.info
+  tls: false
+  type: vmess
+  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
+  ws-opts:
+    headers:
+      Host: cm1.awslcn.info
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: '24,27,30|2|🇧4 |  1.9MB/s #1'
+  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
+  port: 12364
+  server: 183.240.255.75
+  type: ss
+  udp: true
 - name: 26|V2-英国03∣K71线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 20820
   server: 120.232.217.96
   skip-cert-verify: true
   type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '27,30|2|🇬🇧2 |  1.8MB/s #1'
-  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
-  port: 12364
-  server: 183.240.255.75
-  type: ss
   udp: true
 - cipher: aes-256-gcm
   name: 28|🇬🇧 VIP 英国1-1A
@@ -287,14 +315,24 @@ proxies:
   uuid: 48adfefe-6599-4cc7-9bf2-a18020260e22
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-149.7.16.149...
+  name: 36,37|未知112 1.7MB/s
   network: tcp
-  port: '37101'
-  server: 149.7.16.149
+  port: 55577
+  server: 172.99.190.207
   servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-46.250.253...
+  network: tcp
+  port: 28872
+  server: 46.250.253.234
   tls: false
   type: vmess
-  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
+  uuid: 762b3923-5885-4c5f-886f-e62788512338
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
@@ -307,17 +345,6 @@ proxies:
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - alterId: 0
   cipher: auto
-  name: 36,37|未知112 1.7MB/s
-  network: tcp
-  port: 55577
-  server: 172.99.190.207
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-68.168.31.18...
   network: tcp
   port: '26924'
@@ -328,10 +355,21 @@ proxies:
   uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-46.250.253...
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-149.7.16.149...
   network: tcp
-  port: 28872
-  server: 46.250.253.234
+  port: '37101'
+  server: 149.7.16.149
+  servername: ''
   tls: false
   type: vmess
-  uuid: 762b3923-5885-4c5f-886f-e62788512338
+  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
+  network: tcp
+  port: '47567'
+  server: 38.114.120.12
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c

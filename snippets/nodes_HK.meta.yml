@@ -1,5 +1,15 @@
 proxies:
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11|1|🇭🇰3 |  1.2MB/s
+  password: 2be0c954-4291-45ea-b47d-ca713180550b
+  port: 52612
+  server: hk02.x.quickcht3.club
+  skip-cert-verify: true
+  sni: hk02.x.quickcht3.club
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
   name: 5|11,16|香港9|@ripaojiedian
   network: tcp
@@ -45,16 +55,15 @@ proxies:
   sni: waphk.mjt000.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇭🇰香港 03 | 1x HK #2'
-  password: 36de96e9-3591-4f9a-8a8e-3cf4a2c24fe5
+  name: '5,11,24,27,30|1|🇭🇰香港 03 | 1x HK #1'
+  password: 77d7cf84-599a-47cf-a99d-895c9db85adb
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 5,11,24,27,30|🇨🇳 广东省广州市 移动 4
-  password: c8d53fec-bc40-4131-a1c6-7267334ade41
+  name: '5,11,24,27,30|0|  01 | 1x HK #2'
+  password: ec4644c9-a7c3-49f8-b31c-def37b63a822
   port: 36141
   server: free.2weradf.xyz
   type: ss
@@ -86,8 +95,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇭🇰香港 02 | 1x HK #2'
-  password: 36de96e9-3591-4f9a-8a8e-3cf4a2c24fe5
+  name: '5,11,24,27,30|1|🇭🇰香港 02 | 1x HK #1'
+  password: 77d7cf84-599a-47cf-a99d-895c9db85adb
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
@@ -116,21 +125,36 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇭🇰 香港IP 03 | 1x HK #1'
-  password: c76c4cf5-5e54-4a3d-8eaf-339bdb805856
+  name: '5,11,24,27,30|0|🇭🇰 香港IP 03 | 1x HK #2'
+  password: ec4644c9-a7c3-49f8-b31c-def37b63a822
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇭🇰 香港 02 | 1x HK #1'
-  password: c76c4cf5-5e54-4a3d-8eaf-339bdb805856
+  name: '5,11,24,27,30|0|🇭🇰 香港 02 | 1x HK #2'
+  password: ec4644c9-a7c3-49f8-b31c-def37b63a822
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
+- name: '11,24,27,30|12,13|香港3|@ripaojiedian #1'
+  network: tcp
+  password: VMhGp5wEIyCDf90T
+  port: 42303
+  server: csuzhou01.1cooldns.com
+  skip-cert-verify: false
+  sni: hk06.run.place
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 11|1|🇭🇰19 |  1.0MB/s
+  password: 2be0c954-4291-45ea-b47d-ca713180550b
+  port: 52612
+  server: 111.29.57.125
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
-  name: '11,24,27,30|12|🇭🇰 香港|@ripaojiedian #2'
+  name: '11,24,27,30|12|🇰 香港|@ripaojiedian #1'
   password: UMG49G7UX0FPLALB
   port: 15016
   server: w72tapyb.slashdevslashnetslashtun.net
@@ -138,6 +162,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
   name: 11,24,27,30,37|🇭🇰HK香港2
   password: ee19fceb-cedc-4832-b460-fccf24fdc8be
   port: 11002
@@ -146,14 +171,6 @@ proxies:
   tfo: false
   tls: true
   type: ss
-- name: '11,24,27,30|12,13|香港3|@ripaojiedian #2'
-  network: tcp
-  password: VMhGp5wEIyCDf90T
-  port: 42303
-  server: csuzhou01.1cooldns.com
-  skip-cert-verify: false
-  sni: hk06.run.place
-  type: trojan
 - cipher: aes-256-gcm
   name: '11,24,27,30|12|🇭🇰 香港4|@ripaojiedian #2'
   password: UVKL67AXW56ZCNT3
@@ -721,166 +738,45 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- name: '24|🇭🇰 香港TROJAN直连 0.1x #39'
-  password: c017fb27-a4b4-48f9-80f6-2bdb504adf75
-  port: 42168
-  server: 35ba5dc4c753892feb3270a8e745e72b.lianjianode.xyz
-  skip-cert-verify: true
-  sni: data.bilibili.com
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: '24|2|🇭🇰1 |  2.7MB/s #1'
-  network: tcp
-  port: '60580'
-  server: qqb12.198139.xyz
+  name: 24|🇭🇰 香港02{优化2|V2ray}
+  network: ws
+  port: '25242'
+  server: hk2.awslcn.info
   tls: false
   type: vmess
-  uuid: 46d0c7e4-b94e-414b-810c-d281190c9535
+  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
+  ws-opts:
+    headers:
+      Host: hk2.awslcn.info
+    path: /
 - alterId: 0
   cipher: auto
-  name: '24|2|🇭🇰2 |  5.8MB/s #1'
-  network: tcp
-  port: '50341'
-  server: cloudgd.coemn.com
+  name: 24|🇭🇰 香港05{优化1|V2ray}
+  network: ws
+  port: '25244'
+  server: hk1.awslcn.info
   tls: false
   type: vmess
-  uuid: 46d0c7e4-b94e-414b-810c-d281190c9535
+  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
+  ws-opts:
+    headers:
+      Host: hk1.awslcn.info
+    path: /
 - alterId: 0
   cipher: auto
-  name: '24|2|🇭🇰3 |  6.0MB/s #1'
-  network: tcp
-  port: '19654'
-  server: gdcm.ffzjv.cn
+  name: 24|🇭🇰 香港01{优化1|V2ray}
+  network: ws
+  port: '25242'
+  server: hk1.awslcn.info
   tls: false
   type: vmess
-  uuid: 46d0c7e4-b94e-414b-810c-d281190c9535
-- alterId: 0
-  cipher: auto
-  name: '24|2|🇭🇰4 |  5.9MB/s #1'
-  network: tcp
-  port: '42175'
-  server: qqb12.198139.xyz
-  tls: false
-  type: vmess
-  uuid: 46d0c7e4-b94e-414b-810c-d281190c9535
-- alterId: 0
-  cipher: auto
-  name: '24|2|🇭🇰5 |  1.1MB/s #1'
-  network: tcp
-  port: '11181'
-  server: 03xsg.xissyun.com
-  tls: false
-  type: vmess
-  uuid: 46d0c7e4-b94e-414b-810c-d281190c9535
-- alterId: 0
-  cipher: auto
-  name: '24|2|🇭🇰6 |  5.4MB/s #1'
-  network: tcp
-  port: '24556'
-  server: js.sf1.pw
-  tls: false
-  type: vmess
-  uuid: 46d0c7e4-b94e-414b-810c-d281190c9535
-- alterId: 0
-  cipher: auto
-  name: '24|2|🇭🇰7 |  5.9MB/s #1'
-  network: tcp
-  port: '40993'
-  server: js.sf1.pw
-  tls: false
-  type: vmess
-  uuid: 46d0c7e4-b94e-414b-810c-d281190c9535
-- alterId: 0
-  cipher: auto
-  name: '24|2|🇭🇰8 |  5.8MB/s #1'
-  network: tcp
-  port: '41115'
-  server: ttsh.xissyun.com
-  tls: false
-  type: vmess
-  uuid: 46d0c7e4-b94e-414b-810c-d281190c9535
-- alterId: 0
-  cipher: auto
-  name: '24|2|🇭🇰9 |  4.7MB/s #1'
-  network: tcp
-  port: '21526'
-  server: qqa813.198139.xyz
-  tls: false
-  type: vmess
-  uuid: 46d0c7e4-b94e-414b-810c-d281190c9535
-- alterId: 0
-  cipher: auto
-  name: '24|2|🇭🇰10 |  4.9MB/s #1'
-  network: tcp
-  port: '50817'
-  server: ttsh.xissyun.com
-  tls: false
-  type: vmess
-  uuid: 46d0c7e4-b94e-414b-810c-d281190c9535
-- alterId: 0
-  cipher: auto
-  name: '24|2|🇭🇰12 |  9.7MB/s #1'
-  network: tcp
-  port: '16560'
-  server: gdcm.ffzjv.cn
-  tls: false
-  type: vmess
-  uuid: 46d0c7e4-b94e-414b-810c-d281190c9535
-- alterId: 0
-  cipher: auto
-  name: '24|2|🇭🇰13 |  4.7MB/s #1'
-  network: tcp
-  port: '22382'
-  server: pgyd.xn--inr8y672ajns.xn--fiqs8s
-  tls: false
-  type: vmess
-  uuid: 46d0c7e4-b94e-414b-810c-d281190c9535
-- alterId: 0
-  cipher: auto
-  name: '24|2|🇭🇰15 |  5.8MB/s #1'
-  network: tcp
-  port: '31430'
-  server: cloudgd.coemn.com
-  tls: false
-  type: vmess
-  uuid: 46d0c7e4-b94e-414b-810c-d281190c9535
-- alterId: 0
-  cipher: auto
-  name: '24|2|🇭🇰17 |  5.9MB/s #1'
-  network: tcp
-  port: '44794'
-  server: js.sf1.pw
-  tls: false
-  type: vmess
-  uuid: 46d0c7e4-b94e-414b-810c-d281190c9535
-- alterId: 0
-  cipher: auto
-  name: '24|2|🇭🇰18 |  5.5MB/s #1'
-  network: tcp
-  port: '44227'
-  server: js.sf1.pw
-  tls: false
-  type: vmess
-  uuid: 46d0c7e4-b94e-414b-810c-d281190c9535
-- alterId: 0
-  cipher: auto
-  name: '24|2|🇭🇰20 |  6.1MB/s #1'
-  network: tcp
-  port: '26488'
-  server: cloudgd.coemn.com
-  tls: false
-  type: vmess
-  uuid: 46d0c7e4-b94e-414b-810c-d281190c9535
-- alterId: 0
-  cipher: auto
-  name: '24|2|🇭🇰21 |  1.2MB/s #1'
-  network: tcp
-  port: '23374'
-  server: xxsg.xissyun.com
-  tls: false
-  type: vmess
-  uuid: 46d0c7e4-b94e-414b-810c-d281190c9535
+  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
+  ws-opts:
+    headers:
+      Host: hk1.awslcn.info
+    path: /
 - name: 26|V1-香港01∣K1线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21135
@@ -1173,16 +1069,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
-  network: tcp
-  port: '27512'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-5.83.221.31:3...
   network: ws
   port: 30041
@@ -1195,6 +1081,16 @@ proxies:
     headers:
       Host: v02.gutingting.com
     path: /aceamedv
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
+  network: tcp
+  port: '27512'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
 - alterId: 0
   cipher: auto
   name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
