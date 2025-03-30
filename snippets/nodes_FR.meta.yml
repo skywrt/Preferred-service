@@ -1,19 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|47bb1e136b324b5f96305c36ec98cf...
-  network: ws
-  port: 22222
-  server: 13.36.133.208
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
 - cipher: aes-256-gcm
   name: 8|🇫🇷FR-193.243.147.128-160_1@160
   password: 7BcLdsO1WweoGD0X
@@ -65,11 +50,14 @@ proxies:
   port: 8118
   server: 54.36.174.181
   type: ss
-- cipher: aes-256-gcm
-  name: '8|SS-法国:波兰-locked-ChatGPT-TikTok... #2'
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 8,37|未知38 876.5KB/s
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 54.36.174.181
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-256-gcm
   name: '8|SS-法国:波兰-locked-ChatGPT-TikTok... #3'
@@ -97,7 +85,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '9,20,21|🏁RELAY-172.67.220.10-7788 #2'
+  name: 9,20,21,36|🔒 VM-WS-TLS 🏴‍☠️ NA-172.67.220...
   network: ws
   port: 443
   server: 172.67.220.10
@@ -142,9 +130,10 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '9,20,21,24|🇺🇸 美国 CloudFlare节点 #4'
+  client-fingerprint: chrome
+  name: 9,20,21,24,30|🇺🇸 美国 CloudFlare节点 3
   network: ws
-  port: '443'
+  port: 443
   server: 172.67.220.83
   servername: linja05.hwcar.sbs
   skip-cert-verify: false
@@ -171,14 +160,20 @@ proxies:
       Host: food.zhaal.ir
     path: /
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知88 13.8MB/s
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.158.171.141
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇫🇷FR-163.5.159.231-7736
+  network: ws
+  port: 443
+  server: irvideo.cfd
   skip-cert-verify: true
   tls: true
-  type: ss
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      host: irvideo.cfd
+    path: /linkws
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -225,14 +220,20 @@ proxies:
       host: hms19.best-tizi.top
     path: /linkws
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知63 13.1MB/s
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.158.171.132
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇫🇷FR-146.19.168.161-7750
+  network: ws
+  port: 443
+  server: 146.19.168.161
   skip-cert-verify: true
   tls: true
-  type: ss
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      host: az05.beyondy.cfd
+    path: /link
 - cipher: aes-256-gcm
   name: 19|🇫🇷FR-149.202.82.172-0454
   password: faBAoD54k87UJG7
@@ -269,11 +270,23 @@ proxies:
   port: 3389
   server: 149.202.82.172
   type: ss
-- cipher: aes-256-gcm
-  name: 19|🇫🇷FR-149.202.82.172-5305
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 19,37|未知20 1.8MB/s
   password: KixLvKzwjekG00rm
   port: 5500
   server: 149.202.82.172
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 20,21,37|未知87 21.2MB/s
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.110
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -453,20 +466,15 @@ proxies:
   type: vmess
   udp: true
   uuid: 48adfefe-6599-4cc7-9bf2-a18020260e22
-- alterId: 1
+- alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇷 法国 (SITA)
-  network: ws
-  port: 443
-  server: 57.129.25.20
-  tls: true
+  name: 36|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228...
+  network: tcp
+  port: 14854
+  server: 38.109.228.214
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 57.129.25.20
-    path: linkvws
+  uuid: f0a214ba-2a4f-4f22-b342-03123726ab27
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇫🇷 FR-38.109.228.1...
@@ -477,26 +485,3 @@ proxies:
   tls: false
   type: vmess
   uuid: a6179475-489c-4bcc-b05c-481386295b93
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇫🇷 FR-51.15.19.206:...
-  network: ws
-  port: '80'
-  server: 51.15.19.206
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 13533500-0b13-11f0-b936-205c6d5f5d78
-  ws-opts:
-    headers:
-      Host: pmsc.pubgmobile.com
-    path: /96trdv4a
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228... #1'
-  network: tcp
-  port: 14854
-  server: 38.109.228.214
-  tls: false
-  type: vmess
-  uuid: f0a214ba-2a4f-4f22-b342-03123726ab27
