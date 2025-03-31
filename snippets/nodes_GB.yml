@@ -1,7 +1,7 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|2|🇧 英国住宅IP 01 | 1x UK
-  password: 024f5ea3-a0fa-4cfa-9f94-29d9efeb3cc4
+  name: '5,9,11,24,27,30|2|🇧 英国住宅IP 01 | 1x UK #1'
+  password: a8a51770-188a-4712-83cb-08922414b00c
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -52,8 +52,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27|0|国家宽 01 | 1x UK #1'
-  password: 9105d68c-356a-4abf-bb77-0b93ae9ada0b
+  name: 5,9,11,24,27,30|0|🇧英国家宽 01 | 1x UK
+  password: d07b01a5-d81d-4530-ae8a-1ec72e3355c2
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -128,7 +128,8 @@ proxies:
   server: 51.140.34.50
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 9,27,40|CN_speednode_0045
+  client-fingerprint: chrome
+  name: 9,30|🇨🇳 广东省广州市 移动 4
   password: ee19fceb-cedc-4832-b460-fccf24fdc8be
   port: 11006
   server: 183.232.229.164
@@ -136,7 +137,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 10,24,28|🇩🇪 德国法兰克福-1B
+  name: 10,28|🇩🇪 德国法兰克福-1B
   network: ws
   port: 23451
   server: frankfurt.faforex.eu.org
@@ -156,12 +157,6 @@ proxies:
   server: 212.102.53.194
   skip-cert-verify: true
   tls: true
-  type: ss
-- cipher: aes-128-gcm
-  name: 19|🇬🇧GB-212.102.53.79-0324
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.79
   type: ss
 - alterId: 0
   cipher: aes-128-gcm
@@ -189,9 +184,9 @@ proxies:
     path: 7c81d0a8-8e23-44d4-94b5-56d33b7af07d-vm
 - alterId: 0
   cipher: auto
-  name: '20,21,24|🇮🇷 _伊朗 #1'
+  name: '20,21|🇬🇧GB-31.25.237.9-1438 #1'
   network: ws
-  port: '2086'
+  port: 2086
   server: 31.25.237.9
   servername: ''
   tls: false
@@ -203,9 +198,9 @@ proxies:
     path: 7c81d0a8-8e23-44d4-94b5-56d33b7af07d-vm
 - alterId: 0
   cipher: auto
-  name: 20,21,24|🇮🇷 _伊朗
+  name: '20,21|🇬🇧GB-31.25.237.9-1434 #1'
   network: ws
-  port: '2086'
+  port: 2086
   server: lon3.890699.xyz
   servername: ''
   tls: false
@@ -216,11 +211,31 @@ proxies:
       Host: www.bing.com
     path: 7c81d0a8-8e23-44d4-94b5-56d33b7af07d-vm
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 20,21,37|未知129 156.1KB/s
+  password: yCpSJMYkFQepG4o4QNKyo7qotpREJzwS1bbkyHNauphrKgYUhU3BLE1nbAeTqYZh8rM9KRexnYNgEWBmtZH1rjxd2biDqXJM
+  port: 55988
+  server: 185.5.38.111
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
-  name: 24|🇬🇧 英国01{移动|V2ray}
+  name: '24|1|🇬🇧2 |  4.8MB/s #1'
+  network: tcp
+  port: '17931'
+  server: v2-uk-zx.netcar.live
+  tls: false
+  type: vmess
+  uuid: 3a6a527c-1c8c-4500-b644-a5ab35efc934
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 24,27,30|🇨🇳 省 移动(全省通用)
   network: ws
-  port: '25240'
+  port: 25240
   server: cm.awslcn.info
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
@@ -228,42 +243,19 @@ proxies:
     headers:
       Host: cm.awslcn.info
     path: /
-- name: 24|🇬🇧 _英国
-  password: '!!str 74260702287384200'
-  port: 443
-  server: quality-kite.shiner427.skin
-  skip-cert-verify: false
-  type: trojan
-- name: '24|🇬🇧 _英国 #1'
-  password: 6d446d30-066f-11f0-86ad-1239d0255272
-  port: 443
-  server: uk1.test3.net
-  skip-cert-verify: false
-  sni: uk1.test3.net
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 24,36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
-  network: tcp
-  port: '46617'
-  server: 46.250.253.232
-  servername: ''
+  name: '24|🇬🇧 _英国 #38'
+  network: ws
+  port: '20036'
+  server: 5.39.252.72
   tls: false
   type: vmess
-  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- alterId: 0
-  cipher: auto
-  name: '24|🇬🇧 _英国 #3'
-  network: ws
-  port: '8443'
-  server: 188.244.122.249
-  tls: true
-  type: vmess
-  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  uuid: 0705f269-aadf-421f-b0c9-b118b38e8b7b
   ws-opts:
     headers:
-      Host: lax1.ibgfw.top
-    path: /xrenvws
+      Host: ''
+    path: /
 - name: 26|V2-英国03∣K71线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 20820
@@ -271,6 +263,14 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: '27,30|1|🇬🇧2 |  4.8MB/s #3'
+  port: 17931
+  server: v2-uk-zx.netcar.live
+  tls: false
+  type: vmess
+  uuid: 3a6a527c-1c8c-4500-b644-a5ab35efc934
 - cipher: aes-256-gcm
   name: 28|🇬🇧 VIP 英国1-1A
   password: b82692c3-986f-4356-b03c-4347db250826
@@ -312,13 +312,34 @@ proxies:
   uuid: 48adfefe-6599-4cc7-9bf2-a18020260e22
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-46.250.253...
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
   network: tcp
-  port: 28872
-  server: 46.250.253.234
+  port: '55577'
+  server: 172.99.190.207
+  servername: ''
   tls: false
   type: vmess
-  uuid: 762b3923-5885-4c5f-886f-e62788512338
+  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-149.7.16.149...
+  network: tcp
+  port: '37101'
+  server: 149.7.16.149
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  network: tcp
+  port: '46617'
+  server: 46.250.253.232
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
@@ -328,3 +349,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-46.250.253...
+  network: tcp
+  port: 28872
+  server: 46.250.253.234
+  tls: false
+  type: vmess
+  uuid: 762b3923-5885-4c5f-886f-e62788512338
