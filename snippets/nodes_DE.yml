@@ -13,8 +13,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|2|🇪德国 01 | 1x DE
-  password: 2b3f42e8-5355-4d0b-b09a-189a0ecf5720
+  name: 5,9,11,24,27,30|0|🇪德国 01 | 1x DE
+  password: 1cb91c89-473c-4ea5-80e3-276dedfe673b
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -29,8 +29,8 @@ proxies:
   type: vmess
   uuid: b52f0a62-068c-41bf-a4f6-ac3faddded46
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27|0| 国 01 | 1x DE #1'
-  password: fe9932b0-c546-4e33-9779-460cb17df031
+  name: '5,9,11,24,27,30|2|🇪 德国 01 | 1x DE #1'
+  password: bbdcc86c-9516-43b6-84d0-6e43b1c2786d
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -75,20 +75,35 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 9,24|🇩🇪 德国02{移动|V2ray}
+  name: 11|2|🇩🇪1 |  5.0MB/s
   network: ws
-  port: '25241'
-  server: cm.awslcn.info
-  skip-cert-verify: false
+  port: 23616
+  server: 16.mamamajd.site
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
+  uuid: 0a14d5c0-f566-314c-9e22-7db5655c35de
   ws-opts:
     headers:
-      Host: cm.awslcn.info
+      Host: 16.mamamajd.site
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 11|2|🇩🇪2 |  5.0MB/s
+  network: ws
+  port: 23618
+  server: 18.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0a14d5c0-f566-314c-9e22-7db5655c35de
+  ws-opts:
+    headers:
+      Host: 18.mamamajd.site
     path: /
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
@@ -134,27 +149,23 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 24,27|1|🇪7 |  5.3MB/s
+  name: 24|🇩🇪 德国02{移动|V2ray}
   network: ws
-  port: 443
-  raw:
-    add: 172.67.71.217
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: 1t3chx0.zed23.web1337.net
-    id: 9072d339-3885-4fe1-b0bc-29fa7505410e
-    net: ws
-    path: /fixedfloati.cfd/linkwsd
-    port: 443
-    ps: 🇺🇸 US_421
-    scy: ''
-    sni: ''
-    tls: tls
-    type: ''
-    v: '2'
+  port: '25241'
+  server: cm.awslcn.info
+  tls: false
+  type: vmess
+  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
+  ws-opts:
+    headers:
+      Host: cm.awslcn.info
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '24|1|🇩🇪7 |  5.3MB/s #1'
+  network: ws
+  port: '443'
   server: 172.67.71.217
-  servername: 1t3chx0.zed23.web1337.net
   tls: true
   type: vmess
   uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e
@@ -162,12 +173,6 @@ proxies:
     headers:
       Host: 1t3chx0.zed23.web1337.net
     path: /fixedfloati.cfd/linkwsd
-- cipher: aes-256-cfb
-  name: 24,27|1|🇪4 |  1.4MB/s
-  password: BNmAXXxAHYpTRdzu
-  port: 9020
-  server: 80.92.204.106
-  type: ss
 - alterId: 0
   cipher: auto
   name: 24|🇩🇪 _德国
@@ -186,7 +191,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 24,36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232...
+  name: '24,36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.232... #1'
   network: tcp
   port: 52856
   server: 62.146.232.157
@@ -240,16 +245,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
-  network: tcp
-  port: '48961'
-  server: 23.158.56.21
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
-- alterId: 0
-  cipher: auto
   grpc-opts:
     grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
   name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
@@ -278,12 +273,12 @@ proxies:
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
   network: httpupgrade
-  port: '2053'
+  port: '2083'
   server: 104.21.48.6
-  servername: esna.farsonline24.ir
+  servername: tabnak.farsonline24.ir
   tls: true
   type: vmess
-  uuid: 85e69f90-d295-4de9-82a4-6d0643bdec20
+  uuid: ffac5e4d-53ec-4e29-a471-3cdc0b85b9ce
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
@@ -303,6 +298,16 @@ proxies:
   tls: false
   type: vmess
   uuid: a139037d-6380-4d5d-884b-572d51f4a4e7
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
+  network: tcp
+  port: '48961'
+  server: 23.158.56.21
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...

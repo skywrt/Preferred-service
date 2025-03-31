@@ -1055,6 +1055,15 @@ proxies:
   type: vmess
   uuid: d1ea8c41-67a6-4f63-e47a-c4adaca1d1a4
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 12,16,24,30,37|未知115
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.188
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
   name: 13|🇬🇧_GB_英国->🇷🇺_RU_俄罗斯
   network: ws
@@ -1096,14 +1105,15 @@ proxies:
     headers:
       Host: cm1.awslcn.info
     path: /
-- name: 16|_GB_国->_CN_国
+- name: '16,30|_GB_国->_CN_国 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 51.21.7.106
   sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
-  name: 16,37|未知119
+  client-fingerprint: chrome
+  name: 16,30,37|未知119
   network: tcp
   password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
   port: 20086
@@ -1113,7 +1123,8 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 16|🇺🇸_US_美国->🇺_RU_
+- client-fingerprint: chrome
+  name: 16,30|🇺🇸 美国 Microsoft数据中心
   password: 6557bf4a-852b-4a69-ad35-d53293386a13
   port: 443
   server: 20.2.156.186
@@ -1122,7 +1133,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '16|🇺🇸_US_美国->🇨🇳_CN_中国 #2'
+  name: '16,30|🇺🇸_US_美国->🇨🇳_CN_中国 #3'
   network: ws
   port: 21027
   server: 134.195.211.116
@@ -1130,22 +1141,31 @@ proxies:
   uuid: f17c76c1-2c3b-4791-b2a7-15435b81ed3a
   ws-opts:
     path: /
-- name: '16|🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1 #1'
+- client-fingerprint: chrome
+  name: 16,30|🇺🇸 美国 Microsoft数据中心 2
   password: 6557bf4a-852b-4a69-ad35-d53293386a13
   port: 443
   server: 20.2.156.105
   skip-cert-verify: false
   sni: ru.mjt000.com
   type: trojan
-- name: '16,24|🇨🇳 河北省 移动(全省通用) #2'
+- name: '16,30|🇳_CN_中国->🇺🇸_US_美国_1 #1'
+  network: tcp
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20091
+  server: 111.62.241.211
+  skip-cert-verify: true
+  sni: 11.p5zqtpj2n7.xyz
+  type: trojan
+- name: '16,24,30|🇨🇳_CN_中国->🇺🇸_US_美国_2 #1'
   network: tcp
   password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
   port: 20087
   server: 111.62.241.211
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: 7.p5zqtpj2n7.xyz
   type: trojan
-- name: 16|🇨🇳_CN_中国->_ID_
+- name: '16,30|🇨🇳_CN_中国->_ID_ #1'
   network: tcp
   password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
   port: 20093
@@ -1153,7 +1173,7 @@ proxies:
   skip-cert-verify: true
   sni: 13.p5zqtpj2n7.xyz
   type: trojan
-- name: 16|🇨🇳_CN_中国->🇺🇸_US_美国_4
+- name: '16,30|🇨🇳_CN_中国->🇺🇸_US_美国_4 #1'
   network: tcp
   password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
   port: 20083
@@ -1161,15 +1181,13 @@ proxies:
   skip-cert-verify: true
   sni: 3.p5zqtpj2n7.xyz
   type: trojan
-- allowInsecure: '1'
-  name: 16,24,27|1|🇳1 |  1.3MB/s
+- name: '16,24,30|🇨🇳_CN_中国->🇺🇸_US_美国_5 #1'
   network: tcp
   password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
   port: 20084
   server: 111.62.241.211
   skip-cert-verify: true
   sni: 4.p5zqtpj2n7.xyz
-  tls: true
   type: trojan
 - alterId: 0
   cipher: auto
