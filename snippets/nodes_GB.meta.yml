@@ -1,22 +1,7 @@
 proxies:
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|d03909e806eb45a98d6a28f6b2538b...
-  network: ws
-  port: 22222
-  server: 18.168.20.185
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
 - cipher: chacha20-ietf-poly1305
   name: '5,9,11,24,27|0| 国住宅IP 01 | 1x UK #1'
-  password: 950cdc7e-c0b9-4c1d-bc38-93e54f271761
+  password: fe9932b0-c546-4e33-9779-460cb17df031
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -114,6 +99,13 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27|2|🇧英国家宽 01 | 1x UK
+  password: 2b3f42e8-5355-4d0b-b09a-189a0ecf5720
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - name: '5,38|🇬🇧_GB_英国_26 #1'
   network: ws
   port: 443
@@ -209,7 +201,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '9,24|2|🇬🇧2 |  5.1MB/s #2'
+  name: 9,24|🇬🇧 英国02{移动|V2ray}
   network: ws
   port: '25240'
   server: cm1.awslcn.info
@@ -250,6 +242,19 @@ proxies:
     headers:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 11|1|🇬🇧5 |  4.2MB/s
+  network: ws
+  port: 25240
+  server: cm1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
+  ws-headers:
+    Host: cm1.awslcn.info
+  ws-path: /
 - name: '17|英国(yudou66.com 玉豆免费节点) #1'
   network: ws
   port: 443
@@ -283,6 +288,12 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
+- cipher: aes-128-gcm
+  name: 19|🇬🇧GB-212.102.53.79-0324
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.79
+  type: ss
 - alterId: 0
   cipher: aes-128-gcm
   name: 19,20,21,37|未知138 20.2MB/s
@@ -292,18 +303,21 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- cipher: aes-128-gcm
-  name: 19|🇬🇧GB-212.102.53.79-0322
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.79
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇬🇧GB-185.5.38.111-5506
-  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
-  port: 55988
-  server: mx2.drawnrisha.one
-  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇬🇧GB-31.25.237.9-1343
+  network: ws
+  port: 2086
+  server: lon3.890699.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7c81d0a8-8e23-44d4-94b5-56d33b7af07d
+  ws-opts:
+    headers:
+      host: www.bing.com
+    path: 7c81d0a8-8e23-44d4-94b5-56d33b7af07d-vm
 - alterId: 0
   cipher: auto
   name: '20,21,24|🇮🇷 _伊朗 #1'
