@@ -7,15 +7,8 @@ proxies:
   sni: hinet.mjt000.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇼台湾 03 | 1x TW #2'
-  password: 3de0e7a4-c220-48a2-8b9c-300e8cd4b75e
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|14|🇼 台湾 01 | 1x TW #1'
-  password: 8cff8b4c-bfce-4aa9-af16-213789996a81
+  name: '5,9,11,24,27|0|  01 | 1x TW #1'
+  password: 950cdc7e-c0b9-4c1d-bc38-93e54f271761
   port: 36241
   server: free.2weradf.xyz
   type: ss
@@ -34,20 +27,10 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0| 01 | 1x TW #2'
-  password: 3de0e7a4-c220-48a2-8b9c-300e8cd4b75e
-  port: 31241
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30,37|TW
-  password: b7c636ec-39b6-40f0-9373-952b61a9e1b7
+  name: '5,9,11,24,27|0|🇼 台湾 03 | 1x TW #1'
+  password: 950cdc7e-c0b9-4c1d-bc38-93e54f271761
   port: 36245
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -64,17 +47,10 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|14|🇹🇼 台湾 02 | 1x TW #1'
-  password: 8cff8b4c-bfce-4aa9-af16-213789996a81
+  name: '5,9,11,24,27|0|🇼 台湾 02 | 1x TW #1'
+  password: 950cdc7e-c0b9-4c1d-bc38-93e54f271761
   port: 36243
   server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇼台湾 02 | 1x TW #2'
-  password: 3de0e7a4-c220-48a2-8b9c-300e8cd4b75e
-  port: 31243
-  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -90,9 +66,27 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: aes-128-gcm
-  name: 11|2|🇹🇼6 |  5.9MB/s
-  password: VMhGp5wEIyCDf90T
-  port: 64050
-  server: csuzhou01.1cooldns.com
+- cipher: chacha20-ietf-poly1305
+  name: '11,27|12|🇹🇼 台湾|@ripaojiedian #1'
+  password: f203200f-f6a4-49d8-893e-6559804d79ae
+  port: 50204
+  server: bgp-xdd.blue-bgp.xyz
+  tfo: false
   type: ss
+- cipher: aes-128-gcm
+  name: 27|2|🇹🇼9 |  1.8MB/s
+  password: VMhGp5wEIyCDf90T
+  port: 15375
+  server: bsuqian01.dynu.net
+  type: ss
+- alterId: 0
+  name: 37|TW
+  network: grpc
+  password: 67eb147db1c0f8c5
+  port: 443
+  server: 60.249.28.59
+  skip-cert-verify: true
+  sni: 007.com
+  tls: true
+  type: trojan
+  udp: true
