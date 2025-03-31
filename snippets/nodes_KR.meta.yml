@@ -1,4 +1,32 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27|0|🇷 韩国 02 | 1x KR
+  password: c1c70532-455e-447a-bcf0-fd25d93601b6
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27|2|🇰🇷韩国 02 | 1x KR
+  password: 7767b6fa-1fde-46f3-a359-c2c9feddbe8c
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27|2|🇷韩国 01 | 1x KR
+  password: 7767b6fa-1fde-46f3-a359-c2c9feddbe8c
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27|0|  01 | 1x KR
+  password: c1c70532-455e-447a-bcf0-fd25d93601b6
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - name: 5|0|🇰🇷1 |  1.0MB/s
   password: 4e0c3a4b-bdac-3950-b736-2c90b76ee530
   port: 45168
@@ -13,19 +41,13 @@ proxies:
   server: service.ouluyun9803.com
   type: ss
 - cipher: aes-256-cfb
-  name: '9,11,24,27,30|12|🇷 国|@ripaojiedian #1'
+  name: 9,11,24,27|12|🇷 韩国|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 3.0.50.161
   tfo: false
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 11|2|🇰🇷4 |  3.3MB/s
-  password: amazonskr05
-  port: 443
-  server: 43.203.249.105
-  type: ss
 - name: 17|韩国(yudou66.com 玉豆免费节点)
   network: ws
   port: 12273
@@ -75,13 +97,6 @@ proxies:
     headers:
       Host: kr.ttcc.tech
     path: /41cfbd9d-d2da-4300-a142-b49068f7ad3d
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 24,30|🇨🇳 市
-  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
-  port: 11004
-  server: 61.172.235.22
-  type: ss
 - name: '24|1|🇰🇷5 |  5.5MB/s #1'
   password: bpb-trojan
   port: 443
@@ -91,13 +106,25 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 24,27,30|🇷 韩国 电信
+  name: 24,27|1|🇷2 |  5.5MB/s
   network: ws
-  port: 12134
-  server: 221.165.128.234
-  servername: oracleipv4.till.nyc.mn
+  port: 443
+  server: kr3.ttcc.tech
+  servername: kr3.ttcc.tech
   skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b2d10673-24cc-4f96-b1f3-da8b17589077
+  ws-opts:
+    headers:
+      Host: kr3.ttcc.tech
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '24|🇰🇷 _韩国 #1'
+  network: ws
+  port: '12134'
+  server: 221.165.128.234
   tls: true
   type: vmess
   uuid: a13f1b5a-7071-4bbc-8bae-f4f74fd77ace
@@ -112,6 +139,12 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: aes-256-cfb
+  name: 27|1|🇰🇷4 |  3.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 43.203.249.105
+  type: ss
 - alterId: 0
   cipher: auto
   name: 28|🇰🇷 韩国 专线NO2
@@ -146,6 +179,20 @@ proxies:
   server: kr91.cctv14.xyz
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-152.70.249.9...
+  network: ws
+  port: '443'
+  server: 152.70.249.97
+  servername: kr3.ttcc.tech
+  tls: true
+  type: vmess
+  uuid: b2d10673-24cc-4f96-b1f3-da8b17589077
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇰🇷 KR-220.123.48.1...
