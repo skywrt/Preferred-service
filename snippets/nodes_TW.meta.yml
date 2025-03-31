@@ -7,15 +7,15 @@ proxies:
   sni: hinet.mjt000.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇼台湾 03 | 1x TW #1'
-  password: 1cb91c89-473c-4ea5-80e3-276dedfe673b
+  name: '5,9,11,24,27|0|🇼台湾 03 | 1x TW #1'
+  password: 9105d68c-356a-4abf-bb77-0b93ae9ada0b
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|2|🇼 台湾 01 | 1x TW #1'
-  password: bbdcc86c-9516-43b6-84d0-6e43b1c2786d
+  name: 5,9,11,24,27|2|🇼 台湾 01 | 1x TW
+  password: 024f5ea3-a0fa-4cfa-9f94-29d9efeb3cc4
   port: 36241
   server: free.2weradf.xyz
   type: ss
@@ -34,15 +34,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0| 01 | 1x TW #1'
-  password: 1cb91c89-473c-4ea5-80e3-276dedfe673b
+  name: '5,9,11,24,27|0| 01 | 1x TW #1'
+  password: 9105d68c-356a-4abf-bb77-0b93ae9ada0b
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|2|🇼 台湾 03 | 1x TW #1'
-  password: bbdcc86c-9516-43b6-84d0-6e43b1c2786d
+  name: 5,9,11,24,27|2|🇼 台湾 03 | 1x TW
+  password: 024f5ea3-a0fa-4cfa-9f94-29d9efeb3cc4
   port: 36245
   server: free.2weradf.xyz
   type: ss
@@ -60,16 +60,19 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|2|🇹🇼 台湾 02 | 1x TW #1'
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,37|TW
   password: bbdcc86c-9516-43b6-84d0-6e43b1c2786d
   port: 36243
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇼台湾 02 | 1x TW #1'
-  password: 1cb91c89-473c-4ea5-80e3-276dedfe673b
+  name: '5,9,11,24,27|0|🇼台湾 02 | 1x TW #1'
+  password: 9105d68c-356a-4abf-bb77-0b93ae9ada0b
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
@@ -87,28 +90,3 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- alterId: 0
-  name: 37|TW
-  network: grpc
-  password: 67eb147db1c0f8c5
-  port: 443
-  server: 60.249.28.59
-  skip-cert-verify: true
-  sni: 007.com
-  tls: true
-  type: trojan
-  udp: true
-- name: 40|TW_speednode_0095
-  network: ws
-  port: 81
-  server: 210.61.97.241
-  servername: vv.vs2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      Host: vv.vs2025.cfd
-    path: /?ed=2560

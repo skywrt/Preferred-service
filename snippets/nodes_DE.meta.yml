@@ -13,8 +13,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0|🇪德国 01 | 1x DE
-  password: 1cb91c89-473c-4ea5-80e3-276dedfe673b
+  name: '5,9,11,24,27|0|国 01 | 1x DE #1'
+  password: 9105d68c-356a-4abf-bb77-0b93ae9ada0b
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -29,8 +29,8 @@ proxies:
   type: vmess
   uuid: b52f0a62-068c-41bf-a4f6-ac3faddded46
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|2|🇪 德国 01 | 1x DE #1'
-  password: bbdcc86c-9516-43b6-84d0-6e43b1c2786d
+  name: 5,9,11,24,27|2|🇪 德国 01 | 1x DE
+  password: 024f5ea3-a0fa-4cfa-9f94-29d9efeb3cc4
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -97,47 +97,6 @@ proxies:
   tls: true
   type: vless
   uuid: 46b06e2c-e5e0-4ad2-ad3e-9f316d7d3065
-- alterId: 2
-  cipher: auto
-  name: 11|2|🇩🇪1 |  5.0MB/s
-  network: ws
-  port: 23616
-  server: 16.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0a14d5c0-f566-314c-9e22-7db5655c35de
-  ws-opts:
-    headers:
-      Host: 16.mamamajd.site
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 11|2|🇩🇪2 |  5.0MB/s
-  network: ws
-  port: 23618
-  server: 18.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0a14d5c0-f566-314c-9e22-7db5655c35de
-  ws-opts:
-    headers:
-      Host: 18.mamamajd.site
-    path: /
-- name: '12|🇩🇪_DE_德国 #1'
-  network: ws
-  port: 2095
-  server: 91.107.188.6
-  tls: false
-  type: vless
-  uuid: 8f69b4a6-f8cd-4d11-8248-fde97b250d3b
-  ws-opts:
-    headers:
-      Host: Da8.speedtest.hopeserver1.tech.
-    path: '%2Fed%3D2082'
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -182,19 +141,6 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 24|🇩🇪 德国02{移动|V2ray}
-  network: ws
-  port: '25241'
-  server: cm.awslcn.info
-  tls: false
-  type: vmess
-  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
-  ws-opts:
-    headers:
-      Host: cm.awslcn.info
-    path: /
-- alterId: 0
-  cipher: auto
   name: '24|1|🇩🇪7 |  5.3MB/s #1'
   network: ws
   port: '443'
@@ -208,9 +154,9 @@ proxies:
     path: /fixedfloati.cfd/linkwsd
 - alterId: 0
   cipher: auto
-  name: 24|🇩🇪 _德国
+  name: '24,36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233... #3'
   network: tcp
-  port: '50678'
+  port: 50678
   server: 62.146.233.53
   tls: false
   type: vmess
@@ -269,6 +215,36 @@ proxies:
     headers:
       Host: lax2.ibgfw.top
     path: /dyajvws
+- alterId: 2
+  cipher: auto
+  name: 27|1|🇩🇪1 |  5.0MB/s
+  network: ws
+  port: 23616
+  server: 16.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0a14d5c0-f566-314c-9e22-7db5655c35de
+  ws-opts:
+    headers:
+      Host: 16.mamamajd.site
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 27|1|🇩🇪2 |  5.0MB/s
+  network: ws
+  port: 23618
+  server: 18.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0a14d5c0-f566-314c-9e22-7db5655c35de
+  ws-opts:
+    headers:
+      Host: 18.mamamajd.site
+    path: /
 - cipher: aes-256-gcm
   name: 28|🇩🇪 VIP 德国1-1B
   password: 558bfa68-0305-4350-8316-7f2d641ad375
@@ -278,16 +254,36 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  grpc-opts:
-    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
-  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
-  network: grpc
-  port: '15145'
-  server: 88.198.172.25
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
+  network: tcp
+  port: '48961'
+  server: 23.158.56.21
   servername: ''
-  tls: true
+  tls: false
   type: vmess
-  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇩🇪 DE-5.39.252.72:2...
+  network: ws
+  port: '20037'
+  server: 5.39.252.72
+  tls: false
+  type: vmess
+  uuid: ac485c76-01de-413e-b74c-b4bf79695582
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-23.158.56....
+  network: tcp
+  port: 57854
+  server: 23.158.56.225
+  tls: false
+  type: vmess
+  uuid: a139037d-6380-4d5d-884b-572d51f4a4e7
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
@@ -304,43 +300,16 @@ proxies:
     path: /path/240811062813
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
-  network: httpupgrade
-  port: '2083'
-  server: 104.21.48.6
-  servername: tabnak.farsonline24.ir
+  grpc-opts:
+    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
+  network: grpc
+  port: '15145'
+  server: 88.198.172.25
+  servername: ''
   tls: true
   type: vmess
-  uuid: ffac5e4d-53ec-4e29-a471-3cdc0b85b9ce
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.108.118....
-  network: tcp
-  port: '15713'
-  server: 193.108.118.136
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-23.158.56....
-  network: tcp
-  port: 57854
-  server: 23.158.56.225
-  tls: false
-  type: vmess
-  uuid: a139037d-6380-4d5d-884b-572d51f4a4e7
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
-  network: tcp
-  port: '48961'
-  server: 23.158.56.21
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
+  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
@@ -351,3 +320,24 @@ proxies:
   tls: false
   type: vmess
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
+  network: httpupgrade
+  port: '2083'
+  server: 104.21.48.6
+  servername: tabnak.farsonline24.ir
+  tls: true
+  type: vmess
+  uuid: ffac5e4d-53ec-4e29-a471-3cdc0b85b9ce
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知48 101.3KB/s
+  network: tcp
+  port: 15713
+  server: 193.108.118.136
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
