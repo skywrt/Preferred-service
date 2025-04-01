@@ -7,15 +7,15 @@ proxies:
   sni: hinet.mjt000.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|14|🇼台湾 03 | 1x TW
-  password: 6b98472d-fe56-4c16-a3b7-3c7086ed6d00
+  name: '5,9,11,24,27|0|🇼台湾 03 | 1x TW #1'
+  password: d8b920ca-b2e2-41d8-9ac9-a02d9a56270c
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|0|  01 | 1x TW
-  password: e9865e12-ebb8-4ed0-b359-8439a25c0758
+  name: 5,9,11,24,27|2|🇼  01 | 1x TW
+  password: f5cc151e-539a-4821-abd5-fbec271d12d2
   port: 36241
   server: free.2weradf.xyz
   type: ss
@@ -34,15 +34,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|14|🇼台湾 01 | 1x TW
-  password: 6b98472d-fe56-4c16-a3b7-3c7086ed6d00
+  name: '5,9,11,24,27|0| 01 | 1x TW #1'
+  password: d8b920ca-b2e2-41d8-9ac9-a02d9a56270c
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|0|🇼 台湾 03 | 1x TW
-  password: e9865e12-ebb8-4ed0-b359-8439a25c0758
+  name: '5,9,11,24,27|2|🇼 台湾 03 | 1x TW #1'
+  password: f5cc151e-539a-4821-abd5-fbec271d12d2
   port: 36245
   server: free.2weradf.xyz
   type: ss
@@ -61,15 +61,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|0|🇼 台湾 02 | 1x TW
-  password: e9865e12-ebb8-4ed0-b359-8439a25c0758
+  name: 5,9,11,24,27|2|🇼 台湾 02 | 1x TW
+  password: f5cc151e-539a-4821-abd5-fbec271d12d2
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27|14|🇹🇼台湾 02 | 1x TW #1'
-  password: 6b98472d-fe56-4c16-a3b7-3c7086ed6d00
+  name: '5,9,11,24,27|0|🇼台湾 02 | 1x TW #1'
+  password: d8b920ca-b2e2-41d8-9ac9-a02d9a56270c
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
@@ -87,25 +87,32 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- name: 11,24,27|11,12|台湾|@ripaojiedian
-  network: tcp
-  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
-  port: 20027
-  server: 7.qzhm8l42g1.xyz
+- alterId: 2
+  cipher: auto
+  name: 9,24,27|1|🇼3 |  1.8MB/s
+  network: ws
+  port: 23619
+  server: 19.mamamajd.site
   skip-cert-verify: true
-  sni: 7.qzhm8l42g1.xyz
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 846a0e02-026c-3aa2-ab8d-d4d266934d79
+  ws-opts:
+    headers:
+      Host: 19.mamamajd.site
+    path: /
+- name: 11|1|🇹🇼4 |  1.7MB/s
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20023
+  server: 3.qzhm8l42g1.xyz
+  skip-cert-verify: true
+  sni: 3.qzhm8l42g1.xyz
   type: trojan
-- name: 24,27|1|🇹🇼9 |  5.8MB/s
+- name: 11|1|🇹🇼6 |  2.7MB/s
   password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
-  port: 20030
-  server: 10.qzhm8l42g1.xyz
+  port: 20022
+  server: 2.qzhm8l42g1.xyz
   skip-cert-verify: true
-  sni: 10.qzhm8l42g1.xyz
-  type: trojan
-- name: '24|1|🇹🇼6 |  2.8MB/s #1'
-  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
-  port: 20025
-  server: 5.qzhm8l42g1.xyz
-  skip-cert-verify: true
-  sni: 5.qzhm8l42g1.xyz
+  sni: 2.qzhm8l42g1.xyz
   type: trojan
