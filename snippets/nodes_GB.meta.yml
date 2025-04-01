@@ -1,7 +1,7 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27|0| 国住宅IP 01 | 1x UK #1'
-  password: d93c5a8f-8c5c-4933-a049-767a910bf94a
+  name: '5,9,11,24,27|1|🇧 英国住宅IP 01 | 1x UK #1'
+  password: 325dc0d7-5d6f-4443-adf8-25d15148f4ba
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -100,8 +100,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|14|🇧英国家宽 01 | 1x UK
-  password: 7bf46192-0fac-4f8c-9355-e2ec66beb3dc
+  name: '5,9,11,24,27|0|国家宽 01 | 1x UK #1'
+  password: fac1c50b-5aa5-4d6b-be14-be0c29c7014e
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -201,7 +201,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '9,24|1|🇬🇧5 |  5.1MB/s #2'
+  name: '9,24|_中国 #33'
   network: ws
   port: '25240'
   server: cm.awslcn.info
@@ -254,42 +254,81 @@ proxies:
     path: '%2Fblue'
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知120 2.2MB/s
+  name: 19,37|未知120 2.2MB/s
   password: shadowsocks
   port: 443
   server: 212.102.53.78
   skip-cert-verify: true
   tls: true
   type: ss
+- cipher: aes-128-gcm
+  name: 19|🇬🇧GB-212.102.53.196-0393
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.196
+  type: ss
 - alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇬🇧GB-31.25.237.9-1393
-  network: ws
-  port: 2086
-  server: lon3.890699.xyz
+  cipher: aes-256-gcm
+  name: 19,37|未知50 1.9MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 145.239.6.202
   skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  name: 19|🇬🇧GB-51.68.206.229-9353
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 51.68.206.229
+  type: ss
+- cipher: aes-256-gcm
+  name: 19|🇬🇧GB-145.239.6.202-5727
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 145.239.6.202
+  type: ss
+- cipher: aes-256-gcm
+  name: 19|🇬🇧GB-145.239.6.202-5656
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 145.239.6.202
+  type: ss
+- cipher: aes-256-gcm
+  name: 19|🇬🇧GB-145.239.6.202-5841
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 145.239.6.202
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 24,27|2|🇧2 |  3.3MB/s
+  network: ws
+  port: 23613
+  server: 13.mamamajd.site
+  skip-cert-verify: true
+  tfo: true
   tls: false
   type: vmess
-  uuid: 7c81d0a8-8e23-44d4-94b5-56d33b7af07d
+  udp: true
+  uuid: da339ed4-5245-3d02-b0bc-1e0b2cf98aa1
   ws-opts:
     headers:
-      host: www.bing.com
-    path: 7c81d0a8-8e23-44d4-94b5-56d33b7af07d-vm
+      Host: 13.mamamajd.site
+    path: /
 - alterId: 0
   cipher: auto
-  name: '20,21|🇬🇧GB-31.25.237.9-1397 #1'
+  name: '24|2|🇬🇧3 |  5.0MB/s #1'
   network: ws
-  port: 2086
-  server: 31.25.237.9
-  servername: ''
+  port: '25240'
+  server: cm1.awslcn.info
   tls: false
   type: vmess
-  uuid: 7c81d0a8-8e23-44d4-94b5-56d33b7af07d
+  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
   ws-opts:
     headers:
-      Host: www.bing.com
-    path: 7c81d0a8-8e23-44d4-94b5-56d33b7af07d-vm
+      Host: cm1.awslcn.info
+    path: /
 - name: 26|V2-英国03∣K71线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 20820
@@ -338,27 +377,6 @@ proxies:
   uuid: 48adfefe-6599-4cc7-9bf2-a18020260e22
 - alterId: 0
   cipher: auto
-  name: 36,37|未知98 17.1MB/s
-  network: tcp
-  port: 37101
-  server: 149.7.16.149
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
-  network: tcp
-  port: '28872'
-  server: 46.250.253.234
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 762b3923-5885-4c5f-886f-e62788512338
-- alterId: 0
-  cipher: auto
   name: 36,37|未知104 666.6KB/s
   network: tcp
   port: 46617
@@ -370,6 +388,36 @@ proxies:
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
+  network: tcp
+  port: 26924
+  server: 68.168.31.184
+  tls: false
+  type: vmess
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2... #1'
+  network: tcp
+  port: '28872'
+  server: 46.250.253.234
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 762b3923-5885-4c5f-886f-e62788512338
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知98 17.1MB/s
+  network: tcp
+  port: 37101
+  server: 149.7.16.149
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
   network: tcp
   port: '55577'
@@ -378,15 +426,6 @@ proxies:
   tls: false
   type: vmess
   uuid: e922d485-98a7-475a-9a47-cde3722ac82e
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
-  network: tcp
-  port: 26924
-  server: 68.168.31.184
-  tls: false
-  type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
 - name: 40|GB_speednode_0061
   network: ws
   port: 80
