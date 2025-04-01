@@ -7,17 +7,20 @@ proxies:
   sni: hinet.mjt000.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27|0|🇼台湾 03 | 1x TW #1'
-  password: fac1c50b-5aa5-4d6b-be14-be0c29c7014e
+  name: 5,9,11,24,27|14|🇼台湾 03 | 1x TW
+  password: d73ea07e-39c0-4dc9-ac33-d7c1ffbfde95
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27|1|🇼 台湾 01 | 1x TW #1'
-  password: 325dc0d7-5d6f-4443-adf8-25d15148f4ba
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,37|TW
+  password: 70f0901a-f99e-4a1a-82ec-6ddd393b321d
   port: 36241
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -34,15 +37,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27|0| 01 | 1x TW #1'
-  password: fac1c50b-5aa5-4d6b-be14-be0c29c7014e
+  name: 5,9,11,24,27|14|🇼台湾 01 | 1x TW
+  password: d73ea07e-39c0-4dc9-ac33-d7c1ffbfde95
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27|1|🇼 台湾 03 | 1x TW #1'
-  password: 325dc0d7-5d6f-4443-adf8-25d15148f4ba
+  name: '5,9,11,24,27|0|🇼 台湾 03 | 1x TW #1'
+  password: 70f0901a-f99e-4a1a-82ec-6ddd393b321d
   port: 36245
   server: free.2weradf.xyz
   type: ss
@@ -61,15 +64,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27|1|🇹🇼 台湾 02 | 1x TW #1'
-  password: 325dc0d7-5d6f-4443-adf8-25d15148f4ba
+  name: '5,9,11,24,27|0|🇼 台湾 02 | 1x TW #1'
+  password: 70f0901a-f99e-4a1a-82ec-6ddd393b321d
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27|0|🇼台湾 02 | 1x TW #1'
-  password: fac1c50b-5aa5-4d6b-be14-be0c29c7014e
+  name: '5,9,11,24,27|14|🇹🇼台湾 02 | 1x TW #1'
+  password: d73ea07e-39c0-4dc9-ac33-d7c1ffbfde95
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
@@ -89,15 +92,15 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 9|1|🇹🇼3 |  1.8MB/s
+  name: 9,11|2|🇼5 |  1.1MB/s
   network: ws
   port: 23619
   server: 19.mamamajd.site
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 846a0e02-026c-3aa2-ab8d-d4d266934d79
+  uuid: ff32cce6-87ca-3b46-aeec-42be5ae1778f
   ws-opts:
     headers:
       Host: 19.mamamajd.site
@@ -116,13 +119,36 @@ proxies:
     headers:
       Host: www.douyin.com
     path: /www.khanacademy.org?ed=512
-- name: 24,27|2|🇼1 |  6.4MB/s
+- name: '24|2|🇹🇼1 |  6.4MB/s #1'
   password: 68e6e853-d2d5-3126-950f-841d14dcf75c
   port: 36821
   server: gy.58n.net
   skip-cert-verify: true
   sni: z262.hongkongnode.top
-  tfo: true
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇹🇼 TW-111.243.122.1...
+  network: ws
+  port: 25775
+  server: 111.243.122.124
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 50597737-862b-43c4-a4ba-5c808171d6d1
+  ws-opts:
+    headers:
+      Host: www.douyin.com
+    path: /www.khanacademy.org?ed=512
+- alterId: 0
+  name: '37|TW #1'
+  network: grpc
+  password: 67eb147db1c0f8c5
+  port: 443
+  server: 60.249.28.59
+  skip-cert-verify: true
+  sni: 007.com
+  tls: true
   type: trojan
   udp: true
 - cipher: aes-256-cfb
