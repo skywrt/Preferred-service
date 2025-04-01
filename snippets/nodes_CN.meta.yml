@@ -688,7 +688,8 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- name: 9,11,24,27,40|CN_speednode_0014
+- client-fingerprint: chrome
+  name: 9,11,24,27,30,40|CN_speednode_0014
   password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
   port: 20012
   server: 2.elk3b3nwfy.xyz
@@ -862,12 +863,12 @@ proxies:
   skip-cert-verify: true
   sni: 3.elk3b3nwfy.xyz
   type: trojan
-- name: '24|🇨🇳 河北省 移动(全省通用) #1'
+- name: '24,27,30|2|🇭🇰8 |  1.2MB/s #1'
   password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
-  port: 20109
-  server: 9.2gyh5ybsic.xyz
-  skip-cert-verify: false
-  sni: 9.2gyh5ybsic.xyz
+  port: 20105
+  server: 111.62.241.211
+  skip-cert-verify: true
+  sni: 5.2gyh5ybsic.xyz
   type: trojan
 - alterId: 0
   cipher: auto
@@ -880,11 +881,10 @@ proxies:
   uuid: a16d62f6-048d-11f0-af5a-f23c93136cb3
 - alterId: 0
   cipher: auto
-  name: 24,36|🔒 VM-TCP-NA 🇨🇳 CN-120.233.64.1...
+  name: '24|🇨🇳 广东省 移动 #4'
   network: tcp
   port: '4137'
   server: 120.233.64.140
-  servername: ''
   tls: false
   type: vmess
   uuid: 03010754-faf0-11ef-a7c4-f23c9313b177
@@ -918,14 +918,16 @@ proxies:
   skip-cert-verify: true
   sni: 7.9n3pqn1406.xyz
   type: trojan
-- name: '24|🇨🇳 河北省 移动(全省通用) #3'
+- client-fingerprint: chrome
+  name: 24,30|🇨🇳 省 移动(省)
   password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
   port: 20108
   server: 8.2gyh5ybsic.xyz
   skip-cert-verify: false
   sni: 8.2gyh5ybsic.xyz
   type: trojan
-- name: '24|🇨🇳 广东省 移动 #8'
+- client-fingerprint: chrome
+  name: 24,30|🇳 广东省 移动
   password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
   port: 20011
   server: 1.elk3b3nwfy.xyz
@@ -1089,18 +1091,56 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇨🇳 CN-120.232.17.7...
-  network: ws
-  port: 33202
-  server: 120.232.17.70
-  servername: yd2.ainivp.com
-  tls: true
+  client-fingerprint: chrome
+  name: 30|🇨🇳 广东省广州市
+  port: 56901
+  server: 183.236.51.38
+  tls: false
   type: vmess
-  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
-  ws-opts:
-    headers:
-      Host: yd2.ainivp.com
-    path: /ray
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇨🇳 广东省市 移动
+  port: 31998
+  server: 120.234.102.229
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇳 广东省广州市 移动 2
+  port: 41402
+  server: 120.232.153.123
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 30|🇨🇳 广东省 移动 2
+  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
+  port: 21115
+  server: okanc.node-is.green
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇨🇳 广东省江市 移动
+  port: 51095
+  server: 120.198.71.219
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇨🇳 广东省 移动 4
+  port: 4138
+  server: e4928977-su2dc0-sv9ymy-dezg.c.volczijie.com
+  tls: false
+  type: vmess
+  uuid: 952f0a9a-097d-11f0-aa52-f23c93136cb3
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇳 CN-47.104.186.1...
@@ -1120,6 +1160,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇨🇳 CN-120.232.17.7...
+  network: ws
+  port: 33202
+  server: 120.232.17.70
+  servername: yd2.ainivp.com
+  tls: true
+  type: vmess
+  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
+  ws-opts:
+    headers:
+      Host: yd2.ainivp.com
+    path: /ray
 - alterId: 0
   name: 37|CN
   password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
