@@ -1,7 +1,52 @@
 proxies:
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|c0aefcbfad1c46ec8fbe2a735ee58c...
+  network: ws
+  port: 22222
+  server: 13.42.223.196
+  servername: telegram-channel-vlessconfig.sohala.uk
+  tls: true
+  type: vless
+  udp: false
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|3c31a3072e604e58a6f08cbdae85af...
+  network: ws
+  port: 22222
+  server: 18.132.55.124
+  servername: telegram-channel-vlessconfig.sohala.uk
+  tls: true
+  type: vless
+  udp: false
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|04606d03ebd4437dbdbb2032fb05df...
+  network: ws
+  port: 22222
+  server: 18.168.170.103
+  servername: telegram-channel-vlessconfig.sohala.uk
+  tls: true
+  type: vless
+  udp: false
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27|0| 国住宅IP 01 | 1x UK #1'
-  password: 70f0901a-f99e-4a1a-82ec-6ddd393b321d
+  name: 5,9,11,24,27|2|🇧 英国住宅IP 01 | 1x UK
+  password: 8937acc3-8554-4a8b-b3ba-69bc6dcebf06
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -100,8 +145,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|14|🇧英国家宽 01 | 1x UK
-  password: d73ea07e-39c0-4dc9-ac33-d7c1ffbfde95
+  name: 5,9,11,24,27|0|国家宽 01 | 1x UK
+  password: 18f38d60-64f4-4048-b428-b3786270fcd4
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -199,20 +244,27 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
-- alterId: 0
+- cipher: chacha20-ietf-poly1305
+  name: '9,27|1|🇬🇧1 |  1.1MB/s #1'
+  password: sojzFfZN5WMHqzvVJcDJJ9
+  port: 28694
+  server: 77.239.117.121
+  type: ss
+  udp: true
+- alterId: 2
   cipher: auto
-  name: '9,24|_中国 #33'
+  name: 9,27|1|🇧8 |  5.4MB/s
   network: ws
-  port: '25240'
-  server: cm.awslcn.info
-  skip-cert-verify: false
+  port: 23605
+  server: 5.mamamajd.site
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
+  uuid: ff32cce6-87ca-3b46-aeec-42be5ae1778f
   ws-opts:
     headers:
-      Host: cm.awslcn.info
+      Host: 5.mamamajd.site
     path: /
 - delay: 1757
   name: 10|英国 001
@@ -228,12 +280,6 @@ proxies:
     headers:
       Host: dd8.transitkala.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 11|2|🇬🇧1 |  1.1MB/s
-  password: sojzFfZN5WMHqzvVJcDJJ9
-  port: 28694
-  server: 77.239.117.121
-  type: ss
 - name: '17|英国(yudou66.com 玉豆免费节点) #1'
   network: ws
   port: 443
@@ -377,6 +423,16 @@ proxies:
   uuid: 48adfefe-6599-4cc7-9bf2-a18020260e22
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
+  network: tcp
+  port: '55577'
+  server: 172.99.190.207
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-149.7.16.149...
   network: tcp
   port: '37101'
@@ -387,10 +443,11 @@ proxies:
   uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-46.250.253...
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
   network: tcp
-  port: 28872
+  port: '28872'
   server: 46.250.253.234
+  servername: ''
   tls: false
   type: vmess
   uuid: 762b3923-5885-4c5f-886f-e62788512338
@@ -403,16 +460,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
-  network: tcp
-  port: '55577'
-  server: 172.99.190.207
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 37|GB
