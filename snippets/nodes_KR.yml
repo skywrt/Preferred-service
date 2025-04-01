@@ -1,28 +1,34 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇷 韩国 02 | 1x KR #1'
-  password: 2044143b-38bf-4204-bb5a-6df713593585
+  name: '5,9,11,24,27|0|🇷 韩国 02 | 1x KR #1'
+  password: d93c5a8f-8c5c-4933-a049-767a910bf94a
   port: 36313
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇰🇷韩国 02 | 1x KR #1'
-  password: 7fc55eff-f0ab-4e24-9493-83d3289600cf
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,37|🇷KR韩国2
+  password: d8b920ca-b2e2-41d8-9ac9-a02d9a56270c
   port: 31313
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇷韩国 01 | 1x KR #1'
-  password: 7fc55eff-f0ab-4e24-9493-83d3289600cf
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,37|KR
+  password: d8b920ca-b2e2-41d8-9ac9-a02d9a56270c
   port: 31311
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|  01 | 1x KR #1'
-  password: 2044143b-38bf-4204-bb5a-6df713593585
+  name: '5,9,11,24,27|0|  01 | 1x KR #1'
+  password: d93c5a8f-8c5c-4933-a049-767a910bf94a
   port: 36311
   server: free.2weradf.xyz
   type: ss
@@ -42,9 +48,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '9,11,24,27,30|12,13|国|@ripaojiedian #2'
+  name: 9,11,24,27|11,12|国|@ripaojiedian
   network: ws
-  port: 443
+  port: '443'
   server: kr.ttcc.tech
   servername: kr.ttcc.tech
   skip-cert-verify: false
@@ -58,7 +64,7 @@ proxies:
       Host: kr.ttcc.tech
     path: /41cfbd9d-d2da-4300-a142-b49068f7ad3d
 - cipher: aes-256-cfb
-  name: 9,11,24,27,30,40|KR_speednode_0024
+  name: 9,11,24,27|11|🇰🇷 韩国|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 43.201.54.89
@@ -134,3 +140,10 @@ proxies:
     headers:
       Host: obdii.cfd
     path: /linkws
+- cipher: aes-256-cfb
+  name: 40|KR_speednode_0065
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+  udp: true
