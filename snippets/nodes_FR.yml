@@ -1,10 +1,4 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 8|🇫🇷FR-193.243.147.128-160_1@160
-  password: 7BcLdsO1WweoGD0X
-  port: 40368
-  server: 193.243.147.128
-  type: ss
 - alterId: 0
   cipher: auto
   name: 8|🇫🇷FR-213.32.63.176-186_1@186
@@ -83,6 +77,13 @@ proxies:
   port: 6379
   server: 149.202.82.172
   type: ss
+- name: 12,24,30|🇷_FR_国
+  password: telegram-id-directvpn
+  port: 22222
+  server: 52.47.183.83
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -327,6 +328,39 @@ proxies:
   uuid: 48adfefe-6599-4cc7-9bf2-a18020260e22
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇫🇷 FR-146.19.168.1...
+  network: ws
+  port: 443
+  server: 146.19.168.161
+  servername: az05.beyondy.cfd
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: az05.beyondy.cfd
+    path: /link
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228...
+  network: tcp
+  port: 14854
+  server: 38.109.228.214
+  tls: false
+  type: vmess
+  uuid: f0a214ba-2a4f-4f22-b342-03123726ab27
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-23.162.152.1...
+  network: tcp
+  port: '25951'
+  server: 23.162.152.111
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e7ac718a-1751-489c-8205-24229259b410
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇫🇷 FR-38.109.228.1...
   network: tcp
   port: '21809'
@@ -337,35 +371,10 @@ proxies:
   uuid: a6179475-489c-4bcc-b05c-481386295b93
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇫🇷 FR-23.162.152...
-  network: tcp
-  port: 25951
-  server: 23.162.152.111
-  tls: false
-  type: vmess
-  uuid: e7ac718a-1751-489c-8205-24229259b410
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228...
+  name: '36|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228... #1'
   network: tcp
   port: 27060
   server: 38.109.228.163
   tls: false
   type: vmess
   uuid: 71da40b9-c20e-4a6e-80cb-c8141f693526
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228... #1'
-  network: tcp
-  port: 14854
-  server: 38.109.228.214
-  tls: false
-  type: vmess
-  uuid: f0a214ba-2a4f-4f22-b342-03123726ab27
-- cipher: chacha20-ietf-poly1305
-  name: 40|FR_speednode_0060
-  password: Qx22XZwNt4SCcnWNkypEAj
-  port: 44316
-  server: 81.19.137.66
-  type: ss
-  udp: true
