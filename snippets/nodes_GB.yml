@@ -1,7 +1,7 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|2|🇧 英国住宅IP 01 | 1x UK #1'
-  password: b4659d2b-33c9-4c8e-874a-2dd426217c56
+  name: 5,9,11,24,27|1| 国住宅IP 01 | 1x UK
+  password: f05a810c-5ae0-4da4-aed9-55996525fc32
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -52,8 +52,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0|🇧英国家宽 01 | 1x UK
-  password: e36b37e3-3ec4-4b78-a4bd-2ff0fd61d5ff
+  name: 5,9,11,24,27|2|🇧英国家宽 01 | 1x UK
+  password: 8d76feca-7fab-4c01-8be0-7a9da8ff535b
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -127,11 +127,14 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 9,12,24,30|_GB_国->🇺_RU_俄罗斯
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 9,12,24,37|未知93 350.1KB/s
   password: sojzFfZN5WMHqzvVJcDJJ9
   port: 28694
   server: 77.239.117.121
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 2
@@ -149,21 +152,6 @@ proxies:
     headers:
       Host: 5.mamamajd.site
     path: /
-- cipher: aes-128-gcm
-  name: 19|🇬🇧GB-212.102.53.78-0392
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.78
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,37|未知11
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.196
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - cipher: aes-256-gcm
   name: 19|🇬🇧GB-145.239.6.202-5823
   password: Y6R9pAtvxxzmGC
@@ -176,11 +164,14 @@ proxies:
   port: 8080
   server: 51.68.206.229
   type: ss
-- cipher: aes-256-gcm
-  name: 19|🇬🇧GB-145.239.6.202-5727
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 19,37|未知38 1.8MB/s
   password: XKFKl2rULjIp74
   port: 8008
   server: 145.239.6.202
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-256-gcm
   name: 19|🇬🇧GB-145.239.6.202-5656
@@ -251,16 +242,6 @@ proxies:
   uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
-  network: tcp
-  port: '28872'
-  server: 46.250.253.234
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 762b3923-5885-4c5f-886f-e62788512338
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
   network: tcp
   port: '55577'
@@ -280,11 +261,11 @@ proxies:
   type: vmess
   uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|GB
-  password: 1fefd28e-b2e6-4462-a378-cbc58a8748f9
-  port: 21451
-  server: 80.225.223.49
-  skip-cert-verify: true
-  tls: true
-  type: ss
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-46.250.253...
+  network: tcp
+  port: 28872
+  server: 46.250.253.234
+  tls: false
+  type: vmess
+  uuid: 762b3923-5885-4c5f-886f-e62788512338

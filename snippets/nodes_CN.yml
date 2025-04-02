@@ -652,7 +652,7 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- name: 9,11,24,27,30,40|CN_speednode_0041
+- name: 9,11,24,27,40|CN_speednode_0041
   password: a1bec5fe-74b4-4ef7-859b-ca4b27f9cb5c
   port: 36940
   server: high.ab.he.defehaita.xyz
@@ -660,12 +660,14 @@ proxies:
   sni: douyin.com
   type: trojan
   udp: true
-- name: 9,11,24,27,30,40|CN_speednode_0056
+- alterId: 0
+  name: 9,11,24,27,37,40|CN_speednode_0056
   password: a1bec5fe-74b4-4ef7-859b-ca4b27f9cb5c
   port: 42541
   server: high.eb.defehaita.xyz
   skip-cert-verify: true
   sni: douyin.com
+  tls: true
   type: trojan
   udp: true
 - name: 16|🇨🇳_CN_中国
@@ -824,6 +826,15 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
+  name: '24|_中国 #24'
+  network: tcp
+  port: '34093'
+  server: 120.198.71.214
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
   name: '24|_中国 #27'
   network: tcp
   port: '40105'
@@ -844,13 +855,16 @@ proxies:
   skip-cert-verify: false
   sni: 10.2gyh5ybsic.xyz
   type: trojan
-- name: '24|_中国 #5'
+- alterId: 0
+  name: 24,37|CN
   password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
   port: 20107
   server: 7.2gyh5ybsic.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: 7.2gyh5ybsic.xyz
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '24|_中国 #30'
@@ -866,6 +880,15 @@ proxies:
   network: tcp
   port: '31998'
   server: 120.234.102.229
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '24|_中国 #26'
+  network: tcp
+  port: '51039'
+  server: 183.236.51.38
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -938,6 +961,19 @@ proxies:
     path: /www.khanacademy.org?ed=512
 - alterId: 0
   cipher: auto
+  name: '24|_中国 #32'
+  network: ws
+  port: '25775'
+  server: hhhfksdcbr.fask511.cfd
+  tls: false
+  type: vmess
+  uuid: 50597737-862b-43c4-a4ba-5c808171d6d1
+  ws-opts:
+    headers:
+      Host: www.douyin.com
+    path: /www.khanacademy.org?ed=512
+- alterId: 0
+  cipher: auto
   name: '24|_中国 #33'
   network: ws
   port: '25240'
@@ -963,60 +999,6 @@ proxies:
     headers:
       Host: next2.orz.my.id
     path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇳 广东省广州市 移动 2
-  port: 59554
-  server: 183.236.51.38
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇨🇳 广东省广州市 移动 3
-  port: 51039
-  server: 183.236.51.38
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇳 广东省市 移动
-  port: 34093
-  server: 120.198.71.214
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇨🇳 广东省广州市 移动 6
-  port: 56901
-  server: 183.236.51.38
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇨🇳 广东省江市 移动
-  port: 31998
-  server: 120.234.102.229
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇨🇳 广东省广州市 移动 7
-  port: 41402
-  server: 120.232.153.123
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
@@ -1078,26 +1060,6 @@ proxies:
   server: 3.link-hub.click
   type: ssr
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 40|CN_speednode_0009
-  port: 3683
-  server: 098e0774-su7xc0-tcm6ys-deip.b.fosant.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a2512b4-09ee-11f0-8d46-f23c9313b177
-- alterId: 0
-  cipher: auto
-  name: 40|CN_speednode_0013
-  port: 3683
-  server: a5944a92-su7b40-tclkqs-deip.b.fosant.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a2512b4-09ee-11f0-8d46-f23c9313b177
 - cipher: aes-128-gcm
   name: 40|CN_speednode_0014
   password: 492e27b0-d18f-4851-bed4-6c6afe1307d7
@@ -1202,21 +1164,18 @@ proxies:
   server: jg647hf446ghvw.fcbjw.com
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 40|CN_speednode_0049
-  port: 3687
-  server: 681b338b-su9s00-t36qk2-cuof.a.fosant.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ac1098c-eff0-11ef-8543-f23c93136cb3
 - cipher: aes-128-gcm
   name: 40|CN_speednode_0051
   password: feb203c3-4b25-4961-be32-7e842d7b5dab
   port: 13005
   server: jscm-hkmax.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0052
+  password: 492e27b0-d18f-4851-bed4-6c6afe1307d7
+  port: 39270
+  server: fs.yd.3.8.cdnlinkms001.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
