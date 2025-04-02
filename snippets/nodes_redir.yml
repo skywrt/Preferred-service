@@ -1022,10 +1022,22 @@ proxies:
     headers:
       host: mizban.arzonhost.ir
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 12,30|🇺_RU_->🇺🇸_US_美国_1
+  password: Qx22XZwNt4SCcnWNkypEAj
+  port: 44316
+  server: 81.19.137.66
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 12,30|_GB_国->🇺_RU_俄罗斯
+  password: sojzFfZN5WMHqzvVJcDJJ9
+  port: 28694
+  server: 77.239.117.121
+  type: ss
 - alpn:
   - http/1.1
   alterId: 0
-  name: 12,24,37|🇺🇸US美国2
+  name: 12,20,21,24,30,37|🇺🇸US美国2
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -1037,7 +1049,7 @@ proxies:
   udp: true
 - alpn:
   - http/1.1
-  name: '12,24|🇺🇸 _美国 #28'
+  name: 12,20,21,24,30|🇺🇸_US_美国->_SE_
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -1058,7 +1070,7 @@ proxies:
       Host: yjc.twn24.ir
     path: /@M3HDIO1
 - cipher: aes-256-cfb
-  name: 12,16|🇸_US_美国_4
+  name: 12,16,30|🇺🇸_US_美国->🇸_SG_新加坡
   password: amazonskr05
   port: 443
   server: 34.209.118.169
@@ -1474,3 +1486,16 @@ proxies:
   server: vip.baima360.com
   type: ss
   udp: true
+- name: 30|🇺🇸_US_美国->🇸_ES_
+  network: ws
+  password: SD85M89IdW67
+  port: 2083
+  server: 104.21.96.1
+  skip-cert-verify: false
+  sni: yjc.twn24.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: yjc.twn24.ir
+    path: /@M3HDIO1
