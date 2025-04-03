@@ -15,8 +15,8 @@ proxies:
   sni: 421421.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇵 日本 01 | 1x JP #1'
-  password: 4720c30b-49d8-4ddb-9a20-2479e68164b0
+  name: '5,11,24,27,30|0|  01 | 1x JP #2'
+  password: 4b00101f-e41b-4edc-b36c-bd2b5ffa8a8a
   port: 36111
   server: free.2weradf.xyz
   type: ss
@@ -32,8 +32,8 @@ proxies:
   type: vmess
   uuid: c06797d5-fa41-4b48-b132-d268d2acb302
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇵 日本 03 | 1x JP #1'
-  password: 4720c30b-49d8-4ddb-9a20-2479e68164b0
+  name: '5,11,24,27,30|0|🇵 日本 03 | 1x JP #2'
+  password: 4b00101f-e41b-4edc-b36c-bd2b5ffa8a8a
   port: 36115
   server: free.2weradf.xyz
   type: ss
@@ -65,15 +65,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇯🇵 日本 02 | 1x JP #1'
-  password: 4720c30b-49d8-4ddb-9a20-2479e68164b0
+  name: '5,11,24,27,30|0|🇵 日本 02 | 1x JP #2'
+  password: 4b00101f-e41b-4edc-b36c-bd2b5ffa8a8a
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0| 01 | 1x JP #1'
-  password: 15252fe5-fb83-4aba-9fc5-1621c80fc419
+  name: '5,11,24,27,30|14|🇵日本 01 | 1x JP #1'
+  password: 4aad73cb-1fb2-4f5b-bb87-afeaa319ed3d
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
@@ -94,8 +94,8 @@ proxies:
   sni: 421421.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇵日本 03 | 1x JP #1'
-  password: 15252fe5-fb83-4aba-9fc5-1621c80fc419
+  name: '5,11,24,27,30|14|🇵日本 03 | 1x JP #1'
+  password: 4aad73cb-1fb2-4f5b-bb87-afeaa319ed3d
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
@@ -124,8 +124,8 @@ proxies:
   sni: 421421.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇵日本 02 | 1x JP #1'
-  password: 15252fe5-fb83-4aba-9fc5-1621c80fc419
+  name: '5,11,24,27,30|14|🇯🇵日本 02 | 1x JP #2'
+  password: 4aad73cb-1fb2-4f5b-bb87-afeaa319ed3d
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
@@ -137,11 +137,10 @@ proxies:
   skip-cert-verify: true
   sni: jp.mjt000.com
   type: trojan
-- name: 5,24|🇯🇵 日本 东京都Amazon数据中心
-  password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
+- name: 5|日本+东京都Amazon数据中心
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
   port: 20230
   server: jp007.421421.xyz
-  skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
   name: 8|🇯🇵JP-54.199.83.239-171_1@171
@@ -199,8 +198,14 @@ proxies:
     headers:
       Host: dsw7q85l34hqa.cloudfront.net
     path: /download
+- cipher: aes-256-cfb
+  name: 11|1|🇯🇵12 |  1.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.199.64.156
+  type: ss
 - cipher: rc4-md5
-  name: '11,27,30|12|🇵 日本|@ripaojiedian #2'
+  name: '11,27,30|11|🇵 日本|@ripaojiedian #1'
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -212,7 +217,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '11,24,27,30|12,13|日本2|@ripaojiedian #2'
+  name: '11,24,27,30|11,12|日本2|@ripaojiedian #1'
   network: ws
   port: 443
   server: u2.huvicloud.com
@@ -226,22 +231,15 @@ proxies:
     headers:
       Host: u2.huvicloud.com
     path: /f07b9711-a6a4-4128-807d-fdb40dcaa488
-- name: '11,24,27,30|12|🇯🇵 日本3|@ripaojiedian #2'
-  password: '!!str 74260700211203800'
-  port: 443
-  server: powerful-grackle.shiner427.skin
-  skip-cert-verify: false
-  sni: powerful-grackle.shiner427.skin
-  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '11,24,27,30|12|🇵 日本4|@ripaojiedian #2'
+  name: '11,24,27,30|11|🇵 日本4|@ripaojiedian #1'
   password: 9d1ca3a4-fe0f-4afc-ab10-66a0476093cc
   port: 22094
   server: rk2.nynode0.cc
   tfo: false
   type: ss
 - cipher: rc4-md5
-  name: '11,27,30|12|🇯🇵 日本5|@ripaojiedian #2'
+  name: '11,27,30|11|🇯🇵 日本5|@ripaojiedian #1'
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -252,19 +250,12 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: '11,24,27,30|12|🇵 日本特殊|@ripaojiedian #2'
+  name: '11,24,27,30|11|🇵 日本特殊|@ripaojiedian #1'
   password: amazonskr05
   port: 443
   server: 13.229.48.116
   tfo: false
   type: ss
-- name: '11,24,27,30|13|日本3|@ripaojiedian #2'
-  network: tcp
-  password: '!!str 74260700211203800'
-  port: 443
-  server: powerful-grackle.shiner427.skin
-  skip-cert-verify: false
-  type: trojan
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|日本(JP)Japan/Tokyo_38
@@ -280,33 +271,6 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- name: '24|1|🇯🇵2 |  5.7MB/s #1'
-  password: 2bc1d12b-be42-3a9d-9c03-290111f9ed2b
-  port: 20140
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z140.hongkongnode.top
-  type: trojan
-- alterId: 0
-  name: 24,37|未知117
-  password: 2bc1d12b-be42-3a9d-9c03-290111f9ed2b
-  port: 20142
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z142.hongkongnode.top
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 24,37|未知28
-  password: 2bc1d12b-be42-3a9d-9c03-290111f9ed2b
-  port: 20059
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x59.flybar.work
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 0
   name: 24,37|未知10
   password: Aimer
@@ -572,6 +536,13 @@ proxies:
   server: gy.tangu.win
   type: ss
   udp: true
+- client-fingerprint: chrome
+  name: 30|🇵 日本 东Amazon数据中心
+  password: 5c7dbef8-0fb5-4e88-bb84-24cafeb73f8d
+  port: 20230
+  server: jp005.421421.xyz
+  sni: jp005.421421.xyz
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.230.235.2...
