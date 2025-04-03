@@ -1,7 +1,22 @@
 proxies:
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|5f4f3282a3944555b9404f1d5092cb...
+  network: ws
+  port: 22222
+  server: 3.11.26.102
+  servername: telegram-channel-vlessconfig.sohala.uk
+  tls: true
+  type: vless
+  udp: false
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇧 英国住宅IP 01 | 1x UK #2'
-  password: cc197ca0-61ab-44b4-a6c8-0861fe4d8bb0
+  name: '5,9,11,24,27,30|1|🇧 英国住宅IP 01 | 1x UK #1'
+  password: 4a07a5ec-b329-455c-a8b0-19eda083674a
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -101,7 +116,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 5,9,11,24,27,30|0|🇧英国家宽 01 | 1x UK
-  password: 85de2747-09a2-477a-8313-89bb0667e607
+  password: 542ebf21-0875-4ac1-bb37-e50f74d7598c
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -276,6 +291,39 @@ proxies:
   port: 55988
   server: mx2.drawnrisha.one
   type: ss
+- name: 24|🇬🇧 _英国
+  password: 6d446d30-066f-11f0-86ad-1239d0255272
+  port: 443
+  server: uk1.test3.net
+  skip-cert-verify: false
+  sni: uk1.test3.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '24|🇬🇧 _英国 #3'
+  network: ws
+  port: '443'
+  server: 144.24.200.164
+  tls: false
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '24|🇬🇧 _英国 #4'
+  network: ws
+  port: '80'
+  server: 51.15.19.206
+  tls: false
+  type: vmess
+  uuid: 13533500-0b13-11f0-b936-205c6d5f5d78
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - name: 26|V2-英国03∣K71线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 20820
@@ -324,13 +372,14 @@ proxies:
   uuid: 48adfefe-6599-4cc7-9bf2-a18020260e22
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-149.7.16.1...
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
   network: tcp
-  port: 37101
-  server: 149.7.16.149
+  port: '47567'
+  server: 38.114.120.12
+  servername: ''
   tls: false
   type: vmess
-  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
+  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
@@ -343,6 +392,15 @@ proxies:
   uuid: 762b3923-5885-4c5f-886f-e62788512338
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
+  network: tcp
+  port: 26924
+  server: 68.168.31.184
+  tls: false
+  type: vmess
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
   network: tcp
   port: '55577'
@@ -353,23 +411,13 @@ proxies:
   uuid: e922d485-98a7-475a-9a47-cde3722ac82e
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-149.7.16.1...
   network: tcp
-  port: 26924
-  server: 68.168.31.184
+  port: 37101
+  server: 149.7.16.149
   tls: false
   type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
-  network: tcp
-  port: '47567'
-  server: 38.114.120.12
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
+  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
 - alterId: 0
   name: 37|GB国
   password: telegram-id-directvpn
