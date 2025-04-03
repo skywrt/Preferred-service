@@ -3,7 +3,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3,19|🇰🇷KR-152.70.249.97-0446
+  name: 3,19|🇰🇷KR-152.70.249.97-0490
   network: ws
   port: 443
   server: kr3.ttcc.tech
@@ -17,29 +17,32 @@ proxies:
       host: kr3.ttcc.tech
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇰🇷 韩国 02 | 1x KR #1'
-  password: 4a07a5ec-b329-455c-a8b0-19eda083674a
+  name: 5,11,24,27|1|🇰🇷 韩国 02 | 1x KR
+  password: 882410de-0ada-4f60-b68c-272507fbd395
   port: 36313
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇷韩国 02 | 1x KR #1'
-  password: 542ebf21-0875-4ac1-bb37-e50f74d7598c
+  name: '5,11,24,27|0|🇷韩国 02 | 1x KR #1'
+  password: d2b87515-4d85-4b70-8879-41ac1f85b2e5
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0|🇷国 01 | 1x KR
-  password: 542ebf21-0875-4ac1-bb37-e50f74d7598c
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,37|🇷KR国
+  password: d2b87515-4d85-4b70-8879-41ac1f85b2e5
   port: 31311
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇷 韩国 01 | 1x KR #1'
-  password: 4a07a5ec-b329-455c-a8b0-19eda083674a
+  name: 5,11,24,27|1|🇷 韩国 01 | 1x KR
+  password: 882410de-0ada-4f60-b68c-272507fbd395
   port: 36311
   server: free.2weradf.xyz
   type: ss
@@ -58,13 +61,19 @@ proxies:
   server: service.ouluyun9803.com
   type: ss
 - cipher: aes-256-cfb
-  name: '9,11,19,20,21,24,27,30|12|🇰🇷 韩国|@ripaojiedian #1'
-  password: amazonskr05
-  port: 443
-  server: 3.34.253.95
+  name: 11,27|12|🇷 韩国|@ripaojiedian
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
   tfo: false
   type: ss
-  udp: true
+- cipher: aes-256-cfb
+  name: 11,24,27|12|🇰🇷 韩国|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 47.129.230.32
+  tfo: false
+  type: ss
 - name: 17|韩国(yudou66.com 玉豆免费节点)
   network: ws
   port: 12273
@@ -101,13 +110,6 @@ proxies:
     headers:
       Host: dp.ylks.xyz
     path: '%2F%3Fproxyip%3Dproxyip.kr.fxxp.dedyp.io'
-- cipher: aes-256-cfb
-  name: 20,21,40|KR_speednode_0029
-  password: amazonskr05
-  port: 443
-  server: 3.38.92.181
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: '20,21,24|🇺🇸 _美国 #96'
@@ -177,13 +179,35 @@ proxies:
     headers:
       Host: obdii.cfd
     path: /linkws
-- alterId: 0
-  name: 37|🇰🇷KR国
-  password: Aimer
-  port: 16036
-  server: 121.176.193.140
-  skip-cert-verify: true
-  sni: epccq.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
+- name: 40|KR_speednode_0034
+  port: 38710
+  server: 3.36.117.178
+  skip-cert-verify: false
+  tls: false
+  type: vless
   udp: true
+  uuid: 1e18748c-e5c1-4977-e32e-d19120e9317a
+- name: 40|KR_speednode_0035
+  port: 52740
+  server: 43.201.70.105
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 65de30b5-fe8c-45ae-fdd8-1fbd9e845af2
+- name: 40|KR_speednode_0036
+  port: 20311
+  server: 54.180.228.70
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 29723316-2e2f-46ed-a814-f6ac0dd212e1
+- name: 40|KR_speednode_0037
+  port: 47103
+  server: 3.36.124.120
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0b2d8937-4a28-427a-8ae6-449e425ba525

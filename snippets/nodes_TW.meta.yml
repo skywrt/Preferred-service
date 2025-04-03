@@ -7,15 +7,15 @@ proxies:
   sni: hinet.mjt000.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇼台湾 03 | 1x TW #1'
-  password: 542ebf21-0875-4ac1-bb37-e50f74d7598c
+  name: '5,11,24,27|0|🇼台湾 03 | 1x TW #1'
+  password: d2b87515-4d85-4b70-8879-41ac1f85b2e5
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇼 台湾 01 | 1x TW #1'
-  password: 4a07a5ec-b329-455c-a8b0-19eda083674a
+  name: 5,11,24,27|1|🇼 台湾 01 | 1x TW
+  password: 882410de-0ada-4f60-b68c-272507fbd395
   port: 36241
   server: free.2weradf.xyz
   type: ss
@@ -34,15 +34,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0| 01 | 1x TW #1'
-  password: 542ebf21-0875-4ac1-bb37-e50f74d7598c
+  name: '5,11,24,27|0| 01 | 1x TW #1'
+  password: d2b87515-4d85-4b70-8879-41ac1f85b2e5
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇼 台湾 03 | 1x TW #1'
-  password: 4a07a5ec-b329-455c-a8b0-19eda083674a
+  name: 5,11,24,27|1|🇼 台湾 03 | 1x TW
+  password: 882410de-0ada-4f60-b68c-272507fbd395
   port: 36245
   server: free.2weradf.xyz
   type: ss
@@ -61,15 +61,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇹🇼 台湾 02 | 1x TW #1'
-  password: 4a07a5ec-b329-455c-a8b0-19eda083674a
+  name: 5,11,24,27|1|🇹🇼 台湾 02 | 1x TW
+  password: 882410de-0ada-4f60-b68c-272507fbd395
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇼台湾 02 | 1x TW #1'
-  password: 542ebf21-0875-4ac1-bb37-e50f74d7598c
+  name: '5,11,24,27|0|🇼台湾 02 | 1x TW #1'
+  password: d2b87515-4d85-4b70-8879-41ac1f85b2e5
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
@@ -87,25 +87,63 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: aes-128-gcm
-  name: '27,30|2|🇹🇼1 |  1.9MB/s #1'
-  password: 79739832-b888-415a-a454-8b53911c944a
-  port: 30332
-  server: 111.247.40.56
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '27,30|2|🇹🇼23 |  3.5MB/s #1'
-  password: f203200f-f6a4-49d8-893e-6559804d79ae
-  port: 50204
-  server: bgp-xdd.blue-bgp.xyz
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇼 台湾省 V2CROSS.COM
+  name: 11,36|🔒 VM-TCP-NA 🇹🇼 TW-45.121.50.11...
+  network: tcp
   port: 27228
+  raw:
+    add: 45.121.50.116
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: 1d4d8fb8-c73c-4474-e301-dcb9570943ca
+    net: tcp
+    path: ''
+    port: 27228
+    ps: V2CROSS.COM
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
   server: 45.121.50.116
+  servername: ''
   tls: false
   type: vmess
   uuid: 1d4d8fb8-c73c-4474-e301-dcb9570943ca
+- alterId: 0
+  cipher: auto
+  name: 11,27|12,13|台湾|@ripaojiedian
+  network: ws
+  port: '443'
+  server: 104.17.137.127
+  servername: tw.niskakowski.ggff.net
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 56529ad8-61d2-4bfa-aa0b-a800719cb5fe
+  ws-opts:
+    headers:
+      Host: tw.niskakowski.ggff.net
+    path: /aa
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|TW
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 211.72.214.66
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|TW2
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.35.59
+  skip-cert-verify: true
+  tls: true
+  type: ss

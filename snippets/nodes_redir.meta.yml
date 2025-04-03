@@ -1056,20 +1056,16 @@ proxies:
       Host: sNaPp.MaStErSrV.ir.
 - alpn:
   - http/1.1
-  alterId: 0
-  name: 12,20,21,37|🇺🇸US美国2
+  name: 12|🇬🇧_GB_英国->🇺🇸_US_美国
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 18.135.219.247
-  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
-  tls: true
   type: trojan
-  udp: true
 - alpn:
   - http/1.1
-  name: '12,20,21|🇩🇪DE-18.159.217.6-0680 #1'
+  name: 12|🇺🇸_US_美国->🇸🇪_SE_瑞典
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -1235,11 +1231,14 @@ proxies:
   skip-cert-verify: false
   sni: ru.mjt000.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 16|_DE_国->🇺🇸_US_美国
-  password: 4a2rfixophdjffa8KVA4Aa
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 16,37|未知65
+  password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.188
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -1251,16 +1250,13 @@ proxies:
   uuid: f17c76c1-2c3b-4791-b2a7-15435b81ed3a
   ws-opts:
     path: /
-- alterId: 0
-  name: 16,37|HK14
+- name: '16|🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1 #1'
   password: 6557bf4a-852b-4a69-ad35-d53293386a13
   port: 443
   server: 20.2.156.105
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: ru.mjt000.com
-  tls: true
   type: trojan
-  udp: true
 - name: 16|🇳_CN_中国->🇺🇸_US_美国_1
   network: tcp
   password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
@@ -1583,12 +1579,3 @@ proxies:
   server: vip.baima360.com
   type: ss
   udp: true
-- alpn:
-  - http/1.1
-  name: 30|_GB_国->🇺🇸_US_美国
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.177.223.124
-  sni: trojan.burgerip.co.uk
-  type: trojan
