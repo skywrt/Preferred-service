@@ -1034,18 +1034,6 @@ proxies:
     headers:
       host: mizban.arzonhost.ir
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 12,30|_DE_国->🇸_SG_
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.166
-  type: ss
-- cipher: aes-256-cfb
-  name: '12,30|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1'
-  password: amazonskr05
-  port: 443
-  server: 54.218.67.209
-  type: ss
 - alterId: 0
   cipher: auto
   name: '12,24|_中国 #23'
@@ -1060,12 +1048,20 @@ proxies:
     headers:
       Host: api100-core-quic-lf.amemv.com
     path: /index
-- cipher: aes-256-gcm
-  name: 12,30|🇨🇳_CN_中国->🇺🇸_US_美国_2
-  password: 4bccdfb7-f45b-44bb-9cd3-fb6f8fc8072f
-  port: 41705
-  server: zf1.10101251.xyz
-  type: ss
+- alterId: 2
+  cipher: auto
+  name: 12|🇨🇳_CN_中国->🇸🇬_SG_新加坡
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - name: '13|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
   network: ws
   port: 80
@@ -1479,42 +1475,3 @@ proxies:
   server: vip.baima360.com
   type: ss
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 30|_CN_国->🇸_US_美国
-  network: ws
-  port: 30807
-  server: v7.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 30|🇳_CN_中国->🇺🇸_US_美国_1
-  network: ws
-  port: 30840
-  server: v40.heduian.link
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: api100-core-quic-lf.amemv.com
-    path: /index
-- alterId: 2
-  cipher: auto
-  name: 30|🇨🇳_CN_中国->🇬_SG_新加坡
-  network: ws
-  port: 30825
-  server: v25.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: baidu.com
-    path: /oooo

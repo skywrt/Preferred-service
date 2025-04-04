@@ -13,8 +13,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|1|🇪德国 01 | 1x DE
-  password: ea529ef9-1fde-4b58-9f99-589a6d464c1b
+  name: 5,11,24,27|0|国 01 | 1x DE
+  password: 72bbb089-15d6-425e-b4f5-9811d1b05fbf
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -29,12 +29,11 @@ proxies:
   type: vmess
   uuid: b52f0a62-068c-41bf-a4f6-ac3faddded46
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|14|🇪 德国 01 | 1x DE #1'
-  password: 85ed0275-662c-4f4a-b78c-0179038cb4c0
-  port: 36471
-  server: free.2weradf.xyz
+  name: 5,11,27|2|1 |  5.3MB/s
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.154
   type: ss
-  udp: true
 - name: 5|备用🍖@xkmfjd_🇩🇪
   network: grpc
   port: 8880
@@ -282,6 +281,13 @@ proxies:
   type: vless
   udp: true
   uuid: b7154df0-ce29-463e-8766-2afbf814b1b1
+- cipher: aes-256-gcm
+  name: 11,27|12|🇪 德国|@ripaojiedian
+  password: B4SLT7LEQF46Y6Z6
+  port: 20030
+  server: 45.154.207.246
+  tfo: false
+  type: ss
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -296,15 +302,15 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇩🇪DE-185.177.229.245-0458
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-0471
+  password: ZpNDDKRu9MagNvaf
+  port: 9015
+  server: 80.92.204.106
   type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.141-5680 #1'
+  name: '20,21|🇩🇪DE-57.129.24.141-5326 #1'
   network: ws
   port: 443
   server: 57.129.24.141
@@ -318,10 +324,10 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.25.22-5328 #1'
+  name: '20,21|🇩🇪DE-57.129.24.125-7427 #1'
   network: ws
   port: 443
-  server: 57.129.25.22
+  server: 57.129.24.125
   servername: ''
   tls: true
   type: vmess
@@ -332,10 +338,10 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-7692 #1'
+  name: '20,21|🇩🇪DE-23.158.56.241-0892 #1'
   network: ws
   port: 443
-  server: 57.129.24.125
+  server: 23.158.56.241
   servername: ''
   tls: true
   type: vmess
@@ -353,14 +359,13 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-144.76.231.2...
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-193.108.11...
   network: tcp
-  port: '23173'
-  server: 144.76.231.27
-  servername: ''
+  port: 15713
+  server: 193.108.118.136
   tls: false
   type: vmess
-  uuid: 4c2dafb9-222c-481c-9695-1ebe4bc0b692
+  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -373,6 +378,26 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-144.76.231.2...
+  network: tcp
+  port: '23173'
+  server: 144.76.231.27
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4c2dafb9-222c-481c-9695-1ebe4bc0b692
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
+  network: httpupgrade
+  port: '2083'
+  server: 172.67.175.40
+  servername: tabnak.farsonline24.ir
+  tls: true
+  type: vmess
+  uuid: b6a70699-6872-42e5-ad70-3de5a3b85264
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-89.163.231.1...
@@ -389,23 +414,13 @@ proxies:
     path: /path/240811062813
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-193.108.11...
+  name: '36|🔒 VM-TCP-NONE 🇩🇪 DE-193.108.11... #1'
   network: tcp
   port: 24164
   server: 193.108.117.143
   tls: false
   type: vmess
   uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
-  network: httpupgrade
-  port: '2083'
-  server: 172.67.175.40
-  servername: tabnak.farsonline24.ir
-  tls: true
-  type: vmess
-  uuid: b6a70699-6872-42e5-ad70-3de5a3b85264
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
@@ -426,12 +441,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NONE 🇩🇪 DE-193.108.11... #1'
-  network: tcp
-  port: 15713
-  server: 193.108.118.136
-  tls: false
-  type: vmess
-  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
