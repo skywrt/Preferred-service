@@ -1,7 +1,7 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: '5,9,11,24,27|0| 国住宅IP 01 | 1x UK #1'
-  password: 72ca78b8-a49d-49d7-a585-4b3fd822503b
+  password: bcc77e5b-1031-40bf-b58b-2ea9edb77a93
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -100,8 +100,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27|2|🇧英国家宽 01 | 1x UK #1'
-  password: 3d903a9e-6b31-4166-9413-902f631dd8ac
+  name: 5,9,11,24,27|1|🇧英国家宽 01 | 1x UK
+  password: 22eaf7eb-3aa8-493d-87f7-785d4aa2f915
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -200,7 +200,7 @@ proxies:
   server: 51.140.34.50
   type: ss
 - cipher: aes-256-gcm
-  name: '9,11,24,27|12|🇧 英国|@ripaojiedian #1'
+  name: 9,11,24,27|12|🇧 英国|@ripaojiedian
   password: QIXWUPZT9O5EUEWK
   port: 19014
   server: 206.245.211.24
@@ -208,7 +208,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: '9,11,24,27|12|🇬🇧 英国2|@ripaojiedian #1'
+  name: 9,11,24,27|12|🇬🇧 英国2|@ripaojiedian
   password: 5U3COGGRJPO2DQNF
   port: 19001
   server: 206.245.211.11
@@ -322,6 +322,12 @@ proxies:
     headers:
       Host: lo.kpcloud.eu.org
     path: '%2Fblue'
+- cipher: aes-128-gcm
+  name: 19|🇬🇧GB-212.102.53.194-0090
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
+  type: ss
 - alterId: 0
   cipher: aes-128-gcm
   name: 19,20,21,37|未知113 19.8MB/s
@@ -331,12 +337,36 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- cipher: aes-128-gcm
-  name: 19|🇬🇧GB-212.102.53.197-0345
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.197
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 20,21,37|未知106
+  password: 27NDoVz3MepkWeZz4es6T1XsuHByjB2m4CUBYeWig6wjxqz5AyZZUAtH7xPKDcb8AYeK3gc9AS4BN4pMbPE6FLeHH7SidBV1
+  port: 55988
+  server: 185.5.38.111
+  skip-cert-verify: true
+  tls: true
   type: ss
+- name: 24|🇬🇧 英国 伦敦Amazon数据中心
+  password: telegram-id-directvpn
+  port: 22222
+  server: 52.56.107.142
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: '24|🇬🇧 _英国 #2'
+  password: 6d446d30-066f-11f0-86ad-1239d0255272
+  port: 443
+  server: uk1.test3.net
+  skip-cert-verify: false
+  sni: uk1.test3.net
+  type: trojan
+- name: '24|🇬🇧 _英国 #3'
+  password: '!!str 74260700211203800'
+  port: 443
+  server: powerful-grackle.shiner427.skin
+  skip-cert-verify: false
+  sni: powerful-grackle.shiner427.skin
+  type: trojan
 - name: 26|V2-英国03∣K71线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 20820
@@ -385,22 +415,33 @@ proxies:
   uuid: 48adfefe-6599-4cc7-9bf2-a18020260e22
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-38.114.120...
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
   network: tcp
-  port: 47567
-  server: 38.114.120.12
-  tls: false
-  type: vmess
-  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-46.250.253...
-  network: tcp
-  port: 28872
+  port: '28872'
   server: 46.250.253.234
+  servername: ''
   tls: false
   type: vmess
   uuid: 762b3923-5885-4c5f-886f-e62788512338
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-172.99.190...
+  network: tcp
+  port: 25366
+  server: 172.99.190.249
+  tls: false
+  type: vmess
+  uuid: 51259e1c-2c37-415c-b1e1-b791a64b3388
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
+  network: tcp
+  port: '47567'
+  server: 38.114.120.12
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
