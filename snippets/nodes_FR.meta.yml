@@ -80,7 +80,7 @@ proxies:
   port: 6379
   server: 149.202.82.172
   type: ss
-- name: '11,27,30|13|法国|@ripaojiedian #1'
+- name: '11,27,30|12|法国|@ripaojiedian #2'
   network: ws
   password: c97cf46e-1554-36cb-8b36-c3556b883dc4
   port: 443
@@ -142,8 +142,8 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 20,21,37|未知42
-  password: 4a2rfixophdjffa8KVA4Aa
+  name: 20,21,37|未知109
+  password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.158.171.141
   skip-cert-verify: true
@@ -301,18 +301,28 @@ proxies:
   type: vmess
   udp: true
   uuid: 48adfefe-6599-4cc7-9bf2-a18020260e22
+- alpn:
+  - h3%2Ch2%2Chttp%2F1.1
+  client-fingerprint: chrome
+  name: 30|🇷 法国 TOTAL S.A.
+  password: AXpQXM4vNh
+  port: 1935
+  server: 141.227.160.167
+  sni: x2swe-ovh.devefun.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-38.109.228.1...
+  network: tcp
+  port: '21809'
+  server: 38.109.228.113
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a6179475-489c-4bcc-b05c-481386295b93
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228...
-  network: tcp
-  port: 14854
-  server: 38.109.228.214
-  tls: false
-  type: vmess
-  uuid: f0a214ba-2a4f-4f22-b342-03123726ab27
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228... #1'
   network: tcp
   port: 27060
   server: 38.109.228.163
@@ -321,29 +331,13 @@ proxies:
   uuid: 71da40b9-c20e-4a6e-80cb-c8141f693526
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇫🇷 FR-146.19.168.1...
-  network: ws
-  port: '443'
-  server: 146.19.168.161
-  servername: az05.beyondy.cfd
-  tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: az05.beyondy.cfd
-    path: /link
-- alterId: 0
-  cipher: auto
-  name: 36,37|未知62 28.4KB/s
+  name: '36|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228... #1'
   network: tcp
-  port: 21809
-  server: 38.109.228.113
-  servername: ''
-  skip-cert-verify: true
-  tls: true
+  port: 14854
+  server: 38.109.228.214
+  tls: false
   type: vmess
-  uuid: a6179475-489c-4bcc-b05c-481386295b93
+  uuid: f0a214ba-2a4f-4f22-b342-03123726ab27
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇫🇷 FR-23.162.152...
@@ -353,3 +347,14 @@ proxies:
   tls: false
   type: vmess
   uuid: e7ac718a-1751-489c-8205-24229259b410
+- alterId: 0
+  name: 37|🇷FR 2.8MB/s
+  network: tcp
+  password: FiSo7J6vfS
+  port: 1935
+  server: 51.68.13.106
+  skip-cert-verify: true
+  sni: x1fr-ovh.devefun.net
+  tls: true
+  type: trojan
+  udp: true

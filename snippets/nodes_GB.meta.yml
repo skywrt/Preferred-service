@@ -1,21 +1,12 @@
 proxies:
-- client-fingerprint: chrome
-  fingerprint: ''
-  grpc-opts:
-    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON?ed=2048
-  name: 3|24e520f8d8114477a116bdb7453afa...
-  network: grpc
-  port: 14179
-  server: 57.128.166.48
-  tls: false
-  type: vless
-  udp: false
-  uuid: a33338ba-0136-417c-af93-e933030e4f16
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|2|🇧 英国住宅IP 01 | 1x UK
-  password: 0aece2b3-f741-41a0-943d-06e1a2d5d8b8
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,30,37|🇧GB英国2
+  password: b2336a9b-f641-4817-aa88-3874046adf25
   port: 36271
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -112,8 +103,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,11|14|🇧英国家宽 01 | 1x UK
-  password: a30f1639-08fb-437d-8c3b-a6b85a62cca1
+  name: 5,11,27,30|0|🇧英国家宽 01 | 1x UK
+  password: 3dd06512-f31f-48b9-921f-8da7f0cc183b
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -318,14 +309,12 @@ proxies:
     headers:
       Host: lo.kpcloud.eu.org
     path: '%2Fblue'
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知89 13.9MB/s
-  password: shadowsocks
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 19,20,21,30|🇺🇸 美国
+  password: W74XFALLLuw6m5IA
   port: 443
-  server: 212.102.53.78
-  skip-cert-verify: true
-  tls: true
+  server: series-a2.samanehha.co
   type: ss
 - name: 24|🇬🇧 英国 社会保险安全部
   password: telegram-id-directvpn
@@ -391,21 +380,20 @@ proxies:
   - http/1.1
   client-fingerprint: chrome
   name: 30|🇧 英国
-  password: telegram-id-privatevpns
+  password: telegram-id-directvpn
   port: 22222
-  server: 51.44.59.202
+  server: 51.21.233.200
   sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-46.250.253...
   network: tcp
-  port: '55577'
-  server: 172.99.190.207
-  servername: ''
+  port: 28872
+  server: 46.250.253.234
   tls: false
   type: vmess
-  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
+  uuid: 762b3923-5885-4c5f-886f-e62788512338
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
@@ -427,15 +415,6 @@ proxies:
   uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-46.250.253...
-  network: tcp
-  port: 28872
-  server: 46.250.253.234
-  tls: false
-  type: vmess
-  uuid: 762b3923-5885-4c5f-886f-e62788512338
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-149.7.16.1...
   network: tcp
   port: 37101
@@ -452,3 +431,24 @@ proxies:
   tls: false
   type: vmess
   uuid: 51259e1c-2c37-415c-b1e1-b791a64b3388
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
+  network: tcp
+  port: '55577'
+  server: 172.99.190.207
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e922d485-98a7-475a-9a47-cde3722ac82e
+- alterId: 0
+  name: 37|🇧GB国
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.11.17.145
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
