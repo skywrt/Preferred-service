@@ -8,12 +8,19 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,37|🇹TW
+  name: 5,9,11,24,27,30,37|🇹TW
   password: 48e325de-ed8e-4bd6-9438-4b63150bb369
   port: 31245
   server: free.2apzhfa.xyz
   skip-cert-verify: true
   tls: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,11,27,30|1|🇼 台湾 01 | 1x TW #2'
+  password: d39f3dbd-5b04-4354-ad2a-60d64fbe9936
+  port: 36241
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -30,10 +37,17 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|1| 01 | 1x TW
-  password: 2208aa78-bbb8-471e-a601-9187b558b1a7
+  name: '5,9,11,24,27,30|0| 01 | 1x TW #2'
+  password: 1d14484d-4bdb-4569-b354-a6ab5ce06108
   port: 31241
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,11,27,30|1|🇼 台湾 03 | 1x TW #2'
+  password: d39f3dbd-5b04-4354-ad2a-60d64fbe9936
+  port: 36245
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -49,9 +63,16 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,11,27,30|1|🇹🇼 台湾 02 | 1x TW #2'
+  password: d39f3dbd-5b04-4354-ad2a-60d64fbe9936
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,37|🇹🇼TW台湾2
+  name: 5,9,11,24,27,30,37|🇹🇼TW台湾2
   password: 48e325de-ed8e-4bd6-9438-4b63150bb369
   port: 31243
   server: free.2apzhfa.xyz
@@ -80,6 +101,15 @@ proxies:
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: '24|2|🇹🇼6 |  2.3MB/s #1'
+  network: tcp
+  port: '3690'
+  server: ad5b288c-submo0-sv7alj-ctxx.b.fosant.com
+  tls: false
+  type: vmess
+  uuid: 4e84400e-f4bc-11ef-81b7-f23c932f2c32
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇹🇼 TW-45.121.50.11...
