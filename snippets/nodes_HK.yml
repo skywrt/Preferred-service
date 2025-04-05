@@ -46,7 +46,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,37|🇭HK
+  name: 5,11,24,27,30,37|🇭HK
   password: 2208aa78-bbb8-471e-a601-9187b558b1a7
   port: 31145
   server: free.2apzhfa.xyz
@@ -55,8 +55,8 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27|1|🇭🇰 香港 01 | 1x HK
-  password: 4f043f68-398d-4828-9fbb-0f1351df135a
+  name: 5,11|14|🇭🇰 香港 01 | 1x HK
+  password: 802d1123-b210-4535-8b32-10d0c163f14e
   port: 36141
   server: free.2weradf.xyz
   type: ss
@@ -88,15 +88,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|0|🇭🇰香港 02 | 1x HK
-  password: c69cd041-fffe-4535-8894-72f4f2aeefb4
+  name: '5,11,24,27,30|0|🇭🇰香港 02 | 1x HK #2'
+  password: 4cd64b45-568a-47b6-b1cb-9bc66fa3ac09
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|0| 01 | 1x HK
-  password: c69cd041-fffe-4535-8894-72f4f2aeefb4
+  name: '5,11,24,27,30|0| 01 | 1x HK #2'
+  password: 4cd64b45-568a-47b6-b1cb-9bc66fa3ac09
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
@@ -115,22 +115,29 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27|1|🇭🇰 香港IP 03 | 1x HK
-  password: 4f043f68-398d-4828-9fbb-0f1351df135a
+  name: 5,11|14|🇭🇰 香港IP 03 | 1x HK
+  password: 802d1123-b210-4535-8b32-10d0c163f14e
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27|1|🇭🇰 香港 02 | 1x HK
-  password: 4f043f68-398d-4828-9fbb-0f1351df135a
+  name: 5,11|14|🇭🇰 香港 02 | 1x HK
+  password: 802d1123-b210-4535-8b32-10d0c163f14e
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 11|1|🇭🇰1 |  1.3MB/s
+  password: 5eef37ee-aeb2-4c55-8108-07466791ef8c
+  port: 45630
+  server: gy.tangu.win
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 11,27|12|🇰 香港|@ripaojiedian
+  name: '11,27,30|11|🇭🇰 香港|@ripaojiedian #2'
   port: 4136
   server: 7ea30b67-submo0-t23v18-6wpo.d.volczijie.com
   skip-cert-verify: false
@@ -140,7 +147,7 @@ proxies:
   uuid: aada003a-bc20-11ee-8ebe-f23c93136cb3
 - alterId: 0
   cipher: auto
-  name: 11,27|12|🇭🇰 香港2|@ripaojiedian
+  name: '11,27,30|11|🇭🇰 香港2|@ripaojiedian #2'
   port: 41002
   server: 120.232.153.40
   skip-cert-verify: false
@@ -150,9 +157,9 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 11,27|13|港|@ripaojiedian
+  name: '11,24,27,30|12|港|@ripaojiedian #2'
   network: tcp
-  port: '4136'
+  port: 4136
   server: 7ea30b67-submo0-t23v18-6wpo.d.volczijie.com
   servername: ''
   tls: false
@@ -160,9 +167,9 @@ proxies:
   uuid: aada003a-bc20-11ee-8ebe-f23c93136cb3
 - alterId: 0
   cipher: auto
-  name: 11,24,27|13|香港2|@ripaojiedian
+  name: '11,24,27,30|12|香港2|@ripaojiedian #2'
   network: tcp
-  port: '41002'
+  port: 41002
   server: 120.232.153.40
   servername: ''
   tls: false
@@ -737,84 +744,6 @@ proxies:
   port: 8388
   server: 103.149.183.61
   type: ss
-- alterId: 2
-  cipher: auto
-  name: 24|🇭🇰 香港 电讯盈科有限公司
-  network: ws
-  port: '452'
-  server: 162d582b-submo0-t0t1z3-1qgn.hkt.east.wctype.com
-  tls: false
-  type: vmess
-  uuid: 564b440a-700f-11ee-a90c-f23c9313b177
-  ws-opts:
-    headers:
-      Host: webrtcpunch.video.qq.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '24|🇭🇰 香港 电讯盈科有限公司 #1'
-  network: ws
-  port: '452'
-  server: 82766f17-submo0-su9w3p-4mce.hkt.east.wctype.com
-  tls: false
-  type: vmess
-  uuid: 06c625ea-5902-11ee-9e87-f23c9313b177
-  ws-opts:
-    headers:
-      Host: webrtcpunch.video.qq.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '24|🇭🇰 香港 电讯盈科有限公司 #2'
-  network: ws
-  port: '80'
-  server: ddd1601b-sub0g0-tax87j-fxtw.hgc1.tcpbbr.net
-  tls: false
-  type: vmess
-  uuid: c5437726-aa85-3ab0-f5ed-a62156a904f9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '24|🇭🇰 香港 电讯盈科有限公司 #3'
-  network: ws
-  port: '80'
-  server: 55338e5a-sub0g0-ta5nd4-e06r.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 861726bb-c61a-b0e0-99fa-5ddfdcf21902
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '24|🇭🇰 香港 电讯盈科有限公司 #4'
-  network: ws
-  port: '452'
-  server: 4dfa479b-submo0-sxozw1-d70y.hkt.east.wctype.com
-  tls: false
-  type: vmess
-  uuid: 537d7098-fdbe-11ef-8ebc-f23c93141fad
-  ws-opts:
-    headers:
-      Host: webrtcpunch.video.qq.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '24|🇭🇰 香港 电讯盈科有限公司 #5'
-  network: ws
-  port: '452'
-  server: 8e99fac1-submo0-t9eazx-bu8s.hkt.east.wctype.com
-  tls: false
-  type: vmess
-  uuid: cc1e8ba3-bcdc-11ef-b815-f23c9313b177
-  ws-opts:
-    headers:
-      Host: webrtcpunch.video.qq.com
-    path: /
 - name: 26|V1-香港01∣K1线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21135
