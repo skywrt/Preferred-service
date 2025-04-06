@@ -46,14 +46,14 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: '5,11,24,27,30|0|🇭🇰香港 03 | 1x HK #2'
-  password: 5aa86245-4c6f-4c38-94d8-e5f8c11cb662
+  password: 991d8642-135b-4ce0-9cc8-465770d2b1f7
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇭🇰 香港 01 | 1x HK #2'
-  password: 54cef310-0e65-48e4-8947-27c34b903404
+  name: '5,11,24,27,30|2|🇭🇰 香港 01 | 1x HK #1'
+  password: 93ec36c7-c601-4be7-9971-6c0654c2cd9a
   port: 36141
   server: free.2weradf.xyz
   type: ss
@@ -86,7 +86,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: '5,11,24,27,30|0|🇭🇰香港 02 | 1x HK #2'
-  password: 5aa86245-4c6f-4c38-94d8-e5f8c11cb662
+  password: 991d8642-135b-4ce0-9cc8-465770d2b1f7
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
@@ -115,19 +115,34 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇭🇰 香港IP 03 | 1x HK #2'
-  password: 54cef310-0e65-48e4-8947-27c34b903404
+  name: '5,11,24,27,30|2|🇭🇰 香港IP 03 | 1x HK #1'
+  password: 93ec36c7-c601-4be7-9971-6c0654c2cd9a
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇭🇰 香港 02 | 1x HK #2'
-  password: 54cef310-0e65-48e4-8947-27c34b903404
+  name: '5,11,24,27,30|2|🇭🇰 香港 02 | 1x HK #1'
+  password: 93ec36c7-c601-4be7-9971-6c0654c2cd9a
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
+- alterId: 2
+  cipher: auto
+  name: '11,20,21|🇭🇰HK-1.65.208.163-5585 #1'
+  network: ws
+  port: 80
+  server: 4ac87188-suk9s0-t7qex7-1supq.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 7af3db60-b2d9-11ef-88ab-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 4ac87188-suk9s0-t7qex7-1supq.hk3.p5pv.com
+    path: /
 - cipher: aes-128-gcm
   name: '11,24,27,30|12|🇭🇰 香港|@ripaojiedian #2'
   password: cda0b6dc-d188-4896-83ce-6b055b799792
@@ -157,8 +172,7 @@ proxies:
   uuid: d0a9b5ea-bf85-11ee-b758-f23c93136cb3
 - alterId: 2
   cipher: auto
-  client-fingerprint: chrome
-  name: 11,24,27,30|🇳
+  name: '11,24,27,30|12,13|香港4|@ripaojiedian #2'
   network: ws
   port: 30809
   server: v9.heduian.link
@@ -772,7 +786,8 @@ proxies:
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
 - alterId: 2
   cipher: auto
-  name: '20,21|🇭🇰HK-1.65.218.129-1170 #1'
+  client-fingerprint: chrome
+  name: 20,21,30|🇰 香港 电讯盈科有限公司 2
   network: ws
   port: 80
   server: b88d33ac-sucv40-tcum62-se45.hk.p5pv.com
@@ -856,20 +871,6 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '20,21|🇭🇰HK-1.65.208.163-5585 #1'
-  network: ws
-  port: 80
-  server: 4ac87188-suk9s0-t7qex7-1supq.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  tls: false
-  type: vmess
-  uuid: 7af3db60-b2d9-11ef-88ab-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 4ac87188-suk9s0-t7qex7-1supq.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
   name: '20,21|🇭🇰HK-1.65.208.163-5580 #1'
   network: ws
   port: 80
@@ -898,7 +899,8 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '20,21|🇭🇰HK-1.65.218.129-5410 #1'
+  client-fingerprint: chrome
+  name: 20,21,30|🇰 香港
   network: ws
   port: 80
   server: 687032bd-sucv40-sxlqds-1qs82.hk.p5pv.com
@@ -1302,22 +1304,22 @@ proxies:
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183....
   network: tcp
-  port: '54675'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
-  network: tcp
   port: '27512'
   server: 103.149.183.178
   servername: ''
   tls: false
   type: vmess
   uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.... #1'
+  network: tcp
+  port: '54675'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-5.83.221.31:3...
