@@ -1050,7 +1050,7 @@ proxies:
     path: /oooo
 - alpn:
   - http/1.1
-  name: 12|🇬🇧_GB_英国->🇺🇸_US_美国
+  name: 12,30|_GB_国->🇸_US_美国
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -1072,7 +1072,7 @@ proxies:
     path: /
 - alpn:
   - http/1.1
-  name: 12|🇮🇪_IE_爱尔兰->🇺🇸_US_美国
+  name: 12,30|🇪_IE_->🇺🇸_US_美国
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -1093,6 +1093,12 @@ proxies:
     headers:
       Host: api100-core-quic-lf.amemv.com
     path: /index
+- cipher: aes-256-gcm
+  name: 12,30|🇳_CN_中国->🇺🇸_US_美国_1
+  password: 4bccdfb7-f45b-44bb-9cd3-fb6f8fc8072f
+  port: 41705
+  server: zf1.10101251.xyz
+  type: ss
 - name: '13|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
   network: ws
   port: 80
@@ -1506,3 +1512,42 @@ proxies:
   server: vip.baima360.com
   type: ss
   udp: true
+- alterId: 2
+  cipher: auto
+  name: 30|_CN_国->🇨_CA_
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v25.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 30|🇸_US_美国->🇨_CN_中国
+  network: ws
+  port: 5210
+  server: 7f93c487-sub0g0-sv11pd-1g8k0.losa.plebai.net
+  type: vmess
+  uuid: d4018e28-e328-11ed-98a7-f23c913c8d2b
+  ws-opts:
+    headers:
+      host: 7f93c487-sub0g0-sv11pd-1g8k0.losa.plebai.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|🇳_CN_中国->🇸_US_美国
+  network: ws
+  port: 30840
+  server: v40.heduian.link
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: api100-core-quic-lf.amemv.com
+    path: /index

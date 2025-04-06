@@ -3,7 +3,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|d3c2e9071478482b965f733f73c544...
+  name: 3|99a463e9ee504840b7ee5c8154f402...
   network: ws
   port: 8443
   server: 1743919941.tencentapp.cn
@@ -17,8 +17,8 @@ proxies:
       host: 1743919978.speed.laxha.cccp.freefly.pp.ua
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|1|🇧 英国住宅IP 01 | 1x UK
-  password: fbf636cc-9511-43a7-939d-410b8f866371
+  name: '5,11,24,27,30|1|🇧 英国住宅IP 01 | 1x UK #1'
+  password: 37230b88-664a-48bc-bf57-de45554b9abc
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -69,8 +69,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|0|国家宽 01 | 1x UK
-  password: 48a74a75-c594-4b9f-80a8-6e1180f9e38f
+  name: 5,24,27,30|0|🇧英国家宽 01 | 1x UK
+  password: 9eba9fb6-ce14-4bb9-86ee-69fd0832a2b4
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -204,14 +204,14 @@ proxies:
   tls: true
   type: trojan
 - cipher: aes-256-gcm
-  name: '11,24,27|12|🇧 英国|@ripaojiedian #1'
+  name: '11,24,27,30|12|🇧 英国|@ripaojiedian #2'
   password: 65ZLPN9MI8OTH07C
   port: 19005
   server: 206.245.211.15
   tfo: false
   type: ss
 - cipher: aes-256-gcm
-  name: '11,24,27|12|🇬🇧 英国2|@ripaojiedian #1'
+  name: '11,24,27,30|12|🇬🇧 英国2|@ripaojiedian #2'
   password: HW9RL3ZGBLLSO16R
   port: 19002
   server: 206.245.211.12
@@ -276,15 +276,26 @@ proxies:
   udp: true
   uuid: 48adfefe-6599-4cc7-9bf2-a18020260e22
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
+  client-fingerprint: chrome
+  name: 30,37|未知61
   network: tcp
-  port: '47567'
-  server: 38.114.120.12
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.21.166.222
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 30|🇬🇧 英国 Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.8.67.52
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
@@ -296,13 +307,14 @@ proxies:
   uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-149.7.16.1...
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
   network: tcp
-  port: 37101
-  server: 149.7.16.149
+  port: '47567'
+  server: 38.114.120.12
+  servername: ''
   tls: false
   type: vmess
-  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
+  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-46.250.253...
@@ -312,6 +324,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 762b3923-5885-4c5f-886f-e62788512338
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-149.7.16.1...
+  network: tcp
+  port: 37101
+  server: 149.7.16.149
+  tls: false
+  type: vmess
+  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
