@@ -119,7 +119,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 5,11,24,27,30|0|🇧英国家宽 01 | 1x UK
-  password: 849a7d03-bb32-428f-912e-fd16e5d79b51
+  password: b9249f3f-485c-49c4-a9b7-da942f11555a
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -233,10 +233,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10,28|🇩🇪 德国法兰克福-1B
+  name: 10,20,21,28|🇩🇪 德国法兰克福-1B
   network: ws
   port: 23451
   server: frankfurt.faforex.eu.org
+  servername: ''
   tls: false
   type: vmess
   udp: true
@@ -310,7 +311,7 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  name: '10,20,21,24|2|🇫🇷5 |  3.1MB/s #1'
+  name: '10,20,21,24|🇬🇧 _英国 #1'
   network: tcp
   password: FiSo7J6vfS
   port: 1935
@@ -332,8 +333,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 11,24,27,30|🇸 美国 州塞ClearBlue
+  name: '11,24,27,30|12|🇧 英国|@ripaojiedian #2'
   password: 65ZLPN9MI8OTH07C
   port: 19005
   server: 206.245.211.15
@@ -380,7 +380,13 @@ proxies:
   tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 19|🇬🇧GB-4.158.76.220-0341
+  name: 19|🇬🇧GB-4.158.75.79-0350
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: series-a2.samanehha.co
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇬🇧GB-4.158.75.79-0356
   password: mps3FwmDjLrWaOVg
   port: 443
   server: series-a1.samanehha.co
@@ -440,24 +446,15 @@ proxies:
   type: vmess
   udp: true
   uuid: 48adfefe-6599-4cc7-9bf2-a18020260e22
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 30|🇬 英国 保安
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.21.164.156
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-172.99.190...
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-149.7.16.1...
   network: tcp
-  port: 25366
-  server: 172.99.190.249
+  port: 37101
+  server: 149.7.16.149
   tls: false
   type: vmess
-  uuid: 51259e1c-2c37-415c-b1e1-b791a64b3388
+  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-46.250.253...
@@ -467,6 +464,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 762b3923-5885-4c5f-886f-e62788512338
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
+  network: tcp
+  port: 26924
+  server: 68.168.31.184
+  tls: false
+  type: vmess
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
@@ -479,6 +485,15 @@ proxies:
   uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-172.99.190...
+  network: tcp
+  port: 25366
+  server: 172.99.190.249
+  tls: false
+  type: vmess
+  uuid: 51259e1c-2c37-415c-b1e1-b791a64b3388
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
   network: tcp
   port: '55577'
@@ -487,21 +502,3 @@ proxies:
   tls: false
   type: vmess
   uuid: e922d485-98a7-475a-9a47-cde3722ac82e
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-149.7.16.1...
-  network: tcp
-  port: 37101
-  server: 149.7.16.149
-  tls: false
-  type: vmess
-  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
-  network: tcp
-  port: 26924
-  server: 68.168.31.184
-  tls: false
-  type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
