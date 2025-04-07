@@ -15,8 +15,8 @@ proxies:
   sni: 421421.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|2|🇵 日本 01 | 1x JP #2'
-  password: a901af60-eb44-42f9-b631-02f74ec19e66
+  name: 5,9,11,24,27|0|  01 | 1x JP
+  password: 719b3056-126a-43fd-b45b-e4a205e54512
   port: 36111
   server: free.2weradf.xyz
   type: ss
@@ -32,8 +32,8 @@ proxies:
   type: vmess
   uuid: c06797d5-fa41-4b48-b132-d268d2acb302
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|2|🇵 日本 03 | 1x JP #2'
-  password: a901af60-eb44-42f9-b631-02f74ec19e66
+  name: 5,9,11,24,27|0|🇵 日本 03 | 1x JP
+  password: 719b3056-126a-43fd-b45b-e4a205e54512
   port: 36115
   server: free.2weradf.xyz
   type: ss
@@ -84,15 +84,15 @@ proxies:
       Host: ''
     path: ''
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|2|🇯🇵 日本 02 | 1x JP #2'
-  password: a901af60-eb44-42f9-b631-02f74ec19e66
+  name: 5,9,11,24,27|0|🇵 日本 02 | 1x JP
+  password: 719b3056-126a-43fd-b45b-e4a205e54512
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0| 01 | 1x JP #2'
-  password: 3987d45e-cc47-4ab1-aef7-1f6c3bdaf294
+  name: 5,9,11,24,27|1|🇵日本 01 | 1x JP
+  password: 21d3bf45-d63b-427f-9be6-714da4fdc844
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
@@ -170,8 +170,8 @@ proxies:
       Host: ''
     path: ''
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇵日本 03 | 1x JP #2'
-  password: 3987d45e-cc47-4ab1-aef7-1f6c3bdaf294
+  name: '5,9,11,24,27|1|🇵日本 03 | 1x JP #1'
+  password: 21d3bf45-d63b-427f-9be6-714da4fdc844
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
@@ -200,8 +200,8 @@ proxies:
   sni: 421421.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇵日本 02 | 1x JP #2'
-  password: 3987d45e-cc47-4ab1-aef7-1f6c3bdaf294
+  name: 5,9,11,24,27|1|🇯🇵日本 02 | 1x JP
+  password: 21d3bf45-d63b-427f-9be6-714da4fdc844
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
@@ -244,6 +244,53 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
+- cipher: aes-256-gcm
+  name: 9,11,24,27|12|🇯🇵 日本2|@ripaojiedian
+  password: TTY07WM37NEXCPQB
+  port: 18012
+  server: 156.231.104.22
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 9,11,24,27|12|🇯🇵 日本3|@ripaojiedian
+  password: V87NZNS8MU6PXNMO
+  port: 18005
+  server: 156.231.104.15
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 9,11,27|12|🇵 日本4|@ripaojiedian
+  port: 4151
+  server: 36fed4c6-sumqo0-swo13r-3im.c.volczijie.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 647b46f6-2ba4-11ee-af1f-f23c93136cb3
+- cipher: aes-256-cfb
+  name: 9,11,27|12|🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 35.72.13.55
+  tfo: false
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 9,11,27|12|🇵 日本|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202504031266665-2FO2jW0pPK.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   name: 10|日本 006
   network: ws
@@ -360,77 +407,16 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /
-- cipher: rc4-md5
-  name: '11,27,30|12|🇵 日本|@ripaojiedian #2'
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202504031266665-2FO2jW0pPK.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  name: '11,24,27,30|12|🇵 日本2|@ripaojiedian #2'
-  password: 75XFDM4RTK8B4LLG
-  port: 18012
-  server: 156.231.104.22
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  name: '11,24,27,30|12|🇯🇵 日本3|@ripaojiedian #2'
-  password: JPHJGLROBW89TTNI
-  port: 18003
-  server: 156.231.104.13
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  name: '11,24,27,30|12|🇯🇵 日本4|@ripaojiedian #2'
-  password: 2DFUK58DWLGU6EQH
-  port: 18005
-  server: 156.231.104.15
-  tfo: false
-  type: ss
-- cipher: rc4-md5
-  name: '11,27,30|12|🇯🇵 日本5|@ripaojiedian #2'
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202504031266665-2FO2jW0pPK.download.microsoft.com
-    mode: http
-  port: 8769
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- name: '11,24,27,30|12|🇯🇵 日本6|@ripaojiedian #2'
-  password: '!!str 74260700211203800'
-  port: 443
-  server: possible-tiger.shiner427.skin
-  skip-cert-verify: false
-  sni: possible-tiger.shiner427.skin
-  type: trojan
-- cipher: aes-128-gcm
-  name: '11,24,27,30|12|🇵 日本7|@ripaojiedian #2'
-  password: f7ea2e58-8dd2-4243-8908-f79e00eafd83
-  port: 26735
-  server: 183.236.51.167
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: '11,19,24,27,30|12|🇵 日本特殊|@ripaojiedian #2'
-  password: amazonskr05
-  port: 443
-  server: 54.254.9.107
-  tfo: false
-  type: ss
-- name: '11,24,27,30|13|日本6|@ripaojiedian #2'
+- alterId: 0
+  cipher: auto
+  name: 11,27|13|日本4|@ripaojiedian
   network: tcp
-  password: '!!str 74260700211203800'
-  port: 443
-  server: possible-tiger.shiner427.skin
-  skip-cert-verify: false
-  type: trojan
+  port: '4151'
+  server: 36fed4c6-sumqo0-swo13r-3im.c.volczijie.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 647b46f6-2ba4-11ee-af1f-f23c93136cb3
 - name: 17|荷兰(yudou66.com 玉豆免费节点)
   network: ws
   port: 443
@@ -491,16 +477,15 @@ proxies:
     headers:
       Host: lp.ylks.us.kg
     path: '%2F%3Fed%3D2560'
-- cipher: aes-256-cfb
-  name: 19|🇯🇵JP-52.198.238.20-2316
-  password: amazonskr05
-  port: 443
-  server: 52.198.238.20
-  type: ss
-- name: '20,21|🇯🇵JP-49.212.189.9-2322 #1'
+- name: '20,21|🇯🇵JP-49.212.189.9-0386 #1'
   password: ef23ddd0-14c5-39c2-9880-af55ce892363
   port: 50268
   server: t8.qifei.app
+  type: trojan
+- name: '20,21|🇯🇵JP-160.16.196.20-5602 #1'
+  password: ef23ddd0-14c5-39c2-9880-af55ce892363
+  port: 57841
+  server: t14.qifei.app
   type: trojan
 - alterId: 0
   cipher: auto
@@ -517,6 +502,19 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
+- name: '24|🇯🇵 12|🇯🇵 日本6|@ripaojiedian #1'
+  password: '!!str 74260700211203800'
+  port: 443
+  server: possible-tiger.shiner427.skin
+  skip-cert-verify: false
+  sni: possible-tiger.shiner427.skin
+  type: trojan
+- name: '24|🇯🇵 13|日本6|@ripaojiedian #1'
+  password: '!!str 74260700211203800'
+  port: 443
+  server: possible-tiger.shiner427.skin
+  skip-cert-verify: false
+  type: trojan
 - name: 24|日期：04-06
   password: Aimer
   port: 443
@@ -797,16 +795,6 @@ proxies:
   uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
-  network: tcp
-  port: '1069'
-  server: 152.69.197.60
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇯🇵 JP-46.51.231.16...
   network: ws
   port: '42359'
@@ -819,6 +807,16 @@ proxies:
     headers:
       Host: 0000000000000000000000000078.cgroup-node-for-bigairport.sbs
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
+  network: tcp
+  port: '1069'
+  server: 152.69.197.60
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
 - name: 40|JP_speednode_0023
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
