@@ -14,7 +14,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,37|DE
+  name: 5,9,11,24,27,30,37|DE
   password: 10836127-2639-408d-ad75-e35bfda7d659
   port: 31471
   server: free.2apzhfa.xyz
@@ -32,8 +32,14 @@ proxies:
   type: vmess
   uuid: b52f0a62-068c-41bf-a4f6-ac3faddded46
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|1|🇪 德国 01 | 1x DE
-  password: 60430237-969c-41d5-abf0-cddccd964aa3
+  name: 5,19|🇱🇹LT-45.87.175.154-0253
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.154
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11|2|🇪 德国 01 | 1x DE
+  password: 7df77a0a-12ee-4e7b-9dea-223dd4c74e79
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -323,6 +329,12 @@ proxies:
   port: 6774
   server: 109.120.177.122
   type: ss
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-0487
+  password: BNmAXXxAHYpTRdzu
+  port: 9020
+  server: 80.92.204.106
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -342,42 +354,6 @@ proxies:
   name: 19|🇩🇪DE-80.92.204.106-5353
   password: ZET59LF6DvCC8KVt
   port: 9005
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-5460
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-5355
-  password: VP8ZPxQpJtZRCjfZ
-  port: 9080
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-5451
-  password: FAdUvMJUq5vDgKEq
-  port: 9006
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-5453
-  password: 4R3hUfZ2FHhDmNcP
-  port: 9061
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-0486
-  password: rpgbNnU9rDDU4aWZ
-  port: 9094
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-5452
-  password: BwcAUZk8hUFAkDGN
-  port: 9031
   server: 80.92.204.106
   type: ss
 - alterId: 0
@@ -410,25 +386,51 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 24|VMESS-未知>德国-fk2-bash.890617.xy...
+  name: '20,21|🇩🇪DE-91.195.240.12-7607 #1'
   network: ws
-  port: 2096
-  server: fk2-bash.890617.xyz
-  servername: ''
-  tls: false
+  port: 443
+  server: hms19.best-tizi.top
+  servername: hms19.best-tizi.top
+  tls: true
   type: vmess
-  uuid: feddc326-da70-4fab-95a9-8f98be6da633
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
   ws-opts:
     headers:
-      Host: fk2-bash.890617.xyz
-    path: /fk2-1
-- name: 24|🇩🇪 _德国
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.125.240.236
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
+      Host: hms19.best-tizi.top
+    path: /linkws
+- allowInsecure: '1'
+  name: '24,27,30|1|6 |  4.0MB/s #1'
+  network: tcp
+  password: NPpPQZoTPt
+  port: 30015
+  server: 130.61.160.153
+  skip-cert-verify: true
+  sni: ge1986a.iamback.top
+  tls: true
   type: trojan
+- allowInsecure: '1'
+  name: '24,27,30|1|🇩🇪7 |  4.7MB/s #3'
+  network: tcp
+  password: NPpPQZoTPt
+  port: 30015
+  server: ge1986a.iamback.top
+  skip-cert-verify: true
+  sni: ge1986a.iamback.top
+  tls: true
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '24|🇩🇪 _德国 #1'
+  network: ws
+  port: '443'
+  server: 193.122.58.158
+  tls: false
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - cipher: aes-256-gcm
   name: 28|🇩🇪 VIP 德国1-1B
   password: 558bfa68-0305-4350-8316-7f2d641ad375
@@ -436,6 +438,39 @@ proxies:
   server: de01.jiasudu.buzz
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇪 德国 Oracle中
+  network: ws
+  port: 443
+  server: 132.145.232.171
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      Host: beyonddsz.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-193.108.11...
+  network: tcp
+  port: 15713
+  server: 193.108.118.136
+  tls: false
+  type: vmess
+  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NONE 🇩🇪 DE-193.108.11... #1'
+  network: tcp
+  port: '23843'
+  server: 193.108.119.198
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3d36b6cb-5d89-46f0-9d51-65b591301762
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
@@ -448,33 +483,14 @@ proxies:
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
-  network: tcp
-  port: '48961'
-  server: 23.158.56.21
-  servername: ''
-  tls: false
+  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
+  network: httpupgrade
+  port: '2083'
+  server: 172.67.175.40
+  servername: tabnak.farsonline24.ir
+  tls: true
   type: vmess
-  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-193.108.11...
-  network: tcp
-  port: '23843'
-  server: 193.108.119.198
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3d36b6cb-5d89-46f0-9d51-65b591301762
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NONE 🇩🇪 DE-193.108.11... #1'
-  network: tcp
-  port: 15713
-  server: 193.108.118.136
-  tls: false
-  type: vmess
-  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
+  uuid: 83ce7099-bcd6-4e91-911e-1f28a665c9a8
 - alterId: 0
   cipher: auto
   name: '36|🔒 VM-TCP-NONE 🇩🇪 DE-193.108.11... #2'
@@ -486,14 +502,14 @@ proxies:
   uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
-  network: httpupgrade
-  port: '2083'
-  server: 172.67.175.40
-  servername: tabnak.farsonline24.ir
-  tls: true
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
+  network: tcp
+  port: '48961'
+  server: 23.158.56.21
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 83ce7099-bcd6-4e91-911e-1f28a665c9a8
+  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
 - alterId: 0
   cipher: auto
   grpc-opts:
