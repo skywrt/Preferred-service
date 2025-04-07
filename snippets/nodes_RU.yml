@@ -9,8 +9,8 @@ proxies:
   type: vmess
   uuid: 6a2afda8-8798-434c-8964-1deb4e7655a5
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27,30|0|🇺俄罗斯 01 | 1x RU
-  password: 9eba9fb6-ce14-4bb9-86ee-69fd0832a2b4
+  name: '5,11,24,27,30|0|🇺 01 | 1x RU #2'
+  password: 3987d45e-cc47-4ab1-aef7-1f6c3bdaf294
   port: 31511
   server: free.2apzhfa.xyz
   type: ss
@@ -35,8 +35,8 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇺 俄罗斯 01 | 1x RU #1'
-  password: 37230b88-664a-48bc-bf57-de45554b9abc
+  name: '5,11,24,27,30|2|🇺 俄罗斯 01 | 1x RU #2'
+  password: a901af60-eb44-42f9-b631-02f74ec19e66
   port: 36511
   server: free.2weradf.xyz
   type: ss
@@ -79,15 +79,6 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- alterId: 0
-  cipher: auto
-  name: 12,30,36|🔒 VM-TCP-NONE 🇳🇱 NL-46.8.68.21...
-  network: tcp
-  port: 24529
-  server: 46.8.68.212
-  tls: false
-  type: vmess
-  uuid: 70c6cbaa-a395-4014-8286-b447d1f316c3
 - cipher: aes-256-cfb
   name: 13,19|🇵🇱PL-217.30.10.18-5551
   password: JdmRK9gMEqFgs8nP
@@ -96,7 +87,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '16|🇷🇺_RU_俄罗斯 #1'
+  name: 16|🇷🇺_RU_俄罗斯
   network: ws
   port: 23039
   server: 195.133.5.127
@@ -110,6 +101,15 @@ proxies:
   port: 28825
   server: 45.151.62.54
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 24|🇷🇺 俄罗斯 V2CROSS.COM
+  network: tcp
+  port: '21404'
+  server: 31.15.17.120
+  tls: false
+  type: vmess
+  uuid: 8a654039-c5f8-4910-ad09-4e471c32b385
 - name: 24|🇷🇺 _俄罗斯
   password: Aimer
   port: 2053
@@ -179,12 +179,17 @@ proxies:
   skip-cert-verify: false
   sni: epccw.ambercc.filegear-sg.me
   type: trojan
-- alpn:
-  - h3%2Ch2%2Chttp%2F1.1
-  client-fingerprint: random
-  name: 30|🇬 俄罗斯新西利亚 justhost.ru
-  password: '%40NoForcedHeaven%40NoForcedHeaven%40NoForcedHeaven'
-  port: 8443
-  server: 195.133.52.153
-  sni: ru2.asc-sam.io
-  type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇺 俄罗斯 斯科JustHost
+  network: ws
+  port: 443
+  server: cg1c08.waimaoglobaldirect.cc
+  tls: true
+  type: vmess
+  uuid: 47a269a8-4c98-4a51-b633-521d8da9cd57
+  ws-opts:
+    headers:
+      Host: cg1c08.waimaoglobaldirect.cc
+    path: /api/v1/graphql
