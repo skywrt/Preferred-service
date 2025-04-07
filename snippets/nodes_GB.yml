@@ -1,9 +1,12 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11|2|🇧 英国住宅IP 01 | 1x UK
-  password: 7df77a0a-12ee-4e7b-9dea-223dd4c74e79
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,27,30,37|GB国
+  password: 7ed8258d-613c-4f4b-8b4d-56693706385e
   port: 36271
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -52,8 +55,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|2|🇧英国家宽 01 | 1x UK
-  password: d682a050-ef07-44fd-a85e-07335f926c7c
+  name: '5,9,11,24,27,30|1|🇧英国家宽 01 | 1x UK #1'
+  password: a0663505-2053-46ce-984b-eff2a479557a
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -127,6 +130,25 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
+- name: 9,11,24,27,30,40|GB_speednode_0008
+  password: b19c4375-d847-4c40-9824-4767c88b5f38
+  port: 10200
+  server: www.ak-hk.top
+  skip-cert-verify: true
+  sni: www.ak-hk.top
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 9,11,24,27,30,37|🇧GB英国3
+  password: c46ba905-31de-4090-8153-ec7d2e063079
+  port: 30004
+  server: 156.229.162.50
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 10,28|🇩🇪 德国法兰克福-1B
@@ -156,8 +178,7 @@ proxies:
       Host: ip4-in4.vp1000.net
     path: /pulicfastpDisney
 - allowInsecure: '1'
-  alterId: 0
-  name: 10,37|未知26 1.9MB/s
+  name: 10|英国 007
   network: tcp
   password: '!!str 74260700211203800'
   port: 443
@@ -166,17 +187,18 @@ proxies:
   sni: possible-tiger.shiner427.skin
   tls: true
   type: trojan
-  udp: true
 - allowInsecure: ''
-  name: '10,20,21|🇫🇷FR-51.68.13.106-0341 #1'
+  alterId: 0
+  name: 10,20,21,37|未知7 18.2MB/s
   network: tcp
   password: FiSo7J6vfS
   port: 1935
   server: 51.68.13.106
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: x1fr-ovh.devefun.net
   tls: true
   type: trojan
+  udp: true
 - allowInsecure: ''
   name: '10,20,21|🇫🇷FR-51.15.86.181-0792 #1'
   network: tcp
@@ -187,21 +209,6 @@ proxies:
   sni: x1ams-scaleway.devefun.net
   tls: true
   type: trojan
-- name: 11,24,27,30,40|GB_speednode_0008
-  password: b19c4375-d847-4c40-9824-4767c88b5f38
-  port: 10200
-  server: www.ak-hk.top
-  skip-cert-verify: true
-  sni: www.ak-hk.top
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '11,24,27,30|12|🇧 英国2|@ripaojiedian #2'
-  password: 95821db5-66eb-4b5f-a854-f129093e6d47
-  port: 30004
-  server: 156.229.162.50
-  tfo: false
-  type: ss
 - name: 12,30|_GB_国
   password: telegram-id-privatevpns
   port: 22222
@@ -209,28 +216,34 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇬🇧GB-4.158.75.79-0398
-  password: W74XFALLLuw6m5IA
-  port: 443
-  server: series-a2.samanehha.co
-  type: ss
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知117 17.8MB/s
+  name: 19,20,21,37|未知59 18.0MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.79
+  server: 212.102.53.194
   skip-cert-verify: true
   tls: true
   type: ss
-- name: 24|🇬🇧 _英国
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知63 11.9MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.80
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 24,37|🇬🇧GB英国2 2.1MB/s
   password: '!!str 74260700211203800'
   port: 443
   server: daring-gobbler.shiner427.skin
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: daring-gobbler.shiner427.skin
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇬🇧 _英国 #1'
   password: '!!str 74260700211203800'
   port: 443
@@ -286,24 +299,13 @@ proxies:
   uuid: 48adfefe-6599-4cc7-9bf2-a18020260e22
 - alterId: 0
   cipher: auto
-  name: 36,37|未知34 44.9KB/s
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-172.99.190...
   network: tcp
-  port: 47567
-  server: 38.114.120.12
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-149.7.16.1...
-  network: tcp
-  port: 37101
-  server: 149.7.16.149
+  port: 25366
+  server: 172.99.190.249
   tls: false
   type: vmess
-  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
+  uuid: 51259e1c-2c37-415c-b1e1-b791a64b3388
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
@@ -316,15 +318,6 @@ proxies:
   uuid: e922d485-98a7-475a-9a47-cde3722ac82e
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-172.99.190...
-  network: tcp
-  port: 25366
-  server: 172.99.190.249
-  tls: false
-  type: vmess
-  uuid: 51259e1c-2c37-415c-b1e1-b791a64b3388
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
   network: tcp
   port: 26924
@@ -334,6 +327,15 @@ proxies:
   uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-149.7.16.1...
+  network: tcp
+  port: 37101
+  server: 149.7.16.149
+  tls: false
+  type: vmess
+  uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-46.250.253...
   network: tcp
   port: 28872
@@ -341,3 +343,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 762b3923-5885-4c5f-886f-e62788512338
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
+  network: tcp
+  port: '47567'
+  server: 38.114.120.12
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
