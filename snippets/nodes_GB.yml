@@ -1,7 +1,7 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇧 英国住宅IP 01 | 1x UK #1'
-  password: 512e8b4c-f9ab-44eb-b10b-d34ee76d7a99
+  name: '5,9,24,27,30|1| 国住宅IP 01 | 1x UK #1'
+  password: e0f06018-d7e9-4c9c-8986-a9c30634b915
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -51,13 +51,6 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0|🇧英国家宽 01 | 1x UK
-  password: f9963628-5752-47e2-a84f-5dd0b7bd2596
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - name: 5|英国UK-T
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
@@ -195,7 +188,7 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  name: '10,24,27,30|2|🇮🇳1 |  4.0MB/s #3'
+  name: '10,24|2|🇮🇳1 |  4.0MB/s #1'
   network: original
   password: b19c4375-d847-4c40-9824-4767c88b5f38
   port: 10021
@@ -204,34 +197,73 @@ proxies:
   sni: www.hk-jd.top
   tls: true
   type: trojan
+- allowInsecure: ''
+  name: '11,27,30|2|🇬🇧3 |  3.0MB/s #1'
+  network: tcp
+  password: '!!str 74260698218909400'
+  port: 443
+  server: hopeful-halibut.shiner427.skin
+  skip-cert-verify: false
+  sni: hopeful-halibut.shiner427.skin
+  tls: true
+  type: trojan
+- allowInsecure: ''
+  name: '11,27,30|2|🇧1 |  4.1MB/s #1'
+  network: tcp
+  password: '!!str 74260698218909400'
+  port: 443
+  server: 109.107.159.122
+  skip-cert-verify: false
+  sni: electric-mallard.shiner427.skin
+  tls: true
+  type: trojan
 - alpn:
   - http/1.1
-  name: 12,30|_GB_国
+  name: 12|🇬🇧_GB_英国
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 52.56.98.27
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇬🇧GB-185.5.38.111-5299
-  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
-  port: 55988
-  server: 185.5.38.111
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知90 2.7MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  skip-cert-verify: true
+  tls: true
   type: ss
-- name: 24|🇬🇧 英国 社会保险安全部
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知26 3.5MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知14 6.4MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.78
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 24,37|GB国
+  network: tcp
   password: telegram-id-directvpn
   port: 22222
   server: 51.44.194.36
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
-- cipher: aes-256-cfb
-  name: '24,27,30|2|🇧4 |  3.9MB/s #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 62.100.205.48
-  type: ss
+  udp: true
 - name: 24|🇬🇧 _英国
   password: Aimer
   port: 2443
@@ -285,15 +317,31 @@ proxies:
   type: vmess
   udp: true
   uuid: 48adfefe-6599-4cc7-9bf2-a18020260e22
+- client-fingerprint: chrome
+  name: 30|🇧 英国 V2CROSS.COM
+  password: b19c4375-d847-4c40-9824-4767c88b5f38
+  port: 10021
+  server: www.hk-jd.top
+  sni: www.hk-jd.top
+  type: trojan
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 30|🇧 英国 全
+  password: telegram-id-directvpn
+  port: 22222
+  server: 51.20.220.116
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-172.99.190...
   network: tcp
-  port: 26924
-  server: 68.168.31.184
+  port: 25366
+  server: 172.99.190.249
   tls: false
   type: vmess
-  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
+  uuid: 51259e1c-2c37-415c-b1e1-b791a64b3388
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-172.99.190.2...
@@ -306,15 +354,6 @@ proxies:
   uuid: e922d485-98a7-475a-9a47-cde3722ac82e
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-46.250.253...
-  network: tcp
-  port: 28872
-  server: 46.250.253.234
-  tls: false
-  type: vmess
-  uuid: 762b3923-5885-4c5f-886f-e62788512338
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-149.7.16.1...
   network: tcp
   port: 37101
@@ -324,13 +363,13 @@ proxies:
   uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-172.99.190...
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-68.168.31....
   network: tcp
-  port: 25366
-  server: 172.99.190.249
+  port: 26924
+  server: 68.168.31.184
   tls: false
   type: vmess
-  uuid: 51259e1c-2c37-415c-b1e1-b791a64b3388
+  uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-38.114.120.1...
@@ -342,11 +381,11 @@ proxies:
   type: vmess
   uuid: cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c
 - alterId: 0
-  name: 37|🇬🇧GB国
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.56.98.27
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-46.250.253...
+  network: tcp
+  port: 28872
+  server: 46.250.253.234
+  tls: false
+  type: vmess
+  uuid: 762b3923-5885-4c5f-886f-e62788512338

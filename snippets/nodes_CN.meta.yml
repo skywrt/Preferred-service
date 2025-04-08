@@ -6,7 +6,6 @@ proxies:
   port: 14100
   server: dxv4.pai50288.uk
   servername: ''
-  sni: ''
   tls: false
   type: vmess
   uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
@@ -809,16 +808,13 @@ proxies:
     headers:
       Host: api100-core-quic-lf.amemv.com
     path: /index
-- alterId: 0
-  name: 24,37|🇨🇳CN中国2
+- name: 24|_中国
   password: Aimer
   port: 8444
   server: 47.242.66.212
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epccy.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - name: '24|_中国 #1'
   password: Aimer
   port: 80
@@ -985,13 +981,16 @@ proxies:
   skip-cert-verify: false
   sni: epccy.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #24'
+- alterId: 0
+  name: 24,37|CN国
   password: Aimer
   port: 2087
   server: 154.197.64.196
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epccy.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #25'
   password: Aimer
   port: 2087
@@ -999,16 +998,13 @@ proxies:
   skip-cert-verify: false
   sni: epccy.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 24,37|🇳CN国
+- name: '24|_中国 #26'
   password: Aimer
   port: 2083
   server: 154.211.8.84
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epccy.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - name: '24|_中国 #27'
   password: Aimer
   port: 443
@@ -1040,18 +1036,27 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 30|🇨🇳 广东省广州市 移动 3
-  port: 37802
-  server: 183.236.51.38
+  name: 30|🇨🇳 广东省广市 移动
+  port: 46597
+  server: 120.232.153.41
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 30|🇨🇳 广东省市 移动
-  port: 42355
-  server: 120.198.71.219
+  name: 30|🇨🇳 广东省广州市 移动 2
+  port: 59554
+  server: 183.236.51.38
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-RAW-NA 🇨🇳 CN-47.92.152.16...
+  network: raw
+  port: '50002'
+  server: 47.92.152.169
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -1078,15 +1083,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-RAW-NA 🇨🇳 CN-47.92.152.16...
-  network: raw
-  port: '50002'
-  server: 47.92.152.169
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-128-gcm
   name: 40|CN_speednode_0001
   password: 582e242b-752f-4ec9-a640-240ca98d5055
@@ -1098,13 +1094,6 @@ proxies:
   name: 40|CN_speednode_0002
   password: 582e242b-752f-4ec9-a640-240ca98d5055
   port: 43681
-  server: jp1.qsm1.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 40|CN_speednode_0003
-  password: 582e242b-752f-4ec9-a640-240ca98d5055
-  port: 43685
   server: jp1.qsm1.xyz
   type: ss
   udp: true
@@ -1123,24 +1112,10 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 40|CN_speednode_0006
-  password: 582e242b-752f-4ec9-a640-240ca98d5055
-  port: 36795
-  server: hk1.qsm1.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
   name: 40|CN_speednode_0007
   password: 582e242b-752f-4ec9-a640-240ca98d5055
   port: 36796
   server: hk1.qsm1.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 40|CN_speednode_0008
-  password: 582e242b-752f-4ec9-a640-240ca98d5055
-  port: 39785
-  server: hk2.qsm1.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -1154,13 +1129,6 @@ proxies:
   name: 40|CN_speednode_0010
   password: 582e242b-752f-4ec9-a640-240ca98d5055
   port: 39782
-  server: hk2.qsm1.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 40|CN_speednode_0011
-  password: 582e242b-752f-4ec9-a640-240ca98d5055
-  port: 33706
   server: hk2.qsm1.xyz
   type: ss
   udp: true
@@ -1183,13 +1151,6 @@ proxies:
   password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
   port: 55001
   server: hongkong.cnix.asia
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 40|CN_speednode_0015
-  password: 582e242b-752f-4ec9-a640-240ca98d5055
-  port: 39783
-  server: hk3.qsm1.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -1314,13 +1275,6 @@ proxies:
   password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
   port: 25009
   server: singapore.cnix.asia
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 40|CN_speednode_0032
-  password: 582e242b-752f-4ec9-a640-240ca98d5055
-  port: 33654
-  server: hk4.qsm1.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
