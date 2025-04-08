@@ -1,12 +1,9 @@
 proxies:
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30,37|GB国
-  password: 7ed8258d-613c-4f4b-8b4d-56693706385e
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27|2|🇧 英国住宅IP 01 | 1x UK
+  password: cdfb0fb4-322c-4795-99ca-d6efe3f9dc8a
   port: 36271
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -55,8 +52,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|14|🇧英国家宽 01 | 1x UK #1'
-  password: 3573f806-1075-468c-8ac0-744d098b5bdb
+  name: 5,9,11,24,27|0|国家宽 01 | 1x UK
+  password: 6e26e0d8-ce80-4675-ab08-4ea298c7d746
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -130,7 +127,7 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
-- name: 9,11,24,27,30,40|GB_speednode_0008
+- name: '9,20,21,24,27|14|GB_speednode_0008 #2'
   password: b19c4375-d847-4c40-9824-4767c88b5f38
   port: 10200
   server: www.ak-hk.top
@@ -139,22 +136,12 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 9,11,24,27,30,37|🇧GB英国3
-  password: c46ba905-31de-4090-8153-ec7d2e063079
-  port: 30004
-  server: 156.229.162.50
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-  udp: true
-- alterId: 0
   cipher: auto
-  name: 10,28|🇩🇪 德国法兰克福-1B
+  name: 10,20,21,28|🇩🇪 德国法兰克福-1B
   network: ws
   port: 23451
   server: frankfurt.faforex.eu.org
+  servername: ''
   tls: false
   type: vmess
   udp: true
@@ -188,19 +175,17 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  alterId: 0
-  name: 10,20,21,37|未知7 18.2MB/s
+  name: '10,20,21|🇫🇷FR-51.68.13.106-0306 #1'
   network: tcp
   password: FiSo7J6vfS
   port: 1935
   server: 51.68.13.106
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: x1fr-ovh.devefun.net
   tls: true
   type: trojan
-  udp: true
 - allowInsecure: ''
-  name: '10,20,21|🇫🇷FR-51.15.86.181-0792 #1'
+  name: '10,20,21|🇫🇷FR-51.15.86.181-0293 #1'
   network: tcp
   password: eG92F3gh09
   port: 1935
@@ -209,9 +194,19 @@ proxies:
   sni: x1ams-scaleway.devefun.net
   tls: true
   type: trojan
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 11,27,37|🇬GB 25.1KB/s
+  password: MK8DFM50KMBSIWDX
+  port: 19016
+  server: 206.245.211.26
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
 - alpn:
   - http/1.1
-  name: 12,24,30|_GB_国
+  name: 12,24|🇬🇧 英国 伦敦Amazon数据中心
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -219,34 +214,26 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知59 18.0MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.194
-  skip-cert-verify: true
-  tls: true
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇬🇧GB-185.5.38.111-5299
+  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
+  port: 55988
+  server: 185.5.38.111
   type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知63 11.9MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.80
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 24,37|🇬🇧GB英国2 2.1MB/s
+- name: 20,21,24|🇺🇸 美国 Amazon数据中心
+  password: telegram-id-directvpn
+  port: 22222
+  server: 18.169.137.169
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 24|🇬🇧 _英国
   password: '!!str 74260700211203800'
   port: 443
   server: daring-gobbler.shiner427.skin
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: daring-gobbler.shiner427.skin
-  tls: true
   type: trojan
-  udp: true
 - name: '24|🇬🇧 _英国 #1'
   password: '!!str 74260700211203800'
   port: 443
@@ -300,12 +287,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 48adfefe-6599-4cc7-9bf2-a18020260e22
-- client-fingerprint: chrome
-  name: 30|🇧 英国 Amazon数据中心
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.56.98.27
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-172.99.190...

@@ -7,15 +7,15 @@ proxies:
   sni: hinet.mjt000.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|14|🇼台湾 03 | 1x TW #1'
-  password: 3573f806-1075-468c-8ac0-744d098b5bdb
+  name: 5,9,11,24,27|0|🇼台湾 03 | 1x TW
+  password: 6e26e0d8-ce80-4675-ab08-4ea298c7d746
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|  01 | 1x TW #1'
-  password: b7baf451-4b91-4a72-ac4a-574106f81750
+  name: 5,9,11,24,27|2|🇼 台湾 01 | 1x TW
+  password: cdfb0fb4-322c-4795-99ca-d6efe3f9dc8a
   port: 36241
   server: free.2weradf.xyz
   type: ss
@@ -34,20 +34,17 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|14|🇼台湾 01 | 1x TW #1'
-  password: 3573f806-1075-468c-8ac0-744d098b5bdb
+  name: 5,9,11,24,27|0| 01 | 1x TW
+  password: 6e26e0d8-ce80-4675-ab08-4ea298c7d746
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30,37|TW
-  password: 7ed8258d-613c-4f4b-8b4d-56693706385e
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27|2|🇼 台湾 03 | 1x TW
+  password: cdfb0fb4-322c-4795-99ca-d6efe3f9dc8a
   port: 36245
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -64,15 +61,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇼 台湾 02 | 1x TW #1'
-  password: b7baf451-4b91-4a72-ac4a-574106f81750
+  name: 5,9,11,24,27|2|🇹🇼 台湾 02 | 1x TW
+  password: cdfb0fb4-322c-4795-99ca-d6efe3f9dc8a
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|14|🇹🇼台湾 02 | 1x TW #2'
-  password: 3573f806-1075-468c-8ac0-744d098b5bdb
+  name: 5,9,11,24,27|0|🇼台湾 02 | 1x TW
+  password: 6e26e0d8-ce80-4675-ab08-4ea298c7d746
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
@@ -90,16 +87,29 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: '11,27|12|🇼 台湾|@ripaojiedian #1'
+  password: a5633270-44fd-4071-90ef-c6d47d8e61a7
+  port: 45632
+  server: iepl.ytxfx.xyz
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '11,24,27,30|12|台湾|@ripaojiedian #1'
-  network: tcp
-  port: 3690
-  server: 58acaca7-sumqo0-tbfl8f-xcf.b.fosant.com
+  name: '11,27|12,13|台湾2|@ripaojiedian #1'
+  network: ws
+  port: '16616'
+  server: m.cnmjin.net
   servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 3219f740-4024-11ef-bfd4-f23c93136cb3
+  uuid: 6400c720-13f6-45b0-81ea-419b89873cd2
+  ws-opts:
+    headers:
+      Host: 66d0c215104536850c337da2227b21cb.mobgslb.tbcache.com
+    path: /
 - alterId: 0
   cipher: auto
   name: '24|1|🇹🇼6 |  6.1MB/s #1'
@@ -109,12 +119,18 @@ proxies:
   tls: false
   type: vmess
   uuid: af6cd71c-9604-11ef-a97b-f23c93141fad
+- cipher: rc4-md5
+  name: 24,27|1|🇼1 |  4.9MB/s
+  password: z6D4Jf
+  port: 25245
+  server: 118.184.136.138
+  type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: '37|TW #1'
+  name: 37|TW
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 211.72.214.65
+  server: 60.249.35.94
   skip-cert-verify: true
   tls: true
   type: ss
@@ -123,7 +139,7 @@ proxies:
   name: 37|TW2
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 211.22.161.135
+  server: 60.249.35.3
   skip-cert-verify: true
   tls: true
   type: ss
@@ -132,25 +148,55 @@ proxies:
   name: 37|TW3
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 211.22.161.134
+  server: 211.72.214.21
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
   name: 37|TW4
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.28.138
+  password: Aimer
+  port: 443
+  server: 188.253.6.210
   skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
   tls: true
-  type: ss
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 37|TW5
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 61.216.165.29
+  server: 60.249.35.39
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|TW6
+  network: ws
+  password: 02926f9e-153a-42c8-8ecd-8fade7009ad1
+  port: 443
+  server: 166.0.198.68
+  skip-cert-verify: true
+  sni: golinkwuxian.top
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|TW7
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 125.227.86.45
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|TW8
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.35.95
   skip-cert-verify: true
   tls: true
   type: ss

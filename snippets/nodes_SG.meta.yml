@@ -19,15 +19,15 @@ proxies:
       Host: ''
     path: ''
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|14|🇬新加坡 03 | 1x SG #1'
-  password: 3573f806-1075-468c-8ac0-744d098b5bdb
+  name: 5,9,11,24,27|0|🇬新加坡 03 | 1x SG
+  password: 6e26e0d8-ce80-4675-ab08-4ea298c7d746
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|14|🇸🇬新加坡 02 | 1x SG #2'
-  password: 3573f806-1075-468c-8ac0-744d098b5bdb
+  name: 5,9,11,24,27|0|🇬新加坡 02 | 1x SG
+  password: 6e26e0d8-ce80-4675-ab08-4ea298c7d746
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
@@ -99,15 +99,15 @@ proxies:
   sni: x130.flybar.work
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0|🇬 加 01 | 1x SG
-  password: b7baf451-4b91-4a72-ac4a-574106f81750
+  name: 5,9,11,24,27|2|🇬 新加坡 01 | 1x SG
+  password: cdfb0fb4-322c-4795-99ca-d6efe3f9dc8a
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|14|🇬新加坡 01 | 1x SG #1'
-  password: 3573f806-1075-468c-8ac0-744d098b5bdb
+  name: 5,9,11,24,27|0| 01 | 1x SG
+  password: 6e26e0d8-ce80-4675-ab08-4ea298c7d746
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
@@ -125,11 +125,14 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇬 新加坡 02 | 1x SG #1'
-  password: b7baf451-4b91-4a72-ac4a-574106f81750
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,37|SG
+  password: cdfb0fb4-322c-4795-99ca-d6efe3f9dc8a
   port: 36173
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - name: 5|新加坡06|流媒体
@@ -204,14 +207,11 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30,37|🇸🇬SG
-  password: 7ed8258d-613c-4f4b-8b4d-56693706385e
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27|2|🇬 新加坡 03 | 1x SG
+  password: cdfb0fb4-322c-4795-99ca-d6efe3f9dc8a
   port: 36175
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - name: 5|新加坡07|流媒体
@@ -287,14 +287,6 @@ proxies:
     headers:
       Host: sg1.pkyun.website
     path: /sg1
-- cipher: aes-256-cfb
-  name: '9,11,24,27,30|11|🇬 特殊|@ripaojiedian #1'
-  password: amazonskr05
-  port: 443
-  server: 13.212.241.11
-  tfo: false
-  type: ss
-  udp: true
 - delay: 681
   name: 10|新加坡 001
   network: ws
@@ -311,7 +303,45 @@ proxies:
       Host: c01.ylkszy.eu.org
     path: /?ed=2560
 - cipher: aes-256-cfb
-  name: '11,24,27,30|1|🇬3 |  2.9MB/s #1'
+  name: 11|2|🇸🇬3 |  5.4MB/s
+  password: wiaimihu22
+  port: 80
+  server: 54.255.184.248
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '11,27|12,13|新加坡|@ripaojiedian #1'
+  network: ws
+  port: '16618'
+  server: yes.mojcn.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 6400c720-13f6-45b0-81ea-419b89873cd2
+  ws-opts:
+    headers:
+      Host: 66d0c215104536850c337da2227b21cb.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '11,27|12|🇬 新加坡2|@ripaojiedian #1'
+  port: 4137
+  server: 41158001-suh6o0-sv6d5y-ddgs.c.volczijie.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: c870fe5a-0729-11f0-8cf9-f23c93136cb3
+- cipher: aes-256-gcm
+  name: 19|🇸🇬SG-45.80.181.77-0473
+  password: sgg7vReHnfEtUtAsWFPeeFOSJ6Q3d9owYfCQSwQMPnk=
+  port: 28187
+  server: 45.80.181.77
+  type: ss
+- cipher: aes-256-cfb
+  name: 20,21,24,27|1|🇸🇬7 |  1.4MB/s
   password: 25612qazwsx
   port: 25612
   server: 18.142.181.4
@@ -345,6 +375,14 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 27|1|🇸🇬3 |  5.1MB/s
+  port: 4137
+  server: 113437c7-submo0-su9xu5-1phl.c.volczijie.com
+  tls: false
+  type: vmess
+  uuid: 0aed82ca-fd08-11ef-8cf9-f23c93136cb3
 - alterId: 0
   cipher: auto
   name: 28|🇸🇬 新加坡NO.2
@@ -457,13 +495,12 @@ proxies:
   uuid: 942d56e4-cf72-4a7a-a87c-f555a270d79a
 - alterId: 0
   cipher: auto
-  name: 36,37|未知41
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-194.233.72.2...
   network: tcp
-  port: 27575
+  port: '27575'
   server: 194.233.72.228
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 16509262-dbe2-43ba-99ce-07913d2a18b4
 - alterId: 0
@@ -536,13 +573,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36,37|未知49 459.1KB/s
+  name: '36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146.233... #2'
   network: tcp
-  port: 38324
+  port: '38324'
   server: 62.146.233.115
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: f863ef99-5ef0-4321-aaac-a476a5e8c3fb
 - alterId: 0
