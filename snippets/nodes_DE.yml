@@ -58,8 +58,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|国 01 | 1x DE #1'
-  password: c27eb47b-a7a7-4b1d-9ff8-e586de688376
+  name: '5,9,11,24,27,30|1|国 01 | 1x DE #1'
+  password: 6f411881-272d-4bc3-b7dd-072263b05643
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -74,8 +74,8 @@ proxies:
   type: vmess
   uuid: b52f0a62-068c-41bf-a4f6-ac3faddded46
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|14|🇪 德国 01 | 1x DE #1'
-  password: c4589446-0a0e-49ea-88a9-dfc0c2b6b472
+  name: '5,9,11,24,27,30|2|🇪 德国 01 | 1x DE #1'
+  password: a3999a4c-7f06-4521-83ea-1202ea1c37ab
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -120,6 +120,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
+- cipher: chacha20-ietf-poly1305
+  name: '9,11,20,21,24,27,30|12|🇪 德国|@ripaojiedian #2'
+  password: 95821db5-66eb-4b5f-a854-f129093e6d47
+  port: 30004
+  server: 156.226.174.40
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 1
   cipher: auto
   name: 10|德国 001
@@ -137,9 +145,10 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: '10,24|🇩🇪 _德国 #1'
+  client-fingerprint: chrome
+  name: 10,24,30|🇧 英国 V2CROSS.COM
   network: ws
-  port: '443'
+  port: 443
   raw:
     add: 193.122.58.158
     aid: '0'
@@ -165,7 +174,8 @@ proxies:
       Host: irvideo.cfd
     path: /linkws
 - allowInsecure: ''
-  name: 10|德国 018
+  client-fingerprint: chrome
+  name: 10,30|🇪 德国 州克Amazon数据中心
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -174,13 +184,6 @@ proxies:
   sni: trojan.burgerip.co.uk
   tls: true
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '11,20,21,24,27,30|1,11|🇪 德国|@ripaojiedian #1'
-  password: 95821db5-66eb-4b5f-a854-f129093e6d47
-  port: 30004
-  server: 156.226.174.40
-  tfo: false
-  type: ss
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -308,24 +311,14 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.18...
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
   network: tcp
-  port: '22324'
-  server: 23.158.56.184
+  port: '48961'
+  server: 23.158.56.21
   servername: ''
   tls: false
   type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-193.108.11...
-  network: tcp
-  port: '23843'
-  server: 193.108.119.198
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3d36b6cb-5d89-46f0-9d51-65b591301762
+  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
@@ -338,32 +331,23 @@ proxies:
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NONE 🇩🇪 DE-193.108.11... #1'
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-193.108.11...
   network: tcp
-  port: 15713
-  server: 193.108.118.136
+  port: '23843'
+  server: 193.108.119.198
+  servername: ''
   tls: false
   type: vmess
-  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
+  uuid: 3d36b6cb-5d89-46f0-9d51-65b591301762
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NONE 🇩🇪 DE-193.108.11... #2'
+  name: '36|🔒 VM-TCP-NONE 🇩🇪 DE-193.108.11... #1'
   network: tcp
   port: 24164
   server: 193.108.117.143
   tls: false
   type: vmess
   uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.21...
-  network: tcp
-  port: '48961'
-  server: 23.158.56.21
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -376,3 +360,12 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NONE 🇩🇪 DE-193.108.11... #2'
+  network: tcp
+  port: 15713
+  server: 193.108.118.136
+  tls: false
+  type: vmess
+  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9

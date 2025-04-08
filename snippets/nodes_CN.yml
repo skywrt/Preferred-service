@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '5,11,12,24,27,30|12|美国3|@ripaojiedian #1'
+  name: '5,11,12,24,27,30|13|美国3|@ripaojiedian #2'
   network: tcp
   port: 14100
   server: dxv4.pai50288.uk
@@ -848,15 +848,6 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '24|_中国 #12'
-  network: tcp
-  port: '46597'
-  server: 120.232.153.41
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
   name: '24|_中国 #14'
   network: tcp
   port: '42355'
@@ -970,10 +961,9 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 24,30|🇨🇳 林省 移动(全省通用) 3
+  name: '24|_中国 #32'
   network: ws
-  port: 30840
+  port: '30840'
   server: v40.heduian.link
   tls: false
   type: vmess
@@ -996,20 +986,22 @@ proxies:
     headers:
       Host: next2.orz.my.id
     path: /
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 30|🇨🇳 东
+  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
+  port: 21115
+  server: okanc.node-is.green
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇨🇳 CN-120.232.17.7...
-  network: ws
-  port: 33202
-  server: 120.232.17.70
-  servername: yd2.ainivp.com
-  tls: true
+  client-fingerprint: chrome
+  name: 30|🇳 广东省广州 移动
+  port: 37802
+  server: 183.236.51.38
+  tls: false
   type: vmess
-  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
-  ws-opts:
-    headers:
-      Host: yd2.ainivp.com
-    path: /ray
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-RAW-NA 🇨🇳 CN-47.92.152.16...
@@ -1028,3 +1020,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇨🇳 CN-120.232.17.7...
+  network: ws
+  port: 33202
+  server: 120.232.17.70
+  servername: yd2.ainivp.com
+  tls: true
+  type: vmess
+  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
+  ws-opts:
+    headers:
+      Host: yd2.ainivp.com
+    path: /ray

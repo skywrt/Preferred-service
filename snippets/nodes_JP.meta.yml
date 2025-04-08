@@ -15,8 +15,8 @@ proxies:
   sni: 421421.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|14|🇵 日本 01 | 1x JP #1'
-  password: c4589446-0a0e-49ea-88a9-dfc0c2b6b472
+  name: '5,9,11,24,27,30|2|🇵 日本 01 | 1x JP #1'
+  password: a3999a4c-7f06-4521-83ea-1202ea1c37ab
   port: 36111
   server: free.2weradf.xyz
   type: ss
@@ -32,8 +32,8 @@ proxies:
   type: vmess
   uuid: c06797d5-fa41-4b48-b132-d268d2acb302
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|14|🇵 日本 03 | 1x JP #1'
-  password: c4589446-0a0e-49ea-88a9-dfc0c2b6b472
+  name: '5,9,11,24,27,30|2|🇵 日本 03 | 1x JP #1'
+  password: a3999a4c-7f06-4521-83ea-1202ea1c37ab
   port: 36115
   server: free.2weradf.xyz
   type: ss
@@ -84,15 +84,15 @@ proxies:
       Host: ''
     path: ''
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|14|🇯🇵 日本 02 | 1x JP #1'
-  password: c4589446-0a0e-49ea-88a9-dfc0c2b6b472
+  name: '5,9,11,24,27,30|2|🇯🇵 日本 02 | 1x JP #1'
+  password: a3999a4c-7f06-4521-83ea-1202ea1c37ab
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0| 01 | 1x JP #1'
-  password: c27eb47b-a7a7-4b1d-9ff8-e586de688376
+  name: '5,9,11,24,27,30|1|🇵日本 01 | 1x JP #1'
+  password: 6f411881-272d-4bc3-b7dd-072263b05643
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
@@ -170,8 +170,8 @@ proxies:
       Host: ''
     path: ''
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇵日本 03 | 1x JP #1'
-  password: c27eb47b-a7a7-4b1d-9ff8-e586de688376
+  name: '5,9,11,24,27,30|1|🇵日本 03 | 1x JP #1'
+  password: 6f411881-272d-4bc3-b7dd-072263b05643
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
@@ -200,8 +200,8 @@ proxies:
   sni: 421421.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇵日本 02 | 1x JP #1'
-  password: c27eb47b-a7a7-4b1d-9ff8-e586de688376
+  name: '5,9,11,24,27,30|1|🇵日本 02 | 1x JP #1'
+  password: 6f411881-272d-4bc3-b7dd-072263b05643
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
@@ -244,35 +244,59 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 9,37|未知47
-  password: TTY07WM37NEXCPQB
-  port: 18012
-  server: 156.231.104.22
-  skip-cert-verify: true
-  tls: true
+- cipher: aes-256-cfb
+  name: '9,11,24,27,30|0,12| |@ripaojiedian #1'
+  password: thisgou
+  port: 80
+  server: 18.183.101.244
+  tfo: false
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 9|🇯🇵 13|日本4|@ripaojiedian
-  port: 31842
-  server: 45.159.50.212
+  name: '9,10,27,30|0|🇵6 |  1.1MB/s #1'
+  network: ws
+  port: 11184
+  server: 175.215.154.208
+  servername: oracle2ipv4.till.nyc.mn
   skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 0ee75dd1-5e59-4615-a6a8-6fe7aa0b6f17
+  ws-opts:
+    headers:
+      Host: oracle2ipv4.till.nyc.mn
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '9,11,27,30|12|🇯🇵 日本2|@ripaojiedian #2'
+  port: 35575
+  server: 45.159.50.12
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   udp: true
-  uuid: 570e52c1-be15-4c79-a9e7-bab82555a034
+  uuid: 94a09477-7cdc-450d-aecd-c73ef596b5e9
+- cipher: aes-256-cfb
+  name: '9,11,20,21,24,27,30|12|🇯🇵 特殊|@ripaojiedian #2'
+  password: thisgou
+  port: 80
+  server: 13.230.226.50
+  tfo: false
+  type: ss
+  udp: true
 - cipher: rc4-md5
-  name: 9|🇯🇵 日本|@ripaojiedian
+  name: '9,11,27,30|12|🇵 日本|@ripaojiedian #2'
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202504031266665-2FO2jW0pPK.download.microsoft.com
+    host: 202504031266665-L1JNrfsrAR.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
+  tfo: false
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -401,44 +425,9 @@ proxies:
   tls: true
   type: vmess
   uuid: 92afc96e-63c9-420a-9a5c-410f529d8b23
-- cipher: aes-256-cfb
-  name: '11,24,27,30|1,11|🇯🇵 日本|@ripaojiedian #1'
-  password: thisgou
-  port: 80
-  server: 18.183.101.244
-  tfo: false
-  type: ss
-- cipher: rc4-md5
-  name: '11,27,30|11|🇵 日本|@ripaojiedian #1'
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202504031266665-L1JNrfsrAR.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
-  name: '11,27,30|11|🇯🇵 日本2|@ripaojiedian #1'
-  port: 35575
-  server: 45.159.50.12
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 94a09477-7cdc-450d-aecd-c73ef596b5e9
-- cipher: aes-256-cfb
-  name: '11,20,21,24,27,30|11|🇯🇵 特殊|@ripaojiedian #1'
-  password: thisgou
-  port: 80
-  server: 13.230.226.50
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '11,24,27,30|12|日本2|@ripaojiedian #1'
+  name: '11,24,27,30|13|日本2|@ripaojiedian #2'
   network: tcp
   port: 35575
   server: 45.159.50.12
@@ -529,9 +518,10 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '24|🇯🇵 日本 东京Amazon数据中心 #1'
+  client-fingerprint: chrome
+  name: 24,30|🇵 日本 东京Amazon中
   network: ws
-  port: '52352'
+  port: 52352
   server: 0000000000000000000000000044.bgroup-node-for-bigairport.sbs
   tls: true
   type: vmess
@@ -813,6 +803,29 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.230.235.2...
+  network: tcp
+  port: '48889'
+  server: 13.230.235.247
+  tls: false
+  type: vmess
+  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-54.178.117.1...
+  network: ws
+  port: '42359'
+  server: 54.178.117.145
+  servername: 0000000000000000000000000078.cgroup-node-for-bigairport.sbs
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000078.cgroup-node-for-bigairport.sbs
+    path: /
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
   network: tcp
   port: '1069'
@@ -821,15 +834,6 @@ proxies:
   tls: false
   type: vmess
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-13.230.235.2...
-  network: tcp
-  port: '48889'
-  server: 13.230.235.247
-  tls: false
-  type: vmess
-  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
 - name: 40|JP_speednode_0006
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
