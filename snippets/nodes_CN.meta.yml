@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '5,11,12,24,27,30|13|美国3|@ripaojiedian #1'
+  name: '5,11,12,24,27,30|13|美国3|@ripaojiedian #2'
   network: tcp
   port: 14100
   server: dxv4.pai50288.uk
@@ -798,22 +798,17 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '24|_中国 #10'
-  network: tcp
-  port: '4138'
-  server: 113437c7-submo0-su9xu5-1phl.c.volczijie.com
+  name: '24|_中国 #32'
+  network: ws
+  port: '30840'
+  server: v40.heduian.link
   tls: false
   type: vmess
-  uuid: 0aed82ca-fd08-11ef-8cf9-f23c93136cb3
-- alterId: 0
-  cipher: auto
-  name: '24|_中国 #4'
-  network: tcp
-  port: '59554'
-  server: 183.236.51.38
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: api100-core-quic-lf.amemv.com
+    path: /index
 - alterId: 0
   name: 24,37|🇨🇳CN中国2
   password: Aimer
@@ -836,6 +831,15 @@ proxies:
   name: '24|_中国 #3'
   network: tcp
   port: '39039'
+  server: 183.236.51.38
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '24|_中国 #4'
+  network: tcp
+  port: '59554'
   server: 183.236.51.38
   tls: false
   type: vmess
@@ -878,6 +882,15 @@ proxies:
   uuid: 03c1d503-4803-11ef-8f3d-f23c9313b177
 - alterId: 0
   cipher: auto
+  name: '24|_中国 #10'
+  network: tcp
+  port: '4138'
+  server: 113437c7-submo0-su9xu5-1phl.c.volczijie.com
+  tls: false
+  type: vmess
+  uuid: 0aed82ca-fd08-11ef-8cf9-f23c93136cb3
+- alterId: 0
+  cipher: auto
   name: '24|_中国 #11'
   network: tcp
   port: '37802'
@@ -885,11 +898,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: '24,27,30|2|🇸18 |  2.1MB/s #1'
+  name: '24|_中国 #12'
   network: tcp
-  port: 46597
+  port: '46597'
   server: 120.232.153.41
   tls: false
   type: vmess
@@ -1012,20 +1025,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 24,30|🇳 吉林省 移动(全省通用) 2
-  network: ws
-  port: 30840
-  server: v40.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: api100-core-quic-lf.amemv.com
-    path: /index
-- alterId: 0
-  cipher: auto
   name: 28|🇨🇳 TAIWAN-1A
   network: ws
   port: 53240
@@ -1041,27 +1040,18 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 30|🇨 广东省广市 移动
-  port: 42550
+  name: 30|🇨🇳 广东省广州市 移动 3
+  port: 37802
   server: 183.236.51.38
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-RAW-NA 🇨🇳 CN-47.92.152.16...
-  network: raw
-  port: '50002'
-  server: 47.92.152.169
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
-  network: tcp
-  port: '59003'
-  server: 183.236.51.36
+  client-fingerprint: chrome
+  name: 30|🇨🇳 广东省市 移动
+  port: 42355
+  server: 120.198.71.219
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -1079,9 +1069,174 @@ proxies:
     headers:
       Host: yd2.ainivp.com
     path: /ray
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  network: tcp
+  port: '59003'
+  server: 183.236.51.36
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-RAW-NA 🇨🇳 CN-47.92.152.16...
+  network: raw
+  port: '50002'
+  server: 47.92.152.169
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0001
+  password: 582e242b-752f-4ec9-a640-240ca98d5055
+  port: 33652
+  server: hk2.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0002
+  password: 582e242b-752f-4ec9-a640-240ca98d5055
+  port: 43681
+  server: jp1.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0003
+  password: 582e242b-752f-4ec9-a640-240ca98d5055
+  port: 43685
+  server: jp1.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0004
+  password: 582e242b-752f-4ec9-a640-240ca98d5055
+  port: 39781
+  server: hk1.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0005
+  password: 582e242b-752f-4ec9-a640-240ca98d5055
+  port: 33651
+  server: hk1.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0006
+  password: 582e242b-752f-4ec9-a640-240ca98d5055
+  port: 36795
+  server: hk1.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0007
+  password: 582e242b-752f-4ec9-a640-240ca98d5055
+  port: 36796
+  server: hk1.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0008
+  password: 582e242b-752f-4ec9-a640-240ca98d5055
+  port: 39785
+  server: hk2.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0009
+  password: 582e242b-752f-4ec9-a640-240ca98d5055
+  port: 39786
+  server: hk1.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0010
+  password: 582e242b-752f-4ec9-a640-240ca98d5055
+  port: 39782
+  server: hk2.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0011
+  password: 582e242b-752f-4ec9-a640-240ca98d5055
+  port: 33706
+  server: hk2.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0012
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 55012
+  server: hongkong.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0013
+  password: 582e242b-752f-4ec9-a640-240ca98d5055
+  port: 36794
+  server: hk4.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0014
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 55001
+  server: hongkong.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0015
+  password: 582e242b-752f-4ec9-a640-240ca98d5055
+  port: 39783
+  server: hk3.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0016
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 56008
+  server: gdgzcm-hkbase.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0017
+  password: 582e242b-752f-4ec9-a640-240ca98d5055
+  port: 43786
+  server: jp1.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0018
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 12002
+  server: japan.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0019
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 12004
+  server: japan.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0020
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 16002
+  server: jscm-jp.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0021
+  password: 582e242b-752f-4ec9-a640-240ca98d5055
+  port: 33653
+  server: hk3.qsm1.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 40|CN_speednode_0002
+  name: 40|CN_speednode_0022
   port: 31800
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
@@ -1092,42 +1247,190 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 40|CN_speednode_0003
-  port: 46716
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.nvidia.com
+- alterId: 0
+  cipher: auto
+  name: 40|CN_speednode_0023
+  port: 3681
+  server: 0d116b61-sudhc0-su9u31-b4pt.c.volczijie.com
   skip-cert-verify: false
-  tls: true
-  type: vless
+  tls: false
+  type: vmess
   udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 40|CN_speednode_0004
-  port: 56127
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.yahoo.com
+  uuid: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
+- alterId: 0
+  cipher: auto
+  name: 40|CN_speednode_0024
+  port: 4135
+  server: ac681bb7-sudhc0-su9u31-b4pt.d.volczijie.com
   skip-cert-verify: false
-  tls: true
-  type: vless
+  tls: false
+  type: vmess
   udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 40|CN_speednode_0005
-  port: 22734
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: bsuqian01.dynu.net
-  servername: www.amazon.com
+  uuid: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0025
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 12001
+  server: japan.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0026
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 16001
+  server: jscm-jp.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0027
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 25003
+  server: gdcm-sg.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0028
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 25005
+  server: gdcm-sg.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0029
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 25011
+  server: singapore.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0030
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 25007
+  server: singapore.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0031
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 25009
+  server: singapore.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0032
+  password: 582e242b-752f-4ec9-a640-240ca98d5055
+  port: 33654
+  server: hk4.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0033
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 55005
+  server: hongkong.cnix.asia
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 40|CN_speednode_0034
+  port: 4137
+  server: 0d116b61-sudhc0-su9u31-b4pt.c.volczijie.com
   skip-cert-verify: false
-  tls: true
-  type: vless
+  tls: false
+  type: vmess
   udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  uuid: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0035
+  password: 582e242b-752f-4ec9-a640-240ca98d5055
+  port: 38793
+  server: hk3.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0036
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 13002
+  server: jscm-hkmax.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0037
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 13008
+  server: jscm-hkmax.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0038
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 13007
+  server: jscm-hkmax.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0039
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 13003
+  server: jscm-hkmax.cnix.asia
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 40|CN_speednode_0040
+  port: 3684
+  server: ac681bb7-sudhc0-su9u31-b4pt.d.volczijie.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0041
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 25004
+  server: gdcm-sg.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0042
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 13005
+  server: jscm-hkmax.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0043
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 13011
+  server: jscm-usa.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0044
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 13004
+  server: jscm-hkmax.cnix.asia
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0045
+  password: 582e242b-752f-4ec9-a640-240ca98d5055
+  port: 35619
+  server: oz.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0046
+  password: 582e242b-752f-4ec9-a640-240ca98d5055
+  port: 36617
+  server: oz.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 40|CN_speednode_0047
+  password: 2b6f2ca8-421e-4a93-9a2a-b64cb6696fc5
+  port: 13001
+  server: jscm-hkmax.cnix.asia
+  type: ss
+  udp: true
