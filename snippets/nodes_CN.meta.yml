@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '5,11,12,24,27,30|13|美国3|@ripaojiedian #2'
+  name: '5,11,12,24,27,30|13|美国3|@ripaojiedian #1'
   network: tcp
   port: 14100
   server: dxv4.pai50288.uk
@@ -814,13 +814,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 24|_中国
+- alterId: 0
+  name: 24,37|🇨🇳CN中国2
   password: Aimer
   port: 8444
   server: 47.242.66.212
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epccy.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #1'
   password: Aimer
   port: 80
@@ -879,6 +882,15 @@ proxies:
   network: tcp
   port: '37802'
   server: 183.236.51.38
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: '0'
+  cipher: auto
+  name: '24,27,30|2|🇸18 |  2.1MB/s #1'
+  network: tcp
+  port: 46597
+  server: 120.232.153.41
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -974,13 +986,16 @@ proxies:
   skip-cert-verify: false
   sni: epccy.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #26'
+- alterId: 0
+  name: 24,37|🇳CN国
   password: Aimer
   port: 2083
   server: 154.211.8.84
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epccy.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #27'
   password: Aimer
   port: 443
@@ -997,9 +1012,10 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '24|_中国 #32'
+  client-fingerprint: chrome
+  name: 24,30|🇳 吉林省 移动(全省通用) 2
   network: ws
-  port: '30840'
+  port: 30840
   server: v40.heduian.link
   tls: false
   type: vmess
@@ -1022,18 +1038,11 @@ proxies:
     headers:
       Host: next2.orz.my.id
     path: /
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 30|🇨🇳 东
-  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
-  port: 21115
-  server: okanc.node-is.green
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 30|🇳 广东省广州 移动
-  port: 37802
+  name: 30|🇨 广东省广市 移动
+  port: 42550
   server: 183.236.51.38
   tls: false
   type: vmess
