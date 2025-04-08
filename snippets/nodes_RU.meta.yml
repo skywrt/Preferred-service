@@ -29,8 +29,8 @@ proxies:
       Host: pormang.webhost99.workers.dev
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|0|🇺 01 | 1x RU
-  password: 6e26e0d8-ce80-4675-ab08-4ea298c7d746
+  name: 5,9,11,24,27,30|0|🇺俄罗斯 01 | 1x RU
+  password: c27eb47b-a7a7-4b1d-9ff8-e586de688376
   port: 31511
   server: free.2apzhfa.xyz
   type: ss
@@ -61,8 +61,8 @@ proxies:
   server: 217.30.10.18
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|2|🇺 俄罗斯 01 | 1x RU
-  password: cdfb0fb4-322c-4795-99ca-d6efe3f9dc8a
+  name: '5,9,11,24,27,30|14|🇺 俄罗斯 01 | 1x RU #1'
+  password: c4589446-0a0e-49ea-88a9-dfc0c2b6b472
   port: 36511
   server: free.2weradf.xyz
   type: ss
@@ -178,9 +178,9 @@ proxies:
     path: /xrenvws
 - alterId: 0
   cipher: auto
-  name: 10,24|🇷🇺 _俄罗斯
+  name: 10|俄罗斯 003
   network: ws
-  port: '443'
+  port: 443
   raw:
     add: cg1c09.waimaoglobaldirect.cc
     aid: '0'
@@ -207,16 +207,14 @@ proxies:
     path: /api/v1/graphql
 - alterId: 0
   cipher: auto
-  name: '12,24|1|🇷🇺5 |  3.2MB/s #1'
+  name: '12,30|🇺_RU_俄罗斯 #1'
   network: ws
-  port: '22001'
+  port: 22001
   server: 195.58.49.84
   tls: false
   type: vmess
   uuid: 46afe023-db88-4d69-b1d5-7a486ee1962e
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - cipher: aes-256-cfb
   name: '13,16|🇷🇺_RU_俄罗斯_8 #1'
@@ -314,6 +312,69 @@ proxies:
     headers:
       Host: ap.ylks.xyz
     path: '%2Fblue'
+- alterId: 0
+  cipher: auto
+  name: '24,27,30|1|🇺1 |  1.4MB/s #1'
+  network: ws
+  port: 22002
+  raw:
+    add: 195.58.49.84
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: fd3d4f2e-1ff7-4bd1-916a-991ccb3dc2e1
+    net: ws
+    path: /
+    port: '22002'
+    ps: 🇷🇺 --001-1B
+    scy: ''
+    sni: ''
+    tls: ''
+    type: none
+    v: '2'
+  server: 195.58.49.84
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fd3d4f2e-1ff7-4bd1-916a-991ccb3dc2e1
+  ws-opts:
+    path: /
+- name: 24|🇷🇺 _俄罗斯
+  password: Aimer
+  port: 2053
+  server: 176.124.223.40
+  skip-cert-verify: false
+  sni: epccy.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #1'
+  password: Aimer
+  port: 2053
+  server: 46.254.92.201
+  skip-cert-verify: false
+  sni: epccy.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #2'
+  password: Aimer
+  port: 2053
+  server: 213.241.198.189
+  skip-cert-verify: false
+  sni: epccy.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #3'
+  password: Aimer
+  port: 443
+  server: 5.182.85.28
+  skip-cert-verify: false
+  sni: epccy.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #4'
+  password: Aimer
+  port: 8443
+  server: 92.243.74.239
+  skip-cert-verify: false
+  sni: epccy.ambercc.filegear-sg.me
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇷🇺 RU-195.58.49.84:...

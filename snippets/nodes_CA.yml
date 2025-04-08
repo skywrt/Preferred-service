@@ -217,7 +217,7 @@ proxies:
     path: /123qwe
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,37|CA
+  name: 5,9,11,24,27,30,37|CA
   password: 6e26e0d8-ce80-4675-ab08-4ea298c7d746
   port: 31441
   server: free.2apzhfa.xyz
@@ -226,8 +226,8 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|2|🇦 加拿大 01 | 1x CA
-  password: cdfb0fb4-322c-4795-99ca-d6efe3f9dc8a
+  name: '5,9,11,24,27,30|14|🇦 加拿大 01 | 1x CA #1'
+  password: c4589446-0a0e-49ea-88a9-dfc0c2b6b472
   port: 36441
   server: free.2weradf.xyz
   type: ss
@@ -676,9 +676,9 @@ proxies:
     path: /dabai.in172.67.2.142
 - alterId: 0
   cipher: auto
-  name: 10|加拿大 002
+  name: '10,24|🇺🇸 美国 CloudFlare节点 #3'
   network: ws
-  port: 8880
+  port: '8880'
   server: s4.db-link02.top
   skip-cert-verify: true
   tfo: false
@@ -854,6 +854,20 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 24,27,30|🇨🇳 吉林省 移动(全省通用) 2
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - cipher: aes-256-gcm
   name: 28|🇨🇦 VIP 加拿大1-1A
   password: b82692c3-986f-4356-b03c-4347db250826

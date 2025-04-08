@@ -29,7 +29,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,37|🇭🇰HK香港2
+  name: 5,9,11,24,27,30,37|🇭🇰HK香港2
   password: 2be0c954-4291-45ea-b47d-ca713180550b
   port: 52612
   server: hk02.x.quickcht3.club
@@ -38,6 +38,13 @@ proxies:
   tls: true
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 5,24,30|🇳 南省 移动(全省通用)
+  password: 2be0c954-4291-45ea-b47d-ca713180550b
+  port: 52611
+  server: hk01.x.quickcht3.club
+  type: ss
 - alterId: 0
   cipher: auto
   name: 5|11,16|香港9|@ripaojiedian
@@ -84,15 +91,15 @@ proxies:
   sni: waphk.mjt000.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|0|🇭🇰香港 03 | 1x HK
-  password: 6e26e0d8-ce80-4675-ab08-4ea298c7d746
+  name: '5,9,11,24,27,30|0|🇭🇰香港 03 | 1x HK #1'
+  password: c27eb47b-a7a7-4b1d-9ff8-e586de688376
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|2|🇭🇰 香港 01 | 1x HK
-  password: cdfb0fb4-322c-4795-99ca-d6efe3f9dc8a
+  name: '5,9,11,24,27,30|14|🇭🇰 香港 01 | 1x HK #1'
+  password: c4589446-0a0e-49ea-88a9-dfc0c2b6b472
   port: 36141
   server: free.2weradf.xyz
   type: ss
@@ -124,15 +131,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|0|🇭🇰香港 02 | 1x HK
-  password: 6e26e0d8-ce80-4675-ab08-4ea298c7d746
+  name: '5,9,11,24,27,30|0|🇭🇰香港 02 | 1x HK #1'
+  password: c27eb47b-a7a7-4b1d-9ff8-e586de688376
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|0| 01 | 1x HK
-  password: 6e26e0d8-ce80-4675-ab08-4ea298c7d746
+  name: '5,9,11,24,27,30|0| 01 | 1x HK #1'
+  password: c27eb47b-a7a7-4b1d-9ff8-e586de688376
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
@@ -151,15 +158,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|2|🇭🇰 香港IP 03 | 1x HK
-  password: cdfb0fb4-322c-4795-99ca-d6efe3f9dc8a
+  name: '5,9,11,24,27,30|14|🇭🇰 香港IP 03 | 1x HK #1'
+  password: c4589446-0a0e-49ea-88a9-dfc0c2b6b472
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,37|HK #1'
+  name: '5,9,11,24,27,30,37|HK #1'
   password: cdfb0fb4-322c-4795-99ca-d6efe3f9dc8a
   port: 36143
   server: free.2weradf.xyz
@@ -178,7 +185,7 @@ proxies:
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
-  name: '9,11,24,27|12|🇭🇰 香港3|@ripaojiedian #1'
+  name: '9,11,24,27,30|11|🇭🇰 香港3|@ripaojiedian #1'
   password: 2be0c954-4291-45ea-b47d-ca713180550b
   port: 52612
   server: 111.29.57.125
@@ -187,9 +194,10 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: '9,11,24,27|12,13|香港4|@ripaojiedian #1'
+  client-fingerprint: chrome
+  name: 9,11,24,27,30|🇳  (省)
   network: ws
-  port: '30809'
+  port: 30809
   server: v9.heduian.link
   servername: ''
   skip-cert-verify: false
@@ -202,15 +210,43 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 11|1|🇭🇰4 |  2.1MB/s
+  network: ws
+  port: 23002
+  raw:
+    add: 212.192.12.154
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: 361d4055-e74d-4b39-a6b4-ef2030b134ef
+    net: ws
+    path: /
+    port: '23002'
+    ps: 🇭🇰 --001-1D
+    scy: ''
+    sni: ''
+    tls: ''
+    type: none
+    v: '2'
+  server: 212.192.12.154
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 361d4055-e74d-4b39-a6b4-ef2030b134ef
+  ws-opts:
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: '11,24,27|12|🇭🇰 香港2|@ripaojiedian #1'
+  name: '11,24,27,30|11|🇭🇰 香港2|@ripaojiedian #1'
   password: c46ba905-31de-4090-8153-ec7d2e063079
   port: 30001
   server: 45.207.157.83
   tfo: false
   type: ss
 - cipher: rc4-md5
-  name: '11,27|12|🇭🇰 香港5|@ripaojiedian #1'
+  name: '11,27,30|11|🇭🇰 香港5|@ripaojiedian #1'
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -221,7 +257,7 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: '11,27|12|🇭🇰 香港6|@ripaojiedian #1'
+  name: '11,27,30|11|🇭🇰 香港6|@ripaojiedian #1'
   port: 30251
   server: 35.220.230.251
   skip-cert-verify: false
@@ -231,7 +267,7 @@ proxies:
   uuid: 86c9c119-c46d-45a9-82a6-75a886e5e795
 - alterId: 64
   cipher: auto
-  name: '11,27|12|🇭🇰 香港7|@ripaojiedian #1'
+  name: '11,27,30|11|🇭🇰 香港7|@ripaojiedian #1'
   port: 50002
   server: 47.104.186.133
   skip-cert-verify: false
@@ -241,7 +277,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '11,27|12|🇭🇰 香港8|@ripaojiedian #1'
+  name: '11,27,30|11|🇭🇰 香港8|@ripaojiedian #1'
   port: 31998
   server: 120.234.102.229
   skip-cert-verify: false
@@ -251,9 +287,9 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '11,27|13|香港6|@ripaojiedian #1'
+  name: '11,24,27,30|12|香港6|@ripaojiedian #1'
   network: tcp
-  port: '30251'
+  port: 30251
   server: 35.220.230.251
   servername: ''
   tls: false
@@ -261,9 +297,9 @@ proxies:
   uuid: 86c9c119-c46d-45a9-82a6-75a886e5e795
 - alterId: 64
   cipher: auto
-  name: '11,27|13|香港7|@ripaojiedian #1'
+  name: '11,24,27,30|12|香港7|@ripaojiedian #1'
   network: tcp
-  port: '50002'
+  port: 50002
   server: 47.104.186.133
   servername: ''
   tls: false
@@ -271,9 +307,9 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '11,24,27|13|香港8|@ripaojiedian #1'
+  name: '11,24,27,30|12|香港8|@ripaojiedian #1'
   network: tcp
-  port: '31998'
+  port: 31998
   server: 120.234.102.229
   servername: ''
   tls: false
@@ -842,29 +878,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- name: '24|1|🇭🇰1 |  5.8MB/s #1'
-  password: d4e84de0-79e8-30ae-8e95-67e9b04037e8
-  port: 28678
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z143.hongkongnode.top
-  type: trojan
-- name: '24|1|🇭🇰2 |  6.3MB/s #1'
-  password: d4e84de0-79e8-30ae-8e95-67e9b04037e8
-  port: 20309
-  server: gyl.58n.net
-  skip-cert-verify: true
-  sni: z309.hongkongnode.top
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '24|🇭🇰 13|香港2|@ripaojiedian #2'
-  network: tcp
-  port: '41002'
-  server: 120.232.153.40
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 26|V1-香港01∣K1线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21135
@@ -886,20 +899,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 27|1|🇭🇰13 |  4.5MB/s
-  port: 4136
-  server: 285c04c5-suh6o0-sv6d5y-ddgs.d.volczijie.com
-  tls: false
-  type: vmess
-  uuid: c870fe5a-0729-11f0-8cf9-f23c93136cb3
-- name: 27|1|🇭🇰18 |  4.0MB/s
-  password: VMhGp5wEIyCDf90T
-  port: 42303
-  server: csuzhou01.1cooldns.com
-  sni: hk06.run.place
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 28|🇭🇰 香港03-1B
   password: 4928f8f7-dc6b-4838-8625-502d3123e340
