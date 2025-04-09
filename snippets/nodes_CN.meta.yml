@@ -795,15 +795,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 24,27|1|🇯🇵5 |  3.4MB/s
-  network: tcp
-  port: '17233'
-  server: fa7c2955-suif40-swjyj4-1mish.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 9eeeea88-f37b-11ed-bd3d-f23c9164ca5d
 - alterId: 0
   cipher: auto
   name: '24|_中国 #22'
@@ -833,16 +824,15 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '24|🇨🇳 1|🌀4-CN |  1.4MB/s #1'
+  name: 24,28|🇭🇰 中国-香港-001
   network: ws
-  port: '23003'
+  port: 23003
   server: 212.192.12.154
   tls: false
   type: vmess
-  uuid: a7d0261f-4ede-467d-a587-c6328e57128b
+  udp: true
+  uuid: 710c1320-b3f8-41c3-ba8e-60def454a632
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - name: 24|_中国
   password: Aimer
@@ -907,13 +897,16 @@ proxies:
   skip-cert-verify: false
   sni: epcct.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #9'
+- alterId: 0
+  name: 24,37|CN国
   password: Aimer
   port: 8443
   server: 154.219.5.249
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epcct.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #10'
   password: Aimer
   port: 2096
@@ -956,13 +949,16 @@ proxies:
   skip-cert-verify: false
   sni: epcct.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #16'
+- alterId: 0
+  name: 24,37|🇳CN中国2
   password: Aimer
   port: 443
   server: 8.220.218.105
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epcct.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #17'
   password: Aimer
   port: 2083
@@ -997,20 +993,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 24,27|1|9 |  1.7MB/s
+  name: '24|_中国 #24'
   network: tcp
   port: '46345'
   server: 120.198.71.214
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 24,27|1|5 |  2.5MB/s
+  name: '24|_中国 #25'
   network: tcp
-  port: 42892
+  port: '42892'
   server: 120.232.153.40
   tls: false
   type: vmess
@@ -1030,15 +1026,6 @@ proxies:
   network: tcp
   port: '55754'
   server: 183.236.51.38
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
-  network: tcp
-  port: '59003'
-  server: 183.236.51.36
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -1065,6 +1052,15 @@ proxies:
     headers:
       Host: yd2.ainivp.com
     path: /ray
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  network: tcp
+  port: '59003'
+  server: 183.236.51.36
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 40|CN_speednode_0002
@@ -1114,6 +1110,16 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: auto
+  name: 40|CN_speednode_0006
+  port: 4135
+  server: 40dde1d3-suj1c0-sv88d5-b3yb.d.volczijie.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 31abebae-08c0-11f0-8ac2-f23c93136cb3
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 40|CN_speednode_0007
@@ -1634,6 +1640,22 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 2
+  cipher: auto
+  name: 40|CN_speednode_0065
+  network: ws
+  port: 22643
+  server: 119.188.66.248
+  servername: zxjp-c.tkong.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-c.tkong.cc
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 40|CN_speednode_0050
