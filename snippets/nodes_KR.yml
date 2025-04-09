@@ -1,35 +1,4 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 5,9|🇰🇷 2|🇰🇷 韩国 02 | 1x KR
-  password: a3999a4c-7f06-4521-83ea-1202ea1c37ab
-  port: 36313
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9|🇰🇷 1|🇰🇷韩国 02 | 1x KR
-  password: 6f411881-272d-4bc3-b7dd-072263b05643
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9|🇰🇷 1|🇰🇷韩国 01 | 1x KR
-  password: 6f411881-272d-4bc3-b7dd-072263b05643
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,9,37|🇷KR国
-  password: e0f06018-d7e9-4c9c-8986-a9c30634b915
-  port: 36311
-  server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
 - name: 5|0|🇰🇷1 |  1.0MB/s
   password: 4e0c3a4b-bdac-3950-b736-2c90b76ee530
   port: 45168
@@ -43,31 +12,6 @@ proxies:
   port: 20005
   server: service.ouluyun9803.com
   type: ss
-- alterId: 2
-  cipher: auto
-  name: 9,11,24,27,40|CN_speednode_0074
-  network: ws
-  port: 30828
-  server: v28.heduian.link
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
-- cipher: aes-256-cfb
-  name: 9,11,24,27|12|🇷 韩国特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 18.140.50.192
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 1
   cipher: auto
   name: 10|韩国 001
@@ -113,8 +57,29 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
+  name: '10,20,21|🇰🇷KR-175.215.154.208-0814 #2'
+  network: ws
+  port: 11184
+  server: 175.215.154.208
+  servername: oracle2ipv4.till.nyc.mn
+  tls: true
+  type: vmess
+  uuid: 0ee75dd1-5e59-4615-a6a8-6fe7aa0b6f17
+  ws-opts:
+    headers:
+      Host: oracle2ipv4.till.nyc.mn
+    path: /
+- cipher: aes-256-cfb
+  name: '11,24,27|12| 韩国特殊|@ripaojiedian #1'
+  password: amazonskr05
+  port: 443
+  server: 18.140.50.192
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 19|🇰🇷KR-152.70.249.97-0343
+  name: 19|🇰🇷KR-152.70.249.97-0396
   network: ws
   port: 443
   server: kr3.ttcc.tech
@@ -128,7 +93,22 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '20,21|🇰🇷KR-152.70.249.97-0343 #2'
+  client-fingerprint: chrome
+  name: 19|🇰🇷KR-175.215.154.208-0814
+  network: ws
+  port: 11184
+  server: 175.215.154.208
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 0ee75dd1-5e59-4615-a6a8-6fe7aa0b6f17
+  ws-opts:
+    headers:
+      host: oracle2ipv4.till.nyc.mn
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇰🇷KR-152.70.249.97-0396 #2'
   network: ws
   port: 443
   server: kr3.ttcc.tech
@@ -180,14 +160,4 @@ proxies:
   port: 49026
   server: kr91.cctv14.xyz
   type: ss
-  udp: true
-- alterId: 0
-  name: 37|🇰🇷KR韩国2
-  password: Aimer
-  port: 11000
-  server: 220.124.96.53
-  skip-cert-verify: true
-  sni: epccy.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
   udp: true
