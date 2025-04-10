@@ -200,10 +200,17 @@ proxies:
   udp: false
   uuid: cafbe992-9b5d-4061-d38f-abbe311e159f
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|1|🇪德国 01 | 1x DE
-  password: e1093a25-9ead-4d92-bd47-e48119dca6e2
+  name: '5,11,24,27,30|14|🇪德国 01 | 1x DE #1'
+  password: 7a4afc42-245e-4505-a3cc-3e5c86186708
   port: 31471
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,30|0|🇪 德国 01 | 1x DE
+  password: 75dd07af-edc1-4978-ab40-ac4485973bfb
+  port: 36471
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -592,21 +599,6 @@ proxies:
   type: vless
   udp: true
   uuid: 923bbb5e-3f65-43ae-a0c0-9a83c464073f
-- name: 10|德国 021
-  port: 27081
-  server: web.wiroholding.ir
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e5513584-3c19-49be-ab4d-8118ea22ffe1
-- cipher: rc4-md5
-  name: 12,20,21,30|_DE_国
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -696,35 +688,6 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
-  tls: false
-  type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '80'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ebd07f9f-4a77-418e-b533-eda2969890cc
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10... #1'
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
-- alterId: 0
-  cipher: auto
   grpc-opts:
     grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
   name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
@@ -735,3 +698,52 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-17...
+  network: httpupgrade
+  port: '2052'
+  server: 173.245.59.100
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0f427f89-3aa4-4641-9e58-9ff0cc1cbfae
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.18...
+  network: tcp
+  port: '22324'
+  server: 23.158.56.184
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10... #1'
+  network: httpupgrade
+  port: '80'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d6080991-4794-4bc4-a6b5-29a05be4696a
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
