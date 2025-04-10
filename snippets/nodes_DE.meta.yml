@@ -297,8 +297,8 @@ proxies:
       Host: ookla.com
     path: /?ed=2048
 - cipher: chacha20-ietf-poly1305
-  name: 5,11|0| 国 01 | 1x DE
-  password: c1ad6cea-02d9-4a67-bca7-571b30e584dc
+  name: 5,11,27,30|0|🇪 德国 01 | 1x DE
+  password: 474b0248-8ffa-4e49-a415-49d907171fc6
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -338,7 +338,7 @@ proxies:
   udp: true
   uuid: f0e0dc4e-3641-47a0-9023-6f3417d19a9f
 - cipher: rc4-md5
-  name: 5,11,12,20,21,30|_DE_国
+  name: 5,12,20,21,27,30|_DE_国
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
@@ -525,8 +525,8 @@ proxies:
   server: 7438974b54cf5c57.cdn.jiashule.com
   type: ssr
 - cipher: chacha20-ietf-poly1305
-  name: 5,11|1|🇪德国 01 | 1x DE
-  password: 00b40d6d-a297-4e43-aa9f-cabac39dcf2b
+  name: '5,11,27,30|2|🇪德国 01 | 1x DE #1'
+  password: d57fefbc-c4cb-4d82-9452-ef2c31cfb005
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -551,17 +551,13 @@ proxies:
   skip-cert-verify: true
   type: trojan
 - client-fingerprint: chrome
-  name: 5,40|DE_speednode_0080
+  name: 5|14|DE_speednode_0080
   port: 223
-  reality-opts:
-    public-key: JOKX-kH_SOPrdPG26TdJzO6YSDItrRGXKhtv70Bn81o
-    short-id: c7f175a94bd79f8d
   server: 188.245.253.147
   servername: SHOPTOR.SODOGODPING.IR
   skip-cert-verify: true
   tls: true
   type: vless
-  udp: true
   uuid: bc7dbc36-f3a7-4cc8-9364-eba6e889cee2
 - alterId: 0
   cipher: auto
@@ -1160,7 +1156,8 @@ proxies:
   port: 9064
   server: 80.92.204.106
   type: ss
-- name: '20,21|🇩🇪DE-63.177.116.21-5605 #1'
+- client-fingerprint: chrome
+  name: 20,21,30|🇺🇸 美国 Sprint
   password: telegram-id-privatevpns
   port: 22222
   server: 63.177.116.21
@@ -1361,6 +1358,40 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇪 德国 Oracle中
+  network: ws
+  port: 443
+  server: 132.145.232.171
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      Host: beyonddsz.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '80'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d6080991-4794-4bc4-a6b5-29a05be4696a
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10... #1'
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
   grpc-opts:
     grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
   name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
@@ -1373,28 +1404,14 @@ proxies:
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.24.12...
-  network: ws
-  port: 443
-  server: 57.129.24.124
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
+  network: httpupgrade
+  port: '2096'
+  server: 104.21.48.6
+  servername: tasnim.farsonline24.ir
   tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: aveiror.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+  uuid: 18a72fd0-f608-4f9d-bb6c-d6dfa362db13
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.18...
