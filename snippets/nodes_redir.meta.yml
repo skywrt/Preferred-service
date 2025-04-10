@@ -784,7 +784,7 @@ proxies:
   tls: false
   type: vless
   uuid: 0d751e96-72bc-484b-8f0e-ceb8a733fba3
-- name: '12|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+- name: '12,30|🇨🇳_CN_中国->🇺🇸_US_美国_1 #1'
   password: d4c22fd9-1474-4e9f-baf7-80b162f3e60c
   port: 12052
   server: cn2.cdn.xfltd-cdn.top
@@ -802,6 +802,12 @@ proxies:
     headers:
       Host: fH.2SbSQbjWu5.ZULAiR.Org.
     path: '%2F%3Fed%3D2048'
+- cipher: aes-128-gcm
+  name: 12,19,20,21,30|🇬_BG_加->🇬🇧_GB_英国
+  password: shadowsocks
+  port: 443
+  server: 149.34.244.80
+  type: ss
 - alterId: 0
   cipher: auto
   name: 12,13|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_2
@@ -816,13 +822,14 @@ proxies:
     headers:
       Host: cm1.awslcn.info
     path: /
-- name: 12|🇺🇸_US_美国->🇯🇴_JO_约旦
+- name: 12,30|🇸_US_美国->🇴_JO_约旦
   network: ws
   password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
   port: 443
   server: 104.21.16.1
   sni: 1g.890699.xyZ
   type: trojan
+  udp: true
   ws-opts:
     path: /lXENb74xF4ylXngZ
 - alterId: 2
@@ -852,6 +859,12 @@ proxies:
     headers:
       Host: api100-core-quic-lf.amemv.com
     path: /index
+- cipher: aes-256-cfb
+  name: 12,19,20,21,30|🇧_GB_英国->🇺🇸_US_美国_1
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 62.100.205.48
+  type: ss
 - name: 13|🇺🇸_US_美国->🇩🇪_DE_德国
   network: ws
   port: 80
@@ -1153,3 +1166,69 @@ proxies:
     headers:
       host: uk.moss.network
     path: /d/65dd503.TG.WangCai2.WangCai_8:107690
+- alterId: 2
+  cipher: auto
+  name: 30|_CN_->_US_国
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v29.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 30|🇸_US_美国->_CR_
+  network: ws
+  port: 80
+  server: 104.26.2.223
+  type: vmess
+  uuid: be9ac665-07b8-45b7-b99e-8b913b50da99
+  ws-opts:
+    headers:
+      host: 476890898548582025040715174894088.s15.chibaba.filegear-sg.me
+    path: /s15.html
+- alterId: 0
+  cipher: auto
+  name: 30|🇨🇳_CN_中国->🇺_RU_斯
+  network: ws
+  port: 25230
+  server: cm1.awslcn.info
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
+  ws-opts:
+    headers:
+      host: cm1.awslcn.info
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 30|🇳_CN_中国->_CA_加
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: baidu.com
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 30|🇳_CN_中国->🇺🇸_US_美国_2
+  network: ws
+  port: 30840
+  server: v40.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: api100-core-quic-lf.amemv.com
+    path: /index
