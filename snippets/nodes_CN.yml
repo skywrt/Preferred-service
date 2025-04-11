@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '5,11,27,30|2|🇯🇵10 |  2.1MB/s #1'
+  name: 5,11,27|2|🇵3 |  4.4MB/s
   network: tcp
   port: 17233
   server: fa7c2955-suif40-swjyj4-1mish.cm5.p5pv.com
@@ -14,12 +14,11 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 5,12,30|_CN_国->🇺🇸_US_美国
+  name: 5,12|🇨🇳_CN_中国->🇺🇸_US_美国
   network: tcp
-  port: 14100
+  port: '14100'
   server: dxv4.pai50288.uk
   servername: ''
-  sni: ''
   tls: false
   type: vmess
   uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
@@ -34,7 +33,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '5,11,24,27,30|2|🇵2 |  3.6MB/s #1'
+  name: 5,11,24,27|2|🇯🇵4 |  5.9MB/s
   network: tcp
   port: 17233
   server: a0a40de3-suk9s0-t7mt0p-1sllg.cm5.p5pv.com
@@ -784,20 +783,26 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '24|_中国 #1'
+- alterId: 0
+  name: 24,37|🇳CN中国5
   password: Aimer
   port: 2083
   server: 27.50.48.126
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epcct.ambercc.filegear-sg.me
+  tls: true
   type: trojan
-- name: '24|_中国 #2'
+  udp: true
+- alterId: 0
+  name: 24,37|🇨🇳CN中国4
   password: Aimer
   port: 443
   server: 154.219.5.55
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epcct.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #3'
   password: Aimer
   port: 443
@@ -868,13 +873,16 @@ proxies:
   skip-cert-verify: false
   sni: epcct.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #14'
+- alterId: 0
+  name: 24,37|🇨🇳CN中国3
   password: Aimer
   port: 8443
   server: 27.50.48.154
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epcct.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #15'
   password: Aimer
   port: 8443
@@ -896,13 +904,16 @@ proxies:
   skip-cert-verify: false
   sni: epccr.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #18'
+- alterId: 0
+  name: 24,37|🇨🇳CN中国2
   password: Aimer
   port: 8443
   server: 27.50.48.239
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epccy.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #19'
   password: Aimer
   port: 2083
@@ -910,13 +921,16 @@ proxies:
   skip-cert-verify: false
   sni: epccr.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #20'
+- alterId: 0
+  name: 24,37|CN
   password: Aimer
   port: 2096
   server: 27.50.49.61
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epcct.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '24|_中国 #28'
@@ -968,28 +982,19 @@ proxies:
     path: /index
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇨🇳 省 联通
-  port: 5229
-  server: edcc173e-sum4g0-sv7391-mv7m.cu.plebai.net
-  tls: false
-  type: vmess
-  uuid: 94d40708-8273-11ea-8fc9-f23c913c8d2b
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-RAW-NA 🇨🇳 CN-120.210.205....
-  network: raw
-  port: '50002'
-  server: 120.210.205.59
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  network: tcp
+  port: '59003'
+  server: 183.236.51.36
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
-  network: tcp
-  port: '59003'
-  server: 183.236.51.36
+  name: 36|🔒 VM-RAW-NA 🇨🇳 CN-47.92.152.16...
+  network: raw
+  port: '50002'
+  server: 47.92.152.169
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
