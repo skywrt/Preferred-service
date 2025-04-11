@@ -1,8 +1,7 @@
 proxies:
 - alpn:
   - http/1.1
-  client-fingerprint: chrome
-  name: 5,30|🇫🇷 法国 巴Amazon
+  name: 5|法国+巴黎Amazon数据中心
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -19,12 +18,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 4953dd35-9fc1-4d5f-b047-ec34d96537b6
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 5,12,20,21,24,30|🇷 国 V2CROSS.COM
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,12,19,20,21,24,30,37|🇷FR国 9.3MB/s
   password: sVjPo5m8PUrhHuB9lDZzNS
   port: 443
   server: 151.115.88.168
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -142,31 +143,28 @@ proxies:
   sni: x1es-ovh.devefun.net
   tls: true
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇫🇷FR-45.158.171.151-0427
-  password: 1RWwXhwfAB5gAEozU4G2Pg
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37| 20.5MB/s
+  password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
-  server: 45.158.171.151
+  server: 45.158.171.146
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知96
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.158.171.132
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇫🇷FR-45.145.165.172-7810
-  network: ws
-  port: 443
-  server: hms19.best-tizi.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
-  ws-opts:
-    headers:
-      host: hms19.best-tizi.top
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇫🇷FR-45.145.165.114-7726
+  name: 19|🇫🇷FR-45.145.165.114-7555
   network: ws
   port: 443
   server: beyonddsz.cfd
@@ -181,22 +179,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇫🇷FR-163.5.159.231-7694
-  network: ws
-  port: 443
-  server: irvideo.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      host: irvideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇫🇷FR-146.19.168.161-5542
+  name: 19|🇫🇷FR-146.19.168.161-5371
   network: ws
   port: 443
   server: az05.beyondy.cfd
@@ -222,12 +205,17 @@ proxies:
     headers:
       Host: tilebani.com
     path: /linkvws
-- name: '20,21|🇫🇷FR-141.227.160.167-0370 #1'
+- alterId: 0
+  name: 20,21,37|未知14 14.8MB/s
+  network: tcp
   password: AXpQXM4vNh
   port: 1935
   server: 141.227.160.167
+  skip-cert-verify: true
   sni: x2swe-ovh.devefun.net
+  tls: true
   type: trojan
+  udp: true
 - name: '20,21|🇫🇷FR-141.227.138.29-0363 #1'
   password: hZ7JkYVAfB
   port: 1935
@@ -236,7 +224,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-45.145.165.114-7555 #1'
+  name: '20,21|🇫🇷FR-45.145.165.114-7555 #2'
   network: ws
   port: 443
   server: beyonddsz.cfd
@@ -262,6 +250,51 @@ proxies:
     headers:
       Host: hms19.best-tizi.top
     path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 23|🇫🇷 法国 01
+  port: 17235
+  server: 7f37ac9c-suvds0-t9u6bf-ips0.cm5.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d56dab9c-174b-4776-0492-97772dc7f7af
+- alterId: 0
+  cipher: auto
+  name: 23|🇫🇷 法国 02
+  port: 17235
+  server: cff6dda0-suvds0-t0qij6-j20q.cm5.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5bd3e78e-f4b7-11ed-ab21-f23c913c8d2b
+- alterId: 0
+  cipher: auto
+  name: 23|🇫🇷 法国 05
+  port: 17235
+  server: 8cc81c65-suvds0-tb6yrr-1tfcw.cm5.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1282cc1a-f426-11ef-9495-f23c91cfbbc9
+- alterId: 0
+  cipher: auto
+  name: 23|🇫🇷 法国 08
+  port: 17235
+  server: 3764e556-suvds0-t8md9t-1cir.cm5.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b436ff0-05bc-11ee-a91f-f23c913c8d2b
+- alterId: 0
+  cipher: auto
+  name: 23|🇫🇷 法国 09
+  port: 17235
+  server: 681fd887-suvds0-t2oosc-xm0q.cm5.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3437f34e-1b77-11eb-8684-f23c913c8d2b
 - name: 26|V2-日本01∣K11线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21146
@@ -276,18 +309,9 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|🇫🇷 法国1-1A
-  port: 45072
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fb175c68-a28d-4d2e-a7a0-00c46a30ac89
 - cipher: aes-256-gcm
-  name: 28|🇫🇷 VIP 法国1-1A
-  password: 0597a157-2165-430c-8fdc-d6d6b72f8444
+  name: 28|🇫🇷 VIP 法国1-1D
+  password: a17efb8b-0815-41dd-9daf-ca63d830facc
   port: 47083
   server: fr01.jiasudu.buzz
   type: ss
@@ -300,7 +324,16 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: fb175c68-a28d-4d2e-a7a0-00c46a30ac89
+  uuid: c271be71-67ba-4688-9045-77a5c6cbcb83
+- alterId: 0
+  cipher: auto
+  name: 28|🇫🇷 法国1-1A
+  port: 45072
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c271be71-67ba-4688-9045-77a5c6cbcb83
 - alterId: 0
   cipher: auto
   name: '28|🇫🇷 法国 #1'
@@ -312,7 +345,7 @@ proxies:
   uuid: 1f06cda1-f430-477f-ade3-d19b08d5be66
 - cipher: chacha20-ietf-poly1305
   name: 28|🇫🇷 FR 法国 020
-  password: 6d77f2e2-c600-4005-9962-12b5fb617934
+  password: 5a613669-5cef-4614-bef9-dd23d30a71bf
   port: 34903
   server: reg2.nexifyspark.com
   type: ss
