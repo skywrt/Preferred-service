@@ -1,44 +1,39 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|0|国 01 | 1x DE #1'
-  password: c985b6ad-f77b-4aa6-ab35-b1ddf0ec6b84
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 5,11,24,27|14|🇪 德国 01 | 1x DE
-  password: 8320c587-8b31-4693-9f79-f81903a13bc6
+  password: ea97744d-28ec-441c-8adb-ef9b8b67fec3
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: rc4-md5
+  name: 5,11,12,19,20,21,27|0|6 |  4.8MB/s
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,37|DE国
+  password: 7696e8a1-f044-4459-9fe2-f8b6b5ea2409
+  port: 31471
+  server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 5|德国-优化2
+  name: 5|德国-优化
   network: ws
   port: '16644'
-  server: m.cnmjcn.com
+  server: yes.mojcn.com
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
   ws-opts:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 5|德国纽伦堡无限制-白嫖优化-连接数/BT/PT/矿池-2Gb...
-  network: ws
-  port: '2096'
-  server: 1744294341.tencentapp.cn
-  servername: 1744293778.speed.nlb.cccp.freefly.pp.ua
-  tls: true
-  type: vmess
-  uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
-  ws-opts:
-    headers:
-      Host: 1744293778.speed.nlb.cccp.freefly.pp.ua
     path: /
 - alterId: 0
   cipher: none
@@ -56,10 +51,10 @@ proxies:
     path: /vmess-argo?ed=2048
 - alterId: 0
   cipher: auto
-  name: 5|德国-优化
+  name: 5|德国-优化2
   network: ws
   port: '16644'
-  server: yes.mojcn.com
+  server: m.cnmjcn.com
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -101,7 +96,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🇩🇪DE-193.122.58.158-0904 #1'
+  name: '10,20,21|🇩🇪DE-193.122.58.158-0903 #1'
   network: ws
   port: 443
   raw:
@@ -153,54 +148,24 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '16|🇩🇪_DE_德国 #1'
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 16,19,37|未知109 16.2MB/s
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.87.175.65
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇩🇪DE-185.177.229.245-0492
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-0513
-  password: VP8ZPxQpJtZRCjfZ
-  port: 9080
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-5337
-  password: a3GFYt36Sm82Vys9
-  port: 9000
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-5439
+  name: 19|🇩🇪DE-80.92.204.106-0545
   password: NvS8N4Vf8qAGPSCL
   port: 9046
   server: 80.92.204.106
   type: ss
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知73
-  password: yFhyOiBBsvNn72ARpHGuZu
-  port: 6774
-  server: 109.120.177.122
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-5387
-  password: BNmAXXxAHYpTRdzu
-  port: 9020
-  server: 80.92.204.106
-  type: ss
-- alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.141-5418 #1'
+  name: '20,21|🇩🇪DE-57.129.24.141-5514 #1'
   network: ws
   port: 443
   server: 57.129.24.141
@@ -214,7 +179,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-7619 #1'
+  name: '20,21|🇩🇪DE-57.129.24.125-7717 #1'
   network: ws
   port: 443
   server: 57.129.24.125
@@ -235,44 +200,41 @@ proxies:
   tls: false
   type: vmess
   uuid: a60b7559-aab6-4a63-8dea-715d7e017bd5
-- cipher: aes-256-gcm
-  name: 28|🇩🇪 VIP 德国1
-  password: 7c349933-2455-4c2d-8158-1838a6a08efd
-  port: 47084
-  server: de01.jiasudu.buzz
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇩🇪 德国中部-1A
-  password: 7e27776e-cfb7-498c-bf27-ff2bcf35da40
+  name: 28|🇩🇪 德国中部-1B
+  password: d9235cbb-7b11-4e2b-9fb2-058c40589bb7
   port: 62830
   server: hry01.2228333.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇩🇪 DE 德国 112
-  password: 1b6f8209-13ca-4305-8d42-97cb9da54eb0
-  port: 34901
-  server: reg2.nexifyspark.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 28|🇩🇪 DE 德国 113
-  password: 1b6f8209-13ca-4305-8d42-97cb9da54eb0
+  password: bb6406b1-9c20-4182-9cf2-0224014ae352
   port: 34902
   server: reg2.nexifyspark.com
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-17...
-  network: httpupgrade
-  port: '2052'
-  server: 173.245.58.100
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0f427f89-3aa4-4641-9e58-9ff0cc1cbfae
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇩🇪 DE 德国 112
+  password: bb6406b1-9c20-4182-9cf2-0224014ae352
+  port: 34901
+  server: reg2.nexifyspark.com
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 28|🇩🇪 VIP 德国1
+  password: 5d029954-5f17-4dab-987e-8723b9be35e2
+  port: 47084
+  server: de01.jiasudu.buzz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇩🇪 德国-1B
+  password: 0384e697-7042-4dde-ab7b-1e1f0c8cba79
+  port: 26007
+  server: diao.arken8379.com
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -287,6 +249,15 @@ proxies:
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
   network: httpupgrade
   port: '2095'
@@ -297,10 +268,21 @@ proxies:
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
+  name: '36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10... #1'
+  network: httpupgrade
+  port: '80'
+  server: 104.19.150.10
+  servername: ''
   tls: false
   type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
+  uuid: d6080991-4794-4bc4-a6b5-29a05be4696a
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-17...
+  network: httpupgrade
+  port: '2052'
+  server: 173.245.58.100
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0f427f89-3aa4-4641-9e58-9ff0cc1cbfae
