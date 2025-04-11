@@ -54,15 +54,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|1|国家宽 01 | 1x UK
-  password: 7696e8a1-f044-4459-9fe2-f8b6b5ea2409
+  name: '5,11,24,27|0|国家宽 01 | 1x UK #1'
+  password: e8bfdb47-78ca-423f-bd89-ccd23d95b09c
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|14|🇧 英国住宅IP 01 | 1x UK
-  password: ea97744d-28ec-441c-8adb-ef9b8b67fec3
+  name: 5,11,24,27|1|🇧 英国住宅IP 01 | 1x UK
+  password: 5e84e3ef-b326-44c7-ad3f-fac527724a5a
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -100,7 +100,7 @@ proxies:
   type: vmess
   uuid: 4953dd35-9fc1-4d5f-b047-ec34d96537b6
 - cipher: chacha20-ietf-poly1305
-  name: '5,11|1|🇬🇧4 |  3.9MB/s #1'
+  name: '5,24,27|2|🇬🇧4 |  3.9MB/s #2'
   password: iEKtgttwHhDjsbOki1a5BK
   port: 443
   server: 78.129.140.11
@@ -148,7 +148,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10,28|🇩🇪 德国法兰克福
+  name: 10,28|🇩🇪 德国法兰克福-1B
   network: ws
   port: 23451
   server: frankfurt.faforex.eu.org
@@ -300,13 +300,6 @@ proxies:
   port: 10200
   server: www.ak-hk.top
   type: trojan
-- name: 24|🇬🇧 英国 社会保险安全部
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.44.153.133
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - name: 26|V2-英国03∣K71线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 20820
@@ -315,65 +308,73 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇬🇧 GB 英国 160
-  password: bb6406b1-9c20-4182-9cf2-0224014ae352
+  name: 28|🇬🇧 GB 英国 160-1B
+  password: 570966b7-f30f-4ff1-a76d-2685dbeb5a5f
   port: 34401
   server: eulondon.nexifyspark.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇬🇧 英国南部-1A
-  password: 6b70682a-ac2b-4201-87c0-fafd98e94550
-  port: 62531
-  server: hry01.2228333.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|🇬🇧 英国2-1A
-  port: 45067
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3f5414d3-fb4b-47b2-a782-cbb8c0b493c7
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇬🇧 GB 英国 165
-  password: bb6406b1-9c20-4182-9cf2-0224014ae352
-  port: 34402
-  server: eulondon.nexifyspark.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇬🇧 英国
+  name: 28|🇬🇧 英国-1A
   password: 0384e697-7042-4dde-ab7b-1e1f0c8cba79
   port: 26008
   server: diao.arken8379.com
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇬🇧 英国南部-1D
+  password: f41f4c9e-f3fa-4e09-bc41-edea62268f39
+  port: 62531
+  server: hry01.2228333.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇬🇧 GB 英国 165-1B
+  password: 570966b7-f30f-4ff1-a76d-2685dbeb5a5f
+  port: 34402
+  server: eulondon.nexifyspark.com
+  type: ss
+  udp: true
+- name: 28|🇬🇧 英国-1B
+  password: 89ae93db-740c-4a7f-9e4e-54b642fa6bad
+  port: 23005
+  server: huojian-js.arken8379.com
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 28|🇬🇧 英国2-1D
+  port: 45067
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 89b14e69-821a-4b59-8971-8147050aa2dd
 - cipher: aes-256-gcm
-  name: 28|🇬🇧 V1 | 英国1-1B
-  password: 18ff2a29-d783-4de8-a71e-26b04df7fc26
+  name: 28|🇬🇧 V1 | 英国1-1C
+  password: 62da4277-9ad1-4574-8a89-0107dd11cb68
   port: 49081
   server: gb91.cctv14.xyz
   type: ss
   udp: true
+- cipher: aes-256-gcm
+  name: 28|🇬🇧 VIP 英国1-1A
+  password: 6768c324-c5e8-475c-b5c6-e99b1f221997
+  port: 47081
+  server: gb01.jiasudu.buzz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 28|🇬🇧 英国1-1A
+  name: 28|🇬🇧 英国1-1B
   port: 45066
   server: haa.dashuai.cyou
   tls: false
   type: vmess
   udp: true
-  uuid: 3f5414d3-fb4b-47b2-a782-cbb8c0b493c7
-- cipher: aes-256-gcm
-  name: 28|🇬🇧 VIP 英国1
-  password: 5d029954-5f17-4dab-987e-8723b9be35e2
-  port: 47081
-  server: gb01.jiasudu.buzz
-  type: ss
-  udp: true
+  uuid: 4caf8dd9-0aab-4b6f-a373-2c26b0643d1c
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
