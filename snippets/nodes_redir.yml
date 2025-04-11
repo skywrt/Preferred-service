@@ -779,15 +779,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '12,24|_中国 #39'
-  network: tcp
-  port: '5229'
-  server: edcc173e-sum4g0-sv7391-mv7m.cu.plebai.net
-  tls: false
-  type: vmess
-  uuid: 94d40708-8273-11ea-8fc9-f23c913c8d2b
-- alterId: 0
-  cipher: auto
   name: 13|🇬🇧_GB_英国->🇷🇺_RU_俄罗斯
   network: ws
   port: 23169
@@ -1037,58 +1028,84 @@ proxies:
       host: uk.moss.network
     path: /d/65dd503.TG.WangCai2.WangCai_8:107690
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇩🇪 德国 中转-1D
+  name: 28|🇷🇺 俄罗斯 中转-1B
+  password: 0e24e3ac-f031-42c8-904b-751307bc10cb
+  port: 23499
+  server: vip.baima360.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇺🇸 美国 中转-1D
+  password: 08c3dbbb-3c0b-4271-85d2-a8a8bb535af5
+  port: 17941
+  server: vip.baima360.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇫🇷 法国 中转-1C
+  password: 64acc23b-72c0-4229-9d5b-b47548318add
+  port: 35330
+  server: vip.baima360.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港 中转-1J
+  password: 08c3dbbb-3c0b-4271-85d2-a8a8bb535af5
+  port: 65519
+  server: vip.baima360.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇩🇪 德国 中转-1C
   password: 64acc23b-72c0-4229-9d5b-b47548318add
   port: 55997
   server: vip.baima360.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇷🇺 俄罗斯 中转-1D
-  password: 64acc23b-72c0-4229-9d5b-b47548318add
-  port: 23499
-  server: vip.baima360.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇧🇷 巴西 中转-1D
-  password: 64acc23b-72c0-4229-9d5b-b47548318add
+  name: 28|🇧🇷 巴西 中转-1A
+  password: d1ffbded-7a0e-4d2d-a310-b615d1861bac
   port: 30752
   server: vip.baima360.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港 中转-1C
-  password: 0e24e3ac-f031-42c8-904b-751307bc10cb
-  port: 36214
-  server: vip.baima360.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港 中转-1J
-  password: 64acc23b-72c0-4229-9d5b-b47548318add
-  port: 65519
-  server: vip.baima360.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇺🇸 美国 中转-1B
-  password: 4d3a5dc5-d7ff-4e0e-b54c-d220597715b5
-  port: 17941
-  server: vip.baima360.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港 中转-1H
-  password: 5541e317-f00f-4046-8919-341363e0e29e
+  name: 28|🇭🇰 香港 中转-1K
+  password: 08c3dbbb-3c0b-4271-85d2-a8a8bb535af5
   port: 36511
   server: vip.baima360.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇫🇷 法国 中转-1D
+  name: 28|🇭🇰 香港 中转-1I
   password: 64acc23b-72c0-4229-9d5b-b47548318add
-  port: 35330
+  port: 36214
   server: vip.baima360.com
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 30|🇺🇸_US_美国->_CR_斯
+  network: ws
+  port: 80
+  server: 104.18.1.117
+  type: vmess
+  uuid: 22474cc4-22a9-4c74-bae8-43f08a1c6ed4
+  ws-opts:
+    headers:
+      host: 2025041008264146946.s15.chibaba.filegear-sg.me
+    path: /s15.html
+- alterId: 0
+  cipher: auto
+  name: 30|🇨🇳_CN_中国->🇺_RU_俄罗斯
+  network: ws
+  port: 25230
+  server: cm1.awslcn.info
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
+  ws-opts:
+    headers:
+      host: cm1.awslcn.info
+    path: /

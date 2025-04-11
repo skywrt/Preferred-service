@@ -3,19 +3,18 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3,19|🏁RELAY-141.101.121.195-0369
+  name: 3,19|🏁RELAY-141.101.120.64-0378
   network: ws
-  port: 8443
-  server: 1743919941.tencentapp.cn
-  servername: 1743919978.speed.laxha.cccp.freefly.pp.ua
+  port: 2053
+  server: 141.101.120.64
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: false
-  uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e
+  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
   ws-opts:
     headers:
-      host: 1743919978.speed.laxha.cccp.freefly.pp.ua
+      host: 1744007578.speed.zjgza.cccp.freefly.pp.ua
     path: /
 - alterId: 0
   cipher: auto
@@ -54,15 +53,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|0|国家宽 01 | 1x UK #1'
-  password: e8bfdb47-78ca-423f-bd89-ccd23d95b09c
+  name: '5,11,24,27,30|0|国家宽 01 | 1x UK #2'
+  password: 6d497783-4e06-4c6f-900f-04d974eeee0a
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|1|🇧 英国住宅IP 01 | 1x UK
-  password: 5e84e3ef-b326-44c7-ad3f-fac527724a5a
+  name: '5,11,24,27,30|1|🇧 英国住宅IP 01 | 1x UK #2'
+  password: 2d65c723-a5bd-431c-a450-9755ad28987d
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -99,12 +98,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 4953dd35-9fc1-4d5f-b047-ec34d96537b6
-- cipher: chacha20-ietf-poly1305
-  name: '5,24,27|2|🇬🇧4 |  3.9MB/s #2'
-  password: iEKtgttwHhDjsbOki1a5BK
-  port: 443
-  server: 78.129.140.11
-  type: ss
 - name: 5|英国UK-T
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
@@ -148,14 +141,14 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10,28|🇩🇪 德国法兰克福-1B
+  name: 10,28|🇩🇪 德国法兰克福-1A
   network: ws
   port: 23451
   server: frankfurt.faforex.eu.org
   tls: false
   type: vmess
   udp: true
-  uuid: 2d37a7aa-82ac-42bd-9c25-07117987b046
+  uuid: ae5b7c70-dc36-4c95-88b1-364492869872
   ws-opts:
     headers:
       Host: us-new03.daluquan.top
@@ -307,41 +300,28 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇬🇧 GB 英国 160-1B
-  password: 570966b7-f30f-4ff1-a76d-2685dbeb5a5f
-  port: 34401
-  server: eulondon.nexifyspark.com
+- cipher: aes-256-gcm
+  name: 28|🇬🇧 V1 | 英国1-1C
+  password: 62da4277-9ad1-4574-8a89-0107dd11cb68
+  port: 49081
+  server: gb91.cctv14.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇬🇧 英国-1A
-  password: 0384e697-7042-4dde-ab7b-1e1f0c8cba79
-  port: 26008
-  server: diao.arken8379.com
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 28|🇬🇧 英国1-1C
+  port: 45066
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇬🇧 英国南部-1D
-  password: f41f4c9e-f3fa-4e09-bc41-edea62268f39
-  port: 62531
-  server: hry01.2228333.xyz
+  uuid: 756b4840-343e-4ff0-ae2f-f923bfad8747
+- cipher: aes-256-gcm
+  name: 28|🇬🇧 VIP 英国1-1C
+  password: 6768c324-c5e8-475c-b5c6-e99b1f221997
+  port: 47081
+  server: gb01.jiasudu.buzz
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇬🇧 GB 英国 165-1B
-  password: 570966b7-f30f-4ff1-a76d-2685dbeb5a5f
-  port: 34402
-  server: eulondon.nexifyspark.com
-  type: ss
-  udp: true
-- name: 28|🇬🇧 英国-1B
-  password: 89ae93db-740c-4a7f-9e4e-54b642fa6bad
-  port: 23005
-  server: huojian-js.arken8379.com
-  skip-cert-verify: true
-  sni: www.bilibili.com
-  type: trojan
   udp: true
 - alterId: 0
   cipher: auto
@@ -351,37 +331,42 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 89b14e69-821a-4b59-8971-8147050aa2dd
-- cipher: aes-256-gcm
-  name: 28|🇬🇧 V1 | 英国1-1C
-  password: 62da4277-9ad1-4574-8a89-0107dd11cb68
-  port: 49081
-  server: gb91.cctv14.xyz
+  uuid: fde918ed-5138-458e-a52c-744073f0be67
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇬🇧 GB 英国 165-1B
+  password: d8a85156-1618-4531-836e-130a7f5bfa53
+  port: 34402
+  server: eulondon.nexifyspark.com
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 28|🇬🇧 VIP 英国1-1A
-  password: 6768c324-c5e8-475c-b5c6-e99b1f221997
-  port: 47081
-  server: gb01.jiasudu.buzz
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇬🇧 英国南部-1E
+  password: 9cd4fe36-1279-4600-8288-dfdfca5b766d
+  port: 62531
+  server: hry01.2228333.xyz
+  type: ss
+  udp: true
+- name: 28|🇬🇧 英国-1A
+  password: 89ae93db-740c-4a7f-9e4e-54b642fa6bad
+  port: 23005
+  server: huojian-js.arken8379.com
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇬🇧 GB 英国 160-1B
+  password: d8a85156-1618-4531-836e-130a7f5bfa53
+  port: 34401
+  server: eulondon.nexifyspark.com
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 28|🇬🇧 英国1-1B
-  port: 45066
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4caf8dd9-0aab-4b6f-a373-2c26b0643d1c
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-46.250.253...
   network: tcp
-  port: '28872'
+  port: 28872
   server: 46.250.253.234
-  servername: ''
   tls: false
   type: vmess
   uuid: 762b3923-5885-4c5f-886f-e62788512338
