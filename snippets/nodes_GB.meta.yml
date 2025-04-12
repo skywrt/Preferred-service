@@ -1,19 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|62b7c63d364542ddb79537b843f49c...
-  network: ws
-  port: 22222
-  server: 3.11.72.249
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
 - name: 5|英国UK-T
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
@@ -21,19 +6,16 @@ proxies:
   skip-cert-verify: false
   sni: uk.mjt000.com
   type: trojan
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30,37|🇧GB英国2
-  password: ec0578e9-1119-4902-911b-5a77584f487a
+- cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27|2|🇧 英国住宅IP 01 | 1x UK
+  password: 6102c179-ccee-4b6c-b960-a99becc35d5d
   port: 36271
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|14|🇧英国家宽 01 | 1x UK #1'
-  password: d44e0276-ca95-4265-bc59-d754586f60a6
+  name: 5,11,24,27|0|国家宽 01 | 1x UK
+  password: 68641aa9-7956-45fa-a031-a5474616d351
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -325,17 +307,15 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  alterId: 0
-  name: 10,20,21,37|未知52 7.8MB/s
+  name: '10,20,21|🇫🇷FR-51.15.86.181-0367 #1'
   network: tcp
   password: eG92F3gh09
   port: 1935
   server: 51.15.86.181
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: x1ams-scaleway.devefun.net
   tls: true
   type: trojan
-  udp: true
 - allowInsecure: ''
   name: 10|英国 010
   network: original
@@ -347,15 +327,17 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  name: 10|英国 011
+  alterId: 0
+  name: 10,37|未知28 2.9MB/s
   network: tcp
   password: '!!str 74260698218909400'
   port: 443
   server: 85.234.65.11
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: happy-bluebird.shiner427.skin
   tls: true
   type: trojan
+  udp: true
 - allowInsecure: ''
   name: 10|英国 012
   network: tcp
@@ -367,17 +349,15 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  alterId: 0
-  name: 10,37|未知15 5.9MB/s
+  name: 10|英国 013
   network: tcp
   password: '!!str 74260698218909400'
   port: 443
   server: 85.234.83.133
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: smooth-imp.shiner427.skin
   tls: true
   type: trojan
-  udp: true
 - allowInsecure: ''
   name: 10|英国 014
   network: tcp
@@ -421,15 +401,6 @@ proxies:
     headers:
       Host: lo.kpcloud.eu.org
     path: '%2Fblue'
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知90 4.4MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.79
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - name: '20,21|🇬🇧GB-84.8.159.155-0450 #1'
   password: b19c4375-d847-4c40-9824-4767c88b5f38
   port: 10200
@@ -488,44 +459,35 @@ proxies:
   cipher: auto
   name: 24,36|🔒 VM-TCP-NA 🇸🇬 SG-46.250.237.1...
   network: tcp
-  port: '29999'
+  port: 29999
   server: 46.250.237.196
-  servername: ''
   tls: false
   type: vmess
   uuid: b31fc134-978e-4176-8579-8107d6a0cede
-- alterId: 0
-  name: 24,37|未知71
-  network: tcp
-  password: telegram-id-v2rayvpnchannel
+- name: 24|🇬🇧 英国 伦敦Amazon数据中心
+  password: telegram-id-directvpn
   port: 22222
   server: 3.9.247.80
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
-  tls: true
   type: trojan
-  udp: true
-- alpn:
-  - http/1.1
-  alterId: 0
-  client-fingerprint: chrome
-  name: 24,30,37|未知79
-  network: tcp
+- name: '24|🇬🇧 英国 伦敦Amazon数据中心 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 35.178.163.218
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
-  tls: true
   type: trojan
-  udp: true
-- name: 24|🇬🇧 _英国
+- alterId: 0
+  name: 24,37|GB国
   password: Aimer
   port: 19000
   server: 89.213.182.253
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epccr.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇬🇧 _英国 #1'
   password: Aimer
   port: 39231
@@ -670,24 +632,6 @@ proxies:
   sni: uk3.731732.xyz
   type: hysteria2
   udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇧 英国 V2CROSS.COM
-  port: 29999
-  server: 46.250.237.196
-  tls: false
-  type: vmess
-  uuid: b31fc134-978e-4176-8579-8107d6a0cede
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇧 英国 V2CROSS.COM 2
-  port: 45317
-  server: 46.250.234.32
-  tls: false
-  type: vmess
-  uuid: b2836369-220b-4840-80c4-8cf904c735ee
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
