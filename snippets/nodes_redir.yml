@@ -765,9 +765,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 12|🇨🇳_CN_中国->🇺🇸_US_美国
+  name: 12,30|🇳_CN_中国->🇸_US_美国
   network: tcp
-  port: '5228'
+  port: 5228
   server: f37db099-sum4g0-sy7yrp-1j3kc.cu.plebai.net
   tls: false
   type: vmess
@@ -789,24 +789,20 @@ proxies:
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: '12,27|2|🇺🇸23 |  1.4MB/s #2'
+  name: 12,30|🇺🇸_US_美国->🇨🇳_CN_中国_2
   network: ws
   port: 8083
   server: 8cf5cc50-sunz40-sumf02-155d9.se.plebai.net
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 34f0cf42-0f8a-11ec-a8bf-f23c91cfbbc9
-  ws-headers:
-    Host: 8cf5cc50-sunz40-sumf02-155d9.se.plebai.net
   ws-opts:
     headers:
       Host: ''
     path: ''
-  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '12|🇺🇸_US_美国->🇨🇳_CN_中国 #4'
+  name: 12,30|🇺🇸_US_美国->🇨🇳_CN_中国_4
   network: ws
   port: 8083
   server: 40fd5436-suvds0-tb6yrr-1tfcw.se.plebai.net
@@ -819,7 +815,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 12,24,36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
+  name: 12,24,30,36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
   network: tcp
   port: '58891'
   server: 91.194.11.162
@@ -840,7 +836,7 @@ proxies:
     path: '%2Fapple'
 - alterId: 0
   cipher: auto
-  name: '12|🇺🇸_US_美国->🇨🇳_CN_中国 #7'
+  name: 12,30|🇸_US_美国->🇨🇳_CN_中国_7
   network: ws
   port: 8083
   server: ab4cbb3b-suvds0-t0qij6-j20q.se.plebai.net
@@ -851,11 +847,11 @@ proxies:
     headers:
       Host: ''
     path: ''
-- name: '12,24|🇺🇸 _美国 #32'
+- name: 12,24,30|🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
   password: 696cfe79
   port: 443
   server: 192.9.132.79
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   type: trojan
 - alterId: 0
@@ -1131,51 +1127,76 @@ proxies:
       host: uk.moss.network
     path: /d/65dd503.TG.WangCai2.WangCai_8:107690
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港 中转-1P
+  name: 28|🇭🇰 香港 中转-1F
   password: 364df2c1-2f39-4a54-9440-b4e52e40f6e7
-  port: 65519
-  server: vip.baima360.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇺🇸 美国 中转-1C
-  password: 25420374-5038-481d-99f8-b2979cfe1f33
-  port: 17941
-  server: vip.baima360.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇷🇺 俄罗斯 中转-1E
-  password: 25178ff7-d49c-4b7b-adb8-3b90303ee6e7
-  port: 23499
-  server: vip.baima360.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港 中转-1I
-  password: 25420374-5038-481d-99f8-b2979cfe1f33
   port: 36214
   server: vip.baima360.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港 中转-1N
-  password: 25178ff7-d49c-4b7b-adb8-3b90303ee6e7
+  name: 28|🇭🇰 香港 中转-1K
+  password: 7b9c7a1e-5561-4338-a951-938f395f3a32
   port: 36511
   server: vip.baima360.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇧🇷 巴西 中转-1F
+  name: 28|🇷🇺 俄罗斯 中转-1D
+  password: 7b9c7a1e-5561-4338-a951-938f395f3a32
+  port: 23499
+  server: vip.baima360.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇺🇸 美国 中转-1B
   password: 364df2c1-2f39-4a54-9440-b4e52e40f6e7
+  port: 17941
+  server: vip.baima360.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港 中转-1G
+  password: 25420374-5038-481d-99f8-b2979cfe1f33
+  port: 65519
+  server: vip.baima360.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇧🇷 巴西 中转-1A
+  password: 409255bc-9669-46fc-b116-9bec917a2ac3
   port: 30752
   server: vip.baima360.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇩🇪 德国 中转-1D
-  password: c74d5b75-4cb5-41be-9346-96869663bb20
+  name: 28|🇩🇪 德国 中转-1A
+  password: 409255bc-9669-46fc-b116-9bec917a2ac3
   port: 55997
   server: vip.baima360.com
   type: ss
   udp: true
+- alterId: 2
+  cipher: auto
+  name: 30|🇳_CN_中国->_JP_
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- name: 30|🇺🇸_US_美国->🇷_FR_国
+  network: ws
+  password: 02926f9e-153a-42c8-8ecd-8fade7009ad1
+  port: 443
+  server: 107.173.87.40
+  skip-cert-verify: true
+  sni: golinkwuxian.top
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: 111.golinkwuxian.top
+    path: /apple

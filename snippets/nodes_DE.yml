@@ -31,7 +31,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5,11,24,27,36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
+  name: 5,10,24,27,30,36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
   network: tcp
   port: '27750'
   server: 5.253.41.147
@@ -43,13 +43,14 @@ proxies:
     Host: 5.253.41.147
   ws-path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|1|🇪 德国 01 | 1x DE
-  password: 0fc45fb5-3ec7-42eb-bab2-707e4dbb79c1
+  name: '5,11,24,27,30|0| 国 01 | 1x DE #2'
+  password: ad5511d7-4e09-48b9-a783-f3e472533c35
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 5,24|🇺🇸 美国 Amazon数据中心
+- client-fingerprint: chrome
+  name: '5,24,30|🇺🇸 美国 Amazon数据中心 #1'
   password: telegram-id-directvpn
   port: 22222
   server: 18.159.27.56
@@ -71,7 +72,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5,24,27,36|🔒 VM-TCP-NA 🇩🇪 DE-116.203.14.1...
+  name: 5,10,24,36|🔒 VM-TCP-NA 🇩🇪 DE-116.203.14.1...
   network: tcp
   port: '33157'
   raw:
@@ -96,8 +97,8 @@ proxies:
   type: vmess
   uuid: d61ef6c6-b70a-4f05-8df6-14b37ec8720a
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|0|国 01 | 1x DE
-  password: eba84d65-f45d-4506-8d35-f7070b34529d
+  name: '5,11,24,27,30|14|🇪德国 01 | 1x DE #1'
+  password: d44e0276-ca95-4265-bc59-d754586f60a6
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -332,11 +333,10 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '23,24,27|2|🇫🇷4 |  5.7MB/s #2'
+  name: '23,24|2|🇫🇷4 |  5.7MB/s #1'
   network: ws
-  port: 12898
+  port: '12898'
   server: gtm1.ktmwan.net
-  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
@@ -352,59 +352,37 @@ proxies:
   skip-cert-verify: false
   sni: epccy.ambercc.filegear-sg.me
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇩🇪 DE 德国 113
-  password: 169b2dfc-82bc-4b2c-9497-6e9a22479da6
-  port: 34902
-  server: reg2.nexifyspark.com
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
-  name: 28|🇩🇪 VIP 德国1-1B
-  password: 9767ec41-ee2f-4a36-962c-6a50baedfba6
+  name: 28|🇩🇪 VIP 德国1-1A
+  password: 2823c728-7b04-4f47-bfc2-92ff0ec1e6c4
   port: 47084
   server: de01.jiasudu.buzz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇩🇪 DE 德国 112
-  password: 169b2dfc-82bc-4b2c-9497-6e9a22479da6
-  port: 34901
-  server: reg2.nexifyspark.com
+  name: 28|🇩🇪 德国1
+  password: 96350200-9aab-493c-ab2e-333e3045160b
+  port: 19691
+  server: h.cm.xiaomi-api.xyz
   type: ss
+  udp: true
+- name: 28|🇩🇪 德国-1D
+  password: 0b794f22-cfd3-4373-84c4-419c7fc2510f
+  port: 23004
+  server: huojian-js.arken8379.com
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
   tls: false
   type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
-  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
-  network: grpc
-  port: '15145'
-  server: 88.198.172.25
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NONE 🏴‍☠️ NA-...
-  network: httpupgrade
-  port: '80'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d6080991-4794-4bc4-a6b5-29a05be4696a
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-17...
@@ -417,10 +395,13 @@ proxies:
   uuid: 0f427f89-3aa4-4641-9e58-9ff0cc1cbfae
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
-  tls: false
+  grpc-opts:
+    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
+  network: grpc
+  port: '15145'
+  server: 88.198.172.25
+  servername: ''
+  tls: true
   type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
+  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
