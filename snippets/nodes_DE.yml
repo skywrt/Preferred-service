@@ -1,4 +1,18 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27|0|国 01 | 1x DE
+  password: 7abe9f61-12ef-4a61-895d-7d300b505dd1
+  port: 31471
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27|14|🇪 德国 01 | 1x DE
+  password: 8b3ef66b-59de-45d8-8e64-d31d70ed916a
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5|德国-优化2
@@ -122,6 +136,14 @@ proxies:
   tls: false
   type: vmess
   uuid: d61ef6c6-b70a-4f05-8df6-14b37ec8720a
+- cipher: rc4-md5
+  name: 11|2|🇩🇪8 |  3.3MB/s
+  obfs: plain
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  protocol: origin
+  server: 193.108.119.230
+  type: ssr
 - name: 13,24|🇺🇸 美国 V2CROSS.COM
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -231,18 +253,14 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.28.69...
-  network: ws
-  port: 443
-  server: 57.129.28.69
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-17...
+  network: httpupgrade
+  port: '2052'
+  server: 173.245.59.100
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: baradiha.com
-    path: /linkvws
+  uuid: 0f427f89-3aa4-4641-9e58-9ff0cc1cbfae
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -266,21 +284,11 @@ proxies:
   uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  name: 36|🔒 VM-HTTPUPGRADE-NONE 🏴‍☠️ NA-...
   network: httpupgrade
-  port: '2095'
+  port: '80'
   server: 104.19.150.10
   servername: ''
   tls: false
   type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-17...
-  network: httpupgrade
-  port: '2052'
-  server: 173.245.58.100
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0f427f89-3aa4-4641-9e58-9ff0cc1cbfae
+  uuid: 32763470-5925-4df8-a615-77a18d25eeac
