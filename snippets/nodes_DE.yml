@@ -3,7 +3,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|fb8050838d12471ba2ba026897ff6b...
+  name: 3|0dd4b7cbdf62492d9e3049cf1b2852...
   network: ws
   port: 443
   server: 57.129.28.69
@@ -35,7 +35,6 @@ proxies:
   network: tcp
   port: '27750'
   server: 5.253.41.147
-  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -44,21 +43,18 @@ proxies:
     Host: 5.253.41.147
   ws-path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27|0| 国 01 | 1x DE
-  password: ec0578e9-1119-4902-911b-5a77584f487a
+  name: 5,11,24,27|1|🇪 德国 01 | 1x DE
+  password: 0fc45fb5-3ec7-42eb-bab2-707e4dbb79c1
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
-- allowInsecure: ''
-  name: 5,27|2|🇪6 |  5.2MB/s
-  network: tcp
+- name: 5,24|🇺🇸 美国 Amazon数据中心
   password: telegram-id-directvpn
   port: 22222
   server: 18.159.27.56
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
-  tls: true
   type: trojan
 - alterId: 0
   cipher: auto
@@ -75,7 +71,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5,11,27,36|🔒 VM-TCP-NA 🇩🇪 DE-116.203.14.1...
+  name: 5,24,27,36|🔒 VM-TCP-NA 🇩🇪 DE-116.203.14.1...
   network: tcp
   port: '33157'
   raw:
@@ -100,8 +96,8 @@ proxies:
   type: vmess
   uuid: d61ef6c6-b70a-4f05-8df6-14b37ec8720a
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|1|🇪德国 01 | 1x DE
-  password: 0235287d-0d58-43c2-bd73-a6f2bda5b2bd
+  name: 5,11,24,27|0|国 01 | 1x DE
+  password: eba84d65-f45d-4506-8d35-f7070b34529d
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -178,12 +174,12 @@ proxies:
   sni: trojan.burgerip.co.uk
   tls: true
   type: trojan
-- name: 13|🇩🇪_DE_德国_1
+- name: 13,24|🇺🇸 美国 V2CROSS.COM
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
   port: 443
   server: nextstepcareer.online
-  skip-cert-verify: true
+  skip-cert-verify: false
   type: trojan
 - name: 13|🇩🇪_DE_德国_2
   network: tcp
@@ -334,12 +330,27 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '23,24,27|2|🇫🇷4 |  5.7MB/s #2'
+  network: ws
+  port: 12898
+  server: gtm1.ktmwan.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1bfc69ad-1855-4dfe-b169-886d7156e0f3
+  ws-opts:
+    headers:
+      Host: gtm1.ktmwan.net
+    path: /
 - name: 24|🇩🇪 _德国
   password: Aimer
   port: 8080
   server: 18.185.51.67
   skip-cert-verify: false
-  sni: epccr.ambercc.filegear-sg.me
+  sni: epccy.ambercc.filegear-sg.me
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 28|🇩🇪 DE 德国 113
@@ -362,26 +373,6 @@ proxies:
   server: reg2.nexifyspark.com
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36,37|未知16
-  network: httpupgrade
-  port: 2052
-  server: 173.245.58.100
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 0f427f89-3aa4-4641-9e58-9ff0cc1cbfae
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
-  tls: false
-  type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
@@ -414,3 +405,22 @@ proxies:
   tls: false
   type: vmess
   uuid: d6080991-4794-4bc4-a6b5-29a05be4696a
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-17...
+  network: httpupgrade
+  port: '2052'
+  server: 173.245.59.100
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0f427f89-3aa4-4641-9e58-9ff0cc1cbfae
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea

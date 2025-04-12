@@ -14,15 +14,15 @@ proxies:
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|1|🇼台湾 03 | 1x TW
-  password: 0235287d-0d58-43c2-bd73-a6f2bda5b2bd
+  name: 5,11,24,27|0|🇼台湾 03 | 1x TW
+  password: eba84d65-f45d-4506-8d35-f7070b34529d
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27|0|  01 | 1x TW
-  password: ec0578e9-1119-4902-911b-5a77584f487a
+  name: 5,11,24,27|1|🇼 台湾 01 | 1x TW
+  password: 0fc45fb5-3ec7-42eb-bab2-707e4dbb79c1
   port: 36241
   server: free.2weradf.xyz
   type: ss
@@ -41,15 +41,15 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27|0|🇼 台湾 02 | 1x TW
-  password: ec0578e9-1119-4902-911b-5a77584f487a
+  name: 5,11,24,27|1|🇹🇼 台湾 02 | 1x TW
+  password: 0fc45fb5-3ec7-42eb-bab2-707e4dbb79c1
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|1|🇹🇼台湾 02 | 1x TW #1'
-  password: 0235287d-0d58-43c2-bd73-a6f2bda5b2bd
+  name: 5,11,24,27|0|🇼台湾 02 | 1x TW
+  password: eba84d65-f45d-4506-8d35-f7070b34529d
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
@@ -82,15 +82,15 @@ proxies:
       Host: tw1.runjustfast.com
     path: /t1a64wdea01c
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27|0|🇼 台湾 03 | 1x TW
-  password: ec0578e9-1119-4902-911b-5a77584f487a
+  name: 5,11,24,27|1|🇼 台湾 03 | 1x TW
+  password: 0fc45fb5-3ec7-42eb-bab2-707e4dbb79c1
   port: 36245
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|1|🇼台湾 01 | 1x TW
-  password: 0235287d-0d58-43c2-bd73-a6f2bda5b2bd
+  name: 5,11,24,27|0| 01 | 1x TW
+  password: eba84d65-f45d-4506-8d35-f7070b34529d
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
@@ -108,11 +108,33 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 23,24,27|2|🇼28 |  1.8MB/s
+  network: ws
+  port: 12888
+  server: gtm1.ktmwan.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1bfc69ad-1855-4dfe-b169-886d7156e0f3
+  ws-opts:
+    headers:
+      Host: gtm1.ktmwan.net
+    path: /
 - cipher: aes-256-gcm
   name: 28|🇹🇼 V1 | 台湾2-1A
   password: b13cc287-6306-431c-b96b-f36e8adb6c49
   port: 49022
   server: tw92.cctv14.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 台湾01-1G
+  password: 6c9db795-c81f-49d0-aabd-24fb5a078251
+  port: 47564
+  server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
