@@ -1,11 +1,27 @@
 proxies:
-- name: 5|台湾WAP-T-GPT
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: hinet.mjt000.com
-  skip-cert-verify: false
-  sni: hinet.mjt000.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27|1|🇹🇼台湾 02 | 1x TW #3'
+  password: 9a4fd2b3-52f1-4b5d-bfc2-b7e0df85c2c2
+  port: 31243
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27|0|🇼 台湾 02 | 1x TW #1'
+  password: 13f7b999-e94b-4a73-9262-ad367df5ccc1
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 5|2|🇹🇼42 |  4.6MB/s
+  port: 15700
+  server: zhee01.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: aes-256-cfb
   name: '5,11,24,27|12|🇼 台湾3|@ripaojiedian #1'
   password: f8f7aCzcPKbsF8p3
@@ -14,16 +30,9 @@ proxies:
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|0|🇼台湾 03 | 1x TW
-  password: 68641aa9-7956-45fa-a031-a5474616d351
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|2|🇼 台湾 01 | 1x TW
-  password: 6102c179-ccee-4b6c-b960-a99becc35d5d
-  port: 36241
+  name: '5,11,24,27|0|🇼 台湾 03 | 1x TW #1'
+  password: 13f7b999-e94b-4a73-9262-ad367df5ccc1
+  port: 36245
   server: free.2weradf.xyz
   type: ss
   udp: true
@@ -40,91 +49,6 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 5|1|🇹🇼50 |  6.6MB/s
-  port: 15700
-  server: zhee01.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 5|2|🇹🇼33 |  6.1MB/s
-  port: 37809
-  server: shenzhou05.mysynology.net
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|2|🇹🇼 台湾 02 | 1x TW #1'
-  password: 6102c179-ccee-4b6c-b960-a99becc35d5d
-  port: 36243
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|0|🇼台湾 02 | 1x TW
-  password: 68641aa9-7956-45fa-a031-a5474616d351
-  port: 31243
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 5|台湾-优化
-  network: ws
-  port: '16616'
-  server: yes.mojcn.com
-  tls: false
-  type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 5|TW | 台湾 01
-  network: ws
-  port: '21003'
-  server: r.runjustfast.com
-  servername: tw1.runjustfast.com
-  tls: true
-  type: vmess
-  uuid: e8383f0e-31e7-427c-9df0-36d4dec4aa65
-  ws-opts:
-    headers:
-      Host: tw1.runjustfast.com
-    path: /t1a64wdea01c
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|2|🇼 台湾 03 | 1x TW
-  password: 6102c179-ccee-4b6c-b960-a99becc35d5d
-  port: 36245
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|0| 01 | 1x TW
-  password: 68641aa9-7956-45fa-a031-a5474616d351
-  port: 31241
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- name: 5|🇹🇼 TW
-  network: ws
-  port: 443
-  server: 162.247.5.91
-  servername: tw.qhahd.shop
-  tls: true
-  type: vless
-  uuid: 9f53d9dc-8e5d-4a96-d940-fb542631e1e4
-  ws-opts:
-    headers:
-      Host: tw.qhahd.shop
-    path: '%2Fbing'
 - alpn:
   - h3
   client-fingerprint: random
@@ -140,6 +64,100 @@ proxies:
     headers:
       Host: fei.634676.xyz
     path: '%2F%3Fed%3D2560'
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27|1|🇼台湾 01 | 1x TW #1'
+  password: 9a4fd2b3-52f1-4b5d-bfc2-b7e0df85c2c2
+  port: 31241
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 5|TW | 台湾 01
+  network: ws
+  port: '21003'
+  server: r.runjustfast.com
+  servername: tw1.runjustfast.com
+  tls: true
+  type: vmess
+  uuid: e8383f0e-31e7-427c-9df0-36d4dec4aa65
+  ws-opts:
+    headers:
+      Host: tw1.runjustfast.com
+    path: /t1a64wdea01c
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 5|0|🇹🇼3 |  1.1MB/s
+  port: 34313
+  server: 120.238.53.237
+  servername: gateway.icloud.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 5|2|🇹🇼61 |  2.5MB/s
+  port: 37809
+  server: shenzhou05.mysynology.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 5|0|🇹🇼29 |  2.2MB/s
+  port: 16704
+  server: zhee01.dynu.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27|0|  01 | 1x TW #1'
+  password: 13f7b999-e94b-4a73-9262-ad367df5ccc1
+  port: 36241
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 5|台湾-优化
+  network: ws
+  port: '16616'
+  server: yes.mojcn.com
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
+- name: 5|台湾WAP-T-GPT
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: hinet.mjt000.com
+  skip-cert-verify: false
+  sni: hinet.mjt000.com
+  type: trojan
+- name: 5|🇹🇼 TW
+  network: ws
+  port: 443
+  server: 162.247.5.91
+  servername: tw.qhahd.shop
+  tls: true
+  type: vless
+  uuid: 9f53d9dc-8e5d-4a96-d940-fb542631e1e4
+  ws-opts:
+    headers:
+      Host: tw.qhahd.shop
+    path: '%2Fbing'
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27|1|🇼台湾 03 | 1x TW #1'
+  password: 9a4fd2b3-52f1-4b5d-bfc2-b7e0df85c2c2
+  port: 31245
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5|台湾-优化3
@@ -155,9 +173,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '23,24|2|🇹🇼28 |  1.8MB/s #1'
+  name: 23|🇹🇼 台湾 05
   network: ws
-  port: '12888'
+  port: 12888
   server: gtm1.ktmwan.net
   tls: false
   type: vmess
