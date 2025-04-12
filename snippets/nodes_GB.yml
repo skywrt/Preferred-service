@@ -1,42 +1,28 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,27,30|14| 国住宅IP 01 | 1x UK #1'
-  password: 8084d5de-362d-4818-9b73-71d3e5c28c37
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- name: 5|🇬🇧 英国
-  password: 675ddf25-0a98-4ec6-bcd0-fa1c1cc498cd
-  port: 59358
-  server: lm.kaiqsz.com
-  skip-cert-verify: true
-  sni: mmbiz11.redapricotcloud.com
+- name: 5|英国UK-T
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: uk.mjt000.com
+  skip-cert-verify: false
+  sni: uk.mjt000.com
   type: trojan
 - alterId: 0
-  cipher: auto
-  name: 5|UK | 英国 01
-  network: ws
-  port: '21005'
-  server: r.runjustfast.com
-  servername: uk1.runjustfast.com
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,27,37|🇧GB英国2
+  password: ec0578e9-1119-4902-911b-5a77584f487a
+  port: 36271
+  server: free.2weradf.xyz
+  skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: e8383f0e-31e7-427c-9df0-36d4dec4aa65
-  ws-opts:
-    headers:
-      Host: uk1.runjustfast.com
-    path: /3su6gxkea11c
-- alterId: 0
-  cipher: auto
-  name: 5|🇬🇧 英国2
-  network: tcp
-  port: '45067'
-  server: xdd.dashuai.cyou
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4953dd35-9fc1-4d5f-b047-ec34d96537b6
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27|1|🇧英国家宽 01 | 1x UK
+  password: 0235287d-0d58-43c2-bd73-a6f2bda5b2bd
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5|英国-优化3
@@ -50,13 +36,6 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- name: 5|英国UK-T
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: uk.mjt000.com
-  skip-cert-verify: false
-  sni: uk.mjt000.com
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|英国-优化-GPT
@@ -72,30 +51,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5|🇬🇧 英国1
-  network: tcp
-  port: '45066'
-  server: haa.dashuai.cyou
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4953dd35-9fc1-4d5f-b047-ec34d96537b6
-- cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|0|国家宽 01 | 1x UK #1'
-  password: 00747e0d-ff47-4a94-9287-c64e1330918e
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- name: 5|UK | 英国 Trojan 01
-  password: e8383f0e-31e7-427c-9df0-36d4dec4aa65
-  port: 21015
-  server: r.runjustfast.com
-  skip-cert-verify: false
-  sni: uk1.runjustfast.com
-  type: trojan
-- alterId: 0
-  cipher: auto
   name: 5|英国-优化2
   network: ws
   port: '16645'
@@ -107,6 +62,27 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- name: 5|UK | 英国 Trojan 01
+  password: e8383f0e-31e7-427c-9df0-36d4dec4aa65
+  port: 21015
+  server: r.runjustfast.com
+  skip-cert-verify: false
+  sni: uk1.runjustfast.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 5|UK | 英国 01
+  network: ws
+  port: '21005'
+  server: r.runjustfast.com
+  servername: uk1.runjustfast.com
+  tls: true
+  type: vmess
+  uuid: e8383f0e-31e7-427c-9df0-36d4dec4aa65
+  ws-opts:
+    headers:
+      Host: uk1.runjustfast.com
+    path: /3su6gxkea11c
 - name: 8|🇬🇧GB-3.9.164.189-194_1@194
   password: E6r93XCOsyM9
   port: 16733
@@ -180,7 +156,7 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  name: '10,20,21|🇫🇷FR-51.68.13.106-0393 #1'
+  name: '10,20,21|🇫🇷FR-51.68.13.106-0368 #1'
   network: tcp
   password: FiSo7J6vfS
   port: 1935
@@ -190,15 +166,17 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  name: '10,20,21|🇫🇷FR-51.15.86.181-0348 #1'
+  alterId: 0
+  name: 10,20,21,37|未知52 7.8MB/s
   network: tcp
   password: eG92F3gh09
   port: 1935
   server: 51.15.86.181
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: x1ams-scaleway.devefun.net
   tls: true
   type: trojan
+  udp: true
 - allowInsecure: ''
   name: 10|英国 010
   network: original
@@ -230,15 +208,17 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  name: 10|英国 013
+  alterId: 0
+  name: 10,37|未知15 5.9MB/s
   network: tcp
   password: '!!str 74260698218909400'
   port: 443
   server: 85.234.83.133
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: smooth-imp.shiner427.skin
   tls: true
   type: trojan
+  udp: true
 - allowInsecure: ''
   name: 10|英国 014
   network: tcp
@@ -258,39 +238,26 @@ proxies:
   sni: www.hk-jd.top
   type: trojan
   udp: true
-- alterId: 32
-  cipher: auto
-  name: '10,20,21|🇺🇸US-77.83.141.171-0878 #1'
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      Host: vc.fly.dev
-    path: /vc
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知56 16.6MB/s
+  name: 19,20,21,37|未知90 4.4MB/s
   password: shadowsocks
   port: 443
   server: 212.102.53.79
   skip-cert-verify: true
   tls: true
   type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知91 72.1KB/s
-  password: MmeLLLXduGdF9kEcf18in3XsaGFLH6AVhxhdkeMz1Kf27oxo3RHv52WtxBhjnhdiRzQhS8eL8pXciY4ru8m5GhRKfwLJTeiU
-  port: 55988
-  server: 185.5.38.111
-  skip-cert-verify: true
-  tls: true
-  type: ss
+- name: '20,21|🇬🇧GB-84.8.159.155-0450 #1'
+  password: b19c4375-d847-4c40-9824-4767c88b5f38
+  port: 10200
+  server: www.ak-hk.top
+  type: trojan
+- name: '20,21|🇬🇧GB-84.8.159.155-5712 #1'
+  password: b19c4375-d847-4c40-9824-4767c88b5f38
+  port: 10200
+  server: 84.8.159.155
+  sni: www.ak-hk.top
+  type: trojan
 - alterId: 2
   cipher: auto
   name: 23|🇬🇧 英国 04
@@ -306,20 +273,6 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 23|🇬🇧 英国 05
-  network: ws
-  port: 12886
-  server: gtm1.ktmwan.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1bfc69ad-1855-4dfe-b169-886d7156e0f3
-  ws-opts:
-    headers:
-      Host: gtm1.ktmwan.net
-    path: /
 - alterId: 2
   cipher: auto
   name: 23|🇬🇧 UKLONDON 01
@@ -354,13 +307,6 @@ proxies:
     headers:
       Host: 13.mamamajd.site
     path: /
-- name: 24|🇬🇧 _英国
-  password: b19c4375-d847-4c40-9824-4767c88b5f38
-  port: 10230
-  server: 80.225.222.181
-  skip-cert-verify: false
-  sni: www.hk-jd.top
-  type: trojan
 - name: 26|V2-英国03∣K71线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 20820
