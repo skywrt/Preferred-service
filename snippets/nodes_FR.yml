@@ -27,7 +27,7 @@ proxies:
     headers:
       Host: linde06.indiavideo.sbs
     path: /linkws
-- name: 5,20,21,24|🇫🇷 _法国
+- name: 5,11,20,21,24|🇫🇷 _法国
   password: hZ7JkYVAfB
   port: 1935
   server: 141.227.138.29
@@ -182,9 +182,10 @@ proxies:
       Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     path: /azumase.ren
 - alpn:
+  - h3
   - h2
   - http/1.1
-  name: '5,12,20,21|🇫🇷FR-141.227.160.167-1030 #1'
+  name: 5,12,20,21,30|_FR_国
   network: tcp
   password: AXpQXM4vNh
   port: 1935
@@ -351,6 +352,30 @@ proxies:
   server: 151.115.88.168
   type: ss
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知54 4.1MB/s
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.158.171.132
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇫🇷FR-163.5.159.231-8497
+  network: ws
+  port: 443
+  server: irvideo.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      host: irvideo.cfd
+    path: /linkws
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 19|🇫🇷FR-146.19.168.161-6319
@@ -462,20 +487,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 1f06cda1-f430-477f-ade3-d19b08d5be66
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇫🇷 FR-146.19.168.1...
-  network: ws
-  port: '443'
-  server: 146.19.168.161
-  servername: az05.beyondy.cfd
-  tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: az05.beyondy.cfd
-    path: /link
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇫🇷 FR-5.196.29.123:...
