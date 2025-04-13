@@ -765,7 +765,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 12,30|_US_->🇸_ES_
+  name: 12|🇺🇸_US_美国->🇪🇸_ES_西班牙
   network: ws
   port: 8083
   server: 2ebc590b-suvds0-sv5llu-1ldl3.se.plebai.net
@@ -773,10 +773,12 @@ proxies:
   type: vmess
   uuid: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: 12,30|🇺🇸_US_美国->🇪_DE_国
+  name: 12|🇺🇸_US_美国->🇩🇪_DE_德国
   network: ws
   port: 8083
   server: ab4cbb3b-suvds0-t0qij6-j20q.se.plebai.net
@@ -801,6 +803,19 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
+- alterId: 0
+  cipher: auto
+  name: '12,24|_中国 #44'
+  network: ws
+  port: '30840'
+  server: v40.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: api100-core-quic-lf.amemv.com
+    path: /index
 - alterId: 0
   cipher: auto
   name: 13|🇬🇧_GB_英国->🇷🇺_RU_俄罗斯
@@ -1122,43 +1137,3 @@ proxies:
   server: vip.baima360.com
   type: ss
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 30|🇨🇳_CN_中国->🇺🇸_US_美国_2
-  network: ws
-  port: 30830
-  server: v30.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 30|🇨🇳_CN_中国->🇺🇸_US_美国_4
-  network: ws
-  port: 30840
-  server: v40.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: api100-core-quic-lf.amemv.com
-    path: /index
-- alterId: 2
-  cipher: auto
-  name: 30|🇨🇳_CN_中国->🇺🇸_US_美国_5
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: baidu.com
-    path: /oooo

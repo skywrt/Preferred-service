@@ -1,4 +1,17 @@
 proxies:
+- cipher: rc4-md5
+  name: 5,11,16,20,21,24,27|1|🇪1 |  4.7MB/s
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27|0| 国 01 | 1x DE
+  password: e92d81c5-8188-4fc2-a6a3-7d9302cbfc4d
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5|德国-优化2
@@ -12,26 +25,9 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- allowInsecure: ''
-  name: 5,10|英国 016
-  network: tcp
-  password: I46LpSIM1f
-  port: 1935
-  server: 194.164.57.9
-  skip-cert-verify: false
-  sni: x4ger-ionos.devefun.net
-  tls: true
-  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|0|🇪 德国 01 | 1x DE
-  password: 618e7164-2583-4939-8a20-07c2b847c631
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|14|🇪德国 01 | 1x DE #1'
-  password: 3a76a48c-118a-41f7-ac0d-e14d6750baec
+  name: '5,11,24,27|14|🇪德国 01 | 1x DE #1'
+  password: 665e4d2e-9bd0-4e11-ae86-d21c973960d0
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -83,7 +79,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🇩🇪DE-193.122.58.158-1494 #2'
+  name: 10|德国 017
   network: ws
   port: 443
   raw:
@@ -103,7 +99,6 @@ proxies:
     type: ''
     v: '2'
   server: 193.122.58.158
-  servername: ''
   tls: true
   type: vmess
   uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
@@ -146,6 +141,31 @@ proxies:
   tls: false
   type: vmess
   uuid: d61ef6c6-b70a-4f05-8df6-14b37ec8720a
+- alterId: 0
+  cipher: auto
+  name: 10|德国 023
+  network: tcp
+  port: 3378
+  raw:
+    add: fi.pr0xymare.com
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: 6e53b146-1756-4297-ba10-c0370fa9c471
+    net: tcp
+    path: ''
+    port: 3378
+    ps: 🔥Join+Telegram:@FarahVPN🟣
+    scy: auto
+    sni: ''
+    tls: none
+    type: ''
+    v: '2'
+  server: fi.pr0xymare.com
+  tls: false
+  type: vmess
+  uuid: 6e53b146-1756-4297-ba10-c0370fa9c471
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -160,45 +180,21 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇩🇪DE-92.114.54.227-0616
-  network: ws
-  port: 32683
-  server: 92.114.54.227
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b4134d6a-945b-4355-b34b-a0899b02701e
-  ws-opts:
-    headers:
-      host: digitalcloud.pro.jiahe.buzz
-    path: /jh002
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇩🇪DE-193.122.58.158-1494
-  network: ws
-  port: 443
-  server: 193.122.58.158
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      host: irvideo.cfd
-    path: /linkws
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇩🇪DE-185.177.229.245-1110
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-6138
+  password: BejrQvtu9sqUeNuZ
+  port: 9024
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-6246
+  password: aLpQtfEZe445QyHk
+  port: 9098
+  server: 80.92.204.106
   type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.141-6289 #1'
+  name: '20,21|🇩🇪DE-57.129.24.141-6233 #1'
   network: ws
   port: 443
   server: 57.129.24.141
@@ -210,35 +206,6 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-8482 #1'
-  network: ws
-  port: 443
-  server: 57.129.24.125
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
-- alterId: 2
-  cipher: auto
-  name: '27,30|1|🇩🇪1 |  5.0MB/s #1'
-  network: ws
-  port: 23618
-  server: 18.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0b4c36ab-4385-353a-9305-566f12dcf4a5
-  ws-opts:
-    headers:
-      Host: 18.mamamajd.site
-    path: /
 - cipher: aes-256-gcm
   name: 28|🇩🇪 VIP 德国1-1A
   password: 2823c728-7b04-4f47-bfc2-92ff0ec1e6c4
@@ -263,14 +230,14 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  name: 36|🔒 VM-HTTPUPGRADE-NONE 🏴‍☠️ NA-...
   network: httpupgrade
-  port: '2095'
+  port: '80'
   server: 104.19.150.10
   servername: ''
   tls: false
   type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+  uuid: 32763470-5925-4df8-a615-77a18d25eeac
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
@@ -282,14 +249,17 @@ proxies:
   uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-17...
-  network: httpupgrade
-  port: '2052'
-  server: 173.245.58.100
-  servername: ''
+  name: 36|🔒 VM-WS-NA 🇩🇪 DE-91.149.233.17...
+  network: ws
+  port: '20050'
+  server: 91.149.233.178
   tls: false
   type: vmess
-  uuid: 0f427f89-3aa4-4641-9e58-9ff0cc1cbfae
+  uuid: a099b1cf-ac27-4273-9169-4cf51d19212e
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -302,13 +272,3 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NONE 🏴‍☠️ NA-...
-  network: httpupgrade
-  port: '80'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 32763470-5925-4df8-a615-77a18d25eeac
