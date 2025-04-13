@@ -1,31 +1,4 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|1|🇦加拿大 01 | 1x CA #1'
-  password: 9dd37d82-4dbe-47a6-bb28-cc9889069947
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 5|加拿大-优化
-  network: ws
-  port: '16641'
-  server: yes.mojcn.com
-  tls: false
-  type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|0|🇦 加大 01 | 1x CA #1'
-  password: cabbc7b7-04be-40bc-9710-25925a864897
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 5|加拿大-优化3
@@ -39,12 +12,19 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27|2|🇦 加拿大 01 | 1x CA
+  password: 3a27c31b-13a1-4974-b3db-14b7cb2de209
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 5|加拿大-优化2
+  name: 5|加拿大-优化
   network: ws
   port: '16641'
-  server: m.cnmjcn.com
+  server: yes.mojcn.com
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -62,6 +42,40 @@ proxies:
   tls: false
   type: vmess
   uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
+- alterId: 2
+  cipher: auto
+  name: 5,27|1|🇦1 |  2.0MB/s
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27|0|🇦加大 01 | 1x CA #1'
+  password: 60a5c688-c695-4f66-aab6-511b814d88fb
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 5|加拿大-优化2
+  network: ws
+  port: '16641'
+  server: m.cnmjcn.com
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
 - cipher: aes-256-gcm
   name: 8|🇨🇦CA-134.195.196.51-063_1@63
   password: pKEW8JPByTVTLtM
@@ -539,15 +553,17 @@ proxies:
       Host: 100-217-184-172.s4.db-link02.top
     path: /dabai.in104.25.238.226
 - allowInsecure: ''
-  name: 10|加拿大 009
+  alterId: 0
+  name: 10,37|US27
   network: tcp
   password: ef23ddd0-14c5-39c2-9880-af55ce892363
   port: 52492
   server: 142.171.162.85
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: t28.qifei.app
   tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 17|加拿大(yudou66.com 玉豆免费节点)
@@ -578,7 +594,21 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-134.195.198.147-8591 #1'
+  name: '20,21|🇨🇦CA-23.162.200.227-8539 #1'
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇨🇦CA-134.195.198.147-8521 #1'
   network: ws
   port: 443
   server: 134.195.198.147
@@ -592,19 +622,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 23|🇨🇦_CA_加拿大
-  network: ws
-  port: 443
-  server: 158.51.121.36
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 24|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
+  name: 20,21,24|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
   network: ws
   port: 80
   server: 51.79.102.253
@@ -618,7 +636,7 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '24|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP... #1'
+  name: '20,21,24|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP... #1'
   network: ws
   port: 80
   server: 51.79.103.76
@@ -630,6 +648,18 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
+  name: 23|🇨🇦_CA_加拿大
+  network: ws
+  port: 443
+  server: 158.51.121.36
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
 - name: 24|🇨🇦 _加拿大
   password: Aimer
   port: 2087
