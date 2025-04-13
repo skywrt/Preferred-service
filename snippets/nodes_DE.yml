@@ -1,14 +1,14 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|0|国 01 | 1x DE
-  password: 7abe9f61-12ef-4a61-895d-7d300b505dd1
+  name: '5,11,24,27|1|🇪德国 01 | 1x DE #1'
+  password: 9dd37d82-4dbe-47a6-bb28-cc9889069947
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|14|🇪 德国 01 | 1x DE
-  password: 8b3ef66b-59de-45d8-8e64-d31d70ed916a
+  name: '5,11,24,27|0| 国 01 | 1x DE #1'
+  password: cabbc7b7-04be-40bc-9710-25925a864897
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -133,23 +133,16 @@ proxies:
     type: none
     v: '2'
   server: 116.203.14.117
+  servername: ''
   tls: false
   type: vmess
   uuid: d61ef6c6-b70a-4f05-8df6-14b37ec8720a
-- cipher: rc4-md5
-  name: 11|2|🇩🇪8 |  3.3MB/s
-  obfs: plain
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  protocol: origin
-  server: 193.108.119.230
-  type: ssr
-- name: 13,24|🇺🇸 美国 V2CROSS.COM
+- name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
   port: 443
   server: nextstepcareer.online
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
 - name: 13|🇩🇪_DE_德国_2
   network: tcp
@@ -229,6 +222,14 @@ proxies:
   skip-cert-verify: false
   sni: epccr.ambercc.filegear-sg.me
   type: trojan
+- cipher: rc4-md5
+  name: 27|2|🇩🇪8 |  3.3MB/s
+  obfs: plain
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  protocol: origin
+  server: 193.108.119.230
+  type: ssr
 - cipher: aes-256-gcm
   name: 28|🇩🇪 VIP 德国1-1A
   password: 2823c728-7b04-4f47-bfc2-92ff0ec1e6c4
@@ -253,16 +254,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-17...
-  network: httpupgrade
-  port: '2052'
-  server: 173.245.59.100
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0f427f89-3aa4-4641-9e58-9ff0cc1cbfae
-- alterId: 0
-  cipher: auto
   grpc-opts:
     grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
   name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
@@ -275,13 +266,14 @@ proxies:
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
   tls: false
   type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NONE 🏴‍☠️ NA-...
@@ -292,3 +284,22 @@ proxies:
   tls: false
   type: vmess
   uuid: 32763470-5925-4df8-a615-77a18d25eeac
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-17...
+  network: httpupgrade
+  port: '2052'
+  server: 173.245.58.100
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0f427f89-3aa4-4641-9e58-9ff0cc1cbfae
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
