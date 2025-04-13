@@ -52,8 +52,8 @@ proxies:
   tls: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|2|🇪 德国 01 | 1x DE
-  password: 3a27c31b-13a1-4974-b3db-14b7cb2de209
+  name: 5,11,24,27|0| 国 01 | 1x DE
+  password: 5cf4312b-6cf9-480f-8e59-d4e144b2315b
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -86,8 +86,8 @@ proxies:
   type: vless
   uuid: dfa25b43-edf2-99e4-c3b0-1aa7c9ccaa96
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|0|国 01 | 1x DE #1'
-  password: 60a5c688-c695-4f66-aab6-511b814d88fb
+  name: 5,11,24,27|1|🇪德国 01 | 1x DE
+  password: 04429b38-f442-46c5-a81a-15ab937bcaa2
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -485,11 +485,11 @@ proxies:
     headers:
       host: irvideo.cfd
     path: /linkws
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-6356
-  password: cp8pRSUAyLhTfVWH
-  port: 9064
-  server: 80.92.204.106
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇩🇪DE-185.177.229.245-1110
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
   type: ss
 - alterId: 0
   cipher: auto
@@ -519,21 +519,6 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
-- name: 24|🇩🇪 _德国
-  password: Aimer
-  port: 8080
-  server: 18.185.51.67
-  skip-cert-verify: false
-  sni: epccr.ambercc.filegear-sg.me
-  type: trojan
-- cipher: rc4-md5
-  name: 27|1|🇩🇪2 |  3.6MB/s
-  obfs: plain
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  protocol: origin
-  server: 193.108.119.230
-  type: ssr
 - auth: c09b5f87-fa91-450a-aa77-a829bad43b6f
   name: 28|🇩🇪 德国-高端5
   password: c09b5f87-fa91-450a-aa77-a829bad43b6f
@@ -644,13 +629,14 @@ proxies:
   uuid: c09b5f87-fa91-450a-aa77-a829bad43b6f
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-17...
+  network: httpupgrade
+  port: '2052'
+  server: 173.245.58.100
+  servername: ''
   tls: false
   type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
+  uuid: 0f427f89-3aa4-4641-9e58-9ff0cc1cbfae
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -665,14 +651,13 @@ proxies:
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-17...
-  network: httpupgrade
-  port: '2052'
-  server: 173.245.58.100
-  servername: ''
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
   tls: false
   type: vmess
-  uuid: 0f427f89-3aa4-4641-9e58-9ff0cc1cbfae
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NONE 🏴‍☠️ NA-...
