@@ -7,7 +7,7 @@ proxies:
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - cipher: rc4-md5
-  name: 5,11,16,20,21,24,27|2|🇩🇪9 |  3.2MB/s
+  name: 5,11,16,20,21,24,27|0|🇩🇪9 |  3.3MB/s
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
@@ -40,8 +40,8 @@ proxies:
   type: vless
   uuid: dfa25b43-edf2-99e4-c3b0-1aa7c9ccaa96
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|1|🇪 德国 01 | 1x DE
-  password: 5630e6d4-dc1f-46d9-a1b3-249500bde2bb
+  name: 5,11,24,27|14|🇪 德国 01 | 1x DE
+  password: 3eddf05b-4d68-488e-9ac4-4c5600e05a27
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -78,8 +78,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|0|国 01 | 1x DE
-  password: 44bef85f-986a-4647-b387-eedf36c6dd48
+  name: 5,11,24,27|1|🇪国 01 | 1x DE
+  password: 4547e428-09ce-45bb-be4d-7732dfe32e11
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -487,19 +487,6 @@ proxies:
   type: vless
   udp: true
   uuid: 47d7d5eb-55e6-4085-a155-bdf3fcc428f6
-- alterId: 0
-  cipher: auto
-  name: 11,36|🔒 VM-WS-NA 🇩🇪 DE-91.149.233.17...
-  network: ws
-  port: '20050'
-  server: 91.149.233.178
-  tls: false
-  type: vmess
-  uuid: 91189173-1861-4ec3-869c-67a5e08278de
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -650,14 +637,15 @@ proxies:
   uuid: c09b5f87-fa91-450a-aa77-a829bad43b6f
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NONE 🏴‍☠️ NA-...
+  name: 36,37|未知49
   network: httpupgrade
-  port: '80'
-  server: 104.19.150.10
+  port: 2052
+  server: 173.245.58.100
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 32763470-5925-4df8-a615-77a18d25eeac
+  uuid: 0f427f89-3aa4-4641-9e58-9ff0cc1cbfae
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -672,14 +660,14 @@ proxies:
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.18...
-  network: tcp
-  port: '22324'
-  server: 23.158.56.184
+  name: 36|🔒 VM-HTTPUPGRADE-NONE 🏴‍☠️ NA-...
+  network: httpupgrade
+  port: '80'
+  server: 104.19.150.10
   servername: ''
   tls: false
   type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  uuid: 32763470-5925-4df8-a615-77a18d25eeac
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
