@@ -23,15 +23,15 @@ proxies:
   tls: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|0| 国 01 | 1x DE
-  password: 5cf4312b-6cf9-480f-8e59-d4e144b2315b
+  name: 5,11,24,27|14|🇪 德国 01 | 1x DE
+  password: f0091a8f-b8ea-411c-a7c9-58e277594b1a
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|1|🇪德国 01 | 1x DE
-  password: 04429b38-f442-46c5-a81a-15ab937bcaa2
+  name: 5,11,24,27|1|国 01 | 1x DE
+  password: 556fec82-5324-40b9-a8c8-3aebfc168588
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -146,6 +146,21 @@ proxies:
   tls: false
   type: vmess
   uuid: d61ef6c6-b70a-4f05-8df6-14b37ec8720a
+- alterId: 2
+  cipher: auto
+  name: 11|1|🇩🇪1 |  5.0MB/s
+  network: ws
+  port: 23618
+  server: 18.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0b4c36ab-4385-353a-9305-566f12dcf4a5
+  ws-opts:
+    headers:
+      Host: 18.mamamajd.site
+    path: /
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -248,14 +263,23 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-17...
+  name: 36|🔒 VM-HTTPUPGRADE-NONE 🏴‍☠️ NA-...
   network: httpupgrade
-  port: '2052'
-  server: 173.245.58.100
+  port: '80'
+  server: 104.19.150.10
   servername: ''
   tls: false
   type: vmess
-  uuid: 0f427f89-3aa4-4641-9e58-9ff0cc1cbfae
+  uuid: 32763470-5925-4df8-a615-77a18d25eeac
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -268,22 +292,3 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
-  tls: false
-  type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NONE 🏴‍☠️ NA-...
-  network: httpupgrade
-  port: '80'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 32763470-5925-4df8-a615-77a18d25eeac
