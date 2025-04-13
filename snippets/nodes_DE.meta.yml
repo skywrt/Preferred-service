@@ -7,7 +7,7 @@ proxies:
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - cipher: rc4-md5
-  name: 5,11,16,20,21,24,27|1|🇪1 |  4.7MB/s
+  name: 5,11,16,20,21,24,27|2|🇩🇪9 |  3.2MB/s
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
@@ -40,8 +40,8 @@ proxies:
   type: vless
   uuid: dfa25b43-edf2-99e4-c3b0-1aa7c9ccaa96
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|0| 国 01 | 1x DE
-  password: e92d81c5-8188-4fc2-a6a3-7d9302cbfc4d
+  name: 5,11,24,27|1|🇪 德国 01 | 1x DE
+  password: 5630e6d4-dc1f-46d9-a1b3-249500bde2bb
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -78,8 +78,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|14|🇪德国 01 | 1x DE #1'
-  password: 665e4d2e-9bd0-4e11-ae86-d21c973960d0
+  name: 5,11,24,27|0|国 01 | 1x DE
+  password: 44bef85f-986a-4647-b387-eedf36c6dd48
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -457,6 +457,49 @@ proxies:
   tls: false
   type: vmess
   uuid: 6e53b146-1756-4297-ba10-c0370fa9c471
+- name: 10|德国 024
+  network: grpc
+  port: 59483
+  server: 128.140.124.194
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 47d7d5eb-55e6-4085-a155-bdf3fcc428f6
+- name: 10|德国 025
+  network: grpc
+  port: 59483
+  server: 157.180.29.37
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 47d7d5eb-55e6-4085-a155-bdf3fcc428f6
+- name: 10|德国 026
+  network: grpc
+  port: 59483
+  server: 159.69.18.30
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 47d7d5eb-55e6-4085-a155-bdf3fcc428f6
+- alterId: 0
+  cipher: auto
+  name: 11,36|🔒 VM-WS-NA 🇩🇪 DE-91.149.233.17...
+  network: ws
+  port: '20050'
+  server: 91.149.233.178
+  tls: false
+  type: vmess
+  uuid: 91189173-1861-4ec3-869c-67a5e08278de
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -617,28 +660,6 @@ proxies:
   uuid: 32763470-5925-4df8-a615-77a18d25eeac
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
-  tls: false
-  type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇩🇪 DE-91.149.233.17...
-  network: ws
-  port: '20050'
-  server: 91.149.233.178
-  tls: false
-  type: vmess
-  uuid: a099b1cf-ac27-4273-9169-4cf51d19212e
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   grpc-opts:
     grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
   name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
@@ -649,3 +670,22 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.18...
+  network: tcp
+  port: '22324'
+  server: 23.158.56.184
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea

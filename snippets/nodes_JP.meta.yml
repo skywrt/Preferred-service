@@ -1,20 +1,23 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 5,11,24,27|11|🇵 日本|@ripaojiedian
+  name: '5,11,24,27|12|🇵 日本|@ripaojiedian #1'
   password: amazonskr05
   port: 443
   server: 47.129.241.217
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|0|  01 | 1x JP
-  password: e92d81c5-8188-4fc2-a6a3-7d9302cbfc4d
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,37|🇵JP日本2
+  password: 5630e6d4-dc1f-46d9-a1b3-249500bde2bb
   port: 36111
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|11|🇯🇵 日本3|@ripaojiedian #1'
+  name: '5,11,24,27|12|🇯🇵 日本3|@ripaojiedian #1'
   password: cdc48a7a-b618-45af-a831-5afbd686b02f
   port: 12210
   server: gg21.hangfengjiasu.com
@@ -34,8 +37,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|14|🇵日本 03 | 1x JP #1'
-  password: 665e4d2e-9bd0-4e11-ae86-d21c973960d0
+  name: 5,11,24,27|0|🇵日本 03 | 1x JP
+  password: 44bef85f-986a-4647-b387-eedf36c6dd48
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
@@ -54,7 +57,7 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|11|🇵 日本2|@ripaojiedian
+  name: '5,11,24,27|12|🇵 日本2|@ripaojiedian #1'
   password: d192a833-b118-4b46-8e54-12cf5025d4cd
   port: 27534
   server: gdlt.aicheetah.lol
@@ -70,15 +73,15 @@ proxies:
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|0|🇵 日本 02 | 1x JP
-  password: e92d81c5-8188-4fc2-a6a3-7d9302cbfc4d
+  name: '5,11,24,27|1|🇯🇵 日本 02 | 1x JP #1'
+  password: 5630e6d4-dc1f-46d9-a1b3-249500bde2bb
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|14|🇯🇵日本 02 | 1x JP #3'
-  password: 665e4d2e-9bd0-4e11-ae86-d21c973960d0
+  name: 5,11,24,27|0|🇵日本 02 | 1x JP
+  password: 44bef85f-986a-4647-b387-eedf36c6dd48
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
@@ -90,11 +93,14 @@ proxies:
   skip-cert-verify: true
   sni: jp.mjt000.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|0|🇵 日本 03 | 1x JP
-  password: e92d81c5-8188-4fc2-a6a3-7d9302cbfc4d
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,37|JP
+  password: 5630e6d4-dc1f-46d9-a1b3-249500bde2bb
   port: 36115
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - name: 5|尼日利亚NI-T
@@ -114,20 +120,19 @@ proxies:
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|14|🇵日本 01 | 1x JP #1'
-  password: 665e4d2e-9bd0-4e11-ae86-d21c973960d0
+  name: 5,11,24,27|0| 01 | 1x JP
+  password: 44bef85f-986a-4647-b387-eedf36c6dd48
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 5,24,27|1|🇵1 |  5.3MB/s
+- name: '5,24|1|🇯🇵1 |  5.3MB/s #2'
   password: ccaccd03-3992-3a40-8379-9a82f07f137f
   port: 20140
   server: gy.58n.net
   skip-cert-verify: true
   sni: z140.hongkongnode.top
   type: trojan
-  udp: true
 - cipher: aes-256-cfb
   name: 8|🇯🇵JP-54.199.83.239-171_1@171
   password: doub.io
@@ -294,6 +299,17 @@ proxies:
     headers:
       Host: tran.amclubstest.nyc.mn
     path: /?ed=2560
+- cipher: rc4-md5
+  name: 11,27|2,12|🇵 日本|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202504131296640-OW0JYD5Wra.download.microsoft.com
+    mode: http
+  port: 8765
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
 - name: 17|荷兰(yudou66.com 玉豆免费节点)
   network: ws
   port: 443
@@ -354,6 +370,15 @@ proxies:
     headers:
       Host: lp.ylks.us.kg
     path: '%2F%3Fed%3D2560'
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知52 2.1MB/s
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|日本(JP)Japan/Tokyo_38
@@ -1023,12 +1048,11 @@ proxies:
   uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
 - alterId: 0
   cipher: auto
-  name: 36,37|未知134 1.9MB/s
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
   network: tcp
-  port: 1069
+  port: '1069'
   server: 152.69.197.60
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf

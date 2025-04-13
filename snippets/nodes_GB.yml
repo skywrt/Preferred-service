@@ -1,19 +1,16 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|14|🇧英国家宽 01 | 1x UK #1'
-  password: 665e4d2e-9bd0-4e11-ae86-d21c973960d0
+  name: 5,11,24,27|0|国家宽 01 | 1x UK
+  password: 44bef85f-986a-4647-b387-eedf36c6dd48
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,37|GB
-  password: 5cf4312b-6cf9-480f-8e59-d4e144b2315b
+- cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27|1|🇧 英国住宅IP 01 | 1x UK
+  password: 5630e6d4-dc1f-46d9-a1b3-249500bde2bb
   port: 36271
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - name: 5|英国UK-T
@@ -237,6 +234,33 @@ proxies:
   sni: x4ger-ionos.devefun.net
   tls: true
   type: trojan
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知116 13.8MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.79
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知21 14.9MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.196
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知102 5.4MB/s
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - name: '20,21|🇬🇧GB-84.8.159.155-6427 #1'
   password: b19c4375-d847-4c40-9824-4767c88b5f38
   port: 10200
@@ -326,11 +350,12 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  name: 36,37| 2.0MB/s
   network: tcp
-  port: '28872'
+  port: 28872
   server: 46.250.253.234
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 762b3923-5885-4c5f-886f-e62788512338
