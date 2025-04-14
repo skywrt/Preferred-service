@@ -1,4 +1,26 @@
 proxies:
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|735cb8d9b7a84b1f98288fe24edb8d...
+  network: grpc
+  port: 59483
+  server: 157.180.64.73
+  tls: false
+  type: vless
+  udp: false
+  uuid: 47d7d5eb-55e6-4085-a155-bdf3fcc428f6
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|e7f2a16688da4d32ad1b584fb1d2e2...
+  network: ws
+  port: 53067
+  server: 178.18.240.254
+  tls: false
+  type: vless
+  udp: false
+  uuid: be784c9e-a372-4b69-ae81-1f3364a01508
+  ws-opts:
+    path: /
 - name: 5|备用🍖@xkmfjd_🇩🇪
   network: grpc
   port: 8880
@@ -7,7 +29,7 @@ proxies:
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - cipher: rc4-md5
-  name: 5,11,16,20,21,24,27|0|🇩🇪9 |  3.3MB/s
+  name: 5,11,16,20,21,24,27|2|🇪6 |  5.3MB/s
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
@@ -40,8 +62,8 @@ proxies:
   type: vless
   uuid: dfa25b43-edf2-99e4-c3b0-1aa7c9ccaa96
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|14|🇪 德国 01 | 1x DE
-  password: 3eddf05b-4d68-488e-9ac4-4c5600e05a27
+  name: 5,11,24,27|1|🇪 德国 01 | 1x DE
+  password: 4e6943c0-de19-493b-bf7e-6cb56e6e7530
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -78,8 +100,8 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|1|🇪国 01 | 1x DE
-  password: 4547e428-09ce-45bb-be4d-7732dfe32e11
+  name: 5,11,24,27|0|国 01 | 1x DE
+  password: fa7d51ac-2f10-4bb0-ba7c-b1e560ae100d
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -457,26 +479,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 6e53b146-1756-4297-ba10-c0370fa9c471
-- name: 10|德国 024
-  network: grpc
-  port: 59483
-  server: 128.140.124.194
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 47d7d5eb-55e6-4085-a155-bdf3fcc428f6
-- name: 10|德国 025
-  network: grpc
-  port: 59483
-  server: 157.180.29.37
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 47d7d5eb-55e6-4085-a155-bdf3fcc428f6
 - name: 10|德国 026
   network: grpc
   port: 59483
@@ -527,101 +529,28 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- auth: c09b5f87-fa91-450a-aa77-a829bad43b6f
-  name: 28|🇩🇪 德国-高端5
-  password: c09b5f87-fa91-450a-aa77-a829bad43b6f
-  port: 19842
-  server: deum7.731732.xyz
+- alterId: 0
+  cipher: auto
+  name: 24,28,36|🔒 VM-WS-NA 🇩🇪 DE-91.149.233.17...
+  network: ws
+  port: '20050'
+  server: 91.149.233.178
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 258c0272-d9b0-4cc9-9735-989d72096c91
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- name: 24|🇩🇪 _德国
+  password: 4732adfa16c6450bbef87264e41332db
+  port: 443
+  server: nextstepcareer.online
   skip-cert-verify: false
-  sni: deum7.731732.xyz
-  type: hysteria2
-  udp: true
-- auth: c09b5f87-fa91-450a-aa77-a829bad43b6f
-  name: 28|🇩🇪 德国-高端1
-  password: c09b5f87-fa91-450a-aa77-a829bad43b6f
-  port: 19842
-  server: deu1.731732.xyz
-  skip-cert-verify: false
-  sni: deu1.731732.xyz
-  type: hysteria2
-  udp: true
-- auth: c09b5f87-fa91-450a-aa77-a829bad43b6f
-  name: 28|🇩🇪 德国-高端2
-  password: c09b5f87-fa91-450a-aa77-a829bad43b6f
-  port: 19842
-  server: deu2.731732.xyz
-  skip-cert-verify: false
-  sni: deu2.731732.xyz
-  type: hysteria2
-  udp: true
-- auth: c09b5f87-fa91-450a-aa77-a829bad43b6f
-  name: 28|🇩🇪 德国-高端3
-  password: c09b5f87-fa91-450a-aa77-a829bad43b6f
-  port: 19842
-  server: deu6.731732.xyz
-  skip-cert-verify: false
-  sni: deu6.731732.xyz
-  type: hysteria2
-  udp: true
-- cipher: aes-256-gcm
-  name: 28|🇩🇪 VIP 德国1-1A
-  password: 2823c728-7b04-4f47-bfc2-92ff0ec1e6c4
-  port: 47084
-  server: de01.jiasudu.buzz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇩🇪 德国1
-  password: 96350200-9aab-493c-ab2e-333e3045160b
-  port: 19691
-  server: h.cm.xiaomi-api.xyz
-  type: ss
-  udp: true
-- name: 28|🇩🇪 德国-1D
-  password: 0b794f22-cfd3-4373-84c4-419c7fc2510f
-  port: 23004
-  server: huojian-js.arken8379.com
-  skip-cert-verify: true
-  sni: www.bilibili.com
+  sni: nextstepcareer.online
   type: trojan
-  udp: true
-- auth: c09b5f87-fa91-450a-aa77-a829bad43b6f
-  name: 28|🇩🇪 德国-3
-  password: c09b5f87-fa91-450a-aa77-a829bad43b6f
-  port: 19842
-  server: deul.731732.xyz
-  skip-cert-verify: false
-  sni: deul.731732.xyz
-  type: hysteria2
-  udp: true
-- auth: c09b5f87-fa91-450a-aa77-a829bad43b6f
-  name: 28|🇩🇪 德国-高端4
-  password: c09b5f87-fa91-450a-aa77-a829bad43b6f
-  port: 19842
-  server: deu4.731732.xyz
-  skip-cert-verify: false
-  sni: deu4.731732.xyz
-  type: hysteria2
-  udp: true
-- auth: c09b5f87-fa91-450a-aa77-a829bad43b6f
-  name: 28|🇩🇪 德国-2
-  password: c09b5f87-fa91-450a-aa77-a829bad43b6f
-  port: 19842
-  server: du2cf.731732.xyz
-  skip-cert-verify: false
-  sni: du2cf.731732.xyz
-  type: hysteria2
-  udp: true
-- auth: c09b5f87-fa91-450a-aa77-a829bad43b6f
-  name: 28|🇩🇪 德国-1
-  password: c09b5f87-fa91-450a-aa77-a829bad43b6f
-  port: 19842
-  server: massdeu1.731732.xyz
-  skip-cert-verify: false
-  sni: massdeu1.731732.xyz
-  type: hysteria2
-  udp: true
-- client-fingerprint: safari
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: 28|🇩🇪 德国-优化1
   network: tcp
@@ -634,18 +563,58 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: c09b5f87-fa91-450a-aa77-a829bad43b6f
+  uuid: 930a28ac-503a-486b-ab32-21750677311f
+- auth: 930a28ac-503a-486b-ab32-21750677311f
+  name: 28|🇩🇪 德国-1
+  password: 930a28ac-503a-486b-ab32-21750677311f
+  port: 19842
+  server: massdeu1.731732.xyz
+  skip-cert-verify: false
+  sni: massdeu1.731732.xyz
+  type: hysteria2
+  udp: true
+- cipher: aes-256-gcm
+  name: 28|🇩🇪 VIP 德国1-1B
+  password: 7f429650-535f-45e1-8469-2d69c99911b4
+  port: 47084
+  server: de01.jiasudu.buzz
+  type: ss
+  udp: true
+- auth: 930a28ac-503a-486b-ab32-21750677311f
+  name: 28|🇩🇪 德国-3
+  password: 930a28ac-503a-486b-ab32-21750677311f
+  port: 19842
+  server: deul.731732.xyz
+  skip-cert-verify: false
+  sni: deul.731732.xyz
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇩🇪 德国1
+  password: beae8c1a-0635-4e51-8636-cef0c755bca0
+  port: 19691
+  server: h.cm.xiaomi-api.xyz
+  type: ss
+  udp: true
+- auth: 930a28ac-503a-486b-ab32-21750677311f
+  name: 28|🇩🇪 德国-2
+  password: 930a28ac-503a-486b-ab32-21750677311f
+  port: 19842
+  server: du2cf.731732.xyz
+  skip-cert-verify: false
+  sni: du2cf.731732.xyz
+  type: hysteria2
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 36,37|未知49
-  network: httpupgrade
-  port: 2052
-  server: 173.245.58.100
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.18...
+  network: tcp
+  port: '22324'
+  server: 23.158.56.184
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: 0f427f89-3aa4-4641-9e58-9ff0cc1cbfae
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -658,16 +627,6 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NONE 🏴‍☠️ NA-...
-  network: httpupgrade
-  port: '80'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 32763470-5925-4df8-a615-77a18d25eeac
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
