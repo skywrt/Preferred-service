@@ -8,14 +8,11 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30,37|🇬GB国
-  password: b77de874-b287-49a2-9ece-cabc7fb56d66
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30|1|🇧英国家宽 01 | 1x UK #1'
+  password: 5f225e99-6e76-401d-94f0-7e372156691d
   port: 31271
   server: free.2apzhfa.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - name: '5,38|🇬🇧_GB_英国_19 #1'
@@ -44,7 +41,7 @@ proxies:
     path: '%2f%3fed%3d2048'
 - cipher: chacha20-ietf-poly1305
   name: 5,11,24,27,30|0|🇧 英国住宅IP 01 | 1x UK
-  password: 746608c4-1e3f-4a57-b4e8-9879dd5c09cd
+  password: a53a9ea3-d56a-4656-8ff3-2c8bd065d4e9
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -80,12 +77,6 @@ proxies:
   skip-cert-verify: false
   sni: uk.mjt000.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|2|🇬🇧4 |  1.4MB/s #4'
-  password: y6fgyC28hscmdwqXj2v0Fm
-  port: 37618
-  server: 62.60.152.158
-  type: ss
 - alterId: 0
   cipher: auto
   name: 5|英国-优化-GPT
@@ -441,48 +432,28 @@ proxies:
     headers:
       Host: lo.kpcloud.eu.org
     path: '%2Fblue'
-- cipher: aes-128-gcm
-  name: 19|🇬🇧GB-141.98.101.178-0982
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇬🇧GB-185.5.38.111-6365
+  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
+  port: 55988
+  server: mx2.drawnrisha.one
   type: ss
 - alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇬🇧GB-45.158.77.187-6302
-  network: ws
-  port: 443
-  server: linde06.indiavideo.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-  ws-opts:
-    headers:
-      host: linde06.indiavideo.sbs
-    path: /linkws
-- name: '20,21|🇬🇧GB-84.8.159.155-1001 #1'
+  name: 20,21,37|未知146 18.2MB/s
   password: b19c4375-d847-4c40-9824-4767c88b5f38
   port: 10200
   server: 84.8.159.155
+  skip-cert-verify: true
   sni: www.ak-hk.top
+  tls: true
   type: trojan
+  udp: true
 - name: '20,21|🇬🇧GB-84.8.159.155-1008 #1'
   password: b19c4375-d847-4c40-9824-4767c88b5f38
   port: 10200
   server: www.ak-hk.top
   sni: www.ak-hk.top
   type: trojan
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 20,21,37|未知22 1.5MB/s
-  password: JXrw9ayK4zFgQ2g9s9SLamzYu4XVNKUw638tY1x47o36GA7Q4ooVeJShHxMEU65tFJNN3sewnpg4tAdC8SKnc18aBQtoYSSU
-  port: 55988
-  server: 185.5.38.111
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - name: 24|🇬🇧 英国 伦敦Amazon数据中心
   password: telegram-id-directvpn
   port: 22222
@@ -497,16 +468,20 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+- alpn:
+  - http/1.1
+  alterId: 0
+  client-fingerprint: chrome
+  name: 30,37|未知42 4.5MB/s
   network: tcp
-  port: '28872'
-  server: 46.250.253.234
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 762b3923-5885-4c5f-886f-e62788512338
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.20.195.143
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-37.221.125.1...
@@ -517,3 +492,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  network: tcp
+  port: '28872'
+  server: 46.250.253.234
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 762b3923-5885-4c5f-886f-e62788512338

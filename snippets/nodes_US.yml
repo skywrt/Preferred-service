@@ -1,17 +1,9 @@
 proxies:
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 5,30|🇺🇸 美国 华盛顿Cogent通信公司 2
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 38.110.1.146
-  type: ss
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 5,10,20,21,24,30|🇸 美国 CloudFlare节点 2
+  name: '5,10,20,21,24|🇺🇸 美国 CloudFlare节点 #2'
   network: ws
-  port: 8443
+  port: '8443'
   raw:
     add: 1743919941.tencentapp.cn
     aid: '0'
@@ -60,8 +52,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  client-fingerprint: chrome
-  name: 5,24,30,40|CN_speednode_0039
+  name: 5,24,40|CN_speednode_0039
   network: ws
   port: 22643
   server: 119.188.66.248
@@ -77,7 +68,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: '5,11,24,27,30|1|🇸美国 03 | 1x US Washington #1'
-  password: 050fd80b-c55b-4dcd-9874-0a30094a0f10
+  password: 5f225e99-6e76-401d-94f0-7e372156691d
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
@@ -140,14 +131,11 @@ proxies:
   tls: false
   type: vmess
   uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30,37|🇺🇸US美国2
-  password: b77de874-b287-49a2-9ece-cabc7fb56d66
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30|1|🇸美国 01 | 1x US Los Angeles #1'
+  password: 5f225e99-6e76-401d-94f0-7e372156691d
   port: 31211
   server: free.2apzhfa.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - alterId: 2
@@ -166,14 +154,11 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30,37|US #1'
-  password: b77de874-b287-49a2-9ece-cabc7fb56d66
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30|1|🇸美国家宽 02 | 1x US Los Angeles #1'
+  password: 5f225e99-6e76-401d-94f0-7e372156691d
   port: 31213
   server: free.2apzhfa.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -192,7 +177,7 @@ proxies:
     path: /vmess-argo?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 5,11,24,27,30|0|🇸 美国 01 | 1x US Los Angeles
-  password: 746608c4-1e3f-4a57-b4e8-9879dd5c09cd
+  password: a53a9ea3-d56a-4656-8ff3-2c8bd065d4e9
   port: 36211
   server: free.2weradf.xyz
   type: ss
@@ -227,12 +212,15 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,12,24,27,30|12|🇸 美国2|@ripaojiedian #2'
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,12,24,27,30,37|🇺🇸US美国4
   password: d192a833-b118-4b46-8e54-12cf5025d4cd
   port: 55601
   server: gsyd.aicheetah.lol
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
 - name: 5|🇺🇸 CO美国1-3｜流媒体｜T
   network: tcp
@@ -243,14 +231,14 @@ proxies:
   sni: g.alicdn.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇸 美国 03 | 1x US Washington #2'
-  password: 746608c4-1e3f-4a57-b4e8-9879dd5c09cd
+  name: '5,11,24,27,30|0|🇸 美国 03 | 1x US Washington #1'
+  password: a53a9ea3-d56a-4656-8ff3-2c8bd065d4e9
   port: 36215
   server: free.2weradf.xyz
   type: ss
   udp: true
 - allowInsecure: ''
-  name: '5,10,27,30|2|🇺🇸6 |  2.3MB/s #4'
+  name: 5,10|美国 393
   network: ws
   password: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
   port: 443
@@ -279,17 +267,19 @@ proxies:
   skip-cert-verify: true
   sni: g.alicdn.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇸 美国住宅IP 02 | 1x US Los Ange... #2'
-  password: 746608c4-1e3f-4a57-b4e8-9879dd5c09cd
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30,37|US #1'
+  password: a53a9ea3-d56a-4656-8ff3-2c8bd065d4e9
   port: 36213
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 2
   cipher: auto
-  client-fingerprint: chrome
-  name: 5,11,12,24,27,30|🇨🇳 省 移动(省通)
+  name: '5,11,12,24,27,30|12,13|美国|@ripaojiedian #3'
   network: ws
   port: 30808
   server: v8.heduian.link
@@ -333,7 +323,7 @@ proxies:
   type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 5,24,30|🇺🇸 美国 Cogent通信
+  name: 5,24,30|🇸 美国 Cogent通
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 38.75.136.28
@@ -362,13 +352,6 @@ proxies:
   skip-cert-verify: true
   sni: g.alicdn.com
   type: trojan
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 5,30|🇺🇸 美国 华盛顿Cogent通信公司 3
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 38.114.114.108
-  type: ss
 - name: 5|美国USLA-T-GPT
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
@@ -391,8 +374,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 5,20,21,30|🇸 美国 CloudFlare
+  name: '5,20,21|🏁RELAY-141.101.121.214-0961 #2'
   network: ws
   port: 8443
   server: 141.101.121.214
@@ -1175,10 +1157,11 @@ proxies:
     path: /racevpn
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   delay: 2889
-  name: 10,24|🇺🇸 美国 CloudFlare节点
+  name: 10,24,30|🇺🇸 美国 CloudFlare节点 6
   network: ws
-  port: '443'
+  port: 443
   server: 104.18.149.76
   servername: us.kkp.me.eu.org
   skip-cert-verify: true
@@ -1433,7 +1416,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|美国 039
+  client-fingerprint: chrome
+  name: 10,30|🇺🇸 美国 CloudFlare节点 3
   network: ws
   port: 2096
   server: de01.sh-cloudflare.sbs
@@ -1441,7 +1425,7 @@ proxies:
   tls: true
   type: vmess
   udp: true
-  uuid: b3928f8d-ea81-4d75-bcec-4016a072adff
+  uuid: 1e2e8430-9c0e-4394-a9ea-4d845e978757
   ws-opts:
     headers:
       Host: de01.sh-cloudflare.sbs
@@ -2095,7 +2079,7 @@ proxies:
     path: /92024db4-eadf-4cd1-b7e5-87d047d353f0
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.21.21.226-1443 #1'
+  name: '10,20,21|🏁RELAY-104.21.21.226-1443 #2'
   network: ws
   port: 80
   server: 104.21.21.226
@@ -2199,7 +2183,8 @@ proxies:
     path: /link
 - alterId: 0
   cipher: auto
-  name: 10|美国 349
+  client-fingerprint: chrome
+  name: 10,30|🇺🇸 美国 CloudFlare
   network: ws
   port: 443
   server: 104.18.149.75
@@ -2654,7 +2639,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2691
-  name: '10,20,21|🏁RELAY-141.101.121.169-0966 #1'
+  name: '10,20,21|🏁RELAY-141.101.121.169-0966 #2'
   network: ws
   port: 2096
   server: 1743919941.tencentapp.cn
@@ -2713,7 +2698,7 @@ proxies:
     path: /93fAx7DxPbqU8RhisheV
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-141.101.120.195-0980 #1'
+  name: '10,20,21|🏁RELAY-141.101.120.195-0980 #2'
   network: ws
   port: 2096
   raw:
@@ -2902,7 +2887,7 @@ proxies:
     path: /T5yZBrY2Qkg2cThJQeJb
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-141.101.120.41-0973 #1'
+  name: '10,20,21|🏁RELAY-141.101.120.41-0973 #2'
   network: ws
   port: 2053
   raw:
@@ -2932,7 +2917,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.18.118.195-0979 #1'
+  name: '10,20,21|🏁RELAY-104.18.118.195-0979 #2'
   network: ws
   port: 8443
   raw:
@@ -3023,7 +3008,7 @@ proxies:
     path: /frank1-dash.931.pp.ua
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-141.101.120.164-0968 #1'
+  name: '10,20,21|🏁RELAY-141.101.120.164-0968 #2'
   network: ws
   port: 2053
   server: 1744007541.tencentapp.cn
@@ -3038,7 +3023,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-141.101.120.164-0981 #1'
+  name: '10,20,21|🏁RELAY-141.101.120.164-0981 #2'
   network: ws
   port: 8443
   server: 1744007541.tencentapp.cn
@@ -3172,7 +3157,7 @@ proxies:
     path: /ny2-sub.930.pp.ua
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-141.101.120.64-0967 #1'
+  name: '10,20,21|🏁RELAY-141.101.120.64-0967 #2'
   network: ws
   port: 2053
   raw:
@@ -3202,7 +3187,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.18.119.222-0974 #1'
+  name: '10,20,21|🏁RELAY-104.18.119.222-0974 #2'
   network: ws
   port: 2096
   raw:
@@ -3732,9 +3717,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10,36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
+  name: 10|美国 473
   network: tcp
-  port: '27750'
+  port: 27750
   server: 5.253.41.147
   skip-cert-verify: true
   tls: false
@@ -3779,6 +3764,7 @@ proxies:
     type: none
     v: '2'
   server: 5.180.30.146
+  servername: ''
   tls: false
   type: vmess
   uuid: b2347239-dd15-40b3-b683-50cc2ff19ae7
@@ -3876,7 +3862,7 @@ proxies:
       Host: c2.validbv3528.eu.org
     path: /?ed=2560
 - allowInsecure: ''
-  name: 10,11|1|🇧1 |  3.5MB/s
+  name: '10,27,30|2|🇧1 |  3.5MB/s #1'
   network: ws
   password: redfree8
   port: 443
@@ -4182,7 +4168,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-172.67.220.10-1585 #1'
+  name: '10,20,21|🏁RELAY-172.67.220.10-1585 #2'
   network: ws
   port: 443
   server: 172.67.220.10
@@ -4236,7 +4222,7 @@ proxies:
     path: /XjTi1NYwi9A2bckpqdDoAgkondVWl
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-172.67.220.83-1590 #1'
+  name: '10,20,21|🏁RELAY-172.67.220.83-1590 #2'
   network: ws
   port: 443
   server: 172.67.220.83
@@ -4251,7 +4237,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-172.66.168.209-1594 #1'
+  name: '10,20,21|🏁RELAY-172.66.168.209-1594 #2'
   network: ws
   port: 443
   raw:
@@ -4508,7 +4494,7 @@ proxies:
   cipher: auto
   name: 10,36|🔒 VM-WS-NA 🇺🇸 US-64.32.13.244:...
   network: ws
-  port: '7612'
+  port: 7612
   raw:
     add: 64.32.13.244
     aid: 0
@@ -4535,7 +4521,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.21.94.64-8519 #1'
+  name: '10,20,21|🏁RELAY-104.21.94.64-8519 #2'
   network: ws
   port: 443
   server: 104.21.94.64
@@ -4714,14 +4700,6 @@ proxies:
     headers:
       Host: zamim340.ggff.net
     path: /tr?ed=2560
-- alterId: 0
-  cipher: auto
-  name: '11,27,30|2|🇺🇸10 |  5.7MB/s #4'
-  port: 5229
-  server: e7d11ca5-surog0-t26vr3-1likw.cu.plebai.net
-  tls: false
-  type: vmess
-  uuid: a23c20fc-3e66-11ef-b1d2-f23c91cfbbc9
 - cipher: rc4-md5
   name: '11,27,30|12|🇸 美国4|@ripaojiedian #2'
   password: efanccyun
@@ -5034,66 +5012,14 @@ proxies:
       Host: ''
     path: ''
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|US27 335.5MB/s
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.160
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇺🇸US-172.233.160.249-1641
-  network: ws
-  port: 443
-  server: jahfkjha.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
-  ws-opts:
-    headers:
-      host: jahfkjha.cfd
-    path: /linkws
-- cipher: aes-256-gcm
-  name: 19|🇺🇸US-154.3.8.151-0921
-  password: iUB0923RBA
-  port: 30067
-  server: 154.3.8.151
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,37|US37 11.8MB/s
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 64.176.184.129
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇺🇸US-38.150.13.64-8361
-  network: ws
-  port: 80
-  server: 38.150.13.64
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: caa995ed-86a9-4968-a332-9c11e7e13107
-  ws-opts:
-    headers:
-      host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇺🇸US-2.58.87.221-2027 #1'
+  name: '19,20,21|🇺🇸US-2.58.87.221-2027 #2'
   network: ws
   port: 14555
   server: 2.58.87.221
   servername: ''
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 6c764a03-bb1a-4bc6-baca-452453fce1ae
@@ -5101,57 +5027,42 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 20,21,37|US4 529.5KB/s
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.167
-  skip-cert-verify: true
-  tls: true
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇺🇸US-64.176.184.129-1057
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 64.176.184.129
   type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 20,21,37|US9 2.0MB/s
+- cipher: aes-256-gcm
+  name: 19|🇺🇸US-38.114.114.143-1136
   password: faBAoD54k87UJG7
-  port: 2375
+  port: 2376
+  server: 38.114.114.143
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 19,20,21,37|US25 2.0MB/s
+  password: TEzjfAYq2IjtuoS
+  port: 6679
   server: 38.121.43.71
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  name: 20,21,37|US2 2.0MB/s
-  password: KixLvKzwjekG00rm
-  port: 8000
+  name: 19,20,21,37|US6 2.0MB/s
+  password: pKEW8JPByTVTLtM
+  port: 443
   server: 38.121.43.71
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  name: 20,21,37|US16 2.0MB/s
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 38.110.1.197
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 20,21,37|US19 2.0MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 5600
+  name: 19,20,21,37|US10 1.9MB/s
+  password: zDNVedRFPQexG9v
+  port: 6379
   server: 38.121.43.71
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 20,21,37|US17 2.0MB/s
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 142.202.49.84
   skip-cert-verify: true
   tls: true
   type: ss
@@ -5304,13 +5215,16 @@ proxies:
   skip-cert-verify: false
   sni: sanjose02.852224.ggff.net
   type: trojan
-- name: 24|🇺🇸 _美国
+- alterId: 0
+  name: 24,37|🇺🇸US美国2
   password: Julius
   port: 443
   server: 66.59.197.211
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: miami.juliusnet.com
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '24|🇺🇸 _美国 #1'
@@ -5387,6 +5301,14 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: '27,30|2|🇺🇸10 |  4.7MB/s #1'
+  port: 5229
+  server: e7d11ca5-surog0-t26vr3-1likw.cu.plebai.net
+  tls: false
+  type: vmess
+  uuid: a23c20fc-3e66-11ef-b1d2-f23c91cfbbc9
+- alterId: 0
+  cipher: auto
   name: '30|🇺🇸_US_美国_5 #1'
   network: ws
   port: 7612
@@ -5409,23 +5331,26 @@ proxies:
     headers:
       host: 1g.890699.xyZ
     path: /lXENb74xF4ylXngZ
-- client-fingerprint: chrome
-  name: 30|🇸 美国 V2CROSS.COM
-  network: ws
-  password: 02926f9e-153a-42c8-8ecd-8fade7009ad1
-  port: 443
-  server: 166.0.198.68
-  skip-cert-verify: true
-  sni: golinkwuxian.top
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 30|🇺🇸 美国 华盛顿Cogent通信公司 2
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 38.110.1.146
+  type: ss
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 30|🇺🇸 美国 Amazon中
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.170.90.35
+  sni: trojan.burgerip.co.uk
   type: trojan
-  ws-opts:
-    headers:
-      Host: golinkwuxian.top
-    path: /apple
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 30|🇺🇸 美国 V2CROSS.COM 2
+  name: '30|🇺🇸 美国 V2CROSS.COM #1'
   network: ws
   port: 8443
   server: 3h-poland1.09vpn.com
@@ -5436,16 +5361,163 @@ proxies:
     headers:
       Host: 3h-poland1.09vpn.com
     path: /vmess/
+- client-fingerprint: chrome
+  name: 30|🇺🇸 美国 Digital Ocean
+  password: guKUnUpJam
+  port: 443
+  server: 157.245.202.237
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.249.0...
+  client-fingerprint: chrome
+  name: 30|🇺🇸 美国 CloudFlare节点 2
+  network: ws
+  port: 443
+  server: US7-02.890624.Xyz
+  tls: true
+  type: vmess
+  uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
+  ws-opts:
+    headers:
+      Host: us7-02.890624.xyz
+    path: /bua2hMcbA8wMzbGFtV
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇺🇸 美国 CloudFlare节点 4
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  tls: true
+  type: vmess
+  uuid: 0ab6f8f0-1711-11f0-b934-205c6d5f5d78
+  ws-opts:
+    headers:
+      Host: eu-2.hihu.net
+    path: /jklhsgb0#[ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray
+      ]-[ [ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray
+      ]-[ [ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray
+      ]-[ [ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray
+      ]-[ [ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray ]
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇺🇸 美国 CloudFlare节点 5
+  network: ws
+  port: 443
+  server: www.visa.com.tw
+  tls: true
+  type: vmess
+  uuid: 47eab0de-97f9-49be-f2f3-2e4eb17268e6
+  ws-opts:
+    headers:
+      Host: hk.insbot.filegear-sg.me
+    path: /aa
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30|🇸 美国 CloudFlare节点 7
+  network: ws
+  port: 2096
+  server: 104.21.48.1
+  tls: true
+  type: vmess
+  uuid: b3928f8d-ea81-4d75-bcec-4016a072adff
+  ws-opts:
+    headers:
+      Host: de01.sh-cloudflare.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇺🇸 US-192.9.148.64...
+  network: ws
+  port: '8088'
+  server: 192.9.148.64
+  servername: ora.aihi.uk
+  tls: true
+  type: vmess
+  uuid: 979e39d7-fdf8-4e51-afb6-4d181c56170f
+  ws-opts:
+    headers:
+      Host: ora.aihi.uk
+    path: /ray
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇺🇸 US-51.81.203....
   network: tcp
-  port: '48160'
-  server: 15.204.249.0
+  port: '28860'
+  server: 51.81.203.57
   servername: ''
   tls: false
   type: vmess
-  uuid: 5b113c12-4dd4-4bb5-9c01-cff092b559e3
+  uuid: 1784497d-03a1-40bb-bb8b-de4ffac7c59c
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-5.180.30.110...
+  network: tcp
+  port: '51352'
+  server: 5.180.30.110
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bcf86479-aab4-47cf-9d6e-34d353baa1a2
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇺🇸 US-129.146.31.19...
+  network: ws
+  port: '23451'
+  server: 129.146.31.191
+  tls: false
+  type: vmess
+  uuid: ef6b281c-2998-46a6-bd6b-081f404ba069
+  ws-opts:
+    headers:
+      Host: phx-plus-1ddns.faforex.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.86.12...
+  network: tcp
+  port: '35696'
+  server: 15.204.86.120
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cad0504a-a9dc-4d29-8844-b11b69f14a8d
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.248.9...
+  network: tcp
+  port: '30562'
+  server: 15.204.248.92
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 82466715-6a58-4046-a363-a0d18e5b2ab4
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-185.189.32.1...
+  network: tcp
+  port: '22702'
+  server: 185.189.32.179
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 483a1cce-af9b-4416-d7c6-10b9b63be66f
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇺🇸 US-2.58.87.221:1...
+  network: ws
+  port: 12269
+  server: 2.58.87.221
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: db85ff0e-c33f-401d-c415-4c7cce135704
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.48.227.23...
@@ -5462,75 +5534,14 @@ proxies:
     path: /path/240811062813
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-5.180.30.110...
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.249.0...
   network: tcp
-  port: '51352'
-  server: 5.180.30.110
+  port: '48160'
+  server: 15.204.249.0
   servername: ''
   tls: false
   type: vmess
-  uuid: bcf86479-aab4-47cf-9d6e-34d353baa1a2
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.248.9...
-  network: tcp
-  port: '30562'
-  server: 15.204.248.92
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 82466715-6a58-4046-a363-a0d18e5b2ab4
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇺🇸 US-129.146.31.19...
-  network: ws
-  port: '23451'
-  server: 129.146.31.191
-  tls: false
-  type: vmess
-  uuid: 6abfbd44-62aa-4ad3-8b5a-aa4ef40466f5
-  ws-opts:
-    headers:
-      Host: phx-plus-1ddns.faforex.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇺🇸 US-2.58.87.221:1...
-  network: ws
-  port: 12269
-  server: 2.58.87.221
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: db85ff0e-c33f-401d-c415-4c7cce135704
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇺🇸 US-51.81.203....
-  network: tcp
-  port: '28860'
-  server: 51.81.203.57
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1784497d-03a1-40bb-bb8b-de4ffac7c59c
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇺🇸 US-192.9.148.64...
-  network: ws
-  port: '8088'
-  server: 192.9.148.64
-  servername: ora.aihi.uk
-  tls: true
-  type: vmess
-  uuid: 979e39d7-fdf8-4e51-afb6-4d181c56170f
-  ws-opts:
-    headers:
-      Host: ora.aihi.uk
-    path: /ray
+  uuid: 5b113c12-4dd4-4bb5-9c01-cff092b559e3
 - alterId: 2
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇺🇸 US-198.2.243.50:...
@@ -5546,145 +5557,159 @@ proxies:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.86.12...
-  network: tcp
-  port: '35696'
-  server: 15.204.86.120
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cad0504a-a9dc-4d29-8844-b11b69f14a8d
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
   name: 37|US
-  password: LLInmUBrxMgEn85Y6vVjeH
-  port: 56220
-  server: 185.172.129.91
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|US3
-  password: 7At76MoOr1OPh3Rh3lCO8d
-  port: 4443
-  server: 77.221.149.42
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 37|US5
-  password: 4d048fc6-d944-41dd-b327-10856adcc82d
-  port: 443
-  server: 199.59.243.228
-  skip-cert-verify: true
-  sni: zi.you.usdtvfk.top
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|US6
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 23.247.137.166
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 37|US7
-  network: ws
-  password: 29e0206a-2cef-4c8d-aa4b-dd7a43748167
-  port: 443
-  server: 151.101.2.133
-  skip-cert-verify: true
-  sni: zmaoz.faculty.ucdavis.edu.
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|US8
+  network: tcp
   password: Aimer
   port: 443
-  server: 34.218.130.79
+  server: 91.149.239.198
+  skip-cert-verify: true
+  sni: agepq.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|US2
+  password: opentunnel.net-trhrst5ju45s
+  port: 443
+  server: 69.16.230.165
+  skip-cert-verify: true
+  sni: ukt-2.opensvr.net
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|US3
+  network: ws
+  password: Aimer
+  port: 80
+  server: 52.32.90.142
   skip-cert-verify: true
   sni: ngepx.ambercc.filegear-sg.me
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 37|US10
-  network: ws
-  password: 2ggAcGC8hJ
+  name: 37|US4
+  network: tcp
+  password: Aimer
   port: 2083
-  server: 15.204.237.31
+  server: 192.200.160.35
   skip-cert-verify: true
-  sni: USa-vp-31.MeTiKapps.Com
+  sni: agept.ambercc.filegear-sg.me
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 37|US11
-  network: ws
+  name: 37|US5
+  network: tcp
+  password: bpb-trojan
+  port: 443
+  server: 108.165.216.155
+  skip-cert-verify: true
+  sni: bpb.my79801.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|US7
+  password: Aimer
+  port: 2053
+  server: 108.165.152.67
+  skip-cert-verify: true
+  sni: epccy.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|US8
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 209.208.227.79
+  skip-cert-verify: true
+  sni: ngepy.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|US9
   password: Aimer
   port: 2096
-  server: 108.165.152.36
+  server: 108.165.152.29
   skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
+  sni: agept.ambercc.filegear-sg.me
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 37|US12
-  password: Aimer
-  port: 2087
-  server: 209.94.90.87
+  cipher: chacha20-ietf-poly1305
+  name: 37|US11
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 23.247.137.165
   skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|US12
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 216.24.57.186
+  skip-cert-verify: true
+  sni: ngepx.ambercc.filegear-sg.me
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   name: 37|US13
-  network: tcp
-  password: 6d0a7f2f-c26c-466a-8f90-d6630ba97928
-  port: 443
-  server: 64.23.236.215
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 108.165.152.92
   skip-cert-verify: true
-  sni: 829D7BDE-64B9-E759-C661-78BC73E582A0.1c2871ba-6025-61e2-e87f-a5c9e0ac8c1d.9d8f269f96b25232-759cbb36d6548597.kaufen
+  sni: agept.ambercc.filegear-sg.me
   tls: true
   type: trojan
   udp: true
 - alterId: 0
+  cipher: aes-256-gcm
   name: 37|US14
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 34.196.113.247
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 38.114.114.19
   skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
   tls: true
-  type: trojan
-  udp: true
+  type: ss
 - alterId: 0
   name: 37|US15
-  password: Aimer
-  port: 2096
-  server: 103.116.7.152
+  network: ws
+  password: f8bb4ae1-2358-4a76-ab75-2a6bc94272d6
+  port: 443
+  server: 151.101.194.228
   skip-cert-verify: true
-  sni: agepy.aimercc.filegear-sg.me
+  sni: pscresearch.faculty.ucdavis.edu
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 37|🇸US美国3
-  network: ws
-  password: 2fec7227-9abe-46f2-af18-78302b836c45
+  name: 37|US16
+  password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
-  server: 104.21.22.133
+  server: 192.157.56.142
   skip-cert-verify: true
-  sni: 3fg.20220420.pp.ua
+  sni: trus.moonfree.top
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|US17
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 192.200.160.169
+  skip-cert-verify: true
+  sni: ngepy.ambercc.filegear-sg.me
   tls: true
   type: trojan
   udp: true
@@ -5692,19 +5717,40 @@ proxies:
   name: 37|US18
   network: tcp
   password: Aimer
-  port: 80
-  server: 67.226.221.102
+  port: 587
+  server: 154.9.241.61
   skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
+  sni: agepu.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|US19
+  password: Aimer
+  port: 2053
+  server: 45.194.53.13
+  skip-cert-verify: true
+  sni: agept.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇺🇸US美国3
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.156.127.16
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   name: 37|US20
-  network: tcp
+  network: ws
   password: Aimer
-  port: 443
-  server: 209.94.90.64
+  port: 8443
+  server: 108.165.152.239
   skip-cert-verify: true
   sni: ngepx.ambercc.filegear-sg.me
   tls: true
@@ -5712,163 +5758,86 @@ proxies:
   udp: true
 - alterId: 0
   name: 37|US21
-  network: tcp
-  password: Aimer
-  port: 2087
-  server: 108.165.152.25
+  network: ws
+  password: amclubs2024
+  port: 443
+  server: 198.62.62.4
   skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|🇺🇸US美国4
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.60.119.104
-  skip-cert-verify: true
+  sni: tr.amclub.us.kg
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   name: 37|US22
-  password: Aimer
-  port: 2083
-  server: 198.62.62.61
+  network: tcp
+  password: ef23ddd0-14c5-39c2-9880-af55ce892363
+  port: 55511
+  server: 23.94.25.129
   skip-cert-verify: true
-  sni: epcce.ambercc.filegear-sg.me
+  sni: t17.qifei.app
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   name: 37|US23
-  password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
-  port: 443
-  server: 192.157.56.141
+  network: tcp
+  password: Aimer
+  port: 2083
+  server: 130.250.137.63
   skip-cert-verify: true
-  sni: trus.moonfree.top
+  sni: ngepx.ambercc.filegear-sg.me
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  cipher: aes-256-gcm
-  name: 37|US24 1.6MB/s
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 38.107.226.250
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 37|US25
+  name: 37|US24
   network: tcp
   password: Aimer
-  port: 2083
-  server: 108.165.152.93
+  port: 443
+  server: 44.224.24.91
+  skip-cert-verify: true
+  sni: ngepx.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|US26
+  network: tcp
+  password: Aimer
+  port: 8443
+  server: 162.120.94.232
   skip-cert-verify: true
   sni: agept.ambercc.filegear-sg.me
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 37|US26 21.9MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.47.129
+  name: 37|US27
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 135.84.64.36
   skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 37|US28
-  password: af4d2493-9156-4514-9f6b-ee5d1a1e4713
-  port: 443
-  server: 15.197.162.184
-  skip-cert-verify: true
-  sni: download2hkt.windowsupdate.lol
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|US29
-  network: tcp
-  password: 61605c66-6d41-4b9d-a496-b9898f3f95d0
-  port: 443
-  server: 70.32.1.32
-  skip-cert-verify: true
-  sni: jp-h1.sshub.xyz
+  sni: ngepx.ambercc.filegear-sg.me
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 37|US30
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 23.247.137.67
+  name: 37|US28
+  password: 56b18aab-9e83-4791-ab57-b349704fc176
+  port: 443
+  server: 23.187.72.205
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  cipher: aes-256-gcm
-  name: 37|US31
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 167.88.63.71
+  name: 37|US29
+  network: ws
+  password: 68601963-27c2-4253-c784-914782ce09ef
+  port: 80
+  server: 151.101.66.219
   skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 37|US32
-  password: Aimer
-  port: 2083
-  server: 103.116.7.103
-  skip-cert-verify: true
-  sni: epccy.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|US33
-  network: tcp
-  password: ypDt8RkT7J
-  port: 43118
-  server: 89.187.181.179
-  skip-cert-verify: true
-  sni: 89.187.181.179
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|US34
-  network: tcp
-  password: Aimer
-  port: 2096
-  server: 199.34.228.143
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|US35
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 192.200.160.109
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|US36
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 103.116.7.230
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
   tls: true
   type: trojan
   udp: true
