@@ -802,15 +802,6 @@ proxies:
     headers:
       Host: 606299202799642025041119231566110.s15.chibaba.filegear-sg.me
     path: /s15.html
-- client-fingerprint: ''
-  flow: ''
-  name: 12|🇮🇷_IR_伊朗->🇺🇸_US_美国
-  port: 31904
-  server: tv2rayrr.set7.site
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 37e9ed0b-bde6-48ad-b837-9f19a5bbc80f
 - alterId: 0
   cipher: auto
   name: '12|🇺🇸_US_美国->🇨🇷_CR_哥斯达黎加 #2'
@@ -839,6 +830,15 @@ proxies:
     headers:
       Host: 173578851232252025041119231677671.s15.chibaba.filegear-sg.me
     path: /s15.html
+- alterId: 0
+  cipher: auto
+  name: '12,30|🇨🇳_CN_中国->🇺🇸_US_美国_1 #2'
+  network: tcp
+  port: 5228
+  server: 312b7317-surog0-svbm2l-1t8q3.cu.plebai.net
+  tls: false
+  type: vmess
+  uuid: 775baa4a-d75b-11ef-a11a-f23c913c8d2b
 - name: 12|🇮🇳_IN_印度->🇺🇸_US_美国
   network: ws
   port: 80
@@ -866,7 +866,7 @@ proxies:
     path: /s15.html
 - alterId: 0
   cipher: auto
-  name: 12,24,30|🇨🇳_CN_中国->🇪_DE_国
+  name: 12,30|🇨🇳_CN_中国->🇪_DE_国
   network: tcp
   port: 5229
   server: 4e7ddab6-supts0-ubpxvf-1fq8c.cu.plebai.net
@@ -887,6 +887,24 @@ proxies:
     headers:
       Host: 806379247235432025041118283937229.s15.chibaba.filegear-sg.me
     path: /s15.html
+- alterId: 0
+  cipher: auto
+  name: 12,30|🇨🇳_CN_中国->🇺🇸_US_美国_2
+  network: tcp
+  port: 5228
+  server: 6912162d-surog0-tb016b-1m7l4.cu.plebai.net
+  tls: false
+  type: vmess
+  uuid: bd515574-3b10-11ee-ac14-f23c9164ca5d
+- alterId: 0
+  cipher: auto
+  name: 12,30|🇳_CN_中国->🇺🇸_US_美国_3
+  network: tcp
+  port: 5229
+  server: 7a40b936-supts0-swbd0b-716s.cu.plebai.net
+  tls: false
+  type: vmess
+  uuid: 088a0bbe-4f9f-11ea-a15d-f23c913c8d2b
 - alterId: 0
   cipher: auto
   name: '12|🇺🇸_US_美国->🇨🇷_CR_哥斯达黎加 #6'
@@ -1255,55 +1273,15 @@ proxies:
     headers:
       host: uk.moss.network
     path: /d/65dd503.TG.WangCai2.WangCai_8:107690
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇷🇺 俄罗斯 中转
-  password: 1682c3b0-c038-47cc-ade5-428523608df6
-  port: 23499
-  server: vip.baima360.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港 中转-1C
-  password: 1682c3b0-c038-47cc-ade5-428523608df6
-  port: 36214
-  server: vip.baima360.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇺🇸 美国 中转
-  password: 1682c3b0-c038-47cc-ade5-428523608df6
-  port: 17941
-  server: vip.baima360.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港 中转-1B
-  password: 1682c3b0-c038-47cc-ade5-428523608df6
-  port: 36511
-  server: vip.baima360.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇩🇪 德国 中转
-  password: 1682c3b0-c038-47cc-ade5-428523608df6
-  port: 55997
-  server: vip.baima360.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港 中转-1A
-  password: 1682c3b0-c038-47cc-ade5-428523608df6
-  port: 65519
-  server: vip.baima360.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇧🇷 巴西 中转
-  password: 1682c3b0-c038-47cc-ade5-428523608df6
-  port: 30752
-  server: vip.baima360.com
-  type: ss
-  udp: true
+- cipher: chacha20-ietf
+  name: 30|_CN_->_AU_
+  obfs: http_simple
+  obfs-param: 20176-L1juani984.download.microsoft.com
+  password: passwd
+  port: 8625
+  protocol: origin
+  server: cn17.mynode.me
+  type: ssr
 - alterId: 0
   cipher: auto
   name: 30|🇺🇸_US_美国->_CR_
