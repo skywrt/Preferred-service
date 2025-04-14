@@ -1,22 +1,23 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|2|🇧英国家宽 01 | 1x UK
-  password: 82747a32-0e0f-4296-be53-00a6fd66bded
+  name: 5,11|0|国家宽 01 | 1x UK
+  password: a2915f1a-efc6-4a29-a0ba-4e1614774fc5
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|0| 国住宅IP 01 | 1x UK
-  password: 0d5981b6-f24d-4a09-9d68-7dfbf09f73d4
+  name: 5,11|14|🇧 英国住宅IP 01 | 1x UK
+  password: 2fcbd0e2-638c-40f7-9ab2-6d8f8238e1be
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 5|英国+社会保险安全部
+- name: 5,24|🇬🇧 英国 社会保险安全部
   password: telegram-id-privatevpns
   port: 22222
   server: 51.21.231.34
+  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
@@ -244,9 +245,9 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '10,24|0|🇫🇷1 |  2.4MB/s #1'
+  name: 10|英国 017
   network: ws
-  port: '443'
+  port: 443
   raw:
     add: 144.24.200.164
     aid: '0'
@@ -272,7 +273,7 @@ proxies:
       Host: beyonddsz.cfd
     path: /linkws
 - allowInsecure: ''
-  name: '10,24|0|🇬🇧3 |  4.3MB/s #1'
+  name: 10|英国 018
   network: tcp
   password: telegram-id-directvpn
   port: 22222
@@ -334,6 +335,13 @@ proxies:
     headers:
       Host: linde06.indiavideo.sbs
     path: /linkws
+- name: 24|🇬🇧 英国 伦敦Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.11.181.205
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '24|🇬🇧 _英国 #1'
@@ -423,12 +431,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 762b3923-5885-4c5f-886f-e62788512338
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-37.221.125.1...
-  network: tcp
-  port: '33940'
-  server: 37.221.125.159
-  tls: false
-  type: vmess
-  uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
