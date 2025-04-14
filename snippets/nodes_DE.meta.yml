@@ -24,12 +24,6 @@ proxies:
   tls: false
   type: vless
   uuid: 5739c92e-4e9c-47eb-8c35-15e35b88b9c3
-- cipher: rc4-md5
-  name: 5,16,19,24,27|2|14 |  5.5MB/s
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
 - name: 5|🇩🇪 JH德国1-1
   network: tcp
   password: 07a0e875-9b9a-4e11-a81f-8af85f82e74d
@@ -46,8 +40,8 @@ proxies:
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - cipher: chacha20-ietf-poly1305
-  name: 5,11|0|国 01 | 1x DE
-  password: a2915f1a-efc6-4a29-a0ba-4e1614774fc5
+  name: '5,11,27|1|🇪德国 01 | 1x DE #1'
+  password: b77de874-b287-49a2-9ece-cabc7fb56d66
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -124,8 +118,8 @@ proxies:
   type: vless
   uuid: 3ac87d23-b3cf-43c0-b274-f1a6633effd5
 - cipher: chacha20-ietf-poly1305
-  name: 5,11|14|🇪 德国 01 | 1x DE
-  password: 2fcbd0e2-638c-40f7-9ab2-6d8f8238e1be
+  name: '5,11,27|0| 国 01 | 1x DE #1'
+  password: fff38f40-4d13-45f4-b9f5-150b3486253c
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -530,6 +524,12 @@ proxies:
   type: vless
   udp: true
   uuid: 47d7d5eb-55e6-4085-a155-bdf3fcc428f6
+- cipher: chacha20-ietf-poly1305
+  name: 11,24,27|2|🇩🇪6 |  5.5MB/s
+  password: q7jwtcA0MmyYi0JddUgXXj
+  port: 42037
+  server: 85.208.139.31
+  type: ss
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -640,13 +640,14 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
   tls: false
   type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -659,3 +660,12 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
