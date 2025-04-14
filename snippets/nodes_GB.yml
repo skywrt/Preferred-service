@@ -1,14 +1,17 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,27|1|🇧英国家宽 01 | 1x UK #1'
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,27,30,37|🇬GB国
   password: b77de874-b287-49a2-9ece-cabc7fb56d66
   port: 31271
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,27|0| 国住宅IP 01 | 1x UK #1'
-  password: fff38f40-4d13-45f4-b9f5-150b3486253c
+  name: 5,11|0| 国住宅IP 01 | 1x UK
+  password: 9e72fb25-de23-4ea7-a6d3-a549d2d3303a
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -189,17 +192,15 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  alterId: 0
-  name: 10,37|未知83 1.7MB/s
+  name: 10|英国 013
   network: tcp
   password: '!!str 74260698218909400'
   port: 443
   server: 85.234.83.133
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: smooth-imp.shiner427.skin
   tls: true
   type: trojan
-  udp: true
 - allowInsecure: ''
   name: 10|英国 014
   network: tcp
@@ -234,7 +235,7 @@ proxies:
       Host: vc.fly.dev
     path: /vc
 - allowInsecure: ''
-  name: 10,12,20,21,24|🇬🇧 _英国
+  name: 10,12,20,21,24,30|_GB_国
   network: tcp
   password: I46LpSIM1f
   port: 1935
@@ -282,14 +283,11 @@ proxies:
   sni: trojan.burgerip.co.uk
   tls: true
   type: trojan
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知68 20.6MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
-  skip-cert-verify: true
-  tls: true
+- cipher: chacha20-ietf-poly1305
+  name: 11|2|🇬🇧5 |  5.1MB/s
+  password: v0NHlCl2nvVfC8AeZPMffi
+  port: 36301
+  server: 77.110.106.77
   type: ss
 - alterId: 0
   cipher: auto
@@ -306,15 +304,6 @@ proxies:
     headers:
       host: linde06.indiavideo.sbs
     path: /linkws
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知4 20.1MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - name: '20,21|🇬🇧GB-84.8.159.155-0975 #1'
   password: b19c4375-d847-4c40-9824-4767c88b5f38
   port: 10200
@@ -335,6 +324,15 @@ proxies:
     headers:
       Host: linde06.indiavideo.sbs
     path: /linkws
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 20,21,37|未知22 1.5MB/s
+  password: JXrw9ayK4zFgQ2g9s9SLamzYu4XVNKUw638tY1x47o36GA7Q4ooVeJShHxMEU65tFJNN3sewnpg4tAdC8SKnc18aBQtoYSSU
+  port: 55988
+  server: 185.5.38.111
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - name: 24|🇬🇧 英国 伦敦Amazon数据中心
   password: telegram-id-privatevpns
   port: 22222
@@ -423,14 +421,18 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-37.221.125.1...
-  network: tcp
-  port: '33940'
-  server: 37.221.125.159
-  servername: ''
-  tls: false
+  client-fingerprint: chrome
+  name: 30|🇧 英国 V2CROSS.COM
+  network: ws
+  port: 443
+  server: 158.180.228.226
+  tls: true
   type: vmess
-  uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      Host: beyonddsz.cfd
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
@@ -441,3 +443,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 762b3923-5885-4c5f-886f-e62788512338
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-37.221.125.1...
+  network: tcp
+  port: '33940'
+  server: 37.221.125.159
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
