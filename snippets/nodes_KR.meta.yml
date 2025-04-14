@@ -1,7 +1,90 @@
 proxies:
+- cipher: aes-256-cfb
+  name: '5,11,24,27|12|🇷 韩国2|@ripaojiedian #1'
+  password: 1601e3c29c8db1a88942cf0cad731bf3
+  port: 3306
+  server: 43.131.255.175
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 5,11,27|2|🇷3 |  4.3MB/s
+  name: 5,27|1|🇷4 |  5.3MB/s
+  network: tcp
+  port: 17232
+  server: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 8d888b92-eec8-11ef-bca1-f23c91cfbbc9
+  ws-headers:
+    Host: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27|2|🇰🇷韩国 02 | 1x KR #1'
+  password: 82747a32-0e0f-4296-be53-00a6fd66bded
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 5,11,27|1,12|🇰🇷 韩国|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 18.179.20.184
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27|12|🇷 韩国|@ripaojiedian #1'
+  password: d192a833-b118-4b46-8e54-12cf5025d4cd
+  port: 43450
+  server: gdlt.aicheetah.lol
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27|0|🇷 韩国 02 | 1x KR
+  password: 0d5981b6-f24d-4a09-9d68-7dfbf09f73d4
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,37|🇰🇷KR韩国2
+  password: 3eddf05b-4d68-488e-9ac4-4c5600e05a27
+  port: 36311
+  server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 5|TG@ZDYZ2 KR1
+  network: ws
+  port: 2053
+  server: 54.180.202.133
+  servername: fei.634676.xyz
+  tls: true
+  type: vless
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    headers:
+      Host: fei.634676.xyz
+    path: '%2F%3Fed%3D2560'
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,37|🇷KR国
+  password: 4547e428-09ce-45bb-be4d-7732dfe32e11
+  port: 31311
+  server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 5,11,27|1|🇷1 |  2.4MB/s
   network: tcp
   port: 17232
   server: 693debd4-sum4g0-svlqnl-2c08.cm5.p5pv.com
@@ -12,58 +95,53 @@ proxies:
   ws-headers:
     Host: 693debd4-sum4g0-svlqnl-2c08.cm5.p5pv.com
   ws-path: /
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,37|KR国
-  password: 44bef85f-986a-4647-b387-eedf36c6dd48
-  port: 31311
-  server: free.2apzhfa.xyz
+- name: 5|🇰🇷 OC韩国1-1｜限速｜x2
+  network: tcp
+  password: 07a0e875-9b9a-4e11-a81f-8af85f82e74d
+  port: 20255
+  server: alibaba1.xn--z7x16bf6t.com
   skip-cert-verify: true
+  sni: g.alicdn.com
+  type: trojan
+- name: 5|🇰🇷 BV韩国1-6 ｜x2
+  network: tcp
+  password: 07a0e875-9b9a-4e11-a81f-8af85f82e74d
+  port: 39323
+  server: aawssb6.xn--z7x16bf6t.com
+  skip-cert-verify: true
+  sni: g.alicdn.com
+  type: trojan
+- name: 5|🇰🇷 OC韩国1-6｜限速｜x2
+  network: tcp
+  password: 07a0e875-9b9a-4e11-a81f-8af85f82e74d
+  port: 20255
+  server: aawssb6.xn--z7x16bf6t.com
+  skip-cert-verify: true
+  sni: g.alicdn.com
+  type: trojan
+- name: 5|🇰🇷 BV韩国1-1 ｜x2
+  network: tcp
+  password: 07a0e875-9b9a-4e11-a81f-8af85f82e74d
+  port: 39323
+  server: alibaba1.xn--z7x16bf6t.com
+  skip-cert-verify: true
+  sni: g.alicdn.com
+  type: trojan
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 5|TG@ZDYZ2 KR2
+  network: ws
+  port: 4433
+  server: 54.180.230.114
+  servername: fei.634676.xyz
   tls: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|12|🇷 韩国|@ripaojiedian #1'
-  password: d192a833-b118-4b46-8e54-12cf5025d4cd
-  port: 43450
-  server: gdlt.aicheetah.lol
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|1|🇰🇷 韩国 02 | 1x KR #1'
-  password: 4e6943c0-de19-493b-bf7e-6cb56e6e7530
-  port: 36313
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '5,11,24,27|12|🇷 韩国特殊|@ripaojiedian #1'
-  password: amazonskr05
-  port: 443
-  server: 13.229.180.165
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: '5,11,24,27|12|🇷 韩国2|@ripaojiedian #1'
-  password: 1601e3c29c8db1a88942cf0cad731bf3
-  port: 3306
-  server: 43.131.255.175
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|1|🇷 韩国 01 | 1x KR
-  password: 4e6943c0-de19-493b-bf7e-6cb56e6e7530
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|0|🇷韩国 02 | 1x KR
-  password: fa7d51ac-2f10-4bb0-ba7c-b1e560ae100d
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+  type: vless
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    headers:
+      Host: fei.634676.xyz
+    path: '%2F%3Fed%3D2560'
 - alterId: 2
   cipher: auto
   name: 5|韩国 - 首尔特别市 - Amazon.com, Inc. ...
@@ -77,28 +155,6 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 5,11,27|2|🇰🇷5 |  5.7MB/s
-  network: tcp
-  port: 17232
-  server: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 8d888b92-eec8-11ef-bca1-f23c91cfbbc9
-  ws-headers:
-    Host: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
-  ws-path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 5|1|🇰🇷1 |  1.1MB/s
-  port: 21082
-  server: tw-ty-line1-2-2.sudatech.store
-  servername: learn.microsoft.com
-  tls: true
-  type: vless
-  uuid: e7adaa99-8363-3ec4-b849-307c99005405
 - alterId: 1
   cipher: auto
   name: 10|韩国 001
@@ -211,100 +267,91 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- auth: 930a28ac-503a-486b-ab32-21750677311f
+- auth: 2f1cefff-d892-4c27-af6d-3b6620463dd2
   name: 28|🇰🇷 韩国-高端2
-  password: 930a28ac-503a-486b-ab32-21750677311f
+  password: 2f1cefff-d892-4c27-af6d-3b6620463dd2
   port: 19842
   server: kr1.629630.xyz
   skip-cert-verify: false
   sni: kr1.629630.xyz
   type: hysteria2
   udp: true
-- name: 28|🇰🇷 韩国-三网优化2-1J
-  password: 0bfdf60c-b4a9-4415-866d-d2a4fb6f8186
-  port: 44732
-  server: kr-qingyun.dwyun.me
-  skip-cert-verify: false
-  sni: kr-qingyun.dwyun.me
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|🇰🇷 韩国 专线NO2-1A
-  port: 45075
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 97263a25-d387-474d-8509-d4eebe93dafa
-- alterId: 0
-  cipher: auto
-  name: 28|🇰🇷 韩国-1C
-  port: 27842
-  server: ppx1.6128888.xyz
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a1484198-66b3-431c-827c-41af4dfbaf0e
-- cipher: aes-128-gcm
-  name: 28|🇰🇷 韩国一
-  password: 4bf7c191-a8e0-4ec1-840d-8451f43a565e
-  port: 30630
-  server: 001.kjahbg.info
-  type: ss
-  udp: true
-- auth: 930a28ac-503a-486b-ab32-21750677311f
-  name: 28|🇰🇷 韩国-高端1
-  password: 930a28ac-503a-486b-ab32-21750677311f
-  port: 19842
-  server: kr2.629630.xyz
-  skip-cert-verify: false
-  sni: kr2.629630.xyz
-  type: hysteria2
-  udp: true
 - cipher: aes-256-gcm
-  name: 28|🇰🇷 韩国01
-  password: 0207f6ae-a265-4e39-b3a9-5d2b00fe1b1f
-  port: 23116
+  name: 28|🇰🇷 韩国03
+  password: 0a023320-7c6d-46b6-9770-eb9b91efa986
+  port: 23118
   server: okanc.node-is.green
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 28|🇰🇷 韩国02
-  password: 0207f6ae-a265-4e39-b3a9-5d2b00fe1b1f
-  port: 23117
-  server: okanc.node-is.green
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 28|🇰🇷 V1 | 韩国1-1A
-  password: c38f172b-8857-4eb3-a18a-04b517476b0e
-  port: 49026
-  server: kr91.cctv14.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
   name: 28|🇰🇷 韩国二
-  password: 4bf7c191-a8e0-4ec1-840d-8451f43a565e
+  password: e820d30e-a3c5-42ff-941c-479fd8e1fbb0
   port: 30631
   server: 002.kjahbg.info
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 28|🇰🇷 韩国 专线NO1-1B
+  name: 28|🇰🇷 韩国 专线NO2-1B
+  port: 45075
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2a8e240f-7d39-4479-92a5-09d7c30d595b
+- alterId: 0
+  cipher: auto
+  name: 28|🇰🇷 韩国 专线NO1-1C
   port: 45076
   server: haa.dashuai.cyou
   tls: false
   type: vmess
   udp: true
-  uuid: 7ba58d09-f1ce-4fc7-8eb4-1077aee027cd
+  uuid: dd65959c-2d06-48e6-9423-c16b0fb36e3d
 - cipher: aes-256-gcm
-  name: 28|🇰🇷 韩国03
-  password: 0207f6ae-a265-4e39-b3a9-5d2b00fe1b1f
-  port: 23118
+  name: 28|🇰🇷 V1 | 韩国1-1B
+  password: 57c76796-8d7a-4b05-a3c8-b45774712dd5
+  port: 49026
+  server: kr91.cctv14.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 28|🇰🇷 韩国02
+  password: 0a023320-7c6d-46b6-9770-eb9b91efa986
+  port: 23117
   server: okanc.node-is.green
   type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 28|🇰🇷 韩国一
+  password: e820d30e-a3c5-42ff-941c-479fd8e1fbb0
+  port: 30630
+  server: 001.kjahbg.info
+  type: ss
+  udp: true
+- name: 28|🇰🇷 韩国-三网优化2
+  password: 38cc3299-d1f6-43ef-af24-b766887cf7d4
+  port: 44732
+  server: kr-qingyun.dwyun.me
+  skip-cert-verify: false
+  sni: kr-qingyun.dwyun.me
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: 28|🇰🇷 韩国01
+  password: 0a023320-7c6d-46b6-9770-eb9b91efa986
+  port: 23116
+  server: okanc.node-is.green
+  type: ss
+  udp: true
+- auth: 2f1cefff-d892-4c27-af6d-3b6620463dd2
+  name: 28|🇰🇷 韩国-高端1
+  password: 2f1cefff-d892-4c27-af6d-3b6620463dd2
+  port: 19842
+  server: kr2.629630.xyz
+  skip-cert-verify: false
+  sni: kr2.629630.xyz
+  type: hysteria2
   udp: true
 - alterId: 0
   cipher: auto

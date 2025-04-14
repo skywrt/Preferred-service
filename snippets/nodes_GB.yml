@@ -1,31 +1,30 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|0|国家宽 01 | 1x UK
-  password: fa7d51ac-2f10-4bb0-ba7c-b1e560ae100d
+  name: 5,11,24,27|2|🇧英国家宽 01 | 1x UK
+  password: 82747a32-0e0f-4296-be53-00a6fd66bded
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|1|🇧 英国住宅IP 01 | 1x UK
-  password: 4e6943c0-de19-493b-bf7e-6cb56e6e7530
+  name: 5,11,24,27|0| 国住宅IP 01 | 1x UK
+  password: 0d5981b6-f24d-4a09-9d68-7dfbf09f73d4
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 5|英国UK-T
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: uk.mjt000.com
-  skip-cert-verify: false
-  sni: uk.mjt000.com
+- name: 5|英国+社会保险安全部
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.21.231.34
+  sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 5|英国-优化3
+  name: 5|英国-优化-GPT
   network: ws
   port: '16645'
-  server: t.cnmjcn.cyou
+  server: yes.mojcn.com
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -35,10 +34,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5|英国-优化-GPT
+  name: 5|英国-优化3
   network: ws
   port: '16645'
-  server: yes.mojcn.com
+  server: t.cnmjcn.cyou
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -59,6 +58,13 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- name: 5|英国UK-T
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: uk.mjt000.com
+  skip-cert-verify: false
+  sni: uk.mjt000.com
+  type: trojan
 - name: 8|🇬🇧GB-3.9.164.189-194_1@194
   password: E6r93XCOsyM9
   port: 16733
@@ -95,14 +101,14 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10,28|🇩🇪 德国法兰克福-1C
+  name: 10|英国 002
   network: ws
   port: 23451
   server: frankfurt.faforex.eu.org
   tls: false
   type: vmess
   udp: true
-  uuid: e1cee471-767e-4e47-befa-56a2cb228a38
+  uuid: 4e309c18-ee5f-45f3-8f28-66467d1e0c4f
   ws-opts:
     headers:
       Host: us-new03.daluquan.top
@@ -132,7 +138,7 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  name: '10,20,21|🇫🇷FR-51.68.13.106-0936 #1'
+  name: '10,20,21|🇫🇷FR-51.68.13.106-0968 #1'
   network: tcp
   password: FiSo7J6vfS
   port: 1935
@@ -142,7 +148,7 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  name: '10,20,21|🇫🇷FR-51.15.86.181-0950 #1'
+  name: '10,20,21|🇫🇷FR-51.15.86.181-0945 #1'
   network: tcp
   password: eG92F3gh09
   port: 1935
@@ -182,15 +188,17 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  name: 10|英国 013
+  alterId: 0
+  name: 10,37|未知83 1.7MB/s
   network: tcp
   password: '!!str 74260698218909400'
   port: 443
   server: 85.234.83.133
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: smooth-imp.shiner427.skin
   tls: true
   type: trojan
+  udp: true
 - allowInsecure: ''
   name: 10|英国 014
   network: tcp
@@ -225,7 +233,7 @@ proxies:
       Host: vc.fly.dev
     path: /vc
 - allowInsecure: ''
-  name: 10,11,12,20,21,24|🇬🇧 _英国
+  name: 10,12,20,21,24|🇬🇧 _英国
   network: tcp
   password: I46LpSIM1f
   port: 1935
@@ -275,50 +283,50 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知116 13.8MB/s
+  name: 19,20,21,37|未知68 20.6MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.79
+  server: 212.102.53.195
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知21 14.9MB/s
-  password: shadowsocks
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇬🇧GB-45.158.77.187-6302
+  network: ws
   port: 443
-  server: 212.102.53.196
+  server: linde06.indiavideo.sbs
   skip-cert-verify: true
   tls: true
-  type: ss
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      host: linde06.indiavideo.sbs
+    path: /linkws
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知102 5.4MB/s
+  name: 19,20,21,37|未知4 20.1MB/s
   password: shadowsocks
   port: 443
-  server: 141.98.101.178
+  server: 212.102.53.193
   skip-cert-verify: true
   tls: true
   type: ss
-- name: '20,21|🇬🇧GB-84.8.159.155-6427 #1'
+- name: '20,21|🇬🇧GB-84.8.159.155-0975 #1'
   password: b19c4375-d847-4c40-9824-4767c88b5f38
   port: 10200
   server: 84.8.159.155
   sni: www.ak-hk.top
   type: trojan
-- name: '20,21|🇬🇧GB-84.8.159.155-0988 #1'
-  password: b19c4375-d847-4c40-9824-4767c88b5f38
-  port: 10200
-  server: www.ak-hk.top
-  sni: www.ak-hk.top
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: '20,21|🇬🇧GB-45.158.77.187-1627 #1'
+  name: '20,21|🇬🇧GB-45.158.77.187-6302 #2'
   network: ws
   port: 443
   server: linde06.indiavideo.sbs
-  servername: ''
+  servername: linde06.indiavideo.sbs
   tls: true
   type: vmess
   uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
@@ -359,61 +367,60 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇬🇧 英国01-1B
-  password: 78de6879-b2ba-40f0-b17a-59f4aa810275
-  port: 45634
-  server: gy.tangu.win
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 28|🇬🇧 英国1-1A
+  name: 28|🇬🇧 英国1-1B
   port: 45066
   server: haa.dashuai.cyou
   tls: false
   type: vmess
   udp: true
-  uuid: 97263a25-d387-474d-8509-d4eebe93dafa
+  uuid: 2a8e240f-7d39-4479-92a5-09d7c30d595b
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇬🇧 英国01-1B
+  password: a92dff6b-12eb-4b72-bc31-13e6c60adeb4
+  port: 15634
+  server: gy.tangu.win
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 28|🇬🇧 V1 | 英国1-1A
+  password: 06f93490-1c41-4e0b-b4c0-3444033e2fb8
+  port: 49081
+  server: gb91.cctv14.xyz
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: 28|🇬🇧 VIP 英国1-1B
-  password: 7f429650-535f-45e1-8469-2d69c99911b4
+  password: 2df94953-c51e-483e-9320-15b08448a962
   port: 47081
   server: gb01.jiasudu.buzz
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 28|🇬🇧 英国2-1A
+  name: 28|🇬🇧 英国2-1C
   port: 45067
   server: xdd.dashuai.cyou
   tls: false
   type: vmess
   udp: true
-  uuid: 97263a25-d387-474d-8509-d4eebe93dafa
-- cipher: aes-256-gcm
-  name: 28|🇬🇧 V1 | 英国1-1A
-  password: c38f172b-8857-4eb3-a18a-04b517476b0e
-  port: 49081
-  server: gb91.cctv14.xyz
-  type: ss
-  udp: true
+  uuid: dd65959c-2d06-48e6-9423-c16b0fb36e3d
 - cipher: chacha20-ietf-poly1305
   name: 28|🇬🇧 英国01-1A
-  password: fdc19116-b91e-4c8e-9ca0-ae66c4ae494e
-  port: 15634
+  password: ae36b9b8-7604-4943-85fd-0e6874bf7716
+  port: 45634
   server: gy.tangu.win
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36,37| 2.0MB/s
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
   network: tcp
-  port: 28872
+  port: '28872'
   server: 46.250.253.234
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 762b3923-5885-4c5f-886f-e62788512338
 - alterId: 0
@@ -422,7 +429,6 @@ proxies:
   network: tcp
   port: '33940'
   server: 37.221.125.159
-  servername: ''
   tls: false
   type: vmess
   uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
