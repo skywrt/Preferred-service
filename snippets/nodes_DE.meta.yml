@@ -105,24 +105,21 @@ proxies:
   ws-opts:
     path: linkvws
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0|🇪国 01 | 1x DE
-  password: 4fabaabf-4fdb-48b2-8f8e-f044a511b6be
+  name: '5,9,11,24,27,30|14|🇪德国 01 | 1x DE #1'
+  password: 0978e7ed-5ce1-4945-a3f5-d31bea610fb3
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- allowInsecure: ''
-  alpn:
+- alpn:
   - http/1.1
-  client-fingerprint: chrome
-  name: 5,10,24,27,30|🇺🇸 美国 Amazon EC2
+  name: '5,24|1|🇩🇪3 |  5.6MB/s #2'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 3.72.227.235
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
-  tls: true
   type: trojan
 - client-fingerprint: chrome
   flow: ''
@@ -146,18 +143,24 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|14|🇪 德国 01 | 1x DE #1'
-  password: 3de7142f-f691-4224-ae3e-1a7145596592
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,30,37|DE国
+  password: f1e932dd-5aa7-4633-867b-68507b1fdb5d
   port: 36471
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|1|🇪4 |  5.4MB/s #1'
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,24,37|未知62
   password: HxINCvzbib2C3NjH8o86UP
   port: 23600
   server: 91.108.245.111
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -189,21 +192,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- alterId: 2
-  cipher: auto
-  name: 9|0|🇩🇪3 |  3.7MB/s
-  network: ws
-  port: 23618
-  server: 18.mamamajd.site
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e092af45-5038-39e5-a446-2d3362a6980b
-  ws-opts:
-    headers:
-      Host: 18.mamamajd.site
-    path: /
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: 2086vless
@@ -418,7 +406,8 @@ proxies:
   uuid: c44fbe30-1989-4917-bdae-04ef1315c4c8
 - alterId: 0
   cipher: auto
-  name: 10|德国 017
+  client-fingerprint: chrome
+  name: 10,30|🇧 英国 V2CROSS.COM
   network: ws
   port: 443
   raw:
@@ -588,8 +577,7 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: '1'
-  alterId: 0
-  name: 10,37|未知74
+  name: 10|德国 028
   network: tcp
   password: 4467ae8518abf1ef321618c0bfb5549ccc
   port: 42600
@@ -598,7 +586,6 @@ proxies:
   sni: www.cloudflare.com
   tls: true
   type: trojan
-  udp: true
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -676,16 +663,15 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  grpc-opts:
-    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
-  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
-  network: grpc
-  port: '15145'
-  server: 88.198.172.25
+  name: 36,37|未知84
+  network: httpupgrade
+  port: 2095
+  server: 104.19.150.10
   servername: ''
+  skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
@@ -697,21 +683,13 @@ proxies:
   uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-17...
-  network: httpupgrade
-  port: '2052'
-  server: 173.245.58.100
+  grpc-opts:
+    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
+  network: grpc
+  port: '15145'
+  server: 88.198.172.25
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 0f427f89-3aa4-4641-9e58-9ff0cc1cbfae
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
