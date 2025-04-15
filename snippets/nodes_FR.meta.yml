@@ -1,10 +1,13 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|12|🇷 国|@ripaojiedian
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,37|FR
   password: be443689-bc64-49ff-85a5-8eecaa2235d3
   port: 41068
   server: zz5.fgmcx.top
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -39,7 +42,7 @@ proxies:
     path: /azumase.ren
 - alterId: 0
   cipher: auto
-  name: 5,12,24,27|1|🇫🇷6 |  1.5MB/s
+  name: 5,11,12,24,27|1|🇫🇷2 |  1.4MB/s
   network: tcp
   port: 17235
   server: 00fd0574-sux8g0-sv07nd-jtx1.cm5.p5pv.com
@@ -195,6 +198,15 @@ proxies:
   server: 151.115.88.168
   type: ss
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知48 24.6MB/s
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.158.171.141
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 19|🇫🇷FR-163.5.159.231-8314
@@ -256,21 +268,6 @@ proxies:
     path: /link
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇫🇷FR-144.24.200.164-1592
-  network: ws
-  port: 443
-  server: 144.24.200.164
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    headers:
-      host: beyonddsz.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
   name: '20,21|🇫🇷FR-51.77.20.137-8327 #1'
   network: ws
   port: 443
@@ -284,7 +281,7 @@ proxies:
       Host: tilebani.com
     path: /linkvws
 - alterId: 0
-  name: 20,21,37|未知30 7.6MB/s
+  name: 20,21,37|未知9 17.2MB/s
   password: hZ7JkYVAfB
   port: 1935
   server: 141.227.138.29
@@ -355,12 +352,6 @@ proxies:
     headers:
       Host: beyonddsz.cfd
     path: /linkws
-- cipher: aes-256-cfb
-  name: 20,21,27|1|10-T1 |  3.6MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.15.82
-  type: ss
 - name: 24|🇫🇷 _法国
   password: Aimer
   port: 443
@@ -384,122 +375,15 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 27|1|🇫🇷4 |  5.3MB/s
+  name: 27|1|🇫🇷3 |  1.1MB/s
   network: ws
   port: 443
-  raw:
-    add: 104.18.222.139
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: hms19.best-tizi.top
-    id: 62aa5f80-0328-4004-a375-7f5a59df4022
-    net: ws
-    path: /linkws?@AZARBAYJB1@AZARBAYJB1@AZARBAYJB1@AZARBAYJB1@AZARBAYJB1@AZARBAYJB1?ed=2560/linkws
-    port: '443'
-    ps: Join+Telegram:@FarahVPN
-    scy: auto
-    sni: hms19.best-tizi.top
-    tls: tls
-    type: ''
-    v: '2'
-  server: 104.18.222.139
-  servername: hms19.best-tizi.top
+  server: 132.145.232.171
+  servername: beyonddsz.cfd
   tls: true
   type: vmess
-  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
   ws-opts:
     headers:
-      Host: hms19.best-tizi.top
-    path: /linkws?@AZARBAYJB1@AZARBAYJB1@AZARBAYJB1@AZARBAYJB1@AZARBAYJB1@AZARBAYJB1?ed=2560/linkws
-- auth: d6e8672d-7cd2-4c4f-8503-2f21d16fa4d5
-  name: 28|🇫🇷 法国-2-1C
-  password: d6e8672d-7cd2-4c4f-8503-2f21d16fa4d5
-  port: 19842
-  server: fr1.731732.xyz
-  skip-cert-verify: false
-  sni: fr1.731732.xyz
-  type: hysteria2
-  udp: true
-- cipher: aes-128-gcm
-  name: 28|🇫🇷 CM 隧道 法国 NO1-1B
-  password: 6ae89851-e357-444e-b15b-46fe40eb9044
-  port: 35111
-  server: sd.needss.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|🇫🇷 专线-法国-1C
-  network: ws
-  port: 45418
-  server: 36.150.94.53
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0ca68e11-c32a-4137-b55f-9bf048481a82
-  ws-opts:
-    headers:
-      Host: www.baidu.com
-    path: /
-- cipher: aes-128-gcm
-  name: 28|🇫🇷 FRANCE 01 丨1x-1A
-  password: f8e1fac4-2d21-48ff-ac56-f46d26467132
-  port: 7539
-  server: bisschaxc.uk
-  type: ss
-  udp: true
-- auth: 531b48ef-89e0-4273-a471-200a3cc3ab14
-  name: 28|🇫🇷 法国-1-1D
-  password: 531b48ef-89e0-4273-a471-200a3cc3ab14
-  port: 19842
-  server: fr1.426624.xyz
-  skip-cert-verify: true
-  sni: rrman.org
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|🇫🇷 法国A-1B
-  port: 30344
-  server: 183.236.123.34
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c5274da0-5bdb-44b0-95fc-69a1cfed5eb7
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇫🇷 IEPL 法国FR 102-1D
-  password: a6eefa80-e73c-4141-b965-4b00ae965c66
-  port: 16119
-  server: 183.240.116.150
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|🇫🇷 法国1-1B
-  port: 45072
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11ed4e04-f2ba-407e-8513-12a114450e22
-- alterId: 0
-  cipher: auto
-  name: 28|🇫🇷 法国2-1B
-  port: 45071
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11ed4e04-f2ba-407e-8513-12a114450e22
-- alterId: 0
-  name: 37|🇷FR国 10.2MB/s
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.47.195.45
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
+      Host: beyonddsz.cfd
+    path: /linkws

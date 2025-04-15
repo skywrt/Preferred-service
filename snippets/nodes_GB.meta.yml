@@ -27,15 +27,15 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|2|🇧英国家宽 01 | 1x UK
-  password: 2c612590-69f0-4d27-a7fc-58d1af39d4cf
+  name: 5,9,11,24,27|0|国家宽 01 | 1x UK
+  password: 0f2343d4-a9b6-456d-98f9-2b63c88dbf0b
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27|0| 国住宅IP 01 | 1x UK #1'
-  password: 0ea695c0-ed91-4393-ad57-e6c8cef57fc9
+  name: 5,9,24,27|2|🇧 英国住宅IP 01 | 1x UK
+  password: 691bb251-77a1-4135-a689-3805654a67ee
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -291,15 +291,17 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  name: '10,20,21|🇫🇷FR-51.68.13.106-1013 #1'
+  alterId: 0
+  name: 10,20,21,37|未知81 19.1MB/s
   network: tcp
   password: FiSo7J6vfS
   port: 1935
   server: 51.68.13.106
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: x1fr-ovh.devefun.net
   tls: true
   type: trojan
+  udp: true
 - allowInsecure: ''
   name: '10,20,21|🇫🇷FR-51.15.86.181-1011 #1'
   network: tcp
@@ -341,17 +343,15 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  alterId: 0
-  name: 10,37|未知62 4.2MB/s
+  name: 10|英国 013
   network: tcp
   password: '!!str 74260698218909400'
   port: 443
   server: 85.234.83.133
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: smooth-imp.shiner427.skin
   tls: true
   type: trojan
-  udp: true
 - allowInsecure: ''
   name: 10|英国 014
   network: tcp
@@ -473,6 +473,15 @@ proxies:
     headers:
       Host: lo.kpcloud.eu.org
     path: '%2Fblue'
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知88 17.8MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.81
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 19|🇬🇧GB-131.145.40.61-1049
   password: W74XFALLLuw6m5IA
@@ -527,207 +536,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇬🇧 IEPL专线 英国 NO1-1A
-  password: 6ee052a8-2ece-47cf-b04c-faa53a324806
-  port: 24000
-  server: sd.needss.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|🇬🇧 英国A-1B
-  port: 30343
-  server: 183.236.123.34
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c5274da0-5bdb-44b0-95fc-69a1cfed5eb7
-- auth: 467d2e54-d970-4d5c-b397-407f2a08e100
-  name: '28|🇬🇧 英国-5-1A #1'
-  password: 467d2e54-d970-4d5c-b397-407f2a08e100
-  port: 19842
-  server: uk4.164165.xyz
-  skip-cert-verify: false
-  sni: uk4.164165.xyz
-  type: hysteria2
-  udp: true
-- auth: a496170e-a0fe-47b0-a0f8-bab9845e20fa
-  name: 28|🇬🇧 英国-1B
-  password: a496170e-a0fe-47b0-a0f8-bab9845e20fa
-  port: 43952
-  server: yunyouuk.hgpt.website
-  skip-cert-verify: false
-  sni: yunyouuk.hgpt.website
-  type: hysteria2
-  udp: true
-- cipher: aes-256-gcm
-  name: 28|🇬🇧 大陆-英国05-1B
-  password: 4816f3de-3a9b-4b46-ba68-3a0b8243404b
-  port: 13460
-  server: 117.173.88.171
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '28|🇬🇧 英国家庭IP-1A #1'
-  network: ws
-  port: 61213
-  server: 183.240.180.26
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 27908b88-e77c-45bb-bb03-98f5e77d09ca
-  ws-opts:
-    headers:
-      Host: shop.1357.pics
-    path: /
-- auth: 467d2e54-d970-4d5c-b397-407f2a08e100
-  name: '28|🇬🇧 英国-优化-1A #1'
-  password: 467d2e54-d970-4d5c-b397-407f2a08e100
-  port: 19842
-  server: uka1.731732.xyz
-  skip-cert-verify: false
-  sni: uka1.731732.xyz
-  type: hysteria2
-  udp: true
-- auth: db744715-0ba5-46c3-ae2d-bcd6233f54fd
-  name: 28|🇬🇧 英国-1A
-  password: db744715-0ba5-46c3-ae2d-bcd6233f54fd
-  port: 47662
-  server: yunyouuk.hgpt.website
-  skip-cert-verify: false
-  sni: yunyouuk.hgpt.website
-  type: hysteria2
-  udp: true
-- auth: 467d2e54-d970-4d5c-b397-407f2a08e100
-  name: '28|🇬🇧 英国-3-1A #1'
-  password: 467d2e54-d970-4d5c-b397-407f2a08e100
-  port: 19842
-  server: uk4.731732.xyz
-  skip-cert-verify: false
-  sni: uk4.731732.xyz
-  type: hysteria2
-  udp: true
-- auth: d6e8672d-7cd2-4c4f-8503-2f21d16fa4d5
-  name: 28|🇬🇧 英国-高端-1C
-  password: d6e8672d-7cd2-4c4f-8503-2f21d16fa4d5
-  port: 19842
-  server: uk8.731732.xyz
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '28|🇬🇧 IEPL 英国UK 107-1B #1'
-  password: 39f3f42e-c2fa-44ef-80db-8b7bdb320922
-  port: 16118
-  server: 183.240.116.150
-  type: ss
-  udp: true
-- auth: 467d2e54-d970-4d5c-b397-407f2a08e100
-  name: '28|🇬🇧 英国-4-1A #1'
-  password: 467d2e54-d970-4d5c-b397-407f2a08e100
-  port: 19842
-  server: uk5.731732.xyz
-  skip-cert-verify: false
-  sni: uk5.731732.xyz
-  type: hysteria2
-  udp: true
-- cipher: aes-256-gcm
-  name: 28|🇬🇧 大陆-英国07-1B
-  password: 4816f3de-3a9b-4b46-ba68-3a0b8243404b
-  port: 40998
-  server: 183.236.51.167
-  type: ss
-  udp: true
-- auth: 467d2e54-d970-4d5c-b397-407f2a08e100
-  name: '28|🇬🇧 英国-2-1A #1'
-  password: 467d2e54-d970-4d5c-b397-407f2a08e100
-  port: 19842
-  server: uk3.731732.xyz
-  skip-cert-verify: false
-  sni: uk3.731732.xyz
-  type: hysteria2
-  udp: true
-- cipher: aes-256-gcm
-  name: 28|🇬🇧 大陆-英国06-1A
-  password: fee287a9-9edd-4f9b-9576-f7f43585143b
-  port: 51832
-  server: 36.151.251.37
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 28|🇬🇧 UNITED KINGDOM 01 丨1x-1D
-  password: f74827cc-c899-443f-9d40-f0801c765891
-  port: 7513
-  server: bisschaxc.uk
-  type: ss
-  udp: true
-- auth: 9970e184-a9a2-4dcf-9df9-56a669908674
-  name: 28|🇬🇧 英国-1D
-  password: 9970e184-a9a2-4dcf-9df9-56a669908674
-  port: 6597
-  server: yunyouuk.hgpt.website
-  skip-cert-verify: false
-  sni: yunyouuk.hgpt.website
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|🇬🇧 英国1-1B
-  port: 45066
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11ed4e04-f2ba-407e-8513-12a114450e22
-- auth: 27908b88-e77c-45bb-bb03-98f5e77d09ca
-  name: '28|🇬🇧 英国-1A #1'
-  password: 27908b88-e77c-45bb-bb03-98f5e77d09ca
-  port: 5385
-  server: yunyouuk.hgpt.website
-  skip-cert-verify: false
-  sni: yunyouuk.hgpt.website
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|🇬🇧 英国2-1A
-  port: 45067
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: aab44545-c209-4d33-bf56-205389c2d4c7
-- auth: 0ca68e11-c32a-4137-b55f-9bf048481a82
-  name: 28|🇬🇧 英国-1C
-  password: 0ca68e11-c32a-4137-b55f-9bf048481a82
-  port: 2506
-  server: yunyouuk.hgpt.website
-  skip-cert-verify: false
-  sni: yunyouuk.hgpt.website
-  type: hysteria2
-  udp: true
-- auth: a774a4ec-6793-4de2-934b-2a195c38ba46
-  name: '28|🇬🇧 英国-1B #1'
-  password: a774a4ec-6793-4de2-934b-2a195c38ba46
-  port: 45322
-  server: yunyouuk.hgpt.website
-  skip-cert-verify: false
-  sni: yunyouuk.hgpt.website
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-37.221.125.1...
-  network: tcp
-  port: '33940'
-  server: 37.221.125.159
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
@@ -738,3 +546,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 762b3923-5885-4c5f-886f-e62788512338
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知86 788.3KB/s
+  network: tcp
+  port: 33940
+  server: 37.221.125.159
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
