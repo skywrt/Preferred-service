@@ -1,6 +1,6 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|12|🇷 韩国|@ripaojiedian #1'
+  name: '5,11,24,27,30|12|🇷 韩国|@ripaojiedian #2'
   password: d192a833-b118-4b46-8e54-12cf5025d4cd
   port: 43450
   server: gdlt.aicheetah.lol
@@ -15,7 +15,7 @@ proxies:
   sni: g.alicdn.com
   type: trojan
 - cipher: aes-256-cfb
-  name: '5,11,24,27|12|🇰🇷 韩国特殊|@ripaojiedian #2'
+  name: '5,11,24,27,30|12|🇰🇷 韩国特殊|@ripaojiedian #3'
   password: amazonskr05
   port: 443
   server: 18.179.20.184
@@ -31,9 +31,9 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,11,24|2|🇰🇷1 |  3.6MB/s #2'
+  name: '5,11,27,30|2|🇰🇷2 |  5.3MB/s #1'
   network: tcp
-  port: '17232'
+  port: 17232
   server: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
   skip-cert-verify: true
   tls: false
@@ -51,36 +51,36 @@ proxies:
   sni: g.alicdn.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|0|  01 | 1x KR #1'
-  password: 181df440-976a-469b-bdb8-73c477d87b1a
+  name: '5,11,24,27,30|0|  01 | 1x KR #2'
+  password: 0b0f85cf-73f4-420b-bc1b-e3fa5a917af0
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '5,11,19,24,27|12|🇷 韩国2|@ripaojiedian #1'
+  name: '5,11,19,24,27,30|12|🇷 韩国2|@ripaojiedian #2'
   password: 1601e3c29c8db1a88942cf0cad731bf3
   port: 3306
   server: 43.131.255.175
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|1|🇰🇷韩国 02 | 1x KR #3'
-  password: 5dd7d900-409d-4ae7-8197-c94c6629ef0c
+  name: '5,11,24,27,30|1|🇰🇷韩国 02 | 1x KR #4'
+  password: 7e82b136-b853-43a5-bd54-635b574bd0da
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|1|🇷韩国 01 | 1x KR #1'
-  password: 5dd7d900-409d-4ae7-8197-c94c6629ef0c
+  name: '5,11,24,27,30|1|🇷韩国 01 | 1x KR #2'
+  password: 7e82b136-b853-43a5-bd54-635b574bd0da
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|0|🇷 韩国 02 | 1x KR #1'
-  password: 181df440-976a-469b-bdb8-73c477d87b1a
+  name: '5,11,24,27,30|0|🇷 韩国 02 | 1x KR #2'
+  password: 0b0f85cf-73f4-420b-bc1b-e3fa5a917af0
   port: 36313
   server: free.2weradf.xyz
   type: ss
@@ -191,6 +191,40 @@ proxies:
     headers:
       Host: ji0612e.nfjunka.xyz
     path: /?ed=2560&proxyip=121.167.108.242:50000
+- alterId: '0'
+  cipher: auto
+  name: '11,24,27,30|2|🇷5 |  3.0MB/s #1'
+  network: tcp
+  port: 17232
+  server: deb006a3-sux8g0-t1dqec-1jal4.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 78ad2258-088d-11f0-8eab-f23c91cfbbc9
+  ws-headers:
+    Host: deb006a3-sux8g0-t1dqec-1jal4.cm5.p5pv.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '11,24,27,30|2|🇷6 |  1.5MB/s #1'
+  network: tcp
+  port: 17232
+  server: 3119abdf-sux8g0-swy169-1tf4x.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 202c296a-f34a-11ef-80e5-f23c9164ca5d
+  ws-headers:
+    Host: 3119abdf-sux8g0-swy169-1tf4x.cm5.p5pv.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '11,27,30|2|🇷1 |  5.0MB/s #1'
+  port: 17232
+  server: a64e572b-sutj40-tei4of-1qxa1.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
 - name: 17|韩国(yudou66.com 玉豆免费节点)
   network: ws
   port: 12273
@@ -227,6 +261,15 @@ proxies:
     headers:
       Host: dp.ylks.xyz
     path: '%2F%3Fproxyip%3Dproxyip.kr.fxxp.dedyp.io'
+- alterId: 0
+  cipher: auto
+  name: '24|2|🇰🇷3 |  2.9MB/s #1'
+  network: tcp
+  port: '17232'
+  server: a64e572b-sutj40-tei4of-1qxa1.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
 - name: 26|V2-韩国03∣K16线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21017
