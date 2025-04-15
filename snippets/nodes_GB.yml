@@ -1,31 +1,39 @@
 proxies:
+- alterId: 2
+  cipher: auto
+  name: 5,9,27|0|1 |  4.5MB/s
+  network: ws
+  port: 23613
+  server: 13.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e092af45-5038-39e5-a446-2d3362a6980b
+  ws-opts:
+    headers:
+      Host: 13.mamamajd.site
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇧英国家宽 01 | 1x UK #2'
-  password: 7e82b136-b853-43a5-bd54-635b574bd0da
+  name: 5,9,11,24,27|1|🇧国家宽 01 | 1x UK
+  password: d535ac39-116c-499c-aa85-0d1f484f66a6
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0| 国住宅IP 01 | 1x UK #2'
-  password: 0b0f85cf-73f4-420b-bc1b-e3fa5a917af0
+  name: 5,9,11,24,27|14|🇧 英国住宅IP 01 | 1x UK
+  password: 656d1b32-6e76-4a3b-bebc-8bbe698ebe8a
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 5|英国UK-T
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: uk.mjt000.com
-  skip-cert-verify: false
-  sni: uk.mjt000.com
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 5|英国-优化-GPT
+  name: 5|英国-优化2
   network: ws
   port: '16645'
-  server: yes.mojcn.com
+  server: m.cnmjin.net
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -35,10 +43,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5|英国-优化2
+  name: 5|英国-优化-GPT
   network: ws
   port: '16645'
-  server: m.cnmjin.net
+  server: yes.mojcn.com
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -59,6 +67,13 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- name: 5|英国UK-T
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: uk.mjt000.com
+  skip-cert-verify: false
+  sni: uk.mjt000.com
+  type: trojan
 - name: 8|🇬🇧GB-3.9.164.189-194_1@194
   password: E6r93XCOsyM9
   port: 16733
@@ -132,7 +147,7 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  name: '10,20,21|🇫🇷FR-51.68.13.106-1012 #1'
+  name: '10,20,21|🇫🇷FR-51.68.13.106-1013 #1'
   network: tcp
   password: FiSo7J6vfS
   port: 1935
@@ -142,7 +157,7 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  name: '10,20,21|🇫🇷FR-51.15.86.181-1020 #1'
+  name: '10,20,21|🇫🇷FR-51.15.86.181-1011 #1'
   network: tcp
   password: eG92F3gh09
   port: 1935
@@ -182,15 +197,17 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  name: 10|英国 013
+  alterId: 0
+  name: 10,37|未知62 4.2MB/s
   network: tcp
   password: '!!str 74260698218909400'
   port: 443
   server: 85.234.83.133
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: smooth-imp.shiner427.skin
   tls: true
   type: trojan
+  udp: true
 - allowInsecure: ''
   name: 10|英国 014
   network: tcp
@@ -225,7 +242,7 @@ proxies:
       Host: vc.fly.dev
     path: /vc
 - allowInsecure: ''
-  name: 10|英国 016
+  name: '10,20,21|🇩🇪DE-194.164.57.9-1136 #1'
   network: tcp
   password: I46LpSIM1f
   port: 1935
@@ -236,7 +253,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 10|英国 017
+  name: '10,20,21|🇫🇷FR-144.24.200.164-1592 #2'
   network: ws
   port: 443
   raw:
@@ -256,6 +273,7 @@ proxies:
     type: ''
     v: '2'
   server: 144.24.200.164
+  servername: ''
   tls: true
   type: vmess
   uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
@@ -275,11 +293,11 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 10|英国 019
+  name: '10,20,21|🇮🇹IT-158.180.228.226-1742 #2'
   network: ws
   port: 443
   server: 158.180.228.226
-  servername: beyonddsz.cfd
+  servername: ''
   tls: true
   type: vmess
   uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
@@ -288,25 +306,50 @@ proxies:
       Host: beyonddsz.cfd
     path: /linkws
 - cipher: chacha20-ietf-poly1305
-  name: 19|🇬🇧GB-185.5.38.111-6365
-  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
-  port: 55988
-  server: mx2.drawnrisha.one
+  name: 19|🇬🇧GB-131.145.40.61-1049
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: series-a2.samanehha.co
   type: ss
 - alterId: 0
-  name: 20,21,37|未知146 18.2MB/s
-  password: b19c4375-d847-4c40-9824-4767c88b5f38
-  port: 10200
-  server: 84.8.159.155
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇬🇧GB-45.158.77.187-6401
+  network: ws
+  port: 443
+  server: linde06.indiavideo.sbs
   skip-cert-verify: true
-  sni: www.ak-hk.top
   tls: true
-  type: trojan
-  udp: true
-- name: '20,21|🇬🇧GB-84.8.159.155-1008 #1'
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      host: linde06.indiavideo.sbs
+    path: /linkws
+- name: '20,21|🇬🇧GB-84.8.159.155-6373 #1'
   password: b19c4375-d847-4c40-9824-4767c88b5f38
   port: 10200
   server: www.ak-hk.top
+  sni: www.ak-hk.top
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇬🇧GB-45.158.77.187-6401 #2'
+  network: ws
+  port: 443
+  server: linde06.indiavideo.sbs
+  servername: linde06.indiavideo.sbs
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
+- name: '20,21|🇬🇧GB-84.8.159.155-1041 #1'
+  password: b19c4375-d847-4c40-9824-4767c88b5f38
+  port: 10200
+  server: 84.8.159.155
   sni: www.ak-hk.top
   type: trojan
 - name: 26|V2-英国03∣K71线路∣
@@ -316,20 +359,71 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇬🇧 IEPL专线 英国 NO1
+  password: fb2bfec8-c59a-45ac-bd8e-603654fe87dc
+  port: 24000
+  server: sd.needss.top
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 30|🇧 英国 V2CROSS.COM
-  network: ws
-  port: 443
-  server: 193.123.81.105
-  tls: true
+  name: 28|🇬🇧 英国A
+  port: 30343
+  server: 183.236.123.34
+  tls: false
   type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  udp: true
+  uuid: 33e28dd6-a2ab-41ff-b622-6b833f730f3c
+- cipher: aes-256-gcm
+  name: 28|🇬🇧 大陆-英国05
+  password: fee287a9-9edd-4f9b-9576-f7f43585143b
+  port: 13460
+  server: 117.173.88.171
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 28|🇬🇧 英国家庭IP-1B
+  network: ws
+  port: 61213
+  server: 183.240.180.26
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a496170e-a0fe-47b0-a0f8-bab9845e20fa
   ws-opts:
     headers:
-      Host: beyonddsz.cfd
-    path: /linkws
+      Host: shop.1357.pics
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇬🇧 IEPL 英国UK 107-1B
+  password: 17817cb5-11ed-4996-b22e-70060e40bfc6
+  port: 16118
+  server: 183.240.116.150
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 28|🇬🇧 大陆-英国07
+  password: fee287a9-9edd-4f9b-9576-f7f43585143b
+  port: 40998
+  server: 183.236.51.167
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 28|🇬🇧 大陆-英国06
+  password: fee287a9-9edd-4f9b-9576-f7f43585143b
+  port: 51832
+  server: 36.151.251.37
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 28|🇬🇧 UNITED KINGDOM 01 丨1x
+  password: acdeb39b-925f-4e3d-b47c-7dcfaba1733f
+  port: 7513
+  server: bisschaxc.uk
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-37.221.125.1...

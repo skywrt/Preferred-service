@@ -1,7 +1,15 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,27|11|🇷 国|@ripaojiedian
+  password: be443689-bc64-49ff-85a5-8eecaa2235d3
+  port: 41068
+  server: zz5.fgmcx.top
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '5,10,20,21|🏁RELAY-172.67.204.19-1562 #2'
+  name: 5,10|美国 483
   network: ws
   port: 443
   raw:
@@ -29,6 +37,15 @@ proxies:
     headers:
       Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     path: /azumase.ren
+- alterId: '0'
+  cipher: auto
+  name: '5,12,24,27|0|🇫🇷8 |  4.5MB/s #2'
+  network: tcp
+  port: 17235
+  server: 00fd0574-sux8g0-sv07nd-jtx1.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 947dde8e-bcf5-11ef-af4a-f23c91cfbbc9
 - alterId: 0
   cipher: auto
   name: 5|法国 - 格拉沃利讷 - OVH SAS - 2
@@ -42,21 +59,6 @@ proxies:
     headers:
       Host: Fra-Vp-123.BLaZECLOUD.Site
     path: /linvkws
-- alpn:
-  - http/1.1
-  name: 5|法国+巴黎Amazon数据中心
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.47.76.173
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- cipher: aes-256-gcm
-  name: 8|🇫🇷FR-193.243.147.128-160_1@160
-  password: 7BcLdsO1WweoGD0X
-  port: 40368
-  server: 193.243.147.128
-  type: ss
 - alterId: 0
   cipher: auto
   name: 8|🇫🇷FR-213.32.63.176-186_1@186
@@ -132,8 +134,28 @@ proxies:
   port: 6379
   server: 149.202.82.172
   type: ss
+- alterId: 0
+  cipher: auto
+  name: '9|0|🇫🇷1 |  2.0MB/s #1'
+  port: 17235
+  server: 87ab6ec1-sux8g0-susn3i-1lkt0.cm5.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cd1b0ae0-4010-11ee-953a-f23c9164ca5d
+- alterId: 0
+  cipher: auto
+  name: '9|0|🇫🇷8 |  4.5MB/s #1'
+  port: 17235
+  server: 00fd0574-sux8g0-sv07nd-jtx1.cm5.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 947dde8e-bcf5-11ef-af4a-f23c91cfbbc9
 - allowInsecure: ''
-  name: '10,20,21|🇪🇸ES-141.227.128.69-1038 #1'
+  name: '10,20,21|🇪🇸ES-141.227.128.69-1024 #1'
   network: tcp
   password: utF6JLQd2x
   port: 1935
@@ -159,33 +181,9 @@ proxies:
   server: 151.115.88.168
   type: ss
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知11 11.4MB/s
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.158.171.132
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇫🇷FR-146.19.168.161-8483
-  network: ws
-  port: 443
-  server: 146.19.168.161
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      host: az05.beyondy.cfd
-    path: /link
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇫🇷FR-163.5.159.231-8505
+  name: 19|🇫🇷FR-163.5.159.231-8314
   network: ws
   port: 443
   server: irvideo.cfd
@@ -200,7 +198,22 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇫🇷FR-45.145.165.114-8458
+  name: 19|🇫🇷FR-146.19.168.161-8366
+  network: ws
+  port: 443
+  server: 146.19.168.161
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      host: az05.beyondy.cfd
+    path: /link
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇫🇷FR-45.145.165.114-8320
   network: ws
   port: 443
   server: beyonddsz.cfd
@@ -212,21 +225,39 @@ proxies:
     headers:
       host: beyonddsz.cfd
     path: /linkws
-- name: '20,21|🇫🇷FR-141.227.138.29-1049 #1'
-  password: hZ7JkYVAfB
-  port: 1935
-  server: 141.227.138.29
-  sni: x1ch-ovh.devefun.net
-  type: trojan
-- name: '20,21|🇫🇷FR-141.227.160.167-1045 #1'
-  password: AXpQXM4vNh
-  port: 1935
-  server: 141.227.160.167
-  sni: x2swe-ovh.devefun.net
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-51.77.20.137-8484 #1'
+  client-fingerprint: chrome
+  name: 19|🇫🇷FR-146.19.168.161-6209
+  network: ws
+  port: 443
+  server: az05.beyondy.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      host: az05.beyondy.cfd
+    path: /link
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇫🇷FR-144.24.200.164-1592
+  network: ws
+  port: 443
+  server: 144.24.200.164
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      host: beyonddsz.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇫🇷FR-51.77.20.137-8327 #1'
   network: ws
   port: 443
   server: 51.77.20.137
@@ -239,20 +270,77 @@ proxies:
       Host: tilebani.com
     path: /linkvws
 - alterId: 0
+  name: 20,21,37|未知30 7.6MB/s
+  password: hZ7JkYVAfB
+  port: 1935
+  server: 141.227.138.29
+  skip-cert-verify: true
+  sni: x1ch-ovh.devefun.net
+  tls: true
+  type: trojan
+  udp: true
+- name: '20,21|🇫🇷FR-141.227.160.167-1028 #1'
+  password: AXpQXM4vNh
+  port: 1935
+  server: 141.227.160.167
+  sni: x2swe-ovh.devefun.net
+  type: trojan
+- alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 24,30|🇺🇸 美国 CloudFlare节点 9
+  name: '20,21|🇫🇷FR-163.5.159.231-8314 #2'
   network: ws
   port: 443
-  server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+  server: irvideo.cfd
   servername: ''
   tls: true
   type: vmess
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
   ws-opts:
     headers:
-      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-    path: /azumase.ren
+      Host: irvideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇫🇷FR-146.19.168.161-6209 #2'
+  network: ws
+  port: 443
+  server: az05.beyondy.cfd
+  servername: az05.beyondy.cfd
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: az05.beyondy.cfd
+    path: /link
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇫🇷FR-146.19.168.161-8366 #2'
+  network: ws
+  port: 443
+  server: 146.19.168.161
+  servername: az05.beyondy.cfd
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: az05.beyondy.cfd
+    path: /link
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇫🇷FR-45.145.165.114-8320 #2'
+  network: ws
+  port: 443
+  server: beyonddsz.cfd
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      Host: beyonddsz.cfd
+    path: /linkws
 - name: 26|V2-日本01∣K11线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21146
@@ -265,5 +353,60 @@ proxies:
   port: 47479
   server: 120.232.217.96
   skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: 28|🇫🇷 CM 隧道 法国 NO1
+  password: fb2bfec8-c59a-45ac-bd8e-603654fe87dc
+  port: 35111
+  server: sd.needss.top
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 28|🇫🇷 专线-法国-1B
+  network: ws
+  port: 45418
+  server: 36.150.94.53
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a496170e-a0fe-47b0-a0f8-bab9845e20fa
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /
+- cipher: aes-128-gcm
+  name: 28|🇫🇷 FRANCE 01 丨1x
+  password: acdeb39b-925f-4e3d-b47c-7dcfaba1733f
+  port: 7539
+  server: bisschaxc.uk
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 28|🇫🇷 法国A
+  port: 30344
+  server: 183.236.123.34
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 33e28dd6-a2ab-41ff-b622-6b833f730f3c
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇫🇷 IEPL 法国FR 102-1B
+  password: 17817cb5-11ed-4996-b22e-70060e40bfc6
+  port: 16119
+  server: 183.240.116.150
+  type: ss
+  udp: true
+- alterId: 0
+  name: 37|🇷FR国 10.2MB/s
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.47.195.45
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
   udp: true
