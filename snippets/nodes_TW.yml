@@ -1,23 +1,49 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|0|🇼台湾 03 | 1x TW
-  password: 0f2343d4-a9b6-456d-98f9-2b63c88dbf0b
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: '5,9,11,24,27,30|11|🇹🇼 台湾|@ripaojiedian #2'
+  network: ws
+  port: 46005
+  server: fadawtawd.zhangwei.li
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: 4c5a8a75-7d65-40a9-8c3b-a67abae08534
+  ws-opts:
+    headers:
+      Host: fadawtawd.zhangwei.li
+    path: /zh-cn
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|2|🇹🇼 台湾 02 | 1x TW
-  password: 691bb251-77a1-4135-a689-3805654a67ee
+  name: '5,9,11,24,27,30|14|🇹🇼 台湾 02 | 1x TW #2'
+  password: 3de7142f-f691-4224-ae3e-1a7145596592
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|2|🇼 台湾 01 | 1x TW
-  password: 691bb251-77a1-4135-a689-3805654a67ee
-  port: 36241
-  server: free.2weradf.xyz
+  name: '5,9,11,24,27,30|0|🇼台湾 03 | 1x TW #2'
+  password: 4fabaabf-4fdb-48b2-8f8e-f044a511b6be
+  port: 31245
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: 5|台湾WAP-T-GPT
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: hinet.mjt000.com
+  skip-cert-verify: false
+  sni: hinet.mjt000.com
+  type: trojan
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '5,9,11,24,27,30,37|TW #1'
+  password: 2137d650-e424-4d1a-a610-135b485b914b
+  port: 31243
+  server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -34,41 +60,31 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27|2|🇼 台湾 03 | 1x TW
-  password: 691bb251-77a1-4135-a689-3805654a67ee
-  port: 36245
+  name: '5,9,11,24,27,30|14|🇼 台湾 01 | 1x TW #1'
+  password: 3de7142f-f691-4224-ae3e-1a7145596592
+  port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 5|台湾WAP-T-GPT
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: hinet.mjt000.com
-  skip-cert-verify: false
-  sni: hinet.mjt000.com
-  type: trojan
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,37|TW #1'
-  password: 2137d650-e424-4d1a-a610-135b485b914b
-  port: 31243
-  server: free.2apzhfa.xyz
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|0| 01 | 1x TW
-  password: 0f2343d4-a9b6-456d-98f9-2b63c88dbf0b
+  name: '5,9,11,24,27,30|0| 01 | 1x TW #2'
+  password: 4fabaabf-4fdb-48b2-8f8e-f044a511b6be
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,11,24,27,30|14|🇼 台湾 03 | 1x TW #1'
+  password: 3de7142f-f691-4224-ae3e-1a7145596592
+  port: 36245
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 5,11,27|13|台湾|@ripaojiedian
+  name: '5,11,27,30|12|台湾|@ripaojiedian #2'
   network: ws
-  port: '46005'
+  port: 46005
   server: fadawtawd.zhangwei.li
   servername: ''
   tls: false
@@ -91,14 +107,6 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- name: 5|🇹🇼 AC台湾1-1｜流媒体｜x2
-  network: tcp
-  password: 07a0e875-9b9a-4e11-a81f-8af85f82e74d
-  port: 32955
-  server: alibaba1.xn--z7x16bf6t.com
-  skip-cert-verify: true
-  sni: g.alicdn.com
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|台湾-优化2-GPT
@@ -112,7 +120,7 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- name: '5,9|0|🇹🇼1 |  6.2MB/s #1'
+- name: 9|0|🇹🇼1 |  6.2MB/s
   password: bf3d849e-617e-399b-b468-7d0fac6e890b
   port: 21247
   server: gy.58n.net
@@ -120,12 +128,6 @@ proxies:
   sni: x91.flybar.work
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 19,20,21,27|1|🇼13 |  1.1MB/s
-  password: qwerREWQ@@
-  port: 64759
-  server: 185.189.160.98
-  type: ss
 - alterId: 0
   name: 37|TW
   network: grpc
