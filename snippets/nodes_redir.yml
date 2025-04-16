@@ -765,9 +765,9 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 12|🇨🇳_CN_中国->🇺🇸_US_美国
+  name: '12,24|_中国 #34'
   network: ws
-  port: 30836
+  port: '30836'
   server: v36.heduian.link
   servername: ''
   tls: false
@@ -791,7 +791,7 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- name: 12|🇬🇧_GB_英国->🇨🇭_CH_瑞士
+- name: 12,30|_GB_国->_CH_
   network: tcp
   password: 20bc0771-1fde-45ee-8052-3c26249c43dc
   port: 34865
@@ -800,9 +800,18 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 12|🇺🇸_US_美国->🇨🇷_CR_哥斯达黎加
+  name: '12,16,24,30|🇨🇳_CN_中国->🇷_FR_国 #1'
+  network: tcp
+  port: 17235
+  server: 00fd0574-sux8g0-sv07nd-jtx1.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 947dde8e-bcf5-11ef-af4a-f23c91cfbbc9
+- alterId: 0
+  cipher: auto
+  name: 12,24|🇺🇸 _美国
   network: ws
-  port: 80
+  port: '80'
   server: 104.18.95.231
   servername: ''
   tls: false
@@ -922,6 +931,20 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
+- alterId: 2
+  cipher: auto
+  name: 16,30|🇨🇳_CN_中国->_CA_加
+  network: ws
+  port: 30835
+  server: v35.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: baidu.com
+    path: /oooo
 - cipher: chacha20-ietf-poly1305
   name: 16,19|🇷🇺RU-147.45.221.106-1300
   password: m30QhUjzdUtXi1tsDsF7G1
@@ -930,7 +953,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: 16|🇨🇳_CN_中国->🇺🇸_US_美国_1
+  name: 16,30|_CN_->_US_国
   network: ws
   port: 30836
   server: v36.heduian.link
@@ -958,10 +981,11 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 16|🇳_CN_中国->🇺🇸_US_美国_2
+  name: 16,30|🇨🇳_CN_中国->🇺🇸_US_美国_8
   network: ws
   port: 30808
   server: v8.heduian.link
+  skip-cert-verify: true
   sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -1010,7 +1034,7 @@ proxies:
     path: /s15.html
 - alterId: 0
   cipher: auto
-  name: 16|🇺🇸_US_美国->🇨_CR_哥斯达黎加_1
+  name: 16,30|🇸_US_美国->🇨🇷_CR_哥斯达黎加_3
   network: ws
   port: 80
   server: 104.21.23.72
@@ -1228,3 +1252,73 @@ proxies:
     headers:
       host: uk.moss.network
     path: /d/65dd503.TG.WangCai2.WangCai_8:107690
+- alterId: 2
+  cipher: auto
+  name: 30|🇨🇳_CN_中国->🇺🇸_US_美国_5
+  network: ws
+  port: 30824
+  server: v24.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: baidu.com
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 30|🇸_US_美国->🇨_CR_斯
+  network: ws
+  port: 80
+  server: 104.18.95.231
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: 812eb086-8442-4799-9d92-112fd1a225af
+  ws-opts:
+    headers:
+      host: 967183633138002025041119231526459.s15.chibaba.filegear-sg.me
+    path: /s15.html
+- alterId: 2
+  cipher: auto
+  name: 30|🇨🇳_CN_中国->🇺🇸_US_美国_6
+  network: ws
+  port: 30804
+  server: v4.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 30|🇸_US_美国->🇨🇷_CR_哥斯达黎加_1
+  network: ws
+  port: 80
+  server: 172.67.75.172
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: 0c5e59d4-2ab3-4dc7-8b56-4ee355551162
+  ws-opts:
+    headers:
+      host: 173578851232252025041119231677671.s15.chibaba.filegear-sg.me
+    path: /s15.html
+- alterId: 0
+  cipher: auto
+  name: 30|🇸_US_美国->🇨🇷_CR_哥斯达黎加_2
+  network: ws
+  port: 80
+  server: 172.67.70.92
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: 0ad4e581-231b-4676-ad75-d8d2db103795
+  ws-opts:
+    headers:
+      host: 806379247235432025041118283937229.s15.chibaba.filegear-sg.me
+    path: /s15.html
