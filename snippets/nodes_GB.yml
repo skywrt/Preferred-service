@@ -1,24 +1,4 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0|🇧 英国住宅IP 01 | 1x UK
-  password: 781d9351-648c-4590-9058-9a29c873cb12
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 5|英国-优化-GPT
-  network: ws
-  port: '16645'
-  server: yes.mojcn.com
-  tls: false
-  type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
 - name: 5|英国UK-T
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
@@ -27,10 +7,10 @@ proxies:
   sni: uk.mjt000.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇧英国家宽 01 | 1x UK #1'
-  password: 6e470d24-4a6e-484d-85eb-e786a0939460
-  port: 31271
-  server: free.2apzhfa.xyz
+  name: '5,9,11,24,27|0| 国住宅IP 01 | 1x UK #1'
+  password: e7fd91b8-a7cc-4c36-a2cc-1081d4b93912
+  port: 36271
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -46,6 +26,13 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27|1|🇧英国家宽 01 | 1x UK
+  password: 5b4c5db6-f751-4c9e-b8ae-56b2dee3c33e
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5|英国-优化3
@@ -59,12 +46,19 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- name: 5|英国+伦敦Amazon数据中心
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.11.213.95
-  sni: trojan.burgerip.co.uk
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 5|英国-优化-GPT
+  network: ws
+  port: '16645'
+  server: yes.mojcn.com
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
 - name: 8|🇬🇧GB-3.9.164.189-194_1@194
   password: E6r93XCOsyM9
   port: 16733
@@ -178,6 +172,16 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
+  name: '10,24|2|🇯🇵4 |  4.4MB/s #1'
+  network: tcp
+  password: '!!str 74260698218909400'
+  port: 443
+  server: smooth-imp.shiner427.skin
+  skip-cert-verify: false
+  sni: smooth-imp.shiner427.skin
+  tls: true
+  type: trojan
+- allowInsecure: ''
   name: 10|英国 013
   network: tcp
   password: '!!str 74260698218909400'
@@ -283,6 +287,24 @@ proxies:
     headers:
       Host: beyonddsz.cfd
     path: /linkws
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知101 3.7MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.79
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知89 7.7MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.78
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 19|🇬🇧GB-185.5.38.111-6211
   password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
@@ -298,16 +320,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
-  network: tcp
-  port: '28872'
-  server: 46.250.253.234
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 762b3923-5885-4c5f-886f-e62788512338
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-37.221.125.1...
   network: tcp
   port: '33940'
@@ -316,3 +328,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知43 418.9KB/s
+  network: tcp
+  port: 28872
+  server: 46.250.253.234
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 762b3923-5885-4c5f-886f-e62788512338

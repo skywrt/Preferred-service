@@ -1,59 +1,35 @@
 proxies:
-- name: 5|🇰🇷韩国中部（首尔）2
-  network: tcp
-  password: 20bc0771-1fde-45ee-8052-3c26249c43dc
-  port: 47918
-  server: 250407.jichang.my
-  skip-cert-verify: false
-  sni: seoul2.678789.xyz
-  type: trojan
-- allowInsecure: ''
-  name: 5,10|瑞士 001
-  network: tcp
-  password: 20bc0771-1fde-45ee-8052-3c26249c43dc
-  port: 52803
-  server: 250407.jichang.my
-  skip-cert-verify: false
-  sni: seoul3.678789.xyz
-  tls: true
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0|🇷 国 01 | 1x KR
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,37|KR
   password: 781d9351-648c-4590-9058-9a29c873cb12
-  port: 36311
+  port: 36313
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 5,24,27|2|🇷1 |  1.4MB/s
+  network: tcp
+  port: 17232
+  server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  ws-headers:
+    Host: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇰🇷韩国 02 | 1x KR #3'
-  password: 6e470d24-4a6e-484d-85eb-e786a0939460
+  name: '5,9,11,24,27|1|🇰🇷韩国 02 | 1x KR #1'
+  password: 5b4c5db6-f751-4c9e-b8ae-56b2dee3c33e
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇷 韩国 02 | 1x KR #1'
-  password: 781d9351-648c-4590-9058-9a29c873cb12
-  port: 36313
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '5,9,11,24,27,30|2,12|tg:@ripaojiedian #1'
-  password: amazonskr05
-  port: 443
-  server: 18.246.215.6
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇷韩国 01 | 1x KR #1'
-  password: 6e470d24-4a6e-484d-85eb-e786a0939460
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- name: '5,11,27,30|13|国|@ripaojiedian #1'
+- name: '5,11,27|13|国|@ripaojiedian #1'
   network: ws
   password: ji0612uenfs
   port: 50004
@@ -65,23 +41,50 @@ proxies:
     headers:
       Host: ji0612e.nfjunka.xyz
     path: '%2F%3Fed%3D2560%26proxyip%3D110.9.4.54%3A50004'
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,11,24,27|0|  01 | 1x KR #1'
+  password: e7fd91b8-a7cc-4c36-a2cc-1081d4b93912
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27|1|🇷韩国 01 | 1x KR
+  password: 5b4c5db6-f751-4c9e-b8ae-56b2dee3c33e
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- allowInsecure: ''
+  name: 5,10|瑞士 001
+  network: tcp
+  password: 20bc0771-1fde-45ee-8052-3c26249c43dc
+  port: 52803
+  server: 250407.jichang.my
+  skip-cert-verify: false
+  sni: seoul3.678789.xyz
+  tls: true
+  type: trojan
+- name: 5|🇰🇷韩国中部（首尔）2
+  network: tcp
+  password: 20bc0771-1fde-45ee-8052-3c26249c43dc
+  port: 47918
+  server: 250407.jichang.my
+  skip-cert-verify: false
+  sni: seoul2.678789.xyz
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,11,24,27,30|2|🇷4 |  1.7MB/s #1'
+  name: 5|1|🇰🇷4 |  1.2MB/s
   network: tcp
   port: 17232
-  server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
-  servername: ''
-  skip-cert-verify: true
+  server: 2b6fa9f9-sum4g0-sv6oiy-1p1b.cm5.p5pv.com
   tls: false
   type: vmess
-  uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-  ws-headers:
-    Host: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
-  ws-path: /
+  uuid: 279b8588-616b-11ed-a8bf-f23c91cfbbc9
 - alterId: 0
   cipher: auto
-  name: '9,11,27,30|12|🇷 韩国|@ripaojiedian #1'
+  name: '9,11,27|12|🇷 韩国|@ripaojiedian #1'
   port: 17232
   server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
   skip-cert-verify: false
@@ -268,13 +271,16 @@ proxies:
   skip-cert-verify: false
   sni: epcco.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇰🇷 _韩国 #10'
+- alterId: 0
+  name: 24,37|KR国2
   password: Aimer
   port: 10205
   server: 221.165.88.237
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epcco.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇰🇷 _韩国 #11'
   password: Aimer
   port: 50000
