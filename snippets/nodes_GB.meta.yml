@@ -1,4 +1,19 @@
 proxies:
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|1d6c77c599954148bba94fdbc524f8...
+  network: ws
+  port: 443
+  server: 141.147.114.60
+  servername: psycho.suex12.ir
+  tls: true
+  type: vless
+  udp: false
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: psycho.suex12.ir
+    path: /Telegram@V2ray_Alpha/?ed=2560
 - alterId: 0
   cipher: auto
   name: 5|英国-优化-GPT
@@ -20,7 +35,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇧 英国住宅IP 01 | 1x UK #1'
+  name: 5,9,11,24,30|1|🇧 英国住宅IP 01 | 1x UK
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36271
   server: free.2weradf.xyz
@@ -64,7 +79,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|2|🇬🇧3 |  2.8MB/s #4'
+  name: '5,24,30|2|🇬🇧3 |  2.8MB/s #3'
   password: mps3FwmDjLrWaOVg
   port: 443
   server: series-a2.varzesh360.co
@@ -274,15 +289,17 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  name: '10,20,21|🇫🇷FR-51.15.86.181-0995 #1'
+  alterId: 0
+  name: 10,20,21,37|未知140 11.0MB/s
   network: tcp
   password: eG92F3gh09
   port: 1935
   server: 51.15.86.181
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: x1ams-scaleway.devefun.net
   tls: true
   type: trojan
+  udp: true
 - allowInsecure: ''
   name: 10|英国 010
   network: original
@@ -314,15 +331,17 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  name: 10|英国 013
+  alterId: 0
+  name: 10,37|未知89 1.3MB/s
   network: tcp
   password: '!!str 74260698218909400'
   port: 443
   server: 85.234.83.133
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: smooth-imp.shiner427.skin
   tls: true
   type: trojan
+  udp: true
 - allowInsecure: ''
   name: 10|英国 014
   network: tcp
@@ -443,24 +462,6 @@ proxies:
     headers:
       Host: lo.kpcloud.eu.org
     path: '%2Fblue'
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知101 3.7MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.79
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知89 7.7MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.78
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 19|🇬🇧GB-185.5.38.111-6211
   password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
@@ -502,22 +503,11 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36,37|未知43 418.9KB/s
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
   network: tcp
-  port: 28872
+  port: '28872'
   server: 46.250.253.234
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 762b3923-5885-4c5f-886f-e62788512338
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-37.221.125.1...
-  network: tcp
-  port: '33940'
-  server: 37.221.125.159
   servername: ''
   tls: false
   type: vmess
-  uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
+  uuid: 762b3923-5885-4c5f-886f-e62788512338
