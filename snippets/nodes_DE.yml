@@ -1,12 +1,9 @@
 proxies:
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30,37|DE
-  password: 554c7347-ee53-410e-afbb-2cfd90a0b075
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30|0|国 01 | 1x DE #2'
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31471
   server: free.2apzhfa.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -35,11 +32,14 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇪 德国 01 | 1x DE #2'
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,30,37|DE国2
+  password: 01840c4c-105c-4cce-8a14-db9efeaf034c
   port: 36471
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - name: 8|🇩🇪DE-52.58.179.46-180_1@180
@@ -272,13 +272,16 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
-- name: 24|🇩🇪 _德国
+- alterId: 0
+  name: 24,37|DE
   password: 4732adfa16c6450bbef87264e41332db
   port: 443
   server: nextstepcareer.online
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: nextstepcareer.online
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '24|🇩🇪 _德国 #1'
@@ -320,24 +323,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36,37|未知136
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
   network: httpupgrade
-  port: 2095
+  port: '2095'
   server: 104.19.150.10
   servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
   tls: false
   type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -350,3 +343,12 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
