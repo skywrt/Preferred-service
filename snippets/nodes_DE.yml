@@ -6,6 +6,13 @@ proxies:
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,30|1|🇪 德国 01 | 1x DE
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5|德国-优化
@@ -32,13 +39,6 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|1|🇪 德国 01 | 1x DE
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - name: 8|🇩🇪DE-52.58.179.46-180_1@180
   password: telegram-id-privatevpns
   port: 22222
@@ -271,18 +271,6 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  grpc-opts:
-    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
-  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
-  network: grpc
-  port: '15145'
-  server: 88.198.172.25
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
   network: httpupgrade
   port: '2095'
@@ -293,6 +281,16 @@ proxies:
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.18...
+  network: tcp
+  port: '22324'
+  server: 23.158.56.184
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
   network: tcp
   port: 5008
@@ -300,3 +298,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
+  network: grpc
+  port: '15145'
+  server: 88.198.172.25
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
