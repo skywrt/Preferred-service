@@ -1,12 +1,18 @@
 proxies:
-- name: 5|🇹🇼 [ v2 ] 台湾Hinet ·原生  02 · 线路...
-  network: tcp
-  password: 5f1613a4-eefa-4d4d-b734-a86ee3d7327a
-  port: 50024
-  server: gnpid1111.ndycom.com
-  skip-cert-verify: true
-  sni: twhinet01.6kk.org
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30|0|🇼台湾 03 | 1x TW #2'
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31245
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30|1|🇼 台湾 01 | 1x TW #1'
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+  port: 36241
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5,11,27,30|2,13|台湾|@ripaojiedian
@@ -23,7 +29,7 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: '5,11,24,27|13|台湾|@ripaojiedian #2'
+  name: '5,11,24,27|12|台湾|@ripaojiedian #1'
   network: tcp
   port: '45078'
   server: haa.dashuai.cyou
@@ -31,30 +37,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 9a1322b0-9c6e-433c-8fb3-d7690b3093f2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 5|1|🇹🇼3 |  7.4MB/s
-  port: 47531
-  server: bsuqian01.dynu.net
-  servername: gateway.icloud.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 5|台湾WAP-T-GPT
-  password: da91214e-b022-4f61-a724-01c538170e62
-  port: 443
-  server: hinet.mjt000.com
-  skip-cert-verify: false
-  sni: hinet.mjt000.com
-  type: trojan
-- name: 5|🇹🇼  [ v2 ] 台湾混合 · 02 · 线路A
-  network: tcp
-  password: 5f1613a4-eefa-4d4d-b734-a86ee3d7327a
-  port: 50045
-  server: gnpid1111.ndycom.com
-  skip-cert-verify: true
-  sni: twlite02.6kk.org
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: '5,11,24,27,30|1|🇼 台湾 03 | 1x TW #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
@@ -62,48 +44,22 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: '5|🇹🇼+台湾+vless+4 #1'
+- name: 5|🇹🇼 [ v2 ] 台湾Hinet ·原生  01 · 线路...
   network: tcp
-  port: 40003
-  server: 156.224.79.232
-  tls: false
-  type: vless
-  uuid: 0c3a55b5-08ca-45b1-9028-5f2b242372af
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 5|TG@ZDYZ2 TW1
-  network: ws
-  port: 8080
-  server: 165.154.17.186
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: '%2F%3Fed%3D2560'
+  password: 5f1613a4-eefa-4d4d-b734-a86ee3d7327a
+  port: 50023
+  server: gnpid1111.ndycom.com
+  skip-cert-verify: true
+  sni: twhinet01.6kk.org
+  type: trojan
 - alterId: 0
-  cipher: auto
-  name: '5,11,24,27,30|12|🇼 台湾|@ripaojiedian #2'
-  network: ws
-  port: 46005
-  server: fadawtawd.zhangwei.li
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 4c5a8a75-7d65-40a9-8c3b-a67abae08534
-  ws-opts:
-    headers:
-      Host: fadawtawd.zhangwei.li
-    path: /zh-cn
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇹🇼 台湾 02 | 1x TW #1'
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36243
-  server: free.2weradf.xyz
+  cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30,37|TW #1'
+  password: a9e27912-082b-4928-82d6-b1f3a7a7e93a
+  port: 31241
+  server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -120,9 +76,23 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇼 台湾 01 | 1x TW #1'
+  name: '5,11,24,27,30|0|🇼台湾 02 | 1x TW #2'
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31243
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: 5|台湾WAP-T-GPT
+  password: da91214e-b022-4f61-a724-01c538170e62
+  port: 443
+  server: hinet.mjt000.com
+  skip-cert-verify: false
+  sni: hinet.mjt000.com
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30|1|🇹🇼 台湾 02 | 1x TW #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36241
+  port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
@@ -139,63 +109,29 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- name: 5|🇹🇼 [ v2 ] 台湾hinet动态IP · 原生 03 ...
+- name: 5|🇹🇼 [ v2 ] 台湾Hinet ·原生  02 · 线路...
   network: tcp
   password: 5f1613a4-eefa-4d4d-b734-a86ee3d7327a
-  port: 50025
+  port: 50024
   server: gnpid1111.ndycom.com
   skip-cert-verify: true
-  sni: v2tw01.fuqiangren.com
+  sni: twhinet01.6kk.org
   type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 5|1|🇹🇼2 |  6.2MB/s
-  port: 15700
-  server: zhee01.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇼台湾 02 | 1x TW #1'
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31243
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇼台湾 03 | 1x TW #1'
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30,37|TW #1'
-  password: a9e27912-082b-4928-82d6-b1f3a7a7e93a
-  port: 31241
-  server: free.2apzhfa.xyz
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
-- name: 5|🇹🇼 [ v2 ] 台湾hinet动态IP · 原生 04 ...
-  network: tcp
-  password: 5f1613a4-eefa-4d4d-b734-a86ee3d7327a
-  port: 50026
-  server: gnpid1111.ndycom.com
-  skip-cert-verify: true
-  sni: v2tw01.fuqiangren.com
-  type: trojan
-- name: 5|🇹🇼  [ v2 ] 台湾混合 · 01 · 线路A
-  network: tcp
-  password: 5f1613a4-eefa-4d4d-b734-a86ee3d7327a
-  port: 50044
-  server: gnpid1111.ndycom.com
-  skip-cert-verify: true
-  sni: twlite01.6kk.org
-  type: trojan
+  cipher: auto
+  name: '5,11,24,27,30|12|🇼 台湾|@ripaojiedian #1'
+  network: ws
+  port: 46005
+  server: fadawtawd.zhangwei.li
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 4c5a8a75-7d65-40a9-8c3b-a67abae08534
+  ws-opts:
+    headers:
+      Host: fadawtawd.zhangwei.li
+    path: /zh-cn
 - alterId: 0
   cipher: auto
   name: 5|台湾-优化
@@ -209,17 +145,41 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- name: 5|🇹🇼 [ v2 ] 台湾Hinet ·原生  01 · 线路...
+- name: 5|🇹🇼  [ v2 ] 台湾混合 · 01 · 线路A
   network: tcp
   password: 5f1613a4-eefa-4d4d-b734-a86ee3d7327a
-  port: 50023
+  port: 50044
   server: gnpid1111.ndycom.com
   skip-cert-verify: true
-  sni: twhinet01.6kk.org
+  sni: twlite01.6kk.org
+  type: trojan
+- name: 5|🇹🇼  [ v2 ] 台湾混合 · 02 · 线路A
+  network: tcp
+  password: 5f1613a4-eefa-4d4d-b734-a86ee3d7327a
+  port: 50045
+  server: gnpid1111.ndycom.com
+  skip-cert-verify: true
+  sni: twlite02.6kk.org
+  type: trojan
+- name: 5|🇹🇼 [ v2 ] 台湾hinet动态IP · 原生 04 ...
+  network: tcp
+  password: 5f1613a4-eefa-4d4d-b734-a86ee3d7327a
+  port: 50026
+  server: gnpid1111.ndycom.com
+  skip-cert-verify: true
+  sni: v2tw01.fuqiangren.com
+  type: trojan
+- name: 5|🇹🇼 [ v2 ] 台湾hinet动态IP · 原生 03 ...
+  network: tcp
+  password: 5f1613a4-eefa-4d4d-b734-a86ee3d7327a
+  port: 50025
+  server: gnpid1111.ndycom.com
+  skip-cert-verify: true
+  sni: v2tw01.fuqiangren.com
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '11,27|12|🇼 台湾|@ripaojiedian #1'
+  name: 11,27|11|🇼 台湾|@ripaojiedian
   port: 45078
   server: haa.dashuai.cyou
   skip-cert-verify: false
