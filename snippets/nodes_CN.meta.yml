@@ -378,7 +378,7 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
   cipher: auto
-  name: 5,12,24,27,30|2|🇸24 |  4.8MB/s
+  name: 5,12,24,30|2|🇸24 |  4.8MB/s
   network: tcp
   port: 5229
   server: 2e93912d-sutj40-sutgau-1r62f.cu.plebai.net
@@ -391,9 +391,9 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '5,11,24|2|🇺🇸21 |  1.9MB/s #1'
+  name: 5,11,24,27|1|🇺🇸27 |  2.6MB/s
   network: tcp
-  port: '5228'
+  port: 5228
   server: 7daa6f3a-sux8g0-tavf3m-18imv.cu.plebai.net
   skip-cert-verify: true
   tls: false
@@ -1285,13 +1285,16 @@ proxies:
   skip-cert-verify: false
   sni: epcci.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #3'
+- alterId: 0
+  name: 24,37|CN国
   password: Aimer
   port: 8443
   server: 154.197.64.98
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epcci.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #4'
   password: Aimer
   port: 8443
@@ -1334,16 +1337,13 @@ proxies:
   skip-cert-verify: false
   sni: epcco.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 24,37|未知4
+- name: '24|_中国 #10'
   password: Aimer
   port: 2083
   server: 27.50.49.47
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epcci.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - name: '24|_中国 #11'
   password: Aimer
   port: 2096
@@ -1577,14 +1577,12 @@ proxies:
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
   udp: true
-- alterId: 0
-  name: 30,37|未知95
-  password: 9e9ef571-5a94-47e9-916f-95c14f75f6f2
+- name: 30|14|CN_speednode_0052
+  password: e254ed63-33df-4ca8-a980-7d0d9f510a93
   port: 34017
   server: aafrtpfxr.aul01i9zjfegelp.5xfsur8v62.gosdk.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
   type: trojan
   udp: true
 - name: 30|14|CN_speednode_0053
@@ -1627,14 +1625,12 @@ proxies:
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
   udp: true
-- alterId: 0
-  name: 30,37|未知107
-  password: 9e9ef571-5a94-47e9-916f-95c14f75f6f2
+- name: 30|14|CN_speednode_0058
+  password: e254ed63-33df-4ca8-a980-7d0d9f510a93
   port: 42883
   server: aafrtpfxr.pkl01i9zjfegelp.5xfsur8v62.gosdk.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
   type: trojan
   udp: true
 - name: 30|14|CN_speednode_0059
@@ -1685,14 +1681,12 @@ proxies:
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
   udp: true
-- alterId: 0
-  name: 30,37|未知103
-  password: 9e9ef571-5a94-47e9-916f-95c14f75f6f2
+- name: 30|14|CN_speednode_0065
+  password: e254ed63-33df-4ca8-a980-7d0d9f510a93
   port: 43498
   server: aafrtpfxr.frl01i9zjfegelp.5xfsur8v62.gosdk.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
   type: trojan
   udp: true
 - name: 30|14|CN_speednode_0066
@@ -1765,6 +1759,25 @@ proxies:
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-120.199.83.2...
+  network: tcp
+  port: '45260'
+  server: 120.199.83.240
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3888997d-dca4-40ba-92e4-06b6918c9643
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  network: tcp
+  port: '59003'
+  server: 183.236.51.36
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇨🇳 CN-120.232.17.7...
   network: ws
   port: 33202
@@ -1777,47 +1790,6 @@ proxies:
     headers:
       Host: yd2.ainivp.com
     path: /ray
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-120.199.83.2...
-  network: tcp
-  port: '45260'
-  server: 120.199.83.240
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3888997d-dca4-40ba-92e4-06b6918c9643
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇨🇳 CN-36.134.96.220...
-  network: ws
-  port: '46005'
-  server: 36.134.96.220
-  tls: false
-  type: vmess
-  uuid: 4c5a8a75-7d65-40a9-8c3b-a67abae08534
-  ws-opts:
-    headers:
-      Host: fadawtawd.zhangwei.li
-    path: /zh-cn
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
-  network: tcp
-  port: '59003'
-  server: 183.236.51.36
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: 37|CN国
-  password: ea2QsO
-  port: 22745
-  server: 183.240.116.144
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 2
   cipher: auto
   name: 40|CN_speednode_0026
