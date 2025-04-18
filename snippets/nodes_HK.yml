@@ -30,7 +30,7 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|0|🇭🇰香港 03 | 1x HK
+  name: '5,11,24,27,30|0|🇭🇰香港 03 | 1x HK #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31145
   server: free.2apzhfa.xyz
@@ -106,14 +106,18 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '5,11,24,27|13|香港6|@ripaojiedian #2'
+  name: '5,11,24,27|13|香港6|@ripaojiedian #1'
   network: tcp
   port: '43674'
   server: 120.234.102.229
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.234.102.229
+  ws-path: /
 - alterId: 64
   cipher: auto
   name: '5,11,24,27,30|13|香港7|@ripaojiedian #3'
@@ -134,13 +138,17 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,24|1|🇭🇰9 |  1.4MB/s #2'
+  name: '5,11,24|1|🇭🇰9 |  1.4MB/s #2'
   network: tcp
   port: '15229'
   server: 81137562-sutj40-suyhjm-1hhyy.cm.plebai.net
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
+  ws-headers:
+    Host: 81137562-sutj40-suyhjm-1hhyy.cm.plebai.net
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   name: '5,11,24,27,30|12|🇭🇰 香港2|@ripaojiedian #3'
   password: be443689-bc64-49ff-85a5-8eecaa2235d3
@@ -963,7 +971,7 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: '30|13|香港6|@ripaojiedian #3'
+  name: '30|13|香港6|@ripaojiedian #2'
   network: tcp
   port: 15229
   server: 614ea2b0-sux8g0-td95qh-1isea.cm.plebai.net
@@ -971,20 +979,6 @@ proxies:
   tls: false
   type: vmess
   uuid: d6abdbda-fe9d-11ec-bb74-f23c9164ca5d
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
-  network: ws
-  port: '1935'
-  server: 43.154.34.74
-  servername: djdjjrjjrhk.lzj520hxw.dpdns.org
-  tls: true
-  type: vmess
-  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
-  ws-opts:
-    headers:
-      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
-    path: /vmess-argo
 - alterId: 0
   cipher: auto
   name: 36,37|HK14 1.8MB/s
@@ -1010,6 +1004,20 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
+  network: ws
+  port: '1935'
+  server: 43.154.34.74
+  servername: djdjjrjjrhk.lzj520hxw.dpdns.org
+  tls: true
+  type: vmess
+  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
+  ws-opts:
+    headers:
+      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
+    path: /vmess-argo
 - alterId: 2
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-1.65.209.135:...
