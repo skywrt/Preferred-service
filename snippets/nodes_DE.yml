@@ -1,13 +1,33 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|19bd41c93b19464db9e55fa1bbd67b...
+  network: ws
+  port: 443
+  server: 139.162.178.95
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e
+  ws-opts:
+    path: /linkwsd
+- client-fingerprint: chrome
+  name: 3|9e012eff848941b999b200d0943526...
+  password: c65dbe85-354d-4892-909d-2b288830ee37
+  port: 2053
+  server: 141.101.121.163
+  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|国 01 | 1x DE #2'
+  name: '5,11,24,27,30|0|国 01 | 1x DE #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|1|🇪 德国 01 | 1x DE
+  name: '5,11,24,27,30|1|🇪 德国 01 | 1x DE #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36471
   server: free.2weradf.xyz
@@ -194,12 +214,6 @@ proxies:
     headers:
       Host: beyonddsz.cfd
     path: /linkws
-- cipher: chacha20-ietf-poly1305
-  name: 11|1|🇩🇪1 |  4.8MB/s
-  password: zqNBkZNoXgqtiD0wo49QdY
-  port: 12240
-  server: 95.164.16.152
-  type: ss
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -284,6 +298,52 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
+- name: 24|🇩🇪 _德国
+  password: 4732adfa16c6450bbef87264e41332db
+  port: 443
+  server: nextstepcareer.online
+  skip-cert-verify: false
+  sni: nextstepcareer.online
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '24|🇩🇪 _德国 #1'
+  network: ws
+  port: '443'
+  server: 132.145.232.171
+  tls: false
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '24|🇩🇪 _德国 #2'
+  network: ws
+  port: '443'
+  server: hms23.fixedfloati.cfd
+  tls: false
+  type: vmess
+  uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e
+  ws-opts:
+    headers:
+      Host: hms23.fixedfloati.cfd
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '24|🇩🇪 _德国 #3'
+  network: ws
+  port: '443'
+  server: 193.122.58.158
+  tls: false
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 36,37|未知62
@@ -297,7 +357,7 @@ proxies:
   uuid: 0f427f89-3aa4-4641-9e58-9ff0cc1cbfae
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-23.158.56.18...
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-23.158.56....
   network: tcp
   port: '22324'
   server: 23.158.56.184
@@ -305,6 +365,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
   grpc-opts:
