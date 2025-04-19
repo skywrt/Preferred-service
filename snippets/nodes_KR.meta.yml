@@ -40,15 +40,18 @@ proxies:
   tls: false
   type: vless
   uuid: 89c6d433-9d9e-450e-96f7-18953feb78f4
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇷 韩国 01 | 1x KR #1'
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,30,37|KR国
+  password: f83f70da-559f-48eb-a511-1f31261f81a0
   port: 36311
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇰🇷 韩国 02 | 1x KR #3'
+  name: '5,9,11,24,27,30|1|🇰🇷 韩国 02 | 1x KR #2'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36313
   server: free.2weradf.xyz
@@ -87,25 +90,26 @@ proxies:
   tls: false
   type: vmess
   uuid: 127e3f92-f714-11ef-bbb0-f23c91cfbbc9
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30,37|🇰🇷KR韩国3
-  password: 17588e42-debc-4ee0-bef2-f6ffa05286bc
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,30|0|🇷韩国 02 | 1x KR
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31313
   server: free.2apzhfa.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: '5,24|2|🇰🇷4 |  4.3MB/s #1'
+  name: 5,24,27|1|🇷4 |  1.4MB/s
   network: tcp
-  port: '17232'
+  port: 17232
   server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  ws-headers:
+    Host: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
+  ws-path: /
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: 5|韩国4
@@ -299,16 +303,13 @@ proxies:
   skip-cert-verify: false
   sni: epcci.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 24,37|🇰🇷KR韩国2
+- name: '24|🇰🇷 _韩国 #2'
   password: Aimer
   port: 12370
   server: 121.139.207.184
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epcci.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - name: '24|🇰🇷 _韩国 #3'
   password: Aimer
   port: 50000
@@ -367,21 +368,12 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇰🇷 KR-45.82.246.17...
+  name: 36,37|未知81 285.6KB/s
   network: tcp
-  port: '26521'
+  port: 26521
   server: 45.82.246.173
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: cff7001e-3a74-43e8-bfd8-a7af9630a58b
-- alterId: 0
-  name: 37|🇰🇷KR韩国4
-  password: Aimer
-  port: 50000
-  server: 211.38.168.1
-  skip-cert-verify: true
-  sni: epcci.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
