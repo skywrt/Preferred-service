@@ -76,12 +76,35 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 11|2|🇫🇷3 |  1.3MB/s
+  name: '11,12,16,24,30|🇨🇳_CN_中国->🇷_FR_国 #1'
+  network: tcp
   port: 17235
-  server: a842afb9-sutj40-suyhjm-1hhyy.cm5.p5pv.com
+  server: 00fd0574-sux8g0-sv07nd-jtx1.cm5.p5pv.com
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
+  uuid: 947dde8e-bcf5-11ef-af4a-f23c91cfbbc9
+  ws-headers:
+    Host: 00fd0574-sux8g0-sv07nd-jtx1.cm5.p5pv.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '11,12|🇨🇳_CN_中国 #1'
+  network: tcp
+  port: '17235'
+  server: 86bfc334-sv2sg0-sy2gtj-2fdn.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: e8001124-1ff5-11ee-abc1-f23c9164ca5d
+- alterId: 0
+  cipher: auto
+  name: 11,24,27|1|🇷1 |  2.8MB/s
+  network: tcp
+  port: 17235
+  server: 8bbddc24-sux8g0-tb8whl-1tfmh.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 5e77dd60-f4e2-11ef-ba82-f23c913c8d2b
 - cipher: chacha20-ietf-poly1305
   name: 19|🇫🇷FR-45.158.171.146-0972
   password: QCXDxuDlTTMD7jtgHUjIoj
@@ -241,3 +264,25 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 27|1|🇫🇷3 |  1.3MB/s
+  port: 17235
+  server: a842afb9-sutj40-suyhjm-1hhyy.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
+- alterId: 1
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇫🇷 FR-57.128.184.1...
+  network: ws
+  port: '443'
+  server: 57.128.184.119
+  servername: 57.128.184.119
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 57.128.184.119
+    path: linkvws
