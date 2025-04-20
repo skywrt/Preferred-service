@@ -1,4 +1,16 @@
 proxies:
+- client-fingerprint: chrome
+  fingerprint: ''
+  grpc-opts:
+    grpc-service-name: vless-grpc
+  name: 3|5a08d3733d204a32a50a1687617ae7...
+  network: grpc
+  port: 8880
+  server: 88.218.95.8
+  tls: false
+  type: vless
+  udp: false
+  uuid: 9e28dd25-f4e1-4434-a31d-40c8ed0c0f52
 - name: 5|俄罗斯RU-T
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
@@ -210,16 +222,6 @@ proxies:
   uuid: 654285e6-23fb-4073-b8de-eba90f562fe6
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
-  network: tcp
-  port: '20779'
-  server: 45.12.114.15
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-NA 🇷🇺 RU-195.58.49.84:...
   network: ws
   port: 22019
@@ -230,3 +232,13 @@ proxies:
   uuid: 8392a60c-32fa-44f4-85d1-05b8c63dbde3
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
+  network: tcp
+  port: '20779'
+  server: 45.12.114.15
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
