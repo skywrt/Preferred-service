@@ -822,7 +822,20 @@ proxies:
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: 12,16,24,27,30|2|🇸24 |  4.8MB/s
+  name: 12,24,27|1|🇺🇸18 |  3.7MB/s
+  network: tcp
+  port: 5228
+  server: 3b6ec92e-sux8g0-swffb5-1s6xm.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2b634c80-fd7e-11ef-9f25-f23c9164ca5d
+  ws-headers:
+    Host: 3b6ec92e-sux8g0-swffb5-1s6xm.cu.plebai.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 12,16,24,30|2|🇸24 |  4.8MB/s
   network: tcp
   port: 5229
   server: 2e93912d-sutj40-sutgau-1r62f.cu.plebai.net
@@ -875,19 +888,15 @@ proxies:
     headers:
       Host: cm1.awslcn.info
     path: /
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 16,24,27|2|🇸49 |  3.6MB/s
+  name: '16,24|2|🇺🇸49 |  3.6MB/s #1'
   network: tcp
   port: '5229'
   server: 8f34e685-suz340-svvaj9-fa3p.cu.plebai.net
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 905fcd78-866c-81e1-3cb8-1beb59d661ab
-  ws-headers:
-    Host: 8f34e685-suz340-svvaj9-fa3p.cu.plebai.net
-  ws-path: /
 - alterId: 2
   cipher: auto
   name: 16|🇨🇳_CN_中国->🇺🇸_US_美国_1
@@ -974,15 +983,6 @@ proxies:
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: '16,24|_中国 #32'
-  network: tcp
-  port: '5228'
-  server: a0bc30e2-sux8g0-sv74ec-1t7c2.cu.plebai.net
-  tls: false
-  type: vmess
-  uuid: a087871c-d185-11ef-bdb9-f23c91cfbbc9
-- alterId: 0
-  cipher: auto
   name: 16|🇨🇳_CN_中国->🇫🇷_FR_法国_3
   network: tcp
   port: 17235
@@ -1008,8 +1008,9 @@ proxies:
   fingerprint: ''
   name: 16,36|🔒 VM-TCP-NA 🇩🇪 DE-88.198.175.2...
   network: tcp
-  port: 33157
+  port: '33157'
   server: 88.198.175.207
+  servername: ''
   sni: ''
   tls: false
   type: vmess
