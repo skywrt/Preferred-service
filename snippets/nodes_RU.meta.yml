@@ -3,19 +3,7 @@ proxies:
   fingerprint: ''
   grpc-opts:
     grpc-service-name: vless-grpc
-  name: 3|2706823321344dac896bd6d285b0a2...
-  network: grpc
-  port: 8880
-  server: 85.209.156.7
-  tls: false
-  type: vless
-  udp: false
-  uuid: 46db85a1-9d97-46f8-9b7a-ff9704510e5e
-- client-fingerprint: chrome
-  fingerprint: ''
-  grpc-opts:
-    grpc-service-name: vless-grpc
-  name: 3|250cb4ba3f304fd1bccb000d88b204...
+  name: 3|6412f33d4ab14a419e3e7e8f87c472...
   network: grpc
   port: 8880
   server: 88.218.95.8
@@ -50,7 +38,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,30|0|🇺俄罗斯 01 | 1x RU
+  name: 5,9,11,24,27,30|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31511
   server: free.2apzhfa.xyz
@@ -220,32 +208,87 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇷🇺 俄罗斯 莫斯科JustHost
+  name: 24,27,36|🔒 VM-WS-NA 🇷🇺 RU-195.58.49.84:...
   network: ws
-  port: '20013'
-  server: 45.147.201.231
-  tls: false
-  type: vmess
-  uuid: b9be75fe-936c-4531-8d7b-6484723a5500
-  ws-opts:
-    headers:
-      Host: ''
+  port: 22019
+  raw:
+    add: 195.58.49.84
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: 8392a60c-32fa-44f4-85d1-05b8c63dbde3
+    net: ws
     path: /
-- alterId: 0
-  cipher: auto
-  name: 24|🇷🇺 俄罗斯 V2CROSS.COM
-  network: tcp
-  port: '8877'
-  server: de.ajiaxi.cyou
+    port: '22019'
+    ps: 🇺 --001-1D
+    scy: ''
+    sni: ''
+    tls: ''
+    type: none
+    v: '2'
+  server: 195.58.49.84
+  servername: ''
   tls: false
   type: vmess
-  uuid: 654285e6-23fb-4073-b8de-eba90f562fe6
+  uuid: 8392a60c-32fa-44f4-85d1-05b8c63dbde3
+  ws-opts:
+    path: /
 - name: 24|🇷🇺 _俄罗斯
   password: Aimer
   port: 443
   server: 89.248.207.37
   skip-cert-verify: false
   sni: epcci.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #1'
+  password: Aimer
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: false
+  sni: epcco.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #2'
+  password: Aimer
+  port: 2053
+  server: 46.254.92.201
+  skip-cert-verify: false
+  sni: epcci.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #3'
+  password: Aimer
+  port: 2053
+  server: 213.241.198.189
+  skip-cert-verify: false
+  sni: epccu.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #4'
+  password: Aimer
+  port: 2083
+  server: 5.182.84.52
+  skip-cert-verify: false
+  sni: epccu.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #5'
+  password: Aimer
+  port: 2096
+  server: 176.124.223.133
+  skip-cert-verify: false
+  sni: epccu.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #6'
+  password: Aimer
+  port: 2096
+  server: 5.182.85.189
+  skip-cert-verify: false
+  sni: epcco.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #7'
+  password: Aimer
+  port: 2053
+  server: 213.241.198.189
+  skip-cert-verify: false
+  sni: epcco.ambercc.filegear-sg.me
   type: trojan
 - alterId: 0
   name: 24,37|🇷🇺RU
@@ -257,32 +300,34 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '24|🇷🇺 _俄罗斯 #2'
-  network: ws
-  port: '22016'
-  server: 195.58.49.84
-  tls: false
-  type: vmess
-  uuid: c7995a27-15d7-4b62-ae7d-9f15f7fdf6ee
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '24|🇷🇺 _俄罗斯 #5'
-  network: ws
-  port: '22016'
-  server: 195.58.49.84
-  tls: false
-  type: vmess
-  uuid: c7995a27-15d7-4b62-ae7d-9f15f7fdf6ee
-  ws-opts:
-    headers:
-      Host: 195.58.49.84
-    path: /
+- name: '24|🇷🇺 _俄罗斯 #9'
+  password: Aimer
+  port: 2096
+  server: 176.124.223.133
+  skip-cert-verify: false
+  sni: epcci.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #10'
+  password: Aimer
+  port: 2096
+  server: 176.124.223.133
+  skip-cert-verify: false
+  sni: epcco.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #11'
+  password: Aimer
+  port: 2096
+  server: 5.182.85.189
+  skip-cert-verify: false
+  sni: epccu.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #12'
+  password: Aimer
+  port: 2083
+  server: 5.182.84.52
+  skip-cert-verify: false
+  sni: epcco.ambercc.filegear-sg.me
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...

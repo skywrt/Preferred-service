@@ -3,35 +3,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|faee40fd279949ac82621aa1b8a890...
-  network: ws
-  port: 443
-  server: 23.158.56.241
-  tls: true
-  type: vmess
-  udp: false
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: /linkvws
-- alterId: 1
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|44b49aa2fdcb4d0d929250871f70a0...
-  network: ws
-  port: 443
-  server: 57.129.25.20
-  tls: true
-  type: vmess
-  udp: false
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|e004b4d68985471891230cbba11135...
+  name: 3|abd241d3bb2f44759cf7f2d547d9fb...
   network: ws
   port: 443
   server: 57.129.24.124
@@ -48,15 +20,18 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|a8febd5eafad469e9e6ae1d89a6f6f...
+  name: 3|dea4220867a9483ea0a12e4bbfe8a5...
   network: ws
   port: 443
-  server: 57.129.24.142
+  server: kapelleng.com
+  servername: kapelleng.com
   tls: true
   type: vmess
   udp: false
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      host: kapelleng.com
     path: /linkvws
 - cipher: chacha20-ietf-poly1305
   name: 5,9,11,24,27,30|1|🇪 德国 01 | 1x DE
@@ -92,7 +67,7 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,30|0|国 01 | 1x DE
+  name: 5,9,11,24,27,30|0|国 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31471
   server: free.2apzhfa.xyz
@@ -221,52 +196,43 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-85.215.233.1...
-  network: tcp
-  port: '16151'
-  server: 85.215.233.179
-  tls: false
-  type: vmess
-  uuid: 44ba7053-733f-4d35-9ba4-3457ee608f64
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-23.158.56....
-  network: tcp
-  port: '22324'
-  server: 23.158.56.184
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
-  tls: false
-  type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-94.159.106.2...
+  name: 24,27|2|🇪1 |  4.4MB/s
   network: tcp
   port: 8877
+  raw:
+    add: 94.159.106.248
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: de.ajiaxi.cyou
+    id: 654285e6-23fb-4073-b8de-eba90f562fe6
+    net: tcp
+    path: /
+    port: '8877'
+    ps: Join+Telegram:@FarahVPN
+    scy: ''
+    sni: ''
+    tls: ''
+    type: none
+    v: '2'
   server: 94.159.106.248
   servername: ''
   tls: false
   type: vmess
   uuid: 654285e6-23fb-4073-b8de-eba90f562fe6
+- alterId: 0
+  cipher: auto
+  name: '24,27|2|🇩🇪8 |  2.1MB/s #2'
+  network: tcp
+  port: 8877
+  server: de.ajiaxi.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 654285e6-23fb-4073-b8de-eba90f562fe6
+  ws-headers:
+    Host: de.ajiaxi.cyou
+  ws-path: /
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -279,3 +245,31 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-85.215.233.1...
+  network: tcp
+  port: '16151'
+  server: 85.215.233.179
+  tls: false
+  type: vmess
+  uuid: 44ba7053-733f-4d35-9ba4-3457ee608f64
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
