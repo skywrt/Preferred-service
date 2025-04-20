@@ -822,17 +822,13 @@ proxies:
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: 12,24,27|1|🇺🇸18 |  3.7MB/s
+  name: '12,24|2|🇺🇸38 |  5.8MB/s #1'
   network: tcp
-  port: 5228
+  port: '5228'
   server: 3b6ec92e-sux8g0-swffb5-1s6xm.cu.plebai.net
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 2b634c80-fd7e-11ef-9f25-f23c9164ca5d
-  ws-headers:
-    Host: 3b6ec92e-sux8g0-swffb5-1s6xm.cu.plebai.net
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: 12,16,24,30|2|🇸24 |  4.8MB/s
@@ -925,11 +921,14 @@ proxies:
     headers:
       host: ocbc.com
     path: /oooo
-- cipher: aes-256-gcm
-  name: 16|🇸_US_美国->_CR_
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 16,37|未知71
   password: a869ba7e-e46c-46bf-9d0a-2a4ddecc0627
   port: 7702
   server: 137.131.151.235
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -961,12 +960,6 @@ proxies:
   sni: ''
   type: vmess
   uuid: 526a1128-7487-11ee-9bca-f23c913c8d2b
-- cipher: aes-256-cfb
-  name: 16|_GB_国->🇩🇪_DE_德国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.15.82
-  type: ss
 - alterId: 2
   cipher: auto
   name: 16|🇳_CN_中国->🇺🇸_US_美国_7
@@ -981,6 +974,19 @@ proxies:
     headers:
       host: ocbc.com
     path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 16,24,27|1|🇺🇸37 |  4.9MB/s
+  network: tcp
+  port: 5228
+  server: a0bc30e2-sux8g0-sv74ec-1t7c2.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a087871c-d185-11ef-bdb9-f23c91cfbbc9
+  ws-headers:
+    Host: a0bc30e2-sux8g0-sv74ec-1t7c2.cu.plebai.net
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 16|🇨🇳_CN_中国->🇫🇷_FR_法国_3
@@ -1008,9 +1014,8 @@ proxies:
   fingerprint: ''
   name: 16,36|🔒 VM-TCP-NA 🇩🇪 DE-88.198.175.2...
   network: tcp
-  port: '33157'
+  port: 33157
   server: 88.198.175.207
-  servername: ''
   sni: ''
   tls: false
   type: vmess

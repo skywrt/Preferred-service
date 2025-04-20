@@ -17,7 +17,7 @@ proxies:
   sni: jp.mjt000.com
   type: trojan
 - cipher: aes-256-cfb
-  name: 5,11,24,27|1,11|🇵 日本特殊|@ripaojiedian
+  name: '5,11,24,27|11|🇵 日本特殊|@ripaojiedian #1'
   password: amazonskr05
   port: 443
   server: 13.124.153.152
@@ -30,11 +30,14 @@ proxies:
   skip-cert-verify: false
   sni: ni.mjt000.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0|🇵日本 03 | 1x JP
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,30,37|JP
+  password: 37c5d10f-e919-455b-8d3a-96bd26c44b6f
   port: 31115
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -51,14 +54,14 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0|🇵日本 02 | 1x JP
+  name: '5,9,11,24,27,30|0|🇵日本 02 | 1x JP #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|1|🇵 日本 01 | 1x JP
+  name: 5,9,24,27,30|1|🇵 日本 01 | 1x JP
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36111
   server: free.2weradf.xyz
@@ -80,18 +83,15 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30,37|JP
-  password: 10bda4c0-ffb3-4099-b779-241a58499ab1
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27,30|1|🇵 日本 03 | 1x JP
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36115
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0| 01 | 1x JP
+  name: '5,9,11,24,27,30|0| 01 | 1x JP #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31111
   server: free.2apzhfa.xyz
@@ -111,7 +111,7 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇯🇵 日本 02 | 1x JP #2'
+  name: '5,9,24,27,30|1|🇯🇵 日本 02 | 1x JP #2'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36113
   server: free.2weradf.xyz
@@ -124,8 +124,8 @@ proxies:
   skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: 5|0|🇯🇵3 |  2.6MB/s
-  password: 6d2b4216-3ab1-45bc-a1dc-5414c590c7a5
+- name: 5,11|1|3 |  4.7MB/s
+  password: bd975dab-224e-4a10-8a69-0aa0c3ee3bec
   port: 27002
   server: sla.cn.964e995b760.gogodns.xin
   sni: q08m.vgraxiw73s.hasyaf.cn
@@ -193,16 +193,14 @@ proxies:
   server: cn01.efan8867801.xyz
   type: ss
   udp: true
-- cipher: rc4-md5
-  name: '11,27|11|🇵 日本|@ripaojiedian #1'
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202504182189466-8od2bG05Pm.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知107 10.4MB/s
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  skip-cert-verify: true
+  tls: true
   type: ss
 - name: '20,21|🇯🇵JP-74.176.59.185-0328 #1'
   password: dQUWbcwECl
@@ -426,15 +424,14 @@ proxies:
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
 - alterId: 0
   cipher: auto
-  name: 36,37|未知66 13.0MB/s
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-103.214.168....
   network: tcp
-  port: 550
-  server: 20.78.127.141
+  port: '57796'
+  server: 103.214.168.242
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
+  uuid: 9bc0bd8d-3a4f-4991-dfed-d71934e20335
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
@@ -446,11 +443,11 @@ proxies:
   uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-103.214.168....
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-20.78.127.14...
   network: tcp
-  port: '57796'
-  server: 103.214.168.242
+  port: '550'
+  server: 20.78.127.141
   servername: ''
   tls: false
   type: vmess
-  uuid: 9bc0bd8d-3a4f-4991-dfed-d71934e20335
+  uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
