@@ -1,6 +1,6 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇪 德国 01 | 1x DE #1'
+  name: 5,11,24,27,30|1|🇪 德国 01 | 1x DE
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36471
   server: free.2weradf.xyz
@@ -91,14 +91,11 @@ proxies:
     headers:
       host: irvideo.cfd
     path: /linkws
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,37|未知92 189.5KB/s
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇩🇪DE-185.177.229.245-1080
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: aes-256-cfb
   name: 19|🇩🇪DE-80.92.204.106-6032
@@ -335,13 +332,22 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-85.215.233...
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-94.159.106.2...
   network: tcp
-  port: 16151
-  server: 85.215.233.179
+  port: '8877'
+  server: 94.159.106.248
   tls: false
   type: vmess
-  uuid: 44ba7053-733f-4d35-9ba4-3457ee608f64
+  uuid: 654285e6-23fb-4073-b8de-eba90f562fe6
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -356,21 +362,11 @@ proxies:
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
-  tls: false
-  type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
-- alterId: 0
-  cipher: auto
-  name: 36,37|未知34
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
   network: httpupgrade
-  port: 2095
+  port: '2095'
   server: 104.19.150.10
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
