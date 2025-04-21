@@ -83,7 +83,7 @@ proxies:
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|国 01 | 1x DE #2'
+  name: '5,11,24,27,30|0|国 01 | 1x DE #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31471
   server: free.2apzhfa.xyz
@@ -176,7 +176,21 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.133-9806 #1'
+  name: '20,21|🇩🇪DE-57.129.24.141-5865 #1'
+  network: ws
+  port: 443
+  server: 57.129.24.141
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-57.129.24.133-9632 #1'
   network: ws
   port: 443
   server: 57.129.24.133
@@ -190,7 +204,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-9797 #1'
+  name: '20,21|🇩🇪DE-57.129.24.125-9654 #1'
   network: ws
   port: 443
   server: 57.129.24.125
@@ -202,39 +216,6 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
-- name: '20,21|🇩🇪DE-194.164.57.9-1085 #1'
-  password: I46LpSIM1f
-  port: 1935
-  server: 194.164.57.9
-  sni: x4ger-ionos.devefun.net
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.141-6424 #1'
-  network: ws
-  port: 443
-  server: 57.129.24.141
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 2
-  cipher: auto
-  name: '24|1|🇩🇪4 |  4.4MB/s #1'
-  network: ws
-  port: '23618'
-  server: 18.mamamajd.site
-  tls: false
-  type: vmess
-  uuid: 26bc8681-0318-3097-bc64-64ab051eb81a
-  ws-opts:
-    headers:
-      Host: 18.mamamajd.site
-    path: /
 - auth: 368ec38a-496e-4d41-96f7-364c28752e70
   name: 28|🇪 德国-高端2-1B
   password: 368ec38a-496e-4d41-96f7-364c28752e70
@@ -503,22 +484,28 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-94.159.106.2...
-  network: tcp
-  port: '8877'
-  server: 94.159.106.248
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
   tls: false
   type: vmess
-  uuid: 654285e6-23fb-4073-b8de-eba90f562fe6
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
-  tls: false
+  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.24.12...
+  network: ws
+  port: 443
+  server: 57.129.24.124
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
   type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: aveiror.com
+    path: /linkvws
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -533,11 +520,29 @@ proxies:
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-17...
   network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
+  port: '2052'
+  server: 173.245.58.100
   servername: ''
   tls: false
   type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+  uuid: 0f427f89-3aa4-4641-9e58-9ff0cc1cbfae
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-85.215.233...
+  network: tcp
+  port: 16151
+  server: 85.215.233.179
+  tls: false
+  type: vmess
+  uuid: 44ba7053-733f-4d35-9ba4-3457ee608f64
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
