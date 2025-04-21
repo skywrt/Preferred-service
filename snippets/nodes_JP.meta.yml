@@ -23,14 +23,11 @@ proxies:
   skip-cert-verify: false
   sni: ni.mjt000.com
   type: trojan
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30,37|JP
-  password: a8cb2eaa-cad6-4e8a-8ce3-088253cc57eb
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30|0|🇵日本 03 | 1x JP #1'
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31115
   server: free.2apzhfa.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - client-fingerprint: safari
@@ -356,26 +353,12 @@ proxies:
   tls: false
   type: vless
   uuid: 446bfcde-1d2d-4f6f-a828-117487411e01
-- alterId: 0
-  cipher: auto
-  name: 11,24,27|2,13|日本4|@ripaojiedian
-  network: tcp
-  port: '17233'
-  server: 9e6c9676-sv6hs0-sv7acf-1qw0q.cm5.p5pv.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d4fe3d0c-9043-11ef-8dc4-f23c91cfbbc9
-  ws-headers:
-    Host: 9e6c9676-sv6hs0-sv7acf-1qw0q.cm5.p5pv.com
-  ws-path: /
 - cipher: rc4-md5
   name: '11,27|12|🇵 日本|@ripaojiedian #1'
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202504182189466-8od2bG05Pm.download.microsoft.com
+    host: 202504201238969-y462ONma73.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -408,6 +391,20 @@ proxies:
   server: 34.222.45.211
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 11,24,27|1,13|日本4|@ripaojiedian
+  network: tcp
+  port: '17233'
+  server: 9e6c9676-sv6hs0-sv7acf-1qw0q.cm5.p5pv.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d4fe3d0c-9043-11ef-8dc4-f23c91cfbbc9
+  ws-headers:
+    Host: 9e6c9676-sv6hs0-sv7acf-1qw0q.cm5.p5pv.com
+  ws-path: /
 - name: 17|荷兰(yudou66.com 玉豆免费节点)
   network: ws
   port: 443
@@ -483,13 +480,16 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- name: 24|🇯🇵 _日本
+- alterId: 0
+  name: 24,37|JP
   password: Aimer
   port: 443
   server: 103.116.7.235
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epcco.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: 26|✪每日连接前点更新订阅
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
   port: 21142
@@ -2152,7 +2152,7 @@ proxies:
   uuid: be443689-bc64-49ff-85a5-8eecaa2235d3
 - alterId: 0
   cipher: auto
-  name: 30|13|日本4|@ripaojiedian
+  name: '30|13|日本4|@ripaojiedian #1'
   network: tcp
   port: 17233
   server: 81f6bf37-sutj40-svgpxu-y2gs.cm5.p5pv.com
@@ -2160,16 +2160,6 @@ proxies:
   tls: false
   type: vmess
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-20.78.127.14...
-  network: tcp
-  port: '550'
-  server: 20.78.127.141
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
@@ -2189,6 +2179,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 9bc0bd8d-3a4f-4991-dfed-d71934e20335
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知111 5.3MB/s
+  network: tcp
+  port: 550
+  server: 20.78.127.141
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
 - name: 40|JP_speednode_0033
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443

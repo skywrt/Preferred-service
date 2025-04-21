@@ -1,4 +1,27 @@
 proxies:
+- client-fingerprint: chrome
+  name: 3|65ae0d5a8bdd4f9da6a40031c36a63...
+  password: 075b9690-f1cc-4d0c-aa1e-f80f07f09815
+  port: 443
+  server: 172.67.152.170
+  type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '3,20,21|🇨🇦CA-23.162.200.227-9624 #1'
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  servername: ''
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
 - cipher: chacha20-ietf-poly1305
   name: 5,11,24,27,30|1|🇦 加拿大 01 | 1x CA
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
@@ -586,20 +609,6 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-23.162.200.227-9624 #1'
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
   name: 23|🇨🇦_CA_加拿大
   network: ws
   port: 443
@@ -640,9 +649,9 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 2
   cipher: auto
-  name: 24,27|2|🇦3 |  5.4MB/s
+  name: '24|2|🇨🇦3 |  5.4MB/s #1'
   network: ws
-  port: 30825
+  port: '30825'
   server: v25.heduian.link
   tls: false
   type: vmess
@@ -743,13 +752,22 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36,37|未知18 4.1MB/s
+  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.11...
   network: tcp
-  port: 28984
+  port: '27699'
+  server: 91.194.11.118
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17...
+  network: tcp
+  port: '28984'
   server: 91.194.11.178
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
 - alterId: 0
@@ -762,12 +780,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.11...
-  network: tcp
-  port: '27699'
-  server: 91.194.11.118
-  tls: false
-  type: vmess
-  uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53

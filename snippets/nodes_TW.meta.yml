@@ -54,11 +54,14 @@ proxies:
   skip-cert-verify: false
   sni: hinet.mjt000.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇼台湾 02 | 1x TW #1'
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,30,37|TW
+  password: f4f6cda8-c9b1-4969-a9e0-6d5b6e0553a0
   port: 31243
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -74,11 +77,14 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0| 01 | 1x TW #1'
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,30,37|🇹🇼TW台湾2
+  password: f4f6cda8-c9b1-4969-a9e0-6d5b6e0553a0
   port: 31241
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -786,10 +792,10 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 37|TW
+  name: '37|TW #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 125.227.86.47
+  server: 211.72.214.21
   skip-cert-verify: true
   tls: true
   type: ss
@@ -798,34 +804,18 @@ proxies:
   name: 37|TW2
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 125.227.86.45
+  server: 61.216.165.234
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
   name: 37|TW3
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.28.59
+  network: ws
+  password: 02926f9e-153a-42c8-8ecd-8fade7009ad1
+  port: 443
+  server: 166.0.198.68
   skip-cert-verify: true
+  sni: golinkwuxian.top
   tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|TW4
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 61.216.165.233
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|TW5
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 211.72.214.21
-  skip-cert-verify: true
-  tls: true
-  type: ss
+  type: trojan
+  udp: true
