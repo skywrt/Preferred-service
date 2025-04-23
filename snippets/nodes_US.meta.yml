@@ -77,7 +77,7 @@ proxies:
     path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
-  name: '5,11,24,27|13|美国|@ripaojiedian #2'
+  name: '5,11,24,27|13|美国|@ripaojiedian #1'
   network: tcp
   port: '44015'
   server: 120.198.71.219
@@ -129,7 +129,7 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: '5,11,24,27,30|12,13|美国3|@ripaojiedian #3'
+  name: '5,11,24,27,30|12,13|美国3|@ripaojiedian #2'
   network: ws
   port: 30807
   server: v7.heduian.link
@@ -242,10 +242,12 @@ proxies:
     path: /aa
 - alterId: 0
   cipher: auto
-  name: '5|美国 CloudFlare节点 #4'
+  name: 5,11|1|🇺🇸17 |  5.0MB/s
   network: ws
   port: 443
   server: 2e21cedc-fa8b-4020-8ce0-390e7287d276.890603.pp.ua
+  servername: 2e21cedc-fa8b-4020-8ce0-390e7287d276.890603.pp.ua
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 5453ae26-250d-4e79-b4ec-016baf806865
@@ -541,7 +543,7 @@ proxies:
     path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
-  name: 5,11,24,27|2|🇸10 |  4.8MB/s
+  name: 5,24,27|2|🇺🇸37 |  2.4MB/s
   network: ws
   port: 2083
   server: 205.233.181.174
@@ -558,11 +560,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '5,20,21,24|2|🇺🇸18 |  5.6MB/s #2'
+  name: '5,11,20,21,24|2|🇺🇸18 |  5.6MB/s #2'
   network: ws
   port: '443'
   server: 9uyiopsdfh.iran.pp.ua
   servername: 9uyiopsdfh.iran.pp.ua
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 906ba92f-ef96-4133-8eee-f33202a5a721
@@ -736,10 +739,11 @@ proxies:
     path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
-  name: '5|美国 V2CROSS.COM #2'
+  name: 5,11|1|🇸2 |  1.9MB/s
   network: ws
   port: 8443
   server: 199.34.228.161
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 3a1c628b-806d-461b-c28d-44b3bdff5220
@@ -2669,15 +2673,55 @@ proxies:
     headers:
       Host: m116.164748.xyz
     path: github.com/Alvin9999
-- name: 11|1|🇺🇸28 |  4.0MB/s
-  password: 9672247e-c003-4464-8bd9-4f16b0e7d032
-  port: 33505
+- name: 11|1|🇺🇸20 |  2.6MB/s
+  network: ws
+  password: 5453ae26-250d-4e79-b4ec-016baf806865
+  port: 443
+  server: 104.21.69.41
+  sni: 1SdfghJk.890602.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 1SdfghJk.890602.xyz
+    path: /OYzPAeaZdXUq2d6J3gc4aj
+- ip-version: dual
+  name: 11|1|🇺🇸26 |  1.6MB/s
+  network: ws
+  password: 5453ae26-250d-4e79-b4ec-016baf806865
+  port: 443
+  server: 172.67.204.22
+  skip-cert-verify: false
+  sni: 1SdfghJk.890602.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: 1sdfghjk.890602.xyz
+    path: /OYzPAeaZdXUq2d6J3gc4aj
+- name: '11,24|🇨🇳 广东省广州市 电信 #3'
+  password: abf931d0-5be1-440c-802f-a66bcb850139
+  port: 34014
   server: sla.cn.964e995b760.gogodns.xin
+  skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '11,27|12|🇸 美国|@ripaojiedian #1'
+  name: 11|1|🇺🇸35 |  5.6MB/s
+  network: ws
+  port: 443
+  server: 3sdfgvcxxx.938.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 0212fab5-e93c-4904-b7a8-187fd535f354
+  ws-opts:
+    headers:
+      Host: 3sdfgvcxxx.938.pp.ua
+    path: /P879mtCoHQqaWO67qEaMINZ1
+- alterId: 0
+  cipher: auto
+  name: 11,27|12|🇸 美国|@ripaojiedian
   port: 44015
   server: 120.198.71.219
   skip-cert-verify: false
@@ -2686,7 +2730,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
-  name: '11,27|12|🇸 美国2|@ripaojiedian #1'
+  name: 11,27|12|🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -6447,28 +6491,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 27|2|🇺🇸7 |  5.3MB/s
-  password: 115988df-9c10-3453-8acf-fc8bdb4da95d
-  port: 25238
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z267.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 27|2|🇺🇸16 |  5.4MB/s
-  password: 115988df-9c10-3453-8acf-fc8bdb4da95d
-  port: 20304
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z304.hongkongnode.top
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf
-  name: 27|2|🇺🇸22 |  5.0MB/s
-  password: asd123456
-  port: 8388
-  server: 103.36.91.32
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 30|🇸_US_美国
   password: DLW8QqdfAvfUHSeucMIF4E
@@ -6610,22 +6632,19 @@ proxies:
     path: /register
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇺🇸 US-141.148.183.2...
-  network: ws
-  port: '23451'
-  server: 141.148.183.217
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.248.9...
+  network: tcp
+  port: '30562'
+  server: 15.204.248.92
+  servername: ''
   tls: false
   type: vmess
-  uuid: 60db6ccb-d3a9-4971-9e6a-02517f18ead3
-  ws-opts:
-    headers:
-      Host: phx-plus-1ddns.faforex.eu.org
-    path: /
+  uuid: 82466715-6a58-4046-a363-a0d18e5b2ab4
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇺🇸 US-38.114.114.2...
   network: tcp
-  port: '45291'
+  port: '45245'
   server: 38.114.114.241
   tls: false
   type: vmess
@@ -6646,22 +6665,116 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-WS-NA 🇺🇸 US-2.58.87.221:1...
+  network: ws
+  port: 12269
+  server: 2.58.87.221
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: db85ff0e-c33f-401d-c415-4c7cce135704
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
   name: '36|🔒 VM-TCP-NA 🇺🇸 US-38.114.114.2... #1'
   network: tcp
-  port: '45247'
+  port: '45215'
+  server: 38.114.114.241
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 64
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.48.227.23...
+  network: ws
+  port: 47778
+  server: 38.48.227.231
+  servername: www.42266451.xyz
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.42266451.xyz
+    path: /path/240811062813
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇺🇸 US-141.148.183.2...
+  network: ws
+  port: '23451'
+  server: 141.148.183.217
+  tls: false
+  type: vmess
+  uuid: 60db6ccb-d3a9-4971-9e6a-02517f18ead3
+  ws-opts:
+    headers:
+      Host: phx-plus-1ddns.faforex.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇺🇸 US-38.114.114.2... #2'
+  network: tcp
+  port: '45291'
   server: 38.114.114.241
   tls: false
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇺🇸 US-38.114.114.2... #2'
+  name: 36|🔒 VM-WS-TLS 🇺🇸 US-192.9.148.64...
+  network: ws
+  port: '8088'
+  server: 192.9.148.64
+  servername: ora.aihi.uk
+  tls: true
+  type: vmess
+  uuid: 979e39d7-fdf8-4e51-afb6-4d181c56170f
+  ws-opts:
+    headers:
+      Host: ora.aihi.uk
+    path: /ray
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-5.180.30.146...
   network: tcp
-  port: '45245'
+  port: '27773'
+  server: 5.180.30.146
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b2347239-dd15-40b3-b683-50cc2ff19ae7
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-5.180.30.110...
+  network: tcp
+  port: '51352'
+  server: 5.180.30.110
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bcf86479-aab4-47cf-9d6e-34d353baa1a2
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇺🇸 US-38.114.114.2... #3'
+  network: tcp
+  port: '45231'
   server: 38.114.114.241
   tls: false
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-5.180.30.85:...
+  network: tcp
+  port: '18598'
+  server: 5.180.30.85
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bf26f2fb-9d2a-49b6-8527-82e8aba3a9a9
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.86.12...
@@ -6682,6 +6795,25 @@ proxies:
   tls: false
   type: vmess
   uuid: 1784497d-03a1-40bb-bb8b-de4ffac7c59c
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇺🇸 US-38.114.114.2... #4'
+  network: tcp
+  port: '45247'
+  server: 38.114.114.241
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.249.0...
+  network: tcp
+  port: '48160'
+  server: 15.204.249.0
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5b113c12-4dd4-4bb5-9c01-cff092b559e3
 - alterId: 5
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇺🇸 US-107.175.96.7...
@@ -6696,116 +6828,6 @@ proxies:
     headers:
       Host: ny1.bulkcash.top
     path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.249.0...
-  network: tcp
-  port: '48160'
-  server: 15.204.249.0
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5b113c12-4dd4-4bb5-9c01-cff092b559e3
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇺🇸 US-38.114.114.2... #3'
-  network: tcp
-  port: '45215'
-  server: 38.114.114.241
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-5.180.30.85:...
-  network: tcp
-  port: '18598'
-  server: 5.180.30.85
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: bf26f2fb-9d2a-49b6-8527-82e8aba3a9a9
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇺🇸 US-192.9.148.64...
-  network: ws
-  port: '8088'
-  server: 192.9.148.64
-  servername: ora.aihi.uk
-  tls: true
-  type: vmess
-  uuid: 979e39d7-fdf8-4e51-afb6-4d181c56170f
-  ws-opts:
-    headers:
-      Host: ora.aihi.uk
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-15.204.248.9...
-  network: tcp
-  port: '30562'
-  server: 15.204.248.92
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 82466715-6a58-4046-a363-a0d18e5b2ab4
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇺🇸 US-38.114.114.2... #4'
-  network: tcp
-  port: '45231'
-  server: 38.114.114.241
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇺🇸 US-2.58.87.221:1...
-  network: ws
-  port: 12269
-  server: 2.58.87.221
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: db85ff0e-c33f-401d-c415-4c7cce135704
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-5.180.30.146...
-  network: tcp
-  port: '27773'
-  server: 5.180.30.146
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b2347239-dd15-40b3-b683-50cc2ff19ae7
-- alterId: 64
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇺🇸 US-38.48.227.23...
-  network: ws
-  port: 47778
-  server: 38.48.227.231
-  servername: www.42266451.xyz
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.42266451.xyz
-    path: /path/240811062813
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇺🇸 US-5.180.30.110...
-  network: tcp
-  port: '51352'
-  server: 5.180.30.110
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: bcf86479-aab4-47cf-9d6e-34d353baa1a2
 - name: 40|US_speednode_0098
   password: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
   port: 443
