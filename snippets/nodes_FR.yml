@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 5,11,24,27|1|🇷2 |  5.5MB/s
+  name: 5,24,27|2|🇷10 |  1.5MB/s
   network: tcp
   port: 17235
   server: 04c77dd5-sux8g0-sv9of9-lys7.cm5.p5pv.com
@@ -12,6 +12,14 @@ proxies:
   ws-headers:
     Host: 04c77dd5-sux8g0-sv9of9-lys7.cm5.p5pv.com
   ws-path: /
+- name: 5,11,27,40|CN_speednode_0020
+  password: fe966b1a-3db5-442b-b64d-06650137f489
+  port: 43498
+  server: sla.cn.964e995b760.gogodns.xin
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 8,30|兰 V2CROSS.COM
@@ -94,6 +102,32 @@ proxies:
   port: 6379
   server: 149.202.82.172
   type: ss
+- name: 16|FRA_1
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 79.137.204.220
+  skip-cert-verify: true
+  sni: epccd.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccd.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 16|FRA_2
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 79.137.204.220
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -109,11 +143,14 @@ proxies:
     headers:
       host: irvideo.cfd
     path: /linkws
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇫🇷FR-45.158.171.151-1008
-  password: 1RWwXhwfAB5gAEozU4G2Pg
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知5 13.3MB/s
+  password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.158.171.151
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -175,7 +212,7 @@ proxies:
     headers:
       host: az05.beyondy.cfd
     path: /link
-- name: '20,21|🇫🇷FR-51.68.13.106-1000 #1'
+- name: '20,21|🇫🇷FR-51.68.13.106-1022 #1'
   password: FiSo7J6vfS
   port: 1935
   server: 51.68.13.106
@@ -183,21 +220,49 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-146.19.168.161-9762 #1'
+  name: '20,21|🇫🇷FR-51.77.20.137-9562 #1'
   network: ws
   port: 443
-  server: 146.19.168.161
-  servername: az05.beyondy.cfd
+  server: 51.77.20.137
+  servername: ''
   tls: true
   type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: az05.beyondy.cfd
-    path: /link
+      Host: tilebani.com
+    path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-163.5.159.231-9747 #1'
+  name: '20,21|🇫🇷FR-45.145.165.172-9639 #1'
+  network: ws
+  port: 443
+  server: hms19.best-tizi.top
+  servername: hms19.best-tizi.top
+  tls: true
+  type: vmess
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  ws-opts:
+    headers:
+      Host: hms19.best-tizi.top
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇫🇷FR-193.160.130.189-5813 #1'
+  network: ws
+  port: 443
+  server: obdii.cfd
+  servername: obdii.cfd
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇫🇷FR-163.5.159.231-9598 #1'
   network: ws
   port: 443
   server: irvideo.cfd
@@ -211,18 +276,32 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-51.77.20.137-9735 #1'
+  name: '20,21|🇫🇷FR-146.19.168.161-5996 #1'
   network: ws
   port: 443
-  server: 51.77.20.137
-  servername: ''
+  server: az05.beyondy.cfd
+  servername: az05.beyondy.cfd
   tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
   ws-opts:
     headers:
-      Host: tilebani.com
-    path: /linkvws
+      Host: az05.beyondy.cfd
+    path: /link
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇫🇷FR-146.19.168.161-9582 #1'
+  network: ws
+  port: 443
+  server: 146.19.168.161
+  servername: az05.beyondy.cfd
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: az05.beyondy.cfd
+    path: /link
 - alterId: 0
   cipher: auto
   name: 24|VMESS-未知>法国-NF解锁法国地区非自制剧-ChatG...
