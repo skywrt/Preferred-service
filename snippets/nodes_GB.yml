@@ -1,13 +1,13 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|0|🇧英国家宽 01 | 1x UK
+  name: 5,9,11,24,27,30|0|🇧英国家宽 01 | 1x UK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇧 英国住宅IP 01 | 1x UK #1'
+  name: 5,9,11,24,27,30|1|🇧 英国住宅IP 01 | 1x UK
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36271
   server: free.2weradf.xyz
@@ -81,19 +81,31 @@ proxies:
   skip-cert-verify: true
   sni: mutual-gannet.dolphin109.quest
   type: trojan
-- name: 16|🇧_GB_英国_1
+- alterId: 0
+  name: 16,37|未知18
   password: '!!str 3828095943467868160'
   port: 443
   server: 85.234.65.227
   skip-cert-verify: true
   sni: blessed-opossum.dolphin109.quest
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知51 17.2MB/s
+  name: 19,20,21,37|未知101 13.2MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.194
+  server: 212.102.53.81
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知118 11.8MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.193
   skip-cert-verify: true
   tls: true
   type: ss
@@ -117,85 +129,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|国2-1A
-  port: 45067
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b7637e6b-198a-42f4-8bcd-945d8490ae13
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇧 IEPL 英国UK 107-1B
-  password: 662fdf6a-8590-4504-a2b4-60a77753bbcc
-  port: 16118
-  server: 183.240.116.150
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇬🇧 英国 01-1C
-  password: 88b74fce-ea85-41b3-a4d1-9e46394af3fa
-  port: 48839
-  server: aambx01qt.dorabbb.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|🇧 DATA C N L I 200 GB
-  network: ws
-  port: 80
-  server: japan.4gsieutoc.tokyo
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ee4c61fe-8f66-4668-b193-09174149bec0
-  ws-opts:
-    headers:
-      Host: m.tiktok.com
-    path: /4gsieutoc.tokyo
-- alterId: 0
-  cipher: auto
-  name: 28|🇧 英国家庭IP-1D
-  network: ws
-  port: 61213
-  server: 183.240.180.26
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fa0e8d91-8115-4954-ac02-9dbd40d9638f
-  ws-opts:
-    headers:
-      Host: shop.1357.pics
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇬🇧 英国01-1B
-  password: e0fc7ddf-3739-4059-a1a4-4932041bf450
-  port: 17587
-  server: node1.cenidcbf.ink
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 28|🇧 V1 | 英国1-1A
-  password: 8965c558-33ce-4d08-9fd2-13645fc4c166
-  port: 49081
-  server: gb91.cctv14.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇧 英国02-1A
-  password: e0fc7ddf-3739-4059-a1a4-4932041bf450
-  port: 22194
-  server: node2.cenidcbf.ink
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇧 英国02-1B
-  password: 946c148e-5237-4a46-9ce2-a5d0f93fdd28
-  port: 31648
-  server: gy.tangu.win
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 30|2|🇬🇧3 |  2.8MB/s
   password: mps3FwmDjLrWaOVg
@@ -204,21 +137,23 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  name: 36,37|未知120 4.2MB/s
   network: tcp
-  port: '28872'
+  port: 28872
   server: 46.250.253.234
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 762b3923-5885-4c5f-886f-e62788512338
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-37.221.125.1...
+  name: 36,37|未知133 10.7MB/s
   network: tcp
-  port: '33940'
+  port: 33940
   server: 37.221.125.159
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 353e0787-71bc-442d-9c9d-902f90359eb5

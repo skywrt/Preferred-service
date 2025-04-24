@@ -1,13 +1,13 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|国 01 | 1x DE #1'
+  name: 5,9,11,24,27,30|0|国 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇪 德国 01 | 1x DE #1'
+  name: 5,9,11,24,27,30|1|🇪 德国 01 | 1x DE
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36471
   server: free.2weradf.xyz
@@ -125,27 +125,6 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇵 尼 加德-1E
-  password: 0716aa57-2cb9-4f49-ba77-8b0192658ce3
-  port: 49886
-  server: ambnds00.dorabbb.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇪 直连-德国01-1A
-  password: d5f444f0-fe56-4825-956c-627728b6fdc7
-  port: 20200
-  server: de01.airport.lat
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 28|🇪 VIP 德国1-1A
-  password: f2fa5b42-4f36-4498-ba47-279bb052348c
-  port: 47084
-  server: de01.jiasudu.buzz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
@@ -155,16 +134,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
-  network: httpupgrade
-  port: '2096'
-  server: 104.21.82.137
-  servername: v2.lunarmc.ir
-  tls: true
-  type: vmess
-  uuid: cab65486-3b77-46db-abaf-ea7adc01fbf5
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -187,3 +156,27 @@ proxies:
   tls: false
   type: vmess
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
+  network: httpupgrade
+  port: '2096'
+  server: 104.21.82.137
+  servername: v2.lunarmc.ir
+  tls: true
+  type: vmess
+  uuid: cab65486-3b77-46db-abaf-ea7adc01fbf5
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.25.25...
+  network: ws
+  port: 443
+  server: 57.129.25.25
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: f.khilei.com
+    path: /linkvws

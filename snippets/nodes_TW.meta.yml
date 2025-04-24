@@ -1,19 +1,16 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇼 台湾 01 | 1x TW #1'
+  name: 5,9,11,24,27,30|1|🇼 台湾 01 | 1x TW
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30,37|TW #1'
-  password: e2ba2507-2c84-489e-a8b5-479eeb76fb45
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,30|1|🇼 台湾 03 | 1x TW
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36245
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -26,14 +23,14 @@ proxies:
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇼台湾 02 | 1x TW #1'
+  name: 5,9,11,24,27,30|0|🇼台湾 02 | 1x TW
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0| 01 | 1x TW #1'
+  name: 5,9,11,24,27,30|0| 01 | 1x TW
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31241
   server: free.2apzhfa.xyz
@@ -50,175 +47,230 @@ proxies:
   uuid: 4e84400e-f4bc-11ef-81b7-f23c932f2c32
 - alterId: 0
   cipher: auto
-  name: 5|台湾省新北市 鑫晟数位股份有限公司
+  name: 5,11|1|8- |  1.6MB/s
   network: ws
   port: 443
   server: hk2.rtmp.online
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: vmess
+  udp: true
   uuid: 7a4e7579-97bb-4b90-b7bf-0273f488cf99
   ws-opts:
     headers:
       Host: hk2.rtmp.online
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇹🇼 台湾 02 | 1x TW #1'
+  name: 5,9,11,24,27,30|1|🇹🇼 台湾 02 | 1x TW
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇼台湾 03 | 1x TW #1'
+  name: 5,9,11,24,27,30|0|🇼台湾 03 | 1x TW
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 11|2|🇹🇼1 |  1.2MB/s
+- name: 9|2|🇹🇼1 |  1.2MB/s
   network: ws
   password: Aimer
   port: 2083
   server: 154.197.64.219
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
   udp: true
   ws-opts:
     headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 11|2|🇹🇼2 |  5.8MB/s
+      Host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 9|2|🇹🇼2 |  5.8MB/s
   network: ws
   password: Aimer
   port: 8443
   server: 27.50.49.177
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epccd.ambercc.filegear-sg.me
   type: trojan
   udp: true
   ws-opts:
     headers:
-      host: epccd.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 11|2|🇹🇼3 |  1.3MB/s
+      Host: epccd.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 9|2|🇹🇼3 |  1.3MB/s
   network: ws
   password: Aimer
   port: 443
   server: 27.50.49.136
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epccd.ambercc.filegear-sg.me
   type: trojan
   udp: true
   ws-opts:
     headers:
-      host: epccd.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 11|2|🇹🇼4 |  4.3MB/s
+      Host: epccd.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 9|2|🇹🇼4 |  4.3MB/s
   network: ws
   password: Aimer
   port: 443
   server: damien.ns.cloudflare.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
   udp: true
   ws-opts:
     headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 11|2|🇹🇼5 |  5.8MB/s
+      Host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 9|2|🇹🇼5 |  5.8MB/s
   network: ws
   password: Aimer
   port: 2096
   server: 27.50.49.61
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epccd.ambercc.filegear-sg.me
   type: trojan
   udp: true
   ws-opts:
     headers:
-      host: epccd.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 11|2|🇹🇼6 |  1.2MB/s
+      Host: epccd.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 9|2|🇹🇼6 |  1.2MB/s
   network: ws
   password: Aimer
   port: 2096
   server: 108.165.152.36
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
   udp: true
   ws-opts:
     headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 11|2|🇹🇼7 |  2.0MB/s
+      Host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 9|2|🇹🇼7 |  2.0MB/s
   network: ws
   password: Aimer
   port: 2087
   server: 154.211.8.227
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
   udp: true
   ws-opts:
     headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 11|2|🇹🇼8 |  1.1MB/s
+      Host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 9|2|🇹🇼8 |  1.1MB/s
   network: ws
   password: Aimer
   port: 2053
   server: 154.197.64.166
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
   udp: true
   ws-opts:
     headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 11|2|🇹🇼9 |  5.1MB/s
+      Host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 9|2|🇹🇼9 |  5.1MB/s
   network: ws
   password: Aimer
   port: 443
   server: 108.165.152.207
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
   udp: true
   ws-opts:
     headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 11|2|🇹🇼10 |  4.8MB/s
+      Host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 9|2|🇹🇼10 |  4.8MB/s
   network: ws
   password: Aimer
   port: 2087
   server: 108.165.152.163
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epccd.ambercc.filegear-sg.me
   type: trojan
   udp: true
   ws-opts:
     headers:
-      host: epccd.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 11|2|🇹🇼11 |  5.3MB/s
+      Host: epccd.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 9|2|🇹🇼11 |  5.3MB/s
   network: ws
   password: Aimer
   port: 2083
   server: 188.164.159.91
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
   udp: true
   ws-opts:
     headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 11|2|🇹🇼13 |  1.3MB/s
+      Host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 9|2|🇹🇼13 |  1.3MB/s
+  network: ws
+  password: Aimer
+  port: 443
+  server: bestcf.030101.xyz
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 9|2|🇹🇼14 |  5.1MB/s
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 108.165.152.55
+  skip-cert-verify: false
+  sni: epccd.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epccd.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 9|2|🇹🇼15 |  3.3MB/s
+  network: ws
+  password: Aimer
+  port: 443
+  server: 103.116.7.235
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 9|2|🇹🇼18 |  2.0MB/s
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 108.165.152.66
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: '11,27|2|🇹🇼13 |  1.3MB/s #1'
   network: ws
   password: Aimer
   port: 443
@@ -231,20 +283,20 @@ proxies:
     headers:
       host: epcca.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 11|2|🇹🇼14 |  5.1MB/s
+- name: 11,27|2|6- |  3.8MB/s
   network: ws
   password: Aimer
-  port: 2096
-  server: 108.165.152.55
+  port: 2083
+  server: 161.145.150.29
   skip-cert-verify: true
-  sni: epccd.ambercc.filegear-sg.me
+  sni: epcca.ambercc.filegear-sg.me
   type: trojan
   udp: true
   ws-opts:
     headers:
-      host: epccd.ambercc.filegear-sg.me
+      host: epcca.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 11|2|🇹🇼18 |  2.0MB/s
+- name: '11,27|2|🇹🇼18 |  2.0MB/s #1'
   network: ws
   password: Aimer
   port: 2083
@@ -257,301 +309,266 @@ proxies:
     headers:
       host: epcca.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇹🇼 专线 湾TW 89 VIP-1G
-  password: 70f85b09-4534-421e-83f0-f2f37db0d98a
+- name: '11,27|2|🇹🇼7 |  2.0MB/s #1'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 154.211.8.227
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 11|1|🇹🇼7 |  6.0MB/s
+  network: ws
+  password: Aimer
   port: 443
-  server: 1.1.1.1
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇹 台湾03-1B
-  password: e0fc7ddf-3739-4059-a1a4-4932041bf450
-  port: 13456
-  server: wh1-ahmddlekrnnse6ta.bestzumo.com
-  type: ss
-  udp: true
-- auth: a5b7adcf-c1c8-4db1-a13a-bab1d86b77cb
-  name: 28|🇼 台湾-5-1B
-  password: a5b7adcf-c1c8-4db1-a13a-bab1d86b77cb
-  port: 18202
-  server: tw6.426624.xyz
+  server: kip.ns.cloudflare.com
   skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: 28|🇹🇼 V1 | 台湾1-1A
-  password: 8965c558-33ce-4d08-9fd2-13645fc4c166
-  port: 49021
-  server: tw91.cctv14.xyz
-  type: ss
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 11|1|🇹🇼9 |  6.4MB/s
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 188.164.159.74
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇼 台湾 05-1B
-  password: f155134d-a5b1-449c-ad25-736fffb60e55
-  port: 47711
-  server: aambx02tw.dorabbb.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇼 台湾03-1A
-  password: 86d2194d-7670-4ff2-94a7-a8b1370c717a
-  port: 21112
-  server: okanc.node-is.green
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇹🇼 台湾3-1B
-  password: 707bae77-88fc-4119-ba50-aee47aa5bb62
-  port: 24450
-  server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇹🇼 台湾2-1A
-  password: 23f85268-2f5d-412e-a8f5-da52dc3b4910
-  port: 24449
-  server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|🇼 台湾1-NF-1B
-  port: 12211
-  server: xxx.btmbxxx.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 97fe4afd-6409-4c86-9a25-9bafd779deee
-- cipher: aes-256-gcm
-  name: 28|🇼 V1 | 台湾2-1A
-  password: 8965c558-33ce-4d08-9fd2-13645fc4c166
-  port: 49022
-  server: tw92.cctv14.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇼 台湾04-备用-1B
-  password: 946c148e-5237-4a46-9ce2-a5d0f93fdd28
-  port: 11143
-  server: qqa813.198139.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇹🇼 台湾5-1A
-  password: 23f85268-2f5d-412e-a8f5-da52dc3b4910
-  port: 24455
-  server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com
-  type: ss
-  udp: true
-- auth: a5b7adcf-c1c8-4db1-a13a-bab1d86b77cb
-  name: 28|🇹🇼 台湾-5-1B
-  password: a5b7adcf-c1c8-4db1-a13a-bab1d86b77cb
-  port: 19842
-  server: twf3.426624.xyz
-  skip-cert-verify: false
-  sni: twf3.426624.xyz
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇼 台湾-03
-  password: 7788e3bc-17cc-4b6d-9148-a12d6593a9f9
-  port: 36201
-  server: gtm-sg-acm44szjs05.gym0boy.com
-  type: ss
-  udp: true
-- name: 28|🇼 台湾直连-TROJAN-1B
-  password: b0c2f4e7-0743-4141-896c-1d58452ee05c
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 11|1|🇹🇼10 |  1.9MB/s
+  network: ws
+  password: Aimer
   port: 443
-  server: v3.nmcf.me
-  skip-cert-verify: false
-  sni: v3.nmcf.me
-  type: trojan
-  udp: true
-- auth: a5b7adcf-c1c8-4db1-a13a-bab1d86b77cb
-  name: 28|🇼 台湾-2-1B
-  password: a5b7adcf-c1c8-4db1-a13a-bab1d86b77cb
-  port: 19842
-  server: tw8.426624.xyz
-  skip-cert-verify: false
-  sni: tw8.426624.xyz
-  type: hysteria2
-  udp: true
-- name: 28|🇼 台湾02直连-1D
-  password: 5086ac6f-b7d8-4959-872d-cee52253cc15
-  port: 2324
-  server: tw1.376897.xyz
-  skip-cert-verify: false
-  sni: tw1.376897.xyz
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇼 台湾03-备用-1B
-  password: 946c148e-5237-4a46-9ce2-a5d0f93fdd28
-  port: 11133
-  server: qqa813.198139.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇼 台湾05
-  password: e0fc7ddf-3739-4059-a1a4-4932041bf450
-  port: 12092
-  server: 183.36.41.41
-  type: ss
-  udp: true
-- auth: fd644a53-5366-4936-b1d4-0af3fdaece55
-  name: 28|🇼 台湾-中華電信家宽3-1D
-  password: fd644a53-5366-4936-b1d4-0af3fdaece55
-  port: 16102
-  server: tw.426624.xyz
+  server: 154.197.64.67
   skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
+  sni: epccd.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|🇹 台湾|隧道3
-  port: 27831
-  server: zf2.xinzhanduijie.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a20e7121-b8af-4616-b7d6-ebd735460654
-- alterId: 0
-  cipher: auto
-  name: 28|🇼 台湾2-1D
-  port: 45077
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b7637e6b-198a-42f4-8bcd-945d8490ae13
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇹🇼 台湾01专线-1B
-  password: 71a8ba1c-5bf5-4ba6-bf00-a6d10ff30892
-  port: 14632
-  server: zf-ct.bgblwow.org
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇹 台湾 06-1D
-  password: d9708b7c-f9d0-4096-bea4-12d2bb4ccbf8
-  port: 47791
-  server: aambx02tw.dorabbb.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|🇼 台湾2-1E
-  port: 12212
-  server: xxx.btmbxxx.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 97fe4afd-6409-4c86-9a25-9bafd779deee
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇹🇼 台湾 03-1D
-  password: d9708b7c-f9d0-4096-bea4-12d2bb4ccbf8
-  port: 47790
-  server: aambx99.dorabbb.top
-  type: ss
-  udp: true
-- auth: 052828e9-b8aa-40a0-ae43-7347c2e23e5c
-  name: 28|🇼 台湾-中華電信家宽4-1C
-  password: 052828e9-b8aa-40a0-ae43-7347c2e23e5c
-  port: 21962
-  server: tw3.426624.xyz
+  ws-opts:
+    headers:
+      host: epccd.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 11,27|2|🇼15 |  3.3MB/s
+  network: ws
+  password: Aimer
+  port: 443
+  server: 103.116.7.235
   skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
-- name: 28|🇹🇼 台湾03直连-1E
-  password: 314c84e4-8481-4ba4-8afe-c4899844a229
-  port: 23342
-  server: tw5.376897.xyz
-  skip-cert-verify: false
-  sni: tw5.376897.xyz
+  sni: epcca.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 28|🇼 台湾01直连-1H
-  password: 513f3a16-ec46-4724-8750-ca88a4e51f74
-  port: 2324
-  server: tw7.376897.xyz
-  skip-cert-verify: false
-  sni: tw7.376897.xyz
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇼 台湾 02-1B
-  password: f155134d-a5b1-449c-ad25-736fffb60e55
-  port: 47789
-  server: aambx01tw.dorabbb.top
-  type: ss
-  udp: true
-- name: 28|🇹🇼 台湾01直连-1B
-  password: 3e1ad866-461e-439e-a865-d433dfb2f013
-  port: 23342
-  server: 2gzdx21.376897.xyz
-  skip-cert-verify: false
-  sni: 2gzdx21.376897.xyz
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇼 台湾01-1A
-  password: 86d2194d-7670-4ff2-94a7-a8b1370c717a
-  port: 21110
-  server: okanc.node-is.green
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇼 台湾01-1B
-  password: e0fc7ddf-3739-4059-a1a4-4932041bf450
-  port: 16755
-  server: node1.cenidcbf.ink
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇼 台湾-01
-  password: 7788e3bc-17cc-4b6d-9148-a12d6593a9f9
-  port: 30533
-  server: jg647hf446ghvw.gym0boy.com
-  type: ss
-  udp: true
-- auth: e482d9ad-736f-4d03-a72f-eacc8b81c900
-  name: 28|🇹 台湾-6-1A
-  password: e482d9ad-736f-4d03-a72f-eacc8b81c900
-  port: 19842
-  server: twf4.426624.xyz
-  skip-cert-verify: false
-  sni: twf4.426624.xyz
-  type: hysteria2
-  udp: true
-- auth: a5b7adcf-c1c8-4db1-a13a-bab1d86b77cb
-  name: 28|🇼 台湾-中華電信家宽2-1B
-  password: a5b7adcf-c1c8-4db1-a13a-bab1d86b77cb
-  port: 20842
-  server: tw2.426624.xyz
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '11,27|2|🇹🇼8 |  1.1MB/s #1'
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 154.197.64.166
   skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-- cipher: aes-128-gcm
-  name: 28|🇹🇼 台湾-1A
-  password: b9119243-d54e-459b-8dde-917b55dde67f
-  port: 30629
-  server: 02.kjahbg.info
-  type: ss
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '11,27|2|🇹🇼3 |  1.3MB/s #1'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 27.50.49.136
+  skip-cert-verify: true
+  sni: epccd.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|🇼 台湾4-网-1A
-  port: 12214
-  server: xxx.btmbxxx.top
-  tls: false
-  type: vmess
+  ws-opts:
+    headers:
+      host: epccd.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '11,27|2|🇹🇼6 |  1.2MB/s #1'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 108.165.152.36
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: 041fb9e1-ed28-4731-b531-fd680a174819
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 11|1|🇹🇼17 |  1.3MB/s
+  network: ws
+  password: Aimer
+  port: 443
+  server: pranab.ns.cloudflare.com
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 11|1|🇹🇼18 |  1.2MB/s
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 130.250.137.63
+  skip-cert-verify: true
+  sni: epccd.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccd.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 11|1|🇹🇼19 |  4.4MB/s
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 188.164.159.246
+  skip-cert-verify: true
+  sni: epccd.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccd.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 11|1|🇹🇼20 |  1.1MB/s
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 154.197.64.228
+  skip-cert-verify: true
+  sni: epccd.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccd.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '11,27|2|🇹🇼1 |  1.2MB/s #1'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 154.197.64.219
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '11,27|2|🇹🇼10 |  4.8MB/s #1'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 108.165.152.163
+  skip-cert-verify: true
+  sni: epccd.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccd.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 11|1|🇹🇼23 |  5.8MB/s
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 167.68.5.248
+  skip-cert-verify: true
+  sni: epccd.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccd.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '11,27|2|🇹🇼11 |  5.3MB/s #1'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 188.164.159.91
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 11|1|🇹🇼25 |  5.6MB/s
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 167.68.4.131
+  skip-cert-verify: true
+  sni: epccd.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccd.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '27|2|🇹🇼4 |  4.3MB/s #1'
+  network: ws
+  password: Aimer
+  port: 443
+  server: damien.ns.cloudflare.com
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '27|2|🇹🇼9 |  5.1MB/s #1'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 108.165.152.207
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '27|2|🇹🇼14 |  5.1MB/s #1'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 108.165.152.55
+  skip-cert-verify: true
+  sni: epccd.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccd.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
   cipher: auto
   name: 30|2,13|台湾|@ripaojiedian
@@ -582,22 +599,29 @@ proxies:
       Host: fadawtawd.zhangwei.li
     path: /zh-cn
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
   name: 37|TW
-  network: grpc
-  password: 67eb147db1c0f8c5
-  port: 443
-  server: 60.249.28.59
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.35.96
   skip-cert-verify: true
-  sni: 007.com
   tls: true
-  type: trojan
-  udp: true
+  type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 37|TW2
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 61.216.165.30
+  server: 125.227.86.45
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|TW3
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 61.216.165.232
   skip-cert-verify: true
   tls: true
   type: ss
