@@ -1,29 +1,21 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|国 01 | 1x DE #1'
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31471
-  server: free.2apzhfa.xyz
+  name: '5,11,24,27,30|1|🇪 德国 01 | 1x DE #1'
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+  port: 36471
+  server: free.2weradf.xyz
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: 5|14|DE_speednode_0054
-  port: 59248
-  server: 91.107.167.61
-  servername: refersion.com
-  skip-cert-verify: false
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,30,37|DE国
+  password: fa2258bd-1ef5-41db-baa4-396f04f06bfc
+  port: 31471
+  server: free.2apzhfa.xyz
+  skip-cert-verify: true
   tls: true
-  type: vless
-  uuid: def6e08c-b9ec-4257-86ef-475efaddd366
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 5|2|🇩🇪3 |  5.2MB/s
-  port: 443
-  server: 91.238.82.242
-  servername: maviks.eu
-  tls: true
-  type: vless
-  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 5,40|DE_speednode_0041
@@ -38,13 +30,31 @@ proxies:
   type: vless
   udp: true
   uuid: 2e7b1501-74a0-4f74-be84-559625aa3100
-- cipher: chacha20-ietf-poly1305
-  name: 5,24,27,30|1|🇪 德国 01 | 1x DE
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+- name: '5,11,24,27|2|🇪9 |  3.7MB/s #1'
+  password: 0412a30a-bc16-4815-a3aa-3265d5037b6e
+  port: 43583
+  server: sla.cn.964e995b760.gogodns.xin
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 5|2|🇩🇪11 |  2.0MB/s
+  port: 28697
+  server: 185.85.241.196
+  servername: yahoo.com
+  tls: true
+  type: vless
+  uuid: 39d4ce03-f896-48db-8d2e-c95daa4898e4
+- client-fingerprint: chrome
+  flow: ''
+  name: 5|2|🇩🇪13 |  5.6MB/s
+  port: 443
+  server: mmdv.s8573.ir
+  servername: eset.com
+  tls: true
+  type: vless
+  uuid: acb9dedd-fa08-476f-b21a-06f6b7ddde97
 - name: 8|🇩🇪DE-52.58.179.46-180_1@180
   password: telegram-id-privatevpns
   port: 22222
@@ -91,32 +101,12 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 16|DEN_1
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 147.45.79.236
-  skip-cert-verify: true
-  sni: epccd.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: epccd.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 16|DEN_2
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 147.45.79.236
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+- cipher: rc4-md5
+  name: 19|🇩🇪DE-193.108.119.230-0910
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 19|🇩🇪DE-85.208.139.31-6186
   password: q7jwtcA0MmyYi0JddUgXXj
@@ -145,12 +135,6 @@ proxies:
   server: 185.177.229.245
   type: ss
 - cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-6032
-  password: rpgbNnU9rDDU4aWZ
-  port: 9094
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
   name: 19|🇩🇪DE-80.92.204.106-3215
   password: M3t2ZEQcMGRWBjRa
   port: 9011
@@ -158,7 +142,21 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.133-9515 #1'
+  name: '20,21|🇩🇪DE-57.129.24.125-8924 #1'
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-57.129.24.133-8895 #1'
   network: ws
   port: 443
   server: 57.129.24.133
@@ -172,39 +170,18 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-9485 #1'
+  name: '20,21|🇩🇪DE-57.129.24.141-6154 #1'
   network: ws
   port: 443
-  server: 57.129.24.125
+  server: 57.129.24.141
   servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      Host: ''
     path: /linkvws
-- name: 24,27|0|1 |  1.3MB/s
-  password: 0412a30a-bc16-4815-a3aa-3265d5037b6e
-  port: 43583
-  server: sla.cn.964e995b760.gogodns.xin
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 24,36|🔒 VM-WS-TLS 🇺🇸 US-74.48.145.79...
-  network: ws
-  port: 45625
-  server: 74.48.145.79
-  servername: lapde.lzj520hxw.dpdns.org
-  tls: true
-  type: vmess
-  uuid: f017dc53-6050-42b9-a399-fa5fb0e9ac85
-  ws-opts:
-    headers:
-      Host: lapde.lzj520hxw.dpdns.org
-    path: /vmess-argo?ed=2048
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
@@ -217,15 +194,6 @@ proxies:
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
-  tls: false
-  type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
-- alterId: 0
-  cipher: auto
   grpc-opts:
     grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
   name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
@@ -236,3 +204,12 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea

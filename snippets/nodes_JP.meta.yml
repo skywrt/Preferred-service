@@ -1,4 +1,59 @@
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 5|2|🇯🇵8 |  4.5MB/s
+  port: 35659
+  server: shenzhou05.mysynology.net
+  servername: gateway.icloud.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 5|2|🇯🇵7 |  7.8MB/s
+  port: 16497
+  server: zhee01.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: auto
+  name: '5,11,27|2|🇯🇵1 |  6.2MB/s #2'
+  network: tcp
+  port: 17233
+  server: 8582ab4a-svc1s0-szegoe-12hj8.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
+  ws-headers:
+    Host: 8582ab4a-svc1s0-szegoe-12hj8.cm5.p5pv.com
+  ws-path: /
+- cipher: aes-256-cfb
+  name: '5,11,20,21,27|12|🇯🇵 日本特殊|@ripaojiedian #2'
+  password: amazonskr05
+  port: 443
+  server: 52.194.185.159
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '5,11,24,27|13|日本6|@ripaojiedian #2'
+  network: kcp
+  port: '53893'
+  server: 47.74.41.147
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 07287360-e12f-4f94-9c7a-54386c100d8a
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30|0| 01 | 1x JP #1'
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31111
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 64
   cipher: auto
   name: '5,11,24,27|13|日本3|@ripaojiedian #2'
@@ -9,20 +64,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0| 01 | 1x JP #1'
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31111
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇵日本 02 | 1x JP #1'
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31113
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - alterId: 2
   cipher: auto
   name: '5,11,24,27|12,13|日本4|@ripaojiedian #2'
@@ -39,75 +80,69 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 5,11,27|0|2 |  6.2MB/s
-  network: tcp
-  port: 17233
-  server: 9e6c9676-sv6hs0-sv7acf-1qw0q.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d4fe3d0c-9043-11ef-8dc4-f23c91cfbbc9
-  ws-headers:
-    Host: 9e6c9676-sv6hs0-sv7acf-1qw0q.cm5.p5pv.com
-  ws-path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇵日本 03 | 1x JP #1'
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31115
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|1|🇵 日本 03 | 1x JP #1'
+  name: '5,11,24,27,30|1|🇯🇵 日本 02 | 1x JP #2'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36115
+  port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 5,27|0|🇯🇵7 |  3.1MB/s
-  network: tcp
-  port: 17233
-  server: 8582ab4a-svc1s0-szegoe-12hj8.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
-  ws-headers:
-    Host: 8582ab4a-svc1s0-szegoe-12hj8.cm5.p5pv.com
-  ws-path: /
-- cipher: aes-256-cfb
-  name: '5,11,24,27|12|🇵 日本特殊|@ripaojiedian #1'
-  password: amazonskr05
-  port: 443
-  server: 35.85.52.8
-  tfo: false
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30|0|🇵日本 02 | 1x JP #1'
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31113
+  server: free.2apzhfa.xyz
   type: ss
+  udp: true
 - alterId: 0
-  cipher: auto
-  name: '5,11,24,27|13|日本6|@ripaojiedian #2'
-  network: kcp
-  port: '53893'
-  server: 47.74.41.147
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 07287360-e12f-4f94-9c7a-54386c100d8a
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,30,37|JP
+  password: fa2258bd-1ef5-41db-baa4-396f04f06bfc
+  port: 31115
+  server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30|1|🇵 日本 01 | 1x JP #1'
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+  port: 36111
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 5|2|🇯🇵8 |  5.0MB/s
+  name: 5|2|🇯🇵6 |  5.9MB/s
   port: 48121
   server: beiyong.dynuddns.net
   servername: www.nvidia.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: auto
+  name: 5|日本 - 东京 - Klayer LLC - 1
+  network: ws
+  port: '10805'
+  server: kajpa.kia-ai.com
+  tls: true
+  type: vmess
+  uuid: f077ed2d-db1e-42e0-851f-e24aba75e002
+  ws-opts:
+    headers:
+      Host: kajpa.kia-ai.com
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30|1|🇵 日本 03 | 1x JP #1'
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+  port: 36115
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 5|2|🇯🇵9 |  6.0MB/s
+  name: 5|2|🇯🇵4 |  1.5MB/s
   port: 17278
   server: shenzhou05.mysynology.net
   servername: www.yahoo.com
@@ -116,54 +151,13 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 5|2|🇯🇵7 |  1.8MB/s
+  name: 5|2|🇯🇵9 |  3.2MB/s
   port: 14548
   server: vip.jddns0202.top
   servername: www.nvidia.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|1|🇯🇵 日本 02 | 1x JP #1'
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36113
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 5|2|🇯🇵11 |  3.5MB/s
-  port: 35659
-  server: shenzhou05.mysynology.net
-  servername: gateway.icloud.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 5|2|🇯🇵3 |  3.1MB/s
-  port: 31735
-  server: bsuqian01.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 5|2|🇯🇵5 |  3.5MB/s
-  port: 35659
-  server: shenzhou02.mysynology.net
-  servername: gateway.icloud.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: chacha20-ietf-poly1305
-  name: 5,24,27,30|1|🇵 日本 01 | 1x JP
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36111
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   name: 8|🇯🇵JP-54.199.83.239-171_1@171
   password: doub.io
@@ -231,20 +225,12 @@ proxies:
   tls: false
   type: vless
   uuid: 446bfcde-1d2d-4f6f-a828-117487411e01
-- alterId: 0
-  cipher: auto
-  name: 11,27|0|🇵13 |  5.6MB/s
-  port: 4151
-  server: 3e5f4230-submo0-su9w3p-4mce.c.volczijie.com
-  tls: false
-  type: vmess
-  uuid: 06c625ea-5902-11ee-9e87-f23c9313b177
 - cipher: rc4-md5
   name: '11,27|12|🇵 日本|@ripaojiedian #1'
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202504221857755-wjQtxZzCYu.download.microsoft.com
+    host: 202504231516596-2ovXmdP1DN.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -261,7 +247,7 @@ proxies:
     path: /plxbuqyt
     skip-cert-verify: false
     tls: true
-  port: 55958
+  port: 32747
   server: jp06v1.xmsj.red
   tfo: false
   type: ss
@@ -275,76 +261,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 16|JP_3
-  network: ws
-  port: 587
-  server: 8.221.142.97
-  servername: edccd.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccd.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 16|JP_2
-  network: ws
-  port: 6666
-  server: 103.20.199.166
-  servername: nn.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nn.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 16|JP_5
-  network: ws
-  port: 443
-  server: 47.79.84.167
-  servername: edccd.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccd.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 16|JP_7
-  network: ws
-  port: 443
-  server: 217.142.236.93
-  servername: edcca.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 16|JP_8
-  network: ws
-  port: 8882
-  server: 103.20.199.196
-  servername: nn.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nn.ylks0033.dpdns.org
-    path: /?ed=2560
 - name: 17|荷兰(yudou66.com 玉豆免费节点)
   network: ws
   port: 443
@@ -405,6 +321,15 @@ proxies:
     headers:
       Host: lp.ylks.us.kg
     path: '%2F%3Fed%3D2560'
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知111 3.8MB/s
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|日本(JP)Japan/Tokyo_38
@@ -593,7 +518,7 @@ proxies:
       Host: ji0612e.nfjunka.xyz
     path: /?ed=2560&proxyip=103.232.213.117:8080
 - cipher: aes-256-cfb
-  name: '30|12|🇵 日本特殊|@ripaojiedian #2'
+  name: 30|12|🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 18.179.174.138
@@ -621,16 +546,6 @@ proxies:
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-103.214.168....
-  network: tcp
-  port: '57796'
-  server: 103.214.168.242
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9bc0bd8d-3a4f-4991-dfed-d71934e20335
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
   network: tcp
   port: '27750'
@@ -651,6 +566,16 @@ proxies:
     headers:
       Host: www.bing.com
     path: /nmkj
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-103.214.168....
+  network: tcp
+  port: '57796'
+  server: 103.214.168.242
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9bc0bd8d-3a4f-4991-dfed-d71934e20335
 - name: 40|JP_speednode_0045
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443

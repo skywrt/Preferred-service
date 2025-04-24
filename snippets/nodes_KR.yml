@@ -1,4 +1,22 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 5|2|🇰🇷2 |  1.6MB/s
+  network: tcp
+  port: 17232
+  server: cd5a3a1e-sv8cg0-tcw58g-1p0be.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
+- alterId: 0
+  cipher: auto
+  name: 5|2|🇰🇷3 |  3.3MB/s
+  network: tcp
+  port: 17232
+  server: 33e096fb-sva740-sxnljm-1jr1u.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
 - cipher: chacha20-ietf-poly1305
   name: 5,11,24,27,30|0|🇷国 01 | 1x KR
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -7,22 +25,37 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '5,11,24,27|12|🇰🇷 韩国|@ripaojiedian #1'
+  name: '5,11,27|2,12|🇰🇷 韩国|@ripaojiedian #1'
   password: amazonskr05
   port: 443
-  server: 18.142.242.5
+  server: 54.180.243.85
   tfo: false
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30|1|🇰🇷 韩国 02 | 1x KR #2'
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
-  cipher: auto
-  name: '5,11,24,27|13|国2|@ripaojiedian #1'
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,30,37|KR
+  password: 8e91a54e-d32d-4ec8-98ee-5192b15a020d
+  port: 36311
+  server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
+- name: '5,11,24,27|12,13|国|@ripaojiedian #1'
   network: tcp
-  port: '17232'
-  server: afc8577f-svc1s0-tc67m2-1tjc4.cm5.p5pv.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: fac704ae-0304-11f0-a2ef-f23c91cfbbc9
+  password: 74fa3b6c-e333-49f4-ab15-9549fc53cf42
+  port: 46668
+  server: sla.cn.964e995b760.gogodns.xin
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: '5,11,24,27,30|0|🇷韩国 02 | 1x KR #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -30,31 +63,9 @@ proxies:
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|1|🇰🇷 韩国 02 | 1x KR #1'
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36313
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,24,27,30|1|🇷 韩国 01 | 1x KR
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- name: '5,11,24,27|12,13|国|@ripaojiedian #1'
-  network: tcp
-  password: 8e603038-3713-4c74-9b9c-43ad4cc15650
-  port: 46668
-  server: sla.cn.964e995b760.gogodns.xin
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 11,27|0|1 |  2.9MB/s
+  name: '11,27|2|🇰🇷3 |  3.3MB/s #2'
   port: 17232
   server: 33e096fb-sva740-sxnljm-1jr1u.cm5.p5pv.com
   skip-cert-verify: false
@@ -62,16 +73,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
-- alterId: 0
-  cipher: auto
-  name: '11,27|12|🇷 韩国2|@ripaojiedian #1'
-  port: 17232
-  server: afc8577f-svc1s0-tc67m2-1tjc4.cm5.p5pv.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: fac704ae-0304-11f0-a2ef-f23c91cfbbc9
 - name: '24|2|🇰🇷1 |  4.7MB/s #1'
   password: redfree8
   port: 443
@@ -79,6 +80,15 @@ proxies:
   skip-cert-verify: false
   sni: ipsychO.SUEx12.Ir
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '24|🇰🇷 13|韩国2|@ripaojiedian #1'
+  network: tcp
+  port: '17232'
+  server: afc8577f-svc1s0-tc67m2-1tjc4.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: fac704ae-0304-11f0-a2ef-f23c91cfbbc9
 - name: 24|🇰🇷 _韩国
   password: Aimer
   port: 12423
@@ -114,13 +124,16 @@ proxies:
   skip-cert-verify: false
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇰🇷 _韩国 #5'
+- alterId: 0
+  name: 24,37|🇰🇷KR韩国2
   password: Aimer
   port: 50000
   server: 119.202.249.46
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epccd.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇰🇷 _韩国 #6'
   password: Aimer
   port: 50000
@@ -153,7 +166,7 @@ proxies:
   type: vmess
   uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
 - cipher: aes-256-cfb
-  name: '30|12|🇰🇷 韩国|@ripaojiedian #2'
+  name: 30|12|🇰🇷 韩国|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 3.34.192.249
