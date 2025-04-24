@@ -1,25 +1,18 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30|0|国 01 | 1x DE #1'
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31471
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: '5,11,24,27,30|1|🇪 德国 01 | 1x DE #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,27,30|0|国 01 | 1x DE #1'
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- name: '5,24|2|🇩🇪9 |  3.7MB/s #2'
-  password: 0412a30a-bc16-4815-a3aa-3265d5037b6e
-  port: 43583
-  server: sla.cn.964e995b760.gogodns.xin
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
 - name: 8|🇩🇪DE-52.58.179.46-180_1@180
   password: telegram-id-privatevpns
   port: 22222
@@ -51,12 +44,6 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: rc4-md5
-  name: 19|🇩🇪DE-193.108.119.230-0910
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 19|🇩🇪DE-85.208.139.31-6186
   password: q7jwtcA0MmyYi0JddUgXXj
@@ -85,6 +72,12 @@ proxies:
   server: 185.177.229.245
   type: ss
 - cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-6032
+  password: rpgbNnU9rDDU4aWZ
+  port: 9094
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
   name: 19|🇩🇪DE-80.92.204.106-3215
   password: M3t2ZEQcMGRWBjRa
   port: 9011
@@ -92,10 +85,10 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-8924 #1'
+  name: '20,21|🇩🇪DE-57.129.24.133-8895 #1'
   network: ws
   port: 443
-  server: 57.129.24.125
+  server: 57.129.24.133
   servername: ''
   tls: true
   type: vmess
@@ -106,10 +99,10 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.133-8895 #1'
+  name: '20,21|🇩🇪DE-57.129.24.125-8924 #1'
   network: ws
   port: 443
-  server: 57.129.24.133
+  server: 57.129.24.125
   servername: ''
   tls: true
   type: vmess
@@ -155,6 +148,15 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
   network: httpupgrade
   port: '2096'
@@ -185,12 +187,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
-  tls: false
-  type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
