@@ -8,24 +8,27 @@ proxies:
   tls: false
   type: vmess
   uuid: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 5,24,27|2|🇷1 |  1.1MB/s
+  name: '5,24|2|🇰🇷3 |  3.3MB/s #2'
   network: tcp
   port: '17232'
   server: 33e096fb-sva740-sxnljm-1jr1u.cm5.p5pv.com
   tls: false
   type: vmess
   uuid: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,27,30|0|🇷国 01 | 1x KR
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,27,30,37|KR
+  password: 2ca0667d-ad15-45a1-9116-905f75744271
   port: 31311
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 5,11,24,27|12|🇷 韩国|@ripaojiedian
+  name: 5,11,24,27|12|🇰🇷 韩国|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 54.180.243.85
@@ -38,24 +41,24 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30,37|KR
-  password: 8e91a54e-d32d-4ec8-98ee-5192b15a020d
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30|1|🇷 韩国 01 | 1x KR #1'
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36311
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
-- name: '5,11,24,27|12,13|韩国|@ripaojiedian #1'
+- alterId: 0
+  name: 5,11,24,27,37|🇰🇷KR韩国2
   network: tcp
   password: 74fa3b6c-e333-49f4-ab15-9549fc53cf42
   port: 46668
   server: sla.cn.964e995b760.gogodns.xin
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '5,11,27,30|0|🇷韩国 02 | 1x KR #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -77,16 +80,13 @@ proxies:
   skip-cert-verify: false
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 24,37|🇰🇷KR韩国2
+- name: '24|🇰🇷 _韩国 #2'
   password: Aimer
   port: 50000
   server: 119.202.249.46
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epccd.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - name: 26|V2-韩国03∣K16线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21017
@@ -94,9 +94,158 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇷 韩国
+  password: 6661820d-48f3-43c2-ab28-cd1c2ab6cc15
+  port: 62520
+  server: hry01.2228333.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 28|🇷 韩国二-1A
+  password: b9119243-d54e-459b-8dde-917b55dde67f
+  port: 30631
+  server: 002.kjahbg.info
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '30|12|🇷 韩国|@ripaojiedian #1'
+  name: 28|🇷 韩国1-NF-1B
+  port: 12611
+  server: xxx.btmbxxx.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 97fe4afd-6409-4c86-9a25-9bafd779deee
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇷 韩国-C5S-1B
+  password: 66e143d1-04ee-49b2-a7e9-56edee6285c2
+  port: 44304
+  server: nc-56112-51122.mofangfree.online
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 28|🇷 韩国2-1A
+  port: 12612
+  server: xxx.btmbxxx.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 041fb9e1-ed28-4731-b531-fd680a174819
+- cipher: aes-256-gcm
+  name: 28|🇰🇷 KR-IDC-1
+  password: d1855738-b3a2-40a1-ac88-f539d1990a1f
+  port: 30000
+  server: 146.56.132.194
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 28|🇷 V1 | 韩国1-1A
+  password: 8965c558-33ce-4d08-9fd2-13645fc4c166
+  port: 49026
+  server: kr91.cctv14.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇷 IEPL 韩国KR 242-1A
+  password: 9cd1ccd2-943c-4f93-85b2-4bc858b5e7fd
+  port: 16116
+  server: 183.240.116.150
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 28|🇰🇷 韩国--1B
+  network: ws
+  port: 57495
+  server: 183.240.228.220
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 08ab5dc6-4c5b-4790-9072-1b21d4b91508
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇷 韩国-1A
+  port: 27842
+  server: ppx1.6128888.xyz
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 94093499-e035-4cba-a0f6-16bcb6a318dc
+- alterId: 0
+  cipher: auto
+  name: 28|🇰🇷 韩国5-1A
+  port: 12615
+  server: xxx.btmbxxx.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 041fb9e1-ed28-4731-b531-fd680a174819
+- alterId: 0
+  cipher: auto
+  name: 28|🇷 韩国3-1A
+  port: 12613
+  server: xxx.btmbxxx.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 041fb9e1-ed28-4731-b531-fd680a174819
+- alterId: 0
+  cipher: auto
+  name: 28|🇷 韩国6-1A
+  port: 12616
+  server: xxx.btmbxxx.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 041fb9e1-ed28-4731-b531-fd680a174819
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇰🇷 韩国 01-1D
+  password: d9708b7c-f9d0-4096-bea4-12d2bb4ccbf8
+  port: 48813
+  server: aambx01qt.dorabbb.top
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 28|🇷 韩国01-1A
+  password: 86d2194d-7670-4ff2-94a7-a8b1370c717a
+  port: 23116
+  server: okanc.node-is.green
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 28|🇷 韩国4-1B
+  port: 12614
+  server: xxx.btmbxxx.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 97fe4afd-6409-4c86-9a25-9bafd779deee
+- cipher: aes-256-gcm
+  name: 28|🇷 韩国02
+  password: 86d2194d-7670-4ff2-94a7-a8b1370c717a
+  port: 23117
+  server: okanc.node-is.green
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 28|🇷 韩国 专线NO2-1A
+  port: 45075
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b7637e6b-198a-42f4-8bcd-945d8490ae13
+- alterId: 0
+  cipher: auto
+  name: 30|12|🇷 韩国|@ripaojiedian
   port: 17232
   server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
   skip-cert-verify: false
