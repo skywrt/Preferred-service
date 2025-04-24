@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '5,11,27|2|🇯🇵1 |  6.2MB/s #2'
+  name: '5,24,27|2|🇯🇵1 |  6.2MB/s #3'
   network: tcp
   port: 17233
   server: 8582ab4a-svc1s0-szegoe-12hj8.cm5.p5pv.com
@@ -13,7 +13,7 @@ proxies:
     Host: 8582ab4a-svc1s0-szegoe-12hj8.cm5.p5pv.com
   ws-path: /
 - cipher: aes-256-cfb
-  name: '5,11,20,21,27|12|🇯🇵 日本特殊|@ripaojiedian #2'
+  name: '5,11,20,21,24,27|12|🇯🇵 日本特殊|@ripaojiedian #1'
   password: amazonskr05
   port: 443
   server: 52.194.185.159
@@ -30,7 +30,7 @@ proxies:
   type: vmess
   uuid: 07287360-e12f-4f94-9c7a-54386c100d8a
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0| 01 | 1x JP #1'
+  name: 5,11,30|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31111
   server: free.2apzhfa.xyz
@@ -63,14 +63,14 @@ proxies:
       Host: ocbc.com
     path: /oooo
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇯🇵 日本 02 | 1x JP #2'
+  name: '5,11,24,27,30|1|🇯🇵 日本 02 | 1x JP #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇵日本 02 | 1x JP #1'
+  name: 5,11,30|0|🇵日本 02 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31113
   server: free.2apzhfa.xyz
@@ -78,7 +78,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30,37|JP
+  name: 5,11,30,37|JP
   password: fa2258bd-1ef5-41db-baa4-396f04f06bfc
   port: 31115
   server: free.2apzhfa.xyz
@@ -87,7 +87,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇵 日本 01 | 1x JP #1'
+  name: 5,11,24,27,30|1|🇵 日本 01 | 1x JP
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36111
   server: free.2weradf.xyz
@@ -199,33 +199,6 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- alterId: 0
-  cipher: auto
-  name: '24|2|🇯🇵2 |  5.7MB/s #1'
-  network: ws
-  port: '443'
-  server: 104.18.149.75
-  tls: true
-  type: vmess
-  uuid: cae97b1c-35e8-4cf2-dc1b-52032c3d3fa7
-  ws-opts:
-    headers:
-      Host: jp.insbot.filegear-sg.me
-    path: /aa
-- name: 24|🇯🇵 _日本
-  password: Aimer
-  port: 443
-  server: 103.116.7.235
-  skip-cert-verify: false
-  sni: epccd.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇯🇵 _日本 #1'
-  password: Aimer
-  port: 443
-  server: 103.116.7.235
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
 - name: 26|✪每日连接前点更新订阅
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
   port: 21142
@@ -400,13 +373,14 @@ proxies:
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-103.214.168....
   network: tcp
-  port: '27750'
-  server: 5.253.41.147
+  port: '57796'
+  server: 103.214.168.242
+  servername: ''
   tls: false
   type: vmess
-  uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
+  uuid: 9bc0bd8d-3a4f-4991-dfed-d71934e20335
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-154.55.122.23...
@@ -422,11 +396,10 @@ proxies:
     path: /nmkj
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-103.214.168....
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
   network: tcp
-  port: '57796'
-  server: 103.214.168.242
-  servername: ''
+  port: '27750'
+  server: 5.253.41.147
   tls: false
   type: vmess
-  uuid: 9bc0bd8d-3a4f-4991-dfed-d71934e20335
+  uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
