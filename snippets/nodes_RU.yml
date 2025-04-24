@@ -13,13 +13,13 @@ proxies:
   sni: dynamic-dane.dolphin109.quest
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇺 俄罗斯 01 | 1x RU #1'
+  name: 5,24,27,30|1|🇺 俄罗斯 01 | 1x RU
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36511
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 5,12|🇪🇸_ES_西班牙
+- name: '5|俄罗斯+Barnaul+State+Educational+... #1'
   password: '!!str 3828095943467868160'
   port: 443
   server: 212.192.2.253
@@ -64,19 +64,6 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- name: 12|🇷🇺_RU_俄罗斯
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: humble-shad.dolphin109.quest
-  skip-cert-verify: true
-  sni: humble-shad.dolphin109.quest
-  type: trojan
-- name: '12|🇷🇺_RU_俄罗斯 #1'
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: 95.85.93.192
-  sni: correct-pelican.dolphin109.quest
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 19|🇷🇺RU-147.45.221.106-1300
   password: m30QhUjzdUtXi1tsDsF7G1
@@ -102,13 +89,19 @@ proxies:
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     path: /
-- name: 24|🇷🇺 俄罗斯 Barnaul State Education...
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: 212.192.2.202
-  skip-cert-verify: true
-  sni: lucky-lynx.dolphin109.quest
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24,36|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23...
+  network: ws
+  port: '20017'
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  uuid: cb989632-4fa2-4303-8aee-d656d6be1b23
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - name: 24|🇷🇺 _俄罗斯
   password: Aimer
   port: 2053
