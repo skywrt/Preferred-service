@@ -52,13 +52,17 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
   cipher: auto
-  name: '5,24|1|🇭🇰4 |  1.3MB/s #2'
+  name: 5,11,24,27|1|🇰2 |  1.4MB/s
   network: tcp
-  port: '15229'
+  port: 15229
   server: f00627fb-sva740-sv995i-xz4l.cm.plebai.net
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 8c3ef4c2-980d-11ef-add7-f23c913c8d2b
+  ws-headers:
+    Host: f00627fb-sva740-sv995i-xz4l.cm.plebai.net
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 5,24|14
@@ -176,7 +180,7 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: '5,9,11,24,27|12,13|台湾|@ripaojiedian #1'
+- name: '5,9,11,24,27|12,13|台湾|@ripaojiedian #2'
   network: tcp
   password: ff832dd3-18a9-441f-bae0-24e8b98dc96b
   port: 27201
@@ -248,7 +252,7 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
   cipher: auto
-  name: '5,11,24,27|13|美国|@ripaojiedian #1'
+  name: '5,11,24,27|13|美国|@ripaojiedian #2'
   network: tcp
   port: '44015'
   server: 120.198.71.219
@@ -384,7 +388,7 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
   cipher: auto
-  name: 5,36|🔒 VM-TCP-NA 🇨🇳 CN-47.116.166.1...
+  name: 5|中国 - 上海 - Hangzhou Alibaba Adv...
   network: tcp
   port: '50002'
   server: 47.116.166.178
@@ -502,7 +506,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '5,30|13|香港7|@ripaojiedian #2'
+  name: '5,30|13|香港7|@ripaojiedian #3'
   network: tcp
   port: 36609
   server: 120.232.153.40
@@ -1253,13 +1257,6 @@ proxies:
     headers:
       Host: tk.hzlt.tkddns.xyz
     path: /
-- name: 24|🇨🇳 广东省广州市 电信
-  password: 18e86a94-ec96-4cf6-9d9b-ecef277fd791
-  port: 43397
-  server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
 - name: 24|_中国
   password: Aimer
   port: 2083
@@ -1315,13 +1312,6 @@ proxies:
   server: 154.219.5.56
   skip-cert-verify: false
   sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #8'
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: 121.14.61.174
-  skip-cert-verify: false
-  sni: hk-13-568.flztjc.net
   type: trojan
 - alterId: 0
   cipher: auto
@@ -1598,15 +1588,6 @@ proxies:
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
-  network: tcp
-  port: '50007'
-  server: 112.132.215.34
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇨🇳 CN-120.232.17.7...
   network: ws
   port: 33202
@@ -1619,6 +1600,25 @@ proxies:
     headers:
       Host: yd2.ainivp.com
     path: /ray
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
+  network: tcp
+  port: '50007'
+  server: 112.132.215.34
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-120.210.205....
+  network: tcp
+  port: '50002'
+  server: 120.210.205.59
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
   name: 40|CN_speednode_0006
   obfs: plain
