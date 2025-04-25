@@ -7,7 +7,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|0|🇧英国家宽 01 | 1x UK
+  name: 5,11,24,30|0|🇧英国家宽 01 | 1x UK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31271
   server: free.2apzhfa.xyz
@@ -74,13 +74,25 @@ proxies:
   skip-cert-verify: true
   sni: mutual-gannet.dolphin109.quest
   type: trojan
-- name: 16|🇧_GB_英国_1
+- alterId: 0
+  name: 16,37|未知140
   password: '!!str 3828095943467868160'
   port: 443
   server: 85.234.65.227
   skip-cert-verify: true
   sni: blessed-opossum.dolphin109.quest
+  tls: true
   type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知44 3.1MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.193
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 19|🇬🇧GB-185.5.38.111-6211
   password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
@@ -94,27 +106,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 28|🇧 V2-英国03 K71
-  password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
-  port: 20820
-  server: 125.94.40.162
-  sni: k71.tudou211.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇧 英国
-  password: 23c7be24-205e-4a29-b10a-dfc3257d33d7
-  port: 21007
-  server: tt07.51feitu.com
-  type: ss
-  udp: true
-- name: 28|🇧 V2-英国02 K30
-  password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
-  port: 21179
-  server: 125.94.40.162
-  sni: k30.tudou211.com
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 30|2|🇬🇧3 |  2.8MB/s
   password: mps3FwmDjLrWaOVg
@@ -123,13 +114,12 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 36,37|未知126 3.8MB/s
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
   network: tcp
-  port: 28872
+  port: '28872'
   server: 46.250.253.234
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 762b3923-5885-4c5f-886f-e62788512338
 - alterId: 0
@@ -142,12 +132,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
-- alterId: 0
-  name: 37|GB国
-  password: 3319d220-1e27-11f0-a775-1239d0255272
-  port: 443
-  server: 51.210.182.170
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true

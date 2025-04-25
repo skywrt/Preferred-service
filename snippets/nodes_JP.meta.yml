@@ -1,7 +1,7 @@
 proxies:
 - alterId: 2
   cipher: auto
-  name: 5,9,11,24,27|11,12|本4|@ripaojiedian
+  name: '5,9,11,24,27|12,13|日本4|@ripaojiedian #1'
   network: ws
   port: '30806'
   server: v6.heduian.link
@@ -18,7 +18,7 @@ proxies:
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: 5,11,24,27,36|🔒 VM-TCP-NA 🇯🇵 JP-116.206.92.1...
+  name: '5,11,24,27|13|日本3|@ripaojiedian #1'
   network: tcp
   port: '28976'
   server: 116.206.92.184
@@ -26,20 +26,8 @@ proxies:
   tls: false
   type: vmess
   uuid: d1f1022b-cd43-49e4-b736-7744d1e11a79
-- cipher: aes-256-gcm
-  name: '5,24,27|1|🇯🇵6 |  6.0MB/s #3'
-  password: amazonskr05
-  port: 80
-  server: 13.115.230.171
-  type: ss
-- cipher: aes-256-cfb
-  name: 5,24,27|1|🇵11 |  6.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 35.77.95.94
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0| 01 | 1x JP #1'
+  name: 5,11,24,30|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31111
   server: free.2apzhfa.xyz
@@ -54,11 +42,14 @@ proxies:
   tls: true
   type: vless
   uuid: b543c066-2189-4aa4-8afb-445ac8ee28d4
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|1|🇵 日本 03 | 1x JP
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,30,37|JP
+  password: 1d61e31b-4047-4dd8-8782-86df735e5f7f
   port: 36115
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -71,7 +62,7 @@ proxies:
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: aes-256-gcm
-  name: 5,11,24,27|1|🇵3 |  3.5MB/s
+  name: 5,24,27|2|🇵9 |  4.8MB/s
   password: amazonskr05
   port: 80
   server: 54.178.235.65
@@ -85,7 +76,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '5,11,24,27|12|日本5|@ripaojiedian #1'
+  name: '5,11,24,27|13|日本5|@ripaojiedian #1'
   network: kcp
   port: '53893'
   server: 47.74.41.147
@@ -100,12 +91,6 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: '5,20,21,24,27|1|🇯🇵12 |  6.2MB/s #3'
-  password: amazonskr05
-  port: 443
-  server: 52.198.28.59
-  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 5|1|🇯🇵10 |  2.2MB/s
@@ -116,13 +101,13 @@ proxies:
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: aes-256-cfb
-  name: 5,11,24,27|1|🇵4 |  6.0MB/s
+  name: 5,24,27|2|🇵11 |  6.2MB/s
   password: amazonskr05
   port: 443
   server: 13.231.142.217
   type: ss
 - cipher: aes-256-cfb
-  name: 5,9,11,24,27|11|🇵 日本特殊|@ripaojiedian
+  name: 5,9,11,24,27|12|🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 13.229.212.103
@@ -143,14 +128,14 @@ proxies:
       Host: kajpa.kia-ai.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇵日本 02 | 1x JP #1'
+  name: 5,11,24,30|0|🇵日本 02 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇵日本 03 | 1x JP #1'
+  name: 5,11,24,30|0|🇵日本 03 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31115
   server: free.2apzhfa.xyz
@@ -206,19 +191,17 @@ proxies:
   server: 52.193.77.232
   type: ss
   udp: true
-- alterId: 0
-  name: 9,37|未知112
+- name: 9|2|🇯🇵4 |  3.5MB/s
   password: 0ba0883f-2c06-3cb2-a951-d2b71138d5d0
   port: 20140
   server: gy.58n.net
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: z140.hongkongnode.top
-  tls: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  name: 9,11,27|11|🇵 日本3|@ripaojiedian
+  name: 9,11,27|12|🇵 日本3|@ripaojiedian
   port: 28976
   server: 116.206.92.184
   skip-cert-verify: false
@@ -228,7 +211,7 @@ proxies:
   udp: true
   uuid: d1f1022b-cd43-49e4-b736-7744d1e11a79
 - cipher: rc4-md5
-  name: 9,11,27|11|🇵 日本|@ripaojiedian
+  name: 9,11,27|12|🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -240,7 +223,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 9,11,27|11|🇵 日本2|@ripaojiedian
+  name: 9,11,27|12|🇵 日本2|@ripaojiedian
   password: 9befc9a342e2
   plugin: v2ray-plugin
   plugin-opts:
@@ -296,6 +279,32 @@ proxies:
   tls: false
   type: vless
   uuid: 446bfcde-1d2d-4f6f-a828-117487411e01
+- alterId: 1
+  cipher: auto
+  name: 11|0|🇯🇵4 |  4.3MB/s
+  network: tcp
+  port: 28787
+  raw:
+    add: 35.79.17.152
+    aid: '1'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: b0e1254b-6ac6-3d12-bd6e-bd719eaab486
+    net: tcp
+    path: ''
+    port: '28787'
+    ps: 🔥Join+Telegram:@FarahVPN🟣
+    scy: auto
+    sni: 5vpif-g05.jp06-7c5a-vm0.entry.fr0307a.art
+    tls: tls
+    type: ''
+    v: '2'
+  server: 35.79.17.152
+  servername: 5vpif-g05.jp06-7c5a-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: b0e1254b-6ac6-3d12-bd6e-bd719eaab486
 - name: 17|荷兰(yudou66.com 玉豆免费节点)
   network: ws
   port: 443
@@ -357,15 +366,6 @@ proxies:
       Host: lp.ylks.us.kg
     path: '%2F%3Fed%3D2560'
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知44 3.9MB/s
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.240
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
   country: mattkaydiary.com|日本(JP)Japan/Tokyo_38
   name: '23|mattkaydiary.com|日本(JP)Japan/T... #1'
@@ -401,13 +401,16 @@ proxies:
   skip-cert-verify: false
   sni: epccs.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇯🇵 _日本 #1'
+- alterId: 0
+  name: 24,37|JP2
   password: Aimer
   port: 443
   server: 103.116.7.248
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epccs.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇯🇵 _日本 #2'
   password: Aimer
   port: 2096
@@ -510,188 +513,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- allowInsecure: ''
-  name: '27|1|🇯🇵5 |  3.9MB/s #2'
-  network: ws
-  password: redfree8
-  port: 443
-  server: 104.17.147.22
-  skip-cert-verify: false
-  sni: ipsychO.SUEx12.Ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ipsycho.suex12.ir
-    path: /trre5IzbZ9IZZMddtw?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本-09
-  password: 23c7be24-205e-4a29-b10a-dfc3257d33d7
-  port: 13009
-  server: jp09.51feitu.com
-  type: ss
-  udp: true
-- name: 28|🇯🇵 V2-日本03 K73
-  password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
-  port: 16233
-  server: 125.94.40.162
-  sni: k73.tudou211.com
-  type: trojan
-  udp: true
-- name: 28|🇵 日本 ISP OPENAI
-  password: bb10c254-7c36-4b5a-94f0-cf0d2f5cd90c
-  port: 21869
-  server: bg.guangsu888.cc
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 28|🇯🇵 V1-日本04 K43
-  password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
-  port: 21015
-  server: 125.94.40.162
-  sni: k43.tudou211.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇵 日本-02
-  password: 23c7be24-205e-4a29-b10a-dfc3257d33d7
-  port: 13002
-  server: jp02.51feitu.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇳 日亚
-  password: 23c7be24-205e-4a29-b10a-dfc3257d33d7
-  port: 21002
-  server: tt02.51feitu.com
-  type: ss
-  udp: true
-- name: 28|🇵 V1-日本03 K42
-  password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
-  port: 21183
-  server: 125.94.40.162
-  sni: k42.tudou211.com
-  type: trojan
-  udp: true
-- name: 28|🇵 日本 ISP 解锁OPENAI
-  password: b013a3e9-9bce-4aa7-bc0b-e83f64f58351
-  port: 21867
-  server: bg.guangsu888.cc
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 IEPL×2-日本-06
-  password: 23c7be24-205e-4a29-b10a-dfc3257d33d7
-  port: 23006
-  server: jp-pro.51feitu.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇵 IEPL×2-日本-07
-  password: 23c7be24-205e-4a29-b10a-dfc3257d33d7
-  port: 23007
-  server: jp-pro.51feitu.com
-  type: ss
-  udp: true
-- name: '28|🇵 日本 ISP 解锁OPENAI #1'
-  password: b572f10c-e2de-4149-825e-979e48349b48
-  port: 21868
-  server: bg.guangsu888.cc
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 28|🇵 V2-日本04 K74
-  password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
-  port: 47479
-  server: 125.94.40.162
-  sni: k74.tudou211.com
-  type: trojan
-  udp: true
-- name: 28|🇵 日本
-  password: 967826a2-0ce8-4e63-9409-2313d7925504
-  port: 36045
-  server: zz1.jckumao.cc
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇵 IEPL×2-日本-04
-  password: 23c7be24-205e-4a29-b10a-dfc3257d33d7
-  port: 23004
-  server: jp-pro.51feitu.com
-  type: ss
-  udp: true
-- name: 28|🇯🇵 V2-日本02 K12
-  password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
-  port: 21125
-  server: 125.94.40.162
-  sni: k12.tudou211.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇵 IEPL×2-日本-08
-  password: 23c7be24-205e-4a29-b10a-dfc3257d33d7
-  port: 23008
-  server: jp-pro.51feitu.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本-10
-  password: 23c7be24-205e-4a29-b10a-dfc3257d33d7
-  port: 13010
-  server: jp10.51feitu.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇯🇵 日本-03
-  password: 23c7be24-205e-4a29-b10a-dfc3257d33d7
-  port: 13003
-  server: jp03.51feitu.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 28|🇯🇵 日本 2
-  password: YzRlNjE4YjNiZDk0NDE1NDZlMmU5NGE1MmU1ZjBlZWY=
-  port: 25642
-  server: cdn.jp2.cocoduck.vip
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇵 日本-01
-  password: 23c7be24-205e-4a29-b10a-dfc3257d33d7
-  port: 13001
-  server: jp01.51feitu.com
-  type: ss
-  udp: true
-- name: 28|🇵 V1-日本05 K44
-  password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
-  port: 21014
-  server: 125.94.40.162
-  sni: k44.tudou211.com
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 28|🇵 日本1
-  port: 11220
-  server: 20.wogg1.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 48af369b-07f9-30f3-9210-354bd85eea27
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 28|🇯🇵 日本2-1A
-  network: tcp
-  port: 8847
-  reality-opts:
-    public-key: o-Whevq6UGcKNv6HqK8BqRQ6Ypmn5Rjwpo5tB6zxB1g
-    short-id: 0df3581a
-  server: jp2.naicn.top
-  servername: www.lovelive-anime.jp
-  tls: true
-  type: vless
-  uuid: 371ae420-5ca6-458e-9d8c-e0a6af267a58
 - alterId: 0
   cipher: auto
   name: 30|2|🇯🇵6 |  4.2MB/s
@@ -735,7 +556,7 @@ proxies:
   type: vmess
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
 - cipher: rc4-md5
-  name: 30|12|🇵 日本|@ripaojiedian
+  name: '30|12|🇵 日本|@ripaojiedian #1'
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -747,7 +568,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 30|12|🇵 日本2|@ripaojiedian
+  name: '30|12|🇵 日本2|@ripaojiedian #1'
   port: 23919
   server: hzz9.fgmcx.top
   skip-cert-verify: false
@@ -756,7 +577,7 @@ proxies:
   type: vmess
   uuid: be443689-bc64-49ff-85a5-8eecaa2235d3
 - cipher: chacha20-ietf-poly1305
-  name: 30|12|🇵 日本3|@ripaojiedian
+  name: '30|12|🇵 日本3|@ripaojiedian #1'
   password: cdc48a7a-b618-45af-a831-5afbd686b02f
   port: 12210
   server: gg21.hangfengjiasu.com
@@ -785,7 +606,7 @@ proxies:
       Host: ji0612e.nfjunka.xyz
     path: /?ed=2560&proxyip=103.232.213.117:8080
 - cipher: aes-256-cfb
-  name: 30|12|🇵 日本特殊|@ripaojiedian
+  name: '30|12|🇵 日本特殊|@ripaojiedian #1'
   password: amazonskr05
   port: 443
   server: 18.179.174.138
@@ -811,26 +632,6 @@ proxies:
   tls: false
   type: vmess
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
-- alterId: 1
-  cipher: auto
-  name: 36|🔒 VM-TCP-TLS 🇯🇵 JP-35.79.17.15...
-  network: tcp
-  port: '28787'
-  server: 35.79.17.152
-  servername: 5vpif-g05.jp06-7c5a-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: b0e1254b-6ac6-3d12-bd6e-bd719eaab486
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-103.214.168....
-  network: tcp
-  port: '57796'
-  server: 103.214.168.242
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9bc0bd8d-3a4f-4991-dfed-d71934e20335
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
@@ -845,11 +646,11 @@ proxies:
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-154.55.122.23...
   network: ws
-  port: '8000'
+  port: 8000
   server: 154.55.122.235
   tls: false
   type: vmess
-  uuid: b0c2f4e7-0743-4141-896c-1d58452ee05c
+  uuid: 5f981f88-2152-40c6-8312-7f36dc0e64ad
   ws-opts:
     headers:
       Host: www.bing.com
