@@ -48,7 +48,7 @@ proxies:
   ws-opts:
     path: /@V2RAXX-telegram,@V2RAXX-telegram,@V2RAXX-telegram,@V2RAXX-telegram,@V2RAXX-telegram,@V2RAXX-telegram,@V2RAXX-telegram,@V2RAXX-telegram?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27,30|1|🇪 德国 01 | 1x DE
+  name: 5,11,24,27,30|1|🇪 德国 01 | 1x DE
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36471
   server: free.2weradf.xyz
@@ -107,6 +107,12 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
+- cipher: rc4-md5
+  name: 19|🇩🇪DE-193.108.119.230-0910
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 19|🇩🇪DE-85.208.139.31-6186
   password: q7jwtcA0MmyYi0JddUgXXj
@@ -135,23 +141,17 @@ proxies:
   server: 185.177.229.245
   type: ss
 - cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-6032
+  password: rpgbNnU9rDDU4aWZ
+  port: 9094
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
   name: 19|🇩🇪DE-80.92.204.106-3215
   password: M3t2ZEQcMGRWBjRa
   port: 9011
   server: 80.92.204.106
   type: ss
-- name: '20,21|🇩🇪DE-18.199.215.47-6487 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.199.215.47
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '20,21|🇩🇪DE-18.196.84.143-6486 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.196.84.143
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '20,21|🇩🇪DE-57.129.24.125-8334 #1'
@@ -168,6 +168,20 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
+  name: '20,21|🇩🇪DE-57.129.24.141-6077 #1'
+  network: ws
+  port: 443
+  server: 57.129.24.141
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
   name: '20,21|🇩🇪DE-57.129.24.133-8323 #1'
   network: ws
   port: 443
@@ -180,16 +194,39 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
+- name: 28|🇪 V1-德国04
+  password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
+  port: 21102
+  server: 125.94.40.162
+  sni: k28.tudou211.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇪 德国
+  password: 23c7be24-205e-4a29-b10a-dfc3257d33d7
+  port: 21009
+  server: tt09.51feitu.com
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
   network: httpupgrade
   port: '2096'
-  server: 104.21.82.137
+  server: 172.67.202.125
   servername: v2.lunarmc.ir
   tls: true
   type: vmess
   uuid: cab65486-3b77-46db-abaf-ea7adc01fbf5
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
 - alterId: 0
   cipher: auto
   name: 36,37|未知85
@@ -213,12 +250,3 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
-  tls: false
-  type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
