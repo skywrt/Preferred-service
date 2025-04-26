@@ -1,16 +1,36 @@
 proxies:
+- cipher: aes-256-gcm
+  name: 5,9|2|🇦🇪2 |  4.5MB/s
+  password: pR11jNCE
+  port: 3059
+  server: 212.192.2.253
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,30|1|🇺 俄罗斯 01 | 1x RU
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+  port: 36511
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 5,36|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23...
+  network: ws
+  port: '23078'
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  uuid: 9fda1993-4f4b-47e9-893a-ec9aaefb0f84
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 5,9,11,24,27,30|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31511
   server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30|1|🇺 俄罗斯 01 | 1x RU
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36511
-  server: free.2weradf.xyz
   type: ss
   udp: true
 - name: 8|🇷🇺RU-176.32.35.167-210_1@209
@@ -154,23 +174,10 @@ proxies:
   uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23...
-  network: ws
-  port: '23078'
-  server: 45.147.201.231
-  tls: false
-  type: vmess
-  uuid: 9fda1993-4f4b-47e9-893a-ec9aaefb0f84
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇷🇺 RU-45.142.120.19...
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-185.174.138.1...
   network: ws
   port: 2082
-  server: 45.142.120.190
+  server: 185.174.138.196
   servername: ''
   tls: false
   type: vmess
@@ -178,4 +185,4 @@ proxies:
   ws-opts:
     headers:
       Host: yellow-paper-029c.yvonna.workers.dev
-    path: /az05.beyondy.cfd/link#
+    path: /az05.beyondy.cfd/link?/TM
