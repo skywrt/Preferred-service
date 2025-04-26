@@ -27,14 +27,14 @@ proxies:
   type: vless
   uuid: b543c066-2189-4aa4-8afb-445ac8ee28d4
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇷 韩国 01 | 1x KR #1'
+  name: 5,9,24,27,30|1|🇷 韩国 01 | 1x KR
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 5,9,11,20,21,24,27|0,12|🇷 特殊|@ripaojiedian
+  name: 5,9,11,20,21,24,27|12|🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 13.114.44.55
@@ -56,18 +56,10 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 5,9,11|1|1 |  4.7MB/s
+  name: 5,9,27|2|🇰🇷3 |  4.1MB/s
   password: qwerREWQ@@
   port: 8772
   server: p235.panda004.net
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 5,9,24,27|0|1 |  6.0MB/s
-  password: L9OhTpFW
-  port: 30327
-  server: 3.35.68.33
   tfo: true
   type: ss
   udp: true
@@ -77,6 +69,13 @@ proxies:
   port: 21154
   server: 510613.frederica.xyz
   tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 5,9,11,20,21,27|2|🇷2 |  3.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.35.139.77
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -103,6 +102,14 @@ proxies:
   type: vmess
   udp: true
   uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+- cipher: aes-256-cfb
+  name: 11|1|🇰🇷2 |  5.2MB/s
+  password: qwerREWQ@@
+  port: 58487
+  server: p230.panda004.net
+  tfo: true
+  type: ss
+  udp: true
 - name: 17|韩国(yudou66.com 玉豆免费节点)
   network: ws
   port: 12273
@@ -153,13 +160,16 @@ proxies:
   skip-cert-verify: false
   sni: epccs.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇰🇷 _韩国 #2'
+- alterId: 0
+  name: 24,37|KR国
   password: Aimer
   port: 21025
   server: 118.38.137.237
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epccs.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇰🇷 _韩国 #3'
   password: Aimer
   port: 443
@@ -230,16 +240,13 @@ proxies:
   skip-cert-verify: false
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 24,37|未知64
+- name: '24|🇰🇷 _韩国 #13'
   password: Aimer
   port: 12482
   server: 59.22.76.222
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epccs.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - name: '24|🇰🇷 _韩国 #14'
   password: Aimer
   port: 12315
@@ -282,6 +289,28 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: aes-256-cfb
+  name: 27|2|🇰🇷4 |  6.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.38.103.4
+  type: ss
+- cipher: aes-256-cfb
+  name: 27|2|🇰🇷5 |  1.1MB/s
+  password: qwerREWQ@@
+  port: 16417
+  server: 125.141.31.75
+  type: ss
+- allowInsecure: ''
+  name: 27|2|🇰🇷6 |  3.5MB/s
+  network: tcp
+  password: c58865ad-eb12-45fe-953b-39822a0c11d6
+  port: 46668
+  server: sla.cn.964e995b760.gogodns.xin
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '30|12|🇷 韩国|@ripaojiedian #1'

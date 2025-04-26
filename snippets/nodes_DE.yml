@@ -16,11 +16,14 @@ proxies:
     headers:
       host: kapelleng.com
     path: /linkvws
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30|1|🇪 德国 01 | 1x DE
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27,30,37|DE国
+  password: e8dabc76-349b-4a96-a7f6-14dcf04259dd
   port: 36471
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -165,15 +168,6 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
-  tls: false
-  type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
   network: httpupgrade
   port: '2095'
@@ -184,10 +178,33 @@ proxies:
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.28.65...
+  network: ws
+  port: '443'
+  server: 57.129.28.65
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
   network: httpupgrade
   port: '2096'
-  server: 104.21.82.137
+  server: 172.67.202.125
   servername: v2.lunarmc.ir
   tls: true
   type: vmess
