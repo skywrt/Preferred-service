@@ -789,9 +789,9 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: '12,24|_中国 #48'
+  name: 12|🇨🇳_CN_中国->🇪🇸_ES_西班牙
   network: ws
-  port: '30805'
+  port: 30805
   server: v5.heduian.link
   servername: ''
   tls: false
@@ -803,23 +803,21 @@ proxies:
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: '12,24|1|🇷🇺2 |  2.2MB/s #1'
+  name: 12|🇷🇺_RU_俄罗斯->🇺🇸_US_美国
   network: ws
-  port: '22025'
+  port: 22025
   server: 195.58.49.84
   servername: ''
   tls: false
   type: vmess
   uuid: d47ec603-eca8-498a-b5cf-5ca03cc1f776
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 2
   cipher: auto
-  name: '12,24|_中国 #46'
+  name: '12|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
   network: ws
-  port: '30825'
+  port: 30825
   server: v25.heduian.link
   servername: ''
   tls: false
@@ -831,7 +829,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: '12,24|_中国 #45'
+  name: '12,24|_中国 #41'
   network: ws
   port: '30835'
   server: v35.heduian.link
@@ -857,24 +855,17 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: 12,19|🇱🇹LT-45.87.175.188-0967
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.188
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: '12|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
-  network: ws
-  port: 30837
-  server: v37.heduian.link
-  servername: ocbc.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    path: /oooo
+- alpn:
+  - http/1.1
+  name: 12,20,21,24,27|1|🇪11 |  5.0MB/s
+  network: tcp
+  password: telegram-id-vlessconfig
+  port: 22222
+  server: 18.198.158.85
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
   name: 12,30,40|CN_speednode_0042
