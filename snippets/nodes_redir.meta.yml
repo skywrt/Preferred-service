@@ -814,15 +814,17 @@ proxies:
     path: '%2Fvless%23%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL'
 - alterId: 0
   cipher: auto
-  name: 12,24,36|🔒 VM-WS-NA 🇷🇺 RU-195.58.49.84:...
+  name: '12,24|1|🇷🇺2 |  2.2MB/s #1'
   network: ws
-  port: 22025
+  port: '22025'
   server: 195.58.49.84
   servername: ''
   tls: false
   type: vmess
   uuid: d47ec603-eca8-498a-b5cf-5ca03cc1f776
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 2
   cipher: auto
@@ -866,15 +868,24 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- alpn:
-  - http/1.1
-  name: 12|🇩🇪_DE_德国->🇺🇸_US_美国
-  network: tcp
-  password: telegram-id-vlessconfig
-  port: 22222
-  server: 18.198.158.85
-  sni: trojan.burgerip.co.uk
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 12,19|🇱🇹LT-45.87.175.188-0967
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.188
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: '12|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  servername: ocbc.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    path: /oooo
 - alterId: 2
   cipher: auto
   name: 12,30,40|CN_speednode_0042
@@ -1083,15 +1094,17 @@ proxies:
   skip-cert-verify: true
   sni: handy-sparrow.dolphin109.quest
   type: trojan
-- alterId: '2'
+- alterId: 2
   cipher: auto
-  name: '16,27|2|🇺🇸31 |  5.5MB/s #1'
+  name: 16|🇳_CN_中国->🇸_US_美国
   network: ws
-  port: '30829'
+  port: 30829
   server: v29.heduian.link
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
+    headers:
+      host: v29.heduian.link
     path: /oooo
 - name: 16|🇬🇧_GB_英国->🇳_CN_中国
   password: '!!str 3828095943467868160'
@@ -1341,7 +1354,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 30|2|🇺🇸1 |  5.1MB/s
+  name: '30|2|🇺🇸1 |  5.1MB/s #1'
   network: tcp
   port: 5228
   server: 716545eb-sux8g0-t5oe1a-1ejod.cu.plebai.net
@@ -1443,6 +1456,20 @@ proxies:
   ws-headers:
     Host: 157.148.96.92
   ws-path: /
+- alterId: 2
+  cipher: auto
+  name: 30|🇨🇳_CN_中国->🇺🇸_US_美国_8
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: baidu.com
+    path: /oooo
 - alterId: 0
   cipher: auto
   name: 30|2|🇺🇸18 |  5.1MB/s

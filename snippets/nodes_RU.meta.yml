@@ -1,18 +1,16 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 5|2|🇷🇺4 |  1.6MB/s
-  port: 20216
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|0|🇺俄罗斯 01 | 1x RU
+  name: 5,9,11,24,27,30|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31511
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,11,27,30|1|🇺 俄罗斯 01 | 1x RU #1'
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+  port: 36511
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - name: '5,38|🇷🇺_RU_俄罗斯联邦_10 #1'
@@ -27,26 +25,6 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- alterId: 0
-  cipher: auto
-  name: 5,24,36|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23...
-  network: ws
-  port: '23078'
-  server: 45.147.201.231
-  tls: false
-  type: vmess
-  uuid: 104a91b0-c5f9-43bc-aaba-010ed13422b2
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,30|1|🇺 俄罗斯 01 | 1x RU
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36511
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - name: 8|🇷🇺RU-176.32.35.167-210_1@209
   password: 85bce006-4885-11ee-8792-f23c9164ca5d
   port: 1007
@@ -188,12 +166,6 @@ proxies:
       Host: ap.ylks.xyz
     path: '%2Fblue'
 - cipher: chacha20-ietf-poly1305
-  name: 19|🇷🇺RU-45.151.62.54-1047
-  password: 0zyDRZ1XmNXaaCAN7KEA8a
-  port: 28825
-  server: 45.151.62.54
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: 19|🇷🇺RU-147.45.221.106-1300
   password: m30QhUjzdUtXi1tsDsF7G1
   port: 46356
@@ -217,6 +189,19 @@ proxies:
   type: vmess
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24,36|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23...
+  network: ws
+  port: '23078'
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  uuid: 9fda1993-4f4b-47e9-893a-ec9aaefb0f84
+  ws-opts:
+    headers:
+      Host: ''
     path: /
 - name: 24|🇷🇺 _俄罗斯
   password: juzi

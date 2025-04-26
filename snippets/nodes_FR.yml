@@ -1,4 +1,35 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 5,27|2|🇷2 |  1.7MB/s
+  network: tcp
+  port: 17235
+  server: 0356c0b3-svdwg0-t28b6o-ef48.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+- alterId: 0
+  cipher: auto
+  name: '5,24,27|2|🇫🇷3 |  1.4MB/s #2'
+  network: tcp
+  port: 17235
+  server: 9c9e3181-svc1s0-t28b6o-ef48.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+- alterId: 2
+  cipher: auto
+  name: '5,24|1|🇫🇷2 |  1.3MB/s #1'
+  network: ws
+  port: '30837'
+  server: v37.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v37.heduian.link
+    path: /oooo
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 8,30|兰 V2CROSS.COM
@@ -81,12 +112,26 @@ proxies:
   port: 6379
   server: 149.202.82.172
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇫🇷FR-45.158.171.146-0972
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.158.171.146
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: '9|2|🇫🇷2 |  1.7MB/s #1'
+  port: 17235
+  server: 0356c0b3-svdwg0-t28b6o-ef48.cm5.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+- alterId: 0
+  cipher: auto
+  name: '9|2|🇫🇷3 |  1.4MB/s #1'
+  port: 17235
+  server: 9c9e3181-svc1s0-t28b6o-ef48.cm5.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -162,15 +207,9 @@ proxies:
     headers:
       host: az05.beyondy.cfd
     path: /link
-- name: '20,21|🇫🇷FR-51.68.13.106-0989 #1'
-  password: FiSo7J6vfS
-  port: 1935
-  server: 51.68.13.106
-  sni: x1fr-ovh.devefun.net
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-51.77.20.137-8335 #1'
+  name: '20,21|🇫🇷FR-51.77.20.137-8261 #1'
   network: ws
   port: 443
   server: 51.77.20.137
@@ -183,36 +222,33 @@ proxies:
       Host: tilebani.com
     path: /linkvws
 - alterId: 0
-  cipher: auto
-  name: '20,21|🇫🇷FR-163.5.159.231-8355 #1'
-  network: ws
-  port: 443
-  server: irvideo.cfd
-  servername: ''
+  name: 20,21,37|未知139 16.6MB/s
+  network: tcp
+  password: FiSo7J6vfS
+  port: 1935
+  server: 51.68.13.106
+  skip-cert-verify: true
+  sni: x1fr-ovh.devefun.net
   tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-45.145.165.172-8418 #1'
+  name: '20,21|🇫🇷FR-146.19.168.161-6084 #1'
   network: ws
   port: 443
-  server: hms19.best-tizi.top
-  servername: hms19.best-tizi.top
+  server: az05.beyondy.cfd
+  servername: az05.beyondy.cfd
   tls: true
   type: vmess
-  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
   ws-opts:
     headers:
-      Host: hms19.best-tizi.top
-    path: /linkws
+      Host: az05.beyondy.cfd
+    path: /link
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-146.19.168.161-8337 #1'
+  name: '20,21|🇫🇷FR-146.19.168.161-8292 #1'
   network: ws
   port: 443
   server: 146.19.168.161
@@ -226,32 +262,18 @@ proxies:
     path: /link
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-45.145.165.114-8353 #1'
+  name: '20,21|🇫🇷FR-163.5.159.231-8289 #1'
   network: ws
   port: 443
-  server: beyonddsz.cfd
+  server: irvideo.cfd
   servername: ''
   tls: true
   type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
   ws-opts:
     headers:
-      Host: beyonddsz.cfd
+      Host: irvideo.cfd
     path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇫🇷FR-146.19.168.161-6102 #1'
-  network: ws
-  port: 443
-  server: az05.beyondy.cfd
-  servername: az05.beyondy.cfd
-  tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: az05.beyondy.cfd
-    path: /link
 - alterId: 0
   cipher: auto
   name: 24|VMESS-未知>法国-NF解锁法国地区非自制剧-ChatG...
@@ -266,19 +288,6 @@ proxies:
     headers:
       Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     path: /azumase.ren
-- alterId: 2
-  cipher: auto
-  name: '24|1|🇫🇷2 |  1.3MB/s #1'
-  network: ws
-  port: '30837'
-  server: v37.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v37.heduian.link
-    path: /oooo
 - name: 26|V2-日本01∣K11线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21146
@@ -291,12 +300,5 @@ proxies:
   port: 47479
   server: 120.232.217.96
   skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 28|法 6
-  password: 4e5c7598-0bc4-4578-9c45-efef68373673
-  port: 55040
-  server: xd-sh.timiwc.com
-  sni: k33.tudou211.com
   type: trojan
   udp: true
