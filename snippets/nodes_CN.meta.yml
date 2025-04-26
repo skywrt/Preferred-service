@@ -51,7 +51,7 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: '5,24,27|2|🇺🇸10 |  2.1MB/s #3'
+- name: '5,24|2|🇺🇸10 |  2.1MB/s #2'
   password: 539889fa-ef3a-47d4-ab93-465495923495
   port: 27301
   server: sla.cn.964e995b760.gogodns.xin
@@ -125,7 +125,7 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
   cipher: auto
-  name: '5,11,24,27|13|美国|@ripaojiedian #1'
+  name: '5,11,24,27|13|美国|@ripaojiedian #2'
   network: tcp
   port: '44015'
   server: 120.198.71.219
@@ -311,13 +311,16 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: '5,24|_中国 #39'
+- alterId: 0
+  name: 5,24,37|🇳CN中国2
   password: 2c344bd7-5699-4f89-b913-ddd0f6f4c3b6
   port: 42881
   server: 183.2.150.64
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '5|广东省广州市 移动 #1'
@@ -336,12 +339,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+- alterId: 0
   cipher: auto
   name: 5,36|🔒 VM-TCP-NA 🇨🇳 CN-120.210.205....
   network: tcp
   port: '50002'
   server: 120.210.205.59
+  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -441,13 +445,17 @@ proxies:
     path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
-  name: 5,24|🇨🇳 广东省汕头市 移动
+  name: 5,11,24|🇨🇳 广东省汕头市 移动
   network: tcp
   port: '17231'
   server: c9061f82-svc1s0-sy94f1-1nc6m.cm5.p5pv.com
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 85d450b2-1c2b-11f0-8a7b-f23c913c8d2b
+  ws-headers:
+    Host: c9061f82-svc1s0-sy94f1-1nc6m.cm5.p5pv.com
+  ws-path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 5,40|CN_speednode_0029
@@ -1278,19 +1286,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
-  cipher: auto
-  name: 24|🇨🇳 广东省 移动
-  network: ws
-  port: '22641'
-  server: tk.hzlt.tkddns.xyz
-  tls: true
-  type: vmess
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: tk.hzlt.tkddns.xyz
-    path: /
 - alterId: 0
   cipher: auto
   name: '24|🇨🇳 广东省汕头市 移动 #1'
@@ -1344,13 +1339,16 @@ proxies:
   skip-cert-verify: false
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #11'
+- alterId: 0
+  name: 24,37|🇳CN国
   password: Aimer
   port: 2083
   server: 154.197.64.219
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epcca.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '24|_中国 #15'

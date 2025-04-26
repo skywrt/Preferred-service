@@ -7,7 +7,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|1|🇺 俄罗斯 01 | 1x RU
+  name: '5,9,11,24,30|1|🇺 俄罗斯 01 | 1x RU #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36511
   server: free.2weradf.xyz
@@ -78,17 +78,12 @@ proxies:
   skip-cert-verify: true
   sni: humble-shad.dolphin109.quest
   type: trojan
-- alterId: 0
-  name: 16,37|US13
-  network: tcp
+- name: '16|🇷🇺_RU_俄罗斯_1 #1'
   password: '!!str 3828095943467868160'
   port: 443
   server: 95.85.93.192
-  skip-cert-verify: true
   sni: correct-pelican.dolphin109.quest
-  tls: true
   type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 19|🇷🇺RU-147.45.221.106-1300
   password: m30QhUjzdUtXi1tsDsF7G1
@@ -142,13 +137,16 @@ proxies:
   skip-cert-verify: false
   sni: epccs.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #4'
+- alterId: 0
+  name: 24,37|🇷RU
   password: Aimer
   port: 8443
   server: 46.254.93.52
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epccs.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇷🇺 _俄罗斯 #5'
   password: Aimer
   port: 2083
@@ -165,19 +163,10 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
-  network: tcp
-  port: '20779'
-  server: 45.12.114.15
-  tls: false
-  type: vmess
-  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇷🇺 RU-185.174.138.1...
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-45.142.120.19...
   network: ws
   port: 2082
-  server: 185.174.138.196
+  server: 45.142.120.190
   servername: ''
   tls: false
   type: vmess
@@ -185,4 +174,13 @@ proxies:
   ws-opts:
     headers:
       Host: yellow-paper-029c.yvonna.workers.dev
-    path: /az05.beyondy.cfd/link?/TM
+    path: /az05.beyondy.cfd/link#
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
+  network: tcp
+  port: '20779'
+  server: 45.12.114.15
+  tls: false
+  type: vmess
+  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
