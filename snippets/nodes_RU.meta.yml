@@ -16,7 +16,7 @@ proxies:
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30|0|🇺俄罗斯 01 | 1x RU
+  name: 5,9,11,24,27,30|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31511
   server: free.2apzhfa.xyz
@@ -24,7 +24,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5,36|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23...
+  name: '5,36|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23... #1'
   network: ws
   port: '23078'
   server: 45.147.201.231
@@ -35,13 +35,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,12,20,21,27|0|🇺3 |  3.0MB/s
-  password: ve7TGUrJ4dKrGRloAL815X
-  port: 32049
-  server: 77.73.66.95
-  type: ss
-  udp: true
 - name: '5,38|🇷🇺_RU_俄罗斯联邦_10 #1'
   network: ws
   port: 2087
@@ -219,16 +212,41 @@ proxies:
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
-  network: tcp
-  port: '20779'
-  server: 45.12.114.15
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
+- name: 24|🇷🇺 _俄罗斯
+  password: Aimer
+  port: 2083
+  server: 213.241.198.56
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #1'
+  password: Aimer
+  port: 2087
+  server: 5.182.84.9
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #2'
+  password: Aimer
+  port: 8443
+  server: 46.254.93.52
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #3'
+  password: Aimer
+  port: 8443
+  server: 92.243.74.239
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇷🇺 _俄罗斯 #4'
+  password: Aimer
+  port: 8443
+  server: 31.129.22.41
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇷🇺 RU-45.142.120.19...
@@ -243,3 +261,25 @@ proxies:
     headers:
       Host: yellow-paper-029c.yvonna.workers.dev
     path: /az05.beyondy.cfd/link#
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
+  network: tcp
+  port: '20779'
+  server: 45.12.114.15
+  tls: false
+  type: vmess
+  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23...
+  network: ws
+  port: '20019'
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  uuid: d3a920be-ca12-408f-a532-7a0f22e2cb1e
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
