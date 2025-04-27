@@ -11,12 +11,12 @@ proxies:
 - alpn:
   - h2
   - http/1.1
-  name: '5,11,24|2|🇫🇷3 |  2.0MB/s #2'
+  name: 5,11,12,27|2|🇫🇷5 |  5.0MB/s
   network: tcp
   password: OLq0FfOlp7
   port: 1935
   server: 141.227.160.88
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: x1-sweden-ovh-v2.devefun.net
   type: trojan
 - client-fingerprint: chrome
@@ -30,7 +30,7 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 2
   cipher: auto
-  name: 5|法国 - 巴黎 - Akamai Technologies,...
+  name: '5,24|_中国 #86'
   network: ws
   port: '30837'
   server: v37.heduian.link
@@ -143,22 +143,19 @@ proxies:
   type: vmess
   udp: true
   uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-- cipher: chacha20-ietf-poly1305
-  name: 11|1|🇫🇷2 |  3.5MB/s
-  password: hY4vxI8XY3YJghRe4Gp2g2
-  port: 8724
-  server: 150.241.91.184
-  type: ss
-- allowInsecure: ''
-  name: 11,27|1|🇷1 |  5.4MB/s
+- alterId: 0
+  cipher: auto
+  name: '11,12,24|1|🇫🇷3 |  5.4MB/s #1'
   network: tcp
-  password: pqlnPNu423
-  port: 1935
-  server: 57.129.89.172
-  skip-cert-verify: false
-  sni: x1-germany-ovh-v2.devefun.net
-  tls: true
-  type: trojan
+  port: '17235'
+  server: 04c77dd5-sux8g0-sv9of9-lys7.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 18c0664c-74f1-11ee-b51e-f23c9164ca5d
+  ws-headers:
+    Host: 04c77dd5-sux8g0-sv9of9-lys7.cm5.p5pv.com
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   name: 19|🇫🇷FR-45.158.171.146-0972
   password: QCXDxuDlTTMD7jtgHUjIoj
@@ -304,9 +301,9 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 23,24|🇺🇸 美国 CloudFlare节点
+  name: 23|法国3 | ⬇️ 3.1MB/s
   network: ws
-  port: '443'
+  port: 443
   server: 172.67.200.13
   servername: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
   tls: true
@@ -330,26 +327,21 @@ proxies:
     headers:
       Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     path: /azumase.ren
+- alterId: 0
+  cipher: auto
+  name: '24|1|🇫🇷2 |  3.1MB/s #1'
+  network: tcp
+  port: '17235'
+  server: 304d471c-sv2sg0-t9z17g-17p38.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: b6269564-5974-11eb-8684-f23c913c8d2b
 - name: 24|🇫🇷 _法国
-  password: Aimer
-  port: 10002
-  server: 62.106.70.181
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇫🇷 _法国 #1'
   password: Aimer
   port: 443
   server: 141.11.203.168
   skip-cert-verify: false
   sni: epccs.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇫🇷 _法国 #2'
-  password: Aimer
-  port: 443
-  server: 141.11.203.168
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
   type: trojan
 - name: 26|V2-日本01∣K11线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
