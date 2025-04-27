@@ -25,7 +25,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,9,11,24,27|12,13|日本5|@ripaojiedian #2'
+  name: '5,11,24,27|12,13|日本5|@ripaojiedian #2'
   network: ws
   port: '35213'
   server: jp3.g2.moonbase.life
@@ -34,7 +34,6 @@ proxies:
   tfo: false
   tls: true
   type: vmess
-  udp: true
   uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
   ws-opts:
     headers:
@@ -102,21 +101,23 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '5,9,11,24,27|14|CN_speednode_0021 #5'
+- name: '5,24|14|CN_speednode_0021 #2'
   password: 78d4625c-4221-4496-ab62-729f0d05fa2c
   port: 43497
   server: sla.cn.964e995b760.gogodns.xin
   skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-  udp: true
-- name: '5,24|🇨🇳 广东省广州市 移动 #1'
+- alterId: 0
+  name: 5,11,24,37|🇳
   password: 2b961336-1eae-431a-b766-50576ccff88c
   port: 33506
   server: sla.cn.964e995b760.gogodns.xin
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5,24,36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
@@ -128,15 +129,13 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 5,9,24|🇨🇳 上海市 移动
+  name: 5,24|🇨🇳 上海市 移动
   network: ws
   port: '35244'
   server: jp4.vip2.g2.moonbase.life
   servername: jp4.vip2.g2.moonbase.life
-  skip-cert-verify: false
   tls: true
   type: vmess
-  udp: true
   uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
   ws-opts:
     headers:
@@ -766,6 +765,22 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
+- name: 11,27,40|CN_speednode_0012
+  password: 292f149a-33cb-4ecd-b432-5447764ea339
+  port: 27103
+  server: sla.cn.964e995b760.gogodns.xin
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- name: 11,27,40|CN_speednode_0028
+  password: da26f571-6dea-42ff-a90e-8d72561f92b0
+  port: 43499
+  server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
   name: 12|🇨🇳_CN_中国
@@ -899,13 +914,6 @@ proxies:
     headers:
       Host: www.bing.com
     path: /nmkj
-- name: 24|🇨🇳 广东省广州市 移动
-  password: 2440a39c-2e5e-4e76-96e1-46412298c1a0
-  port: 43586
-  server: sla.cn.964e995b760.gogodns.xin
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '24|_中国 #33'
@@ -999,13 +1007,16 @@ proxies:
   skip-cert-verify: false
   sni: epccs.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #6'
+- alterId: 0
+  name: 24,37|CN国
   password: Aimer
   port: 443
   server: 27.50.49.136
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epcca.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #7'
   password: Aimer
   port: 2053
@@ -1392,14 +1403,6 @@ proxies:
     headers:
       Host: yd2.ainivp.com
     path: /ray
-- name: 40|CN_speednode_0012
-  password: 292f149a-33cb-4ecd-b432-5447764ea339
-  port: 27103
-  server: sla.cn.964e995b760.gogodns.xin
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 40|CN_speednode_0017
@@ -1410,14 +1413,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 40|CN_speednode_0028
-  password: da26f571-6dea-42ff-a90e-8d72561f92b0
-  port: 43499
-  server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 40|CN_speednode_0030
@@ -1434,31 +1429,3 @@ proxies:
     headers:
       Host: jp4.vip2.g2.moonbase.life
     path: /home
-- alterId: 2
-  cipher: auto
-  name: 40|CN_speednode_0031
-  network: ws
-  port: 22642
-  server: 120.233.154.82
-  servername: tk.hzlt.tkddns.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-b.tkong.cc
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 40|CN_speednode_0033
-  network: ws
-  port: 22643
-  server: 120.233.154.82
-  servername: tk.hzlt.tkddns.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
