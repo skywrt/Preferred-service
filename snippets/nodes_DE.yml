@@ -17,17 +17,17 @@ proxies:
       host: kapelleng.com
     path: /linkvws
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|国 01 | 1x DE #1'
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇪 德国 01 | 1x DE #1'
+  name: 5,9,11,24,27,30|1|🇪 德国 01 | 1x DE
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36471
   server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,30|0|国 01 | 1x DE
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31471
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - name: 8|🇩🇪DE-52.58.179.46-180_1@180
@@ -47,6 +47,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
+- name: 13|🇩🇪_DE_德国_1
+  network: tcp
+  password: 4732adfa16c6450bbef87264e41332db
+  port: 443
+  server: nextstepcareer.online
+  skip-cert-verify: true
+  type: trojan
 - name: 13|🇩🇪_DE_德国_2
   network: tcp
   password: telegram-id-privatevpns
@@ -93,15 +100,9 @@ proxies:
   port: 9011
   server: 80.92.204.106
   type: ss
-- name: '20,21|🇩🇪DE-18.153.89.51-1835 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.153.89.51
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.64.238-8696 #1'
+  name: '20,21|🇩🇪DE-57.129.64.238-8681 #1'
   network: ws
   port: 443
   server: 57.129.64.238
@@ -115,35 +116,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-8690 #1'
-  network: ws
-  port: 443
-  server: 57.129.24.125
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.133-8716 #1'
-  network: ws
-  port: 443
-  server: 57.129.24.133
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.141-6437 #1'
+  name: '20,21|🇩🇪DE-57.129.24.141-6433 #1'
   network: ws
   port: 443
   server: 57.129.24.141
@@ -154,6 +127,20 @@ proxies:
   ws-opts:
     headers:
       Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-57.129.24.133-8684 #1'
+  network: ws
+  port: 443
+  server: 57.129.24.133
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -174,6 +161,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇩🇪 DE-85.215.229.21...
+  network: ws
+  port: '27797'
+  server: 85.215.229.219
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ff5085f9-7114-4ab8-a983-e1132475b128
+  ws-opts:
+    headers:
+      Host: vpn.techbytehub.de
+    path: /
 - alterId: 0
   cipher: auto
   grpc-opts:

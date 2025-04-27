@@ -381,8 +381,17 @@ proxies:
     headers:
       host: glweidf.sbs
     path: /linkws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 5|1|🇨🇦1 |  4.3MB/s
+  port: 16011
+  server: gysz0000.dynu.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇦 加拿大 01 | 1x CA #1'
+  name: 5,9,11,24,27,30|1|🇦 加拿大 01 | 1x CA
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36441
   server: free.2weradf.xyz
@@ -395,44 +404,6 @@ proxies:
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 5|加拿大+V2CROSS.COM
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 130.250.137.63
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epcca.ambercc.filegear-sg.me
-- alterId: 2
-  cipher: auto
-  name: 5,9,12|🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  network: ws
-  port: 30825
-  server: v25.heduian.link
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 5|2|🇨🇦1 |  1.0MB/s
-  network: ws
-  port: '30825'
-  server: v25.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    path: /oooo
 - cipher: aes-256-gcm
   name: 8|🇨🇦CA-134.195.196.51-063_1@63
   password: pKEW8JPByTVTLtM
@@ -823,7 +794,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '9|0|🇨🇦1 |  1.0MB/s #1'
+  name: 9|0|🇨🇦1 |  1.0MB/s
   network: ws
   port: 30825
   server: v25.heduian.link
@@ -836,15 +807,32 @@ proxies:
     headers:
       Host: v25.heduian.link
     path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 9,12|🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - alterId: 0
   cipher: auto
   delay: 1166
-  name: 10|加拿大 001
+  name: '10,20,21|🏁RELAY-104.16.155.10-1393 #1'
   network: ws
   port: 2052
   server: s1.db-link01.top
   servername: 100-151-164-47.s1.db-link01.top
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
@@ -853,10 +841,11 @@ proxies:
     path: /dabai.in172.67.2.142
 - alterId: 0
   cipher: auto
-  name: 10|加拿大 002
+  name: '10,20,21|🏁RELAY-104.17.221.248-1399 #1'
   network: ws
   port: 8880
   server: s4.db-link02.top
+  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -869,10 +858,11 @@ proxies:
     path: /dabai.in104.25.239.131
 - alterId: 0
   cipher: auto
-  name: 10|加拿大 003
+  name: '10,20,21|🏁RELAY-104.16.155.10-1401 #1'
   network: ws
   port: 8080
   server: 104.16.155.10
+  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -914,10 +904,11 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: 10|加拿大 006
+  name: '10,20,21|🏁RELAY-104.16.155.10-1429 #1'
   network: ws
   port: 2082
   server: s1.cn-db.top
+  servername: ''
   tls: false
   type: vmess
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
@@ -982,21 +973,7 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-23.162.200.227-8693 #1'
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇨🇦CA-134.195.198.147-8671 #1'
+  name: '20,21|🇨🇦CA-134.195.198.147-8703 #1'
   network: ws
   port: 443
   server: 134.195.198.147
@@ -1010,19 +987,21 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 23|🇨🇦_CA_加拿大
+  name: '20,21|🇨🇦CA-23.162.200.227-8691 #1'
   network: ws
   port: 443
-  server: 158.51.121.36
-  skip-cert-verify: true
+  server: 23.162.200.227
+  servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      Host: ''
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 24|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
+  name: 20,21,24|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
   network: ws
   port: 80
   server: 51.79.102.253
@@ -1034,13 +1013,18 @@ proxies:
     headers:
       Host: 51.79.102.253
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- name: 24|🇨🇦 加拿大 V2CROSS.COM
-  password: Aimer
-  port: 2083
-  server: 130.250.137.63
+- alterId: 0
+  cipher: auto
+  name: 23|🇨🇦_CA_加拿大
+  network: ws
+  port: 443
+  server: 158.51.121.36
   skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17...
