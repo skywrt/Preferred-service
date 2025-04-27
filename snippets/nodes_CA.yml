@@ -1,13 +1,13 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇦 加拿大 01 | 1x CA #1'
+  name: '5,9,11,24,27,30|1|🇦 加拿大 01 | 1x CA #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|0|🇦加拿大 01 | 1x CA
+  name: 5,9,11,24,27,30|0|🇦加拿大 01 | 1x CA
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31441
   server: free.2apzhfa.xyz
@@ -401,22 +401,37 @@ proxies:
     headers:
       Host: us4Bb5oSgJA.fzbqfrse.xyz
     path: /
-- alterId: 0
+- alterId: 2
   cipher: auto
-  delay: 1166
-  name: '10,20,21|🏁RELAY-104.16.155.10-1393 #1'
+  name: 9|0|🇨🇦1 |  1.0MB/s
   network: ws
-  port: 2052
-  server: s1.db-link01.top
-  servername: 100-151-164-47.s1.db-link01.top
-  skip-cert-verify: true
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: 100-151-164-47.s1.db-link01.top
-    path: /dabai.in172.67.2.142
+      Host: v25.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 9,12|🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - alterId: 0
   cipher: auto
   name: '10,20,21|🏁RELAY-104.17.221.248-1399 #1'
@@ -434,23 +449,6 @@ proxies:
     headers:
       Host: 100-128-12-180.s4.db-link02.top
     path: /dabai.in104.25.239.131
-- alterId: 0
-  cipher: auto
-  name: 10,20,21,36|🔒 VM-WS-NA 🏴‍☠️ NA-104.16.155....
-  network: ws
-  port: 8080
-  server: 104.16.155.10
-  servername: ''
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-149-191-2.s5.db-link02.top
-    path: /dabai.in104.20.16.209
 - alterId: 0
   cipher: auto
   name: 10|加拿大 004
@@ -479,6 +477,19 @@ proxies:
     headers:
       Host: 100-150-51-99.s1.cn-db.top
     path: /dabai.in172.64.27.73
+- alterId: 0
+  cipher: auto
+  name: 10|加拿大 001
+  network: ws
+  port: 80
+  server: s4.db-link02.top
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-21-178-246.s4.db-link02.top
+    path: /dabai.in104.24.152.253
 - alterId: 0
   cipher: auto
   name: 17|加拿大(yudou66.com 玉豆免费节点)
@@ -578,11 +589,20 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
+  network: tcp
+  port: '58891'
+  server: 91.194.11.162
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.11...
   network: tcp
   port: '27699'
   server: 91.194.11.118
-  servername: ''
   tls: false
   type: vmess
   uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
@@ -596,13 +616,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
-  network: tcp
-  port: '58891'
-  server: 91.194.11.162
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
