@@ -14,7 +14,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|10|🇯🇵 日本3|@ripaojiedian
+  name: '5,9,11,24,27|12|🇯🇵 日本3|@ripaojiedian #1'
   password: 82401cca-92d1-4220-9367-1cb52832bf59
   port: 16101
   server: 183.240.116.150
@@ -42,14 +42,18 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '5,24|1|🇯🇵2 |  5.3MB/s #2'
+  name: 5,11,24|🇨🇳 广东省汕头市 移动
   network: tcp
   port: '17233'
   server: 666c5d9b-svfr40-t1bnjq-1krtb.cm5.p5pv.com
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-- name: 5,9,11,24,27|10,11|香港4|@ripaojiedian
+  ws-headers:
+    Host: 666c5d9b-svfr40-t1bnjq-1krtb.cm5.p5pv.com
+  ws-path: /
+- name: 5,9,11,24,27|1,12,13|香港4|@ripaojiedian
   network: tcp
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: 8313
@@ -68,7 +72,7 @@ proxies:
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇵 日本 01 | 1x JP #1'
+  name: 5,9,11,24,27,30|1|🇵 日本 01 | 1x JP
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36111
   server: free.2weradf.xyz
@@ -76,9 +80,9 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '5,11,24|1|🇯🇵8 |  1.9MB/s #2'
+  name: 5,11,27|1|🇯🇵13 |  6.0MB/s
   network: tcp
-  port: '17233'
+  port: 17233
   server: 3c984d30-svdwg0-t1bnjq-1krtb.cm5.p5pv.com
   skip-cert-verify: true
   tls: false
@@ -89,7 +93,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 5,11,24,27|0|6 |  6.2MB/s
+  name: 5,11,24,27|1|🇯🇵10 |  2.7MB/s
   network: tcp
   port: 17233
   server: bf20b8b1-svhls0-svtxnz-1rgxu.cm5.p5pv.com
@@ -117,7 +121,7 @@ proxies:
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: aes-256-cfb
-  name: 5,9,11,24,27|10|🇯🇵 日本|@ripaojiedian
+  name: '5,9,11,24,27|12|🇯🇵 日本|@ripaojiedian #1'
   password: amazonskr05
   port: 443
   server: 43.203.238.203
@@ -125,7 +129,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇯🇵 日本 02 | 1x JP #1'
+  name: 5,9,11,24,27,30|1|🇯🇵 日本 02 | 1x JP
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36113
   server: free.2weradf.xyz
@@ -164,7 +168,7 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
   cipher: auto
-  name: 5,11,24,27|0|🇯🇵7 |  5.2MB/s
+  name: 5,11,24,27|1|🇵21 |  6.6MB/s
   network: tcp
   port: 17233
   server: a37e50db-svc1s0-t1bnjq-1krtb.cm5.p5pv.com
@@ -177,7 +181,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 5,11,24,27|11|日本6|@ripaojiedian
+  name: '5,11,24,27|13|日本6|@ripaojiedian #1'
   network: kcp
   port: '53893'
   server: 47.74.41.147
@@ -291,7 +295,7 @@ proxies:
   udp: true
   uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
 - cipher: chacha20-ietf-poly1305
-  name: 9,11,27|10|🇵 日本2|@ripaojiedian
+  name: 9,11,27|12|🇵 日本2|@ripaojiedian
   password: 454f160a336b
   plugin: v2ray-plugin
   plugin-opts:
@@ -307,7 +311,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 9,11,27|10|🇵 |@ripaojiedian
+  name: 9,11,27|12|🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -344,35 +348,33 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
-- alterId: '0'
-  cipher: auto
-  name: 11|2|🇯🇵8 |  1.0MB/s
-  network: ws
-  port: '35244'
-  server: jp4.vip2.g2.moonbase.life
-  tls: true
-  type: vmess
-  uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
-  ws-opts:
-    headers:
-      host: web.xcjs.info
-    path: /home
-- name: '11,24|🇨🇳 广东省广州市 电信 #1'
-  password: 87c196a7-3555-43d6-8756-ca353dc4d42a
-  port: 27001
-  server: sla.cn.964e995b760.gogodns.xin
+- name: '11,24|🇳🇱 _荷兰 #13'
+  network: tcp
+  password: 42491765-ea0e-4955-8fe0-7e06f7a92188
+  port: 22271
+  server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz
   skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 11,27|0|🇯🇵9 |  6.0MB/s
+  name: 11,24,27|1|🇯🇵18 |  6.1MB/s
   network: tcp
   port: 17233
   server: f585489b-svhls0-t1bnjq-1krtb.cm5.p5pv.com
   tls: false
   type: vmess
   uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+- name: 11,24,27|1|🇵1 |  1.1MB/s
+  network: tcp
+  password: a672102b-50f5-4e76-9876-d300765f9b4b
+  port: 22269
+  server: sla.cn.964e995b760.gogodns.xin
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
 - name: 17|荷兰(yudou66.com 玉豆免费节点)
   network: ws
   port: 443
@@ -435,9 +437,9 @@ proxies:
     path: '%2F%3Fed%3D2560'
 - alterId: 0
   cipher: auto
-  name: 23|日本3 | ⬇️ 2.3MB/s
+  name: '23,24|_中国 #45'
   network: ws
-  port: 35244
+  port: '35244'
   server: jp4.vip2.g2.moonbase.life
   servername: jp4.vip2.g2.moonbase.life
   tls: true
@@ -449,9 +451,9 @@ proxies:
     path: /home
 - alterId: 0
   cipher: auto
-  name: 23|日本4 | ⬇️ 1.4MB/s
+  name: '23,24|_中国 #46'
   network: ws
-  port: 35243
+  port: '35243'
   server: jp3.vip2.g2.moonbase.life
   servername: jp3.vip2.g2.moonbase.life
   tls: true
@@ -476,38 +478,31 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- name: 24|日期：04-27
-  password: Aimer
-  port: 443
-  server: 47.245.105.192
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
 - name: 24|🇯🇵 _日本
   password: Aimer
   port: 443
-  server: 103.116.7.248
+  server: 103.116.7.189
   skip-cert-verify: false
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇯🇵 _日本 #1'
   password: Aimer
-  port: 2096
-  server: 103.116.7.152
+  port: 443
+  server: 103.116.7.248
   skip-cert-verify: false
   sni: epccs.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇯🇵 _日本 #2'
   password: Aimer
-  port: 443
-  server: 103.116.7.189
+  port: 2083
+  server: 103.116.7.103
   skip-cert-verify: false
-  sni: epccs.ambercc.filegear-sg.me
+  sni: epcca.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇯🇵 _日本 #3'
   password: Aimer
-  port: 2083
-  server: 103.116.7.103
+  port: 2096
+  server: 103.116.7.152
   skip-cert-verify: false
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
@@ -564,6 +559,19 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: '0'
+  cipher: auto
+  name: 27|1|🇯🇵8 |  1.0MB/s
+  network: ws
+  port: '35244'
+  server: jp4.vip2.g2.moonbase.life
+  tls: true
+  type: vmess
+  uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
+  ws-opts:
+    headers:
+      host: web.xcjs.info
+    path: /home
 - alterId: 0
   cipher: auto
   name: 30|2|🇯🇵6 |  4.2MB/s
@@ -685,6 +693,25 @@ proxies:
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-116.206.92.1...
+  network: tcp
+  port: '28976'
+  server: 116.206.92.184
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d1f1022b-cd43-49e4-b736-7744d1e11a79
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
+  network: tcp
+  port: '27750'
+  server: 5.253.41.147
+  tls: false
+  type: vmess
+  uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-154.55.122.23...
   network: ws
   port: 8000
@@ -696,15 +723,6 @@ proxies:
     headers:
       Host: www.bing.com
     path: /nmkj
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
-  network: tcp
-  port: '27750'
-  server: 5.253.41.147
-  tls: false
-  type: vmess
-  uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
 - name: 40|JP_speednode_0043
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443

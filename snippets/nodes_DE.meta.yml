@@ -1,6 +1,16 @@
 proxies:
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|df9b8ed3aa2a4100a2433d91cd19f3...
+  network: grpc
+  port: 8880
+  server: 167.235.238.146
+  tls: false
+  type: vless
+  udp: false
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇪 德国 01 | 1x DE #1'
+  name: 5,9,11,24,27,30|1|🇪 德国 01 | 1x DE
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36471
   server: free.2weradf.xyz
@@ -57,12 +67,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- cipher: chacha20-ietf-poly1305
-  name: 11|2|🇩🇪6 |  3.5MB/s
-  password: euLYCqRT58s4oZPy3brzn0
-  port: 38211
-  server: 80.71.157.175
-  type: ss
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -130,6 +134,12 @@ proxies:
     headers:
       Host: kapelleng.com
     path: /linkvws
+- name: '20,21|🇩🇪DE-57.129.89.172-1090 #1'
+  password: pqlnPNu423
+  port: 1935
+  server: 57.129.89.172
+  sni: x1-germany-ovh-v2.devefun.net
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '20,21|🇩🇪DE-57.129.24.141-6433 #1'
@@ -160,15 +170,6 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
-  tls: false
-  type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-NA 🇩🇪 DE-85.215.229.21...
   network: ws
   port: '27797'
@@ -181,6 +182,25 @@ proxies:
     headers:
       Host: vpn.techbytehub.de
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -203,16 +223,6 @@ proxies:
   tls: true
   type: vmess
   uuid: cf9ee6cf-a662-4527-b0c4-48f0e98b8b4a
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - name: 40|DE_speednode_0035
   port: 51212
   server: 194.55.13.118
@@ -221,11 +231,3 @@ proxies:
   type: vless
   udp: true
   uuid: b5779651-874b-464c-8a05-02616e6833c1
-- name: 40|DE_speednode_0037
-  port: 443
-  server: 49.12.185.64
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: a6e8515c-4e54-435a-9a47-2365beb40164
