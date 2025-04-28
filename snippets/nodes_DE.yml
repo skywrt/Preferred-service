@@ -1,13 +1,16 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇪 德国 01 | 1x DE #1'
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,30,37|DE国
+  password: 5627b749-255a-4f6e-b289-0ecb67e4f941
   port: 36471
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|国 01 | 1x DE #1'
+  name: 5,11,24,27,30|0|国 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31471
   server: free.2apzhfa.xyz
@@ -133,16 +136,6 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
-  network: httpupgrade
-  port: '2096'
-  server: 104.21.16.1
-  servername: fars.twn24.ir
-  tls: true
-  type: vmess
-  uuid: fe8b8ddb-e1fb-4301-b228-e962558006c9
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
   network: httpupgrade
   port: '2095'
@@ -153,18 +146,23 @@ proxies:
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇩🇪 DE-85.215.229.21...
-  network: ws
-  port: '27797'
-  server: 85.215.229.219
-  servername: ''
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
   tls: false
   type: vmess
-  uuid: ff5085f9-7114-4ab8-a983-e1132475b128
-  ws-opts:
-    headers:
-      Host: vpn.techbytehub.de
-    path: /
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
+  network: httpupgrade
+  port: '2096'
+  server: 104.21.32.1
+  servername: fars.twn24.ir
+  tls: true
+  type: vmess
+  uuid: f2b2b56f-2544-470a-96ff-8539444ff94f
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -179,10 +177,15 @@ proxies:
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
+  name: 36|🔒 VM-WS-NA 🇩🇪 DE-85.215.229.21...
+  network: ws
+  port: '27797'
+  server: 85.215.229.219
+  servername: ''
   tls: false
   type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
+  uuid: ff5085f9-7114-4ab8-a983-e1132475b128
+  ws-opts:
+    headers:
+      Host: vpn.techbytehub.de
+    path: /

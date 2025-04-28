@@ -1,9 +1,12 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0| 01 | 1x TW #1'
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30,37|TW #1'
+  password: 13977014-ca29-44aa-8bfe-3e728a549fb7
   port: 31241
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - name: '5,11,24,27|12,13|台湾|@ripaojiedian #2'
@@ -15,27 +18,27 @@ proxies:
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇼台湾 02 | 1x TW #1'
+  name: 5,11,24,27,30|0|🇼台湾 02 | 1x TW
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇼 台湾 01 | 1x TW #1'
+  name: 5,11,24,27,30|1|🇼 台湾 01 | 1x TW
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇼 台湾 03 | 1x TW #1'
+  name: 5,11,24,27,30|1|🇼 台湾 03 | 1x TW
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36245
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 5,24,27|2|🇼5 |  3.7MB/s
+- name: '5,24|2|🇹🇼5 |  3.7MB/s #2'
   password: c16425aa-11b7-4425-a18f-780fde6c5897
   port: 27201
   server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz
@@ -43,24 +46,141 @@ proxies:
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇼台湾 03 | 1x TW #1'
+  name: 5,11,24,27,30|0|🇼台湾 03 | 1x TW
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇹🇼 台湾 02 | 1x TW #2'
+  name: '5,11,24,27,30|1|🇹🇼 台湾 02 | 1x TW #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 11|1|🇹🇼10 |  5.7MB/s
+- name: 11|2|🇹🇼5 |  1.8MB/s
   network: ws
   password: Aimer
   port: 2087
-  server: 167.68.5.248
+  server: 5.182.84.9
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 11|2|🇹🇼7 |  1.3MB/s
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 66.81.247.230
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 11|2|🇹🇼8 |  5.4MB/s
+  network: ws
+  password: Aimer
+  port: 443
+  server: 108.165.152.219
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 11|2|🇹🇼10 |  5.9MB/s
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 92.243.74.239
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 11,27|1|🇹🇼11 |  1.3MB/s
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 108.165.152.130
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 11,27|1|🇹🇼3 |  1.2MB/s
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 156.225.72.199
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 11|2|🇹🇼20 |  1.1MB/s
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 192.200.160.15
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 11,27|1|🇹🇼6 |  1.4MB/s
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 154.219.5.56
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 11|2|🇹🇼23 |  1.3MB/s
+  network: ws
+  password: Aimer
+  port: 443
+  server: 103.116.7.248
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 11|2|🇹🇼24 |  5.4MB/s
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 27.50.49.47
   skip-cert-verify: true
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
@@ -90,36 +210,11 @@ proxies:
   skip-cert-verify: true
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
-- name: '27|2|🇹🇼6 |  1.1MB/s #2'
+- name: 27|1|🇹🇼4 |  1.1MB/s
   network: ws
   password: Aimer
-  port: 443
-  server: 27.50.49.136
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '27|2|🇹🇼15 |  3.2MB/s #2'
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 147.45.79.236
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '27|2|🇹🇼18 |  1.8MB/s #2'
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 188.164.159.91
+  port: 2096
+  server: 167.68.4.223
   skip-cert-verify: true
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
@@ -158,7 +253,53 @@ proxies:
       Host: fadawtawd.zhangwei.li
     path: /zh-cn
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
   name: 37|TW
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 59.125.75.115
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|TW2
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 59.125.75.111
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|TW3
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.35.3
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|TW4 876.7KB/s
+  password: 79739832-b888-415a-a454-8b53911c944a
+  port: 30332
+  server: 1.170.247.206
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|TW5
+  password: 851418c5-a1f0-453c-b8f8-24664990bdf8
+  port: 28507
+  server: 220.130.58.144
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|TW6
   password: Aimer
   port: 443
   server: 188.253.6.210
@@ -169,28 +310,19 @@ proxies:
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 37|TW2
+  name: 37|TW7
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 211.72.214.66
+  server: 211.72.214.64
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 37|TW3
+  name: 37|TW8
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 60.249.35.59
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|TW4
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 211.22.161.134
+  server: 211.72.214.65
   skip-cert-verify: true
   tls: true
   type: ss
