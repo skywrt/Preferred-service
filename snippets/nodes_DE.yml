@@ -1,18 +1,24 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|1|🇪 德国 01 | 1x DE
+  name: 5,11,24,27,30|1|🇪 德国 01 | 1x DE
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|国 01 | 1x DE #1'
+  name: 5,11,24,27,30|0|国 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,11,20,21,27|2|🇪6 |  5.4MB/s
+  password: euLYCqRT58s4oZPy3brzn0
+  port: 38211
+  server: 80.71.157.175
+  type: ss
 - name: 8|🇩🇪DE-52.58.179.46-180_1@180
   password: telegram-id-privatevpns
   port: 22222
@@ -85,7 +91,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.64.238-8681 #1'
+  name: '20,21|🇩🇪DE-57.129.64.238-8782 #1'
   network: ws
   port: 443
   server: 57.129.64.238
@@ -97,29 +103,9 @@ proxies:
     headers:
       Host: kapelleng.com
     path: /linkvws
-- name: '20,21|🇩🇪DE-57.129.89.172-1090 #1'
-  password: pqlnPNu423
-  port: 1935
-  server: 57.129.89.172
-  sni: x1-germany-ovh-v2.devefun.net
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.141-6433 #1'
-  network: ws
-  port: 443
-  server: 57.129.24.141
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.133-8684 #1'
+  name: '20,21|🇩🇪DE-57.129.24.133-8751 #1'
   network: ws
   port: 443
   server: 57.129.24.133
@@ -130,6 +116,26 @@ proxies:
   ws-opts:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
+- name: '20,21|🇩🇪DE-57.129.89.172-1073 #1'
+  password: pqlnPNu423
+  port: 1935
+  server: 57.129.89.172
+  sni: x1-germany-ovh-v2.devefun.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-57.129.24.141-6499 #1'
+  network: ws
+  port: 443
+  server: 57.129.24.141
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -147,25 +153,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
-  tls: false
-  type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
-- alterId: 0
-  cipher: auto
   grpc-opts:
     grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
   name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
@@ -178,6 +165,16 @@ proxies:
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
   network: httpupgrade
   port: '2096'
@@ -186,3 +183,12 @@ proxies:
   tls: true
   type: vmess
   uuid: cf9ee6cf-a662-4527-b0c4-48f0e98b8b4a
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
