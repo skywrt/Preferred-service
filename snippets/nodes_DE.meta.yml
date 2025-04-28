@@ -24,7 +24,7 @@ proxies:
   udp: false
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇪 德国 01 | 1x DE #1'
+  name: 5,11,24,27,30|1|🇪 德国 01 | 1x DE
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36471
   server: free.2weradf.xyz
@@ -45,12 +45,6 @@ proxies:
   type: vless
   udp: true
   uuid: b5779651-874b-464c-8a05-02616e6833c1
-- cipher: chacha20-ietf-poly1305
-  name: 5,20,21,24,27|2|🇪13 |  2.7MB/s
-  password: euLYCqRT58s4oZPy3brzn0
-  port: 38211
-  server: 80.71.157.175
-  type: ss
 - client-fingerprint: chrome
   flow: ''
   name: 5|2|🇩🇪12 |  1.5MB/s
@@ -207,12 +201,41 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
+- cipher: chacha20-ietf-poly1305
+  name: 28|德国-1B
+  password: 7e6ac5cc-9fbc-4110-9f67-14c20bd56ca7
+  port: 46473
+  server: ambnds00.dorabbb.top
+  type: ss
+  udp: true
+- auth: e7fef215-31b1-40fe-936b-48cc5a7557f8
+  name: 28|DS德国兰福HYSTERIA2-1A
+  password: e7fef215-31b1-40fe-936b-48cc5a7557f8
+  port: 7009
+  server: d.eans.top
+  skip-cert-verify: false
+  sni: d.eans.top
+  type: hysteria2
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 28|德国-联4-1B
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: PaAaDWyG_MhYTIhEHrLJusbrG35KN266mHqeISOb7n4
+    short-id: 8dc4a6c4
+  server: deuf1.731732.xyz
+  servername: www.uni-stuttgart.de
+  tls: true
+  type: vless
+  uuid: 453bdf27-3aee-45e5-961a-80c2144a3204
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
   network: httpupgrade
   port: '2096'
-  server: 104.21.16.1
+  server: 104.21.112.1
   servername: fars.twn24.ir
   tls: true
   type: vmess
@@ -238,16 +261,6 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇩🇪 DE-85.215.229.21...
