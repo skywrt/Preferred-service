@@ -3,7 +3,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|2e0f11d94d3546ecbd8d333c64c4d5...
+  name: 3|314fbe5fd8e44d01883df3459f9715...
   network: ws
   port: 2082
   server: 5.196.29.123
@@ -21,13 +21,17 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,24|2|🇫🇷4 |  5.2MB/s #2'
+  name: '5,11,24|2|🇫🇷4 |  5.2MB/s #2'
   network: tcp
   port: '17235'
   server: 304d471c-sv2sg0-t9z17g-17p38.cm5.p5pv.com
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: b6269564-5974-11eb-8684-f23c913c8d2b
+  ws-headers:
+    Host: 304d471c-sv2sg0-t9z17g-17p38.cm5.p5pv.com
+  ws-path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 5|2|🇫🇷1 |  4.1MB/s
@@ -52,13 +56,17 @@ proxies:
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: '5,16,24|2|🇫🇷5 |  5.3MB/s #2'
+  name: '5,11,16,24|2|🇫🇷5 |  5.3MB/s #2'
   network: tcp
   port: '17235'
   server: 04c77dd5-sux8g0-sv9of9-lys7.cm5.p5pv.com
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 18c0664c-74f1-11ee-b51e-f23c9164ca5d
+  ws-headers:
+    Host: 04c77dd5-sux8g0-sv9of9-lys7.cm5.p5pv.com
+  ws-path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 8,30|兰 V2CROSS.COM
@@ -167,30 +175,6 @@ proxies:
       host: irvideo.cfd
     path: /linkws
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知135 16.0MB/s
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.158.171.151
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇫🇷FR-146.19.168.161-8324
-  network: ws
-  port: 443
-  server: 146.19.168.161
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      host: az05.beyondy.cfd
-    path: /link
-- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 19|🇫🇷FR-144.24.200.164-1593
@@ -226,12 +210,17 @@ proxies:
   server: 51.68.13.106
   sni: x1fr-ovh.devefun.net
   type: trojan
-- name: '20,21|🇫🇷FR-57.128.165.173-1038 #1'
+- alterId: 0
+  name: 20,21,37|未知84 3.9MB/s
+  network: tcp
   password: klZqKyxq0H
   port: 1935
   server: 57.128.165.173
+  skip-cert-verify: true
   sni: x1-england-ovh-v2.devefun.net
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '20,21|🇫🇷FR-51.77.20.137-8747 #1'
@@ -316,15 +305,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- auth: 2e332b67-b903-45a4-b03a-68c86dd6c82b
-  name: 28|法-1-1B
-  password: 2e332b67-b903-45a4-b03a-68c86dd6c82b
-  port: 19842
-  server: fr1.426624.xyz
-  skip-cert-verify: true
-  sni: rrman.org
-  type: hysteria2
-  udp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇫🇷 FR-57.128.184.1...
@@ -339,13 +319,3 @@ proxies:
     headers:
       Host: baradiha.com
     path: /linkvws
-- alterId: 0
-  name: 37|FR国
-  password: Aimer
-  port: 443
-  server: 141.11.203.168
-  skip-cert-verify: true
-  sni: epccs.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
