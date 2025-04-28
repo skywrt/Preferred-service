@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '5,11,27|12,13|俄罗斯|@ripaojiedian #2'
+  name: 5,11,24,27,36|🔒 VM-WS-TLS 🇩🇪 DE-199.247.1.99...
   network: ws
   port: '1053'
   server: 199.247.1.99
@@ -22,12 +22,18 @@ proxies:
   server: 185.242.86.156
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|1|🇺 俄罗斯 01 | 1x RU
+  name: '5,11,24,27,30|1|🇺 俄罗斯 01 | 1x RU #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36511
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,16|🇸_ES_
+  password: 0RsrcFJ1vOsWEqg3P55hvaacKfuShT0cc1h0t8AD0NA8u1uR
+  port: 31348
+  server: 92.38.171.215
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 5,11,24,27,30|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -87,19 +93,6 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- name: 16|🇺_RU_俄罗斯
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: humble-shad.dolphin109.quest
-  skip-cert-verify: true
-  sni: humble-shad.dolphin109.quest
-  type: trojan
-- name: '16|🇷🇺_RU_俄罗斯_1 #1'
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: 95.85.93.192
-  sni: correct-pelican.dolphin109.quest
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 19|🇷🇺RU-147.45.221.106-1300
   password: m30QhUjzdUtXi1tsDsF7G1
@@ -125,33 +118,26 @@ proxies:
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     path: /
-- name: 24|🇷🇺 _俄罗斯
-  password: Aimer
-  port: 8443
-  server: 92.243.74.239
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇷🇺 _俄罗斯 #1'
-  password: Aimer
-  port: 2083
-  server: 213.241.198.56
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|🇷🇺 _俄罗斯 #2'
-  password: Aimer
-  port: 2087
-  server: 5.182.84.9
-  skip-cert-verify: false
-  sni: epccs.ambercc.filegear-sg.me
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24|🇷🇺 俄罗斯 Rubtsovsk Branch of Alt...
+  network: ws
+  port: '23026'
+  server: 212.192.12.154
+  tls: false
+  type: vmess
+  uuid: c39d0e2a-486e-4458-852d-b646e2261947
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
   network: tcp
   port: '20779'
   server: 45.12.114.15
+  servername: ''
   tls: false
   type: vmess
   uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
