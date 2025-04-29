@@ -10,7 +10,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '5,11,24,27|0|🇺🇸38 |  5.8MB/s #1'
+  name: 5,24,27|1|🇸4 |  5.5MB/s
   network: tcp
   port: 5229
   server: e890417c-svc1s0-t1bnjq-1krtb.cu.plebai.net
@@ -29,9 +29,9 @@ proxies:
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
   udp: true
-- alterId: 0
+- alterId: '0'
   cipher: auto
-  name: '5,11,12,16,24|1|🇫🇷1 |  3.7MB/s #1'
+  name: 5,11,12,16,24,27|1|🇷8 |  5.4MB/s
   network: tcp
   port: '17235'
   server: 04c77dd5-sux8g0-sv9of9-lys7.cm5.p5pv.com
@@ -42,27 +42,32 @@ proxies:
   ws-headers:
     Host: 04c77dd5-sux8g0-sv9of9-lys7.cm5.p5pv.com
   ws-path: /
-- alterId: 64
+- alterId: 0
   cipher: auto
   name: 5,36|🔒 VM-TCP-NA 🇨🇳 CN-120.210.205....
   network: tcp
   port: '50002'
   server: 120.210.205.59
+  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '5,24|1|🇯🇵6 |  1.6MB/s #1'
+  name: 5,11|1|🇵10 |  5.9MB/s
   network: tcp
-  port: '17233'
+  port: 17233
   server: 666c5d9b-svfr40-t1bnjq-1krtb.cm5.p5pv.com
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  ws-headers:
+    Host: 666c5d9b-svfr40-t1bnjq-1krtb.cm5.p5pv.com
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 5,36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  name: 5|中国 - 广州市 - China Mobile - 4
   network: tcp
   port: '59003'
   server: 183.236.51.36
@@ -88,17 +93,13 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '5,27|0|🇰🇷6 |  5.8MB/s #1'
+  name: 5|0|🇰🇷6 |  5.8MB/s
   network: tcp
   port: 17232
   server: 3c409c82-svjgg0-t28b6o-ef48.cm5.p5pv.com
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-  ws-headers:
-    Host: 3c409c82-svjgg0-t28b6o-ef48.cm5.p5pv.com
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: 5|中国 - 杭州 - Hangzhou Alibaba Adv...
@@ -110,7 +111,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '5,24|_中国 #1'
+  name: '5,24|🇨🇳 广东省广州市 移动 #3'
   network: tcp
   port: '32919'
   server: 183.236.51.38
@@ -861,52 +862,9 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '24|1|🇸🇬2 |  6.3MB/s #1'
-  password: VMhGp5wEIyCDf90T
-  port: 38340
-  server: gysz0000.dynu.net
-  skip-cert-verify: true
-  sni: gysz0000.dynu.net
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 24|🇨🇳 广东省广州市 移动
-  network: tcp
-  port: '41492'
-  server: 120.232.153.123
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '24|🇨🇳 广东省湛江市 移动 #2'
-  network: tcp
-  port: '42259'
-  server: 120.198.71.216
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 24,28,30|2|🇺🇸11 |  1.7MB/s
-  network: ws
-  port: 22642
-  server: tk.hzlt.tkddns.xyz
-  servername: zxjp-b.tkong.cc
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-b.tkong.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '24|_中国 #2'
   network: tcp
   port: '41902'
   server: 183.236.51.38
@@ -915,122 +873,64 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '24|_中国 #6'
-  network: tcp
-  port: '46597'
-  server: 120.232.153.41
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '24|_中国 #7'
+  name: '24|🇨🇳 广东省广州市 移动 #1'
   network: tcp
   port: '54652'
   server: 183.236.51.38
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '24|_中国 #8'
-  network: tcp
-  port: '42355'
-  server: 120.198.71.219
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '24|_中国 #15'
-  network: ws
-  port: '35244'
-  server: jp4.vip2.g2.moonbase.life
-  tls: false
-  type: vmess
-  uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
-  ws-opts:
-    headers:
-      Host: jp4.vip2.g2.moonbase.life
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '24|_中国 #16'
-  network: ws
-  port: '35243'
-  server: jp3.vip2.g2.moonbase.life
-  tls: false
-  type: vmess
-  uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
-  ws-opts:
-    headers:
-      Host: jp3.vip2.g2.moonbase.life
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '24|_中国 #17'
-  network: ws
-  port: '35213'
-  server: jp3.g2.moonbase.life
-  tls: false
-  type: vmess
-  uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
-  ws-opts:
-    headers:
-      Host: jp3.g2.moonbase.life
-    path: /
+- name: '24|🇨🇳 广东省广州市 电信 #1'
+  password: c715b032-89f3-4bc8-b241-d55b08542e44
+  port: 27002
+  server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '24|🇭🇰 12|香港|@ripaojiedian #1'
+  password: a38c9e28-9960-4e31-9f18-ed2495a756aa
+  port: 40021
+  server: vt-bana2-cn-11.ghpgwqswodgzv.com
+  skip-cert-verify: false
+  sni: vt-bana2-cn-11.ghpgwqswodgzv.com
+  type: trojan
+- name: 24|_中国
+  password: Aimer
+  port: 2087
+  server: 154.211.8.227
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|_中国 #2'
+  password: Aimer
+  port: 443
+  server: 154.197.64.233
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|_中国 #3'
+  password: Aimer
+  port: 443
+  server: 27.50.49.208
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
 - alterId: 2
   cipher: auto
-  name: '24|_中国 #18'
+  name: 24,30|12,13|美国|@ripaojiedian
   network: ws
-  port: '30805'
-  server: v5.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v5.heduian.link
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '24|_中国 #19'
-  network: ws
-  port: '30837'
-  server: v37.heduian.link
-  tls: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v37.heduian.link
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '24|_中国 #20'
-  network: ws
-  port: '30836'
-  server: v36.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v36.heduian.link
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '24|_中国 #21'
-  network: ws
-  port: '30808'
+  port: 30808
   server: v8.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: v8.heduian.link
-    path: /
+      Host: baidu.com
+    path: /oooo
 - alterId: 0
   cipher: auto
   name: 30|2|🇸24 |  4.8MB/s
