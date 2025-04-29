@@ -29,11 +29,14 @@ proxies:
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇰🇷 韩国 02 | 1x KR #1'
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,24,27,30,37|🇷KR韩国2
+  password: 7367e483-ca8f-4dc4-93a6-ebce9dcfdd79
   port: 36313
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -60,34 +63,18 @@ proxies:
       Host: cg1c16.waimaoglobaldirect.cc
     path: /api/v1/graphql
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|1|🇷 韩国 01 | 1x KR
+  name: 5,24,27,30|1|🇷 韩国 01 | 1x KR
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 5,11,24,27|1|🇷6 |  3.0MB/s
+  name: 5,24,27|1|🇷1 |  5.7MB/s
   password: qwerREWQ@@
   port: 60125
   server: p225.panda004.net
   type: ss
-- cipher: aes-256-cfb
-  name: 5,24,27|1|🇰🇷4 |  2.4MB/s
-  password: qwerREWQ@@
-  port: 30454
-  server: p229.panda004.net
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 5,24,27|1|🇰🇷3 |  3.4MB/s
-  password: qwerREWQ@@
-  port: 3886
-  server: p241.panda004.net
-  tfo: true
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 5|0|🇰🇷7 |  6.6MB/s
@@ -107,27 +94,11 @@ proxies:
   type: vmess
   uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
 - cipher: aes-256-cfb
-  name: 5,24,27|1|🇰🇷5 |  5.1MB/s
-  password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
-  type: ss
-- cipher: aes-256-cfb
-  name: 5,27|1|11- |  6.0MB/s
+  name: 5,11|1|2 |  1.9MB/s
   password: qwerREWQ@@
   port: 11389
   server: p231.panda004.net
-  tfo: true
   type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 5,27|1|🇰🇷1 |  3.9MB/s
-  password: qwerREWQ@@
-  port: 63648
-  server: p228.panda004.net
-  tfo: true
-  type: ss
-  udp: true
 - alterId: 1
   cipher: auto
   name: 10|韩国 001
@@ -143,20 +114,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- cipher: aes-256-cfb
-  name: 11|1|🇰🇷3 |  5.6MB/s
-  password: qwerREWQ@@
-  port: 30454
-  server: 125.141.26.14
-  type: ss
-- cipher: aes-256-cfb
-  name: 11|1|🇰🇷5 |  6.0MB/s
-  password: qwerREWQ@@
-  port: 34669
-  server: p221.panda001.net
-  tfo: true
-  type: ss
-  udp: true
 - name: 17|韩国(yudou66.com 玉豆免费节点)
   network: ws
   port: 12273
@@ -221,13 +178,16 @@ proxies:
   skip-cert-verify: false
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇰🇷 _韩国 #4'
+- alterId: 0
+  name: 24,37|KR国
   password: Aimer
   port: 18108
   server: 220.123.48.124
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epcca.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇰🇷 _韩国 #5'
   password: Aimer
   port: 12336
@@ -269,6 +229,167 @@ proxies:
   server: 120.232.217.96
   skip-cert-verify: true
   type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 27|1|🇰🇷3 |  5.6MB/s
+  password: qwerREWQ@@
+  port: 30454
+  server: 125.141.26.14
+  type: ss
+- cipher: aes-256-cfb
+  name: 27|1|🇰🇷5 |  6.0MB/s
+  password: qwerREWQ@@
+  port: 34669
+  server: p221.panda001.net
+  tfo: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '28|韩国1IEPL|1X '
+  port: 26061
+  server: iepl-l.blue-bgp.xyz
+  tls: ''
+  type: vmess
+  udp: true
+  uuid: 2a06b971-edfe-4e4b-9bd2-db5007889014
+- alterId: 0
+  cipher: auto
+  name: 28|\ud83c\uddf0\ud83c\uddf7韩国01|1...
+  port: 34241
+  server: gg.youaremygod.top
+  tls: ''
+  type: vmess
+  udp: true
+  uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
+- cipher: chacha20-ietf-poly1305
+  name: 28|%F0%9F%87%B0%F0%9F%87%B7KR%20%...
+  password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
+  port: 49973
+  server: node-a.dlg365.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '28|KR.%E9%9F%A9%E5%9B%BD.A '
+  password: a01b5e27-ece5-4675-866f-36b23a65d2a8
+  port: 33167
+  server: xckr.cokecloud.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|KR.%E9%9F%A9%E5%9B%BD.B%20%7C%...
+  password: a01b5e27-ece5-4675-866f-36b23a65d2a8
+  port: 28595
+  server: xckr.cokecloud.top
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: '28|韩国ChatGPT2 '
+  port: 11213
+  server: 13.wogg1.top
+  tls: ''
+  type: vmess
+  udp: true
+  uuid: 7234ac18-c61d-3d60-a866-057af106620c
+- alterId: 2
+  cipher: auto
+  name: '28|韩国ChatGPT3 '
+  port: 11214
+  server: 14.wogg1.top
+  tls: ''
+  type: vmess
+  udp: true
+  uuid: 7234ac18-c61d-3d60-a866-057af106620c
+- alterId: 2
+  cipher: auto
+  name: '28|韩国chatgpt3 '
+  port: 11215
+  server: 15.wogg1.top
+  tls: ''
+  type: vmess
+  udp: true
+  uuid: 48af369b-07f9-30f3-9210-354bd85eea27
+- cipher: chacha20-ietf-poly1305
+  name: 28|IEPL%20%C2%B7%20%E9%9F%A9%E5%9...
+  password: 8ebac1bc-40d5-4db8-9e99-196b1045d879
+  port: 16115
+  server: 183.240.116.150
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '28|IEPL%20%C2%B7%20%E9%9F%A9%E5%9... #1'
+  password: 8ebac1bc-40d5-4db8-9e99-196b1045d879
+  port: 16117
+  server: 183.240.116.150
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|KR%20%E9%9F%A9%E5%9B%BD2%E8%A7...
+  password: 3daed8e2-be3b-4aa5-94be-de252f4ebf52
+  port: 52513
+  server: hry200.2228333.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: '28|KR-IDC-%E8%8A%82%E7%82%B92 '
+  password: 4df7feab-745c-49ba-8aae-3ee3d8e5d00a
+  port: 30001
+  server: 146.56.132.194
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '28|[3X]韩国 专线NO1 '
+  port: 45076
+  server: haa.dashuai.cyou
+  tls: ''
+  type: vmess
+  udp: true
+  uuid: 432f9b6c-0b44-4396-ae24-ea72d5b91828
+- cipher: chacha20-ietf-poly1305
+  name: 28|KR%20%E9%9F%A9%E5%9B%BD1%5B%E8...
+  password: 3daed8e2-be3b-4aa5-94be-de252f4ebf52
+  port: 52512
+  server: hry100.2228333.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '28|IEPL%20%C2%B7%20%E9%9F%A9%E5%9... #2'
+  password: 8ebac1bc-40d5-4db8-9e99-196b1045d879
+  port: 16116
+  server: 183.240.116.150
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: '28|KR-IDC-%E8%8A%82%E7%82%B91 '
+  password: 4df7feab-745c-49ba-8aae-3ee3d8e5d00a
+  port: 30000
+  server: 146.56.132.194
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '28|🇰🇷 '
+  network: ws
+  port: 11002
+  server: kr1.vm.node.11161116.xyz
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e559086-2e45-42ec-926d-cf5c659c84a7
+  ws-opts:
+    headers:
+      Host: live.bilibili.com
+    path: /
+- auth: 365a7b06-7f28-4cfd-9e09-46121f3763c9
+  name: '28|🇰🇷  #1'
+  password: 365a7b06-7f28-4cfd-9e09-46121f3763c9
+  port: 8080
+  server: kr-02.hotfox.top
+  skip-cert-verify: false
+  sni: kr-02.hotfox.top
+  type: hysteria2
   udp: true
 - alterId: 0
   cipher: auto
