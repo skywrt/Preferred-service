@@ -7,7 +7,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,27,30|0|🇦加拿大 01 | 1x CA
+  name: 5,9,11,24,27,30|0|🇦加拿大 01 | 1x CA
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31441
   server: free.2apzhfa.xyz
@@ -403,9 +403,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|加拿大 002
+  name: '10,24|🇺🇸 美国 CloudFlare节点 #6'
   network: ws
-  port: 8880
+  port: '8880'
   server: s4.db-link02.top
   skip-cert-verify: true
   tfo: false
@@ -487,6 +487,13 @@ proxies:
     headers:
       Host: www.bing.com
     path: github.com/Alvin9999
+- cipher: chacha20-ietf-poly1305
+  name: 19,20,21,28|bing2180
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -502,6 +509,13 @@ proxies:
     headers:
       host: ''
     path: /IOebhLMhl1CTbFHbL95myfRX2
+- cipher: aes-128-gcm
+  name: 20,21,28|bing2508
+  password: shadowsocks
+  port: 443
+  server: 149.22.95.183
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '20,21|🇨🇦CA-23.162.200.227-8592 #1'
@@ -570,31 +584,30 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- name: 24,30|14|CN_speednode_0063
-  password: e254ed63-33df-4ca8-a980-7d0d9f510a93
-  port: 34016
-  server: aafrtpfxr.cal01i9zjfegelp.5xfsur8v62.gosdk.xyz
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
+- name: 28|🇨🇦 bing3208
+  password: telegram-id-directvpn
+  port: 22222
+  server: 35.182.28.134
   type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇦  CA-MONTREAL-N
-  password: 28456794-ffe8-409c-bfbf-01668d4c4592
-  port: 57016
-  server: vtcm.vttopysk.com
-  type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
-  network: tcp
-  port: '58891'
-  server: 91.194.11.162
-  servername: ''
-  tls: false
+  name: 28|🇨🇦 bing3531
+  port: 80
+  server: 51.79.102.253
+  tls: ''
   type: vmess
-  uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
+  udp: true
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+- alterId: 0
+  cipher: auto
+  name: 28|🇨🇦 bing3550
+  port: 443
+  server: 192.46.232.247
+  tls: ''
+  type: vmess
+  udp: true
+  uuid: 2c0b70b9-c068-4b24-d2d3-422ecb0f8620
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.11...
@@ -605,6 +618,16 @@ proxies:
   tls: false
   type: vmess
   uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
+  network: tcp
+  port: '58891'
+  server: 91.194.11.162
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17...
