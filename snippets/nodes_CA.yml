@@ -1,4 +1,24 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,30|0|🇦加拿大 01 | 1x CA
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 5,24,27|2|🇦1 |  5.3MB/s
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 5,9,11,24,27,30,37|CA
@@ -7,13 +27,6 @@ proxies:
   server: free.2weradf.xyz
   skip-cert-verify: true
   tls: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0|🇦加拿大 01 | 1x CA
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31441
-  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -406,10 +419,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,24|🇺🇸 美国 CloudFlare节点 #6'
+  name: '10,20,21|🏁RELAY-198.41.209.70-1409 #1'
   network: ws
-  port: '8880'
+  port: 8880
   server: s4.db-link02.top
+  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -436,11 +450,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-104.17.221.248-1418 #1'
+  name: 10|加拿大 006
   network: ws
   port: 2082
   server: s1.cn-db.top
-  servername: ''
   tls: false
   type: vmess
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
@@ -450,11 +463,10 @@ proxies:
     path: /dabai.in172.64.27.73
 - alterId: 0
   cipher: auto
-  name: '10,20,21|🏁RELAY-198.41.209.70-1420 #1'
+  name: 10|加拿大 001
   network: ws
   port: 80
   server: s4.db-link02.top
-  servername: ''
   tls: false
   type: vmess
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
@@ -490,6 +502,18 @@ proxies:
     headers:
       Host: www.bing.com
     path: github.com/Alvin9999
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇨🇦CA-142.4.216.225-1090
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇨🇦CA-142.4.216.225-1078
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: ca225.vpnbook.com
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -507,7 +531,7 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-23.162.200.227-8592 #1'
+  name: '20,21|🇨🇦CA-23.162.200.227-8604 #1'
   network: ws
   port: 443
   server: 23.162.200.227
@@ -521,7 +545,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-134.195.198.147-8616 #1'
+  name: '20,21|🇨🇦CA-134.195.198.147-8591 #1'
   network: ws
   port: 443
   server: 134.195.198.147
@@ -533,20 +557,6 @@ proxies:
     headers:
       Host: inna.cfd
     path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 20,21,24|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
-  network: ws
-  port: 80
-  server: 51.79.102.253
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: 51.79.102.253
-    path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
   name: 23|🇨🇦_CA_加拿大
@@ -561,6 +571,20 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
+  name: 24|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
+  network: ws
+  port: 80
+  server: 51.79.102.253
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: 51.79.102.253
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
   name: '24|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP... #1'
   network: ws
   port: 80
@@ -573,32 +597,6 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  name: 28|🇨🇦 bing125
-  port: 30338
-  server: 36.151.194.33
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 58c11f74-e35e-4b0b-90a6-5e2d709b77e6
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇨🇦 bing290
-  password: 9140a038-ea08-44f6-bcf6-b2cfdd0c5db3
-  port: 49883
-  server: wh1-ahmddlekrnnse6ta.bestzumo.com
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17...
-  network: tcp
-  port: '28984'
-  server: 91.194.11.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.11...
@@ -619,3 +617,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17...
+  network: tcp
+  port: '28984'
+  server: 91.194.11.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
