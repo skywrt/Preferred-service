@@ -59,16 +59,20 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '5,24|3|🇹🇼6 |  6.2MB/s #2'
+  name: '5,11,24|3|🇹🇼6 |  6.2MB/s #2'
   network: tcp
   port: '3687'
   server: 1cea2198-sukw00-sv3y7m-1glq.a.fosant.com
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: df7bed3c-06eb-11f0-8ebc-f23c93141fad
+  ws-headers:
+    Host: 1cea2198-sukw00-sv3y7m-1glq.a.fosant.com
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '5|广东省汕头市 移动 #2'
+  name: 5,11|1|🇵1 |  2.3MB/s
   network: tcp
   port: 17233
   server: bf20b8b1-svhls0-svtxnz-1rgxu.cm5.p5pv.com
@@ -84,7 +88,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-- name: '5,9,11,24,27|13,14|香港4|@ripaojiedian #1'
+- name: '5,9,11,24,27|12,13|香港4|@ripaojiedian #1'
   network: tcp
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: 8313
@@ -946,15 +950,6 @@ proxies:
   uuid: 8de795d2-a06f-11ed-8edf-f23c913c8d2b
 - alterId: 0
   cipher: auto
-  name: '24|🇨🇳 广东省 移动 #2'
-  network: tcp
-  port: '15228'
-  server: f641bba8-supts0-svp9t7-1oijm.cm.plebai.net
-  tls: false
-  type: vmess
-  uuid: bf140bc0-3f68-11ee-953a-f23c9164ca5d
-- alterId: 0
-  cipher: auto
   name: '24|🇨🇳 广东省汕头市 移动 #1'
   network: tcp
   port: '17233'
@@ -973,17 +968,13 @@ proxies:
   uuid: 7734370a-8480-11ee-ab76-f23c91cfbbc9
 - alterId: 0
   cipher: auto
-  name: 24,27|3|🇬2 |  1.3MB/s
+  name: '24|🇨🇳 广东省汕头市 移动 #3'
   network: tcp
-  port: 17231
+  port: '17231'
   server: 5c460570-sux8g0-tbfsbm-nde6.cm5.p5pv.com
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: b19e8df4-fba9-11ea-9777-f23c9164ca5d
-  ws-headers:
-    Host: 5c460570-sux8g0-tbfsbm-nde6.cm5.p5pv.com
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: '24|🇨🇳 广东省汕头市 移动 #5'
@@ -1018,6 +1009,22 @@ proxies:
   skip-cert-verify: true
   sni: gysz0000.dynu.net
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24,27|2|🇵7 |  1.9MB/s
+  network: ws
+  port: 35213
+  server: jp3.g2.moonbase.life
+  servername: web.xcjs.info
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
+  ws-opts:
+    headers:
+      Host: web.xcjs.info
+    path: /home
 - alterId: 0
   cipher: auto
   name: '24|🇨🇳 广东省 移动 #6'
