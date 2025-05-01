@@ -1,24 +1,18 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|国 01 | 1x DE #1'
+  name: '5,11,24,27,30|0|国 01 | 1x DE #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,30|1|🇪 德国 01 | 1x DE #1'
+  name: '5,11,24,27,30|1|🇪 德国 01 | 1x DE #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: rc4-md5
-  name: 5,11,12,19,20,21,27|3|🇪5 |  1.4MB/s
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
 - name: 8|🇩🇪DE-52.58.179.46-180_1@180
   password: telegram-id-privatevpns
   port: 22222
@@ -77,21 +71,9 @@ proxies:
   port: 1866
   server: 185.177.229.245
   type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-6032
-  password: rpgbNnU9rDDU4aWZ
-  port: 9094
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-3215
-  password: M3t2ZEQcMGRWBjRa
-  port: 9011
-  server: 80.92.204.106
-  type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.64.238-8621 #1'
+  name: '20,21|🇩🇪DE-57.129.64.238-8344 #1'
   network: ws
   port: 443
   server: 57.129.64.238
@@ -105,7 +87,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.28.65-8598 #1'
+  name: '20,21|🇩🇪DE-57.129.28.65-8332 #1'
   network: ws
   port: 443
   server: 57.129.28.65
@@ -119,7 +101,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-8619 #1'
+  name: '20,21|🇩🇪DE-57.129.24.125-8331 #1'
   network: ws
   port: 443
   server: 57.129.24.125
@@ -131,27 +113,51 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-193.122.58.158-2912 #1'
+  network: ws
+  port: 443
+  server: 193.122.58.158
+  servername: irvideo.cfd
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /linkws
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇩🇪 bing769
-  password: e90b202a-2f0e-4750-89e3-69dfad80f42b
-  port: 36617
-  server: zz002.airport.lat
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇩🇪 bing826
-  password: e90b202a-2f0e-4750-89e3-69dfad80f42b
-  port: 20200
-  server: zz001.airport.lat
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇩🇪 bing876
+  name: 28|🇩🇪 bing400
   password: ae775f17-dffd-4741-85b3-b4fe3016db84
   port: 22231
   server: hn.qlrk0.cc
   type: ss
   udp: true
+- cipher: aes-256-gcm
+  name: 28|🇩🇪 bing406
+  password: ceb96b16-aebb-4d33-b87a-291f0bc90aeb
+  port: 47084
+  server: de01.jiasudu.buzz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇩🇪 bing633
+  password: da639dc4-bdfa-447c-b6cc-001df0f7060b
+  port: 36617
+  server: zz002.airport.lat
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-91.107.247.1...
+  network: tcp
+  port: '30919'
+  server: 91.107.247.104
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4976466c-abb4-4353-add6-8c6b4f3859bc
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
@@ -161,26 +167,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
-  network: httpupgrade
-  port: '2096'
-  server: 104.21.112.1
-  servername: fars.twn24.ir
-  tls: true
-  type: vmess
-  uuid: 70529c09-68fb-4265-a9c2-2f45a35434c0
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -207,13 +193,3 @@ proxies:
     headers:
       Host: vpn.techbytehub.de
     path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-91.107.247.1...
-  network: tcp
-  port: '30919'
-  server: 91.107.247.104
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4976466c-abb4-4353-add6-8c6b4f3859bc
