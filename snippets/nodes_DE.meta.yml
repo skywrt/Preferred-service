@@ -57,7 +57,7 @@ proxies:
   ws-opts:
     path: /telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|国 01 | 1x DE #2'
+  name: '5,11,24,27,30|0|国 01 | 1x DE #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31471
   server: free.2apzhfa.xyz
@@ -108,7 +108,7 @@ proxies:
   udp: true
   uuid: f0aff159-89b2-4aea-9974-9f3ca526c49d
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|1|🇪 德国 01 | 1x DE
+  name: 5,24,30|1|🇪 德国 01 | 1x DE
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36471
   server: free.2weradf.xyz
@@ -131,6 +131,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
+- cipher: rc4-md5
+  name: 12,19,20,21,24,27|2|7 |  5.3MB/s
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -174,9 +180,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.64.238-8344 #1'
+  name: 20,21,36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.64.23...
   network: ws
-  port: 443
+  port: '443'
   server: 57.129.64.238
   servername: kapelleng.com
   tls: true
@@ -235,44 +241,54 @@ proxies:
   skip-cert-verify: false
   sni: cpuhot.boshrachoice.ir.
   type: trojan
-- cipher: aes-256-gcm
-  name: 28|🇩🇪 bing129
-  password: 77afa0fa-e5d9-4fea-925b-74168a1fcb9b
-  port: 47084
-  server: de01.jiasudu.buzz
-  type: ss
-  udp: true
-- auth: 82ae7e9b-bb31-4274-a6f2-42f5db127af4
-  name: 28|🇩🇪 bing544
-  password: 82ae7e9b-bb31-4274-a6f2-42f5db127af4
-  port: 7009
-  server: d.eans.top
+- auth: ef4514d8-e27e-45ab-babf-8dec1a7967b7
+  name: 28|🇩🇪 bing81
+  password: ef4514d8-e27e-45ab-babf-8dec1a7967b7
+  port: 19842
+  server: du2cf.731732.xyz
   skip-cert-verify: false
-  sni: d.eans.top
+  sni: du2cf.731732.xyz
   type: hysteria2
   udp: true
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
-  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
-  network: grpc
-  port: '15145'
-  server: 88.198.172.25
-  servername: ''
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 28|🇩🇪 bing494
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: PaAaDWyG_MhYTIhEHrLJusbrG35KN266mHqeISOb7n4
+    short-id: 8dc4a6c4
+  server: deuf1.731732.xyz
+  servername: www.uni-stuttgart.de
   tls: true
-  type: vmess
-  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+  type: vless
+  uuid: ef4514d8-e27e-45ab-babf-8dec1a7967b7
+- auth: ef4514d8-e27e-45ab-babf-8dec1a7967b7
+  name: 28|🇩🇪 bing959
+  password: ef4514d8-e27e-45ab-babf-8dec1a7967b7
+  port: 19842
+  server: deul.731732.xyz
+  skip-cert-verify: false
+  sni: deul.731732.xyz
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇩🇪 bing1118
+  password: 3459e7fb-4dc7-4156-99c8-85e4b3d345f3
+  port: 46473
+  server: ambnds00.dorabbb.top
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
   network: httpupgrade
-  port: '2096'
-  server: 104.21.112.1
-  servername: fars.twn24.ir
-  tls: true
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 70529c09-68fb-4265-a9c2-2f45a35434c0
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇩🇪 DE-85.215.229.21...
@@ -299,6 +315,16 @@ proxies:
   uuid: 4976466c-abb4-4353-add6-8c6b4f3859bc
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
+  network: httpupgrade
+  port: '2096'
+  server: 104.21.112.1
+  servername: fars.twn24.ir
+  tls: true
+  type: vmess
+  uuid: 70529c09-68fb-4265-a9c2-2f45a35434c0
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
   network: tcp
   port: 5008
@@ -306,3 +332,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
+  network: grpc
+  port: '15145'
+  server: 88.198.172.25
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
