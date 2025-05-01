@@ -8,7 +8,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇰🇷 韩国 02 | 1x KR #2'
+  name: '5,9,11,24,30|1|🇰🇷 韩国 02 | 1x KR #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36313
   server: free.2weradf.xyz
@@ -21,6 +21,12 @@ proxies:
   skip-cert-verify: true
   sni: k16.tudou211.com
   type: trojan
+- cipher: aes-256-cfb
+  name: 5,20,21,27|3|🇷6 |  2.3MB/s
+  password: qwerREWQ@@
+  port: 63648
+  server: 125.141.26.15
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 5,9,11,24,27,30|0|🇷国 01 | 1x KR
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -29,7 +35,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇷韩国 02 | 1x KR #2'
+  name: '5,9,11,24,27,30|0|🇷韩国 02 | 1x KR #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31313
   server: free.2apzhfa.xyz
@@ -46,7 +52,7 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30,37|KR国
+  name: 5,9,11,24,30,37|KR国
   password: 05f83440-dc16-4ea1-a55e-d3f753f97e7f
   port: 36311
   server: free.2weradf.xyz
@@ -54,33 +60,30 @@ proxies:
   tls: true
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 9,27|3|🇷1 |  4.6MB/s
-  password: qwerREWQ@@
-  port: 63648
-  server: p228.panda004.net
-  type: ss
-  udp: true
-- alterId: 1
+- alterId: 0
   cipher: auto
-  name: 10|韩国 001
-  network: ws
-  port: 8080
-  server: 140.238.28.227
-  skip-cert-verify: false
-  tfo: false
+  delay: 1952
+  name: 11,27|3|🇷10 |  2.1MB/s
+  port: 17232
+  server: 80ec9abb-svsps0-t6fl0c-1r7od.cm5.p5pv.com
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
-  ws-opts:
-    headers:
-      Host: download.windowsupdate.com
-    path: /download
+  udp: true
+  uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
 - cipher: aes-256-cfb
-  name: 11|2|🇰🇷5 |  1.4MB/s
+  name: 11,27|3|🇰🇷5 |  1.4MB/s
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
+  tfo: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 11,24,27|3|🇷8 |  4.1MB/s
+  password: qwerREWQ@@
+  port: 11389
+  server: p231.panda004.net
   tfo: true
   type: ss
   udp: true
@@ -134,6 +137,13 @@ proxies:
     headers:
       Host: cg1c16.waimaoglobaldirect.cc
     path: /api/v1/graphql
+- name: '24|3|🇰🇷3 |  6.4MB/s #1'
+  password: c94c5bad-2456-479b-9b58-c332f150319f
+  port: 36049
+  server: zz1.jckumao.cc
+  skip-cert-verify: true
+  sni: zz1.jckumao.cc
+  type: trojan
 - name: 26|V2-韩国03∣K16线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21017
@@ -141,13 +151,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  delay: 881
-  name: 27|3|🇰🇷9 |  5.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.124.130.158
-  type: ss
 - cipher: aes-256-gcm
   name: 28|🇰🇷 bing217
   password: 3c42481d-a84d-4512-bda9-62ff3f188ca7

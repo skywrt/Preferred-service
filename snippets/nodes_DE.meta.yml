@@ -55,14 +55,14 @@ proxies:
   udp: false
   uuid: 2d243e76-01c2-47c8-b700-0fe0964d8ef3
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|国 01 | 1x DE #2'
+  name: '5,9,11,24,27,30|0|国 01 | 1x DE #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇪 德国 01 | 1x DE #2'
+  name: '5,9,11,24,30|1|🇪 德国 01 | 1x DE #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36471
   server: free.2weradf.xyz
@@ -103,6 +103,12 @@ proxies:
   type: vless
   udp: true
   uuid: f0aff159-89b2-4aea-9974-9f3ca526c49d
+- cipher: rc4-md5
+  name: 5,11,12,19,20,21,27|3|🇪5 |  1.4MB/s
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 5|2|🇩🇪4 |  1.3MB/s
@@ -184,9 +190,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 20,21,36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.64.23...
+  name: '20,21|🇩🇪DE-57.129.64.238-8621 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 57.129.64.238
   servername: kapelleng.com
   tls: true
@@ -247,6 +253,15 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
   network: httpupgrade
   port: '2095'
@@ -255,25 +270,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-91.107.247.1...
-  network: tcp
-  port: '30919'
-  server: 91.107.247.104
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4976466c-abb4-4353-add6-8c6b4f3859bc
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
-  tls: false
-  type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
@@ -310,3 +306,13 @@ proxies:
     headers:
       Host: vpn.techbytehub.de
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-91.107.247.1...
+  network: tcp
+  port: '30919'
+  server: 91.107.247.104
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4976466c-abb4-4353-add6-8c6b4f3859bc
