@@ -1,13 +1,13 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇪 德国 01 | 1x DE #2'
+  name: 5,9,11,24,27,30|1|🇪 德国 01 | 1x DE
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|国 01 | 1x DE #2'
+  name: 5,9,11,24,27,30|0|国 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31471
   server: free.2apzhfa.xyz
@@ -30,13 +30,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- cipher: rc4-md5
-  name: 9,19|🇩🇪DE-193.108.119.230-0910
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-  udp: true
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -51,6 +44,12 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
+- cipher: rc4-md5
+  name: 19|🇩🇪DE-193.108.119.230-0910
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 19|🇩🇪DE-85.208.139.31-6186
   password: q7jwtcA0MmyYi0JddUgXXj
@@ -132,48 +131,51 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇩🇪 bing280
-  password: 13ff3604-84f1-410c-b166-6b97a12249ac
-  port: 20200
-  server: de01.airport.lat
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 28|🇩🇪 bing488
-  password: 91b54674-0261-4b43-911e-196e8dc4d2f2
-  port: 47084
-  server: de01.jiasudu.buzz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 28|🇩🇪 bing1096
+  name: 28|🇩🇪 bing722
   network: ws
-  port: 58610
-  server: 183.240.228.220
+  port: 443
+  server: akdev6.12ip.cc
   tls: false
   type: vmess
   udp: true
-  uuid: ec504ddb-6293-497e-8b41-47bae996e379
+  uuid: f830f1e7-dc02-456c-842c-c221e164999b
   ws-opts:
     headers:
-      Host: www.baidu.com
+      Host: akdev6.12ip.cc
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.25.22...
-  network: ws
-  port: 443
-  server: 57.129.25.22
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  grpc-opts:
+    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
+  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
+  network: grpc
+  port: '15145'
+  server: 88.198.172.25
+  servername: ''
   tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: o.metuji.com
-    path: /linkvws
+  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
+  network: httpupgrade
+  port: '2096'
+  server: 172.67.142.21
+  servername: iribtv3.andishehnegariran.ir
+  tls: true
+  type: vmess
+  uuid: 0dbc96f2-10fc-4574-81cd-366e8dc7ac02
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇩🇪 DE-85.215.229.21...
@@ -190,32 +192,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  grpc-opts:
-    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
-  name: 36|🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172....
-  network: grpc
-  port: '15145'
-  server: 88.198.172.25
-  servername: ''
+  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.25.22...
+  network: ws
+  port: 443
+  server: 57.129.25.22
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   tls: true
   type: vmess
-  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
-  tls: false
-  type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: o.metuji.com
+    path: /linkvws
