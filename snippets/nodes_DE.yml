@@ -1,16 +1,16 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|国 01 | 1x DE #1'
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|1|🇪 德国 01 | 1x DE
+  name: '5,9,11,24,27,30|1|🇪 德国 01 | 1x DE #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36471
   server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,11,24,27,30|0|国 01 | 1x DE #2'
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31471
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - name: 8|🇩🇪DE-52.58.179.46-180_1@180
@@ -85,7 +85,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.64.238-8578 #1'
+  name: '20,21|🇩🇪DE-57.129.64.238-8501 #1'
   network: ws
   port: 443
   server: 57.129.64.238
@@ -99,21 +99,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-8585 #1'
-  network: ws
-  port: 443
-  server: 57.129.24.125
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-57.129.28.65-8576 #1'
+  name: '20,21|🇩🇪DE-57.129.28.65-8525 #1'
   network: ws
   port: 443
   server: 57.129.28.65
@@ -126,16 +112,19 @@ proxies:
       Host: kapelleng.com
     path: /linkvws
 - alterId: 0
-  name: 20,21,37|未知79 615.1KB/s
-  network: tcp
-  password: pqlnPNu423
-  port: 1935
-  server: 57.129.89.172
-  skip-cert-verify: true
-  sni: x1-germany-ovh-v2.devefun.net
+  cipher: auto
+  name: '20,21|🇩🇪DE-57.129.24.125-8498 #1'
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  servername: ''
   tls: true
-  type: trojan
-  udp: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
 - name: 24|🇩🇪 _德国
   password: Aimer
   port: 2053
@@ -145,23 +134,28 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
-  tls: false
-  type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-91.107.247.1...
-  network: tcp
-  port: '30919'
-  server: 91.107.247.104
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
   servername: ''
   tls: false
   type: vmess
-  uuid: 4976466c-abb4-4353-add6-8c6b4f3859bc
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇩🇪 DE-85.215.229.21...
+  network: ws
+  port: '27797'
+  server: 85.215.229.219
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ff5085f9-7114-4ab8-a983-e1132475b128
+  ws-opts:
+    headers:
+      Host: vpn.techbytehub.de
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.24.12...
@@ -190,25 +184,10 @@ proxies:
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
-  network: httpupgrade
-  port: '2096'
-  server: 172.67.142.21
-  servername: iribtv3.andishehnegariran.ir
-  tls: true
-  type: vmess
-  uuid: 0dbc96f2-10fc-4574-81cd-366e8dc7ac02
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇩🇪 DE-85.215.229.21...
-  network: ws
-  port: '27797'
-  server: 85.215.229.219
-  servername: ''
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
   tls: false
   type: vmess
-  uuid: ff5085f9-7114-4ab8-a983-e1132475b128
-  ws-opts:
-    headers:
-      Host: vpn.techbytehub.de
-    path: /
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
