@@ -64,7 +64,7 @@ proxies:
   type: vless
   uuid: 7a12ccb8-c431-4cc0-ace9-a994cc4b2ca7
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0|国 01 | 1x DE
+  name: '5,9,11,24,27,30|0|国 01 | 1x DE #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31471
   server: free.2apzhfa.xyz
@@ -190,7 +190,7 @@ proxies:
       Host: kapelleng.com
     path: /linkvws
 - alterId: 0
-  name: 20,21,37|未知46 4.1MB/s
+  name: 20,21,37|未知79 615.1KB/s
   network: tcp
   password: pqlnPNu423
   port: 1935
@@ -209,16 +209,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-91.107.247.1...
-  network: tcp
-  port: '30919'
-  server: 91.107.247.104
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4976466c-abb4-4353-add6-8c6b4f3859bc
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
   network: tcp
   port: 5008
@@ -228,28 +218,14 @@ proxies:
   uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-91.107.247.1...
+  network: tcp
+  port: '30919'
+  server: 91.107.247.104
   servername: ''
   tls: false
   type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇩🇪 DE-85.215.229.21...
-  network: ws
-  port: '27797'
-  server: 85.215.229.219
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ff5085f9-7114-4ab8-a983-e1132475b128
-  ws-opts:
-    headers:
-      Host: vpn.techbytehub.de
-    path: /
+  uuid: 4976466c-abb4-4353-add6-8c6b4f3859bc
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.24.12...
@@ -286,3 +262,46 @@ proxies:
   tls: true
   type: vmess
   uuid: 0dbc96f2-10fc-4574-81cd-366e8dc7ac02
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇩🇪 DE-85.215.229.21...
+  network: ws
+  port: '27797'
+  server: 85.215.229.219
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ff5085f9-7114-4ab8-a983-e1132475b128
+  ws-opts:
+    headers:
+      Host: vpn.techbytehub.de
+    path: /
+- client-fingerprint: chrome
+  name: 40|DE_speednode_0064
+  network: ws
+  port: 80
+  server: 140.99.233.58
+  servername: feng.ipy29c99.workers.dev
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 046da250-d5ef-4867-9095-302477d54d20
+  ws-opts:
+    headers:
+      Host: feng.ipy29c99.workers.dev
+    path: /Telegram@WangCai2/?ed=2048
+- name: 40|DE_speednode_0065
+  network: ws
+  port: 443
+  server: 95.164.47.60
+  servername: de02.abvpn.ru
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 588f094b-431b-422c-b80b-007945037072
+  ws-opts:
+    headers:
+      Host: de02.abvpn.ru
+    path: /websocket

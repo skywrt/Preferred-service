@@ -185,15 +185,6 @@ proxies:
   server: 45.158.171.146
   type: ss
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知70 2.4MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.158.171.110
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 19|🇫🇷FR-163.5.159.231-8334
@@ -208,6 +199,15 @@ proxies:
     headers:
       host: irvideo.cfd
     path: /linkws
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知84 23.8MB/s
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.158.171.132
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -255,7 +255,7 @@ proxies:
     path: /link
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 20,21,37|未知110 2.4MB/s
+  name: 20,21,37|未知69 26.7MB/s
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.158.171.141
@@ -324,23 +324,32 @@ proxies:
   server: 51.68.13.106
   sni: x1fr-ovh.devefun.net
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇫🇷FR-51.77.20.140-8607 #1'
+  network: ws
+  port: 443
+  server: kapelleng.com
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
 - name: '20,21|🇫🇷FR-141.227.160.88-1079 #1'
   password: OLq0FfOlp7
   port: 1935
   server: 141.227.160.88
   sni: x1-sweden-ovh-v2.devefun.net
   type: trojan
-- alterId: 0
-  name: 20,21,37|未知92 5.3MB/s
-  network: tcp
+- name: '20,21|🇫🇷FR-57.128.165.173-1067 #1'
   password: klZqKyxq0H
   port: 1935
   server: 57.128.165.173
-  skip-cert-verify: true
   sni: x1-england-ovh-v2.devefun.net
-  tls: true
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 20,21,23|法国4 | ⬇️ 4.0MB/s
@@ -383,13 +392,16 @@ proxies:
     headers:
       Host: xmivideo.cfd
     path: /linkws
-- name: 24|🇫🇷 法国 巴黎Amazon数据中心
+- alterId: 0
+  name: 24,37|FR国
   password: telegram-id-privatevpns
   port: 22222
   server: 52.47.110.167
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - name: 26|V2-日本01∣K11线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21146
@@ -414,3 +426,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 8371146b-a577-4ffb-bd04-bfcc42fdd10a
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 40|FR_speednode_0068
+  port: 25481
+  reality-opts:
+    public-key: uF7Fv79MbpkF2x_bDeXezdkMrI-vGS3UDNAwLzIKZTo
+    short-id: d72dc8a0
+  server: 51.15.228.68
+  servername: www.7-zip.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 67d1e140-d8c8-4e4c-be1f-9800a1bcad38
