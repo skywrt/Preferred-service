@@ -1,42 +1,22 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 5,11,24,27|2|🇵1 |  2.3MB/s
+  name: '5,24|2|🇰🇷9 |  1.5MB/s #1'
   network: tcp
-  port: 17233
-  server: bf20b8b1-svhls0-svtxnz-1rgxu.cm5.p5pv.com
+  port: '17232'
+  server: afc8577f-svc1s0-tc67m2-1tjc4.cm5.p5pv.com
   tls: false
   type: vmess
-  uuid: ea93064c-176c-11f0-885d-f23c91cfbbc9
+  uuid: fac704ae-0304-11f0-a2ef-f23c91cfbbc9
 - alterId: 0
   cipher: auto
-  name: 5,11,12,24,27|2|🇸11 |  2.2MB/s
+  name: '5,12,24|2|🇺🇸69 |  3.4MB/s #1'
   network: tcp
-  port: 5229
-  server: 6faf81e8-svdwg0-t1bnjq-1krtb.cu.plebai.net
-  skip-cert-verify: true
+  port: '5229'
+  server: 5d38531f-sum4g0-svq8ok-ebxr.cu.plebai.net
   tls: false
   type: vmess
-  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  ws-headers:
-    Host: 6faf81e8-svdwg0-t1bnjq-1krtb.cu.plebai.net
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: 5,36|🔒 VM-TCP-NA 🇨🇳 CN-120.210.205....
-  network: tcp
-  port: '50002'
-  server: 120.210.205.59
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '5,24|🇨🇳 广东省广州市 电信 #1'
-  password: 605da4ca-03f7-4f12-b89c-d2aaae66bde9
-  port: 43394
-  server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
+  uuid: 5cfde7fa-ed1b-11ef-b5d9-f23c9164ca5d
 - alterId: 0
   cipher: auto
   name: 5|中国 - 北京 - Hangzhou Alibaba Adv...
@@ -46,15 +26,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 5|广东省 移动
+  name: 5,36|🔒 VM-TCP-NA 🇨🇳 CN-120.210.205....
   network: tcp
-  port: '15229'
-  server: fc4de86a-sv8cg0-sv995i-xz4l.cm.plebai.net
+  port: '50002'
+  server: 120.210.205.59
   tls: false
   type: vmess
-  uuid: 8c3ef4c2-980d-11ef-add7-f23c913c8d2b
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 5|广东省广州市+电信
+  password: 7825219e-38a1-45d6-bfdc-9e4bba7db55d
+  port: 43586
+  server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 8|🇨🇳CN-139.227.223.3-049_1@49
@@ -672,20 +657,6 @@ proxies:
   ws-path: /debian
 - alterId: 2
   cipher: auto
-  name: '12,24|_中国 #47'
-  network: ws
-  port: '30805'
-  server: v5.heduian.link
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
-- alterId: 2
-  cipher: auto
   name: 16,30|🇨🇳_CN_中国->_CA_加
   network: ws
   port: 30835
@@ -804,6 +775,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: '24|🇨🇳 广东省广州市 电信 #1'
+  password: 605da4ca-03f7-4f12-b89c-d2aaae66bde9
+  port: 43394
+  server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
 - name: 24|_中国
   password: Aimer
   port: 2053
@@ -818,13 +796,16 @@ proxies:
   skip-cert-verify: false
   sni: epcch.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #2'
+- alterId: 0
+  name: 24,37|🇨🇳CN中国2
   password: Aimer
   port: 443
   server: 154.197.64.27
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epcch.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #3'
   password: Aimer
   port: 2053
@@ -860,13 +841,16 @@ proxies:
   skip-cert-verify: false
   sni: epccf.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #8'
+- alterId: 0
+  name: 24,37|🇨CN国
   password: Aimer
   port: 2087
   server: 154.219.5.255
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epcch.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #9'
   password: Aimer
   port: 2087
@@ -881,16 +865,13 @@ proxies:
   skip-cert-verify: false
   sni: epcch.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 24,37|CN
+- name: '24|_中国 #11'
   password: Aimer
   port: 443
   server: 154.197.64.206
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epcch.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - name: '24|_中国 #12'
   password: Aimer
   port: 2053
@@ -919,16 +900,13 @@ proxies:
   skip-cert-verify: false
   sni: epccf.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 24,37|🇨🇳CN中国2
+- name: '24|_中国 #16'
   password: Aimer
   port: 443
   server: 154.219.5.55
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epccf.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - name: '24|_中国 #17'
   password: Aimer
   port: 2053
@@ -1022,19 +1000,6 @@ proxies:
   ws-opts:
     headers:
       Host: v29.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '24|_中国 #46'
-  network: ws
-  port: '30824'
-  server: v24.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v24.heduian.link
     path: /oooo
 - alterId: 0
   cipher: auto
