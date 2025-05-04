@@ -38,7 +38,7 @@ proxies:
   ws-headers:
     Host: f641bba8-supts0-svp9t7-1oijm.cm.plebai.net
   ws-path: /
-- name: 5,9,11,27|13|🇰 香港|@ripaojiedian
+- name: '5,9,11,27|13|🇭🇰 香港|@ripaojiedian #1'
   network: ws
   password: a38c9e28-9960-4e31-9f18-ed2495a756aa
   port: 40021
@@ -114,11 +114,14 @@ proxies:
   sni: hk-13-568.flztjc.net
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0|🇭🇰香港 03 | 1x HK
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,30,37|🇭🇰HK香港2
+  password: db67fd39-ac87-40c5-91d3-e30b9be183e3
   port: 31145
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -160,7 +163,7 @@ proxies:
     Host: ce36ce73-sva740-sveyey-44k4.cm.plebai.net
   ws-path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|1|🇭🇰 香港IP 03 | 1x HK
+  name: 5,9,11,24,30|1|🇭🇰 香港IP 03 | 1x HK
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36145
   server: free.2weradf.xyz
@@ -183,14 +186,14 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|1|🇭🇰 香港 01 | 1x HK
+  name: 5,9,11,24,30|1|🇭🇰 香港 01 | 1x HK
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|1|🇭🇰 香港 02 | 1x HK
+  name: 5,9,11,24,30|1|🇭🇰 香港 02 | 1x HK
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36143
   server: free.2weradf.xyz
@@ -2084,6 +2087,13 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
+  name: 28|🇭🇰 香港 11 2
+  password: ead91c7e-d523-47e1-a39c-7407742886f3
+  port: 45514
+  server: ambox03hk.dorabbb.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: '30|12|🇭🇰 香港|@ripaojiedian #1'
   password: 2be0c954-4291-45ea-b47d-ca713180550b
   port: 52612
@@ -2159,6 +2169,56 @@ proxies:
   uuid: d6abdbda-fe9d-11ec-bb74-f23c9164ca5d
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-47.83.132.36...
+  network: tcp
+  port: '45060'
+  server: 47.83.132.36
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f57c12d0-01cb-45e0-ff35-95e76394b634
+- alterId: 2
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-112.120.125.1...
+  network: ws
+  port: '8102'
+  server: 112.120.125.105
+  tls: false
+  type: vmess
+  uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 9e968b51-svp0g0-t6fl0c-1r7od.wtt5.p5pv.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-82.152.164.10...
+  network: ws
+  port: 40601
+  server: 82.152.164.10
+  tls: false
+  type: vmess
+  uuid: 5c634f9c-3dd4-4d3e-97c2-9db2470cf722
+  ws-opts:
+    headers:
+      Host: us05.jssssss.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
+  network: ws
+  port: '1935'
+  server: 43.154.34.74
+  servername: djdjjrjjrhk.lzj520hxw.dpdns.org
+  tls: true
+  type: vmess
+  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
+  ws-opts:
+    headers:
+      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
+    path: /vmess-argo
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-47.83.137.22...
   network: tcp
   port: '57888'
@@ -2182,92 +2242,19 @@ proxies:
       Host: kahk.kia-ai.com
     path: /
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-82.152.164.10...
-  network: ws
-  port: 40601
-  server: 82.152.164.10
-  tls: false
-  type: vmess
-  uuid: 5c634f9c-3dd4-4d3e-97c2-9db2470cf722
-  ws-opts:
-    headers:
-      Host: us05.jssssss.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-112.120.125.1...
-  network: ws
-  port: '8102'
-  server: 112.120.125.105
-  tls: false
-  type: vmess
-  uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 9e968b51-svp0g0-t6fl0c-1r7od.wtt5.p5pv.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
-  network: ws
-  port: '1935'
-  server: 43.154.34.74
-  servername: djdjjrjjrhk.lzj520hxw.dpdns.org
-  tls: true
-  type: vmess
-  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
-  ws-opts:
-    headers:
-      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
-    path: /vmess-argo
-- alterId: 0
-  name: 37|HK
-  password: 3f0d1127-28d5-42b3-bcb7-e8767f033a2b
-  port: 27103
-  server: 45.146.232.172
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK2
-  password: 683d29d7-a3b8-42c5-9a9b-e21812e5f8b6
-  port: 34016
-  server: 45.146.232.171
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 37|HK3
-  network: ws
-  port: 1935
-  server: 43.154.34.74
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
-  ws-opts:
-    headers:
-      host: djdjjrjjrhk.lzj520hxw.dpdns.org
-    path: /vmess-argo
-- alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 37|HK4
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: 443
-  server: 216.250.97.118
+  name: 37|HK
+  password: 1fefd28e-b2e6-4462-a378-cbc58a8748f9
+  port: 20022
+  server: 38.180.95.135
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  name: 37|HK5
-  password: ee910d7e-87f8-4fc6-94cd-5629c747d9f7
-  port: 46927
+  name: 37|HK2
+  network: tcp
+  password: d63b8dad-02ee-4477-8f58-693a715ddd4c
+  port: 46925
   server: 45.146.232.172
   skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
@@ -2275,9 +2262,30 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 37|HK6 220.7KB/s
-  password: 71e539de-1358-49f2-b8af-e9a37255dc59
-  port: 43393
+  name: 37|HK3
+  password: d70a8847-7c64-4912-98f2-ea21e952880f
+  port: 43383
+  server: 45.146.232.172
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|HK4
+  network: tcp
+  password: 0f73d067-8fac-4bf4-a08e-ca2434ef5086
+  port: 42405
+  server: 192.142.4.64
+  skip-cert-verify: true
+  sni: cdn.alibaba.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|HK5
+  password: 4eba3cbb-b263-4461-98b8-0e0573e646e3
+  port: 46668
   server: 45.146.232.171
   skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
@@ -2285,20 +2293,20 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 37|🇰HK
-  network: ws
-  password: a38c9e28-9960-4e31-9f18-ed2495a756aa
-  port: 40021
-  server: vt-bana2-cn-11.ghpgwqswodgzv.com
+  name: 37|HK6
+  network: tcp
+  password: d63b8dad-02ee-4477-8f58-693a715ddd4c
+  port: 46925
+  server: 45.146.232.171
   skip-cert-verify: true
-  sni: vt-bana2-cn-11.ghpgwqswodgzv.com
+  sni: q08m.vgraxiw73s.hasyaf.cn
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   name: 37|HK7
-  password: 006256f4-4b72-4785-925c-045cfffdaa49
-  port: 33505
+  password: 2493ec5c-3e47-480a-9780-dfd291864003
+  port: 34014
   server: 45.146.232.172
   skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
@@ -2306,11 +2314,36 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
   name: 37|HK8
-  password: a81dd416-d6dc-4268-b088-57ca0447b448
-  port: 51183
-  server: 191.96.206.4
+  password: 5eb6ad72-524e-4ba1-907c-907cec2f2c35
+  port: 27401
+  server: 45.146.232.172
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 37|HK9
+  network: ws
+  port: 10805
+  server: 18.162.51.82
   skip-cert-verify: true
   tls: true
-  type: ss
+  type: vmess
+  uuid: f077ed2d-db1e-42e0-851f-e24aba75e002
+  ws-opts:
+    headers:
+      host: kahk.kia-ai.com
+    path: /
+- alterId: 0
+  name: 37|HK10
+  password: 1e0a3f8d-dd1a-49f5-9d78-70f191f70ca4
+  port: 43396
+  server: 45.146.232.171
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
+  udp: true
