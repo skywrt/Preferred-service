@@ -217,15 +217,6 @@ proxies:
   server: 45.158.171.146
   type: ss
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知69 2.3MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.158.171.110
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 19|🇫🇷FR-163.5.159.231-8334
@@ -320,12 +311,17 @@ proxies:
     headers:
       Host: tilebani.com
     path: /linkvws
-- name: '20,21|🇫🇷FR-51.68.13.106-1021 #1'
+- alterId: 0
+  name: 20,21,37|未知75 8.7MB/s
+  network: tcp
   password: FiSo7J6vfS
   port: 1935
   server: 51.68.13.106
+  skip-cert-verify: true
   sni: x1fr-ovh.devefun.net
+  tls: true
   type: trojan
+  udp: true
 - name: '20,21|🇫🇷FR-57.128.165.173-1062 #1'
   password: klZqKyxq0H
   port: 1935
@@ -380,6 +376,15 @@ proxies:
     headers:
       Host: az05.beyondy.cfd
     path: /link
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 20,21,37|未知36 5.7MB/s
+  password: XhrmyKE6F9BQCiogigJ1ID
+  port: 31465
+  server: 77.110.106.74
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   cipher: auto
   name: '20,21|🇫🇷FR-45.145.165.114-8605 #1'
@@ -438,16 +443,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-51.77.20.131...
-  network: tcp
-  port: '22324'
-  server: 51.77.20.131
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇫🇷 FR-95.179.208.4...
   network: tcp
   port: '8874'
@@ -456,3 +451,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 8371146b-a577-4ffb-bd04-bfcc42fdd10a
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-51.77.20.131...
+  network: tcp
+  port: '22324'
+  server: 51.77.20.131
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
