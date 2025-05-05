@@ -1,6 +1,6 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,27,30|0|国 01 | 1x DE #2'
+  name: '5,9,11,27,30|0|国 01 | 1x DE #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31471
   server: free.2apzhfa.xyz
@@ -44,11 +44,20 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇩🇪DE-85.208.139.31-6186
+- cipher: rc4-md5
+  name: 19|🇩🇪DE-193.108.119.230-0910
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,37|未知9
   password: q7jwtcA0MmyYi0JddUgXXj
   port: 42037
   server: 85.208.139.31
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -71,24 +80,12 @@ proxies:
   port: 1866
   server: 185.177.229.245
   type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-6032
-  password: rpgbNnU9rDDU4aWZ
-  port: 9094
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-3215
-  password: M3t2ZEQcMGRWBjRa
-  port: 9011
-  server: 80.92.204.106
-  type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.64.238-8655 #1'
+  name: '20,21|🇩🇪DE-57.129.25.27-8576 #1'
   network: ws
   port: 443
-  server: 57.129.64.238
+  server: kapelleng.com
   servername: kapelleng.com
   tls: true
   type: vmess
@@ -99,7 +96,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.28.65-8680 #1'
+  name: '20,21|🇩🇪DE-57.129.28.65-8593 #1'
   network: ws
   port: 443
   server: 57.129.28.65
@@ -113,7 +110,27 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-8671 #1'
+  name: '20,21|🇩🇪DE-57.129.64.238-8585 #1'
+  network: ws
+  port: 443
+  server: 57.129.64.238
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- name: '20,21|🇩🇪DE-3.127.213.136-6752 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.127.213.136
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-57.129.24.125-8601 #1'
   network: ws
   port: 443
   server: 57.129.24.125
@@ -125,6 +142,12 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
+- name: '20,21|🇩🇪DE-57.129.89.172-1080 #1'
+  password: pqlnPNu423
+  port: 1935
+  server: 57.129.89.172
+  sni: x1-germany-ovh-v2.devefun.net
+  type: trojan
 - name: 24|🇩🇪 _德国
   password: Aimer
   port: 2053
@@ -134,49 +157,27 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 28|🇩🇪 bing294
-  port: 22307
-  server: netcp3.616626.xyz
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
   tls: false
   type: vmess
-  udp: true
-  uuid: 4eb4abf7-282b-46d1-be20-74d132630d81
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
-  name: 28|🇩🇪 bing848
-  network: ws
-  port: 58610
-  server: 183.240.228.220
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d845f1a9-58b2-4f81-9ae6-a0f692b4c3b3
-  ws-opts:
-    headers:
-      Host: www.baidu.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-157.90.117...
-  network: tcp
-  port: 23890
-  server: 157.90.117.244
-  tls: false
-  type: vmess
-  uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.25.25...
+  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.28.69...
   network: ws
   port: 443
-  server: 57.129.25.25
+  server: 57.129.28.69
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: f.khilei.com
+      Host: baradiha.com
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -190,13 +191,3 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
-  network: httpupgrade
-  port: '2096'
-  server: 172.67.142.21
-  servername: iribtv3.andishehnegariran.ir
-  tls: true
-  type: vmess
-  uuid: a0bee82b-25da-410b-8ea9-b88554722dd0

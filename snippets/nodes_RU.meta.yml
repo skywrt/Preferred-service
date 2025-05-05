@@ -1,4 +1,39 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,11,24,27,30|1|🇺 俄罗斯 01 | 1x RU #1'
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+  port: 36511
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 5|俄罗斯 - 莫斯科 - LLC Baxet - 8
+  network: ws
+  port: '18443'
+  server: 45.5921688.xyz
+  tls: true
+  type: vmess
+  uuid: 71a7db14-1b6f-5aec-9e5d-9bd5f8beabab
+  ws-opts:
+    headers:
+      Host: 45.5921688.xyz
+    path: /
+- name: 5,9,11,24,27|3|🇺3 |  4.3MB/s
+  password: 3ffa664f-364a-4937-a314-1d9f02ad8458
+  port: 32008
+  server: lbso.bnnodeservice.com
+  skip-cert-verify: false
+  sni: cert.bitbyte.one
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,27,30|0|🇺俄罗斯 01 | 1x RU
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31511
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5|俄罗斯 - 莫斯科 - LLC Baxet - 9
@@ -14,9 +49,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5|俄罗斯 - 莫斯科 - LLC Baxet - 8
+  name: 5|俄罗斯 - 莫斯科 - LLC Baxet - 10
   network: ws
-  port: '18443'
+  port: '22443'
   server: 45.5921688.xyz
   tls: true
   type: vmess
@@ -24,7 +59,7 @@ proxies:
   ws-opts:
     headers:
       Host: 45.5921688.xyz
-    path: /
+    path: /trojan-panel-websocket-path
 - name: '5,38|🇷🇺_RU_俄罗斯联邦_10 #1'
   network: ws
   port: 2087
@@ -37,47 +72,6 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- alterId: 0
-  cipher: auto
-  name: 5|俄罗斯 - 莫斯科 - LLC Baxet - 10
-  network: ws
-  port: '22443'
-  server: 45.5921688.xyz
-  tls: true
-  type: vmess
-  uuid: 71a7db14-1b6f-5aec-9e5d-9bd5f8beabab
-  ws-opts:
-    headers:
-      Host: 45.5921688.xyz
-    path: /trojan-panel-websocket-path
-- cipher: chacha20-ietf-poly1305
-  name: 5,8|🇳🇱NL-185.242.86.156-156_1@156
-  password: 36ZCHeabUSfKjfQEvJ4HDV
-  port: 54170
-  server: 185.242.86.156
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,27,30|0|🇺俄罗斯 01 | 1x RU
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31511
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- name: 5,9,11,24,27|3|🇺3 |  4.3MB/s
-  password: 3ffa664f-364a-4937-a314-1d9f02ad8458
-  port: 32008
-  server: lbso.bnnodeservice.com
-  skip-cert-verify: false
-  sni: cert.bitbyte.one
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇺 俄罗斯 01 | 1x RU #1'
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36511
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - name: 8|🇷🇺RU-176.32.35.167-210_1@209
   password: 85bce006-4885-11ee-8792-f23c9164ca5d
   port: 1007
@@ -202,6 +196,15 @@ proxies:
   port: 46356
   server: 147.45.221.106
   type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 20,21,37|未知129 1.1MB/s
+  password: 560b7d65c1f4b12a
+  port: 30112
+  server: 194.87.69.122
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 20,21,30|🇺 俄罗斯 斯斯克G-Core Lab
@@ -228,13 +231,16 @@ proxies:
   skip-cert-verify: false
   sni: epccf.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #1'
+- alterId: 0
+  name: 24,37|RU
   password: Aimer
   port: 443
   server: 46.254.92.191
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epccg.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇷🇺 _俄罗斯 #2'
   password: Aimer
   port: 2083
@@ -284,23 +290,23 @@ proxies:
   skip-cert-verify: false
   sni: epccf.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 24,37|🇺RU
+- name: '24|🇷🇺 _俄罗斯 #9'
   password: Aimer
   port: 2096
   server: 5.182.85.189
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epccg.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
-- name: '24|🇷🇺 _俄罗斯 #10'
+- alterId: 0
+  name: 24,37|🇷🇺RU俄罗斯2
   password: Aimer
   port: 2083
   server: 5.182.84.52
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epccf.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇷🇺 _俄罗斯 #11'
   password: Aimer
   port: 2096
@@ -308,12 +314,14 @@ proxies:
   skip-cert-verify: false
   sni: epccf.ambercc.filegear-sg.me
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇷🇺 bing117
-  password: 8a97fe8c-59dd-4214-acd0-a4e1c1c6ca0e
-  port: 48875
-  server: ambnds00.dorabbb.top
-  type: ss
+- auth: 363d6cc4-de64-4958-af76-634a591d0300
+  name: 28|🇷🇺 bing174
+  password: 363d6cc4-de64-4958-af76-634a591d0300
+  port: 23277
+  server: justrussia.hgpt.online
+  skip-cert-verify: false
+  sni: justrussia.hgpt.online
+  type: hysteria2
   udp: true
 - alterId: 0
   cipher: auto
@@ -325,16 +333,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23...
-  network: ws
-  port: '22033'
-  server: 45.147.201.231
-  tls: false
-  type: vmess
-  uuid: d188767e-60aa-43f9-9267-bc92e64bdc9a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /

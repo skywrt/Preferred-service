@@ -1,16 +1,16 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇦 加拿大 01 | 1x CA #1'
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 5,9,11,27,30|0|🇦加拿大 01 | 1x CA
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31441
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,11,24,27,30|1|🇦 加拿大 01 | 1x CA #1'
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -487,21 +487,6 @@ proxies:
       Host: Sb-1u6.paGEs.dEv
     path: '%2Fpc0cypuups4meoks%2Fmtu4ljewms4ymdmumti3%3Fed%3D2560'
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,37|未知72 322.7KB/s
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇨🇦CA-142.4.216.225-1078
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: ca225.vpnbook.com
-  type: ss
-- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 19|🇨🇦CA-51.79.102.253-6345
@@ -518,7 +503,7 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-134.195.198.147-8681 #1'
+  name: '20,21|🇨🇦CA-134.195.198.147-8582 #1'
   network: ws
   port: 443
   server: 134.195.198.147
@@ -532,7 +517,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-23.162.200.227-8687 #1'
+  name: '20,21|🇨🇦CA-23.162.200.227-8586 #1'
   network: ws
   port: 443
   server: 23.162.200.227
@@ -591,18 +576,27 @@ proxies:
   skip-cert-verify: false
   sni: epccf.ambercc.filegear-sg.me
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇨🇦 bing263
-  password: f86c7fd6-871f-4973-9ce2-da231474d33b
-  port: 16113
-  server: 59.42.247.53
+- cipher: aes-256-gcm
+  name: 28|🇨🇦 bing256
+  password: d597e2f1-da57-4c11-87fd-5e2376cd40c7
+  port: 47071
+  server: ca01.jiasudu.buzz
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 28|🇨🇦 bing295
+  port: 45064
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 87ac193e-ddad-4d76-b935-c121fc210ba0
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇨🇦 bing1040
-  password: af42dcf2-38f8-49dc-ac63-d2da66bc5fbf
-  port: 44306
-  server: node1.cenidcbf.ink
+  name: 28|🇨🇦 bing416
+  password: 6cc5ad3b-c487-4b1e-863e-c29817fe5a55
+  port: 48801
+  server: aambx01qt.dorabbb.top
   type: ss
   udp: true
 - alterId: 0
@@ -616,16 +610,6 @@ proxies:
   uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.11...
-  network: tcp
-  port: '27699'
-  server: 91.194.11.118
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
   network: tcp
   port: '58891'
@@ -634,3 +618,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知56 6.3MB/s
+  network: tcp
+  port: 27699
+  server: 91.194.11.118
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
