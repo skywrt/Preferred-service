@@ -1,6 +1,6 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,30|0|国 01 | 1x DE
+  name: '5,9,11,27,30|0|国 01 | 1x DE #2'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31471
   server: free.2apzhfa.xyz
@@ -16,7 +16,7 @@ proxies:
   type: vless
   uuid: 7a12ccb8-c431-4cc0-ace9-a994cc4b2ca7
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|1|🇪 德国 01 | 1x DE
+  name: '5,9,11,24,27,30|1|🇪 德国 01 | 1x DE #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36471
   server: free.2weradf.xyz
@@ -39,12 +39,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- name: '13,24|🇺🇸 美国 V2CROSS.COM #4'
+- name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
   port: 443
   server: nextstepcareer.online
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
 - name: 13|🇩🇪_DE_德国_2
   network: tcp
@@ -143,14 +143,49 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
-  network: httpupgrade
-  port: '2096'
-  server: 172.67.142.21
-  servername: iribtv3.andishehnegariran.ir
-  tls: true
+  name: 28|🇩🇪 bing294
+  port: 22307
+  server: netcp3.616626.xyz
+  tls: false
   type: vmess
-  uuid: a0bee82b-25da-410b-8ea9-b88554722dd0
+  udp: true
+  uuid: 4eb4abf7-282b-46d1-be20-74d132630d81
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 28|🇩🇪 bing361
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: PaAaDWyG_MhYTIhEHrLJusbrG35KN266mHqeISOb7n4
+    short-id: 8dc4a6c4
+  server: deuf1.731732.xyz
+  servername: www.uni-stuttgart.de
+  tls: true
+  type: vless
+  uuid: 3fe41863-7419-425a-89fe-f3e2bcbec302
+- auth: 3fe41863-7419-425a-89fe-f3e2bcbec302
+  name: 28|🇩🇪 bing431
+  password: 3fe41863-7419-425a-89fe-f3e2bcbec302
+  port: 19842
+  server: deul.731732.xyz
+  skip-cert-verify: false
+  sni: deul.731732.xyz
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 28|🇩🇪 bing848
+  network: ws
+  port: 58610
+  server: 183.240.228.220
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d845f1a9-58b2-4f81-9ae6-a0f692b4c3b3
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-157.90.117...
@@ -160,6 +195,20 @@ proxies:
   tls: false
   type: vmess
   uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.25.25...
+  network: ws
+  port: 443
+  server: 57.129.25.25
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: f.khilei.com
+    path: /linkvws
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -172,3 +221,13 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
+  network: httpupgrade
+  port: '2096'
+  server: 172.67.142.21
+  servername: iribtv3.andishehnegariran.ir
+  tls: true
+  type: vmess
+  uuid: a0bee82b-25da-410b-8ea9-b88554722dd0
