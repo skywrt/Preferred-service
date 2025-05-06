@@ -43,7 +43,7 @@ proxies:
   type: vmess
   uuid: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|1|🇵 日本 03 | 1x JP
+  name: '5,11,24,27,30|1|🇵 日本 03 | 1x JP #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36115
   server: free.2weradf.xyz
@@ -67,7 +67,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,27,30|0| 01 | 1x JP #1'
+  name: '5,11,27,30|0| 01 | 1x JP #2'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31111
   server: free.2apzhfa.xyz
@@ -160,21 +160,21 @@ proxies:
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|1|🇵 日本 01 | 1x JP
+  name: '5,11,24,27,30|1|🇵 日本 01 | 1x JP #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36111
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,27,30|0|🇵日本 02 | 1x JP #1'
+  name: '5,11,27,30|0|🇵日本 02 | 1x JP #2'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|1|🇯🇵 日本 02 | 1x JP
+  name: '5,11,24,27,30|1|🇯🇵 日本 02 | 1x JP #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36113
   server: free.2weradf.xyz
@@ -244,7 +244,7 @@ proxies:
   type: vmess
   uuid: 03573f46-e944-11eb-a8bf-f23c91cfbbc9
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,27,30|0|🇵日本 03 | 1x JP #1'
+  name: '5,11,27,30|0|🇵日本 03 | 1x JP #2'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31115
   server: free.2apzhfa.xyz
@@ -446,6 +446,62 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 国际专线 日本JP 114 13
+  password: f75d1376-ff60-4c95-b644-c64363ce1376
+  port: 39221
+  server: 120.233.44.206
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇵 日本 01
+  password: 4de147b9-02c8-4fb7-9770-ec8919b71cf9
+  port: 23020
+  server: sja00paa1.tt191.xyz
+  type: ss
+  udp: true
+- name: 28|🇯🇵 日本-BGP
+  password: e700acbe-aa54-4101-bc58-f155d64dde10
+  port: 30001
+  server: jp.xn--vl1a701a.xyz
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 亚洲|日本07
+  password: 4098a44c-de7d-40ad-b5db-cf673d4ce620
+  port: 48199
+  server: hn.qlrk0.cc
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇵 IEPL 日本JP 105 10
+  password: f8367c0e-39ee-4504-8d30-34aafc4f99bc
+  port: 16102
+  server: 59.42.247.53
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇵 IEPL 日本JP 48 14
+  password: e5d980c4-01dc-4fe4-a999-7dabf0bc3572
+  port: 16108
+  server: 59.42.247.53
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 28|🇯🇵 SVPN-JAPAN-3 2
+  password: 56400060-ceb7-4704-840b-4c5fb09682a0
+  port: 56789
+  server: japantv3.zhixiang.us
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇯🇵 亚洲|日本01 2
+  password: b44f5ea3-efa3-4d8d-921e-e224b6724690
+  port: 31829
+  server: ah.qlrk0.cc
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 30|2|🇯🇵6 |  4.2MB/s
@@ -567,15 +623,6 @@ proxies:
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
-  network: tcp
-  port: '30101'
-  server: 167.179.93.158
-  tls: false
-  type: vmess
-  uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
   network: tcp
   port: '27750'
@@ -583,3 +630,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
+  network: tcp
+  port: '30101'
+  server: 167.179.93.158
+  tls: false
+  type: vmess
+  uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
