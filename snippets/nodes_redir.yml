@@ -822,11 +822,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 9546bb58-a66e-11ef-bbf3-f23c913c8d2b
-- name: 12,24|🇺🇸 美国 V2CROSS.COM
+- alterId: 0
+  name: 12,20,21,24,37|🇺🇸US美国2 352.0KB/s
   password: 683d29d7-a3b8-42c5-9a9b-e21812e5f8b6
   port: 34016
   server: 45.146.232.171
-  skip-cert-verify: false
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
+  udp: true
+- name: '12,20,21|🇭🇰HK-45.146.232.172-1307 #1'
+  password: 683d29d7-a3b8-42c5-9a9b-e21812e5f8b6
+  port: 34016
+  server: 45.146.232.172
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - alterId: 0
@@ -837,7 +846,7 @@ proxies:
   server: 45.147.201.231
   tls: false
   type: vmess
-  uuid: 98fb158f-b042-449b-ace8-6f9a9becf439
+  uuid: 4ee6ad73-10bc-4567-8888-546d25ad4784
   ws-opts:
     headers:
       Host: ''
@@ -865,6 +874,20 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 12,24,36|🔒 VM-WS-NA 🏴‍☠️ NA-172.67.98.1...
+  network: ws
+  port: '80'
+  server: 172.67.98.140
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0ad4e581-231b-4676-ad75-d8d2db103795
+  ws-opts:
+    headers:
+      Host: 640341542743722025042519292375833.s15.chibaba.filegear-sg.me
+    path: /s15.html
 - alterId: 2
   cipher: auto
   name: '12|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
@@ -879,12 +902,6 @@ proxies:
     headers:
       Host: v8.heduian.link
     path: /oooo
-- name: 12|🇳🇱_NL_荷兰->🇷🇺_RU_俄罗斯
-  password: e7793c4f-2885-475c-8046-26e660c46467
-  port: 43586
-  server: 45.146.232.171
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
 - alterId: 2
   cipher: auto
   name: 12|🇨🇳_CN_中国->🇬🇧_GB_英国
@@ -1001,12 +1018,16 @@ proxies:
     headers:
       host: ocbc.com
     path: /oooo
-- name: 16|🇱_NL_荷兰->🇷🇴_RO_罗马尼亚_2
+- alterId: 0
+  name: 16,37|HK9
   password: ccae43f0-5daa-4fd1-94fc-406b38ad6f04
   port: 43499
   server: 45.146.232.171
+  skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 16|🇨🇳_CN_中国->🇺🇸_US_美国_9
@@ -1212,6 +1233,41 @@ proxies:
     headers:
       host: uk.moss.network
     path: /d/65dd503.TG.WangCai2.WangCai_8:107690
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹 国4无中转 12
+  password: a4f34e00-f33a-468b-8e28-18b7f912b454
+  port: 10050
+  server: 62.112.143.49
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|3无中转 12
+  password: a4f34e00-f33a-468b-8e28-18b7f912b454
+  port: 10050
+  server: 185.126.134.56
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇵 日本5无中转 11
+  password: 27c2ecbc-668e-4f90-b4ef-e0fc87ca5350
+  port: 10050
+  server: 103.134.35.124
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇼 台湾无中转2 11
+  password: 27c2ecbc-668e-4f90-b4ef-e0fc87ca5350
+  port: 10050
+  server: 103.115.108.252
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇾 马来西亚无中转7
+  password: 835721cc-7069-4ecb-80d9-edd4663ee35d
+  port: 10050
+  server: 188.64.106.85
+  type: ss
+  udp: true
 - alterId: 2
   cipher: auto
   name: '30|_CN_->_US_国 #1'
