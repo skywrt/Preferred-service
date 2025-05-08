@@ -438,14 +438,11 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30,37|CA
-  password: 8cdf29f3-69be-42af-9f57-2160603c0e0d
+- cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,30|0|🇦加拿大 01 | 1x CA
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31441
   server: free.2apzhfa.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -921,18 +918,6 @@ proxies:
     headers:
       Host: Sb-1u6.paGEs.dEv
     path: '%2Fpc0cypuups4meoks%2Fmtu4ljewms4ymdmumti3%3Fed%3D2560'
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇨🇦CA-142.4.216.225-1090
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇨🇦CA-142.4.216.225-1078
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: ca225.vpnbook.com
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -950,7 +935,21 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-23.162.200.227-8544 #1'
+  name: '20,21|🇨🇦CA-134.195.198.147-8443 #1'
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇨🇦CA-23.162.200.227-8446 #1'
   network: ws
   port: 443
   server: 23.162.200.227
@@ -964,18 +963,32 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-134.195.198.147-8539 #1'
+  name: 20,21,24|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
   network: ws
-  port: 443
-  server: 134.195.198.147
+  port: 80
+  server: 51.79.102.253
   servername: ''
-  tls: true
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
     headers:
-      Host: inna.cfd
-    path: /linkvws
+      Host: 51.79.102.253
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
+  name: '20,21,24|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP... #1'
+  network: ws
+  port: 80
+  server: 51.79.103.76
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
   name: 23|🇨🇦_CA_加拿大
@@ -990,34 +1003,6 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 24|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
-  network: ws
-  port: 80
-  server: 51.79.102.253
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: 51.79.102.253
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  name: '24|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP... #1'
-  network: ws
-  port: 80
-  server: 51.79.103.76
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.11...
   network: tcp
   port: '27699'
@@ -1028,15 +1013,6 @@ proxies:
   uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17...
-  network: tcp
-  port: '28984'
-  server: 91.194.11.178
-  tls: false
-  type: vmess
-  uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
   network: tcp
   port: '58891'
@@ -1045,3 +1021,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17...
+  network: tcp
+  port: '28984'
+  server: 91.194.11.178
+  tls: false
+  type: vmess
+  uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
