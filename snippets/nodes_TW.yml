@@ -1,28 +1,28 @@
 proxies:
-- name: '5,9,11,24,27|2,12|🇼 台湾|@ripaojiedian #1'
+- name: 5,9,11,24,27,40|CN_speednode_0004
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a10.taipeicitygovernment.kyiv.ua
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: 45.32.28.232
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇼台湾 03 | 1x TW #1'
+  name: 5,9,11,24,27,30|0|🇼台湾 03 | 1x TW
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇼台湾 02 | 1x TW #1'
+  name: 5,9,11,24,27,30|0|🇼台湾 02 | 1x TW
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|1|🇼 台湾 03 | 1x TW
+  name: '5,9,11,24,27,30|1|🇼 台湾 03 | 1x TW #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36245
   server: free.2weradf.xyz
@@ -36,7 +36,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0| 01 | 1x TW #1'
+  name: 5,9,11,24,27,30|0| 01 | 1x TW
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31241
   server: free.2apzhfa.xyz
@@ -62,7 +62,7 @@ proxies:
     headers:
       Host: epccj.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 9|2|🇹🇼2 |  1.3MB/s|0%|Netflix|Op...
+- name: 9,11,40|US_speednode_0057
   network: ws
   password: Aimer
   port: 443
@@ -88,10 +88,31 @@ proxies:
     headers:
       Host: epccj.ambercc.filegear-sg.me
     path: /?ed=2560
+- name: '24|2|🇹🇼1 |  2.5MB/s|0%|Disney|Ope... #2'
+  password: Aimer
+  port: 443
+  server: 173.245.59.201
+  skip-cert-verify: false
+  sni: epccj.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|2|🇹🇼2 |  1.3MB/s|0%|Netflix|Op... #2'
+  password: Aimer
+  port: 443
+  server: 209.208.227.79
+  skip-cert-verify: false
+  sni: epccj.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|2|🇹🇼3 |  1.4MB/s|0%|Netflix|Di... #2'
+  password: Aimer
+  port: 2096
+  server: 167.68.4.10
+  skip-cert-verify: false
+  sni: epccj.ambercc.filegear-sg.me
+  type: trojan
 - alpn:
   - h3
   client-fingerprint: randomized
-  name: '11,27|2|🇹🇼1 |  2.5MB/s|0%|Disney|Ope... #4'
+  name: 27|3|🇹🇼1 |  1.3MB/s|0%|Disney|Ope...
   network: ws
   password: Aimer
   port: '443'
@@ -108,7 +129,7 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: randomized
-  name: '11,27|2|🇹🇼2 |  1.3MB/s|0%|Netflix|Op... #4'
+  name: 27|3|🇹🇼2 |  1.4MB/s|Openai
   network: ws
   password: Aimer
   port: '443'
@@ -125,7 +146,7 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: randomized
-  name: '11,27|2|🇹🇼3 |  1.4MB/s|0%|Netflix|Di... #4'
+  name: 27|3|🇹🇼3 |  4.0MB/s|Netflix|Disne...
   network: ws
   password: Aimer
   port: '2096'
@@ -139,27 +160,187 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
         Gecko) Chrome/40.0.2214.115 Safari/537.36
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '24|2|🇹🇼1 |  2.5MB/s|0%|Disney|Ope... #3'
-  password: Aimer
+- cipher: chacha20-ietf-poly1305
+  name: 27,40|TW_speednode_0036
+  password: 937f6b6168b6
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: wt8v1.kvote.cn
+    mode: websocket
+    mux: true
+    path: /oqhygtklyhwi
+    tls: true
   port: 443
-  server: 173.245.59.201
+  server: 103.137.62.194
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 28|🇹🇼 bing2707
+  port: 27831
+  server: zf1.xinzhanduijie.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ffdd1552-86e1-47f4-8e02-ef15d12f544b
+- alterId: 0
+  cipher: auto
+  name: 28|🇹🇼 bing2871
+  network: ws
+  port: 22100
+  server: twnat4.gangko.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1af3c59d-1840-4c7d-95ef-f4150f085945
+  ws-opts:
+    headers:
+      Host: twnat4.gangko.cc
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 bing2905
+  password: cf573d7c-59d9-4966-85c9-c4628b3717a2
+  port: 10050
+  server: 103.115.109.219
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 bing2940
+  password: cf573d7c-59d9-4966-85c9-c4628b3717a2
+  port: 10050
+  server: 103.115.109.65
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 bing2973
+  password: 7fe98249-20ad-44c7-8543-b615e6a5dc63
+  port: 11123
+  server: qqa813.198139.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 bing3007
+  password: 59be84be-a218-4e84-8780-b83919029ee4
+  port: 47791
+  server: aambx02tw.dorabbb.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 bing3301
+  password: c82ce0f8-d3f9-4782-90a9-5225dd67b949
+  port: 21112
+  server: okanc.node-is.green
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 bing3308
+  password: bb275817-b311-41b7-b536-39fe80cdb070
+  port: 11148
+  server: qqa813.198139.xyz
+  type: ss
+  udp: true
+- name: 28|🇹🇼 bing3361
+  password: 390af362-59dc-46a4-94a2-4cadd3434d4b
+  port: 23342
+  server: tw5.376897.xyz
   skip-cert-verify: false
-  sni: epccj.ambercc.filegear-sg.me
+  sni: tw5.376897.xyz
   type: trojan
-- name: '24|2|🇹🇼2 |  1.3MB/s|0%|Netflix|Op... #3'
-  password: Aimer
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 bing3409
+  password: b7515f6c-aa69-4ff1-adb5-bb61ec854800
+  port: 44375
+  server: transfer2.qfyun.live
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 bing3422
+  password: cf573d7c-59d9-4966-85c9-c4628b3717a2
+  port: 10050
+  server: 103.115.108.3
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 bing3435
+  password: cf573d7c-59d9-4966-85c9-c4628b3717a2
+  port: 10050
+  server: 103.115.108.252
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 bing3474
+  password: 25f433a1-a995-4a4d-9691-b2ec86420e6f
+  port: 13456
+  server: wh1-ahmddlekrnnse6ta.bestzumo.com
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 28|🇹🇼 bing3547
+  network: ws
+  port: 53240
+  server: next2.orz.my.id
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 73c693f3-b127-40c4-948e-d15c98c60f33
+  ws-opts:
+    headers:
+      Host: next2.orz.my.id
+    path: /
+- cipher: aes-256-gcm
+  name: 28|🇹🇼 bing3623
+  password: 9f9b992e-1ee4-4d5a-b7f2-561bdcf7ecbe
+  port: 49021
+  server: tw91.cctv14.xyz
+  type: ss
+  udp: true
+- name: 28|🇹🇼 bing3724
+  password: e2f32323-a976-40f1-954a-9dc4f53b04c0
+  port: 2324
+  server: tw7.376897.xyz
+  skip-cert-verify: false
+  sni: tw7.376897.xyz
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 bing3734
+  password: 31f32b9d-0187-4c70-94c9-bab8e09d3ffb
+  port: 33922
+  server: 120.233.44.206
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 28|🇹🇼 bing3735
+  network: ws
+  port: 58732
+  server: 120.232.217.221
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 41df4b8c-689b-4b7e-8865-e47191a7aa62
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /
+- name: 28|🇹🇼 bing3757
+  password: 7300c038-da48-421e-a847-f2ad9c1c8ecc
   port: 443
-  server: 209.208.227.79
+  server: v3.nmcf.me
   skip-cert-verify: false
-  sni: epccj.ambercc.filegear-sg.me
+  sni: v3.nmcf.me
   type: trojan
-- name: '24|2|🇹🇼3 |  1.4MB/s|0%|Netflix|Di... #3'
-  password: Aimer
-  port: 2096
-  server: 167.68.4.10
-  skip-cert-verify: false
-  sni: epccj.ambercc.filegear-sg.me
-  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇹🇼 bing3804
+  password: c82ce0f8-d3f9-4782-90a9-5225dd67b949
+  port: 21111
+  server: okanc.node-is.green
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 30|2,13|台湾|@ripaojiedian
