@@ -16,7 +16,7 @@ proxies:
   type: vmess
   uuid: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|13|🇷 韩国|@ripaojiedian
+  name: '5,9,11,24,27|12|🇷 韩国|@ripaojiedian #1'
   password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
   port: 19852
   server: h.cm2.xiaomi-api.xyz
@@ -59,7 +59,7 @@ proxies:
   type: vmess
   uuid: 78ad2258-088d-11f0-8eab-f23c91cfbbc9
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇷韩国 02 | 1x KR #1'
+  name: '5,9,11,24,27,30|0|🇷韩国 02 | 1x KR #2'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31313
   server: free.2apzhfa.xyz
@@ -79,15 +79,7 @@ proxies:
       Host: lv4.789900.xyz
     path: /7dd16ab1-2a36-4b32-86fd-eb49fb039752-vm
 - cipher: aes-256-cfb
-  delay: 772
-  name: 5,20,21,24,27,28|bing2502
-  password: qwerREWQ@@
-  port: 4857
-  server: 125.141.26.12
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 5,9,11,24,27|13|🇷 韩国特殊|@ripaojiedian
+  name: '5,9,11,24,27|12|🇷 韩国特殊|@ripaojiedian #1'
   password: awsps0501
   port: 443
   server: 13.212.202.199
@@ -96,11 +88,12 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   delay: 274
-  name: 5,11|1|🇷11 |  2.4MB/s|Disney|Youtub...
+  name: '5,9,27|2|🇰🇷2 |  2.2MB/s|Netflix|Youtu... #1'
   password: 4QPol5
   port: 23752
   server: kr02.kkp.wtf
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 5,9,11,24,27,30|0|🇷国 01 | 1x KR
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -119,12 +112,16 @@ proxies:
   uuid: 202c296a-f34a-11ef-80e5-f23c9164ca5d
 - alterId: 0
   cipher: auto
-  name: '5|韩国 - 首尔特别市 - Oracle Corporatio... #1'
+  delay: 2186
+  name: '5,9,27|2|🇰🇷5 |  2.6MB/s|62%|Youtube|G... #1'
   network: ws
-  port: '2096'
+  port: 2096
   server: dv4.789900.xyz
+  servername: dv4.789900.xyz
+  skip-cert-verify: false
   tls: true
   type: vmess
+  udp: true
   uuid: 0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05
   ws-opts:
     headers:
@@ -144,12 +141,19 @@ proxies:
       Host: obdii.cfd
     path: /linkws
 - cipher: aes-256-cfb
-  name: 9|2|🇰🇷2 |  5.9MB/s|44%|Netflix|D...
+  delay: 407
+  name: '9,11,27|2|🇰🇷4 |  2.6MB/s|34%|Youtube|O... #1'
+  password: yijian0503
+  port: 443
+  server: 3.38.250.157
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 11|2|🇰🇷6 |  5.9MB/s|44%|Netflix|D...
   password: qwerREWQ@@
   port: 15098
   server: p222.panda001.net
   type: ss
-  udp: true
 - name: 17|韩国(yudou66.com 玉豆免费节点)
   network: ws
   port: 12273
@@ -186,13 +190,6 @@ proxies:
     headers:
       Host: dp.ylks.xyz
     path: '%2F%3Fproxyip%3Dproxyip.kr.fxxp.dedyp.io'
-- cipher: aes-256-cfb
-  name: 20,21,28|bing2501
-  password: qwerREWQ@@
-  port: 11389
-  server: 221.150.109.89
-  type: ss
-  udp: true
 - name: 24|🇰🇷 _韩国
   password: Aimer
   port: 35559
@@ -200,13 +197,16 @@ proxies:
   skip-cert-verify: false
   sni: epccj.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇰🇷 _韩国 #1'
+- alterId: 0
+  name: 24,37|KR
   password: Aimer
   port: 50000
   server: 211.251.7.76
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epccj.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇰🇷 _韩国 #2'
   password: Aimer
   port: 50003
@@ -249,56 +249,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 28|🇰🇷 bing3038
-  password: 4d3bf365-9402-44df-83bb-0f2428891e71
-  port: 23031
-  server: huojian-js.arken8379.com
-  skip-cert-verify: true
-  sni: www.bilibili.com
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: 28|🇰🇷 bing3106
-  password: 9f9b992e-1ee4-4d5a-b7f2-561bdcf7ecbe
-  port: 49026
-  server: kr91.cctv14.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇰🇷 bing3122
-  password: b66929df-e44e-4ce4-9c35-574723d7ca21
-  port: 38077
-  server: hn.qlrk0.cc
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|🇰🇷 bing3567
-  network: ws
-  port: 8002
-  server: 59.42.247.189
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7300c038-da48-421e-a847-f2ad9c1c8ecc
-  ws-opts:
-    headers:
-      Host: v7.nmcf.me
-    path: /nmkj
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇰🇷 bing3674
-  password: 521af798-6eb4-4696-93d5-c62a4a3d4bbd
-  port: 52513
-  server: hry200.2228333.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇰🇷 bing3692
-  password: 9a74e64e-ce06-4233-9689-9fe34ef820f0
-  port: 16116
-  server: 59.42.247.53
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 30|1|🇰🇷 韩国 02 | 1x KR
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
@@ -306,6 +256,16 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: '30|12|🇷 韩国|@ripaojiedian #2'
+  port: 17232
+  server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
 - cipher: aes-256-cfb
   name: 30|12|🇰🇷 韩国|@ripaojiedian
   password: amazonskr05
@@ -313,6 +273,16 @@ proxies:
   server: 3.34.192.249
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇰🇷 KR-45.82.246.17...
+  network: tcp
+  port: '26521'
+  server: 45.82.246.173
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cff7001e-3a74-43e8-bfd8-a7af9630a58b
 - client-fingerprint: random
   name: 40|KR_speednode_0022
   network: ws
