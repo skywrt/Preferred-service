@@ -1,10 +1,12 @@
 proxies:
-- name: 5,9,11,24,27,40|CN_speednode_0004
+- alterId: 0
+  name: 5,9,11,24,27,37,40|CN_speednode_0004
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a10.taipeicitygovernment.kyiv.ua
   skip-cert-verify: true
   sni: 45.32.28.232
+  tls: true
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -21,11 +23,14 @@ proxies:
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇼 台湾 03 | 1x TW #1'
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,30,37|TW
+  password: ccceaf12-fe7c-4044-93e1-e0234867801f
   port: 36245
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -62,7 +67,7 @@ proxies:
     headers:
       Host: epccj.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 9,11,40|US_speednode_0057
+- name: 9,11,27,40|US_speednode_0057
   network: ws
   password: Aimer
   port: 443
@@ -88,6 +93,13 @@ proxies:
     headers:
       Host: epccj.ambercc.filegear-sg.me
     path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 11|1|🇹🇼5 |  6.2MB/s|11%|Youtube|O...
+  password: 887f01da-5b52-4dff-a80f-efe3380ac35f
+  port: 50555
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
 - name: '24|2|🇹🇼1 |  2.5MB/s|0%|Disney|Ope... #2'
   password: Aimer
   port: 443
@@ -109,72 +121,6 @@ proxies:
   skip-cert-verify: false
   sni: epccj.ambercc.filegear-sg.me
   type: trojan
-- alpn:
-  - h3
-  client-fingerprint: randomized
-  name: 27|3|🇹🇼1 |  1.3MB/s|0%|Disney|Ope...
-  network: ws
-  password: Aimer
-  port: '443'
-  server: 173.245.59.201
-  skip-cert-verify: false
-  sni: epccj.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.77 Safari/537.36
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alpn:
-  - h3
-  client-fingerprint: randomized
-  name: 27|3|🇹🇼2 |  1.4MB/s|Openai
-  network: ws
-  password: Aimer
-  port: '443'
-  server: 209.208.227.79
-  skip-cert-verify: false
-  sni: epccj.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/57.0.2987.133 Safari/537.36
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alpn:
-  - h3
-  client-fingerprint: randomized
-  name: 27|3|🇹🇼3 |  4.0MB/s|Netflix|Disne...
-  network: ws
-  password: Aimer
-  port: '2096'
-  server: 167.68.4.10
-  skip-cert-verify: false
-  sni: epccj.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/40.0.2214.115 Safari/537.36
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: chacha20-ietf-poly1305
-  name: 27,40|TW_speednode_0036
-  password: 937f6b6168b6
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: wt8v1.kvote.cn
-    mode: websocket
-    mux: true
-    path: /oqhygtklyhwi
-    tls: true
-  port: 443
-  server: 103.137.62.194
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 28|🇹🇼 bing2707
@@ -416,10 +362,10 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 37|TW
+  name: '37|TW #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 60.249.35.38
+  server: 60.249.28.136
   skip-cert-verify: true
   tls: true
   type: ss
@@ -428,16 +374,21 @@ proxies:
   name: 37|TW2
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 61.216.165.232
+  server: 60.249.35.37
   skip-cert-verify: true
   tls: true
   type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|TW3
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 61.216.165.30
-  skip-cert-verify: true
-  tls: true
+- cipher: chacha20-ietf-poly1305
+  name: 40|TW_speednode_0036
+  password: 937f6b6168b6
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: wt8v1.kvote.cn
+    mode: websocket
+    mux: true
+    path: /oqhygtklyhwi
+    tls: true
+  port: 443
+  server: 103.137.62.194
   type: ss
+  udp: true
