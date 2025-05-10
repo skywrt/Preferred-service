@@ -10,13 +10,15 @@ proxies:
   uuid: e8001124-1ff5-11ee-abc1-f23c9164ca5d
 - alpn:
   - http/1.1
-  name: 5|法国+巴黎Amazon数据中心
+  name: 5,11|2|🇷6 |  4.3MB/s|34%|Youtube|Op...
   network: tcp
   password: telegram-id-directvpn
-  port: 22223
+  port: '22223'
   server: 52.47.159.179
+  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '5|法国 - 塞纳河畔维提 - Online S.A.S. - ... #1'
@@ -148,7 +150,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知125 1.2MB/s
+  name: 19,20,21,37|未知82 21.2MB/s
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.158.171.151
@@ -215,6 +217,15 @@ proxies:
     headers:
       host: az05.beyondy.cfd
     path: /link
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 20,21,37|未知48 21.9MB/s
+  password: f9d73c84e32a10f3
+  port: 11259
+  server: 57.128.190.171
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - name: '20,21|🇫🇷FR-51.68.13.106-1039 #1'
   password: FiSo7J6vfS
   port: 1935
@@ -305,13 +316,16 @@ proxies:
     headers:
       Host: irvideo.cfd
     path: /linkws
-- name: 24|🇫🇷 法国 巴黎Amazon数据中心
+- alterId: 0
+  name: 24,37|🇷FR
   password: telegram-id-privatevpns
   port: 22222
   server: 52.47.159.179
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - name: 26|V2-日本01∣K11线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21146

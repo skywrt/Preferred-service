@@ -32,31 +32,28 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,30|1|🇬 新加坡 01 | 1x SG
+  name: 5,9,11,27,30|1|🇬 新加坡 01 | 1x SG
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: 0
-  name: 5,20,21,24,37|未知17
+- name: 5,20,21,24|4
   password: 54231b3d-a39d-4769-a511-2a1c663a62b1
   port: 443
   server: sg01.trojanyyds.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: sg01.trojanyyds.xyz
-  tls: true
   type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇬新加坡 02 | 1x SG #1'
+  name: 5,9,11,24,27,30|0|🇬新加坡 02 | 1x SG
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇬新加坡 03 | 1x SG #1'
+  name: 5,9,11,24,27,30|0|🇬新加坡 03 | 1x SG
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31175
   server: free.2apzhfa.xyz
@@ -76,7 +73,7 @@ proxies:
       Host: tyep.esslh.filegear-sg.me
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,30|1|🇸🇬 新加坡 02 | 1x SG
+  name: 5,9,11,27,30|1|🇸🇬 新加坡 02 | 1x SG
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36173
   server: free.2weradf.xyz
@@ -239,6 +236,13 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: aes-256-gcm
+  name: 28|🇬 V1 | 新加坡2
+  password: 82dab2ed-c88f-4745-9d90-6cdd0eb816ce
+  port: 49042
+  server: sg92.cctv14.xyz
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 30|1|🇬 新加坡 03 | 1x SG
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
@@ -265,15 +269,34 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 36,37|未知79 430.6KB/s
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-46.250.237.4...
   network: tcp
-  port: 44396
-  server: 84.247.148.192
+  port: '16369'
+  server: 46.250.237.48
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: 3ca35e0a-e430-43fe-9c12-2e2eea70f873
+  uuid: 11aa4614-bb63-45fe-9d4b-f3b215c639e5
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-84.247.147.6...
+  network: tcp
+  port: '54179'
+  server: 84.247.147.67
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d143ebbc-7825-4b43-a55e-f11cb153bd5b
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.233.7...
+  network: tcp
+  port: '44127'
+  server: 62.146.233.79
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ae0fa822-58bb-483f-9af5-d417d8c23b21
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇸🇬 SG-152.69.220.9...
@@ -290,53 +313,14 @@ proxies:
     path: /dsfsdf
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-84.247.147.6...
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-84.247.148.1...
   network: tcp
-  port: '54179'
-  server: 84.247.147.67
+  port: '44396'
+  server: 84.247.148.192
   servername: ''
   tls: false
   type: vmess
-  uuid: d143ebbc-7825-4b43-a55e-f11cb153bd5b
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-154.26.134...
-  network: tcp
-  port: '14129'
-  server: 154.26.134.106
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e7798e09-3090-4366-ae80-f18afdaabf4f
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.233.7...
-  network: tcp
-  port: '44127'
-  server: 62.146.233.79
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ae0fa822-58bb-483f-9af5-d417d8c23b21
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-84.247.147.2...
-  network: tcp
-  port: '51566'
-  server: 84.247.147.243
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ae6ae977-17f2-43fd-a336-20b3b3a9e791
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-47.237.84.79...
-  network: tcp
-  port: 3030
-  server: 47.237.84.79
-  tls: false
-  type: vmess
-  uuid: de49138c-df11-4b6c-ed94-09e36b8fb890
+  uuid: 3ca35e0a-e430-43fe-9c12-2e2eea70f873
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.233.6...
@@ -359,31 +343,30 @@ proxies:
   uuid: b31fc134-978e-4176-8579-8107d6a0cede
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-46.250.237.4...
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-47.237.84.79...
   network: tcp
-  port: '16369'
-  server: 46.250.237.48
-  servername: ''
+  port: 3030
+  server: 47.237.84.79
   tls: false
   type: vmess
-  uuid: 11aa4614-bb63-45fe-9d4b-f3b215c639e5
+  uuid: de49138c-df11-4b6c-ed94-09e36b8fb890
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-84.247.146.1...
+  name: 36|🔒 VM-TCP-NONE 🇸🇬 SG-154.26.134...
   network: tcp
-  port: '33754'
-  server: 84.247.146.189
+  port: '14129'
+  server: 154.26.134.106
   servername: ''
   tls: false
   type: vmess
-  uuid: 45f4f565-8c78-4906-a5b9-08ea9075cd31
+  uuid: e7798e09-3090-4366-ae80-f18afdaabf4f
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-84.247.150.1...
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-84.247.147.2...
   network: tcp
-  port: '36141'
-  server: 84.247.150.177
+  port: '51566'
+  server: 84.247.147.243
   servername: ''
   tls: false
   type: vmess
-  uuid: d31ee52f-b6e4-4db8-9c95-98855ec823cc
+  uuid: ae6ae977-17f2-43fd-a336-20b3b3a9e791
