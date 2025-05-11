@@ -34,7 +34,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇭🇰香港 02 | 1x HK #3'
+  name: '5,11,24,27,30|0|🇭🇰香港 02 | 1x HK #2'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31143
   server: free.2apzhfa.xyz
@@ -63,7 +63,7 @@ proxies:
       Host: vt-bana2-cn-11.ghpgwqswodgzv.com
     path: /dl_media
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇭🇰香港 03 | 1x HK #2'
+  name: '5,11,24,27,30|0|🇭🇰香港 03 | 1x HK #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31145
   server: free.2apzhfa.xyz
@@ -83,11 +83,14 @@ proxies:
     headers:
       Host: wamxoa.com
     path: /asdd
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇭🇰 香港 01 | 1x HK #3'
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30,37|HK #1'
+  password: 9bc12592-5b68-4913-a85a-b2c0c33829a7
   port: 36141
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 64
@@ -108,7 +111,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇭🇰 香港 02 | 1x HK #3'
+  name: '5,11,24,27,30|1|🇭🇰 香港 02 | 1x HK #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36143
   server: free.2weradf.xyz
@@ -128,146 +131,362 @@ proxies:
     headers:
       Host: 71735d9f-sv2sg0-t71mow-4cl7.hk.p5pv.com
     path: /
-- name: '5,11,24,27|13,14|香港7|@ripaojiedian #1'
+- alterId: 0
+  name: 5,11,24,27,37|🇭🇰HK香港2
   network: tcp
   password: VMhGp5wEIyCDf90T
   port: 42303
   server: csuzhou01.1cooldns.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: hk06.run.place
+  tls: true
   type: trojan
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30,37|HK #1'
-  password: 7073a02a-8cd0-418d-909b-d639b1f736a1
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,30|1|🇭🇰 香港IP 03 | 1x HK
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36145
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - alterId: 2
   cipher: auto
-  name: '11,20,21|🇭🇰HK-1.65.216.177-6483 #1'
+  name: 11|1|🇭🇰3 |  2.2MB/s|16%|Youtube
   network: ws
   port: 80
-  server: a1a13b07-sv4n40-svvk7h-1tgdw.hk3.p5pv.com
+  server: 63a845ef-sv4n40-svc6zc-tf26.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: a19397b8-f7fa-11ef-836a-f23c913c8d2b
+  uuid: baefe2f4-b41a-11ee-91e9-f23c913c8d2b
   ws-opts:
     headers:
-      Host: a1a13b07-sv4n40-svvk7h-1tgdw.hk3.p5pv.com
+      Host: 63a845ef-sv4n40-svc6zc-tf26.hk3.p5pv.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 11|2|🇭🇰5 |  1.6MB/s|16%|Youtube|O...
+  name: 11|1|🇭🇰4 |  2.0MB/s|Youtube
   network: ws
   port: 80
-  server: 8ab19792-sv4n40-svxfqo-1hfyu.hk3.p5pv.com
+  server: c857cef9-sv2sg0-swni7u-1r3y8.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 0a7a2478-f4d6-11ee-9628-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: c857cef9-sv2sg0-swni7u-1r3y8.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 11|1|🇭🇰5 |  1.1MB/s|16%|Youtube
+  network: ws
+  port: 80
+  server: 28044739-sv2sg0-t1jamc-1fvdh.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 9e1ddc04-073b-11ed-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 28044739-sv2sg0-t1jamc-1fvdh.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 11|1|🇭🇰7 |  2.8MB/s|Youtube
+  network: ws
+  port: 80
+  server: 659ce73e-sv2sg0-tcsjnd-1tff5.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: dfb6b402-f422-11ef-80e5-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: 659ce73e-sv2sg0-tcsjnd-1tff5.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 11|1|🇭🇰8 |  1.3MB/s|16%
+  network: ws
+  port: 80
+  server: 92447038-sv2sg0-swos8d-1te2a.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 574db4bc-ef5e-11ef-bd1a-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 92447038-sv2sg0-swos8d-1te2a.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 11|1|🇭🇰9 |  4.5MB/s|Youtube
+  network: ws
+  port: 80
+  server: 06eb7c64-sv2sg0-svxfqo-1hfyu.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: ab0147e4-e673-11ee-8058-f23c91cfbbc9
   ws-opts:
     headers:
-      Host: broadcastlv.chat.bilibili.com
+      Host: 06eb7c64-sv2sg0-svxfqo-1hfyu.hk3.p5pv.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 11|2|🇭🇰6 |  1.7MB/s|16%|Youtube|O...
+  name: 11|1|🇭🇰10 |  2.8MB/s|16%
   network: ws
   port: 80
-  server: 8546e833-sv4n40-t4v3jz-1k8ga.hk3.p5pv.com
+  server: 9a175f99-sv4n40-svve10-e5yo.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: f860f2da-5035-11ed-bb74-f23c9164ca5d
+  uuid: 8b6a0482-4fa2-11ea-bdcd-f23c9164ca5d
   ws-opts:
     headers:
-      Host: broadcastlv.chat.bilibili.com
+      Host: 9a175f99-sv4n40-svve10-e5yo.hk3.p5pv.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 11|2|🇭🇰7 |  1.1MB/s|16%|Youtube|O...
+  name: 11|1|🇭🇰11 |  3.1MB/s|Youtube|Open...
   network: ws
   port: 80
-  server: 8ad47030-sv2sg0-t5wcb1-13x18.hk3.p5pv.com
-  tls: false
-  type: vmess
-  uuid: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 11|2|🇭🇰8 |  1.8MB/s|16%|Youtube
-  network: ws
-  port: 80
-  server: 87a8ce25-sv2sg0-tbicd9-1go3q.hk3.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 19dd9c70-e4a5-11ed-8347-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 11|2|🇭🇰9 |  1.5MB/s|16%|Openai
-  network: ws
-  port: 80
-  server: da181d4d-sv0xs0-t1l34b-s6zq.hk3.p5pv.com
-  tls: false
-  type: vmess
-  uuid: b989d57a-ccc3-11ee-b3a0-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 11|2|🇭🇰10 |  1.7MB/s|16%|Youtube|...
-  network: ws
-  port: 80
-  server: 3be014a6-sv0xs0-svpmdc-nx3b.hk3.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 32315324-cf6b-11ed-979b-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 11|2|🇭🇰11 |  3.9MB/s|16%|Netflix|...
-  network: ws
-  port: 80
-  server: 2ebcb21f-sv4n40-swudbv-df1b.hk3.p5pv.com
+  server: 5c36659d-sv2sg0-swudbv-df1b.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 9b94a182-5a1b-11ee-b866-f23c9164ca5d
   ws-opts:
     headers:
-      Host: broadcastlv.chat.bilibili.com
+      Host: 5c36659d-sv2sg0-swudbv-df1b.hk3.p5pv.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 11|2|🇭🇰12 |  1.6MB/s|16%|Netflix|...
+  name: 11|1|🇭🇰12 |  2.2MB/s|16%|Youtube
   network: ws
   port: 80
-  server: c14a13d7-sv0xs0-t04f46-1hvn1.hk3.p5pv.com
+  server: 360de725-sv4n40-t2y63q-1jk6u.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 8d05476e-ae88-11ed-8543-f23c913c8d2b
+  uuid: 45bc25b2-1a10-11ed-91c0-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: 360de725-sv4n40-t2y63q-1jk6u.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 11|1|🇭🇰13 |  1.8MB/s|16%|Youtube
+  network: ws
+  port: 80
+  server: e7faf98f-sv2sg0-t802lu-1p9qc.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 37e9a0f8-8ade-11ee-b03a-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: e7faf98f-sv2sg0-t802lu-1p9qc.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 11|1|🇭🇰14 |  1.7MB/s|16%|Youtube
+  network: ws
+  port: 80
+  server: 60ca4aee-sv4n40-t8x4vo-12ujz.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e5b57156-3c81-11ec-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: 60ca4aee-sv4n40-t8x4vo-12ujz.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 11|1|🇭🇰15 |  2.3MB/s|Youtube
+  network: ws
+  port: 80
+  server: f0278492-sv2sg0-tcvree-129gb.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 88994e12-009f-11eb-8684-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: f0278492-sv2sg0-tcvree-129gb.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 11|1|🇭🇰16 |  1.1MB/s|16%|Youtube
+  network: ws
+  port: 80
+  server: e7f0dad3-sv0xs0-sv8lir-1su7j.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 0e4ec84a-a324-11ef-81b0-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: e7f0dad3-sv0xs0-sv8lir-1su7j.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 11|1|🇭🇰17 |  2.6MB/s|Youtube|Open...
+  network: ws
+  port: 80
+  server: 5e392f9d-sv0xs0-svewl8-xu74.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 715a2574-9c25-11eb-8673-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: 5e392f9d-sv0xs0-svewl8-xu74.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 11|1|🇭🇰18 |  1.7MB/s|16%|Youtube
+  network: ws
+  port: 80
+  server: b8ffcda3-sv2sg0-sv37gm-81nv.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 47e91fb6-25b8-df52-bc18-3cdc8548192f
+  ws-opts:
+    headers:
+      Host: b8ffcda3-sv2sg0-sv37gm-81nv.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 11|1|🇭🇰19 |  3.6MB/s|16%|Netflix
+  network: ws
+  port: 80
+  server: bd5709b4-sv0xs0-swni7u-1r3y8.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 0a7a2478-f4d6-11ee-9628-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: bd5709b4-sv0xs0-swni7u-1r3y8.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 11|1|🇭🇰20 |  3.2MB/s
+  network: ws
+  port: 80
+  server: c2abc5f2-sv0xs0-sy0vua-1rpnm.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4d0e01ce-2ae6-11ef-8433-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: c2abc5f2-sv0xs0-sy0vua-1rpnm.hk3.p5pv.com
+    path: /
+- alterId: '2'
+  cipher: auto
+  name: 11|1|🇭🇰21 |  1.7MB/s|16%|Youtube|...
+  network: ws
+  port: 80
+  server: ea2d3cd3-sv0xs0-t9azkv-17xn0.hk3.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4faf123a-572a-11eb-8684-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+  xudp: true
+- alterId: '2'
+  cipher: auto
+  name: 11|1|🇭🇰22 |  3.2MB/s|16%|Youtube
+  network: ws
+  port: 80
+  server: 7cf3222f-sv4n40-sv8lir-1su7j.hk3.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0e4ec84a-a324-11ef-81b0-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+  xudp: true
+- alterId: 2
+  cipher: auto
+  name: 11|1|🇭🇰23 |  2.2MB/s|Youtube|Open...
+  network: ws
+  port: 80
+  server: 28044739-sv2sg0-t1jamc-1fvdh.hk3.p5pv.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9e1ddc04-073b-11ed-bd7c-f23c913c8d2b
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 11|2|🇭🇰13 |  3.4MB/s|16%|Youtube
+  name: 11|1|🇭🇰24 |  1.2MB/s|16%|Youtube
+  network: ws
+  port: 80
+  server: 1bcf533f-sv0xs0-sy8f4e-ukt4.hk3.p5pv.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6589f6d0-e192-11ec-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 11,27|2|🇭🇰15 |  4.4MB/s|16%|Youtube|...
+  network: ws
+  port: 80
+  server: 0f64e685-sv0xs0-svwnuh-1t4wg.hk3.p5pv.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1b13e20c-e778-11ef-907f-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 11,27|2|🇭🇰13 |  3.4MB/s|16%|Youtube
   network: ws
   port: 80
   server: 33e3af20-sv0xs0-t83wtx-2rrb.hk3.p5pv.com
@@ -278,162 +497,86 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- alterId: 2
+- alterId: '2'
   cipher: auto
-  name: 11|2|🇭🇰14 |  1.9MB/s|Youtube|Open...
+  name: 11|1|🇭🇰27 |  2.5MB/s|16%
   network: ws
   port: 80
-  server: 12988683-sv2sg0-t2whio-1jcwu.hk3.p5pv.com
+  server: 78da5850-sv2sg0-t0t0ee-1tave.hk3.p5pv.com
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: f93486ce-cc84-11ed-9e98-f23c913c8d2b
+  udp: true
+  uuid: a930bf30-e465-11ef-bd0b-f23c913c8d2b
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- alterId: 2
+  xudp: true
+- alterId: '2'
   cipher: auto
-  name: 11|2|🇭🇰15 |  4.4MB/s|16%|Youtube|...
+  name: 11|1|🇭🇰28 |  5.0MB/s|Youtube
   network: ws
   port: 80
-  server: 0f64e685-sv0xs0-svwnuh-1t4wg.hk3.p5pv.com
+  server: 2bc8c2b4-sv0xs0-tcr97d-2b2n.hk3.p5pv.com
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 1b13e20c-e778-11ef-907f-f23c913c8d2b
+  udp: true
+  uuid: fcd39788-ca23-11ed-86e2-f23c913c8d2b
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- alterId: 2
+  xudp: true
+- alterId: '2'
   cipher: auto
-  name: 11|2|🇭🇰16 |  2.4MB/s|16%|Youtube|...
+  name: 11|1|🇭🇰29 |  3.5MB/s
   network: ws
   port: 80
-  server: 3f54bee7-sv4n40-tbpu76-1thmd.hk3.p5pv.com
+  server: 30451d6f-sv2sg0-t8ivpf-z65w.hk3.p5pv.com
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 2d8c38cc-fc12-11ef-94aa-f23c913c8d2b
+  udp: true
+  uuid: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- alterId: 2
+  xudp: true
+- alterId: '2'
   cipher: auto
-  name: 11|2|🇭🇰17 |  3.3MB/s|16%|Youtube|...
+  name: 11|1|🇭🇰30 |  3.4MB/s|Youtube
   network: ws
   port: 80
-  server: b1601217-sv2sg0-tcdlur-1qwom.hk3.p5pv.com
+  server: aae81205-sva740-sw0nbj-1anhm.hk3.p5pv.com
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
+  udp: true
+  uuid: 3f58d3fe-f4ea-11eb-8673-f23c9164ca5d
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- alterId: 2
+  xudp: true
+- alterId: '2'
   cipher: auto
-  name: 11|2|🇭🇰18 |  1.6MB/s|16%|Youtube
+  name: 11|1|🇭🇰31 |  2.8MB/s
   network: ws
   port: 80
-  server: 80704206-sv0xs0-t4jw17-dr26.hk3.p5pv.com
+  server: fb6f1580-sv2sg0-svpmdc-nx3b.hk3.p5pv.com
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 5f86d5a4-5e8c-11ea-8f64-f23c91cfbbc9
+  udp: true
+  uuid: 32315324-cf6b-11ed-979b-f23c9164ca5d
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- alterId: 2
-  cipher: auto
-  name: 11|2|🇭🇰19 |  2.0MB/s|16%|Netflix|...
-  network: ws
-  port: 80
-  server: b79f1757-sv4n40-ta1zbm-1lusm.hk3.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 85d50914-8de0-11ef-83cc-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 11|2|🇭🇰20 |  1.6MB/s|Youtube
-  network: ws
-  port: 80
-  server: 36a88ce8-sv4n40-t2whio-1jcwu.hk3.p5pv.com
-  tls: false
-  type: vmess
-  uuid: f93486ce-cc84-11ed-9e98-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 11|2|🇭🇰21 |  1.4MB/s|16%|Youtube
-  network: ws
-  port: 80
-  server: 6b71f268-sv4n40-tdh9w7-ahsb.hk3.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 11|2|🇭🇰22 |  2.8MB/s|16%
-  network: ws
-  port: 80
-  server: 9818edd4-sv2sg0-td5fm5-4dl0.hk3.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 56b05600-e140-11ec-a3de-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 11|2|🇭🇰23 |  2.3MB/s|16%|Netflix|...
-  network: ws
-  port: 80
-  server: 4ac87188-suk9s0-t7qex7-1supq.hk3.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 7af3db60-b2d9-11ef-88ab-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 4ac87188-suk9s0-t7qex7-1supq.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 11|2|🇭🇰24 |  2.7MB/s|Youtube|Open...
-  network: ws
-  port: 80
-  server: d7c3c2f4-sv0xs0-swskl4-1rh01.hk3.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 4c0ba4a2-1510-11ef-ba65-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 11|2|🇭🇰25 |  2.1MB/s|16%|Youtube|...
-  network: ws
-  port: 80
-  server: 992d5710-sv2sg0-sw4w3a-1pbfz.hk3.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 3f03b164-86a9-11ee-ba78-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
+  xudp: true
 - cipher: chacha20-ietf-poly1305
   name: '11,27|13|🇭🇰 香港2|@ripaojiedian #1'
   password: 91a41f4e02dc
@@ -1056,13 +1199,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- name: 20,21,24|4
-  password: 54231b3d-a39d-4769-a511-2a1c663a62b1
-  port: 443
-  server: sg01.trojanyyds.xyz
-  skip-cert-verify: false
-  sni: sg01.trojanyyds.xyz
-  type: trojan
 - alterId: 2
   cipher: auto
   name: 20,21,23|香港6 | ⬇️ 1.3MB/s
@@ -1275,6 +1411,21 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
+  name: 20,21,27|2|🇭🇰3 |  3.5MB/s|16%|Youtube|O...
+  network: ws
+  port: 80
+  server: a1a13b07-sv4n40-svvk7h-1tgdw.hk3.p5pv.com
+  servername: 🇭🇰HK-1.65.216.177-6483 | 5.66MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: a19397b8-f7fa-11ef-836a-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: a1a13b07-sv4n40-svvk7h-1tgdw.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
   name: '20,21|🇭🇰HK-1.36.223.245-1105 #1'
   network: ws
   port: 80
@@ -1449,22 +1600,269 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 2
+  cipher: auto
+  name: 27|2|🇭🇰5 |  1.6MB/s|16%|Youtube|O...
+  network: ws
+  port: 80
+  server: 8ab19792-sv4n40-svxfqo-1hfyu.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: ab0147e4-e673-11ee-8058-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 27|2|🇭🇰6 |  1.7MB/s|16%|Youtube|O...
+  network: ws
+  port: 80
+  server: 8546e833-sv4n40-t4v3jz-1k8ga.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: f860f2da-5035-11ed-bb74-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 27|2|🇭🇰7 |  1.1MB/s|16%|Youtube|O...
+  network: ws
+  port: 80
+  server: 8ad47030-sv2sg0-t5wcb1-13x18.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 27|2|🇭🇰8 |  1.8MB/s|16%|Youtube
+  network: ws
+  port: 80
+  server: 87a8ce25-sv2sg0-tbicd9-1go3q.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 19dd9c70-e4a5-11ed-8347-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 27|2|🇭🇰9 |  1.5MB/s|16%|Openai
+  network: ws
+  port: 80
+  server: da181d4d-sv0xs0-t1l34b-s6zq.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: b989d57a-ccc3-11ee-b3a0-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 27|2|🇭🇰10 |  1.7MB/s|16%|Youtube|...
+  network: ws
+  port: 80
+  server: 3be014a6-sv0xs0-svpmdc-nx3b.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 32315324-cf6b-11ed-979b-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 27|2|🇭🇰11 |  3.9MB/s|16%|Netflix|...
+  network: ws
+  port: 80
+  server: 2ebcb21f-sv4n40-swudbv-df1b.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 9b94a182-5a1b-11ee-b866-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 27|2|🇭🇰12 |  1.6MB/s|16%|Netflix|...
+  network: ws
+  port: 80
+  server: c14a13d7-sv0xs0-t04f46-1hvn1.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 8d05476e-ae88-11ed-8543-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 27|2|🇭🇰14 |  1.9MB/s|Youtube|Open...
+  network: ws
+  port: 80
+  server: 12988683-sv2sg0-t2whio-1jcwu.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: f93486ce-cc84-11ed-9e98-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 27|2|🇭🇰16 |  2.4MB/s|16%|Youtube|...
+  network: ws
+  port: 80
+  server: 3f54bee7-sv4n40-tbpu76-1thmd.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 2d8c38cc-fc12-11ef-94aa-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 27|2|🇭🇰17 |  3.3MB/s|16%|Youtube|...
+  network: ws
+  port: 80
+  server: b1601217-sv2sg0-tcdlur-1qwom.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 27|2|🇭🇰18 |  1.6MB/s|16%|Youtube
+  network: ws
+  port: 80
+  server: 80704206-sv0xs0-t4jw17-dr26.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 5f86d5a4-5e8c-11ea-8f64-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 27|2|🇭🇰19 |  2.0MB/s|16%|Netflix|...
+  network: ws
+  port: 80
+  server: b79f1757-sv4n40-ta1zbm-1lusm.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 85d50914-8de0-11ef-83cc-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 27|2|🇭🇰20 |  1.6MB/s|Youtube
+  network: ws
+  port: 80
+  server: 36a88ce8-sv4n40-t2whio-1jcwu.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: f93486ce-cc84-11ed-9e98-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 27|2|🇭🇰21 |  1.4MB/s|16%|Youtube
+  network: ws
+  port: 80
+  server: 6b71f268-sv4n40-tdh9w7-ahsb.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 27|2|🇭🇰22 |  2.8MB/s|16%
+  network: ws
+  port: 80
+  server: 9818edd4-sv2sg0-td5fm5-4dl0.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 56b05600-e140-11ec-a3de-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 27|2|🇭🇰23 |  2.3MB/s|16%|Netflix|...
+  network: ws
+  port: 80
+  server: 4ac87188-suk9s0-t7qex7-1supq.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 7af3db60-b2d9-11ef-88ab-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 4ac87188-suk9s0-t7qex7-1supq.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 27|2|🇭🇰24 |  2.7MB/s|Youtube|Open...
+  network: ws
+  port: 80
+  server: d7c3c2f4-sv0xs0-swskl4-1rh01.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 4c0ba4a2-1510-11ef-ba65-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 27|2|🇭🇰25 |  2.1MB/s|16%|Youtube|...
+  network: ws
+  port: 80
+  server: 992d5710-sv2sg0-sw4w3a-1pbfz.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 3f03b164-86a9-11ee-ba78-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: '30|12|🇭🇰 香港|@ripaojiedian #2'
+  name: '30|12|🇭🇰 香港|@ripaojiedian #1'
   password: 2be0c954-4291-45ea-b47d-ca713180550b
   port: 52612
   server: hk02.x.quickcht3.club
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '30|12|🇭🇰 香港2|@ripaojiedian #2'
+  name: '30|12|🇭🇰 香港2|@ripaojiedian #1'
   password: be443689-bc64-49ff-85a5-8eecaa2235d3
   port: 41049
   server: hk2.fgmcx.top
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '30|12|🇭🇰 香港3|@ripaojiedian #2'
+  name: '30|12|🇭🇰 香港3|@ripaojiedian #1'
   password: 2be0c954-4291-45ea-b47d-ca713180550b
   port: 52612
   server: 111.29.57.125
@@ -1472,7 +1870,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '30|12|🇭🇰 香港5|@ripaojiedian #2'
+  name: '30|12|🇭🇰 香港5|@ripaojiedian #1'
   network: ws
   port: 46003
   server: cloudgd.coemn.com
@@ -1486,7 +1884,7 @@ proxies:
       Host: cloudgd.coemn.com
     path: /zh-cn
 - cipher: chacha20-ietf-poly1305
-  name: '30|12|🇭🇰 香港6|@ripaojiedian #2'
+  name: '30|12|🇭🇰 香港6|@ripaojiedian #1'
   password: cdc48a7a-b618-45af-a831-5afbd686b02f
   port: 12202
   server: gg21.hangfengjiasu.com
@@ -1501,7 +1899,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '30|13|香港5|@ripaojiedian #2'
+  name: '30|13|香港5|@ripaojiedian #1'
   network: ws
   port: 46003
   server: cloudgd.coemn.com
@@ -1515,7 +1913,7 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: '30|13|香港6|@ripaojiedian #2'
+  name: '30|13|香港6|@ripaojiedian #1'
   network: tcp
   port: 15229
   server: 614ea2b0-sux8g0-td95qh-1isea.cm.plebai.net
@@ -1525,18 +1923,17 @@ proxies:
   uuid: d6abdbda-fe9d-11ec-bb74-f23c9164ca5d
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-82.152.164.10...
   network: ws
-  port: '1935'
-  server: 43.154.34.74
-  servername: djdjjrjjrhk.lzj520hxw.dpdns.org
-  tls: true
+  port: 40601
+  server: 82.152.164.10
+  tls: false
   type: vmess
-  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
+  uuid: 5c634f9c-3dd4-4d3e-97c2-9db2470cf722
   ws-opts:
     headers:
-      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
-    path: /vmess-argo
+      Host: us05.jssssss.com
+    path: /
 - alterId: 2
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-112.120.125.1...
@@ -1550,6 +1947,34 @@ proxies:
     headers:
       Host: 9e968b51-svp0g0-t6fl0c-1r7od.wtt5.p5pv.com
     path: /
+- alterId: 2
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-1.65.209.56:8...
+  network: ws
+  port: 80
+  server: 1.65.209.56
+  servername: broadcastlv.chat.bilibili.com
+  tls: false
+  type: vmess
+  uuid: 0a4d1c88-fb3a-11ef-8c3f-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 793e53e3-sv2sg0-tbnucr-1thfv.hk.p5pv.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-202.181.24.8...
+  network: ws
+  port: '1081'
+  server: 202.181.24.84
+  servername: hk-cn-01.yumeifang.cn
+  tls: true
+  type: vmess
+  uuid: df9b788f-929a-4349-970a-8cbbe12d6ae8
+  ws-opts:
+    headers:
+      Host: wamxoa.com
+    path: /asdd
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-18.162.51.82...
@@ -1566,82 +1991,71 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-202.181.24.8...
+  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
   network: ws
-  port: 1081
-  server: 202.181.24.84
-  servername: hk-cn-01.yumeifang.cn
+  port: '1935'
+  server: 43.154.34.74
+  servername: djdjjrjjrhk.lzj520hxw.dpdns.org
   tls: true
   type: vmess
-  uuid: df9b788f-929a-4349-970a-8cbbe12d6ae8
+  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
   ws-opts:
     headers:
-      Host: wamxoa.com
-    path: /asdd
-- alterId: 2
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-1.65.209.56:8...
-  network: ws
-  port: '80'
-  server: 1.65.209.56
-  tls: false
-  type: vmess
-  uuid: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: d514a957-sv2sg0-swfla6-1rdqg.hk.p5pv.com
-    path: /
+      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
+    path: /vmess-argo
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-82.152.164.10...
-  network: ws
-  port: 40601
-  server: 82.152.164.10
-  tls: false
-  type: vmess
-  uuid: 5c634f9c-3dd4-4d3e-97c2-9db2470cf722
-  ws-opts:
-    headers:
-      Host: us05.jssssss.com
-    path: /
+  name: 37|HK
+  password: Aimer
+  port: 48222
+  server: 47.76.89.195
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: aes-256-gcm
-  name: 37|HK
-  password: DW1B46PTWS3XSPYU
-  port: 15003
-  server: 156.245.190.12
+  name: 37|HK2
+  password: UDAKN2HJM6TYYJSP
+  port: 15009
+  server: 156.245.190.18
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  name: 37|HK2
-  password: Aimer
-  port: 16032
-  server: 47.239.107.108
-  skip-cert-verify: true
-  sni: epcco.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
+  cipher: chacha20-ietf-poly1305
   name: 37|HK3
-  network: tcp
-  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
-  port: 12052
-  server: 185.14.47.199
+  password: 1fefd28e-b2e6-4462-a378-cbc58a8748f9
+  port: 20022
+  server: 38.180.95.135
   skip-cert-verify: true
-  sni: cdn.alibaba.com
   tls: true
-  type: trojan
-  udp: true
+  type: ss
 - alterId: 0
+  cipher: aes-256-gcm
   name: 37|HK4
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 219.76.13.166
+  password: PT2N60DCUH6VCQPC
+  port: 15004
+  server: 156.245.190.13
   skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 37|HK5
+  password: NLGZXGG09D5F8X5U
+  port: 15008
+  server: 156.245.190.17
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|HK6
+  password: Aimer
+  port: 36374
+  server: 8.217.47.218
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
   tls: true
   type: trojan
   udp: true

@@ -67,11 +67,14 @@ proxies:
   tls: true
   type: vless
   uuid: e5dc5079-6dd1-4fdc-a11d-e6e5728b2a07
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇪 德国 01 | 1x DE #2'
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,30,37|DE国
+  password: 9bc12592-5b68-4913-a85a-b2c0c33829a7
   port: 36471
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -90,14 +93,11 @@ proxies:
   tls: true
   type: vless
   uuid: e12c6b99-f242-4c43-8411-edb7b333c79a
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30,37|DE
-  password: 93656afe-c968-4c3f-b052-25af54a2b09d
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30|0|国 01 | 1x DE #1'
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31471
   server: free.2apzhfa.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - name: 5|2|🇩🇪17 |  5.6MB/s|21%|Youtube|...
@@ -171,15 +171,6 @@ proxies:
     headers:
       host: irvideo.cfd
     path: /linkws
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知61 241.6KB/s
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - cipher: aes-256-cfb
   name: 19|🇩🇪DE-80.92.204.106-3215
   password: M3t2ZEQcMGRWBjRa
@@ -245,24 +236,22 @@ proxies:
   tls: false
   type: vmess
   uuid: b01c7ef9-33ec-41f6-bfbf-77ddc4d21649
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: 27|3|🇩🇪2 |  1.1MB/s|21%|Disney|Op...
+- alterId: '0'
+  cipher: auto
+  name: 24,27|2|🇷7 |  3.8MB/s|100%|Openai
   network: ws
-  password: T@_WvT8Ho@LW%w_,
-  port: '2053'
-  server: 172.66.44.214
+  port: '443'
+  server: 132.145.232.171
   skip-cert-verify: false
-  sni: NOp-55q.pAgEs.dEv
-  type: trojan
+  tls: true
+  type: vmess
   udp: true
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /trGPZDfetEwuO25SAs?ed=2560
+      Host: beyonddsz.cfd
+    path: /linkws
+  xudp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-157.90.117.2...
