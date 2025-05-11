@@ -5,7 +5,7 @@ proxies:
   delay: 1269
   h2-opts: {}
   http-opts: {}
-  name: '5,11,27|2|🇷1 |  5.9MB/s|49%|Youtube #1'
+  name: 5,24,27|3|🇷1 |  5.9MB/s|49%|Youtube
   network: tcp
   port: 17232
   server: a64e572b-sutj40-tei4of-1qxa1.cm5.p5pv.com
@@ -34,7 +34,7 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: '5,11,20,21,24,27|2|🇰🇷4 |  4.7MB/s|44%|Disney|Op... #2'
+  name: '5,20,21,24,27|3|🇰🇷4 |  4.7MB/s|44%|Disney|Op... #2'
   password: qwerREWQ@@
   port: '15098'
   server: 125.141.31.72
@@ -55,21 +55,21 @@ proxies:
       Host: dv4.789900.xyz
     path: /0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05-vm
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|0|🇷韩国 02 | 1x KR
+  name: '5,11,24,27,30|0|🇷韩国 02 | 1x KR #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27|13|🇷 韩国2|@ripaojiedian
+  name: 5,11,24,27|13|🇷 韩国2|@ripaojiedian
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 6666
   server: 3.35.231.68
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: 5,11,27|13|🇷 韩国特殊|@ripaojiedian
+  name: 5,11,24,27|13|🇷 韩国特殊|@ripaojiedian
   password: awsps0501
   port: 443
   server: 35.89.83.1
@@ -119,7 +119,7 @@ proxies:
   type: vmess
   uuid: 78ad2258-088d-11f0-8eab-f23c91cfbbc9
 - cipher: aes-256-cfb
-  name: '5,11,24,27|2|🇷3 |  5.8MB/s|44%|Netflix|Di... #1'
+  name: 5,24,27|3|🇷3 |  5.8MB/s|44%|Netflix|Di...
   password: qwerREWQ@@
   port: '4857'
   server: 125.141.26.12
@@ -147,12 +147,38 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|1|🇷 韩国 01 | 1x KR
+  name: '5,11,24,27,30|1|🇷 韩国 01 | 1x KR #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
+- name: 11,40|KR_speednode_0045
+  network: ws
+  password: '!!str 0588'
+  port: 50000
+  server: 175.203.30.93
+  skip-cert-verify: true
+  sni: 888.uskm.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 888.uskm.dpdns.org
+    path: /?ed=2560
+- name: 11,40|KR_speednode_0046
+  network: ws
+  password: Aimer
+  port: 50000
+  server: 211.251.7.76
+  skip-cert-verify: false
+  sni: epccj.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epccj.ambercc.filegear-sg.me
+    path: /?ed=2560
 - name: 17|韩国(yudou66.com 玉豆免费节点)
   network: ws
   port: 12273
@@ -230,7 +256,30 @@ proxies:
   tls: false
   type: vmess
   uuid: cff7001e-3a74-43e8-bfd8-a7af9630a58b
-- name: 40|KR_speednode_0013
+- name: 40|KR_speednode_0047
+  network: ws
+  port: 11223
+  server: 218.38.33.77
+  servername: mikuyo.bpd67081tsq.ddns-ip.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: be21e25f-5919-4e6b-b443-bfa45273de5d
+  ws-opts:
+    headers:
+      Host: mikuyo.bpd67081tsq.ddns-ip.net
+    path: /
+- name: 40|KR_speednode_0048
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  port: 443
+  server: kr01.sqx001.com
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: dmpyoary@mayorlogistic.com
+- name: 40|KR_speednode_0049
   network: ws
   port: 50000
   server: 112.164.234.135
@@ -244,54 +293,17 @@ proxies:
     headers:
       Host: 0229.patterdeng.pp.ua
     path: /?ed=2560
-- name: 40|KR_speednode_0014
-  network: ws
-  port: 12297
-  server: 220.73.70.34
-  servername: edccj.ambercc.filegear-sg.me
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 40|KR_speednode_0050
+  port: 443
+  reality-opts:
+    public-key: P--AseuV7sGvgy7YJ8iX58GxeP5-M2oq0Mq2YxPAXRs
+    short-id: f00d40f38482
+  server: 131.186.22.238
+  servername: buylite.music.apple.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edccj.ambercc.filegear-sg.me
-    path: /?ed=2560
-- client-fingerprint: random
-  name: 40|KR_speednode_0015
-  network: ws
-  port: 10187
-  server: 121.189.106.45
-  servername: mot.luyuju.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f8e0a197-2d5c-441e-a724-525379e4db3a
-  ws-opts:
-    headers:
-      Host: mot.luyuju.dpdns.org
-    path: /?ed=2560
-- client-fingerprint: random
-  name: 40|KR_speednode_0016
-  network: ws
-  port: 18796
-  server: 61.74.213.66
-  servername: mot.luyuju.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f8e0a197-2d5c-441e-a724-525379e4db3a
-  ws-opts:
-    headers:
-      Host: mot.luyuju.dpdns.org
-    path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 40|KR_speednode_0017
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-  udp: true
+  uuid: 17606d29-e77d-4d2c-81ac-81b8bb1311d1
