@@ -1,4 +1,17 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,30|0|🇺俄罗斯 01 | 1x RU
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31511
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,8|🇳🇱NL-185.242.86.156-156_1@156
+  password: 36ZCHeabUSfKjfQEvJ4HDV
+  port: 54170
+  server: 185.242.86.156
+  type: ss
 - alterId: 0
   cipher: auto
   name: 5|俄罗斯 - 莫斯科 - LLC BAXET - 10
@@ -12,13 +25,6 @@ proxies:
     headers:
       Host: 1176552658409.vmru.taobao.yyds.niaoba.top
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|0|🇺俄罗斯 01 | 1x RU
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31511
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 5,11,24,27,30|1|🇺 俄罗斯 01 | 1x RU
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
@@ -98,6 +104,20 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: '20,21|🇷🇺RU-45.147.201.231-2048 #1'
+  network: ws
+  port: 23083
+  server: 45.147.201.231
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9b5d72fd-3e66-4909-a3a5-0f259a9ad68f
+  ws-opts:
+    headers:
+      Host: 45.147.201.231
+    path: /
+- alterId: 0
+  cipher: auto
   name: 23|🇷🇺_RU_俄罗斯联邦
   network: ws
   port: 12910
@@ -108,11 +128,12 @@ proxies:
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     path: /
-- name: '24|🇷🇺 _俄罗斯 #1'
-  password: vpn
-  port: 2025
-  server: 109.120.132.80
+- name: '24|2,14|RU_speednode_0061 #1'
+  password: Aimer
+  port: 2096
+  server: 176.124.223.133
   skip-cert-verify: false
+  sni: epccj.ambercc.filegear-sg.me
   type: trojan
 - alterId: 0
   cipher: auto
