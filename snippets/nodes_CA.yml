@@ -3,7 +3,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|281a3f04dda24344a90a3dac75d994...
+  name: 3|28b5b8f20c4e4517a7c39eedc43a01...
   network: ws
   port: 443
   server: 172.67.170.103
@@ -20,7 +20,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|49ca4b46313b4efa93ed16afbf1514...
+  name: 3|e449edbac9ce4a2ab51322c9473714...
   network: ws
   port: 443
   server: 172.67.156.210
@@ -31,14 +31,14 @@ proxies:
   ws-opts:
     path: /linkws
 - client-fingerprint: chrome
-  name: 3|9d437350378649a5b4902b59d1d5b6...
+  name: 3|1fd3a408aa034a3c93327092ca94eb...
   password: 2faaf996-d2b0-440d-8258-81f2b05dd0e4
   port: 443
   server: 172.67.75.172
   type: trojan
 - alterId: '0'
   cipher: auto
-  name: 5,11,24,27|3|🇦1 |  2.0MB/s|29%|Openai|Gem...
+  name: '5,11,24,27|2|🇨🇦1 |  5.8MB/s|29%|Youtube|O... #2'
   network: ws
   port: 2083
   server: cloudgetservice.mcloudservice.site
@@ -53,20 +53,17 @@ proxies:
     path: /linkvkws
   xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇦 加拿大 01 | 1x CA #1'
+  name: 5,11,24,27,30|0|🇦加拿大 01 | 1x CA
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,30|1|🇦 加拿大 01 | 1x CA
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36441
   server: free.2weradf.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30,37|🇦CA
-  password: 352d5b5c-2df6-4341-b6ea-dc8ea575c643
-  port: 31441
-  server: free.2apzhfa.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -515,18 +512,6 @@ proxies:
     headers:
       Host: www.bing.com
     path: github.com/Alvin9999
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇨🇦CA-142.4.216.225-1090
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇨🇦CA-142.4.216.225-1078
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: ca225.vpnbook.com
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -544,20 +529,6 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-23.162.200.227-8738 #1'
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
   name: '20,21|🇨🇦CA-134.195.198.147-8735 #1'
   network: ws
   port: 443
@@ -572,18 +543,27 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 20,21,24|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
+  name: '20,21|🇨🇦CA-23.162.200.227-8738 #1'
   network: ws
-  port: 80
-  server: 51.79.102.253
+  port: 443
+  server: 23.162.200.227
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: 51.79.102.253
-    path: /IOebhLMhl1CTbFHbL95myfRX2
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 20,21,37|未知140
+  password: shadowsocks7
+  port: 443
+  server: 149.22.95.183
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   cipher: auto
   name: 23|🇨🇦_CA_加拿大
@@ -596,6 +576,20 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 24|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
+  network: ws
+  port: 80
+  server: 51.79.102.253
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: 51.79.102.253
+    path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
   name: '24|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP... #1'
