@@ -41,18 +41,20 @@ proxies:
   uuid: dd1e77b6-5131-5854-8232-d3f7bcbe0e95
   ws-opts:
     path: /vless
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇺 俄罗斯 01 | 1x RU #1'
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36511
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 5,24,36|🔒 VM-TCP-NA 🇨🇿 CZ-46.8.126.22:...
+  network: tcp
+  port: '46961'
+  server: 46.8.126.22
+  tls: false
+  type: vmess
+  uuid: 43228d71-743c-45f3-91b5-df6e4052d33d
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 5|2|🇷🇺2 |  4.4MB/s|0%|Youtube
+  name: 5|3|🇷🇺3 |  4.9MB/s|0%|Youtube
   port: 443
-  server: 212.233.94.204
+  server: 213.219.215.89
   servername: maviks.eu
   tls: true
   type: vless
@@ -62,6 +64,13 @@ proxies:
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31511
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30|1|🇺 俄罗斯 01 | 1x RU #1'
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+  port: 36511
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - name: '5,38|🇷🇺_RU_俄罗斯联邦_10 #1'
@@ -76,29 +85,6 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- alterId: 0
-  cipher: auto
-  name: '5,20,21|🏁RELAY-185.174.138.209-8818 #1'
-  network: ws
-  port: 2095
-  server: 185.174.138.209
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: yellow-paper-029c.yvonna.workers.dev
-    path: /az05.beyondy.cfd/link?/TM
-- client-fingerprint: chrome
-  name: 5|15|RU_speednode_0059
-  port: 2040
-  server: 109.172.94.249
-  servername: fr.ign.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
 - name: 8|🇷🇺RU-176.32.35.167-210_1@209
   password: 85bce006-4885-11ee-8792-f23c9164ca5d
   port: 1007
@@ -245,6 +231,22 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: 20,21,28|yandex-382
+  network: ws
+  port: 80
+  server: eedp257bubu2wefy2.lovebaipiao.net
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cb4a68ab-cd36-4f8e-9ae4-dc318c8f31bd
+  ws-opts:
+    headers:
+      Host: www.apple.com
+    path: /iphone
+- alterId: 0
+  cipher: auto
   name: 23|🇷🇺_RU_俄罗斯联邦
   network: ws
   port: 12910
@@ -255,6 +257,21 @@ proxies:
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  name: 24,28|yandex-375
+  network: ws
+  port: 80
+  server: eedp257bubu2wefy1.lovebaipiao.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cb4a68ab-cd36-4f8e-9ae4-dc318c8f31bd
+  ws-opts:
+    headers:
+      Host: www.apple.com
+    path: /iphone
 - name: '24|15|RU_speednode_0035 #1'
   password: Aimer
   port: 2096
@@ -316,7 +333,7 @@ proxies:
   uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23... #1'
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23...
   network: ws
   port: 23083
   server: 45.147.201.231
