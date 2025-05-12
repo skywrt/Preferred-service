@@ -1,6 +1,6 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇭🇰 香港 01 | 1x HK #1'
+  name: '5,11,24,27,30|1|🇭🇰 香港 01 | 1x HK #2'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36141
   server: free.2weradf.xyz
@@ -17,13 +17,13 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-gcm
-  name: 5,11,24,27,28|yandex-2018-20G
+  name: 5,24,27,28|yandex-185
   password: 423cf642-6528-410c-b542-2aae04113d33
   port: 11503
   server: cdn-p1-hk.weibo-dns.com
   type: ss
   udp: true
-- name: 5,11,27|2|🇰1 |  5.4MB/s|0%|Disney
+- name: 5,11,24,27|3|🇰1 |  5.4MB/s|0%|Disney
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: 8313
   server: 183.232.235.2
@@ -38,21 +38,21 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 5,11,24,27,28|yandex-2018-20H
+  name: 5,11,24,27,28|yandex-186
   password: 423cf642-6528-410c-b542-2aae04113d33
   port: 11531
   server: cdn-p1-hk.weibo-dns.com
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 5,11,24,27,28|yandex-2018-20E
+  name: 5,24,27,28|yandex-179
   password: 423cf642-6528-410c-b542-2aae04113d33
   port: 11501
   server: cdn-p1-hk.weibo-dns.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|1|🇭🇰 香港IP 03 | 1x HK
+  name: '5,11,24,27,30|1|🇭🇰 香港IP 03 | 1x HK #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36145
   server: free.2weradf.xyz
@@ -110,7 +110,7 @@ proxies:
       Host: vt-bana2-cn-11.ghpgwqswodgzv.com
     path: /dl_media
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇭🇰 香港 02 | 1x HK #1'
+  name: '5,11,24,27,30|1|🇭🇰 香港 02 | 1x HK #2'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36143
   server: free.2weradf.xyz
@@ -131,11 +131,19 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 5,11,24,27,28|yandex-2018-20I
+  name: 5,24,27,28|yandex-187
   password: 423cf642-6528-410c-b542-2aae04113d33
   port: 11532
   server: cdn-p1-hk.weibo-dns.com
   type: ss
+  udp: true
+- name: 11|2|🇭🇰4 |  5.9MB/s|0%|Disney
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: dozo01.flztjc.top
+  skip-cert-verify: true
+  sni: dozo01.flztjc.top
+  type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: '11,27|13|🇭🇰 香港2|@ripaojiedian #1'
@@ -985,9 +993,9 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '20,21,24|🇭🇰 香港 电讯盈科有限公司 #8'
+  name: '20,21|🇭🇰HK-1.65.209.56-6488 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 581be42d-sv2sg0-swotpn-1nn0k.hk.p5pv.com
   servername: broadcastlv.chat.bilibili.com
   tls: false
@@ -1034,112 +1042,28 @@ proxies:
   tls: false
   type: vmess
   uuid: 2b5597ec-d990-4aaf-b4f9-c19308873901
-- alterId: 2
-  cipher: auto
-  name: 24|🇭🇰 香港 电讯盈科有限公司
-  network: ws
-  port: '80'
-  server: b839c06e-suk9s0-t7qex7-1supq.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 7af3db60-b2d9-11ef-88ab-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: b839c06e-suk9s0-t7qex7-1supq.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '24|🇭🇰 香港 电讯盈科有限公司 #1'
-  network: ws
-  port: '80'
-  server: 0c445917-sv2sg0-t66wbo-160fj.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: e7eb17a0-257a-11ec-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '24|🇭🇰 香港 电讯盈科有限公司 #2'
-  network: ws
-  port: '80'
-  server: bae28021-sv2sg0-t04f46-1hvn1.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 8d05476e-ae88-11ed-8543-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '24|🇭🇰 香港 电讯盈科有限公司 #4'
-  network: ws
-  port: '80'
-  server: 13fb1c14-sv2sg0-sw0aec-1t3oz.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: b3370cdc-c26e-11ef-bd97-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '24|🇭🇰 香港 电讯盈科有限公司 #5'
-  network: ws
-  port: '80'
-  server: e13f81f7-sv6hs0-tcvree-129gb.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 88994e12-009f-11eb-8684-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '24|🇭🇰 香港 电讯盈科有限公司 #6'
-  network: ws
-  port: '80'
-  server: 687032bd-sucv40-sxlqds-1qs82.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 9c6d1142-dc2b-11ee-88c7-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '24|🇭🇰 香港 电讯盈科有限公司 #7'
-  network: ws
-  port: '80'
-  server: 5c4c4152-sv2sg0-sy8f4e-ukt4.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 6589f6d0-e192-11ec-bd7c-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
 - cipher: aes-256-gcm
-  name: 24,28|yandex-2018-20J
+  name: 24,28|yandex-188
   password: 423cf642-6528-410c-b542-2aae04113d33
   port: 11533
   server: ieplqz.youku-dns.com
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 24,28|yandex-2018-20K
+  name: 24,28|yandex-189
   password: 423cf642-6528-410c-b542-2aae04113d33
   port: 11534
   server: ieplqz.youku-dns.com
   type: ss
   udp: true
-- name: '24|13|HK_speednode_0041 #1'
+- name: '24|🇭🇰 14|香港|@ripaojiedian #1'
+  password: a38c9e28-9960-4e31-9f18-ed2495a756aa
+  port: 40021
+  server: vt-bana2-cn-11.ghpgwqswodgzv.com
+  skip-cert-verify: false
+  sni: vt-bana2-cn-11.ghpgwqswodgzv.com
+  type: trojan
+- name: '24|15|HK_speednode_0023 #1'
   password: Aimer
   port: 443
   server: 219.76.13.177
@@ -1241,48 +1165,6 @@ proxies:
   tls: false
   type: vmess
   uuid: d6abdbda-fe9d-11ec-bb74-f23c9164ca5d
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-182.237.0.12...
-  network: ws
-  port: '1086'
-  server: 182.237.0.127
-  servername: hk-02.foxspirit.click
-  tls: true
-  type: vmess
-  uuid: 5aef9bfd-20e3-420a-9b16-433031984bd9
-  ws-opts:
-    headers:
-      Host: www.ouabaua.com
-    path: /zxascas
-- alterId: 2
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-1.65.218.16:8...
-  network: ws
-  port: 80
-  server: 1.65.218.16
-  servername: broadcastlv.chat.bilibili.com
-  tls: false
-  type: vmess
-  uuid: 4d0e01ce-2ae6-11ef-8433-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: c2abc5f2-sv0xs0-sy0vua-1rpnm.hk3.p5pv.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
-  network: ws
-  port: '1935'
-  server: 43.154.34.74
-  servername: djdjjrjjrhk.lzj520hxw.dpdns.org
-  tls: true
-  type: vmess
-  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
-  ws-opts:
-    headers:
-      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
-    path: /vmess-argo
 - alterId: 2
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-112.120.125.1...
@@ -1311,20 +1193,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-18.162.51.82...
-  network: ws
-  port: '10805'
-  server: 18.162.51.82
-  servername: kahk.kia-ai.com
-  tls: true
-  type: vmess
-  uuid: f077ed2d-db1e-42e0-851f-e24aba75e002
-  ws-opts:
-    headers:
-      Host: kahk.kia-ai.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-202.181.24.8...
   network: ws
   port: '1081'
@@ -1337,6 +1205,62 @@ proxies:
     headers:
       Host: wamxoa.com
     path: /asdd
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-182.237.0.12...
+  network: ws
+  port: '1086'
+  server: 182.237.0.127
+  servername: hk-02.foxspirit.click
+  tls: true
+  type: vmess
+  uuid: 5aef9bfd-20e3-420a-9b16-433031984bd9
+  ws-opts:
+    headers:
+      Host: www.ouabaua.com
+    path: /zxascas
+- alterId: 2
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-42.2.112.17:8...
+  network: ws
+  port: 80
+  server: 42.2.112.17
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c1785de0-212f-11ef-92aa-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
+  network: ws
+  port: '1935'
+  server: 43.154.34.74
+  servername: djdjjrjjrhk.lzj520hxw.dpdns.org
+  tls: true
+  type: vmess
+  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
+  ws-opts:
+    headers:
+      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
+    path: /vmess-argo
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-18.162.51.82...
+  network: ws
+  port: '10805'
+  server: 18.162.51.82
+  servername: kahk.kia-ai.com
+  tls: true
+  type: vmess
+  uuid: f077ed2d-db1e-42e0-851f-e24aba75e002
+  ws-opts:
+    headers:
+      Host: kahk.kia-ai.com
+    path: /
 - alterId: 0
   name: 37|HK
   network: ws

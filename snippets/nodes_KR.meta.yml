@@ -1,6 +1,6 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 5,11,27|13|🇷 韩国特殊|@ripaojiedian
+  name: 5,11,24,27|13|🇷 韩国特殊|@ripaojiedian
   password: awsps0501
   port: 443
   server: 18.182.62.232
@@ -21,14 +21,14 @@ proxies:
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|1|🇷 韩国 01 | 1x KR
+  name: '5,11,24,27,30|1|🇷 韩国 01 | 1x KR #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,28|yandex-06 10
+  name: 5,11,24,27,28|yandex-04 12
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 6666
   server: 3.35.231.68
@@ -53,65 +53,11 @@ proxies:
   type: vless
   uuid: 17606d29-e77d-4d2c-81ac-81b8bb1311d1
 - cipher: aes-256-cfb
-  name: 5,11,20,21,27|2|🇷4 |  2.7MB/s|44%|Netflix|Di...
+  name: 5,11,20,21,24,27|3|🇷4 |  2.7MB/s|44%|Netflix|Di...
   password: qwerREWQ@@
   port: 15098
   server: p222.panda001.net
   type: ss
-- name: 11,27|2|🇰🇷6 |  1.2MB/s|62%|Disney
-  network: ws
-  password: amclubs
-  port: 2083
-  server: 104.16.134.27
-  skip-cert-verify: false
-  sni: tran.amclubs.rr.nu
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tran.amclubs.rr.nu
-    path: /?ed=2560
-- name: 11,27|2|🇰🇷7 |  1.6MB/s|62%|Disney
-  network: ws
-  password: '!!str 123456'
-  port: '8443'
-  server: 198.41.208.69
-  skip-cert-verify: false
-  sni: top-azx.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/42.0.2311.90 Safari/537.36
-    path: /Az1.vpn.33.TOP/?ed=2560
-- name: 11,27|2|🇰🇷9 |  1.1MB/s|62%|Netflix|D...
-  network: ws
-  password: '!!str 123456'
-  port: '8443'
-  server: 192.65.217.53
-  skip-cert-verify: false
-  sni: top-azx.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /Az1.vpn.33.TOP/?ed=2560
-- name: 11,27|2|🇰🇷10 |  1.1MB/s|Netflix|Disn...
-  network: ws
-  password: '!!str 123456'
-  port: '8443'
-  server: 104.25.165.81
-  skip-cert-verify: false
-  sni: top-azx.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /Az1.vpn.33.TOP/?ed=2560
 - name: 11,27,40|KR_speednode_0025
   network: ws
   password: Aimer
@@ -198,17 +144,52 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '24|13|KR_speednode_0045 #1'
-  password: '!!str 0588'
-  port: 50000
-  server: 175.203.30.93
-  skip-cert-verify: true
-  sni: 888.uskm.dpdns.org
+- name: '24|3|🇰🇷6 |  1.2MB/s|62%|Disney #1'
+  password: amclubs
+  port: 2083
+  server: 104.16.134.27
+  skip-cert-verify: false
+  sni: tran.amclubs.rr.nu
   type: trojan
-- name: '24|13|KR_speednode_0046 #1'
+- name: '24|3|🇰🇷7 |  1.6MB/s|62%|Disney #1'
+  password: '!!str 123456'
+  port: 8443
+  server: 198.41.208.69
+  skip-cert-verify: false
+  sni: top-azx.pages.dev
+  type: trojan
+- name: '24|3|🇰🇷9 |  1.1MB/s|62%|Netflix|D... #1'
+  password: '!!str 123456'
+  port: 8443
+  server: 192.65.217.53
+  skip-cert-verify: false
+  sni: top-azx.pages.dev
+  type: trojan
+- name: '24|3|🇰🇷10 |  1.1MB/s|Netflix|Disn... #1'
+  password: '!!str 123456'
+  port: 8443
+  server: 104.25.165.81
+  skip-cert-verify: false
+  sni: top-azx.pages.dev
+  type: trojan
+- name: '24|3|🇰🇷11 |  5.7MB/s|62%|Netflix|... #1'
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 172.66.44.230
+  skip-cert-verify: false
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+- name: '24|15|KR_speednode_0025 #1'
   password: Aimer
   port: 50000
   server: 211.251.7.76
+  skip-cert-verify: false
+  sni: epccj.ambercc.filegear-sg.me
+  type: trojan
+- name: '24|🇰🇷 _韩国 #1'
+  password: Aimer
+  port: 50003
+  server: 59.27.236.245
   skip-cert-verify: false
   sni: epccj.ambercc.filegear-sg.me
   type: trojan
@@ -219,6 +200,48 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- name: '27|3|🇰🇷7 |  1.6MB/s|62%|Disney #2'
+  network: ws
+  password: '!!str 123456'
+  port: '8443'
+  server: 198.41.208.69
+  skip-cert-verify: false
+  sni: top-azx.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/42.0.2311.90 Safari/537.36
+    path: /Az1.vpn.33.TOP/?ed=2560
+- name: '27|3|🇰🇷9 |  1.1MB/s|62%|Netflix|D... #2'
+  network: ws
+  password: '!!str 123456'
+  port: '8443'
+  server: 192.65.217.53
+  skip-cert-verify: false
+  sni: top-azx.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /Az1.vpn.33.TOP/?ed=2560
+- name: '27|3|🇰🇷10 |  1.1MB/s|Netflix|Disn... #2'
+  network: ws
+  password: '!!str 123456'
+  port: '8443'
+  server: 104.25.165.81
+  skip-cert-verify: false
+  sni: top-azx.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /Az1.vpn.33.TOP/?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 30|1|🇰🇷 韩国 02 | 1x KR
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
