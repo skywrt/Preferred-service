@@ -1,9 +1,9 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '5,20,21,24|3|🇫🇷4 |  5.6MB/s|Openai #2'
+  name: '5,20,21|🏁RELAY-172.67.136.233-3093 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 172.67.136.233
   servername: ''
   tls: true
@@ -269,16 +269,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-95.179.208.4...
-  network: tcp
-  port: '8874'
-  server: 95.179.208.47
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8371146b-a577-4ffb-bd04-bfcc42fdd10a
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-NA 🇫🇷 FR-5.196.29.123:...
   network: ws
   port: '2082'
@@ -291,3 +281,27 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇫🇷 FR-163.5.159.23...
+  network: ws
+  port: '443'
+  server: 163.5.159.231
+  servername: irvideo.cfd
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-95.179.208.4...
+  network: tcp
+  port: '8874'
+  server: 95.179.208.47
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8371146b-a577-4ffb-bd04-bfcc42fdd10a
