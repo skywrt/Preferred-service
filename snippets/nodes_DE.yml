@@ -1,16 +1,19 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|国 01 | 1x DE #1'
+  name: 5,9,11,24,27,30|0|国 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|1|🇪 德国 01 | 1x DE
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,30,37|DE
+  password: 5c3f2de3-4ba3-4618-90df-4e36e5695328
   port: 36471
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - name: 8|🇩🇪DE-52.58.179.46-180_1@180
@@ -30,7 +33,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- name: 9,27|2|🇪4 |  5.4MB/s|31%|Disney|Ope...
+- name: 9|2|🇩🇪4 |  5.4MB/s|31%|Disney|Op...
   network: ws
   password: bpb-trojan
   port: 443
@@ -154,14 +157,18 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '8880'
-  server: 104.17.147.22
-  servername: ''
-  tls: false
+  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.28.69...
+  network: ws
+  port: 443
+  server: 57.129.28.69
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
   type: vmess
-  uuid: a1ba1c09-50b6-4c29-a544-a9c3c0de591b
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: baradiha.com
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-157.90.117...
@@ -171,6 +178,16 @@ proxies:
   tls: false
   type: vmess
   uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '8880'
+  server: 104.17.147.22
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a1ba1c09-50b6-4c29-a544-a9c3c0de591b
 - alterId: 0
   cipher: auto
   http-opts:

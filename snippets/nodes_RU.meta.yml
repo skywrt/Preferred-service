@@ -1,4 +1,31 @@
 proxies:
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|e1b84629c80c4fa98f172c8dc846e3...
+  network: ws
+  port: 443
+  server: 89.23.118.93
+  servername: ru01.abvpn.ru
+  tls: true
+  type: vless
+  udp: false
+  uuid: 588f094b-431b-422c-b80b-007945037072
+  ws-opts:
+    headers:
+      host: ru01.abvpn.ru
+    path: /websocket
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|bcf35ac77eab4cb8a2d94d864ec652...
+  network: ws
+  port: 2052
+  server: 85.209.194.2
+  tls: false
+  type: vless
+  udp: false
+  uuid: dd1e77b6-5131-5854-8232-d3f7bcbe0e95
+  ws-opts:
+    path: /vless
 - cipher: chacha20-ietf-poly1305
   name: 5,9,11,24,27,30|1|🇺 俄罗斯 01 | 1x RU
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
@@ -6,11 +33,14 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0|🇺俄罗斯 01 | 1x RU
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,30,37|RU
+  password: f4032a0d-04ba-4886-9c0f-603075e08e74
   port: 31511
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - name: '5,38|🇷🇺_RU_俄罗斯联邦_10 #1'
@@ -143,14 +173,11 @@ proxies:
     headers:
       Host: ap.ylks.xyz
     path: '%2Fblue'
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,37|未知41
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇷🇺RU-147.45.221.106-1300
   password: m30QhUjzdUtXi1tsDsF7G1
   port: 46356
   server: 147.45.221.106
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
@@ -210,16 +237,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
-  network: tcp
-  port: '20779'
-  server: 45.12.114.15
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
-- alterId: 0
-  cipher: auto
   name: '36|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23... #2'
   network: ws
   port: 23083
@@ -232,6 +249,16 @@ proxies:
     headers:
       Host: 45.147.201.231
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
+  network: tcp
+  port: '20779'
+  server: 45.12.114.15
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
 - name: 40|RU_speednode_0165
   network: ws
   port: 80
