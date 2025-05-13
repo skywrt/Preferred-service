@@ -1,26 +1,16 @@
 proxies:
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30,37|DE国
-  password: 7ea959bc-3354-471f-8300-5d4edf74f0e6
-  port: 36471
-  server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
-- name: 5|0|🇩🇪5 |  1.3MB/s|Youtube|Opena...
-  password: 4732adfa16c6450bbef87264e41332db
-  port: 443
-  server: 165.22.74.230
-  skip-cert-verify: true
-  sni: nextstepcareer.online
-  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|0|国 01 | 1x DE
+  name: '5,11,24,27,30|0|国 01 | 1x DE #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31471
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30|1|🇪 德国 01 | 1x DE #1'
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+  port: 36471
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - name: 8|🇩🇪DE-52.58.179.46-180_1@180
@@ -40,6 +30,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
+- name: 13|🇩🇪_DE_德国_1
+  network: tcp
+  password: 4732adfa16c6450bbef87264e41332db
+  port: 443
+  server: nextstepcareer.online
+  skip-cert-verify: true
+  type: trojan
 - name: 13|🇩🇪_DE_德国_2
   network: tcp
   password: telegram-id-privatevpns
@@ -88,7 +85,35 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.28.65-8644 #1'
+  name: '20,21|🇩🇪DE-57.129.64.238-8509 #1'
+  network: ws
+  port: 443
+  server: 57.129.64.238
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-57.129.59.197-8519 #1'
+  network: ws
+  port: 443
+  server: kapelleng.com
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-57.129.28.65-8513 #1'
   network: ws
   port: 443
   server: 57.129.28.65
@@ -102,17 +127,17 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.64.238-8664 #1'
+  name: '20,21|🇩🇪DE-57.129.24.125-8498 #1'
   network: ws
   port: 443
-  server: 57.129.64.238
-  servername: kapelleng.com
+  server: 57.129.24.125
+  servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: kapelleng.com
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
 - name: '24|2|🇩🇪5 |  3.3MB/s|30%|Openai #1'
   password: telegram-id-privatevpns
@@ -130,16 +155,17 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-157.90.117.2...
-  network: tcp
-  port: '23890'
-  server: 157.90.117.244
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
   tls: false
   type: vmess
-  uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  name: '36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10... #1'
   network: httpupgrade
   port: '8880'
   server: 104.17.147.22

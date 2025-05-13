@@ -1,10 +1,28 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 5|中国 - 广州市 - China Mobile - 3
+  network: tcp
+  port: '59003'
+  server: 183.236.51.36
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '5,24|_中国 #3'
+  name: 5|中国 - 成都 - CloudRadium L.L.C - ...
   network: tcp
-  port: '50002'
-  server: 120.210.205.59
+  port: '46920'
+  server: 183.238.90.8
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 5|广东省湛江市 移动
+  network: tcp
+  port: 42375
+  server: 120.198.71.214
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -17,70 +35,43 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- ip-version: dual
-  name: 5,24,27|2|🇺🇸25 |  4.6MB/s|46%|Openai|G...
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
-  server: c6b50ea5-sw5og0-t1bnjq-1krtb.cu.plebai.net
-  skip-cert-verify: false
+- name: 5|广东省+移动
+  password: b6200af42ccadea353f5b5856dd20d70
+  port: 39001
+  server: 120.233.128.68
+  skip-cert-verify: true
+  sni: 120.233.128.68
   type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 5,11,23,27,28,30|2|🇺🇸27 |  3.3MB/s
-  network: ws
-  port: 22643
-  server: tk.hzlt.tkddns.xyz
-  servername: zxjp-c.tkong.cc
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-c.tkong.cc
-    path: /
-  xudp: true
 - alterId: 64
   cipher: auto
-  name: 5|中国 - 成都 - CloudRadium L.L.C - ...
-  network: tcp
-  port: '46920'
-  server: 183.238.90.8
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 5|中国 - 广州市 - China Mobile - 3
-  network: tcp
-  port: '59003'
-  server: 183.236.51.36
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 5,24,36|🔒 VM-TCP-NA 🇨🇳 CN-47.92.152.16...
+  name: 5,24|日期：05-12
   network: tcp
   port: '50002'
   server: 47.92.152.169
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 5,27|2|14-ID |  3.4MB/s|40%|Youtube...
-  network: tcp
-  port: '17234'
-  server: 1e69d086-sux8g0-t9eu8q-tlhh.cm5.p5pv.com
+- name: 5|广东省东莞市+移动
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: 183.232.235.2
+  skip-cert-verify: true
+  type: trojan
+- name: 5,11|2|🇺🇸37 |  1.9MB/s|46%|Openai|G...
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: 15229
+  server: eccd74b4-sw7j40-t1bnjq-1krtb.cu.plebai.net
   skip-cert-verify: false
+  type: trojan
+- alterId: 64
+  cipher: auto
+  name: '5,24|_中国 #3'
+  network: tcp
+  port: '50002'
+  server: 120.210.205.59
   tls: false
   type: vmess
-  udp: true
-  uuid: bdf3e15e-c64c-11ea-82ef-f23c9164ca5d
-  xudp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 8|🇨🇳CN-139.227.223.3-049_1@49
@@ -696,16 +687,6 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- alterId: 0
-  cipher: auto
-  name: 11,28|yandex-1496
-  port: 42375
-  server: 120.198.71.214
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 2
   cipher: auto
   name: '12,24|_中国 #33'
@@ -851,10 +832,11 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '24|_中国 #7'
+  name: '24,36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215.... #1'
   network: tcp
   port: '50002'
   server: 112.132.215.12
+  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -879,13 +861,16 @@ proxies:
   skip-cert-verify: false
   sni: epccj.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #11'
+- alterId: 0
+  name: 24,37|CN国
   password: Aimer
   port: 443
   server: 154.211.8.90
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epccj.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #12'
   password: Aimer
   port: 2087
@@ -949,16 +934,6 @@ proxies:
   skip-cert-verify: false
   sni: epccj.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 27,28|yandex-1385
-  port: 30052
-  server: 183.236.51.38
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 30|2|🇸24 |  4.8MB/s
