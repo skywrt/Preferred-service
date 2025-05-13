@@ -1,10 +1,11 @@
 proxies:
-- client-fingerprint: chrome
-  name: 3|a2d54fe51a7c4d9b8315ee8e3cfcad...
-  password: 03c93f49-d573-4889-a4bb-187047c5a314
-  port: 443
-  server: 104.21.71.83
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,30|0|🇦加拿大 01 | 1x CA
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 5,9,11,24,27,30,37|🇨CA
@@ -28,13 +29,6 @@ proxies:
     headers:
       Host: ''
     path: /linkvkws
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0|🇦加拿大 01 | 1x CA
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
   name: 8|🇨🇦CA-134.195.196.51-063_1@63
   password: pKEW8JPByTVTLtM
@@ -481,6 +475,12 @@ proxies:
     headers:
       Host: www.bing.com
     path: github.com/Alvin9999
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇨🇦CA-142.4.216.225-1078
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: ca225.vpnbook.com
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -496,20 +496,6 @@ proxies:
     headers:
       host: ''
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇨🇦CA-134.195.198.147-8526 #1'
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
-    path: /linkvws
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 20,21,37|未知62 18.2MB/s
@@ -532,6 +518,20 @@ proxies:
   ws-opts:
     headers:
       Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇨🇦CA-134.195.198.147-8526 #1'
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
     path: /linkvws
 - alterId: 0
   cipher: auto

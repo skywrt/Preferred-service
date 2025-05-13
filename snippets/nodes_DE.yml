@@ -1,11 +1,4 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0|国 01 | 1x DE
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 5,9,11,24,27,30,37|DE
@@ -14,6 +7,13 @@ proxies:
   server: free.2weradf.xyz
   skip-cert-verify: true
   tls: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,11,24,27,30|0|国 01 | 1x DE #2'
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31471
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - name: 8|🇩🇪DE-52.58.179.46-180_1@180
@@ -60,6 +60,12 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
+- cipher: rc4-md5
+  name: 19|🇩🇪DE-193.108.119.230-0910
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 19|🇩🇪DE-85.208.139.31-6186
   password: q7jwtcA0MmyYi0JddUgXXj
@@ -81,12 +87,6 @@ proxies:
     headers:
       host: irvideo.cfd
     path: /linkws
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇩🇪DE-185.177.229.245-1080
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
 - cipher: aes-256-cfb
   name: 19|🇩🇪DE-80.92.204.106-6032
   password: rpgbNnU9rDDU4aWZ
@@ -157,6 +157,26 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '8880'
+  server: 104.17.147.22
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a1ba1c09-50b6-4c29-a544-a9c3c0de591b
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10... #1'
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.28.69...
   network: ws
   port: 443
@@ -178,16 +198,6 @@ proxies:
   tls: false
   type: vmess
   uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '8880'
-  server: 104.17.147.22
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a1ba1c09-50b6-4c29-a544-a9c3c0de591b
 - alterId: 0
   cipher: auto
   http-opts:
