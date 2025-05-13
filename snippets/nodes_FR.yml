@@ -33,16 +33,12 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 5,24,27|1|🇫🇷7 |  5.4MB/s|100%|Openai
+  name: '5,24|3|🇫🇷12 |  5.8MB/s|100%|Openai #2'
   network: ws
-  port: 443
+  port: '443'
   server: 162.159.152.2
-  servername: obdii.cfd
-  skip-cert-verify: true
-  tfo: false
   tls: true
   type: vmess
-  udp: true
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-opts:
     headers:
@@ -61,12 +57,29 @@ proxies:
     headers:
       Host: obdii.cfd
     path: /linkws
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 5,11,24,27|1|5 |  2.9MB/s|Openai
+  name: 5,24,27|1|🇷3 |  4.8MB/s|100%|Openai
   network: ws
   port: 443
   server: 188.114.97.2
+  servername: obdii.cfd
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: 5,11,20,21,24,27|1|🇫🇷4 |  5.5MB/s|100%|Openai
+  network: ws
+  port: 443
+  server: 172.67.71.160
   servername: obdii.cfd
   skip-cert-verify: false
   tls: true
@@ -78,21 +91,6 @@ proxies:
       Host: obdii.cfd
     path: /linkws
   xudp: true
-- alterId: 0
-  cipher: auto
-  name: '5,11,20,21,24|3|🇫🇷9 |  5.9MB/s|100%|Openai #2'
-  network: ws
-  port: '443'
-  server: 172.67.71.160
-  servername: obdii.cfd
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 8,30|兰 V2CROSS.COM
@@ -177,31 +175,40 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '11,20,21,24|🇺🇸 美国 CloudFlare节点 #3'
+  name: '11,20,21|🏁RELAY-104.21.31.62-8577 #1'
   network: ws
-  port: '443'
-  server: 104.26.0.95
+  port: 443
+  server: 104.21.31.62
   servername: obdii.cfd
   skip-cert-verify: false
   tls: true
   type: vmess
-  udp: true
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-opts:
     headers:
       Host: obdii.cfd
     path: /linkws
-  xudp: true
-- alpn:
-  - http/1.1
-  name: 11|2|🇫🇷6 |  3.1MB/s|30%|Openai
-  network: tcp
-  password: telegram-id-privatevpns
-  port: '22222'
-  server: 15.236.61.44
+- alterId: 0
+  cipher: auto
+  name: '11,20,21|🏁RELAY-172.67.175.56-8612 #1'
+  network: ws
+  port: 443
+  server: 172.67.175.56
+  servername: obdii.cfd
   skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+- cipher: aes-256-gcm
+  name: 11|1|🇫🇷11 |  4.2MB/s|36%|Youtube|...
+  password: PqJc89bEJnYJ-3mFetkZRQ
+  port: '20'
+  server: ss.sps1.sbs
+  type: ss
   udp: true
 - alterId: 0
   cipher: auto
@@ -365,6 +372,17 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alpn:
+  - http/1.1
+  name: 27|1|🇫🇷6 |  3.1MB/s|30%|Openai
+  network: tcp
+  password: telegram-id-privatevpns
+  port: '22222'
+  server: 15.236.61.44
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇫🇷 FR-5.196.29.123:...
@@ -381,6 +399,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇫🇷 FR-163.5.159.23...
+  network: ws
+  port: '443'
+  server: 163.5.159.231
+  servername: irvideo.cfd
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇫🇷 FR-95.179.208.4...
   network: tcp
   port: '8874'
@@ -389,17 +421,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 8371146b-a577-4ffb-bd04-bfcc42fdd10a
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇫🇷 FR-146.19.168.1...
-  network: ws
-  port: '443'
-  server: 146.19.168.161
-  servername: az05.beyondy.cfd
-  tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: az05.beyondy.cfd
-    path: /link
