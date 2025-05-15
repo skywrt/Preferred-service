@@ -1,54 +1,74 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇹🇼 台湾 02 | 1x TW #1'
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '5,24,27,30,37|TW #1'
+  password: c94e709d-37ea-414f-973a-cde993a0148c
   port: 36243
   server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇼 台湾 03 | 1x TW #1'
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36245
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- name: '5,11,24,27|13,14|台湾|@ripaojiedian #1'
-  network: tcp
-  password: 65c14581-e479-41b1-b343-44699f115b1d
-  port: 42765
-  server: wb.kaiqsz.com
   skip-cert-verify: true
-  sni: mmbiz1.redapricotcloud.com
-  type: trojan
+  tls: true
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0| 01 | 1x TW #1'
+  name: '5,24,27,30|0| 01 | 1x TW #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇼台湾 03 | 1x TW #1'
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,24,27,30,37|🇹🇼TW台湾3
+  password: 58b53439-aaf4-4a4e-a62f-1319782c47c2
   port: 31245
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|0|🇼台湾 02 | 1x TW #1'
+  name: 5,24,27,30|1|🇼 台湾 03 | 1x TW
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+  port: 36245
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  name: 5,24,27,37|🇹🇼TW台湾2
+  network: tcp
+  password: b0b42734-5b07-4bae-b9d2-a3d16400b27e
+  port: 42765
+  server: wb.kaiqsz.com
+  skip-cert-verify: true
+  sni: mmbiz1.redapricotcloud.com
+  tls: true
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,24,27,30|0|🇼台湾 02 | 1x TW #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇼 台湾 01 | 1x TW #1'
+  name: 5,24,27,30|1|🇼 台湾 01 | 1x TW
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 27|13|🇼 台湾|@ripaojiedian
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 88a027c.dl.microsoft.lu:14333
+    mode: tls
+  port: 2377
+  server: 118.163.198.43
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 30|2,13|台湾|@ripaojiedian
@@ -78,8 +98,44 @@ proxies:
     headers:
       Host: fadawtawd.zhangwei.li
     path: /zh-cn
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|TW
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.28.136
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|TW2
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 59.125.75.115
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|TW3
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 61.216.165.233
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|TW4
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 211.72.214.21
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 40|TW_speednode_0049
+  name: 40|TW_speednode_0147
   password: 937f6b6168b6
   plugin: v2ray-plugin
   plugin-opts:
