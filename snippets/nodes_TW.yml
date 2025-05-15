@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30,37|TW #1'
+  name: '5,11,24,27,30,37|TW #1'
   password: c94e709d-37ea-414f-973a-cde993a0148c
   port: 36243
   server: free.2weradf.xyz
@@ -10,7 +10,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|0| 01 | 1x TW #1'
+  name: '5,11,24,27,30|0| 01 | 1x TW #2'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31241
   server: free.2apzhfa.xyz
@@ -18,7 +18,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,24,27,30,37|🇹🇼TW台湾3
+  name: 5,11,24,27,30,37|🇹🇼TW台湾3
   password: 58b53439-aaf4-4a4e-a62f-1319782c47c2
   port: 31245
   server: free.2apzhfa.xyz
@@ -27,14 +27,14 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27,30|1|🇼 台湾 03 | 1x TW
+  name: '5,11,24,27,30|1|🇼 台湾 03 | 1x TW #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36245
   server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
-  name: 5,24,27,37|🇹🇼TW台湾2
+  name: 5,11,24,27,37|🇹🇼TW台湾2
   network: tcp
   password: b0b42734-5b07-4bae-b9d2-a3d16400b27e
   port: 42765
@@ -45,21 +45,21 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|0|🇼台湾 02 | 1x TW #1'
+  name: '5,11,24,27,30|0|🇼台湾 02 | 1x TW #2'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27,30|1|🇼 台湾 01 | 1x TW
+  name: '5,11,24,27,30|1|🇼 台湾 01 | 1x TW #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 27|13|🇼 台湾|@ripaojiedian
+  name: 11,27|13|🇼 台湾|@ripaojiedian
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -69,6 +69,14 @@ proxies:
   server: 118.163.198.43
   tfo: false
   type: ss
+- name: '11,24,27|15|CN_speednode_0039 #2'
+  password: 482194f6-8ca3-4c53-b43e-150f51efda7f
+  port: 27201
+  server: 58.254.186.233
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 30|2,13|台湾|@ripaojiedian
@@ -134,17 +142,3 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 40|TW_speednode_0147
-  password: 937f6b6168b6
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: wt8v1.kvote.cn
-    mode: websocket
-    mux: true
-    path: /oqhygtklyhwi
-    tls: true
-  port: 443
-  server: 103.137.62.194
-  type: ss
-  udp: true
