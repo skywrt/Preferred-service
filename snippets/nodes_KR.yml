@@ -14,7 +14,7 @@ proxies:
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '5,24,27,30|1|🇷 韩国 01 | 1x KR #1'
+  name: 5,24,27,30|1|🇷 韩国 01 | 1x KR
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36311
   server: free.2weradf.xyz
@@ -83,13 +83,16 @@ proxies:
   skip-cert-verify: false
   sni: epccx.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇰🇷 _韩国 #5'
+- alterId: 0
+  name: 24,37|KR国
   password: Aimer
   port: 35241
   server: 125.134.157.224
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epccx.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇰🇷 _韩国 #6'
   password: Aimer
   port: 14400
@@ -118,16 +121,13 @@ proxies:
   skip-cert-verify: false
   sni: epccx.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 24,37|未知123
+- name: '24|🇰🇷 _韩国 #10'
   password: Aimer
   port: 50000
   server: 221.156.61.36
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epccc.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - name: '24|🇰🇷 _韩国 #11'
   password: Aimer
   port: 50003
@@ -142,13 +142,16 @@ proxies:
   skip-cert-verify: false
   sni: epccx.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇰🇷 _韩国 #13'
+- alterId: 0
+  name: 24,37|🇷KR韩国2
   password: Aimer
   port: 16403
   server: 221.158.163.251
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epccx.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇰🇷 _韩国 #14'
   password: Aimer
   port: 12177
@@ -194,6 +197,20 @@ proxies:
   server: 3.34.192.249
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇰🇷 KR-193.122.119....
+  network: ws
+  port: 2096
+  server: 193.122.119.152
+  servername: dv4.789900.xyz
+  tls: true
+  type: vmess
+  uuid: 0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05
+  ws-opts:
+    headers:
+      Host: dv4.789900.xyz
+    path: /0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05-vm
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇰🇷 KR-45.82.246.17...
