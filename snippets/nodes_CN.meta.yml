@@ -37,16 +37,16 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 5,28|yandex-3678
+  name: 5|中国 - 成都 - Hangzhou Alibaba Adv...
   network: ws
-  port: 13047
+  port: '13047'
   server: 47.109.29.78
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 4c69f15f-4a16-48b0-8efb-cc7d380dd3f1
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -739,13 +739,6 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- name: 11,27|15|CN_speednode_0028
-  password: RlzoEILU
-  port: 7815
-  server: 36.151.251.59
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - name: 11,27,40|CN_speednode_0025
   password: b6200af42ccadea353f5b5856dd20d70
   port: 39001
@@ -949,13 +942,16 @@ proxies:
   skip-cert-verify: false
   sni: epccx.ambercc.filegear-sg.me
   type: trojan
-- name: '24|_中国 #2'
+- alterId: 0
+  name: 24,37|CN
   password: Aimer
   port: 2053
   server: 154.197.64.166
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epccc.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|_中国 #3'
   password: Aimer
   port: 443
@@ -969,13 +965,6 @@ proxies:
   server: 154.219.5.56
   skip-cert-verify: false
   sni: epccx.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #19'
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 15229
-  server: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
-  skip-cert-verify: false
-  sni: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
   type: trojan
 - alterId: 0
   cipher: auto
@@ -1338,15 +1327,12 @@ proxies:
   tls: false
   type: vmess
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
-- alterId: 0
-  name: 37|🇳CN国
-  password: Aimer
-  port: 2087
-  server: 154.197.64.189
-  skip-cert-verify: true
-  sni: epccx.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
+- cipher: aes-256-gcm
+  name: 40|CN_speednode_0027
+  password: 973c665168454f3f
+  port: 2019
+  server: 103.115.18.246
+  type: ss
   udp: true
 - alterId: 2
   cipher: auto
