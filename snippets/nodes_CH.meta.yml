@@ -1,12 +1,18 @@
 proxies:
-- name: '24|15|CH_speednode_0024 #1'
+- name: 9|15|CH_speednode_0024
+  network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
   server: 140.238.212.95
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: icecream.955850.xyz
   type: trojan
-- name: 27,40|CH_speednode_0024
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=140.238.212.95:443
+- name: 11,27,40|CH_speednode_0024
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -19,6 +25,23 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=140.238.212.95:443&proxyIP=null
+- name: '24|15|CH_speednode_0024 #2'
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 140.238.212.95
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-XHTTP-NA 🇨🇭 CH-84.234.29....
+  network: xhttp
+  port: '80'
+  server: 84.234.29.137
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b2025118-0c08-4f7c-8097-a03d0aa88115
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇭 CH-23.166.88.18...
