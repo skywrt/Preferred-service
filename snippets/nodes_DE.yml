@@ -1,27 +1,51 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|0|国 01 | 1x DE
+  name: '5,11,24,27,30|0|国 01 | 1x DE #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alpn:
-  - http/1.1
-  name: 5|3|🇩🇪11 |  1.9MB/s|30%|Openai
-  password: telegram-id-directvpn
-  port: 22223
-  server: 52.57.57.22
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|1|🇪 德国 01 | 1x DE
+  name: '5,11,24,27,30|1|🇪 德国 01 | 1x DE #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
+- alpn:
+  - http/1.1
+  name: 5,24,27|3|🇪2 |  5.6MB/s|30%|Youtube|Op...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: '22222'
+  server: 63.178.61.248
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- alpn:
+  - http/1.1
+  name: '5,24,27|3|🇩🇪4 |  1.1MB/s|30%|Youtube|O... #3'
+  network: tcp
+  password: telegram-id-directvpn
+  port: '22223'
+  server: 52.58.168.251
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 5|德国+V2CROSS.COM
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 194.76.18.129
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
 - alterId: 0
   cipher: auto
   name: 5|秘鲁 - 利馬 - ONEPROVIDER - 1
@@ -33,7 +57,7 @@ proxies:
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - alterId: 0
   cipher: auto
-  name: 5,24|5月15丨TG频道@stymei1丨2
+  name: 5|德国 - Falkenstein - Hetzner Onl...
   network: tcp
   port: '45541'
   server: 142.132.185.156
@@ -57,7 +81,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- name: 12,24|5月15丨TG频道@stymei1丨3
+- name: 11,27,40|HK_speednode_0060
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: us.madison.eu.org
+  skip-cert-verify: true
+  sni: skwygx.top
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: skwygx.top
+    path: /tr?ed=2560
+- name: 12|🇩🇪_DE_德国
   password: '!!str 74260665780162200'
   port: 443
   server: cuddly-finch.shiner427.skin
@@ -109,32 +146,37 @@ proxies:
     headers:
       host: irvideo.cfd
     path: /linkws
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇩🇪DE-185.177.229.245-1080
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-6032
+  password: rpgbNnU9rDDU4aWZ
+  port: 9094
+  server: 80.92.204.106
+  type: ss
 - cipher: aes-256-cfb
   name: 19|🇩🇪DE-80.92.204.106-3215
   password: M3t2ZEQcMGRWBjRa
   port: 9011
   server: 80.92.204.106
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-8972 #1'
-  network: ws
+- name: '24|15|KZ_speednode_0063 #1'
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
-  server: 57.129.24.125
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
-- name: '24|2|🇩🇪6 |  1.5MB/s|22%|Disney|Op... #1'
-  password: T@_WvT8Ho@LW%w_,
-  port: 2053
-  server: 172.66.47.42
+  server: 194.76.18.122
   skip-cert-verify: false
-  sni: NOp-55q.pAgEs.dEv
+  sni: icecream.955850.xyz
+  type: trojan
+- name: '24|15|KZ_speednode_0064 #1'
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 194.76.18.129
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
   type: trojan
 - alterId: 0
   cipher: auto
