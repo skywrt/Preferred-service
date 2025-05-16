@@ -16,14 +16,14 @@ proxies:
       Host: ''
     path: /zh-cn
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|1|🇸🇬 新加坡 02 | 1x SG
+  name: '5,11,24,27,30|1|🇸🇬 新加坡 02 | 1x SG #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|1|🇬 新加坡 01 | 1x SG
+  name: '5,11,24,27,30|1|🇬 新加坡 01 | 1x SG #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36171
   server: free.2weradf.xyz
@@ -53,20 +53,20 @@ proxies:
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27,30|0|🇬加 01 | 1x SG
+  name: 5,11,24,27,30|0|🇬加 01 | 1x SG
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,27,30|0|🇬新加坡 03 | 1x SG #1'
+  name: '5,11,24,27,30|0|🇬新加坡 03 | 1x SG #2'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: '5,24|14|SG_speednode_0180 #2'
+- name: 5|14|SG_speednode_0180
   password: 9de6d20c-d133-4261-8dd2-88684d619f7e
   port: 43456
   server: 43.163.126.61
@@ -80,7 +80,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,27,30|0|🇬新加坡 02 | 1x SG #1'
+  name: '5,11,24,27,30|0|🇬新加坡 02 | 1x SG #2'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31173
   server: free.2apzhfa.xyz
@@ -258,13 +258,25 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-47.237.84.79...
+  name: 36,37|未知42 591.4KB/s
   network: tcp
-  port: 3030
-  server: 47.237.84.79
+  port: 29999
+  server: 46.250.237.196
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b31fc134-978e-4176-8579-8107d6a0cede
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-84.247.146.1...
+  network: tcp
+  port: '33754'
+  server: 84.247.146.189
+  servername: ''
   tls: false
   type: vmess
-  uuid: de49138c-df11-4b6c-ed94-09e36b8fb890
+  uuid: 45f4f565-8c78-4906-a5b9-08ea9075cd31
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇸🇬 SG-152.69.220.9...
@@ -279,17 +291,6 @@ proxies:
     headers:
       Host: a.ziqiu1060.ggff.net
     path: /dsfsdf
-- alterId: 0
-  cipher: auto
-  name: 36,37|未知42 591.4KB/s
-  network: tcp
-  port: 29999
-  server: 46.250.237.196
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b31fc134-978e-4176-8579-8107d6a0cede
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-RAW-NA 🇸🇬 SG-62.146.232.1...
@@ -311,14 +312,33 @@ proxies:
   uuid: 3ca35e0a-e430-43fe-9c12-2e2eea70f873
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-84.247.146.1...
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.233.7...
   network: tcp
-  port: '33754'
-  server: 84.247.146.189
+  port: '44127'
+  server: 62.146.233.79
   servername: ''
   tls: false
   type: vmess
-  uuid: 45f4f565-8c78-4906-a5b9-08ea9075cd31
+  uuid: ae0fa822-58bb-483f-9af5-d417d8c23b21
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-47.237.84.79...
+  network: tcp
+  port: 3030
+  server: 47.237.84.79
+  tls: false
+  type: vmess
+  uuid: de49138c-df11-4b6c-ed94-09e36b8fb890
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-84.247.150.1...
+  network: tcp
+  port: '36141'
+  server: 84.247.150.177
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d31ee52f-b6e4-4db8-9c95-98855ec823cc
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.233.6...
@@ -339,23 +359,3 @@ proxies:
   tls: false
   type: vmess
   uuid: b2836369-220b-4840-80c4-8cf904c735ee
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-84.247.150.1...
-  network: tcp
-  port: '36141'
-  server: 84.247.150.177
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d31ee52f-b6e4-4db8-9c95-98855ec823cc
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.233.7...
-  network: tcp
-  port: '44127'
-  server: 62.146.233.79
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ae0fa822-58bb-483f-9af5-d417d8c23b21
