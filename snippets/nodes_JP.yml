@@ -1,13 +1,13 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27,28,30|1|🇵 日本 03 | 1x JP
+  name: 5,11,24,27,30|1|🇵 日本 03 | 1x JP
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36115
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27,28,30|0|🇵日本 02 | 1x JP
+  name: '5,11,24,27,30|0|🇵日本 02 | 1x JP #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31113
   server: free.2apzhfa.xyz
@@ -15,7 +15,7 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: '5,24,27|14|日本3|@ripaojiedian #1'
+  name: '5,11,24,27|14|日本3|@ripaojiedian #1'
   network: tcp
   port: '55002'
   server: 183.237.84.53
@@ -24,7 +24,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27,28,30|1|🇯🇵 日本 02 | 1x JP
+  name: 5,11,24,27,30|1|🇯🇵 日本 02 | 1x JP
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36113
   server: free.2weradf.xyz
@@ -32,7 +32,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '5,24,27|14|日本5|@ripaojiedian #1'
+  name: '5,11,24,27|14|日本5|@ripaojiedian #1'
   network: kcp
   port: '53893'
   server: 47.74.41.147
@@ -56,29 +56,28 @@ proxies:
       Host: www.bing.com
     path: /nmkj
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27,28,30|0| 01 | 1x JP
+  name: '5,11,24,27,30|0| 01 | 1x JP #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27,28,30|0|🇵日本 03 | 1x JP
+  name: '5,11,24,27,30|0|🇵日本 03 | 1x JP #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 5,24,27,28|yandex-4856
+  name: 5,11,24,27|13|🇵 日本4|@ripaojiedian
   password: 1d6fc1e2-a36d-4bd7-b0d0-e901343d9b97
   port: 19008
   server: 183.36.41.50
   tfo: false
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,24,27,28,30|1|🇵 日本 01 | 1x JP
+  name: 5,11,24,27,30|1|🇵 日本 01 | 1x JP
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36111
   server: free.2weradf.xyz
@@ -125,29 +124,53 @@ proxies:
     headers:
       Host: tls.05.node-for-bigairport.win
     path: /
-- cipher: aes-128-gcm
-  name: 19,20,21,28|yandex-3876
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
+- name: 11|1|🇯🇵1 |  1.3MB/s|0%|Disney|You...
+  password: 905edb54-b4ce-47ad-ac94-51d58161a59a
+  port: 27001
+  server: 219.135.197.214
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
   udp: true
-- cipher: aes-128-gcm
-  name: 19,20,21,28|yandex-3880
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.240
+- cipher: rc4-md5
+  name: 11,27|13|🇵 日本|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202505121278853-jDmMPlEOcQ.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
   type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 20,21,28|yandex-3877
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
+- cipher: chacha20-ietf-poly1305
+  name: '11,27|13|🇯🇵 日本2|@ripaojiedian #1'
+  password: bd95d7933d72
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp06v1.3ci.xyz
+    mode: websocket
+    mux: true
+    path: /qvqgjshkqqep
+    skip-cert-verify: false
+    tls: true
+  port: 53586
+  server: 103.140.136.242
+  tfo: false
   type: ss
+- alterId: 64
+  cipher: auto
+  name: 11,27,28|yandex-3746
+  port: 55002
+  server: 183.237.84.53
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-gcm
-  name: 20,21,28|yandex-215
+  name: 20,21,28|yandex-3743
   password: tVPVlUgQhj9i7vHOHij3daCJEUZxctEQ9xoj0WT5A8w=
   port: 11359
   server: 139.162.106.142
@@ -284,44 +307,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: rc4-md5
-  name: 27,28|yandex-48
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202505121278853-jDmMPlEOcQ.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27,28|yandex-4854
-  password: bd95d7933d72
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp06v1.3ci.xyz
-    mode: websocket
-    mux: true
-    path: /qvqgjshkqqep
-    tls: true
-  port: 53586
-  server: 103.140.136.242
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 64
-  cipher: auto
-  name: 27,28|yandex-218
-  port: 55002
-  server: 183.237.84.53
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 30|2|🇯🇵6 |  4.2MB/s
@@ -443,6 +428,15 @@ proxies:
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
+  network: tcp
+  port: '30101'
+  server: 167.179.93.158
+  tls: false
+  type: vmess
+  uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-47.79.88.113...
   network: tcp
   port: '53710'
@@ -461,12 +455,3 @@ proxies:
   tls: true
   type: vmess
   uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
-  network: tcp
-  port: '30101'
-  server: 167.179.93.158
-  tls: false
-  type: vmess
-  uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
