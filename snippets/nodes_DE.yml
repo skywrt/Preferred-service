@@ -1,13 +1,13 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|国 01 | 1x DE #1'
+  name: '5,9,11,24,27,30|0|国 01 | 1x DE #2'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇪 德国 01 | 1x DE #1'
+  name: '5,9,24,27,30|1|🇪 德国 01 | 1x DE #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36471
   server: free.2weradf.xyz
@@ -15,7 +15,7 @@ proxies:
   udp: true
 - alpn:
   - http/1.1
-  name: '5,24|3|🇩🇪2 |  5.6MB/s|30%|Youtube|O... #2'
+  name: 5|0|🇩🇪2 |  5.6MB/s|30%|Youtube|O...
   password: telegram-id-privatevpns
   port: 22222
   server: 63.178.61.248
@@ -24,7 +24,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '5,24|3|🇩🇪4 |  1.1MB/s|30%|Youtube|O... #2'
+  name: 5|3|🇩🇪4 |  1.1MB/s|30%|Youtube|O...
   password: telegram-id-directvpn
   port: 22223
   server: 52.58.168.251
@@ -79,9 +79,9 @@ proxies:
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
 - alterId: 0
   cipher: auto
-  name: '9,20,21,24|🇺🇸 美国 CloudFlare节点 #3'
+  name: '9,20,21|🏁RELAY-104.18.12.229-0930 #1'
   network: ws
-  port: '443'
+  port: 443
   server: www.visa.com.sg
   servername: ''
   skip-cert-verify: false
@@ -93,31 +93,6 @@ proxies:
     headers:
       Host: radiation-browse-dallas-slight.trycloudflare.com
     path: /vmess-argo?ed=2048
-- alpn:
-  - http/1.1
-  name: 11|0|🇩🇪10 |  3.5MB/s|30%|Youtube|...
-  network: tcp
-  password: telegram-id-directvpn
-  port: '22223'
-  server: 63.176.36.146
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 12|🇩🇪_DE_德国
-  password: '!!str 74260665780162200'
-  port: 443
-  server: cuddly-finch.shiner427.skin
-  skip-cert-verify: false
-  sni: cuddly-finch.shiner427.skin
-  type: trojan
-- name: '12|🇩🇪_DE_德国 #1'
-  password: '!!str 74260665780162200'
-  port: 443
-  server: 3.121.11.241
-  skip-cert-verify: false
-  sni: cuddly-finch.shiner427.skin
-  type: trojan
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -181,44 +156,31 @@ proxies:
   skip-cert-verify: false
   sni: icecream.955850.xyz
   type: trojan
-- name: '24|15|KZ_speednode_0064 #2'
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 194.76.18.129
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 27|3|🇩🇪8 |  5.0MB/s|30%|Openai
-  network: tcp
-  password: telegram-id-privatevpns
-  port: '22222'
+- name: '24|3|🇩🇪4 |  5.1MB/s|30%|Youtube|O... #1'
+  password: telegram-id-directvpn
+  port: 22223
   server: 35.157.5.33
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: '24|3|🇩🇪8 |  5.0MB/s|30%|Openai #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.157.5.33
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 27|3|🇩🇪10 |  3.5MB/s|30%|Youtube|...
+  network: tcp
+  password: telegram-id-directvpn
+  port: '22223'
+  server: 63.176.36.146
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '8880'
-  server: 104.17.147.22
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a1ba1c09-50b6-4c29-a544-a9c3c0de591b
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10... #1'
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.203.238....
@@ -231,6 +193,16 @@ proxies:
   uuid: 5a1cc66c-1656-4e6a-87d9-ac2a7ab54fcd
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-157.90.117...
   network: tcp
   port: 23890
@@ -238,3 +210,13 @@ proxies:
   tls: false
   type: vmess
   uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10... #1'
+  network: httpupgrade
+  port: '8880'
+  server: 104.17.147.22
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a1ba1c09-50b6-4c29-a544-a9c3c0de591b
