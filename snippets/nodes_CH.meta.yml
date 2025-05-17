@@ -1,4 +1,14 @@
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 5|3|🇨🇭1 |  1.7MB/s|Openai
+  port: 444
+  server: 178.209.51.115
+  servername: opensuse.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: faaaf16e-188e-42f2-bcc1-17feadc84fad
 - name: 9|15|CH_speednode_0024
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
@@ -12,7 +22,42 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=140.238.212.95:443
-- name: 11,27,40|CH_speednode_0024
+- cipher: aes-128-gcm
+  name: 19,20,21,28|yandex-2368
+  password: shadowsocks7
+  port: 443
+  server: 156.146.62.164
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 19,20,21,28|yandex-3828
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.162
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 19,20,21,28|yandex-3823
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.161
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 19,20,21,28|yandex-3822
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.163
+  type: ss
+  udp: true
+- name: '24|15|CH_speednode_0024 #2'
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 140.238.212.95
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+- name: 27,28,40|CH_speednode_0024
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -25,19 +70,12 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=140.238.212.95:443&proxyIP=null
-- name: '24|15|CH_speednode_0024 #2'
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 140.238.212.95
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇭 CH-186.190.215....
+  name: 36|🔒 VM-TCP-NA 🇨🇭 CH-23.166.88.18...
   network: tcp
   port: '22324'
-  server: 186.190.215.193
+  server: 23.166.88.183
   servername: ''
   tls: false
   type: vmess

@@ -136,48 +136,12 @@ proxies:
   udp: false
   uuid: b12624a6-25d0-484d-8725-3eca4544d522
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|国 01 | 1x DE #2'
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,24,27,30|1|🇪 德国 01 | 1x DE #1'
+  name: '5,9,24,27,28,30|1|🇪 德国 01 | 1x DE #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alpn:
-  - http/1.1
-  name: 5|0|🇩🇪2 |  5.6MB/s|30%|Youtube|O...
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 63.178.61.248
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 5|3|🇩🇪4 |  1.1MB/s|30%|Youtube|O...
-  password: telegram-id-directvpn
-  port: 22223
-  server: 52.58.168.251
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 5|德国+V2CROSS.COM
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 194.76.18.129
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
 - alterId: 0
   cipher: auto
   name: 5|秘鲁 - 利馬 - ONEPROVIDER - 1
@@ -187,6 +151,33 @@ proxies:
   tls: false
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- name: 5|德国+V2CROSS.COM
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 194.76.18.122
+  skip-cert-verify: false
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,24,27,28,30|0|国 01 | 1x DE #1'
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31471
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 5|1|🇩🇪3 |  4.2MB/s|0%|Disney|Ope...
+  port: 443
+  server: 204.10.194.78
+  servername: yfnl1.xn--4gq62f52gppi29k.com
+  tls: true
+  type: vless
+  uuid: b8bd42a9-551f-419d-b70d-4aefdd2cb074
 - alterId: 0
   cipher: auto
   name: 5|德国 - Falkenstein - Hetzner Onl...
@@ -275,15 +266,13 @@ proxies:
     headers:
       host: irvideo.cfd
     path: /linkws
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,37|未知126 235.3KB/s
+- cipher: chacha20-ietf-poly1305
+  name: 19,28|yandex-3695
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
-  skip-cert-verify: true
-  tls: true
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 19|🇩🇪DE-80.92.204.106-6032
   password: rpgbNnU9rDDU4aWZ
@@ -317,17 +306,15 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- alpn:
-  - http/1.1
-  name: 27|3|🇩🇪10 |  3.5MB/s|30%|Youtube|...
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-157.90.117...
   network: tcp
-  password: telegram-id-directvpn
-  port: '22223'
-  server: 63.176.36.146
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
+  port: 23890
+  server: 157.90.117.244
+  tls: false
+  type: vmess
+  uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.203.238....
@@ -348,15 +335,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-157.90.117...
-  network: tcp
-  port: 23890
-  server: 157.90.117.244
-  tls: false
-  type: vmess
-  uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
 - alterId: 0
   cipher: auto
   name: '36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10... #1'
