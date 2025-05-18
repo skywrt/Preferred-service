@@ -1,20 +1,13 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,27,30|0|🇷国 01 | 1x KR
+  name: '5,11,24,27,30|0|🇷韩国 02 | 1x KR #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31311
+  port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|13|🇷 韩国2|@ripaojiedian
-  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: 6666
-  server: 3.34.139.2
-  tfo: false
-  type: ss
 - cipher: aes-256-cfb
-  name: 5,9,11,24,27|2,13| |@ripaojiedian
+  name: '5,9,11,20,21,24,27|2,13|🇰🇷 韩国|@ripaojiedian #1'
   password: qwerREWQ@@
   port: 15098
   server: 125.141.31.72
@@ -22,7 +15,15 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,30|1|🇷 韩国 01 | 1x KR
+  name: 5,9,11,24,27|13|🇷 韩国2|@ripaojiedian
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6666
+  server: 3.34.139.2
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,30|1|🇷 韩国 01 | 1x KR
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36311
   server: free.2weradf.xyz
@@ -37,28 +38,39 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,27,30|0|🇷韩国 02 | 1x KR
+  name: 5,11,24,27,30|0|🇷国 01 | 1x KR
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31313
+  port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '9,20,21|🇰🇷KR-140.238.18.215-6022 #1'
-  network: ws
-  port: 2087
-  server: lv4.789900.xyz
-  servername: lv4.789900.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vmess
+- cipher: aes-256-cfb
+  name: 9|2|🇰🇷1 |  5.2MB/s|Netflix|Disne...
+  password: qwerREWQ@@
+  port: 4857
+  server: p227.panda004.net
+  type: ss
   udp: true
-  uuid: 7dd16ab1-2a36-4b32-86fd-eb49fb039752
+- cipher: aes-256-cfb
+  name: 9|2|🇰🇷2 |  5.4MB/s|Netflix|Disne...
+  password: qwerREWQ@@
+  port: 11389
+  server: 221.150.109.89
+  type: ss
+  udp: true
+- name: 9|15|KR_speednode_0123
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 149.129.8.215
+  skip-cert-verify: false
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
   ws-opts:
     headers:
-      Host: lv4.789900.xyz
-    path: /7dd16ab1-2a36-4b32-86fd-eb49fb039752-vm
+      Host: icecream.955850.xyz
+    path: /proxyip=149.129.8.215:443
 - name: 11,27,40|KR_speednode_0123
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
@@ -73,7 +85,7 @@ proxies:
       Host: icecream.955850.xyz
     path: /proxyip=149.129.8.215:443&proxyIP=null
 - cipher: aes-256-cfb
-  name: 16,28|yandex-1566
+  name: 16,28|yandex-1314
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
@@ -115,7 +127,21 @@ proxies:
     headers:
       Host: dp.ylks.xyz
     path: '%2F%3Fproxyip%3Dproxyip.kr.fxxp.dedyp.io'
-- name: '24|15|KR_speednode_0123 #1'
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇰🇷KR-140.238.18.215-6153 #1'
+  network: ws
+  port: 2087
+  server: lv4.789900.xyz
+  servername: lv4.789900.xyz
+  tls: true
+  type: vmess
+  uuid: 7dd16ab1-2a36-4b32-86fd-eb49fb039752
+  ws-opts:
+    headers:
+      Host: lv4.789900.xyz
+    path: /7dd16ab1-2a36-4b32-86fd-eb49fb039752-vm
+- name: '24|15|KR_speednode_0123 #2'
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
   server: 149.129.8.215
@@ -153,19 +179,6 @@ proxies:
   server: 3.34.192.249
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇰🇷 KR-140.238.18.21...
-  network: ws
-  port: '2087'
-  server: 140.238.18.215
-  tls: false
-  type: vmess
-  uuid: 7dd16ab1-2a36-4b32-86fd-eb49fb039752
-  ws-opts:
-    headers:
-      Host: lv4.789900.xyz
-    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇰🇷 KR-45.82.246.17...

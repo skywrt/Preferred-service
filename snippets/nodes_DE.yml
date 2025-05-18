@@ -3,7 +3,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|3d0c0997aa2540d9a4b1554ea1cd57...
+  name: 3|8e060c9534884192b60dd60c29863c...
   network: ws
   port: 443
   server: 132.145.232.171
@@ -20,7 +20,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|cf8d5aed5c8e4a579ba9ce23f1df7c...
+  name: 3|0c5b2e616bab49589c2acaac5dee22...
   network: ws
   port: 443
   server: 139.162.178.95
@@ -30,11 +30,25 @@ proxies:
   uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e
   ws-opts:
     path: /linkwsd
+- cipher: chacha20-ietf-poly1305
+  name: '5,11,24,27,30|0|国 01 | 1x DE #1'
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31471
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,30|1|🇪 德国 01 | 1x DE
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   grpc-opts:
     grpc-service-name: vmess-grpc
-  name: 5,11,27|2|5 |  1.4MB/s|0%|Youtube|Open...
+  name: 5,11,24,27|2|🇪5 |  1.4MB/s|0%|Youtube|Ope...
   network: grpc
   port: 443
   server: de.vmess.comnpmjs.com
@@ -43,57 +57,17 @@ proxies:
   tls: true
   type: vmess
   uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,27,30|0|国 01 | 1x DE
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,30|1|🇪 德国 01 | 1x DE
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- alpn:
-  - http/1.1
-  name: 5|3|🇩🇪21 |  3.8MB/s|30%|Youtube|...
-  password: telegram-id-directvpn
-  port: 22223
-  server: 35.156.196.176
+- name: 5,9,11,24,27,40|DE_speednode_0037
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.120.242.252
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 5|秘鲁 - 利馬 - ONEPROVIDER - 1
-  network: tcp
-  port: '45273'
-  server: yal.fxlcn.com
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  name: '5,24|2|🇩🇪6 |  2.7MB/s|43%|Youtube|O... #1'
-  network: ws
-  port: '443'
-  server: cloudgetservice.mcloudservice.site
-  servername: MAxNEtViP-gEr-vp1.MaXnETcLOuDSErVice.com
-  tls: true
-  type: vmess
-  uuid: 8f922e2e-18f3-4bd9-a097-09c2d7c139be
-  ws-opts:
-    headers:
-      Host: MAxNEtViP-gEr-vp1.MaXnETcLOuDSErVice.com
-    path: /linkws
-- alpn:
-  - http/1.1
-  name: 5,11,24,27,40|DE_speednode_0037
-  password: telegram-id-privatevpns
-  port: 22222
+  udp: true
+- name: 5,9,11,24,27,40|DE_speednode_0036
+  password: telegram-id-directvpn
+  port: 22223
   server: 3.120.242.252
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
@@ -108,6 +82,15 @@ proxies:
   tls: false
   type: vmess
   uuid: d79bcd65-10ed-4cc2-b5fa-3680f6092951
+- alterId: 0
+  cipher: auto
+  name: 5|秘鲁 - 利馬 - ONEPROVIDER - 1
+  network: tcp
+  port: '45273'
+  server: yal.fxlcn.com
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - name: 8|🇩🇪DE-52.58.179.46-180_1@180
   password: telegram-id-privatevpns
   port: 22222
@@ -127,20 +110,20 @@ proxies:
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
 - alterId: 0
   cipher: auto
-  name: 9|2|🇩🇪6 |  4.3MB/s|0%|Openai
+  name: '9,20,21|🏁RELAY-172.66.168.218-1016 #1'
   network: ws
   port: 443
-  server: de.vmess.comnpmjs.com
-  servername: de.vmess.comnpmjs.com
+  server: cloudgetservice.mcloudservice.site
+  servername: MAxNEtViP-gEr-vp1.MaXnETcLOuDSErVice.com
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
+  uuid: 8f922e2e-18f3-4bd9-a097-09c2d7c139be
   ws-opts:
     headers:
-      Host: de.vmess.comnpmjs.com
-    path: /vmess
+      Host: MAxNEtViP-gEr-vp1.MaXnETcLOuDSErVice.com
+    path: /linkws
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -155,6 +138,12 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
+- cipher: rc4-md5
+  name: 19|🇩🇪DE-193.108.119.230-0910
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 19,37|未知35
@@ -180,7 +169,7 @@ proxies:
       host: irvideo.cfd
     path: /linkws
 - cipher: chacha20-ietf-poly1305
-  name: 19,20,21,28|yandex-1417
+  name: 19,20,21,28|yandex-1165
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
@@ -194,35 +183,14 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-132.145.232.171-7876 #1'
-  network: ws
-  port: 443
-  server: 132.145.232.171
-  servername: beyonddsz.cfd
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    headers:
-      Host: beyonddsz.cfd
-    path: /linkws
-- name: '24|15|KZ_speednode_0126 #1'
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 194.76.18.122
-  skip-cert-verify: false
-  sni: icecream.955850.xyz
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.203.238....
+  network: tcp
+  port: '45159'
+  server: 193.203.238.112
   servername: ''
   tls: false
   type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+  uuid: 5a1cc66c-1656-4e6a-87d9-ac2a7ab54fcd
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-157.90.117...
@@ -248,11 +216,11 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.203.238....
-  network: tcp
-  port: '45159'
-  server: 193.203.238.112
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
   servername: ''
   tls: false
   type: vmess
-  uuid: 5a1cc66c-1656-4e6a-87d9-ac2a7ab54fcd
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72

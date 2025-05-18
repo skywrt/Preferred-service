@@ -1,30 +1,18 @@
 proxies:
-- client-fingerprint: chrome
-  name: 3|05b8fba1c5cd4e589197f132c53e3c...
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 217.163.76.221
-  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,27,30|0|🇧英国家宽 01 | 1x UK
+  name: 5,11,24,27,30|0|🇧英国家宽 01 | 1x UK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,30|1|🇧 英国住宅IP 01 | 1x UK
+  name: 5,11,24,27,30|1|🇧 英国住宅IP 01 | 1x UK
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 5|3|🇬🇧1 |  3.5MB/s|63%|Youtube|O...
-  password: 53dc50c0-1e27-11f0-a1b6-1239d0255272
-  port: 443
-  server: 51.38.65.155
-  skip-cert-verify: true
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|英国 - 劍橋 - Mythic Beasts Addres...
@@ -38,6 +26,17 @@ proxies:
     headers:
       Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
     path: /azumase.ren
+- name: 5|英国+Level3通信股份有限公司
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 217.163.76.221
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
 - name: 8|🇬🇧GB-3.9.164.189-194_1@194
   password: E6r93XCOsyM9
   port: 16733
@@ -72,19 +71,6 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
-- name: 9,11,27,40|GB_speednode_0100
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 217.163.76.227
-  skip-cert-verify: false
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=217.163.76.227:443
 - name: 9,11,27,40|GB_speednode_0098
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
@@ -98,11 +84,11 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=217.163.76.89:443
-- name: 9|15|GB_speednode_0054
+- name: 9,11,27,40|GB_speednode_0100
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
-  server: 217.163.76.51
+  server: 217.163.76.227
   skip-cert-verify: false
   sni: icecream.955850.xyz
   type: trojan
@@ -110,7 +96,7 @@ proxies:
   ws-opts:
     headers:
       Host: icecream.955850.xyz
-    path: /proxyip=217.163.76.51:443
+    path: /proxyip=217.163.76.227:443
 - name: 9,11,27,40|GB_speednode_0107
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
@@ -137,7 +123,20 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=217.163.76.237:443
-- name: 9|15|GB_speednode_0057
+- name: 9|15|GB_speednode_0106
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 217.163.76.51
+  skip-cert-verify: false
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=217.163.76.51:443
+- name: 9|15|GB_speednode_0109
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -259,63 +258,63 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 19,20,21,28|yandex-1402
+  name: 19,20,21,28|yandex-1150
   password: shadowsocks
   port: 443
   server: 212.102.53.79
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 19,20,21,28|yandex-1357
+  name: 19,20,21,28|yandex-1105
   password: shadowsocks
   port: 443
   server: 212.102.53.196
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 19,20,21,28|yandex-1351
+  name: 19,20,21,28|yandex-1099
   password: shadowsocks
   port: 443
   server: 212.102.53.81
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 19,20,21,28|yandex-1409
+  name: 19,20,21,28|yandex-1157
   password: shadowsocks
   port: 443
   server: 212.102.53.195
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 19,20,21,28|yandex-1353
+  name: 19,20,21,28|yandex-1101
   password: shadowsocks
   port: 443
   server: 212.102.53.193
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 19,20,21,28|yandex-1354
+  name: 19,20,21,28|yandex-1102
   password: shadowsocks
   port: 443
   server: uk-dc1.yangon.club
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 19,20,21,28|yandex-1398
+  name: 19,20,21,28|yandex-1146
   password: shadowsocks
   port: 443
   server: 212.102.53.78
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 19,20,21,28|yandex-1407
+  name: 19,20,21,28|yandex-1155
   password: shadowsocks
   port: 443
   server: 212.102.53.80
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 19,20,21,28|yandex-1498
+  name: 19,20,21,28|yandex-1246
   password: shadowsocks
   port: 443
   server: 212.102.53.197
@@ -328,31 +327,24 @@ proxies:
   server: mx2.drawnrisha.one
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20,21,28|yandex-1265
+  name: 20,21,28|yandex-1225
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: series-a2-me.samanehha.co
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 20,21,28|yandex-1013
   password: Bog0ELmMM9DSxDdQ
   port: 443
   server: 85.210.120.237
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 20,21,28|yandex-1496
+  name: 20,21,28|yandex-1244
   password: Bog0ELmMM9DSxDdQ
   port: 443
   server: admin.c3.webramz.co
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20,21,28|yandex-1432
-  password: WstuSnlu4ieA9M0L
-  port: 443
-  server: admin.c2.webramz.co
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20,21,28|yandex-1377
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: series-a2-me.varzesh360.co
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -362,34 +354,34 @@ proxies:
   server: series-a2.varzesh360.co
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20,21,28|yandex-1477
+  name: 20,21,28|yandex-1125
   password: Bog0ELmMM9DSxDdQ
   port: 443
-  server: series-a2-me.samanehha.co
+  server: series-a2-me.varzesh360.co
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 20,21,28|yandex-1269
+  name: 20,21,28|yandex-1180
+  password: WstuSnlu4ieA9M0L
+  port: 443
+  server: admin.c2.webramz.co
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 20,21,28|yandex-1017
   password: 69MUii7VDwMqh7Hz
   port: 443
   server: admin.c4.webramz.co
   type: ss
   udp: true
-- name: '24|15|GB_speednode_0101 #1'
+- name: '24|15|GB_speednode_0105 #2'
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
-  server: 217.163.76.227
+  server: 217.163.76.89
   skip-cert-verify: true
   sni: icecream.955850.xyz
   type: trojan
-- name: '24|15|GB_speednode_0107 #1'
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 217.163.76.254
-  skip-cert-verify: false
-  sni: icecream.955850.xyz
-  type: trojan
-- name: '24|15|GB_speednode_0106 #1'
+- name: '24|15|GB_speednode_0106 #2'
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
   server: 217.163.76.51
