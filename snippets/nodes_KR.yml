@@ -7,26 +7,32 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '5,9,11,20,21,24,27|2,13|🇰🇷 韩国|@ripaojiedian #1'
+  name: 5,9,11,20,21,24,27|3,13|🇰🇷 韩国|@ripaojiedian
   password: qwerREWQ@@
   port: 15098
   server: 125.141.31.72
   tfo: false
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|13|🇷 韩国2|@ripaojiedian
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,37|🇰🇷KR韩国2
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 6666
   server: 3.34.139.2
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|1|🇷 韩国 01 | 1x KR
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,30,37|🇷KR
+  password: 4098f13b-7920-43dd-b729-a11d8af34a25
   port: 36311
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -85,7 +91,7 @@ proxies:
       Host: icecream.955850.xyz
     path: /proxyip=149.129.8.215:443&proxyIP=null
 - cipher: aes-256-cfb
-  name: 16,28|yandex-1314
+  name: 16,28|yandex-460
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
@@ -143,6 +149,19 @@ proxies:
   server: 3.34.192.249
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇰🇷 KR-140.238.18.21...
+  network: ws
+  port: '2087'
+  server: 140.238.18.215
+  tls: false
+  type: vmess
+  uuid: 7dd16ab1-2a36-4b32-86fd-eb49fb039752
+  ws-opts:
+    headers:
+      Host: lv4.789900.xyz
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇰🇷 KR-45.82.246.17...
