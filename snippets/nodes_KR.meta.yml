@@ -1,4 +1,48 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27,30|0|🇷国 01 | 1x KR
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,11,27|13|🇷 韩国2|@ripaojiedian
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6666
+  server: 3.34.139.2
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 5,9,11,24,27|3,13|🇷 韩国|@ripaojiedian
+  password: qwerREWQ@@
+  port: 15098
+  server: 125.141.31.72
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,30,37|KR国
+  password: 59a3f0c6-1628-4031-87d7-1b56a4df1675
+  port: 36311
+  server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '5,20,21,27|3|🇰🇷3 |  5.1MB/s|Openai #1'
+  password: qwerREWQ@@
+  port: 11389
+  server: p231.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  name: '5,27|3|🇰🇷4 |  4.5MB/s|44%|Netflix|D... #1'
+  password: qwerREWQ@@
+  port: 4857
+  server: 125.141.26.12
+  type: ss
 - cipher: aes-256-cfb
   name: '5,9,11,24,27|13|🇰🇷 韩国3|@ripaojiedian #1'
   password: 1601e3c29c8db1a88942cf0cad731bf3
@@ -7,41 +51,11 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 5,9,11,24,27|13|🇷 韩国|@ripaojiedian
-  password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
-  tfo: false
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0|🇷国 01 | 1x KR
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|13|🇷 韩国2|@ripaojiedian
-  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: 6666
-  server: 3.36.68.170
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇷韩国 02 | 1x KR #1'
+  name: 5,9,24,27,30|0|🇷韩国 02 | 1x KR
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31313
   server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|1|🇷 韩国 01 | 1x KR
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36311
-  server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -60,6 +74,26 @@ proxies:
     headers:
       Host: lv4.789900.xyz
     path: /7dd16ab1-2a36-4b32-86fd-eb49fb039752-vm
+- cipher: aes-256-cfb
+  name: 11|2|🇰🇷2 |  5.4MB/s|Netflix|Disne...
+  password: qwerREWQ@@
+  port: '11389'
+  server: 221.150.109.89
+  type: ss
+  udp: true
+- name: 11,40|KR_speednode_0123
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 149.129.8.215
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=149.129.8.215:443&proxyIP=null
 - name: 17|韩国(yudou66.com 玉豆免费节点)
   network: ws
   port: 12273
@@ -96,12 +130,6 @@ proxies:
     headers:
       Host: dp.ylks.xyz
     path: '%2F%3Fproxyip%3Dproxyip.kr.fxxp.dedyp.io'
-- cipher: aes-256-cfb
-  name: 20,21,27|3|🇷2 |  1.8MB/s|75%|Netflix|Di...
-  password: qwerREWQ@@
-  port: 11389
-  server: p231.panda004.net
-  type: ss
 - alterId: 0
   cipher: auto
   name: 24|🇰🇷 _韩国
@@ -161,12 +189,46 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 36,37|未知146 415.6KB/s
+  name: 36|🔒 VM-TCP-NA 🇰🇷 KR-45.82.246.17...
   network: tcp
-  port: 26521
+  port: '26521'
   server: 45.82.246.173
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: cff7001e-3a74-43e8-bfd8-a7af9630a58b
+- name: 40|KR_speednode_0120
+  network: ws
+  port: 10894
+  server: 59.29.143.247
+  servername: 0229.patterdeng.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  ws-opts:
+    headers:
+      Host: 0229.patterdeng.pp.ua
+    path: /
+- cipher: aes-256-cfb
+  name: 40|KR_speednode_0121
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
+  udp: true
+- name: 40|KR_speednode_0122
+  network: ws
+  port: 11007
+  server: 211.229.177.55
+  servername: cl.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      Host: cl.bgm2024.dpdns.org
+    path: /?ed=2560
