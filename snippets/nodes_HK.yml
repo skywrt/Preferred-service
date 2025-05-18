@@ -1,5 +1,5 @@
 proxies:
-- name: '5,9,11,24,27|13,14|香港5|@ripaojiedian #1'
+- name: 5,9,11,24,27|3,13,14|香港5|@ripaojiedian
   network: tcp
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: 8313
@@ -37,21 +37,21 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇭🇰香港 03 | 1x HK #2'
+  name: '5,9,11,24,27,30|0|🇭🇰香港 03 | 1x HK #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇭🇰 香港IP 03 | 1x HK #1'
+  name: 5,9,11,24,27,30|1|🇭🇰 香港IP 03 | 1x HK
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇭🇰 香港 02 | 1x HK #2'
+  name: '5,9,11,24,27,30|1|🇭🇰 香港 02 | 1x HK #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36143
   server: free.2weradf.xyz
@@ -68,7 +68,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇭🇰香港 02 | 1x HK #3'
+  name: '5,9,11,24,27,30|0|🇭🇰香港 02 | 1x HK #2'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31143
   server: free.2apzhfa.xyz
@@ -108,7 +108,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇭🇰 香港 01 | 1x HK #2'
+  name: '5,9,11,24,27,30|1|🇭🇰 香港 01 | 1x HK #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36141
   server: free.2weradf.xyz
@@ -185,19 +185,6 @@ proxies:
   port: 55051
   server: hkkh11v1.xpmc.cc
   tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 11,27|3|🇭🇰3 |  3.5MB/s|Disney
-  password: a2a1677c-0799-487e-8827-6cf0d4b5b86a
-  port: 49709
-  server: jg647hf446ghvw.gym0boy.com
-  type: ss
-- cipher: chacha20-ietf
-  name: 11|1|🇭🇰5 |  1.2MB/s|0%|Netflix|Di...
-  password: asd123456
-  port: '8388'
-  server: 103.149.182.61
   type: ss
   udp: true
 - alterId: 0
@@ -813,6 +800,18 @@ proxies:
   tls: false
   type: vmess
   uuid: 2b5597ec-d990-4aaf-b4f9-c19308873901
+- name: '24|3|🇭🇰2 |  5.1MB/s|16%|Netflix|D... #1'
+  password: RlzoEILU
+  port: 15624
+  server: 36.156.102.124
+  skip-cert-verify: true
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 24,27|3|🇭🇰3 |  1.9MB/s
+  password: a2a1677c-0799-487e-8827-6cf0d4b5b86a
+  port: 49709
+  server: jg647hf446ghvw.gym0boy.com
+  type: ss
 - name: '24|15|HK_speednode_0061 #3'
   password: bpb-trojan
   port: 443
@@ -841,6 +840,36 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 27|3|🇭🇰6 |  4.4MB/s|43%|Youtube
+  network: ws
+  port: 443
+  server: 172.67.135.62
+  servername: hknbyivfffj.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-opts:
+    headers:
+      Host: hknbyivfffj.site
+    path: /rbqqvws
+- alterId: 0
+  cipher: auto
+  name: 27|3|🇭🇰7 |  4.3MB/s|43%|Youtube
+  network: ws
+  port: 443
+  server: hknbyivfffj.site
+  servername: hknbyivfffj.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-opts:
+    headers:
+      Host: hknbyivfffj.site
+    path: /rbqqvws
 - cipher: chacha20-ietf-poly1305
   name: '30|12|🇭🇰 香港|@ripaojiedian #1'
   password: 2be0c954-4291-45ea-b47d-ca713180550b
@@ -943,6 +972,28 @@ proxies:
   uuid: d6abdbda-fe9d-11ec-bb74-f23c9164ca5d
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-82.152.164.10...
+  network: ws
+  port: 40601
+  server: 82.152.164.10
+  tls: false
+  type: vmess
+  uuid: 5c634f9c-3dd4-4d3e-97c2-9db2470cf722
+  ws-opts:
+    headers:
+      Host: us05.jssssss.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-216.250.97.1...
+  network: tcp
+  port: '900'
+  server: 216.250.97.138
+  tls: false
+  type: vmess
+  uuid: b2f87c13-c42d-4cf1-b8f9-1a812d4f887a
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-182.237.0.12...
   network: ws
   port: '1086'
@@ -955,6 +1006,20 @@ proxies:
     headers:
       Host: www.ouabaua.com
     path: /zxascas
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
+  network: ws
+  port: '1935'
+  server: 43.154.34.74
+  servername: djdjjrjjrhk.lzj520hxw.dpdns.org
+  tls: true
+  type: vmess
+  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
+  ws-opts:
+    headers:
+      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
+    path: /vmess-argo
 - alterId: 2
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-112.120.125.1...
@@ -970,40 +1035,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-216.250.97.1...
-  network: tcp
-  port: '900'
-  server: 216.250.97.138
-  tls: false
-  type: vmess
-  uuid: b2f87c13-c42d-4cf1-b8f9-1a812d4f887a
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-82.152.164.10...
+  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-202.181.24.8...
   network: ws
-  port: 40601
-  server: 82.152.164.10
-  tls: false
-  type: vmess
-  uuid: 5c634f9c-3dd4-4d3e-97c2-9db2470cf722
-  ws-opts:
-    headers:
-      Host: us05.jssssss.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
-  network: ws
-  port: '1935'
-  server: 43.154.34.74
-  servername: djdjjrjjrhk.lzj520hxw.dpdns.org
+  port: '1081'
+  server: 202.181.24.84
+  servername: hk-cn-01.yumeifang.cn
   tls: true
   type: vmess
-  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
+  uuid: df9b788f-929a-4349-970a-8cbbe12d6ae8
   ws-opts:
     headers:
-      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
-    path: /vmess-argo
+      Host: wamxoa.com
+    path: /asdd
 - alterId: 0
   name: 37|HK
   network: tcp
