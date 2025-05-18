@@ -763,6 +763,12 @@ proxies:
     headers:
       host: mizban.arzonhost.ir
     path: /
+- name: '12,16,24|_中国 #2'
+  password: RlzoEILU
+  port: 7815
+  server: 36.151.251.59
+  skip-cert-verify: false
+  type: trojan
 - name: '12|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
   network: tcp
   password: fe506496-24eb-11ef-abd3-f23c91cfbbc9
@@ -771,6 +777,12 @@ proxies:
   skip-cert-verify: true
   sni: 5f9d335d-swexs0-t5juhn-4tue.cu.plebai.net
   type: trojan
+- name: '12,24|_中国 #20'
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 15229
+  server: 5abd5e38-swgsg0-swy6li-tni2.cu.plebai.net
+  skip-cert-verify: false
+  type: trojan
 - name: '12|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
   network: tcp
   password: 7d7c111e-fbc1-11ef-ab5f-f23c913c8d2b
@@ -778,16 +790,6 @@ proxies:
   server: 8a9e8dd4-swexs0-sxhurg-1th8j.cu.plebai.net
   sni: 8a9e8dd4-swexs0-sxhurg-1th8j.cu.plebai.net
   type: trojan
-- alterId: 0
-  name: 12,16,37|CN
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 15229
-  server: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
-  skip-cert-verify: true
-  sni: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
-  tls: true
-  type: trojan
-  udp: true
 - name: 12,24|🇩🇪 _德国
   password: telegram-id-privatevpns
   port: 22222
@@ -795,6 +797,20 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
+- alterId: 2
+  cipher: auto
+  name: '12,24|2|🇺🇸63 |  4.4MB/s|Netflix|Open... #1'
+  network: ws
+  port: '30808'
+  server: v8.heduian.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v8.heduian.link
+    path: /oooo
 - name: '12|🇨🇳_CN_中国->🇺🇸_US_美国 #7'
   network: tcp
   password: b55123f4-0ba2-11f0-a2ef-f23c91cfbbc9
@@ -802,33 +818,26 @@ proxies:
   server: 98af6055-swexs0-t5w83q-1slpx.cu.plebai.net
   sni: 98af6055-swexs0-t5w83q-1slpx.cu.plebai.net
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: '12|🇨🇳_CN_中国->🇺🇸_US_美国 #9'
+- alpn:
+  - http/1.1
+  name: '12,16|🇺🇸_US_美国_7 #1'
   network: ws
-  port: 30829
-  server: v29.heduian.link
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
+  port: 443
+  server: 172.67.138.187
+  skip-cert-verify: false
+  sni: CdVftY.7282728.xYz
+  type: trojan
+  udp: true
   ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
-- name: 12,16|🇳_CN_中国->🇺🇸_US_美国_6
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
-  server: 8941bc90-swexs0-t1bnjq-1krtb.cu.plebai.net
-  sni: 8941bc90-swexs0-t1bnjq-1krtb.cu.plebai.net
-  type: trojan
-- name: 12,16|🇨🇳_CN_中国->🇺🇸_US_美国_3
-  password: 8f55b5d6-f98f-11ef-ba82-f23c913c8d2b
-  port: 15229
-  server: 301b8cf2-swexs0-sxgzej-1teze.cu.plebai.net
-  skip-cert-verify: true
-  sni: 301b8cf2-swexs0-sxgzej-1teze.cu.plebai.net
-  type: trojan
+    path: /ptGwaGzcA4KNAXX
+- cipher: aes-256-gcm
+  name: 12,40|GI_speednode_0111
+  password: 0UcM3g3583uXXaAo
+  port: 8388
+  server: 95.164.68.37
+  type: ss
+  udp: true
 - name: '12|🇨🇳_CN_中国->🇺🇸_US_美国 #12'
   network: tcp
   password: 6e8482fb-1f9b-11ed-af5f-f23c91cfbbc9
@@ -940,17 +949,20 @@ proxies:
   port: 15229
   server: 4ef54dd8-swd340-t1bnjq-1krtb.cu.plebai.net
   type: trojan
-- name: '16,24|_中国 #13'
+- alterId: 0
+  name: 16,24,37|CN
   network: tcp
   password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
   port: 35000
   server: gzyd.cg.xxality.cn
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: cgsg2.hysality.com
+  tls: true
   type: trojan
+  udp: true
 - alpn:
   - http/1.1
-  name: '16,20,21|🇸🇪SE-13.61.166.141-0808 #1'
+  name: 16,20|🇸🇪SE-13.61.166.141-0808
   password: telegram-id-directvpn
   port: 22223
   server: 13.61.166.141
@@ -968,216 +980,12 @@ proxies:
   server: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
   sni: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
   type: trojan
-- cipher: aes-128-cfb
-  name: 16,19,20,21,24,28|yandex-717
-  password: shadowsocks
-  port: 443
-  server: 184.170.241.194
-  type: ss
-  udp: true
-- name: '16,20,21|🇸🇪SE-13.61.166.141-0820 #1'
+- name: 16,20|🇸🇪SE-13.61.166.141-0820
   password: telegram-id-privatevpns
   port: 22222
   server: 13.61.166.141
   sni: trojan.burgerip.co.uk
   type: trojan
-- alterId: 0
-  cipher: auto
-  country: mattkaydiary.com|中国香港/中国台湾(CN)China/Shenzhen/小东的程序未能精准识别(可能是中转节点)_3
-  name: 23|mattkaydiary.com|中国香港/中国台湾(CN)...
-  network: ws
-  port: 26104
-  server: V104.bgpnet.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285
-  ws-opts:
-    headers:
-      host: V104.bgpnet.top
-    path: /admin
-- alterId: 0
-  cipher: auto
-  country: mattkaydiary.com|中国香港/中国台湾(CN)China/Beijing/小东的程序未能精准识别(可能是中转节点)_17
-  name: '23|mattkaydiary.com|中国香港/中国台湾(CN)... #2'
-  network: tcp
-  port: 47389
-  server: shcu.forgebukkit.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f680dfd8-3b59-48af-aea8-1d4bc09a1705
-  ws-opts:
-    headers:
-      host: shcu.forgebukkit.com
-    path: /564dfa20/
-- alterId: 0
-  cipher: auto
-  country: mattkaydiary.com|中国香港/中国台湾(CN)China/Beijing/小东的程序未能精准识别(可能是中转节点)_20
-  name: '23|mattkaydiary.com|中国香港/中国台湾(CN)... #3'
-  network: tcp
-  port: 26309
-  server: V309.bgpnet.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285
-  ws-opts:
-    headers:
-      host: download.windowsupdate.com
-    path: /admin
-- alterId: 0
-  cipher: auto
-  country: mattkaydiary.com|中国香港/中国台湾(CN)China/Shenzhen/小东的程序未能精准识别(可能是中转节点)_30
-  name: '23|mattkaydiary.com|中国香港/中国台湾(CN)... #5'
-  network: tcp
-  port: 26203
-  server: V203.bgpnet.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '23|🇨🇳_CN_中国->🇺🇸_US_美国_1 #1'
-  network: ws
-  port: 16928
-  server: vip3.niuniupremium.xyz
-  servername: vip3.niuniupremium.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
-  ws-opts:
-    path: /v2ray
-- alterId: 0
-  cipher: auto
-  name: 23|🇺🇸_US_美国->🇬🇧_GB_英国_1
-  network: ws
-  port: 8880
-  server: 104.19.40.58
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
-  ws-opts:
-    headers:
-      host: uk.moss.network
-    path: /d/65dd503.TG.WangCai2.WangCai_8:107690
-- alterId: 0
-  cipher: auto
-  name: 23|🇺🇸_US_美国->🇬🇧_GB_英国_2
-  network: ws
-  port: 8880
-  server: 104.19.40.237
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
-  ws-opts:
-    headers:
-      host: uk.moss.network
-    path: /d/65dd503.TG.WangCai2.WangCai_8:107690
-- alterId: 0
-  cipher: auto
-  name: 23|🇺🇸_US_美国->🇬🇧_GB_英国_3
-  network: ws
-  port: 8880
-  server: 104.19.40.48
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
-  ws-opts:
-    headers:
-      host: uk.moss.network
-    path: /d/65dd503.TG.WangCai2.WangCai_8:107690
-- alterId: 0
-  cipher: auto
-  name: '23|🇺🇸_US_美国->🇫🇷_FR_法国_1 #1'
-  network: ws
-  port: 2082
-  server: 104.21.8.157
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '23|🇺🇸_US_美国->🇫🇷_FR_法国_2 #1'
-  network: ws
-  port: 2082
-  server: 172.67.130.140
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '23|🇺🇸_US_美国->🇫🇷_FR_法国_3 #1'
-  network: ws
-  port: 2082
-  server: s1c.v2.v001sss.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 23|🇺🇸_US_美国->🇬🇧_GB_英国_4
-  network: ws
-  port: 8880
-  server: 104.19.40.211
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
-  ws-opts:
-    headers:
-      host: uk.moss.network
-    path: /d/65dd503.TG.WangCai2.WangCai_8:107690
-- alterId: 0
-  cipher: auto
-  name: 23|🇺🇸_US_美国->🇬🇧_GB_英国_5
-  network: ws
-  port: 8880
-  server: 104.19.40.84
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
-  ws-opts:
-    headers:
-      host: uk.moss.network
-    path: /d/65dd503.TG.WangCai2.WangCai_8:107690
-- alterId: 0
-  cipher: auto
-  name: 23|🇺🇸_US_美国->🇬🇧_GB_英国_6
-  network: ws
-  port: 8880
-  server: 104.19.40.99
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
-  ws-opts:
-    headers:
-      host: uk.moss.network
-    path: /d/65dd503.TG.WangCai2.WangCai_8:107690
 - alterId: 2
   cipher: auto
   name: 30|_CN_->_US_国
@@ -1313,6 +1121,20 @@ proxies:
   ws-headers:
     Host: 157.148.96.92
   ws-path: /
+- alterId: 2
+  cipher: auto
+  name: 30|🇨🇳_CN_中国->🇺🇸_US_美国_8
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: baidu.com
+    path: /oooo
 - alterId: 0
   cipher: auto
   name: 30|2|🇺🇸18 |  5.1MB/s
