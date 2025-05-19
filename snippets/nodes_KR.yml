@@ -1,13 +1,6 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,27,30|0|🇷韩国 02 | 1x KR
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
-  name: 5,9,11,20,21,24,27|3,13|🇰🇷 韩国|@ripaojiedian
+  name: 5,9,11,24,27|1,11| |@ripaojiedian
   password: qwerREWQ@@
   port: 15098
   server: 125.141.31.72
@@ -15,41 +8,44 @@ proxies:
   type: ss
   udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,37|🇰🇷KR韩国2
-  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: 6666
-  server: 3.34.139.2
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30,37|🇷KR
-  password: 4098f13b-7920-43dd-b729-a11d8af34a25
+  cipher: auto
+  name: 5|韩国 - 首尔特别市 - Baxet Group Inc. ...
+  network: ws
+  port: '2082'
+  server: 104.19.48.236
+  tls: false
+  type: vmess
+  uuid: 1c713b69-0abe-3a1e-bf70-b0579ea2f772
+  ws-opts:
+    headers:
+      Host: 100-207-132-205.s2.db-link02.top
+    path: /dabai.in172.64.25.37
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,30|1|🇷 韩国 01 | 1x KR
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36311
   server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '5,9,11,24,27|13|🇰🇷 韩国3|@ripaojiedian #1'
-  password: 1601e3c29c8db1a88942cf0cad731bf3
-  port: 3306
-  server: 43.131.255.175
+  name: '5,11,27|11|🇰🇷 韩国2|@ripaojiedian #2'
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
   tfo: false
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,27,30|0|🇷国 01 | 1x KR
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+- name: 5|韩国+KT电信
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 50000
+  server: 59.3.209.82
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: '%2Fproxyip%3D59.3.209.82%3A50000%26proxyIP%3Dnull'
 - name: 9|15|KR_speednode_0123
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
@@ -63,7 +59,21 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=149.129.8.215:443
-- name: 11,27,40|KR_speednode_0123
+- cipher: chacha20-ietf-poly1305
+  name: 11,30|0|🇷国 01 | 1x KR
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 11,30|0|🇷韩国 02 | 1x KR
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: 11,40|KR_speednode_0090
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -77,15 +87,14 @@ proxies:
       Host: icecream.955850.xyz
     path: /proxyip=149.129.8.215:443&proxyIP=null
 - cipher: aes-256-cfb
-  name: 16,28|yandex-1071
+  name: 16|🇷_KR_国
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: '20,21|🇰🇷KR-140.238.18.215-6153 #1'
+  name: '20,21|🇰🇷KR-140.238.18.215-5826 #1'
   network: ws
   port: 2087
   server: lv4.789900.xyz
@@ -146,7 +155,7 @@ proxies:
   type: vmess
   uuid: cff7001e-3a74-43e8-bfd8-a7af9630a58b
 - cipher: aes-256-cfb
-  name: 40|KR_speednode_0121
+  name: 40|KR_speednode_0088
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
