@@ -1,24 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|5b2b6b62312e4ba68bbb280d13f53e...
-  network: grpc
-  port: 8880
-  server: 95.164.45.85
-  tls: false
-  type: vless
-  udp: false
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|e0fae727c7164a81b45ea341228b78...
-  network: grpc
-  port: 8880
-  server: 95.164.45.90
-  tls: false
-  type: vless
-  udp: false
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 8,24,30|兰 V2CROSS.COM
@@ -116,6 +96,15 @@ proxies:
     headers:
       host: irvideo.cfd
     path: /linkws
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知127 2.4MB/s
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.158.171.151
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -226,7 +215,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 23,36|🔒 VM-WS-TLS 🏴‍☠️ NA-172.67.198...
+  name: 23|法国1 | ⬇️ 2.3MB/s
   network: ws
   port: 443
   server: 172.67.198.187
@@ -280,6 +269,20 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: none
+  name: 36|🔒 VM-WS-TLS 🇫🇷 FR-138.124.31.1...
+  network: ws
+  port: '2096'
+  server: 138.124.31.187
+  servername: fr.vmess.comnpmjs.com
+  tls: true
+  type: vmess
+  uuid: 708358a5-8c9a-55b8-a521-73b8d7b63d3b
+  ws-opts:
+    headers:
+      Host: fr.vmess.comnpmjs.com
+    path: /vmess
 - name: 40|FR_speednode_0009
   network: ws
   port: 8880

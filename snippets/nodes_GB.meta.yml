@@ -1,14 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|87a39580ba2e4e2ba2318a9fe053cb...
-  network: grpc
-  port: 8880
-  server: 45.140.167.59
-  tls: false
-  type: vless
-  udp: false
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '5,38|🇬🇧_GB_英国_26 #1'
   network: ws
   port: 443
@@ -142,71 +132,6 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
-- name: 9|14|GB_speednode_0078
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 217.163.76.254
-  skip-cert-verify: false
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=217.163.76.254:443
-- name: 9|14|GB_speednode_0082
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 217.163.76.89
-  skip-cert-verify: false
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=217.163.76.89:443
-- name: 9|14|GB_speednode_0084
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 217.163.76.227
-  skip-cert-verify: false
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=217.163.76.227:443
-- name: 9|14|GB_speednode_0081
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 217.163.76.51
-  skip-cert-verify: false
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=217.163.76.51:443
-- name: 9|14|GB_speednode_0083
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 217.163.76.221
-  skip-cert-verify: false
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=217.163.76.221:443
 - delay: 1757
   name: 10|英国 001
   network: ws
@@ -267,10 +192,19 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-128-gcm
-  name: 19,20,21,37|未知134 3.6MB/s
+  name: 19,20,21,37|未知121 2.8MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.195
+  server: 212.102.53.196
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知95 2.1MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.80
   skip-cert-verify: true
   tls: true
   type: ss
@@ -286,15 +220,6 @@ proxies:
   port: 443
   server: series-a2.varzesh360.co
   type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 20,21,37|未知38 2.7MB/s
-  password: I1hTma0BoL
-  port: 443
-  server: 92.119.199.33
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - name: 26|V2-英国03∣K71线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 20820
@@ -302,16 +227,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.243.5...
-  network: tcp
-  port: '50394'
-  server: 46.250.243.56
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-37.221.125.1...
@@ -322,3 +237,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.243.5...
+  network: tcp
+  port: '50394'
+  server: 46.250.243.56
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
