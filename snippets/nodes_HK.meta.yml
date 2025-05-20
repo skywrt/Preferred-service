@@ -9,7 +9,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5,9,11,24,27|3|🇰1 |  1.8MB/s|15%|Disney|You...
+  name: 5,9,11,24,27|2|🇰1 |  1.8MB/s|15%|Disney|You...
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -59,7 +59,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇭🇰 香港 01 | 1x HK #1'
+  name: 5,9,11,24,27,30|1|🇭🇰 香港 01 | 1x HK
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36141
   server: free.2weradf.xyz
@@ -104,7 +104,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,28,30,37|🇭🇰HK香港3
+  name: 5,9,11,24,27,30,37|🇭🇰HK香港3
   password: bbf72309-e6ca-4f15-86ea-e0724b1afcaf
   port: 31143
   server: free.2apzhfa.xyz
@@ -114,21 +114,19 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5,24,28|yandex-1413
+  name: '5,24|_中国 #48'
   network: ws
-  port: 8080
+  port: '8080'
   server: 43b5a616-sw04g0-swasv3-luwe.hgc1.tcpbbr.net
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
   ws-opts:
     headers:
       Host: 43b5a616-sw04g0-swasv3-luwe.hgc1.tcpbbr.net
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇭🇰 香港 02 | 1x HK #1'
+  name: 5,9,11,24,27,30|1|🇭🇰 香港 02 | 1x HK
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36143
   server: free.2weradf.xyz
@@ -925,7 +923,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '30|12|🇭🇰 香港8|@ripaojiedian #1'
+- name: '30|12|🇭🇰 香港8|@ripaojiedian #2'
   password: 1d28a2a2-2fb3-4456-b119-749e75ad9c93
   port: 27101
   server: aafrtpfxr.hkl01i9zjfegelp.5xfsur8v62.gosdk.xyz
@@ -968,6 +966,15 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-216.250.97.1...
+  network: tcp
+  port: '900'
+  server: 216.250.97.138
+  tls: false
+  type: vmess
+  uuid: b2f87c13-c42d-4cf1-b8f9-1a812d4f887a
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
   network: ws
   port: '1935'
@@ -982,20 +989,6 @@ proxies:
     path: /vmess-argo
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-182.237.0.12...
-  network: ws
-  port: '1086'
-  server: 182.237.0.127
-  servername: hk-02.foxspirit.click
-  tls: true
-  type: vmess
-  uuid: 5aef9bfd-20e3-420a-9b16-433031984bd9
-  ws-opts:
-    headers:
-      Host: www.ouabaua.com
-    path: /zxascas
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-82.152.164.10...
   network: ws
   port: 40601
@@ -1006,6 +999,19 @@ proxies:
   ws-opts:
     headers:
       Host: us05.jssssss.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-1.65.196.162:...
+  network: ws
+  port: 80
+  server: 1.65.196.162
+  tls: false
+  type: vmess
+  uuid: 9cc3c03e-21fd-11ee-a642-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 2
   cipher: auto
@@ -1022,13 +1028,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-216.250.97.1...
-  network: tcp
-  port: '900'
-  server: 216.250.97.138
-  tls: false
+  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-182.237.0.12...
+  network: ws
+  port: '1086'
+  server: 182.237.0.127
+  servername: hk-02.foxspirit.click
+  tls: true
   type: vmess
-  uuid: b2f87c13-c42d-4cf1-b8f9-1a812d4f887a
+  uuid: 5aef9bfd-20e3-420a-9b16-433031984bd9
+  ws-opts:
+    headers:
+      Host: www.ouabaua.com
+    path: /zxascas
 - alterId: 0
   name: 37|HK
   password: Aimer
