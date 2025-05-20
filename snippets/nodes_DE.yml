@@ -3,7 +3,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 3|9f6b503951b24fd98f35e4aaccb2eb...
+  name: 3|7009175576874d3f915bbec62eb116...
   network: ws
   port: 443
   server: 57.129.28.65
@@ -16,26 +16,6 @@ proxies:
     headers:
       host: kapelleng.com
     path: /linkvws
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇪 德国 01 | 1x DE #1'
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 5|德国 - 纽伦堡 - netcup GmbH - 3
-  network: ws
-  port: '2087'
-  server: 141.101.120.189
-  tls: true
-  type: vmess
-  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: '5,9,11,24,27,30|0|国 01 | 1x DE #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -57,6 +37,26 @@ proxies:
   type: vmess
   udp: true
   uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,11,24,27,30|1|🇪 德国 01 | 1x DE #1'
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 5|德国 - 纽伦堡 - netcup GmbH - 3
+  network: ws
+  port: '2087'
+  server: 141.101.120.189
+  tls: true
+  type: vmess
+  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - name: 8|🇩🇪DE-52.58.179.46-180_1@180
   password: telegram-id-privatevpns
   port: 22222
@@ -129,9 +129,15 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-3215
+  password: M3t2ZEQcMGRWBjRa
+  port: 9011
+  server: 80.92.204.106
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-7682 #1'
+  name: '20,21|🇩🇪DE-57.129.24.125-7742 #1'
   network: ws
   port: 443
   server: 57.129.24.125
@@ -143,32 +149,6 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-132.145.232.171-7698 #1'
-  network: ws
-  port: 443
-  server: 132.145.232.171
-  servername: beyonddsz.cfd
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    headers:
-      Host: beyonddsz.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: vmess-grpc
-  name: 36|🔒 VM-GRPC-TLS 🇩🇪 DE-5.39.249.1...
-  network: grpc
-  port: 443
-  server: 5.39.249.119
-  servername: de.vmess.comnpmjs.com
-  tls: true
-  type: vmess
-  uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
@@ -190,16 +170,6 @@ proxies:
   uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-45.89.233.67...
-  network: tcp
-  port: '19019'
-  server: 45.89.233.67
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 802e1632-9c29-4f2d-821f-96a35daeed3b
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.203.238....
   network: tcp
   port: '45159'
@@ -208,13 +178,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 5a1cc66c-1656-4e6a-87d9-ac2a7ab54fcd
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-5.75.197.83:...
-  network: tcp
-  port: '80'
-  server: 5.75.197.83
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 76c65130-1bbb-4009-9751-527eac272614
