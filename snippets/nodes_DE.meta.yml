@@ -97,13 +97,6 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|国 01 | 1x DE #1'
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -119,10 +112,10 @@ proxies:
   udp: true
   uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇪 德国 01 | 1x DE #1'
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36471
-  server: free.2weradf.xyz
+  name: '5,9,11,24,27,30|0|国 01 | 1x DE #1'
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31471
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -138,9 +131,16 @@ proxies:
     headers:
       Host: ''
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,11,24,27,30|1|🇪 德国 01 | 1x DE #1'
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - client-fingerprint: safari
   flow: xtls-rprx-vision-udp443
-  name: 5|1|🇩🇪6 |  4.3MB/s|0%|Disney|Ope...
+  name: 5|2|🇩🇪6 |  4.3MB/s|0%|Disney|Ope...
   port: 443
   server: 204.10.194.78
   servername: yfnl1.xn--4gq62f52gppi29k.com
@@ -175,6 +175,15 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 12,19,37|未知11 568.2KB/s
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.166
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -189,6 +198,12 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
+- cipher: rc4-md5
+  name: 19|🇩🇪DE-193.108.119.230-0910
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 19|🇩🇪DE-85.208.139.31-6186
   password: q7jwtcA0MmyYi0JddUgXXj
@@ -210,15 +225,9 @@ proxies:
     headers:
       host: irvideo.cfd
     path: /linkws
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-3215
-  password: M3t2ZEQcMGRWBjRa
-  port: 9011
-  server: 80.92.204.106
-  type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-7742 #1'
+  name: '20,21|🇩🇪DE-57.129.24.125-7679 #1'
   network: ws
   port: 443
   server: 57.129.24.125
@@ -232,7 +241,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-132.145.232....
+  name: 20,21,36|🔒 VM-WS-TLS 🇩🇪 DE-132.145.232....
   network: ws
   port: 443
   server: 132.145.232.171
@@ -246,16 +255,6 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.203.238....
-  network: tcp
-  port: '45159'
-  server: 193.203.238.112
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5a1cc66c-1656-4e6a-87d9-ac2a7ab54fcd
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
   network: httpupgrade
   port: '2095'
@@ -266,14 +265,14 @@ proxies:
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-45.89.233.67...
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-193.203.238....
   network: tcp
-  port: '19019'
-  server: 45.89.233.67
+  port: '45159'
+  server: 193.203.238.112
   servername: ''
   tls: false
   type: vmess
-  uuid: 802e1632-9c29-4f2d-821f-96a35daeed3b
+  uuid: 5a1cc66c-1656-4e6a-87d9-ac2a7ab54fcd
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-157.90.117...
@@ -283,6 +282,16 @@ proxies:
   tls: false
   type: vmess
   uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-45.89.233.67...
+  network: tcp
+  port: '19019'
+  server: 45.89.233.67
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 802e1632-9c29-4f2d-821f-96a35daeed3b
 - name: 40|DE_speednode_0008
   network: ws
   port: 8880
