@@ -1,16 +1,9 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇧 英国住宅IP 01 | 1x UK #1'
+  name: 5,9,11,24,27,30|1|🇧 英国住宅IP 01 | 1x UK
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36271
   server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0|🇧英国家宽 01 | 1x UK
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31271
-  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 2
@@ -26,6 +19,13 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,30|0|🇧英国家宽 01 | 1x UK
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - name: 8|🇬🇧GB-3.9.164.189-194_1@194
   password: E6r93XCOsyM9
   port: 16733
@@ -86,41 +86,21 @@ proxies:
   port: 55988
   server: mx2.drawnrisha.one
   type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 20,21,24,37|🇬GB 2.9MB/s
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: admin.c3.webramz.co
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 20,21,30|2|🇬🇧3 |  2.8MB/s
   password: mps3FwmDjLrWaOVg
   port: 443
   server: series-a2.varzesh360.co
   type: ss
-- name: 24|🇬🇧 _英国
-  password: Aimer
-  port: 8443
-  server: 176.53.144.206
-  skip-cert-verify: false
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
 - alterId: 0
-  cipher: auto
-  name: '24|🇬🇧 _英国 #1'
-  network: ws
-  port: '80'
-  server: 6ernu3zmhsv7s95fm.lovebaipiao.net
-  tls: false
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      Host: 6ernu3zmhsv7s95fm.lovebaipiao.net
-    path: /
+  cipher: chacha20-ietf-poly1305
+  name: 20,21,37|🇬GB 2.9MB/s
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: admin.c3.webramz.co
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - name: 26|V2-英国03∣K71线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 20820
@@ -128,16 +108,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-37.221.125.1...
-  network: tcp
-  port: '33940'
-  server: 37.221.125.159
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
 - alterId: 0
   cipher: auto
   name: 36,37|未知59 387.0KB/s
@@ -149,3 +119,13 @@ proxies:
   tls: true
   type: vmess
   uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-37.221.125.1...
+  network: tcp
+  port: '33940'
+  server: 37.221.125.159
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
