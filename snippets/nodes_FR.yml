@@ -1,6 +1,24 @@
 proxies:
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3,19|🇫🇷FR-146.19.168.161-8324
+  network: ws
+  port: 443
+  server: 146.19.168.161
+  servername: az05.beyondy.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      host: az05.beyondy.cfd
+    path: /link
+- alterId: 0
+  cipher: auto
   name: 5|法国 - 格拉沃利讷 - OVH SAS - 1
   network: ws
   port: '443'
@@ -110,20 +128,23 @@ proxies:
       host: irvideo.cfd
     path: /linkws
 - alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇫🇷FR-146.19.168.161-8324
-  network: ws
-  port: 443
-  server: 146.19.168.161
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知123 4.0MB/s
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.158.171.132
   skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      host: az05.beyondy.cfd
-    path: /link
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知78 2.1MB/s
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.158.171.151
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -139,47 +160,12 @@ proxies:
     headers:
       host: beyonddsz.cfd
     path: /linkws
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇫🇷FR-144.24.200.164-1593
-  network: ws
-  port: 443
-  server: 144.24.200.164
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    headers:
-      host: beyonddsz.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇫🇷FR-146.19.168.161-6203
-  network: ws
-  port: 443
-  server: az05.beyondy.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      host: az05.beyondy.cfd
-    path: /link
-- alterId: 0
-  name: 20,21,37|未知116 8.5MB/s
-  network: tcp
+- name: '20,21|🇫🇷FR-51.68.13.106-0458 #1'
   password: FiSo7J6vfS
   port: 1935
   server: 51.68.13.106
-  skip-cert-verify: true
   sni: x1fr-ovh.devefun.net
-  tls: true
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '20,21|🇫🇷FR-45.145.165.114-7776 #1'

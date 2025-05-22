@@ -1,6 +1,12 @@
 proxies:
+- client-fingerprint: chrome
+  name: 3|21da0691e4e14b22a96fd2475869bc...
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 45.67.215.196
+  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,30|1|🇺 俄罗斯 01 | 1x RU
+  name: '5,9,11,24,27,30|1|🇺 俄罗斯 01 | 1x RU #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36511
   server: free.2weradf.xyz
@@ -67,6 +73,15 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.231.233.112
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知27 1.6MB/s
+  password: 0zyDRZ1XmNXaaCAN7KEA8a
+  port: 28825
+  server: 45.151.62.54
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 19|🇷🇺RU-147.45.221.106-1300
@@ -162,35 +177,12 @@ proxies:
     path: /iphone
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇷🇺 RU-193.53.126.24...
-  network: ws
-  port: '80'
-  server: 193.53.126.249
-  tls: false
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      Host: www.apple.com
-    path: /iphone
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
+  name: 36,37|未知40 1.8MB/s
   network: tcp
-  port: '20779'
+  port: 20779
   server: 45.12.114.15
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
-- alterId: 0
-  name: 37|RU
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 92.243.74.180
-  skip-cert-verify: true
-  sni: tyep.esslh.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
