@@ -1,14 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 5|15|FR_speednode_0053
-  port: 24957
-  server: 51.158.213.119
-  servername: www.yahoo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: ef1fdecb-e56f-4996-9b6a-da7ddb7f7c8d
 - alterId: 0
   cipher: auto
   name: 5|法国 - 格拉沃利讷 - OVH SAS - 1
@@ -24,7 +14,7 @@ proxies:
     path: /linvkws
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 8,24,30|兰 V2CROSS.COM
+  name: 8,30|兰 V2CROSS.COM
   password: 7BcLdsO1WweoGD0X
   port: 40368
   server: 193.243.147.128
@@ -103,6 +93,12 @@ proxies:
   password: zDNVedRFPQexG9v
   port: 6379
   server: 149.202.82.172
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇫🇷FR-45.158.171.146-0972
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.158.171.146
   type: ss
 - alterId: 0
   cipher: auto
@@ -188,12 +184,40 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- name: '20,21|🇫🇷FR-51.68.13.106-0503 #1'
+- name: '20,21|🇫🇷FR-51.68.13.106-0499 #1'
   password: FiSo7J6vfS
   port: 1935
   server: 51.68.13.106
   sni: x1fr-ovh.devefun.net
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇫🇷FR-146.19.168.161-7699 #1'
+  network: ws
+  port: 443
+  server: 146.19.168.161
+  servername: az05.beyondy.cfd
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: az05.beyondy.cfd
+    path: /link
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇫🇷FR-138.124.31.187-5827 #1'
+  network: ws
+  port: 2096
+  server: fr.vmess.comnpmjs.com
+  servername: fr.vmess.comnpmjs.com
+  tls: true
+  type: vmess
+  uuid: 708358a5-8c9a-55b8-a521-73b8d7b63d3b
+  ws-opts:
+    headers:
+      Host: fr.vmess.comnpmjs.com
+    path: /vmess
 - alterId: 0
   cipher: auto
   name: 20,21,23|法国4 | ⬇️ 4.0MB/s
@@ -210,21 +234,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-45.145.165.114-7806 #1'
-  network: ws
-  port: 443
-  server: beyonddsz.cfd
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    headers:
-      Host: beyonddsz.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇫🇷FR-146.19.168.161-5857 #1'
+  name: '20,21|🇫🇷FR-146.19.168.161-5682 #1'
   network: ws
   port: 443
   server: az05.beyondy.cfd
@@ -238,18 +248,18 @@ proxies:
     path: /link
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-146.19.168.161-7822 #1'
+  name: '20,21|🇫🇷FR-45.145.165.114-7700 #1'
   network: ws
   port: 443
-  server: 146.19.168.161
-  servername: az05.beyondy.cfd
+  server: beyonddsz.cfd
+  servername: ''
   tls: true
   type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
   ws-opts:
     headers:
-      Host: az05.beyondy.cfd
-    path: /link
+      Host: beyonddsz.cfd
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: 23|法国1 | ⬇️ 2.3MB/s
