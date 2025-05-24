@@ -7,7 +7,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,28,30|0|🇺俄罗斯 01 | 1x RU
+  name: 5,9,24,27,30|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31511
   server: free.2apzhfa.xyz
@@ -207,20 +207,26 @@ proxies:
   skip-cert-verify: false
   sni: epccn.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #4'
+- alterId: 0
+  name: 24,37|🇷🇺RU俄罗斯3
   password: Aimer
   port: 443
   server: 176.124.223.92
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epccn.ambercc.filegear-sg.me
+  tls: true
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #5'
+  udp: true
+- alterId: 0
+  name: 24,37|🇷🇺RU俄罗斯2
   password: Aimer
   port: 8443
   server: 92.243.74.180
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: tyep.esslh.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇷🇺 _俄罗斯 #6'
   password: Aimer
   port: 2053
@@ -249,13 +255,16 @@ proxies:
   skip-cert-verify: false
   sni: epccn.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #10'
+- alterId: 0
+  name: 24,37|RU
   password: Aimer
   port: 8443
   server: 92.243.74.239
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epccv.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇷🇺 _俄罗斯 #11'
   password: Aimer
   port: 2096
@@ -265,12 +274,13 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
+  name: 36,37|未知8 10.1MB/s
   network: tcp
-  port: '20779'
+  port: 20779
   server: 45.12.114.15
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
 - name: 40|RU_speednode_0088
@@ -413,20 +423,6 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 40|RU_speednode_0098
-  network: ws
-  port: 8880
-  server: 185.176.24.20
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
 - name: 40|RU_speednode_0099
   network: ws
   port: 8880
@@ -469,6 +465,20 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+- name: 40|RU_speednode_0102
+  network: ws
+  port: 8880
+  server: 45.8.211.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
 - name: 40|RU_speednode_0103
   network: ws
   port: 8880
@@ -483,20 +493,6 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 40|RU_speednode_0104
-  network: ws
-  port: 8880
-  server: 176.124.223.20
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
 - name: 40|RU_speednode_0105
   network: ws
   port: 8880
