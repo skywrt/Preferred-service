@@ -1,16 +1,16 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|0|🇷国 01 | 1x KR
+  name: '5,9,11,24,27,30|0|🇷韩国 02 | 1x KR #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31311
+  port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '5,9,11,20,21,24,27|2,13|🇰🇷 韩国|@ripaojiedian #1'
+  name: 5,9,11,27|13|🇷 韩国|@ripaojiedian
   password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
+  port: 11389
+  server: p231.panda004.net
   tfo: false
   type: ss
   udp: true
@@ -21,10 +21,17 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  name: 5,9,11,20,21,24,27|2|🇷2 |  1.5MB/s|44%|Openai
+  password: qwerREWQ@@
+  port: 15098
+  server: 125.141.31.72
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇷韩国 02 | 1x KR #1'
+  name: 5,9,11,24,27,30|0|🇷国 01 | 1x KR
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31313
+  port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
@@ -66,7 +73,7 @@ proxies:
     path: '%2F%3Fproxyip%3Dproxyip.kr.fxxp.dedyp.io'
 - alterId: 0
   cipher: auto
-  name: '20,21|🇰🇷KR-140.238.18.215-5842 #1'
+  name: '20,21|🇰🇷KR-140.238.18.215-5790 #1'
   network: ws
   port: 2087
   server: lv4.789900.xyz
@@ -103,7 +110,7 @@ proxies:
   type: vmess
   uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
 - cipher: aes-256-cfb
-  name: 30|12|🇰🇷 韩国|@ripaojiedian
+  name: '30|12|🇰🇷 韩国|@ripaojiedian #2'
   password: amazonskr05
   port: 443
   server: 3.34.192.249
@@ -111,11 +118,12 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇰🇷 KR-45.82.246.17...
+  name: 36,37|未知124 362.2KB/s
   network: tcp
-  port: '26521'
+  port: 26521
   server: 45.82.246.173
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: cff7001e-3a74-43e8-bfd8-a7af9630a58b

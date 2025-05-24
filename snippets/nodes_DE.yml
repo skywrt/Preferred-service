@@ -1,38 +1,4 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3,19|🇩🇪DE-193.122.58.158-1506
-  network: ws
-  port: 443
-  server: 193.122.58.158
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: false
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      host: irvideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|c995f0d704664b0b8d1d99b9de26b0...
-  network: ws
-  port: 443
-  server: 57.129.24.124
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  udp: false
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
 - cipher: chacha20-ietf-poly1305
   name: 5,9,11,24,27,30|1|🇪 德国 01 | 1x DE
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
@@ -89,6 +55,12 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 12,19|🇱🇹LT-45.87.175.188-0967
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.188
+  type: ss
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -115,22 +87,41 @@ proxies:
   port: 42037
   server: 85.208.139.31
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇩🇪DE-193.122.58.158-1506
+  network: ws
+  port: 443
+  server: 193.122.58.158
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      host: irvideo.cfd
+    path: /linkws
 - cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-3215
-  password: M3t2ZEQcMGRWBjRa
-  port: 9011
+  name: 19|🇩🇪DE-80.92.204.106-6032
+  password: rpgbNnU9rDDU4aWZ
+  port: 9094
   server: 80.92.204.106
   type: ss
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-94.130.225.1...
-  network: tcp
-  port: '56997'
-  server: 94.130.225.156
+  name: '20,21|🇩🇪DE-57.129.24.125-7654 #1'
+  network: ws
+  port: 443
+  server: 57.129.24.125
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 3f62bcc3-e8cd-4a97-89d2-51a39644131b
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-17...
@@ -140,6 +131,15 @@ proxies:
   tls: false
   type: vmess
   uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-188.245.10...
+  network: tcp
+  port: 23890
+  server: 188.245.109.124
+  tls: false
+  type: vmess
+  uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
@@ -152,6 +152,16 @@ proxies:
   uuid: f00033ef-6a82-475e-b2d0-29adc8a30726
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-94.130.225.1...
+  network: tcp
+  port: '56997'
+  server: 94.130.225.156
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3f62bcc3-e8cd-4a97-89d2-51a39644131b
+- alterId: 0
+  cipher: auto
   name: '36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10... #1'
   network: httpupgrade
   port: '2095'
@@ -160,12 +170,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-188.245.10...
-  network: tcp
-  port: 23890
-  server: 188.245.109.124
-  tls: false
-  type: vmess
-  uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
