@@ -1,6 +1,6 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,24,27,30|0|🇧英国家宽 01 | 1x UK
+  name: 5,9,11,24,27,30|0|🇧英国家宽 01 | 1x UK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31271
   server: free.2apzhfa.xyz
@@ -20,7 +20,7 @@ proxies:
       Host: beyonddsz.cfd
     path: /linkws
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27,30|1|🇧 英国住宅IP 01 | 1x UK
+  name: 5,9,11,24,30|1|🇧 英国住宅IP 01 | 1x UK
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36271
   server: free.2weradf.xyz
@@ -99,15 +99,6 @@ proxies:
   port: 443
   server: 212.102.53.79
   type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知88 12.4MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.78
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 19|🇬🇧GB-185.5.38.111-6211
   password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
@@ -119,6 +110,15 @@ proxies:
   password: mps3FwmDjLrWaOVg
   port: 443
   server: series-a2.varzesh360.co
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 20,21,37|未知131 8.1MB/s
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: 85.210.120.237
+  skip-cert-verify: true
+  tls: true
   type: ss
 - name: 24|🇬🇧 _英国
   password: Aimer
@@ -136,17 +136,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36,37|未知131 1.0MB/s
-  network: tcp
-  port: 50394
-  server: 46.250.243.56
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-37.221.125.1...
   network: tcp
   port: '33940'
@@ -155,3 +144,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.243.5...
+  network: tcp
+  port: '50394'
+  server: 46.250.243.56
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
