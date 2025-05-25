@@ -1,9 +1,60 @@
 proxies:
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3,19|🇩🇪DE-193.122.58.158-1506
+  network: ws
+  port: 443
+  server: 193.122.58.158
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      host: irvideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|0990fec599d7446ea942486cab3857...
+  network: ws
+  port: 443
+  server: 57.129.28.65
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      host: kapelleng.com
+    path: /linkvws
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,24,27,30,37|DE国
+  password: f8e0a748-0d74-476a-bc25-e475d5a71f7f
+  port: 36471
+  server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,30|0|国 01 | 1x DE
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31471
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
   grpc-opts:
     grpc-service-name: vmess-grpc
-  name: 5,9,11,24,27|3|🇪5 |  1.4MB/s|0%|Youtube|Ope...
+  name: '5,9,11,24,27|2|🇪5 |  1.4MB/s|0%|Youtube|Ope... #1'
   network: grpc
   port: 443
   server: de.vmess.comnpmjs.com
@@ -13,20 +64,6 @@ proxies:
   type: vmess
   udp: true
   uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|国 01 | 1x DE #1'
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27,30|1|🇪 德国 01 | 1x DE
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - name: 8|🇩🇪DE-52.58.179.46-180_1@180
   password: telegram-id-privatevpns
   port: 22222
@@ -75,21 +112,12 @@ proxies:
   port: 42037
   server: 85.208.139.31
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇩🇪DE-193.122.58.158-1506
-  network: ws
-  port: 443
-  server: 193.122.58.158
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      host: irvideo.cfd
-    path: /linkws
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-6032
+  password: rpgbNnU9rDDU4aWZ
+  port: 9094
+  server: 80.92.204.106
+  type: ss
 - cipher: aes-256-cfb
   name: 19|🇩🇪DE-80.92.204.106-3215
   password: M3t2ZEQcMGRWBjRa
@@ -98,7 +126,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-7629 #1'
+  name: '20,21|🇩🇪DE-57.129.24.125-7765 #1'
   network: ws
   port: 443
   server: 57.129.24.125
@@ -110,25 +138,6 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-94.130.225.1...
-  network: tcp
-  port: '56997'
-  server: 94.130.225.156
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3f62bcc3-e8cd-4a97-89d2-51a39644131b
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-188.245.10...
-  network: tcp
-  port: 23890
-  server: 188.245.109.124
-  tls: false
-  type: vmess
-  uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.64.23...
@@ -145,6 +154,16 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-94.130.225.1...
+  network: tcp
+  port: '56997'
+  server: 94.130.225.156
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3f62bcc3-e8cd-4a97-89d2-51a39644131b
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
   network: httpupgrade
   port: '2095'
@@ -153,6 +172,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-188.245.10...
+  network: tcp
+  port: 23890
+  server: 188.245.109.124
+  tls: false
+  type: vmess
+  uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
 - alterId: 0
   cipher: auto
   name: '36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10... #1'
