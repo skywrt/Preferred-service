@@ -30,7 +30,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27,30|1|🇪 德国 01 | 1x DE #1'
+  name: 5,11,24,27,30|1|🇪 德国 01 | 1x DE
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36471
   server: free.2weradf.xyz
@@ -131,17 +131,30 @@ proxies:
   uuid: 3f62bcc3-e8cd-4a97-89d2-51a39644131b
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '8880'
-  server: 104.17.147.22
-  servername: ''
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-188.245.10...
+  network: tcp
+  port: 23890
+  server: 188.245.109.124
   tls: false
   type: vmess
-  uuid: f00033ef-6a82-475e-b2d0-29adc8a30726
+  uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10... #1'
+  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.64.23...
+  network: ws
+  port: '443'
+  server: 57.129.64.238
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
   network: httpupgrade
   port: '2095'
   server: 104.19.150.10
@@ -151,13 +164,14 @@ proxies:
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-188.245.10...
-  network: tcp
-  port: 23890
-  server: 188.245.109.124
+  name: '36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10... #1'
+  network: httpupgrade
+  port: '8880'
+  server: 104.17.147.22
+  servername: ''
   tls: false
   type: vmess
-  uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
+  uuid: f00033ef-6a82-475e-b2d0-29adc8a30726
 - name: 40|DE_speednode_0031
   network: ws
   port: 8880
