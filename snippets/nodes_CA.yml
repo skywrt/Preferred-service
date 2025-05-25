@@ -1,16 +1,72 @@
 proxies:
+- client-fingerprint: chrome
+  name: 3|84949b4e6e2c421791a94358bc36f3...
+  password: c6840587-7ac4-40be-aa4b-ae327eb4fa53
+  port: 443
+  server: 172.67.200.117
+  type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|df8e57eb94c74cddb240e008c30988...
+  network: ws
+  port: 443
+  server: 104.21.15.212
+  servername: glweidf.sbs
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      host: glweidf.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|f3c5c3372f0f43c4a83931e553a574...
+  network: ws
+  port: 443
+  server: 172.67.136.233
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    path: /link
+- client-fingerprint: chrome
+  name: 3|35139477bbb04967954d4949a1e232...
+  password: 21e5535e-4783-4a80-a735-24a1162d315c
+  port: 443
+  server: 104.21.28.26
+  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,30|1|🇦 加拿大 01 | 1x CA #1'
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,30|0|🇦加拿大 01 | 1x CA
+  name: 5,9,24,27,30|0|🇦加拿大 01 | 1x CA
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31441
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 5|美国 - Secaucus - OVH SAS - 2
+  network: ws
+  port: '443'
+  server: cloudgetservice.mcloudservice.site
+  tls: true
+  type: vmess
+  uuid: a7b0ae1e-5376-4441-abc4-45db4093e889
+  ws-opts:
+    headers:
+      Host: cloudgetservice.mcloudservice.site
+    path: /linkws
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,30|1|🇦 加拿大 01 | 1x CA
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -459,6 +515,18 @@ proxies:
     headers:
       Host: www.bing.com
     path: github.com/Alvin9999
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇨🇦CA-142.4.216.225-1090
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇨🇦CA-142.4.216.225-1078
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: ca225.vpnbook.com
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -476,7 +544,7 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-23.162.200.227-7783 #1'
+  name: '20,21|🇨🇦CA-23.162.200.227-7624 #1'
   network: ws
   port: 443
   server: 23.162.200.227
@@ -490,7 +558,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-134.195.198.147-7785 #1'
+  name: '20,21|🇨🇦CA-134.195.198.147-7628 #1'
   network: ws
   port: 443
   server: 134.195.198.147
@@ -518,7 +586,19 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '20,21,24|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP... #1'
+  name: 23|🇨🇦_CA_加拿大
+  network: ws
+  port: 443
+  server: 158.51.121.36
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '24|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP... #1'
   network: ws
   port: 80
   server: 51.79.103.76
@@ -532,16 +612,14 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: 23|🇨🇦_CA_加拿大
-  network: ws
-  port: 443
-  server: 158.51.121.36
-  skip-cert-verify: true
-  tls: true
+  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.11...
+  network: tcp
+  port: '27699'
+  server: 91.194.11.118
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: /linkvws
+  uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17...
@@ -552,16 +630,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.11...
-  network: tcp
-  port: '27699'
-  server: 91.194.11.118
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
