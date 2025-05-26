@@ -1,8 +1,8 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇼台湾 03 | 1x TW #2'
+  name: '5,9,11,24,27,30|0| 01 | 1x TW #1'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31245
+  port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
@@ -13,11 +13,14 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0| 01 | 1x TW #2'
-  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31241
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,30,37|🇼TW台湾2
+  password: f31c8d55-fa75-4ca7-93d4-392cae1923f3
+  port: 31243
   server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -27,21 +30,21 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,11,24,27,30|0|🇼台湾 03 | 1x TW #1'
+  password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
+  port: 31245
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 5,9,11,24,27,30,37|TW
-  password: 39fb2d10-49f4-407c-8aef-df6f00d1ffb8
-  port: 31243
-  server: free.2apzhfa.xyz
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇹🇼 台湾 02 | 1x TW #1'
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+  password: ad5848da-3b6c-40b3-8094-10d79d6f8ae1
   port: 36243
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - name: '20,21|🇹🇼TW-61.221.48.98-0262 #1'
@@ -84,27 +87,16 @@ proxies:
   name: '37|TW #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 60.249.35.2
+  server: 125.227.86.46
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  name: 37|TW2
-  network: grpc
-  password: 67eb147db1c0f8c5
-  port: 443
-  server: 60.249.28.59
-  skip-cert-verify: true
-  sni: 007.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 37|TW3
+  name: 37|TW2
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 60.249.35.94
+  server: 60.249.28.60
   skip-cert-verify: true
   tls: true
   type: ss

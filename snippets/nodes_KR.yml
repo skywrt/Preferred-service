@@ -1,32 +1,18 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|1|🇷 韩国 01 | 1x KR #1'
-  password: eea28d8c-2132-4147-85d5-93b4bd405b34
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 5,9,11,24,27,30,37|KR国
-  password: 39fb2d10-49f4-407c-8aef-df6f00d1ffb8
-  port: 31311
+  password: f31c8d55-fa75-4ca7-93d4-392cae1923f3
+  port: 31313
   server: free.2apzhfa.xyz
   skip-cert-verify: true
   tls: true
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: '5,9,11,20,21,24,27|2|🇷2 |  1.5MB/s|44%|Openai #1'
-  password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27,30|0|🇷韩国 02 | 1x KR #2'
+  name: 5,9,11,24,27,30|0|🇷国 01 | 1x KR
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
-  port: 31313
+  port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
@@ -40,22 +26,41 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: '5,9,11,24,27|13|🇰🇷 韩国|@ripaojiedian #1'
+  name: 5,9,11,20,21,24,27|1|2 |  1.5MB/s|44%|Openai
+  password: qwerREWQ@@
+  port: 15098
+  server: 125.141.31.72
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '5,9,11,24,27|12|🇰🇷 韩国|@ripaojiedian #2'
   password: qwerREWQ@@
   port: 11389
   server: p231.panda004.net
   tfo: false
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 20,21,37|未知134 4.4MB/s
-  password: b25727df-15ea-453c-a006-13fe98fee1d2
-  port: 30936
-  server: 141.164.63.32
-  skip-cert-verify: true
-  tls: true
+- cipher: chacha20-ietf-poly1305
+  name: '5,9,11,24,27,30|1|🇷 韩国 01 | 1x KR #1'
+  password: eea28d8c-2132-4147-85d5-93b4bd405b34
+  port: 36311
+  server: free.2weradf.xyz
   type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇰🇷KR-140.238.18.215-5711 #1'
+  network: ws
+  port: 2087
+  server: lv4.789900.xyz
+  servername: lv4.789900.xyz
+  tls: true
+  type: vmess
+  uuid: 7dd16ab1-2a36-4b32-86fd-eb49fb039752
+  ws-opts:
+    headers:
+      Host: lv4.789900.xyz
+    path: /7dd16ab1-2a36-4b32-86fd-eb49fb039752-vm
 - name: 26|V2-韩国03∣K16线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21017
@@ -81,7 +86,7 @@ proxies:
   type: vmess
   uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
 - cipher: aes-256-cfb
-  name: '30|12|🇰🇷 韩国|@ripaojiedian #2'
+  name: '30|12|🇰🇷 韩国|@ripaojiedian #3'
   password: amazonskr05
   port: 443
   server: 3.34.192.249
@@ -89,11 +94,12 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇰🇷 KR-45.82.246.17...
+  name: 36,37|未知4 450.3KB/s
   network: tcp
-  port: '26521'
+  port: 26521
   server: 45.82.246.173
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: cff7001e-3a74-43e8-bfd8-a7af9630a58b
