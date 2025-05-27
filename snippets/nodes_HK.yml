@@ -81,37 +81,50 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,27|0|8🇭🇰香港|官网：.xyz
-  password: 84320329-f120-470c-8587-5eff30d82acf
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '5,11,27,37|HK #1'
+  password: 288b3541-3a23-49a8-b1eb-5b91362c7a24
   port: 31143
   server: freem.vidalith.com
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,24,37|🇭🇰HK香港2
+  password: 91a41f4e02dc
+  port: 24043
+  server: hkkh11v1.xpmc.cc
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 5,11,27|0|9🇭🇰香港|官网：米卡莎.xyz
-  password: 84320329-f120-470c-8587-5eff30d82acf
+  password: 288b3541-3a23-49a8-b1eb-5b91362c7a24
   port: 31145
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,27|1|5🇭🇰香港|官网：abluecloud.xyz #2'
-  password: ea9ee95d-0ec5-4363-b722-e277afba1d9e
+  name: 5,11,27|1|5🇭🇰香港|官网：a5b3cloud.pro
+  password: 7634b06f-d7a7-4b8d-aa42-558c49ae8adb
   port: 36141
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,27|1|6🇭🇰香港|官网：a5b3cloud.pro #2'
-  password: ea9ee95d-0ec5-4363-b722-e277afba1d9e
+  name: '5,11,27|1|6🇭🇰香港|官网：a5b3cloud.pro #1'
+  password: 7634b06f-d7a7-4b8d-aa42-558c49ae8adb
   port: 36143
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 5,11,27|0|7|m5c3cloud.pro
-  password: 84320329-f120-470c-8587-5eff30d82acf
+  password: 288b3541-3a23-49a8-b1eb-5b91362c7a24
   port: 31141
   server: freem.vidalith.com
   type: ss
@@ -132,8 +145,8 @@ proxies:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27|1|7🇭🇰香港IP|官网：abluecloud.xyz
-  password: ea9ee95d-0ec5-4363-b722-e277afba1d9e
+  name: 5,11,27|1|7🇭🇰香港IP|官网：.xyz
+  password: 7634b06f-d7a7-4b8d-aa42-558c49ae8adb
   port: 36145
   server: freea.glyphara.com
   type: ss
@@ -1039,17 +1052,24 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-45.249.246.20...
-  network: ws
-  port: 42615
-  server: 45.249.246.202
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-43.199.24.24...
+  network: tcp
+  port: '3000'
+  server: 43.199.24.247
   tls: false
   type: vmess
-  uuid: 1123b6c2-fd2d-47a1-9e22-ad299362ef4d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /1123b6c2
+  uuid: cc101ff1-3452-41c3-89fe-c2a5a20dc6dc
+- alterId: 0
+  cipher: auto
+  name: 36,37|HK
+  network: tcp
+  port: 900
+  server: 216.250.97.138
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 20ac0465-184d-4bac-927a-6f5091c7b149
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-182.237.0.12...
@@ -1066,6 +1086,29 @@ proxies:
     path: /zxascas
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-45.249.246.20...
+  network: ws
+  port: 42615
+  server: 45.249.246.202
+  tls: false
+  type: vmess
+  uuid: 1123b6c2-fd2d-47a1-9e22-ad299362ef4d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /1123b6c2
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-103.30.76.66...
+  network: tcp
+  port: '13651'
+  server: 103.30.76.66
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6831c9ce-4ca8-42c0-8181-fb1055710ccc
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
   network: ws
   port: '1935'
@@ -1080,15 +1123,6 @@ proxies:
     path: /vmess-argo
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-43.199.24.24...
-  network: tcp
-  port: '3000'
-  server: 43.199.24.247
-  tls: false
-  type: vmess
-  uuid: cc101ff1-3452-41c3-89fe-c2a5a20dc6dc
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-82.152.164.10...
   network: ws
   port: 40601
@@ -1101,50 +1135,13 @@ proxies:
       Host: us05.jssssss.com
     path: /
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-216.250.97.1...
-  network: tcp
-  port: '900'
-  server: 216.250.97.138
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 20ac0465-184d-4bac-927a-6f5091c7b149
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|HK
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: 443
-  server: 43.249.36.70
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   name: 37|HK2
-  network: ws
-  password: trojan
-  port: 10002
-  server: 38.207.133.204
+  network: tcp
+  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
+  port: 12052
+  server: 185.14.47.199
   skip-cert-verify: true
-  sni: qingming-b08.pages.dev
+  sni: cdn.alibaba.com
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|HK3
-  password: 2be0c954-4291-45ea-b47d-ca713180550b
-  port: 52611
-  server: 103.135.102.151
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|HK4
-  password: 91a41f4e02dc
-  port: 24043
-  server: 1.65.250.168
-  skip-cert-verify: true
-  tls: true
-  type: ss

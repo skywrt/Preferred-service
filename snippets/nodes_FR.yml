@@ -5,12 +5,15 @@ proxies:
   server: 15.188.12.36
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 8,30|兰 V2CROSS.COM
+  name: 8,30,37|🇱PL兰
   password: 7BcLdsO1WweoGD0X
   port: 40368
   server: 193.243.147.128
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -162,15 +165,6 @@ proxies:
     headers:
       host: az05.beyondy.cfd
     path: /link
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 20,21,37|未知150 16.9MB/s
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.158.171.141
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - name: '20,21|🇫🇷FR-51.68.13.106-0335 #1'
   password: FiSo7J6vfS
   port: 1935
@@ -219,15 +213,6 @@ proxies:
     headers:
       Host: az05.beyondy.cfd
     path: /link
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 20,21,37|未知140 915.8KB/s
-  password: qXvO7zYU7KeaB0Md7DQLow
-  port: 1080
-  server: 51.195.119.47
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   cipher: auto
   name: 23|法国1 | ⬇️ 2.3MB/s
@@ -289,6 +274,16 @@ proxies:
   uuid: 81852771-76fb-4e94-e4f1-4e37a698a49a
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-95.179.216.1...
+  network: tcp
+  port: '8874'
+  server: 95.179.216.149
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8371146b-a577-4ffb-bd04-bfcc42fdd10a
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇫🇷 FR-163.5.159.23...
   network: ws
   port: '443'
@@ -301,27 +296,3 @@ proxies:
     headers:
       Host: irvideo.cfd
     path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-95.179.216.1...
-  network: tcp
-  port: '8874'
-  server: 95.179.216.149
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8371146b-a577-4ffb-bd04-bfcc42fdd10a
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇫🇷 FR-5.196.29.123:...
-  network: ws
-  port: '2082'
-  server: 5.196.29.123
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
