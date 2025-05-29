@@ -1,14 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|8c526247f6c1443a8b9d99c0564c24...
-  network: grpc
-  port: 8880
-  server: 95.164.45.95
-  tls: false
-  type: vless
-  udp: false
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 8,24,30|兰 V2CROSS.COM
@@ -272,6 +262,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-95.179.216.1...
+  network: tcp
+  port: '8874'
+  server: 95.179.216.149
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8371146b-a577-4ffb-bd04-bfcc42fdd10a
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇫🇷 FR-135.125.182....
   network: tcp
   port: '28213'
@@ -282,14 +282,18 @@ proxies:
   uuid: 81852771-76fb-4e94-e4f1-4e37a698a49a
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-95.179.216.1...
-  network: tcp
-  port: '8874'
-  server: 95.179.216.149
+  name: 36|🔒 VM-WS-NA 🇫🇷 FR-5.196.29.123:...
+  network: ws
+  port: '2082'
+  server: 5.196.29.123
   servername: ''
   tls: false
   type: vmess
-  uuid: 8371146b-a577-4ffb-bd04-bfcc42fdd10a
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - name: 40|FR_speednode_0012
   network: ws
   port: 8880
