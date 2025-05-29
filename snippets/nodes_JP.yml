@@ -19,7 +19,7 @@ proxies:
   uuid: a3d04548-625c-4658-9ff0-f9a7835d1f6d
 - alterId: 64
   cipher: auto
-  name: '5,9,11,24,27|3|🇯🇵1 |  1.8MB/s|54%|Youtube|O... #3'
+  name: 5,9,11,24,27|2|🇯🇵1 |  1.8MB/s|54%|Youtube|O...
   network: ws
   port: 1443
   server: sslvpn.51job.com
@@ -34,14 +34,14 @@ proxies:
       Host: centos7
     path: /634c5c4f9782
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,27|1|14🇯🇵日本|官网：米卡莎.xyz #1'
-  password: f9407087-cd68-42cf-8c34-a7d89025dcd1
+  name: 5,27|3|14🇯🇵日本|官网：m5c3cloud.pro
+  password: d9b04e27-ff8f-4ba3-a648-b2a8199a9ee0
   port: 31113
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 5,11,24,27,28|yandex-1610
+  name: 5,9,11,24,27,28|yandex-1183
   password: DNC2J08A2X72IHE0
   port: 18012
   server: ti3hyra4.slashdevslashnetslashtun.net
@@ -49,29 +49,39 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11|0|13🇯🇵日本|官网：abluecloud.xyz
-  password: e278488e-3826-46a1-b7f0-0d99f2ebf960
+  name: '5,27|0|13🇯🇵日本|官网：蓝色海洋.xyz #1'
+  password: 3f4c3db1-1f66-49fc-b62a-a47b2ad56497
   port: 36115
   server: freea.glyphara.com
   type: ss
   udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,24,37|JP
+  password: 60a930c17ff0
+  port: 20091
+  server: 43.226.17.8
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,27|1|15🇯🇵日本|官网：米卡莎.xyz #1'
-  password: f9407087-cd68-42cf-8c34-a7d89025dcd1
+  name: 5,27|3|15🇯🇵日本|官网：米卡莎.xyz
+  password: d9b04e27-ff8f-4ba3-a648-b2a8199a9ee0
   port: 31115
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27|1|13|官网：m5c3cloud.pro
-  password: f9407087-cd68-42cf-8c34-a7d89025dcd1
+  name: 5,27|3|13🇯🇵日本|官网：m5c3cloud.pro
+  password: d9b04e27-ff8f-4ba3-a648-b2a8199a9ee0
   port: 31111
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11|0|12🇯🇵日本|官网：a5b3cloud.pro
-  password: e278488e-3826-46a1-b7f0-0d99f2ebf960
+  name: 5,27|0|12🇯🇵日本|官网：abluecloud.xyz
+  password: 3f4c3db1-1f66-49fc-b62a-a47b2ad56497
   port: 36113
   server: freea.glyphara.com
   type: ss
@@ -91,8 +101,8 @@ proxies:
       Host: dv4.789900.xyz
     path: /0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05-vm
 - cipher: chacha20-ietf-poly1305
-  name: 5,11|0|11|官网：abluecloud.xyz
-  password: e278488e-3826-46a1-b7f0-0d99f2ebf960
+  name: 5,27|0|11|官网：蓝色海洋.xyz
+  password: 3f4c3db1-1f66-49fc-b62a-a47b2ad56497
   port: 36111
   server: freea.glyphara.com
   type: ss
@@ -132,44 +142,32 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
-- cipher: chacha20-ietf-poly1305
-  name: 9|🇯🇵 12|🇯🇵 日本2|@ripaojiedian
-  password: 60a930c17ff0
-  port: 21755
-  server: 43.226.17.8
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 9,28|yandex-1600
-  password: I68B8LZZ297C0B2C
-  port: 18001
-  server: ti3hyra4.slashdevslashnetslashtun.net
+- cipher: rc4-md5
+  name: 9,11,27|13|🇵 日本|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202505250813455-9i84PIbLBb.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 9|🇯🇵 日本2|@ripaojiedian
+  name: 9,11,27|13|🇵 日本2|@ripaojiedian
   password: 60a930c17ff0
   plugin: v2ray-plugin
   plugin-opts:
     host: kr6v1.xpmc.cc
     mode: websocket
-    mux: false
+    mux: true
     path: /matwnpkhug
     skip-cert-verify: false
     tls: true
-  port: 21755
+  port: 20091
   server: 43.226.17.8
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 9|🇯🇵 日本|@ripaojiedian
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202505251086349-WBHKQamx7o.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
+  tfo: false
   type: ss
   udp: true
 - alterId: 0
@@ -187,32 +185,23 @@ proxies:
     headers:
       Host: tls.05.node-for-bigairport.win
     path: /
-- cipher: rc4-md5
-  name: 11,27|13|🇵 日本|@ripaojiedian
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202505250813455-9i84PIbLBb.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 11,27|13|🇵 日本2|@ripaojiedian
-  password: 60a930c17ff0
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: kr6v1.xpmc.cc
-    mode: websocket
-    mux: true
-    path: /matwnpkhug
-    skip-cert-verify: false
-    tls: true
-  port: 20091
-  server: 43.226.17.8
-  tfo: false
-  type: ss
+- alterId: 0
+  name: 11,24,37,40|JP_speednode_0034
+  password: Aa4cexaO3FReREXgAlp9CjyTjpaRNan3YDx6DxaDYFS3On0SqgF08CZcBpYxy3awXeEIC
+  port: 28331
+  server: huzzah.meijireform.com
+  skip-cert-verify: false
+  tls: true
+  type: trojan
+  udp: true
+- name: 11,40|JP_speednode_0035
+  password: Aa4cexaO3FReREXgAlp9CjyTjpaRNan3YDx6DxaDYFS3On0SqgF08CZcBpYxy3awXeEIC
+  port: 28331
+  server: huzzah.meijireform.com
+  skip-cert-verify: false
+  sni: huzzah.meijireform.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 23|日本3 | ⬇️ 2.3MB/s
@@ -256,12 +245,6 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- name: 24|🇯🇵 日本 V2CROSS.COM
-  password: Aa4cexaO3FReREXgAlp9CjyTjpaRNan3YDx6DxaDYFS3On0SqgF08CZcBpYxy3awXeEIC
-  port: 28331
-  server: huzzah.meijireform.com
-  skip-cert-verify: false
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 24|日期：05-29
@@ -409,7 +392,7 @@ proxies:
   type: vmess
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
 - cipher: rc4-md5
-  name: '30|12|🇵 日本|@ripaojiedian #1'
+  name: 30|12|🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -421,7 +404,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '30|12|🇵 日本2|@ripaojiedian #1'
+  name: 30|12|🇵 日本2|@ripaojiedian
   port: 23919
   server: hzz9.fgmcx.top
   skip-cert-verify: false
@@ -430,7 +413,7 @@ proxies:
   type: vmess
   uuid: be443689-bc64-49ff-85a5-8eecaa2235d3
 - cipher: chacha20-ietf-poly1305
-  name: '30|12|🇵 日本3|@ripaojiedian #1'
+  name: 30|12|🇵 日本3|@ripaojiedian
   password: cdc48a7a-b618-45af-a831-5afbd686b02f
   port: 12210
   server: gg21.hangfengjiasu.com
@@ -438,7 +421,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '30|12|🇯🇵 日本4|@ripaojiedian #2'
+  name: '30|12|🇯🇵 日本4|@ripaojiedian #1'
   port: 17233
   server: 81f6bf37-sutj40-svgpxu-y2gs.cm5.p5pv.com
   skip-cert-verify: false
@@ -475,16 +458,6 @@ proxies:
   tls: false
   type: vmess
   uuid: be443689-bc64-49ff-85a5-8eecaa2235d3
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-45.89.109.43...
-  network: tcp
-  port: '51039'
-  server: 45.89.109.43
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 12947e56-ab80-43bf-9145-72fa50e41c9a
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
@@ -528,16 +501,6 @@ proxies:
   uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-223.135.156....
-  network: tcp
-  port: '23941'
-  server: 223.135.156.168
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: acc650b6-b41f-4a76-b3e3-687e11ffca6d
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-156.246.95.70...
   network: ws
   port: 27812
@@ -550,11 +513,12 @@ proxies:
       Host: tqt-hk12.51feitu.com
     path: /
 - alterId: 0
-  name: 37|JP
-  password: NzaZ4OyY7pc2jeAcx5Xn3De3yp88aZDSqxyDZAYKpxeuI9Tl3OFaR0EwSRYDaDO4q0RBz
-  port: 28331
-  server: mineral.protocolbuffer.com
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-45.89.109.43...
+  network: tcp
+  port: '51039'
+  server: 45.89.109.43
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 12947e56-ab80-43bf-9145-72fa50e41c9a
