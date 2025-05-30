@@ -7,15 +7,18 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|13|🇷 韩国2|@ripaojiedian
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,37|🇷KR国
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 9898
   server: 3.38.139.172
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
   udp: true
-- name: 5,11,24,27,40|KR_speednode_0072
+- name: 5,9,11,24,27,40|KR_speednode_0072
   password: 94Xn93e3F2uOxCE8De8upAAwnlI8ySRRj70Ol6zgYNBjZFCDK5Yaca3D8aT2qaxyEc0DK
   port: 443
   server: bapus.koreanbbq.link
@@ -189,11 +192,12 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇰🇷 KR-45.82.246.17...
+  name: 36,37|未知31 354.1KB/s
   network: tcp
-  port: '26521'
+  port: 26521
   server: 45.82.246.173
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: cff7001e-3a74-43e8-bfd8-a7af9630a58b

@@ -1,5 +1,30 @@
 proxies:
 - client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|4dd293b9db384575a16ce840911edb...
+  network: grpc
+  port: 8880
+  server: 45.159.248.125
+  tls: false
+  type: vless
+  udp: false
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|b6245cb384194dfe99dd7714262baf...
+  network: ws
+  port: 443
+  server: 46.226.162.42
+  servername: gbr01.abvpn.ru
+  tls: true
+  type: vless
+  udp: false
+  uuid: 588f094b-431b-422c-b80b-007945037072
+  ws-opts:
+    headers:
+      host: gbr01.abvpn.ru
+    path: /websocket
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 5,40|GB_speednode_0062
   port: 443
@@ -231,6 +256,24 @@ proxies:
   port: 989
   server: 62.100.205.48
   type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知19 13.2MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.193
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知41 12.8MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.78
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 19|🇬🇧GB-185.5.38.111-6211
   password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
@@ -280,6 +323,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-51.38.64.209...
+  network: tcp
+  port: '44023'
+  server: 51.38.64.209
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7da457da-ed0f-437d-c81d-6c35885bbea3
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.243.5...
   network: tcp
   port: '50394'
@@ -290,13 +343,12 @@ proxies:
   uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
 - alterId: 0
   cipher: auto
-  name: 36,37|未知12 469.2KB/s
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-37.221.125.1...
   network: tcp
-  port: 33940
+  port: '33940'
   server: 37.221.125.159
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
 - name: 40|GB_speednode_0055
