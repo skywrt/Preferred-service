@@ -174,20 +174,16 @@ proxies:
       host: beyonddsz.cfd
     path: /linkws
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 20,21,37|未知50 2.4MB/s
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.158.171.141
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- name: '20,21|🇫🇷FR-51.68.13.106-0351 #1'
+  name: 20,21,37|未知96 17.7MB/s
+  network: tcp
   password: FiSo7J6vfS
   port: 1935
   server: 51.68.13.106
+  skip-cert-verify: true
   sni: x1fr-ovh.devefun.net
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '20,21|🇫🇷FR-45.145.165.114-7747 #1'
@@ -300,13 +296,16 @@ proxies:
     headers:
       Host: m6919.164748.xyz
     path: github.com/Alvin9999
-- name: 24|🇫🇷 法国 巴黎Amazon数据中心
+- alterId: 0
+  name: 24,37|FR国
   password: telegram-id-directvpn
   port: 22223
   server: 52.47.169.236
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - name: 26|V2-日本01∣K11线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21146
@@ -323,27 +322,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36,37|未知155 3.3MB/s
-  network: tcp
-  port: 28444
-  server: 45.12.133.43
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1be8eddb-4f8c-45d0-b2a1-e538eb3abd39
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-2.56.126.103...
-  network: tcp
-  port: '33579'
-  server: 2.56.126.103
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2eb3ee2a-7bf8-4b50-9b93-2d489d2f3456
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇫🇷 FR-95.179.216.1...
   network: tcp
   port: '8874'
@@ -354,6 +332,16 @@ proxies:
   uuid: 8371146b-a577-4ffb-bd04-bfcc42fdd10a
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-45.12.133.43...
+  network: tcp
+  port: '28444'
+  server: 45.12.133.43
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1be8eddb-4f8c-45d0-b2a1-e538eb3abd39
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇫🇷 FR-135.125.182....
   network: tcp
   port: '28213'
@@ -362,3 +350,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 81852771-76fb-4e94-e4f1-4e37a698a49a
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 40|FR_speednode_0069
+  port: 443
+  server: 144.24.206.147
+  servername: b2-9fr5232-96bh.xn--4gq62f52gppi29k.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6bc29783-3ff6-4379-8650-611a7095307b
