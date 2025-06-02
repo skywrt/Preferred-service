@@ -1,33 +1,13 @@
 proxies:
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|ce7974c591244ef9ac62a311ef76ad...
-  network: grpc
-  port: 8880
-  server: 94.131.9.172
-  tls: false
-  type: vless
-  udp: false
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|84191e60b25145f680f1c1002bd888...
-  network: grpc
-  port: 8880
-  server: 95.164.45.90
-  tls: false
-  type: vless
-  udp: false
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - alterId: 0
   cipher: auto
   name: 5|法国 - 塞纳河畔维提 - Online S.A.S. - ...
   network: tcp
   port: '17235'
-  server: e29966dd-sv2sg0-t61a4d-uufg.cm5.p5pv.com
+  server: 4226ec85-svdwg0-te0v28-1mh67.cm5.p5pv.com
   tls: false
   type: vmess
-  uuid: 565e68bc-a9a5-11ee-abce-f23c91cfbbc9
+  uuid: e1c7fbbc-96b6-11ef-8563-f23c913c8d2b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 5,40|FR_speednode_0069
@@ -44,31 +24,22 @@ proxies:
   name: '5|法国 - 塞纳河畔维提 - Online S.A.S. - ... #1'
   network: tcp
   port: '17235'
+  server: e29966dd-sv2sg0-t61a4d-uufg.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 565e68bc-a9a5-11ee-abce-f23c91cfbbc9
+- alterId: 0
+  cipher: auto
+  name: '5|法国 - 塞纳河畔维提 - Online S.A.S. - ... #2'
+  network: tcp
+  port: '17235'
   server: 39d0166b-svc1s0-sxv7gp-8rja.cm5.p5pv.com
   tls: false
   type: vmess
   uuid: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
 - alterId: 0
   cipher: auto
-  name: '5|法国 - 塞纳河畔维提 - Online S.A.S. - ... #2'
-  network: tcp
-  port: '17235'
-  server: ee53ff51-sux8g0-sxxbmq-1szgv.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 448aff24-b2e6-11ef-97e0-f23c9164ca5d
-- alterId: 0
-  cipher: auto
   name: '5|法国 - 塞纳河畔维提 - Online S.A.S. - ... #3'
-  network: tcp
-  port: '17235'
-  server: 08eb3a35-svc1s0-tbivec-1smvq.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 9546bb58-a66e-11ef-bbf3-f23c913c8d2b
-- alterId: 0
-  cipher: auto
-  name: '5|法国 - 塞纳河畔维提 - Online S.A.S. - ... #4'
   network: tcp
   port: '17235'
   server: 86bfc334-sv2sg0-sy2gtj-2fdn.cm5.p5pv.com
@@ -77,13 +48,22 @@ proxies:
   uuid: e8001124-1ff5-11ee-abc1-f23c9164ca5d
 - alterId: 0
   cipher: auto
+  name: '5|法国 - 塞纳河畔维提 - Online S.A.S. - ... #4'
+  network: tcp
+  port: '17235'
+  server: 08eb3a35-svc1s0-tbivec-1smvq.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 9546bb58-a66e-11ef-bbf3-f23c913c8d2b
+- alterId: 0
+  cipher: auto
   name: '5|法国 - 塞纳河畔维提 - Online S.A.S. - ... #5'
   network: tcp
   port: '17235'
-  server: 4226ec85-svdwg0-te0v28-1mh67.cm5.p5pv.com
+  server: ee53ff51-sux8g0-sxxbmq-1szgv.cm5.p5pv.com
   tls: false
   type: vmess
-  uuid: e1c7fbbc-96b6-11ef-8563-f23c913c8d2b
+  uuid: 448aff24-b2e6-11ef-97e0-f23c9164ca5d
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 8,30|兰 V2CROSS.COM
@@ -166,12 +146,6 @@ proxies:
   port: 6379
   server: 149.202.82.172
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇫🇷FR-45.158.171.146-0972
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.158.171.146
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -187,6 +161,21 @@ proxies:
     headers:
       host: irvideo.cfd
     path: /linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇫🇷FR-146.19.168.161-8324
+  network: ws
+  port: 443
+  server: 146.19.168.161
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      host: az05.beyondy.cfd
+    path: /link
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -232,7 +221,22 @@ proxies:
     headers:
       host: az05.beyondy.cfd
     path: /link
-- name: '20,21|🇫🇷FR-51.68.13.106-0347 #1'
+- name: '20,21|🇫🇷FR-15.237.11.137-5865 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.237.11.137
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 20,21,37|未知3 3.3MB/s
+  password: f9d73c84e32a10f3
+  port: 11259
+  server: 57.128.190.171
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- name: '20,21|🇫🇷FR-51.68.13.106-0331 #1'
   password: FiSo7J6vfS
   port: 1935
   server: 51.68.13.106
@@ -240,21 +244,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-45.145.165.114-7812 #1'
-  network: ws
-  port: 443
-  server: beyonddsz.cfd
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    headers:
-      Host: beyonddsz.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇫🇷FR-146.19.168.161-5294 #1'
+  name: '20,21|🇫🇷FR-146.19.168.161-5335 #1'
   network: ws
   port: 443
   server: az05.beyondy.cfd
@@ -268,7 +258,35 @@ proxies:
     path: /link
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-146.19.168.161-7810 #1'
+  name: 20,21,23|法国4 | ⬇️ 4.0MB/s
+  network: ws
+  port: 443
+  server: irvideo.cfd
+  servername: irvideo.cfd
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇫🇷FR-45.145.165.114-7848 #1'
+  network: ws
+  port: 443
+  server: beyonddsz.cfd
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      Host: beyonddsz.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇫🇷FR-146.19.168.161-7874 #1'
   network: ws
   port: 443
   server: 146.19.168.161
@@ -324,20 +342,6 @@ proxies:
     path: /azumase.ren
 - alterId: 0
   cipher: auto
-  name: 23|法国4 | ⬇️ 4.0MB/s
-  network: ws
-  port: 443
-  server: irvideo.cfd
-  servername: irvideo.cfd
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
   name: 24,36|🔒 VM-WS-NA 🏴‍☠️ NA-162.159.45....
   network: ws
   port: 2086
@@ -366,16 +370,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-45.12.133.43...
-  network: tcp
-  port: '28444'
-  server: 45.12.133.43
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1be8eddb-4f8c-45d0-b2a1-e538eb3abd39
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇫🇷 FR-2.56.126.103...
   network: tcp
   port: '33579'
@@ -384,6 +378,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 2eb3ee2a-7bf8-4b50-9b93-2d489d2f3456
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-45.12.133.43...
+  network: tcp
+  port: '28444'
+  server: 45.12.133.43
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1be8eddb-4f8c-45d0-b2a1-e538eb3abd39
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇫🇷 FR-135.125.182....
