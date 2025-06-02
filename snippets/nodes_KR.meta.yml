@@ -1,6 +1,6 @@
 proxies:
 - cipher: aes-256-cfb
-  name: '5,9,11,24,27|12|🇰🇷 韩国2|@ripaojiedian #1'
+  name: '5,9,11,24,27|13|🇰🇷 韩国2|@ripaojiedian #1'
   password: qwerREWQ@@
   port: 36379
   server: p080.panda001.net
@@ -17,7 +17,7 @@ proxies:
   type: vmess
   uuid: 3653c708-df72-11ee-aec1-f23c9164ca5d
 - cipher: aes-256-cfb
-  name: '5,9,11,24,27|12|🇰🇷 韩国|@ripaojiedian #1'
+  name: '5,9,11,24,27|13|🇰🇷 韩国|@ripaojiedian #1'
   password: qwerREWQ@@
   port: 4857
   server: 125.141.26.12
@@ -33,11 +33,14 @@ proxies:
   tls: false
   type: vmess
   uuid: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,27|15|16🇰🇷韩国|官网：m5c3cloud.pro
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,27,37|🇰🇷KR国
   password: 51bbaa29-023b-43ba-bf0d-c89f74b08997
   port: 31311
   server: freem.vidalith.com
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -52,21 +55,21 @@ proxies:
   udp: true
   uuid: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27|15|17🇰🇷韩国|官网：米卡莎.xyz
-  password: 51bbaa29-023b-43ba-bf0d-c89f74b08997
+  name: '5,11,27|1|17🇰🇷韩国|官网：米卡莎.xyz #1'
+  password: 2c5a8d51-5b46-45ca-9a1d-bed9f0c107ed
   port: 31313
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27|2|16🇰🇷|官网：a5b3cloud.pro
-  password: 00689801-acd4-4cf3-b15d-2660b2dc9203
+  name: 5,11,27|0|16|官网：a5b3cloud.pro
+  password: 16633d17-b54f-446e-9d21-83de0b635cfc
   port: 36311
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 5,9,11,20,21,24,27|1|2 |  1.5MB/s|44%|Openai
+  name: 5,9,11,20,21,24,27|3|🇷2 |  1.5MB/s|44%|Openai
   password: qwerREWQ@@
   port: 15098
   server: 125.141.31.72
@@ -203,13 +206,16 @@ proxies:
   skip-cert-verify: false
   sni: epmq.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇰🇷 _韩国 #3'
+- alterId: 0
+  name: 24,37|🇰🇷KR韩国3
   password: Aimer
   port: 50003
   server: 211.195.83.140
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epmq.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇰🇷 _韩国 #4'
   password: Aimer
   port: 50004
@@ -245,13 +251,16 @@ proxies:
   skip-cert-verify: false
   sni: epmq.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇰🇷 _韩国 #9'
+- alterId: 0
+  name: 24,37|🇰🇷KR韩国2
   password: Aimer
   port: 11681
   server: 112.161.49.84
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epmq.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇰🇷 _韩国 #10'
   password: Aimer
   port: 12302
@@ -333,7 +342,7 @@ proxies:
   type: vmess
   uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
 - cipher: aes-256-cfb
-  name: '30|12|🇰🇷 韩国|@ripaojiedian #2'
+  name: '30|12|🇰🇷 韩国|@ripaojiedian #1'
   password: amazonskr05
   port: 443
   server: 3.34.192.249
@@ -349,16 +358,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cff7001e-3a74-43e8-bfd8-a7af9630a58b
-- alterId: 0
-  name: 37|🇷KR国
-  password: Aimer
-  port: 18058
-  server: 121.151.132.168
-  skip-cert-verify: true
-  sni: epmq.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
 - name: 40|KR_speednode_0097
   network: ws
   port: 30022
