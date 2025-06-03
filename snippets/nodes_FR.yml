@@ -218,16 +218,20 @@ proxies:
       host: az05.beyondy.cfd
     path: /link
 - alterId: 0
-  name: 20,21,37|未知40 2.6MB/s
-  network: tcp
+  cipher: chacha20-ietf-poly1305
+  name: 20,21,37|未知63 2.4MB/s
+  password: 44fe4b7d-cd48-45fc-a036-60ea40e4a96c
+  port: 30665
+  server: 107.191.63.241
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- name: '20,21|🇫🇷FR-51.68.13.106-0312 #1'
   password: FiSo7J6vfS
   port: 1935
   server: 51.68.13.106
-  skip-cert-verify: true
   sni: x1fr-ovh.devefun.net
-  tls: true
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 20,21,23|法国4 | ⬇️ 4.0MB/s
@@ -326,13 +330,16 @@ proxies:
     headers:
       Host: m6919.164748.xyz
     path: github.com/Alvin9999
-- name: 24|🇫🇷 _法国
+- alterId: 0
+  name: 24,37|🇷FR国
   password: Aimer
   port: 8443
   server: 141.11.203.191
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epme.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: 26|V2-日本01∣K11线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21146
@@ -349,6 +356,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-95.179.216.1...
+  network: tcp
+  port: '8874'
+  server: 95.179.216.149
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8371146b-a577-4ffb-bd04-bfcc42fdd10a
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇫🇷 FR-2.56.126.103...
   network: tcp
   port: '33579'
@@ -357,17 +374,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 2eb3ee2a-7bf8-4b50-9b93-2d489d2f3456
-- alterId: 0
-  cipher: auto
-  name: 36,37|未知78
-  network: tcp
-  port: 8874
-  server: 95.179.216.149
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8371146b-a577-4ffb-bd04-bfcc42fdd10a
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇫🇷 FR-135.125.182....
