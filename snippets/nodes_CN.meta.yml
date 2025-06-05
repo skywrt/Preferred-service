@@ -39,7 +39,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 5,24,36|🔒 VM-TCP-NA 🇨🇳 CN-120.210.205....
+  name: 5,36|🔒 VM-TCP-NA 🇨🇳 CN-120.210.205....
   network: tcp
   port: '50002'
   server: 120.210.205.59
@@ -82,11 +82,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 5,12,16|🇳_CN_中国->🇪_DE_德国
+- name: '5,12,16,24|_中国 #9'
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
   port: 21102
   server: 120.233.44.201
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: 120.233.44.201
   type: trojan
 - alterId: 0
@@ -713,17 +713,24 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- name: '12,24|🇨🇳 江苏省 移动 #2'
-  password: RlzoEILU
-  port: 33097
-  server: 36.151.251.61
-  skip-cert-verify: true
-  sni: 36.151.251.61
-  type: trojan
-- name: '12|🇨🇳_CN_中国 #1'
+- alterId: 2
+  cipher: auto
+  name: '12,24|_中国 #12'
+  network: ws
+  port: '30808'
+  server: v8.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v8.heduian.link
+    path: /oooo
+- name: '12,24|_中国 #5'
   password: 607d365e-7ea1-11ee-95e9-f23c913c8d2b
   port: 15229
   server: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
+  skip-cert-verify: false
   sni: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
   type: trojan
 - alterId: 0
@@ -834,33 +841,28 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 24|🇨🇳 广东省汕头市 移动
+  name: '24|_中国 #2'
   network: tcp
-  port: '17232'
-  server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
+  port: '41766'
+  server: 183.238.90.8
   tls: false
   type: vmess
-  uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-- name: 24|_中国
-  password: Aimer
-  port: 2087
-  server: 154.219.5.87
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '24|_中国 #3'
+  network: tcp
+  port: '55002'
+  server: 183.237.84.53
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: '24|_中国 #11'
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: 183.232.235.2
   skip-cert-verify: false
-  sni: epms.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #1'
-  password: Aimer
-  port: 8443
-  server: 154.197.64.248
-  skip-cert-verify: false
-  sni: epmd.ambercc.filegear-sg.me
-  type: trojan
-- name: '24|_中国 #2'
-  password: Aimer
-  port: 2096
-  server: 154.211.8.47
-  skip-cert-verify: false
-  sni: epms.ambercc.filegear-sg.me
+  sni: hk-13-568.flztjc.net
   type: trojan
 - alterId: 0
   cipher: auto
