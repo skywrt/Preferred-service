@@ -1,27 +1,30 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 5,9,11,20,21,24,27|2|🇷2 |  1.5MB/s|44%|Openai
+  name: 5,9,11,20,21,24,27|3|🇷2 |  1.5MB/s|44%|Openai
   password: qwerREWQ@@
   port: 15098
   server: 125.141.31.72
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,11,27|15|17🇰🇷韩国|官网：米卡莎.xyz
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,11,27,37|🇰🇷KR韩国2
   password: d61cb39f-9a93-478d-80af-fe28b20ec4a7
   port: 31311
   server: freem.vidalith.com
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27|0|16|官网：abluecloud.xyz
-  password: 3c783af4-d259-48c4-b9af-49b45ad1ec9b
+  name: 5,11,27|0|16|官网：a5b3cloud.pro
+  password: 2c55e91e-f36e-43ce-a70e-346011db80e7
   port: 36311
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '5,9,11,24,27|12|🇰🇷 韩国2|@ripaojiedian #1'
+  name: '5,9,11,24,27|13|🇰🇷 韩国2|@ripaojiedian #1'
   password: qwerREWQ@@
   port: 36379
   server: p080.panda001.net
@@ -29,8 +32,8 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27|15|18🇰🇷韩国|官网：m5c3cloud.pro
-  password: d61cb39f-9a93-478d-80af-fe28b20ec4a7
+  name: 5,11,27|1|17🇰🇷韩国|官网：mikasacloud.site
+  password: cf042dca-1033-49c8-b717-1f4b279dd9f8
   port: 31313
   server: freem.vidalith.com
   type: ss
@@ -211,13 +214,16 @@ proxies:
   skip-cert-verify: false
   sni: epme.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇰🇷 _韩国 #20'
+- alterId: 0
+  name: 24,37|KR国
   password: Aimer
   port: 30001
   server: 121.189.106.45
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epmd.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇰🇷 _韩国 #21'
   password: Aimer
   port: 32396
@@ -293,13 +299,12 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 36,37|未知94 435.3KB/s
+  name: 36|🔒 VM-TCP-NA 🇰🇷 KR-45.82.246.17...
   network: tcp
-  port: 26521
+  port: '26521'
   server: 45.82.246.173
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: cff7001e-3a74-43e8-bfd8-a7af9630a58b
 - name: 40|KR_speednode_0040
