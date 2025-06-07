@@ -765,13 +765,48 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 12|🇨🇳_CN_中国->🇨🇭_CH_瑞士
-  network: tcp
-  port: '15002'
-  server: 15002.kuaiyin02.top
+  name: 12,24|🇺🇸 _美国
+  network: ws
+  port: '80'
+  server: tci2.tiamoci.us.kg
   tls: false
   type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+  uuid: edb02ed6-e6a1-4309-8076-981094bda7de
+  ws-opts:
+    headers:
+      Host: tci2.tiamoci.us.kg
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 12,28|yandex-386
+  network: ws
+  port: 23093
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 41cc36aa-dfb6-47bb-8e39-133ad5f2cd83
+  ws-opts:
+    path: /
+- cipher: rc4-md5
+  name: 12,19|🇩🇪DE-193.108.119.230-0910
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- name: '12|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  password: 96c5f18c-9390-11eb-86a4-f23c913c8d2b
+  port: 15229
+  server: 68e85139-sxc9s0-t1jkae-18y1l.cu.plebai.net
+  skip-cert-verify: false
+  sni: 68e85139-sxc9s0-t1jkae-18y1l.cu.plebai.net
+  type: trojan
+- cipher: aes-256-cfb
+  name: 12,16|🇰🇷_KR_韩国->🇺🇸_US_美国_1
+  password: qwerREWQ@@
+  port: 4857
+  server: 125.141.26.12
+  type: ss
 - name: '12,16,24|_中国 #1'
   password: 607d365e-7ea1-11ee-95e9-f23c913c8d2b
   port: 15229
@@ -781,31 +816,48 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 12|🇨🇳_CN_中国->🇯🇵_JP_日本
+  name: 12|🇨🇳_CN_中国->🇨🇭_CH_瑞士
   network: tcp
-  port: '17232'
-  server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
+  port: '15002'
+  server: 15002.kuaiyin02.top
   tls: false
   type: vmess
-  uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-- name: 12|🇺🇸_US_美国->🇹🇷_TR_土耳其
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+- alterId: 0
+  name: 12,24,37|CN国
+  password: ba7a37e3-033a-e1ab-06f6-9027aa4630f5
+  port: 15229
+  server: e0fc3fd6-sxc9s0-t5cryd-4w8.cu.plebai.net
+  skip-cert-verify: true
+  sni: e0fc3fd6-sxc9s0-t5cryd-4w8.cu.plebai.net
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 12|🇨🇳_CN_中国->🇨🇦_CA_加拿大
   network: ws
-  port: 80
-  server: 104.19.54.50
+  port: 30808
+  server: v8.heduian.link
+  servername: ''
   tls: false
-  type: vless
-  uuid: e22865f1-a5de-4275-9e59-2a11ef6a2527
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: MdVpnSec.elmahstyle.xyz.
-    path: '%2F%40MdVpnSec----%40MdVpnSec----%40MdVpnSec----%40MdVpnSec----%40MdVpnSec----%40MdVpnSec----%40MdVpnSec----%40MdVpnSec----%40MdVpnSec----%40MdVpnSec----%40MdVpnSec----%40MdVpnSec%3Fed%3D2048'
-- name: '12|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
-  password: 96c5f18c-9390-11eb-86a4-f23c913c8d2b
-  port: 15229
-  server: 68e85139-sxc9s0-t1jkae-18y1l.cu.plebai.net
-  skip-cert-verify: false
-  sni: 68e85139-sxc9s0-t1jkae-18y1l.cu.plebai.net
+      Host: v8.heduian.link
+    path: /oooo
+- name: 12|🇺🇸_US_美国->🇫🇷_FR_法国
+  network: ws
+  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
+  port: 443
+  server: 172.67.204.120
+  sni: ddcDe.890603.XYz
   type: trojan
+  ws-opts:
+    headers:
+      Host: ddcde.890603.xyz
+    path: '%2FCOp52Dbu3dvwvDWUxOqxq'
 - name: 13|🇺🇸_US_美国->🇩🇪_DE_德国
   network: ws
   port: 80
@@ -851,7 +903,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '13|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
+  name: '13|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
   network: tcp
   port: 52112
   server: 183.236.51.23
@@ -917,12 +969,6 @@ proxies:
     headers:
       host: ddd.890604.filegear-sg.me
     path: /mZr1mA5hub7QHHkQBzYO
-- cipher: aes-256-cfb
-  name: 16|🇰🇷_KR_韩国->🇺🇸_US_美国_1
-  password: qwerREWQ@@
-  port: 4857
-  server: 125.141.26.12
-  type: ss
 - name: 16|🇨🇳_CN_中国->🇸_US_美国
   password: RlzoEILU
   port: 3330
