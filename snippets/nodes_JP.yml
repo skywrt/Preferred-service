@@ -28,7 +28,7 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: 5,9,11,24,27|3|🇯🇵1 |  1.8MB/s|54%|Youtube|O...
+  name: 5,9,11,24,27|2|1 |  1.8MB/s|54%|Youtube|Ope...
   network: ws
   port: 1443
   server: sslvpn.51job.com
@@ -43,52 +43,54 @@ proxies:
       Host: centos7
     path: /634c5c4f9782
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27|0|10|官网：mikasacloud.site
-  password: 80660dc1-b962-4144-80ad-30fab2724324
+  name: 5,11,27|3|10🇯🇵|官网：m5c3cloud.pro
+  password: 65f8c164-74de-43bb-bc86-4a5d5823b25d
   port: 31111
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27|1|11🇯🇵日本|官网：abluecloud.xyz
-  password: ab3b50eb-0588-4f36-9c65-150e70602eba
+  name: 5,11|14|11🇯🇵日本|官网：abluecloud.xyz
+  password: d355a682-7210-449b-b4eb-8ff59e981e37
   port: 36111
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27|0|11🇯🇵日本|官网：.xyz
-  password: 80660dc1-b962-4144-80ad-30fab2724324
+  name: 5,11,27|3|11🇯🇵日本|官网：mikasacloud.site
+  password: 65f8c164-74de-43bb-bc86-4a5d5823b25d
   port: 31113
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,27|0|12🇯🇵日本|官网：m5c3cloud.pro #1'
-  password: 80660dc1-b962-4144-80ad-30fab2724324
+  name: 5,11,27|3|12🇯🇵日本|官网：m5c3cloud.pro
+  password: 65f8c164-74de-43bb-bc86-4a5d5823b25d
   port: 31115
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27|1|12🇯🇵日本|官网：蓝色海洋.xyz
-  password: ab3b50eb-0588-4f36-9c65-150e70602eba
+  name: 5,11|14|12🇯🇵日本|官网：.xyz
+  password: d355a682-7210-449b-b4eb-8ff59e981e37
   port: 36113
   server: freea.glyphara.com
   type: ss
   udp: true
-- name: '5,9,11,24,27|13,14|日本4|@ripaojiedian #1'
+- alterId: 0
+  name: 5,9,11,24,27,37|JP
   network: tcp
   password: 2f653ecd-c290-451e-a848-f8f525bc5a21
   port: 2323
   server: shltt.sub-zrj.com
   skip-cert-verify: true
   sni: streaming.sub-zrj.com
+  tls: true
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,27|1|13🇯🇵日本|官网：a5b3cloud.pro
-  password: ab3b50eb-0588-4f36-9c65-150e70602eba
+  name: 5,11|14|13🇯🇵日本|官网：abluecloud.xyz
+  password: d355a682-7210-449b-b4eb-8ff59e981e37
   port: 36115
   server: freea.glyphara.com
   type: ss
@@ -191,6 +193,15 @@ proxies:
   password: shadowsocks
   port: 443
   server: 149.22.87.240
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 20,21,37|未知49 1.6MB/s
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -380,7 +391,7 @@ proxies:
   type: vmess
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
 - cipher: rc4-md5
-  name: '30|12|🇵 日本|@ripaojiedian #1'
+  name: 30|12|🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -392,7 +403,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '30|12|🇵 日本2|@ripaojiedian #1'
+  name: 30|12|🇵 日本2|@ripaojiedian
   port: 23919
   server: hzz9.fgmcx.top
   skip-cert-verify: false
@@ -458,6 +469,15 @@ proxies:
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
+  network: tcp
+  port: '30101'
+  server: 167.179.93.158
+  tls: false
+  type: vmess
+  uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
   network: tcp
   port: '27750'
@@ -466,15 +486,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
-  network: tcp
-  port: '30101'
-  server: 167.179.93.158
-  tls: false
-  type: vmess
-  uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-154.55.122.23...
