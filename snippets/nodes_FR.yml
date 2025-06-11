@@ -90,6 +90,24 @@ proxies:
   sni: both-cramp-banjo.stark-industries.solutions
   type: trojan
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知26 19.9MB/s
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.158.171.146
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知149 19.6MB/s
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.110
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 19|🇫🇷FR-163.5.159.231-8334
@@ -256,26 +274,38 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36,37|未知140 21.9MB/s
-  network: tcp
-  port: 33579
-  server: 2.56.126.103
-  servername: ''
-  skip-cert-verify: true
+  name: 36|🔒 VM-WS-TLS 🇫🇷 FR-45.145.165.1...
+  network: ws
+  port: '443'
+  server: 45.145.165.114
+  servername: beyonddsz.cfd
   tls: true
   type: vmess
-  uuid: 2eb3ee2a-7bf8-4b50-9b93-2d489d2f3456
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      Host: beyonddsz.cfd
+    path: /linkws
 - alterId: 0
   cipher: auto
-  name: 36,37|未知3 990.5KB/s
+  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-45.12.133.43...
   network: tcp
-  port: 28444
+  port: '28444'
   server: 45.12.133.43
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 1be8eddb-4f8c-45d0-b2a1-e538eb3abd39
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-2.56.126.103...
+  network: tcp
+  port: '33579'
+  server: 2.56.126.103
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2eb3ee2a-7bf8-4b50-9b93-2d489d2f3456
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇫🇷 FR-95.179.216.1...
