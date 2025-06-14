@@ -783,20 +783,7 @@ proxies:
   skip-cert-verify: false
   sni: k28.tudou211.com
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: '12,24|_中国 #39'
-  network: ws
-  port: '30825'
-  server: v25.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v25.heduian.link
-    path: /oooo
-- name: '12,24|_中国 #13'
+- name: '12,16,24|_中国 #13'
   network: tcp
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
   port: 21179
@@ -804,14 +791,6 @@ proxies:
   skip-cert-verify: false
   sni: k30.tudou211.com
   type: trojan
-- name: 12,24,28|yandex-1179
-  password: 1b4c16925f934c57b954a9f0f23dea33
-  port: 8842
-  server: 42.240.152.238
-  skip-cert-verify: false
-  sni: brwx.spvpv.com
-  type: trojan
-  udp: true
 - name: 12|🇺🇸_US_美国->🇲🇾_MY_马来西亚
   network: ws
   password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
@@ -823,15 +802,6 @@ proxies:
     headers:
       Host: ddcde.890603.xyz
     path: '%2FCOp52Dbu3dvwvDWUxOqxq'
-- alterId: 0
-  cipher: auto
-  name: 12,36|🔒 VM-TCP-NONE 🇩🇪 DE-194.5.193....
-  network: tcp
-  port: 58819
-  server: 194.5.193.95
-  tls: false
-  type: vmess
-  uuid: b0bf81e1-0b18-4253-a278-d516f580240a
 - alterId: 0
   cipher: auto
   name: 13|🇬🇧_GB_英国->🇷🇺_RU_俄罗斯
@@ -874,23 +844,43 @@ proxies:
     headers:
       Host: cm1.awslcn.info
     path: /
+- alterId: 0
+  cipher: auto
+  name: 16|_NL_->🇺🇸_US_美国
+  network: ws
+  port: 20057
+  server: 45.147.201.231
+  type: vmess
+  uuid: e9f68a21-1a1d-42db-9e11-43cb38141923
+  ws-opts:
+    path: /
 - alterId: 2
   cipher: auto
-  name: 16,30|🇨🇳_CN_中国->🇺🇸_US_美国_8
+  name: 16|🇨🇳_CN_中国->🇺🇸_US_美国_2
   network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: true
-  sni: ''
+  port: 30825
+  server: v25.heduian.link
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: baidu.com
+      host: v25.heduian.link
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 16,30|🇨🇳_CN_中国->🇺🇸_US_美国_5
+  name: 16|🇨🇳_CN_中国->🇺🇸_US_美国_3
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: '16,30|🇨🇳_CN_中国->🇺🇸_US_美国_5 #1'
   network: ws
   port: 30824
   server: v24.heduian.link
@@ -902,57 +892,9 @@ proxies:
     headers:
       host: baidu.com
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: '16,24|🇺🇸 _美国 #2'
-  network: tcp
-  port: '15002'
-  server: 15002.kuaiyin02.top
-  tls: false
-  type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
-- cipher: aes-256-cfb
-  name: 16|🇷_KR_国->🇨_CN_中国
-  password: qwerREWQ@@
-  port: 11389
-  server: p231.panda004.net
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 16|🇱_NL_荷兰->🇺🇸_US_美国
-  network: ws
-  port: 20055
-  server: 45.147.201.231
-  type: vmess
-  uuid: 81299ce1-02b5-491e-ba01-e9184adf7fa1
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 16|🇱_NL_荷兰->🇺🇸_US_美国_1
-  network: ws
-  port: 22063
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: vmess
-  uuid: eeafeff6-0adb-4cc7-93a8-15fbc65cddde
-  ws-opts:
-    path: /
-- name: 16|🇸_US_美国->🇷_FR_法国
-  network: ws
-  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
-  port: 443
-  server: 172.67.204.120
-  sni: ddcDe.890603.XYz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: ddcde.890603.xyz
-    path: /COp52Dbu3dvwvDWUxOqxq
 - alterId: 2
   cipher: auto
-  name: 16|🇨🇳_CN_中国->🇺🇸_US_美国_1
+  name: 16|🇨🇳_CN_中国->🇺🇸_US_美国_5
   network: ws
   port: 30807
   server: v7.heduian.link
@@ -964,14 +906,6 @@ proxies:
     headers:
       host: ocbc.com
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 16|🇳_CN_中国->_GB_国
-  network: tcp
-  port: 40550
-  server: 120.232.153.40
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|中国香港/中国台湾(CN)China/Shenzhen/小东的程序未能精准识别(可能是中转节点)_3
@@ -1171,7 +1105,7 @@ proxies:
     path: /d/65dd503.TG.WangCai2.WangCai_8:107690
 - alterId: 2
   cipher: auto
-  name: 30|_CN_->_US_国
+  name: '30|_CN_->_US_国 #1'
   network: ws
   port: 30836
   server: v36.heduian.link
@@ -1228,7 +1162,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 30|🇨🇳_CN_中国->🇺🇸_US_美国_4
+  name: '30|🇨🇳_CN_中国->🇺🇸_US_美国_4 #1'
   network: tcp
   port: 5229
   server: 74f77c00-sutj40-t5qufl-8n27.cu.plebai.net
@@ -1290,6 +1224,20 @@ proxies:
   ws-headers:
     Host: 157.148.96.92
   ws-path: /
+- alterId: 2
+  cipher: auto
+  name: 30|🇨🇳_CN_中国->🇺🇸_US_美国_8
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: baidu.com
+    path: /oooo
 - alterId: 0
   cipher: auto
   name: 30|2|🇺🇸18 |  5.1MB/s
