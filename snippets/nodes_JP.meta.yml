@@ -1,14 +1,26 @@
 proxies:
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|43256f28729146618d3f68063778b6...
+  network: ws
+  port: 8880
+  server: 156.238.18.157
+  tls: false
+  type: vless
+  udp: false
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    path: Telegram@WangCai2/?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|3|🇵  101 | 1x JP
-  password: bafed2c0-0849-4c12-9a1b-374598732a56
+  name: 5,9,11,24,27|1|🇵  101 | 1x JP
+  password: 507aa78e-ae5b-4962-b3c6-39e04b0a105d
   port: 36111
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|3|🇵 日本 103 | 1x JP
-  password: bafed2c0-0849-4c12-9a1b-374598732a56
+  name: 5,9,11,24,27|1|🇵 日本 103 | 1x JP
+  password: 507aa78e-ae5b-4962-b3c6-39e04b0a105d
   port: 36115
   server: freea.glyphara.com
   type: ss
@@ -57,15 +69,15 @@ proxies:
       Host: ''
     path: /zh-cn
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|3|🇯🇵 日本 102 | 1x JP
-  password: bafed2c0-0849-4c12-9a1b-374598732a56
+  name: 5,9,11,24,27|1|🇯🇵 日本 102 | 1x JP
+  password: 507aa78e-ae5b-4962-b3c6-39e04b0a105d
   port: 36113
   server: freea.glyphara.com
   type: ss
   udp: true
 - alterId: 64
   cipher: auto
-  name: 5,9,11,24,27|2|🇵1 |  1.8MB/s|54%|Youtube|Op...
+  name: '5,9,11,24,27|3|🇯🇵1 |  1.8MB/s|54%|Youtube|O... #1'
   network: ws
   port: 1443
   server: sslvpn.51job.com
@@ -101,7 +113,7 @@ proxies:
   uuid: 12947e56-ab80-43bf-9145-72fa50e41c9a
 - alterId: 0
   cipher: auto
-  name: '6|🇯🇵[openproxylist.com] vmess-JP #1'
+  name: 6,36|🔒 VM-TCP-NA 🇯🇵 JP-47.79.88.113...
   network: tcp
   port: '53710'
   server: 47.79.88.113
@@ -524,6 +536,32 @@ proxies:
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-WS-NA 🇯🇵 JP-156.231.112.1...
+  network: ws
+  port: '3107'
+  server: 156.231.112.184
+  tls: false
+  type: vmess
+  uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇯🇵 JP-47.79.32.166:...
+  network: ws
+  port: '2976'
+  server: 47.79.32.166
+  tls: false
+  type: vmess
+  uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
   network: tcp
   port: '27750'
@@ -534,43 +572,13 @@ proxies:
   uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇯🇵 JP-45.192.248.13...
-  network: ws
-  port: '5250'
-  server: 45.192.248.13
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
+  network: tcp
+  port: '30101'
+  server: 167.179.93.158
   tls: false
   type: vmess
-  uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
-  ws-opts:
-    headers:
-      Host: pull.free.video.10010.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇯🇵 JP-154.55.122.23...
-  network: ws
-  port: '8000'
-  server: 154.55.122.235
-  tls: false
-  type: vmess
-  uuid: d26fc1a3-0d97-416b-abcd-b335b4bf7881
-  ws-opts:
-    headers:
-      Host: www.bing.com
-    path: /nmkj
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-WS-NA 🇯🇵 JP-45.192.248.13... #1'
-  network: ws
-  port: '3225'
-  server: 45.192.248.13
-  tls: false
-  type: vmess
-  uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
-  ws-opts:
-    headers:
-      Host: pull.free.video.10010.com
-    path: /
+  uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-154.83.92.218...
@@ -586,58 +594,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
-  network: tcp
-  port: '30101'
-  server: 167.179.93.158
-  tls: false
-  type: vmess
-  uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-WS-NA 🇯🇵 JP-45.192.248.13... #2'
+  name: 36|🔒 VM-WS-NA 🇯🇵 JP-45.192.248.20...
   network: ws
-  port: '6256'
-  server: 45.192.248.13
-  tls: false
-  type: vmess
-  uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
-  ws-opts:
-    headers:
-      Host: pull.free.video.10010.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇯🇵 JP-156.231.115.1...
-  network: ws
-  port: '3216'
-  server: 156.231.115.150
-  tls: false
-  type: vmess
-  uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
-  ws-opts:
-    headers:
-      Host: pull.free.video.10010.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇯🇵 JP-45.192.248.19...
-  network: ws
-  port: '2441'
-  server: 45.192.248.193
-  tls: false
-  type: vmess
-  uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
-  ws-opts:
-    headers:
-      Host: pull.free.video.10010.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇯🇵 JP-47.79.32.166:...
-  network: ws
-  port: '4584'
-  server: 47.79.32.166
+  port: '3277'
+  server: 45.192.248.202
   tls: false
   type: vmess
   uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
@@ -649,59 +609,7 @@ proxies:
   cipher: auto
   name: '36|🔒 VM-WS-NA 🇯🇵 JP-47.79.32.166:... #1'
   network: ws
-  port: '1373'
-  server: 47.79.32.166
-  tls: false
-  type: vmess
-  uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
-  ws-opts:
-    headers:
-      Host: pull.free.video.10010.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇯🇵 JP-156.231.112.1...
-  network: ws
-  port: '3107'
-  server: 156.231.112.184
-  tls: false
-  type: vmess
-  uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
-  ws-opts:
-    headers:
-      Host: pull.free.video.10010.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-WS-NA 🇯🇵 JP-45.192.248.19... #1'
-  network: ws
-  port: '6964'
-  server: 45.192.248.193
-  tls: false
-  type: vmess
-  uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
-  ws-opts:
-    headers:
-      Host: pull.free.video.10010.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-WS-NA 🇯🇵 JP-47.79.32.166:... #2'
-  network: ws
-  port: '8283'
-  server: 47.79.32.166
-  tls: false
-  type: vmess
-  uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
-  ws-opts:
-    headers:
-      Host: pull.free.video.10010.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-WS-NA 🇯🇵 JP-47.79.32.166:... #3'
-  network: ws
-  port: '2976'
+  port: '4584'
   server: 47.79.32.166
   tls: false
   type: vmess
@@ -725,10 +633,23 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇯🇵 JP-45.192.248.20...
+  name: '36|🔒 VM-WS-NA 🇯🇵 JP-47.79.32.166:... #2'
   network: ws
-  port: '3277'
-  server: 45.192.248.202
+  port: '1373'
+  server: 47.79.32.166
+  tls: false
+  type: vmess
+  uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇯🇵 JP-45.192.248.13...
+  network: ws
+  port: '3225'
+  server: 45.192.248.13
   tls: false
   type: vmess
   uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
@@ -742,6 +663,97 @@ proxies:
   network: ws
   port: '3822'
   server: 45.192.248.202
+  tls: false
+  type: vmess
+  uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇯🇵 JP-45.192.248.19...
+  network: ws
+  port: '2441'
+  server: 45.192.248.193
+  tls: false
+  type: vmess
+  uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇯🇵 JP-154.55.122.23...
+  network: ws
+  port: '8000'
+  server: 154.55.122.235
+  tls: false
+  type: vmess
+  uuid: d26fc1a3-0d97-416b-abcd-b335b4bf7881
+  ws-opts:
+    headers:
+      Host: www.bing.com
+    path: /nmkj
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇯🇵 JP-156.231.115.1...
+  network: ws
+  port: '3216'
+  server: 156.231.115.150
+  tls: false
+  type: vmess
+  uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-WS-NA 🇯🇵 JP-47.79.32.166:... #3'
+  network: ws
+  port: '8283'
+  server: 47.79.32.166
+  tls: false
+  type: vmess
+  uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-WS-NA 🇯🇵 JP-45.192.248.19... #1'
+  network: ws
+  port: '6964'
+  server: 45.192.248.193
+  tls: false
+  type: vmess
+  uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-WS-NA 🇯🇵 JP-45.192.248.13... #1'
+  network: ws
+  port: '6256'
+  server: 45.192.248.13
+  tls: false
+  type: vmess
+  uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-WS-NA 🇯🇵 JP-45.192.248.13... #2'
+  network: ws
+  port: '5250'
+  server: 45.192.248.13
   tls: false
   type: vmess
   uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
