@@ -1,14 +1,14 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|0|🇪国 101 | 1x DE #1'
-  password: a89a78b3-010f-4cb5-bcc6-4da81bd25d89
+  name: 5,11,24,27|2|🇪国 101 | 1x DE
+  password: 5d974483-9b1b-4c50-ab39-9dc59885ff24
   port: 31471
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11|1|🇪 德国 101 | 1x DE
-  password: aad0fd48-4845-43ee-b810-d61d51b0682f
+  name: 5,9,11,27|15|🇪 德国 101 | 1x DE
+  password: 4a558767-b3cc-46b7-ae6f-e8a12d31ecf2
   port: 36471
   server: freea.glyphara.com
   type: ss
@@ -17,7 +17,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: vmess-grpc
-  name: '5,9,11,24,27|2|🇪5 |  1.4MB/s|0%|Youtube|Ope... #1'
+  name: 5,9,11,24,27|1|5 |  1.4MB/s|0%|Youtube|Open...
   network: grpc
   port: 443
   server: de.vmess.comnpmjs.com
@@ -29,11 +29,10 @@ proxies:
   uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
 - alterId: 0
   cipher: auto
-  name: 6,36|🔒 VM-TCP-NA 🇩🇪 DE-142.132.185....
+  name: 6,36|🔒 VM-TCP-NONE 🇩🇪 DE-142.132.18...
   network: tcp
-  port: '38799'
+  port: 38799
   server: 142.132.185.156
-  servername: ''
   tls: false
   type: vmess
   uuid: 6ce68a36-0199-4359-b442-0568655f3e5d
@@ -174,6 +173,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-45.12.138.82...
   network: tcp
   port: '54757'
@@ -184,28 +193,13 @@ proxies:
   uuid: cde9f074-c930-4aa3-a558-46bbc9d0a5a1
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇩🇪 DE-78.47.31.142:...
-  network: ws
-  port: '44185'
-  server: 78.47.31.142
-  servername: ''
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-188.245.10...
+  network: tcp
+  port: 23890
+  server: 188.245.109.124
   tls: false
   type: vmess
-  uuid: 6e0bdb9d-058a-4c36-aa58-44a782caec4f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+  uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-37.221.125.1...
@@ -228,13 +222,32 @@ proxies:
   uuid: 2858a404-d0ca-4d67-80a6-ce8e95e383ff
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-188.245.10...
-  network: tcp
-  port: 23890
-  server: 188.245.109.124
+  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.24.12...
+  network: ws
+  port: 443
+  server: 57.129.24.124
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: aveiror.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇩🇪 DE-78.47.31.142:...
+  network: ws
+  port: '44185'
+  server: 78.47.31.142
+  servername: ''
   tls: false
   type: vmess
-  uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
+  uuid: 6e0bdb9d-058a-4c36-aa58-44a782caec4f
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-5.75.193.254...
