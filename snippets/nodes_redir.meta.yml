@@ -763,56 +763,6 @@ proxies:
     headers:
       host: mizban.arzonhost.ir
     path: /
-- alterId: 0
-  cipher: auto
-  name: 12|🇳🇱_NL_荷兰->🇺🇸_US_美国
-  network: ws
-  port: '20058'
-  server: 45.147.201.231
-  tls: false
-  type: vmess
-  uuid: 4dadb82a-2395-45f2-a681-f9c9cfc7f600
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- name: 12,16|🇳_CN_中国->_DE_国
-  network: tcp
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21102
-  server: 120.233.44.201
-  sni: k28.tudou211.com
-  type: trojan
-- name: '12|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
-  network: ws
-  port: 927
-  server: 62.60.164.192
-  tls: false
-  type: vless
-  uuid: 8582e686-c209-4bfc-95ae-37ff0e20dd77
-  ws-opts:
-    path: '%2FPoshtiban'
-- alterId: 2
-  cipher: auto
-  name: '12,24|_中国 #1'
-  network: ws
-  port: '30825'
-  server: v25.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v25.heduian.link
-    path: /oooo
-- name: 12,16,24|_中国
-  network: tcp
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21179
-  server: 120.233.44.201
-  skip-cert-verify: false
-  sni: k30.tudou211.com
-  type: trojan
 - name: 12,16,24|TG频道@stymei1丨9
   password: 1b4c16925f934c57b954a9f0f23dea33
   port: 8842
@@ -820,18 +770,40 @@ proxies:
   skip-cert-verify: true
   sni: brwx.spvpv.com
   type: trojan
-- name: 12|🇺🇸_US_美国->🇩🇪_DE_德国
+- alterId: 0
+  cipher: auto
+  name: 12,28|yandex-1821
   network: ws
-  port: 80
-  server: 104.26.14.85
+  port: 23100
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 41cc36aa-dfb6-47bb-8e39-133ad5f2cd83
+  ws-opts:
+    path: /
+- name: 12|🇮🇷_IR_伊朗->🇺🇸_US_美国
+  network: tcp
+  port: 1980
+  server: 85.133.204.167
   tls: false
   type: vless
-  uuid: 76ad8213-4617-47eb-92cc-5392b39b45ce
+  uuid: 7a0ddc38-d201-4b45-b871-2265066b991d
+- alterId: 2
+  cipher: auto
+  name: '12,24|_中国 #1'
+  network: ws
+  port: '30825'
+  server: v25.heduian.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: eLOQuENt-caSE.ZUlaIR.orG.
-    path: '%2F%3Fed%3D2048'
-- name: 12|🇺🇸_US_美国->🇲🇾_MY_马来西亚
+      Host: v25.heduian.link
+    path: /oooo
+- name: 12|🇺🇸_US_美国->🇫🇷_FR_法国
   network: ws
   password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
   port: 443
@@ -842,16 +814,44 @@ proxies:
     headers:
       Host: ddcde.890603.xyz
     path: '%2FCOp52Dbu3dvwvDWUxOqxq'
-- alterId: 0
-  cipher: auto
-  name: 12,24|🇳🇱 _荷兰
+- name: 12,16,24|_中国
   network: tcp
-  port: '58819'
-  server: 194.5.193.95
-  tls: false
-  type: vmess
-  uuid: b0bf81e1-0b18-4253-a278-d516f580240a
-- name: '13|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21179
+  server: 120.233.44.201
+  skip-cert-verify: false
+  sni: k30.tudou211.com
+  type: trojan
+- name: 12,16|🇳_CN_中国->_DE_国
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21102
+  server: 120.233.44.201
+  sni: k28.tudou211.com
+  type: trojan
+- cipher: aes-256-cfb
+  name: 12,16|🇷_KR_韩国_1
+  password: qwerREWQ@@
+  port: 11389
+  server: p231.panda004.net
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 12,20,21,37|未知57 2.5MB/s
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: 85.210.120.237
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- name: 12,24|🇨🇳 广东省 联通
+  password: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
+  port: 15229
+  server: e312e558-sxusg0-t3f7qr-141tv.cu.plebai.net
+  skip-cert-verify: false
+  sni: e312e558-sxusg0-t3f7qr-141tv.cu.plebai.net
+  type: trojan
+- name: 13|🇺🇸_US_美国->🇩🇪_DE_德国
   network: ws
   port: 80
   server: 151.101.2.219
@@ -896,7 +896,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '13|🇨🇳_CN_中国->🇺🇸_US_美国 #6'
+  name: '13|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
   network: tcp
   port: 52112
   server: 183.236.51.23
