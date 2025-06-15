@@ -130,34 +130,6 @@ proxies:
   type: vless
   udp: false
   uuid: dc8a7de0-e311-4675-bce9-656dada9751a
-- cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27|0| 国 101 | 1x DE #1'
-  password: f015b2ae-5ca6-4a4f-8ff0-e7a742b62d96
-  port: 36471
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|15|🇪德国 101 | 1x DE
-  password: 267e863a-95eb-4695-ad52-53da59ce8350
-  port: 31471
-  server: freem.vidalith.com
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: vmess-grpc
-  name: 5,9,11,24,27|2|🇪5 |  1.4MB/s|0%|Youtube|Ope...
-  network: grpc
-  port: 443
-  server: de.vmess.comnpmjs.com
-  servername: de.vmess.comnpmjs.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
 - client-fingerprint: safari
   flow: xtls-rprx-vision-udp443
   name: 5|2|🇩🇪6 |  4.3MB/s|0%|Disney|Ope...
@@ -167,12 +139,34 @@ proxies:
   tls: true
   type: vless
   uuid: b8bd42a9-551f-419d-b70d-4aefdd2cb074
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27|3|🇪 国 101 | 1x DE
+  password: e673c385-6c33-4318-84d3-c56c29d060c6
+  port: 36471
+  server: freea.glyphara.com
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 6,36|🔒 VM-TCP-NONE 🇩🇪 DE-142.132.18...
+  grpc-opts:
+    grpc-service-name: vmess-grpc
+  name: 5,9,11,24,27|2|5 |  1.4MB/s|0%|Youtube|Open...
+  network: grpc
+  port: 443
+  server: de.vmess.comnpmjs.com
+  servername: de.vmess.comnpmjs.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
+- alterId: 0
+  cipher: auto
+  name: 6,36|🔒 VM-TCP-NA 🇩🇪 DE-142.132.185....
   network: tcp
-  port: 38799
+  port: '38799'
   server: 142.132.185.156
+  servername: ''
   tls: false
   type: vmess
   uuid: 6ce68a36-0199-4359-b442-0568655f3e5d
@@ -255,12 +249,46 @@ proxies:
   port: 9094
   server: 80.92.204.106
   type: ss
-- cipher: aes-256-cfb
-  name: 19|🇩🇪DE-80.92.204.106-3215
-  password: M3t2ZEQcMGRWBjRa
-  port: 9011
-  server: 80.92.204.106
-  type: ss
+- name: '20,21|🇩🇪DE-3.72.228.22-5641 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.72.228.22
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-57.129.24.125-7451 #1'
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-132.145.232.171-7454 #1'
+  network: ws
+  port: 443
+  server: 132.145.232.171
+  servername: beyonddsz.cfd
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      Host: beyonddsz.cfd
+    path: /linkws
+- name: '20,21|🇩🇪DE-18.156.116.190-5640 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.156.116.190
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 30|0|国 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -277,30 +305,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.28.65...
-  network: ws
-  port: '443'
-  server: 57.129.28.65
-  servername: kapelleng.com
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kapelleng.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-5.75.193.254...
   network: tcp
   port: '2080'
@@ -311,6 +315,16 @@ proxies:
   uuid: b5de3ecb-0b84-4c1b-c111-4b77add48337
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-45.12.138.47...
+  network: tcp
+  port: '22839'
+  server: 45.12.138.47
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2858a404-d0ca-4d67-80a6-ce8e95e383ff
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-37.221.125.1...
   network: tcp
   port: '33940'
@@ -319,6 +333,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-188.245.10...
+  network: tcp
+  port: 23890
+  server: 188.245.109.124
+  tls: false
+  type: vmess
+  uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-45.12.138.82...
@@ -343,25 +366,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-188.245.10...
-  network: tcp
-  port: 23890
-  server: 188.245.109.124
-  tls: false
-  type: vmess
-  uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-45.12.138.47...
-  network: tcp
-  port: '22839'
-  server: 45.12.138.47
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2858a404-d0ca-4d67-80a6-ce8e95e383ff
 - client-fingerprint: chrome
   name: 40|DE_speednode_0049
   network: ws

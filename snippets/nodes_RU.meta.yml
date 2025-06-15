@@ -25,17 +25,10 @@ proxies:
       host: QtRkJtLt27.pRiMeXaD.OrG
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '5,9,11,24,27|0|🇺  101 | 1x RU #1'
-  password: f015b2ae-5ca6-4a4f-8ff0-e7a742b62d96
+  name: 5,9,11,24,27|3|🇺  101 | 1x RU
+  password: e673c385-6c33-4318-84d3-c56c29d060c6
   port: 36511
   server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|15|🇺俄罗斯 101 | 1x RU
-  password: 267e863a-95eb-4695-ad52-53da59ce8350
-  port: 31511
-  server: freem.vidalith.com
   type: ss
   udp: true
 - alterId: 0
@@ -47,15 +40,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 9f9b21c3-e3fc-3e27-b878-82eeae401d12
-- alterId: 0
-  cipher: auto
-  name: 5|俄罗斯 - 莫斯科 - JSC "ER-Telecom Ho...
-  network: tcp
-  port: '45200'
-  server: 112.65.92.20
-  tls: false
-  type: vmess
-  uuid: 3bb7e826-6bc8-43ec-a22b-c65d8f30c4e5
 - name: '5,38|🇷🇺_RU_俄罗斯联邦_10 #1'
   network: ws
   port: 2087
@@ -68,6 +52,15 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
+- alterId: 0
+  cipher: auto
+  name: 5|俄罗斯 - 莫斯科 - JSC "ER-Telecom Ho...
+  network: tcp
+  port: '45200'
+  server: 112.65.92.20
+  tls: false
+  type: vmess
+  uuid: 3bb7e826-6bc8-43ec-a22b-c65d8f30c4e5
 - name: 8|🇷🇺RU-176.32.35.167-210_1@209
   password: 85bce006-4885-11ee-8792-f23c9164ca5d
   port: 1007
@@ -180,20 +173,18 @@ proxies:
     headers:
       Host: ap.ylks.xyz
     path: '%2Fblue'
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 19,20,21,37|未知85 870.4KB/s
-  password: 0zyDRZ1XmNXaaCAN7KEA8a
-  port: 28825
-  server: 45.151.62.54
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 19|🇷🇺RU-147.45.221.106-1300
   password: m30QhUjzdUtXi1tsDsF7G1
   port: 46356
   server: 147.45.221.106
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,21,30|🇺 俄罗斯 斯斯克G-Core Lab
+  password: RiPuKJJl18ZgvLpTjWxBwSfKiPkt9gzFKyxGCY8eHtOcDb2X
+  port: 31348
+  server: 5.189.201.250
   type: ss
 - alterId: 0
   cipher: auto
@@ -221,23 +212,30 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 30|🇺 俄罗斯 斯斯克G-Core Lab
-  password: RiPuKJJl18ZgvLpTjWxBwSfKiPkt9gzFKyxGCY8eHtOcDb2X
-  port: 31348
-  server: 5.189.201.250
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
+  name: 36,37|未知19 7.3MB/s
   network: tcp
-  port: '20779'
+  port: 20779
   server: 45.12.114.15
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-185.174.138.2...
+  network: ws
+  port: '2095'
+  server: 185.174.138.209
+  tls: false
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: yellow-paper-029c.yvonna.workers.dev
+    path: /az05.beyondy.cfd/link?/TM
 - client-fingerprint: chrome
   name: 40|RU_speednode_0144
   network: ws
