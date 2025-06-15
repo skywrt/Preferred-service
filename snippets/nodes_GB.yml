@@ -1,9 +1,12 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,27|15|🇧 国 102 | 1x UK
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,27,37|🇧GB
   password: 4a558767-b3cc-46b7-ae6f-e8a12d31ecf2
   port: 36273
   server: freea.glyphara.com
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 2
@@ -87,15 +90,6 @@ proxies:
     headers:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知118 16.8MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.79
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 20,21,30|2|🇬🇧3 |  2.8MB/s
   password: mps3FwmDjLrWaOVg
@@ -125,16 +119,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.146...
-  network: tcp
-  port: '27773'
-  server: 5.180.30.146
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b2347239-dd15-40b3-b683-50cc2ff19ae7
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:...
   network: tcp
   port: '18598'
@@ -143,6 +127,17 @@ proxies:
   tls: false
   type: vmess
   uuid: bf26f2fb-9d2a-49b6-8527-82e8aba3a9a9
+- alterId: 0
+  cipher: auto
+  name: 36,37|未知79 18.4MB/s
+  network: tcp
+  port: 27773
+  server: 5.180.30.146
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b2347239-dd15-40b3-b683-50cc2ff19ae7
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.110...
