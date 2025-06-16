@@ -1,19 +1,19 @@
 proxies:
-- alterId: 0
-  name: 5,9,11,24,27,28,37,40|CN_speednode_0027
+- name: 5,9,11,24,27,28,40|CN_speednode_0027
   password: HrTsLJvh
   port: 38632
   server: 36.151.251.62
   skip-cert-verify: true
   sni: 36.151.251.62
-  tls: true
   type: trojan
   udp: true
-- name: 5,9,11,24,27,28,40|CN_speednode_0031
+- alterId: 0
+  name: 5,9,11,24,27,28,37,40|CN_speednode_0031
   password: FpQhGpIr
   port: 4448
   server: 36.151.251.56
   skip-cert-verify: true
+  tls: true
   type: trojan
   udp: true
 - name: 5,9,11,24,27,28,40|CN_speednode_0029
@@ -32,11 +32,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 5,9,11,24,27,28,40|CN_speednode_0030
+- alterId: 0
+  name: 5,9,11,24,27,28,37,40|CN_speednode_0030
   password: HrTsLJvh
   port: 43196
   server: 223.111.144.12
   skip-cert-verify: true
+  tls: true
   type: trojan
   udp: true
 - alterId: 64
@@ -1229,6 +1231,20 @@ proxies:
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇨🇳 CN-111.47.212.4...
+  network: ws
+  port: '35215'
+  server: 111.47.212.47
+  servername: jp5.g2.moonbase.life
+  tls: true
+  type: vmess
+  uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+  ws-opts:
+    headers:
+      Host: web.xcjs.info
+    path: /home
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇨🇳 CN-183.236.51.1...
   network: ws
   port: '35146'
@@ -1243,20 +1259,11 @@ proxies:
     path: /home
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-RAW-NA 🇨🇳 CN-47.116.166.1...
-  network: raw
-  port: '50002'
-  server: 47.116.166.178
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇨🇳 CN-36.150.94.79...
   network: ws
-  port: '35246'
+  port: '35216'
   server: 36.150.94.79
-  servername: jp6.vip2.g2.moonbase.life
+  servername: jp6.g2.moonbase.life
   tls: true
   type: vmess
   uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
@@ -1280,20 +1287,11 @@ proxies:
     path: /home
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
-  network: tcp
-  port: '50007'
-  server: 112.132.215.34
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
   name: '36|🔒 VM-WS-TLS 🇨🇳 CN-36.150.94.79... #1'
   network: ws
-  port: '35216'
+  port: '35246'
   server: 36.150.94.79
-  servername: jp6.g2.moonbase.life
+  servername: jp6.vip2.g2.moonbase.life
   tls: true
   type: vmess
   uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
@@ -1301,6 +1299,16 @@ proxies:
     headers:
       Host: web.xcjs.info
     path: /home
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
+  network: tcp
+  port: '50007'
+  server: 112.132.215.34
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇨🇳 CN-120.253.242....
@@ -1317,15 +1325,10 @@ proxies:
     path: /home
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇨🇳 CN-111.47.212.4...
-  network: ws
-  port: '35215'
-  server: 111.47.212.47
-  servername: jp5.g2.moonbase.life
-  tls: true
+  name: 36|🔒 VM-RAW-NA 🇨🇳 CN-47.116.166.1...
+  network: raw
+  port: '50002'
+  server: 47.116.166.178
+  tls: false
   type: vmess
-  uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
-  ws-opts:
-    headers:
-      Host: web.xcjs.info
-    path: /home
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
