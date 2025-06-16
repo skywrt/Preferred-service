@@ -1,7 +1,14 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|1|🇦加拿大 101 | 1x CA
-  password: 76a6506d-cf91-4255-800b-5ed55bb48766
+  name: 5,9,24,27|0|🇦 加大 101 | 1x CA
+  password: 504afb1c-dfdb-482f-91d5-e4d0208564f9
+  port: 36441
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27|3|🇦加拿大 101 | 1x CA
+  password: c1e4c6ed-7823-446b-bb02-fd8fcff539fd
   port: 31441
   server: freem.vidalith.com
   type: ss
@@ -19,13 +26,21 @@ proxies:
     headers:
       Host: cloudgetservice.mcloudservice.site
     path: /linkws
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|0|🇦 加大 101 | 1x CA
-  password: aed4163f-542d-4c5b-9257-b71b9f92c1e0
-  port: 36441
-  server: freea.glyphara.com
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 5,28|yandex-2544
+  network: ws
+  port: 24096
+  server: us.dalazhi.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
   udp: true
+  uuid: 3ea45dfd-2158-46f9-960c-8a7a24f38083
+  ws-opts:
+    headers:
+      Host: us.dalazhi.eu.org
+    path: /nyzt
 - cipher: aes-256-gcm
   name: 8|🇨🇦CA-134.195.196.51-063_1@63
   password: pKEW8JPByTVTLtM
@@ -443,6 +458,15 @@ proxies:
       Host: www.bing.com
     path: github.com/Alvin9999
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,20,21,37|未知51 23.1MB/s
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 19|🇨🇦CA-51.79.102.253-6345
@@ -459,7 +483,7 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇦CA-23.162.200.227-7448 #1'
+  name: '20,21|🇨🇦CA-23.162.200.227-7322 #1'
   network: ws
   port: 443
   server: 23.162.200.227
@@ -470,6 +494,20 @@ proxies:
   ws-opts:
     headers:
       Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇨🇦CA-134.195.198.147-7309 #1'
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -485,20 +523,6 @@ proxies:
     headers:
       Host: 51.79.102.253
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇨🇦CA-134.195.198.147-7452 #1'
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
-    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 23|🇨🇦_CA_加拿大

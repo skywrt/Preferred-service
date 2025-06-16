@@ -9,18 +9,31 @@ proxies:
   tls: false
   type: vmess
   uuid: 7ccbb147-38b8-4d7c-9201-2ad4ae8b8761
-- cipher: chacha20-ietf-poly1305
-  name: '5,11,24,27|1|🇰🇷韩国 102 | 1x KR #1'
-  password: 76a6506d-cf91-4255-800b-5ed55bb48766
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,24,27,37|KR
+  password: c1e4c6ed-7823-446b-bb02-fd8fcff539fd
   port: 31313
   server: freem.vidalith.com
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,11,24,27|1|🇷韩国 101 | 1x KR
-  password: 76a6506d-cf91-4255-800b-5ed55bb48766
-  port: 31311
-  server: freem.vidalith.com
+  name: 5,9,24,27|0|🇷 韩国 102 | 1x KR
+  password: 504afb1c-dfdb-482f-91d5-e4d0208564f9
+  port: 36313
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,24,27,37|🇰🇷KR韩国2
+  password: 504afb1c-dfdb-482f-91d5-e4d0208564f9
+  port: 36311
+  server: freea.glyphara.com
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -38,24 +51,17 @@ proxies:
   udp: true
   uuid: 74dd96cd-3b12-4e03-8605-aeeb188d93f3
 - cipher: aes-256-cfb
-  name: 5,9,11,16,24,27|3|🇷2 |  1.5MB/s|44%|Openai
+  name: 5,9,11,16,20,21,24,27|2|🇷2 |  1.5MB/s|44%|Openai
   password: qwerREWQ@@
   port: 15098
   server: 125.141.31.72
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|0|🇷 韩国 102 | 1x KR
-  password: aed4163f-542d-4c5b-9257-b71b9f92c1e0
-  port: 36313
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5,9,11,24,27|0|  101 | 1x KR
-  password: aed4163f-542d-4c5b-9257-b71b9f92c1e0
-  port: 36311
-  server: freea.glyphara.com
+  name: 5,9,11,24,27|3|🇷韩国 101 | 1x KR
+  password: c1e4c6ed-7823-446b-bb02-fd8fcff539fd
+  port: 31311
+  server: freem.vidalith.com
   type: ss
   udp: true
 - alterId: 0
@@ -69,6 +75,12 @@ proxies:
   type: vmess
   udp: true
   uuid: 7ccbb147-38b8-4d7c-9201-2ad4ae8b8761
+- cipher: aes-256-cfb
+  name: 12,16|_KR_国->🇺🇸_US_美国
+  password: qwerREWQ@@
+  port: 4857
+  server: 125.141.26.12
+  type: ss
 - name: 17|韩国(yudou66.com 玉豆免费节点)
   network: ws
   port: 12273
@@ -142,7 +154,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 30|12|🇷 韩国|@ripaojiedian
+  name: '30|12|🇷 韩国|@ripaojiedian #1'
   port: 17232
   server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
   skip-cert-verify: false
