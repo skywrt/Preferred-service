@@ -1,14 +1,14 @@
 proxies:
-- name: '5,9,24,27|15|CN_speednode_0029 #2'
+- name: '5,9|15|CN_speednode_0029 #1'
   password: FpQhGpIr
   port: 38632
   server: 36.151.251.62
-  skip-cert-verify: true
+  skip-cert-verify: false
   type: trojan
   udp: true
 - alterId: 64
   cipher: auto
-  name: '5,24|_中国 #14'
+  name: 5|广东省中山市 移动
   network: tcp
   port: '46920'
   server: 183.238.90.8
@@ -27,11 +27,11 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- name: '5,9,24,27|15|CN_speednode_0027 #2'
+- name: '5,9|15|CN_speednode_0027 #1'
   password: HrTsLJvh
   port: 38632
   server: 36.151.251.62
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: 36.151.251.62
   type: trojan
   udp: true
@@ -41,7 +41,7 @@ proxies:
   server: 120.233.44.201
   sni: k28.tudou211.com
   type: trojan
-- name: 5,9,24,27,28|yandex-2157
+- name: 5,9,28|yandex-900
   password: FpQhGpIr
   port: 43196
   server: 223.111.144.12
@@ -57,11 +57,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '5,9,24,27|15|CN_speednode_0031 #2'
+- name: '5,9|15|CN_speednode_0031 #1'
   password: FpQhGpIr
   port: 4448
   server: 36.151.251.56
-  skip-cert-verify: true
+  skip-cert-verify: false
   type: trojan
   udp: true
 - alterId: 64
@@ -75,7 +75,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 5,36|🔒 VM-TCP-NA 🇨🇳 CN-120.210.205....
+  name: 5,24,36|🔒 VM-TCP-NA 🇨🇳 CN-120.210.205....
   network: tcp
   port: '50002'
   server: 120.210.205.59
@@ -834,18 +834,40 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 2
+  cipher: auto
+  name: 24|🇨🇳 吉林省 移动(全省通用)
+  network: ws
+  port: '30832'
+  server: v32.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - alterId: 0
   cipher: auto
-  name: '24|_中国 #8'
+  name: 24|🇨🇳 广东省中山市 移动
   network: tcp
-  port: '51095'
-  server: 120.198.71.219
+  port: '39076'
+  server: 183.238.90.8
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 24|🇨🇳 广东省广州市 移动
+  network: tcp
+  port: '43292'
+  server: 120.232.153.40
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 2
   cipher: auto
-  name: '24|_中国 #2'
+  name: '24|_中国 #1'
   network: ws
   port: '30835'
   server: v35.heduian.link
@@ -856,87 +878,41 @@ proxies:
     headers:
       Host: v35.heduian.link
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: '24|_中国 #5'
-  network: tcp
-  port: '52352'
-  server: 120.232.153.123
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '24|_中国 #9'
-  network: tcp
-  port: '30915'
-  server: 120.198.71.219
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '24|_中国 #10'
-  network: tcp
-  port: '59082'
-  server: 120.198.71.216
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '24|_中国 #11'
-  network: tcp
-  port: '41175'
-  server: 120.198.71.214
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '24|_中国 #13'
-  network: tcp
-  port: '39076'
-  server: 183.238.90.8
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '24|_中国 #16'
-  network: tcp
-  port: '43292'
-  server: 120.232.153.40
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '24|_中国 #18'
-  network: tcp
-  port: '41766'
-  server: 183.238.90.8
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '24|_中国 #19'
-  network: tcp
-  port: '37805'
-  server: 120.232.153.63
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '24|_中国 #20'
-  network: tcp
-  port: '49355'
-  server: 120.198.71.219
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: '24|_中国 #4'
+  password: 71698fa1-5dbc-4a7d-a1f0-6f9f098b0829
+  port: 12019
+  server: iepl01.hkglink.xyz
+  skip-cert-verify: false
+  sni: sni.eos-suzhou-4.cmecloud.cn
+  type: trojan
+- name: '24|_中国 #5'
+  password: 71698fa1-5dbc-4a7d-a1f0-6f9f098b0829
+  port: 12107
+  server: iepl01.twplink.xyz
+  skip-cert-verify: false
+  sni: sni.eos-suzhou-4.cmecloud.cn
+  type: trojan
+- name: '24|_中国 #6'
+  password: 71698fa1-5dbc-4a7d-a1f0-6f9f098b0829
+  port: 12209
+  server: iepl01.hkglink.xyz
+  skip-cert-verify: false
+  sni: sni.eos-suzhou-4.cmecloud.cn
+  type: trojan
+- name: '24|_中国 #7'
+  password: 71698fa1-5dbc-4a7d-a1f0-6f9f098b0829
+  port: 13209
+  server: iepl01.usalink.xyz
+  skip-cert-verify: false
+  sni: sni.eos-suzhou-4.cmecloud.cn
+  type: trojan
+- name: '24|_中国 #8'
+  password: 71698fa1-5dbc-4a7d-a1f0-6f9f098b0829
+  port: 23016
+  server: kr.node1link.xyz
+  skip-cert-verify: false
+  sni: 150.yuanul.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 30|2|🇸24 |  4.8MB/s
@@ -1212,11 +1188,11 @@ proxies:
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇨🇳 CN-111.47.212.4...
+  name: 36|🔒 VM-WS-TLS 🇨🇳 CN-183.236.51.1...
   network: ws
-  port: '35215'
-  server: 111.47.212.47
-  servername: jp5.g2.moonbase.life
+  port: '35146'
+  server: 183.236.51.187
+  servername: sg6.vip2.g2.moonbase.life
   tls: true
   type: vmess
   uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
@@ -1240,48 +1216,6 @@ proxies:
     path: /home
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇨🇳 CN-120.253.242....
-  network: ws
-  port: '35244'
-  server: 120.253.242.194
-  servername: jp4.vip2.g2.moonbase.life
-  tls: true
-  type: vmess
-  uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
-  ws-opts:
-    headers:
-      Host: jp4.vip2.g2.moonbase.life
-    path: /home
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇨🇳 CN-183.236.51.1...
-  network: ws
-  port: '35146'
-  server: 183.236.51.187
-  servername: sg6.vip2.g2.moonbase.life
-  tls: true
-  type: vmess
-  uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
-  ws-opts:
-    headers:
-      Host: web.xcjs.info
-    path: /home
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-WS-TLS 🇨🇳 CN-183.236.51.1... #1'
-  network: ws
-  port: '35111'
-  server: 183.236.51.131
-  servername: sg1.g2.moonbase.life
-  tls: true
-  type: vmess
-  uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
-  ws-opts:
-    headers:
-      Host: sg1.g2.moonbase.life
-    path: /home
-- alterId: 0
-  cipher: auto
   name: '36|🔒 VM-WS-TLS 🇨🇳 CN-36.150.94.79... #1'
   network: ws
   port: '35246'
@@ -1296,7 +1230,21 @@ proxies:
     path: /home
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-WS-TLS 🇨🇳 CN-120.253.242.... #1'
+  name: 36|🔒 VM-WS-TLS 🇨🇳 CN-111.47.212.4...
+  network: ws
+  port: '35215'
+  server: 111.47.212.47
+  servername: jp5.g2.moonbase.life
+  tls: true
+  type: vmess
+  uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+  ws-opts:
+    headers:
+      Host: web.xcjs.info
+    path: /home
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇨🇳 CN-120.253.242....
   network: ws
   port: '35214'
   server: 120.253.242.194
@@ -1307,6 +1255,34 @@ proxies:
   ws-opts:
     headers:
       Host: web.xcjs.info
+    path: /home
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-WS-TLS 🇨🇳 CN-120.253.242.... #1'
+  network: ws
+  port: '35244'
+  server: 120.253.242.194
+  servername: jp4.vip2.g2.moonbase.life
+  tls: true
+  type: vmess
+  uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
+  ws-opts:
+    headers:
+      Host: jp4.vip2.g2.moonbase.life
+    path: /home
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-WS-TLS 🇨🇳 CN-183.236.51.1... #1'
+  network: ws
+  port: '35111'
+  server: 183.236.51.131
+  servername: sg1.g2.moonbase.life
+  tls: true
+  type: vmess
+  uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+  ws-opts:
+    headers:
+      Host: sg1.g2.moonbase.life
     path: /home
 - alterId: 0
   cipher: auto
