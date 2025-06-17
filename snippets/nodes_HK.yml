@@ -18,15 +18,13 @@ proxies:
   sni: 120.233.128.68
   type: trojan
   udp: true
-- alterId: 0
-  name: '5,9,11,24,27,28,37|HK #1'
+- name: 5,9,11,24,27,28|yandex-1719
   network: tcp
   password: 85f133142f04dbf6547da33895cfabb3
   port: 39001
   server: 113.99.140.184
   skip-cert-verify: true
   sni: www.yrtok.com
-  tls: true
   type: trojan
   udp: true
 - alterId: 0
@@ -893,16 +891,25 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-82.152.164.10...
-  network: ws
-  port: 40601
-  server: 82.152.164.10
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-43.199.24.24...
+  network: tcp
+  port: '3000'
+  server: 43.199.24.247
   tls: false
   type: vmess
-  uuid: 5c634f9c-3dd4-4d3e-97c2-9db2470cf722
+  uuid: cc101ff1-3452-41c3-89fe-c2a5a20dc6dc
+- alterId: 2
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-1.65.202.165:...
+  network: ws
+  port: '80'
+  server: 1.65.202.165
+  tls: false
+  type: vmess
+  uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9
   ws-opts:
     headers:
-      Host: us05.jssssss.com
+      Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 0
   cipher: auto
@@ -913,95 +920,6 @@ proxies:
   tls: false
   type: vmess
   uuid: e7b9ff44-c0d0-3d85-a56d-4f0959dec88b
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-20.2.4.223:2...
-  network: tcp
-  port: '25630'
-  server: 20.2.4.223
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 169501c1-88a6-4419-cd22-9cd9e69df2a9
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-163.53.18.21...
-  network: tcp
-  port: '19901'
-  server: 163.53.18.212
-  tls: false
-  type: vmess
-  uuid: 066b32cc-ee3d-4719-b1f0-2f202298737e
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-20.2.80.240:...
-  network: tcp
-  port: '20452'
-  server: 20.2.80.240
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 52aba3eb-0a6f-4c2f-29c6-d4b18a1d7c3e
-- alterId: 2
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-1.65.205.136:...
-  network: ws
-  port: '80'
-  server: 1.65.205.136
-  tls: false
-  type: vmess
-  uuid: ea89ce9a-25e1-11ec-a0fc-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-82.152.165.2... #1'
-  network: tcp
-  port: '34795'
-  server: 82.152.165.2
-  tls: false
-  type: vmess
-  uuid: b79d2468-b606-3803-a863-fbc8f5c4d1aa
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-82.152.165.2... #2'
-  network: tcp
-  port: '21961'
-  server: 82.152.165.2
-  tls: false
-  type: vmess
-  uuid: b79d2468-b606-3803-a863-fbc8f5c4d1aa
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-43.199.24.24...
-  network: tcp
-  port: '3000'
-  server: 43.199.24.247
-  tls: false
-  type: vmess
-  uuid: cc101ff1-3452-41c3-89fe-c2a5a20dc6dc
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-43.247.134.8...
-  network: tcp
-  port: '47010'
-  server: 43.247.134.85
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-206.237.10.1...
-  network: tcp
-  port: '1058'
-  server: 206.237.10.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ca5837a2-4b67-4d5e-9473-80cc204d899c
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
@@ -1017,42 +935,72 @@ proxies:
       Host: djdjjrjjrhk.lzj520hxw.dpdns.org
     path: /vmess-argo
 - alterId: 0
-  cipher: aes-256-gcm
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-82.152.164.10...
+  network: ws
+  port: 40601
+  server: 82.152.164.10
+  tls: false
+  type: vmess
+  uuid: 5c634f9c-3dd4-4d3e-97c2-9db2470cf722
+  ws-opts:
+    headers:
+      Host: us05.jssssss.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-163.53.18.21...
+  network: tcp
+  port: '19901'
+  server: 163.53.18.212
+  tls: false
+  type: vmess
+  uuid: 066b32cc-ee3d-4719-b1f0-2f202298737e
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-20.2.4.223:2...
+  network: tcp
+  port: '25630'
+  server: 20.2.4.223
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 169501c1-88a6-4419-cd22-9cd9e69df2a9
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-20.2.80.240:...
+  network: tcp
+  port: '20452'
+  server: 20.2.80.240
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 52aba3eb-0a6f-4c2f-29c6-d4b18a1d7c3e
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-82.152.165.2... #1'
+  network: tcp
+  port: '21961'
+  server: 82.152.165.2
+  tls: false
+  type: vmess
+  uuid: b79d2468-b606-3803-a863-fbc8f5c4d1aa
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-82.152.165.2... #2'
+  network: tcp
+  port: '34795'
+  server: 82.152.165.2
+  tls: false
+  type: vmess
+  uuid: b79d2468-b606-3803-a863-fbc8f5c4d1aa
+- alterId: 0
   name: 37|HK
-  password: MHZUEOX3KBXAV09K
-  port: 15007
-  server: 156.245.190.16
+  password: 5c634f9c-3dd4-4d3e-97c2-9db2470cf722
+  port: 34015
+  server: 82.152.164.10
   skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|HK2
-  password: 2be0c954-4291-45ea-b47d-ca713180550b
-  port: 52612
-  server: 103.135.102.151
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 37|HK3
-  network: tcp
-  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
-  port: 12052
-  server: 185.14.47.199
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK4
-  network: tcp
-  password: 8aab51da-6b67-4bd2-b6e6-5ab3008cf53e
-  port: 443
-  server: 20.2.44.220
-  skip-cert-verify: true
-  sni: jp.iamnotagoodman.com
+  sni: jsygouer.weixin-baidu-qq.com
   tls: true
   type: trojan
   udp: true
