@@ -1,17 +1,4 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 5|加拿大 - Beauharnois - OVH SAS - ...
-  network: ws
-  port: '443'
-  server: cloudgetservice.mcloudservice.site
-  tls: true
-  type: vmess
-  uuid: 2c329585-67a8-498b-8d38-176dac806bc7
-  ws-opts:
-    headers:
-      Host: cloudgetservice.mcloudservice.site
-    path: /linkws
 - cipher: aes-256-gcm
   name: 8|🇨🇦CA-134.195.196.51-063_1@63
   password: pKEW8JPByTVTLtM
@@ -400,20 +387,6 @@ proxies:
     headers:
       Host: us4Bb5oSgJA.fzbqfrse.xyz
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 9|🇨🇦 0|🇨🇦 加拿大 101 | 1x CA
-  password: 504afb1c-dfdb-482f-91d5-e4d0208564f9
-  port: 36441
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 9|🇨🇦 3|🇨🇦加拿大 101 | 1x CA
-  password: c1e4c6ed-7823-446b-bb02-fd8fcff539fd
-  port: 31441
-  server: freem.vidalith.com
-  type: ss
-  udp: true
 - delay: 1303
   name: 10|加拿大 005
   network: ws
@@ -500,19 +473,21 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 23|🇨🇦_CA_加拿大
+  name: '20,21|🇨🇦CA-134.195.198.147-7144 #1'
   network: ws
   port: 443
-  server: 158.51.121.36
-  skip-cert-verify: true
+  server: 134.195.198.147
+  servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      Host: inna.cfd
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 24|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
+  name: 20,21,24|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
   network: ws
   port: 80
   server: 51.79.102.253
@@ -524,6 +499,18 @@ proxies:
     headers:
       Host: 51.79.102.253
     path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
+  name: 23|🇨🇦_CA_加拿大
+  network: ws
+  port: 443
+  server: 158.51.121.36
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
 - cipher: chacha20-ietf-poly1305
   name: 30|0|🇦加拿大 01 | 1x CA
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -539,7 +526,22 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 40|CA_speednode_0022
+  name: 40|CA_speednode_0036
+  network: ws
+  port: 8880
+  server: 104.234.239.63
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- client-fingerprint: chrome
+  name: 40|CA_speednode_0037
   network: ws
   port: 8880
   server: 104.234.239.213
@@ -554,7 +556,22 @@ proxies:
       Host: jp.laoyoutiao.link
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 40|CA_speednode_0023
+  name: 40|CA_speednode_0038
+  network: ws
+  port: 8880
+  server: 74.49.215.63
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- client-fingerprint: chrome
+  name: 40|CA_speednode_0039
   network: ws
   port: 8880
   server: 74.49.215.213
@@ -569,10 +586,10 @@ proxies:
       Host: jp.laoyoutiao.link
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 40|CA_speednode_0024
+  name: 40|CA_speednode_0040
   network: ws
   port: 8880
-  server: 74.49.214.213
+  server: 74.49.214.63
   servername: jp.laoyoutiao.link
   skip-cert-verify: false
   tls: false
@@ -582,4 +599,4 @@ proxies:
   ws-opts:
     headers:
       Host: jp.laoyoutiao.link
-    path: /?ed=2560
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560

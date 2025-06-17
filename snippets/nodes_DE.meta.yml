@@ -38,7 +38,7 @@ proxies:
   uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
 - client-fingerprint: safari
   flow: xtls-rprx-vision-udp443
-  name: 5|1|🇩🇪6 |  4.3MB/s|0%|Disney|Ope...
+  name: 5|3|🇩🇪6 |  4.3MB/s|0%|Disney|Ope...
   port: 443
   server: 204.10.194.78
   servername: yfnl1.xn--4gq62f52gppi29k.com
@@ -62,20 +62,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- cipher: chacha20-ietf-poly1305
-  name: 9|🇩🇪 0|🇩🇪 德国 101 | 1x DE
-  password: 504afb1c-dfdb-482f-91d5-e4d0208564f9
-  port: 36471
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 9|🇩🇪 3|🇩🇪德国 101 | 1x DE
-  password: c1e4c6ed-7823-446b-bb02-fd8fcff539fd
-  port: 31471
-  server: freem.vidalith.com
-  type: ss
-  udp: true
 - name: 13|🇩🇪_DE_德国_1
   network: tcp
   password: 4732adfa16c6450bbef87264e41332db
@@ -111,12 +97,38 @@ proxies:
     headers:
       host: irvideo.cfd
     path: /linkws
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇩🇪DE-185.177.229.245-1080
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
 - cipher: aes-256-cfb
   name: 19|🇩🇪DE-80.92.204.106-6032
   password: rpgbNnU9rDDU4aWZ
   port: 9094
   server: 80.92.204.106
   type: ss
+- cipher: aes-256-cfb
+  name: 19|🇩🇪DE-80.92.204.106-3215
+  password: M3t2ZEQcMGRWBjRa
+  port: 9011
+  server: 80.92.204.106
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-57.129.24.125-7152 #1'
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: '20,21|🇩🇪DE-132.145.232.171-1024 #1'
@@ -147,35 +159,13 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-45.12.138.47...
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-188.245.10...
   network: tcp
-  port: '22839'
-  server: 45.12.138.47
-  servername: ''
+  port: 23890
+  server: 188.245.109.124
   tls: false
   type: vmess
-  uuid: 2858a404-d0ca-4d67-80a6-ce8e95e383ff
-- alterId: 0
-  cipher: auto
-  name: 36,37|未知48 1.7MB/s
-  network: tcp
-  port: 54757
-  server: 45.12.138.82
-  servername: TM_@AZARBAYJAB1
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: cde9f074-c930-4aa3-a558-46bbc9d0a5a1
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-37.221.125.1...
-  network: tcp
-  port: '33940'
-  server: 37.221.125.159
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
+  uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
@@ -188,13 +178,24 @@ proxies:
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-188.245.10...
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-37.221.125.1...
   network: tcp
-  port: 23890
-  server: 188.245.109.124
+  port: '33940'
+  server: 37.221.125.159
+  servername: ''
   tls: false
   type: vmess
-  uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
+  uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-45.12.138.47...
+  network: tcp
+  port: '22839'
+  server: 45.12.138.47
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2858a404-d0ca-4d67-80a6-ce8e95e383ff
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇩🇪 DE-57.129.24.12...
@@ -223,83 +224,18 @@ proxies:
     headers:
       Host: ''
     path: /
-- client-fingerprint: chrome
-  name: 40|DE_speednode_0049
-  network: ws
-  port: 8880
-  server: 140.99.233.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-45.12.138.82...
+  network: tcp
+  port: '54757'
+  server: 45.12.138.82
+  servername: TM_@AZARBAYJAB1
   tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
+  type: vmess
+  uuid: cde9f074-c930-4aa3-a558-46bbc9d0a5a1
 - client-fingerprint: chrome
-  name: 40|DE_speednode_0050
-  network: ws
-  port: 8880
-  server: 5.10.214.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 40|DE_speednode_0051
-  network: ws
-  port: 8880
-  server: 5.10.215.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 40|DE_speednode_0052
-  network: ws
-  port: 8880
-  server: 45.80.111.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 40|DE_speednode_0053
-  network: ws
-  port: 8880
-  server: 89.116.46.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 40|DE_speednode_0054
+  name: 40|DE_speednode_0065
   network: ws
   port: 8880
   server: 77.37.33.213
@@ -314,10 +250,10 @@ proxies:
       Host: jp.laoyoutiao.link
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 40|DE_speednode_0055
+  name: 40|DE_speednode_0066
   network: ws
   port: 8880
-  server: 188.244.122.213
+  server: 5.10.215.213
   servername: jp.laoyoutiao.link
   skip-cert-verify: false
   tls: false
@@ -329,10 +265,128 @@ proxies:
       Host: jp.laoyoutiao.link
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 40|DE_speednode_0056
+  name: 40|DE_speednode_0067
   network: ws
   port: 8880
-  server: 185.135.9.213
+  server: 185.135.9.63
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- client-fingerprint: chrome
+  name: 40|DE_speednode_0068
+  network: ws
+  port: 8880
+  server: 89.116.46.63
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- client-fingerprint: chrome
+  name: 40|DE_speednode_0069
+  network: ws
+  port: 8880
+  server: 77.37.33.63
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- name: 40|DE_speednode_0070
+  network: ws
+  port: 80
+  server: 45.80.111.55
+  servername: uuhUHYygEsdFGH.UYHJHGvgFcjGUJhbUIlbVFDxDxM.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: uuhUHYygEsdFGH.UYHJHGvgFcjGUJhbUIlbVFDxDxM.xyz
+    path: /Telegram:@AZARBAYJAB1/?ed=2560
+- client-fingerprint: chrome
+  name: 40|DE_speednode_0071
+  network: ws
+  port: 8880
+  server: 188.244.122.63
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- client-fingerprint: chrome
+  name: 40|DE_speednode_0072
+  network: ws
+  port: 8880
+  server: 5.175.141.63
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- client-fingerprint: chrome
+  name: 40|DE_speednode_0073
+  network: ws
+  port: 8880
+  server: 5.182.34.63
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- name: 40|DE_speednode_0074
+  network: ws
+  port: 80
+  server: 45.80.111.55
+  servername: uuhUHYygEsdFGH.UYHJHGvgFcjGUJhbUIlbVFDxDxM.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: uuhUHYygEsdFGH.UYHJHGvgFcjGUJhbUIlbVFDxDxM.xyz
+    path: /Telegram:@V2ray_Alpha/?ed=2560
+- client-fingerprint: chrome
+  name: 40|DE_speednode_0075
+  network: ws
+  port: 8880
+  server: 89.116.46.213
   servername: jp.laoyoutiao.link
   skip-cert-verify: false
   tls: false
@@ -344,10 +398,10 @@ proxies:
       Host: jp.laoyoutiao.link
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 40|DE_speednode_0057
+  name: 40|DE_speednode_0076
   network: ws
   port: 8880
-  server: 5.175.141.213
+  server: 140.99.233.63
   servername: jp.laoyoutiao.link
   skip-cert-verify: false
   tls: false
@@ -357,4 +411,49 @@ proxies:
   ws-opts:
     headers:
       Host: jp.laoyoutiao.link
-    path: /?ed=2560
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- client-fingerprint: chrome
+  name: 40|DE_speednode_0077
+  network: ws
+  port: 8880
+  server: 5.10.214.63
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- client-fingerprint: chrome
+  name: 40|DE_speednode_0078
+  network: ws
+  port: 8880
+  server: 45.80.111.63
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- client-fingerprint: chrome
+  name: 40|DE_speednode_0079
+  network: ws
+  port: 8880
+  server: 5.10.215.63
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
