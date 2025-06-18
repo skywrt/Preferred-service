@@ -3,7 +3,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: vmess-grpc
-  name: 5,9,11,24,27|2|5 |  1.4MB/s|0%|Youtube|Open...
+  name: 5,9,11,24,27|3|5 |  1.4MB/s|0%|Youtube|Open...
   network: grpc
   port: 443
   server: de.vmess.comnpmjs.com
@@ -53,11 +53,14 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇩🇪DE-85.208.139.31-6186
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,37|未知155
   password: q7jwtcA0MmyYi0JddUgXXj
   port: 42037
   server: 85.208.139.31
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -95,15 +98,6 @@ proxies:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 20,21,37|未知71 859.1KB/s
-  password: JrNWMfpEq410RGNxjHCpUH
-  port: 14628
-  server: 45.150.32.13
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
   name: '20,21|🇩🇪DE-132.145.232.171-7421 #1'
   network: ws
@@ -133,14 +127,15 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-45.12.138.47...
+  name: 36,37|未知84 15.9MB/s
   network: tcp
-  port: '22839'
-  server: 45.12.138.47
-  servername: ''
-  tls: false
+  port: 54757
+  server: 45.12.138.82
+  servername: TM_@AZARBAYJAB1
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 2858a404-d0ca-4d67-80a6-ce8e95e383ff
+  uuid: cde9f074-c930-4aa3-a558-46bbc9d0a5a1
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-37.221.125.1...
@@ -153,6 +148,25 @@ proxies:
   uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-94.159.106.2...
+  network: tcp
+  port: '8877'
+  server: 94.159.106.248
+  tls: false
+  type: vmess
+  uuid: 654285e6-23fb-4073-b8de-eba90f562fe6
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-94.130.111.1...
   network: tcp
   port: '29301'
@@ -163,20 +177,11 @@ proxies:
   uuid: d18ee093-c37f-46db-97dc-950473aa2181
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-94.159.106.2...
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-45.12.138.47...
   network: tcp
-  port: '8877'
-  server: 94.159.106.248
+  port: '22839'
+  server: 45.12.138.47
+  servername: ''
   tls: false
   type: vmess
-  uuid: 654285e6-23fb-4073-b8de-eba90f562fe6
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-45.12.138.82...
-  network: tcp
-  port: '54757'
-  server: 45.12.138.82
-  servername: TM_@AZARBAYJAB1
-  tls: false
-  type: vmess
-  uuid: cde9f074-c930-4aa3-a558-46bbc9d0a5a1
+  uuid: 2858a404-d0ca-4d67-80a6-ce8e95e383ff
