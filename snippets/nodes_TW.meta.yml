@@ -9,6 +9,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 986b3bc8-d0fb-4b60-b01f-28164e44cd48
+- name: 11|13|TW_speednode_0100
+  network: ws
+  password: ttfang
+  port: 81
+  server: 220.135.202.250
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 30|0| 01 | 1x TW
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -85,21 +98,20 @@ proxies:
   name: 37|TW
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 60.249.35.96
+  server: 59.125.75.111
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
   name: 37|TW2
-  password: feac8d6d-8fcf-4ef1-9ad0-18833c9fca11
-  port: 28505
-  server: 220.130.58.136
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 125.227.86.44
   skip-cert-verify: true
-  sni: green.cdntencentmusic.com
   tls: true
-  type: trojan
-  udp: true
-- name: 40|TW_speednode_0017
+  type: ss
+- name: 40|TW_speednode_0088
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 1443
   server: twmoon1-cdn-route.couldflare-cdn.com
@@ -107,3 +119,17 @@ proxies:
   type: http
   udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
+- cipher: chacha20-ietf-poly1305
+  name: 40|TW_speednode_0089
+  password: 937f6b6168b6
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: wt8v1.kvote.cn
+    mode: websocket
+    mux: true
+    path: /oqhygtklyhwi
+    tls: true
+  port: 443
+  server: 103.137.62.194
+  type: ss
+  udp: true
