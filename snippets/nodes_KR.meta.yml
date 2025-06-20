@@ -1,5 +1,20 @@
 proxies:
-- name: 5,9,11,24,27|13,14|韩国2|@ripaojiedian
+- cipher: aes-256-cfb
+  name: '5,9,11,12,24,27|13|🇰🇷 韩国3|@ripaojiedian #1'
+  password: qwerREWQ@@
+  port: 5344
+  server: 125.141.26.14
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 5,9,11,12,16,24,27|3|2 |  1.5MB/s|44%|Openai
+  password: qwerREWQ@@
+  port: 15098
+  server: 125.141.31.72
+  type: ss
+  udp: true
+- name: 5,9,11,24,27|13,14|2|@ripaojiedian
   network: tcp
   password: 85f133142f04dbf6547da33895cfabb3
   port: 39001
@@ -8,77 +23,13 @@ proxies:
   sni: www.yrtok.com
   type: trojan
   udp: true
-- name: 5|14|KR_speednode_0046
-  network: ws
-  password: ttfang
-  port: 13364
-  server: 59.26.30.111
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: /
-- name: 5|14|KR_speednode_0049
-  network: ws
-  password: ttfang
-  port: 17682
-  server: 59.26.30.111
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: /
-- name: 5|13|KR_speednode_0048
-  network: ws
-  password: ttfang
-  port: 34529
-  server: 112.165.17.199
-  skip-cert-verify: false
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: /
-- name: 5,9,11,24,27|13,14||@ripaojiedian
-  network: tcp
+- name: '9,24|🇰🇷 12,13|韩国|@ripaojiedian #1'
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
   port: 21056
   server: 120.233.44.201
   skip-cert-verify: false
   sni: k14.tudou211.com
   type: trojan
-  udp: true
-- name: 5|13|KR_speednode_0047
-  network: ws
-  password: ttfang
-  port: 36840
-  server: 59.26.30.111
-  skip-cert-verify: false
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: /
-- cipher: aes-256-cfb
-  name: 5,9,11,12,20,21,24,27|13|🇰🇷 韩国3|@ripaojiedian
-  password: qwerREWQ@@
-  port: 5344
-  server: 125.141.26.14
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 5,9,11,12,16,24,27|2|2 |  1.5MB/s|44%|Openai
-  password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
-  type: ss
   udp: true
 - name: 17|韩国(yudou66.com 玉豆免费节点)
   network: ws
@@ -207,13 +158,16 @@ proxies:
   skip-cert-verify: false
   sni: ttfang.fange.me
   type: trojan
-- name: '24|🇰🇷 _韩国 #13'
+- alterId: 0
+  name: 24,37|🇷KR
   password: ttfang
   port: 11815
   server: 59.11.31.107
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: ttfang.fange.me
+  tls: true
   type: trojan
+  udp: true
 - name: 26|V2-韩国03∣K16线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21017

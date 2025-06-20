@@ -1,4 +1,24 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: '5,11,27|14|日本4|@ripaojiedian #1'
+  network: tcp
+  port: '10331'
+  server: 45.159.50.131
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0a75ed35-1138-4991-88a0-9b2a59702fce
+- alterId: 0
+  cipher: auto
+  name: '5,11,24,27|14|日本v2|@ripaojiedian #1'
+  network: kcp
+  port: '36668'
+  server: 8.211.175.53
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b798372a-54c8-4597-969e-8b00d2f76c09
 - cipher: aes-256-gcm
   name: 5,9,11,24,27,40|CN_speednode_0001
   password: dwz1GtF7
@@ -7,38 +27,9 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 5,11,24,27|14|日本v2|@ripaojiedian
-  network: kcp
-  port: '36668'
-  server: 8.211.175.53
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b798372a-54c8-4597-969e-8b00d2f76c09
-- alterId: 0
-  cipher: auto
-  name: 5,11,24,27|14|日本4|@ripaojiedian
-  network: tcp
-  port: '41302'
-  server: 183.236.51.38
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 5,9,11,24,27|13,14|日本3|@ripaojiedian
-  network: tcp
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 203.156.253.11
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  type: trojan
-  udp: true
 - alterId: 64
   cipher: auto
-  name: 5,9,11,24,27|2|1 |  1.8MB/s|54%|Youtube|Ope...
+  name: 5,9,11,24,27|3|1 |  1.8MB/s|54%|Youtube|Ope...
   network: ws
   port: 1443
   server: sslvpn.51job.com
@@ -87,19 +78,26 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
+- name: '9,24|🇯🇵 12,13|日本3|@ripaojiedian #1'
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 203.156.253.11
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 9,11,23,27|13|🇵 日本4|@ripaojiedian
+  name: 9,23|二爷翻墙_76
   port: 41302
   server: 183.236.51.38
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-gcm
-  name: 9,11,27,40|NN_speednode_0011
+  name: 9,40|NN_speednode_0011
   password: b44864e5b56d
   plugin: v2ray-plugin
   plugin-opts:
@@ -110,11 +108,10 @@ proxies:
     tls: true
   port: 443
   server: 163.61.206.64
-  tfo: false
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 9,11,27|13|🇵 |@ripaojiedian
+  name: 9|🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -122,7 +119,6 @@ proxies:
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
-  tfo: false
   type: ss
   udp: true
 - name: 10|日本 001
@@ -136,6 +132,31 @@ proxies:
     headers:
       Host: epme.ambercc.filegear-sg.me
     path: /
+- cipher: aes-256-gcm
+  name: 11,27|13|🇵 日本2|@ripaojiedian
+  password: 264727317ef6
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: kr9v1.3ci.xyz
+    mode: websocket
+    mux: true
+    path: /ylikhqxcjfeb
+    skip-cert-verify: false
+    tls: true
+  port: 34808
+  server: kr9v1.3ci.xyz
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 11,27|13|🇵 日本4|@ripaojiedian
+  port: 10331
+  server: 45.159.50.131
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 0a75ed35-1138-4991-88a0-9b2a59702fce
 - cipher: aes-128-gcm
   name: 19|🇯🇵JP-149.22.87.240-1055
   password: shadowsocks
@@ -342,7 +363,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 30|12|🇵 日本2|@ripaojiedian
+  name: '30|12|🇵 日本2|@ripaojiedian #1'
   port: 23919
   server: hzz9.fgmcx.top
   skip-cert-verify: false
@@ -367,7 +388,7 @@ proxies:
   tls: false
   type: vmess
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
-- name: '30|12|🇯🇵 日本5|@ripaojiedian #1'
+- name: '30|12|🇯🇵 日本5|@ripaojiedian #2'
   network: ws
   password: ji0612uenfs
   port: 8080
@@ -398,7 +419,7 @@ proxies:
   uuid: be443689-bc64-49ff-85a5-8eecaa2235d3
 - alterId: 0
   cipher: auto
-  name: '30|13|日本4|@ripaojiedian #1'
+  name: '30|13|日本4|@ripaojiedian #2'
   network: tcp
   port: 17233
   server: 81f6bf37-sutj40-svgpxu-y2gs.cm5.p5pv.com
@@ -418,6 +439,15 @@ proxies:
   uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
+  network: tcp
+  port: '30101'
+  server: 167.179.93.158
+  tls: false
+  type: vmess
+  uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-154.55.122.23...
   network: ws
   port: 8000
@@ -429,12 +459,3 @@ proxies:
     headers:
       Host: www.bing.com
     path: /nmkj
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
-  network: tcp
-  port: '30101'
-  server: 167.179.93.158
-  tls: false
-  type: vmess
-  uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
