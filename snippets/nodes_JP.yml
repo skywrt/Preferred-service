@@ -1,13 +1,15 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 5,9,11,24,27,40|CN_speednode_0001
-  password: dwz1GtF7
-  port: 30232
-  server: 112.54.160.36
-  tfo: false
-  type: ss
-  udp: true
-- name: '5,11,24,27|日本3|@ripaojiedian #1'
+- alterId: 0
+  cipher: auto
+  name: 5,11,24,36|🔒 VM-KCP-NA 🇯🇵 JP-8.211.175.53...
+  network: kcp
+  port: '36668'
+  server: 8.211.175.53
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b798372a-54c8-4597-969e-8b00d2f76c09
+- name: '5,9,11,24|🇯🇵 日本3|@ripaojiedian #3'
   network: tcp
   password: 278d70a0-ac4b-41fd-a66a-8bd84cdd852c
   port: 28713
@@ -15,11 +17,12 @@ proxies:
   skip-cert-verify: true
   sni: mmbiz1.redapricotcloud.com
   type: trojan
+  udp: true
 - alterId: 64
   cipher: auto
-  name: 5,9,11,24,27|1 |  1.8MB/s|54%|Youtube|Ope.....
+  name: '5,9,11,24|1 |  1.8MB/s|54%|Youtube|Ope..... #2'
   network: ws
-  port: 1443
+  port: '1443'
   server: sslvpn.51job.com
   skip-cert-verify: true
   tfo: false
@@ -31,16 +34,6 @@ proxies:
     headers:
       Host: centos7
     path: /634c5c4f9782
-- alterId: 0
-  cipher: auto
-  name: 5,11,24,27,36|🔒 VM-KCP-NA 🇯🇵 JP-8.211.175.53...
-  network: kcp
-  port: '36668'
-  server: 8.211.175.53
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b798372a-54c8-4597-969e-8b00d2f76c09
 - alterId: 0
   cipher: auto
   name: 5|日本 - 东京 - Eons Data Communicat...
@@ -77,61 +70,7 @@ proxies:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
 - cipher: aes-256-gcm
-  name: 9|🇯🇵 12|🇯🇵 日本2|@ripaojiedian
-  password: 264727317ef6
-  port: 34808
-  server: kr9v1.3ci.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 9|🇯🇵 13|日本4|@ripaojiedian
-  port: 10331
-  server: 45.159.50.131
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0a75ed35-1138-4991-88a0-9b2a59702fce
-- cipher: aes-256-gcm
-  name: 9|🇯🇵 日本2|@ripaojiedian
-  password: 264727317ef6
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: kr9v1.3ci.xyz
-    mode: websocket
-    mux: true
-    path: /ylikhqxcjfeb
-    skip-cert-verify: false
-    tls: true
-  port: 34808
-  server: kr9v1.3ci.xyz
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 9|🇯🇵 日本|@ripaojiedian
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202506131022370-aYizjb0Fb6.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  type: ss
-  udp: true
-- name: 10|日本 001
-  network: ws
-  password: Aimer
-  port: 443
-  server: 103.116.7.248
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epme.ambercc.filegear-sg.me
-    path: /
-- cipher: aes-256-gcm
-  name: 11,27|🇵 日本2|@ripaojiedian
+  name: 9,11|12|🇵 日本2|@ripaojiedian
   password: 9acff807c3cc
   plugin: v2ray-plugin
   plugin-opts:
@@ -145,6 +84,30 @@ proxies:
   server: 163.61.206.64
   tfo: false
   type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 9,11|12|🇵 |@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202506131022370-otfFVq2eVC.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+  udp: true
+- name: 10|日本 001
+  network: ws
+  password: Aimer
+  port: 443
+  server: 103.116.7.248
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epme.ambercc.filegear-sg.me
+    path: /
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|日本(JP)Japan/Tokyo_38
@@ -335,7 +298,7 @@ proxies:
   tls: false
   type: vmess
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
-- name: '30|12|🇯🇵 日本5|@ripaojiedian #2'
+- name: '30|12|🇯🇵 日本5|@ripaojiedian #1'
   network: ws
   password: ji0612uenfs
   port: 8080
@@ -376,15 +339,6 @@ proxies:
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
-  network: tcp
-  port: '30101'
-  server: 167.179.93.158
-  tls: false
-  type: vmess
-  uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
   network: tcp
   port: '27750'
@@ -393,6 +347,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
+  network: tcp
+  port: '30101'
+  server: 167.179.93.158
+  tls: false
+  type: vmess
+  uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-154.55.122.23...
@@ -416,3 +379,17 @@ proxies:
   tls: false
   type: vmess
   uuid: c06797d5-fa41-4b48-b132-d268d2acb302
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-43.207.67.77...
+  network: ws
+  port: 42359
+  server: 43.207.67.77
+  servername: 0000000000000000000000000078.cgroup-node-for-bigairport.sbs
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000078.cgroup-node-for-bigairport.sbs
+    path: /
