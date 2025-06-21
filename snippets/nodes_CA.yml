@@ -415,12 +415,6 @@ proxies:
     headers:
       Host: www.bing.com
     path: github.com/Alvin9999
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇨🇦CA-142.4.216.225-0373
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -436,6 +430,12 @@ proxies:
     headers:
       host: 51.79.102.253
     path: /IOebhLMhl1CTbFHbL95myfRX2
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇨🇦CA-142.4.216.225-0373
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
 - alterId: 0
   cipher: auto
   name: '20,21|🇨🇦CA-134.195.198.147-6987 #1'
@@ -506,6 +506,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-51.79.86.182...
+  network: tcp
+  port: '42610'
+  server: 51.79.86.182
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e0957ca6-f613-4017-ff3c-effd1da8871a
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53...
   network: tcp
   port: '37333'
@@ -526,17 +536,18 @@ proxies:
   uuid: 62f2d17e-a607-4f8f-d25d-92a0958ca1a9
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇨🇦 CA-141.195.112.5...
+  name: 36|🔒 VM-WS-NA 🇨🇦 CA-158.69.48.14:...
   network: ws
-  port: '20022'
-  server: 141.195.112.53
+  port: '10000'
+  server: 158.69.48.14
+  servername: ''
   tls: false
   type: vmess
-  uuid: cfb611bf-c93e-413b-b04c-3090f4f7cbbb
+  uuid: fe25808a-4d7d-11f0-bd33-17ba86626747
   ws-opts:
     headers:
       Host: ''
-    path: /
+    path: /vpnjantit
 - alterId: 0
   cipher: auto
   name: '36|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #2'
@@ -549,19 +560,6 @@ proxies:
   uuid: f27a25c2-d4e4-4d0a-b75b-22e58c7784a8
 - alterId: 0
   cipher: auto
-  name: 36,37|未知143
-  network: ws
-  port: 10000
-  server: 158.69.48.14
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: fe25808a-4d7d-11f0-bd33-17ba86626747
-  ws-opts:
-    path: /vpnjantit
-- alterId: 0
-  cipher: auto
   name: '36|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #3'
   network: tcp
   port: '33230'
@@ -572,11 +570,14 @@ proxies:
   uuid: 780ab182-b50d-462d-c027-38d9d69c1721
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-51.79.86.182...
-  network: tcp
-  port: '42610'
-  server: 51.79.86.182
-  servername: ''
+  name: 36|🔒 VM-WS-NA 🇨🇦 CA-141.195.112.5...
+  network: ws
+  port: '20022'
+  server: 141.195.112.53
   tls: false
   type: vmess
-  uuid: e0957ca6-f613-4017-ff3c-effd1da8871a
+  uuid: cfb611bf-c93e-413b-b04c-3090f4f7cbbb
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
