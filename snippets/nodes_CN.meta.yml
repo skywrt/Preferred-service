@@ -1,7 +1,7 @@
 proxies:
-- name: '5,9,11,12,24,27|香港3|@ripaojiedian #1'
+- name: 5,9,11,12,24,27,28|yandex-3820
   network: tcp
-  password: 85f133142f04dbf6547da33895cfabb3
+  password: b6200af42ccadea353f5b5856dd20d70
   port: 39001
   server: 120.233.128.68
   skip-cert-verify: true
@@ -15,13 +15,15 @@ proxies:
   skip-cert-verify: false
   sni: www.yrtok.com
   type: trojan
-- name: '5,9,12,16,24|14|CN_speednode_0023 #3'
+- alterId: 0
+  name: '5,9,12,16,24,28,37|未命名 #1'
   network: tcp
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
   port: 21179
   server: 120.233.44.201
   skip-cert-verify: true
   sni: k30.tudou211.com
+  tls: true
   type: trojan
   udp: true
 - name: '5,38|🇨🇳_CN_中国_38 #1'
@@ -113,7 +115,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-gcm
-  name: 5,12,28|yandex-352
+  name: 5,12,28|yandex-744
   password: 449ddcc8-28b6-4dda-bbbc-d473dc243b0b
   port: 54831
   server: zf2.10101251.xyz
@@ -854,7 +856,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 24|🇨🇳 广东省湛江市 移动
+  name: '24,36|🔒 VM-TCP-NA 🇨🇳 CN-120.198.71.2... #1'
   network: tcp
   port: '41175'
   server: 120.198.71.214
@@ -863,12 +865,14 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 24|🇨🇳 吉林省 移动(全省通用)
+  name: 24,28|yandex-3662
   network: ws
-  port: '30840'
+  port: 30840
   server: v40.heduian.link
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
@@ -1149,6 +1153,33 @@ proxies:
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇨🇳 CN-120.232.17.7...
+  network: ws
+  port: 33202
+  server: 120.232.17.70
+  servername: yd2.ainivp.com
+  tls: true
+  type: vmess
+  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
+  ws-opts:
+    headers:
+      Host: yd2.ainivp.com
+    path: /ray
+- alterId: 2
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇨🇳 CN-111.26.109.79...
+  network: ws
+  port: 30829
+  server: 111.26.109.79
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇨🇳 CN-183.236.51.1...
   network: ws
   port: '35111'
@@ -1163,20 +1194,6 @@ proxies:
     path: /home
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇨🇳 CN-120.253.242....
-  network: ws
-  port: '35244'
-  server: 120.253.242.194
-  servername: jp4.vip2.g2.moonbase.life
-  tls: true
-  type: vmess
-  uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
-  ws-opts:
-    headers:
-      Host: jp4.vip2.g2.moonbase.life
-    path: /home
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇳 CN-120.26.55.22...
   network: tcp
   port: '50002'
@@ -1187,11 +1204,60 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇳 CN-120.198.71.2...
+  network: tcp
+  port: '59082'
+  server: 120.198.71.216
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-WS-NA 🇨🇳 CN-111.26.109.79... #1'
+  network: ws
+  port: '30840'
+  server: 111.26.109.79
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: api100-core-quic-lf.amemv.com
+    path: /index
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇨🇳 CN-125.124.254.5...
+  network: ws
+  port: '1080'
+  server: 125.124.254.5
+  tls: false
+  type: vmess
+  uuid: 46cfcfe1-e450-459d-a3ab-9406011ab3eb
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇨🇳 CN-120.253.242....
+  network: ws
+  port: '35214'
+  server: 120.253.242.194
+  servername: jp4.g2.moonbase.life
+  tls: true
+  type: vmess
+  uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
+  ws-opts:
+    headers:
+      Host: web.xcjs.info
+    path: /home
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-TLS 🇨🇳 CN-36.150.94.79...
   network: ws
-  port: '35216'
+  port: '35246'
   server: 36.150.94.79
-  servername: jp6.g2.moonbase.life
+  servername: jp6.vip2.g2.moonbase.life
   tls: true
   type: vmess
   uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
@@ -1213,27 +1279,27 @@ proxies:
     headers:
       Host: web.xcjs.info
     path: /home
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: '36|🔒 VM-WS-TLS 🇨🇳 CN-120.253.242.... #1'
+  name: 36|🔒 VM-WS-TLS 🇨🇳 CN-134.175.197....
   network: ws
-  port: '35214'
-  server: 120.253.242.194
-  servername: jp4.g2.moonbase.life
+  port: 22643
+  server: 134.175.197.167
+  servername: zxjp-c.tkong.cc
   tls: true
   type: vmess
-  uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
   ws-opts:
     headers:
-      Host: web.xcjs.info
-    path: /home
+      Host: zxjp-c.tkong.cc
+    path: /
 - alterId: 0
   cipher: auto
   name: '36|🔒 VM-WS-TLS 🇨🇳 CN-36.150.94.79... #1'
   network: ws
-  port: '35246'
+  port: '35216'
   server: 36.150.94.79
-  servername: jp6.vip2.g2.moonbase.life
+  servername: jp6.g2.moonbase.life
   tls: true
   type: vmess
   uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
@@ -1241,3 +1307,30 @@ proxies:
     headers:
       Host: web.xcjs.info
     path: /home
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-WS-TLS 🇨🇳 CN-120.253.242.... #1'
+  network: ws
+  port: '35244'
+  server: 120.253.242.194
+  servername: jp4.vip2.g2.moonbase.life
+  tls: true
+  type: vmess
+  uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
+  ws-opts:
+    headers:
+      Host: jp4.vip2.g2.moonbase.life
+    path: /home
+- alterId: 2
+  cipher: auto
+  name: '36|🔒 VM-WS-NA 🇨🇳 CN-111.26.109.79... #3'
+  network: ws
+  port: '30809'
+  server: 111.26.109.79
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
