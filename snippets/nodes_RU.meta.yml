@@ -123,12 +123,36 @@ proxies:
     headers:
       Host: ap.ylks.xyz
     path: '%2Fblue'
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇷🇺RU-45.151.62.54-0385
-  password: 0zyDRZ1XmNXaaCAN7KEA8a
-  port: 28825
-  server: 45.151.62.54
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 19,20,21,37|未知22 1.5MB/s
+  password: 4194ce5b1f36f660
+  port: 50120
+  server: 176.32.35.68
+  skip-cert-verify: true
+  tls: true
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇷🇺RU-185.126.239.250-5069
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.239.250
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20,21,28,36|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23...
+  network: ws
+  port: '23105'
+  server: 45.147.201.231
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 05ca1efa-452f-460a-8a9f-9ffcdd3194bc
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 23|🇷🇺_RU_俄罗斯联邦
@@ -198,6 +222,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-176.32.35.148...
+  network: ws
+  port: '21013'
+  server: 176.32.35.148
+  tls: false
+  type: vmess
+  uuid: 01d8ffc6-092e-46d5-8a09-6766f2bb2188
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - client-fingerprint: chrome
   name: 40|RU_speednode_0075
   network: ws

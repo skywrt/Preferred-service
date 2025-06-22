@@ -1,4 +1,11 @@
 proxies:
+- cipher: rc4-md5
+  name: 5,9|🇨🇳 台湾2|@ripaojiedian
+  password: Paofu
+  port: 1176
+  server: yd-03.paofunlink.com
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5,11,24,36|🔒 VM-KCP-NA 🇹🇼 TW-118.194.253....
@@ -9,20 +16,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 986b3bc8-d0fb-4b60-b01f-28164e44cd48
-- alterId: 0
-  cipher: auto
-  name: '5,20,21|🇹🇼TW-111.243.96.82-0759 #2'
-  network: ws
-  port: 80
-  server: twjxlnnoljxc.jkhkgj.xyz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b0af4d14-db9d-4217-b010-5fd2a4b80590
-  ws-opts:
-    headers:
-      Host: file.dingtalk.com
-    path: /market/tw?ed=512
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -114,16 +107,26 @@ proxies:
   name: 37|TW
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 125.227.86.45
+  server: 211.72.214.65
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
+  cipher: aes-256-gcm
   name: 37|TW2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 61.216.165.234
+  password: D9EOTB2JHFUCARRA
+  port: 21005
+  server: 150.116.11.9
   skip-cert-verify: true
   tls: true
   type: ss
+- alterId: 0
+  name: 37|TW3
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 443
+  server: 210.203.60.190
+  skip-cert-verify: true
+  sni: 45.32.28.232
+  tls: true
+  type: trojan
+  udp: true
