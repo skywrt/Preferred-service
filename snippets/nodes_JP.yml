@@ -1,7 +1,7 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 5,9,11|12|🇵 日本3|@ripaojiedian
-  password: 0991bb00-5a25-4c42-8205-153787512b5b
+  name: 5,9,11,24,28|yandex-4588
+  password: ed5e9284-7698-4a7b-8b67-8ca72b9efe9f
   port: 57805
   server: jp2asdfghjtyhj.aeccssssss.xyz
   tfo: false
@@ -17,13 +17,6 @@ proxies:
   tls: false
   type: vmess
   uuid: b798372a-54c8-4597-969e-8b00d2f76c09
-- cipher: aes-256-gcm
-  name: '5,9|🇯🇵 日本2|@ripaojiedian #1'
-  password: 264727317ef6
-  port: 45154
-  server: 121.0.97.29
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 5|日本 - 东京 - Eons Data Communicat...
@@ -130,20 +123,20 @@ proxies:
       host: 140.238.48.194
     path: /
 - alterId: 0
-  cipher: aes-256-gcm
-  name: 24,37|JP
-  password: 9acff807c3cc
-  port: 443
-  server: 163.61.206.64
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- name: '24|🇯🇵 日本3|@ripaojiedian #4'
-  password: 278d70a0-ac4b-41fd-a66a-8bd84cdd852c
-  port: 28713
-  server: wb.kaiqsz.com
-  skip-cert-verify: true
-  sni: mmbiz1.redapricotcloud.com
+  cipher: auto
+  name: '24,36|🔒 VM-TCP-NA 🇨🇳 CN-120.198.71.2... #4'
+  network: tcp
+  port: '31180'
+  server: 120.198.71.214
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 24|🇯🇵 _日本
+  password: Aimer
+  port: 2083
+  server: 103.116.7.133
+  skip-cert-verify: false
+  sni: epmo.ambercc.filegear-sg.me
   type: trojan
 - name: 26|✪每日连接前点更新订阅
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
@@ -361,20 +354,6 @@ proxies:
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-43.207.67.77...
-  network: ws
-  port: 42359
-  server: 43.207.67.77
-  servername: 0000000000000000000000000078.cgroup-node-for-bigairport.sbs
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: 0000000000000000000000000078.cgroup-node-for-bigairport.sbs
-    path: /
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-154.55.122.23...
   network: ws
   port: 8000
@@ -386,6 +365,15 @@ proxies:
     headers:
       Host: www.bing.com
     path: /nmkj
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
+  network: tcp
+  port: '30101'
+  server: 167.179.93.158
+  tls: false
+  type: vmess
+  uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-45.159.51.11...
@@ -408,10 +396,24 @@ proxies:
   uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
-  network: tcp
-  port: '30101'
-  server: 167.179.93.158
-  tls: false
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-43.207.67.77...
+  network: ws
+  port: 42359
+  server: 43.207.67.77
+  servername: 0000000000000000000000000078.cgroup-node-for-bigairport.sbs
+  tls: true
   type: vmess
-  uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000078.cgroup-node-for-bigairport.sbs
+    path: /
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 37|JP
+  password: 9acff807c3cc
+  port: 443
+  server: 163.61.206.64
+  skip-cert-verify: true
+  tls: true
+  type: ss
