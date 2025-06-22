@@ -38,15 +38,6 @@ proxies:
       Host: lax1.ibgfw.top
     path: /xrenvws
 - alterId: 0
-  cipher: aes-256-gcm
-  name: 19,20,21,37|未知22 1.5MB/s
-  password: 4194ce5b1f36f660
-  port: 50120
-  server: 176.32.35.68
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
   name: 20,21,36|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23...
   network: ws
@@ -128,13 +119,16 @@ proxies:
   skip-cert-verify: false
   sni: epmo.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #8'
+- alterId: 0
+  name: 24,37|🇺RU
   password: Aimer
   port: 2083
   server: 46.254.93.175
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epmo.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇷🇺 _俄罗斯 #9'
   password: Aimer
   port: 2096
@@ -172,28 +166,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
-  network: tcp
-  port: '20779'
-  server: 45.12.114.15
-  tls: false
-  type: vmess
-  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇷🇺 RU-176.32.35.148...
-  network: ws
-  port: '21013'
-  server: 176.32.35.148
-  tls: false
-  type: vmess
-  uuid: 01d8ffc6-092e-46d5-8a09-6766f2bb2188
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-NA 🇷🇺 RU-31.129.105.23...
   network: ws
   port: '16231'
@@ -208,6 +180,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
+  network: tcp
+  port: '20779'
+  server: 45.12.114.15
+  tls: false
+  type: vmess
+  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-WS-NA 🇷🇺 RU-185.22.152.23...
   network: ws
   port: '23022'
@@ -215,6 +196,33 @@ proxies:
   tls: false
   type: vmess
   uuid: 0e326162-0ee0-4503-96fc-bc67ca49dacb
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-WS-NA 🇷🇺 RU-185.22.152.23... #1'
+  network: ws
+  port: 23009
+  server: 185.22.152.236
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a940fa03-5c1a-40d2-a9a3-329b724a5076
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-176.32.35.148...
+  network: ws
+  port: '21013'
+  server: 176.32.35.148
+  tls: false
+  type: vmess
+  uuid: 01d8ffc6-092e-46d5-8a09-6766f2bb2188
   ws-opts:
     headers:
       Host: ''
