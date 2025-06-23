@@ -1,4 +1,14 @@
 proxies:
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '5,9,24,37|HK #1'
+  password: 08293b204707
+  port: 48159
+  server: 156.251.179.238
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
 - alterId: 2
   cipher: auto
   name: '5,9,11,24,30|12,13|香港4|@ripaojiedian #2'
@@ -18,7 +28,7 @@ proxies:
     path: /oooo
 - alterId: 64
   cipher: auto
-  name: '5,11,24,36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3... #9'
+  name: '5,11,24,36|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3... #2'
   network: tcp
   port: '49154'
   server: 183.236.51.38
@@ -867,50 +877,68 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-18.163.55.1:...
+  network: ws
+  port: 42358
+  server: 18.163.55.1
+  servername: 0000000000000000000000000076.cgroup-node-for-bigairport.sbs
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000076.cgroup-node-for-bigairport.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-212.192.13.11...
+  network: ws
+  port: '21022'
+  server: 212.192.13.110
+  tls: false
+  type: vmess
+  uuid: 2b6bead8-60e6-4168-96be-ebdb7a19830c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-209.209.48.1...
   network: tcp
-  port: '26021'
+  port: '26024'
   server: 209.209.48.19
   tls: false
   type: vmess
   uuid: 3a6c789f-0548-4ca3-83c0-2c78acbee811
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-82.152.165.2...
-  network: tcp
-  port: '60301'
-  server: 82.152.165.2
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-212.192.13.68...
+  network: ws
+  port: '23018'
+  server: 212.192.13.68
   tls: false
   type: vmess
-  uuid: e7b9ff44-c0d0-3d85-a56d-4f0959dec88b
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
-  network: ws
-  port: '1935'
-  server: 43.154.34.74
-  servername: djdjjrjjrhk.lzj520hxw.dpdns.org
-  tls: true
-  type: vmess
-  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
+  uuid: 3d80b7a8-19e2-4b42-8881-3750c60df151
   ws-opts:
     headers:
-      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
-    path: /vmess-argo
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-45.39.199.10...
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-47.239.12.90...
   network: tcp
-  port: '15074'
-  server: 45.39.199.105
+  port: '33210'
+  server: 47.239.12.90
+  servername: ''
   tls: false
   type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+  uuid: 946056ec-f7a8-4678-ba9b-a595e8d61f24
 - alterId: 0
   cipher: auto
   name: '36|🔒 VM-TCP-NA 🇭🇰 HK-209.209.48.1... #1'
   network: tcp
-  port: '26022'
+  port: '26013'
   server: 209.209.48.19
   tls: false
   type: vmess
@@ -927,81 +955,13 @@ proxies:
   uuid: cc101ff1-3452-41c3-89fe-c2a5a20dc6dc
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-212.192.13.11...
-  network: ws
-  port: '21022'
-  server: 212.192.13.110
+  name: 36|🔒 VM-KCP-NA 🇭🇰 HK-47.239.242.1...
+  network: kcp
+  port: '26706'
+  server: 47.239.242.136
   tls: false
   type: vmess
-  uuid: 2b6bead8-60e6-4168-96be-ebdb7a19830c
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-212.192.13.68...
-  network: ws
-  port: '23018'
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  uuid: 3d80b7a8-19e2-4b42-8881-3750c60df151
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-209.209.48.1... #2'
-  network: tcp
-  port: '26013'
-  server: 209.209.48.19
-  tls: false
-  type: vmess
-  uuid: 3a6c789f-0548-4ca3-83c0-2c78acbee811
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-45.39.199.10... #1'
-  network: tcp
-  port: '15002'
-  server: 45.39.199.105
-  tls: false
-  type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-43.247.134.8...
-  network: tcp
-  port: '47010'
-  server: 43.247.134.85
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
-- alterId: 0
-  cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-209.209.48.1... #3'
-  network: tcp
-  port: '26024'
-  server: 209.209.48.19
-  tls: false
-  type: vmess
-  uuid: 3a6c789f-0548-4ca3-83c0-2c78acbee811
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-18.163.55.1:...
-  network: ws
-  port: 42358
-  server: 18.163.55.1
-  servername: 0000000000000000000000000076.cgroup-node-for-bigairport.sbs
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: 0000000000000000000000000076.cgroup-node-for-bigairport.sbs
-    path: /
+  uuid: 3949be3c-f862-4081-afca-9979bd189648
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇭🇰 HK-82.152.164.10...
@@ -1017,13 +977,40 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-38.147.189.2...
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-82.152.165.2...
   network: tcp
-  port: '21639'
-  server: 38.147.189.213
+  port: '21961'
+  server: 82.152.165.2
   tls: false
   type: vmess
-  uuid: 2d012bbb-0d12-45e5-ad35-92241360327f
+  uuid: b79d2468-b606-3803-a863-fbc8f5c4d1aa
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-82.152.165.2... #1'
+  network: tcp
+  port: '34795'
+  server: 82.152.165.2
+  tls: false
+  type: vmess
+  uuid: b79d2468-b606-3803-a863-fbc8f5c4d1aa
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-45.39.199.10...
+  network: tcp
+  port: '15074'
+  server: 45.39.199.105
+  tls: false
+  type: vmess
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-209.209.48.1... #2'
+  network: tcp
+  port: '26021'
+  server: 209.209.48.19
+  tls: false
+  type: vmess
+  uuid: 3a6c789f-0548-4ca3-83c0-2c78acbee811
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-163.53.18.21...
@@ -1035,44 +1022,101 @@ proxies:
   uuid: 066b32cc-ee3d-4719-b1f0-2f202298737e
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-82.152.165.2... #1'
-  network: tcp
-  port: '21961'
-  server: 82.152.165.2
-  tls: false
+  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
+  network: ws
+  port: '1935'
+  server: 43.154.34.74
+  servername: djdjjrjjrhk.lzj520hxw.dpdns.org
+  tls: true
   type: vmess
-  uuid: b79d2468-b606-3803-a863-fbc8f5c4d1aa
+  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
+  ws-opts:
+    headers:
+      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
+    path: /vmess-argo
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-KCP-NA 🇭🇰 HK-47.239.242.1...
-  network: kcp
-  port: '26706'
-  server: 47.239.242.136
-  tls: false
-  type: vmess
-  uuid: 3949be3c-f862-4081-afca-9979bd189648
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-47.239.12.90...
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-43.247.134.8...
   network: tcp
-  port: '33210'
-  server: 47.239.12.90
+  port: '47010'
+  server: 43.247.134.85
   servername: ''
   tls: false
   type: vmess
-  uuid: 946056ec-f7a8-4678-ba9b-a595e8d61f24
+  uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-38.147.189.2...
+  network: tcp
+  port: '21639'
+  server: 38.147.189.213
+  tls: false
+  type: vmess
+  uuid: 2d012bbb-0d12-45e5-ad35-92241360327f
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-209.209.48.1... #3'
+  network: tcp
+  port: '26022'
+  server: 209.209.48.19
+  tls: false
+  type: vmess
+  uuid: 3a6c789f-0548-4ca3-83c0-2c78acbee811
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-45.39.199.10... #1'
+  network: tcp
+  port: '15002'
+  server: 45.39.199.105
+  tls: false
+  type: vmess
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
 - alterId: 0
   cipher: auto
   name: '36|🔒 VM-TCP-NA 🇭🇰 HK-82.152.165.2... #2'
   network: tcp
-  port: '34795'
+  port: '60301'
   server: 82.152.165.2
   tls: false
   type: vmess
-  uuid: b79d2468-b606-3803-a863-fbc8f5c4d1aa
+  uuid: e7b9ff44-c0d0-3d85-a56d-4f0959dec88b
+- alterId: 0
+  name: 37|HK
+  password: 459d23f4-dcfd-4fef-9ba3-ef0ad10fc336
+  port: 443
+  server: 13.75.46.221
+  skip-cert-verify: true
+  sni: jp.mjt001.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|HK2
+  password: cd41b9d7-df15-46ad-a778-257b0851525a
+  port: 443
+  server: 52.184.65.74
+  skip-cert-verify: true
+  sni: de01.trojanyyds.xyz
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 37|HK3
+  network: ws
+  port: 1935
+  server: 43.154.34.74
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
+  ws-opts:
+    headers:
+      host: djdjjrjjrhk.lzj520hxw.dpdns.org
+    path: /vmess-argo
 - alterId: 0
   cipher: aes-256-gcm
-  name: 37|HK
+  name: 37|HK4
   password: UQ62K8G88VGBNZXO
   port: 15015
   server: 156.245.190.24
@@ -1080,31 +1124,33 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  name: 37|HK2
+  name: 37|HK5
   password: cd41b9d7-df15-46ad-a778-257b0851525a
   port: 443
-  server: 52.229.164.27
+  server: 52.175.31.234
   skip-cert-verify: true
-  sni: sg01.trojanyyds.xyz
+  sni: jp01.trojanyyds.xyz
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 37|HK3
-  password: 459d23f4-dcfd-4fef-9ba3-ef0ad10fc336
-  port: 443
-  server: 20.2.204.83
+  name: 37|HK6
+  password: b46a2da5-79eb-47d1-ad1e-30b988c0f93b
+  port: 20224
+  server: 5.83.221.31
   skip-cert-verify: true
-  sni: jp.mjt001.com
+  sni: v2usa01.fuqiangren.com
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  cipher: aes-256-gcm
-  name: 37|HK4
-  password: DW1B46PTWS3XSPYU
-  port: 15003
-  server: 156.245.190.12
+  name: 37|HK7
+  network: tcp
+  password: 030ba667-fde3-498d-99bb-9a0187519dcf
+  port: 40387
+  server: 192.142.4.64
   skip-cert-verify: true
+  sni: cdn.alibaba.com
   tls: true
-  type: ss
+  type: trojan
+  udp: true
