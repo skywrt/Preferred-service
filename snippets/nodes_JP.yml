@@ -1,4 +1,14 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 5,11,24,36|🔒 VM-KCP-NA 🇯🇵 JP-8.211.175.53...
+  network: kcp
+  port: '36668'
+  server: 8.211.175.53
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b798372a-54c8-4597-969e-8b00d2f76c09
 - alterId: 64
   cipher: auto
   name: '5,9,11,24|1 |  1.8MB/s|54%|Youtube|Ope..... #2'
@@ -15,16 +25,6 @@ proxies:
     headers:
       Host: centos7
     path: /634c5c4f9782
-- alterId: 0
-  cipher: auto
-  name: 5,11,24,36|🔒 VM-KCP-NA 🇯🇵 JP-8.211.175.53...
-  network: kcp
-  port: '36668'
-  server: 8.211.175.53
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b798372a-54c8-4597-969e-8b00d2f76c09
 - cipher: aes-256-cfb
   name: 8|🇯🇵JP-54.199.83.239-171_1@171
   password: doub.io
@@ -105,13 +105,15 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- name: 24|🇯🇵 _日本
-  password: Aimer
-  port: 2083
-  server: 103.116.7.133
-  skip-cert-verify: false
-  sni: epmo.ambercc.filegear-sg.me
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24|日期：06-23
+  network: httpupgrade
+  port: '80'
+  server: ru1a-20250420.88888009.xyz
+  tls: false
+  type: vmess
+  uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4
 - name: 26|✪每日连接前点更新订阅
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
   port: 21142
@@ -328,17 +330,46 @@ proxies:
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-103.168.155....
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
+  network: tcp
+  port: '30101'
+  server: 167.179.93.158
+  tls: false
+  type: vmess
+  uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
+  network: tcp
+  port: '27750'
+  server: 5.253.41.147
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-45.89.109.43...
+  network: tcp
+  port: '51039'
+  server: 45.89.109.43
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 12947e56-ab80-43bf-9145-72fa50e41c9a
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-54.238.188.5...
   network: ws
-  port: 888
-  server: 103.168.155.40
-  servername: cdn.cjhh.lol
+  port: 11443
+  server: 54.238.188.55
+  servername: tls.01.node-for-bigairport.win
   tls: true
   type: vmess
-  uuid: 8d994cc0-a8a7-4f66-b1e4-771c7e7c6ecd
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
   ws-opts:
     headers:
-      Host: cdn.cjhh.lol
+      Host: tls.01.node-for-bigairport.win
     path: /
 - alterId: 0
   cipher: auto
@@ -356,14 +387,41 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-45.89.109.43...
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-3.113.9.100:...
+  network: ws
+  port: 23443
+  server: 3.113.9.100
+  servername: tls.04.node-for-bigairport.win
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: tls.04.node-for-bigairport.win
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-45.159.51.18...
   network: tcp
-  port: '51039'
-  server: 45.89.109.43
-  servername: ''
+  port: '55128'
+  server: 45.159.51.189
   tls: false
   type: vmess
-  uuid: 12947e56-ab80-43bf-9145-72fa50e41c9a
+  uuid: 84f9bc0e-400f-4839-98b5-637d5e9c6606
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-43.207.67.77...
+  network: ws
+  port: 42359
+  server: 43.207.67.77
+  servername: 0000000000000000000000000078.cgroup-node-for-bigairport.sbs
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000078.cgroup-node-for-bigairport.sbs
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇯🇵 JP-54.238.143.8...
@@ -378,16 +436,6 @@ proxies:
     headers:
       Host: 0000000000000000000000000071.cgroup-node-for-bigairport.sbs
     path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-45.159.51.11...
-  network: tcp
-  port: '48019'
-  server: 45.159.51.116
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c06797d5-fa41-4b48-b132-d268d2acb302
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇯🇵 JP-18.183.80.19...
@@ -417,51 +465,14 @@ proxies:
     path: /nmkj
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-45.159.51.11...
   network: tcp
-  port: '27750'
-  server: 5.253.41.147
+  port: '48019'
+  server: 45.159.51.116
   servername: ''
   tls: false
   type: vmess
-  uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-3.113.9.100:...
-  network: ws
-  port: 23443
-  server: 3.113.9.100
-  servername: tls.04.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: tls.04.node-for-bigairport.win
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-45.159.51.18...
-  network: tcp
-  port: '55128'
-  server: 45.159.51.189
-  tls: false
-  type: vmess
-  uuid: 84f9bc0e-400f-4839-98b5-637d5e9c6606
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-54.238.188.5...
-  network: ws
-  port: 11443
-  server: 54.238.188.55
-  servername: tls.01.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: tls.01.node-for-bigairport.win
-    path: /
+  uuid: c06797d5-fa41-4b48-b132-d268d2acb302
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇯🇵 JP-52.193.21.25...
@@ -492,24 +503,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
-  network: tcp
-  port: '30101'
-  server: 167.179.93.158
-  tls: false
-  type: vmess
-  uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-43.207.67.77...
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-103.168.155....
   network: ws
-  port: 42359
-  server: 43.207.67.77
-  servername: 0000000000000000000000000078.cgroup-node-for-bigairport.sbs
+  port: 888
+  server: 103.168.155.40
+  servername: cdn.cjhh.lol
   tls: true
   type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  uuid: 8d994cc0-a8a7-4f66-b1e4-771c7e7c6ecd
   ws-opts:
     headers:
-      Host: 0000000000000000000000000078.cgroup-node-for-bigairport.sbs
+      Host: cdn.cjhh.lol
     path: /
