@@ -15,13 +15,6 @@ proxies:
     headers:
       Host: centos7
     path: /634c5c4f9782
-- cipher: aes-256-gcm
-  name: '5,11|12|🇯🇵 日本3|@ripaojiedian #1'
-  password: dwz1GtF7
-  port: 30032
-  server: 120.232.206.14
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: 5,11,24,36|🔒 VM-KCP-NA 🇯🇵 JP-8.211.175.53...
@@ -58,6 +51,16 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 9,37|JP
+  password: 5fcbe76df42e
+  port: 443
+  server: jplistv1-2.dsjsapi.com
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
 - cipher: rc4-md5
   name: 9|🇯🇵 日本|@ripaojiedian 2
   password: efanccyun
@@ -96,7 +99,7 @@ proxies:
       Host: epme.ambercc.filegear-sg.me
     path: /
 - cipher: aes-256-gcm
-  name: 11|12|🇵 日本2|@ripaojiedian
+  name: 11|11|🇵 日本2|@ripaojiedian
   password: 97a221a3333a
   plugin: v2ray-plugin
   plugin-opts:
@@ -111,7 +114,7 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-128-gcm
-  name: '11|12|🇯🇵 日本4|@ripaojiedian #1'
+  name: 11|11|🇯🇵 日本4|@ripaojiedian
   password: VXPipi29nxMO
   plugin: obfs
   plugin-opts:
@@ -136,15 +139,20 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- alterId: 0
-  cipher: auto
-  name: 24|日期：06-23
-  network: httpupgrade
-  port: '80'
-  server: ru1a-20250420.88888009.xyz
-  tls: false
-  type: vmess
-  uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4
+- name: 24|日期：06-24
+  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  port: 443
+  server: 172.67.243.218
+  skip-cert-verify: false
+  sni: tt1.vs2024.dpdns.org
+  type: trojan
+- name: 24|🇯🇵 _日本
+  password: Aimer
+  port: 2083
+  server: 103.116.7.103
+  skip-cert-verify: false
+  sni: epmf.ambercc.filegear-sg.me
+  type: trojan
 - name: 26|✪每日连接前点更新订阅
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
   port: 21142
@@ -295,7 +303,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '30|12|🇵 日本2|@ripaojiedian #1'
+  name: 30|12|🇵 日本2|@ripaojiedian
   port: 23919
   server: hzz9.fgmcx.top
   skip-cert-verify: false
@@ -312,7 +320,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '30|12|🇯🇵 日本4|@ripaojiedian #2'
+  name: '30|12|🇯🇵 日本4|@ripaojiedian #1'
   port: 17233
   server: 81f6bf37-sutj40-svgpxu-y2gs.cm5.p5pv.com
   skip-cert-verify: false
@@ -320,7 +328,7 @@ proxies:
   tls: false
   type: vmess
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
-- name: '30|12|🇯🇵 日本5|@ripaojiedian #2'
+- name: '30|12|🇯🇵 日本5|@ripaojiedian #1'
   network: ws
   password: ji0612uenfs
   port: 8080
@@ -361,14 +369,27 @@ proxies:
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-54.238.188.5...
+  network: ws
+  port: 11443
+  server: 54.238.188.55
+  servername: tls.01.node-for-bigairport.win
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: tls.01.node-for-bigairport.win
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
   network: tcp
-  port: '27750'
-  server: 5.253.41.147
-  servername: ''
+  port: '30101'
+  server: 167.179.93.158
   tls: false
   type: vmess
-  uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
+  uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-45.159.51.11...
@@ -379,39 +400,25 @@ proxies:
   tls: false
   type: vmess
   uuid: c06797d5-fa41-4b48-b132-d268d2acb302
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-45.159.51.18...
+  name: 36|🔒 VM-TCP-TLS 🇯🇵 JP-43.207.42.5...
   network: tcp
-  port: '55128'
-  server: 45.159.51.189
-  tls: false
-  type: vmess
-  uuid: 84f9bc0e-400f-4839-98b5-637d5e9c6606
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-45.89.109.43...
-  network: tcp
-  port: '51039'
-  server: 45.89.109.43
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 12947e56-ab80-43bf-9145-72fa50e41c9a
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-18.183.80.19...
-  network: ws
-  port: 44443
-  server: 18.183.80.197
-  servername: tls.13.node-for-bigairport.win
+  port: '28783'
+  server: 43.207.42.52
+  servername: 1oj86-g01.jp06-7c5a-vm0.entry.fr0307a.art
   tls: true
   type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: tls.13.node-for-bigairport.win
-    path: /
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-18.181.165.2...
+  network: tcp
+  port: '48889'
+  server: 18.181.165.231
+  tls: false
+  type: vmess
+  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇯🇵 JP-52.197.146.6...
@@ -441,69 +448,14 @@ proxies:
     path: /nmkj
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-103.168.155....
-  network: ws
-  port: 888
-  server: 103.168.155.40
-  servername: cdn.cjhh.lol
-  tls: true
-  type: vmess
-  uuid: 8d994cc0-a8a7-4f66-b1e4-771c7e7c6ecd
-  ws-opts:
-    headers:
-      Host: cdn.cjhh.lol
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-54.238.143.8...
-  network: ws
-  port: 22356
-  server: 54.238.143.81
-  servername: 0000000000000000000000000071.cgroup-node-for-bigairport.sbs
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: 0000000000000000000000000071.cgroup-node-for-bigairport.sbs
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-54.238.188.5...
-  network: ws
-  port: 11443
-  server: 54.238.188.55
-  servername: tls.01.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: tls.01.node-for-bigairport.win
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-45.89.109.43...
   network: tcp
-  port: '30101'
-  server: 167.179.93.158
+  port: '51039'
+  server: 45.89.109.43
+  servername: ''
   tls: false
   type: vmess
-  uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-52.193.21.25...
-  network: ws
-  port: 33443
-  server: 52.193.21.253
-  servername: tls.05.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: tls.05.node-for-bigairport.win
-    path: /
+  uuid: 12947e56-ab80-43bf-9145-72fa50e41c9a
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇯🇵 JP-43.207.67.77...
@@ -520,14 +472,28 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
   network: tcp
-  port: '1069'
-  server: 152.69.197.60
+  port: '27750'
+  server: 5.253.41.147
   servername: ''
   tls: false
   type: vmess
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+  uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-54.238.143.8...
+  network: ws
+  port: 22356
+  server: 54.238.143.81
+  servername: 0000000000000000000000000071.cgroup-node-for-bigairport.sbs
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000071.cgroup-node-for-bigairport.sbs
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇯🇵 JP-52.199.49.46...
@@ -542,16 +508,43 @@ proxies:
     headers:
       Host: tls.11.node-for-bigairport.win
     path: /
-- alterId: 1
+- alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-TLS 🇯🇵 JP-43.207.42.5...
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-45.159.51.18...
   network: tcp
-  port: '28783'
-  server: 43.207.42.52
-  servername: 1oj86-g01.jp06-7c5a-vm0.entry.fr0307a.art
+  port: '55128'
+  server: 45.159.51.189
+  tls: false
+  type: vmess
+  uuid: 84f9bc0e-400f-4839-98b5-637d5e9c6606
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-52.193.21.25...
+  network: ws
+  port: 33443
+  server: 52.193.21.253
+  servername: tls.05.node-for-bigairport.win
   tls: true
   type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: tls.05.node-for-bigairport.win
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-18.183.80.19...
+  network: ws
+  port: 44443
+  server: 18.183.80.197
+  servername: tls.13.node-for-bigairport.win
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: tls.13.node-for-bigairport.win
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇯🇵 JP-3.113.9.100:...
@@ -566,3 +559,27 @@ proxies:
     headers:
       Host: tls.04.node-for-bigairport.win
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-103.168.155....
+  network: ws
+  port: 888
+  server: 103.168.155.40
+  servername: cdn.cjhh.lol
+  tls: true
+  type: vmess
+  uuid: 8d994cc0-a8a7-4f66-b1e4-771c7e7c6ecd
+  ws-opts:
+    headers:
+      Host: cdn.cjhh.lol
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
+  network: tcp
+  port: '1069'
+  server: 152.69.197.60
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
