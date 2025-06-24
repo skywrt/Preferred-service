@@ -64,21 +64,21 @@ proxies:
 - name: 24|🇷🇺 _俄罗斯
   password: Aimer
   port: 443
-  server: 77.232.140.7
+  server: 176.124.223.92
   skip-cert-verify: false
   sni: epmf.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #1'
   password: Aimer
-  port: 2096
-  server: 5.182.84.22
+  port: 443
+  server: 77.232.140.7
   skip-cert-verify: false
   sni: epmf.ambercc.filegear-sg.me
   type: trojan
 - name: '24|🇷🇺 _俄罗斯 #2'
   password: Aimer
-  port: 443
-  server: 176.124.223.92
+  port: 2096
+  server: 5.182.84.22
   skip-cert-verify: false
   sni: epmf.ambercc.filegear-sg.me
   type: trojan
@@ -105,33 +105,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇷🇺 RU-176.32.35.148...
-  network: ws
-  port: '21013'
-  server: 176.32.35.148
-  tls: false
-  type: vmess
-  uuid: 01d8ffc6-092e-46d5-8a09-6766f2bb2188
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23...
-  network: ws
-  port: 23105
-  server: 45.147.201.231
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: bf00ec1d-a900-4d38-8ea9-37c8391a37fe
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-NA 🇷🇺 RU-185.22.152.23...
   network: ws
   port: 23009
@@ -146,13 +119,30 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
-  network: tcp
-  port: '20779'
-  server: 45.12.114.15
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-176.32.35.148...
+  network: ws
+  port: '21013'
+  server: 176.32.35.148
   tls: false
   type: vmess
-  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
+  uuid: 01d8ffc6-092e-46d5-8a09-6766f2bb2188
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-WS-NA 🇷🇺 RU-185.22.152.23... #1'
+  network: ws
+  port: '23022'
+  server: 185.22.152.236
+  tls: false
+  type: vmess
+  uuid: 0e326162-0ee0-4503-96fc-bc67ca49dacb
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇷🇺 RU-31.129.105.23...
@@ -169,13 +159,23 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-WS-NA 🇷🇺 RU-185.22.152.23... #1'
-  network: ws
-  port: '23022'
-  server: 185.22.152.236
+  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
+  network: tcp
+  port: '20779'
+  server: 45.12.114.15
   tls: false
   type: vmess
-  uuid: 0e326162-0ee0-4503-96fc-bc67ca49dacb
+  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23...
+  network: ws
+  port: 23105
+  server: 45.147.201.231
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bf00ec1d-a900-4d38-8ea9-37c8391a37fe
   ws-opts:
     headers:
       Host: ''
