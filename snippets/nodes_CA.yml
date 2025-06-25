@@ -526,16 +526,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53...
-  network: tcp
-  port: '37333'
-  server: 99.199.73.53
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2f165ac3-573f-4361-b7f2-6c2d4dc36048
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇦 CA-23.162.200.9...
   network: tcp
   port: '20182'
@@ -546,14 +536,15 @@ proxies:
   uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-38.111.114.1...
+  name: 36,37|未知65
   network: tcp
-  port: '14812'
-  server: 38.111.114.153
+  port: 33480
+  server: 99.199.73.53
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
+  uuid: 62f2d17e-a607-4f8f-d25d-92a0958ca1a9
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-WS-NA 🇨🇦 CA-158.69.48.14:...
@@ -570,28 +561,24 @@ proxies:
     path: /vpnjantit
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-NA 🇨🇦 CA-141.195.112.5...
-  network: ws
-  port: '20022'
-  server: 141.195.112.53
-  tls: false
-  type: vmess
-  uuid: cfb611bf-c93e-413b-b04c-3090f4f7cbbb
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36,37|未知65
+  name: '36|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #1'
   network: tcp
-  port: 33480
+  port: '33423'
   server: 99.199.73.53
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: 62f2d17e-a607-4f8f-d25d-92a0958ca1a9
+  uuid: ced3a0f7-e5b4-411b-fe29-a004aea2324e
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇨🇦 CA-38.111.114.1...
+  network: tcp
+  port: '14812'
+  server: 38.111.114.153
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇨🇦 CA-99.199.83.48...
@@ -616,12 +603,25 @@ proxies:
   cipher: auto
   name: '36|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #2'
   network: tcp
-  port: '33230'
+  port: '37333'
   server: 99.199.73.53
   servername: ''
   tls: false
   type: vmess
-  uuid: 29f86640-0359-456c-d6e6-75155b3d781e
+  uuid: 929bd06b-6a0e-445a-9da1-710ae222dad0
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇨🇦 CA-141.195.112.5...
+  network: ws
+  port: '20022'
+  server: 141.195.112.53
+  tls: false
+  type: vmess
+  uuid: cfb611bf-c93e-413b-b04c-3090f4f7cbbb
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: '36|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #3'
@@ -636,9 +636,9 @@ proxies:
   cipher: auto
   name: '36|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #4'
   network: tcp
-  port: '33423'
+  port: '33230'
   server: 99.199.73.53
   servername: ''
   tls: false
   type: vmess
-  uuid: ced3a0f7-e5b4-411b-fe29-a004aea2324e
+  uuid: 29f86640-0359-456c-d6e6-75155b3d781e
