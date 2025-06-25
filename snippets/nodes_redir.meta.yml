@@ -773,17 +773,42 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: 12,36|🔒 VM-WS-NA 🇨🇳 CN-111.26.109.79...
+  name: '12|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
   network: ws
   port: 30829
   server: 111.26.109.79
+  servername: ''
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: ocbc.com
+      Host: ''
     path: /oooo
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 12,28,37|未知72
+  password: EC721Y0T86KX506L
+  port: 20035
+  server: 185.186.78.220
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
+- name: '12,24|_中国 #39'
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21603
+  server: 36.156.184.33
+  skip-cert-verify: false
+  sni: k61.tudou211.com
+  type: trojan
+- cipher: aes-256-gcm
+  name: 12,28|yandex-534
+  password: 3H6KZNNBBXPKSEX5
+  port: 20036
+  server: 185.237.185.77
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '12,24|_中国 #42'
@@ -798,30 +823,45 @@ proxies:
     headers:
       Host: api100-core-quic-lf.amemv.com
     path: /index
-- name: '12,24|_中国 #39'
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21603
-  server: 36.156.184.33
-  skip-cert-verify: false
-  sni: k61.tudou211.com
-  type: trojan
-- cipher: aes-256-gcm
-  name: 12,19,20,21,28|yandex-290
-  password: YTYUKNEZJBYT9M68
-  port: 20012
-  server: 37.143.128.125
-  type: ss
-  udp: true
+- alterId: 2
+  cipher: auto
+  name: '12,24|_中国 #48'
+  network: ws
+  port: '30825'
+  server: 111.26.109.79
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ''
+    path: /oooo
 - alterId: 0
   cipher: auto
-  name: 12,36|🔒 VM-TCP-NA 🇮🇷 IR-85.198.23.63...
+  name: 12,36|🔒 VM-TCP-NA 🇨🇳 CN-120.26.55.22...
   network: tcp
-  port: '52262'
-  server: 85.198.23.63
+  port: '50002'
+  server: 120.26.55.225
   servername: ''
   tls: false
   type: vmess
-  uuid: af5a0d0c-c898-4a51-ba6a-47179d483e41
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 2
+  cipher: auto
+  name: 12,24,30|12,13|美国3|@ripaojiedian
+  network: ws
+  port: 30807
+  server: v7.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - name: 13|🇺🇸_US_美国->🇩🇪_DE_德国
   network: ws
   port: 80
@@ -867,7 +907,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '13|🇨🇳_CN_中国->🇺🇸_US_美国 #6'
+  name: '13|🇨🇳_CN_中国->🇺🇸_US_美国 #8'
   network: tcp
   port: 52112
   server: 183.236.51.23
