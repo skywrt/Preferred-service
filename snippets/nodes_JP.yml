@@ -42,6 +42,16 @@ proxies:
   type: vmess
   uuid: b798372a-54c8-4597-969e-8b00d2f76c09
 - alterId: 0
+  cipher: aes-256-gcm
+  name: 5,9,24,37|JP
+  password: 97a221a3333a
+  port: 443
+  server: 163.61.207.182
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
+- alterId: 0
   cipher: auto
   name: 5|日本 - 东京 - Akamai Technologies ...
   network: tcp
@@ -87,7 +97,7 @@ proxies:
   udp: true
   uuid: 45845d5e-0605-11f0-8cf9-f23c93136cb3
 - cipher: aes-256-gcm
-  name: 9,11|11|🇵 日本2|@ripaojiedian
+  name: 9,11|12|🇵 日本2|@ripaojiedian
   password: 97a221a3333a
   plugin: v2ray-plugin
   plugin-opts:
@@ -289,7 +299,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 30|12|🇵 日本2|@ripaojiedian
+  name: '30|12|🇵 日本2|@ripaojiedian #1'
   port: 23919
   server: hzz9.fgmcx.top
   skip-cert-verify: false
@@ -355,20 +365,6 @@ proxies:
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇯🇵 JP-18.179.203.4...
-  network: ws
-  port: '44443'
-  server: 18.179.203.45
-  servername: tls.13.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: tls.13.node-for-bigairport.win
-    path: /
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-WS-NA 🇯🇵 JP-154.55.122.23...
   network: ws
   port: 8000
@@ -380,6 +376,25 @@ proxies:
     headers:
       Host: www.bing.com
     path: /nmkj
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
+  network: tcp
+  port: '27750'
+  server: 5.253.41.147
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-18.181.165.2...
+  network: tcp
+  port: '48889'
+  server: 18.181.165.231
+  tls: false
+  type: vmess
+  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇯🇵 JP-103.72.5.221...
@@ -396,16 +411,6 @@ proxies:
     path: /path/170733132233
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
-  network: tcp
-  port: '27750'
-  server: 5.253.41.147
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
   network: tcp
   port: '30101'
@@ -413,12 +418,18 @@ proxies:
   tls: false
   type: vmess
   uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇯🇵 JP-18.181.165.2...
-  network: tcp
-  port: '48889'
-  server: 18.181.165.231
-  tls: false
+  name: 40|JP_speednode_0075
+  network: ws
+  port: 30001
+  server: 107.148.6.67
+  skip-cert-verify: false
+  tls: true
   type: vmess
-  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.53865734.xyz
+    path: /path/170733132233
