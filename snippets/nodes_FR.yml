@@ -81,15 +81,24 @@ proxies:
   port: 6379
   server: 149.202.82.172
   type: ss
-- name: '20,21|🇫🇷FR-13.37.38.184-5165 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.37.38.184
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: '20,21|🇫🇷FR-45.145.165.114-6923 #1'
+  client-fingerprint: chrome
+  name: 19|🇫🇷FR-45.145.165.114-6923
+  network: ws
+  port: 443
+  server: beyonddsz.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      host: beyonddsz.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇫🇷FR-45.145.165.114-6923 #2'
   network: ws
   port: 443
   server: beyonddsz.cfd
@@ -131,13 +140,28 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-45.12.133.43...
+  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-135.125.182....
   network: tcp
-  port: '28444'
-  server: 45.12.133.43
+  port: '28213'
+  server: 135.125.182.74
+  servername: ''
   tls: false
   type: vmess
-  uuid: 1be8eddb-4f8c-45d0-b2a1-e538eb3abd39
+  uuid: 81852771-76fb-4e94-e4f1-4e37a698a49a
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇫🇷 FR-5.196.29.123:...
+  network: ws
+  port: 2082
+  server: 5.196.29.123
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-TLS 🇫🇷 FR-51.195.103....
@@ -164,16 +188,6 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-135.125.182....
-  network: tcp
-  port: '28213'
-  server: 135.125.182.74
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 81852771-76fb-4e94-e4f1-4e37a698a49a
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇫🇷 FR-2.56.126.103...
   network: tcp
   port: '33579'
@@ -184,10 +198,10 @@ proxies:
   uuid: 2eb3ee2a-7bf8-4b50-9b93-2d489d2f3456
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇫🇷 FR-95.179.216...
+  name: 36|🔒 VM-TCP-NA 🇫🇷 FR-45.12.133.43...
   network: tcp
-  port: '8874'
-  server: 95.179.216.149
+  port: '28444'
+  server: 45.12.133.43
   tls: false
   type: vmess
-  uuid: 273f27db-9345-47bc-b725-08bcf192dd03
+  uuid: 1be8eddb-4f8c-45d0-b2a1-e538eb3abd39
