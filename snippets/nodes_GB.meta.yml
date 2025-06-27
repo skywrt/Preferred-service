@@ -1,4 +1,54 @@
 proxies:
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|1cc9c59052c34a4baae5e35da42f2f...
+  network: grpc
+  port: 8880
+  server: 45.159.248.125
+  tls: false
+  type: vless
+  udp: false
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|0862914e6f684fd3858424a2339677...
+  network: tcp
+  port: 42536
+  server: 185.43.211.99
+  tls: false
+  type: vless
+  udp: false
+  uuid: 57d127e9-38da-494b-afeb-494de5ff1a91
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|65e6829438d54830856d136017a0f6...
+  network: ws
+  port: 443
+  server: 198.41.209.70
+  servername: is.oldcloud.online
+  tls: true
+  type: vless
+  udp: false
+  uuid: 753fa8e8-a3e8-442e-abf7-875ed776eacb
+  ws-opts:
+    headers:
+      host: is.oldcloud.online
+    path: /
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|a99114d799e449468d72d9ef94977b...
+  network: ws
+  port: 443
+  server: 104.17.213.241
+  servername: is.oldcloud.online
+  tls: true
+  type: vless
+  udp: false
+  uuid: 753fa8e8-a3e8-442e-abf7-875ed776eacb
+  ws-opts:
+    headers:
+      host: is.oldcloud.online
+    path: /
 - name: '5,38|🇬🇧_GB_英国_25 #1'
   network: ws
   port: 8443
@@ -149,20 +199,20 @@ proxies:
   port: 989
   server: 62.100.205.48
   type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19,20,21,37|未知4 1.5MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 19,20,21,30|2|🇬🇧3 |  2.8MB/s
   password: mps3FwmDjLrWaOVg
   port: 443
   server: series-a2.varzesh360.co
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 19,20,21,37|未知89 17.9MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.78
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -201,16 +251,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:...
-  network: tcp
-  port: '18598'
-  server: 5.180.30.85
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: bf26f2fb-9d2a-49b6-8527-82e8aba3a9a9
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.146...
   network: tcp
   port: '27773'
@@ -239,6 +279,26 @@ proxies:
   tls: false
   type: vmess
   uuid: bcf86479-aab4-47cf-9d6e-34d353baa1a2
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇬🇧 GB-51.38.64.2...
+  network: tcp
+  port: '44023'
+  server: 51.38.64.209
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7da457da-ed0f-437d-c81d-6c35885bbea3
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:...
+  network: tcp
+  port: '18598'
+  server: 5.180.30.85
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bf26f2fb-9d2a-49b6-8527-82e8aba3a9a9
 - client-fingerprint: chrome
   name: 40|GB_speednode_0040
   network: ws
