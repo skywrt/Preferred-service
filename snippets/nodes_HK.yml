@@ -1,17 +1,17 @@
 proxies:
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: '5,11,24|🇭🇰 香港6|@ripaojiedian #6'
-  network: tcp
-  port: '49154'
-  server: 183.236.51.38
+  name: '5,11|13|香港v2|@ripaojiedian #1'
+  network: kcp
+  port: '34833'
+  server: 47.76.28.43
   servername: ''
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: dd0d30ae-a4d1-4d1e-8553-42bfff66fd27
 - alterId: 0
   cipher: auto
-  name: 5,11,24,36|🔒 VM-TCP-NA 🇭🇰 HK-43.247.135.1...
+  name: '5,11,24|🇭🇰 香港3|@ripaojiedian #6'
   network: tcp
   port: '46210'
   server: 43.247.135.170
@@ -19,25 +19,30 @@ proxies:
   tls: false
   type: vmess
   uuid: d1eca706-1aae-42d3-bab0-69995d7b023d
-- alterId: 64
+- cipher: aes-256-gcm
+  name: '5,9|🇭🇰 香港2|@ripaojiedian #1'
+  password: d2bcd45faee2
+  port: 995
+  server: 121.127.231.200
+  type: ss
+  udp: true
+- alterId: 2
   cipher: auto
-  name: '5,11,24|🇭🇰 香港5|@ripaojiedian #6'
-  network: tcp
-  port: '41174'
-  server: 120.234.102.229
+  name: 5,9,11,24,30|12,13|香港4|@ripaojiedian
+  network: ws
+  port: 30809
+  server: v9.heduian.link
   servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '5,9,11,24|🇭🇰 香港4|@ripaojiedian #3'
-  network: tcp
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 116.31.75.150
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  type: trojan
   udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - alterId: 0
   cipher: auto
   name: '5,9,11,24|1 |  1.8MB/s|15%|Disney|Yout..... #2'
@@ -64,40 +69,18 @@ proxies:
   type: vmess
   udp: true
   uuid: d1eca706-1aae-42d3-bab0-69995d7b023d
-- alterId: 64
-  cipher: auto
-  name: '9,11|12|🇭🇰 香港5|@ripaojiedian #1'
-  port: 41174
-  server: 120.234.102.229
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '9,11|12|🇭🇰 香港6|@ripaojiedian #1'
-  port: 49154
-  server: 183.236.51.38
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-gcm
   name: '9,11|12|🇭🇰 香港2|@ripaojiedian #1'
-  password: ae29f32aa471
+  password: d2bcd45faee2
   plugin: v2ray-plugin
   plugin-opts:
     host: hkxwv1-5.dsjsapi.com
     mode: websocket
     mux: true
-    path: /evoeqcpitmgg
+    path: /mupbpzjvwhcm
     skip-cert-verify: false
     tls: true
-  port: 443
+  port: 995
   server: 121.127.231.200
   tfo: false
   type: ss
@@ -665,6 +648,31 @@ proxies:
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
+- name: '24|🇭🇰 香港4|@ripaojiedian #2'
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 116.31.75.150
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  type: trojan
+- alterId: 64
+  cipher: auto
+  name: '24|🇭🇰 香港5|@ripaojiedian #4'
+  network: tcp
+  port: '41174'
+  server: 120.234.102.229
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '24|🇭🇰 香港6|@ripaojiedian #4'
+  network: tcp
+  port: '49154'
+  server: 183.236.51.38
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 26|V1-香港01∣K1线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21135
@@ -751,7 +759,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '30|12|🇭🇰 香港5|@ripaojiedian #2'
+  name: 30|12|🇭🇰 香港5|@ripaojiedian
   network: ws
   port: 46003
   server: cloudgd.coemn.com
@@ -765,7 +773,7 @@ proxies:
       Host: cloudgd.coemn.com
     path: /zh-cn
 - cipher: chacha20-ietf-poly1305
-  name: '30|12|🇭🇰 香港6|@ripaojiedian #2'
+  name: 30|12|🇭🇰 香港6|@ripaojiedian
   password: cdc48a7a-b618-45af-a831-5afbd686b02f
   port: 12202
   server: gg21.hangfengjiasu.com
@@ -790,7 +798,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '30|13|香港5|@ripaojiedian #2'
+  name: 30|13|香港5|@ripaojiedian
   network: ws
   port: 46003
   server: cloudgd.coemn.com
@@ -804,7 +812,7 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: '30|13|香港6|@ripaojiedian #2'
+  name: 30|13|香港6|@ripaojiedian
   network: tcp
   port: 15229
   server: 614ea2b0-sux8g0-td95qh-1isea.cm.plebai.net
@@ -834,18 +842,18 @@ proxies:
   uuid: cc101ff1-3452-41c3-89fe-c2a5a20dc6dc
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-45.39.199.10...
-  network: tcp
-  port: '15002'
-  server: 45.39.199.105
-  tls: false
-  type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-209.209.48.1...
   network: tcp
   port: '26024'
+  server: 209.209.48.19
+  tls: false
+  type: vmess
+  uuid: 3a6c789f-0548-4ca3-83c0-2c78acbee811
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-209.209.48.1... #1'
+  network: tcp
+  port: '26021'
   server: 209.209.48.19
   tls: false
   type: vmess
@@ -866,9 +874,22 @@ proxies:
     path: /vmess-argo
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-209.209.48.1... #1'
+  name: 36|🔒 VM-WS-NA 🇭🇰 HK-82.152.164.10...
+  network: ws
+  port: 40601
+  server: 82.152.164.10
+  tls: false
+  type: vmess
+  uuid: 5c634f9c-3dd4-4d3e-97c2-9db2470cf722
+  ws-opts:
+    headers:
+      Host: us05.jssssss.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-209.209.48.1... #2'
   network: tcp
-  port: '26021'
+  port: '26013'
   server: 209.209.48.19
   tls: false
   type: vmess
@@ -884,18 +905,18 @@ proxies:
   uuid: 066b32cc-ee3d-4719-b1f0-2f202298737e
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-209.209.48.1... #2'
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-45.39.199.10...
   network: tcp
-  port: '26022'
-  server: 209.209.48.19
+  port: 15002
+  server: 45.39.199.105
   tls: false
   type: vmess
-  uuid: 3a6c789f-0548-4ca3-83c0-2c78acbee811
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
 - alterId: 0
   cipher: auto
   name: '36|🔒 VM-TCP-NA 🇭🇰 HK-209.209.48.1... #3'
   network: tcp
-  port: '26013'
+  port: '26022'
   server: 209.209.48.19
   tls: false
   type: vmess
@@ -910,44 +931,24 @@ proxies:
   type: vmess
   uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
 - alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇭🇰 HK-82.152.164.10...
-  network: ws
-  port: 40601
-  server: 82.152.164.10
-  tls: false
-  type: vmess
-  uuid: 5c634f9c-3dd4-4d3e-97c2-9db2470cf722
-  ws-opts:
-    headers:
-      Host: us05.jssssss.com
-    path: /
-- alterId: 0
   name: 37|HK
   network: tcp
-  password: 610a7867-1343-4dcc-955d-1473eeb14b14
-  port: 38043
-  server: 209.209.48.19
+  password: 8aab51da-6b67-4bd2-b6e6-5ab3008cf53e
+  port: 443
+  server: 20.255.74.102
   skip-cert-verify: true
-  sni: aliyun.com
+  sni: jp.iamnotagoodman.com
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   name: 37|HK2
-  password: 89f84d5e-4170-4c64-bc78-ac99953b103a
-  port: 50030
-  server: 5.83.221.31
+  network: tcp
+  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
+  port: 12052
+  server: 185.14.47.199
   skip-cert-verify: true
+  sni: cdn.alibaba.com
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 37|HK3
-  password: 8360adcea0b1
-  port: 443
-  server: 43.226.17.11
-  skip-cert-verify: true
-  tls: true
-  type: ss
