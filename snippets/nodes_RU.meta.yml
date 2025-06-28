@@ -1,14 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|956c58e85ac24f0d9c8033fe6119d3...
-  network: tcp
-  port: 4790
-  server: 185.125.103.101
-  tls: false
-  type: vless
-  udp: false
-  uuid: c94d74f3-2bf3-40eb-8dfd-c9159e520bf9
 - name: '5,38|🇷🇺_RU_俄罗斯联邦_10 #1'
   network: ws
   port: 2087
@@ -133,6 +123,12 @@ proxies:
     headers:
       Host: ap.ylks.xyz
     path: '%2Fblue'
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇷🇺RU-45.151.62.54-0292
+  password: 0zyDRZ1XmNXaaCAN7KEA8a
+  port: 28825
+  server: 45.151.62.54
+  type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 19,37|未知7 1.9MB/s
@@ -142,12 +138,21 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇷🇺RU-45.151.62.54-0359
-  password: 0zyDRZ1XmNXaaCAN7KEA8a
-  port: 28825
-  server: 45.151.62.54
-  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇷🇺RU-45.147.201.231-0176
+  network: ws
+  port: 22070
+  server: 45.147.201.231
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f0911ece-af03-4b93-b82e-0ae12a35d18f
+  ws-opts:
+    headers:
+      host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 23|🇷🇺_RU_俄罗斯联邦
@@ -160,6 +165,13 @@ proxies:
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     path: /
+- name: '24|SG_speednode_0155 #2'
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: false
+  sni: hsdgbuys.pages.dev
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 30|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -181,30 +193,6 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
-  network: tcp
-  port: '20779'
-  server: 45.12.114.15
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
-- alterId: 0
-  cipher: auto
-  name: 36|🔒 VM-WS-NA 🇷🇺 RU-31.129.105.23...
-  network: ws
-  port: '16231'
-  server: 31.129.105.239
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 793e03cc-2b08-4d1b-bb0b-592567d19043
-  ws-opts:
-    headers:
-      Host: 31.129.105.239
-    path: /
 - alterId: 64
   cipher: auto
   name: 36|🔒 VM-WS-TLS 🇷🇺 RU-185.133.42.1...
@@ -219,6 +207,30 @@ proxies:
     headers:
       Host: www.17336793.xyz
     path: /path/170733132233
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-WS-NA 🇷🇺 RU-31.129.105.23...
+  network: ws
+  port: '16231'
+  server: 31.129.105.239
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 793e03cc-2b08-4d1b-bb0b-592567d19043
+  ws-opts:
+    headers:
+      Host: 31.129.105.239
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
+  network: tcp
+  port: '20779'
+  server: 45.12.114.15
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
 - client-fingerprint: chrome
   name: 40|RU_speednode_0124
   network: ws
