@@ -42,7 +42,7 @@ proxies:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - cipher: aes-256-gcm
-  name: 9,11|12|🇭🇰 香港2|@ripaojiedian
+  name: '9,11|11|🇭🇰 香港2|@ripaojiedian #1'
   password: 941cbc4237e0
   plugin: v2ray-plugin
   plugin-opts:
@@ -697,14 +697,14 @@ proxies:
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '30|12|🇭🇰 香港2|@ripaojiedian #1'
+  name: 30|12|🇭🇰 香港2|@ripaojiedian
   password: be443689-bc64-49ff-85a5-8eecaa2235d3
   port: 41049
   server: hk2.fgmcx.top
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '30|12|🇭🇰 香港3|@ripaojiedian #1'
+  name: 30|12|🇭🇰 香港3|@ripaojiedian
   password: 2be0c954-4291-45ea-b47d-ca713180550b
   port: 52612
   server: 111.29.57.125
@@ -785,19 +785,9 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-45.39.199.10...
-  network: tcp
-  port: '15002'
-  server: 45.39.199.105
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-209.209.48.1...
   network: tcp
-  port: '26021'
+  port: '26024'
   server: 209.209.48.19
   tls: false
   type: vmess
@@ -817,18 +807,23 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-209.209.48.1... #1'
-  network: tcp
-  port: '26022'
-  server: 209.209.48.19
-  tls: false
+  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
+  network: ws
+  port: '1935'
+  server: 43.154.34.74
+  servername: djdjjrjjrhk.lzj520hxw.dpdns.org
+  tls: true
   type: vmess
-  uuid: 3a6c789f-0548-4ca3-83c0-2c78acbee811
+  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
+  ws-opts:
+    headers:
+      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
+    path: /vmess-argo
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-209.209.48.1... #2'
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-209.209.48.1... #1'
   network: tcp
-  port: '26013'
+  port: '26021'
   server: 209.209.48.19
   tls: false
   type: vmess
@@ -844,20 +839,6 @@ proxies:
   uuid: 066b32cc-ee3d-4719-b1f0-2f202298737e
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
-  network: ws
-  port: '1935'
-  server: 43.154.34.74
-  servername: djdjjrjjrhk.lzj520hxw.dpdns.org
-  tls: true
-  type: vmess
-  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
-  ws-opts:
-    headers:
-      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
-    path: /vmess-argo
-- alterId: 0
-  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇭🇰 HK-43.199.24.24...
   network: tcp
   port: '3000'
@@ -868,19 +849,57 @@ proxies:
   uuid: cc101ff1-3452-41c3-89fe-c2a5a20dc6dc
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-209.209.48.1... #3'
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-209.209.48.1... #2'
   network: tcp
-  port: '26024'
+  port: '26013'
   server: 209.209.48.19
   tls: false
   type: vmess
   uuid: 3a6c789f-0548-4ca3-83c0-2c78acbee811
 - alterId: 0
   cipher: auto
-  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-45.39.199.10... #1'
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-209.209.48.1... #3'
+  network: tcp
+  port: '26022'
+  server: 209.209.48.19
+  tls: false
+  type: vmess
+  uuid: 3a6c789f-0548-4ca3-83c0-2c78acbee811
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇭🇰 HK-45.39.199.10...
   network: tcp
   port: '15074'
   server: 45.39.199.105
   tls: false
   type: vmess
   uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+- alterId: 0
+  cipher: auto
+  name: '36|🔒 VM-TCP-NA 🇭🇰 HK-45.39.199.10... #1'
+  network: tcp
+  port: '15002'
+  server: 45.39.199.105
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 37|HK
+  password: wJGsonf9xIUUgTIh
+  port: 8388
+  server: 103.253.43.210
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|HK2
+  password: dc773e17-d94e-4f6e-a3cd-26c972a08b89
+  port: 30049
+  server: 5.83.221.31
+  skip-cert-verify: true
+  sni: v2sg02.fuqiangren.com
+  tls: true
+  type: trojan
+  udp: true
