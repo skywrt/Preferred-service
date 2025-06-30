@@ -1,13 +1,4 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 5|以色列 - 特拉维夫 - ONEPROVIDER - 1
-  network: tcp
-  port: '45262'
-  server: yal.fxlcn.com
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - client-fingerprint: chrome
   name: '5,40|DE_speednode_0048 #1'
   port: 7022
@@ -20,6 +11,15 @@ proxies:
   type: vless
   udp: true
   uuid: 651de6cb-df22-45cd-8842-438fdbef87fb
+- client-fingerprint: safari
+  flow: xtls-rprx-vision-udp443
+  name: 5|1|🇩🇪6 |  4.3MB/s|0%|Disney|Ope...
+  port: 443
+  server: 204.10.194.78
+  servername: yfnl1.xn--4gq62f52gppi29k.com
+  tls: true
+  type: vless
+  uuid: b8bd42a9-551f-419d-b70d-4aefdd2cb074
 - http-opts:
     headers:
       Host:
@@ -37,15 +37,6 @@ proxies:
   type: vless
   udp: true
   uuid: 9da21010-6025-430a-9ce9-6096673d86d1
-- client-fingerprint: safari
-  flow: xtls-rprx-vision-udp443
-  name: 5|2|🇩🇪6 |  4.3MB/s|0%|Disney|Ope...
-  port: 443
-  server: 204.10.194.78
-  servername: yfnl1.xn--4gq62f52gppi29k.com
-  tls: true
-  type: vless
-  uuid: b8bd42a9-551f-419d-b70d-4aefdd2cb074
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -60,6 +51,15 @@ proxies:
   type: vmess
   udp: true
   uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
+- alterId: 0
+  cipher: auto
+  name: 5|以色列 - 特拉维夫 - ONEPROVIDER - 1
+  network: tcp
+  port: '45262'
+  server: yal.fxlcn.com
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - name: 8|🇩🇪DE-52.58.179.46-180_1@180
   password: telegram-id-privatevpns
   port: 22222
@@ -91,18 +91,12 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: rc4-md5
-  name: 19|🇩🇪DE-193.108.119.230-0327
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇩🇪DE-45.150.32.13-0422
+  password: DKyRdoqQIebdKZVYs5GzW8
+  port: 14628
+  server: 45.150.32.13
   type: ss
-- name: '20,21|🇩🇪DE-3.77.229.34-5116 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.77.229.34
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   name: 20,21,37|未知134 4.1MB/s
   network: tcp
@@ -114,26 +108,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '20,21|🇩🇪DE-3.77.229.34-5082 #1'
-  password: telegram-id-directvpn
-  port: 22223
-  server: 3.77.229.34
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇩🇪DE-57.129.24.125-6895 #1'
-  network: ws
-  port: 443
-  server: 57.129.24.125
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
 - cipher: chacha20-ietf-poly1305
   name: 30|0|国 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -150,6 +124,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-62.60.158.54...
+  network: tcp
+  port: '44863'
+  server: 62.60.158.54
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9926bf9f-5c75-4066-8ece-207dee73781f
+- alterId: 0
+  cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-37.221.125.1...
   network: tcp
   port: '33940'
@@ -160,14 +144,14 @@ proxies:
   uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-45.12.138....
-  network: tcp
-  port: '54757'
-  server: 45.12.138.82
+  name: 36|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
   servername: ''
   tls: false
   type: vmess
-  uuid: cde9f074-c930-4aa3-a558-46bbc9d0a5a1
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-94.159.106.2...
@@ -179,24 +163,24 @@ proxies:
   uuid: 654285e6-23fb-4073-b8de-eba90f562fe6
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-78.47.19.2:3...
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-91.107.164.2...
   network: tcp
   port: 33203
-  server: 78.47.19.2
+  server: 91.107.164.255
   servername: ''
   tls: false
   type: vmess
   uuid: 46a495c9-a091-40ab-8913-e66c36aa3a88
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-62.60.158.54...
+  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-91.99.195.1:...
   network: tcp
-  port: '44863'
-  server: 62.60.158.54
+  port: '8081'
+  server: 91.99.195.1
   servername: ''
   tls: false
   type: vmess
-  uuid: 9926bf9f-5c75-4066-8ece-207dee73781f
+  uuid: 66c76a73-e86a-4328-8310-2f87e74bbdec
 - alterId: 0
   cipher: auto
   name: 36|🔒 VM-TCP-NA 🇩🇪 DE-45.12.138.47...
@@ -207,6 +191,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 2858a404-d0ca-4d67-80a6-ce8e95e383ff
+- alterId: 0
+  cipher: auto
+  name: 36|🔒 VM-TCP-NONE 🇩🇪 DE-45.12.138....
+  network: tcp
+  port: '54757'
+  server: 45.12.138.82
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cde9f074-c930-4aa3-a558-46bbc9d0a5a1
 - client-fingerprint: chrome
   name: 40|DE_speednode_0040
   network: ws
