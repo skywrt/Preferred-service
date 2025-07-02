@@ -1,4 +1,20 @@
 proxies:
+- name: '5,11|12,13|韩国4|@ripaojiedian #1'
+  network: tcp
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6668
+  server: 3.36.117.121
+  skip-cert-verify: true
+  sni: baidu.com
+  type: trojan
+- name: '5,11|12,13|韩国2|@ripaojiedian #1'
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 4448
+  server: 36.151.192.61
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - name: '5,9,11,24|🇰🇷 韩国|@ripaojiedian #3'
   network: tcp
   password: 85f133142f04dbf6547da33895cfabb3
@@ -51,13 +67,16 @@ proxies:
   skip-cert-verify: false
   sni: epmk.ambercc.filegear-sg.me
   type: trojan
-- name: '24|🇰🇷 _韩国 #1'
+- alterId: 0
+  name: 24,37|KR国
   password: Aimer
   port: 50000
   server: 125.136.221.63
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epml.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇰🇷 _韩国 #2'
   password: Aimer
   port: 50000
@@ -154,11 +173,12 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇰🇷 KR-45.82.246.17...
+  name: 36,37|未知5 314.7KB/s
   network: tcp
-  port: '26521'
+  port: 26521
   server: 45.82.246.173
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: cff7001e-3a74-43e8-bfd8-a7af9630a58b
