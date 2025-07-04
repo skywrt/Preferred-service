@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 3|5bd5ee23aa9f4be787e6cb281710f7...
+  name: 3|15b30b45ce8c4b37a3d72b58e0955c...
   network: ws
   port: 22224
   server: 3.120.23.217
@@ -16,7 +16,7 @@ proxies:
     path: /telegram-channel-vlessconfig
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 3|4f60e8d35f5844828a559051cefdd8...
+  name: 3|f788db97bbd24b5dac8c2f5b1a9071...
   network: tcp
   port: 9090
   server: 46.38.150.199
@@ -26,7 +26,7 @@ proxies:
   uuid: 31a0713a-2c36-41ec-8bc5-52a5f546cc4e
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 3|380990de6f1f4a37af9d33821fb769...
+  name: 3|94dfdb6b2ccf479db18078db86b92b...
   network: tcp
   port: 9620
   server: sd.mciickoir.ir
@@ -36,7 +36,7 @@ proxies:
   uuid: 3ed3966a-ca0e-4a46-a437-8000836fa495
 - client-fingerprint: random
   fingerprint: ''
-  name: 3|bbe616c0a28a4f6e86094eb735faf6...
+  name: 3|83e416fdf9ff4f24969100ae01ccc8...
   network: ws
   port: 80
   server: 104.18.209.108
@@ -51,7 +51,7 @@ proxies:
     path: /?ed=2560
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 3|24855ea6466e4acdad27e66cd7fae8...
+  name: 3|2cc3199a993644e48bfa12d1ed5cab...
   network: tcp
   port: 443
   server: 91.99.170.191
@@ -59,15 +59,6 @@ proxies:
   type: vless
   udp: false
   uuid: 36ee3f5a-3816-4c03-a324-47531167e53b
-- client-fingerprint: safari
-  flow: xtls-rprx-vision-udp443
-  name: 5|1|🇩🇪6 |  4.3MB/s|0%|Disney|Ope...
-  port: 443
-  server: 204.10.194.78
-  servername: yfnl1.xn--4gq62f52gppi29k.com
-  tls: true
-  type: vless
-  uuid: b8bd42a9-551f-419d-b70d-4aefdd2cb074
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -82,6 +73,15 @@ proxies:
   type: vmess
   udp: true
   uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
+- client-fingerprint: safari
+  flow: xtls-rprx-vision-udp443
+  name: 5|🇩🇪6 |  4.3MB/s|0%|Disney|Opena...
+  port: 443
+  server: 204.10.194.78
+  servername: yfnl1.xn--4gq62f52gppi29k.com
+  tls: true
+  type: vless
+  uuid: b8bd42a9-551f-419d-b70d-4aefdd2cb074
 - name: 8|🇩🇪DE-52.58.179.46-180_1@180
   password: telegram-id-privatevpns
   port: 22222
@@ -113,12 +113,26 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '20,21|🇩🇪DE-104.248.18.1-0420 #1'
+- name: '20,21|🇩🇪DE-104.248.18.1-0402 #1'
   password: 6gZh2JbfhQ
   port: 1935
   server: 104.248.18.1
   sni: x1-germany-digitalocean-v2.devefun.org
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇩🇪DE-57.129.24.125-7299 #1'
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
 - cipher: chacha20-ietf-poly1305
   name: 30|0|国 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -135,12 +149,13 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 36|🔒 VM-TCP-NA 🇩🇪 DE-45.12.138.47...
+  name: 36,37|未知139 17.9MB/s
   network: tcp
-  port: '22839'
+  port: 22839
   server: 45.12.138.47
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 2858a404-d0ca-4d67-80a6-ce8e95e383ff
 - alterId: 0
