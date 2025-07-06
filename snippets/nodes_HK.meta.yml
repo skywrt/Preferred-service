@@ -107,21 +107,36 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: '5,9,11,22,24|🇭🇰 香港4|@ripaojiedian #3'
+- alterId: 0
+  name: 5,9,11,22,24,37|HK
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 9141
   server: 36.151.192.10
   skip-cert-verify: true
   sni: www.baidu.com
+  tls: true
   type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: 5,9,11,22,24,28|yandex-11
-  password: 3030b609-f36f-4fd1-a4ef-a6e653780536
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 5,9,11,22,24,28,37|🇭🇰HK香港2
+  password: 323537df-dbdf-4f7e-a4c7-6c290d8e53ff
   port: 16007
   server: hk007.dogsvip.site
+  skip-cert-verify: true
   tfo: false
+  tls: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 5,9,22,24,37|🇭🇰HK香港3
+  password: 9bfdde71b4c0
+  port: 636
+  server: 103.103.245.158
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -134,14 +149,27 @@ proxies:
   tls: false
   type: vmess
   uuid: dd0d30ae-a4d1-4d1e-8553-42bfff66fd27
-- name: '5,9,11,22,24|🇭🇰 香港5|@ripaojiedian #3'
+- alterId: 0
+  name: 5,9,11,22,24,37|🇰HK香港5
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 50723
   server: 36.151.251.24
   skip-cert-verify: true
   sni: www.baidu.com
+  tls: true
   type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 5,9,11,22,24,37|🇭🇰HK香港4
+  password: 7HJO64Y69YP2L0KM
+  port: 15013
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
   udp: true
 - alterId: 0
   cipher: auto
@@ -4911,26 +4939,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|HK
-  password: 3FB23A19-9424-40C7-9139-3540228283FA
-  port: 40000
-  server: 213.218.255.99
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 37|HK2
-  network: tcp
-  password: be7933a0-6330-46ea-8530-b3e7b6c89938
-  port: 38031
-  server: 209.209.48.19
-  skip-cert-verify: true
-  sni: aliyun.com
-  tls: true
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
   name: 40|HK_speednode_0104
   network: ws
