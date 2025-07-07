@@ -338,13 +338,26 @@ proxies:
   server: 13.125.19.50
   type: ss
   udp: true
-- name: '5,9,11,22,24|🇰🇷 韩国4|@ripaojiedian #3'
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 5,9,11,22,24,37|🇷KR韩国2
+  password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
+  port: 19852
+  server: h.cm2.xiaomi-api.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+  udp: true
+- alterId: 0
+  name: 5,9,11,22,24,37|🇷KR国
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 45203
   server: 36.151.251.61
   skip-cert-verify: true
   sni: www.baidu.com
+  tls: true
   type: trojan
   udp: true
 - cipher: aes-256-cfb
@@ -705,13 +718,16 @@ proxies:
   port: 4652
   server: p141.panda001.net
   type: ss
-- name: 22,24|🇯🇵 日本 V2CROSS.COM
+- alterId: 0
+  name: 22,24,37|🇵JP日本5
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 6668
   server: 43.203.122.115
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: baidu.com
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 22|🇷KR-54.180.114.77-5470
