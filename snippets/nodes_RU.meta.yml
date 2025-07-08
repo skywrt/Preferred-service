@@ -1,4 +1,42 @@
 proxies:
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 1000
+  fast-open: true
+  name: 2|Russia_None_hy_3
+  port: 10803
+  ports: 10803
+  protocol: udp
+  server: 185.22.155.71
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 1000
+- fast-open: true
+  name: 2|Russia_Moscow_hy2_0
+  password: dongtaiwang.com
+  port: 50850
+  server: 45.129.2.108
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- fast-open: true
+  name: 2|Russia_Moscow_hy2_1
+  password: dongtaiwang.com
+  port: 30033
+  server: 46.17.41.217
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- fast-open: true
+  name: 2|Russia_Moscow_hy2_3
+  password: dongtaiwang.com
+  port: 23579
+  server: 45.129.2.248
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - name: 4,22|🇦CA-148.113.207.224-4971
   password: acfef609-b3c7-4e52-b292-8921d5fca90d
   port: 443
@@ -1069,16 +1107,13 @@ proxies:
   uuid: 106ec991-7ec0-43ae-a3b3-71a9acdd50f2
   ws-opts:
     path: /
-- alterId: 0
-  name: 22,37|🇺UA乌克兰2
+- name: 22|🇺RU-45.67.215.217-1007
   password: Aimer
   port: 2087
   server: 45.67.215.217
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: epmk.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 22|🇺RU-45.136.244.181-1372
@@ -1247,55 +1282,76 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
-- name: 24|🇷🇺 _俄罗斯
+- alterId: 0
+  name: 24,37|🇺RU俄罗斯8
   password: Aimer
   port: 2053
   server: 5.35.68.249
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epml.ambercc.filegear-sg.me
+  tls: true
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #1'
+  udp: true
+- alterId: 0
+  name: 24,37|🇷🇺RU俄罗斯10
   password: Aimer
   port: 2096
   server: 5.182.85.255
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epmk.ambercc.filegear-sg.me
+  tls: true
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #2'
+  udp: true
+- alterId: 0
+  name: 24,37|🇺RU俄罗斯9
   password: Aimer
   port: 2083
   server: 5.182.84.52
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epmx.ambercc.filegear-sg.me
+  tls: true
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #3'
+  udp: true
+- alterId: 0
+  name: 24,37|🇺RU俄罗斯2
   password: Aimer
   port: 2053
   server: 213.241.198.189
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epmk.ambercc.filegear-sg.me
+  tls: true
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #4'
+  udp: true
+- alterId: 0
+  name: 24,37|🇺RU俄罗斯3
   password: Aimer
   port: 2083
   server: 213.241.198.56
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epmx.ambercc.filegear-sg.me
+  tls: true
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #5'
+  udp: true
+- alterId: 0
+  name: 24,37|🇺RU俄罗斯5
   password: Aimer
   port: 8443
   server: 176.124.223.50
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epmx.ambercc.filegear-sg.me
+  tls: true
   type: trojan
-- name: '24|🇷🇺 _俄罗斯 #6'
+  udp: true
+- alterId: 0
+  name: 24,37|🇺RU俄罗斯6
   password: Aimer
   port: 2087
   server: 46.254.92.142
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epmk.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: '24|🇷🇺 _俄罗斯 #7'
   password: Aimer
   port: 8443
@@ -1325,15 +1381,14 @@ proxies:
   server: 5.189.201.250
   type: ss
 - alterId: 0
-  name: 37|🇺RU俄罗斯5
-  password: Aimer
-  port: 2087
-  server: 46.254.92.142
+  cipher: chacha20-ietf-poly1305
+  name: 37|🇷🇺RU俄罗斯4
+  password: oVfvPkqJFCjOEbBsbmOtIiAuqgmEFOEf332F26C8lwEwQng9
+  port: 31348
+  server: 213.156.138.138
   skip-cert-verify: true
-  sni: epml.ambercc.filegear-sg.me
   tls: true
-  type: trojan
-  udp: true
+  type: ss
 - client-fingerprint: chrome
   name: 40|RU_speednode_0122
   network: ws
