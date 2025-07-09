@@ -1,19 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 3|b7231769f0254fbe96c65a4a68403f...
-  network: ws
-  port: 443
-  server: 27.50.49.136
-  servername: ngedc.ambercc.filegear-sg.me
-  tls: true
-  type: vless
-  udp: false
-  uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
-  ws-opts:
-    headers:
-      host: ngedc.ambercc.filegear-sg.me
-    path: /?ed
 - cipher: aes-128-gcm
   name: 4|🇭🇰 HK 1 → tg@nicevpn123
   password: a-wym4ovY4Yw
@@ -123,7 +108,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 5,9,11,22,24,37|🇰HK香港5
+  name: 5,11,22,24,37|🇭🇰HK香港5
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 51083
@@ -173,7 +158,7 @@ proxies:
   uuid: dd0d30ae-a4d1-4d1e-8553-42bfff66fd27
 - alterId: 0
   cipher: aes-256-gcm
-  name: 5,9,22,24,37|🇰HK香港4
+  name: 5,9,22,24,37|🇭🇰HK香港3
   password: 9bfdde71b4c0
   port: 636
   server: 103.103.245.158
@@ -192,7 +177,7 @@ proxies:
   type: vmess
   uuid: 37b58e86-83ef-4ff8-b5dd-4bde36921f2b
 - alterId: 0
-  name: 5,9,11,22,24,37|🇭🇰HK香港3
+  name: 5,11,22,24,37|🇭🇰HK香港4
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 444
@@ -203,7 +188,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 5,9,11,22,24,37|🇭🇰HK香港2
+  name: 5,9,11,22,24,37|HK
   network: tcp
   password: 7367d04e-4c59-4dff-a50e-12e730a09891
   port: 26193
@@ -212,17 +197,44 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
+- cipher: aes-256-gcm
+  name: 9,22|🇳CN-36.141.40.20-0946
+  password: 1KBLVSCYZWEL735O
+  port: 15008
+  server: w72tapyb.slashdevslashnetslashtun.net
+  type: ss
+  udp: true
+- alterId: 2
   cipher: auto
-  name: 9,11|12|🇭🇰 |@ripaojiedian
-  port: 50170
-  server: 38.147.188.234
+  name: 9,22|🇰HK-119.236.146.31-0948
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   udp: true
-  uuid: 37b58e86-83ef-4ff8-b5dd-4bde36921f2b
+  uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: 9,22,28|yandex-997
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 9141
+  server: 36.151.192.10
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+  udp: true
+- name: 9,22,28|yandex-998
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 50723
+  server: 36.151.251.24
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: '9,11|12|🇭🇰 香港2|@ripaojiedian #1'
   password: 9bfdde71b4c0
@@ -239,6 +251,16 @@ proxies:
   tfo: false
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 11|12|🇭🇰 |@ripaojiedian
+  port: 50170
+  server: 38.147.188.234
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 37b58e86-83ef-4ff8-b5dd-4bde36921f2b
 - alterId: 0
   cipher: auto
   name: 18|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_1
@@ -2105,20 +2127,6 @@ proxies:
   uuid: 80e94af6-e42a-4dbc-8f4b-c5f99bf97d3d
   ws-opts:
     path: /zh-cn/download
-- alterId: 2
-  cipher: auto
-  name: 22|🇰HK-119.236.146.31-0948
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
 - name: 22|🇰HK-5.83.221.31-1387
   password: 61c6ceee-ee4f-475f-867d-dcfda15490fb
   port: 30017
@@ -3432,6 +3440,15 @@ proxies:
     headers:
       Host: 081d1aad-rwcsg0-1n7jq.bn.p5pv.com
     path: /
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 24,37|🇭🇰HK香港2
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 21001
+  server: ss.002.node-for-bigairport.win
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - name: 26|V1-香港01∣K1线路∣
   password: 7daf833c-37b9-4afc-8495-96590f03f781
   port: 21135
