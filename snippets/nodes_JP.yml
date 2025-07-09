@@ -587,7 +587,7 @@ proxies:
   type: ss
   udp: true
 - alterId: 0
-  name: 5,11,22,37|🇵JP日本7
+  name: 5,9,11,22,24,37|🇵JP日本7
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 53248
@@ -626,7 +626,7 @@ proxies:
     path: /634c5c4f9782
 - alterId: 0
   cipher: auto
-  name: '5,11|13|日本v2|@ripaojiedian #1'
+  name: '5,11,24|🇯🇵 日本v2|@ripaojiedian #2'
   network: kcp
   port: '2389'
   server: 8.211.145.146
@@ -664,27 +664,6 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
-- alterId: 0
-  name: 9,22,24,28,37|🇯🇵JP日本4
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 19577
-  server: 36.151.251.33
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- cipher: rc4-md5
-  name: 9|🇯🇵 日本|@ripaojiedian 2
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202507031938065-yZ3kjukUbq.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
   name: 9,11|12|🇵 日本2|@ripaojiedian
   password: 823e135ed103
@@ -698,6 +677,18 @@ proxies:
     tls: true
   port: 636
   server: 137.220.191.40
+  tfo: false
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 9,11|12|🇵 |@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202507031938065-U5JTftURXP.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
   tfo: false
   type: ss
   udp: true
@@ -962,6 +953,12 @@ proxies:
     headers:
       Host: 138.2.52.176
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 22|🇵JP-52.192.64.50-0958
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 9898
+  server: 52.192.64.50
+  type: ss
 - alterId: 0
   cipher: auto
   name: 22|JP-140.83.84.209-1396
@@ -1510,6 +1507,19 @@ proxies:
   uuid: f1f45005-f074-430b-a4db-7109f50c3bce
   ws-opts:
     path: /
+- alterId: 64
+  cipher: auto
+  name: 22|🇵JP-107.148.6.67-5047
+  network: ws
+  port: 30001
+  server: 107.148.6.67
+  servername: www.53865734.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    path: /path/170733132233
 - name: 22|🇯🇵JP-62.3.54.31-5162
   password: e3087591-ca09-4edc-93c5-71148a6434a8
   port: 14103
@@ -1691,15 +1701,6 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- alterId: 0
-  cipher: auto
-  name: '24|🇯🇵 日本v2|@ripaojiedian #2'
-  network: kcp
-  port: '7965'
-  server: 47.91.19.216
-  tls: false
-  type: vmess
-  uuid: 9a2e59c2-e8a1-4684-8df7-5a5ca5ae174a
 - name: 26|✪每日连接前点更新订阅
   password: 0bc68743-cff8-4730-9818-9d8192ee335c
   port: 21142
