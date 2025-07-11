@@ -339,7 +339,7 @@ proxies:
   type: ss
   udp: true
 - alterId: 0
-  name: 5,9,11,22,24,37|🇷KR国
+  name: 5,22,24,37|🇷KR国
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 4448
@@ -347,6 +347,32 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   tls: true
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 9,11,20,21,22|🇷KR-154.90.63.177-0334
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  tfo: false
+  type: ss
+  udp: true
+- name: 9,11,22|🇷KR-3.34.143.101-1817
+  network: tcp
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6668
+  server: 3.34.143.101
+  skip-cert-verify: false
+  sni: baidu.com
+  type: trojan
+  udp: true
+- name: 9,11,22|🇨🇳CN-36.151.192.59-1818
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 16158
+  server: 36.151.192.59
+  skip-cert-verify: false
+  sni: www.baidu.com
   type: trojan
   udp: true
 - name: 17|韩国(yudou66.com 玉豆免费节点)
@@ -386,26 +412,28 @@ proxies:
       Host: dp.ylks.xyz
     path: '%2F%3Fproxyip%3Dproxyip.kr.fxxp.dedyp.io'
 - cipher: aes-256-cfb
-  name: 20,21,22|🇷KR-154.90.62.168-0388
+  name: 20,21,22|🇷KR-154.90.62.168-0333
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
-- cipher: aes-256-cfb
-  name: 20,21,22|🇷KR-154.90.63.177-0376
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-- cipher: aes-256-cfb
-  name: 22|🇷KR-218.237.185.230-0420
-  password: qwerREWQ@@
-  port: 4652
-  server: p141.panda001.net
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 22|🇷KR-152.69.230.170-0563
+  name: 22|KR-152.67.218.38-0000
+  network: ws
+  port: 443
+  server: 152.67.218.38
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
+  ws-opts:
+    headers:
+      Host: 152.67.218.38
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 22|🇷KR-152.69.230.170-0493
   network: ws
   port: 80
   server: 152.69.230.170
@@ -418,7 +446,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 22|🇷KR-146.56.40.117-0618
+  name: 22|🇷KR-146.56.40.117-0553
   network: ws
   port: 27675
   server: 146.56.40.117
@@ -428,7 +456,7 @@ proxies:
   uuid: 053ca0f4-057e-493d-ad30-5ba51f00f59c
   ws-opts:
     path: /
-- name: 22|🇷KR-138.2.113.248-0712
+- name: 22|🇷KR-138.2.113.248-0645
   password: 9c822f05-cfdc-479a-9534-60f3d4127435
   port: 443
   server: 138.2.113.248
@@ -436,7 +464,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 22|🇷KR-146.56.162.25-0737
+  name: 22|🇷KR-146.56.162.25-0670
   network: ws
   port: 443
   server: 146.56.162.25
@@ -450,7 +478,7 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: 22|🇷KR-130.162.141.104-0792
+  name: 22|🇷KR-130.162.141.104-0725
   network: ws
   port: 443
   server: 130.162.141.104
@@ -462,7 +490,7 @@ proxies:
     path: /reffs7y26g0ua
 - alterId: 1
   cipher: auto
-  name: 22|🇷KR-54.180.96.67-1113
+  name: 22|🇷KR-54.180.96.67-1042
   network: ws
   port: 8888
   server: 54.180.96.67
@@ -476,7 +504,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 22|🇷KR-27.124.8.141-1332
+  name: 22|🇷KR-27.124.8.141-1261
   network: ws
   port: 443
   server: 27.124.8.141
@@ -486,7 +514,7 @@ proxies:
   uuid: c7e645be-1704-4f0a-afe9-8b21f9c711d6
   ws-opts:
     path: /path/220128071100
-- name: 22|🇷KR-144.24.76.54-1423
+- name: 22|🇰🇷KR-144.24.76.54-1352
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   port: 8443
   server: 144.24.76.54
@@ -495,7 +523,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 22|🇷KR-52.78.213.224-1464
+  name: 22|🇷KR-52.78.213.224-1393
   network: ws
   port: 80
   server: 52.78.213.224
@@ -507,7 +535,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 22|KR-131.186.24.103-1698
+  name: 22|KR-131.186.24.103-1627
   network: ws
   port: 443
   server: 131.186.24.103
@@ -519,7 +547,7 @@ proxies:
     path: /reffs7y26g0ua
 - alterId: 0
   cipher: auto
-  name: 22|🇷KR-52.231.200.179-1706
+  name: 22|🇷KR-52.231.200.179-1635
   network: ws
   port: 443
   server: fullaccesstokoreannetsubnode1.azurewebsites.net
@@ -534,7 +562,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 22|🇷KR-146.56.47.1-1827
+  name: 22|🇷KR-146.56.47.1-1756
   network: ws
   port: 443
   server: kr-arm2.018999.xyz
@@ -547,25 +575,25 @@ proxies:
       Host: kr-arm2.018999.xyz
     path: /e98fc1a0-9c52-4091-91a5-c159b0aa274e
 - cipher: aes-256-cfb
-  name: 22|🇷KR-43.201.48.212-1855
+  name: 22|🇷KR-43.201.48.212-1784
   password: amazonskr05
   port: 443
   server: 43.201.48.212
   type: ss
 - cipher: aes-256-gcm
-  name: 22|🇷KR-141.164.39.146-1948
+  name: 22|🇷KR-141.164.39.146-1873
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 141.164.39.146
   type: ss
 - cipher: aes-256-gcm
-  name: 22|🇷KR-158.247.205.87-1975
+  name: 22|🇷KR-158.247.205.87-1900
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 158.247.205.87
   type: ss
 - cipher: aes-256-gcm
-  name: 22|🇷KR-158.247.205.87-1976
+  name: 22|🇰🇷KR-158.247.205.87-1901
   password: pKEW8JPByTVTLtM
   port: 443
   server: 158.247.205.87
@@ -576,7 +604,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 22|🇰🇷KR-150.230.249.15-2081
+  name: 22|🇰🇷KR-150.230.249.15-2006
   network: http
   port: 46842
   server: 150.230.249.15
@@ -586,7 +614,7 @@ proxies:
   uuid: 4530b5ee-ced4-4e64-9285-1867fc5df7f8
 - alterId: 0
   cipher: auto
-  name: 22|🇰🇷KR-152.70.252.218-2126
+  name: 22|🇰🇷KR-152.70.252.218-2051
   network: ws
   port: 10020
   server: 152.70.252.218
@@ -597,80 +625,80 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: 22|🇷KR-43.200.245.35-2394
+  name: 22|🇷KR-43.200.245.35-2319
   password: amazonskr05
   port: 443
   server: 43.200.245.35
   type: ss
-- name: 22|🇷KR-203.210.16.78-2461
+- name: 22|🇷KR-203.210.16.78-2386
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.seoulcitygovernment.com.ua
   skip-cert-verify: false
   type: trojan
-- name: 22|🇷KR-138.2.113.84-2494
+- name: 22|🇷KR-138.2.113.84-2419
   password: b291d129-ee55-4801-a9b8-b5316e5c37b7
   port: 443
   server: 138.2.113.84
   skip-cert-verify: false
   type: trojan
-- name: 22|🇷KR-138.2.115.240-2496
+- name: 22|🇷KR-138.2.115.240-2421
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   port: 443
   server: 138.2.115.240
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 22|🇷KR-43.201.59.8-2526
+  name: 22|🇷KR-43.201.59.8-2451
   password: amazonskr05
   port: 443
   server: 43.201.59.8
   type: ss
-- name: 22|🇷KR-112.218.196.26-2672
+- name: 22|🇷KR-112.218.196.26-2597
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.seoulcityhall.com.ua
   skip-cert-verify: false
   type: trojan
-- name: 22|🇷KR-144.24.72.126-2712
+- name: 22|🇷KR-144.24.72.126-2637
   password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a
   port: 443
   server: 144.24.72.126
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 22|🇷KR-43.201.47.102-2731
+  name: 22|🇷KR-43.201.47.102-2656
   password: amazonskr05
   port: 443
   server: 43.201.47.102
   type: ss
-- name: 22|🇷KR-112.218.196.26-2801
+- name: 22|🇷KR-112.218.196.26-2726
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 2053
   server: official.seoulcityhall.com.ua
   skip-cert-verify: false
   type: trojan
-- name: 22|🇷KR-146.56.189.146-3267
+- name: 22|🇷KR-146.56.189.146-3192
   password: f2117e99-9b6e-47fd-b0a9-634a0b15b998
   port: 443
   server: 146.56.189.146
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 22|🇷KR-43.201.57.66-3662
+  name: 22|🇷KR-43.201.57.66-3587
   password: amazonskr05
   port: 443
   server: 43.201.57.66
   type: ss
 - cipher: aes-256-cfb
-  name: 22|🇷KR-43.201.86.30-3741
+  name: 22|🇷KR-43.201.86.30-3666
   password: amazonskr05
   port: 443
   server: 43.201.86.30
   type: ss
 - alterId: 0
   cipher: auto
-  name: 22|🇷KR-13.125.24.112-3744
+  name: 22|🇷KR-13.125.24.112-3669
   network: ws
   port: 49517
   server: 13.125.24.112
@@ -682,7 +710,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 22|🇰🇷KR-13.125.24.112-3749
+  name: 22|🇰🇷KR-13.125.24.112-3674
   network: ws
   port: 42517
   server: 13.125.24.112
@@ -692,54 +720,52 @@ proxies:
   uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d
   ws-opts:
     path: /
-- name: 22|🇰🇷KR-3.34.6.217-3771
+- name: 22|🇰🇷KR-3.34.6.217-3696
   password: xxoo
   port: 443
   server: 3.34.6.217
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 22|🇷KR-13.125.124.161-3803
+  name: 22|🇷KR-13.125.124.161-3728
   password: amazonskr05
   port: 443
   server: 13.125.124.161
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 22|🇷KR-152.67.218.38-4354
-  network: ws
-  port: 443
-  server: 152.67.218.38
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
-  ws-opts:
-    headers:
-      Host: 152.67.218.38
-    path: /
-- name: 22|🇷KR-150.230.249.20-4444
+- name: 22|🇷KR-150.230.249.20-4369
   password: b5fc9fa9-796d-4185-a316-395ecac04a85
   port: 443
   server: 150.230.249.20
   skip-cert-verify: false
   sni: www.gomacau.gq
   type: trojan
-- name: 22|🇷KR-146.56.179.67-4701
+- name: 22|🇷KR-146.56.179.67-4626
   password: cc05b267-2e17-4e73-92f0-2cf603aa5997
   port: 40005
   server: 146.56.179.67
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 22|🇷KR-3.36.118.190-4772
+  name: 22|🇷KR-3.36.118.190-4697
   password: amazonskr05
   port: 443
   server: 3.36.118.190
   type: ss
+- cipher: aes-256-cfb
+  name: 22|🇷KR-218.237.185.230-4860
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
+  type: ss
+- cipher: aes-256-cfb
+  name: 22|🇷KR-218.237.185.230-4861
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 22|🇷KR-54.180.114.77-5481
+  name: 22|🇷KR-54.180.114.77-5377
   network: ws
   port: 42517
   server: 54.180.114.77
@@ -750,12 +776,12 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: 22|KR-158.247.213.230-6030
+  name: 22|KR-158.247.213.230-5926
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 158.247.213.230
   type: ss
-- name: 22|🇷KR-121.78.213.3-6835
+- name: 22|🇷KR-121.78.213.3-6731
   password: KLF0qOU0ZZGw5Tnu
   port: 443
   server: 121.78.213.3
@@ -764,7 +790,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 22|🇷KR-211.177.40.235-6853
+  name: 22|🇷KR-211.177.40.235-6749
   network: ws
   port: 30001
   server: 211.177.40.235
@@ -777,7 +803,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 22|🇷KR-1.238.102.214-6854
+  name: 22|🇷KR-1.238.102.214-6750
   network: ws
   port: 30001
   server: 1.238.102.214
@@ -788,7 +814,7 @@ proxies:
   uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
   ws-opts:
     path: /vmess
-- name: 22|🇰🇷KR-121.78.213.3-6856
+- name: 22|🇰🇷KR-121.78.213.3-6752
   password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy
   port: 443
   server: 121.78.213.3
@@ -797,7 +823,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 22|🇷KR-220.123.48.124-6979
+  name: 22|🇷KR-220.123.48.124-6875
   network: ws
   port: 30002
   server: 220.123.48.124
@@ -811,7 +837,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 22|KR-211.248.216.119-7362
+  name: 22|KR-211.248.216.119-7258
   network: ws
   port: 17443
   server: 211.248.216.119
@@ -826,7 +852,7 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: 22|🇰🇷KR-138.2.123.70-7369
+  name: 22|🇰🇷KR-138.2.123.70-7265
   network: ws
   port: 443
   server: 138.2.123.70
@@ -840,7 +866,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 22|🇰🇷KR-119.195.219.150-7371
+  name: 22|🇰🇷KR-119.195.219.150-7267
   network: ws
   port: 18050
   server: 119.195.219.150
@@ -855,7 +881,7 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: 22|🇷KR-152.70.232.151-7372
+  name: 22|🇷KR-152.70.232.151-7268
   network: ws
   port: 443
   server: 152.70.232.151
@@ -869,7 +895,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 22|🇰🇷KR-158.180.91.206-7429
+  name: 22|🇰🇷KR-158.180.91.206-7325
   network: ws
   port: 46271
   server: 158.180.91.206
@@ -882,19 +908,19 @@ proxies:
       Host: kr.huafei888.site
     path: /
 - cipher: aes-256-cfb
-  name: 22|🇷KR-43.202.49.222-8150
+  name: 22|🇷KR-43.202.49.222-8046
   password: doub.io
   port: 2333
   server: 43.202.49.222
   type: ss
 - cipher: aes-256-cfb
-  name: 22|🇷KR-43.201.108.109-8151
+  name: 22|🇷KR-43.201.108.109-8047
   password: amazonskr05
   port: 443
   server: 43.201.108.109
   type: ss
 - cipher: aes-256-cfb
-  name: 22|🇷KR-125.141.26.5-8749
+  name: 22|🇷KR-125.141.26.5-8645
   password: qwerREWQ@@
   port: 2003
   server: 125.141.26.5
