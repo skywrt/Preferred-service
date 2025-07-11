@@ -37,7 +37,7 @@ def w1770946466():
     return subs
 
 AUTOURLS = []
-AUTOFETCH = [peasoft]
+AUTOFETCH = []
 
 if __name__ == '__main__':
     print("URL 抓取："+', '.join([_.__name__ for _ in AUTOURLS]))
