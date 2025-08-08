@@ -1,5 +1,7 @@
 # Preferred service
 
+[![Fetch Status](https://github.com/skywrt/Preferred-service/actions/workflows/fetch.yml/badge.svg)](https://github.com/skywrt/Preferred-service/actions/workflows/fetch.yml) [![Stars](https://img.shields.io/github/stars/skywrt/Preferred-service?style=flat)](https://github.com/skywrt/Preferred-service/stargazers) [![Watchers](https://img.shields.io/github/watchers/skywrt/Preferred-service?style=flat)](https://github.com/skywrt/Preferred-service/watchers) [![Forks](https://img.shields.io/github/forks/skywrt/Preferred-service?style=flat)](https://github.com/skywrt/Preferred-service/forks) [![Repo size](https://img.shields.io/github/repo-size/skywrt/Preferred-service)](https://github.com/skywrt/Preferred-service/commits) [![jsDelivr stats](https://data.jsdelivr.com/v1/package/gh/skywrt/Preferred-service/badge?style=rounded)](https://www.jsdelivr.com/package/gh/skywrt/Preferred-service) ![Vistors](https://visitor-badge.laobi.icu/badge?page_id=skywrt.Preferred-service) [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu) [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/skywrt/Preferred-service/blob/master/LICENSE.md)
+
 ## 使用方法
 
 注意：加速链接可能会失效，如果无法更新订阅，请把所有链接从上到下每个试一遍！你可以在电脑浏览器上安装油猴脚本 [Github 增强 - 高速下载](https://greasyfork.org/zh-CN/scripts/412245)，在目录浏览点开 `list.txt`，然后在 `Raw` 按钮边上找到最新的加速链接。
