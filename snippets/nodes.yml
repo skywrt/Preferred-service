@@ -189,13 +189,11 @@ proxies:
     path: /2bab6b8f-8d6e-463a-8331-b9de3d56921d-vmess
 - alterId: 0
   cipher: auto
-  name: 3,4,5|日本5|@ripaojiedian
+  name: 3|🇫🇷FR-162.19.192.89-0622
   network: ws
-  port: '16617'
+  port: 16617
   server: planb.mojcn.com
   servername: ''
-  skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: 0c0fdaa9-da2e-42c0-b38e-25d54ec1e6d4
@@ -678,16 +676,14 @@ proxies:
   server: 103.103.245.158
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 4|🇭🇰 香港3|@ripaojiedian
-  port: 44470
-  server: 43.247.135.176
+- name: 4,5|香港3|@ripaojiedian
+  network: tcp
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 103.252.116.138
   skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: f7adceb1-556b-44f4-a2c2-20f3e06e2001
+  sni: hk.freeguard.org
+  type: trojan
 - name: 4,5|香港4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -707,7 +703,7 @@ proxies:
   tfo: false
   tls: false
   type: vmess
-  uuid: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
+  uuid: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
@@ -720,12 +716,28 @@ proxies:
   skip-cert-verify: true
   sni: www.ithome.com
   type: trojan
+- alterId: 2
+  cipher: auto
+  name: 4,5|香港7|@ripaojiedian
+  network: ws
+  port: '80'
+  server: f0364aea-t13gg0-t1rksu-1ssud.hk3.p5pv.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: e6aa39b6-f0b5-11ef-bca1-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - cipher: rc4-md5
   name: 4|🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507282137611-vye4FDfLUP.download.microsoft.com
+    host: 202508150964186-C3Laaffn48.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -778,38 +790,6 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 4,5|新加坡3|@ripaojiedian
-  network: ws
-  port: '49102'
-  server: free-relay.themars.top
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 631484bb-c085-4384-8c3a-d93db3d587ef
-  ws-opts:
-    headers:
-      Host: www.cctv.com
-    path: /cctv1.m3u8
-- alterId: 0
-  cipher: auto
-  name: 4,5|新加坡4|@ripaojiedian
-  network: ws
-  port: '16618'
-  server: t.cnmjcn.cyou
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 42c37c6c-9ad9-42dc-99d6-afd3c100a563
-  ws-opts:
-    headers:
-      Host: e5406c2f4f42756d4a4089ffcd58947b.mobgslb.tbcache.com
-    path: /
 - name: 4|🇺🇸 美国|@ripaojiedian
   network: ws
   password: 7248e825-887c-48b9-83bc-c26bc6392bf8
@@ -827,7 +807,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507282137611-vye4FDfLUP.download.microsoft.com
+    host: 202508150964186-C3Laaffn48.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -851,24 +831,14 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 5|香港3|@ripaojiedian
-  network: tcp
-  port: '44470'
-  server: 43.247.135.176
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f7adceb1-556b-44f4-a2c2-20f3e06e2001
-- alterId: 0
-  cipher: auto
   name: 5|香港v2|@ripaojiedian
   network: kcp
-  port: '5225'
-  server: 47.243.135.47
+  port: '3351'
+  server: 47.83.181.154
   servername: ''
   tls: false
   type: vmess
-  uuid: e64f666d-4b75-473b-9cc2-aaf6f0bf0e33
+  uuid: 0bfc8acf-ac40-45c1-8dde-7f3417621286
 - alterId: 0
   cipher: auto
   name: 5|日本v2|@ripaojiedian
