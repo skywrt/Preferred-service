@@ -1,7 +1,24 @@
 proxies:
-- name: 3|🇸🇪SE-45.91.171.116-0340
+- name: 3|🇸🇪SE-45.91.171.116-0373
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
   server: 45.91.171.116
   sni: sto.freeguard.org
   type: trojan
+- http-opts:
+    headers:
+      Host:
+      - speedtest.net
+    method: GET
+    path:
+    - /
+  name: 6|SE_speednode_0014
+  network: http
+  port: 8888
+  server: 185.36.145.227
+  servername: speedtest.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 48b81d34-df01-4c94-9e34-0ccb4c40c547
