@@ -1,7 +1,13 @@
 proxies:
+- name: 3|🇺🇸US-138.197.5.103-0231
+  password: xxoo
+  port: 443
+  server: us.blazeppn.info
+  sni: us.blazeppn.info
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 3|🇺🇸US-198.23.174.168-5107
+  name: 3|🇺🇸US-198.23.174.168-5078
   network: ws
   port: 20086
   server: 198.23.174.168
@@ -15,21 +21,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 3|🇺🇸US-2.58.87.221-0383
-  network: ws
-  port: 12269
-  server: 2.58.87.221
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: db85ff0e-c33f-401d-c415-4c7cce135704
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 3|🇺🇸US-137.175.124.167-0315
+  name: 3|🇺🇸US-137.175.124.167-0214
   network: ws
   port: 20086
   server: 137.175.124.167
@@ -41,21 +33,43 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 3|🇺🇸US-198.46.152.83-0340
+- alterId: 32
+  cipher: auto
+  name: 3|🇺🇸US-77.83.141.171-5082
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
+- alterId: 0
+  cipher: auto
+  name: 3|🇺🇸US-209.126.84.189-5085
+  network: ws
+  port: 443
+  server: v2ray.codefyinc.com
+  servername: v2ray.codefyinc.com
+  tls: false
+  type: vmess
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  ws-opts:
+    headers:
+      Host: v2ray.codefyinc.com
+    path: /vmessws
+- name: 3|🇺🇸US-198.46.152.83-0368
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
   server: 198.46.152.83
   sni: sj3.freeguard.org
   type: trojan
-- name: 3|🇺🇸US-192.3.107.252-5115
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 192.3.107.252
-  sni: rc8.freeguard.org
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 3|🇺🇸US-206.206.80.227-0332
+  name: 3|🇺🇸US-206.206.80.227-0357
   network: ws
   port: 20086
   server: 206.206.80.227
@@ -67,6 +81,12 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: 3|🇺🇸US-192.3.107.252-0377
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 192.3.107.252
+  sni: rc8.freeguard.org
+  type: trojan
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 4|🇺🇸 美国2|@ripaojiedian
@@ -97,54 +117,7 @@ proxies:
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 6|US_speednode_0043
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (TG @WangCai2)4fa101a:48723
-    mode: tls
-    tls: false
-  port: 2377
-  server: 95.174.71.28
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 6|US_speednode_0044
-  network: http
-  port: 25740
-  server: 192.3.216.180
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 43cf14a5-5b85-47e2-a4c2-b514beab7054
-- alterId: 0
-  cipher: auto
-  name: 6|US_speednode_0045
-  port: 40083
-  server: 66.253.5.58
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 19003217-0407-43d5-bf22-9aa642469a83
-- alterId: 0
-  cipher: auto
-  name: 6|US_speednode_0047
-  port: 42940
-  server: 64.81.24.59
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f68d852e-cef3-4baf-f4ce-b98c88197bde
-- name: 6|US_speednode_0049
+- name: 6|US_speednode_0029
   network: ws
   password: slch2024
   port: 2096
@@ -157,3 +130,16 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
+- name: 6|US_speednode_0031
+  network: ws
+  password: 318cab24-ec99-40a6-a54a-0db9c661a3d0
+  port: 443
+  server: aio.proxybox.dpdns.org
+  skip-cert-verify: false
+  sni: aio.proxybox.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: aio.proxybox.dpdns.org
+    path: /188.34.160.97-2053
