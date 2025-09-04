@@ -53,13 +53,11 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 3,4,5|香港5|@ripaojiedian
+  name: 3|🇭🇰HK-203.218.216.26-0348
   network: ws
-  port: '80'
+  port: 80
   server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
+  servername: broadcastlv.chat.bilibili.com
   tls: false
   type: vmess
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
@@ -177,13 +175,15 @@ proxies:
     path: /vmessws
 - alterId: 2
   cipher: auto
-  name: 3|🇭🇰HK-116.49.109.9-0328
+  name: 3,6|HK_speednode_0005
   network: ws
   port: 80
   server: hkt.gotochinatown.net
   servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     headers:
@@ -435,18 +435,18 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 4|🇭🇰 香港3|@ripaojiedian
-  port: 47405
-  server: 38.147.188.96
+  port: 51697
+  server: 38.147.188.160
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 84513b8e-2aad-4151-956e-09593c5f107c
+  uuid: 22babdc6-5437-4de0-b3a9-67c005a19e11
 - name: 4,5|香港4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
-  server: 219.77.131.1
+  server: 42.2.17.49
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
@@ -454,9 +454,9 @@ proxies:
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
-  server: 1.65.215.113
+  server: 42.2.197.54
   skip-cert-verify: true
-  sni: fe2.update.microsoft.com
+  sni: 23.45.86.28
   type: trojan
 - alterId: 64
   cipher: auto
@@ -473,7 +473,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202508150964186-5McRC3HiAX.download.microsoft.com
+    host: 202509031722041-UfAvWCjqQ0.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -513,7 +513,7 @@ proxies:
 - name: 4,5|新加坡|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 3957
+  port: 1523
   server: xingxing.jiasu123.org
   skip-cert-verify: true
   sni: 23.45.86.28
@@ -547,7 +547,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202508150964186-5McRC3HiAX.download.microsoft.com
+    host: 202509031722041-UfAvWCjqQ0.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -573,12 +573,12 @@ proxies:
   cipher: auto
   name: 5|香港3|@ripaojiedian
   network: tcp
-  port: '47405'
-  server: 38.147.188.96
+  port: '51697'
+  server: 38.147.188.160
   servername: ''
   tls: false
   type: vmess
-  uuid: 84513b8e-2aad-4151-956e-09593c5f107c
+  uuid: 22babdc6-5437-4de0-b3a9-67c005a19e11
 - alterId: 0
   cipher: auto
   name: 5|香港v2|@ripaojiedian
@@ -622,14 +622,59 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- cipher: chacha20-ietf-poly1305
-  name: 6|IN_speednode_0004
-  password: WgACwLy1BPk47JOzHyA7zu
-  port: 47347
-  server: 167.71.235.238
+- alterId: 2
+  cipher: auto
+  name: 6|CN_speednode_0002
+  network: ws
+  port: 30805
+  server: v5.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 6|CN_speednode_0003
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 6|HK_speednode_0006
+  network: http
+  port: 30397
+  server: 43.247.135.17
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7364bf26-0eb6-40cc-b7e6-fb1a4b6bf69c
+- cipher: aes-256-cfb
+  name: 6|KR_speednode_0008
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
   type: ss
   udp: true
-- name: 6|RU_speednode_0009
+- name: 6|RU_speednode_0010
   network: ws
   password: slch2024
   port: 2096
@@ -642,32 +687,6 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /TelegramU0001F1E8U0001F1F3
-- name: 6|RU_speednode_0010
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.221.160.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 6|US_speednode_0011
-  network: ws
-  password: 318cab24-ec99-40a6-a54a-0db9c661a3d0
-  port: 443
-  server: aio.proxybox.dpdns.org
-  skip-cert-verify: false
-  sni: aio.proxybox.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: aio.proxybox.dpdns.org
-    path: /188.34.160.97-2053
 - name: 6|US_speednode_0012
   network: ws
   password: slch2024
@@ -681,11 +700,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 6|US_speednode_0015
+- name: 6|US_speednode_0014
   network: ws
   password: slch2024
   port: 2096
-  server: 185.148.105.195
+  server: 216.24.57.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -694,7 +713,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 6|US_speednode_0016
+- name: 6|US_speednode_0018
   network: ws
   password: slch2024
   port: 2096
@@ -707,22 +726,28 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- cipher: aes-256-cfb
-  name: 6|VN_speednode_0017
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.32
-  type: ss
+- name: 6|US_speednode_0019
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.148.105.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
 - cipher: aes-256-cfb
-  name: 6|VN_speednode_0018
+  name: 6|VN_speednode_0020
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.35
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 6|VN_speednode_0019
+  name: 6|VN_speednode_0021
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.155.21
