@@ -55,13 +55,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 3,6|LT_speednode_0012
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.58
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 3|🇫🇷FR-57.128.189.222-7154
@@ -624,13 +617,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- cipher: aes-256-cfb
-  name: 3,6|PY_speednode_0016
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.165.233.93
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 3|🇺🇸US-154.9.254.63-4971
@@ -645,13 +631,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- cipher: aes-256-cfb
-  name: 3,6|TW_speednode_0019
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.20.79
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 3|🏁RELAY-104.21.23.231-0951
@@ -714,13 +693,6 @@ proxies:
   server: 185.208.207.217
   sni: dus.freeguard.org
   type: trojan
-- cipher: aes-256-cfb
-  name: 3,6|BR_speednode_0001
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.54.57.90
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 3|🇹🇼TW-103.61.139.137-4948
@@ -763,13 +735,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- cipher: aes-256-cfb
-  name: 3,6|KR_speednode_0011
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 3|🇭🇰HK-47.239.233.101-5084
@@ -861,6 +826,14 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- cipher: aes-256-gcm
+  name: 4,5,6|US_speednode_0033
+  password: amazongreatvpn
+  port: 16888
+  server: 54.46.38.22
+  tfo: false
+  type: ss
+  udp: true
 - name: 4,5|香港6|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -1022,11 +995,26 @@ proxies:
   uuid: af07bf42-c942-4085-a7cb-80f9bed88776
 - alterId: 2
   cipher: auto
-  name: 6|CN_speednode_0006
+  name: 6|CN_speednode_0002
   network: ws
   port: 30836
   server: v36.heduian.link
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v36.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 6|CN_speednode_0003
+  network: ws
+  port: 30824
+  server: v24.heduian.link
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
@@ -1035,25 +1023,47 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- alterId: 0
+- alterId: 2
   cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 6|IN_speednode_0010
-  network: http
-  port: 18872
-  server: 123.58.203.92
+  name: 6|CN_speednode_0004
+  network: ws
+  port: 30808
+  server: v8.heduian.link
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: edfe29a5-cc54-488d-a31d-ca71f39e38d4
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v8.heduian.link
+    path: /oooo
 - cipher: chacha20-ietf-poly1305
-  name: 6|LT_speednode_0013
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: ltnl15.saint.ydns.eu
+  name: 6|DE_speednode_0005
+  password: O3k5u79Rzc8fAcwLf2cQy3
+  port: 80
+  server: 142.93.166.6
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 6|IN_speednode_0013
+  password: bvr9u3aeRQwAafhjmvHtwH
+  port: 80
+  server: 159.65.155.229
+  type: ss
+  udp: true
+- name: 6|JP_speednode_0018
+  password: 9e76767d-4bfa-4f04-a800-42e2f63afed2
+  port: 443
+  server: www.tiktok.com.jp2.viefast.net
+  skip-cert-verify: true
+  sni: www.linemo.jp
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 6|KR_speednode_0019
+  password: '12242'
+  port: 10099
+  server: 115.161.136.145
   type: ss
   udp: true
