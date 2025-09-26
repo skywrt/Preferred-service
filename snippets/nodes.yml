@@ -553,13 +553,15 @@ proxies:
     path: /c660dbe0-c48f-418f-caa0-ca5ab17519dc
 - alterId: 2
   cipher: auto
-  name: 3|🇭🇰HK-219.79.36.155-0995
+  name: 3,6|HK_speednode_0016
   network: ws
   port: 80
   server: hkt.gotochinatown.net
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     headers:
@@ -1272,7 +1274,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 1cc84891-1657-4f71-97d0-287df565820e
-- name: 6|CN_speednode_0004
+- name: 6|AU_speednode_0002
+  password: installshield
+  port: 8443
+  server: 176.97.68.153
+  skip-cert-verify: true
+  sni: 176.97.68.153
+  type: trojan
+  udp: true
+- name: 6|CN_speednode_0005
   password: 2fd0d127-266d-4d0b-b453-f94659a132fc
   port: 12000
   server: 106.75.134.1
@@ -1280,10 +1290,55 @@ proxies:
   sni: aliyun.com
   type: trojan
   udp: true
-- name: 6|FR_speednode_0009
+- alterId: 2
+  cipher: auto
+  name: 6|CN_speednode_0006
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- name: 6|FR_speednode_0010
   password: installshield
   port: 8443
   server: 23.162.152.30
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 6|SG_speednode_0032
+  network: http
+  port: 22286
+  server: 8.219.14.179
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8646218f-a600-4b73-8721-aa5d4567819e
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 6|SG_speednode_0034
+  network: http
+  port: 22525
+  server: 8.219.14.179
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cabe905a-28ea-4e7e-c34d-2fa38604001f
