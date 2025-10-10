@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 3|🇫🇷FR-57.128.189.240-5247
+  name: 3|🇫🇷FR-57.128.189.240-5245
   network: ws
   port: 443
   server: 57.128.189.240
@@ -13,6 +13,20 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
+- alterId: 1
+  cipher: auto
+  name: 3|🇫🇷FR-141.95.126.134-5351
+  network: ws
+  port: 443
+  server: jamekk.org
+  servername: jamekk.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: jamekk.org
+    path: linkvws
 - alterId: 0
   cipher: auto
   name: 3|🇫🇷FR-51.68.191.233-0693
@@ -27,7 +41,7 @@ proxies:
     headers:
       Host: 51.68.191.233
     path: /vmess/
-- name: 6|FR_speednode_0021
+- name: 6|FR_speednode_0035
   network: ws
   port: 2096
   server: 185.7.240.32
@@ -41,3 +55,44 @@ proxies:
     headers:
       Host: kejiland.freewarp.eu.org
     path: /snippets
+- name: 6|FR_speednode_0036
+  network: ws
+  port: 2096
+  server: 185.7.240.32
+  servername: kejiland.freewarp.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippetssecurity=tls
+- name: 6|FR_speednode_0037
+  network: ws
+  port: 2096
+  server: 141.11.203.32
+  servername: kejiland.freewarp.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 6|FR_speednode_0038
+  port: 443
+  reality-opts:
+    public-key: 21MNt-O8tq9gP9o7yeT9iVQslHPdNVHtqI9Kg5p-lHo
+  server: 38.54.122.118
+  servername: dash.cloudflare.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9f4b9824-df02-49c3-a976-d4f9a31f81fe
